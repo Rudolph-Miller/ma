@@ -1,9 +1,12 @@
 (defpackage dict
   (:use :common-lisp)
   (:export get-longest
+		   set-dict
+		   from-file
 		   longest-search
 		   print-result
-		   sort-hash))
+		   sort-hash
+		   *dict*))
 (in-package dict)
 
 (defvar *dict*
@@ -22,10 +25,8 @@
 	  do (setf line (subseq line (1+ pos))))
 	(nreverse result)))
 
-(print (split #\Space "a dfa  fas"))
 
 (defun set-dict (file)
-  (declare (dynamic-extent split))
   (with-open-file (input file :direction :input)
 	(loop
 	  for line = (read-line input nil)
@@ -37,7 +38,7 @@
   (mapc #'set-dict
 		(directory (concatenate 'string file "/*.csv"))))
 
-(from-file "utf-8")
+;(from-file "utf-8")
 
 (defun print-hash (hash)
   (maphash #'(lambda (key val) (format t "~a: ~a~%" key val)) hash))
@@ -102,7 +103,7 @@
 		do (setf result (concatenate 'string result line)))
 	  result)))
 
-(mapcar #'compile '(split ncons get-longest sort-hash print-result get-part longest-search))
+;(mapcar #'compile '(split ncons get-longest sort-hash print-result get-part longest-search))
 
 ;(let ((*standard-output* (open "test" :direction :output :if-exists :supersede)))
 ;  (print-result (longest-search (input-html "~/lab/test/test1.html"))))
