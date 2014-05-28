@@ -62,7 +62,7 @@
   (set-dict "../utf-8/Symbol.csv")
   (set-dict "../utf-8/zenkaku-symbol.csv"))
 
-(set-gate-dict)
+;(set-gate-dict)
 
 ;;;restriction of word
 (defun gate (word)
@@ -312,11 +312,10 @@
 				 (loop
 				   for i in (str->list key)
 				   do (let ((ct (char-type (char i 0))))
-						(if (not
-							  (or (eql typ ct)
-								  (and (eql ct 'Katakana) (eql ct 'other))
-								  (and (eql ct 'other) (eql ct 'Katakana))))
-						(remhash key hash))
+						(if (or
+							  (and (eql ct 'Hiragana) (not (eql ct typ)))
+							  (and (eql typ 'Hiragana) (not (eql ct typ))))
+						  (remhash key hash))
 						(setf typ ct)))))
 			 hash)
 	hash))
@@ -416,6 +415,8 @@
 ;;;url -> sorted tag list
 (defun url->tags (url)
   (get-tags (scoring-url url)))
+
+;(print-sorted-hash (scoring-url "http://www.lifehacker.jp/2014/05/140528iphone_calendar.html"))
 
 
 

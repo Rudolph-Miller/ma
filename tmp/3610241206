@@ -1,0 +1,1862 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>C++で「はじめての機械学習」2章, 3章 - STARTATD</title>
+<link rel="start" href="/" title="STARTATD">
+<link rel="help" href="/help" title="ヘルプ">
+<link rel="prev" href="/Drunkar/20121019/1350653190" title="[R]macportsでgmt4をインストー...">
+<link rel="next" href="/Drunkar/20121027/1351348151" title="[C++]C++で「はじめての機械学習...">
+
+<link rel="stylesheet" href="http://d.st-hatena.com/statics/css/base.css?b1200de2cbd65eac7a82e0d02d0b7c4352652dfc" type="text/css" media="all">
+<link rel="stylesheet" href="http://d.st-hatena.com/statics/css/headerstyle_wh.css?031d9f2299a3235ea02565e84936ee0c39ee837b" type="text/css" media="all">
+
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://d.hatena.ne.jp/Drunkar/rss">
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://d.hatena.ne.jp/Drunkar/rss2">
+
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://d.hatena.ne.jp/Drunkar/foaf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://d.hatena.ne.jp/Drunkar/opensearch/diary.xml" title="STARTATD内日記検索" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://d.hatena.ne.jp/Drunkar/opensearch/archive.xml" title="STARTATD内一覧検索" />
+
+
+
+<link rel="shortcut icon" href="http://d.hatena.ne.jp/images/wh_favicon.ico">
+
+
+
+
+<style type="text/css">
+<!-- 
+div.section h4 {font-size:200%}
+div.section h5 {font-size:130%}
+
+body{
+  color: #525252;
+  padding: 20px;
+  background-color: transparent;
+  font-size: 90%;
+  font-family: century gothic,"ヒラギノ角ゴ Pro",Verdana, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+/*** タイトル ********************************************/    
+
+h1 a{
+  border: none;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+h1{
+  padding: 10px;
+  font-size: 0%;
+  text-align: left ;
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-family: century gothic,"ヒラギノ角ゴ Pro",Verdana, Arial, Helvetica, sans-serif;
+  margin: 0px auto;
+  font-weight: normal;
+  border: none;
+  background-color: transparent;
+
+}
+
+#top_info{
+color: #999;
+font-size:80%;
+padding-left: 40px;
+padding-top:0;
+padding-bottom: 30px;
+}
+
+#info{
+font-size:170%;
+padding-top:15px;
+}
+
+
+/*** メイン ******************************************************/    
+
+.hatena-body{
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left
+  padding: 0;
+  position: relative;
+  background: transparent;
+}
+
+.hatena-body:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+div.day {
+
+
+}
+.main{
+  margin: 0;
+  padding: 0;
+
+}
+
+h2,
+h2 a{
+  text-decoration: none;
+  border: none;
+  background-color: #ffffff;
+}
+
+h2 {
+  font-size: 90%;
+  font-weight: normal;
+  margin: 0px 0 0 0;
+  padding: 0px 20px 0 20px;
+  text-align: left;
+  color: #ccc;
+  border: none ;
+  background-color: #ffffff;
+}
+
+span.date{
+  color: #555;
+  margin: 0 0;
+}
+
+span.title{
+  margin: 0 ;
+  font-weight:bold;
+  padding:0;
+}
+
+a.edit{
+  font-weight: normal;
+  font-size: 90%;
+}
+
+div.body {
+  _width: 100%;
+  padding: 0;
+  margin-bottom: 0px;
+  background-color: #ffffff;
+  border: 1px dashed #ffffff ;
+}
+
+div.section{
+  margin: 0px 0 100px 0;
+  padding: 0px 40px 0px 40px;
+  text-align: justify;
+  border: none;
+  font-size:105%;
+  font-color:#555;
+  line-height:1.65;
+}
+
+div.section a.keyword,
+a.okeyword{
+  color:#222;
+  text-decoration:none;
+}
+
+div.section p{
+padding-top:10px;
+}
+
+div.section a{
+color:#222;
+text-decoration: underline;
+}
+
+div.section a:hover{
+color:#cc1111;
+text-decoration:none;
+}
+
+.body h3.title {
+  padding: 0 3px;
+  margin: 6px 0 0 6px;
+  font-size: 110%;
+  font-weight:normal;     
+}
+
+.body h3.title a {
+ color:#0099bb;
+  text-decoration: none;
+}
+
+.section h3.title a:hover{
+color: #32cdda;
+ text-decoration:underline;
+}
+
+span.sanchor{
+  color: #555;
+}
+
+span.timestamp{
+  font-size: 70%;
+  font-weight: normal;
+  letter-spacing: 0;
+  color: #555;
+}
+
+div.section p.sectionfooter{
+  font-size: 80%;
+  text-align: right;
+  clear: both;
+  color: ;
+  padding: 25px 0 30px 0;
+  margin:0px 0 0px 0;
+}
+
+div.section p.sectionfooter a{
+    color: #777;
+  text-decoration:none;
+  
+}
+
+div.section p.sectionfooter a:hover{
+  border: none;
+  color: #0099bb;
+  text-decoration:none;
+}
+
+/*---- sectionheader ----*/  
+
+
+span.sectioncategory{
+color:#cccccc;
+margin:0;
+padding:0 0 10px 0;
+font-size:90%;
+
+}
+
+span.sectioncategory a{
+color:#999;
+text-decoration:none;
+padding:0;
+}
+
+.sectionheader{
+padding: 0 0 15px 0;
+border-top:1px #ddd dotted;
+margin:0;
+
+}
+
+span.sectioncategory a:hover{
+  border: none;
+  color: #cc1111;
+  text-decoration:underline;
+}
+
+
+/*** カレンダー **********************************************/    
+
+div.calendar a{
+  border: none;
+  color: #0099bb;
+}
+
+div.calendar a:hover{
+  border: none;
+  color: #cc1111;
+  text-decoration;
+}
+
+div.calendar{
+  font-size: 80%;
+  text-align: right;
+  margin: 0px 0 0 0;
+  padding: 0px 10px;
+  border: 1px dashed #fff ;
+}
+
+div.calendar#pager-bottom {
+  margin:0;
+  paddin:0;
+}
+
+
+
+/*** 文字装飾 ********************************************/  
+
+a{
+  color: #555;               
+  text-decoration: none;
+}
+
+a.keyword,
+a.okeyword{
+  text-decoration: none;
+  border: none;
+  color:#888888 ;        
+  background-color:#ffffff;
+}
+
+a:hover,
+a:hover font,
+a:hover span{
+  color: #ffffff;             
+  background-color:#ffffff ; 
+}
+
+h4 {
+  font-size: 100%;
+  font-weight: normal;
+  margin: 1em 0;
+  padding: 0 0 0 0.5em;
+  border-left: solid 1px #ffffff;
+}
+
+h5{
+  font-size: 90%;
+  font-weight: bold;
+  margin: 1em 0 ;
+  padding: 0;
+}
+
+p.seemore{
+  text-align: center;
+  padding:0;
+  margin:0;
+  font-weight: normal;
+  font-size: 85%;
+}
+
+p.seemore a{
+  border-width: 2px;
+  text-decoration:none;
+  background:#dfeff2;
+  color: #555;
+}
+
+p.seemore a:hover{
+  border-width: 2px;
+  text-decoration:none;
+  background:#fff;
+  color: #0099bb;
+}
+
+p.message{
+  color:666666 ;
+}
+
+blockquote{
+  	margin:30px 50px;
+	padding: 15px;
+	background-color: #ffffff;
+  	border: 1px dotted #f3a7ac ;
+	font-size: 100%;
+}
+
+.section blockquote p{
+  	margin: 1.8em 0;
+  	padding: 0;
+}
+
+.section blockquote a{
+	background:transparent;
+}
+
+
+cite a{
+        border: none;
+}
+
+cite{
+  font-weight: normal;
+  font-style: normal;
+  display: block;
+  width: 98%;
+  _width: 100%;
+  padding: 3px 1%;
+}
+
+
+pre     {
+  margin: 15px 0;
+  padding: 1em;
+  line-height: 1.2;
+  font-family:sans-serif;
+  border: 1px solid #fff;
+}
+
+strong{
+  font-weight: bold;
+}
+
+em{
+  font-weight: normal;
+}
+
+
+ins{
+
+}
+
+.section ul{
+  margin: 7px 1em 7px 1em;
+  padding: 0;
+  list-style-type:circle;
+}
+
+.section ol{
+  margin: 7px 1em 7px 1.5em;
+  padding: 0;
+}
+
+.section ul li,
+.section ol li,
+.section ol ul,
+.section ol ol,
+.section ul ul,
+.section li li {
+  margin: 0 0 0 1em;
+  padding: 0;
+ list-style-type:circle;
+}
+
+.section dl{
+  margin: 1em 2em;
+}
+
+.section dl{
+  margin: 10px 20px;
+}
+
+.section dt{
+  font-weight: normal;
+}
+
+
+span.footnote{
+  font-size: 70%;
+}
+
+span.footnote a{
+  border: 0;
+}
+
+div.footnote{
+  font-size: 90%;
+ _font-size: 80%;
+  padding: 15px;
+  text-align: left;
+  margin: 2px 0 0 0;
+  border:1px dashed #ffffff ;
+}
+
+p.footnote{
+  margin: 0;
+}
+
+span.highlight {
+  background-color: #ccc
+;
+  padding: 1px;
+}
+
+
+/*** コメント・リファラ *****************************************/     
+
+div.comment{
+  text-align: left;
+  padding: 30px ;
+  margin: 2px 0 0 0;
+  _width: 100%;
+  border: 1px dashed #ffffff ;
+}
+
+div.refererlist{
+  text-align: left;
+  padding: 10px ;
+  margin: 10px 0 0 0;
+  _width: 100%;
+  border: 1px dashed #ffffff ;
+}
+
+div.caption{
+  font-size: 90%;
+ _font-size: 80%;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+div.comment div.caption{
+}
+
+div.caption a{
+  border: none;
+  text-decoration: none;
+}
+
+div.refererlist ul{
+  margin: 0 7px;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+  letter-spacing: 0;
+}
+
+div.commentshort{
+  margin: 0;
+  padding: 0;
+ _width: 100%;
+  background-color: ;
+  font-size: 90%;
+ _font-size: 80%;
+}
+
+div.commentshort a{
+  text-decoration: none;
+}
+
+span.canchor{
+  display: none;
+}
+
+div.commentshort p {
+  margin: 0.5em;
+  font-size: 100%;
+}
+
+span.commentator{
+  font-weight: normal;
+  margin: 0 ;
+  padding: 0;
+}
+
+span.commentator,
+span.commentator a{
+  text-decoration: none;
+}
+
+
+
+/**** 画像関連 ******************************************/    
+
+a img {
+border: none;
+}
+
+a:hover img{
+border: none;
+}
+
+img.photo{
+  float: right;
+  margin: 20px ;
+}
+
+img.asin{
+  float: left;
+  margin: 5px 10px 15px 0;
+padding-left:15px;
+  border:none;
+height: 120px;
+}
+
+
+.hatena-fotolife img{
+border: none;
+}
+
+.hatena-fotolife img a:link{
+border: none;
+}
+
+.hatena-fotolife img a:visited{
+border: none;
+}
+
+
+.hatena-fotolife img a:hover{
+border: none;
+}
+
+
+.section object,
+.section embed{
+ width:300px;
+ height:240px; }
+
+
+
+/*** はまぞう ******************************/    
+
+
+div.section div.hatena-asin-detail,
+div.section div.amazlet-box {
+	overflow: hidden;
+	margin:30px 20px;
+	padding: 30px;
+	background-color: #ffffff;
+  	border: 1px dotted #abd2df ;
+	font-size: 100%;
+}
+
+div.hatena-asin-detail p {
+	margin: 0;
+	text-decoration: none;
+}
+
+
+.section p.hatena-asin-detail-title{
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+
+img.hatena-asin-detail-image {
+  float: left;
+  clear: left;
+  border: 0;
+  margin: 0 15px 0 15px ;
+  height: 120px;
+}
+
+div.hatena-asin-detail-info{
+  float: left;
+  clear: right;
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+}
+
+
+div.hatena-asin-detail-info ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0 0px 25px;
+}
+
+div.hatena-asin-detail-info li {
+list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+div.hatena-asin-detail-foot {
+  clear: both;
+}
+
+
+
+div.section div.hatena-asin-detail ul {
+	list-style:none;
+	padding: 5px; margin:5px;
+        font-size: 85%;
+}
+
+
+div.hatena-asin-detail p a,
+div.section div.hatena-asin-detail ul a{
+  	text-decoration: none;
+	background: transparent;
+}
+
+div.hatena-asin-detail a img,
+div.section div.amazlet-box div.amazlet-image {
+	float: left;padding:0 18px 0 0;
+}
+
+div.hatena-asin-detail div.hatena-asin-detail-info,
+div.amazlet-box div.amazlet-info {
+	padding: 0; 
+    font-size:90%;
+}
+
+
+/*::footer:::::::::::::::::::::::::::::::::::::::::::::::::::::::*/  
+
+#footer{
+  width: 750px;
+  margin: 2em auto 0 auto;
+  text-align: left;
+}
+
+#footer:after{
+  content:"";
+  display:block;
+  clear: both;
+}
+
+#footer-left{
+  float: left;
+  width: 250px;
+}
+
+#footer-right{
+  float: right;
+  width: 250px;
+}
+
+.hatena-module{
+  margin: 0 0 25px 0;
+  border: none;
+}
+
+.hatena-moduletitle{
+ font-size: 110%;
+  margin: 0 0 5px 0;
+  border: dashed 1px #ffffff ;
+  border-bottom: dashed 1px #fff;
+  text-decoration: none;
+  font-weight:bold;
+  font-family:century gothic;
+}
+
+.hatena-moduletitle a{
+ font-size: 110%;
+  text-decoration: none;
+  font-weight:bold;
+}
+
+.hatena-modulebody{
+  font-size: 115%;
+  border: dashed 1px #ffffff ;
+}
+
+.hatena-modulebody ul{
+  padding: 0 0 0 1.5em;
+  margin: 0;
+  list-style: none;
+}
+
+.hatena-modulebody ul a{
+  text-decoration: none;
+}
+
+
+/*----　サイドバー（テーブル） ----*/  
+
+TABLE.si{
+border-bottom: none;
+border-top: none;
+font-size:100%;
+padding:30px
+}
+
+TD.side{
+line-height:1.45;
+}
+
+
+TD.side a:link{
+color:#0099bb;
+text-decoration:none;
+}
+
+TD.side a:visited{
+color:#0099bb;
+text-decoration:none;
+}
+
+TD.side a:hover{
+color:#cc1111;
+text-decoration:underline;
+}
+
+
+
+.hatena-module-section ul{
+list-style-type: circle; 
+}
+
+.hatena-module-section li{
+padding-right:16px;
+margin-left:18px;
+}
+
+
+.hatena-module-sectioncategory ul{
+list-style-type: circle;
+}
+
+.hatena-module-sectioncategory li{
+float:left;
+padding-right:16px;
+margin-left:18px;
+}
+
+.year{
+font-size:100%;
+margin-left:18px;
+}
+
+.hatena-modulebody a.month{
+font-size:100%;
+}
+
+.delimiter{
+font-size:100%;
+color:#ddd;
+}
+
+
+table.calendar{
+}
+
+td.calendar-day{
+text-align:right;
+color: #dddddd;
+padding: 1px 5px 0 5px;
+}
+
+td.calendar-sunday{
+text-align:right;
+color: #f8b5b5;
+padding: 0 5px 2px 5px;
+}
+
+td.calendar-weekday{
+text-align:right;
+padding: 0 5px 2px 5px;
+}
+
+td.calendar-saturday{
+text-align:right;
+padding: 0 5px 2px 5px;
+}
+
+td.day-today{
+text-align:right;
+padding: 1px 5px 0 5px;
+color: #cc1111;
+}
+
+td.calendar-prev-month{
+align:right;
+padding:0 0 10px 20px;
+}
+
+td.calendar-current-month{
+align:right;
+padding:0 0 10px 20px;
+}
+
+td.calendar-next-month{
+align:right;
+padding:0 0 10px 20px;
+}
+
+
+
+/* :: archive :: */  
+
+
+div#hatena-archive div.calendar a:hover {
+	color: #cc1111;
+           text-decoration:none;
+}
+
+
+
+div#hatena-archive h2 a:hover {
+	color: #cc1111;
+           text-decoration:none;
+}
+
+
+div#hatena-archive ul {
+	list-style: none;
+	margin: 0;
+font-family: century gothic,"ヒラギノ角ゴ Pro",Verdana, Arial, Helvetica, sans-serif;
+}
+
+div#hatena-archive ul a:hover {
+	color: #cc1111;
+           text-decoration:none;
+}
+
+
+div#hatena-archive ul li {
+	list-style: none;
+	margin: 20px 0 10px;
+font-family: century gothic,"ヒラギノ角ゴ Pro",Verdana, Arial, Helvetica, sans-serif;
+}
+
+div#hatena-archive ul li a {
+	text-decoration: none;
+color:#0099bb;
+}
+
+div#hatena-archive ul li a:hover {
+	color: #cc1111;
+           text-decoration:none;
+}
+
+
+div#hatena-archive ul ul li {
+	margin: 0 0 5px;
+	padding: 0;
+	border: none;
+font-family: century gothic,"ヒラギノ角ゴ Pro",Verdana, Arial, Helvetica, sans-serif;
+}
+
+div#hatena-archive .day .body .section ul ul li a{color:#222222;text-decoration:none;}
+div#hatena-archive .day .body .section ul ul li {line-height:1.4;}
+
+div#archive-category div.calendar {
+text-align:left;
+}
+
+
+.archives ul{
+list-style-type:none;
+padding:0;
+font-family: century gothic,"ヒラギノ角ゴ Pro",Verdana, Arial, Helvetica, sans-serif;
+}
+
+.archives ul a{
+color:#222;
+}
+
+.archives li.archive archive-date{
+list-style-type:none;
+padding:0;
+margin:0;
+font-family: century gothic,"ヒラギノ角ゴ Pro",Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+.archives li.archive-section{
+list-style-type:none;
+padding-right:20px;
+margin-bottom:15px;
+font-family: century gothic,"ヒラギノ角ゴ Pro",Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+div#archive-category{
+     margin: 15px auto;
+     text-align :left;
+}
+
+div#archive-calendar-top{
+    text-align :left;
+    margin: 15px auto;
+}
+
+.calendar div#pager-top {
+   margin:20px auto;
+   text-align :right;
+}
+
+div#archive-calendar-bottom{
+    text-align :left;
+    margin: 0px auto 15px;
+}
+
+.calendar div#pager-bottom{
+    margin:10px auto;
+   text-align :right;
+}
+
+div#hatena-archive div.calendar {
+     text-align:left;
+     font-size:90%;
+}
+-->
+</style>
+
+
+<script type="text/javascript">if(/[\x3c\x3e\x22]/.test(location.hash))location.hash=location.hash.replace(/[\x3c\x3e\x22]/g,'');if(/[\x3c\x3e]/.test(document.referrer))location.href=location.href;</script>
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++で「はじめての機械学習」2章, 3章 - STARTATD">
+<meta property="og:image" content="http://www.assoc-amazon.jp/e/ir?t=drunkar-22&amp;l=as2&amp;o=9&amp;a=4274068463">
+<meta property="og:url" content="http://d.hatena.ne.jp/Drunkar/20121026/1351237207">
+<meta property="og:description" content="はじめての機械学習という機械学習の基本をC言語のソース付きで学べる書籍を読んでいるのだけど、しーぷら..">
+<meta property="og:site_name" content="はてなダイアリー">
+
+
+<!--
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<rdf:Description rdf:about="http://d.hatena.ne.jp/Drunkar/20121026/1351237207">
+   <foaf:maker rdf:parseType="Resource">
+     <foaf:holdsAccount>
+       <foaf:OnlineAccount foaf:accountName="Drunkar">
+         <foaf:accountServiceHomepage rdf:resource="http://www.hatena.ne.jp/" />
+       </foaf:OnlineAccount>
+     </foaf:holdsAccount>
+   </foaf:maker>
+</rdf:Description>
+</rdf:RDF>
+-->
+
+<link rel="alternate" media="handheld" type="text/html" href="http://d.hatena.ne.jp/Drunkar/mobile?date=20121026&section=1351237207" />
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+  rdf:about="http://d.hatena.ne.jp/Drunkar/20121026/1351237207"
+  trackback:ping="http://d.hatena.ne.jp/Drunkar/20121026/1351237207"
+  dc:title="[C++]C++で「はじめての機械学習」2章, 3章"
+  dc:identifier="http://d.hatena.ne.jp/Drunkar/20121026/1351237207" />
+</rdf:RDF>
+-->
+
+
+
+<link rel="canonical" href="http://d.hatena.ne.jp/Drunkar/20121026/1351237207">
+
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:site" content="@hatenablog">
+
+
+
+<script type="text/javascript" src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
+<script type="text/javascript">
+Hatena.Star.SiteConfig = {
+  entryNodes: {
+    'div.section': {
+      uri: 'h3 a',
+      title: 'h3',
+      container: 'h3'
+    }
+  }
+};
+Hatena.Author  = new Hatena.User('Drunkar');
+Hatena.DiaryName  = new Hatena.User('Drunkar');
+
+</script>
+
+
+
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/twitter_entry_icon.js?624193d7525aa17863f03b145a0662aa8bfba0bb"></script>
+
+
+
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/adcolor.js?77ced3f25ebed272e6f048a0618aee4a0dfd6fb7"></script>
+
+
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/quick_pager.js?73e8efd3adc8709460b4c8ff9af5a3d4c97eba4e"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/diary_utils.js?adec0f610f5ae48699282e70ca53eac3b657feda"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/max_width_fotolife.js?2d5c0a4915fdb8930122a506dbf154b9db674a3b"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/jquery-1.4.2.min.js?1c983e39f64600478e5a829cf7a7a61f68527715"></script>
+<script type="text/javascript">
+  jQuery.noConflict()(function($){
+    var j$ = jQuery;
+  });
+</script>
+
+
+
+
+</head>
+<body>
+
+  <script>Hatena.Diary.UaTrakingID = 'UA-46127385-3';</script>
+ 
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-58NPH6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-58NPH6');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<div id="simple-header">
+
+  <a href="http://www.hatena.ne.jp/"><img src="/images/hatena-simple_wh.gif" alt="Hatena::" title="Hatena::" id="logo-hatena" width="65" height="17"></a><a href="/"><img src="/images/diary-simple_wh.gif" alt="ブログ(Diary)" title="Diary" id="logo-diary" width="43" height="17"></a>
+  <form method="get" action="/search" class="search-form">
+    <input type="text" class="search-word" name="word" value=""><input name="name" value="Drunkar" type="hidden"><input type="submit" name="diary" value="日記" class="search-button"><input type="submit" name="submit" value="検索" class="search-button">
+  </form>
+  <ul class="menu">
+    <li><a href="/Drunkar/">ブログトップ</a></li>
+    <li><a href="/Drunkar/archive">記事一覧</a></li>
+
+
+
+    <li><a href="https://www.hatena.ne.jp/login?backurl=http%3A%2F%2Fd.hatena.ne.jp%2FDrunkar%2F20121026%2F1351237207&add_timestamp=1">ログイン</a></li>
+    <li><a href="https://www.hatena.ne.jp/register?location=http%3A%2F%2Fd.hatena.ne.jp%3Fvia%3D200186&amp;via=200186">無料ブログ開設</a></li>
+
+  </ul>
+</div>
+
+
+
+<h1>STARTATD <a href="http://a.hatena.ne.jp/append?http://d.hatena.ne.jp/Drunkar/"><img src="http://d.hatena.ne.jp/images/a_append_wh.gif" title="このページをアンテナに追加" alt="このページをアンテナに追加" border="0" width="16" height="12" class="icon"></a> <a href="http://d.hatena.ne.jp/Drunkar/rss"><img src="http://d.hatena.ne.jp/images/rss_wh.gif" alt="RSSフィード" title="RSSフィード" border="0" width="24" height="12" class="icon"></a> <a id="twitter-header-icon" href="http://twitter.com/Drunkar"><img src="/images/icon-twitter.png" alt="Twitter" title="このページ作者のTwitterへ" border="0" width="16" height="16" class="icon"></a></h1>
+<div class="hatena-body">
+<h1><a href="http://d.hatena.ne.jp/Drunkar/"><img alt="STARTATD" src="http://d.hatena.ne.jp/images/diary/D/Drunkar/titleimg.jpg"></a></h1>
+<div class="hatena-body">
+
+<td>
+<div class="sidebar">
+<br>
+
+<table border="0">
+<tr>
+<td colspan="3" valign="top" class="side">
+<div class="hatena-module hatena-module-section">
+<div class="hatena-moduletitle"><a href="/Drunkar/archive">entry</a></div>
+<div class="hatena-modulebody">
+<ul class="hatena-section">
+<li><a href="http://d.hatena.ne.jp/Drunkar/20121124/1353756903">はてなダイアリーからwordpressに移行しました</a></li>
+<li><a href="http://d.hatena.ne.jp/Drunkar/20121123/1353618640">*</a></li>
+<li><a href="http://d.hatena.ne.jp/Drunkar/20121111/1352663961">Aldo van Eyckについて調べたまとめ</a></li>
+<li><a href="http://d.hatena.ne.jp/Drunkar/20121101/1351788439">C++で「はじめての機械学習」5章</a></li>
+<li><a href="http://d.hatena.ne.jp/Drunkar/20121028/1351430260">C++で「はじめての機械学習」6章</a></li>
+<li><a href="http://d.hatena.ne.jp/Drunkar/20121027/1351348151">C++で「はじめての機械学習」4章</a></li>
+<li><a href="http://d.hatena.ne.jp/Drunkar/20121026/1351237207">C++で「はじめての機械学習」2章, 3章</a></li>
+<li><a href="http://d.hatena.ne.jp/Drunkar/20121019/1350653190">macportsでgmt4をインストール</a></li>
+<li><a href="http://d.hatena.ne.jp/Drunkar/20121010/1349898121">マニュアルは書いた本人にとって本来の意味がある</a></li>
+<li><a href="http://d.hatena.ne.jp/Drunkar/20120926/1348670843">AC電力コントローラ</a></li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+
+<tr><td>　</td></tr>
+
+<tr>
+<td colspan="3" valign="top" class="side">
+<div class="hatena-module hatena-module-sectioncategory">
+<div class="hatena-moduletitle">category</div>
+<div class="hatena-modulebody">
+<ul class="hatena-sectioncategory">
+<li><a href="/Drunkar/searchdiary?word=%2A%5Barchitecture%5D">architecture</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5BC%2B%2B%5D">C++</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5Botaku%5D">otaku</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5Bothers%5D">others</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5Bemacs%5D">emacs</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5Billust%5D">illust</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5BopenGL%5D">openGL</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5BUI%5D">UI</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5BUX%5D">UX</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5BopenCV%5D">openCV</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5B%C5%C5%BB%D2%B9%A9%BA%EE%5D">電子工作</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5BR%5D">R</a></li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+
+<tr><td>　</td></tr>
+<tr><td>　</td></tr>
+
+<tr>
+<td colspan="3" valign="top" class="side">
+<div class="hatena-module hatena-module-calendar">
+<div class="hatena-moduletitle">archive</div>
+<div class="hatena-modulebody">
+<span class="year">2011</span> <span class="delimiter">|</span> <a href="/Drunkar/201108" rel="nofollow" class="month">08</a> <span class="delimiter">|</span> <a href="/Drunkar/201111" rel="nofollow" class="month">11</a> <span class="delimiter">|</span> <a href="/Drunkar/201112" rel="nofollow" class="month">12</a> <span class="delimiter">|</span> <br>
+<span class="year">2012</span> <span class="delimiter">|</span> <a href="/Drunkar/201201" rel="nofollow" class="month">01</a> <span class="delimiter">|</span> <a href="/Drunkar/201202" rel="nofollow" class="month">02</a> <span class="delimiter">|</span> <a href="/Drunkar/201203" rel="nofollow" class="month">03</a> <span class="delimiter">|</span> <a href="/Drunkar/201204" rel="nofollow" class="month">04</a> <span class="delimiter">|</span> <a href="/Drunkar/201205" rel="nofollow" class="month">05</a> <span class="delimiter">|</span> <a href="/Drunkar/201206" rel="nofollow" class="month">06</a> <span class="delimiter">|</span> <a href="/Drunkar/201207" rel="nofollow" class="month">07</a> <span class="delimiter">|</span> <a href="/Drunkar/201208" rel="nofollow" class="month">08</a> <span class="delimiter">|</span> <a href="/Drunkar/201209" rel="nofollow" class="month">09</a> <span class="delimiter">|</span> <a href="/Drunkar/201210" rel="nofollow" class="month">10</a> <span class="delimiter">|</span> <a href="/Drunkar/201211" rel="nofollow" class="month">11</a> <span class="delimiter">|</span> <br>
+
+</div>
+</div>
+</td>
+</tr>
+
+<tr><td>　</td></tr>
+
+<tr>
+<td width="350" valign="top" class="side">
+<div class="hatena-module hatena-module-profile">
+  <div class="hatena-moduletitle"> </div>
+  <div class="hatena-modulebody">
+    <div class="hatena-profile">
+      <p class="hatena-profile-image"><a href="/Drunkar/about"><img src="http://www.st-hatena.com/users/Dr/Drunkar/profile.gif" alt="Drunkar" /></a></p>
+      <p class="hatena-profile-id"><a href="/Drunkar/about">Drunkar</a></p>
+      <p class="hatena-profile-body">anime/manga/art/illust/architecture/c++/Python/Javascript</p>
+    </div>
+  </div>
+</div>
+</td>
+<td width="330" valign="top" class="side"><div class="hatena-module hatena-module-calendar2">
+<div class="hatena-moduletitle"> </div>
+<div class="hatena-modulebody">
+<table class="calendar" summary="calendar">
+<tr>
+<td class="calendar-prev-month" colspan="2"><a href="/Drunkar/201209" title="201209" rel="nofollow">&lt;&lt;</a></td>
+<td class="calendar-current-month" colspan="3"><a href="/Drunkar/archive/201210" rel="nofollow">2012/10</a></td>
+<td class="calendar-next-month" colspan="2"><a href="/Drunkar/201211" title="201211" rel="nofollow">&gt;&gt;</a></td>
+</tr>
+<tr>
+<td class="calendar-sunday">日</td>
+<td class="calendar-weekday">月</td>
+<td class="calendar-weekday">火</td>
+<td class="calendar-weekday">水</td>
+<td class="calendar-weekday">木</td>
+<td class="calendar-weekday">金</td>
+<td class="calendar-saturday">土</td>
+</tr>
+	<tr>
+		<td class="calendar-day"></td>
+		<td class="calendar-day">1</td>
+		<td class="calendar-day">2</td>
+		<td class="calendar-day">3</td>
+		<td class="calendar-day">4</td>
+		<td class="calendar-day">5</td>
+		<td class="calendar-day">6</td>
+	</tr>
+	<tr>
+		<td class="calendar-day">7</td>
+		<td class="calendar-day">8</td>
+		<td class="calendar-day">9</td>
+		<td class="calendar-day"><a href="/Drunkar/20121010" title="10">10</a></td>
+		<td class="calendar-day">11</td>
+		<td class="calendar-day">12</td>
+		<td class="calendar-day">13</td>
+	</tr>
+	<tr>
+		<td class="calendar-day">14</td>
+		<td class="calendar-day">15</td>
+		<td class="calendar-day">16</td>
+		<td class="calendar-day">17</td>
+		<td class="calendar-day">18</td>
+		<td class="calendar-day"><a href="/Drunkar/20121019" title="19">19</a></td>
+		<td class="calendar-day">20</td>
+	</tr>
+	<tr>
+		<td class="calendar-day">21</td>
+		<td class="calendar-day">22</td>
+		<td class="calendar-day">23</td>
+		<td class="calendar-day">24</td>
+		<td class="calendar-day">25</td>
+		<td class="calendar-day day-selected"><a href="/Drunkar/20121026" title="26">26</a></td>
+		<td class="calendar-day"><a href="/Drunkar/20121027" title="27">27</a></td>
+	</tr>
+	<tr>
+		<td class="calendar-day"><a href="/Drunkar/20121028" title="28">28</a></td>
+		<td class="calendar-day">29</td>
+		<td class="calendar-day">30</td>
+		<td class="calendar-day">31</td>
+		<td class="calendar-day"></td>
+		<td class="calendar-day"></td>
+		<td class="calendar-day"></td>
+	</tr>
+</table>
+	</div>
+</div>
+</td>
+<td width="200" align="center" valign="top" class="side">
+
+<!-- -->
+
+<div class="hatena-moduletitle"></div>
+<div class="hatena-modulebody">
+<span class="hatena-counter">31134</span></div>
+</td>
+</tr>
+
+</table>
+</td></table>
+<br>
+
+<div class="main">
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="calendar" id="pager-top">
+  <a rel="prev" href="/Drunkar/20121019/1350653190" class="prev">&lt;[R]macportsでgmt4をインストー...</a>&nbsp;<span class="delimiter">|</span>&nbsp;<a rel="next" href="/Drunkar/20121027/1351348151" class="next">[C++]C++で「はじめての機械学習...&gt;</a><span id="edit-in-place-add"></span>
+</div>
+<div id="days">
+
+<div class="day day-br">
+<h2><a href="http://d.hatena.ne.jp/Drunkar/20121026" rel="nofollow"><span class="date">October 26 2012</span></a></h2>
+
+<div class="body">
+
+<!-- rakuten_ad_target_begin -->
+<!-- google_ad_section_start -->
+
+		<div class="section">
+			<h3><a href="/Drunkar/20121026/1351237207" name="1351237207"><span class="sanchor">■</span></a>[<a href="/Drunkar/searchdiary?word=%2A%5BC%2B%2B%5D" class="sectioncategory">C++</a>]<a class="keyword" href="http://d.hatena.ne.jp/keyword/C%2B%2B">C++</a>で「はじめての<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B5%A1%B3%A3%B3%D8%BD%AC">機械学習</a>」2章, 3章</h3>
+<p><a href="http://www.amazon.co.jp/gp/product/4274068463/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4274068463&linkCode=as2&tag=drunkar-22">はじめての機械学習</a><img width="1" alt="" src="http://www.assoc-amazon.jp/e/ir?t=drunkar-22&l=as2&o=9&a=4274068463" style="border:none !important; margin:0px !important;" height="1" border="0">という<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B5%A1%B3%A3%B3%D8%BD%AC">機械学習</a>の基本を<a class="keyword" href="http://d.hatena.ne.jp/keyword/C%B8%C0%B8%EC">C言語</a>のソース付きで学べる書籍を読んでいるのだけど、しーぷらぷらーの僕としてはむず痒さを感じることもあるので、<a class="keyword" href="http://d.hatena.ne.jp/keyword/C%2B%2B">C++</a>で実装をしてみることにする。<br></p>
+			<h4>2章 最小<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C6%F3%BE%E8">二乗</a>法</h4>
+<blockquote>
+<pre class="syntax-highlight">
+<span class="synComment">/**</span>
+<span class="synComment">  最小二乗法による計算式の決定</span>
+<span class="synComment">  y = a0 + a1*x　の a0, a1を出力</span>
+<span class="synComment"> **/</span>
+
+<span class="synPreProc">#include </span><span class="synConstant">&lt;iostream&gt;</span>
+<span class="synStatement">using</span> <span class="synType">namespace</span> std;
+
+<span class="synType">int</span> main()
+{
+    <span class="synType">double</span> xi, yi;                                        <span class="synComment">// 入力データ</span>
+    <span class="synType">double</span> sxi=<span class="synConstant">0</span>, syi=<span class="synConstant">0</span>, sxiyi=<span class="synConstant">0</span>, sxi2=<span class="synConstant">0</span>; <span class="synComment">// 各項の計算結果</span>
+    <span class="synType">double</span> a0, a1;                                      <span class="synComment">// 係数</span>
+    <span class="synType">int</span>    n = <span class="synConstant">0</span>;                                           <span class="synComment">// データの個数</span>
+
+    <span class="synComment">// データの入力</span>
+    cout &lt;&lt; <span class="synConstant">&quot;データの組を入力：xi yi&quot;</span> &lt;&lt; endl
+         &lt;&lt; <span class="synConstant">&quot;(ctrl+d で入力終了)&quot;</span> &lt;&lt; endl;
+    <span class="synStatement">while</span> (<span class="synConstant">true</span>){
+        cin &gt;&gt; xi &gt;&gt; yi;
+        <span class="synStatement">if</span>(cin.eof()) <span class="synStatement">break</span>;
+        <span class="synStatement">if</span>(cin.good()==<span class="synConstant">false</span>){
+            cout &lt;&lt; <span class="synConstant">&quot;無効なデータです&quot;</span> &lt;&lt; endl;
+            cin.clear();
+            cin.ignore(<span class="synConstant">256</span>, <span class="synSpecial">'\n'</span>);
+        } <span class="synStatement">else</span> {
+            sxi   += xi;
+            syi   += yi;
+            sxiyi += xi*yi;
+            sxi2  += xi*xi;
+            ++n;
+        }
+    }
+
+    <span class="synStatement">if</span>(n&lt;<span class="synConstant">2</span>){
+        cout &lt;&lt; <span class="synConstant">&quot;データは2組以上必要です&quot;</span> &lt;&lt; endl;
+        <span class="synStatement">return</span> -<span class="synConstant">1</span>;
+    }
+
+    <span class="synComment">// 係数の計算</span>
+    a0 = (sxi2*syi-sxiyi*sxi) / (n*sxi2-sxi*sxi);
+    a1 = (n*sxiyi-sxi*syi) / (n*sxi2-sxi*sxi);
+
+    cout &lt;&lt; <span class="synConstant">&quot;y = &quot;</span> &lt;&lt; a1 &lt;&lt; <span class="synConstant">&quot;x + &quot;</span> &lt;&lt; a0 &lt;&lt; endl;
+
+    <span class="synStatement">return</span> <span class="synConstant">0</span>;
+}
+</pre>
+
+</blockquote>
+			<h4>3章 <a class="keyword" href="http://d.hatena.ne.jp/keyword/n%2Dgram">n-gram</a></h4>
+			<h5><a class="keyword" href="http://d.hatena.ne.jp/keyword/utf%2D8">utf-8</a>テキストから<a class="keyword" href="http://d.hatena.ne.jp/keyword/n%2Dgram">n-gram</a>を生成</h5>
+<blockquote>
+<pre class="syntax-highlight">
+<span class="synComment">/**</span>
+<span class="synComment">  ngramを作成するプログラム(utf-8)</span>
+<span class="synComment">  入力は標準入力から与え、出力は標準出力に出力します</span>
+<span class="synComment">  使い方：</span>
+<span class="synComment">    $./ngram (nの値) &lt; (入力ファイル名) &gt; (出力ファイル名)</span>
+<span class="synComment">  入力ファイルには、テキストファイルを指定します</span>
+<span class="synComment">  出力ファイルには、ngramを出力します</span>
+<span class="synComment"> **/</span>
+
+<span class="synPreProc">#include </span><span class="synConstant">&lt;iostream&gt;</span>
+<span class="synPreProc">#include </span><span class="synConstant">&lt;string&gt;</span>
+<span class="synPreProc">#include </span><span class="synConstant">&lt;vector&gt;</span>
+<span class="synPreProc">#include </span><span class="synConstant">&lt;cstdlib&gt;</span>
+<span class="synStatement">using</span> <span class="synType">namespace</span> std;
+
+<span class="synComment">/**utf-8のstringを一文字ずつ分割する**/</span>
+vector&lt;string&gt; split_utf8(<span class="synType">const</span> string&amp; str) {
+    vector&lt;string&gt; result;
+    string         tmp;
+    <span class="synType">bool</span>           first = <span class="synConstant">true</span>;
+
+    <span class="synStatement">for</span> (<span class="synType">size_t</span> i=<span class="synConstant">0</span>; i&lt;=str.size(); ++i) {
+        <span class="synComment">// 各バイトがutf-8の先頭かどうかをチェック</span>
+        <span class="synStatement">if</span> (first ||
+                (i != str.size() &amp;&amp; (str.at(i) &amp; <span class="synConstant">0xC0</span>) == <span class="synConstant">0x80</span>)) {
+            tmp += str.at(i);
+            first = <span class="synConstant">false</span>;
+            <span class="synStatement">continue</span>;
+        }
+        result.push_back(tmp);
+        tmp.clear();
+        <span class="synStatement">if</span> (i == str.size()) <span class="synStatement">break</span>;
+        tmp += str.at(i);
+    }
+    <span class="synStatement">return</span> result;
+}
+
+<span class="synComment">/**ngramの出力**/</span>
+<span class="synType">void</span> printNgram(<span class="synType">int</span> n, <span class="synType">const</span> vector&lt;string&gt; &amp;data)
+{
+    <span class="synComment">// 各文字についてその(n-1)文字後までbufferに追加</span>
+    <span class="synStatement">for</span>(<span class="synType">int</span> i=<span class="synConstant">0</span>; i&lt;data.size()-n; ++i){
+        string buffer;
+        <span class="synStatement">for</span>(<span class="synType">int</span> j=i; j&lt;i+n; ++j){
+            buffer += data[j];
+        }
+        cout &lt;&lt; buffer &lt;&lt; endl;
+    }
+    cout &lt;&lt; endl;
+}
+
+<span class="synType">int</span> main(<span class="synType">int</span> argc, <span class="synType">char</span> *argv[])
+{
+    <span class="synType">int</span>            n;       <span class="synComment">// ngramの長さ</span>
+    string         line;    <span class="synComment">// 行を格納</span>
+    vector&lt;string&gt; data;    <span class="synComment">// 全文章を一文字ずつ格納</span>
+
+    <span class="synComment">// 引数のチェック</span>
+    <span class="synStatement">if</span>(argc != <span class="synConstant">2</span>){
+        cerr &lt;&lt; <span class="synConstant">&quot;使い方 $./ngram (nの値) &quot;</span>
+            &lt;&lt; <span class="synConstant">&quot;&lt; (入力ファイル名) &gt; (出力ファイル名)&quot;</span> &lt;&lt; endl;
+        <span class="synStatement">return</span> -<span class="synConstant">1</span>;
+    }
+    <span class="synStatement">if</span>((n=atoi(argv[<span class="synConstant">1</span>])) &lt; <span class="synConstant">1</span>){
+        cerr &lt;&lt; <span class="synConstant">&quot;nの値が不適切です&quot;</span> &lt;&lt; endl;
+        <span class="synStatement">return</span> -<span class="synConstant">1</span>;
+    }
+
+    <span class="synComment">// 一行ずつ取り出して各文字に分割</span>
+    <span class="synStatement">while</span>(getline(cin,  line)){
+        vector&lt;string&gt; buffer = split_utf8(line);
+        <span class="synStatement">for</span>(<span class="synType">int</span> i=<span class="synConstant">0</span>; i&lt;buffer.size(); ++i){
+            data.push_back(buffer[i]);
+        }
+    }
+
+    <span class="synComment">// ngrmを生成</span>
+    printNgram(n,  data);
+
+    <span class="synStatement">return</span> <span class="synConstant">0</span>;
+}
+
+</pre>
+
+</blockquote>
+			<h5><a class="keyword" href="http://d.hatena.ne.jp/keyword/n%2Dgram">n-gram</a>を集計</h5>
+<blockquote>
+<pre class="syntax-highlight">
+<span class="synComment">/**</span>
+<span class="synComment">  ngramの頻度分布を作成します</span>
+<span class="synComment">  標準入力から与え、出力は標準出力に出力します</span>
+<span class="synComment">  使い方：</span>
+<span class="synComment">    $./ranking &lt; (入力ファイル名) &gt; (出力ファイル名)</span>
+<span class="synComment">  入力ファイルには、ngramのファイルを指定します</span>
+<span class="synComment">  出力ファイルには、頻度分布を出力します</span>
+<span class="synComment"> **/</span>
+
+<span class="synPreProc">#include </span><span class="synConstant">&lt;iostream&gt;</span>
+<span class="synPreProc">#include </span><span class="synConstant">&lt;cstdlib&gt;</span>
+<span class="synPreProc">#include </span><span class="synConstant">&lt;sstream&gt;</span>
+<span class="synPreProc">#include </span><span class="synConstant">&lt;string&gt;</span>
+<span class="synPreProc">#include </span><span class="synConstant">&lt;vector&gt;</span>
+<span class="synPreProc">#include </span><span class="synConstant">&lt;map&gt;</span>
+<span class="synPreProc">#include </span><span class="synConstant">&lt;algorithm&gt;</span>
+<span class="synStatement">using</span> <span class="synType">namespace</span> std;
+
+string intToString(<span class="synType">int</span> num)
+{
+    stringstream ss;
+    ss &lt;&lt; num;
+    <span class="synStatement">return</span> ss.str();
+}
+
+<span class="synComment">/**重複するngramを数えてresultに書き込む**/</span>
+map&lt;<span class="synType">int</span>, string&gt; countNgrams(<span class="synType">const</span> vector&lt;string&gt; &amp;ngrams)
+{
+    map&lt;<span class="synType">int</span>, string&gt; result;                <span class="synComment">// &lt;重複数, ngram&gt;</span>
+    string           lastNgram = ngrams[<span class="synConstant">0</span>];
+    <span class="synType">int</span>              numDuplicated = <span class="synConstant">1</span>;
+
+    <span class="synComment">// 辞書順にngramがソートされているので、</span>
+    <span class="synComment">// 一つ前のngramと同じなら重複数をインクリメントし、</span>
+    <span class="synComment">// 違えば一つ前のngramをresultに追加する</span>
+    <span class="synStatement">for</span>(<span class="synType">int</span> i=<span class="synConstant">1</span>; i&lt;ngrams.size(); ++i){
+        <span class="synStatement">if</span>(ngrams[i] == lastNgram) ++numDuplicated;
+        <span class="synStatement">else</span> {
+            <span class="synComment">// write result</span>
+            result.insert( map&lt;<span class="synType">int</span>, string&gt;::value_type(numDuplicated,  lastNgram) );
+            lastNgram = ngrams[i];
+            numDuplicated = <span class="synConstant">1</span>;
+        }
+    }
+    <span class="synComment">// write result(the last)</span>
+    result.insert( map&lt;<span class="synType">int</span>, string&gt;::value_type(numDuplicated,  lastNgram) );
+
+    <span class="synStatement">return</span> result;
+}
+
+<span class="synType">int</span> main()
+{
+    vector&lt;string&gt;   ngrams;
+    map&lt;<span class="synType">int</span>, string&gt; result; <span class="synComment">// &lt;重複数, ngram&gt;</span>
+    string           line;
+
+    <span class="synComment">// read ngram</span>
+    <span class="synStatement">while</span>(getline(cin, line)) ngrams.push_back(line);
+
+    sort(ngrams.begin(), ngrams.end());
+    result = countNgrams(ngrams);
+
+    <span class="synComment">// 降順で出力</span>
+    map&lt;<span class="synType">int</span>, string&gt;::iterator it = result.end();
+    <span class="synStatement">while</span>(it != result.begin()){
+        --it;
+        cout &lt;&lt; (*it).first &lt;&lt; <span class="synConstant">&quot;</span><span class="synSpecial">\t</span><span class="synConstant">&quot;</span> &lt;&lt; (*it).second &lt;&lt; endl;
+    }
+
+    <span class="synStatement">return</span> <span class="synConstant">0</span>;
+}
+</pre>
+
+</blockquote><br>
+<p>ngramとかは結構おもしろい<br>続きはまた今度<br><br>※10月27日追記：<a class="keyword" href="http://d.hatena.ne.jp/keyword/n%2Dgram">n-gram</a>の集計はmapだと回数が同じやつが許されないのでmultimapでやるべきでした。multimapバージョンは↓</p>
+<blockquote>
+<pre class="syntax-highlight">
+<span class="synComment">/**</span>
+<span class="synComment">  ngramの頻度分布を作成します</span>
+<span class="synComment">  標準入力から与え、出力は標準出力に出力します</span>
+<span class="synComment">  使い方：</span>
+<span class="synComment">    $./ranking &lt; (入力ファイル名) &gt; (出力ファイル名)</span>
+<span class="synComment">  入力ファイルには、ngramのファイルを指定します</span>
+<span class="synComment">  出力ファイルには、頻度分布を出力します</span>
+<span class="synComment"> **/</span>
+
+<span class="synPreProc">#include </span><span class="synConstant">&lt;iostream&gt;</span>
+<span class="synPreProc">#include </span><span class="synConstant">&lt;cstdlib&gt;</span>
+<span class="synPreProc">#include </span><span class="synConstant">&lt;sstream&gt;</span>
+<span class="synPreProc">#include </span><span class="synConstant">&lt;string&gt;</span>
+<span class="synPreProc">#include </span><span class="synConstant">&lt;vector&gt;</span>
+<span class="synPreProc">#include </span><span class="synConstant">&lt;map&gt;</span>
+<span class="synPreProc">#include </span><span class="synConstant">&lt;algorithm&gt;</span>
+<span class="synStatement">using</span> <span class="synType">namespace</span> std;
+
+string intToString(<span class="synType">int</span> num)
+{
+    stringstream ss;
+    ss &lt;&lt; num;
+    <span class="synStatement">return</span> ss.str();
+}
+
+<span class="synComment">/**重複するngramを数えてresultに書き込む**/</span>
+multimap&lt;<span class="synType">int</span>, string&gt; countNgrams(<span class="synType">const</span> vector&lt;string&gt; &amp;ngrams)
+{
+    multimap&lt;<span class="synType">int</span>, string&gt; result;                <span class="synComment">// &lt;重複数, ngram&gt;</span>
+    string           lastNgram = ngrams[<span class="synConstant">0</span>];
+    <span class="synType">int</span>              numDuplicated = <span class="synConstant">1</span>;
+
+    <span class="synComment">// 辞書順にngramがソートされているので、</span>
+    <span class="synComment">// 一つ前のngramと同じなら重複数をインクリメントし、</span>
+    <span class="synComment">// 違えば一つ前のngramをresultに追加する</span>
+    <span class="synStatement">for</span>(<span class="synType">int</span> i=<span class="synConstant">1</span>; i&lt;ngrams.size(); ++i){
+        <span class="synStatement">if</span>(ngrams[i] == lastNgram) ++numDuplicated;
+        <span class="synStatement">else</span> {
+            <span class="synComment">// write result</span>
+            result.insert( map&lt;<span class="synType">int</span>, string&gt;::value_type(numDuplicated,  lastNgram) );
+            lastNgram = ngrams[i];
+            numDuplicated = <span class="synConstant">1</span>;
+        }
+    }
+    <span class="synComment">// write result(the last)</span>
+    result.insert( map&lt;<span class="synType">int</span>, string&gt;::value_type(numDuplicated,  lastNgram) );
+
+    <span class="synStatement">return</span> result;
+}
+
+<span class="synType">int</span> main()
+{
+    vector&lt;string&gt;   ngrams;
+    multimap&lt;<span class="synType">int</span>, string&gt; result; <span class="synComment">// &lt;重複数, ngram&gt;</span>
+    string           line;
+
+    <span class="synComment">// read ngram</span>
+    <span class="synStatement">while</span>(getline(cin, line)) ngrams.push_back(line);
+
+    sort(ngrams.begin(), ngrams.end());
+    result = countNgrams(ngrams);
+
+    <span class="synComment">// 降順で出力</span>
+    map&lt;<span class="synType">int</span>, string&gt;::iterator it = result.end();
+    <span class="synStatement">while</span>(it != result.begin()){
+        --it;
+        cout &lt;&lt; (*it).first &lt;&lt; <span class="synConstant">&quot;</span><span class="synSpecial">\t</span><span class="synConstant">&quot;</span> &lt;&lt; (*it).second &lt;&lt; endl;
+    }
+
+    <span class="synStatement">return</span> <span class="synConstant">0</span>;
+}
+</pre>
+
+</blockquote>
+			<p class="share-button sectionfooter"><a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/Drunkar/20121026/1351237207" class="hatena-bookmark-button" data-hatena-bookmark-title="C++で「はじめての機械学習」2章, 3章" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script><a href="http://twitter.com/share" class="twitter-share-button" data-lang="ja" data-count="none" data-url="http://d.hatena.ne.jp/Drunkar/20121026/1351237207" data-text="C++で「はじめての機械学習」2章, 3章 - STARTATD (id:Drunkar / @Drunkar)">ツイートする</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fd.hatena.ne.jp%2FDrunkar%2F20121026%2F1351237207&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe></p>
+
+			<p class="sectionfooter"><a href="/Drunkar/20121026/1351237207">Permalink</a> | <a href="/Drunkar/20121026/1351237207#c">コメント(0)</a> | <a href="/Drunkar/20121026/1351237207#tb">トラックバック(2)</a> | 16:40 <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/Drunkar/20121026/1351237207" class="bookmark-icon"><img src="http://d.hatena.ne.jp/images/b_entry_wh.gif" border="0" title="C++で「はじめての機械学習」2章, 3章を含むブックマーク" alt="C++で「はじめての機械学習」2章, 3章を含むブックマーク" width="16" height="12" class="icon"></a></p>
+
+		</div>
+<div id="google_afc_user" class="section">
+  <script type="text/javascript"><!--
+     hatena_dfp_tag       = '/4374287/diary_user';
+     hatena_dfp_size      = [[300, 250], [336, 280]];
+     hatena_dfp_target_id = 'google_afc_user';
+  --></script>
+  <script type="text/javascript" src="http://ad.hatena.ne.jp/js/hatena_dfp-compiled.js"></script>
+</div>
+
+<!-- google_ad_section_end -->
+<!-- rakuten_ad_target_end -->
+
+
+</div>
+
+<form id="comment-form" method="post" action="/Drunkar/comment#c" class="comment">
+<input type="hidden" name="mode" value="enter">
+<input type="hidden" name="rkm" value="">
+<input type="hidden" name="date" value="2012-10-26">
+<div class="comment">
+  <div class="caption"><a name="c">コメントを書く</a></div>
+  <div class="commentshort">
+    
+    
+
+    <a name="error-message"></a>
+    <p class="message" style="display:none"></p>
+
+    
+
+    
+            
+    <p class="commentform">
+      <span class="commentator">
+        <span class="usermailconfirm"><input name="usermail" size="1" value=""><input name="userurl" size="1" value="">スパム対策のためのダミーです。もし見えても何も入力しないでください<br></span>
+        <span class="username">
+        <img src="http://www.hatena.ne.jp/images/guest_icon.gif" class="hatena-id-icon" alt="ゲスト" title="ゲスト" height="16" width="16">
+        <input type="hidden" name="section" value="1351237207">
+        
+          <input id="comment-username" name="username" size="15">
+        
+        </span>
+        
+          <span class="usermail"><img src="/images/icon-usermail.gif" style="vertical-align:middle;margin-right:3px;"><input id="comment-usermail" name="useremail" size="15" value=""></span>
+          <span class="userurl"><img src="/images/icon-userurl.gif" style="vertical-align:middle;margin-right:3px;"><input id="comment-userurl" name="useruri" size="15" value=""></span>
+        
+      </span>
+<br>
+      <!-- NOT_VERIFIED_COMMENT_AUTH -->
+      <textarea id="comment-textarea" name="body" value="" cols="60" rows="3"></textarea><br>
+      
+          <div class="captcha">
+            <img src="/Drunkar/captcha?1401252406" class="captcha-image">
+            <span class="captcha-message">画像認証</span><br />
+            <input type="text" name="captcha_code" size="10" class="captcha-string" id="comment-captcha">
+          </div>
+      
+      <span class="comment-submit"><input type="submit" id="comment-form-button" value="投稿"></span>
+    </p>
+
+      <script type="text/javascript" src="/js/diary_comment_edit_form.js"></script>
+    
+
+  </div>
+</div>
+
+</form>
+
+
+
+
+
+  
+  <div class="refererlist">
+    <div class="caption">
+      <a name="tb">トラックバック</a> - http://d.hatena.ne.jp/Drunkar/20121026/1351237207
+    </div>
+    
+      
+      <ul>
+        
+          <li>
+            <a href="http://d.hatena.ne.jp/Drunkar/20121027/1351348151" title=" C++で「はじめての機械学習」4章 昨日の記事の続きです。４章は判断木の構成で、データの属するカテゴリと各属性に対する判別結果を入力データとして与え、どの判断を用いて分類すればよいかの選択を支援するプログラムと、後半ではそれを確率探索しています。後半はまあい" rel="nofollow">STARTATD - C++で「はじめての機械学習」4章</a></li>
+        
+          <li>
+            <a href="http://d.hatena.ne.jp/Drunkar/20121028/1351430260" title=" C++で「はじめての機械学習」6章 与えられたデータセットと評価値に近づくように重みとしきい値をバックプロパゲーションで調整する３層パーセプトロン2章と3章4章 /** * バックプロパゲーションによるニューラルネットの学習 * 使い方 * $./backPropagation (変数の数) (中" rel="nofollow">STARTATD - C++で「はじめての機械学習」6章</a></li>
+        
+      </ul>
+    
+  </div>
+  
+  
+
+
+
+
+
+    <div class="refererlist">
+      <div class="caption">リンク元</div>
+      <ul>
+          <li>1 <a href="http://isearch.babylon.com/?q=%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%95%E3%83%A9%E3%83%83%E3%83%88%E3%80%80%E3%80%80%E5%BB%BA%E7%AF%89&amp;s=web&amp;as=0&amp;babsrc=NT_iclro" rel="nofollow">http://isearch.babylon.com/?q=スーパーフラット　　建築&amp;s=web&amp;as=0&amp;babsrc=NT_iclro</a></li>
+          <li>1 <a href="http://it-ch.net/t/49" rel="nofollow">http://it-ch.net/t/49</a></li>
+          <li>1 <a href="http://it-ch.net/t/49?utm_source=dlvr.it&amp;utm_medium=twitter" rel="nofollow">http://it-ch.net/t/49?utm_source=dlvr.it&amp;utm_medium=twitter</a></li>
+          <li>1 <a href="http://k.hatena.ne.jp/keywordblog/C++" rel="nofollow">http://k.hatena.ne.jp/keywordblog/C++</a></li>
+          <li>1 <a href="http://reader.livedoor.com/reader/" rel="nofollow">http://reader.livedoor.com/reader/</a></li>
+          <li>1 <a href="http://search.yahoo.co.jp/search?fr=slv1-ybb&amp;p=GLUT%20Cygwin%20%E8%BF%BD%E5%8A%A0&amp;ei=UTF-8" rel="nofollow">http://search.yahoo.co.jp/search?fr=slv1-ybb&amp;p=GLUT Cygwin 追加&amp;ei=UTF-8</a></li>
+          <li>1 <a href="http://search.yahoo.co.jp/search?p=%E9%A9%9A%E3%81%8F%E3%81%BB%E3%81%A9%E3%82%8F%E3%81%8B%E3%82%8A%E3%82%84%E3%81%99%E3%81%84%E8%AA%AC%E6%98%8E%E6%9B%B8%E3%81%8C%E3%81%82%E3%82%8B%E5%AE%B6&amp;search.x=1&amp;fr=top_ga1_sa&amp;tid=top_ga1_sa&amp;ei=UTF-8&amp;aq=&amp;oq=" rel="nofollow">http://search.yahoo.co.jp/search?p=驚くほどわかりやすい説明書がある家&amp;search.x=1&amp;fr=top_ga1_sa&amp;tid=top_ga1_sa&amp;ei=UTF-8&amp;aq=&amp;oq=</a></li>
+          <li>1 <a href="http://search.yahoo.co.jp/search?p=GLUT+Cygwin+%E8%BF%BD%E5%8A%A0&amp;aq=-1&amp;oq=&amp;ei=UTF-8&amp;fr=top_ga1&amp;x=wrt" rel="nofollow">http://search.yahoo.co.jp/search?p=GLUT+Cygwin+追加&amp;aq=-1&amp;oq=&amp;ei=UTF-8&amp;fr=top_ga1&amp;x=wrt</a></li>
+          <li>1 <a href="http://www.google.com/reader/view/?hl=ja&amp;tab=yy" rel="nofollow">http://www.google.com/reader/view/?hl=ja&amp;tab=yy</a></li>
+      </ul>
+      
+    </div>
+
+
+
+
+</div>
+
+
+
+</div>
+<div class="calendar" id="pager-bottom">
+  <a rel="prev" href="/Drunkar/20121019/1350653190" class="prev">&lt;[R]macportsでgmt4をインストー...</a>&nbsp;<span class="delimiter">|</span>&nbsp;<a rel="next" href="/Drunkar/20121027/1351348151" class="next">[C++]C++で「はじめての機械学習...&gt;</a>
+</div>
+</div>
+<br><br>
+<div align="right"><a href="#simple-header">PAGE TOP↑</a>
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  var days = document.getElementById('days');
+  if (days && days.innerHTML.indexOf("今週のお題") != -1) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'odai', 3]);
+  }
+
+  if (days && /\u4eca\u9031\u306e\u304a\u984c/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'odai', 3]);
+  }
+
+  if (days && /ScanSnap\u7279\u5225\u30e2\u30c7\u30eb\u30fb\u30d6\u30ed\u30b0\u3067\u5ba3\u4f1d\u30b3\u30f3\u30c6\u30b9\u30c8/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'scansnap1401bcn4ssacro', 3]);
+  }
+
+  if (days && /Presso\u4f7f\u3063\u3066\u307f\u305f/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'presso1404', 3]);
+  }
+
+  if (days && /CodeIQ\u306e\u554f\u984c\u30fb\u30d1\u30ba\u30eb\u3092\u8003\u3048\u3088\u3046\uff01/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'codeiq_matsuri2013_2_2', 3]);
+  }
+
+  if (days && /2013\u5e74\u306b\u3084\u308a\u305f\u3044\u3053\u3068/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'newyear2013', 3]);
+  }
+
+  if (days && /2012\u5e74\u30dc\u30c4\u738b\u6c7a\u5b9a\u6226\uff01\u30d5\u30eb\u30bf\u88fd\u83d3\ud7\u306f\u3066\u306a\u30d6\u30ed\u30b0\u304a\u984c\u30ad\u30e3\u30f3\u30da\u30fc\u30f3/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'furuta', 3]);
+  }
+
+  if (days && /\u6d77\u5916\u30c9\u30e9\u30de\u300e\u30e9\u30a4\u30fb\u30c8\u30a5\u30fb\u30df\u30fc \u5618\u306e\u77ac\u9593\u300f\u89b3\u305f\u3044\uff01|\u300e\u30e9\u30a4\u30fb\u30c8\u30a5\u30fb\u30df\u30fc \u5618\u306e\u77ac\u9593\u300f\u7b2c1\u8a71\u306e\u611f\u60f3\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044|\u4eca\u3060\u304b\u3089\u8a00\u3048\u308b\u300c\u5618\u3092\u3064\u3044\u3066\u3057\u307e\u3063\u305f\u30a8\u30d4\u30bd\u30fc\u30c9\u300d\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044|\u3060\u307e\u3055\u308c\u305f\u3051\u3069\u3001\u8a31\u305b\u3066\u3057\u307e\u3063\u305f\u5618\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'lietome', 3]);
+  }
+
+  if (days && /\u30de\u30a4\u30d9\u30b9\u30c8\u30bd\u30f3\u30b02013/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'mybestsong2013', 3]);
+  }
+
+  if (days && /\u7d0d\u6dbc\uff01\u307b\u3093\u3068\u306b\u3042\u3063\u305f\u6016\u3044\u30b3\u30fc\u30c9/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'codeiq_matsuri2013_2_1', 3]);
+  }
+
+  if (days && /\u590f\u306e\u5199\u771f2013/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'photocon2013summer', 3]);
+  }
+
+  if (days && /Windows\/Office\u6b66\u52c7\u4f1d/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'WindowsDevOpen', 3]);
+  }
+
+  if (days && /Visa\u30d7\u30ea\u30da\u30a4\u30c9\u300cV\u30d7\u30ea\u30ab\u300d\u8a66\u3057\u305f\u3044\uff01|Visa\u30d7\u30ea\u30da\u30a4\u30c9\u300cV\u30d7\u30ea\u30ab\u300d\u3001\u81ea\u5206\u306a\u3089\u3053\u3046\u4f7f\u3046\uff01|V\u30d7\u30ea\u30ab\u304c1\u4e07\u5186\u5206\u3042\u3063\u305f\u3089\u3001\u30cd\u30c3\u30c8\u3067\u4f55\u3092\u8cb7\u3044\u307e\u3059\u304b\uff1f/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'vpreca', 3]);
+  }
+
+  if (days && /\u300c\u79c1\u306f\u3007\u3007\u738b\uff01\u300d\u30d0\u30a4\u30af\u738b\ud7\u306f\u3066\u306a\u30d6\u30ed\u30b0\u304a\u984c\u30ad\u30e3\u30f3\u30da\u30fc\u30f3/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'bike-o', 3]);
+  }
+
+  if (days && /\u30a2\u30a4\u30c7\u30e0 \u30a8\u30f3\u30b8\u30cb\u30a2\u30ad\u30e3\u30ea\u30a2Hacks\u5171\u6709\u30d7\u30ed\u30b8\u30a7\u30af\u30c8|\u30a8\u30f3\u30b8\u30cb\u30a2\u3068\u3057\u3066\u306e\u3001\u3068\u3063\u3066\u304a\u304d\u306e\u30ad\u30e3\u30ea\u30a2Hacks\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044|\u3042\u306a\u305f\u304c\u30a8\u30f3\u30b8\u30cb\u30a2\u8ee2\u8077\u30b5\u30a4\u30c8\u3092\u4f5c\u308b\u306a\u3089\u3001\u3069\u3093\u306a\u30b5\u30a4\u30c8\u306b\u3057\u307e\u3059\u304b\uff1f|5\u5e74\u5f8c\u306e\u300c\u30a8\u30f3\u30b8\u30cb\u30a2\u306e\u50cd\u304d\u65b9\u300d\u306f\u3001\u3069\u3046\u5909\u308f\u3063\u3066\u3044\u3066\u307b\u3057\u3044\u3067\u3059\u304b\uff1f/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'aidemcareer', 3]);
+  }
+
+  if (days && /\u306f\u3066\u306a\u30c0\u30a4\u30a2\u30ea\u30fc10\u5468\u5e74\u304a\u3081\u3067\u3068\u3046\uff01/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'hatenadiary10th', 3]);
+  }
+
+  if (days && /\u8aad\u307f\u653e\u984c\u3067\u30b3\u30b9\u30d1\u3088\u3057\uff01\u96fb\u5b50\u66f8\u7c4d\u30a2\u30d7\u30eayomel.jp\u30ad\u30e3\u30f3\u30da\u30fc\u30f3/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'yomel', 3]);
+  }
+
+  if (days && /\u30bb\u30c4\u30e4\u30af\u30a8\u30b9\u30c8/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'setsuyaquest', 3]);
+  }
+
+  if (days && /\u79cb\u306e\u591c\u9577\u306f\u8aad\u66f8\u3068\u30d6\u30ed\u30b0/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'bookreview2013fall', 3]);
+  }
+
+  if (days && /\u7279\u5225\u304a\u984c\u300c\u82b8\u8853\u306e\u79cb\u300d/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'caillebotte', 3]);
+  }
+
+  if (days && /\u30a8\u30a4\u30d7\u30ea\u30eb\u30d5\u30fc\u30eb2014/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'aprilfool2014', 3]);
+  }
+
+  _gaq.push(
+  ['_setAccount', 'UA-441387-31'],
+  ['_setSampleRate', '50'],
+  ['_setCustomVar', 1, 'afc_type', 'inactive', 3],
+  ['_setCustomVar', 3, 'theme', 'notheme', 3],
+  ['_setCustomVar', 4, 'usertype', 'guest', 1],
+  ['_trackPageview'],
+  ['b._setAccount', 'UA-7855606-1'],
+  ['b._setDomainName', '.hatena.ne.jp'],
+  ['b._setSampleRate', '10'],
+  ['b._trackPageview']
+  ,['c._setAccount', 'UA-33361572-1'],
+  ['c._trackPageview']
+  );
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- CG:1,CH:1,ICG:4,ICH:2,T: -->
+</body>
+</html>
