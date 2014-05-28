@@ -51,10 +51,10 @@
 
 ;;;set files to *dict*
 (defun set-gate-dict ()
-  (set-dict "utf-8/Verb.csv")
-  (set-dict "utf-8/Postp.csv")
-  (set-dict "utf-8/Postp-col.csv")
-  (set-dict "utf-8/Symbol.csv"))
+  (set-dict "../utf-8/Verb.csv")
+  (set-dict "../utf-8/Postp.csv")
+  (set-dict "../utf-8/Postp-col.csv")
+  (set-dict "../utf-8/Symbol.csv"))
 
 (set-gate-dict)
 
@@ -376,5 +376,29 @@
 	result))
 
 ;;;tags list
-(defvar *tags* '("tech" "life-hack"))
+(defvar *tags* '(tech life-hack))
+
+;;;tag list -> (list (tag . hash-table)..)
+(defun gen-tag-hash (tags)
+  (mapcar #'(lambda (key) (cons key (make-hash-table :test #'equal))) tags))
+
+;;;tag -> get hash-table of this tag from tag-hash-list
+(defun get-tag-hash (tag lst)
+  (cdr (assoc tag lst)))
+
+;;;tags list and group file -> (list (tag . hash)..)
+(defun load-tag-hash (tags file)
+  (let ((tag-list (gen-tag-hash tags)))
+	(mapcar #'(lambda (tag)
+	(with-open-file (f (car (directory (concatenate 'string file "/" (string tag) "/key-words.csv"))) :direction :input)
+	  (loop
+		for line = (read-line f nil)
+		while line
+		for lst = (split #\, line)
+		do (setf (gethash (car lst) (get-tag-hash tag tag-list)) (cadr lst)))))
+			tags)
+	tag-list))
+
+
+
 
