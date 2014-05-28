@@ -59,14 +59,16 @@
   (set-dict "../utf-8/Verb.csv")
   (set-dict "../utf-8/Postp.csv")
   (set-dict "../utf-8/Postp-col.csv")
-  (set-dict "../utf-8/Symbol.csv"))
+  (set-dict "../utf-8/Symbol.csv")
+  (set-dict "../utf-8/zenkaku-symbol.csv"))
 
 (set-gate-dict)
 
 ;;;restriction of word
 (defun gate (word)
   (or (find #\、 word) (find #\。 word) ;、。をはじく
-	  (find #\年 word) 
+	  (find #\年 word) (find #\月 word)
+	  (find #\日 word)
 	  (gethash word *dict*)));*dict*に登録されている単語をはじく
 
 ;;;main function
@@ -257,26 +259,25 @@
 ;;;requires word hash -> score(integer)
 (defun scoring (word hash &key (length nil))
   (let ((sum 0)
-		(len (if length
-			   length 
-			   1))
+		(len (or length 1))
 		(val (gethash word hash)))
 	(loop
 	  for item in (the list (get-str-combi word))
 	  for score = (gethash item hash)
 	  do (if score
 		   (setf sum (+ sum score))))
-	sum))
+	(/ (* (gethash word hash) sum) (/ length (length word)))))
 
 ;;;scoring hash-table
 ;;;hash -> hash
-(defun scoring-hash (hash &key (length nil))
-  (let ((result (make-hash-table :test #'equal)))
+(defun scoring-hash (hash-t &key (length nil))
+  (let ((result (make-hash-table :test #'equal))
+		(hash hash-t))
 	(maphash #'(lambda (key val)
 				 (let ((score (scoring key hash :length length)))
 				   (if (not (eql 0 score))
 					 (setf (gethash key result) score))))
-			 (cut-off 100 hash :items t))
+			 (cut-off 100 (brush-up hash) :items t))
 	result))
 
 ;;;input html -> output scoring hash-table
@@ -287,7 +288,7 @@
 				:length len)))
 
 (defun scoring-str (str)
-  (let (len (length str))
+  (let ((len (length str)))
 	(scoring-hash (n-to-m-gram 1 12 (remove-not-jp str)) :length len)))
 
 ;;;hash -> sum of score 
@@ -306,12 +307,17 @@
 (defun brush-up (hash)
   (let ((keys nil))
 	(maphash #'(lambda (key val)
-				 (let ((typ (char-type (char key 0))))
+				 (let ((typ (char-type (char key 0)))
+					   (ct nil))
 				 (loop
 				   for i in (str->list key)
 				   do (let ((ct (char-type (char i 0))))
-						(if (and (not (eql ct 'other)) (not (eql ct typ)))
-						(remhash key hash))))))
+						(if (not
+							  (or (eql typ ct)
+								  (and (eql ct 'Katakana) (eql ct 'other))
+								  (and (eql ct 'other) (eql ct 'Katakana))))
+						(remhash key hash))
+						(setf typ ct)))))
 			 hash)
 	hash))
 
@@ -326,6 +332,8 @@
 	  (t
 		'other))))
 	   
+;;;loop-p
+;;;like 
 ;;;save file from url to unique id by wget
 ;;;then load it by txt
 (defun wget (url)
@@ -352,7 +360,6 @@
 (defun gen-unique-id ()
 	(write-to-string (get-universal-time)))
 
-;;;scoring from url
 (defun scoring-url (url)
   (scoring-str (wget url)))
 
@@ -399,13 +406,23 @@
 ;;;hash tags file -> (list (tag . score)..)
 (defun compare (hash &optional (tags *tags*) (file *group-dir*))
   (let ((tag-hash-list (load-tag-hash tags file)))
-	(mapcar #'(lambda (tag) (cons tag (intersection-of-hash hash (get-tag-hash tag tag-hash-list)))) tags)))
+	(mapcar #'(lambda (tag) (cons tag (sum-score (intersection-of-hash hash (get-tag-hash tag tag-hash-list))))) tags)))
 
 ;;;hash -> sorted list
 (defun get-tags (hash &optional (tags *tags*) (file *group-dir*))
   (let ((tag-scores (compare hash tags file)))
-	(sort tag-scores #'< :key #'cdr)))
+	(sort tag-scores #'> :key #'cdr)))
 
 ;;;url -> sorted tag list
 (defun url->tags (url)
   (get-tags (scoring-url url)))
+
+
+;(print-sorted-hash (scoring-url "http://somewrite.jp/media/somewrite/3347"))
+
+(defun exe ()
+  (print-sorted-hash (scoring-url (cadr sb-ext:*posix-argv*))))
+
+(sb-ext:save-lisp-and-die "sample.exe"
+  :toplevel #'exe
+  :executable t)
