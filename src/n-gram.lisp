@@ -285,12 +285,6 @@
   (let (len (length str))
 	(scoring-hash (n-to-m-gram 1 12 (remove-not-jp str)) :length len)))
 
-;;;compare 2 html files by scores
-(defun compare-html (html1 html2)
-  (let ((result1 (scoring-html html1))
-		(result2 (scoring-html html2)))
-	(intersection-of-hash result1 result2)))
-
 ;;;hash -> sum of score 
 (defun sum-score (hash)
   (let ((result 0))
@@ -399,6 +393,10 @@
 			tags)
 	tag-list))
 
+;;;hash tags file -> (list (tag . score)..)
+(defun compare (hash tags file)
+  (let ((tag-hash-list (load-tag-hash tags file)))
+	(mapcar #'(lambda (tag) (cons tag (sum-score (intersection-of-hash hash (get-tag-hash tag tag-hash-list))))) tags)))
 
 
 
