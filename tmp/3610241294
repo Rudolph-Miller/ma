@@ -1,0 +1,1683 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Aldo van Eyckについて調べたまとめ - STARTATD</title>
+<link rel="start" href="/" title="STARTATD">
+<link rel="help" href="/help" title="ヘルプ">
+<link rel="prev" href="/Drunkar/20121101/1351788439" title="[C++]C++で「はじめての機械学習...">
+<link rel="next" href="/Drunkar/20121123/1353618640" title="[others]*">
+
+<link rel="stylesheet" href="http://d.st-hatena.com/statics/css/base.css?b1200de2cbd65eac7a82e0d02d0b7c4352652dfc" type="text/css" media="all">
+<link rel="stylesheet" href="http://d.st-hatena.com/statics/css/headerstyle_wh.css?7d508c1badce2cbd3cd47b372a7bdc3e8f794141" type="text/css" media="all">
+
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://d.hatena.ne.jp/Drunkar/rss">
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://d.hatena.ne.jp/Drunkar/rss2">
+
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://d.hatena.ne.jp/Drunkar/foaf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://d.hatena.ne.jp/Drunkar/opensearch/diary.xml" title="STARTATD内日記検索" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://d.hatena.ne.jp/Drunkar/opensearch/archive.xml" title="STARTATD内一覧検索" />
+
+
+
+<link rel="shortcut icon" href="http://d.hatena.ne.jp/images/wh_favicon.ico">
+
+
+
+
+<style type="text/css">
+<!-- 
+div.section h4 {font-size:200%}
+div.section h5 {font-size:130%}
+
+body{
+  color: #525252;
+  padding: 20px;
+  background-color: transparent;
+  font-size: 90%;
+  font-family: century gothic,"ヒラギノ角ゴ Pro",Verdana, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+/*** タイトル ********************************************/    
+
+h1 a{
+  border: none;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+h1{
+  padding: 10px;
+  font-size: 0%;
+  text-align: left ;
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-family: century gothic,"ヒラギノ角ゴ Pro",Verdana, Arial, Helvetica, sans-serif;
+  margin: 0px auto;
+  font-weight: normal;
+  border: none;
+  background-color: transparent;
+
+}
+
+#top_info{
+color: #999;
+font-size:80%;
+padding-left: 40px;
+padding-top:0;
+padding-bottom: 30px;
+}
+
+#info{
+font-size:170%;
+padding-top:15px;
+}
+
+
+/*** メイン ******************************************************/    
+
+.hatena-body{
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left
+  padding: 0;
+  position: relative;
+  background: transparent;
+}
+
+.hatena-body:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+div.day {
+
+
+}
+.main{
+  margin: 0;
+  padding: 0;
+
+}
+
+h2,
+h2 a{
+  text-decoration: none;
+  border: none;
+  background-color: #ffffff;
+}
+
+h2 {
+  font-size: 90%;
+  font-weight: normal;
+  margin: 0px 0 0 0;
+  padding: 0px 20px 0 20px;
+  text-align: left;
+  color: #ccc;
+  border: none ;
+  background-color: #ffffff;
+}
+
+span.date{
+  color: #555;
+  margin: 0 0;
+}
+
+span.title{
+  margin: 0 ;
+  font-weight:bold;
+  padding:0;
+}
+
+a.edit{
+  font-weight: normal;
+  font-size: 90%;
+}
+
+div.body {
+  _width: 100%;
+  padding: 0;
+  margin-bottom: 0px;
+  background-color: #ffffff;
+  border: 1px dashed #ffffff ;
+}
+
+div.section{
+  margin: 0px 0 100px 0;
+  padding: 0px 40px 0px 40px;
+  text-align: justify;
+  border: none;
+  font-size:105%;
+  font-color:#555;
+  line-height:1.65;
+}
+
+div.section a.keyword,
+a.okeyword{
+  color:#222;
+  text-decoration:none;
+}
+
+div.section p{
+padding-top:10px;
+}
+
+div.section a{
+color:#222;
+text-decoration: underline;
+}
+
+div.section a:hover{
+color:#cc1111;
+text-decoration:none;
+}
+
+.body h3.title {
+  padding: 0 3px;
+  margin: 6px 0 0 6px;
+  font-size: 110%;
+  font-weight:normal;     
+}
+
+.body h3.title a {
+ color:#0099bb;
+  text-decoration: none;
+}
+
+.section h3.title a:hover{
+color: #32cdda;
+ text-decoration:underline;
+}
+
+span.sanchor{
+  color: #555;
+}
+
+span.timestamp{
+  font-size: 70%;
+  font-weight: normal;
+  letter-spacing: 0;
+  color: #555;
+}
+
+div.section p.sectionfooter{
+  font-size: 80%;
+  text-align: right;
+  clear: both;
+  color: ;
+  padding: 25px 0 30px 0;
+  margin:0px 0 0px 0;
+}
+
+div.section p.sectionfooter a{
+    color: #777;
+  text-decoration:none;
+  
+}
+
+div.section p.sectionfooter a:hover{
+  border: none;
+  color: #0099bb;
+  text-decoration:none;
+}
+
+/*---- sectionheader ----*/  
+
+
+span.sectioncategory{
+color:#cccccc;
+margin:0;
+padding:0 0 10px 0;
+font-size:90%;
+
+}
+
+span.sectioncategory a{
+color:#999;
+text-decoration:none;
+padding:0;
+}
+
+.sectionheader{
+padding: 0 0 15px 0;
+border-top:1px #ddd dotted;
+margin:0;
+
+}
+
+span.sectioncategory a:hover{
+  border: none;
+  color: #cc1111;
+  text-decoration:underline;
+}
+
+
+/*** カレンダー **********************************************/    
+
+div.calendar a{
+  border: none;
+  color: #0099bb;
+}
+
+div.calendar a:hover{
+  border: none;
+  color: #cc1111;
+  text-decoration;
+}
+
+div.calendar{
+  font-size: 80%;
+  text-align: right;
+  margin: 0px 0 0 0;
+  padding: 0px 10px;
+  border: 1px dashed #fff ;
+}
+
+div.calendar#pager-bottom {
+  margin:0;
+  paddin:0;
+}
+
+
+
+/*** 文字装飾 ********************************************/  
+
+a{
+  color: #555;               
+  text-decoration: none;
+}
+
+a.keyword,
+a.okeyword{
+  text-decoration: none;
+  border: none;
+  color:#888888 ;        
+  background-color:#ffffff;
+}
+
+a:hover,
+a:hover font,
+a:hover span{
+  color: #ffffff;             
+  background-color:#ffffff ; 
+}
+
+h4 {
+  font-size: 100%;
+  font-weight: normal;
+  margin: 1em 0;
+  padding: 0 0 0 0.5em;
+  border-left: solid 1px #ffffff;
+}
+
+h5{
+  font-size: 90%;
+  font-weight: bold;
+  margin: 1em 0 ;
+  padding: 0;
+}
+
+p.seemore{
+  text-align: center;
+  padding:0;
+  margin:0;
+  font-weight: normal;
+  font-size: 85%;
+}
+
+p.seemore a{
+  border-width: 2px;
+  text-decoration:none;
+  background:#dfeff2;
+  color: #555;
+}
+
+p.seemore a:hover{
+  border-width: 2px;
+  text-decoration:none;
+  background:#fff;
+  color: #0099bb;
+}
+
+p.message{
+  color:666666 ;
+}
+
+blockquote{
+  	margin:30px 50px;
+	padding: 15px;
+	background-color: #ffffff;
+  	border: 1px dotted #f3a7ac ;
+	font-size: 100%;
+}
+
+.section blockquote p{
+  	margin: 1.8em 0;
+  	padding: 0;
+}
+
+.section blockquote a{
+	background:transparent;
+}
+
+
+cite a{
+        border: none;
+}
+
+cite{
+  font-weight: normal;
+  font-style: normal;
+  display: block;
+  width: 98%;
+  _width: 100%;
+  padding: 3px 1%;
+}
+
+
+pre     {
+  margin: 15px 0;
+  padding: 1em;
+  line-height: 1.2;
+  font-family:sans-serif;
+  border: 1px solid #fff;
+}
+
+strong{
+  font-weight: bold;
+}
+
+em{
+  font-weight: normal;
+}
+
+
+ins{
+
+}
+
+.section ul{
+  margin: 7px 1em 7px 1em;
+  padding: 0;
+  list-style-type:circle;
+}
+
+.section ol{
+  margin: 7px 1em 7px 1.5em;
+  padding: 0;
+}
+
+.section ul li,
+.section ol li,
+.section ol ul,
+.section ol ol,
+.section ul ul,
+.section li li {
+  margin: 0 0 0 1em;
+  padding: 0;
+ list-style-type:circle;
+}
+
+.section dl{
+  margin: 1em 2em;
+}
+
+.section dl{
+  margin: 10px 20px;
+}
+
+.section dt{
+  font-weight: normal;
+}
+
+
+span.footnote{
+  font-size: 70%;
+}
+
+span.footnote a{
+  border: 0;
+}
+
+div.footnote{
+  font-size: 90%;
+ _font-size: 80%;
+  padding: 15px;
+  text-align: left;
+  margin: 2px 0 0 0;
+  border:1px dashed #ffffff ;
+}
+
+p.footnote{
+  margin: 0;
+}
+
+span.highlight {
+  background-color: #ccc
+;
+  padding: 1px;
+}
+
+
+/*** コメント・リファラ *****************************************/     
+
+div.comment{
+  text-align: left;
+  padding: 30px ;
+  margin: 2px 0 0 0;
+  _width: 100%;
+  border: 1px dashed #ffffff ;
+}
+
+div.refererlist{
+  text-align: left;
+  padding: 10px ;
+  margin: 10px 0 0 0;
+  _width: 100%;
+  border: 1px dashed #ffffff ;
+}
+
+div.caption{
+  font-size: 90%;
+ _font-size: 80%;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+div.comment div.caption{
+}
+
+div.caption a{
+  border: none;
+  text-decoration: none;
+}
+
+div.refererlist ul{
+  margin: 0 7px;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+  letter-spacing: 0;
+}
+
+div.commentshort{
+  margin: 0;
+  padding: 0;
+ _width: 100%;
+  background-color: ;
+  font-size: 90%;
+ _font-size: 80%;
+}
+
+div.commentshort a{
+  text-decoration: none;
+}
+
+span.canchor{
+  display: none;
+}
+
+div.commentshort p {
+  margin: 0.5em;
+  font-size: 100%;
+}
+
+span.commentator{
+  font-weight: normal;
+  margin: 0 ;
+  padding: 0;
+}
+
+span.commentator,
+span.commentator a{
+  text-decoration: none;
+}
+
+
+
+/**** 画像関連 ******************************************/    
+
+a img {
+border: none;
+}
+
+a:hover img{
+border: none;
+}
+
+img.photo{
+  float: right;
+  margin: 20px ;
+}
+
+img.asin{
+  float: left;
+  margin: 5px 10px 15px 0;
+padding-left:15px;
+  border:none;
+height: 120px;
+}
+
+
+.hatena-fotolife img{
+border: none;
+}
+
+.hatena-fotolife img a:link{
+border: none;
+}
+
+.hatena-fotolife img a:visited{
+border: none;
+}
+
+
+.hatena-fotolife img a:hover{
+border: none;
+}
+
+
+.section object,
+.section embed{
+ width:300px;
+ height:240px; }
+
+
+
+/*** はまぞう ******************************/    
+
+
+div.section div.hatena-asin-detail,
+div.section div.amazlet-box {
+	overflow: hidden;
+	margin:30px 20px;
+	padding: 30px;
+	background-color: #ffffff;
+  	border: 1px dotted #abd2df ;
+	font-size: 100%;
+}
+
+div.hatena-asin-detail p {
+	margin: 0;
+	text-decoration: none;
+}
+
+
+.section p.hatena-asin-detail-title{
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+
+img.hatena-asin-detail-image {
+  float: left;
+  clear: left;
+  border: 0;
+  margin: 0 15px 0 15px ;
+  height: 120px;
+}
+
+div.hatena-asin-detail-info{
+  float: left;
+  clear: right;
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+}
+
+
+div.hatena-asin-detail-info ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0 0px 25px;
+}
+
+div.hatena-asin-detail-info li {
+list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+div.hatena-asin-detail-foot {
+  clear: both;
+}
+
+
+
+div.section div.hatena-asin-detail ul {
+	list-style:none;
+	padding: 5px; margin:5px;
+        font-size: 85%;
+}
+
+
+div.hatena-asin-detail p a,
+div.section div.hatena-asin-detail ul a{
+  	text-decoration: none;
+	background: transparent;
+}
+
+div.hatena-asin-detail a img,
+div.section div.amazlet-box div.amazlet-image {
+	float: left;padding:0 18px 0 0;
+}
+
+div.hatena-asin-detail div.hatena-asin-detail-info,
+div.amazlet-box div.amazlet-info {
+	padding: 0; 
+    font-size:90%;
+}
+
+
+/*::footer:::::::::::::::::::::::::::::::::::::::::::::::::::::::*/  
+
+#footer{
+  width: 750px;
+  margin: 2em auto 0 auto;
+  text-align: left;
+}
+
+#footer:after{
+  content:"";
+  display:block;
+  clear: both;
+}
+
+#footer-left{
+  float: left;
+  width: 250px;
+}
+
+#footer-right{
+  float: right;
+  width: 250px;
+}
+
+.hatena-module{
+  margin: 0 0 25px 0;
+  border: none;
+}
+
+.hatena-moduletitle{
+ font-size: 110%;
+  margin: 0 0 5px 0;
+  border: dashed 1px #ffffff ;
+  border-bottom: dashed 1px #fff;
+  text-decoration: none;
+  font-weight:bold;
+  font-family:century gothic;
+}
+
+.hatena-moduletitle a{
+ font-size: 110%;
+  text-decoration: none;
+  font-weight:bold;
+}
+
+.hatena-modulebody{
+  font-size: 115%;
+  border: dashed 1px #ffffff ;
+}
+
+.hatena-modulebody ul{
+  padding: 0 0 0 1.5em;
+  margin: 0;
+  list-style: none;
+}
+
+.hatena-modulebody ul a{
+  text-decoration: none;
+}
+
+
+/*----　サイドバー（テーブル） ----*/  
+
+TABLE.si{
+border-bottom: none;
+border-top: none;
+font-size:100%;
+padding:30px
+}
+
+TD.side{
+line-height:1.45;
+}
+
+
+TD.side a:link{
+color:#0099bb;
+text-decoration:none;
+}
+
+TD.side a:visited{
+color:#0099bb;
+text-decoration:none;
+}
+
+TD.side a:hover{
+color:#cc1111;
+text-decoration:underline;
+}
+
+
+
+.hatena-module-section ul{
+list-style-type: circle; 
+}
+
+.hatena-module-section li{
+padding-right:16px;
+margin-left:18px;
+}
+
+
+.hatena-module-sectioncategory ul{
+list-style-type: circle;
+}
+
+.hatena-module-sectioncategory li{
+float:left;
+padding-right:16px;
+margin-left:18px;
+}
+
+.year{
+font-size:100%;
+margin-left:18px;
+}
+
+.hatena-modulebody a.month{
+font-size:100%;
+}
+
+.delimiter{
+font-size:100%;
+color:#ddd;
+}
+
+
+table.calendar{
+}
+
+td.calendar-day{
+text-align:right;
+color: #dddddd;
+padding: 1px 5px 0 5px;
+}
+
+td.calendar-sunday{
+text-align:right;
+color: #f8b5b5;
+padding: 0 5px 2px 5px;
+}
+
+td.calendar-weekday{
+text-align:right;
+padding: 0 5px 2px 5px;
+}
+
+td.calendar-saturday{
+text-align:right;
+padding: 0 5px 2px 5px;
+}
+
+td.day-today{
+text-align:right;
+padding: 1px 5px 0 5px;
+color: #cc1111;
+}
+
+td.calendar-prev-month{
+align:right;
+padding:0 0 10px 20px;
+}
+
+td.calendar-current-month{
+align:right;
+padding:0 0 10px 20px;
+}
+
+td.calendar-next-month{
+align:right;
+padding:0 0 10px 20px;
+}
+
+
+
+/* :: archive :: */  
+
+
+div#hatena-archive div.calendar a:hover {
+	color: #cc1111;
+           text-decoration:none;
+}
+
+
+
+div#hatena-archive h2 a:hover {
+	color: #cc1111;
+           text-decoration:none;
+}
+
+
+div#hatena-archive ul {
+	list-style: none;
+	margin: 0;
+font-family: century gothic,"ヒラギノ角ゴ Pro",Verdana, Arial, Helvetica, sans-serif;
+}
+
+div#hatena-archive ul a:hover {
+	color: #cc1111;
+           text-decoration:none;
+}
+
+
+div#hatena-archive ul li {
+	list-style: none;
+	margin: 20px 0 10px;
+font-family: century gothic,"ヒラギノ角ゴ Pro",Verdana, Arial, Helvetica, sans-serif;
+}
+
+div#hatena-archive ul li a {
+	text-decoration: none;
+color:#0099bb;
+}
+
+div#hatena-archive ul li a:hover {
+	color: #cc1111;
+           text-decoration:none;
+}
+
+
+div#hatena-archive ul ul li {
+	margin: 0 0 5px;
+	padding: 0;
+	border: none;
+font-family: century gothic,"ヒラギノ角ゴ Pro",Verdana, Arial, Helvetica, sans-serif;
+}
+
+div#hatena-archive .day .body .section ul ul li a{color:#222222;text-decoration:none;}
+div#hatena-archive .day .body .section ul ul li {line-height:1.4;}
+
+div#archive-category div.calendar {
+text-align:left;
+}
+
+
+.archives ul{
+list-style-type:none;
+padding:0;
+font-family: century gothic,"ヒラギノ角ゴ Pro",Verdana, Arial, Helvetica, sans-serif;
+}
+
+.archives ul a{
+color:#222;
+}
+
+.archives li.archive archive-date{
+list-style-type:none;
+padding:0;
+margin:0;
+font-family: century gothic,"ヒラギノ角ゴ Pro",Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+.archives li.archive-section{
+list-style-type:none;
+padding-right:20px;
+margin-bottom:15px;
+font-family: century gothic,"ヒラギノ角ゴ Pro",Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+div#archive-category{
+     margin: 15px auto;
+     text-align :left;
+}
+
+div#archive-calendar-top{
+    text-align :left;
+    margin: 15px auto;
+}
+
+.calendar div#pager-top {
+   margin:20px auto;
+   text-align :right;
+}
+
+div#archive-calendar-bottom{
+    text-align :left;
+    margin: 0px auto 15px;
+}
+
+.calendar div#pager-bottom{
+    margin:10px auto;
+   text-align :right;
+}
+
+div#hatena-archive div.calendar {
+     text-align:left;
+     font-size:90%;
+}
+-->
+</style>
+
+
+<script type="text/javascript">if(/[\x3c\x3e\x22]/.test(location.hash))location.hash=location.hash.replace(/[\x3c\x3e\x22]/g,'');if(/[\x3c\x3e]/.test(document.referrer))location.href=location.href;</script>
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Aldo van Eyckについて調べたまとめ - STARTATD">
+<meta property="og:url" content="http://d.hatena.ne.jp/Drunkar/20121111/1352663961">
+<meta property="og:description" content="授業でちょっとAldo van Eyckについて調べる機会があったので、文献とまとめ。 Aldo van Eyck - Wikipedia ..">
+<meta property="og:site_name" content="はてなダイアリー">
+
+
+<!--
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<rdf:Description rdf:about="http://d.hatena.ne.jp/Drunkar/20121111/1352663961">
+   <foaf:maker rdf:parseType="Resource">
+     <foaf:holdsAccount>
+       <foaf:OnlineAccount foaf:accountName="Drunkar">
+         <foaf:accountServiceHomepage rdf:resource="http://www.hatena.ne.jp/" />
+       </foaf:OnlineAccount>
+     </foaf:holdsAccount>
+   </foaf:maker>
+</rdf:Description>
+</rdf:RDF>
+-->
+
+<link rel="alternate" media="handheld" type="text/html" href="http://d.hatena.ne.jp/Drunkar/mobile?date=20121111&section=1352663961" />
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+  rdf:about="http://d.hatena.ne.jp/Drunkar/20121111/1352663961"
+  trackback:ping="http://d.hatena.ne.jp/Drunkar/20121111/1352663961"
+  dc:title="[architecture]Aldo van Eyckについて調べたまとめ"
+  dc:identifier="http://d.hatena.ne.jp/Drunkar/20121111/1352663961" />
+</rdf:RDF>
+-->
+
+
+
+<link rel="canonical" href="http://d.hatena.ne.jp/Drunkar/20121111/1352663961">
+
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:site" content="@hatenablog">
+
+
+
+<script type="text/javascript" src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
+<script type="text/javascript">
+Hatena.Star.SiteConfig = {
+  entryNodes: {
+    'div.section': {
+      uri: 'h3 a',
+      title: 'h3',
+      container: 'h3'
+    }
+  }
+};
+Hatena.Author  = new Hatena.User('Drunkar');
+Hatena.DiaryName  = new Hatena.User('Drunkar');
+
+</script>
+
+
+
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/twitter_entry_icon.js?7d508c1badce2cbd3cd47b372a7bdc3e8f794141"></script>
+
+
+
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/adcolor.js?7d508c1badce2cbd3cd47b372a7bdc3e8f794141"></script>
+
+
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/quick_pager.js?7d508c1badce2cbd3cd47b372a7bdc3e8f794141"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/diary_utils.js?7d508c1badce2cbd3cd47b372a7bdc3e8f794141"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/max_width_fotolife.js?2d5c0a4915fdb8930122a506dbf154b9db674a3b"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/jquery-1.4.2.min.js?7d508c1badce2cbd3cd47b372a7bdc3e8f794141"></script>
+<script type="text/javascript">
+  jQuery.noConflict()(function($){
+    var j$ = jQuery;
+  });
+</script>
+
+
+
+
+</head>
+<body>
+
+  <script>Hatena.Diary.UaTrakingID = 'UA-46127385-3';</script>
+ 
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-58NPH6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-58NPH6');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<div id="simple-header">
+
+  <a href="http://www.hatena.ne.jp/"><img src="/images/hatena-simple_wh.gif" alt="Hatena::" title="Hatena::" id="logo-hatena" width="65" height="17"></a><a href="/"><img src="/images/diary-simple_wh.gif" alt="ブログ(Diary)" title="Diary" id="logo-diary" width="43" height="17"></a>
+  <form method="get" action="/search" class="search-form">
+    <input type="text" class="search-word" name="word" value=""><input name="name" value="Drunkar" type="hidden"><input type="submit" name="diary" value="日記" class="search-button"><input type="submit" name="submit" value="検索" class="search-button">
+  </form>
+  <ul class="menu">
+    <li><a href="/Drunkar/">ブログトップ</a></li>
+    <li><a href="/Drunkar/archive">記事一覧</a></li>
+
+
+
+    <li><a href="https://www.hatena.ne.jp/login?backurl=http%3A%2F%2Fd.hatena.ne.jp%2FDrunkar%2F20121111%2F1352663961&add_timestamp=1">ログイン</a></li>
+    <li><a href="https://www.hatena.ne.jp/register?location=http%3A%2F%2Fd.hatena.ne.jp%3Fvia%3D200186&amp;via=200186">無料ブログ開設</a></li>
+
+  </ul>
+</div>
+
+
+
+<h1>STARTATD <a href="http://a.hatena.ne.jp/append?http://d.hatena.ne.jp/Drunkar/"><img src="http://d.hatena.ne.jp/images/a_append_wh.gif" title="このページをアンテナに追加" alt="このページをアンテナに追加" border="0" width="16" height="12" class="icon"></a> <a href="http://d.hatena.ne.jp/Drunkar/rss"><img src="http://d.hatena.ne.jp/images/rss_wh.gif" alt="RSSフィード" title="RSSフィード" border="0" width="24" height="12" class="icon"></a> <a id="twitter-header-icon" href="http://twitter.com/Drunkar"><img src="/images/icon-twitter.png" alt="Twitter" title="このページ作者のTwitterへ" border="0" width="16" height="16" class="icon"></a></h1>
+<div class="hatena-body">
+<h1><a href="http://d.hatena.ne.jp/Drunkar/"><img alt="STARTATD" src="http://d.hatena.ne.jp/images/diary/D/Drunkar/titleimg.jpg"></a></h1>
+<div class="hatena-body">
+
+<td>
+<div class="sidebar">
+<br>
+
+<table border="0">
+<tr>
+<td colspan="3" valign="top" class="side">
+<div class="hatena-module hatena-module-section">
+<div class="hatena-moduletitle"><a href="/Drunkar/archive">entry</a></div>
+<div class="hatena-modulebody">
+<ul class="hatena-section">
+<li><a href="http://d.hatena.ne.jp/Drunkar/20121124/1353756903">はてなダイアリーからwordpressに移行しました</a></li>
+<li><a href="http://d.hatena.ne.jp/Drunkar/20121123/1353618640">*</a></li>
+<li><a href="http://d.hatena.ne.jp/Drunkar/20121111/1352663961">Aldo van Eyckについて調べたまとめ</a></li>
+<li><a href="http://d.hatena.ne.jp/Drunkar/20121101/1351788439">C++で「はじめての機械学習」5章</a></li>
+<li><a href="http://d.hatena.ne.jp/Drunkar/20121028/1351430260">C++で「はじめての機械学習」6章</a></li>
+<li><a href="http://d.hatena.ne.jp/Drunkar/20121027/1351348151">C++で「はじめての機械学習」4章</a></li>
+<li><a href="http://d.hatena.ne.jp/Drunkar/20121026/1351237207">C++で「はじめての機械学習」2章, 3章</a></li>
+<li><a href="http://d.hatena.ne.jp/Drunkar/20121019/1350653190">macportsでgmt4をインストール</a></li>
+<li><a href="http://d.hatena.ne.jp/Drunkar/20121010/1349898121">マニュアルは書いた本人にとって本来の意味がある</a></li>
+<li><a href="http://d.hatena.ne.jp/Drunkar/20120926/1348670843">AC電力コントローラ</a></li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+
+<tr><td>　</td></tr>
+
+<tr>
+<td colspan="3" valign="top" class="side">
+<div class="hatena-module hatena-module-sectioncategory">
+<div class="hatena-moduletitle">category</div>
+<div class="hatena-modulebody">
+<ul class="hatena-sectioncategory">
+<li><a href="/Drunkar/searchdiary?word=%2A%5Barchitecture%5D">architecture</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5BC%2B%2B%5D">C++</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5Botaku%5D">otaku</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5Bothers%5D">others</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5Bemacs%5D">emacs</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5Billust%5D">illust</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5BopenGL%5D">openGL</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5BUI%5D">UI</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5BUX%5D">UX</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5BopenCV%5D">openCV</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5B%C5%C5%BB%D2%B9%A9%BA%EE%5D">電子工作</a></li>
+<li><a href="/Drunkar/searchdiary?word=%2A%5BR%5D">R</a></li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+
+<tr><td>　</td></tr>
+<tr><td>　</td></tr>
+
+<tr>
+<td colspan="3" valign="top" class="side">
+<div class="hatena-module hatena-module-calendar">
+<div class="hatena-moduletitle">archive</div>
+<div class="hatena-modulebody">
+<span class="year">2011</span> <span class="delimiter">|</span> <a href="/Drunkar/201108" rel="nofollow" class="month">08</a> <span class="delimiter">|</span> <a href="/Drunkar/201111" rel="nofollow" class="month">11</a> <span class="delimiter">|</span> <a href="/Drunkar/201112" rel="nofollow" class="month">12</a> <span class="delimiter">|</span> <br>
+<span class="year">2012</span> <span class="delimiter">|</span> <a href="/Drunkar/201201" rel="nofollow" class="month">01</a> <span class="delimiter">|</span> <a href="/Drunkar/201202" rel="nofollow" class="month">02</a> <span class="delimiter">|</span> <a href="/Drunkar/201203" rel="nofollow" class="month">03</a> <span class="delimiter">|</span> <a href="/Drunkar/201204" rel="nofollow" class="month">04</a> <span class="delimiter">|</span> <a href="/Drunkar/201205" rel="nofollow" class="month">05</a> <span class="delimiter">|</span> <a href="/Drunkar/201206" rel="nofollow" class="month">06</a> <span class="delimiter">|</span> <a href="/Drunkar/201207" rel="nofollow" class="month">07</a> <span class="delimiter">|</span> <a href="/Drunkar/201208" rel="nofollow" class="month">08</a> <span class="delimiter">|</span> <a href="/Drunkar/201209" rel="nofollow" class="month">09</a> <span class="delimiter">|</span> <a href="/Drunkar/201210" rel="nofollow" class="month">10</a> <span class="delimiter">|</span> <a href="/Drunkar/201211" rel="nofollow" class="month">11</a> <span class="delimiter">|</span> <br>
+
+</div>
+</div>
+</td>
+</tr>
+
+<tr><td>　</td></tr>
+
+<tr>
+<td width="350" valign="top" class="side">
+<div class="hatena-module hatena-module-profile">
+  <div class="hatena-moduletitle"> </div>
+  <div class="hatena-modulebody">
+    <div class="hatena-profile">
+      <p class="hatena-profile-image"><a href="/Drunkar/about"><img src="http://www.st-hatena.com/users/Dr/Drunkar/profile.gif" alt="Drunkar" /></a></p>
+      <p class="hatena-profile-id"><a href="/Drunkar/about">Drunkar</a></p>
+      <p class="hatena-profile-body">anime/manga/art/illust/architecture/c++/Python/Javascript</p>
+    </div>
+  </div>
+</div>
+</td>
+<td width="330" valign="top" class="side"><div class="hatena-module hatena-module-calendar2">
+<div class="hatena-moduletitle"> </div>
+<div class="hatena-modulebody">
+<table class="calendar" summary="calendar">
+<tr>
+<td class="calendar-prev-month" colspan="2"><a href="/Drunkar/201210" title="201210" rel="nofollow">&lt;&lt;</a></td>
+<td class="calendar-current-month" colspan="3"><a href="/Drunkar/archive/201211" rel="nofollow">2012/11</a></td>
+<td class="calendar-next-month" colspan="2"><a href="/Drunkar/201212" title="201212" rel="nofollow">&gt;&gt;</a></td>
+</tr>
+<tr>
+<td class="calendar-sunday">日</td>
+<td class="calendar-weekday">月</td>
+<td class="calendar-weekday">火</td>
+<td class="calendar-weekday">水</td>
+<td class="calendar-weekday">木</td>
+<td class="calendar-weekday">金</td>
+<td class="calendar-saturday">土</td>
+</tr>
+	<tr>
+		<td class="calendar-day"></td>
+		<td class="calendar-day"></td>
+		<td class="calendar-day"></td>
+		<td class="calendar-day"></td>
+		<td class="calendar-day"><a href="/Drunkar/20121101" title="1">1</a></td>
+		<td class="calendar-day">2</td>
+		<td class="calendar-day">3</td>
+	</tr>
+	<tr>
+		<td class="calendar-day">4</td>
+		<td class="calendar-day">5</td>
+		<td class="calendar-day">6</td>
+		<td class="calendar-day">7</td>
+		<td class="calendar-day">8</td>
+		<td class="calendar-day">9</td>
+		<td class="calendar-day">10</td>
+	</tr>
+	<tr>
+		<td class="calendar-day day-selected"><a href="/Drunkar/20121111" title="11">11</a></td>
+		<td class="calendar-day">12</td>
+		<td class="calendar-day">13</td>
+		<td class="calendar-day">14</td>
+		<td class="calendar-day">15</td>
+		<td class="calendar-day">16</td>
+		<td class="calendar-day">17</td>
+	</tr>
+	<tr>
+		<td class="calendar-day">18</td>
+		<td class="calendar-day">19</td>
+		<td class="calendar-day">20</td>
+		<td class="calendar-day">21</td>
+		<td class="calendar-day">22</td>
+		<td class="calendar-day"><a href="/Drunkar/20121123" title="23">23</a></td>
+		<td class="calendar-day"><a href="/Drunkar/20121124" title="24">24</a></td>
+	</tr>
+	<tr>
+		<td class="calendar-day">25</td>
+		<td class="calendar-day">26</td>
+		<td class="calendar-day">27</td>
+		<td class="calendar-day">28</td>
+		<td class="calendar-day">29</td>
+		<td class="calendar-day">30</td>
+		<td class="calendar-day"></td>
+	</tr>
+</table>
+	</div>
+</div>
+</td>
+<td width="200" align="center" valign="top" class="side">
+
+<!-- -->
+
+<div class="hatena-moduletitle"></div>
+<div class="hatena-modulebody">
+<span class="hatena-counter">31138</span></div>
+</td>
+</tr>
+
+</table>
+</td></table>
+<br>
+
+<div class="main">
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="calendar" id="pager-top">
+  <a rel="prev" href="/Drunkar/20121101/1351788439" class="prev">&lt;[C++]C++で「はじめての機械学習...</a>&nbsp;<span class="delimiter">|</span>&nbsp;<a rel="next" href="/Drunkar/20121123/1353618640" class="next">[others]*&gt;</a><span id="edit-in-place-add"></span>
+</div>
+<div id="days">
+
+<div class="day day-br">
+<h2><a href="http://d.hatena.ne.jp/Drunkar/20121111" rel="nofollow"><span class="date">November 11 2012</span></a></h2>
+
+<div class="body">
+
+<!-- rakuten_ad_target_begin -->
+<!-- google_ad_section_start -->
+
+		<div class="section">
+			<h3><a href="/Drunkar/20121111/1352663961" name="1352663961"><span class="sanchor">■</span></a>[<a href="/Drunkar/searchdiary?word=%2A%5Barchitecture%5D" class="sectioncategory">architecture</a>]Aldo <a class="keyword" href="http://d.hatena.ne.jp/keyword/van">van</a> Eyckについて調べたまとめ</h3>
+<p>授業でちょっとAldo <a class="keyword" href="http://d.hatena.ne.jp/keyword/van">van</a> Eyckについて調べる機会があったので、文献とまとめ。<br><br><a href="http://en.wikipedia.org/wiki/Aldo_van_Eyck">Aldo van Eyck - Wikipedia</a><br><br><a href="http://www.slideshare.net/AkioOhta/aldo-van-eyck">授業で発表したスライド。</a>ほんとはもっといらんこともしゃべってたけど、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>思想に関するとこ。<br><br><br>日本語で読める文献を調べてみた。リストは最後に載せる。</p>
+			<h5>(著者)(番号) (<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%AD%A1%BC%A5%EF%A1%BC%A5%C9">キーワード</a>)：(<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%AD%A1%BC%A5%EF%A1%BC%A5%C9">キーワード</a>の発<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C9%BD%C7%AF">表年</a>)</h5>
+<p>みたいな感じ。番号は<a class="keyword" href="http://d.hatena.ne.jp/keyword/CiNii">CiNii</a>で古い順につけた。<br>四角の中は<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CF%C0%CA%B8">論文</a>中でAldo <a class="keyword" href="http://d.hatena.ne.jp/keyword/van">van</a> Eyck本人の言葉として引用されている部分。<br>なにも書いてないやつは特にメモすべきことがなかったぶん。<br>-----------------------------------------------------------------------------------------------------------------------------------------------</p>
+			<h5><a href="http://ci.nii.ac.jp/naid/110007051458">朽木01</a> place and occasion(場所と場合)：<a class="keyword" href="http://d.hatena.ne.jp/keyword/1960%C7%AF">1960年</a></h5>
+<blockquote>
+<p>     - 人の帰郷を助ける(人が含まれる)ためには、それらの意味に人が抱き寄せられねばならない。<br>     - 空間と時間とが何を意味しようと、場所と場合とはさらに多くのことを意味する。<br>     - なぜなら、人のイメージのなかにある空間は場所であり、人のイメージのなかにある時間は場合であるからだ。<br>     - 空間が「空間」となるためには、人が自らとともにすまいにあること、が実現されなければならない。<br>     - 場所と場合とは、人間的な意味において、お互いの実現を構成するものとなる。人が<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>の主体でもあり客体でもあるので、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>の原初的な仕事は前者(場合)のために後者(場所)を与えることだということになる。</p>
+</blockquote>
+<p>つまり、<br>１．場所と場合が人間との相互作用により実現(豊かな意味を人間が見出す)<br>２．(場所と場合を契機とした)人の(時間と空間への)帰郷を助ける<br>３．空間が「空間」になる<br><br>入ることと出ることなどの、相反する様々な両極を「和合(reconcile)」し、それらを「対現象(twin phenomenon)」として同時実現する「仲介的なもの」の重要性が述べられ、具体的な<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>的要素として象徴的に示されたのが「扉」であった。<br><br>人間の動作とそれに伴う意識(自覚的行為)を場合とし、それと配置された用意だて(場所)とが出会うこと。<br><br><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%A1%A5%F3%A1%A6%A5%A2%A5%A4%A5%AF">ファン・アイク</a>は「すべてにおいて自覚的な行動をおこなうべき」と考えていたのでは？<br><br>結：反省なきままに<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C3%EA%BE%DD%B2%BD">抽象化</a>されゆく<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%E1%C2%E5%BC%E7%B5%C1">近代主義</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>の非人間性を克服することを、現実の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>においてめざす。<br>-----------------------------------------------------------------------------------------------------------------------------------------------</p>
+			<h5><a href="http://ci.nii.ac.jp/naid/110004499776">朽木02</a> 葉ー樹、住宅ー都市：1959</h5>
+<blockquote>
+<p>     - 秩序によって混沌を排除することはできない<br>     - そこ(今日の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>・都市)に住む人々はもはや自分自身でそれを建てることができず、またその代わりとなって建てるべきである我々も、未だにできないでいる</p>
+</blockquote>
+<p>フォーム：個人と集合との都市的現実<br>フォームを失ったために、それを<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BB%D8%B8%FE">指向</a>しつつ、その本性を<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>の領域でカウンターフォームとして実現する<br>-----------------------------------------------------------------------------------------------------------------------------------------------</p>
+			<h5><a href="http://ci.nii.ac.jp/naid/110007051811">朽木03</a></h5>
+<blockquote>
+<p>     - 樹は葉であり、葉は樹であるー住宅は都市であり、都市は住宅であるー1本の樹は樹であるが、同時に巨大な1枚の葉でもあるー1枚の葉は葉であるが、同時にとても小さな1本の樹でもあるーひとつの都市は、それがひとつの巨大な住宅でなければ、都市ではないーひとつの住宅は、それがひとつのとても小さな都市であるときにのみ、住宅なのである。</p>
+</blockquote>
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A5%CA%A5%ED%A5%B8%A1%BC">アナロジー</a>：感傷的な仮定にもとづく<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>思潮。両者の混同をともなう。直接的な比較。<br>イメージ：詩的連想によって間接的にidentifyする。<br>つまり、上記の文は都市＝樹の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A5%CA%A5%ED%A5%B8%A1%BC">アナロジー</a>を置き換えるものである。(アレグザンダーの「都市はツリーではない」を受けている)<br>ツリーという概念そのものが、樹がわれわれに誤って示す秩序である。樹を樹にするものにはそこに住むもの(鳥や獣や昆虫)も含まれ、それゆえにすでに樹は<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%BB%A5%DF%A1%A6%A5%E9%A5%C6%A5%A3%A5%B9">セミ・ラティス</a>でもない。</p>
+<blockquote>
+<p>     - 都市を都市とするものは、4つの粗い網目(<a class="keyword" href="http://d.hatena.ne.jp/keyword/CIAM">CIAM</a>の居住・<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CD%BE%B2%CB">余暇</a>・労働・交通)からはもれ落ちてしまう<br>     - 都市はそこに住まう人々(people)を意味するー人口(population)ではない。<br>     - われわれが自身の領域でしなければならないこと(<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C5%D4%BB%D4%B7%D7%B2%E8">都市計画</a>)とは、市民一人一人が、かれらのためにつくられた都市において市民らしく生活することがなぜ善いことであるのかを知らしめること、ただそれだけである。<br>     - <a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>にとって素晴らしいこととは、それが芸術であるということーただそれだけである。<br>     - 芸術が成就するか否かーとは、そのような(人間の本質への)感知(awareness)を永存させることのできる可能性によっている。</p>
+</blockquote>
+<p>-----------------------------------------------------------------------------------------------------------------------------------------------</p>
+			<h5><a href="http://ci.nii.ac.jp/naid/110006642836">朽木04</a></h5>
+<p>人間における「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%DE%A5%B8%A5%CD%A1%BC%A5%B7%A5%E7%A5%F3">イマジネーション</a>」の発露が、「子供」である<br>-----------------------------------------------------------------------------------------------------------------------------------------------</p>
+			<h5><a href="http://ci.nii.ac.jp/naid/110004658450">朽木05</a></h5>
+<blockquote>
+<p>     - <a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>において自然であるため(be natural in architecture)には、われわれは自然から離れなければならない。芸術が自然とは異なるものであるということは、芸術の本性(the nature of art)の内にある。<br>     - 「イメージ」は、両義的な「スコープ」の内に見出される</p>
+</blockquote>
+<p>-----------------------------------------------------------------------------------------------------------------------------------------------</p>
+			<h5><a href="http://ci.nii.ac.jp/naid/110007052042">朽木06</a></h5>
+<blockquote>
+<p>     - <a class="keyword" href="http://d.hatena.ne.jp/keyword/%C0%E8%B6%EE%BC%D4">先駆者</a>(J.<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B8%A5%E7%A5%A4%A5%B9">ジョイス</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%EB%A1%A6%A5%B3%A5%EB%A5%D3%A5%B8%A5%A7">ル・コルビジェ</a>、H.<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D9%A5%EB%A5%AF%A5%BD%A5%F3">ベルクソン</a>、A.<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A5%A4%A5%F3%A5%B7%A5%E5%A5%BF%A5%A4%A5%F3">アインシュタイン</a>)(the pioneers)は宇宙のリズムを検知(detecting)し、それを<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C1%C7%C9%C1">素描</a>する(tracing its outline)ことでわれわれに拡張された宇宙(an expanded universe)を遺してくれた。<br>     - われわれは廃れた諸価値に見え透いた新しい衣装を着せることを拒む。<br><a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%B5%BE%F2%BC%E7%B5%C1">教条主義</a>や抽象<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C9%BD%B8%BD%BC%E7%B5%C1">表現主義</a>によって「リアリティ」を捏造することを嫌った。<br>     - <a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%DE%A5%B8%A5%CD%A1%BC%A5%B7%A5%E7%A5%F3">イマジネーション</a>は、リアリティへのわれわれの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B3%D0%C0%C3">覚醒</a>である<br>     - リアリティへの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B3%D0%C0%C3">覚醒</a>がなければ、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%DD%BD%D1%B2%C8">芸術家</a>(kunstenaar)は<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C6%BB%B2%BD%BB%D5">道化師</a>(kunstenmaker)であり、芸術(kunst)は手品(kunstje)である。<br>     - 芸術とはつねにリアリティから誕生する<br>     - リアリティのみがあなたを救う。それはクレーが独自の方法で<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C1%C7%C9%C1">素描</a>したリアリティである。<br>扉の向こう(リアリティ？)に、誰かの持つ鍵で扉を開けることで近づくのではなく、経験によって直知することが<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%DE%A5%B8%A5%CD%A1%BC%A5%B7%A5%E7%A5%F3">イマジネーション</a>(<a class="keyword" href="http://d.hatena.ne.jp/keyword/1968%C7%AF">1968年</a>「われわれ自身のイメージ」)</p>
+</blockquote>
+<p>-----------------------------------------------------------------------------------------------------------------------------------------------</p>
+			<h5><a href="http://ci.nii.ac.jp/naid/110007071957">朽木07</a></h5>
+<blockquote>
+<p>     - 芸術の目的は完全なリアリティの運動を明らかにすること<br>「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%DE%A5%B8%A5%CD%A1%BC%A5%B7%A5%E7%A5%F3">イマジネーション</a>」は「リアリティ」を直知するための方法的態度<br>変容(transformation)：リアリティの動的性質のあらわれ<br>     - <a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%DE%A5%B8%A5%CD%A1%BC%A5%B7%A5%E7%A5%F3">イマジネーション</a>にとってリアリティとは、意識(bewust)と無意識(onderbewust)とを分け隔てられるような圏域ではない<br>つまり意識と無意識が未分化な圏域であるリアリティにおけるあらゆる意味の変転が「変容」である<br>     - クレーのよく知っていた広大な意識以前(preconscious)の世界、それは鍵穴を通してではなく実際の経験(actual experience)を通して知る世界であり、変身(metamorphosis)の世界でもある。<br>     - われわれは、色彩、線、空間、言葉によって魔法をつかう(toveren)<br><br>「The Child, the City, and the Artist」(1962)：唯一の著作(未公刊草稿)<br>     - <a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%DD%BD%D1%B2%C8">芸術家</a>を理解するために都市の問題から始めることで、われわれは子供の問題に直面するにいたる。それはわれわれ自身の問題である。<br>     都市を理解するために子供の問題から始めることで、われわれは<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%DD%BD%D1%B2%C8">芸術家</a>の問題に直面するにいたる。それはわれわれ自身の問題である。<br>     子供を理解するために<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%DD%BD%D1%B2%C8">芸術家</a>の問題から始めることで、われわれは都市の問題に直面するにいたる。それはわれわれ自身の問題である。(この逆も、各々の場合で等しく真実である。)<br>     子供、都市、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%DD%BD%D1%B2%C8">芸術家</a>、3つのリアリティと相互的なひとつ、すなわち<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%DE%A5%B8%A5%CD%A1%BC%A5%B7%A5%E7%A5%F3">イマジネーション</a>。<br>これらは「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%DE%A5%B8%A5%CD%A1%BC%A5%B7%A5%E7%A5%F3">イマジネーション</a>」によって相互に感知される「３つのリアリティ」であり、「われわれが時ごとに出会うわれわれ自身なのである」。</p>
+</blockquote>
+<p>-----------------------------------------------------------------------------------------------------------------------------------------------</p>
+			<h5><a href="http://ci.nii.ac.jp/naid/110007052300">朽木08</a> オッテルロー・サークル：1959、1962、1983</h5>
+<blockquote>
+<p>     - (各々の時代や地域の文化では)何らかの理由、つまり気候、伝統、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%BF%A5%D6%A1%BC">タブー</a>により、ある事柄が強調される一方で、ある事柄が抑制される。<br>     - それ(ある文化に特徴的なもの)は、なにが無視され誇張されるかに拠るのではなく、いかに物事が結び付けられるか(combined)に拠ることができる。<br>     - 「われわれのために」という言葉でわたしが意味するのは、各々のひととすべてのひと、あるひととあるひと、個と社会だ。二重現象(a dual phenomenon)は対立する両極へと引き裂くことができない。それゆえに第二円がある。<br>第二円は、第一円に実現される個別の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB%CA%AA">建築物</a>が、その個別性以前において「世界のどこでも同じ」人間社会にねざさねばならないことを示していよう。<br>     - 結局、ひとつの家に、ひとりの女性とひとりの男性とが数人の子供たちとともにある。このことは世界のどこでも同じだ。同じことは何かということについてこそ、議論しよう。</p>
+</blockquote>
+<p>第一円：<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>の可能性への問い：<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>が表現しうる諸価値の「本質」が何かを見定め、表層でない「可能性」の領域において、それらを「和合」することへの試み。<br>第二円：人間の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C9%E1%CA%D7%C0%AD">普遍性</a>への問い：<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>の「可能性」が人間の両義的なありかた「個と社会」に由来し、これを目的とすべきことへの洞察。</p>
+<blockquote>
+<p>「2円を結ぶ<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%ED%A1%BC%A5%AC%A5%F3">スローガン</a>」<br>     - ひとはいまもなお息を吸い、吐いている。<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>もまた同じようにしようとしているであろうか。<br><br>     - (第一円で<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C9%A5%A5%A1%BC%A5%B9%A5%D6%A5%EB%A5%D5">ドゥースブルフ</a>のドローイングを図式にとりあげる理由について)それが建物ではなく、ドローイングだったからだ。<br>ドローイングによって<a class="keyword" href="http://d.hatena.ne.jp/keyword/idea">idea</a>に戻る。<br>     - <a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%AE%A5%EA%A5%B7%A5%A2">ギリシア</a>の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BF%C0%C5%C2">神殿</a>は、それ自身のうちに安らぐひとつのオーダーを表現する。：古典的<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C4%B4%CF%C2">調和</a><br>       テオ・ファン・<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C9%A5%A5%A1%BC%A5%B9%A5%D6%A5%EB%A5%D5">ドゥースブルフ</a>によるドローイングは、複数性(plurality)と<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C1%EA%C2%D0%C0%AD">相対性</a>(relativity)とを表現する。：動きの中の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C4%B4%CF%C2">調和</a>(harmony in motion)(数の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C8%FE%B3%D8">美学</a>)(the aesthetics of number)<br>     <a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%F3%A5%C7%A5%A3%A5%A2%A5%F3">インディアン</a>・プエブロは、感情のなかの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%F4%A5%A1%A5%CA">ヴァナ</a>キュラーなもの(the vernacular of the heart)：建てられたフォームへと拡張された集合的ふるまい(the extension of collective behavior into built form)<br>     - (古典<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>の秩序は)単数、あるいは限られた数を扱うときに有効<br>     - 数量という脅威を克服するためには、数の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C8%FE%B3%D8">美学</a>、あるいは動きの中の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C4%B4%CF%C2">調和</a>がもつ法則が発見されねばならない。<br>感情のなかの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%F4%A5%A1%A5%CA">ヴァナ</a>キュラーなものは、残りの2者に対して1者として並置される。前2者は、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C6%A5%AF">テク</a>スト「精神のなかのコンセプト(concept of the mind)によって架橋される。これと対置する、未開集落を包含する<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C6%A5%AF">テク</a>ストには「集合的ふるまいの拡張」と記される。<br>     - 昨日の多数性(multitudes)(未開社会集落が体現する慎ましい(humble)多数性)は、今日の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C6%BF%CC%BE">匿名</a>の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%AF%A5%E9%A5%A4%A5%A2%A5%F3%A5%C8">クライアント</a>である。<br>多数性は<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C9%A5%A5%A1%BC%A5%B9%A5%D6%A5%EB%A5%D5">ドゥースブルフ</a>ら非凡な天才の構想に委ねられる一方、今日的問題の「沈黙し受け身の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%AF%A5%E9%A5%A4%A5%A2%A5%F3%A5%C8">クライアント</a>」にも見出される。それは未開社会集落の多数性の成れの果てである。</p>
+</blockquote>
+<p>-----------------------------------------------------------------------------------------------------------------------------------------------</p>
+			<h5><a href="http://ci.nii.ac.jp/naid/110007072562">朽木09</a> 丘とくぼ地(hill and <a class="keyword" href="http://d.hatena.ne.jp/keyword/hollow">hollow</a>)の図式：1965</h5>
+<p>教会において目指された「多中心性」とは、「変移する中心」によって個々が「出会う」ことと、こうして「結びつき」「引き付けあう」ことで保持される集合の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C6%B1%B0%EC%C0%AD">同一性</a>とが含意されていると解される。<br><br>変移する地平(the shifting horizon)：「変移する中心」とともに両義的な意味を有し、中心と地平とは互いに変移しあう。中心に向かう人々は内を、地平に向かう人々は外を見つめる。<br>-----------------------------------------------------------------------------------------------------------------------------------------------</p>
+			<h5><a href="http://ci.nii.ac.jp/naid/110004836762">朽木10</a> 対現象：1960-</h5>
+<p>・1946までの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C1%A5%E5%A1%BC%A5%EA%A5%D2">チューリヒ</a>時代：<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C8%FE%BD%D1%BB%CB">美術史</a>家Carola Giedion-Welkerとの交流を通じて芸術運動に親しんでいた。<br>・<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B7%A5%E5%A5%EB%A5%EC%A5%A2%A5%EA%A5%B9%A5%E0">シュルレアリスム</a>の機関誌「Minotaure 第2号 1933」の「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C0%A5%AB%A1%BC%A5%EB">ダカール</a>ー<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B8%A5%D6%A5%C1">ジブチ</a>調査団1931-33」特集にて紹介されたドゴン集落の葬送儀式や仮面舞踊を見て、資料収集を行うが、ほとんど成果がなかった。<br>・<a class="keyword" href="http://d.hatena.ne.jp/keyword/1960%C7%AF">1960年</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/CIAM">CIAM</a>オッテルロー会議の半年後に調査に赴き、「アーキ<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C6%A5%AF">テク</a>チュラル・フォーラム」<a class="keyword" href="http://d.hatena.ne.jp/keyword/1961%C7%AF">1961年</a>9月号の短いレポート、「フォールム」1967年7月号の20ページ余りの報告を行う。<br>・1年後に英語訳に加筆を行った論考が評論集「ヴィア」第1号、「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A8%A5%B3%A5%ED%A5%B8%A1%BC">エコロジー</a>・イン・デザイン」に再録される。<br><br><br>・ドゴンの集落では住宅が人体になぞらえられ、集落自体の配置もまたそうなっている。さらに、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C1%CF%C0%A4%BF%C0%CF%C3">創世神話</a>においては、大地そのものが<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BB%D2%B5%DC">子宮</a>の中の胎児のように手足が分かれていく一つの身体であると考えられる。<br>・<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%A1%A5%F3%A1%A6%A5%A2%A5%A4%A5%AF">ファン・アイク</a>はここに自身の「葉ー樹、住宅ー都市」の図式の妥当性を確認した。<br>・集落群が対となって建てられることなどに、自身がオッテルロー会議で発表した「二重現象(dual phenomena)」との共通性を見出す。以降、「対現象(twin phonomena)」と換言される。<br>互いに独立であるということから、双子性を取り入れて変化した<br><br>オッテルローでの「二重現象」：交互性(reciprocity)の原理に則る。「2者のあいだのどこかをめざすことではない」<br>交互性：「内在する両義性(the inherent ambivalence)」を含意しながら対関係が成立すること、すなわち「同時に双方から(both ways simultaneously)志向」されること。<br>恒久的な螺旋運動は事物の保持を意味するとともに、その側面に見出される波形の往復運動として図式化される。<br>ドゴンにおいて螺旋はことばの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A5%DF%A5%E5%A5%CB%A5%B1%A1%BC%A5%B7%A5%E7%A5%F3">コミュニケーション</a>や機織の縦糸、横糸の置き換えを経て耕作行為を象徴し、生命を得ることになる。</p>
+<blockquote>
+<p>     - 場所から場所をめぐり(それぞれが、ある意味でかれ「自身の住宅」なのだが、ついにかれがその迂路の出発点に戻り、自分や妻や子供と暮らしている住宅(その特別な意味で、かれ「自身」の)に入ってはじめて、それら(場所や住宅や住民)はかれの道程に組み入れられる。<br>ドゴンの住まいにおいて具体化されている「同一視」や「対現象」とは、耕作のように「世界のシステム」が日常生活へと<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C5%EA%B1%C6">投影</a>されることであり、葬送儀式のように「平衡」がつねに更新されることであった。(女子供は早々儀式の見学を禁止されているため、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B5%B7%CE%E9">儀礼</a>的に追い払われるが、その後に「盗み見る」ことは許容される)そのようにして超越的なものが具体化され人工物へと持ち来たらされる。<br>     - これまで、建造された囲いで十分ということは稀であった。つねに、向こうに無限の外部(exterior)が存在したのだ。<br><br>     - (<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CB%FC%CA%AA">万物</a>において「安らいでいる」ための)「確かさの根拠」とは、それなしには内的平衡が不可能であって、いまや「人間的個人における構造(structure)と構成(constitution)」の内に、すなわちもはや心の外側ではなく心の内部(interior of the mind)に発見されねばならない。<br>「人間的個人における構造と構成」：Joseph Rykwertによる。(「確かさの根拠(the ground of certainty)」)<br>     - <a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>とは(<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C5%D4%BB%D4%B7%D7%B2%E8">都市計画</a>も同様に)、外側と内側の両方に、内部を創造することを意味する。<br>つまり、いかなるものも「内部」として、「心の内部」へと架橋されることが求められる。<br>その人手による内部化(<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C5%D4%BB%D4%B7%D7%B2%E8">都市計画</a>)によって<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A5%D7%A5%EA%A5%AA%A5%EA">アプリオリ</a>な環境をなんとかして人間にふさわしいものにする。<br><br>     - (<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>とは)空間へと翻訳された恒久の人間の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C4%B4%CF%C2">調和</a>(constant human proportions)を、恒久に再発見すること</p>
+</blockquote>
+<p>-----------------------------------------------------------------------------------------------------------------------------------------------</p>
+			<h5><a href="http://ci.nii.ac.jp/naid/110007052527">朽木11</a> 布置理論への歩み(Steps Towards a Configurative Discipline)：「フォールム」<a class="keyword" href="http://d.hatena.ne.jp/keyword/1962%C7%AF">1962年</a>第3号</h5>
+<p>・「対立する２つの理論(two conflicting disciplines)」へと分かたれた<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>と<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C5%D4%BB%D4%B7%D7%B2%E8">都市計画</a>とを、ひとつの計画概念のもとに包括することへの試み</p>
+<blockquote>
+<p>     - 多数性(multiplicity)の創造的制御、および分節(articulation)と布置とによって数に人間性を与える(humanize)こと(<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C6%B0%BB%EC">動詞</a>「多数化する(multiply)」とは、なぜか実在しない<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C6%B0%BB%EC">動詞</a>「布置する(configurate)」に符合する)に失敗することで多くの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%CB%A5%E5%A1%BC%A5%BF%A5%A6%A5%F3">ニュータウン</a>の災禍がもたらされる。<br>     - (<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%CB%A5%E5%A1%BC%A5%BF%A5%A6%A5%F3">ニュータウン</a>の災禍とは)単一の基本型住居が無限に反復されることによる単調さ<br>「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C9%B8%BD%E0%B2%BD">標準化</a>」は第2回<a class="keyword" href="http://d.hatena.ne.jp/keyword/CIAM">CIAM</a>(1929)において「最小限住居」のテーマのもとに議論された。<br>     - 最小限の住戸(<a class="keyword" href="http://d.hatena.ne.jp/keyword/cell">cell</a>)を定義することと、多数化される生活可能(livable)な最小限の住戸を定義することとは別な事柄である。<br>     - (諸芸術における<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C6%C8%BC%AB%C0%AD">独自性</a>のひとつとして)人間存在への影響が質にも量にも依存する<br>     - 質を伴わない量は有害である</p>
+</blockquote>
+<p>布置なる概念によって、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>と都市とを生活行為への視点から一元のもとに捉え、それらの「質」、すなわち「美」や「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C4%B4%CF%C2">調和</a>」を問い直すことが試みられているのである。<br>要素/住居/住宅単位/住宅グループごとに「主題」が維持されつつ同・異の変容が伴うことにより、「単調さ」の克服が示唆される。</p>
+<blockquote>
+<p>     - 人はつくられた場所(the places made)、すなわちテーブル、扉、窓、部屋、建物、街路、広場、都市、地域、およそ環境をつくりあげるであろう意味ある人工物(<a class="keyword" href="http://d.hatena.ne.jp/keyword/artifact">artifact</a>)の全てに、応答する(respond)。<br>     - これらはすべてそのもの自体では空間ではなく、直接に物的な意味(a direct physical sense)において、場所を構成する(constitute)ものである。それらは、空間が認識(<a class="keyword" href="http://d.hatena.ne.jp/keyword/appreciate">appreciate</a>)されるための、手に触れることのできる焦点(tangible points of focus)となる。<br>     - <a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C6%A5%A3%A1%BC%A5%AB%A5%C3%A5%D7">ティーカップ</a>から都市にいたるまで<br>束(bunch)：場所の布置のありよう<br>     - <a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>と都市とは、リアルな人々のための、リアルな場所の束<br>リアルとはtangibleであること<br>第9回<a class="keyword" href="http://d.hatena.ne.jp/keyword/CIAM">CIAM</a>(1953)では、「たとえば住居と住宅単位のような機能の間には、じゅうぶんな差異化(differentiation)が必要である」とされ、機能ごとに纏められる要素を「視覚的グループ(visual group)」として分節する必要性が提唱された。つまり、ただ単一の「場所」が無限定に増加するのではない、ということである。<br>もちろん機能的分節だけでなく、人間の社会的連節にも基づいた分節が含意されている。<br>     - 多数化ののあらゆる配置的ステージは、それらが少なくともある程度までは、個と集合との架空の(illusive)布置に符合してはじめて、リアルな重要性を獲得する。<br>すなわち個人的経験、社会的生活によってことなる分節と場所の分節が合致したとき、それがその人にとって「場所」として明確化されるということである。</p>
+</blockquote>
+<p>・全体と要素との関係は「包含」「潜在」となっている。<br>・「布置」によって構成される全体性とは、「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B2%A5%B7%A5%E5%A5%BF%A5%EB%A5%C8">ゲシュタルト</a>」として把捉される纏まりに依拠している。</p>
+<blockquote>
+<p>     - 本質的に同じ(essentially similar)ものは、反復によって本質的に異なる(essentially different)ものとなる。それは、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%D7%F3%B0%D5">恣意</a>的に「異なる」(arbitrary 'different')ものが、加算(addition)によって<a class="keyword" href="http://d.hatena.ne.jp/keyword/%D7%F3%B0%D5">恣意</a>的に「同じ」(arbitrary 'similar')ものになることではない。<br>     - 異なる方法で同じことを発見すること、同じものの変容としてのリアルな差異を認めること、それはつねに偉大である。同様に、異なる場所で反復される同類の場合(occasion)を経験することや、同じ場所で生じる異なる場合を経験することもまた、偉大なことである。<br><br>     - 「輸送」('transport')とは抽象的である。このとき街路は住居のドアステップの延長となる。しかし、愉快な仕事を行うために出かけるのならば、街路は仕事場のドアステップの延長となろう。<br>     - それがリアルに「束」なのであれば、出ることは入ることを意味する。</p>
+</blockquote>
+<p>-----------------------------------------------------------------------------------------------------------------------------------------------</p>
+			<h5><a href="http://ci.nii.ac.jp/naid/110006329389">朽木12</a> 対現象</h5>
+<p>「布置」が心的現象としての「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B2%A5%B7%A5%E5%A5%BF%A5%EB%A5%C8">ゲシュタルト</a>」に相関するのは、部分の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C2%BF%CD%CD%C0%AD">多様性</a>と、全体としての<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C6%B1%B0%EC%C0%AD">同一性</a>とが、ともに「場所」に含意される人間の直接的な経験を契機とするからである。(場所の経験とは、「場所」の有する「物的リアリティ」が、人間の「身体的な場所のリアリティ」として、直接的に経験される)<br>対現象：「布置」において重視される全体と部分などの、相反する多様な対義が「和合(reconcile)」という仕方で同時実現されることをいう。各々の「対現象」において、対をなす両義が結びついているのと同様に、複数の「対現象」同士もまた、互いに結びついている。</p>
+<blockquote>
+<p>     - あるひとつの対現象に関わると、それに隣接する対現象にも関わらざるを得ない。大ー小、多ー少という対現象の間には、何の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%AD%B3%A6">境界</a>もない。また、これら２つと以下の対現象、部分ー全体、統一性ー<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C2%BF%CD%CD%C0%AD">多様性</a>、簡潔性ー複雑性との間にも<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%AD%B3%A6">境界</a>はなく、最後に上げた３つの間についても<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%AD%B3%A6">境界</a>はない。<br><br>     - 場所とは、仲介的な場所(inbetween place)とも換言され、相対する両極が再び対現象となることのできる共通基盤である<br>すなわち対現象「個と集合」を前提として「場所の束」が実現される一方で、これらの「場所」においてこそ、多様な「対現象」が「和合」される。</p>
+</blockquote>
+<p>-----------------------------------------------------------------------------------------------------------------------------------------------</p>
+			<h5><a href="http://ci.nii.ac.jp/naid/110004836956">朽木13</a> <a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A5%F3%A5%D5%A5%A3%A5%AE%A5%E5%A5%EC%A1%BC%A5%B7%A5%E7%A5%F3">コンフィギュレーション</a>理論への歩み：「フォールム」<a class="keyword" href="http://d.hatena.ne.jp/keyword/1962%C7%AF">1962年</a>第3号</h5>
+<p>・「場所」は「住まいの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CD%FD%C7%B0">理念</a>」「暮らしの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CD%FD%C7%B0">理念</a>」と言われるように計画家が思い描くべき「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CD%FD%C7%B0">理念</a>」で、「人間的意味」は「「住まう」という意味」「「暮らす」という意味」として用いられるように、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C0%B8%B3%E8%BC%D4">生活者</a>との動的な関わりを示す。<br>・「分節」：人間の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BC%D2%B2%F1%C0%B8%B3%E8">社会生活</a>の各々の単位に基づくとともに、それを枠づけるもの。それは「イメージ」の事柄である。</p>
+<blockquote>
+<p>     - (場所の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A5%F3%A5%D5%A5%A3%A5%AE%A5%E5%A5%EC%A1%BC%A5%B7%A5%E7%A5%F3">コンフィギュレーション</a>が)個(individual)と集合(collective)という架空(illusive)の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A5%F3%A5%D5%A5%A3%A5%AE%A5%E5%A5%EC%A1%BC%A5%B7%A5%E7%A5%F3">コンフィギュレーション</a>にある程度まで符合することで、はじめてリアルな意義を獲得する<br>「対現象」の重層化により、そこに住まう人々の「心の緩和」が実現される。(平衡)<br><br>     - 各々のドアによって歓迎(welcome)をつくり、各々の窓によって表情(counetnance)をつくれ。なぜなら、人の故郷としての圏域(home-realm)とは、仲介圏域、すなわち、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>が分節することをめざすべき圏域であるからだ。このようにわたしが言うとき、その意図とは、虚偽の意味を再び暴き、サイズの意味に、正しいサイズ(right-size)の示唆することを込めるためである。仲介圏域を拡張し、住宅や都市がそうあるべき場所の束に一致させれば、仲介圏域がもつ、平衡させる力(equilibrating impact)は、分かりやすく分節された<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A5%F3%A5%D5%A5%A3%A5%AE%A5%E5%A5%EC%A1%BC%A5%B7%A5%E7%A5%F3">コンフィギュレーション</a>において自ずと示されるだろう。そうなるや否や、これまで人間の正しい姿勢(right compose)を悩ましていた脅威的な両極をいまでもまだ和合しうる機会が、間違いなく大きくなるだろう。</p>
+</blockquote>
+<p>※<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%A1%A5%F3%A1%A6%A5%A2%A5%A4%A5%AF">ファン・アイク</a>自身によるポルダー開発としては、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%AA%A5%E9%A5%F3%A5%C0">オランダ</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/CIAM">CIAM</a>グループである「de 8 en Opbuw」の一員として、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%AA%A5%E9%A5%F3%A5%C0">オランダ</a>北東部、ナーヘレの全体計画に参加する事例があげあれる。ナーヘレには、３つの小学校がかれの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>作品として遺される。なお、このポルダー計画案は、第10回<a class="keyword" href="http://d.hatena.ne.jp/keyword/CIAM">CIAM</a>(1956)において<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%A1%A5%F3%A1%A6%A5%A2%A5%A4%A5%AF">ファン・アイク</a>により発表された。<br>-----------------------------------------------------------------------------------------------------------------------------------------------</p>
+			<h5><a href="http://ci.nii.ac.jp/naid/110007052887">朽木14</a></h5>
+<blockquote>
+<p>      - 芸術は、われわれが知るように、言語についての考え方からいまだ遠く離れてしまっている。 … わたしは方法と動機(method and motive)との合一を信じる。それはたんに、馬の前に荷車を置くとか、荷車の前に馬を置くとかの問題ではない。芸術では物事はまったく異なる。それは異なった種類の輸送方法なのだ。乗り物は自らの力で走り、自らの荷物をつくりだす。それはどこへでも動き、自らの内へも動く。それが芸術だ。それが人間だ。(<a class="keyword" href="http://d.hatena.ne.jp/keyword/1960%C7%AF">1960年</a>3月、S.<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%BF%A5%B8%A5%EA">タジリ</a>の彫刻展図録への<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B4%F3%B9%C6">寄稿</a>)<br>「方法と動機の合一」：「われわれが言語をつくる一方で、言語がわれわれをつくる」<br>つまり、既成の価値観の無自覚な運用を嫌った。<br>     - 使い古された世界の擦り切れた諸価値に、常識という洗濯屋から出てきた新しい衣装を与えること(第6回<a class="keyword" href="http://d.hatena.ne.jp/keyword/CIAM">CIAM</a>, 1947, 表層的な<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%E1%C2%E5%BC%E7%B5%C1">近代主義</a>を推進しようとする<a class="keyword" href="http://d.hatena.ne.jp/keyword/CIAM">CIAM</a>に対して)<br><br>     - <a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%DE%A4%C0%B8%AB%A4%CC%C0%A4%B3%A6%A4%D8">まだ見ぬ世界へ</a>の通路(doorways)を見つけ出すことは容易ではない(いまなお社会はあの手この手でそこへの道を塞ごうとしている)。それは天国への門のようなものではなく、報いとして開かれるものでは決してない。実のところ門などありはしない。あるのは、忌まわしく古びた積荷だ。まずこれが脇へとよけられ、道が空けられねばならない。</p>
+</blockquote>
+<p>-----------------------------------------------------------------------------------------------------------------------------------------------</p>
+			<h5><a href="http://ci.nii.ac.jp/naid/110006279602">朽木15</a> <a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%DE%A5%B8%A5%CD%A1%BC%A5%B7%A5%E7%A5%F3">イマジネーション</a>、子供</h5>
+<p>抽象<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C9%BD%B8%BD%BC%E7%B5%C1">表現主義</a>を、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%E2%A5%F3%A5%C9%A5%EA%A5%A2%A5%F3">モンドリアン</a>による真の抽象芸術に対する「単なる抽象」として批判。形態の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C3%EA%BE%DD%B2%BD">抽象化</a>そのものが目的化されているためである。<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%E2%A5%F3%A5%C9%A5%EA%A5%A2%A5%F3">モンドリアン</a>はそれを手段とすることで「リアリティの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B5%D2%B4%D1">客観</a>的表現」を企てた。</p>
+<blockquote>
+<p>     - 人間を通してのみ自然は芸術たり得る<br><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%E2%A5%F3%A5%C9%A5%EA%A5%A2%A5%F3">モンドリアン</a>「芸術は自然でない」「自然は芸術ではない」<br><br>彫刻パヴィリオンにおいて、「母なる自然に囲まれてこそ、芸術は雄弁になるとでもいうかのような」前提を再考する。<br><br>     - 文明の再生(regeneration)の妨げとなる「心を縛る枷(the mind-forged menaces)」を捨て去ることのできる、隠された初発的な力(hidden elementary forces)への探求のなかで、人はついに子供に出会った。<br>「心を縛る枷」：<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%AE%A5%EA%A5%B9">イギリス</a>の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BB%ED%BF%CD">詩人</a>W.ブレイクの詩「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%ED%A5%F3%A5%C9%A5%F3">ロンドン</a>」から。</p>
+</blockquote>
+<p>-----------------------------------------------------------------------------------------------------------------------------------------------</p>
+			<h5><a href="http://ci.nii.ac.jp/naid/110007052962">朽木17</a> 経験</h5>
+<blockquote>
+<p>     - リアルな経験が、記憶と現実と予期(memory, actually and anticipation)との相互作用をとおして、感情と知性による連合(emotional and intellectual associations)の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%CD%A5%C3%A5%C8%A5%EF%A1%BC%A5%AF">ネットワーク</a>が同時に次々と構成しているかぎり、その経験は当座の可能性(immediate visibility)や感覚知覚(sensory perception)をはるかに超え、時間と空間とにおいて、場所と場合(places and occasions)とを結びつける。(未公刊草稿)<br><br>     - 過去が現在へと蓄積され、経験の蓄積帯が心のなかに故郷(home)を見出すことで、現在は時間的深さ(temporal depth)を獲得する。… このことを、時間の内部化(the interiorization of time)、あるいは透明化された時間と呼べよう。(「フォールム」1967年第7号)<br><br>     - 現在とは、過去と未来との間を移りゆくような、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B0%EC%BC%A1%B8%B5">一次元</a>的(a-dimensional)な瞬間として理解されてはならない。また、もはや存在しないものといまだ存在しないもの(what no longar is and <a class="keyword" href="http://d.hatena.ne.jp/keyword/not%20yet">not yet</a> is)との間を移りゆく前線でもない。現在とは意識の連続体のなかを移りゆく、経験された時間的スパンとして理解されるべきであり、この連続体のなかで、過去と未来とが<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BC%FD%C2%AB">収束</a>する。ひとが時間のなかで自らに携えている時間的スパンの経験、つまり持続(<a class="keyword" href="http://d.hatena.ne.jp/keyword/duration">duration</a>)の感覚とは、ときに大きく包含的(inclusive)に、ときに小さく排斥的(exclusive)に認識されるとわたしは考える。(未公刊草稿)<br><br>     - 現在は過去と未来へと拡張するものとして経験され、過去と未来は現在において創造される(未公刊草稿)<br><br>     - 精神的連合の影響力とは、記憶と予期の影響力を分節する(articulate)だけでない。それ以上に、経験と知識とを意味で充実させることで、その両者を知的に関係づける。… 感情的連合の影響もまた、より無意識的にではあるものの、記憶と予期の影響力を強化する。そして記憶のなかに保持された、かつての場所の経験のイメージを、いま起こっている経験や、これから起こるであろう経験、あるいは再び起こるであろう経験のイメージに混ぜ合わせる(blend)。そしてイメージの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%AB%A5%C6%A5%B4%A5%EA%A1%BC">カテゴリー</a>とは無関係に、つまりこれが重要なことであるが、そうした感情的連合によって混ぜ合わされたイメージの多様な本性とは無関係に、それらのイメージを基調色や強調色で彩る(未公刊草稿)</p>
+</blockquote>
+<p>精神的連合が探索されるべき<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%CD%A5%C3%A5%C8%A5%EF%A1%BC%A5%AF">ネットワーク</a>となり、感情的連合によってそれに重み付けがなされるそれがリアルな経験のループによって更新され続ける。<br>-----------------------------------------------------------------------------------------------------------------------------------------------</p>
+			<h5><a href="http://ci.nii.ac.jp/naid/110008014502">朽木19</a> 開け(openness)：「Aldo <a class="keyword" href="http://d.hatena.ne.jp/keyword/van">van</a> Eyck Hubertus house, Stitching Wonen」(1982)</h5>
+<p>「空間」から「場所」へ(<a class="keyword" href="http://d.hatena.ne.jp/keyword/1960%C7%AF">1960年</a>代)：<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B8%B6%B9%AD%BB%CA">原広司</a>「空間ー機能から様相へ」(1987) 関連？<br>71年から83年にかけてTheo <a class="keyword" href="http://d.hatena.ne.jp/keyword/Bosch">Bosch</a>(1940-1994)との<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%A8%C6%AF">協働</a>による<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C0%DF%B7%D7">設計</a>活動：最後期は「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A5%E0%A5%B9%A5%C6%A5%EB%A5%C0%A5%E0">アムステルダム</a>の単親家庭のための居住施設(通称「母の家」、1981年<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BD%D7%B9%A9">竣工</a>)」<br><br>かれは効果を伴わない<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%DE%A5%B8%A5%C3%A5%AF%A5%EF%A1%BC%A5%C9">マジックワード</a>としての「空間」を忌避するように「場所」という概念を用いていたが、かれの影響力が増す<a class="keyword" href="http://d.hatena.ne.jp/keyword/1960%C7%AF">1960年</a>代を通して、「場所」もまた効果を伴わない<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%DE%A5%B8%A5%C3%A5%AF%A5%EF%A1%BC%A5%C9">マジックワード</a>になってしまった。</p>
+<blockquote>
+<p>     - <a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB%B2%C8">建築家</a>たちが発展させた言語は、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C0%E8%B6%EE%BC%D4">先駆者</a>たちの時代が過ぎた今では、それ自体にしか一致せず、それゆえまったく硬直してアカデミックになり、文字通り抽象的になってしまっている。(<a class="keyword" href="http://d.hatena.ne.jp/keyword/CIAM">CIAM</a>オッテルロー会議)<br>     - いま20年を経ていうならば、「開け」(openness)がもたらされるべきである。(「Aldo <a class="keyword" href="http://d.hatena.ne.jp/keyword/van">van</a> Eyck Hubertus house, Stitching Wonen」(1982))<br>     - opennessはあらゆる空間分節の行為に先立つ。<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A1%A6%A5%D7%A5%EA%A5%AA%A5%EA">ア・プリオリ</a>に存在し、その行為によって「内部化」される。このようにしてopennessは、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>という手だてによって適切に再構成され、手に触れうるもの(tangible)となる。(同上)<br>     - 人々がさも熱心に素材や建設の助けを借りて、未踏の(virgin)、開けた(open)、外部の空間から減じようとしているものはたいてい、その過程において閉じてしまい(close)、「内部化」されることはない。… 外部の空間において建造することは、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%AD%B3%A6">境界</a>付け、包囲(enclosure)、分離、縮小へと帰結する。ゆえにわたしは、意識的に努力しない限りこのような限界付けの行為のなかで失われかねないある資質を、特別に強調する。すなわちopennessを。… まさにこの資質は、とりわけ<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB%B2%C8">建築家</a>が保持するよう求められている。建造を手だてとして再構成し、(特別な配慮と能力がなければ)ややもすると閉じかねないものを、開き保つ(keeping open)よう求められているのである。(同上)</p>
+</blockquote>
+<p>内部性が、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B7%FA%C3%DB">建築</a>的な諸<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BB%F6%BE%DD">事象</a>として具現化されたものだとすれば、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B3%B0%C9%F4%C0%AD">外部性</a>はそれに先行するものとなる。<br>-----------------------------------------------------------------------------------------------------------------------------------------------</p>
+			<h5><a href="http://ci.nii.ac.jp/naid/110006974859">井上01</a></h5>
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A5%A4%A5%AF">アイク</a>は基本形態の外部、基本形態同士の関係に基づく領域にも動線を構成している。<br>-----------------------------------------------------------------------------------------------------------------------------------------------</p>
+			<h5>文献リスト</h5>
+<p>・朽木01：<a href="http://ci.nii.ac.jp/naid/110007051458">アルド・ファン・アイクの建築思想 : 「場所と場合」の言説における建築と人間との関わり合い</a><br>・朽木02：<a href="http://ci.nii.ac.jp/naid/110004499776">アルド・ファン・アイクの建築思想-「場所と場合」の言説における建築と社会との関わり合い</a><br>・朽木03：<a href="http://ci.nii.ac.jp/naid/110007051811">アルド・ファン・アイクの建築思想 : 「葉-樹,住宅-都市」の図式における「イメージ」の意味</a><br>・朽木04：<a href="http://ci.nii.ac.jp/naid/110006642836">アルド・ファン・アイクの建築思想 : 都市における「子供」の「イマジネーション」について</a><br>・朽木05：<a href="http://ci.nii.ac.jp/naid/110004658450">アルド・ファン・アイクの建築思想における「葉-樹,住宅-都市」の図式について</a><br>・朽木06：<a href="http://ci.nii.ac.jp/naid/110007052042">アルド・ファン・アイクの建築思想 : 40-50年代の言説における「イマジネーション」について</a><br>・朽木07：<a href="http://ci.nii.ac.jp/naid/110007071957">アルド・ファン・アイクの建築思想 : 「イマジネーション」に関わる「変容」の概念について</a><br>・朽木08：<a href="http://ci.nii.ac.jp/naid/110007052300">アルド・ファン・アイクの建築思想 : 図式「オッテルロー・サークル」の変容について</a><br>・朽木09：<a href="http://ci.nii.ac.jp/naid/110007072562">アルド・ファン・アイクの建築思想 : 「丘とくぼ地」の図式について</a><br>・朽木10：<a href="http://ci.nii.ac.jp/naid/110004836762">アルド・ファン・アイクの建築思想における「対現象」の概念について : ドゴン集落に関する論考を通して</a><br>・朽木11：<a href="http://ci.nii.ac.jp/naid/110007052527">アルド・ファン・アイクの建築思想 : 建築・都市計画における「布置」の概念について</a><br>・朽木12：<a href="http://ci.nii.ac.jp/naid/110006329389">アルド・ファン・アイクの建築思想 : 「場所の束」の概念について</a><br>・朽木13：<a href="http://ci.nii.ac.jp/naid/110004836956">アルド・ファン・アイクの建築思想における「コンフィギュレーション」の構造 : 論考「コンフィギュレーション理論への歩み」を通して</a><br>・朽木14：<a href="http://ci.nii.ac.jp/naid/110007052887">アルド・ファン・アイクの建築思想 : 方法的態度としての「相対性」について</a><br>・朽木15：<a href="http://ci.nii.ac.jp/naid/110006279602">アルド・ファン・アイクの建築思想における方法概念「イマジネーション」の意味</a><br>・朽木16：<a href="http://ci.nii.ac.jp/naid/110006643315">アルド・ファン・アイクの建築思想 : 芸術作品における「経験」の意味について</a><br>・朽木17：<a href="http://ci.nii.ac.jp/naid/110007052962">アルド・ファン・アイクの建築思想 : 「経験」の構造における時間的側面について</a><br>・朽木18：<a href="http://ci.nii.ac.jp/naid/110007073441">アルド・ファン・アイクの建築思想 : 建築・都市における時間の経験について</a><br>・朽木19：<a href="http://ci.nii.ac.jp/naid/110008014502">アルド・ファン・アイクの建築思想 : 1980年代における鍵語「開け」について</a><br>・朽木20：<a href="http://ci.nii.ac.jp/naid/110007982023">アルド・ファン・アイクの建築思想 : 後期思想における「開け」と「光」</a><br>・朽木21：<a href="http://ci.nii.ac.jp/naid/110008113759">アルド・ファン・アイクの建築思想 : 1980年代における鍵語「透明性」について</a><br>・朽木22：<a href="http://ci.nii.ac.jp/naid/110008901539">アルド・ファン・アイクの建築思想 : 1980年代における鍵語「虹」について</a><br>・朽木23：<a href="http://ci.nii.ac.jp/naid/40019284212">アルド・ファン・アイクの建築思想における時間概念について : 「経験」の構造に関する分析を通して</a><br>・井上01：<a href="http://ci.nii.ac.jp/naid/110006974859">オランダ構造主義作品の平面構成における動線空間に関する考察 : 20世紀オランダ後期近代建築作品におけるオープンストラクチャーの研究(その3)</a><br><br>後は読んだけどまあいっかって感じだった。</p>
+			<p class="share-button sectionfooter"><a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/Drunkar/20121111/1352663961" class="hatena-bookmark-button" data-hatena-bookmark-title="Aldo van Eyckについて調べたまとめ" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script><a href="http://twitter.com/share" class="twitter-share-button" data-lang="ja" data-count="none" data-url="http://d.hatena.ne.jp/Drunkar/20121111/1352663961" data-text="Aldo van Eyckについて調べたまとめ - STARTATD (id:Drunkar / @Drunkar)">ツイートする</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fd.hatena.ne.jp%2FDrunkar%2F20121111%2F1352663961&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe></p>
+
+			<p class="sectionfooter"><a href="/Drunkar/20121111/1352663961">Permalink</a> | <a href="/Drunkar/20121111/1352663961#c">コメント(0)</a> | <a href="/Drunkar/20121111/1352663961#tb">トラックバック(0)</a> | 04:59 <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/Drunkar/20121111/1352663961" class="bookmark-icon"><img src="http://d.hatena.ne.jp/images/b_entry_wh.gif" border="0" title="Aldo van Eyckについて調べたまとめを含むブックマーク" alt="Aldo van Eyckについて調べたまとめを含むブックマーク" width="16" height="12" class="icon"></a></p>
+
+		</div>
+<div id="japheego-ad-rect" class="section">
+  
+  <script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+  var gads = document.createElement('script');
+  gads.async = true;
+  gads.type = 'text/javascript';
+  var useSSL = 'https:' == document.location.protocol;
+  gads.src = (useSSL ? 'https:' : 'http:') +
+  '//www.googletagservices.com/tag/js/gpt.js';
+  var node = document.getElementsByTagName('script')[0];
+  node.parentNode.insertBefore(gads, node);
+  })();
+  </script>
+
+  <script type='text/javascript'>
+  googletag.cmd.push(function() {
+  googletag.defineSlot('/4374287/blog_diary_japheego', [300, 250], 'div-gpt-ad-1391672782756-0').addService(googletag.pubads());
+  googletag.pubads().enableSingleRequest();
+  googletag.enableServices();
+  });
+  </script>
+  <div id='div-gpt-ad-1391672782756-0' style='width:300px; height:250px;'>
+  <script type='text/javascript'>
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1391672782756-0'); });
+  </script>
+  </div>
+</div>
+<!-- google_ad_section_end -->
+<!-- rakuten_ad_target_end -->
+
+
+</div>
+
+<form id="comment-form" method="post" action="/Drunkar/comment#c" class="comment">
+<input type="hidden" name="mode" value="enter">
+<input type="hidden" name="rkm" value="">
+<input type="hidden" name="date" value="2012-11-11">
+<div class="comment">
+  <div class="caption"><a name="c">コメントを書く</a></div>
+  <div class="commentshort">
+    
+    
+
+    <a name="error-message"></a>
+    <p class="message" style="display:none"></p>
+
+    
+
+    
+            
+    <p class="commentform">
+      <span class="commentator">
+        <span class="usermailconfirm"><input name="usermail" size="1" value=""><input name="userurl" size="1" value="">スパム対策のためのダミーです。もし見えても何も入力しないでください<br></span>
+        <span class="username">
+        <img src="http://www.hatena.ne.jp/images/guest_icon.gif" class="hatena-id-icon" alt="ゲスト" title="ゲスト" height="16" width="16">
+        <input type="hidden" name="section" value="1352663961">
+        
+          <input id="comment-username" name="username" size="15">
+        
+        </span>
+        
+          <span class="usermail"><img src="/images/icon-usermail.gif" style="vertical-align:middle;margin-right:3px;"><input id="comment-usermail" name="useremail" size="15" value=""></span>
+          <span class="userurl"><img src="/images/icon-userurl.gif" style="vertical-align:middle;margin-right:3px;"><input id="comment-userurl" name="useruri" size="15" value=""></span>
+        
+      </span>
+<br>
+      <!-- NOT_VERIFIED_COMMENT_AUTH -->
+      <textarea id="comment-textarea" name="body" value="" cols="60" rows="3"></textarea><br>
+      
+          <div class="captcha">
+            <img src="/Drunkar/captcha?1401252495" class="captcha-image">
+            <span class="captcha-message">画像認証</span><br />
+            <input type="text" name="captcha_code" size="10" class="captcha-string" id="comment-captcha">
+          </div>
+      
+      <span class="comment-submit"><input type="submit" id="comment-form-button" value="投稿"></span>
+    </p>
+
+      <script type="text/javascript" src="/js/diary_comment_edit_form.js"></script>
+    
+
+  </div>
+</div>
+
+</form>
+
+
+
+
+
+  
+  <div class="refererlist">
+    <div class="caption">
+      <a name="tb">トラックバック</a> - http://d.hatena.ne.jp/Drunkar/20121111/1352663961
+    </div>
+    
+  </div>
+  
+  
+
+
+
+
+
+    <div class="refererlist">
+      <div class="caption">リンク元</div>
+      <ul>
+          <li>26 <a href="http://it-ch.net/t/49" rel="nofollow">http://it-ch.net/t/49</a></li>
+          <li>10 <a href="http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=2&amp;ved=0CCoQFjAB&amp;url=http%3A%2F%2Fd.hatena.ne.jp%2FDrunkar%2F20110802%2F1312234758&amp;ei=mo-gULuOGozNmQXt6oGgCw&amp;usg=AFQjCNGc9dk7EwiywKwjiOC0IR5HdQjvLg&amp;sig2=Sp7umwfGlQonzRJebP8pyQ" rel="nofollow">http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=2&amp;ved=0CCoQFjAB&amp;url=http://d.hatena.ne.jp/Drunkar/20110802/1312234758&amp;ei=mo-gULuOGozNmQXt6oGgCw&amp;usg=AFQjCNGc9dk7EwiywKwjiOC0IR5HdQjvLg&amp;sig2=Sp7umwfGlQonzRJebP8pyQ</a></li>
+          <li>9 <a href="http://t.co/SEDsZnZG" rel="nofollow">http://t.co/SEDsZnZG</a></li>
+          <li>9 <a href="http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=14&amp;ved=0CDYQFjADOAo&amp;url=http%3A%2F%2Fd.hatena.ne.jp%2FDrunkar%2F20121028%2F1351430260&amp;ei=VrmgUMPzOOWemQXqtICwCg&amp;usg=AFQjCNHT87E5_qOCOFyJ4oB0A5UdSj-hhg&amp;sig2=YTlrDaqYsEn-B_O1aaSXPg" rel="nofollow">http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=14&amp;ved=0CDYQFjADOAo&amp;url=http://d.hatena.ne.jp/Drunkar/20121028/1351430260&amp;ei=VrmgUMPzOOWemQXqtICwCg&amp;usg=AFQjCNHT87E5_qOCOFyJ4oB0A5UdSj-hhg&amp;sig2=YTlrDaqYsEn-B_O1aaSXPg</a></li>
+          <li>6 <a href="http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;frm=1&amp;source=web&amp;cd=2&amp;cad=rja&amp;ved=0CCgQFjAB&amp;url=http%3A%2F%2Fd.hatena.ne.jp%2FDrunkar%2F20110802%2F1312234758&amp;ei=YrmgULLmM8ewiQe3ioG4Dg&amp;usg=AFQjCNGc9dk7EwiywKwjiOC0IR5HdQjvLg" rel="nofollow">http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;frm=1&amp;source=web&amp;cd=2&amp;cad=rja&amp;ved=0CCgQFjAB&amp;url=http://d.hatena.ne.jp/Drunkar/20110802/1312234758&amp;ei=YrmgULLmM8ewiQe3ioG4Dg&amp;usg=AFQjCNGc9dk7EwiywKwjiOC0IR5HdQjvLg</a></li>
+          <li>5 <a href="http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%95%E3%83%A9%E3%83%83%E3%83%88%20%E5%BB%BA%E7%AF%89&amp;source=web&amp;cd=2&amp;ved=0CCoQFjAB&amp;url=http%3A%2F%2Fd.hatena.ne.jp%2FDrunkar%2F20110802%2F1312234758&amp;ei=TjCjUKWSL6SSiAeitIHAB" rel="nofollow">http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=スーパーフラット 建築&amp;source=web&amp;cd=2&amp;ved=0CCoQFjAB&amp;url=http://d.hatena.ne.jp/Drunkar/20110802/1312234758&amp;ei=TjCjUKWSL6SSiAeitIHAB</a></li>
+          <li>5 <a href="http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=4&amp;cad=rja&amp;ved=0CDYQFjAD&amp;url=http%3A%2F%2Fd.hatena.ne.jp%2FDrunkar%2F20120712%2F1342112852&amp;ei=HIyhUKSqHKv3mAWFt4GwBg&amp;usg=AFQjCNGeaL2eW1RT4Hk5Q_6C2mktuAuQrw&amp;sig2=0u50yjtbLVd2mabrzPwT3w" rel="nofollow">http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=4&amp;cad=rja&amp;ved=0CDYQFjAD&amp;url=http://d.hatena.ne.jp/Drunkar/20120712/1342112852&amp;ei=HIyhUKSqHKv3mAWFt4GwBg&amp;usg=AFQjCNGeaL2eW1RT4Hk5Q_6C2mktuAuQrw&amp;sig2=0u50yjtbLVd2mabrzPwT3w</a></li>
+          <li>4 <a href="http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=8&amp;ved=0CFYQFjAH&amp;url=http%3A%2F%2Fd.hatena.ne.jp%2FDrunkar%2F20121111%2F1352663961&amp;ei=BE-jUMuyL4b2mAWM44HgAw&amp;usg=AFQjCNGJsZimg4j9HlSouaph2LJEIDjMww&amp;sig2=ZLZyUVWuU7Bnf3nqgwpF-g" rel="nofollow">http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=8&amp;ved=0CFYQFjAH&amp;url=http://d.hatena.ne.jp/Drunkar/20121111/1352663961&amp;ei=BE-jUMuyL4b2mAWM44HgAw&amp;usg=AFQjCNGJsZimg4j9HlSouaph2LJEIDjMww&amp;sig2=ZLZyUVWuU7Bnf3nqgwpF-g</a></li>
+          <li>3 <a href="http://b.hatena.ne.jp/emustak/" rel="nofollow">http://b.hatena.ne.jp/emustak/</a></li>
+          <li>3 <a href="http://www.facebook.com/" rel="nofollow">http://www.facebook.com/</a></li>
+      </ul>
+      
+    </div>
+
+
+
+
+</div>
+
+
+
+</div>
+<div class="calendar" id="pager-bottom">
+  <a rel="prev" href="/Drunkar/20121101/1351788439" class="prev">&lt;[C++]C++で「はじめての機械学習...</a>&nbsp;<span class="delimiter">|</span>&nbsp;<a rel="next" href="/Drunkar/20121123/1353618640" class="next">[others]*&gt;</a>
+</div>
+</div>
+<br><br>
+<div align="right"><a href="#simple-header">PAGE TOP↑</a>
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  var days = document.getElementById('days');
+  if (days && days.innerHTML.indexOf("今週のお題") != -1) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'odai', 3]);
+  }
+
+  if (days && /\u4eca\u9031\u306e\u304a\u984c/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'odai', 3]);
+  }
+
+  if (days && /ScanSnap\u7279\u5225\u30e2\u30c7\u30eb\u30fb\u30d6\u30ed\u30b0\u3067\u5ba3\u4f1d\u30b3\u30f3\u30c6\u30b9\u30c8/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'scansnap1401bcn4ssacro', 3]);
+  }
+
+  if (days && /Presso\u4f7f\u3063\u3066\u307f\u305f/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'presso1404', 3]);
+  }
+
+  if (days && /CodeIQ\u306e\u554f\u984c\u30fb\u30d1\u30ba\u30eb\u3092\u8003\u3048\u3088\u3046\uff01/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'codeiq_matsuri2013_2_2', 3]);
+  }
+
+  if (days && /2013\u5e74\u306b\u3084\u308a\u305f\u3044\u3053\u3068/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'newyear2013', 3]);
+  }
+
+  if (days && /2012\u5e74\u30dc\u30c4\u738b\u6c7a\u5b9a\u6226\uff01\u30d5\u30eb\u30bf\u88fd\u83d3\ud7\u306f\u3066\u306a\u30d6\u30ed\u30b0\u304a\u984c\u30ad\u30e3\u30f3\u30da\u30fc\u30f3/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'furuta', 3]);
+  }
+
+  if (days && /\u6d77\u5916\u30c9\u30e9\u30de\u300e\u30e9\u30a4\u30fb\u30c8\u30a5\u30fb\u30df\u30fc \u5618\u306e\u77ac\u9593\u300f\u89b3\u305f\u3044\uff01|\u300e\u30e9\u30a4\u30fb\u30c8\u30a5\u30fb\u30df\u30fc \u5618\u306e\u77ac\u9593\u300f\u7b2c1\u8a71\u306e\u611f\u60f3\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044|\u4eca\u3060\u304b\u3089\u8a00\u3048\u308b\u300c\u5618\u3092\u3064\u3044\u3066\u3057\u307e\u3063\u305f\u30a8\u30d4\u30bd\u30fc\u30c9\u300d\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044|\u3060\u307e\u3055\u308c\u305f\u3051\u3069\u3001\u8a31\u305b\u3066\u3057\u307e\u3063\u305f\u5618\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'lietome', 3]);
+  }
+
+  if (days && /\u30de\u30a4\u30d9\u30b9\u30c8\u30bd\u30f3\u30b02013/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'mybestsong2013', 3]);
+  }
+
+  if (days && /\u7d0d\u6dbc\uff01\u307b\u3093\u3068\u306b\u3042\u3063\u305f\u6016\u3044\u30b3\u30fc\u30c9/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'codeiq_matsuri2013_2_1', 3]);
+  }
+
+  if (days && /\u590f\u306e\u5199\u771f2013/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'photocon2013summer', 3]);
+  }
+
+  if (days && /Windows\/Office\u6b66\u52c7\u4f1d/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'WindowsDevOpen', 3]);
+  }
+
+  if (days && /Visa\u30d7\u30ea\u30da\u30a4\u30c9\u300cV\u30d7\u30ea\u30ab\u300d\u8a66\u3057\u305f\u3044\uff01|Visa\u30d7\u30ea\u30da\u30a4\u30c9\u300cV\u30d7\u30ea\u30ab\u300d\u3001\u81ea\u5206\u306a\u3089\u3053\u3046\u4f7f\u3046\uff01|V\u30d7\u30ea\u30ab\u304c1\u4e07\u5186\u5206\u3042\u3063\u305f\u3089\u3001\u30cd\u30c3\u30c8\u3067\u4f55\u3092\u8cb7\u3044\u307e\u3059\u304b\uff1f/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'vpreca', 3]);
+  }
+
+  if (days && /\u300c\u79c1\u306f\u3007\u3007\u738b\uff01\u300d\u30d0\u30a4\u30af\u738b\ud7\u306f\u3066\u306a\u30d6\u30ed\u30b0\u304a\u984c\u30ad\u30e3\u30f3\u30da\u30fc\u30f3/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'bike-o', 3]);
+  }
+
+  if (days && /\u30a2\u30a4\u30c7\u30e0 \u30a8\u30f3\u30b8\u30cb\u30a2\u30ad\u30e3\u30ea\u30a2Hacks\u5171\u6709\u30d7\u30ed\u30b8\u30a7\u30af\u30c8|\u30a8\u30f3\u30b8\u30cb\u30a2\u3068\u3057\u3066\u306e\u3001\u3068\u3063\u3066\u304a\u304d\u306e\u30ad\u30e3\u30ea\u30a2Hacks\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044|\u3042\u306a\u305f\u304c\u30a8\u30f3\u30b8\u30cb\u30a2\u8ee2\u8077\u30b5\u30a4\u30c8\u3092\u4f5c\u308b\u306a\u3089\u3001\u3069\u3093\u306a\u30b5\u30a4\u30c8\u306b\u3057\u307e\u3059\u304b\uff1f|5\u5e74\u5f8c\u306e\u300c\u30a8\u30f3\u30b8\u30cb\u30a2\u306e\u50cd\u304d\u65b9\u300d\u306f\u3001\u3069\u3046\u5909\u308f\u3063\u3066\u3044\u3066\u307b\u3057\u3044\u3067\u3059\u304b\uff1f/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'aidemcareer', 3]);
+  }
+
+  if (days && /\u306f\u3066\u306a\u30c0\u30a4\u30a2\u30ea\u30fc10\u5468\u5e74\u304a\u3081\u3067\u3068\u3046\uff01/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'hatenadiary10th', 3]);
+  }
+
+  if (days && /\u8aad\u307f\u653e\u984c\u3067\u30b3\u30b9\u30d1\u3088\u3057\uff01\u96fb\u5b50\u66f8\u7c4d\u30a2\u30d7\u30eayomel.jp\u30ad\u30e3\u30f3\u30da\u30fc\u30f3/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'yomel', 3]);
+  }
+
+  if (days && /\u30bb\u30c4\u30e4\u30af\u30a8\u30b9\u30c8/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'setsuyaquest', 3]);
+  }
+
+  if (days && /\u79cb\u306e\u591c\u9577\u306f\u8aad\u66f8\u3068\u30d6\u30ed\u30b0/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'bookreview2013fall', 3]);
+  }
+
+  if (days && /\u7279\u5225\u304a\u984c\u300c\u82b8\u8853\u306e\u79cb\u300d/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'caillebotte', 3]);
+  }
+
+  if (days && /\u30a8\u30a4\u30d7\u30ea\u30eb\u30d5\u30fc\u30eb2014/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'aprilfool2014', 3]);
+  }
+
+  _gaq.push(
+  ['_setAccount', 'UA-441387-31'],
+  ['_setSampleRate', '50'],
+  ['_setCustomVar', 1, 'afc_type', 'inactive', 3],
+  ['_setCustomVar', 3, 'theme', 'notheme', 3],
+  ['_setCustomVar', 4, 'usertype', 'guest', 1],
+  ['_trackPageview'],
+  ['b._setAccount', 'UA-7855606-1'],
+  ['b._setDomainName', '.hatena.ne.jp'],
+  ['b._setSampleRate', '10'],
+  ['b._trackPageview']
+  ,['c._setAccount', 'UA-33361572-1'],
+  ['c._trackPageview']
+  );
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- CG:1,CH:1,ICG:27,ICH:13,T: -->
+</body>
+</html>
