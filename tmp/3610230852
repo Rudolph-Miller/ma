@@ -1,235 +1,0 @@
-<!DOCTYPE html><html dir="ltr" lang="ja"><head><meta charset="UTF-8" /><title>PCスキルの小技・忘却防止メモ  &raquo; 形態素解析とN-Gram</title><meta http-equiv="Content-Script-Type" content="text/javascript" /><meta http-equiv="Content-Style-Type" content="text/css" /><link rel="alternate" type="application/rss+xml" title="PCスキルの小技・忘却防止メモ RSS Feed" href="http://tips.recatnap.info/feed/" /><link rel="pingback" href="http://tips.recatnap.info/xmlrpc.php" /><link rel="stylesheet" href="http://tips.recatnap.info/wp-content/themes/tips/style.css" type="text/css" media="screen" /><script type="text/javascript" src="http://tips.recatnap.info/wp-content/themes/tips/date.js"></script><script type="text/javascript" src="http://tips.recatnap.info/wp-content/themes/tips/link.js"></script><script type='text/javascript' src='http://tips.recatnap.info/wp-includes/js/jquery/jquery.js?ver=1.11.0'></script>
-<script type='text/javascript' src='http://tips.recatnap.info/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://tips.recatnap.info/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://tips.recatnap.info/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='各種記事（昨日：2012/08/06）盛り合わせ：SEOとか。' href='http://tips.recatnap.info/assorted_news_20120806/' />
-<link rel='next' title='N-bestについて' href='http://tips.recatnap.info/about_nbest/' />
-<meta name="generator" content="WordPress 3.9.1" />
-<link rel='canonical' href='http://tips.recatnap.info/morphological_analysis_and_ngram/' />
-<link rel='shortlink' href='http://tips.recatnap.info/?p=2886' />
-<script type="text/javascript">  var _gaq = _gaq || [];  _gaq.push(['_setAccount', 'UA-12234921-2']);  _gaq.push(['_setDomainName', '.recatnap.info']);  _gaq.push(['_trackPageview']);  (function() {    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script></head><body onload="myFunc(0)"><div id="wrap"><div id="container">	<div id="main">		<div id="hPage">
-		<div class="pTtl">PCスキルの小技・忘却防止メモ</div>
-		<p>仕事で調べたり覚えたりした小技たち。参考書大好きな人たちには役に立たないかもね。</p>
-</div>
-<div id="hNavi">
-	<ul>
-		<li><a href="http://tips.recatnap.info">トップページ</a></li>
-		<li><a href="http://tips.recatnap.info/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8">wiki</a></li>
-		<li><a href="http://tips.recatnap.info/wiki/%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%AE%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB">ソースのサンプル</a></li>
-		<li><a href="http://tips.recatnap.info/wiki/%E5%90%84%E7%A8%AE%E8%87%AA%E4%BD%9C%E3%83%84%E3%83%BC%E3%83%AB">各種自作ツール</a></li>
-		<li><a href="http://tips.recatnap.info/toollist/">各種自作ツール（旧）</a></li>
-	</ul>
-</div>
-				<div class="detS">						<form action="http://www.google.co.jp" id="cse-search-box" target="_blank">				<div>					<input type="hidden" name="cx" value="partner-pub-9293786234184342:6934440749" />					<input type="hidden" name="ie" value="UTF-8" />					<input type="text" name="q" size="22" />					<input type="submit" name="sa" value="検索" />				</div>			</form>			<script type="text/javascript" src="http://www.google.co.jp/coop/cse/brand?form=cse-search-box&amp;lang=ja"></script>		</div>						<div class="oneArt">			<div style="text-align:right;">				<script type="text/javascript">					getSingle();				</script>			</div>						<h1>形態素解析とN-Gram</h1>						<div class="gAdd">				<script type="text/javascript"><!--				google_ad_client = "ca-pub-9293786234184342";				google_ad_slot = "6244118430";				google_ad_width = 468;				google_ad_height = 60;				//-->				</script>				<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>			</div>						<div class="content">				<h2>形態素解析</h2>
-<div class="box">
-形態素解析とは、単語で区切ったもの。
-</div>
-<h2>N-Gram</h2>
-<div class="box">
-N-Gramとは、文字数（N文字）で区切ったもの。
-</div>
-<p>N-Gramについて。<br />
-<BLOCKQUOTE>「N文字インデックス法」「Nグラム法」などともいう。検索対象を単語単位ではなく文字単位で分解し、後続の N-1 文字を含めた状態で出現頻度を求める方法。Nの値が1なら「ユニグラム(uni-gram)」、2なら「バイグラム(bi-gram)」、3なら「トライグラム(tri-gram)」と呼ばれる。たとえば「全文検索技術」という文字列の場合、「全文」「文検」「検索」「索技」「技術」「術（終端）」と2文字ずつ分割して索引化を行ってやれば、検索漏れが生じず、辞書の必要も無い。形態素解析によるわかち書きに比べると、2つの欠点がある。意図したものとは異なる検索結果（いわゆる検索ノイズ）の発生と、インデックスのサイズも肥大化である。検索ノイズの一例として、「<b>京都</b>」で検索すると「東<b>京都</b>庁」という適合しない検索結果が返ってくる場合が挙げられる。</BLOCKQUOTE></p>
-			</div>			<div class="PstInf">				2012/08/07				<span>カテゴリ: <a href="http://tips.recatnap.info/category/%e3%81%9d%e3%81%ae%e4%bb%96%e3%83%a1%e3%83%a2%e3%80%81tips/" title="その他メモ、tips の投稿をすべて表示" rel="category tag">その他メモ、tips</a></span>				<span><a href="http://tips.recatnap.info/tag/mecab/" rel="tag">MeCab</a></span>				<br />				<script type="text/javascript">					getSingle();				</script>			</div>		</div>								<div class="relEtry">				</div>				<div class="movEtry">		&raquo; 次(新)の記事 <a href="http://tips.recatnap.info/about_nbest/" rel="next">N-bestについて<br /></a>		&laquo; 前(古)の記事 <a href="http://tips.recatnap.info/assorted_news_20120806/" rel="prev">各種記事（昨日：2012/08/06）盛り合わせ：SEOとか。</a>		</div>						<div class="gAdd">
-			<script type="text/javascript"><!--
-			google_ad_client = "ca-pub-9293786234184342";
-			google_ad_slot = "6244118430";
-			google_ad_width = 468;
-			google_ad_height = 60;
-			//-->
-			</script>
-			<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-		</div>
-		
-		<div id="newPosts">
-			<div class="idxPL">
-				<div class="rowArt">
-					<h2>新着（ニュース関連以外）</h2>
-										<div class="dat">2014/05/11</div>
-					<div class="ttl"><a href="http://tips.recatnap.info/html5-%e5%9f%ba%e6%9c%ac%e7%9a%84%e3%81%aa%e3%82%bf%e3%82%b0/">html5 基本的なタグ</a></div>
-					<div class="exp">
-						<p>HTML5で増えたタグで重要っぽそうなタグ。</p>
-					</div>
-										<div class="dat">2014/04/24</div>
-					<div class="ttl"><a href="http://tips.recatnap.info/impress-powerpoint%e3%81%a8%e5%90%8c%e3%81%a8%e3%81%86%e3%81%98%e3%82%88%e3%81%86%e3%81%aa%e7%84%a1%e6%96%99%e3%82%bd%e3%83%95%e3%83%88/">Impress PowerPointと同とうじような無料ソフト</a></div>
-					<div class="exp">
-						<p>Officeじゃなくて無料のOpenOfficeのプレゼンテーションソフトがImpress。 基本、パワポと同じ。 wikiでまとめ中：OpenOffice Impress 画像周り調査中 パワポと同じ感じなんだけど、画 [...]</p>
-					</div>
-										<div class="dat">2014/04/22</div>
-					<div class="ttl"><a href="http://tips.recatnap.info/html5js%e3%81%a7%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e4%bf%9d%e5%ad%98/">HTML5+JSでファイル保存</a></div>
-					<div class="exp">
-						<p>HTML5+JavaScriptでファイルをPCに保存する。</p>
-					</div>
-										<div class="dat">2014/04/22</div>
-					<div class="ttl"><a href="http://tips.recatnap.info/calc-excel%e3%81%a8%e5%90%8c%e7%ad%89%e3%81%ae%e7%84%a1%e6%96%99%e3%82%bd%e3%83%95%e3%83%88/">Calc excelと同等の無料ソフト</a></div>
-					<div class="exp">
-						<p>Officeじゃなくて無料のOpenOfficeの表計算ソフトがCalc。</p>
-					</div>
-										<div class="dat">2014/04/21</div>
-					<div class="ttl"><a href="http://tips.recatnap.info/wp-%e3%80%8caddquicktag%e3%80%8d%e3%81%a8%e3%80%8cwp-multibyte-patch%e3%80%8d%e3%81%ae%e7%b5%84%e5%90%88%e3%81%9b%e3%81%a7%e4%b8%8d%e5%85%b7%e5%90%88/">wp 「AddQuicktag」と「WP Multibyte Patch」の組合せで不具合</a></div>
-					<div class="exp">
-						<p>「AddQuicktag」と「WP Multibyte Patch」を二つ使っていると不具合があるらしい。</p>
-					</div>
-									</div>
-			</div>
-			
-			<div class="idxPR">
-				<div class="rowArt">
-					<h2>ニュース関連の新着</h2>
-										<div class="ttl"><a href="http://tips.recatnap.info/assorted_news_20140527/">各種記事（昨日：2014/05/27）盛り合わせ：SEOとか。</a></div>
-					<div class="exp"></div>
-										<div class="ttl"><a href="http://tips.recatnap.info/assorted_news_20140526/">各種記事（昨日：2014/05/26）盛り合わせ：SEOとか。</a></div>
-					<div class="exp"></div>
-										<div class="ttl"><a href="http://tips.recatnap.info/assorted_news_20140525/">各種記事（昨日：2014/05/25）盛り合わせ：SEOとか。</a></div>
-					<div class="exp"></div>
-										<div class="ttl"><a href="http://tips.recatnap.info/assorted_news_20140524/">各種記事（昨日：2014/05/24）盛り合わせ：SEOとか。</a></div>
-					<div class="exp"></div>
-										<div class="ttl"><a href="http://tips.recatnap.info/assorted_news_20140523/">各種記事（昨日：2014/05/23）盛り合わせ：SEOとか。</a></div>
-					<div class="exp"></div>
-										<div class="ttl"><a href="http://tips.recatnap.info/assorted_news_20140522/">各種記事（昨日：2014/05/22）盛り合わせ：SEOとか。</a></div>
-					<div class="exp"></div>
-										<div class="ttl"><a href="http://tips.recatnap.info/assorted_news_20140521/">各種記事（昨日：2014/05/21）盛り合わせ：SEOとか。</a></div>
-					<div class="exp"></div>
-										<div class="ttl"><a href="http://tips.recatnap.info/assorted_news_20140520/">各種記事（昨日：2014/05/20）盛り合わせ：SEOとか。</a></div>
-					<div class="exp"></div>
-									</div>
-			</div>
-		</div>
-	</div>		<div id="side">	<div id="HeadTitle">		<div id="myIDdate">現在時刻：ブラウザが対応していません</div>		<div id="TtlLogo"><a href="http://tips.recatnap.info"><img src="http://tips.recatnap.info/wp-content/themes/tips/images/main.gif" alt="PCスキルの小技・忘却防止メモ" width="175" height="67" /></a></div>		<div id="mySiteName"><a href="http://tips.recatnap.info/">PCスキルの小技・忘却防止メモ</a><br />ExcelにHTML、CSSとかjavascriptなどPCに関連するお勉強・小技のメモ</div>	</div>		<div class="sBox">		<h3>新着</h3>		<ul>						<li><a href="http://tips.recatnap.info/assorted_news_20140527/">各種記事（昨日：2014/05/27）盛り合わせ：SEOとか。</a></li>						<li><a href="http://tips.recatnap.info/assorted_news_20140526/">各種記事（昨日：2014/05/26）盛り合わせ：SEOとか。</a></li>						<li><a href="http://tips.recatnap.info/assorted_news_20140525/">各種記事（昨日：2014/05/25）盛り合わせ：SEOとか。</a></li>						<li><a href="http://tips.recatnap.info/assorted_news_20140524/">各種記事（昨日：2014/05/24）盛り合わせ：SEOとか。</a></li>						<li><a href="http://tips.recatnap.info/assorted_news_20140523/">各種記事（昨日：2014/05/23）盛り合わせ：SEOとか。</a></li>					</ul>	</div>		<div class="gAdd">		<script type="text/javascript"><!--		google_ad_client = "pub-9293786234184342";		google_ad_slot = "7952339626";		google_ad_width = 250;		google_ad_height = 250;		//-->		</script>		<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>	</div>			<div class="sBox">		<h3>ページ</h3>		<ul>		<li><a href="http://tips.recatnap.info/wiki/">まとめ（wiki）</a></li>		<li class="page_item page-item-898"><a href="http://tips.recatnap.info/japanese_translation_manual_simple_html_dom_parser/">Simple HTML DOM Parserの日本語訳</a></li>
-<li class="page_item page-item-1028"><a href="http://tips.recatnap.info/personal_summary_page_link/">個人的なまとめページへのリンク</a></li>
-<li class="page_item page-item-2464"><a href="http://tips.recatnap.info/sample_and_source/">各種サンプルとソース</a></li>
-<li class="page_item page-item-516"><a href="http://tips.recatnap.info/toollist/">役立つかは知らないツール</a></li>
-		</ul>	</div>			<div class="sBox">		<h3>Yes or Noくじ</h3>		<div style="margin:0 0.2em;">		<script type="text/javascript">
-(function($) {
-    $(document).ready(function () {
-        $("body").append('<scr' + 'ipt type="text/javascript" src="http://tips.recatnap.info/wp-content/plugins/kuzi/kuzi.js"></scr' + 'ipt>');
-        $("body").append('<link rel="stylesheet" href="http://tips.recatnap.info/wp-content/plugins/kuzi/kuzi.css" type="text/css" />');
-
-        try{
-                 var koVer = ko.version;
-        }
-        catch(e){
-            $("body").append('<scr' + 'ipt type="text/javascript" src="http://tips.recatnap.info/wp-content/plugins/kuzi/knockout-2.1.0.js"></scr' + 'ipt>');
-        }
-
-        ko.applyBindings(new ViewModel(new Array("(●｀･ω･)ゞOK/Yes","(*≧∇≦)ﾉOK/Yes","(〃ω〃)OK/Yes","(○´∀｀)σOK/Yes","壁|▽//)ゝOK/Yes","(〃ﾉ∀ﾉ)OK/Yes","(o´ω｀o)OK/Yes","(*･З･｀)OK/Yes","(っ･ω･)っOK/Yes","ヾﾉ-ω-｀)NG/No","(｡｀-д-)NG/No","ヽ(*｀Д´)ﾉNG/No","(；*´Д`)NG/No","(*｀ε´*)ﾉNG/No","(●｀з´●)NG/No","(´;д;)qNG/No","ο（´･ε･｀○）NG/No","(。￣ｘ￣。)NG/No")));
-    });
-})(jQuery);
-</script>
-
-<div data-bind="visible: lotReel">
-    <div class="reel">
-        <div class="rA" data-bind="text: ReelTop"></div>
-        <div class="rB" data-bind="text: ReelT_M"></div>
-        <div class="rC" data-bind="text: ReelMid"></div>
-        <div class="rB" data-bind="text: ReelM_B"></div>
-        <div class="rA" data-bind="text: ReelBtm"></div>
-    </div>
-    <a class="btn" href="#" data-bind="click: loop, text: btnLabel"></a>
-</div>		</div>		<p style="font-size:0.8em;">どっちでもいい選択に悩んだときは「くじ」で決める。「AとBのどっちにしようかな…」という場合「Aにする」と心に決めて「スタート」、適当なタイミングで「ストップ」ボタンを押す。「OK/Yes」となれば「A」、「NG/No」となれが「B」にするってな感じ。</p>	</div>		<div class="sWrp">		<div class="sBox">			<div class="inBoxL">				<h3>カテゴリー</h3>				<ul>					<li class="cat-item cat-item-686"><a href="http://tips.recatnap.info/category/net/" title=".NET に含まれる投稿をすべて表示">.NET</a> (25)
-</li>
-	<li class="cat-item cat-item-307"><a href="http://tips.recatnap.info/category/css/" title="CSS（カスケードスタイルシート）のtipsや各種メモ">CSS</a> (33)
-</li>
-	<li class="cat-item cat-item-539"><a href="http://tips.recatnap.info/category/eclipse/" title="オープンソースの統合ソフトウェア開発環境(IDE)の一つ。PHPとかのデバッグとかもできるし、複数の人と共有（？）できる。">eclipse</a> (20)
-</li>
-	<li class="cat-item cat-item-635"><a href="http://tips.recatnap.info/category/flashdevelop/" title="FlashDevelop に含まれる投稿をすべて表示">FlashDevelop</a> (3)
-</li>
-	<li class="cat-item cat-item-674"><a href="http://tips.recatnap.info/category/flexas3/" title="Flashの何かのflex。AirがアプリでAirを作るのにflexが必要という感じになるのかな。">flex/as3</a> (49)
-</li>
-	<li class="cat-item cat-item-375"><a href="http://tips.recatnap.info/category/htaccess%e9%96%a2%e9%80%a3/" title="アクセス制限やリダイレクトするときに使う.htaccess。サーバー側で設定できないときに使うファイル。">htaccess関連</a> (6)
-</li>
-	<li class="cat-item cat-item-306"><a href="http://tips.recatnap.info/category/htmlxhtml/" title="ハイパーテキストマークアップランゲージってヤツ。サイトを作るときに使う言語（？）">HTML/XHTML</a> (26)
-</li>
-	<li class="cat-item cat-item-308"><a href="http://tips.recatnap.info/category/javascript/" title="Javascript全般。AjaxやjQueryとかの区分けがよくわかんないからまとめてココに書く。">Javascript</a> (103)
-<ul class='children'>
-	<li class="cat-item cat-item-689"><a href="http://tips.recatnap.info/category/javascript/jquery/" title="jquery に含まれる投稿をすべて表示">jquery</a> (21)
-</li>
-	<li class="cat-item cat-item-688"><a href="http://tips.recatnap.info/category/javascript/knockout-js/" title="jqueryをパワーアップさせた感じのknockout.js">knockout.js</a> (40)
-</li>
-</ul>
-</li>
-	<li class="cat-item cat-item-393"><a href="http://tips.recatnap.info/category/office%e7%b3%bb%e3%82%bd%e3%83%95%e3%83%88/" title="マイクロソフトのオフィス系全般。excelは別カテゴリを用意。">office系ソフト</a> (43)
-<ul class='children'>
-	<li class="cat-item cat-item-317"><a href="http://tips.recatnap.info/category/office%e7%b3%bb%e3%82%bd%e3%83%95%e3%83%88/excel/" title="どこの企業のPCにでもインストされてると思われるExcelについて。">Excel</a> (37)
-</li>
-</ul>
-</li>
-	<li class="cat-item cat-item-663"><a href="http://tips.recatnap.info/category/perl/" title="perl に含まれる投稿をすべて表示">perl</a> (1)
-</li>
-	<li class="cat-item cat-item-364"><a href="http://tips.recatnap.info/category/php/" title="Web用のプログラム…だと思う。フリーのスクリプトのカスタマイズとかで知っておかないといけない。">php</a> (144)
-</li>
-	<li class="cat-item cat-item-654"><a href="http://tips.recatnap.info/category/ruby/" title="ruby に含まれる投稿をすべて表示">ruby</a> (17)
-</li>
-	<li class="cat-item cat-item-316"><a href="http://tips.recatnap.info/category/seosem/" title="いわずと知れたサーチエンジン最適化。ブラックハットとかの情報はなし。普通にサイトを運営するさいに気をつけるべき点とか。">SEO/SEM</a> (6)
-</li>
-	<li class="cat-item cat-item-382"><a href="http://tips.recatnap.info/category/sql/" title="DB（データベース）のこと。主にselect文で使う小技や各メモ。基本的にMySQL。">SQL</a> (32)
-<ul class='children'>
-	<li class="cat-item cat-item-662"><a href="http://tips.recatnap.info/category/sql/postgres/" title="postgres に含まれる投稿をすべて表示">postgres</a> (13)
-</li>
-</ul>
-</li>
-	<li class="cat-item cat-item-363"><a href="http://tips.recatnap.info/category/win/" title="windows全般。">win</a> (15)
-</li>
-	<li class="cat-item cat-item-404"><a href="http://tips.recatnap.info/category/wordpress/" title="CMSのwordpress関連の忘却防止用">Wordpress</a> (47)
-</li>
-	<li class="cat-item cat-item-496"><a href="http://tips.recatnap.info/category/%e3%81%9d%e3%81%ae%e4%bb%96%e3%83%a1%e3%83%a2%e3%80%81tips/" title="その他メモ、tips に含まれる投稿をすべて表示">その他メモ、tips</a> (95)
-</li>
-	<li class="cat-item cat-item-353"><a href="http://tips.recatnap.info/category/%e3%82%b5%e3%83%bc%e3%83%90/" title="サーバーの設定とかそれに付随する事柄全般">サーバ・Linux</a> (48)
-</li>
-	<li class="cat-item cat-item-365"><a href="http://tips.recatnap.info/category/%e3%83%87%e3%82%b6%e3%82%a4%e3%83%b3/" title="色やレイアウトを含めたデザイン全般。">デザイン</a> (6)
-</li>
-	<li class="cat-item cat-item-467"><a href="http://tips.recatnap.info/category/%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab/" title="ファイル に含まれる投稿をすべて表示">ファイル</a> (1)
-</li>
-	<li class="cat-item cat-item-406"><a href="http://tips.recatnap.info/category/%e3%83%a1%e3%83%bc%e3%83%ab/" title="MUA関連。特にこれといったソフトは指定していない。個人的に使ってるのはGmail。">メール</a> (4)
-</li>
-	<li class="cat-item cat-item-4369"><a href="http://tips.recatnap.info/category/%e5%b8%b3%e7%b0%bf%e7%b3%bb/" title="帳簿系 に含まれる投稿をすべて表示">帳簿系</a> (2)
-</li>
-	<li class="cat-item cat-item-461"><a href="http://tips.recatnap.info/category/%e8%a8%80%e8%91%89/" title="言葉 に含まれる投稿をすべて表示">言葉</a> (22)
-</li>
-	<li class="cat-item cat-item-588"><a href="http://tips.recatnap.info/category/%e8%a8%98%e4%ba%8b%e7%9b%9b%e5%90%88%e3%81%9b/" title="YahooやGoogle、SEOとかの記事の盛合せ">記事盛合せ</a> (1,084)
-</li>
-				</ul>			</div>		</div>				<div class="sBox">			<div class="inBoxR">				<div id="fb-root"></div>				<script>(function(d, s, id) {					var js, fjs = d.getElementsByTagName(s)[0];					if (d.getElementById(id)) return;					js = d.createElement(s); js.id = id;					js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";					fjs.parentNode.insertBefore(js, fjs);				}(document, 'script', 'facebook-jssdk'));</script>				<div class="fb-like" data-href="http://tips.recatnap.info/" data-send="false" data-layout="button_count" data-width="200" data-show-faces="false" data-font="arial"></div>				<br />								<div class="g-plusone" data-size="medium" data-annotation="none"></div>				<script type="text/javascript">					window.___gcfg = {lang: 'ja'};										(function() {						var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;						po.src = 'https://apis.google.com/js/plusone.js';						var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);					})();				</script>				<br />								<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" data-count="none">ツイート</a>				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>				<br />								<a href="http://tips.recatnap.info/feed/"><img src="http://tips.recatnap.info/wp-content/themes/tips/images/feed-icon-28x28.png" alt="PCスキルの小技・忘却防止メモのFeed" /></a>				<br />								<span>				<script type="text/javascript" src="http://media.line.naver.jp/js/line-button.js?v=20130508" ></script>				<script type="text/javascript">				new jp.naver.line.media.LineButton({"pc":false,"lang":"ja","type":"a"});				</script>				</span>				<br />							</div>		</div>	</div>	</div></div><div id="TagCloud">	<h2>タグ</h2>	<div><a href='http://tips.recatnap.info/tag/air/' class='tag-link-655' title='1件のトピック' style='font-size: 8pt;'>Air</a>
-<a href='http://tips.recatnap.info/tag/analytics/' class='tag-link-4364' title='1件のトピック' style='font-size: 8pt;'>analytics</a>
-<a href='http://tips.recatnap.info/tag/apijavascript/' class='tag-link-4365' title='1件のトピック' style='font-size: 8pt;'>apijavascript</a>
-<a href='http://tips.recatnap.info/tag/asp-net-mvc/' class='tag-link-685' title='21件のトピック' style='font-size: 34.962962963pt;'>ASP.NET MVC</a>
-<a href='http://tips.recatnap.info/tag/cmd/' class='tag-link-4356' title='8件のトピック' style='font-size: 24.8518518519pt;'>CMD</a>
-<a href='http://tips.recatnap.info/tag/continue%e3%81%a8break/' class='tag-link-444' title='2件のトピック' style='font-size: 12.6666666667pt;'>continueとbreak</a>
-<a href='http://tips.recatnap.info/tag/crenahtml2jpg/' class='tag-link-4357' title='1件のトピック' style='font-size: 8pt;'>CrenaHtml2jpg</a>
-<a href='http://tips.recatnap.info/tag/curl/' class='tag-link-4347' title='4件のトピック' style='font-size: 18.3703703704pt;'>cURL</a>
-<a href='http://tips.recatnap.info/tag/c%e8%a8%80%e8%aa%9e/' class='tag-link-4345' title='1件のトピック' style='font-size: 8pt;'>c言語</a>
-<a href='http://tips.recatnap.info/tag/excel-2/' class='tag-link-4358' title='1件のトピック' style='font-size: 8pt;'>EXCEL</a>
-<a href='http://tips.recatnap.info/tag/explain/' class='tag-link-594' title='2件のトピック' style='font-size: 12.6666666667pt;'>explain</a>
-<a href='http://tips.recatnap.info/tag/flex%e3%81%a8db%e3%81%ae%e9%80%a3%e6%90%ba/' class='tag-link-610' title='9件のトピック' style='font-size: 26.1481481481pt;'>flexとDBの連携</a>
-<a href='http://tips.recatnap.info/tag/flex%e3%81%a8php%e3%81%ae%e9%80%a3%e6%90%ba/' class='tag-link-634' title='1件のトピック' style='font-size: 8pt;'>flexとPHPの連携</a>
-<a href='http://tips.recatnap.info/tag/flex%e3%81%ae%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88%e9%96%a2%e9%80%a3/' class='tag-link-642' title='3件のトピック' style='font-size: 15.7777777778pt;'>flexのイベント関連</a>
-<a href='http://tips.recatnap.info/tag/fuelphp/' class='tag-link-4367' title='5件のトピック' style='font-size: 20.4444444444pt;'>FuelPHP</a>
-<a href='http://tips.recatnap.info/tag/google/' class='tag-link-4363' title='1件のトピック' style='font-size: 8pt;'>google</a>
-<a href='http://tips.recatnap.info/tag/htaccess/' class='tag-link-627' title='1件のトピック' style='font-size: 8pt;'>htaccess</a>
-<a href='http://tips.recatnap.info/tag/ie/' class='tag-link-4362' title='1件のトピック' style='font-size: 8pt;'>IE</a>
-<a href='http://tips.recatnap.info/tag/image_graph/' class='tag-link-604' title='1件のトピック' style='font-size: 8pt;'>Image_Graph</a>
-<a href='http://tips.recatnap.info/tag/mecab/' class='tag-link-560' title='8件のトピック' style='font-size: 24.8518518519pt;'>MeCab</a>
-<a href='http://tips.recatnap.info/tag/mediawiki/' class='tag-link-4352' title='1件のトピック' style='font-size: 8pt;'>MediaWiki</a>
-<a href='http://tips.recatnap.info/tag/net_whois/' class='tag-link-584' title='5件のトピック' style='font-size: 20.4444444444pt;'>Net_Whois</a>
-<a href='http://tips.recatnap.info/tag/openoffice/' class='tag-link-4373' title='2件のトピック' style='font-size: 12.6666666667pt;'>OpenOffice</a>
-<a href='http://tips.recatnap.info/tag/paypal/' class='tag-link-4355' title='3件のトピック' style='font-size: 15.7777777778pt;'>Paypal</a>
-<a href='http://tips.recatnap.info/tag/pdf/' class='tag-link-4359' title='2件のトピック' style='font-size: 12.6666666667pt;'>PDF</a>
-<a href='http://tips.recatnap.info/tag/pdo/' class='tag-link-4346' title='1件のトピック' style='font-size: 8pt;'>PDO</a>
-<a href='http://tips.recatnap.info/tag/pear/' class='tag-link-602' title='4件のトピック' style='font-size: 18.3703703704pt;'>PEAR</a>
-<a href='http://tips.recatnap.info/tag/sass/' class='tag-link-4370' title='1件のトピック' style='font-size: 8pt;'>sass</a>
-<a href='http://tips.recatnap.info/tag/simple-html-dom-parser/' class='tag-link-538' title='14件のトピック' style='font-size: 30.8148148148pt;'>Simple HTML DOM Parser</a>
-<a href='http://tips.recatnap.info/tag/sqlite/' class='tag-link-4366' title='1件のトピック' style='font-size: 8pt;'>SQLite</a>
-<a href='http://tips.recatnap.info/tag/svn/' class='tag-link-4353' title='4件のトピック' style='font-size: 18.3703703704pt;'>svn</a>
-<a href='http://tips.recatnap.info/tag/trac/' class='tag-link-605' title='13件のトピック' style='font-size: 30.037037037pt;'>Trac</a>
-<a href='http://tips.recatnap.info/tag/wp%e3%83%97%e3%83%a9%e3%82%b0%e3%82%a4%e3%83%b3/' class='tag-link-4349' title='23件のトピック' style='font-size: 36pt;'>wpプラグイン</a>
-<a href='http://tips.recatnap.info/tag/xampp/' class='tag-link-603' title='8件のトピック' style='font-size: 24.8518518519pt;'>XAMPP</a>
-<a href='http://tips.recatnap.info/tag/zohocrm/' class='tag-link-4361' title='3件のトピック' style='font-size: 15.7777777778pt;'>ZohoCRM</a>
-<a href='http://tips.recatnap.info/tag/%e3%81%be%e3%81%a8%e3%82%81/' class='tag-link-495' title='22件のトピック' style='font-size: 35.4814814815pt;'>まとめ</a>
-<a href='http://tips.recatnap.info/tag/%e3%82%aa%e3%83%96%e3%82%b8%e3%82%a7%e3%82%af%e3%83%88%e6%8c%87%e5%90%91/' class='tag-link-545' title='4件のトピック' style='font-size: 18.3703703704pt;'>オブジェクト指向</a>
-<a href='http://tips.recatnap.info/tag/%e3%82%af%e3%83%a9%e3%82%b9%e3%82%ab%e3%83%ab%e3%83%bb%e3%82%a6%e3%82%a9%e3%83%aa%e3%82%b9%e6%a4%9c%e5%ae%9a/' class='tag-link-595' title='4件のトピック' style='font-size: 18.3703703704pt;'>クラスカル・ウォリス検定</a>
-<a href='http://tips.recatnap.info/tag/%e3%82%bb%e3%82%ad%e3%83%a5%e3%83%aa%e3%83%86%e3%82%a3/' class='tag-link-4351' title='3件のトピック' style='font-size: 15.7777777778pt;'>セキュリティ</a>
-<a href='http://tips.recatnap.info/tag/%e3%83%84%e3%83%bc%e3%83%ab/' class='tag-link-4360' title='1件のトピック' style='font-size: 8pt;'>ツール</a>
-<a href='http://tips.recatnap.info/tag/%e3%83%89%e3%83%8d%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3/' class='tag-link-4354' title='3件のトピック' style='font-size: 15.7777777778pt;'>ドネーション</a>
-<a href='http://tips.recatnap.info/tag/%e4%b9%b1%e6%95%b0/' class='tag-link-405' title='3件のトピック' style='font-size: 15.7777777778pt;'>乱数</a>
-<a href='http://tips.recatnap.info/tag/%e5%9e%8b%e5%a4%89%e6%8f%9b/' class='tag-link-550' title='2件のトピック' style='font-size: 12.6666666667pt;'>型変換</a>
-<a href='http://tips.recatnap.info/tag/%e7%94%bb%e5%83%8f%e8%aa%8d%e8%a8%bc/' class='tag-link-4350' title='2件のトピック' style='font-size: 12.6666666667pt;'>画像認証</a>
-<a href='http://tips.recatnap.info/tag/%e9%85%8d%e5%88%97/' class='tag-link-575' title='14件のトピック' style='font-size: 30.8148148148pt;'>配列</a></div></div><div id="footer">Copyright &copy; 2009 by PCスキルの小技・忘却防止メモ. All rights reserved.</div></div></body></html>
