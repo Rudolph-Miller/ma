@@ -419,10 +419,18 @@
 ;;;update key-list
 (defun update-key-list (hash file)
   (let* ((key-lst (load-file file)) ;hash
-		 (intersect (intersection-of-hash hash key-lst))
+		 (intersect (half-value (intersection-of-hash hash key-lst)))
+		 ;;intersection-of-hash returns hash table having sum of values
 		 (dif (remove-intersection hash key-lst)))
 	(save-file (cut-save-hash (merge-hash intersect dif))
 			   file)))
+
+;;;make value half
+(defun half-value (hash)
+  (let ((result (make-hash-table :test #'equal)))
+  (maphash #'(lambda (key val) (setf (gethash key result) (/ val 2)))
+		   hash)
+  result))
 
 ;;;remove intersecton of hash from hash1
 ;;;target hash -> hash
