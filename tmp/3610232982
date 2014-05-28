@@ -1,0 +1,382 @@
+<!DOCTYPE html><html dir="ltr" lang="ja"><head><meta charset="UTF-8" /><title>PCスキルの小技・忘却防止メモ  &raquo; 各種記事（昨日：2014/05/27）盛り合わせ：SEOとか。</title><meta http-equiv="Content-Script-Type" content="text/javascript" /><meta http-equiv="Content-Style-Type" content="text/css" /><link rel="alternate" type="application/rss+xml" title="PCスキルの小技・忘却防止メモ RSS Feed" href="http://tips.recatnap.info/feed/" /><link rel="pingback" href="http://tips.recatnap.info/xmlrpc.php" /><link rel="stylesheet" href="http://tips.recatnap.info/wp-content/themes/tips/style.css" type="text/css" media="screen" /><script type="text/javascript" src="http://tips.recatnap.info/wp-content/themes/tips/date.js"></script><script type="text/javascript" src="http://tips.recatnap.info/wp-content/themes/tips/link.js"></script><link rel="alternate" type="application/rss+xml" title="PCスキルの小技・忘却防止メモ &raquo; 各種記事（昨日：2014/05/27）盛り合わせ：SEOとか。 のコメントのフィード" href="http://tips.recatnap.info/assorted_news_20140527/feed/" />
+<script type='text/javascript' src='http://tips.recatnap.info/wp-includes/js/jquery/jquery.js?ver=1.11.0'></script>
+<script type='text/javascript' src='http://tips.recatnap.info/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://tips.recatnap.info/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://tips.recatnap.info/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='各種記事（昨日：2014/05/26）盛り合わせ：SEOとか。' href='http://tips.recatnap.info/assorted_news_20140526/' />
+<meta name="generator" content="WordPress 3.9.1" />
+<link rel='canonical' href='http://tips.recatnap.info/assorted_news_20140527/' />
+<link rel='shortlink' href='http://tips.recatnap.info/?p=4521' />
+<script type="text/javascript">  var _gaq = _gaq || [];  _gaq.push(['_setAccount', 'UA-12234921-2']);  _gaq.push(['_setDomainName', '.recatnap.info']);  _gaq.push(['_trackPageview']);  (function() {    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script></head><body onload="myFunc(0)"><div id="wrap"><div id="container">	<div id="main">		<div id="hPage">
+		<div class="pTtl">PCスキルの小技・忘却防止メモ</div>
+		<p>仕事で調べたり覚えたりした小技たち。参考書大好きな人たちには役に立たないかもね。</p>
+</div>
+<div id="hNavi">
+	<ul>
+		<li><a href="http://tips.recatnap.info">トップページ</a></li>
+		<li><a href="http://tips.recatnap.info/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8">wiki</a></li>
+		<li><a href="http://tips.recatnap.info/wiki/%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%AE%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB">ソースのサンプル</a></li>
+		<li><a href="http://tips.recatnap.info/wiki/%E5%90%84%E7%A8%AE%E8%87%AA%E4%BD%9C%E3%83%84%E3%83%BC%E3%83%AB">各種自作ツール</a></li>
+		<li><a href="http://tips.recatnap.info/toollist/">各種自作ツール（旧）</a></li>
+	</ul>
+</div>
+				<div class="detS">						<form action="http://www.google.co.jp" id="cse-search-box" target="_blank">				<div>					<input type="hidden" name="cx" value="partner-pub-9293786234184342:6934440749" />					<input type="hidden" name="ie" value="UTF-8" />					<input type="text" name="q" size="22" />					<input type="submit" name="sa" value="検索" />				</div>			</form>			<script type="text/javascript" src="http://www.google.co.jp/coop/cse/brand?form=cse-search-box&amp;lang=ja"></script>		</div>						<div class="oneArt">			<div style="text-align:right;">				<script type="text/javascript">					getSingle();				</script>			</div>						<h1>各種記事（昨日：2014/05/27）盛り合わせ：SEOとか。</h1>						<div class="gAdd">				<script type="text/javascript"><!--				google_ad_client = "ca-pub-9293786234184342";				google_ad_slot = "6244118430";				google_ad_width = 468;				google_ad_height = 60;				//-->				</script>				<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>			</div>						<div class="content">				<div class="assorted">
+<h2>Google系</h2>
+<dl>
+<dt><a href="http://feedproxy.google.com/~r/GoogleJapanBlog/~3/0jAEteTaH0o/chromecast.html" target="_blank">Chromecast で好きなオンライン動画や映画をキャストしよう</a> <span><a href="http://googlejapan.blogspot.com/" target="_blank">Google Japan Blog</a></span></dt>
+<dd>2014 年 5 月 27 日Posted by: Chromecast チームGoogle は、5 月 28 日に&nbsp;Chromecast を発売します。Chromecast は動画、映画な…</dd>
+<dt><a href="http://feedproxy.google.com/~r/WebmasterCentral/~3/WijgtcnQGto/understanding-web-pages-better.html" target="_blank">ウェブページをより深く理解するようになりました</a> <span><a href="http://googlewebmastercentral-ja.blogspot.com/" target="_blank">Google ウェブマスター向け公式ブログ</a></span></dt>
+<dd>Google のサーバーが Susan Wojcicki のガレージで動いていた 1998 当時は、JavaScript や CSS はあまり気にかける必要もありませんでした。それらはあまり使用されて…</dd>
+</dl>
+<h2>SEO系</h2>
+<dl>
+<dt><a href="http://feedproxy.google.com/~r/MozBlog/~3/g1tD3oKLtYQ/50-things-you-should-learn-about-your-client" target="_blank">50+ Things You Should Learn About Your Client</a> <span><a href="http://moz.com/blog" target="_blank">Moz Blog</a></span></dt>
+<dd>Posted by RobOusbey Six years ago I stood in a client&#8217;s board room with a list of SEO recommendation…</dd>
+<dt><a href="http://feedproxy.google.com/~r/kaigai-seo/~3/zWqD1AqbWls/" target="_blank">「パンダアップデート4.0は新アーキテクチャ、今後の継続への基礎」などMatt Cuttsのパンダ4関連ツイート×3</a> <span><a href="http://www.suzukikenichi.com/blog" target="_blank">海外SEO情報ブログ &#8211; 海外のSEO対策で極めるアクセスアップ術</a></span></dt>
+<dd>1週間前に導入されたパンダアップデート4.0に関するマット・カッツのツイートを3つ紹介。「パンダアップデート4.0は新しいアーキテクチャ、今後の継続への基礎作り」「オーソリティを評価するアルゴリズムは…</dd>
+</dl>
+<h2>その他</h2>
+<dl>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/COLUMN/20140521/558385/?n27" target="_blank">いま、一番読まれている記事は：［2］コスパNo.1？2万円でクアッドコアCPU＆デュアルSIMスロット搭載のコヴィア（格安SIMで使いたいSIMフリーなスマホたち）</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>「使い倒して壊してもイタくない」コスパNo.1のコヴィア「FleaPhone CP-F03a」を紹介する。定価1万9800円と安価だが、クアッドコアでデュアルSIMのユニーク仕様。スマホをバリバリ使い…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/COLUMN/20140527/559762/" target="_blank">1位陥落が記事になるパズドラ（ITpro編集長日記）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>「一時的に首位を譲った『パズドラ』、ピークアウトを迎えたのか？」という記事を公開しています。長く、国内のスマートフォン向けアプリで売上高1位を続けてきたパズル＆ドラゴンズが、一時的にその座を追われたこ…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20140527/559742/" target="_blank">「知的労働はもっと楽しくなる」、米EvernoteのリービンCEOが講演（ニュース）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>クラウド型情報記録ツールを提供する米Evernote（エバーノート）のフィル・リービンCEOは2014年5月27日、東京都内で開催した自社イベントで講演した。「ツールを通じて知的労働がよりスムーズに、…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/Interview/20140527/559727/" target="_blank">ネットワーク運用者コミュニティのうまい“使い方”とは？ JANOGメンバーインタビュー（インタビュー＆トーク）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>インターネットの運用や技術について話し合う日本の技術者コミュニティ「JANOG」（JApan Network Operator&#8217;s Group）ではメーリングリストで議論をするとともに、ミーティングで…</dd>
+<dt><a href="http://rss.rssad.jp/rss/artclk/IpzPL9ZuTgAc/ee7d74e451ddd2e0ace22b384b1fca6e?ul=uMGshWDnhKw40eIVdwAvSqD_fsqXq_RgwvMiEP18jHjEU_4ij37vAbBwLXjFNEmNVIBAnOL8SXnZ7Wql3rur.RpG3e9f" target="_blank">災害時に誰でも無料で使える公衆 Wi-Fi「00000JAPAN」がスタート、課題も</a> <span><a href="http://internetcom.jp/" target="_blank">インターネットコム</a></span></dt>
+<dd>災害発生時には、国内の主要な公衆無線LAN（Wi-Fi）サービスは、誰でも無料で利用できるようになる。スマートフォンの Wi-Fi 設定などで「00000JAPAN」と入力すればすぐ使える。こんな取り…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20140527/559706/" target="_blank">米Evernoteが法人向け文書管理サービス販売を強化、NTTドコモが第1号代理店に（ニュース）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>NTTドコモと米Evernoteは2014年5月27日、法人向けクラウド型文書管理・情報記録サービス「Evernote Business（エバーノート・ビジネス）」の販売で提携すると発表した。ドコモが…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20140527/559705/" target="_blank">「アンチウイルスだけでは防げない」、米ファイア・アイのCTOが強調（ニュース）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>「2013年にインシデント対応した企業の全てが、アンチウイルスソフトを最新の状態で利用していた。アンチウイルスソフトだけでは被害を防げなくなっているのが現状だ」。米ファイア・アイの最高技術責任者（CT…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20140527/559703/" target="_blank">2020年に向けた8Kの研究成果が展示の中心に、NHK技研公開（ニュース）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>NHK放送技術研究所は2014年5月27日、研究成果を公開するイベントである「技研公開2014」のプレスプレビューを開催した。今回のテーマは“ココロ動かすテクノロジー”で、31項目の研究成果を展示する…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20140527/559704/" target="_blank">グーグル、テレビで簡単に動画を再生できる「Chromecast」を国内で発売（ニュース）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>グーグルは2014年5月27日、インターネット経由のストリーミング動画などをテレビで簡単に視聴できる端末「Chromecast」を5月28日から国内で発売すると発表した。価格は4200円（税抜）。…</dd>
+<dt><a href="http://rss.rssad.jp/rss/artclk/IpzPL9ZuTgAc/0dc2f5d9305d2a0a073923bd50e0d584?ul=kZQMYLKnnQqa7HvUuE3RfOKsC.n49fvuVtE2OW4J7PG0Kc0ssQeRliqStx7ys.Y12jv8m.3vUxgfyQSF6cjA1rhpp0Zd" target="_blank">ヤフーのスマホアプリ「Yahoo!乗換案内」が1,000万ダウンロード突破、“感謝”の「T ポイント」プレゼント</a> <span><a href="http://internetcom.jp/" target="_blank">インターネットコム</a></span></dt>
+<dd>ヤフーは、スマートフォン向け交通経路検索アプリケーション「Yahoo!乗換案内」の累計ダウンロード数が、Android 版と、iPhone/iPad などで利用可能な iOS 版を合わせて1,000万…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20140527/559702/" target="_blank">双日システムズ、IE 6互換ブラウザー「thinforie」をIE 8対応に強化（ニュース）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>双日システムズは2014年5月26日、Internet Explorer（IE） 6互換のブラウザー「thinforie（シンフォリエ）」を、IE 8にも対応するよう機能を強化した（写真）。thinf…</dd>
+<dt><a href="http://rss.rssad.jp/rss/artclk/IpzPL9ZuTgAc/d277755602616a56f6389459923453a0?ul=8fF.1k93RD0TN4NN_S0D3q9ArT_o.tQEmOFY14uHm0uNUPqVMy14CJE0lrlTtKHAdQFYunpHGcBoOn_6Ya9wFFfh8a8s" target="_blank">日立の大学向け学務情報システム、ベトナム FPT Software 社が販売開始</a> <span><a href="http://internetcom.jp/" target="_blank">インターネットコム</a></span></dt>
+<dd>ベトナム最大手の IT 企業である FPT Software 社は、日立が大学向けに提供している学務情報システム「UNIPROVE/AS(ユニプルーブ エーエス)」を、ベトナムの大学向けに対応させた「…</dd>
+<dt><a href="http://rss.rssad.jp/rss/artclk/IpzPL9ZuTgAc/b691b0f13529304cc354479c7fee4f87?ul=jOULmYjzbbyAWeFCg9q56ajhwopjKPcX5elY96tp9vV9QkcN.uFcLNW6BJQol5B3xTRoqVP6a9_oZ3cic59mWiGUfGqB" target="_blank">経産省、先進的な技術を発掘する</a> <span><a href="http://internetcom.jp/" target="_blank">インターネットコム</a></span></dt>
+<dd>経済産業省は優れたコンテンツ技術を発掘/評価するための事業 「Innovative Technologies 2014」の募集を開始した。コンテンツ技術イノベーション促進事業の一環として行われる。募集…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20140527/559685/" target="_blank">HPがSDNアプリを2本投入、Lync最適化とセキュリティ確保向け（ニュース）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>日本ヒューレット・パッカードは2014年5月27日、SDN向けのアプリケーションを2種類、発売開始した。同社のSDNコントローラ「VAN SDN Controller」向けである。…</dd>
+<dt><a href="http://rss.rssad.jp/rss/artclk/IpzPL9ZuTgAc/106fbb984b0e89e3950acd423fe1528d?ul=Y4ZUmOD8XZmLIUsbXhH5xSDJ.TexixsQIC827hKoSEHbsQb6WERVuW_tQiBMJTR.wDC2IZvsb0IlJE.Js0lvvsucWtzf" target="_blank">SAP、リアルタイム行動マーケティング会社 SeeWhy の買収を計画</a> <span><a href="http://internetcom.jp/" target="_blank">インターネットコム</a></span></dt>
+<dd>SeeWhy の行動マーケティングソリューションは、個々のユーザーの行動に基づき、電子メール、Web ブラウザ、モバイル、ソーシャルなど、マルチチャネルの広告を使い、リアルタイムな1対1のマーケティン…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20140527/559682/" target="_blank">ひかりＴＶを使いシニア向けスマートTVのトライアル、買い物・旅行・健康相談なども（ニュース）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>NTTぷららは、同社が運営する「ひかりＴＶ」サービスのプラットフォームを通じて、2014年5月29日から約1カ月間、シニア世帯を対象にした「シニア向けスマートTV」サービスのトライアルを開始すると発表…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20140527/559662/" target="_blank">公衆無線LANの災害時無料開放用の統一SSID「00000JAPAN」が始動（ニュース）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>無線LANビジネス推進連絡会は2014年5月27日、「大規模災害時の公衆無線LANの無料開放」と「訪日外国人向け公衆無線LANの環境整備」の取り組みを発表し、説明会を開催した。…</dd>
+<dt><a href="http://rss.rssad.jp/rss/artclk/IpzPL9ZuTgAc/1029bdaa414a6aab8a9c3b0decc31ff0?ul=EX.i8gScKQNhQhNwTLWbmfSnTE4B8RJpRa2CfuENSbiXInJUfHsYVsenODrV2lsquxF7xeyiHFwgjrJV8f1c12Gwe3Lm" target="_blank">産総研、分子/原子間で働く弱い凝集力を光の照射で増強、有機デバイス材料などへの応用に期待</a> <span><a href="http://internetcom.jp/" target="_blank">インターネットコム</a></span></dt>
+<dd>産業技術総合研究所は、化学結合していない分子同士や原子同士に働く微弱な凝集力を、波長を調整した光の照射によって増強できることを、シミュレーションにより理論的に予測した。…</dd>
+<dt><a href="http://rss.rssad.jp/rss/artclk/IpzPL9ZuTgAc/417d2ed514fdf56d9ab26a545210f48d?ul=dTYUauRLGHHwoljofDSRAkRGRGAn41ecAsYhaAvCtNvCQIidX6gH7exW4riM14YH3lc.tuQCFITnszXJjjfkW2rtalgA" target="_blank">Mac 向け「ATOK」に新版、変換速度を最大4割向上</a> <span><a href="http://internetcom.jp/" target="_blank">インターネットコム</a></span></dt>
+<dd>ジャストシステムは、Mac 向け日本語入力システムの最新版「ATOK 2014 for Mac」を6月20日に発売する。漢字かな変換などの動作が従来版に比べ最大4割高速化している。…</dd>
+<dt><a href="http://rss.rssad.jp/rss/artclk/IpzPL9ZuTgAc/057eb8359d58b45f441fa2ee48204e00?ul=bEcjpKXJsNltMrJzIr36ecX4Y8xpvqL02CdQJOMqgl7TmDLhTSv8E8WTHZWPiA8Ig_nvjjCOywcb1OL_Nx2Ld9sVeW4O" target="_blank">品川女子学院、高2の全生徒205人に「Evernote Business」を提供、情報共有や自習に活用</a> <span><a href="http://internetcom.jp/" target="_blank">インターネットコム</a></span></dt>
+<dd>品川女子学院は、企業向け情報共有クラウド サービス「Evernote Business」を、教員に加え高校2年生の全生徒205人も利用できるようにした。教員と生徒間および生徒同士の情報共有や、デジタル…</dd>
+<dt><a href="http://rss.rssad.jp/rss/artclk/IpzPL9ZuTgAc/615e09d47b15b98607d9f22dcd769af3?ul=lVq_IIcG5J7Mh2UsIbyNRNcQoSv85UUiNdcIgbXduz5sxVA4AeuaXnJOsjO9QT7YWM1URC5zT0OutReEi95sKXAqstaw" target="_blank">米 OTA、上院で消費者を悪意のある広告から守るために業界に呼びかけ</a> <span><a href="http://internetcom.jp/" target="_blank">インターネットコム</a></span></dt>
+<dd>米国 OTA（Online Trust Alliance）執行役員兼会長 Craig Spiezle 氏は2014年5月15日、上院の国土安全保障・政府問題小委員会で、悪意のある広告の危険を概説、これ…</dd>
+<dt><a href="http://rss.rssad.jp/rss/artclk/IpzPL9ZuTgAc/75f0a8a6134000e711b8ec5fdc7f71f3?ul=Dw3yUzh9mnDM0x_yVNl8d8hFKdWKrG5l0.3qUibbGuXlibw9a_usCpn0z8BGeOyh.yHdijS6Rc_GMaKg2tKT1r5Q3iha" target="_blank">世界初、ドコモが法人チャネルで「Evernote Business」の販売を開始</a> <span><a href="http://internetcom.jp/" target="_blank">インターネットコム</a></span></dt>
+<dd>NTT ドコモと Evernote は、Evernote が提供する法人向けクラウドサービス「Evernote Business」の販売代理店契約を世界で初めて締結。ドコモ法人チャネルにおいて7月1日…</dd>
+<dt><a href="http://rss.rssad.jp/rss/artclk/IpzPL9ZuTgAc/18adaf825eff28e8bc123f5f1161d782?ul=ys9nE98fMC8wPPv0Vm1xKI8WaNYNvaDvFa9YEijTl_K4M04kHNJ9NfmypveiuLKED4aGDcWt7QhkoWCtqKOpcQeGPMae" target="_blank">Google、テレビでネットの動画や音楽を再生する「Chromecast」国内発売、4,200円</a> <span><a href="http://internetcom.jp/" target="_blank">インターネットコム</a></span></dt>
+<dd>米国 Google は、スマートフォンとテレビを無線接続し、インターネット上の動画や音楽、ゲームなどを表示できる機器「Chromecast」を5月28日に発売する。販売価格は4,200円（税別）。…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20140527/559622/" target="_blank">フルーク、2芯光ファイバー配線の試験時間を半分に短縮したテスターを発表（ニュース）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>米フルーク・ネットワークスの日本法人であるTFF フルークは、2014年5月27日に、OTDR認証テスター「OptiFiber Pro（オプティファイバー・プロ）OTDR 2」を発表した。光ファイバー…</dd>
+<dt><a href="http://rss.rssad.jp/rss/artclk/IpzPL9ZuTgAc/f8d8b7e36883e40a7609b0184500eef0?ul=3vES5vTKX1t0skykwbcbgETz680jeAYUKw9s2LNkp7dAyASfyQ6_8NOcx7wxU3XFpL78YQbkIo_bUesm0yT.P_DNYQLH" target="_blank">ドコモの新プラン、120万予約、「40代以上」の支持で家族層つかむ</a> <span><a href="http://internetcom.jp/" target="_blank">インターネットコム</a></span></dt>
+<dd>NTT ドコモは、6月から始まる新料金プラン「カケホーダイプラン」「データプラン」の事前予約数が5月25日付で120万件に達したと発表した。同社によると、40代以上の申し込みが際立って多いという。…</dd>
+<dt><a href="http://rss.rssad.jp/rss/artclk/IpzPL9ZuTgAc/947ba3bac82ebb3d5c393872069183f3?ul=beGKJ8icKYxQDkLGSTWOlDiw2pl1p0ZJGYGmJI1gYPGe8roCgUjKlt_OEZMx1JmrfAIVyr1nZSIqspJPxz_pYMGkc33Y" target="_blank">「Xbox One」価格決定、Kinect 抜きなら3万9,980円、PS4 と同額に</a> <span><a href="http://internetcom.jp/" target="_blank">インターネットコム</a></span></dt>
+<dd>日本マイクロソフト（MS）は、据え置き型ゲーム機「Xbox One」の国内での希望小売価格を3万9,980円（税別、以下同じ）にすると発表した。 モーションセンサ機能などを備えた「Xbox One K…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20140527/559563/" target="_blank">ネットの世界をリアルに展開、楽天のサービスを体験できる「楽天カフェ」（ニュース）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>楽天は2014年5月27日、東京・渋谷区に同社初となる同社サービスのリアルのタッチポイントとなる「楽天カフェ」の開設を発表した。29日にオープンする。業態は3フロアを使ったカフェで、1階のカウンターで…</dd>
+<dt><a href="http://rss.rssad.jp/rss/artclk/IpzPL9ZuTgAc/b76a2b481243979cfc9a4606ef4b4db8?ul=BCFFNApxOafQrb4_siuynapneWymOg7BwhFnNxRmocqI3okxogNyGzAXQ_yHhMpVot9wkrOVkPhBCPl1dNTXxy8iPvKJ" target="_blank">キヤノンS＆S、幼稚園向け業務支援クラウド「コミュニケーション＆なび」の割安パッケージを発売</a> <span><a href="http://internetcom.jp/" target="_blank">インターネットコム</a></span></dt>
+<dd>キヤノンS＆S は、テクノクラフトが提供する幼稚園向け業務支援クラウド「コミュニケーション＆なび」の、割安なパッケージプランを発売した。…</dd>
+<dt><a href="http://rss.rssad.jp/rss/artclk/IpzPL9ZuTgAc/5c4a87c8455e8d2ac11185e5c1bc74ba?ul=pEhxX6rl7ymP7Dbq1UGNRCrZqKzuDY5KVApiiFzSssovmYyOB41dHy4rlSnwmZXZmgyzRr5SrMntvjSCQ0vphj17lquW" target="_blank">Surface Pro 3 はノート PC の代わりにはならない：そう考える10の理由</a> <span><a href="http://internetcom.jp/" target="_blank">インターネットコム</a></span></dt>
+<dd>Microsoft は、Surface Pro 3 で Apple の MacBook Air の市場シェアを奪いたいのだろう。だが実際には、Surface Pro 3 はノート PC の代替品にはな…</dd>
+<dt><a href="http://rss.rssad.jp/rss/artclk/IpzPL9ZuTgAc/977a6e0904ad3a53e4c66ccd5aa473f4?ul=J_Wt97G4rjaAhCnPyxbHFSGenwheJo8vi.W59apGTmcm.XWA..0yubimmBnK6LkOo57Zsz7m08KKBjgggsGFw9UNpCQ6" target="_blank">日立ソリューションズ、ファイルサーバーのアクセス権を適切に管理する「活文 File Server Access Controller」を提供開始</a> <span><a href="http://internetcom.jp/" target="_blank">インターネットコム</a></span></dt>
+<dd>日立ソリューションズは、ファイルサーバーのアクセス権を適切に管理するための Web アプリケーションソフト「活文 File Server Access Controller」の提供を5月28日に開始す…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20140527/559544/" target="_blank">YouTube、コンテンツ作成者支援の一連のツールを開発中（ニュース）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>米Google傘下のYouTubeは現地時間2014年5月23日、コンテンツ作成者の支援を目的とした一連のツールを数カ月のうちに提供すると発表した。現在取り組んでいるものには、チャネル管理用の単独のモ…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20140527/559542/" target="_blank">韓国のモバイルメッセージング大手Kakaoとポータル大手Daumが合併（ニュース）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>モバイルメッセージングアプリケーション「KakaoTalk」を運営する韓国Kakaoが韓国ポータル大手Daum Communicationsと合併すると、複数の海外メディア（米Wall Street …</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/IDG/20140527/559482/" target="_blank">iPass、各地のWi-Fiホットスポットに簡単に接続できる新サービスを開始（Computerworldニュース）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>企業向けにWi-Fi接続の国際ローミングサービスを提供する米iPassは現地時間2014年5月21日、クラウドベースの新たなサービス「Business Traveler Service 2.0」を発表…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20140527/559503/" target="_blank">Apple、スマートホーム向けソフトウエアプラットフォームを発表か（ニュース）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>英Financial Timesは現地時間2014年5月26日、米Appleがスマートホームあるいはスマートハウスとも呼ばれるITを活用したホーム・オートメーションシステムを準備している、と報じた。A…</dd>
+<dt><a href="http://rss.rssad.jp/rss/artclk/IpzPL9ZuTgAc/d653628b07d2f8efebcf90231d1f362c?ul=EPsHOSTgtiIRM9KqKHgtNjTj.jY8U5o9RIs7Opt5CKCFzA.GTL.rWF8j9nnFS7pwSkHQrRtCzpXcOP0NjU2UBL5U1vEL" target="_blank">共闘ゲーム専用アプリ「共闘ギルド」、トライアルキャンペーンを開催&#8211;“ボイススタンプ”も募集中</a> <span><a href="http://internetcom.jp/" target="_blank">インターネットコム</a></span></dt>
+<dd>ソニー・コンピュータエンタテインメントジャパンアジアは、共闘ゲーム専用アプリ「共闘ギルド」においてトライアルキャンペーンを6月15日まで開催している。…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/COLUMN/20140526/559162/" target="_blank">SNSで始まった「マーケティング基盤」への進化（SNSと企業の一歩進んだ付き合い方講座）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>FacebookをはじめとしたSNSが、今後ますます広告媒体としての色合いを強めていく——。そう思わせるニュースが、2014年5月中旬に立て続けに入ってきた。まずフランスの広告大手ピュブリシス・グルー…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/Keyword/20140514/556590/" target="_blank">CRYPTREC暗号リスト（電子行政：キーワード）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>「CRYPTREC暗号リスト」とは、政府のプロジェクトである「暗号技術検討会（CRYPTREC）」が、公募された暗号技術および事務局が選出した暗号技術について、安全性・実装性、および利用実績の評価・検…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/COLUMN/20140428/553562/" target="_blank">【tune2fs】ext2/ext3/ext4ファイルシステムのパラメータを調整する（Linuxコマンド集）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>ext2/ext3/ext4ファイルシステムのさまざまなパラメータを調整する。…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/COLUMN/20140521/558203/" target="_blank">データサイエンティストの仕事術（新刊・近刊）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>日経情報ストラテジー 編、日経BP社発行、1944円（税込）…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20140527/559483/" target="_blank">みずほ銀行がプライベートクラウド「みずほクラウド」を稼働、基盤コストを半減（ニュース）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>日本IBMは2014年5月26日、みずほ銀行およびみずほ情報総研が、プライベートクラウド「みずほクラウド」を構築したと発表した（写真）。既に2014年3月には、チャネル系システムを移設、稼働させている…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20140527/559462/" target="_blank">ソニー、プレステ中国投入に向け上海に合弁設立、MSに続き（ニュース）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>ソニーは中国に合弁会社2社を設立し、中国向けにビデオゲーム機「PlayStation」を製造・販売する。ソニーと提携合意した中国コングロマリットShanghai Oriental Pearl Grou…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/COLUMN/20140509/555693/" target="_blank">Google Glass向け高度医療システムが登場、米国の医療現場を大きく変える（宮本和明のシリコンバレー最新技術報告）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>スマートグラスはビジネスとの相性が抜群で、多くのベンチャー企業からビジネス・ソリューションが登場している。Wearable Intelligenceもその一社で、ウエアラブルをビジネスに活用する技術を…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/COLUMN/20140523/558830/" target="_blank">第90回 一時的に首位を譲った「パズドラ」、ピークアウトを迎えたのか？（佐野正弘が読み解く スマホアプリマーケット傾向と対策）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>2014年5月15日、App Storeの売上ランキングで首位を長い間継続していた「パズル＆ドラゴンズ」が、「モンスターストライク」「ラブライブ！スクールアイドルフェスティバル」に、一時的ながらもその…</dd>
+<dt><a href="http://rss.rssad.jp/rss/artclk/IpzPL9ZuTgAc/4fb9dc6ef0172c2f3860cb1ef390dd60?ul=WYs0BqDS3KcNL.TgAJLwwGDvKJe3u62n1odpkzLiYhAVeq2HavEiuVg.bdf2GTdBRfp.Vno4A_OHa52bbH2cyBrbmazE" target="_blank">シーンに合わせて照明を一括操作する記憶調光システム「ライトマネージャーFx」発売、今度は LED にも対応</a> <span><a href="http://internetcom.jp/" target="_blank">インターネットコム</a></span></dt>
+<dd>パナソニックは、複数の照明器具による&#8221;あかり&#8221;を「シーン」として記憶し、ワンタッチで再現する小型記憶調光システム「ライトマネージャーFx」の2品種を6月1日に発売する。…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20140526/559383/" target="_blank">サンワサプライ、LANアダプターを内蔵したUSB 3.0ハブ（ニュース）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>サンワサプライは2014年5月26日、LAN端子を持たないMacBook AirやSurface Proなどで有線LAN接続ができるようになるギガビット対応LANアダプター内蔵USB 3.0ハブ「LA…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20140526/559382/" target="_blank">グリーンハウス、Lightningコネクター搭載iPhone/iPadを直接充電できるAC充電器（ニュース）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>グリーンハウスは2014年5月26日、Lightningコネクターを搭載したiPhone/iPadをコンセントから直接充電できるAC充電器「GH-ALTACA-WH」を7月上旬に発売すると発表した。価…</dd>
+<dt><a href="http://rss.rssad.jp/rss/artclk/IpzPL9ZuTgAc/bb0c1cd49355448484ec49ee54fdd5a7?ul=CvXIcgfIwFEK8.XNWKpENUfpMWe9rG9gzIXsc9riGma.60hxbuN1F1jUWBnh2LVV_dvDnIMM4ECEtEfwm2MMJfhNXVkG" target="_blank">スターウォーズデザインのヘッドフォン「STREET by 50」登場</a> <span><a href="http://internetcom.jp/" target="_blank">インターネットコム</a></span></dt>
+<dd>モダニティは、米国 SMS オーディオとスターウォーズのキャラクタがコラボレーションしたヘッドホン「STREET by 50」シリーズを、7月上旬に発売する。税込価格は2万2,680円。…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/COLUMN/20140520/558023/" target="_blank">第21回●若き日本のグローバル人材　カンボジア編（1）：コングロマリットを経営する日本人（見落としがちなグローバル化の落とし穴）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>企業は自社のグローバルビジネス拡大のために、グローバル人材を育てようと躍起になっている。政府もも「グローバル人材育成推進会議」を作り、将来の日本を背負って立つ人材育成のための予算をねん出して、様々なプ…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/COLUMN/20140521/558292/" target="_blank">設備の分析、事前にパラメータ整理を（緊急連載！毎回1分 「なぜなぜ分析」ワンポイントレッスン）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>設備の故障、チョコ停、または設備が関係する不良などで、お困りではありませんか。その場合には、すぐに「なぜなぜ分析」を実施するのではなく、トラブルが発生している部位、箇所の管理すべきパラメータを列記して…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/IDG/20140520/557911/" target="_blank">Windows XPマシンの安全性を高める10カ条（前）（Windows XPマシンの安全性を高める10カ条）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>米MicrosoftによるWindows XPのサポートが終了した現在、新たに見つかった脆弱性に対処するXP向けの修正プログラムを企業が入手するには、Microsoftとの間で有償のカスタムサポート契…</dd>
+<dt><a href="http://rss.rssad.jp/rss/artclk/IpzPL9ZuTgAc/b17f8cf643d1e62f61db16a91704c82c?ul=UZ5ak0ccsiVi8VUMd02TyGcdhVSQkMRxcg5vka05tTZnROFfaCTvP.9TJL7kmi3TFdH5OWuK_xFg4GkGSovmG5Rpb_0r" target="_blank">ワイヤーフレームだけをみてサイト名を当てるゲーム『DEDESIGN THE WEB』</a> <span><a href="http://internetcom.jp/" target="_blank">インターネットコム</a></span></dt>
+<dd>おもしろかったのでご紹介。ワイヤーフレームだけを提示されてサイト名をあてていくゲームだ。最初は簡単なのだが、だんだんマニアックになっていくので、腕に覚えがある人は是非チャレンジしてみて欲しい。…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/COLUMN/20140407/548942/" target="_blank">語呂合わせで第三者に推測されにくい「安全なパスワード」を作成しよう（クジラ飛行机「仕事に役立つJavaScript入門」）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>インターネットを使う上で避けられないのが、IDとパスワードの利用です。今回は、語呂合わせを利用して、覚えやすくてかつ難解なパスワードを作成するツールを作ってみましょう。…</dd>
+<dt><a href="http://itpro.nikkeibp.co.jp/article/COLUMN/20140512/556109/" target="_blank">［開拓者の流儀］先行事例がないリスクこそ、新しいビジネスの好機（異聞・新事業、七つの流儀）<br />
+</a> <span><a href="http://itpro.nikkeibp.co.jp/" target="_blank">ITpro総合</a></span></dt>
+<dd>私が研究開発で追求している医薬品は「ピカ新」である。従来の医薬品とは化学構造が骨格から異なる画期的な医薬品のことで、「ピカピカの新薬」が語源だ。新しい治療の可能性を開き、市場を大きくする、いわば「イノ…</dd>
+</dl>
+</div>
+			</div>			<div class="PstInf">				2014/05/28				<span>カテゴリ: <a href="http://tips.recatnap.info/category/%e8%a8%98%e4%ba%8b%e7%9b%9b%e5%90%88%e3%81%9b/" title="記事盛合せ の投稿をすべて表示" rel="category tag">記事盛合せ</a></span>								<br />				<script type="text/javascript">					getSingle();				</script>			</div>		</div>								<div class="relEtry">				</div>				<div class="movEtry">				&laquo; 前(古)の記事 <a href="http://tips.recatnap.info/assorted_news_20140526/" rel="prev">各種記事（昨日：2014/05/26）盛り合わせ：SEOとか。</a>		</div>						<div class="gAdd">
+			<script type="text/javascript"><!--
+			google_ad_client = "ca-pub-9293786234184342";
+			google_ad_slot = "6244118430";
+			google_ad_width = 468;
+			google_ad_height = 60;
+			//-->
+			</script>
+			<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+		</div>
+		
+		<div id="newPosts">
+			<div class="idxPL">
+				<div class="rowArt">
+					<h2>新着（ニュース関連以外）</h2>
+										<div class="dat">2014/05/11</div>
+					<div class="ttl"><a href="http://tips.recatnap.info/html5-%e5%9f%ba%e6%9c%ac%e7%9a%84%e3%81%aa%e3%82%bf%e3%82%b0/">html5 基本的なタグ</a></div>
+					<div class="exp">
+						<p>HTML5で増えたタグで重要っぽそうなタグ。</p>
+					</div>
+										<div class="dat">2014/04/24</div>
+					<div class="ttl"><a href="http://tips.recatnap.info/impress-powerpoint%e3%81%a8%e5%90%8c%e3%81%a8%e3%81%86%e3%81%98%e3%82%88%e3%81%86%e3%81%aa%e7%84%a1%e6%96%99%e3%82%bd%e3%83%95%e3%83%88/">Impress PowerPointと同とうじような無料ソフト</a></div>
+					<div class="exp">
+						<p>Officeじゃなくて無料のOpenOfficeのプレゼンテーションソフトがImpress。 基本、パワポと同じ。 wikiでまとめ中：OpenOffice Impress 画像周り調査中 パワポと同じ感じなんだけど、画 [...]</p>
+					</div>
+										<div class="dat">2014/04/22</div>
+					<div class="ttl"><a href="http://tips.recatnap.info/html5js%e3%81%a7%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e4%bf%9d%e5%ad%98/">HTML5+JSでファイル保存</a></div>
+					<div class="exp">
+						<p>HTML5+JavaScriptでファイルをPCに保存する。</p>
+					</div>
+										<div class="dat">2014/04/22</div>
+					<div class="ttl"><a href="http://tips.recatnap.info/calc-excel%e3%81%a8%e5%90%8c%e7%ad%89%e3%81%ae%e7%84%a1%e6%96%99%e3%82%bd%e3%83%95%e3%83%88/">Calc excelと同等の無料ソフト</a></div>
+					<div class="exp">
+						<p>Officeじゃなくて無料のOpenOfficeの表計算ソフトがCalc。</p>
+					</div>
+										<div class="dat">2014/04/21</div>
+					<div class="ttl"><a href="http://tips.recatnap.info/wp-%e3%80%8caddquicktag%e3%80%8d%e3%81%a8%e3%80%8cwp-multibyte-patch%e3%80%8d%e3%81%ae%e7%b5%84%e5%90%88%e3%81%9b%e3%81%a7%e4%b8%8d%e5%85%b7%e5%90%88/">wp 「AddQuicktag」と「WP Multibyte Patch」の組合せで不具合</a></div>
+					<div class="exp">
+						<p>「AddQuicktag」と「WP Multibyte Patch」を二つ使っていると不具合があるらしい。</p>
+					</div>
+									</div>
+			</div>
+			
+			<div class="idxPR">
+				<div class="rowArt">
+					<h2>ニュース関連の新着</h2>
+										<div class="ttl"><a href="http://tips.recatnap.info/assorted_news_20140527/">各種記事（昨日：2014/05/27）盛り合わせ：SEOとか。</a></div>
+					<div class="exp"></div>
+										<div class="ttl"><a href="http://tips.recatnap.info/assorted_news_20140526/">各種記事（昨日：2014/05/26）盛り合わせ：SEOとか。</a></div>
+					<div class="exp"></div>
+										<div class="ttl"><a href="http://tips.recatnap.info/assorted_news_20140525/">各種記事（昨日：2014/05/25）盛り合わせ：SEOとか。</a></div>
+					<div class="exp"></div>
+										<div class="ttl"><a href="http://tips.recatnap.info/assorted_news_20140524/">各種記事（昨日：2014/05/24）盛り合わせ：SEOとか。</a></div>
+					<div class="exp"></div>
+										<div class="ttl"><a href="http://tips.recatnap.info/assorted_news_20140523/">各種記事（昨日：2014/05/23）盛り合わせ：SEOとか。</a></div>
+					<div class="exp"></div>
+										<div class="ttl"><a href="http://tips.recatnap.info/assorted_news_20140522/">各種記事（昨日：2014/05/22）盛り合わせ：SEOとか。</a></div>
+					<div class="exp"></div>
+										<div class="ttl"><a href="http://tips.recatnap.info/assorted_news_20140521/">各種記事（昨日：2014/05/21）盛り合わせ：SEOとか。</a></div>
+					<div class="exp"></div>
+										<div class="ttl"><a href="http://tips.recatnap.info/assorted_news_20140520/">各種記事（昨日：2014/05/20）盛り合わせ：SEOとか。</a></div>
+					<div class="exp"></div>
+									</div>
+			</div>
+		</div>
+	</div>		<div id="side">	<div id="HeadTitle">		<div id="myIDdate">現在時刻：ブラウザが対応していません</div>		<div id="TtlLogo"><a href="http://tips.recatnap.info"><img src="http://tips.recatnap.info/wp-content/themes/tips/images/main.gif" alt="PCスキルの小技・忘却防止メモ" width="175" height="67" /></a></div>		<div id="mySiteName"><a href="http://tips.recatnap.info/">PCスキルの小技・忘却防止メモ</a><br />ExcelにHTML、CSSとかjavascriptなどPCに関連するお勉強・小技のメモ</div>	</div>		<div class="sBox">		<h3>新着</h3>		<ul>						<li><a href="http://tips.recatnap.info/assorted_news_20140527/">各種記事（昨日：2014/05/27）盛り合わせ：SEOとか。</a></li>						<li><a href="http://tips.recatnap.info/assorted_news_20140526/">各種記事（昨日：2014/05/26）盛り合わせ：SEOとか。</a></li>						<li><a href="http://tips.recatnap.info/assorted_news_20140525/">各種記事（昨日：2014/05/25）盛り合わせ：SEOとか。</a></li>						<li><a href="http://tips.recatnap.info/assorted_news_20140524/">各種記事（昨日：2014/05/24）盛り合わせ：SEOとか。</a></li>						<li><a href="http://tips.recatnap.info/assorted_news_20140523/">各種記事（昨日：2014/05/23）盛り合わせ：SEOとか。</a></li>					</ul>	</div>		<div class="gAdd">		<script type="text/javascript"><!--		google_ad_client = "pub-9293786234184342";		google_ad_slot = "7952339626";		google_ad_width = 250;		google_ad_height = 250;		//-->		</script>		<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>	</div>			<div class="sBox">		<h3>ページ</h3>		<ul>		<li><a href="http://tips.recatnap.info/wiki/">まとめ（wiki）</a></li>		<li class="page_item page-item-898"><a href="http://tips.recatnap.info/japanese_translation_manual_simple_html_dom_parser/">Simple HTML DOM Parserの日本語訳</a></li>
+<li class="page_item page-item-1028"><a href="http://tips.recatnap.info/personal_summary_page_link/">個人的なまとめページへのリンク</a></li>
+<li class="page_item page-item-2464"><a href="http://tips.recatnap.info/sample_and_source/">各種サンプルとソース</a></li>
+<li class="page_item page-item-516"><a href="http://tips.recatnap.info/toollist/">役立つかは知らないツール</a></li>
+		</ul>	</div>			<div class="sBox">		<h3>Yes or Noくじ</h3>		<div style="margin:0 0.2em;">		<script type="text/javascript">
+(function($) {
+    $(document).ready(function () {
+        $("body").append('<scr' + 'ipt type="text/javascript" src="http://tips.recatnap.info/wp-content/plugins/kuzi/kuzi.js"></scr' + 'ipt>');
+        $("body").append('<link rel="stylesheet" href="http://tips.recatnap.info/wp-content/plugins/kuzi/kuzi.css" type="text/css" />');
+
+        try{
+                 var koVer = ko.version;
+        }
+        catch(e){
+            $("body").append('<scr' + 'ipt type="text/javascript" src="http://tips.recatnap.info/wp-content/plugins/kuzi/knockout-2.1.0.js"></scr' + 'ipt>');
+        }
+
+        ko.applyBindings(new ViewModel(new Array("(●｀･ω･)ゞOK/Yes","(*≧∇≦)ﾉOK/Yes","(〃ω〃)OK/Yes","(○´∀｀)σOK/Yes","壁|▽//)ゝOK/Yes","(〃ﾉ∀ﾉ)OK/Yes","(o´ω｀o)OK/Yes","(*･З･｀)OK/Yes","(っ･ω･)っOK/Yes","ヾﾉ-ω-｀)NG/No","(｡｀-д-)NG/No","ヽ(*｀Д´)ﾉNG/No","(；*´Д`)NG/No","(*｀ε´*)ﾉNG/No","(●｀з´●)NG/No","(´;д;)qNG/No","ο（´･ε･｀○）NG/No","(。￣ｘ￣。)NG/No")));
+    });
+})(jQuery);
+</script>
+
+<div data-bind="visible: lotReel">
+    <div class="reel">
+        <div class="rA" data-bind="text: ReelTop"></div>
+        <div class="rB" data-bind="text: ReelT_M"></div>
+        <div class="rC" data-bind="text: ReelMid"></div>
+        <div class="rB" data-bind="text: ReelM_B"></div>
+        <div class="rA" data-bind="text: ReelBtm"></div>
+    </div>
+    <a class="btn" href="#" data-bind="click: loop, text: btnLabel"></a>
+</div>		</div>		<p style="font-size:0.8em;">どっちでもいい選択に悩んだときは「くじ」で決める。「AとBのどっちにしようかな…」という場合「Aにする」と心に決めて「スタート」、適当なタイミングで「ストップ」ボタンを押す。「OK/Yes」となれば「A」、「NG/No」となれが「B」にするってな感じ。</p>	</div>		<div class="sWrp">		<div class="sBox">			<div class="inBoxL">				<h3>カテゴリー</h3>				<ul>					<li class="cat-item cat-item-686"><a href="http://tips.recatnap.info/category/net/" title=".NET に含まれる投稿をすべて表示">.NET</a> (25)
+</li>
+	<li class="cat-item cat-item-307"><a href="http://tips.recatnap.info/category/css/" title="CSS（カスケードスタイルシート）のtipsや各種メモ">CSS</a> (33)
+</li>
+	<li class="cat-item cat-item-539"><a href="http://tips.recatnap.info/category/eclipse/" title="オープンソースの統合ソフトウェア開発環境(IDE)の一つ。PHPとかのデバッグとかもできるし、複数の人と共有（？）できる。">eclipse</a> (20)
+</li>
+	<li class="cat-item cat-item-635"><a href="http://tips.recatnap.info/category/flashdevelop/" title="FlashDevelop に含まれる投稿をすべて表示">FlashDevelop</a> (3)
+</li>
+	<li class="cat-item cat-item-674"><a href="http://tips.recatnap.info/category/flexas3/" title="Flashの何かのflex。AirがアプリでAirを作るのにflexが必要という感じになるのかな。">flex/as3</a> (49)
+</li>
+	<li class="cat-item cat-item-375"><a href="http://tips.recatnap.info/category/htaccess%e9%96%a2%e9%80%a3/" title="アクセス制限やリダイレクトするときに使う.htaccess。サーバー側で設定できないときに使うファイル。">htaccess関連</a> (6)
+</li>
+	<li class="cat-item cat-item-306"><a href="http://tips.recatnap.info/category/htmlxhtml/" title="ハイパーテキストマークアップランゲージってヤツ。サイトを作るときに使う言語（？）">HTML/XHTML</a> (26)
+</li>
+	<li class="cat-item cat-item-308"><a href="http://tips.recatnap.info/category/javascript/" title="Javascript全般。AjaxやjQueryとかの区分けがよくわかんないからまとめてココに書く。">Javascript</a> (103)
+<ul class='children'>
+	<li class="cat-item cat-item-689"><a href="http://tips.recatnap.info/category/javascript/jquery/" title="jquery に含まれる投稿をすべて表示">jquery</a> (21)
+</li>
+	<li class="cat-item cat-item-688"><a href="http://tips.recatnap.info/category/javascript/knockout-js/" title="jqueryをパワーアップさせた感じのknockout.js">knockout.js</a> (40)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-393"><a href="http://tips.recatnap.info/category/office%e7%b3%bb%e3%82%bd%e3%83%95%e3%83%88/" title="マイクロソフトのオフィス系全般。excelは別カテゴリを用意。">office系ソフト</a> (43)
+<ul class='children'>
+	<li class="cat-item cat-item-317"><a href="http://tips.recatnap.info/category/office%e7%b3%bb%e3%82%bd%e3%83%95%e3%83%88/excel/" title="どこの企業のPCにでもインストされてると思われるExcelについて。">Excel</a> (37)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-663"><a href="http://tips.recatnap.info/category/perl/" title="perl に含まれる投稿をすべて表示">perl</a> (1)
+</li>
+	<li class="cat-item cat-item-364"><a href="http://tips.recatnap.info/category/php/" title="Web用のプログラム…だと思う。フリーのスクリプトのカスタマイズとかで知っておかないといけない。">php</a> (144)
+</li>
+	<li class="cat-item cat-item-654"><a href="http://tips.recatnap.info/category/ruby/" title="ruby に含まれる投稿をすべて表示">ruby</a> (17)
+</li>
+	<li class="cat-item cat-item-316"><a href="http://tips.recatnap.info/category/seosem/" title="いわずと知れたサーチエンジン最適化。ブラックハットとかの情報はなし。普通にサイトを運営するさいに気をつけるべき点とか。">SEO/SEM</a> (6)
+</li>
+	<li class="cat-item cat-item-382"><a href="http://tips.recatnap.info/category/sql/" title="DB（データベース）のこと。主にselect文で使う小技や各メモ。基本的にMySQL。">SQL</a> (32)
+<ul class='children'>
+	<li class="cat-item cat-item-662"><a href="http://tips.recatnap.info/category/sql/postgres/" title="postgres に含まれる投稿をすべて表示">postgres</a> (13)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-363"><a href="http://tips.recatnap.info/category/win/" title="windows全般。">win</a> (15)
+</li>
+	<li class="cat-item cat-item-404"><a href="http://tips.recatnap.info/category/wordpress/" title="CMSのwordpress関連の忘却防止用">Wordpress</a> (47)
+</li>
+	<li class="cat-item cat-item-496"><a href="http://tips.recatnap.info/category/%e3%81%9d%e3%81%ae%e4%bb%96%e3%83%a1%e3%83%a2%e3%80%81tips/" title="その他メモ、tips に含まれる投稿をすべて表示">その他メモ、tips</a> (95)
+</li>
+	<li class="cat-item cat-item-353"><a href="http://tips.recatnap.info/category/%e3%82%b5%e3%83%bc%e3%83%90/" title="サーバーの設定とかそれに付随する事柄全般">サーバ・Linux</a> (48)
+</li>
+	<li class="cat-item cat-item-365"><a href="http://tips.recatnap.info/category/%e3%83%87%e3%82%b6%e3%82%a4%e3%83%b3/" title="色やレイアウトを含めたデザイン全般。">デザイン</a> (6)
+</li>
+	<li class="cat-item cat-item-467"><a href="http://tips.recatnap.info/category/%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab/" title="ファイル に含まれる投稿をすべて表示">ファイル</a> (1)
+</li>
+	<li class="cat-item cat-item-406"><a href="http://tips.recatnap.info/category/%e3%83%a1%e3%83%bc%e3%83%ab/" title="MUA関連。特にこれといったソフトは指定していない。個人的に使ってるのはGmail。">メール</a> (4)
+</li>
+	<li class="cat-item cat-item-4369"><a href="http://tips.recatnap.info/category/%e5%b8%b3%e7%b0%bf%e7%b3%bb/" title="帳簿系 に含まれる投稿をすべて表示">帳簿系</a> (2)
+</li>
+	<li class="cat-item cat-item-461"><a href="http://tips.recatnap.info/category/%e8%a8%80%e8%91%89/" title="言葉 に含まれる投稿をすべて表示">言葉</a> (22)
+</li>
+	<li class="cat-item cat-item-588"><a href="http://tips.recatnap.info/category/%e8%a8%98%e4%ba%8b%e7%9b%9b%e5%90%88%e3%81%9b/" title="YahooやGoogle、SEOとかの記事の盛合せ">記事盛合せ</a> (1,084)
+</li>
+				</ul>			</div>		</div>				<div class="sBox">			<div class="inBoxR">				<div id="fb-root"></div>				<script>(function(d, s, id) {					var js, fjs = d.getElementsByTagName(s)[0];					if (d.getElementById(id)) return;					js = d.createElement(s); js.id = id;					js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";					fjs.parentNode.insertBefore(js, fjs);				}(document, 'script', 'facebook-jssdk'));</script>				<div class="fb-like" data-href="http://tips.recatnap.info/" data-send="false" data-layout="button_count" data-width="200" data-show-faces="false" data-font="arial"></div>				<br />								<div class="g-plusone" data-size="medium" data-annotation="none"></div>				<script type="text/javascript">					window.___gcfg = {lang: 'ja'};										(function() {						var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;						po.src = 'https://apis.google.com/js/plusone.js';						var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);					})();				</script>				<br />								<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" data-count="none">ツイート</a>				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>				<br />								<a href="http://tips.recatnap.info/feed/"><img src="http://tips.recatnap.info/wp-content/themes/tips/images/feed-icon-28x28.png" alt="PCスキルの小技・忘却防止メモのFeed" /></a>				<br />								<span>				<script type="text/javascript" src="http://media.line.naver.jp/js/line-button.js?v=20130508" ></script>				<script type="text/javascript">				new jp.naver.line.media.LineButton({"pc":false,"lang":"ja","type":"a"});				</script>				</span>				<br />							</div>		</div>	</div>	</div></div><div id="TagCloud">	<h2>タグ</h2>	<div><a href='http://tips.recatnap.info/tag/air/' class='tag-link-655' title='1件のトピック' style='font-size: 8pt;'>Air</a>
+<a href='http://tips.recatnap.info/tag/analytics/' class='tag-link-4364' title='1件のトピック' style='font-size: 8pt;'>analytics</a>
+<a href='http://tips.recatnap.info/tag/apijavascript/' class='tag-link-4365' title='1件のトピック' style='font-size: 8pt;'>apijavascript</a>
+<a href='http://tips.recatnap.info/tag/asp-net-mvc/' class='tag-link-685' title='21件のトピック' style='font-size: 34.962962963pt;'>ASP.NET MVC</a>
+<a href='http://tips.recatnap.info/tag/cmd/' class='tag-link-4356' title='8件のトピック' style='font-size: 24.8518518519pt;'>CMD</a>
+<a href='http://tips.recatnap.info/tag/continue%e3%81%a8break/' class='tag-link-444' title='2件のトピック' style='font-size: 12.6666666667pt;'>continueとbreak</a>
+<a href='http://tips.recatnap.info/tag/crenahtml2jpg/' class='tag-link-4357' title='1件のトピック' style='font-size: 8pt;'>CrenaHtml2jpg</a>
+<a href='http://tips.recatnap.info/tag/curl/' class='tag-link-4347' title='4件のトピック' style='font-size: 18.3703703704pt;'>cURL</a>
+<a href='http://tips.recatnap.info/tag/c%e8%a8%80%e8%aa%9e/' class='tag-link-4345' title='1件のトピック' style='font-size: 8pt;'>c言語</a>
+<a href='http://tips.recatnap.info/tag/excel-2/' class='tag-link-4358' title='1件のトピック' style='font-size: 8pt;'>EXCEL</a>
+<a href='http://tips.recatnap.info/tag/explain/' class='tag-link-594' title='2件のトピック' style='font-size: 12.6666666667pt;'>explain</a>
+<a href='http://tips.recatnap.info/tag/flex%e3%81%a8db%e3%81%ae%e9%80%a3%e6%90%ba/' class='tag-link-610' title='9件のトピック' style='font-size: 26.1481481481pt;'>flexとDBの連携</a>
+<a href='http://tips.recatnap.info/tag/flex%e3%81%a8php%e3%81%ae%e9%80%a3%e6%90%ba/' class='tag-link-634' title='1件のトピック' style='font-size: 8pt;'>flexとPHPの連携</a>
+<a href='http://tips.recatnap.info/tag/flex%e3%81%ae%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88%e9%96%a2%e9%80%a3/' class='tag-link-642' title='3件のトピック' style='font-size: 15.7777777778pt;'>flexのイベント関連</a>
+<a href='http://tips.recatnap.info/tag/fuelphp/' class='tag-link-4367' title='5件のトピック' style='font-size: 20.4444444444pt;'>FuelPHP</a>
+<a href='http://tips.recatnap.info/tag/google/' class='tag-link-4363' title='1件のトピック' style='font-size: 8pt;'>google</a>
+<a href='http://tips.recatnap.info/tag/htaccess/' class='tag-link-627' title='1件のトピック' style='font-size: 8pt;'>htaccess</a>
+<a href='http://tips.recatnap.info/tag/ie/' class='tag-link-4362' title='1件のトピック' style='font-size: 8pt;'>IE</a>
+<a href='http://tips.recatnap.info/tag/image_graph/' class='tag-link-604' title='1件のトピック' style='font-size: 8pt;'>Image_Graph</a>
+<a href='http://tips.recatnap.info/tag/mecab/' class='tag-link-560' title='8件のトピック' style='font-size: 24.8518518519pt;'>MeCab</a>
+<a href='http://tips.recatnap.info/tag/mediawiki/' class='tag-link-4352' title='1件のトピック' style='font-size: 8pt;'>MediaWiki</a>
+<a href='http://tips.recatnap.info/tag/net_whois/' class='tag-link-584' title='5件のトピック' style='font-size: 20.4444444444pt;'>Net_Whois</a>
+<a href='http://tips.recatnap.info/tag/openoffice/' class='tag-link-4373' title='2件のトピック' style='font-size: 12.6666666667pt;'>OpenOffice</a>
+<a href='http://tips.recatnap.info/tag/paypal/' class='tag-link-4355' title='3件のトピック' style='font-size: 15.7777777778pt;'>Paypal</a>
+<a href='http://tips.recatnap.info/tag/pdf/' class='tag-link-4359' title='2件のトピック' style='font-size: 12.6666666667pt;'>PDF</a>
+<a href='http://tips.recatnap.info/tag/pdo/' class='tag-link-4346' title='1件のトピック' style='font-size: 8pt;'>PDO</a>
+<a href='http://tips.recatnap.info/tag/pear/' class='tag-link-602' title='4件のトピック' style='font-size: 18.3703703704pt;'>PEAR</a>
+<a href='http://tips.recatnap.info/tag/sass/' class='tag-link-4370' title='1件のトピック' style='font-size: 8pt;'>sass</a>
+<a href='http://tips.recatnap.info/tag/simple-html-dom-parser/' class='tag-link-538' title='14件のトピック' style='font-size: 30.8148148148pt;'>Simple HTML DOM Parser</a>
+<a href='http://tips.recatnap.info/tag/sqlite/' class='tag-link-4366' title='1件のトピック' style='font-size: 8pt;'>SQLite</a>
+<a href='http://tips.recatnap.info/tag/svn/' class='tag-link-4353' title='4件のトピック' style='font-size: 18.3703703704pt;'>svn</a>
+<a href='http://tips.recatnap.info/tag/trac/' class='tag-link-605' title='13件のトピック' style='font-size: 30.037037037pt;'>Trac</a>
+<a href='http://tips.recatnap.info/tag/wp%e3%83%97%e3%83%a9%e3%82%b0%e3%82%a4%e3%83%b3/' class='tag-link-4349' title='23件のトピック' style='font-size: 36pt;'>wpプラグイン</a>
+<a href='http://tips.recatnap.info/tag/xampp/' class='tag-link-603' title='8件のトピック' style='font-size: 24.8518518519pt;'>XAMPP</a>
+<a href='http://tips.recatnap.info/tag/zohocrm/' class='tag-link-4361' title='3件のトピック' style='font-size: 15.7777777778pt;'>ZohoCRM</a>
+<a href='http://tips.recatnap.info/tag/%e3%81%be%e3%81%a8%e3%82%81/' class='tag-link-495' title='22件のトピック' style='font-size: 35.4814814815pt;'>まとめ</a>
+<a href='http://tips.recatnap.info/tag/%e3%82%aa%e3%83%96%e3%82%b8%e3%82%a7%e3%82%af%e3%83%88%e6%8c%87%e5%90%91/' class='tag-link-545' title='4件のトピック' style='font-size: 18.3703703704pt;'>オブジェクト指向</a>
+<a href='http://tips.recatnap.info/tag/%e3%82%af%e3%83%a9%e3%82%b9%e3%82%ab%e3%83%ab%e3%83%bb%e3%82%a6%e3%82%a9%e3%83%aa%e3%82%b9%e6%a4%9c%e5%ae%9a/' class='tag-link-595' title='4件のトピック' style='font-size: 18.3703703704pt;'>クラスカル・ウォリス検定</a>
+<a href='http://tips.recatnap.info/tag/%e3%82%bb%e3%82%ad%e3%83%a5%e3%83%aa%e3%83%86%e3%82%a3/' class='tag-link-4351' title='3件のトピック' style='font-size: 15.7777777778pt;'>セキュリティ</a>
+<a href='http://tips.recatnap.info/tag/%e3%83%84%e3%83%bc%e3%83%ab/' class='tag-link-4360' title='1件のトピック' style='font-size: 8pt;'>ツール</a>
+<a href='http://tips.recatnap.info/tag/%e3%83%89%e3%83%8d%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3/' class='tag-link-4354' title='3件のトピック' style='font-size: 15.7777777778pt;'>ドネーション</a>
+<a href='http://tips.recatnap.info/tag/%e4%b9%b1%e6%95%b0/' class='tag-link-405' title='3件のトピック' style='font-size: 15.7777777778pt;'>乱数</a>
+<a href='http://tips.recatnap.info/tag/%e5%9e%8b%e5%a4%89%e6%8f%9b/' class='tag-link-550' title='2件のトピック' style='font-size: 12.6666666667pt;'>型変換</a>
+<a href='http://tips.recatnap.info/tag/%e7%94%bb%e5%83%8f%e8%aa%8d%e8%a8%bc/' class='tag-link-4350' title='2件のトピック' style='font-size: 12.6666666667pt;'>画像認証</a>
+<a href='http://tips.recatnap.info/tag/%e9%85%8d%e5%88%97/' class='tag-link-575' title='14件のトピック' style='font-size: 30.8148148148pt;'>配列</a></div></div><div id="footer">Copyright &copy; 2009 by PCスキルの小技・忘却防止メモ. All rights reserved.</div></div></body></html>

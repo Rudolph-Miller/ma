@@ -418,11 +418,11 @@
   (get-tags (scoring-url url)))
 
 
-;(print-sorted-hash (scoring-url "http://somewrite.jp/media/somewrite/3347"))
 
-(defun exe ()
-  (print-sorted-hash (scoring-url (cadr sb-ext:*posix-argv*))))
-
-(sb-ext:save-lisp-and-die "sample.exe"
-  :toplevel #'exe
-  :executable t)
+;;;below is for exe
+;(defun exe ()
+;  (print-sorted-hash (scoring-url (cadr sb-ext:*posix-argv*))))
+;
+;(sb-ext:save-lisp-and-die "sample.exe"
+;  :toplevel #'exe
+;  :executable t)

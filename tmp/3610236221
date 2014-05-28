@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" dir="ltr" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+  <title>&quot;おだんみつ&quot;を生み出したgeechs広報メンバーが語る、愛されるメディアを育てる秘訣 | somewrite (サムライト)</title>
+  <meta name="description" content="   &quot;BALANCE&quot; by somewrite では、【Web×女性】を切り口に、サービスの開発秘話や彼女たちが持つオリジナルの価値観を紹介していく。   (左から小田直美さん、池亀梓さん、小"  />
+  <meta name="keywords" content="&quot;BALANCE&quot;" />
+  <link rel="shortcut icon" href="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/favicon-c6562911688fc0d71a71e668e726c1db.ico" />
+  <meta property="og:title" content="&quot;おだんみつ&quot;を生み出したgeechs広報メンバーが語る、愛されるメディアを育てる秘訣 | somewrite (サムライト)"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="   &quot;BALANCE&quot; by somewrite では、【Web×女性】を切り口に、サービスの開発秘話や彼女たちが持つオリジナルの価値観を紹介していく。   (左から小田直美さん、池亀梓さん、小"/>
+  <meta property="fb:app_id" content="474295652676674"/>
+  <meta property="og:url" content="http://somewrite.jp/media/somewrite/4132"/>
+  <meta property="og:image" content="http://54.199.156.161/wp-content/uploads/2014/05/top01.jpg"/>
+  <meta property="og:site_name" content="somewrite(サムライト)"/>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+  <link data-turbolinks-track="true" href="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/application-7811ea69349fa4007df3c371c4c3b722.css" media="all" rel="stylesheet" />
+  <script data-turbolinks-track="true" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/application-3df4eca34d28b205b352124f58de829f.js"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="ZIjzGJ/ebuHzqeVQNpZcMUExh88IuLUbIXkA4VTCflM=" name="csrf-token" />
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46791089-1', 'somewrite.jp');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+<body>
+
+<!--固定ヘッダ -->
+<div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;">
+          <div class="" style="display:table-cell;vertical-align: middle; height: 25px; font-size: 1.0em;">
+            <span style="color: #FFFFFF;font-size: 1.0em; font-weight: bold; ">オウンドメディアのキュレーションサイト（掲載メディア数：64）</span>
+          </div>
+        </div>
+          <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;">
+            <div class="pull-right" style="height: 25px;">
+              <a href="/login"><img alt="Btn fblogin" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_fblogin-082f4fa174a2005b0f0e63981f69f850.png" /></a>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ロゴと検索窓 -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6">
+      <div style="display:table-cell;vertical-align: middle; height: 78px; position: relative;">
+        <a href="/" style="font-size:2.5em;"><img alt="Somewrite" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/img_sitelogo-67b1f57cbbfccfcdb2c8576476a6cb04.png" style="width: 320px" /></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- グロナビ -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-3 text-center gnaviBase"><a class="gnavi-ct1" href="/category/business" style="color: #eb6f70; font-weight: bold;">Business</a><span class="gnaviSpan" style="background-color: #eb6f70;"></span></div>
+    <div class="col-xs-3 text-center gnaviBase"><a class="gnavi-ct2" href="/category/life" style="color: #40a880; font-weight: bold;">Life</a><span class="gnaviSpan" style="background-color: #40a880;"></span></div>
+    <div class="col-xs-3 text-center gnaviBase"><a class="gnavi-ct3" href="/category/special" style="color: #e17fd0; font-weight: bold;">特集</a><span class="gnaviSpan" style="background-color: #e17fd0; font-weight: bold;"></span></div>
+    <div class="col-xs-3 text-center gnaviBase"><a class="gnavi-ct0" href="/media" style="color: #31a7db; font-weight: bold;">メディア一覧</a><span class="gnaviSpan" style="background-color: #31a7db;"></span></div>
+  </div>
+</div>
+
+<!-- ぱんくず -->
+<div class="container">
+  <ul class="breadcrumb" style="background-color: #FFFFFF; margin-bottom: 0px;">
+    <li><a href="/">somewrite トップ</a></li>
+    <li><a href="/media">メディア一覧</a></li>
+    <li><a href="/media/somewrite">somewrite特集</a></li>
+    <li class="active">&quot;おだんみつ&quot;を生み出したge…</li>
+  </ul>
+</div>
+<!-- /ぱんくず -->
+
+<div class="container" style="padding-top: 5px; margin-bottom: 30px;">
+  <div class="row">
+    <!-- メイン領域 -->
+    <div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;">
+      <!-- 記事と企業情報エリア -->
+      <div class="text-center color-ct3-active" style="font-size: 1.2rem;">特集</div>
+      <div class="color-ct3-3line">
+        <!-- 記事画像＆記事タイトルエリア -->
+        <div class="row" style="padding-top: 15px; padding-left: 15px; padding-right: 15px;">
+          <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+            <!-- 記事画像エリア -->
+            <div style="background-image: url(http://54.199.156.161/wp-content/uploads/2014/05/top01.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; width: 146px; height: 146px;">
+            </div>
+          </div>
+          <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;">
+            <!-- 記事タイトルエリア -->
+            <div style="padding: 15px 10px 0px;">
+              <h1 style="font-size: 2.0rem;">&quot;おだんみつ&quot;を生み出したgeechs広報メンバーが語る、愛されるメディアを育てる秘訣</h1>
+            </div>
+          </div>
+        </div>
+        <!-- /記事画像＆記事タイトルエリア -->
+        <!-- 区切り線 -->
+        <div class="row" align="center" style="margin-top: 15px;">
+          <div style="border-bottom: 2px solid #DDDDDD; width: 600px;"></div>
+        </div>
+        <!-- /区切り線 -->
+        <!-- 企業情報エリア -->
+        <div class="row" style="padding: 10px 0px 10px 15px;">
+          <div class="col-xs-3">
+            <a class="hoverWhiteImageLink" href="/media/somewrite"><img alt="Somewrite" height="100px" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/somewrite-649406321b7177c9eaa3c4b3551e5167.png" width="100px" /></a>
+          </div>
+          <div class="col-xs-9" style="padding-left: 0px;">
+            <a class="hoverTextLink-ct3" href="/media/somewrite"><div style="font-size: 2.0rem;">somewrite特集</div></a>
+            <div style="font-size: 1.2rem;">サムライト株式会社</div>
+            <div style="height:25px; width: 183px; position:relative;">
+                <form accept-charset="UTF-8" action="/media/subscribe/33" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed33" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>              <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+              <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed33">94</span>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div>
+        <!-- /企業情報エリア -->
+      </div>
+      <!-- /記事と企業情報エリア -->
+
+      <!-- 記事抜粋エリア -->
+
+      <div style="padding:20px 0px;">
+        <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fsomewrite.jp%2Fmedia%2Fsomewrite%2F4132&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21&amp;appId=474295652676674" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px; width: 130px;" allowTransparency="true"></iframe>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" data-hashtags="somewrite">ツイート</a>
+        <a href="http://b.hatena.ne.jp/entry/http://somewrite.jp/media/somewrite/4132" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          <div style="display:table-cell;vertical-align: middle; height:40px; width: 640px;">
+            <div style="font-size: 1.2rem; padding-left: 10px;"class="color-ct0-nohover color-ct0-bottom-line">記事内容</div>
+          </div>
+          <div style="padding-left: 10px; padding-right: 10px; font-size: 1.2rem;">
+          <span>
+            <br/><div class="prof"><b><div align="center"><img src="http://54.199.156.161/wp-content/uploads/2014/04/aaaa.png" alt="aaaa" width="556" height="44" class="aligncenter size-full wp-image-1400" /></div></b>
+<b>"BALANCE" by somewrite では、【Web×女性】を切り口に、サービスの開発秘話や彼女たちが持つオリジナルの価値観を紹介していく。
+<br><br/>
+<img src="http://54.199.156.161/wp-content/uploads/2014/05/top01.jpg" alt="top01" width="580" height="380" class="image" /><clear="left"></b><b><font size="2"><div align="center">(左から小田直美さん、池亀梓さん、小幡千尋さん、平沢恵子さん)</div></font></b><br/><b>連載第三回目に訪問したのは、フリーランスエンジニアの支援事業を主軸とし、エンジニアの育成から独立支援までをサポートしている<b>ギークス</b>。最近ではあの「<b><a href="http://geechs.com/20140326/" title="[おだんみつ]最終回！イケメンエンジニアを探す旅" target="_blank">おだんみつ</a></b>」を生み出したことでも話題になっています。
+<br/>
+<br/>今回はそんなギークスのPR・採用戦略本部の “<b>女子会（女子会議）</b>” に特別潜入させていただきました！<br/>
+<br/><b>オウンドメディア成功の運用事例に加え、“BALANCE”限定の重大発表も用意しているので、最後までお見逃しなく！</b></b>
+</div>
+
+<div class="entry-h3">
+<h3><b>取材開始！</b></h3></div>
+ 
+<font size="2" color="#000000"><b>―　お話し中のところ失礼します～！今日はよろしくお願いします。</b></font>
+<br/><br/>一同：よろしくお願いしますー！
+<font size="2" color="#000000"><b><br/><br/>―　一度に4人も集まっていただけるとは……ありがとうございます！</b></font>
+<br/><br/>小幡：いえいえ。弊社の取り組みを知って頂けるせっかくの機会なので。
+<br/><br/>
+<div class="entry-h3">
+<h3><b>PR部門すらなかった会社が、1年後に数万PVを誇る
+オウンドメディアを確立</b></h3></div>
+
+<font size="2" color="#000000"><b>―　まずはギークスさんが運営するオウンドメディアについて教えて頂けますか？</b></font>
+<br/> <br/><img src="http://54.199.156.161/wp-content/uploads/2014/05/img02.jpg" alt="img02" width="600" height="400" class="alignleft size-full wp-image-1521" /><br/><br clear="left">小幡：はい。まずgeechsコーポレートサイト、ITエンジニアの方を対象とした無料イベントスペース「21cafe」のサイト、そして新卒採用サイトの3種類です。プラスしてそれぞれのfacebookとtwitterアカウントを所有しています。
+<br/>特徴としては、やはり一人一人が担当メディアを持って運営しているところではないでしょうか。これが一般企業の人事部やPR部と大きく違う点かと思います。
+<br/><br/><b><font size="2" color="#000000">―なんと！他社だとみんなで力を合わせて１つのメディアを作る形式がとても多いですが、ギークスは違うと。</font></b>
+<br/><br/>小幡：そうですね。2013年にリニューアルし、オウンドメディア化したコーポレートサイト担当が平沢、21cafeが小田、池亀は新卒採用担当でもあるので、採用ブログのサイト立ち上げ、更新まで担当しています。私は全体をまとめる役割として、それぞれに任せています。
+<br/><br/><br/><br/>
+<a href="http://geechs.com/"><img src="http://54.199.156.161/wp-content/uploads/2014/05/8fbdc148dacea4694eb0e2b7fc75a049.png" alt="ギークスtop" width="500" height="297" class="alignleft size-full wp-image-1522" /></a><br clear="left"><b><font size="1">(「geechs コーポレートサイト」オウンドメディアからもコンテンツの豊富さが分かる)<br/>
+<a href="http://geechs.com/" title="geechs.com" target="_blank">http://geechs.com/</a></font></b>
+<br/><br/><br/>
+<a href="http://www.ni-ichicafe.com"><img src="http://54.199.156.161/wp-content/uploads/2014/05/21cafe2.png" alt="21cafe" width="500" height="282" class="alignleft size-full wp-image-1525" /></a><br clear="left">
+<font size="1"><b>（ITエンジニアを中心に、開始1年足らずで延べ1,000名以上もの人が利用する「21CAFE」）
+<br/><a href="http://www.ni-ichicafe.com" title="21CAFE" target="_blank">http://www.ni-ichicafe.com</a></b></font>
+<br/><br/><br/>
+<a href="http://geechs-recruit.tumblr.com/"><img src="http://54.199.156.161/wp-content/uploads/2014/05/geechs-recruit_tumblr_com.png" alt="geechs-recruit_tumblr_com" width="500" height="294" class="alignleft size-full wp-image-1526" /></a><br clear="left">
+<font size="1"><b>（メディアミックスウェブログサービスTumblrを利用した「新卒採用サイト」）
+<br/><a href="http://geechs-recruit.tumblr.com/" title="geechs-recruit" target="_blank">http://geechs-recruit.tumblr.com/</a></b></font>
+
+<br/><br/><br/>
+<font size="2" color="#000000"><b>―　1人が1メディアを担当……！では、記事はどなたが書いているんでしょうか？</b></font>
+<br/><br/>小幡：今は外部ライターに頼まず、メディア担当者が自分たちで書いています。最終的に記事を全体共有し、本当に掲載していいかのジャッジをします。
+<br/><br/><font size="2" color="#000000"><b>―　サイト立ち上げから記事更新まで一人で運用する事例は本当に珍しいですね。以前からギークスのPR部門ではこういったやり方がとられていたのですか？</b></font>
+<br/><br/>小幡：いえ、1年前まではPR部門すら存在しなかったので、私たち4人でこのやり方を確立していきました。1年経ってPV数や認知度など、色々と結果が出始めているので、私たちの方針は間違っていなかったなと確信しています。
+<br/><br/><b><font size="2" color="#000000">―　！！！1年前までPR部門がなかった！！？スタートアップ企業ではたまに耳にしますが…では、どうしてPR部門が発足したのですか？</font></b>
+<br/><br/>小幡：会社として次のステージに立つタイミングだったからですね。おかげさまでフリーランスエンジニアの方には認知いただいていましたので、より多くの方に会社を知っていただくフェーズに行くべきだと。そしてチャレンジするからにはメディアに取り上げられるのを待つ……という<b>「待ち」の姿勢ではなく、自分たちから新たな情報発信をし続ける「攻め」のPR</b>をしていこうという事に決まり、オウンドメディア化を2013年10月にスタートさせました。
+<br/><br/>
+<img src="http://54.199.156.161/wp-content/uploads/2014/05/img03.jpg" alt="img03" width="600" height="400" class="alignleft size-full wp-image-1527" /><br clear="left">
+<br/><br/><b><font size="2"><font color="#000000">―　ということは今までみなさんは別のお仕事をされていたのですか？</font></font></b>
+<br/><br/>小幡：そうですね。私は前職でPR会社に務めていたので、そのノウハウを生かしてほしいという事でPR部門責任者を任されましたが、3人は未経験ですね。
+<br/><br/><font size="2"><b><font color="#000000">―　PR部門が全員女性とはとても華やかですね！何か理由があるのですか？<br/></font></b></font>
+<br/>小幡：ありがとうございます。 (笑)　IT業界、特にエンジニアさんは男性の方が多いので、女性ならではの新しい視点で情報発信をしていきたいと考えたのがきっかけです。例えばそこから生まれたのが、「<b>おだんみつ</b>」です。ね、小田。
+<br/><br/><font size="2" color="#000000"><b>―　おおおおお、あなたがあの有名な”おだんみつ”さんですか！お会いすると結構普通ですね！</b></font>
+<br/><br/>小田：よく言われます。(笑)
+<br/><br/><img src="http://54.199.156.161/wp-content/uploads/2014/05/img04.jpg" alt="img04" width="600" height="400" class="alignleft size-full wp-image-1528" /><br/><br clear="left"><font size="2" color="#000000"><b>―　「おだんみつ」と言われてどう思いました？（笑）</b></font>
+<br/><br/>小田：すごく楽しそうだと思いました！　弊社の中でも新しい取り組みだっていうこともありましたし、メディアに「イケメン」というコンテンツはあっても、「エンジニア×イケメン」という切り口はなかったので。「おだんみつ」というキャラクターを通して、<b>「エンジニアの仕事ってすごい！」「エンジニアの働き方ってかっこいい！」</b>というメッセージを伝えていけるのはすごく嬉しかったです。キャラクターとして選んでいただいたことは、とても光栄だと思っています。
+<br/><br/><b><font size="2" color="#000000">―　名前が浸透してきて、何か変化はありましたか？</font></b>
+<br/><br/>小田：おだんみつ連載を始めて3ヶ月ほど経ってから「おだんみつさんですよね？」ってよく声をかけられるようになりましたね。これもすごく嬉しくて、Web上では会えない人に直接「読んでいます！記事良かったよ」ってリアクションを貰ったり。「あっ、届いているんだ」って実感しました。
+<br/><br/><b><font size="2" color="#000000">―　おだんみつさんもメディアを運営されていますよね。どんな想いで行っているのですか？</font></b>
+<br/><br/>小田：やはり、コンテンツをきっかけにギークスのファンになってもらいたいと強く思っています。<b>おだんみつ企画</b>という他にはいないキャラクターはもちろん、ギークスがやっているビジネスや強みを生かした上でのコンテンツ制作はギークスしか発信できないので、ブランドを大切にしたコンテンツ作りを心がけています。「<b>このコンテンツはギークスだからこそ！</b>」と見ている方に感じてほしいですね。
+<br/><br/>池亀：確かにそれは私も強く思っています。私たちチームの強みは機械的な記事を作るのではなく、「<b>体温がある</b>」記事を生み出していることなので、それを多くの人に感じとってもらいたいですね。「<b>おだんみつ</b>」もそうですが、書いている人の顔が見えてパソコンの向こうに温もりを感じられる。「<b>こういう人が書いているんだなぁ</b>」ってイメージを持ってもらう。
+<br/><br/><b><font size="2" color="#000000">―　記事を通して人間味を感じてもらうと。</font></b>
+<br/><br/>池亀：「<b>ブログ書きました</b>」だけじゃなくて、記事の中に人間味があることでリアルアクションに繋がっていく。<b>機械的じゃない文章で、読み手の立場になって書く</b>ということを意識していますね。私は採用ブログとは別に、平沢や小田の書いたコーポレートサイトの記事をSNSで広める役割を担っているので、そのあたりの意識は強く持っています。
+<br/><br/><img src="http://54.199.156.161/wp-content/uploads/2014/05/img05.jpg" alt="img05" width="600" height="400" class="alignleft size-full wp-image-1529" /><br/><br clear="left"><font size="2" color="#000000"><b>―　なるほどー。お互い連携を取りながら仕事を進めているんですね。<br/>　　とはいえ主担当のメディアを企画～編集まで行うって、慣れていないと本当に大変ですよね。</b></font>
+<br/><br/>平沢：そうなんです……。私はコーポレートサイトを任されているのですが、もともと理系出身ということもあり、メンバーの中で一番記事を書いたりするのが苦手でした。ライター経験も特になく、最初に書いた記事が本当に酷い出来で……。
+<br/><br/>小幡：「こんなアプリ使ってみた！」って切り口の記事だったんですが。それはもう取扱い説明書のような文章でね（笑）
+<br/><br/>平沢：やめてくださいー！(照)　苦手意識があるからこそ、慎重に誰よりも丁寧に書くようにしています。PR・採用戦略本部の女子たちは一番目が厳しいんですよ。もちろん、良い意味で。
+<br/><br/><img src="http://54.199.156.161/wp-content/uploads/2014/05/img06.jpg" alt="img06" width="600" height="400" class="alignleft size-full wp-image-1530" /><br/><br clear="left">小幡：今の平沢はすごく面白い記事を書けているよね。おだんみつの様なメディア色が強い記事から、ITエンジニアさんに取材した読み物系のちょっと硬い記事まで、幅広い記事を書けるようになったんじゃないかなぁと思います。
+<br/><br/><b><font size="2" color="#000000">―　ではそんな成長された平沢さんが、メディア運営で心掛けている事はなんですか？</font></b>
+<br/><br/>平沢：まずは、サイトに来ていただいた人に楽しんで貰うことが必須条件。読者が「この記事面白い！」って思ってくれる根幹、それは感動や笑いだったり、新しい発見だったりしますよね。私は情報を知るだけではなく、何かの“<b>気づき</b>”と“<b>アクション</b>”を与えられるような内容にすることを心がけています。
+<br/><br/><img src="http://54.199.156.161/wp-content/uploads/2014/05/img07.jpg" alt="img07" width="600" height="400" class="alignleft size-full wp-image-1531" />
+<br/><br/>平沢：例えばギークスが主催したイベントのレポート記事を読んだ人が、「面白かった」と思うだけでなく、「記事を読んで来ました」と次のイベントに足を運んで下さるとか。「記事」がきっかけづくりに繋がる事がとても嬉しいです。
+<br/><br/><b><font size="2" color="#000000">―　手ごたえはいかがですか？</font></b>
+<br/><br/>平沢：おかげさまで、うれしい声を頂けるようになりました。ギークスの存在だけでなく、小田も言っていますが「<b>エンジニアの働き方ってかっこいい！</b>」というイメージが強くなったといった声だったり。地道な記事の積み重ねで、確実に「<b>ファン</b>」になって頂いた方が増えたと手ごたえを感じています。
+<br/><br/>
+<font size="2" color="#000000"><b>彼女たちがチーム発足時、最初にやったことは得意不得意を教え合うことだったという。誰が何を得意で、何が得意じゃないのか。筆者は話を聞いていて個々の特性を生かしつつ、欠点も補えている良いチームだと思った。</b></font>
+<br/><br/>
+<img src="http://54.199.156.161/wp-content/uploads/2014/05/img08.jpg" alt="img08" width="600" height="400" class="alignleft size-full wp-image-1532" /><br/><br clear="left">
+小幡：それぞれ強みはもともと持っていて、メディアを運営する上で強みが確立されてきたんだと思います。
+<br/><br/><b><font size="2" color="#000000">―　パズルがピタっとはまったようなそんな感じですね。</font></b>
+<br/><br/>小幡：そうそう、そんな感じ！
+<br/>
+<div class="entry-h3">
+<h3><b>今後注目の「geechs magazine」について</b></h3></div>
+<font size="2" color="#000000"><b>―　今日は ”<b>重大発表</b>” があると聞いて来たのですが、小幡さん！そろそろ教えてください！</b></font>
+<br/><br/>小幡：「<b>geechs magazine</b>」という新しいメディアを立ち上げようと思っています。
+<br/><br/><b><font size="2" color="#000000">―　ほうほう！ぜひ内容を教えてください！</font></b>
+<br/><br/>小幡：IT・web業界で活躍しているフリーランスエンジニアを取り巻く環境に焦点を当て、彼らのワークスタイルやライフスタイル、業界トレンドなど「イマ」をお伝えするwebマガジンです。Web業界で著名な方々を取材し、フォーカスしていく記事を書いたり、あとはこのマガジン内で<b>……あっ、これはまだ教えられないですね。</b>
+<br/><br/><font size="2" color="#000000"><b>―　うっ、気になるところで止められてしまった……！今日のお話で、みなさんが強い想いを持ってメディア運営をされているのがよく分かりました。新しいメディア誕生にももちろん、理由があるんですよね？</b></font>
+<br/><br/>小幡：はい、もちろんです。これもやはり、次のステージにチャレンジするタイミングが来た事が理由です。これまでメディアを運営してきて「<b>こういう切り口だとシェアされるんだ！</b>」などの検証ができてきました。その気付きをより生かし、私たちのパートナーであるフリーランスという働き方の価値向上のため、様々な「<b>きっかけ</b>」が提供できるようなメディアづくりをしたいと考え製作しているのが「<b>geechs magazine</b>」です。
+<br/><br/><b><font size="2" color="#000000">―　”リリース日”はもう決まっているんですか？</font></b>
+<br/><br/>小幡：6月上旬を予定としています。<b>実は6月にはgeechs magazineのリアルな……おっとこれもまだ言えません。</b>
+<br/><br/><font size="2" color="#000000"><b>―　うう……！(涙)「geechs magazine」楽しみにしています！<br/>　　今日はありがとうございました！</b></font>
+<br/><br/>一同：ありがとうございました！
+<br/><br/>
+<br/><br/>
+<div class="prof"><b>▼プロフィール</b><br/><img src="http://54.199.156.161/wp-content/uploads/2014/05/img021.jpg" alt="img02" width="180" height="170" class="image" align="left" size-full wp-image-1540" />　<b>小幡 千尋</b><br/>
+<font size="2">2009年中途入社。geechs執行役員/PR・採用戦略本部長。新卒として総合商社に入社。その後大手企業を中心とした新卒採用支援や大学生のキャリアカウンセリング、講座等を展開。PR会社を経て現職に。PR・広報部門が存在しなかったgeechsにおいて0からその立ち上げを行う。自身もプレーヤーとして新規企画立案に携わりながら、戦略的な「攻めのPR」を実現している。</font></div>
+<br/>
+<div class="prof"><b>▼プロフィール</b><br/><img src="http://54.199.156.161/wp-content/uploads/2014/05/img061.jpg" alt="img06" width="180" height="170" class="image" align="left" size-full wp-image-1541" />　<b>平沢 恵子</b><br/>
+<font size="2">2009年新卒入社。人材コンサル営業、キャリアアドバイザー、webマーケターを経て現在はwebメディア企画運営を担当。「読者が+@の価値観を持てる」記事作成を目指し、取材～記事編集まで一手に担う。編集未経験にも関わらず、自社コーポレートサイトPVを10倍以上に押し上げた、geechsオウンドメディア成長の立役者。</font></div>
+<br/>
+<div class="prof"><b>▼プロフィール</b><br/><img src="http://54.199.156.161/wp-content/uploads/2014/05/img051.jpg" alt="img05" width="180" height="170" class="image" align="left" size-full wp-image-1542" />　<b>池亀 梓</b><br/>
+<font size="2">2008年新卒入社。人材コンサル営業、就活生のキャリア支援を経験し、現在は自社新卒採用担当と広報・PR担当を兼任。事業部が掲げる「自前主義」を仕事に取り入れ、大手採用媒体を一切使わず、ソーシャルメディアを活用した新卒採用を実施。採用広報の新たな可能性を模索し、新しいツールを積極的に活用している。</font></div>
+<br/>
+<div class="prof"><b>▼プロフィール</b><br/><img src="http://54.199.156.161/wp-content/uploads/2014/05/img041.jpg" alt="img04" width="180" height="170" class="image" align="left" size-full wp-image-1543" />　<b>小田 直美</b><br/>
+<font size="2">2013年新卒入社。PR・広報担当兼ITエンジニア向け無料イベント貸出スペース”21cafe”の管理人。イケメンITエンジニアに萌えるお姉さん「おだんみつ」としてIT界隈で一躍有名人に。本企画はいいね数3,000以上、数万PVを超える人気コンテンツに成長した。ソーシャルとリアルの親和性を重視したメディア運営に注力している。</font></div>
+<br/>
+<div class="prof"><b>筆者プロフィール</b><br/>
+<b>高蒔 さな</b><br/>
+<span style="font-size: small;">somewrite専属Web編集者、ライター。ベンチャー界を練り歩きつつ、somewriteをソフトウェアに日々情報発信をしている。</a></span></div>
+<br/>
+          </span>
+          </div>
+        <!-- 記事抜粋版 -->
+          <div style="padding-top: 15px; padding-left: 111px;" class="text-center">
+            <a class="btn btn-default hoverWhiteImage" href="/media/somewrite/4132/redirect" style="font-size: 1.6rem; color: #FFFFFF; background-color: #32a7db; width: 450px; height: 60px; padding-top: 14px;" target="_blank">記事全文を読む</a>
+          </div>
+
+      </div>
+      <!-- /記事抜粋エリア -->
+
+      <!-- 広告エリア -->
+      <!--
+      <div style="padding: 20px 0px 10px 0px;  border-top: 1px solid rgba(0, 0, 0, .1); box-shadow(rgba(255, 255, 255, .1) 0 1px 0 inset); border-bottom: 1px solid rgba(0, 0, 0, .1); box-shadow(rgba(255, 255, 255, .1)0 1px 0);">
+        <div class="row">
+          <div class="col-xs-6">
+            <img alt="Ad1" height="230px" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/sample/ad1-6834fe9bbd5f8d182318774aa6075d00.png" width="300px" />
+          </div>
+          <div class="col-xs-6">
+            <img alt="Ad2" height="230px" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/sample/ad2-bb434fe948970a1316ffc47f29c5eef7.png" width="300px" />
+          </div>
+        </div>
+      </div>
+      -->
+      <!-- /広告エリア -->
+
+
+      <!-- おすすめ企業ブログエリア -->
+      <div style="padding: 20px 0px 5px 0px;" >
+        <img alt="" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/icn_recommend-a74460abbb703e9a2a4819bafdfaa624.png" height="20px">
+        <span style="font-size: 1.2rem; color: #32a7db; font-weight: bold; vertical-align: sub;"> 注目メディア</span>
+        <img src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/msg_recommend-ba17e74c43bfd971ad815a52e3b80dd0.png" alt="" class="" height="20px">
+      </div>
+      <div style="padding:5px 0px;" >
+        <div class="row" style="padding-top: 5px; padding-bottom: 5px; background-color : #f0f0ed ;">
+          <div class="col-xs-6" style="padding: 5px;">
+            <div class="row" style=" background-color : #ffffff ; margin: 0px; padding: 5px;">
+              <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+                <a href="/media/pixta" class="hoverWhiteImageLink"><img alt="Pixta" height="72px" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/pixta-7e9987f5a33a7b959a150614fd591acc.png" width="72px" /></a>
+              </div>
+              <div class="col-xs-9" style="padding-left: 10px; padding-right: 0px;">
+                <div><a href="/media/pixta" class="hoverTextLink-ct1" style="font-size: 1.0rem;">ピクスタアンテナ</a></div>
+                <div style="font-size: 0.8rem;">ピクスタ株式会社</div>
+                <div style="height:25px; width: 183px; position:relative;">
+                    <form accept-charset="UTF-8" action="/media/subscribe/63" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                      <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed63" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>                  <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                  <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed63">7</span>
+                  <div style="clear:both;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6" style="padding: 5px;">
+            <div class="row" style=" background-color : #ffffff ; margin: 0px; padding: 5px;">
+              <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+                <a href="/media/growthhackjapan" class="hoverWhiteImageLink"><img alt="Growthhackjapan" height="72px" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/growthhackjapan-9da58fa257e13a71ccbe809dcd7a0def.png" width="72px" /></a>
+              </div>
+              <div class="col-xs-9" style="padding-left: 10px; padding-right: 0px;">
+                <div><a href="/media/growthhackjapan" class="hoverTextLink-ct1" style="font-size: 1.0rem;">growth hack japan</a></div>
+                <div style="font-size: 0.8rem;">株式会社Vapes</div>
+                <div style="height:25px; width: 183px; position:relative;">
+                    <form accept-charset="UTF-8" action="/media/subscribe/55" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                      <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed55" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>                  <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                  <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed55">32</span>
+                  <div style="clear:both;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6" style="padding: 5px;">
+            <div class="row" style=" background-color : #ffffff ; margin: 0px; padding: 5px;">
+              <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+                <a href="/media/coromos" class="hoverWhiteImageLink"><img alt="Coromos" height="72px" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/coromos-d0fbde1465b141b9f40a1f063f1f226b.png" width="72px" /></a>
+              </div>
+              <div class="col-xs-9" style="padding-left: 10px; padding-right: 0px;">
+                <div><a href="/media/coromos" class="hoverTextLink-ct1" style="font-size: 1.0rem;">coromos</a></div>
+                <div style="font-size: 0.8rem;">株式会社InnoBeta</div>
+                <div style="height:25px; width: 183px; position:relative;">
+                    <form accept-charset="UTF-8" action="/media/subscribe/61" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                      <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed61" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>                  <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                  <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed61">15</span>
+                  <div style="clear:both;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6" style="padding: 5px;">
+            <div class="row" style=" background-color : #ffffff ; margin: 0px; padding: 5px;">
+              <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+                <a href="/media/cuusoo" class="hoverWhiteImageLink"><img alt="Cuusoo" height="72px" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/cuusoo-714f0ce62e562e5a1f203bc3e6289301.png" width="72px" /></a>
+              </div>
+              <div class="col-xs-9" style="padding-left: 10px; padding-right: 0px;">
+                <div><a href="/media/cuusoo" class="hoverTextLink-ct1" style="font-size: 1.0rem;">CUUSOO BLOG</a></div>
+                <div style="font-size: 0.8rem;">株式会社 CUUSOO SYSTEM</div>
+                <div style="height:25px; width: 183px; position:relative;">
+                    <form accept-charset="UTF-8" action="/media/subscribe/40" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                      <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed40" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>                  <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                  <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed40">14</span>
+                  <div style="clear:both;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /おすすめ企業ブログエリア -->
+
+      <!-- 企業関連記事エリア -->
+      <div style="padding: 20px 0px 5px 0px;" >
+        <img alt="Icn article list" height="20px" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/icn_article_list-d63acce83c81811d3343ef9b267bfa59.png" />
+        <span style="font-size: 1.2rem; color: #32a7db; font-weight: bold; vertical-align: sub;"> 関連記事</span>
+      </div>
+      <div style="padding:5px 0px;" >
+        <div class="row">
+            <!-- 記事カセット -->
+            <div id="cassette_clone" class="col-xs-4 main-cassette-article">
+              <div class="color-ct3-hover-casette">
+                <div class="main-cassette-img"  style="background-image: url(http://54.199.156.161/wp-content/uploads/2014/04/hitosaratop.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                  <a class="hoverWhiteLink main-cassette-link" href="/media/somewrite/3347"> </a>
+                </div>
+                <div class="main-cassette-frame" id="article_line">
+                  <div class="main-cassette-top">
+                    <a class="hoverTextLink-ct3" href="/media/somewrite/3347"><span class="main-cassette-title" id="article_title">「こどものヒトサラ」ママ編集長熊本薫氏に聞く、ママ達をストレスフ…</span></a>
+                  </div>
+                  <!-- 区切り線 -->
+                  <div align="center">
+                    <div style="border-bottom: 2px solid #DDDDDD; width: 280px;"></div>
+                  </div>
+                  <!-- /区切り線 -->
+                  <div class="main-cassette-bottom">
+                    <div class="row">
+                      <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+                        <a class="hoverWhiteImageLink" href="/media/somewrite"><img alt="Somewrite" class="main-cassette-logo" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/somewrite-649406321b7177c9eaa3c4b3551e5167.png" /></a>
+                      </div>
+                      <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;">
+                        <div style="height: 32px;">
+                          <div id="article_company"><a class="hoverTextLink-ct3" href="/media/somewrite" style="font-weight: bold;">somewrite特集</a></div>
+                        </div>
+                        <div style="height:25px; width: 183px; position:relative;">
+                            <form accept-charset="UTF-8" action="/media/subscribe/33" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                              <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed33" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>                          <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                          <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed33">94</span>
+                          <div style="clear:both;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-category-label text-center">
+                    <span class="color-ct3" id="article_category">特集</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /記事カセット -->
+            <!-- 記事カセット -->
+            <div id="cassette_clone" class="col-xs-4 main-cassette-article">
+              <div class="color-ct3-hover-casette">
+                <div class="main-cassette-img"  style="background-image: url(http://54.199.156.161/wp-content/uploads/2014/04/6_SXlYjht6YLw1n1396861693_1396861711.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                  <a class="hoverWhiteLink main-cassette-link" href="/media/somewrite/3080"> </a>
+                </div>
+                <div class="main-cassette-frame" id="article_line">
+                  <div class="main-cassette-top">
+                    <a class="hoverTextLink-ct3" href="/media/somewrite/3080"><span class="main-cassette-title" id="article_title">「何かに迷ったとき、まず5年後の自分を思い描きます」schoo(…</span></a>
+                  </div>
+                  <!-- 区切り線 -->
+                  <div align="center">
+                    <div style="border-bottom: 2px solid #DDDDDD; width: 280px;"></div>
+                  </div>
+                  <!-- /区切り線 -->
+                  <div class="main-cassette-bottom">
+                    <div class="row">
+                      <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+                        <a class="hoverWhiteImageLink" href="/media/somewrite"><img alt="Somewrite" class="main-cassette-logo" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/somewrite-649406321b7177c9eaa3c4b3551e5167.png" /></a>
+                      </div>
+                      <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;">
+                        <div style="height: 32px;">
+                          <div id="article_company"><a class="hoverTextLink-ct3" href="/media/somewrite" style="font-weight: bold;">somewrite特集</a></div>
+                        </div>
+                        <div style="height:25px; width: 183px; position:relative;">
+                            <form accept-charset="UTF-8" action="/media/subscribe/33" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                              <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed33" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>                          <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                          <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed33">94</span>
+                          <div style="clear:both;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-category-label text-center">
+                    <span class="color-ct3" id="article_category">特集</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /記事カセット -->
+        </div>
+      </div>
+    </div>
+    <!-- /メイン領域 -->
+
+    <!-- サイド領域 -->
+    <div class="col-xs-4" style="padding-left: 15px; padding-right: 0px;">
+    <!-- 広告エリア -->
+    <!--
+    <div style="padding: 0px 0px 10px;" >
+      <img height="230px;" width="300px;" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/sample/ad3-95ed1fd9e9be9f674cc7618132755a31.png" alt="" class="">
+    </div>
+    -->
+
+    <!-- FBエリア -->
+    <div style="padding: 5px 0px 0px;" >
+      <div style="height:260px; width:300px; display: inline-block;">
+        <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fsomewrite&amp;width=300&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=true&amp;appId=196085167253987" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:258px;" allowTransparency="true"></iframe>
+      </div>
+    </div>
+
+    <!-- 人気記事ランキング -->
+    <div style="padding: 5px 0px 10px;" >
+      <!--人気記事ランキング - タイトル -->
+      <div style="display:table-cell;vertical-align: middle; height:40px; width: 311px;">
+        <div style="font-size: 1.2rem; padding-left: 10px;" class="color-ct0-hover"><img alt="Icn kiji link" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/icn_kiji_link-336c11065ba84f643ec4481730297320.png" /> 人気記事ランキング</div>
+      </div>
+
+      <!-- 人気記事ランキング - カセット -->
+      <div class="ranking-cassette">
+        <div class="row">
+          <div class="col-xs-4" style="position: relative;">
+            <div class="" style="width: 70px; height: 70px; position: relative; background-image: url(http://54.199.156.161/wp-content/uploads/2014/02/45755649be00f510dfaa09f9fa9f3690.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+              <img alt="Msg ranking1" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/msg_ranking1-bc37b68f2b44a2acc3a42db772db0bec.png" style="position: absolute; top: -5px; left: 0px; width: 25px; height: 25px;" />
+              <a class="hoverWhiteLink" href="/media/somewrite/1016" style="width: 74px; height: 74px; display: block;"> </a>
+            </div>
+            <!--<a href="" class="hoverWhiteImageLink"><img src="/contents/DEMOA/sample_main.png" alt=""  class="img-responsive ranking-main-img-size"></a>-->
+          </div>
+          <div class="col-xs-8" style="padding-left: 0px;">
+            <div style="height:74px;display:table-cell;vertical-align: middle;">
+              <a href="/media/somewrite/1016" class="hoverImportantLink">「ユーザー数は追いません」NewsPicksの広告収益に頼らないメディア運営とは？</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ranking-cassette">
+        <div class="row">
+          <div class="col-xs-4" style="position: relative;">
+            <div class="" style="width: 70px; height: 70px; position: relative; background-image: url(http://54.199.156.161/wp-content/uploads/2014/03/ND4_5850.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+              <img alt="Msg ranking2" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/msg_ranking2-acac8c58a1b40295c8f0bdbaef62e035.png" style="position: absolute; top: -5px; left: 0px; width: 25px; height: 25px;" />
+              <a class="hoverWhiteLink" href="/media/somewrite/2369" style="width: 74px; height: 74px; display: block;"> </a>
+            </div>
+            <!--<a href="" class="hoverWhiteImageLink"><img src="/contents/DEMOA/sample_main.png" alt=""  class="img-responsive ranking-main-img-size"></a>-->
+          </div>
+          <div class="col-xs-8" style="padding-left: 0px;">
+            <div style="height:74px;display:table-cell;vertical-align: middle;">
+              <a href="/media/somewrite/2369" class="hoverImportantLink">ヤフトピ砲がガンガン飛んでくる！最強オウンドメディア「弁護士ドットコム」に聞くトピックス運営方法とは？</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ranking-cassette">
+        <div class="row">
+          <div class="col-xs-4" style="position: relative;">
+            <div class="" style="width: 70px; height: 70px; position: relative; background-image: url(https://s3-ap-northeast-1.amazonaws.com/somewrite-wp/wp-content/uploads/2014/02/toyokeizai01.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+              <img alt="Msg ranking3" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/msg_ranking3-f57248341ab3bee92f3bb74b4bf7eaf5.png" style="position: absolute; top: -5px; left: 0px; width: 25px; height: 25px;" />
+              <a class="hoverWhiteLink" href="/media/somewrite/1972" style="width: 74px; height: 74px; display: block;"> </a>
+            </div>
+            <!--<a href="" class="hoverWhiteImageLink"><img src="/contents/DEMOA/sample_main.png" alt=""  class="img-responsive ranking-main-img-size"></a>-->
+          </div>
+          <div class="col-xs-8" style="padding-left: 0px;">
+            <div style="height:74px;display:table-cell;vertical-align: middle;">
+              <a href="/media/somewrite/1972" class="hoverImportantLink">「プラティッシャーこそwebメディアが勝つ方法だ」佐々木編集長が語る東洋経済オンラインの戦略</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ranking-cassette">
+        <div class="row">
+          <div class="col-xs-4" style="position: relative;">
+            <div class="" style="width: 70px; height: 70px; position: relative; background-image: url(http://54.199.156.161/wp-content/uploads/2014/02/am04.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+              <img alt="Msg ranking4" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/msg_ranking4-4e915029ec901470578d650f7aa58b88.png" style="position: absolute; top: -5px; left: 0px; width: 25px; height: 25px;" />
+              <a class="hoverWhiteLink" href="/media/somewrite/891" style="width: 74px; height: 74px; display: block;"> </a>
+            </div>
+            <!--<a href="" class="hoverWhiteImageLink"><img src="/contents/DEMOA/sample_main.png" alt=""  class="img-responsive ranking-main-img-size"></a>-->
+          </div>
+          <div class="col-xs-8" style="padding-left: 0px;">
+            <div style="height:74px;display:table-cell;vertical-align: middle;">
+              <a href="/media/somewrite/891" class="hoverImportantLink">「素敵ビッチ」など独自色の強い恋愛系メディアAM、立ち上げの秘訣</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ranking-cassette">
+        <div class="row">
+          <div class="col-xs-4" style="position: relative;">
+            <div class="" style="width: 70px; height: 70px; position: relative; background-image: url(http://54.199.156.161/wp-content/uploads/2014/03/top2.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+              <img alt="Msg ranking5" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/msg_ranking5-00c1a0cf80d1e842ef1b7b5b6846cd38.png" style="position: absolute; top: -5px; left: 0px; width: 25px; height: 25px;" />
+              <a class="hoverWhiteLink" href="/media/somewrite/2135" style="width: 74px; height: 74px; display: block;"> </a>
+            </div>
+            <!--<a href="" class="hoverWhiteImageLink"><img src="/contents/DEMOA/sample_main.png" alt=""  class="img-responsive ranking-main-img-size"></a>-->
+          </div>
+          <div class="col-xs-8" style="padding-left: 0px;">
+            <div style="height:74px;display:table-cell;vertical-align: middle;">
+              <a href="/media/somewrite/2135" class="hoverImportantLink">&quot;キラキラ女性社員”が運営するトレンダーズのオウンドメディア「SOCIAL GIRLS LAB.」</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /人気記事ランキング - カセット -->
+    </div>
+
+    <!-- 人気メディアランキング -->
+    <div style="padding: 5px 0px 10px;" >
+      <!-- 人気メディアランキング - タイトル -->
+      <div style="display:table-cell;vertical-align: middle; height:40px; width: 311px;">
+        <div style="font-size: 1.2rem; padding-left: 10px;"class="color-ct0-hover"><img alt="Icn media link" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/icn_media_link-2ec253ecc20f151ba5a4142a6d5b62b9.png" /> 人気メディアランキング</div>
+      </div>
+
+      <!-- 人気メディアランキング - カセット -->
+      <div class="ranking-cassette">
+        <div class="row">
+          <div class="col-xs-4" style="position: relative;">
+            <img alt="Msg ranking1" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/msg_ranking1-bc37b68f2b44a2acc3a42db772db0bec.png" style="position: absolute; top: -5px; left: 0px; width: 25px; height: 25px;" />
+            <a href="/media/baseu" class="hoverWhiteImageLink"><img alt="Baseu" class="img-responsive ranking-main-img-size" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/baseu-ca2bb57b4539dace451abe60a93a5e60.png" /></a>
+          </div>
+          <div class="col-xs-8" style="padding-left: 0px;">
+            <div style="height:74px;display:table-cell;vertical-align: middle;">
+              <div style="font-size: 1.0rem;"><a href="/media/baseu" class="hoverImportantLink" style="font-weight: bold;">BASE U</a></div>
+              <div class="col-xs-9" >
+                <div style="font-size: 0.8rem;">BASE株式会社</div>
+              </div>
+              <div class="col-xs-3">
+                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 30px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed26">116</span>
+              </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      <!-- /人気記事ランキング - カセット -->
+      <!-- 人気メディアランキング - カセット -->
+      <div class="ranking-cassette">
+        <div class="row">
+          <div class="col-xs-4" style="position: relative;">
+            <img alt="Msg ranking2" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/msg_ranking2-acac8c58a1b40295c8f0bdbaef62e035.png" style="position: absolute; top: -5px; left: 0px; width: 25px; height: 25px;" />
+            <a href="/media/keiei-hacker" class="hoverWhiteImageLink"><img alt="Keiei hacker" class="img-responsive ranking-main-img-size" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/keiei-hacker-49fa4c05a068b5984d2a7761bba5f8d1.png" /></a>
+          </div>
+          <div class="col-xs-8" style="padding-left: 0px;">
+            <div style="height:74px;display:table-cell;vertical-align: middle;">
+              <div style="font-size: 1.0rem;"><a href="/media/keiei-hacker" class="hoverImportantLink" style="font-weight: bold;">経営ハッカー</a></div>
+              <div class="col-xs-9" >
+                <div style="font-size: 0.8rem;">freee株式会社</div>
+              </div>
+              <div class="col-xs-3">
+                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 30px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed23">106</span>
+              </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      <!-- /人気記事ランキング - カセット -->
+      <!-- 人気メディアランキング - カセット -->
+      <div class="ranking-cassette">
+        <div class="row">
+          <div class="col-xs-4" style="position: relative;">
+            <img alt="Msg ranking3" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/msg_ranking3-f57248341ab3bee92f3bb74b4bf7eaf5.png" style="position: absolute; top: -5px; left: 0px; width: 25px; height: 25px;" />
+            <a href="/media/shigoto-lovers" class="hoverWhiteImageLink"><img alt="Shigoto lovers" class="img-responsive ranking-main-img-size" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/shigoto-lovers-2668d0331656c7ba770092c62758b73c.png" /></a>
+          </div>
+          <div class="col-xs-8" style="padding-left: 0px;">
+            <div style="height:74px;display:table-cell;vertical-align: middle;">
+              <div style="font-size: 1.0rem;"><a href="/media/shigoto-lovers" class="hoverImportantLink" style="font-weight: bold;">シゴトLOVERS</a></div>
+              <div class="col-xs-9" >
+                <div style="font-size: 0.8rem;">株式会社ジェネストリーム</div>
+              </div>
+              <div class="col-xs-3">
+                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 30px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed8">99</span>
+              </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      <!-- /人気記事ランキング - カセット -->
+      <!-- 人気メディアランキング - カセット -->
+      <div class="ranking-cassette">
+        <div class="row">
+          <div class="col-xs-4" style="position: relative;">
+            <img alt="Msg ranking4" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/msg_ranking4-4e915029ec901470578d650f7aa58b88.png" style="position: absolute; top: -5px; left: 0px; width: 25px; height: 25px;" />
+            <a href="/media/inboundmarketing" class="hoverWhiteImageLink"><img alt="Inboundmarketing" class="img-responsive ranking-main-img-size" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/inboundmarketing-d7df0ca213b1624e2549bf92558dbe2f.png" /></a>
+          </div>
+          <div class="col-xs-8" style="padding-left: 0px;">
+            <div style="height:74px;display:table-cell;vertical-align: middle;">
+              <div style="font-size: 1.0rem;"><a href="/media/inboundmarketing" class="hoverImportantLink" style="font-weight: bold;">INBOUND marketing blog</a></div>
+              <div class="col-xs-9" >
+                <div style="font-size: 0.8rem;">株式会社ガイアックス</div>
+              </div>
+              <div class="col-xs-3">
+                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 30px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed22">97</span>
+              </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      <!-- /人気記事ランキング - カセット -->
+      <!-- 人気メディアランキング - カセット -->
+      <div class="ranking-cassette">
+        <div class="row">
+          <div class="col-xs-4" style="position: relative;">
+            <img alt="Msg ranking5" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/msg_ranking5-00c1a0cf80d1e842ef1b7b5b6846cd38.png" style="position: absolute; top: -5px; left: 0px; width: 25px; height: 25px;" />
+            <a href="/media/lancers-magazine" class="hoverWhiteImageLink"><img alt="Lancers magazine" class="img-responsive ranking-main-img-size" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/lancers-magazine-a99face69bbe0a03b4caabc239ff878d.png" /></a>
+          </div>
+          <div class="col-xs-8" style="padding-left: 0px;">
+            <div style="height:74px;display:table-cell;vertical-align: middle;">
+              <div style="font-size: 1.0rem;"><a href="/media/lancers-magazine" class="hoverImportantLink" style="font-weight: bold;">ランサーズマガジン</a></div>
+              <div class="col-xs-9" >
+                <div style="font-size: 0.8rem;">ランサーズ株式会社</div>
+              </div>
+              <div class="col-xs-3">
+                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 30px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed18">95</span>
+              </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      <!-- /人気記事ランキング - カセット -->
+      <!-- 人気メディアランキング - カセット -->
+      <div class="ranking-cassette">
+        <div class="row">
+          <div class="col-xs-4" style="position: relative;">
+            <img alt="Msg ranking6" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/msg_ranking6-7a0136d2d02d93caec7f9f3eb0b07d3c.png" style="position: absolute; top: -5px; left: 0px; width: 25px; height: 25px;" />
+            <a href="/media/somewrite" class="hoverWhiteImageLink"><img alt="Somewrite" class="img-responsive ranking-main-img-size" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/somewrite-649406321b7177c9eaa3c4b3551e5167.png" /></a>
+          </div>
+          <div class="col-xs-8" style="padding-left: 0px;">
+            <div style="height:74px;display:table-cell;vertical-align: middle;">
+              <div style="font-size: 1.0rem;"><a href="/media/somewrite" class="hoverImportantLink" style="font-weight: bold;">somewrite特集</a></div>
+              <div class="col-xs-9" >
+                <div style="font-size: 0.8rem;">サムライト株式会社</div>
+              </div>
+              <div class="col-xs-3">
+                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 30px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed33">94</span>
+              </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      <!-- /人気記事ランキング - カセット -->
+      <!-- 人気メディアランキング - カセット -->
+      <div class="ranking-cassette">
+        <div class="row">
+          <div class="col-xs-4" style="position: relative;">
+            <img alt="Msg ranking7" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/msg_ranking7-b44f434ce671c550baedca605c9fe8f2.png" style="position: absolute; top: -5px; left: 0px; width: 25px; height: 25px;" />
+            <a href="/media/memopatch" class="hoverWhiteImageLink"><img alt="Memopatch" class="img-responsive ranking-main-img-size" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/memopatch-1a5905e981826dc2a7b10174e4950599.png" /></a>
+          </div>
+          <div class="col-xs-8" style="padding-left: 0px;">
+            <div style="height:74px;display:table-cell;vertical-align: middle;">
+              <div style="font-size: 1.0rem;"><a href="/media/memopatch" class="hoverImportantLink" style="font-weight: bold;">MEMOPATCH</a></div>
+              <div class="col-xs-9" >
+                <div style="font-size: 0.8rem;">株式会社グッドパッチ</div>
+              </div>
+              <div class="col-xs-3">
+                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 30px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed19">86</span>
+              </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      <!-- /人気記事ランキング - カセット -->
+      <!-- 人気メディアランキング - カセット -->
+      <div class="ranking-cassette">
+        <div class="row">
+          <div class="col-xs-4" style="position: relative;">
+            <img alt="Msg ranking8" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/msg_ranking8-f8636c183f8878a4796764f8e977b16c.png" style="position: absolute; top: -5px; left: 0px; width: 25px; height: 25px;" />
+            <a href="/media/cybozushiki" class="hoverWhiteImageLink"><img alt="Cybozushiki" class="img-responsive ranking-main-img-size" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/cybozushiki-b14cff190a66c1f96291bbd25652fd13.png" /></a>
+          </div>
+          <div class="col-xs-8" style="padding-left: 0px;">
+            <div style="height:74px;display:table-cell;vertical-align: middle;">
+              <div style="font-size: 1.0rem;"><a href="/media/cybozushiki" class="hoverImportantLink" style="font-weight: bold;">サイボウズ式</a></div>
+              <div class="col-xs-9" >
+                <div style="font-size: 0.8rem;">サイボウズ株式会社</div>
+              </div>
+              <div class="col-xs-3">
+                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 30px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed6">86</span>
+              </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      <!-- /人気記事ランキング - カセット -->
+      <!-- 人気メディアランキング - カセット -->
+      <div class="ranking-cassette">
+        <div class="row">
+          <div class="col-xs-4" style="position: relative;">
+            <img alt="Msg ranking9" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/msg_ranking9-8416f71db459d3fad6c13901c52e37e5.png" style="position: absolute; top: -5px; left: 0px; width: 25px; height: 25px;" />
+            <a href="/media/techacademy" class="hoverWhiteImageLink"><img alt="Techacademy" class="img-responsive ranking-main-img-size" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/techacademy-b78872c3c614192f58fd24d8f9d8daf6.png" /></a>
+          </div>
+          <div class="col-xs-8" style="padding-left: 0px;">
+            <div style="height:74px;display:table-cell;vertical-align: middle;">
+              <div style="font-size: 1.0rem;"><a href="/media/techacademy" class="hoverImportantLink" style="font-weight: bold;">TechAcademyマガジン</a></div>
+              <div class="col-xs-9" >
+                <div style="font-size: 0.8rem;">キラメックス株式会社</div>
+              </div>
+              <div class="col-xs-3">
+                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 30px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed4">85</span>
+              </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      <!-- /人気記事ランキング - カセット -->
+      <!-- 人気メディアランキング - カセット -->
+      <div class="ranking-cassette">
+        <div class="row">
+          <div class="col-xs-4" style="position: relative;">
+            <img alt="Msg ranking10" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/msg_ranking10-b23903f24fa400bfab49d0f3f76113d9.png" style="position: absolute; top: -5px; left: 0px; width: 25px; height: 25px;" />
+            <a href="/media/seohacks" class="hoverWhiteImageLink"><img alt="Seohacks" class="img-responsive ranking-main-img-size" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/seohacks-34b640ed83c5d9d43b48f3c9e95cda21.png" /></a>
+          </div>
+          <div class="col-xs-8" style="padding-left: 0px;">
+            <div style="height:74px;display:table-cell;vertical-align: middle;">
+              <div style="font-size: 1.0rem;"><a href="/media/seohacks" class="hoverImportantLink" style="font-weight: bold;">SEO HACKS公式ブログ</a></div>
+              <div class="col-xs-9" >
+                <div style="font-size: 0.8rem;">ヴォラーレ株式会社</div>
+              </div>
+              <div class="col-xs-3">
+                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 30px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed17">82</span>
+              </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      <!-- /人気記事ランキング - カセット -->
+    </div>
+    <!--カテゴリ一覧-->
+    <div style="padding: 5px 0px 10px;" >
+      <div class="text-center color-ct1-active" style="font-size: 1.0rem; font-weight: bold;"><a href="/category/business" style="color: #ffffff;">Business</a></div>
+      <ul style="padding-top: 5px;">
+            <li><a href="/category/business/optimization" style="padding-bottom: 3px;">業務効率化</a></li>
+            <li><a href="/category/business/tech" style="padding-bottom: 3px;">Tech</a></li>
+            <li><a href="/category/business/web-marketing" style="padding-bottom: 3px;">WEBマーケティング</a></li>
+            <li><a href="/category/business/team" style="padding-bottom: 3px;">組織・人材</a></li>
+            <li><a href="/category/business/ec" style="padding-bottom: 3px;">EC・ネットショップ</a></li>
+            <li><a href="/category/business/design" style="padding-bottom: 3px;">デザイン</a></li>
+            <li><a href="/category/business/econoomy" style="padding-bottom: 3px;">政治・経済</a></li>
+            <li><a href="/category/business/freelance" style="padding-bottom: 3px;">フリーランス・個人事業主</a></li>
+            <li><a href="/category/business/career" style="padding-bottom: 3px;">キャリア</a></li>
+      </ul>
+    </div>
+    <div style="padding: 5px 0px 10px;" >
+      <div class="text-center color-ct2-active" style="font-size: 1.0rem; font-weight: bold;"><a href="/category/life" style="color: #ffffff;">Life</a></div>
+      <ul style="padding-top: 5px;">
+            <li><a href="/category/life/interior">インテリア</a></li>
+            <li><a href="/category/life/love">恋愛</a></li>
+            <li><a href="/category/life/travel">旅行</a></li>
+            <li><a href="/category/life/accounts">マネー・家計簿</a></li>
+            <li><a href="/category/life/gourmet">グルメ・飲食</a></li>
+            <li><a href="/category/life/lesson">レッスン</a></li>
+            <li><a href="/category/life/reading">読書</a></li>
+            <li><a href="/category/life/sports">スポーツ</a></li>
+            <li><a href="/category/life/fudosan">不動産</a></li>
+      </ul>
+    </div>
+    <!-- カテゴリ一覧-->
+
+    <!-- タグ -->
+
+    <!-- タグ - タイトル -->
+    <div style="display:table-cell;vertical-align: middle; height:40px; width: 311px;">
+      <div style="font-size: 1.2rem; padding-left: 10px;"class="color-ct0-hover text-center">注目キーワード</div>
+    </div>
+    <div style="padding: 5px 0px 10px;" >
+      <p class="tagcloud hoverWhiteImage" ><a href="/tag/media-maker" style="color: white">梅木雄平「メディアメーカー」</a></p>
+      <p class="tagcloud hoverWhiteImage" ><a href="/tag/balance" style="color: white">&quot;BALANCE&quot;</a></p>
+      <p class="tagcloud hoverWhiteImage" ><a href="/tag/owned-media" style="color: white">オウンドメディア</a></p>
+    </div>
+    <!-- タグ -->
+
+
+      <!-- 広告エリア -->
+    <!--
+    <div style="padding:10px 0px;" >
+      <img height="230px;" width="300px;" src="/img/sample-pull-1.png" alt="" class="">
+    </div>
+    -->
+
+    </div>
+    <!-- /サイド領域 -->
+
+  </div>
+</div>
+
+
+<!-- 固定フッダ　-->
+<!--固定フッダ -->
+<footer>
+  <div style="background-color: #efefec;">
+    <div class="container" style="padding-top: 35px;">
+      <div class="row">
+        <div class="col-xs-6">
+          <div style="height:260px; width:420px; display: inline-block;">
+            <!--<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FFacebookDevelopers&amp;width=400&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=675426242478419" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:400px; height:258px;" allowTransparency="true"></iframe>-->
+            <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fsomewrite&amp;width=400&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=196085167253987" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:400px; height:258px;" allowTransparency="true"></iframe>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <span style="font-size: 1.5em; color: #55554f;"><a href="/category">カテゴリ</a></span>
+          <ul style="font-size: 1em; padding-top: 10px;">
+                <li style="padding-bottom: 3px;"><a href="/category/business/optimization" style="color: #0d4e71;">業務効率化</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/business/tech" style="color: #0d4e71;">Tech</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/business/web-marketing" style="color: #0d4e71;">WEBマーケティング</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/business/team" style="color: #0d4e71;">組織・人材</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/business/ec" style="color: #0d4e71;">EC・ネットショップ</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/business/design" style="color: #0d4e71;">デザイン</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/business/econoomy" style="color: #0d4e71;">政治・経済</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/business/freelance" style="color: #0d4e71;">フリーランス・個人事業主</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/life/interior" style="color: #0d4e71;">インテリア</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/life/love" style="color: #0d4e71;">恋愛</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/life/travel" style="color: #0d4e71;">旅行</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/life/accounts" style="color: #0d4e71;">マネー・家計簿</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/life/gourmet" style="color: #0d4e71;">グルメ・飲食</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/life/lesson" style="color: #0d4e71;">レッスン</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/life/reading" style="color: #0d4e71;">読書</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/business/career" style="color: #0d4e71;">キャリア</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/special/special" style="color: #0d4e71;">特集</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/life/sports" style="color: #0d4e71;">スポーツ</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/life/fudosan" style="color: #0d4e71;">不動産</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-3">
+          <span style="font-size: 1.5em; color: #55554f;">somewrite</span>
+          <ul style="padding-top: 10px;">
+            <li style="padding-bottom: 8px;"><a href="/terms" style="color: #0d4e71;">利用規約</a></li>
+            <li style="padding-bottom: 8px;"><a href="/privacy" style="color: #0d4e71;">プライバシーポリシー</a></li>
+            <!--<li style="padding-bottom: 8px;"><a href="/contact" style="color: #0d4e71;">お問い合わせ</a></li>-->
+            <li style="padding-bottom: 8px;"><a href="/about" style="color: #0d4e71;">会社概要</a></li>
+          </ul>
+        </div>
+        <!-- SNS関連
+        <div class="col-xs-3">
+          <div style="height:240px; padding-top: 10px; display: inline-block;">
+          </div>
+        </div>
+         -->
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color: #efefec;">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-right">
+          <div style="font-size: 0.8em; color: #0d4e71;">Copyright © サムライト株式会社 All Rights Reserved.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="jsi-fb-login" class="facebook-login cf">
+  <div class="facebook-login-inner">
+    <p class="facebook-login-body">
+       Facebookアカウントで登録・ログインをして、気になる企業ブログの読者になろう！<br>
+      <br>
+       読者登録をした企業ブログの新着記事をメールやマイページでお知らせします。<br>
+       登録・利用は無料です。
+    </p>
+        <a class="facebook-login-button" href="/login"><img alt="新規登録・ログイン facebookアカウントで登録無料" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/img_facebook_login-f35489d0902f984ffcb26cf9f734057e.png" /></a>
+  </div>
+    <a class="facebook-login-close jsc-fb-login-close" href="javascript:void(0)"><img alt="閉じる" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/icn_close-e5429c8ff8b57387a3dcfabf90da325a.png" /></a>
+</div>
+
+<!-- ログイン時のポップオーバーメニュー -->
+<script type="text/javascript" data-turbolinks-eval=false>
+  var loading = false
+  $(function() {
+  });
+</script>
+</body>
+</html>

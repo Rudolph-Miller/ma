@@ -1,0 +1,247 @@
+<!docutype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="stylesheet" type="text/css" media="screen" href="http://www.eva.ie.u-ryukyu.ac.jp/~tnal/nallab/css/main.css">
+<title>ステージ3-1: N-gramモデル + 出現回数による文書ベクトル生成 (nltk.ngrams + nltk.FreqDist) (情報工学実験 3 : データマイニング班)</title>
+</head>
+<body class="main">
+
+<div class="topics">
+<div id="main">
+<a href="./">元のページ</a>
+<h1>ステージ3-1: N-gramモデル + 出現回数による文書ベクトル生成 (nltk.ngrams + nltk.FreqDist) (情報工学実験 3 : データマイニング班)</h1>
+
+<b>目次</b>
+<ul>
+  <li><a href="#1">想定環境</a>
+  <li><a href="#2">文書集合からn-gramsモデルにより素性集合（コードブック）を作る</a>
+<p>素性=特徴ベクトルを構成する要素。素性が10個なら、1文書を10次元の特徴ベクトルとして表現することになる。</p>
+  <li>case1: <a href="#3">コードブックを素性とする文書ベクトルを作る (直接ベクトル生成)</a>
+  <li>case2: <a href="#4">コードブックを素性とする文書ベクトルを作る (辞書型データからベクトル生成)</a>
+  <li>case3: <a href="#5">コードブックを素性とする文書ベクトルを作る (疎行列データ生成)</a>
+  <li><a href="#6">クラスタリング(K-means)してみる</a>
+</ul>
+
+<hr>
+
+<a name="1"></a>
+<h2>想定環境</h2>
+    <ul>
+      <li>OS: Mac OS X 10.8.x (10.7.x以降であれば同じ方法で問題無いはず)
+      <li>Python: 2.7.x
+      <li>Mercurial: 2.2
+      <li>numpy: 1.8.0 (numpy.version)
+      <li>scipy: 0.13.0 (scipy.version)
+      <li>NLTK: 2.0.4 (nltk.__version__)
+    </ul>
+<pre>
+<font color="blue"># 環境構築追加</font>
+% sudo pip install nltk
+% sudo pip install prettyprint
+</pre>
+
+<a name="2"></a>
+<h2>文書集合からn-gramsモデルにより素性集合（コードブック）を作る</h2>
+<ul>
+  <li><a href="http://nltk.org/api/nltk.html#nltk.util.ngrams">nltk.util.ngrams()</a>: 入力された文字列をn-gramsに分割。
+</ul>
+<pre>
+<font color="blue">#生文書の用意（リストの1要素=1文書）</font>
+docs = []
+docs.append(u"会場には車で行きます。")
+docs.append(u"会場には自動車で行きます。")
+docs.append(u"会場には自転車で行きます。")
+docs.append(u"お店には自転車で行きます。")
+from prettyprint import pp
+pp(docs)
+
+<font color="blue">#NLTKでn-gram(n=2)してみる
+#   n=2: 2-lettersを1つの素性とする。</font>
+import nltk
+n = 2
+
+def collect_ngram_words(docs, n):
+<font color="blue">    u'''文書集合 docs から n-gram のコードブックを生成。
+    docs は1文書を1要素とするリストで保存しているものとする。
+    句読点等の処理は無し。
+    '''</font>
+    codebook = []
+    for doc in docs:
+        this_words = nltk.ngrams(doc, n)
+        for word in this_words:
+            if word not in codebook:
+                codebook.append(word)
+    return codebook
+
+codebook = collect_ngram_words(docs, n)
+codebook.sort()
+pp(codebook)
+
+</pre>
+
+<br><br><br>
+
+<a name="3"></a>
+<h2>コードブックを素性とする文書ベクトルを作る (直接ベクトル生成)</h2>
+<ul>
+  <li><a href="http://nltk.org/api/nltk.html#nltk.probability.FreqDist">nltk.probability.FreqDist()</a>: 素性集合の出現分布を計算。
+</ul>
+<pre>
+def make_vectors(docs, codebook, n):
+<font color="blue">    u'''文書集合docsから、codebook(n-gram)に基づいた文書ベクトルを生成。
+    codebook毎に出現回数をカウントし、ベクトルの要素とする。
+    出力 vectors[] は、「1文書の特徴ベクトルを1リスト」として準備。
+    '''</font>
+    vectors = []
+    for doc in docs:
+        this_words = nltk.ngrams(doc, n)
+        fdist = nltk.FreqDist()
+        for word in this_words:
+            fdist.inc(word)
+        this_vector = []
+        for word in codebook:
+            this_vector.append(fdist[word])
+        vectors.append(this_vector)
+    return vectors
+
+data = make_vectors(docs, codebook, n)
+data
+<font color="blue"># len(data)=文書数。
+# len(data[0]) = ベクトルの要素数 = 全素性数。
+# data[0][0] = 文書0におけるcodebook[0]の出現回数。</font>
+
+</pre>
+
+<br><br><br>
+
+<a name="4"></a>
+<h2>コードブックを素性とする文書ベクトルを作る (辞書型データからベクトル生成)</h2>
+<ul>
+  <li><a href="http://scikit-learn.org/dev/modules/generated/sklearn.feature_extraction.DictVectorizer.html">feature_extraction.DictVectorizer()</a>: {素性:値}という辞書型特徴表現をベクトル表現に変換。
+</ul>
+<pre>
+def make_dict_vectors(docs, codebook, n):
+<font color="blue">    '''文書集合docsから、codebook(n-gram)に基づいた文書ベクトルを dict型 で生成。
+    codebook毎に出現回数をカウントし、ベクトルの要素とする。
+    出力 dict_vectors[] は、「1文書の特徴ベクトルを1辞書 {素性:出現回数}」として準備。
+    '''</font>
+    dict_vectors = []
+    for doc in docs:
+        this_words = nltk.ngrams(doc, n)
+        fdist = nltk.FreqDist()
+        for word in this_words:
+            fdist.inc(word)
+        dict = {}
+        keys = fdist.keys()
+        for key in keys:
+            dict.update({key:fdist[key]})
+        dict_vectors.append(dict)
+    
+    return dict_vectors
+
+<font color="blue"># 辞書型作成したデータからベクトル変換</font>
+dict = make_dict_vectors(docs, codebook, n)
+from sklearn.feature_extraction import DictVectorizer
+vec = DictVectorizer()
+data = vec.fit_transform(dict).toarray()
+
+</pre>
+
+<br><br><br>
+
+<a name="5"></a>
+<h2>コードブックを素性とする文書ベクトルを作る (疎行列データ生成)</h2>
+<ul>
+  <li><a href="http://docs.scipy.org/doc/scipy/reference/sparse.html">sp.sparse</a>: 疎行列パッケージ
+  <li><a href="">sp.sparse.todense()</a>: 疎行列を通常行列に変換
+</ul>
+<pre>
+<font color="blue"># sparse matrix の容量面での違いを確認してみる
+# 　1000x1000の行列を用意し、対角要素を1とする（＝1000カ所のみ値がある）。
+# 　sp.sparse では値を取る1000 カ所のみ値を保存するが、
+# 　通常の行列だと 1000x1000 カ所全ての値を保存する。</font>
+import numpy as np
+import scipy as sp
+from scipy import io
+sparse_matrix = sp.sparse.lil_matrix((1000, 1000))
+sparse_matrix.setdiag( np.ones(1000) )
+normal_matrix = sparse_matrix.todense()
+
+<font color="blue"># 保存されたファイルサイズを確認してみる。</font>
+io.savemat("sparse", {"test":sparse_matrix})
+io.savemat("normal", {"test":normal_matrix})
+<font color="blue"># 　% du -sh *.mat
+# 　8.0Ksparse.mat
+# 　7.6Mnormal.mat</font>
+
+del sparse_matrix
+del normal_matrix
+
+def make_sparse_matrix(docs, n):
+<font color="blue">    u'''文書集合docsから、n-gramに基づいた文書ベクトルを疎行列 sp.sparse 型で生成。
+    文書の特徴を「単語の集まり」として表現しようとするとどうしても疎なデータになる。
+    疎なデータをそのまま通常の行列として表現すると、データサイズも無駄な計算も多くなるため、
+    値を持たない箇所（存在しない単語）には値を設定しない疎行列 sp.sparse として設定すると、
+    データサイズも計算コストも減らすことができる。
+    '''</font>
+    codebook = {} # map terms to column indices
+    data = []        # values (maybe weights)
+    row = []         # row (document) indices
+    col = []          # column (term) indices
+    for i, doc in enumerate(docs):
+        terms = nltk.ngrams(doc, n)
+        for term in terms:
+            j = codebook.setdefault(term, len(codebook))
+            data.append(terms.count(term))
+            row.append(i)
+            col.append(j)
+    sparse_matrix = sp.sparse.coo_matrix((data, (row, col)))
+    return sparse_matrix
+
+
+sparse_matrix = make_sparse_matrix(docs, n)
+
+<font color="blue"># sparse matrix をデータとして学習できるかを確認してみる。</font>
+from sklearn import cluster
+k_means = cluster.KMeans(n_clusters=2)
+k_means.fit(sparse_matrix)
+k_means.labels_
+
+</pre>
+
+<br><br><br>
+
+<a name="6"></a>
+<h2>クラスタリング(K-means)してみる</h2>
+<pre>
+#教師無し学習（K-means）で2クラスタに分類してみる
+from sklearn import cluster
+k_means = cluster.KMeans(n_clusters=2)
+k_means.fit(data)
+k_means.labels_
+
+</pre>
+
+
+<br><br><br>
+<hr>
+<a name="ref"></a>
+<h2>参考サイト一覧</h2>
+<ul>
+  <li><a href="http://nltk.org/index.html">NLTK 2.0 documentaion</a>
+  <li><a href="http://d.hatena.ne.jp/a_bicky/20120324/1332591498">潜在的意味インデキシング（LSI）徹底入門</a>
+  <li><a href="http://d.hatena.ne.jp/nokuno/20110821/1313884599">NLTKで日本語コーパスを扱う方法</a>
+  <li><a href="http://d.hatena.ne.jp/mickey24/20110212/nlp_with_the_social_network">映画「The Social Network」の脚本をNLTKで解析して遊んでみた</a>
+  <li><a href="http://scikit-learn.org/dev/modules/feature_extraction.html">6.1.1. Loading features from dicts</a>
+  <li><a href="http://stackoverflow.com/questions/15030047/how-to-convert-co-occurrence-matrix-to-sparse-matrix">How to convert co-occurrence matrix to sparse matrix</a>
+  <li><a href="http://d.hatena.ne.jp/billest/20090906/1252269157">SciPyでの疎行列の扱い、保存など</a>
+</ul>
+
+<div id="footer">
+written by Naruaki TOMA, last modified: 2013-05-30
+</div>
+
+</body>
+</html>
