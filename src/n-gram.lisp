@@ -416,9 +416,40 @@
 (defun url->tags (url)
   (get-tags (scoring-url url)))
 
+;;;update key-list
+(defun update-key-list (hash file)
+  (let* ((key-lst (load-file file)) ;hash
+		 (intersect (intersection-of-hash hash key-lst))
+		 (dif (remove-intersection hash key-lst)))
+	(save-file (cut-save-hash (merge-hash intersect dif))
+			   file)))
+
+;;;remove intersecton of hash from hash1
+;;;target hash -> hash
+(defun remove-intersection (hash1 hash2)
+  (maphash #'(lambda (key val) (if (gethash key hash2)
+								 (remhash key hash1)))
+		   hash1)
+  hash1)
+
+;;;merge 2 hashes
+;;;hash1 hash2 -> hash
+;;;if conflicted in keys -> take hash2 value
+(defun merge-hash (hash1 hash2)
+  (let ((result (make-hash-table :test #'equal)))
+	(mapc #'(lambda (hash) (maphash #'(lambda (key val) (setf (gethash key result) val)) hash))
+		  (list hash1 hash2))
+	result))
+
+;;;cut-off saveing hash
+(defun cut-save-hash (hash)
+  (cut-off 300 hash :items t))
+
+;;;url -> update key file
+(defun update-from-url (url file)
+  (update-key-list (scoring-url url) file))
+
 ;(print-sorted-hash (scoring-url "http://www.lifehacker.jp/2014/05/140528iphone_calendar.html"))
-
-
 
 ;;;below is for exe
 ;(defun exe ()
