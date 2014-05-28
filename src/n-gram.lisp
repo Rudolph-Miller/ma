@@ -6,6 +6,12 @@
 
 (in-package n-gram)
 
+(defvar *dict* (make-hash-table :test #'equal)) ;dictionary memory 
+
+;;;tags list
+(defvar *tags* '(tech life-hack))
+
+(defvar *group-dir* "../group")
 ;;;str-> list
 (defun split (key str)
   (let ((result nil))
@@ -36,7 +42,6 @@
 		(setf (gethash word hash) (+ 1 score))
 		(setf (gethash word hash) 1)))))
 
-(defvar *dict* (make-hash-table :test #'equal)) ;dictionary memory 
 ;; or you can set it just list and use find instead of gethash
 
 ;;;destructive
@@ -324,7 +329,7 @@
 ;;;save file from url to unique id by wget
 ;;;then load it by txt
 (defun wget (url)
-  (let ((file-name (concatenate 'string "tmp/" (gen-unique-id)))
+  (let ((file-name (concatenate 'string (namestring (car (directory "../tmp"))) (gen-unique-id)))
 		(result ""))
 	(declare (string file-name result))
 	(labels ((sub (cha)
@@ -369,8 +374,6 @@
 		do (setf (gethash (car lst) result) (read-from-string (cadr lst)))))
 	result))
 
-;;;tags list
-(defvar *tags* '(tech life-hack))
 
 ;;;tag list -> (list (tag . hash-table)..)
 (defun gen-tag-hash (tags)
@@ -389,14 +392,20 @@
 		for line = (read-line f nil)
 		while line
 		for lst = (split #\, line)
-		do (setf (gethash (car lst) (get-tag-hash tag tag-list)) (cadr lst)))))
+		do (setf (gethash (car lst) (get-tag-hash tag tag-list)) (read-from-string (cadr lst))))))
 			tags)
 	tag-list))
 
 ;;;hash tags file -> (list (tag . score)..)
-(defun compare (hash tags file)
+(defun compare (hash &optional (tags *tags*) (file *group-dir*))
   (let ((tag-hash-list (load-tag-hash tags file)))
-	(mapcar #'(lambda (tag) (cons tag (sum-score (intersection-of-hash hash (get-tag-hash tag tag-hash-list))))) tags)))
+	(mapcar #'(lambda (tag) (cons tag (intersection-of-hash hash (get-tag-hash tag tag-hash-list)))) tags)))
 
+;;;hash -> sorted list
+(defun get-tags (hash &optional (tags *tags*) (file *group-dir*))
+  (let ((tag-scores (compare hash tags file)))
+	(sort tag-scores #'< :key #'cdr)))
 
-
+;;;url -> sorted tag list
+(defun url->tags (url)
+  (get-tags (scoring-url url)))
