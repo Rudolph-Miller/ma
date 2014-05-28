@@ -297,23 +297,7 @@
 	(maphash #'(lambda (key val) (setf result (+ result val))) hash)
 	result))
 
-;;;save hash -> file
-;;;format ~key,~val~%
-(defun save-file (hash file)
-  (with-open-file (f file :direction :output :if-exists :supersede)
-	(maphash #'(lambda (key val) (format f "~a,~a~%" key val)) hash)))
 
-;;;read saved file -> hash
-(defun load-file (file)
-  (let ((result (make-hash-table :test #'equal)))
-	(with-open-file (f file :direction :input)
-	  (loop
-		for line = (read-line f nil)
-
-		while line
-		for lst = (split #\, line)
-		do (setf (gethash (car lst) result) (read-from-string (cadr lst)))))
-	result))
 
 ;;;brushing up key words
 ;;;remove key which includes 2 types
@@ -373,4 +357,24 @@
 (defun scoring-url (url)
   (scoring-str (wget url)))
 
+;;;save hash -> file
+;;;format ~key,~val~%
+(defun save-file (hash file)
+  (with-open-file (f file :direction :output :if-exists :supersede)
+	(maphash #'(lambda (key val) (format f "~a,~a~%" key val)) hash)))
+
+;;;read saved file -> hash
+(defun load-file (file)
+  (let ((result (make-hash-table :test #'equal)))
+	(with-open-file (f file :direction :input)
+	  (loop
+		for line = (read-line f nil)
+
+		while line
+		for lst = (split #\, line)
+		do (setf (gethash (car lst) result) (read-from-string (cadr lst)))))
+	result))
+
+;;;tags list
+(defvar *tags* '("tech" "life-hack"))
 
