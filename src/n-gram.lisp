@@ -173,7 +173,7 @@
 
 ;;;tag -> tag/key-words.csv
 (defun load-tag-key-file (tag &optional (file *group-dir*))
-  (car (directory (concatenate 'string file "/" (string tag) "/key-words.csv"))))
+  (car (directory (concatenate 'string file "/" (string-downcase (string tag)) "/key-words.csv"))))
 
 ;;;hash tags file -> (list (tag . score)..)
 (defun compare (hash &optional (tags *tags*) (file *group-dir*))
@@ -227,3 +227,6 @@
 	  for tag in tag-list
 	  do (setf result (cons tag result)))
 	(nreverse result))))
+
+(print (load-tag-hash *tags* *group-dir*))
+;(print (main "http://clacklisp.org/tutorial/ja/04-the-environment.html"))
