@@ -1,0 +1,4138 @@
+<!DOCTYPE html>
+<script>var __pbpa = true;</script><script>var translated_warning_string = '\u8b66\u544a: \u30a6\u30a7\u30d6\u30d6\u30e9\u30a6\u30b6\u306b \u201chttps://www.tumblr.com/login\u201d\u306e\u30a2\u30c9\u30ec\u30b9\u304c\u8868\u793a\u3055\u308c\u3066\u3044\u306a\u3044\u9650\u308a\u3001Tumblr\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u306f\u5165\u529b\u3057\u306a\u3044\u3067\u304f\u3060\u3055\u3044\u3002\x0a\x0a\u30a2\u30c9\u30ec\u30b9\u30d0\u30fc\u306b\u7dd1\u8272\u306e\u201cTumblr, Inc.\u201d\u306e\u6587\u5b57\u304c\u8868\u793a\u3055\u308c\u308b\u306f\u305a\u3067\u3059\u3002\x0a\x0a\u30b9\u30d1\u30de\u30fc\u3084\u305d\u306e\u4ed6\u306e\u60aa\u3044\u4eba\u305f\u3061\u306f\u3001\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u76d7\u3080\u305f\u3081\u306b\u507d\u306e\u30d5\u30a9\u30fc\u30e0\u3092\u4f7f\u7528\u3057\u307e\u3059\u3002\x0a\x0aTumblr\u304c\u30e6\u30fc\u30b6\u30fc\u306e\u30d6\u30ed\u30b0\u304b\u3089\u30ed\u30b0\u30a4\u30f3\u3059\u308b\u3088\u3046\u306b\u6307\u793a\u3059\u308b\u3053\u3068\u306f\u7d76\u5bfe\u306b\u3042\u308a\u307e\u305b\u3093\u3002\x0a\x0a\u672c\u5f53\u306b\u7d9a\u3051\u3066\u3082\u3088\u308d\u3057\u3044\u3067\u3059\u304b?';</script><script type="text/javascript" language="javascript" src="http://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=280d66b2b119fea20c3619ae25a75fd1"></script>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lte-ie8"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="no-js ie7 lte-ie8"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="no-js ie8 lte-ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!--
+==========================================================================
+ ____                     ___       __  __
+/\  _`\  __              /\_ \     /\ \/\ \          __
+\ \ \L\ \\_\  __  _    __\//\ \    \ \ \ \ \    ___ /\_\    ___    ___
+ \ \ ,__//\ \/\ \/'\ /'__`\\ \ \    \ \ \ \ \ /' _ `\/\ \  / __`\/' _ `\
+  \ \ \/ \ \ \/>  <//\  __/ \_\ \_   \ \ \_\ \/\ \/\ \ \ \/\ \L\ \\ \/\ \
+   \ \_\  \ \_\\_/\_\ \____\/\____\   \ \_____\ \_\ \_\ \_\ \____/ \_\ \_\
+    \/_/   \/_///\/_/\/____/\/____/    \/_____/\/_/\/_/\/_/\/___/ \/_/\/_/
+==========================================================================
+   Effector v3.2.0
+   Updated: October 16, 2013
+   Website: https://www.pixelunion.net
+   Themes: http://tumblr.com/themes/by/pixelunion-themes
+==========================================================================
+-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>tnoda-clojure &bull; Clojure すごい Haskell たのしく学ぼう! (1) はじめの一歩</title>
+
+  
+    <meta name="description" content="Clojure すごい Haskell たのしく学ぼう! (1) はじめの一歩 関数プログラミングについては良い教科書がたくさん出ていますが， 残念ながら OCaml か Haskell で書かれたものが目につくばかりで， Clojure でサンプルコードが示されたものを私は見たことがありません． 関数プログラミングを勉強しようと思うと，..."/>
+  
+  <meta name="google-site-verification" content="VsDjQVdr7CVoTA1cAZwKagxcTVKaRqlsywWG8N7UA0g" />
+  <meta name="color:Background" content="#e6ebea"/>
+  <meta name="color:Colored Area Text" content="#fffadc"/>
+  <meta name="color:Colored Area Text Shadow" content="#bf4402"/>
+  <meta name="color:Inside Link" content="#f55b2c"/>
+  <meta name="color:Inside Link Hover" content="#fff7a5"/>
+  <meta name="color:Main Theme" content="#f55b2c"/>
+  <meta name="color:Outside Link" content="#f55b2c"/>
+  <meta name="color:Outside Link Hover" content="#131313"/>
+  <meta name="color:Outside Text" content="#616566"/>
+  <meta name="font:Inside Heading" content="Helvetica Neue, Arial, sans-serif"/>
+  <meta name="font:Inside Text" content="Georgia, serif"/>
+  <meta name="font:Outside Heading" content="Helvetica Neue, Arial, sans-serif"/>
+  <meta name="font:Outside Text" content="Helvetica Neue, Arial, sans-serif"/>
+  <meta name="image:Background" content=""/>
+  <meta name="image:Banner" content=""/>
+  <meta name="image:Large Sidebar Portrait" content=""/>
+  <meta name="image:Logo" content=""/>
+  <meta name="if:Align Top Menu Left" content="0"/>
+  <meta name="if:Automatic Headings" content="0"/>
+  <meta name="if:Blog Title in Page Header" content="0"/>
+  <meta name="if:Blog Title in Sidebar" content="0"/>
+  <meta name="if:Blog Title in Top bar" content="1"/>
+  <meta name="if:Centered Layout" content="1"/>
+  <meta name="if:Collapse Notes" content="1"/>
+  <meta name="if:Content Width 500" content="0"/>
+  <meta name="if:Content Width 600" content="0"/>
+  <meta name="if:Content Width 700" content="1"/>
+  <meta name="if:Custom Photosets" content="1"/>
+  <meta name="if:Fixed Background" content="0"/>
+  <meta name="if:Fixed Top Bar" content="1"/>
+  <meta name="if:Hide Sidebar" content="0"/>
+  <meta name="if:Infinite Scrolling" content="0"/>
+  <meta name="if:Invert" content="0"/>
+  <meta name="if:Invert Top Bar" content="0"/>
+  <meta name="if:Large Social Icons" content="1"/>
+  <meta name="if:Left Sidebar" content="0"/>
+  <meta name="if:Logo in Top bar" content="0"/>
+  <meta name="if:Fullscreen Background" content="0"/>
+  <meta name="if:Pages In Top Bar" content="0"/>
+  <meta name="if:Rounded Post Corners" content="0"/>
+  <meta name="if:Scale Images" content="1"/>
+  <meta name="if:Search Box In Sidebar" content="0"/>
+  <meta name="if:Show About Heading" content="1"/>
+  <meta name="if:Show Blogs I Follow" content="0"/>
+  <meta name="if:Show Description" content="1"/>
+  <meta name="if:Show Group Blog Info" content="0"/>
+  <meta name="if:Show Instagram" content="0"/>
+  <meta name="if:Show Likes" content="0"/>
+  <meta name="if:Show Likes in Sidebar" content="0"/>
+  <meta name="if:Show Pages Heading" content="1"/>
+  <meta name="if:Show Portrait" content="0"/>
+  <meta name="if:Show Random Post Icon" content="0"/>
+  <meta name="if:Show Social Icons Widget" content="0"/>
+  <meta name="if:Show Tweets" content="1"/>
+  <meta name="if:Show Twitter Profile" content="1"/>
+  <meta name="if:Top Menu With Labels" content="0"/>
+  <meta name="text:Behance Username" content=""/>
+  <meta name="text:Cargo URL" content=""/>
+  <meta name="text:Copyright Text" content=""/>
+  <meta name="text:Default Search Text" content="Search"/>
+  <meta name="text:Delicious Username" content=""/>
+  <meta name="text:Disqus Shortname" content=""/>
+  <meta name="text:Dribbble Username" content=""/>
+  <meta name="text:FFFFound Username" content=""/>
+  <meta name="text:Facebook Username" content=""/>
+  <meta name="text:Flickr Username" content=""/>
+  <meta name="text:Forrst Username" content=""/>
+  <meta name="text:Foursquare Username" content=""/>
+  <meta name="text:GetClicky Site ID" content=""/>
+  <meta name="text:Google Analytics Web Property ID" content=""/>
+  <meta name="text:Google URL" content=""/>
+  <meta name="text:Grooveshark Username" content=""/>
+  <meta name="text:Instagram Heading" content="Instagram"/>
+  <meta name="text:Instagram Access Token" content=""/>
+  <meta name="text:Instagram Count Max 4" content="4"/>
+  <meta name="text:Lastfm Username" content=""/>
+  <meta name="text:Liked Posts Heading" content="I Dig These Posts"/>
+  <meta name="text:Linkedin Profile URL" content=""/>
+  <meta name="text:Myspace Friend ID" content=""/>
+  <meta name="text:Num Tweets Max 4" content="4"/>
+  <meta name="text:Pinboard Username" content=""/>
+  <meta name="text:Pinterest Username" content=""/>
+  <meta name="text:Rdio Username" content=""/>
+  <meta name="text:Rows of Followed Avatars" content="3"/>
+  <meta name="text:Skype Username" content=""/>
+  <meta name="text:Social Icons Heading" content="Me, Elsewhere"/>
+  <meta name="text:Soundcloud Username" content=""/>
+  <meta name="text:Tagline" content=""/>
+  <meta name="text:Twitter Heading" content="Twitter"/>
+  <meta name="text:Twitter Username" content=""/>
+  <meta name="text:Vimeo Username" content=""/>
+  <meta name="text:Xbox Live Profile URL" content=""/>
+  <meta name="text:Youtube Username" content=""/>
+  <meta name="text:github Username" content=""/>
+
+  <!-- FACEBOOK OPEN GRAPH -->
+  <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+  <meta property="og:site_name" content="tnoda-clojure"/>
+
+  
+
+    <meta property="og:url" content="http://tnoda-clojure.tumblr.com/post/26507931134/clojure-learn-you-a-haskell-1"/>
+    <meta property="og:type" content="article"/>
+
+    
+      
+        <meta property="og:title" content="Clojure すごい Haskell たのしく学ぼう! (1) はじめの一歩"/>
+        <meta property="og:description" content="関数プログラミングについては良い教科書がたくさん出ていますが，
+残念ながら OCaml か Haskell で書かれたものが目につくばかりで，
+Clojure でサンプルコードが示されたものを私は見たことがありません．
+
+
+
+ 関数プログラミングを勉強しようと思うと，
+これらどちらかのプログラミング言語を修得しないといけなくなるわけですが，
+ちょうど，
+すごい Haskell たのしく学ぼう
+が発売されたので，Haskell を勉強してみることにします．
+ただし，本を買うお金が無いのでオリジナル Web サイト，
+Learn You a Haskell for Great Good!
+を読みすすめることにします．
+訳本は見たことがないのですが，きっと，どちらを読んでも同じでしょう．
+
+
+
+ このシリーズでは，Miran Lipovača 著
+Learn You a Haskell for Great Good!
+の Haskell サンプルコードを Clojure で書き直してきます．
+原著の Haskell サンプルコードは by-nc-sa こと，
+Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License でライセンスされており，
+この記事のコードも by-nc-sa に従います．
+
+
+
+ 章番号は日本語訳，「すごい Haskell 楽しく学ぼう」のそれを参考にしています．
+今回は第 1 章はじめの一歩です．
+
+
+
+第 1 章: はじめの一歩
+
+
+
+ まずは，基本的なところから．
+Haskell のサンプル→ Clojure で書き直したものという流れでいきます．
+
+
+
+-- Haskell
+ghci&gt; 2 + 15
+17
+ghci&gt; 49 * 100
+4900
+ghci&gt; 1892 - 1472
+420
+ghci&gt; 5 / 2
+2.5
+ghci&gt;
+
+;;; Clojure
+user=&gt; (+ 2 15)
+17
+user=&gt; (* 49 100)
+4900
+user=&gt; (- 1892 1472)
+420
+user=&gt; (/ 5 2)
+5/2
+user=&gt; (class (/ 5 2))
+clojure.lang.Ratio
+user=&gt; 
+
+
+
+
+ 整数同士の除算結果が clojure.lang.Ratio になる点以外は同じですね．
+
+
+
+-- Haskell
+ghci&gt; (50 * 100) - 4999
+1
+ghci&gt; 50 * 100 - 4999
+1
+ghci&gt; 50 * (100 - 4999)
+-244950
+
+;;; Clojure
+user=&gt; (- 4999 (* 50 100))
+-1
+user=&gt; (* 50 (- 100 4999))
+-244950
+
+
+
+
+ Clojure 括弧必須なので計算順序に迷う必要はありません．
+
+
+
+-- Haskell
+ghci&gt; 5 * -3
+
+&lt;interactive&gt;:1:1:
+    Precedence parsing error
+        cannot mix `*' [infixl 7] and prefix `-' [infixl 6] in the same infix expression
+ghci&gt; 5 * (-3)
+-15
+
+
+
+
+ Haskell で負数を扱うときには括弧で囲っておくほうがいいらしいです．
+
+
+
+;;; Clojure
+user&gt; (* 5 -3)
+-15
+user&gt; (* 5 (-3))
+; Evaluation aborted.
+
+
+
+
+ 一方 Clojure ではその必要がありません，というかしてはいけません．
+うっかり括弧で囲ってしまうと -3 を関数だと思ってしまいエラーになります．
+
+
+
+-- Haskell
+ghci&gt; True &amp;&amp; False
+False
+ghci&gt; True &amp;&amp; True
+True
+ghci&gt; False || True
+True 
+ghci&gt; not False
+True
+ghci&gt; not (True &amp;&amp; True)
+False
+
+;;; Clojure
+user&gt; (and true false)
+false
+user&gt; (and true true)
+true
+user&gt; (or false true)
+true
+user&gt; (not false)
+true
+user&gt; (not (and true true))
+false
+
+
+
+
+ 当然のことながら真偽値の扱いは同じです．
+
+
+
+-- Haskell
+ghci&gt; 5 == 5
+True
+ghci&gt; 1 == 0
+False
+ghci&gt; 5 /= 5
+False
+ghci&gt; 5 /= 4
+True
+ghci&gt; "hello" == "hello"
+True 
+
+;;; Clojure
+user&gt; (= 5 5)
+true
+user&gt; (= 1 0)
+false
+user&gt; (not= 5 5)
+false
+user&gt; (not= 5 4)
+true
+user&gt; (= "hello" "hello")
+true
+
+
+
+
+ Haskell の /= は not= のことだと思いこんでいます．
+
+
+
+-- Haskell
+ghci&gt; 5 + "llama"
+
+&lt;interactive&gt;:1:1:
+    No instance for (Num [Char])
+      arising from the literal `5'
+    Possible fix: add an instance declaration for (Num [Char])
+    In the first argument of `(+)', namely `5'
+    In the expression: 5 + "llama"
+    In an equation for `it': it = 5 + "llama"
+ghci&gt; True == 5
+
+&lt;interactive&gt;:1:9:
+    No instance for (Num Bool)
+      arising from the literal `5'
+    Possible fix: add an instance declaration for (Num Bool)
+    In the second argument of `(==)', namely `5'
+    In the expression: True == 5
+    In an equation for `it': it = True == 5
+ghci&gt; 5 + 4.0
+9.0
+
+;;; Clojure
+user&gt; (+ 5 "llma")
+; Evaluation aborted.
+java.lang.String cannot be cast to java.lang.Number
+  [Thrown class java.lang.ClassCastException]
+user&gt; (= true 5)
+false
+user&gt; (+ 5 4.0)
+9.0
+
+
+
+
+ Clojure の場合は強制型変換に失敗して Java の例外が投げられます．
+型が一致している必要はありません．
+
+
+
+-- Haskell
+ghci&gt; succ 8
+9 
+ghci&gt; min 9 10
+9
+ghci&gt; min 3.4 3.2
+3.2
+ghci&gt; max 100 101
+101 
+
+;;; Clojure
+user&gt; (inc 8)
+9
+user&gt; (min 9 10)
+9
+user&gt; (min 3.4 3.2)
+3.2
+user&gt; (max 100 101)
+101
+
+
+
+
+ ここまでは，同じなのですが，．．．
+
+
+
+-- Haskell
+ghci&gt; succ 9 + max 5 4 + 1
+16
+ghci&gt; (succ 9) + (max 5 4) + 1
+16
+
+;;; Clojure
+user&gt; (+ (inc 9) (max 5 4) 1)
+16
+
+
+
+
+ Clojure は関数をすべて前置します．
+
+
+
+ 外部ファイルに定義した関数をロードします．
+
+
+
+--- Haskell
+ghci&gt; :l baby
+[1 of 1] Compiling Main             ( baby.hs, interpreted )
+Ok, modules loaded: Main.
+ghci&gt; doubleMe 9
+18
+ghci&gt; doubleMe 8.3
+16.6 
+
+
+
+
+ :l で，baby.hs に定義された doubleMe x = x + x をロードして実行しています．
+
+
+
+;;; Clojure
+user&gt; (load "baby")
+nil
+user&gt; (double-me 9)
+18
+user&gt; (double-me 8.3)
+16.6
+
+
+
+
+ Clojure の場合は load 関数をつかいます．
+
+
+
+-- Haskell
+doubleUs x y = x*2 + y*2 
+
+ghci&gt; :l baby
+[1 of 1] Compiling Main             ( baby.hs, interpreted )
+Ok, modules loaded: Main.
+ghci&gt; doubleUs 4 9
+26
+ghci&gt; doubleUs 2.3 34.2
+73.0
+ghci&gt; doubleUs 28 88 + doubleMe 123
+478
+
+
+
+
+ Haskell の場合関数の定義順は問わいないようです．つまり，上の例では，
+doubleUs を最初に定義してから doubleMe を定義してもいいということです．
+
+
+
+;;; Clojure
+user&gt; (defn double-us [x y] (+ (* x 2) (* y 2)))
+#'user/double-us
+user&gt; (double-us 4 9)
+26
+user&gt; (double-us 2.3 34.2)
+73.0
+user&gt; (+ (double-us 28 88) (double-me 123))
+478
+
+
+
+
+ 一方，Clojure の場合は順序が重要です．double-me を defn するまえに，
+double-us を defn しようとすると，
+
+
+
+Unable to resolve symbol: double-me in this context
+  [Thrown class java.lang.RuntimeException]
+
+
+
+
+ と怒られてしまいます．
+
+
+
+if
+
+
+
+-- Haskell
+doubleSmallNumber x = if x &gt; 100
+                        then x
+                        else x*2 
+
+
+
+
+ 
+ Haskell の if は else 部が必須．
+
+
+ Haskell の if は文 → 値を返す．
+
+
+
+ これに対して Clojure は，
+
+
+
+(defn double-small-number [x] (if (&gt; x 100) x (* x 2)))
+
+
+
+
+'
+
+
+
+-- Haskell
+doubleSmallNumber' x = (if x &gt; 100 then x else x*2) + 1
+
+
+
+
+ Haskell では関数名に ' を使うことができます．' は，
+
+
+
+ 
+ 正格評価版（&lt;=&gt; 遅延評価）の関数
+
+
+ 元の関数や変数の亜種
+
+
+
+ に使われるようです．
+
+
+
+;;; Clojure
+user&gt; (inc 1)
+2
+user&gt; (inc' 1e30M)
+1000000000000000000000000000001M
+
+
+
+
+ Clojure でも ' がついている関数は元の関数の亜種であることが多いです．
+
+
+
+リスト
+
+
+
+-- Haskell
+ghci&gt; [1,2,'a',3,'b','c',4]
+
+&lt;interactive&gt;:1:20:
+    No instance for (Num Char)
+      arising from the literal `4'
+    Possible fix: add an instance declaration for (Num Char)
+    In the expression: 4
+    In the expression: [1, 2, 'a', 3, ....]
+    In an equation for `it': it = [1, 2, 'a', ....]
+ghci&gt; ['h','e','l','l','o']
+"hello"
+
+
+
+
+ 
+ Haskell のリストは同質なデータ構造．
+
+
+ 要素は全て同じ型である必要がある．
+
+
+ 文字列は文字のリストの構文糖衣．
+
+
+
+ Clojure の場合は，
+
+
+
+user&gt; [1 2 \a 3 \b \c 4]
+[1 2 \a 3 \b \c 4]
+user&gt; [\h \e \l \l \o]
+[\h \e \l \l \o]
+user&gt; (seq "hello")
+(\h \e \l \l \o)
+
+
+
+
+ 
+ Clojure には シーケンス と コレクション による抽象があります．
+
+
+ シーケンスとコレクションの要素は，全て同じ型である必要はありません．
+
+
+ 文字列は Seqable なのでシーケンスのように扱うことができます．
+
+
+
+リストの連結
+
+
+
+-- Haskell
+ghci&gt; [1,2,3,4] ++ [9,10,11,12]
+[1,2,3,4,9,10,11,12]
+ghci&gt; "hello" ++ " " ++ "world"
+"hello world"
+ghci&gt; ['w','o'] ++ ['o','t']
+"woot"
+
+
+
+
+ リストは ++ 演算子で連結できます．
+
+
+
+;;; Clojure
+user&gt; (into [1 2 3 4] [9 10 11 12])
+[1 2 3 4 9 10 11 12]
+user&gt; (concat (seq [1 2 3 4]) (seq [9 10 11 12]))
+(1 2 3 4 9 10 11 12)
+user&gt; (str "wo" "ot")
+"woot"
+
+
+
+
+ 
+ コレクションは into で連結できます．
+
+
+ シーケンスは concat で連結できます．
+
+
+ 文字列は str で連結できます．
+
+
+
+リストの先頭に追加
+
+
+
+-- Haskell
+ghci&gt; 'A':" SMALL CAT"
+"A SMALL CAT"
+ghci&gt; 5:[1,2,3,4,5]
+[5,1,2,3,4,5]
+
+
+
+
+ リストの先頭に追加するときには : 演算子を使います．
+
+
+
+;;; Clojure
+user&gt; (apply str (cons \a " small cat"))
+"a small cat"
+user&gt; (cons 5 '(1 2 3 4 5))
+(5 1 2 3 4 5)
+
+
+
+
+ 
+ シーケンス の先頭に追加するときには cons.
+
+
+ コレクション は Seqable.
+
+
+
+空リスト
+
+
+
+ 
+ Haskell:
+
+
+ 
+ [1,2,3] は 1:2:3:[] の構文糖衣．
+
+
+ [] は空リスト．
+
+
+
+
+
+ Clojure:
+
+
+ 
+ 空リストは ()．nil は空リストではない．
+
+
+ ただし，(cons 2 '()) は '(2), (cons 2 nil) も '(2).
+
+
+
+
+
+
+インデックスによるリストへのアクセス
+
+
+
+-- Haskell
+ghci&gt; "Steve Buscemi" !! 6
+'B'
+ghci&gt; [9.4,33.2,96.2,11.2,23.25] !! 1
+33.2
+ghci&gt; [1,2,3,4] !! 6
+*** Exception: Prelude.(!!): index too large
+
+
+
+
+ 
+ Haskell:
+
+
+ 
+ !! 演算子をつかいます．
+
+
+ 0 から始まります．
+
+
+ リスト長よりも長いインデックスはエラーになります．
+
+
+
+
+
+
+ これに対して Clojure は，
+
+
+
+;;; Clojure
+user&gt; (get "Steve Buscemi" 6)
+\B
+user&gt; ([9.4,33.2,96.2,11.2,23.25] 1)
+33.2
+user&gt; ([1 2 3 4] 6)
+; Evaluation aborted.
+No message.
+  [Thrown class java.lang.IndexOutOfBoundsException]
+user&gt; (get [1 2 3 4] 6 0)
+0
+
+
+
+
+ 
+ シーケンスにはインデックスでアクセスできません．
+
+
+ コレクションにはキーでアクセスできます．
+
+
+ vector のキーは 0 から始まるインデックスになっています．
+
+
+ 全てのコレクションはキーを引数にとる関数です．
+
+
+ get を使えばキーに対応する要素が見つからなかったときのデフォルト値を設定できます．
+
+
+
+リストの比較
+
+
+
+-- Haskell
+ghci&gt; [3,2,1] &gt; [2,1,0]
+True
+ghci&gt; [3,2,1] &gt; [2,10,100]
+True
+ghci&gt; [3,4,2] &gt; [3,4]
+True
+ghci&gt; [3,4,2] &gt; [2,4]
+True
+ghci&gt; [3,4,2] == [3,4,2]
+True
+
+
+
+
+ リストの中身が比較できるものなら &lt;, &lt;=, &gt;, &gt;= でリスト同士を比較できます．
+
+
+
+;;; Clojure
+user&gt; (compare [3 2 1] [2 1 0])
+1
+user&gt; (compare [3 2 1] [2 10 100])
+1
+user&gt; (compare [3 4 2] [3 4])
+1
+user&gt; (compare [3 4 2] [2 4])
+1
+user&gt; (compare [3 4 2] [3 4 2])
+0
+
+
+
+
+ 
+ &lt; などは数値に対してのみ使えます．
+
+
+ リスト同士の比較は compare で行います．
+
+
+
+そのほかのリストに対する基本操作
+
+
+
+-- Haskell
+ghci&gt; head [5,4,3,2,1]
+5 
+ghci&gt; tail [5,4,3,2,1]
+[4,3,2,1] 
+ghci&gt; last [5,4,3,2,1]
+1 
+ghci&gt; init [5,4,3,2,1]
+[5,4,3,2] 
+
+;;; Clojure
+user&gt; (first [5 4 3 2 1])
+5
+user&gt; (rest [5 4 3 2 1])
+(4 3 2 1)
+user&gt; (next [5 4 3 2 1])
+(4 3 2 1)
+user&gt; (last [5 4 3 2 1])
+1
+user&gt; (butlast [5 4 3 2 1])
+(5 4 3 2)
+
+
+
+
+ シーケンスに対しては Clojure も Haskell と同様の操作が可能です．
+
+
+
+空リストの扱い
+
+
+
+-- Haskell
+ghci&gt; head []
+*** Exception: Prelude.head: empty list
+
+;;; Clojure
+user&gt; (first '())
+nil
+user&gt; (first nil)
+nil
+
+
+
+
+リストの長さ
+
+
+
+-- Haskell
+ghci&gt; length [5,4,3,2,1]
+5
+
+;;; Clojure
+user&gt; (count [5 4 3 2 1])
+5
+
+
+
+
+null チェック
+
+
+
+-- Haskell
+ghci&gt; null [1,2,3]
+False
+ghci&gt; null []
+True
+
+;;; Clojure
+user&gt; (nil? [1 2 3])
+false
+user&gt; (nil? '())
+false
+user&gt; (nil? nil)
+true
+
+
+
+
+ Clojure の空リストは nil ではありません．
+
+
+
+reverse
+
+
+
+-- Haskell
+ghci&gt; reverse [5,4,3,2,1]
+[1,2,3,4,5]
+
+;;; Clojure
+user&gt; (reverse [5 4 3 2 1])
+(1 2 3 4 5)
+
+
+
+
+ Clojure ではコレクションを reverse するとシーケンスが返ってきます．
+
+
+
+take
+
+
+
+-- Haskell
+ghci&gt; take 3 [5,4,3,2,1]
+[5,4,3]
+ghci&gt; take 1 [3,9,3]
+[3]
+ghci&gt; take 5 [1,2]
+[1,2]
+ghci&gt; take 0 [6,6,6]
+[]
+
+;;; Clojure
+user&gt; (take 3 [5 4 3 2 1])
+(5 4 3)
+user&gt; (take 1 [3 9 3])
+(3)
+user&gt; (take 5 [1 2])
+(1 2)
+user&gt; (take 0 [6 6 6])
+()
+
+
+
+
+ Clojure は Haskell と同じです．
+
+
+
+drop
+
+
+
+-- Haskell
+ghci&gt; drop 3 [8,4,2,1,5,6]
+[1,5,6]
+ghci&gt; drop 0 [1,2,3,4]
+[1,2,3,4]
+ghci&gt; drop 100 [1,2,3,4]
+[] 
+
+;;; Clojure
+user&gt; (drop 3 [8 4 2 1 5 6])
+(1 5 6)
+user&gt; (drop 0 [1 2 3 4])
+(1 2 3 4)
+user&gt; (drop 100 [1 2 3 4])
+()
+
+
+
+
+ これまた Haskell と同じです．
+
+
+
+minimum, maximum
+
+
+
+-- Haskell
+ghci&gt; minimum [8,4,2,1,5,6]
+1
+ghci&gt; maximum [1,9,2,3,4]
+9 
+
+;;; Clojure
+user&gt; (apply min [8 4 2 1 5 6])
+1
+user&gt; (apply max [1 9 2 3 4])
+9
+
+
+
+
+ Clojure では min/max をコレクションに適用します．
+
+
+
+sum, product
+
+
+
+-- Haskell
+ghci&gt; sum [5,2,1,6,3,2,5,7]
+31
+ghci&gt; product [6,2,1,2]
+24
+ghci&gt; product [1,2,5,6,7,9,2,0]
+0 
+
+;;; Clojure
+user&gt; (apply + [5 2 1 6 3 2 5 7])
+31
+user&gt; (apply * [6 2 1 2])
+24
+user&gt; (apply * [1 2 4 6 7 9 2 0])
+0
+
+
+
+
+ Clojure では +/* をコレクションに適用します．
+
+
+
+elem
+
+
+
+-- Haskell
+ghci&gt; 4 `elem` [3,4,5,6]
+True
+ghci&gt; 10 `elem` [3,4,5,6]
+False
+
+;;; Clojure
+user&gt; (some #{4} [3 4 5 6])
+4
+user&gt; (some #{10} [3 4 5 6])
+nil
+
+
+
+
+ Clojure の contains? はキーの存在を調べるもので，
+値に対しては使えません．そこで，some と set
+との組合せが常套句として使われます．
+
+
+
+範囲
+
+
+
+-- Haskell
+ghci&gt; [1..20]
+[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+ghci&gt; ['a'..'z']
+"abcdefghijklmnopqrstuvwxyz"
+ghci&gt; ['K'..'Z']
+"KLMNOPQRSTUVWXYZ" 
+
+
+
+
+ .. で範囲を作成できます．
+
+
+
+;;; Clojure
+user&gt; (range 1 21)
+(1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20)
+user&gt; (map #(char %) (range (int \a) (inc (int \z))))
+(\a \b \c \d \e \f \g \h \i \j \k \l \m \n \o \p \q \r \s \t \u \v \w \x \y \z)
+user&gt; (map #(char %) (range (int \K) (inc (int \Z))))
+(\K \L \M \N \O \P \Q \R \S \T \U \V \W \X \Y \Z)
+
+
+
+
+ range 関数で作成できますが，数値の範囲のみ作成できます．
+
+
+
+-- Haskell
+ghci&gt; [2,4..20]
+[2,4,6,8,10,12,14,16,18,20]
+ghci&gt; [3,6..20]
+[3,6,9,12,15,18] 
+
+
+
+
+ .. でステップを設定することもできます．
+
+
+
+;;; Clojure
+user&gt; (range 2 21 2)
+(2 4 6 8 10 12 14 16 18 20)
+user&gt; (range 3 21 3)
+(3 6 9 12 15 18)
+
+
+
+
+ range 関数でステップを設定することもできます．
+
+
+
+-- Haskell
+ghci&gt; [0.1, 0.3 .. 1]
+[0.1,0.3,0.5,0.7,0.8999999999999999,1.0999999999999999]
+
+
+
+
+ Haskell
+で範囲を作成するときに浮動小数点数を使うと厳密ではなくなります．
+範囲をつくるときには整数だけにしたほうがよいでしょう．
+
+
+
+;;; Clojure
+user&gt; (range 0.1 1.1 0.1)
+(0.1 0.2 0.30000000000000004 0.4 0.5 0.6 0.7 0.7999999999999999 0.8999999999999999 0.9999999999999999 1.0999999999999999)
+user&gt; (range 0.1M 1.1M 0.1M)
+(0.1M 0.2M 0.3M 0.4M 0.5M 0.6M 0.7M 0.8M 0.9M 1.0M)
+
+
+
+
+ Clojure で double を範囲に使うと厳密ではなくなります．
+整数ではない範囲をつくる場合には BigDecimal を使いましょう．
+
+
+
+無限リスト
+
+
+
+-- Haskell
+ghci&gt; take 24 [13,26..]
+[13,26,39,52,65,78,91,104,117,130,143,156,169,182,195,208,221,234,247,260,273,286,299,312]
+
+
+
+
+ Haskell で上限を指定しない範囲は無限リストになります．
+
+
+
+;;; Clojure
+user&gt; (take 24 (iterate #(+ % 13) 13))
+(13 26 39 52 65 78 91 104 117 130 143 156 169 182 195 208 221 234 247 260 273 286 299 312)
+
+
+
+
+ Clojure で無限シーケンスを作る基本の関数は iterate です．
+
+
+
+繰り返しのリスト
+
+
+
+-- Haskell
+ghci&gt; take 10 (cycle [1,2,3])
+[1,2,3,1,2,3,1,2,3,1]
+ghci&gt; take 12 (cycle "LOL ")
+"LOL LOL LOL " 
+ghci&gt; take 10 (repeat 5)
+[5,5,5,5,5,5,5,5,5,5]
+ghci&gt; replicate 3 10
+[10,10,10]
+
+
+
+
+ 
+ cycle
+
+
+ repeat
+
+
+ replicate
+
+
+
+ を使います．
+
+
+
+;;; Clojure
+user&gt; (take 10 (cycle [1 2 3]))
+(1 2 3 1 2 3 1 2 3 1)
+user&gt; (take 12 (cycle "LOL "))
+(\L \O \L \space \L \O \L \space \L \O \L \space)
+user&gt; (take 10 (repeat 5))
+(5 5 5 5 5 5 5 5 5 5)
+user&gt; (repeat 3 10)
+(10 10 10)
+
+
+
+
+ Clojure には Haskell の replicate がありません．
+repeat に 2 引数を渡すと Haskell の replicate 相当になります．
+引数の順序も同じです．cycle は Haskell と同じです．
+
+
+
+リスト内包表記
+
+
+
+-- Haskell
+ghci&gt; [x*2 | x &lt;- [1..10]]
+[2,4,6,8,10,12,14,16,18,20]
+ghci&gt; [x*2 | x &lt;- [1..10], x*2 &gt;= 12]
+[12,14,16,18,20]
+ghci&gt; [ x | x &lt;- [50..100], x `mod` 7 == 3]
+[52,59,66,73,80,87,94] 
+
+boomBangs xs = [ if x &lt; 10 then "BOOM!" else "BANG!" | x &lt;- xs, odd x] 
+
+ghci&gt; boomBangs [7..13]
+["BOOM!","BOOM!","BANG!","BANG!"] 
+ghci&gt; [ x | x &lt;- [10..20], x /= 13, x /= 15, x /= 19]
+[10,11,12,14,16,17,18,20]
+ghci&gt; [ x*y | x &lt;- [2,5,10], y &lt;- [8,10,11]]
+[16,20,22,40,50,55,80,100,110] 
+ghci&gt; [ x*y | x &lt;- [2,5,10], y &lt;- [8,10,11], x*y &gt; 50]
+[55,80,100,110] 
+ghci&gt; let nouns = ["hobo","frog","pope"]
+ghci&gt; let adjectives = ["lazy","grouchy","scheming"]
+ghci&gt; [adjective ++ " " ++ noun | adjective &lt;- adjectives, noun &lt;- nouns]
+["lazy hobo","lazy frog","lazy pope","grouchy hobo","grouchy frog",
+"grouchy pope","scheming hobo","scheming frog","scheming pope"] 
+
+
+
+
+ 条件を , のあとに続けて書きます．条件を複数書くと AND 扱いになります．
+
+
+
+;;; Clojure
+user&gt; (for [x (range 1 11)] (* x 2))
+(2 4 6 8 10 12 14 16 18 20)
+user&gt; (for [x (range 1 11) :let [y (* x 2)] :when (&gt;= y 12)] y)
+(12 14 16 18 20)
+user&gt; (for [x (range 50 101) :when (= 3 (mod x 7))] x)
+(52 59 66 73 80 87 94)
+user&gt; (defn boom-bangs [xs]
+        (for [x xs :when (odd? x)]
+             (if (&lt; x 10)
+                 "BOOM!"
+                 "BANG!")))
+#'user/boom-bangs
+user&gt; (boom-bangs (range 7 14))
+("BOOM!" "BOOM!" "BANG!" "BANG!")
+user&gt; (for [x (range 10 21) :when (and (not= x 13) (not= x 15) (not= x 19))] x)
+(10 11 12 14 16 17 18 20)
+user&gt; (for [x [2 5 10] y [8 10 11]] (* x y))
+(16 20 22 40 50 55 80 100 110)
+user&gt; (for [x [2 5 10] y [8 10 11] :when (&gt; (* x y) 50)] (* x y))
+(55 80 100 110)
+user&gt; (def nouns ["hobo" "frog" "pope"])
+#'user/nouns
+user&gt; (def adjectives ["lazy" "grouchy" "scheming"])
+#'user/adjectives
+user&gt; (for [n nouns a adjectives] (str a " " n))
+("lazy hobo" "grouchy hobo" "scheming hobo" "lazy frog" "grouchy frog" "scheming frog" "lazy pope" "grouchy pope" "scheming pope")
+
+
+
+
+ Clojure でリスト内包表記を書くときには for マクロを使います．
++ 条件は :when キーワードに続けて書きます．
++&#160;:when のほかに :while も使えます．
+  - :let もあります．
+
+
+
+ length vs count.
+
+
+
+-- Haskell
+length' xs = sum [1 | _ &lt;- xs] 
+
+;;; Clojure
+user&gt; (defn count' [s] (reduce + (for [_ s] 1)))
+#'user/count'
+user&gt; (count' [1 2 3])
+3
+
+
+
+
+大文字以外を削除する．
+
+
+
+-- Haskell
+removeNonUppercase st = [ c | c &lt;- st, c `elem` ['A'..'Z']] 
+
+ghci&gt; removeNonUppercase "Hahaha! Ahahaha!"
+"HA"
+ghci&gt; removeNonUppercase "IdontLIKEFROGS"
+"ILIKEFROGS" 
+
+;;; Clojure
+user&gt; (defn remove-non-uppercase [s] (for [c s :when (Character/isUpperCase c)] c))
+#'user/remove-non-uppercase
+user&gt; (remove-non-uppercase "Hahaha! Ahahaha!")
+(\H \A)
+user&gt; (remove-non-uppercase "IdontLIKEFROGS")
+(\I \L \I \K \E \F \R \O \G \S)
+
+
+
+
+ネストしたリスト内包表記
+
+
+
+-- Haskell
+ghci&gt; let xxs = [[1,3,5,2,3,1,2,4,5],[1,2,3,4,5,6,7,8,9],[1,2,4,2,1,6,3,1,3,2,3,6]]
+ghci&gt; [ [ x | x &lt;- xs, even x ] | xs &lt;- xxs]
+[[2,2,4],[2,4,6,8],[2,4,2,6,2,6]]
+
+;;; Clojure
+user&gt; (def xxs [[1,3,5,2,3,1,2,4,5],[1,2,3,4,5,6,7,8,9],[1,2,4,2,1,6,3,1,3,2,3,6]])
+#'user/xxs
+user&gt; (for [xs xxs] (for [x xs :when (even? x)] x))
+((2 2 4) (2 4 6 8) (2 4 2 6 2 6))
+
+
+
+
+ Clojure でも for をネストできます．
+
+
+
+タプル
+
+
+
+-- Haskell
+ghci&gt; fst (8,11)
+8
+ghci&gt; fst ("Wow", False)
+"Wow"
+ghci&gt; snd (8,11)
+11
+ghci&gt; snd ("Wow", False)
+False
+
+;;; Clojure
+user&gt; (first [8 11])
+8
+user&gt; (first ["Wow" false])
+"Wow"
+user&gt; (second [8 11])
+11
+user&gt; (second ["Wow" false])
+false
+
+
+
+
+ 
+ Clojure にはタプルが無いので vector で代用します．
+
+
+ 
+ （vector が長くなりそうなら map を使います．）
+
+
+ （仕様が固まったら map を defrecord に置き換えることがあります．）
+
+
+
+
+
+
+zip
+
+
+
+-- Haskell
+ghci&gt; zip [1,2,3,4,5] [5,5,5,5,5]
+[(1,5),(2,5),(3,5),(4,5),(5,5)]
+ghci&gt; zip [1 .. 5] ["one", "two", "three", "four", "five"]
+[(1,"one"),(2,"two"),(3,"three"),(4,"four"),(5,"five")]
+ghci&gt; zip [5,3,2,6,2,7,2,5,4,6,6] ["im","a","turtle"]
+[(5,"im"),(3,"a"),(2,"turtle")]
+
+;;; Clojure
+user&gt; (def zip (partial map vector))
+#'user/zip
+user&gt; (zip [1 2 3 4 5] [5 5 5 5 5])
+([1 5] [2 5] [3 5] [4 5] [5 5])
+user&gt; (zip (range 1 6) ["one" "two" "tree" "four" "five"])
+([1 "one"] [2 "two"] [3 "tree"] [4 "four"] [5 "five"])
+user&gt; (zip [5 3 2 6 2 7 2 5 4 6 6] ["im" "a" "turtle"])
+([5 "im"] [3 "a"] [2 "turtle"])
+
+
+
+
+ Clojure に zip 関数はありませんが，(partial map vector) で代用できます．
+(partial map vector) は 3 つ以上の Seqable を引数に取ることができます．
+
+
+
+ghci&gt; zip [1,2,3] [4,5,6] [7,8,9]
+
+&lt;interactive&gt;:1:1:
+    The function `zip' is applied to three arguments,
+    but its type `[a0] -&gt; [b0] -&gt; [(a0, b0)]' has only two
+    In the expression: zip [1, 2, 3] [4, 5, 6] [7, 8, 9]
+    In an equation for `it': it = zip [1, 2, 3] [4, 5, 6] [7, 8, 9]
+
+
+
+
+ Haskell の zip はペアを作ることしかできないようです．一方 Clojure 版は，
+
+
+
+user&gt; (zip [1 2 3] [4 5 6] [7 8 9])
+([1 4 7] [2 5 8] [3 6 9])
+
+
+
+
+無限リストの Zip
+
+
+
+-- Haskell
+ghci&gt; zip [1..] ["apple", "orange", "cherry", "mango"]
+[(1,"apple"),(2,"orange"),(3,"cherry"),(4,"mango")]
+
+
+
+
+ Haskell の無限リストは lazy なので zip できます．
+
+
+
+;;; Clojure
+user&gt; (zip (iterate inc 1) ["apple" "orange" "cherry" "mango"])
+([1 "apple"] [2 "orange"] [3 "cherry"] [4 "mango"])
+
+
+
+
+ Clojure でも lazy な無限シーケンスをつくれば zip できます．
+
+
+
+直角三角形
+
+
+
+ 「各辺の長さが 10 以下の整数で，三辺の長さの和が 24 であるような二等辺三角形を求めなさい」という問題に対して，
+
+
+
+-- Haskell
+ghci&gt; let rightTriangles' = [ (a,b,c) | c &lt;- [1..10], b &lt;- [1..c], a &lt;- [1..b], a^2 + b^2 == c^2, a+b+c == 24]
+ghci&gt; rightTriangles'
+[(6,8,10)]
+
+;;; Clojure
+user&gt; (for [c (range 1 11) b (range 1 (inc c)) a (range 1 (inc b)) :when (and (= (* c c) (+ (* a a) (* b b))) (= 24 (+ a b c)))] [a b c])
+([6 8 10])
+
+
+
+
+ 「関数プログラミンの共通パターン」というだけあって，Clojure でも Haskell と同じように書けます．"/>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+    
+
+  
+
+  
+
+  <link rel="shortcut icon" href="http://24.media.tumblr.com/avatar_8e14c377b8b0_128.png" />
+  <link rel="apple-touch-icon" href="http://24.media.tumblr.com/avatar_8e14c377b8b0_128.png" />
+  <link rel="alternate" type="application/rss+xml" href="http://tnoda-clojure.tumblr.com/rss"/>
+  <link rel="stylesheet" href="http://static.tumblr.com/xgwqnql/MF5lbpkr4/jquery.fancybox-1.3.1.css" media="screen"/>
+
+  
+    <link href="http://static.tumblr.com/hugxd2w/NA2mtcd2h/style.css" media="screen" rel="stylesheet" type="text/css" />
+  
+
+  <script type="text/javascript">
+    tumblrUsername = 'tnoda-clojure';
+    searchValue = "Search";
+    themeColor = "#f55b2c";
+    
+    
+    contentWidth = 700;
+    customPhotosets = true;
+    
+    collapseNotes = true;
+    
+    disqusEnabled = true;
+    disqusShortname = "tnoda-clojure";
+    
+    twitterUsername = "tnoda_";
+    
+    
+    var showInstagram = false;
+    
+    var accessToken = '';
+    var instaCount = '4';
+    
+    
+    isPermalink = true;
+    photosets = {};
+  </script>
+  <style type="text/css">
+    body {
+      font-family:Helvetica Neue, Arial, sans-serif;
+      color:#616566;
+      background-color:#e6ebea;
+      
+    }
+
+    .blog-title,
+    #sidebar h1,
+    #sidebar h2,
+    #sidebar h3,
+    #footer h1,
+    #footer h2,
+    #footer h3 {
+      font-family:Helvetica Neue, Arial, sans-serif;
+    }
+
+    .copy {
+      font-family:Georgia, serif;
+    }
+    .copy h1,
+    .copy h2,
+    .copy h3,
+    .copy h4,
+    .copy h5,
+    .copy h6,
+    .auto-headings .copy p:first-child strong:first-child,
+    #notes h2,
+    #disqus h2,
+    .speaker {
+      font-family:Helvetica Neue, Arial, sans-serif;
+    }
+
+    #tabs #tabs-nav h2 span.active {
+      background:#e6ebea;
+    }
+
+    
+
+    
+
+    /* Main Theme Color */
+    .colored-panel,
+    .type-answer .user-question,
+    .pages a:hover,
+    .invert .fixed .pages a:hover,
+    .invert .pinned .pages a:hover,
+    .invert #sidebar .pages a:hover,
+    .more-likes:hover,
+    .invert-topbar .fixed .pages a:hover,
+    .like_link a:hover,
+    .type-photoset .navi a:hover,
+    #pagination .nextprev a:hover,
+    #group-members li span,
+    #followed li span {
+      background-color:#f55b2c;
+    }
+    .corners .tl {
+      border-left-color: #f55b2c;
+    }
+    .corners .tr {
+      border-right-color: #f55b2c;
+    }
+    .corners .bl,
+    .corners .br {
+      border-bottom-color:#f55b2c;
+    }
+    #group-members li span:after,
+    #followed li span:after {
+      border-top-color:#f55b2c;
+    }
+
+    /* Outside Link Color */
+    a, #footer-end a:hover {
+      color:#f55b2c;
+    }
+
+    /* Outside Link Hover */
+    a:hover {
+      color:#131313;
+    }
+
+    /* Inside Link Color */
+    .copy a,
+    .copy li:before,
+    .type-chat .speaker,
+    .no-touch #notes-toggle:hover,
+    .touch #notes-toggle.up,
+    ol.notes a,
+    #disqus a {
+      color:#f55b2c;
+    }
+
+    .copy a:hover,
+    ol.notes a:hover {
+      border-color:#f55b2c;
+    }
+    .copy .post-title a:hover,
+    .copy a:hover,
+    ol.notes a:hover,
+    #dsq-comments a:hover,
+    #dsq-options a:hover {
+      background-color:#fff7a5;
+    }
+
+    .no-touch #notes-toggle:hover .icon,
+    .touch #notes-toggle.up .icon,
+    .photo-btns a:hover,
+    #back-to-top .icon {
+      background-color:#f55b2c;
+    }
+
+    /* Colored Area */
+    .colored-panel,
+    .colored-panel a,
+    .colored-panel a:hover,
+    .colored-panel .user-question,
+    .pages a:hover,
+    .invert-topbar .fixed .pages a:hover,
+    .invert #sidebar .pages a:hover,
+    .more-likes:hover,
+    .like_link a:hover,
+    #pagination .nextprev a:hover,
+    #group-members li span,
+    #followed li span {
+      color:#fffadc;
+    }
+
+    /* Colored Area Text Shadow */
+    .type-quote .quote-text,
+    .type-audio .audio-meta,
+    .type-answer .user-question,
+    .pages a:hover,
+    .more-likes:hover,
+    .like_link a:hover,
+    #pagination .nextprev a:hover,
+    #group-members li span,
+    #followed li span {
+      text-shadow:1px 1px #bf4402;
+    }
+
+    ol.notes li.tumblelog_tnoda-clojure {
+      background-color:#fbfbfb;
+    }
+    ol.notes li.tumblelog_tnoda-clojure .action {
+      font-weight:bold;
+    }
+    #page, .inner {
+      margin:0 auto;
+    }
+
+    
+  </style>
+
+  <script src="http://static.tumblr.com/hugxd2w/6Cpm8gh20/modernizr.2.6.1.min.js"></script>
+<link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=tnoda-clojure&postID=26507931134" />
+<script src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=c3c46376deb5e5c809f523efdbeb821f"></script>
+<link rel="stylesheet" type="text/css" href="http://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3">
+<meta http-equiv="x-dns-prefetch-control" content="off"/>
+<meta name="keywords" content="clojurelearnyouahaskell" />
+<!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:card" content="summary" /><meta name="twitter:description" content="
+
+ 関数プログラミングについては良い教科書がたくさん出ていますが，
+残念ながら OCaml か Haskell で書かれたものが目につくばかりで，
+Clojure でサンプルコードが示されたものを私は見たことがありません．
+
+ 関数プログラミングを勉強しようと思うと，
+これらどちらかのプログラミング言語を修得しないといけなくなるわけですが，
+ちょうど，
+すごい Haskell たのしく学ぼう
+が発売されたので，Haskell を勉強してみることにします．
+ただし，本を買うお金が無いのでオリジナル Web サイト，
+Learn You a Haskell for Great Good!
+を読みすすめることにします．
+訳本は見たことがないのですが，きっと，どちらを読んでも同じでしょう．
+
+ このシリーズでは，Miran Lipovača 著
+Learn You a Haskell for Great Good!
+の Haskell サンプルコードを Clojure で書き直してきます．
+原著の Haskell サンプルコードは by-nc-sa こと，
+Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License でライセンスされており，
+この記事のコードも by-nc-sa に従います．
+
+ 章番号は日本語訳，「すごい Haskell 楽しく学ぼう」のそれを参考にしています．
+今回は第 1 章はじめの一歩です．
+
+第 1 章: はじめの一歩
+
+ まずは，基本的なところから．
+Haskell のサンプル&rarr; Clojure で書き直したものという流れでいきます．
+
+-- Haskell
+ghci&amp;gt; 2 + 15
+17
+ghci&amp;gt; 49 * 100
+4900
+ghci&amp;gt; 1892 - 1472
+420
+ghci&amp;gt; 5 / 2
+2.5
+ghci&amp;gt;
+
+;;; Clojure
+user=&amp;gt; (+ 2 15)
+17
+user=&amp;gt; (* 49 100)
+4900
+user=&amp;gt; (- 1892 1472)
+420
+user=&amp;gt; (/ 5 2)
+5/2
+user=&amp;gt; (class (/ 5 2))
+clojure.lang.Ratio
+user=&amp;gt; 
+
+
+ 整数同士の除算結果が clojure.lang.Ratio になる点以外は同じですね．
+
+-- Haskell
+ghci&amp;gt; (50 * 100) - 4999
+1
+ghci&amp;gt; 50 * 100 - 4999
+1
+ghci&amp;gt; 50 * (100 - 4999)
+-244950
+
+;;; Clojure
+user=&amp;gt; (- 4999 (* 50 100))
+-1
+user=&amp;gt; (* 50 (- 100 4999))
+-244950
+
+
+ Clojure 括弧必須なので計算順序に迷う必要はありません．
+
+-- Haskell
+ghci&amp;gt; 5 * -3
+
+&amp;lt;interactive&amp;gt;:1:1:
+    Precedence parsing error
+        cannot mix `*&#039; [infixl 7] and prefix `-&#039; [infixl 6] in the same infix expression
+ghci&amp;gt; 5 * (-3)
+-15
+
+
+ Haskell で負数を扱うときには括弧で囲っておくほうがいいらしいです．
+
+;;; Clojure
+user&amp;gt; (* 5 -3)
+-15
+user&amp;gt; (* 5 (-3))
+; Evaluation aborted.
+
+
+ 一方 Clojure ではその必要がありません，というかしてはいけません．
+うっかり括弧で囲ってしまうと -3 を関数だと思ってしまいエラーになります．
+
+-- Haskell
+ghci&amp;gt; True &amp;amp;&amp;amp; False
+False
+ghci&amp;gt; True &amp;amp;&amp;amp; True
+True
+ghci&amp;gt; False || True
+True 
+ghci&amp;gt; not False
+True
+ghci&amp;gt; not (True &amp;amp;&amp;amp; True)
+False
+
+;;; Clojure
+user&amp;gt; (and true false)
+false
+user&amp;gt; (and true true)
+true
+user&amp;gt; (or false true)
+true
+user&amp;gt; (not false)
+true
+user&amp;gt; (not (and true true))
+false
+
+
+ 当然のことながら真偽値の扱いは同じです．
+
+-- Haskell
+ghci&amp;gt; 5 == 5
+True
+ghci&amp;gt; 1 == 0
+False
+ghci&amp;gt; 5 /= 5
+False
+ghci&amp;gt; 5 /= 4
+True
+ghci&amp;gt; &quot;hello&quot; == &quot;hello&quot;
+True 
+
+;;; Clojure
+user&amp;gt; (= 5 5)
+true
+user&amp;gt; (= 1 0)
+false
+user&amp;gt; (not= 5 5)
+false
+user&amp;gt; (not= 5 4)
+true
+user&amp;gt; (= &quot;hello&quot; &quot;hello&quot;)
+true
+
+
+ Haskell の /= は not= のことだと思いこんでいます．
+
+-- Haskell
+ghci&amp;gt; 5 + &quot;llama&quot;
+
+&amp;lt;interactive&amp;gt;:1:1:
+    No instance for (Num [Char])
+      arising from the literal `5&#039;
+    Possible fix: add an instance declaration for (Num [Char])
+    In the first argument of `(+)&#039;, namely `5&#039;
+    In the expression: 5 + &quot;llama&quot;
+    In an equation for `it&#039;: it = 5 + &quot;llama&quot;
+ghci&amp;gt; True == 5
+
+&amp;lt;interactive&amp;gt;:1:9:
+    No instance for (Num Bool)
+      arising from the literal `5&#039;
+    Possible fix: add an instance declaration for (Num Bool)
+    In the second argument of `(==)&#039;, namely `5&#039;
+    In the expression: True == 5
+    In an equation for `it&#039;: it = True == 5
+ghci&amp;gt; 5 + 4.0
+9.0
+
+;;; Clojure
+user&amp;gt; (+ 5 &quot;llma&quot;)
+; Evaluation aborted.
+java.lang.String cannot be cast to java.lang.Number
+  [Thrown class java.lang.ClassCastException]
+user&amp;gt; (= true 5)
+false
+user&amp;gt; (+ 5 4.0)
+9.0
+
+
+ Clojure の場合は強制型変換に失敗して Java の例外が投げられます．
+型が一致している必要はありません．
+
+-- Haskell
+ghci&amp;gt; succ 8
+9 
+ghci&amp;gt; min 9 10
+9
+ghci&amp;gt; min 3.4 3.2
+3.2
+ghci&amp;gt; max 100 101
+101 
+
+;;; Clojure
+user&amp;gt; (inc 8)
+9
+user&amp;gt; (min 9 10)
+9
+user&amp;gt; (min 3.4 3.2)
+3.2
+user&amp;gt; (max 100 101)
+101
+
+
+ ここまでは，同じなのですが，．．．
+
+-- Haskell
+ghci&amp;gt; succ 9 + max 5 4 + 1
+16
+ghci&amp;gt; (succ 9) + (max 5 4) + 1
+16
+
+;;; Clojure
+user&amp;gt; (+ (inc 9) (max 5 4) 1)
+16
+
+
+ Clojure は関数をすべて前置します．
+
+ 外部ファイルに定義した関数をロードします．
+
+--- Haskell
+ghci&amp;gt; :l baby
+[1 of 1] Compiling Main             ( baby.hs, interpreted )
+Ok, modules loaded: Main.
+ghci&amp;gt; doubleMe 9
+18
+ghci&amp;gt; doubleMe 8.3
+16.6 
+
+
+ :l で，baby.hs に定義された doubleMe x = x + x をロードして実行しています．
+
+;;; Clojure
+user&amp;gt; (load &quot;baby&quot;)
+nil
+user&amp;gt; (double-me 9)
+18
+user&amp;gt; (double-me 8.3)
+16.6
+
+
+ Clojure の場合は load 関数をつかいます．
+
+-- Haskell
+doubleUs x y = x*2 + y*2 
+
+ghci&amp;gt; :l baby
+[1 of 1] Compiling Main             ( baby.hs, interpreted )
+Ok, modules loaded: Main.
+ghci&amp;gt; doubleUs 4 9
+26
+ghci&amp;gt; doubleUs 2.3 34.2
+73.0
+ghci&amp;gt; doubleUs 28 88 + doubleMe 123
+478
+
+
+ Haskell の場合関数の定義順は問わいないようです．つまり，上の例では，
+doubleUs を最初に定義してから doubleMe を定義してもいいということです．
+
+;;; Clojure
+user&amp;gt; (defn double-us [x y] (+ (* x 2) (* y 2)))
+#&#039;user/double-us
+user&amp;gt; (double-us 4 9)
+26
+user&amp;gt; (double-us 2.3 34.2)
+73.0
+user&amp;gt; (+ (double-us 28 88) (double-me 123))
+478
+
+
+ 一方，Clojure の場合は順序が重要です．double-me を defn するまえに，
+double-us を defn しようとすると，
+
+Unable to resolve symbol: double-me in this context
+  [Thrown class java.lang.RuntimeException]
+
+
+ と怒られてしまいます．
+
+if
+
+-- Haskell
+doubleSmallNumber x = if x &amp;gt; 100
+                        then x
+                        else x*2 
+
+
+ Haskell の if は else 部が必須．
+ Haskell の if は文 &rarr; 値を返す．
+ これに対して Clojure は，
+
+(defn double-small-number [x] (if (&amp;gt; x 100) x (* x 2)))
+
+
+&#039;
+
+-- Haskell
+doubleSmallNumber&#039; x = (if x &amp;gt; 100 then x else x*2) + 1
+
+
+ Haskell では関数名に &#039; を使うことができます．&#039; は，
+
+ 正格評価版（&amp;lt;=&amp;gt; 遅延評価）の関数
+ 元の関数や変数の亜種
+ に使われるようです．
+
+;;; Clojure
+user&amp;gt; (inc 1)
+2
+user&amp;gt; (inc&#039; 1e30M)
+1000000000000000000000000000001M
+
+
+ Clojure でも &#039; がついている関数は元の関数の亜種であることが多いです．
+
+リスト
+
+-- Haskell
+ghci&amp;gt; [1,2,&#039;a&#039;,3,&#039;b&#039;,&#039;c&#039;,4]
+
+&amp;lt;interactive&amp;gt;:1:20:
+    No instance for (Num Char)
+      arising from the literal `4&#039;
+    Possible fix: add an instance declaration for (Num Char)
+    In the expression: 4
+    In the expression: [1, 2, &#039;a&#039;, 3, ....]
+    In an equation for `it&#039;: it = [1, 2, &#039;a&#039;, ....]
+ghci&amp;gt; [&#039;h&#039;,&#039;e&#039;,&#039;l&#039;,&#039;l&#039;,&#039;o&#039;]
+&quot;hello&quot;
+
+
+ Haskell のリストは同質なデータ構造．
+ 要素は全て同じ型である必要がある．
+ 文字列は文字のリストの構文糖衣．
+ Clojure の場合は，
+
+user&amp;gt; [1 2 \a 3 \b \c 4]
+[1 2 \a 3 \b \c 4]
+user&amp;gt; [\h \e \l \l \o]
+[\h \e \l \l \o]
+user&amp;gt; (seq &quot;hello&quot;)
+(\h \e \l \l \o)
+
+
+ Clojure には シーケンス と コレクション による抽象があります．
+ シーケンスとコレクションの要素は，全て同じ型である必要はありません．
+ 文字列は Seqable なのでシーケンスのように扱うことができます．
+リストの連結
+
+-- Haskell
+ghci&amp;gt; [1,2,3,4] ++ [9,10,11,12]
+[1,2,3,4,9,10,11,12]
+ghci&amp;gt; &quot;hello&quot; ++ &quot; &quot; ++ &quot;world&quot;
+&quot;hello world&quot;
+ghci&amp;gt; [&#039;w&#039;,&#039;o&#039;] ++ [&#039;o&#039;,&#039;t&#039;]
+&quot;woot&quot;
+
+
+ リストは ++ 演算子で連結できます．
+
+;;; Clojure
+user&amp;gt; (into [1 2 3 4] [9 10 11 12])
+[1 2 3 4 9 10 11 12]
+user&amp;gt; (concat (seq [1 2 3 4]) (seq [9 10 11 12]))
+(1 2 3 4 9 10 11 12)
+user&amp;gt; (str &quot;wo&quot; &quot;ot&quot;)
+&quot;woot&quot;
+
+
+ コレクションは into で連結できます．
+ シーケンスは concat で連結できます．
+ 文字列は str で連結できます．
+リストの先頭に追加
+
+-- Haskell
+ghci&amp;gt; &#039;A&#039;:&quot; SMALL CAT&quot;
+&quot;A SMALL CAT&quot;
+ghci&amp;gt; 5:[1,2,3,4,5]
+[5,1,2,3,4,5]
+
+
+ リストの先頭に追加するときには : 演算子を使います．
+
+;;; Clojure
+user&amp;gt; (apply str (cons \a &quot; small cat&quot;))
+&quot;a small cat&quot;
+user&amp;gt; (cons 5 &#039;(1 2 3 4 5))
+(5 1 2 3 4 5)
+
+
+ シーケンス の先頭に追加するときには cons.
+ コレクション は Seqable.
+空リスト
+
+ Haskell:
+
+ [1,2,3] は 1:2:3:[] の構文糖衣．
+ [] は空リスト．
+
+ Clojure:
+
+ 空リストは ()．nil は空リストではない．
+ ただし，(cons 2 &#039;()) は &#039;(2), (cons 2 nil) も &#039;(2).
+
+インデックスによるリストへのアクセス
+
+-- Haskell
+ghci&amp;gt; &quot;Steve Buscemi&quot; !! 6
+&#039;B&#039;
+ghci&amp;gt; [9.4,33.2,96.2,11.2,23.25] !! 1
+33.2
+ghci&amp;gt; [1,2,3,4] !! 6
+*** Exception: Prelude.(!!): index too large
+
+
+ Haskell:
+
+ !! 演算子をつかいます．
+ 0 から始まります．
+ リスト長よりも長いインデックスはエラーになります．
+
+ これに対して Clojure は，
+
+;;; Clojure
+user&amp;gt; (get &quot;Steve Buscemi&quot; 6)
+\B
+user&amp;gt; ([9.4,33.2,96.2,11.2,23.25] 1)
+33.2
+user&amp;gt; ([1 2 3 4] 6)
+; Evaluation aborted.
+No message.
+  [Thrown class java.lang.IndexOutOfBoundsException]
+user&amp;gt; (get [1 2 3 4] 6 0)
+0
+
+
+ シーケンスにはインデックスでアクセスできません．
+ コレクションにはキーでアクセスできます．
+ vector のキーは 0 から始まるインデックスになっています．
+ 全てのコレクションはキーを引数にとる関数です．
+ get を使えばキーに対応する要素が見つからなかったときのデフォルト値を設定できます．
+リストの比較
+
+-- Haskell
+ghci&amp;gt; [3,2,1] &amp;gt; [2,1,0]
+True
+ghci&amp;gt; [3,2,1] &amp;gt; [2,10,100]
+True
+ghci&amp;gt; [3,4,2] &amp;gt; [3,4]
+True
+ghci&amp;gt; [3,4,2] &amp;gt; [2,4]
+True
+ghci&amp;gt; [3,4,2] == [3,4,2]
+True
+
+
+ リストの中身が比較できるものなら &amp;lt;, &amp;lt;=, &amp;gt;, &amp;gt;= でリスト同士を比較できます．
+
+;;; Clojure
+user&amp;gt; (compare [3 2 1] [2 1 0])
+1
+user&amp;gt; (compare [3 2 1] [2 10 100])
+1
+user&amp;gt; (compare [3 4 2] [3 4])
+1
+user&amp;gt; (compare [3 4 2] [2 4])
+1
+user&amp;gt; (compare [3 4 2] [3 4 2])
+0
+
+
+ &amp;lt; などは数値に対してのみ使えます．
+ リスト同士の比較は compare で行います．
+そのほかのリストに対する基本操作
+
+-- Haskell
+ghci&amp;gt; head [5,4,3,2,1]
+5 
+ghci&amp;gt; tail [5,4,3,2,1]
+[4,3,2,1] 
+ghci&amp;gt; last [5,4,3,2,1]
+1 
+ghci&amp;gt; init [5,4,3,2,1]
+[5,4,3,2] 
+
+;;; Clojure
+user&amp;gt; (first [5 4 3 2 1])
+5
+user&amp;gt; (rest [5 4 3 2 1])
+(4 3 2 1)
+user&amp;gt; (next [5 4 3 2 1])
+(4 3 2 1)
+user&amp;gt; (last [5 4 3 2 1])
+1
+user&amp;gt; (butlast [5 4 3 2 1])
+(5 4 3 2)
+
+
+ シーケンスに対しては Clojure も Haskell と同様の操作が可能です．
+
+空リストの扱い
+
+-- Haskell
+ghci&amp;gt; head []
+*** Exception: Prelude.head: empty list
+
+;;; Clojure
+user&amp;gt; (first &#039;())
+nil
+user&amp;gt; (first nil)
+nil
+
+
+リストの長さ
+
+-- Haskell
+ghci&amp;gt; length [5,4,3,2,1]
+5
+
+;;; Clojure
+user&amp;gt; (count [5 4 3 2 1])
+5
+
+
+null チェック
+
+-- Haskell
+ghci&amp;gt; null [1,2,3]
+False
+ghci&amp;gt; null []
+True
+
+;;; Clojure
+user&amp;gt; (nil? [1 2 3])
+false
+user&amp;gt; (nil? &#039;())
+false
+user&amp;gt; (nil? nil)
+true
+
+
+ Clojure の空リストは nil ではありません．
+
+reverse
+
+-- Haskell
+ghci&amp;gt; reverse [5,4,3,2,1]
+[1,2,3,4,5]
+
+;;; Clojure
+user&amp;gt; (reverse [5 4 3 2 1])
+(1 2 3 4 5)
+
+
+ Clojure ではコレクションを reverse するとシーケンスが返ってきます．
+
+take
+
+-- Haskell
+ghci&amp;gt; take 3 [5,4,3,2,1]
+[5,4,3]
+ghci&amp;gt; take 1 [3,9,3]
+[3]
+ghci&amp;gt; take 5 [1,2]
+[1,2]
+ghci&amp;gt; take 0 [6,6,6]
+[]
+
+;;; Clojure
+user&amp;gt; (take 3 [5 4 3 2 1])
+(5 4 3)
+user&amp;gt; (take 1 [3 9 3])
+(3)
+user&amp;gt; (take 5 [1 2])
+(1 2)
+user&amp;gt; (take 0 [6 6 6])
+()
+
+
+ Clojure は Haskell と同じです．
+
+drop
+
+-- Haskell
+ghci&amp;gt; drop 3 [8,4,2,1,5,6]
+[1,5,6]
+ghci&amp;gt; drop 0 [1,2,3,4]
+[1,2,3,4]
+ghci&amp;gt; drop 100 [1,2,3,4]
+[] 
+
+;;; Clojure
+user&amp;gt; (drop 3 [8 4 2 1 5 6])
+(1 5 6)
+user&amp;gt; (drop 0 [1 2 3 4])
+(1 2 3 4)
+user&amp;gt; (drop 100 [1 2 3 4])
+()
+
+
+ これまた Haskell と同じです．
+
+minimum, maximum
+
+-- Haskell
+ghci&amp;gt; minimum [8,4,2,1,5,6]
+1
+ghci&amp;gt; maximum [1,9,2,3,4]
+9 
+
+;;; Clojure
+user&amp;gt; (apply min [8 4 2 1 5 6])
+1
+user&amp;gt; (apply max [1 9 2 3 4])
+9
+
+
+ Clojure では min/max をコレクションに適用します．
+
+sum, product
+
+-- Haskell
+ghci&amp;gt; sum [5,2,1,6,3,2,5,7]
+31
+ghci&amp;gt; product [6,2,1,2]
+24
+ghci&amp;gt; product [1,2,5,6,7,9,2,0]
+0 
+
+;;; Clojure
+user&amp;gt; (apply + [5 2 1 6 3 2 5 7])
+31
+user&amp;gt; (apply * [6 2 1 2])
+24
+user&amp;gt; (apply * [1 2 4 6 7 9 2 0])
+0
+
+
+ Clojure では +/* をコレクションに適用します．
+
+elem
+
+-- Haskell
+ghci&amp;gt; 4 `elem` [3,4,5,6]
+True
+ghci&amp;gt; 10 `elem` [3,4,5,6]
+False
+
+;;; Clojure
+user&amp;gt; (some #{4} [3 4 5 6])
+4
+user&amp;gt; (some #{10} [3 4 5 6])
+nil
+
+
+ Clojure の contains? はキーの存在を調べるもので，
+値に対しては使えません．そこで，some と set
+との組合せが常套句として使われます．
+
+範囲
+
+-- Haskell
+ghci&amp;gt; [1..20]
+[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+ghci&amp;gt; [&#039;a&#039;..&#039;z&#039;]
+&quot;abcdefghijklmnopqrstuvwxyz&quot;
+ghci&amp;gt; [&#039;K&#039;..&#039;Z&#039;]
+&quot;KLMNOPQRSTUVWXYZ&quot; 
+
+
+ .. で範囲を作成できます．
+
+;;; Clojure
+user&amp;gt; (range 1 21)
+(1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20)
+user&amp;gt; (map #(char %) (range (int \a) (inc (int \z))))
+(\a \b \c \d \e \f \g \h \i \j \k \l \m \n \o \p \q \r \s \t \u \v \w \x \y \z)
+user&amp;gt; (map #(char %) (range (int \K) (inc (int \Z))))
+(\K \L \M \N \O \P \Q \R \S \T \U \V \W \X \Y \Z)
+
+
+ range 関数で作成できますが，数値の範囲のみ作成できます．
+
+-- Haskell
+ghci&amp;gt; [2,4..20]
+[2,4,6,8,10,12,14,16,18,20]
+ghci&amp;gt; [3,6..20]
+[3,6,9,12,15,18] 
+
+
+ .. でステップを設定することもできます．
+
+;;; Clojure
+user&amp;gt; (range 2 21 2)
+(2 4 6 8 10 12 14 16 18 20)
+user&amp;gt; (range 3 21 3)
+(3 6 9 12 15 18)
+
+
+ range 関数でステップを設定することもできます．
+
+-- Haskell
+ghci&amp;gt; [0.1, 0.3 .. 1]
+[0.1,0.3,0.5,0.7,0.8999999999999999,1.0999999999999999]
+
+
+ Haskell
+で範囲を作成するときに浮動小数点数を使うと厳密ではなくなります．
+範囲をつくるときには整数だけにしたほうがよいでしょう．
+
+;;; Clojure
+user&amp;gt; (range 0.1 1.1 0.1)
+(0.1 0.2 0.30000000000000004 0.4 0.5 0.6 0.7 0.7999999999999999 0.8999999999999999 0.9999999999999999 1.0999999999999999)
+user&amp;gt; (range 0.1M 1.1M 0.1M)
+(0.1M 0.2M 0.3M 0.4M 0.5M 0.6M 0.7M 0.8M 0.9M 1.0M)
+
+
+ Clojure で double を範囲に使うと厳密ではなくなります．
+整数ではない範囲をつくる場合には BigDecimal を使いましょう．
+
+無限リスト
+
+-- Haskell
+ghci&amp;gt; take 24 [13,26..]
+[13,26,39,52,65,78,91,104,117,130,143,156,169,182,195,208,221,234,247,260,273,286,299,312]
+
+
+ Haskell で上限を指定しない範囲は無限リストになります．
+
+;;; Clojure
+user&amp;gt; (take 24 (iterate #(+ % 13) 13))
+(13 26 39 52 65 78 91 104 117 130 143 156 169 182 195 208 221 234 247 260 273 286 299 312)
+
+
+ Clojure で無限シーケンスを作る基本の関数は iterate です．
+
+繰り返しのリスト
+
+-- Haskell
+ghci&amp;gt; take 10 (cycle [1,2,3])
+[1,2,3,1,2,3,1,2,3,1]
+ghci&amp;gt; take 12 (cycle &quot;LOL &quot;)
+&quot;LOL LOL LOL &quot; 
+ghci&amp;gt; take 10 (repeat 5)
+[5,5,5,5,5,5,5,5,5,5]
+ghci&amp;gt; replicate 3 10
+[10,10,10]
+
+
+ cycle
+ repeat
+ replicate
+ を使います．
+
+;;; Clojure
+user&amp;gt; (take 10 (cycle [1 2 3]))
+(1 2 3 1 2 3 1 2 3 1)
+user&amp;gt; (take 12 (cycle &quot;LOL &quot;))
+(\L \O \L \space \L \O \L \space \L \O \L \space)
+user&amp;gt; (take 10 (repeat 5))
+(5 5 5 5 5 5 5 5 5 5)
+user&amp;gt; (repeat 3 10)
+(10 10 10)
+
+
+ Clojure には Haskell の replicate がありません．
+repeat に 2 引数を渡すと Haskell の replicate 相当になります．
+引数の順序も同じです．cycle は Haskell と同じです．
+
+リスト内包表記
+
+-- Haskell
+ghci&amp;gt; [x*2 | x &amp;lt;- [1..10]]
+[2,4,6,8,10,12,14,16,18,20]
+ghci&amp;gt; [x*2 | x &amp;lt;- [1..10], x*2 &amp;gt;= 12]
+[12,14,16,18,20]
+ghci&amp;gt; [ x | x &amp;lt;- [50..100], x `mod` 7 == 3]
+[52,59,66,73,80,87,94] 
+
+boomBangs xs = [ if x &amp;lt; 10 then &quot;BOOM!&quot; else &quot;BANG!&quot; | x &amp;lt;- xs, odd x] 
+
+ghci&amp;gt; boomBangs [7..13]
+[&quot;BOOM!&quot;,&quot;BOOM!&quot;,&quot;BANG!&quot;,&quot;BANG!&quot;] 
+ghci&amp;gt; [ x | x &amp;lt;- [10..20], x /= 13, x /= 15, x /= 19]
+[10,11,12,14,16,17,18,20]
+ghci&amp;gt; [ x*y | x &amp;lt;- [2,5,10], y &amp;lt;- [8,10,11]]
+[16,20,22,40,50,55,80,100,110] 
+ghci&amp;gt; [ x*y | x &amp;lt;- [2,5,10], y &amp;lt;- [8,10,11], x*y &amp;gt; 50]
+[55,80,100,110] 
+ghci&amp;gt; let nouns = [&quot;hobo&quot;,&quot;frog&quot;,&quot;pope&quot;]
+ghci&amp;gt; let adjectives = [&quot;lazy&quot;,&quot;grouchy&quot;,&quot;scheming&quot;]
+ghci&amp;gt; [adjective ++ &quot; &quot; ++ noun | adjective &amp;lt;- adjectives, noun &amp;lt;- nouns]
+[&quot;lazy hobo&quot;,&quot;lazy frog&quot;,&quot;lazy pope&quot;,&quot;grouchy hobo&quot;,&quot;grouchy frog&quot;,
+&quot;grouchy pope&quot;,&quot;scheming hobo&quot;,&quot;scheming frog&quot;,&quot;scheming pope&quot;] 
+
+
+ 条件を , のあとに続けて書きます．条件を複数書くと AND 扱いになります．
+
+;;; Clojure
+user&amp;gt; (for [x (range 1 11)] (* x 2))
+(2 4 6 8 10 12 14 16 18 20)
+user&amp;gt; (for [x (range 1 11) :let [y (* x 2)] :when (&amp;gt;= y 12)] y)
+(12 14 16 18 20)
+user&amp;gt; (for [x (range 50 101) :when (= 3 (mod x 7))] x)
+(52 59 66 73 80 87 94)
+user&amp;gt; (defn boom-bangs [xs]
+        (for [x xs :when (odd? x)]
+             (if (&amp;lt; x 10)
+                 &quot;BOOM!&quot;
+                 &quot;BANG!&quot;)))
+#&#039;user/boom-bangs
+user&amp;gt; (boom-bangs (range 7 14))
+(&quot;BOOM!&quot; &quot;BOOM!&quot; &quot;BANG!&quot; &quot;BANG!&quot;)
+user&amp;gt; (for [x (range 10 21) :when (and (not= x 13) (not= x 15) (not= x 19))] x)
+(10 11 12 14 16 17 18 20)
+user&amp;gt; (for [x [2 5 10] y [8 10 11]] (* x y))
+(16 20 22 40 50 55 80 100 110)
+user&amp;gt; (for [x [2 5 10] y [8 10 11] :when (&amp;gt; (* x y) 50)] (* x y))
+(55 80 100 110)
+user&amp;gt; (def nouns [&quot;hobo&quot; &quot;frog&quot; &quot;pope&quot;])
+#&#039;user/nouns
+user&amp;gt; (def adjectives [&quot;lazy&quot; &quot;grouchy&quot; &quot;scheming&quot;])
+#&#039;user/adjectives
+user&amp;gt; (for [n nouns a adjectives] (str a &quot; &quot; n))
+(&quot;lazy hobo&quot; &quot;grouchy hobo&quot; &quot;scheming hobo&quot; &quot;lazy frog&quot; &quot;grouchy frog&quot; &quot;scheming frog&quot; &quot;lazy pope&quot; &quot;grouchy pope&quot; &quot;scheming pope&quot;)
+
+
+ Clojure でリスト内包表記を書くときには for マクロを使います．
++ 条件は :when キーワードに続けて書きます．
++&amp;#160;:when のほかに :while も使えます．
+  - :let もあります．
+
+ length vs count.
+
+-- Haskell
+length&#039; xs = sum [1 | _ &amp;lt;- xs] 
+
+;;; Clojure
+user&amp;gt; (defn count&#039; [s] (reduce + (for [_ s] 1)))
+#&#039;user/count&#039;
+user&amp;gt; (count&#039; [1 2 3])
+3
+
+
+大文字以外を削除する．
+
+-- Haskell
+removeNonUppercase st = [ c | c &amp;lt;- st, c `elem` [&#039;A&#039;..&#039;Z&#039;]] 
+
+ghci&amp;gt; removeNonUppercase &quot;Hahaha! Ahahaha!&quot;
+&quot;HA&quot;
+ghci&amp;gt; removeNonUppercase &quot;IdontLIKEFROGS&quot;
+&quot;ILIKEFROGS&quot; 
+
+;;; Clojure
+user&amp;gt; (defn remove-non-uppercase [s] (for [c s :when (Character/isUpperCase c)] c))
+#&#039;user/remove-non-uppercase
+user&amp;gt; (remove-non-uppercase &quot;Hahaha! Ahahaha!&quot;)
+(\H \A)
+user&amp;gt; (remove-non-uppercase &quot;IdontLIKEFROGS&quot;)
+(\I \L \I \K \E \F \R \O \G \S)
+
+
+ネストしたリスト内包表記
+
+-- Haskell
+ghci&amp;gt; let xxs = [[1,3,5,2,3,1,2,4,5],[1,2,3,4,5,6,7,8,9],[1,2,4,2,1,6,3,1,3,2,3,6]]
+ghci&amp;gt; [ [ x | x &amp;lt;- xs, even x ] | xs &amp;lt;- xxs]
+[[2,2,4],[2,4,6,8],[2,4,2,6,2,6]]
+
+;;; Clojure
+user&amp;gt; (def xxs [[1,3,5,2,3,1,2,4,5],[1,2,3,4,5,6,7,8,9],[1,2,4,2,1,6,3,1,3,2,3,6]])
+#&#039;user/xxs
+user&amp;gt; (for [xs xxs] (for [x xs :when (even? x)] x))
+((2 2 4) (2 4 6 8) (2 4 2 6 2 6))
+
+
+ Clojure でも for をネストできます．
+
+タプル
+
+-- Haskell
+ghci&amp;gt; fst (8,11)
+8
+ghci&amp;gt; fst (&quot;Wow&quot;, False)
+&quot;Wow&quot;
+ghci&amp;gt; snd (8,11)
+11
+ghci&amp;gt; snd (&quot;Wow&quot;, False)
+False
+
+;;; Clojure
+user&amp;gt; (first [8 11])
+8
+user&amp;gt; (first [&quot;Wow&quot; false])
+&quot;Wow&quot;
+user&amp;gt; (second [8 11])
+11
+user&amp;gt; (second [&quot;Wow&quot; false])
+false
+
+
+ Clojure にはタプルが無いので vector で代用します．
+
+ （vector が長くなりそうなら map を使います．）
+ （仕様が固まったら map を defrecord に置き換えることがあります．）
+
+zip
+
+-- Haskell
+ghci&amp;gt; zip [1,2,3,4,5] [5,5,5,5,5]
+[(1,5),(2,5),(3,5),(4,5),(5,5)]
+ghci&amp;gt; zip [1 .. 5] [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;, &quot;five&quot;]
+[(1,&quot;one&quot;),(2,&quot;two&quot;),(3,&quot;three&quot;),(4,&quot;four&quot;),(5,&quot;five&quot;)]
+ghci&amp;gt; zip [5,3,2,6,2,7,2,5,4,6,6] [&quot;im&quot;,&quot;a&quot;,&quot;turtle&quot;]
+[(5,&quot;im&quot;),(3,&quot;a&quot;),(2,&quot;turtle&quot;)]
+
+;;; Clojure
+user&amp;gt; (def zip (partial map vector))
+#&#039;user/zip
+user&amp;gt; (zip [1 2 3 4 5] [5 5 5 5 5])
+([1 5] [2 5] [3 5] [4 5] [5 5])
+user&amp;gt; (zip (range 1 6) [&quot;one&quot; &quot;two&quot; &quot;tree&quot; &quot;four&quot; &quot;five&quot;])
+([1 &quot;one&quot;] [2 &quot;two&quot;] [3 &quot;tree&quot;] [4 &quot;four&quot;] [5 &quot;five&quot;])
+user&amp;gt; (zip [5 3 2 6 2 7 2 5 4 6 6] [&quot;im&quot; &quot;a&quot; &quot;turtle&quot;])
+([5 &quot;im&quot;] [3 &quot;a&quot;] [2 &quot;turtle&quot;])
+
+
+ Clojure に zip 関数はありませんが，(partial map vector) で代用できます．
+(partial map vector) は 3 つ以上の Seqable を引数に取ることができます．
+
+ghci&amp;gt; zip [1,2,3] [4,5,6] [7,8,9]
+
+&amp;lt;interactive&amp;gt;:1:1:
+    The function `zip&#039; is applied to three arguments,
+    but its type `[a0] -&amp;gt; [b0] -&amp;gt; [(a0, b0)]&#039; has only two
+    In the expression: zip [1, 2, 3] [4, 5, 6] [7, 8, 9]
+    In an equation for `it&#039;: it = zip [1, 2, 3] [4, 5, 6] [7, 8, 9]
+
+
+ Haskell の zip はペアを作ることしかできないようです．一方 Clojure 版は，
+
+user&amp;gt; (zip [1 2 3] [4 5 6] [7 8 9])
+([1 4 7] [2 5 8] [3 6 9])
+
+
+無限リストの Zip
+
+-- Haskell
+ghci&amp;gt; zip [1..] [&quot;apple&quot;, &quot;orange&quot;, &quot;cherry&quot;, &quot;mango&quot;]
+[(1,&quot;apple&quot;),(2,&quot;orange&quot;),(3,&quot;cherry&quot;),(4,&quot;mango&quot;)]
+
+
+ Haskell の無限リストは lazy なので zip できます．
+
+;;; Clojure
+user&amp;gt; (zip (iterate inc 1) [&quot;apple&quot; &quot;orange&quot; &quot;cherry&quot; &quot;mango&quot;])
+([1 &quot;apple&quot;] [2 &quot;orange&quot;] [3 &quot;cherry&quot;] [4 &quot;mango&quot;])
+
+
+ Clojure でも lazy な無限シーケンスをつくれば zip できます．
+
+直角三角形
+
+ 「各辺の長さが 10 以下の整数で，三辺の長さの和が 24 であるような二等辺三角形を求めなさい」という問題に対して，
+
+-- Haskell
+ghci&amp;gt; let rightTriangles&#039; = [ (a,b,c) | c &amp;lt;- [1..10], b &amp;lt;- [1..c], a &amp;lt;- [1..b], a^2 + b^2 == c^2, a+b+c == 24]
+ghci&amp;gt; rightTriangles&#039;
+[(6,8,10)]
+
+;;; Clojure
+user&amp;gt; (for [c (range 1 11) b (range 1 (inc c)) a (range 1 (inc b)) :when (and (= (* c c) (+ (* a a) (* b b))) (= 24 (+ a b c)))] [a b c])
+([6 8 10])
+
+
+ 「関数プログラミンの共通パターン」というだけあって，Clojure でも Haskell と同じように書けます．" /><meta name="twitter:title" content="Clojure すごい Haskell たのしく学ぼう! (1) はじめの一歩" /><meta name="twitter:url" content="http://tnoda-clojure.tumblr.com/post/26507931134/clojure-learn-you-a-haskell-1" /><meta name="twitter:site" content="tumblr" /><meta name="twitter:creator" content="tnoda_" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=tnoda-clojure&amp;postID=26507931134&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=tnoda-clojure&amp;postID=26507931134&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=tnoda-clojure&amp;postID=26507931134&amp;referrer=twitter-cards" />
+
+</head>
+<body class="content-700 lg-icons singular ">
+  <div id="header" class="pinned">
+    <div class="inner">
+      
+
+      
+        <h1 class="blog-title"><a href="/">tnoda-clojure</a></h1>
+      
+
+      
+
+      
+        <div id="search">
+          <form id="search-form" method="get" action="/search">
+            <input type="text" name="q" value="Search" />
+          </form>
+        </div>
+      
+      <ul class="menu">
+        
+        <li><a class="archives" href="/archive" title="Archive"><span class="icon"></span><span class="label">アーカイブ</span></a></li>
+        <li><a class="rss" href="http://tnoda-clojure.tumblr.com/rss" title="RSSフィード"><span class="icon"></span><span class="label">RSS</span></a></li>
+        
+        
+      </ul>
+    </div><!-- .inner -->
+    <div class="shadow"><span></span></div>
+  </div><!-- /#header -->
+
+  <!-- PAGE -->
+  <div id="page" class="right-sidebar clearfix">
+
+    
+
+    
+      
+    
+
+    <div id="content">
+
+      <!-- BEGIN POSTS -->
+      
+        <article id="post-26507931134" class="post
+          type-text 
+          
+          
+          
+          
+          
+          
+          
+          
+          tag_clojurelearnyouahaskell ">
+
+          
+            <div class="post-panel">
+              <div class="copy">
+                <h2 class="post-title">Clojure すごい Haskell たのしく学ぼう! (1) はじめの一歩</h2>
+                <!-- Clojure すごい Haskell たのしく学ぼう! (1) はじめの一歩 -->
+
+<p>関数プログラミングについては良い教科書がたくさん出ていますが，
+残念ながら OCaml か Haskell で書かれたものが目につくばかりで，
+Clojure でサンプルコードが示されたものを私は見たことがありません．</p>
+
+<p>関数プログラミングを勉強しようと思うと，
+これらどちらかのプログラミング言語を修得しないといけなくなるわけですが，
+ちょうど，
+<a href="http://ssl.ohmsha.co.jp/cgi-bin/menu.cgi?ISBN=978-4-274-06885-0" target="_blank">すごい Haskell たのしく学ぼう</a>
+が発売されたので，Haskell を勉強してみることにします．
+ただし，本を買うお金が無いのでオリジナル Web サイト，
+<a href="http://learnyouahaskell.com" target="_blank">Learn You a Haskell for Great Good!</a>
+を読みすすめることにします．
+訳本は見たことがないのですが，きっと，どちらを読んでも同じでしょう．</p>
+
+<p>このシリーズでは，Miran Lipovača 著
+<a href="http://learnyouahaskell.com" target="_blank">Learn You a Haskell for Great Good!</a>
+の Haskell サンプルコードを Clojure で書き直してきます．
+原著の Haskell サンプルコードは <code>by-nc-sa</code> こと，
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License</a> でライセンスされており，
+この記事のコードも <code>by-nc-sa</code> に従います．</p>
+
+<p>章番号は日本語訳，「すごい Haskell 楽しく学ぼう」のそれを参考にしています．
+今回は第 1 章はじめの一歩です．</p>
+
+<h1>第 1 章: はじめの一歩</h1>
+
+<p>まずは，基本的なところから．
+Haskell のサンプル→ Clojure で書き直したものという流れでいきます．</p>
+
+<hr><pre><code>-- Haskell
+ghci&gt; 2 + 15
+17
+ghci&gt; 49 * 100
+4900
+ghci&gt; 1892 - 1472
+420
+ghci&gt; 5 / 2
+2.5
+ghci&gt;
+
+;;; Clojure
+user=&gt; (+ 2 15)
+17
+user=&gt; (* 49 100)
+4900
+user=&gt; (- 1892 1472)
+420
+user=&gt; (/ 5 2)
+5/2
+user=&gt; (class (/ 5 2))
+clojure.lang.Ratio
+user=&gt; 
+</code></pre>
+
+<p>整数同士の除算結果が <code>clojure.lang.Ratio</code> になる点以外は同じですね．</p>
+
+<hr><pre><code>-- Haskell
+ghci&gt; (50 * 100) - 4999
+1
+ghci&gt; 50 * 100 - 4999
+1
+ghci&gt; 50 * (100 - 4999)
+-244950
+
+;;; Clojure
+user=&gt; (- 4999 (* 50 100))
+-1
+user=&gt; (* 50 (- 100 4999))
+-244950
+</code></pre>
+
+<p>Clojure 括弧必須なので計算順序に迷う必要はありません．</p>
+
+<hr><pre><code>-- Haskell
+ghci&gt; 5 * -3
+
+&lt;interactive&gt;:1:1:
+    Precedence parsing error
+        cannot mix `*' [infixl 7] and prefix `-' [infixl 6] in the same infix expression
+ghci&gt; 5 * (-3)
+-15
+</code></pre>
+
+<p>Haskell で負数を扱うときには括弧で囲っておくほうがいいらしいです．</p>
+
+<pre><code>;;; Clojure
+user&gt; (* 5 -3)
+-15
+user&gt; (* 5 (-3))
+; Evaluation aborted.
+</code></pre>
+
+<p>一方 Clojure ではその必要がありません，というかしてはいけません．
+うっかり括弧で囲ってしまうと <code>-3</code> を関数だと思ってしまいエラーになります．</p>
+
+<hr><pre><code>-- Haskell
+ghci&gt; True &amp;&amp; False
+False
+ghci&gt; True &amp;&amp; True
+True
+ghci&gt; False || True
+True 
+ghci&gt; not False
+True
+ghci&gt; not (True &amp;&amp; True)
+False
+
+;;; Clojure
+user&gt; (and true false)
+false
+user&gt; (and true true)
+true
+user&gt; (or false true)
+true
+user&gt; (not false)
+true
+user&gt; (not (and true true))
+false
+</code></pre>
+
+<p>当然のことながら真偽値の扱いは同じです．</p>
+
+<hr><pre><code>-- Haskell
+ghci&gt; 5 == 5
+True
+ghci&gt; 1 == 0
+False
+ghci&gt; 5 /= 5
+False
+ghci&gt; 5 /= 4
+True
+ghci&gt; "hello" == "hello"
+True 
+
+;;; Clojure
+user&gt; (= 5 5)
+true
+user&gt; (= 1 0)
+false
+user&gt; (not= 5 5)
+false
+user&gt; (not= 5 4)
+true
+user&gt; (= "hello" "hello")
+true
+</code></pre>
+
+<p>Haskell の <code>/=</code> は <code>not=</code> のことだと思いこんでいます．</p>
+
+<hr><pre><code>-- Haskell
+ghci&gt; 5 + "llama"
+
+&lt;interactive&gt;:1:1:
+    No instance for (Num [Char])
+      arising from the literal `5'
+    Possible fix: add an instance declaration for (Num [Char])
+    In the first argument of `(+)', namely `5'
+    In the expression: 5 + "llama"
+    In an equation for `it': it = 5 + "llama"
+ghci&gt; True == 5
+
+&lt;interactive&gt;:1:9:
+    No instance for (Num Bool)
+      arising from the literal `5'
+    Possible fix: add an instance declaration for (Num Bool)
+    In the second argument of `(==)', namely `5'
+    In the expression: True == 5
+    In an equation for `it': it = True == 5
+ghci&gt; 5 + 4.0
+9.0
+
+;;; Clojure
+user&gt; (+ 5 "llma")
+; Evaluation aborted.
+java.lang.String cannot be cast to java.lang.Number
+  [Thrown class java.lang.ClassCastException]
+user&gt; (= true 5)
+false
+user&gt; (+ 5 4.0)
+9.0
+</code></pre>
+
+<p>Clojure の場合は強制型変換に失敗して Java の例外が投げられます．
+型が一致している必要はありません．</p>
+
+<hr><pre><code>-- Haskell
+ghci&gt; succ 8
+9 
+ghci&gt; min 9 10
+9
+ghci&gt; min 3.4 3.2
+3.2
+ghci&gt; max 100 101
+101 
+
+;;; Clojure
+user&gt; (inc 8)
+9
+user&gt; (min 9 10)
+9
+user&gt; (min 3.4 3.2)
+3.2
+user&gt; (max 100 101)
+101
+</code></pre>
+
+<p>ここまでは，同じなのですが，．．．</p>
+
+<hr><pre><code>-- Haskell
+ghci&gt; succ 9 + max 5 4 + 1
+16
+ghci&gt; (succ 9) + (max 5 4) + 1
+16
+
+;;; Clojure
+user&gt; (+ (inc 9) (max 5 4) 1)
+16
+</code></pre>
+
+<p>Clojure は関数をすべて前置します．</p>
+
+<hr><p>外部ファイルに定義した関数をロードします．</p>
+
+<pre><code>--- Haskell
+ghci&gt; :l baby
+[1 of 1] Compiling Main             ( baby.hs, interpreted )
+Ok, modules loaded: Main.
+ghci&gt; doubleMe 9
+18
+ghci&gt; doubleMe 8.3
+16.6 
+</code></pre>
+
+<p><code>:l</code> で，<code>baby.hs</code> に定義された <code>doubleMe x = x + x</code> をロードして実行しています．</p>
+
+<pre><code>;;; Clojure
+user&gt; (load "baby")
+nil
+user&gt; (double-me 9)
+18
+user&gt; (double-me 8.3)
+16.6
+</code></pre>
+
+<p>Clojure の場合は <code>load</code> 関数をつかいます．</p>
+
+<hr><pre><code>-- Haskell
+doubleUs x y = x*2 + y*2 
+
+ghci&gt; :l baby
+[1 of 1] Compiling Main             ( baby.hs, interpreted )
+Ok, modules loaded: Main.
+ghci&gt; doubleUs 4 9
+26
+ghci&gt; doubleUs 2.3 34.2
+73.0
+ghci&gt; doubleUs 28 88 + doubleMe 123
+478
+</code></pre>
+
+<p>Haskell の場合関数の定義順は問わいないようです．つまり，上の例では，
+<code>doubleUs</code> を最初に定義してから <code>doubleMe</code> を定義してもいいということです．</p>
+
+<pre><code>;;; Clojure
+user&gt; (defn double-us [x y] (+ (* x 2) (* y 2)))
+#'user/double-us
+user&gt; (double-us 4 9)
+26
+user&gt; (double-us 2.3 34.2)
+73.0
+user&gt; (+ (double-us 28 88) (double-me 123))
+478
+</code></pre>
+
+<p>一方，Clojure の場合は順序が重要です．<code>double-me</code> を <code>defn</code> するまえに，
+<code>double-us</code> を <code>defn</code> しようとすると，</p>
+
+<pre><code>Unable to resolve symbol: double-me in this context
+  [Thrown class java.lang.RuntimeException]
+</code></pre>
+
+<p>と怒られてしまいます．</p>
+
+<hr><h2><code>if</code></h2>
+
+<pre><code>-- Haskell
+doubleSmallNumber x = if x &gt; 100
+                        then x
+                        else x*2 
+</code></pre>
+
+<ul><li>Haskell の <code>if</code> は <code>else</code> 部が必須．</li>
+<li>Haskell の <code>if</code> は文 → 値を返す．</li>
+</ul><p>これに対して Clojure は，</p>
+
+<pre><code>(defn double-small-number [x] (if (&gt; x 100) x (* x 2)))
+</code></pre>
+
+<hr><h2><code>'</code></h2>
+
+<pre><code>-- Haskell
+doubleSmallNumber' x = (if x &gt; 100 then x else x*2) + 1
+</code></pre>
+
+<p>Haskell では関数名に <code>'</code> を使うことができます．<code>'</code> は，</p>
+
+<ul><li>正格評価版（&lt;=&gt; 遅延評価）の関数</li>
+<li>元の関数や変数の亜種</li>
+</ul><p>に使われるようです．</p>
+
+<pre><code>;;; Clojure
+user&gt; (inc 1)
+2
+user&gt; (inc' 1e30M)
+1000000000000000000000000000001M
+</code></pre>
+
+<p>Clojure でも <code>'</code> がついている関数は元の関数の亜種であることが多いです．</p>
+
+<hr><h2>リスト</h2>
+
+<pre><code>-- Haskell
+ghci&gt; [1,2,'a',3,'b','c',4]
+
+&lt;interactive&gt;:1:20:
+    No instance for (Num Char)
+      arising from the literal `4'
+    Possible fix: add an instance declaration for (Num Char)
+    In the expression: 4
+    In the expression: [1, 2, 'a', 3, ....]
+    In an equation for `it': it = [1, 2, 'a', ....]
+ghci&gt; ['h','e','l','l','o']
+"hello"
+</code></pre>
+
+<ul><li>Haskell のリストは同質なデータ構造．</li>
+<li>要素は全て同じ型である必要がある．</li>
+<li>文字列は文字のリストの構文糖衣．</li>
+</ul><p>Clojure の場合は，</p>
+
+<pre><code>user&gt; [1 2 \a 3 \b \c 4]
+[1 2 \a 3 \b \c 4]
+user&gt; [\h \e \l \l \o]
+[\h \e \l \l \o]
+user&gt; (seq "hello")
+(\h \e \l \l \o)
+</code></pre>
+
+<ul><li>Clojure には <strong>シーケンス</strong> と <strong>コレクション</strong> による抽象があります．</li>
+<li>シーケンスとコレクションの要素は，全て同じ型である必要はありません．</li>
+<li>文字列は <code>Seqable</code> なのでシーケンスのように扱うことができます．</li>
+</ul><hr><h2>リストの連結</h2>
+
+<pre><code>-- Haskell
+ghci&gt; [1,2,3,4] ++ [9,10,11,12]
+[1,2,3,4,9,10,11,12]
+ghci&gt; "hello" ++ " " ++ "world"
+"hello world"
+ghci&gt; ['w','o'] ++ ['o','t']
+"woot"
+</code></pre>
+
+<p>リストは <code>++</code> 演算子で連結できます．</p>
+
+<pre><code>;;; Clojure
+user&gt; (into [1 2 3 4] [9 10 11 12])
+[1 2 3 4 9 10 11 12]
+user&gt; (concat (seq [1 2 3 4]) (seq [9 10 11 12]))
+(1 2 3 4 9 10 11 12)
+user&gt; (str "wo" "ot")
+"woot"
+</code></pre>
+
+<ul><li>コレクションは <code>into</code> で連結できます．</li>
+<li>シーケンスは <code>concat</code> で連結できます．</li>
+<li>文字列は <code>str</code> で連結できます．</li>
+</ul><hr><h2>リストの先頭に追加</h2>
+
+<pre><code>-- Haskell
+ghci&gt; 'A':" SMALL CAT"
+"A SMALL CAT"
+ghci&gt; 5:[1,2,3,4,5]
+[5,1,2,3,4,5]
+</code></pre>
+
+<p>リストの先頭に追加するときには <code>:</code> 演算子を使います．</p>
+
+<pre><code>;;; Clojure
+user&gt; (apply str (cons \a " small cat"))
+"a small cat"
+user&gt; (cons 5 '(1 2 3 4 5))
+(5 1 2 3 4 5)
+</code></pre>
+
+<ul><li><strong>シーケンス</strong> の先頭に追加するときには <code>cons</code>.</li>
+<li><strong>コレクション</strong> は <code>Seqable</code>.</li>
+</ul><hr><h2>空リスト</h2>
+
+<ul><li>Haskell:
+
+<ul><li><code>[1,2,3]</code> は <code>1:2:3:[]</code> の構文糖衣．</li>
+<li><code>[]</code> は空リスト．</li>
+</ul></li>
+<li>Clojure:
+
+<ul><li>空リストは <code>()</code>．<code>nil</code> は空リストではない．</li>
+<li>ただし，<code>(cons 2 '())</code> は <code>'(2)</code>, <code>(cons 2 nil)</code> も <code>'(2)</code>.</li>
+</ul></li>
+</ul><hr><h2>インデックスによるリストへのアクセス</h2>
+
+<pre><code>-- Haskell
+ghci&gt; "Steve Buscemi" !! 6
+'B'
+ghci&gt; [9.4,33.2,96.2,11.2,23.25] !! 1
+33.2
+ghci&gt; [1,2,3,4] !! 6
+*** Exception: Prelude.(!!): index too large
+</code></pre>
+
+<ul><li>Haskell:
+
+<ul><li><code>!!</code> 演算子をつかいます．</li>
+<li><code>0</code> から始まります．</li>
+<li>リスト長よりも長いインデックスはエラーになります．</li>
+</ul></li>
+</ul><p>これに対して Clojure は，</p>
+
+<pre><code>;;; Clojure
+user&gt; (get "Steve Buscemi" 6)
+\B
+user&gt; ([9.4,33.2,96.2,11.2,23.25] 1)
+33.2
+user&gt; ([1 2 3 4] 6)
+; Evaluation aborted.
+No message.
+  [Thrown class java.lang.IndexOutOfBoundsException]
+user&gt; (get [1 2 3 4] 6 0)
+0
+</code></pre>
+
+<ul><li>シーケンスにはインデックスでアクセスできません．</li>
+<li>コレクションにはキーでアクセスできます．</li>
+<li><code>vector</code> のキーは <code>0</code> から始まるインデックスになっています．</li>
+<li>全てのコレクションはキーを引数にとる関数です．</li>
+<li><code>get</code> を使えばキーに対応する要素が見つからなかったときのデフォルト値を設定できます．</li>
+</ul><hr><h2>リストの比較</h2>
+
+<pre><code>-- Haskell
+ghci&gt; [3,2,1] &gt; [2,1,0]
+True
+ghci&gt; [3,2,1] &gt; [2,10,100]
+True
+ghci&gt; [3,4,2] &gt; [3,4]
+True
+ghci&gt; [3,4,2] &gt; [2,4]
+True
+ghci&gt; [3,4,2] == [3,4,2]
+True
+</code></pre>
+
+<p>リストの中身が比較できるものなら <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code> でリスト同士を比較できます．</p>
+
+<pre><code>;;; Clojure
+user&gt; (compare [3 2 1] [2 1 0])
+1
+user&gt; (compare [3 2 1] [2 10 100])
+1
+user&gt; (compare [3 4 2] [3 4])
+1
+user&gt; (compare [3 4 2] [2 4])
+1
+user&gt; (compare [3 4 2] [3 4 2])
+0
+</code></pre>
+
+<ul><li><code>&lt;</code> などは数値に対してのみ使えます．</li>
+<li>リスト同士の比較は <code>compare</code> で行います．</li>
+</ul><hr><h2>そのほかのリストに対する基本操作</h2>
+
+<pre><code>-- Haskell
+ghci&gt; head [5,4,3,2,1]
+5 
+ghci&gt; tail [5,4,3,2,1]
+[4,3,2,1] 
+ghci&gt; last [5,4,3,2,1]
+1 
+ghci&gt; init [5,4,3,2,1]
+[5,4,3,2] 
+
+;;; Clojure
+user&gt; (first [5 4 3 2 1])
+5
+user&gt; (rest [5 4 3 2 1])
+(4 3 2 1)
+user&gt; (next [5 4 3 2 1])
+(4 3 2 1)
+user&gt; (last [5 4 3 2 1])
+1
+user&gt; (butlast [5 4 3 2 1])
+(5 4 3 2)
+</code></pre>
+
+<p>シーケンスに対しては Clojure も Haskell と同様の操作が可能です．</p>
+
+<hr><h2>空リストの扱い</h2>
+
+<pre><code>-- Haskell
+ghci&gt; head []
+*** Exception: Prelude.head: empty list
+
+;;; Clojure
+user&gt; (first '())
+nil
+user&gt; (first nil)
+nil
+</code></pre>
+
+<hr><h2>リストの長さ</h2>
+
+<pre><code>-- Haskell
+ghci&gt; length [5,4,3,2,1]
+5
+
+;;; Clojure
+user&gt; (count [5 4 3 2 1])
+5
+</code></pre>
+
+<hr><h2><code>null</code> チェック</h2>
+
+<pre><code>-- Haskell
+ghci&gt; null [1,2,3]
+False
+ghci&gt; null []
+True
+
+;;; Clojure
+user&gt; (nil? [1 2 3])
+false
+user&gt; (nil? '())
+false
+user&gt; (nil? nil)
+true
+</code></pre>
+
+<p>Clojure の空リストは <code>nil</code> ではありません．</p>
+
+<hr><h2><code>reverse</code></h2>
+
+<pre><code>-- Haskell
+ghci&gt; reverse [5,4,3,2,1]
+[1,2,3,4,5]
+
+;;; Clojure
+user&gt; (reverse [5 4 3 2 1])
+(1 2 3 4 5)
+</code></pre>
+
+<p>Clojure ではコレクションを <code>reverse</code> するとシーケンスが返ってきます．</p>
+
+<hr><h2><code>take</code></h2>
+
+<pre><code>-- Haskell
+ghci&gt; take 3 [5,4,3,2,1]
+[5,4,3]
+ghci&gt; take 1 [3,9,3]
+[3]
+ghci&gt; take 5 [1,2]
+[1,2]
+ghci&gt; take 0 [6,6,6]
+[]
+
+;;; Clojure
+user&gt; (take 3 [5 4 3 2 1])
+(5 4 3)
+user&gt; (take 1 [3 9 3])
+(3)
+user&gt; (take 5 [1 2])
+(1 2)
+user&gt; (take 0 [6 6 6])
+()
+</code></pre>
+
+<p>Clojure は Haskell と同じです．</p>
+
+<hr><h2><code>drop</code></h2>
+
+<pre><code>-- Haskell
+ghci&gt; drop 3 [8,4,2,1,5,6]
+[1,5,6]
+ghci&gt; drop 0 [1,2,3,4]
+[1,2,3,4]
+ghci&gt; drop 100 [1,2,3,4]
+[] 
+
+;;; Clojure
+user&gt; (drop 3 [8 4 2 1 5 6])
+(1 5 6)
+user&gt; (drop 0 [1 2 3 4])
+(1 2 3 4)
+user&gt; (drop 100 [1 2 3 4])
+()
+</code></pre>
+
+<p>これまた Haskell と同じです．</p>
+
+<hr><h2><code>minimum</code>, <code>maximum</code></h2>
+
+<pre><code>-- Haskell
+ghci&gt; minimum [8,4,2,1,5,6]
+1
+ghci&gt; maximum [1,9,2,3,4]
+9 
+
+;;; Clojure
+user&gt; (apply min [8 4 2 1 5 6])
+1
+user&gt; (apply max [1 9 2 3 4])
+9
+</code></pre>
+
+<p>Clojure では <code>min</code>/<code>max</code> をコレクションに適用します．</p>
+
+<hr><h2><code>sum</code>, <code>product</code></h2>
+
+<pre><code>-- Haskell
+ghci&gt; sum [5,2,1,6,3,2,5,7]
+31
+ghci&gt; product [6,2,1,2]
+24
+ghci&gt; product [1,2,5,6,7,9,2,0]
+0 
+
+;;; Clojure
+user&gt; (apply + [5 2 1 6 3 2 5 7])
+31
+user&gt; (apply * [6 2 1 2])
+24
+user&gt; (apply * [1 2 4 6 7 9 2 0])
+0
+</code></pre>
+
+<p>Clojure では <code>+</code>/<code>*</code> をコレクションに適用します．</p>
+
+<hr><h2><code>elem</code></h2>
+
+<pre><code>-- Haskell
+ghci&gt; 4 `elem` [3,4,5,6]
+True
+ghci&gt; 10 `elem` [3,4,5,6]
+False
+
+;;; Clojure
+user&gt; (some #{4} [3 4 5 6])
+4
+user&gt; (some #{10} [3 4 5 6])
+nil
+</code></pre>
+
+<p>Clojure の <code>contains?</code> はキーの存在を調べるもので，
+値に対しては使えません．そこで，<code>some</code> と set
+との組合せが常套句として使われます．</p>
+
+<hr><h2>範囲</h2>
+
+<pre><code>-- Haskell
+ghci&gt; [1..20]
+[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+ghci&gt; ['a'..'z']
+"abcdefghijklmnopqrstuvwxyz"
+ghci&gt; ['K'..'Z']
+"KLMNOPQRSTUVWXYZ" 
+</code></pre>
+
+<p><code>..</code> で範囲を作成できます．</p>
+
+<pre><code>;;; Clojure
+user&gt; (range 1 21)
+(1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20)
+user&gt; (map #(char %) (range (int \a) (inc (int \z))))
+(\a \b \c \d \e \f \g \h \i \j \k \l \m \n \o \p \q \r \s \t \u \v \w \x \y \z)
+user&gt; (map #(char %) (range (int \K) (inc (int \Z))))
+(\K \L \M \N \O \P \Q \R \S \T \U \V \W \X \Y \Z)
+</code></pre>
+
+<p><code>range</code> 関数で作成できますが，数値の範囲のみ作成できます．</p>
+
+<hr><pre><code>-- Haskell
+ghci&gt; [2,4..20]
+[2,4,6,8,10,12,14,16,18,20]
+ghci&gt; [3,6..20]
+[3,6,9,12,15,18] 
+</code></pre>
+
+<p><code>..</code> でステップを設定することもできます．</p>
+
+<pre><code>;;; Clojure
+user&gt; (range 2 21 2)
+(2 4 6 8 10 12 14 16 18 20)
+user&gt; (range 3 21 3)
+(3 6 9 12 15 18)
+</code></pre>
+
+<p><code>range</code> 関数でステップを設定することもできます．</p>
+
+<hr><pre><code>-- Haskell
+ghci&gt; [0.1, 0.3 .. 1]
+[0.1,0.3,0.5,0.7,0.8999999999999999,1.0999999999999999]
+</code></pre>
+
+<p>Haskell
+で範囲を作成するときに浮動小数点数を使うと厳密ではなくなります．
+範囲をつくるときには整数だけにしたほうがよいでしょう．</p>
+
+<pre><code>;;; Clojure
+user&gt; (range 0.1 1.1 0.1)
+(0.1 0.2 0.30000000000000004 0.4 0.5 0.6 0.7 0.7999999999999999 0.8999999999999999 0.9999999999999999 1.0999999999999999)
+user&gt; (range 0.1M 1.1M 0.1M)
+(0.1M 0.2M 0.3M 0.4M 0.5M 0.6M 0.7M 0.8M 0.9M 1.0M)
+</code></pre>
+
+<p>Clojure で <code>double</code> を範囲に使うと厳密ではなくなります．
+整数ではない範囲をつくる場合には <code>BigDecimal</code> を使いましょう．</p>
+
+<hr><h2>無限リスト</h2>
+
+<pre><code>-- Haskell
+ghci&gt; take 24 [13,26..]
+[13,26,39,52,65,78,91,104,117,130,143,156,169,182,195,208,221,234,247,260,273,286,299,312]
+</code></pre>
+
+<p>Haskell で上限を指定しない範囲は無限リストになります．</p>
+
+<pre><code>;;; Clojure
+user&gt; (take 24 (iterate #(+ % 13) 13))
+(13 26 39 52 65 78 91 104 117 130 143 156 169 182 195 208 221 234 247 260 273 286 299 312)
+</code></pre>
+
+<p>Clojure で無限シーケンスを作る基本の関数は <code>iterate</code> です．</p>
+
+<hr><h2>繰り返しのリスト</h2>
+
+<pre><code>-- Haskell
+ghci&gt; take 10 (cycle [1,2,3])
+[1,2,3,1,2,3,1,2,3,1]
+ghci&gt; take 12 (cycle "LOL ")
+"LOL LOL LOL " 
+ghci&gt; take 10 (repeat 5)
+[5,5,5,5,5,5,5,5,5,5]
+ghci&gt; replicate 3 10
+[10,10,10]
+</code></pre>
+
+<ul><li><code>cycle</code></li>
+<li><code>repeat</code></li>
+<li><code>replicate</code></li>
+</ul><p>を使います．</p>
+
+<pre><code>;;; Clojure
+user&gt; (take 10 (cycle [1 2 3]))
+(1 2 3 1 2 3 1 2 3 1)
+user&gt; (take 12 (cycle "LOL "))
+(\L \O \L \space \L \O \L \space \L \O \L \space)
+user&gt; (take 10 (repeat 5))
+(5 5 5 5 5 5 5 5 5 5)
+user&gt; (repeat 3 10)
+(10 10 10)
+</code></pre>
+
+<p>Clojure には Haskell の <code>replicate</code> がありません．
+<code>repeat</code> に 2 引数を渡すと Haskell の <code>replicate</code> 相当になります．
+引数の順序も同じです．<code>cycle</code> は Haskell と同じです．</p>
+
+<hr><h2>リスト内包表記</h2>
+
+<pre><code>-- Haskell
+ghci&gt; [x*2 | x &lt;- [1..10]]
+[2,4,6,8,10,12,14,16,18,20]
+ghci&gt; [x*2 | x &lt;- [1..10], x*2 &gt;= 12]
+[12,14,16,18,20]
+ghci&gt; [ x | x &lt;- [50..100], x `mod` 7 == 3]
+[52,59,66,73,80,87,94] 
+
+boomBangs xs = [ if x &lt; 10 then "BOOM!" else "BANG!" | x &lt;- xs, odd x] 
+
+ghci&gt; boomBangs [7..13]
+["BOOM!","BOOM!","BANG!","BANG!"] 
+ghci&gt; [ x | x &lt;- [10..20], x /= 13, x /= 15, x /= 19]
+[10,11,12,14,16,17,18,20]
+ghci&gt; [ x*y | x &lt;- [2,5,10], y &lt;- [8,10,11]]
+[16,20,22,40,50,55,80,100,110] 
+ghci&gt; [ x*y | x &lt;- [2,5,10], y &lt;- [8,10,11], x*y &gt; 50]
+[55,80,100,110] 
+ghci&gt; let nouns = ["hobo","frog","pope"]
+ghci&gt; let adjectives = ["lazy","grouchy","scheming"]
+ghci&gt; [adjective ++ " " ++ noun | adjective &lt;- adjectives, noun &lt;- nouns]
+["lazy hobo","lazy frog","lazy pope","grouchy hobo","grouchy frog",
+"grouchy pope","scheming hobo","scheming frog","scheming pope"] 
+</code></pre>
+
+<p>条件を <code>,</code> のあとに続けて書きます．条件を複数書くと AND 扱いになります．</p>
+
+<pre><code>;;; Clojure
+user&gt; (for [x (range 1 11)] (* x 2))
+(2 4 6 8 10 12 14 16 18 20)
+user&gt; (for [x (range 1 11) :let [y (* x 2)] :when (&gt;= y 12)] y)
+(12 14 16 18 20)
+user&gt; (for [x (range 50 101) :when (= 3 (mod x 7))] x)
+(52 59 66 73 80 87 94)
+user&gt; (defn boom-bangs [xs]
+        (for [x xs :when (odd? x)]
+             (if (&lt; x 10)
+                 "BOOM!"
+                 "BANG!")))
+#'user/boom-bangs
+user&gt; (boom-bangs (range 7 14))
+("BOOM!" "BOOM!" "BANG!" "BANG!")
+user&gt; (for [x (range 10 21) :when (and (not= x 13) (not= x 15) (not= x 19))] x)
+(10 11 12 14 16 17 18 20)
+user&gt; (for [x [2 5 10] y [8 10 11]] (* x y))
+(16 20 22 40 50 55 80 100 110)
+user&gt; (for [x [2 5 10] y [8 10 11] :when (&gt; (* x y) 50)] (* x y))
+(55 80 100 110)
+user&gt; (def nouns ["hobo" "frog" "pope"])
+#'user/nouns
+user&gt; (def adjectives ["lazy" "grouchy" "scheming"])
+#'user/adjectives
+user&gt; (for [n nouns a adjectives] (str a " " n))
+("lazy hobo" "grouchy hobo" "scheming hobo" "lazy frog" "grouchy frog" "scheming frog" "lazy pope" "grouchy pope" "scheming pope")
+</code></pre>
+
+<p>Clojure でリスト内包表記を書くときには <code>for</code> マクロを使います．
++ 条件は <code>:when</code> キーワードに続けて書きます．
++&#160;:<code>when</code> のほかに <code>:while</code> も使えます．
+  - <code>:let</code> もあります．</p>
+
+<hr><p><code>length</code> vs <code>count</code>.</p>
+
+<pre><code>-- Haskell
+length' xs = sum [1 | _ &lt;- xs] 
+
+;;; Clojure
+user&gt; (defn count' [s] (reduce + (for [_ s] 1)))
+#'user/count'
+user&gt; (count' [1 2 3])
+3
+</code></pre>
+
+<hr><h2>大文字以外を削除する．</h2>
+
+<pre><code>-- Haskell
+removeNonUppercase st = [ c | c &lt;- st, c `elem` ['A'..'Z']] 
+
+ghci&gt; removeNonUppercase "Hahaha! Ahahaha!"
+"HA"
+ghci&gt; removeNonUppercase "IdontLIKEFROGS"
+"ILIKEFROGS" 
+
+;;; Clojure
+user&gt; (defn remove-non-uppercase [s] (for [c s :when (Character/isUpperCase c)] c))
+#'user/remove-non-uppercase
+user&gt; (remove-non-uppercase "Hahaha! Ahahaha!")
+(\H \A)
+user&gt; (remove-non-uppercase "IdontLIKEFROGS")
+(\I \L \I \K \E \F \R \O \G \S)
+</code></pre>
+
+<hr><h2>ネストしたリスト内包表記</h2>
+
+<pre><code>-- Haskell
+ghci&gt; let xxs = [[1,3,5,2,3,1,2,4,5],[1,2,3,4,5,6,7,8,9],[1,2,4,2,1,6,3,1,3,2,3,6]]
+ghci&gt; [ [ x | x &lt;- xs, even x ] | xs &lt;- xxs]
+[[2,2,4],[2,4,6,8],[2,4,2,6,2,6]]
+
+;;; Clojure
+user&gt; (def xxs [[1,3,5,2,3,1,2,4,5],[1,2,3,4,5,6,7,8,9],[1,2,4,2,1,6,3,1,3,2,3,6]])
+#'user/xxs
+user&gt; (for [xs xxs] (for [x xs :when (even? x)] x))
+((2 2 4) (2 4 6 8) (2 4 2 6 2 6))
+</code></pre>
+
+<p>Clojure でも <code>for</code> をネストできます．</p>
+
+<hr><h2>タプル</h2>
+
+<pre><code>-- Haskell
+ghci&gt; fst (8,11)
+8
+ghci&gt; fst ("Wow", False)
+"Wow"
+ghci&gt; snd (8,11)
+11
+ghci&gt; snd ("Wow", False)
+False
+
+;;; Clojure
+user&gt; (first [8 11])
+8
+user&gt; (first ["Wow" false])
+"Wow"
+user&gt; (second [8 11])
+11
+user&gt; (second ["Wow" false])
+false
+</code></pre>
+
+<ul><li>Clojure にはタプルが無いので vector で代用します．
+
+<ul><li>（vector が長くなりそうなら map を使います．）</li>
+<li>（仕様が固まったら map を defrecord に置き換えることがあります．）</li>
+</ul></li>
+</ul><hr><h2><code>zip</code></h2>
+
+<pre><code>-- Haskell
+ghci&gt; zip [1,2,3,4,5] [5,5,5,5,5]
+[(1,5),(2,5),(3,5),(4,5),(5,5)]
+ghci&gt; zip [1 .. 5] ["one", "two", "three", "four", "five"]
+[(1,"one"),(2,"two"),(3,"three"),(4,"four"),(5,"five")]
+ghci&gt; zip [5,3,2,6,2,7,2,5,4,6,6] ["im","a","turtle"]
+[(5,"im"),(3,"a"),(2,"turtle")]
+
+;;; Clojure
+user&gt; (def zip (partial map vector))
+#'user/zip
+user&gt; (zip [1 2 3 4 5] [5 5 5 5 5])
+([1 5] [2 5] [3 5] [4 5] [5 5])
+user&gt; (zip (range 1 6) ["one" "two" "tree" "four" "five"])
+([1 "one"] [2 "two"] [3 "tree"] [4 "four"] [5 "five"])
+user&gt; (zip [5 3 2 6 2 7 2 5 4 6 6] ["im" "a" "turtle"])
+([5 "im"] [3 "a"] [2 "turtle"])
+</code></pre>
+
+<p>Clojure に <code>zip</code> 関数はありませんが，<code>(partial map vector)</code> で代用できます．
+<code>(partial map vector)</code> は 3 つ以上の <code>Seqable</code> を引数に取ることができます．</p>
+
+<pre><code>ghci&gt; zip [1,2,3] [4,5,6] [7,8,9]
+
+&lt;interactive&gt;:1:1:
+    The function `zip' is applied to three arguments,
+    but its type `[a0] -&gt; [b0] -&gt; [(a0, b0)]' has only two
+    In the expression: zip [1, 2, 3] [4, 5, 6] [7, 8, 9]
+    In an equation for `it': it = zip [1, 2, 3] [4, 5, 6] [7, 8, 9]
+</code></pre>
+
+<p>Haskell の <code>zip</code> はペアを作ることしかできないようです．一方 Clojure 版は，</p>
+
+<pre><code>user&gt; (zip [1 2 3] [4 5 6] [7 8 9])
+([1 4 7] [2 5 8] [3 6 9])
+</code></pre>
+
+<hr><h2>無限リストの Zip</h2>
+
+<pre><code>-- Haskell
+ghci&gt; zip [1..] ["apple", "orange", "cherry", "mango"]
+[(1,"apple"),(2,"orange"),(3,"cherry"),(4,"mango")]
+</code></pre>
+
+<p>Haskell の無限リストは lazy なので <code>zip</code> できます．</p>
+
+<pre><code>;;; Clojure
+user&gt; (zip (iterate inc 1) ["apple" "orange" "cherry" "mango"])
+([1 "apple"] [2 "orange"] [3 "cherry"] [4 "mango"])
+</code></pre>
+
+<p>Clojure でも lazy な無限シーケンスをつくれば <code>zip</code> できます．</p>
+
+<hr><h2>直角三角形</h2>
+
+<p>「各辺の長さが 10 以下の整数で，三辺の長さの和が 24 であるような二等辺三角形を求めなさい」という問題に対して，</p>
+
+<pre><code>-- Haskell
+ghci&gt; let rightTriangles' = [ (a,b,c) | c &lt;- [1..10], b &lt;- [1..c], a &lt;- [1..b], a^2 + b^2 == c^2, a+b+c == 24]
+ghci&gt; rightTriangles'
+[(6,8,10)]
+
+;;; Clojure
+user&gt; (for [c (range 1 11) b (range 1 (inc c)) a (range 1 (inc b)) :when (and (= (* c c) (+ (* a a) (* b b))) (= 24 (+ a b c)))] [a b c])
+([6 8 10])
+</code></pre>
+
+<p>「関数プログラミンの共通パターン」というだけあって，Clojure でも Haskell と同じように書けます．</p>
+              </div>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+            <div class="meta">
+              <ul class="meta-list">
+
+                
+                  <li class="tags">
+                    <ul class="tag-list">
+                      
+                        <li><a href="http://tnoda-clojure.tumblr.com/tagged/clojurelearnyouahaskell">#clojurelearnyouahaskell</a></li>
+                      
+                    </ul>
+                  </li>
+                
+
+                
+
+                <li class="date">
+                  <a href="http://tnoda-clojure.tumblr.com/post/26507931134/clojure-learn-you-a-haskell-1" title="木. 7月 5, 2012 @ 4:26 am">
+                    <span class="icon"></span>1年前
+                  </a>
+                  
+                </li>
+
+                <li class="notes"><a href="http://tnoda-clojure.tumblr.com/post/26507931134/clojure-learn-you-a-haskell-1#notes"><span class="icon"></span>6</a></li>
+
+                
+                  <li class="comments hidden">
+                    <a id="dsq-26507931134" href="http://tnoda-clojure.tumblr.com/post/26507931134/clojure-learn-you-a-haskell-1#disqus_thread">
+                      <span class="icon"></span>Comments
+                    </a>
+                  </li>
+                
+
+                <li class="permalink"><a href="http://tnoda-clojure.tumblr.com/post/26507931134/clojure-learn-you-a-haskell-1"><span class="icon"></span>固定リンク</a></li>
+
+              </ul><!--/.meta-list -->
+
+              <div class="share">
+                <span class="toggle">Share</span>
+                <div class="widget">
+                  <div class="short-link">
+                    <p>ショートURL <br>
+                    <input type="text" readonly="" value="http://tmblr.co/ZOFRFvOh-kt_"></p>
+                  </div>
+                  <div class="share-links"><a target="_new" href="https://twitter.com/intent/tweet?url=http://tmblr.co/ZOFRFvOh-kt_" class="share-twitter">Twitter</a><a target="_new" href="https://www.facebook.com/sharer.php?u=http://tnoda-clojure.tumblr.com/post/26507931134/clojure-learn-you-a-haskell-1&t=Clojure すごい Haskell たのしく学ぼう! (1) はじめの一歩" class="share-facebook">Facebook</a><a target="_new" href="http://pinterest.com/pin/create/button/?url=http://tnoda-clojure.tumblr.com/post/26507931134/clojure-learn-you-a-haskell-1&media=" class="share-pinterest">Pinterest</a><a target="_new" href="https://plus.google.com/share?url=http://tnoda-clojure.tumblr.com/post/26507931134/clojure-learn-you-a-haskell-1" class="share-google">Google+</a></div>
+                </div>
+              </div>
+            </div><!-- /.meta -->
+          
+
+          
+            
+              <div id="notes">
+                <h2>6 Notes<span class="sep">/</span>
+                  <a id="notes-toggle" href="#"><span class="label">Hide</span><span class="icon up"></span></a></h2>
+                <ol class="notes"><!-- START NOTES --><li class="note like tumblelog_felixboyle without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://felixboyle.tumblr.com/" title="RITZ ATTAINMENT " rel="nofollow"><img src="http://24.media.tumblr.com/avatar_7333c43da4a1_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://felixboyle.tumblr.com/" title="RITZ ATTAINMENT" rel="nofollow">felixboyle</a>がこの投稿を「スキ!」と言っています</span><div class="clear"></div></li><li class="note reblog tumblelog_grimrose7 without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://grimrose7.tumblr.com/" title="grimrose&#039;s tumblr"><img src="http://assets.tumblr.com/images/default_avatar_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://grimrose7.tumblr.com/post/49079262786"><a rel="nofollow" href="http://grimrose7.tumblr.com/" class="tumblelog" title="grimrose&#039;s tumblr">grimrose7</a>が<a rel="nofollow" href="http://tnoda-clojure.tumblr.com/" class="source_tumblelog" title="tnoda-clojure">tnoda-clojure</a>からリブログしました</span><div class="clear"></div></li><li class="note reblog tumblelog_haburibe without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://haburibe.tumblr.com/" title="はぶりぶろぐ"><img src="http://24.media.tumblr.com/avatar_5409f3d719ed_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://haburibe.tumblr.com/post/40676819318"><a rel="nofollow" href="http://haburibe.tumblr.com/" class="tumblelog" title="はぶりぶろぐ">haburibe</a>が<a rel="nofollow" href="http://tnoda-clojure.tumblr.com/" class="source_tumblelog" title="tnoda-clojure">tnoda-clojure</a>からリブログしました</span><div class="clear"></div></li><li class="note like tumblelog_haburibe without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://haburibe.tumblr.com/" title="はぶりぶろぐ " rel="nofollow"><img src="http://24.media.tumblr.com/avatar_5409f3d719ed_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://haburibe.tumblr.com/" title="はぶりぶろぐ" rel="nofollow">haburibe</a>がこの投稿を「スキ!」と言っています</span><div class="clear"></div></li><li class="note reblog tumblelog_jjzak without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://jjzak.tumblr.com/" title="Untitled"><img src="http://assets.tumblr.com/images/default_avatar_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://jjzak.tumblr.com/post/39895105825"><a rel="nofollow" href="http://jjzak.tumblr.com/" class="tumblelog" title="Untitled">jjzak</a>が<a rel="nofollow" href="http://tnoda-clojure.tumblr.com/" class="source_tumblelog" title="tnoda-clojure">tnoda-clojure</a>からリブログしました</span><div class="clear"></div></li><li class="note reblog tumblelog_farvel without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://farvel.tumblr.com/" title="こうですか？わかりません？"><img src="http://assets.tumblr.com/images/default_avatar_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://farvel.tumblr.com/post/26805230579"><a rel="nofollow" href="http://farvel.tumblr.com/" class="tumblelog" title="こうですか？わかりません？">farvel</a>が<a rel="nofollow" href="http://tnoda-clojure.tumblr.com/" class="source_tumblelog" title="tnoda-clojure">tnoda-clojure</a>からリブログしました</span><div class="clear"></div></li><li class="note reblog tumblelog_tnoda-clojure original_post without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://tnoda-clojure.tumblr.com/" title="tnoda-clojure"><img src="http://24.media.tumblr.com/avatar_8e14c377b8b0_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://tnoda-clojure.tumblr.com/post/26507931134"><a rel="nofollow" href="http://tnoda-clojure.tumblr.com/" class="tumblelog" title="tnoda-clojure">tnoda-clojure</a>の投稿です</span><div class="clear"></div></li><!-- END NOTES --></ol>
+
+              </div><!-- /.notes -->
+            
+
+            
+              
+                <!-- DISQUS COMMENTS -->
+                <div id="disqus">
+                  <h2>最近のコメント</h2>
+                  <script type="text/javascript">var disqus_url = "http://tnoda-clojure.tumblr.com/post/26507931134/clojure-learn-you-a-haskell-1"; var disqus_title ="Clojure すごい Haskell たのしく学ぼう! (1) はじめの一歩";</script>
+                  <div id="disqus_thread"></div>
+                  <script type="text/javascript">
+                    var disqus_identifier = 26507931134;
+                    (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = 'http://' + disqusShortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                  </script>
+                  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=">comments powered by Disqus.</a></noscript>
+                  <a href="http://disqus.com" class="dsq-brlink">コメント機能は<span class="logo-disqus">Disqus</span>から提供されています</a>
+                </div><!-- /#disqus -->
+              
+            
+          
+
+          </div><!-- /.post-panel -->
+          <div class="post-shadow"></div>
+        </article><!-- /.post -->
+      
+      <!-- END POSTS -->
+
+      
+
+      
+
+      
+        <div id="pagination">
+          <div class="nextprev">
+            <a class="prev" href="http://tnoda-clojure.tumblr.com/post/26778104832"><span>&larr; 前へ</span></a> <span class="sep">&bull;</span>
+            <a class="next" href="http://tnoda-clojure.tumblr.com/post/26436769664"><span>次へ &rarr;</span></a>
+          </div>
+        </div><!--/#pagination -->
+      
+
+    </div><!-- /#content -->
+
+    <!-- SIDEBAR -->
+      <div id="sidebar">
+        <div id="blog-info" class="side-box">
+          
+            
+          
+
+          
+
+          
+
+          
+            <div class="description">
+              
+              
+              Clojure プログラマの個人的メモ
+            </div><!--/.description-->
+          
+        </div><!--/#blog-info -->
+
+        
+
+        
+          
+            <div class="side-box ruled-top">
+              
+              <ul class="pages">
+                
+                  <li><a href="/search-by-google">Site Search by Google</a></li>
+                
+                  <li><a href="/clojurecookbook">料理本シリーズ</a></li>
+                
+                  <li><a href="/clojurelearnyouhaskell">Clojure すごい Haskell</a></li>
+                
+                  <li><a href="/disclaimer_google_analytics">Disclaimer google analytics</a></li>
+                
+                  <li><a href="/amazon-associate">Amazon アソシエイト</a></li>
+                
+              </ul>
+            </div>
+          
+        
+
+        
+          <div class="side-box ruled-top">
+            <h2>Me, Elsewhere</h2>
+            <ul id="socialize">
+              
+              
+              
+              
+              
+              <li class="twitter"><a href="http://www.twitter.com/tnoda_" title="@tnoda_ on Twitter">@tnoda_ on Twitter</a></li>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <li class="github"><a href="http://github.com/tnoda" title="tnoda on github">tnoda on github</a></li>
+              
+            </ul>
+          </div>
+        
+
+        <div id="tabs">
+          <div id="tabs-nav">
+            
+            
+          </div>
+
+          
+
+          
+        </div><!-- close TABS -->
+
+        
+
+        
+
+        
+
+      </div><!-- /#sidebar -->
+    
+
+    
+
+    <div id="footer">
+      
+
+      <div id="footer-end" class="ruled-top">
+        <div class="footer-copy">
+          <ul id="footer-links">
+            <li><a href="/rss">RSS</a></li>
+            <li><a href="/random">ランダム</a></li>
+            <li><a href="/archive">アーカイブ</a></li>
+            
+            
+            <li><a href="/mobile">携帯電話</a></li>
+          </ul>
+          
+        </div>
+        <div class="pixel-union"><a href="http://www.tumblr.com/theme/17403"><strong>Effector Theme</strong></a> by <a class="logo" href="http://www.pixelunion.net">Pixel Union</a></div>
+      </div><!-- /#footer-end -->
+    </div><!-- /#footer -->
+  </div><!-- /#page -->
+
+  <!-- Footer Scripts -->
+
+  <script>
+    function recent_tweets(data){window.tweet_data=data;}
+  </script>
+
+  <script src="/tweets.js"></script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+  <script>window.jQuery || document.write('<script src="http://static.tumblr.com/hugxd2w/s4om61ic8/jquery-1.7.2.min.js"><\/script>')</script>
+
+  
+    <script src="http://static.tumblr.com/hugxd2w/fvZmtcd1s/script.js" type="text/javascript"></script>
+  
+
+  <script src="http://platform.twitter.com/widgets.js"></script>
+
+  <script src="https://apis.google.com/js/plusone.js" type="text/javascript"></script>
+
+  
+    <script type="text/javascript">
+      var _gaq=[["_setAccount","UA-45794847-1"],["_trackPageview"]];
+      (function(d,t){
+        var g=d.createElement(t), s=d.getElementsByTagName(t)[0];
+        g.async=1;
+        g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+        s.parentNode.insertBefore(g,s)
+      }(document,"script"));
+    </script>
+  
+
+  
+<!-- BEGIN TUMBLR CODE --><iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "http://assets.tumblr.com/analytics.html?0e863f4cfc20352a2741d71accda6a2a#http://tnoda-clojure.tumblr.com";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/post/26507931134/clojure-learn-you-a-haskell-1?route=%2Fpost%2F%3Aid%2F%3Asummary'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+    })();
+</script><script>
+            var _qevents = _qevents || [];
+            (function() {
+                var s = document.createElement('script');
+                var el = document.getElementsByTagName('script')[0];
+                s.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+                el.parentNode.insertBefore(s, el);
+            })();
+        </script><script type="text/javascript">
+            _qevents.push( { qacct: 'p-19UtqE8ngoZbM' } );
+        </script><noscript><div style="display: none;"><img src="//pixel.quantserve.com/pixel/'p-19UtqE8ngoZbM'.gif" height="1" width="1" alt="Quantcast"/></div></noscript><script type="text/javascript">!function(s){s.src='http://www.tumblr.com/impixu?T=1401341519&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvdG5vZGEtY2xvanVyZS50dW1ibHIuY29tXC9wb3N0XC8yNjUwNzkzMTEzNFwvY2xvanVyZS1sZWFybi15b3UtYS1oYXNrZWxsLTEiLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSJ9&U=LJNMNHHGKG&K=3a044062d17e506f5981da9d8d603993c144eb90932e2b2a6f9ec778de54f613&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="http://www.tumblr.com/impixu?T=1401341519&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvdG5vZGEtY2xvanVyZS50dW1ibHIuY29tXC9wb3N0XC8yNjUwNzkzMTEzNFwvY2xvanVyZS1sZWFybi15b3UtYS1oYXNrZWxsLTEiLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSIsIm5vc2NyaXB0IjoxfQ==&U=LJNMNHHGKG&K=d785ccfb705a938dd35c64dddd5a0095d5f892b1dbaf734d84c5ef43ed7923ee&R="></noscript><script type="text/javascript">!function(s){s.src='http://www.tumblr.com/impixu?T=1401341519&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL3Rub2RhLWNsb2p1cmUudHVtYmxyLmNvbVwvcG9zdFwvMjY1MDc5MzExMzRcL2Nsb2p1cmUtbGVhcm4teW91LWEtaGFza2VsbC0xIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkiLCJwb3N0cyI6W3sicG9zdGlkIjoiMjY1MDc5MzExMzQiLCJibG9naWQiOiI1NjIzMzMxNiIsInNvdXJjZSI6MzN9XX0=&U=IAKFBINBFJ&K=f858e4ae6f4f2d7055316978a6aae8507181a7bf4896eb31b6a3c87c610482a6&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="http://www.tumblr.com/impixu?T=1401341519&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL3Rub2RhLWNsb2p1cmUudHVtYmxyLmNvbVwvcG9zdFwvMjY1MDc5MzExMzRcL2Nsb2p1cmUtbGVhcm4teW91LWEtaGFza2VsbC0xIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkiLCJwb3N0cyI6W3sicG9zdGlkIjoiMjY1MDc5MzExMzQiLCJibG9naWQiOiI1NjIzMzMxNiIsInNvdXJjZSI6MzN9XSwibm9zY3JpcHQiOjF9&U=IAKFBINBFJ&K=c062e4b66e45151c49ae221dec0e2b602ee1b127d368918ea1b7cd88c961a302&R="></noscript><script>
+                    (function() {
+                        var s = document.createElement('script');
+                        var el = document.getElementsByTagName('script')[0];
+                        s.src = ('https:' == document.location.protocol ? 'https://s' : 'http://l') + '.yimg.com/ss/rapid-3.18.1.js';
+                        s.onload = function(){
+                            var YAHOO = window.YAHOO;
+                            if (YAHOO) {
+                                var keys = {
+                                    pd:'/post/:id/:summary',
+                                    _li:0,
+                                    b_id:56233316,
+                                    i_rad:0,
+                                    i_strm:0
+                                };
+                                var conf = {
+                                                                        test_id:'bucket1',
+                                                                        spaceid:1197716038,
+                                    client_only:1,
+                                    yql_enabled:false,
+                                    keys:keys,
+                                    nol:1
+                                };
+                                YAHOO.rapid = new YAHOO.i13n.Rapid(conf);
+                            }
+                        };
+                        el.parentNode.insertBefore(s, el);
+                    })();
+                </script><iframe id="tumblr_controls" class="tumblr_controls" width="1" height="1" frameborder="0" scrolling="no" src="http://assets.tumblr.com/assets/html/iframe/o.html?_v=37b8ca300321921638de78f201e8319b#src=http%3A%2F%2Ftnoda-clojure.tumblr.com%2Fpost%2F26507931134%2Fclojure-learn-you-a-haskell-1&amp;pid=26507931134&amp;rk=D8PH1XD8&amp;lang=ja_JP&amp;name=tnoda-clojure&amp;avatar=http%3A%2F%2F37.media.tumblr.com%2Favatar_8e14c377b8b0_64.png&amp;title=tnoda-clojure&amp;url=http%3A%2F%2Ftnoda-clojure.tumblr.com%2F&amp;page_slide=slide"></iframe><div id="teaser_iframe_container" style="display:none;"><iframe scrolling="no" frameborder="0" src="http://www.tumblr.com/assets/html/iframe/teaser.html?_v=3fa3103d8a3846684f2ec8b8c06ff0af#src=http%3A%2F%2Ftnoda-clojure.tumblr.com%2Fpost%2F26507931134%2Fclojure-learn-you-a-haskell-1&amp;pid=26507931134&amp;rk=D8PH1XD8&amp;lang=ja_JP&amp;name=tnoda-clojure&amp;avatar=http%3A%2F%2F37.media.tumblr.com%2Favatar_8e14c377b8b0_64.png&amp;title=tnoda-clojure&amp;url=http%3A%2F%2Ftnoda-clojure.tumblr.com%2F&amp;page_slide=slide" id="teaser_iframe" width="1" height="1"></iframe></div><script type="text/javascript">
+    (function(Tumblr){
+        var follow_iframe_initialized = false;
+        if (Tumblr.FollowTeaser && Tumblr.PostMessageListener) {
+            // Don't do anything until the first initialize event
+            Tumblr.PostMessageListener.initialize(function(message, origin) {
+                if (follow_iframe_initialized || message.length < 2) return;
+
+                if (message[0] === 'follow_iframe' && message[1] === 'enable') {
+                    Tumblr.FollowTeaser.current_page = 1;
+                    Tumblr.FollowTeaser.infer_infinite_scroll = true;
+                    Tumblr.FollowTeaser.create_from_tumblr_controls("http:\/\/assets.tumblr.com\/assets\/html\/iframe\/follow.html?_v=edfd71d24691621df89371bfc2bb0953");
+                    Tumblr.FollowTeaser.scroll_listener(true);
+                    follow_iframe_initialized = true;
+                }
+            });
+        }
+    })(this.Tumblr || (this.Tumblr = {}));
+</script><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><!-- END TUMBLR CODE -->
+
+</body>
+</html>
