@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+    <head>
+        <meta charset="utf-8">
+        <title>Buzz - Yahoo!ニュース</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="description" content="Yahoo!ニュース Buzzコーナーは、世の中で話題になっているニュースをピックアップしてお届けします。興味のあるBuzzワードをフォローして、ニュースフィードで受け取ることもできます。" />
+<meta name="keywords" content="ヤフー,ニュース,フォロー,Buzz,バズ" />
+<meta name="format-detection" content="telephone=no" />
+<meta property="fb:app_id" content="276725822409153" />
+
+        <link rel="apple-touch-icon" href="http://i.yimg.jp/images/ipn/wcb/news129.png" />
+
+        <!-- SpaceID=0 robot -->
+
+        <link type="text/css" rel="stylesheet" href="http://i.yimg.jp/images/bloom/v201212/common/css/common_v2_1.css?v=0" media="all" />
+<link type="text/css" rel="stylesheet" href="http://buzz.news.yahoo.co.jp/images/bloom/v201212/common/css/common_responsive.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://i.yimg.jp/images/bloom/v201212/common/css/common_pc_v2.css?v=0" media="all" />
+<link type="text/css" rel="stylesheet" href="http://buzz.news.yahoo.co.jp/images/bloom/v201212/common/css/common_pc_responsive.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://i.yimg.jp/images/bloom/v201212/buzztop/css/buzztop_styles_v3.css?v=0" media="all" />
+<link type="text/css" rel="stylesheet" href="http://buzz.news.yahoo.co.jp/images/bloom/v201212/buzztop/css/buzztop_styles_responsive.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://i.yimg.jp/images/bloom/v201212/buzztop/css/buzztop_pc_v2.css?v=0" media="all" />
+<link type="text/css" rel="stylesheet" href="http://buzz.news.yahoo.co.jp/images/bloom/v201212/buzztop/css/buzztop_pc_responsive.css" media="all" />
+
+        <style type="text/css">
+
+</style>
+        <script type="text/javascript" language="JavaScript" src="http://i.yimg.jp/images/commerce/js/libs/jquery/core/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" language="JavaScript" src="http://i.yimg.jp/images/rapid/1.5.0/ult.js"></script>
+<script type="text/javascript" language="JavaScript" src="http://i.yimg.jp/images/bloom/v201212/common/js/common-1.0.3.min.js"></script>
+<script type="text/javascript" language="JavaScript" src="http://i.yimg.jp/images/bloom/v201212/buzztop/js/buzztop-1.0.2.min.js"></script>
+<script type="text/javascript" language="JavaScript" src="http://i.yimg.jp/images/bloom/v201212/buzztop/js/timelinr.js"></script>
+<script type="text/javascript" language="JavaScript" src="http://i.yimg.jp/images/bloom/lib/twitter/widgets.js"></script>
+
+        <!--[if lt IE 9]><script src="http://i.yimg.jp/images/bloom/lib/html5.js"></script><![endif]-->
+        <!--[if lt IE 9]><script src="http://i.yimg.jp/images/bloom/lib/css3-mediaqueries.js"></script><![endif]-->
+        <!--[if gte IE 9]>
+            <style type="text/css">
+                .gradient {filter: none;}
+            </style>
+        <![endif]-->
+    </head>
+    <body id="device_pc">
+        <div id="wrapper">
+            <header id="header">
+    <!-- SpaceID=0 robot -->
+
+    <!-- SpaceID=0 robot -->
+
+<!-- SpaceID=0 robot -->
+
+<!-- SpaceID=0 robot -->
+
+</header>
+            <script type="text/javascript">
+    $.ajaxSetup({ cache: false });
+</script>
+            <div id="fb-root"></div> 
+<script type="text/javascript">   
+
+    window.fbAsyncInit = function() {     
+        FB.init({       
+            appId      : '276725822409153',
+            channelUrl : '//buzz.news.yahoo.co.jp/static/facebook/channel.html',        
+            status     : true, 
+            cookie     : true,        
+            xfbml      : true  
+        });
+
+        var postFlag = 0;
+        FB.Event.subscribe('edge.create', function(response) {
+            var link_data = [{
+                mod:{name:'facebook'},
+                links:[{name:'like_log', params:{sec:'facebook', slk:'like_log', pos:'1'}}]
+            }];
+            var ins = YAHOO.i13n.Beaconer(
+                {beacon_server:'ybx.yahoo.co.jp',
+                keys:{rpdprop:"facebook"},
+                link_data:link_data,
+                spaceid:'2080245046'
+            });
+            if(postFlag == 0) {
+                ins.doClickBeacon(link_data[0].links[0].params);
+                postFlag = 1;
+            }
+        });
+
+    }; 
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/ja_JP/all.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+</script>
+            
+            <div id="rics-wrapper">
+                <div id="contents-header">
+    <div class="search">
+        <div class="searchWrapper">
+        <form method="get" action="http://buzz.news.yahoo.co.jp/search/result/">
+
+    <div class="inputWrapper">
+        <input type="text" name="search" class="searchInput" id="searchText" style="color: rgb(153, 153, 153);">
+        <span class="inputInnr"></span>
+    </div>
+    <span id="searchButton"><input type="submit" value="検索" class="searchBtn"></span>
+    <ul class="searchSelect close"><!--
+        --><li id="SearchNews"><a href="javascript:void(0);"><span>ニュース</span></a></li><li id="SearchTopics"><a href="javascript:void(0);"><span>トピックス</span></a></li><li id="SearchBuzzword"><a class="cur" href="javascript:void(0);"><span>Buzzワード</span></a></li><li id="SearchPolls"><a href="javascript:void(0);"><span>意識調査</span></a></li><li id="SearchGSR"><a href="javascript:void(0);"><span>全国紙パック</span></a></li>
+    </ul>
+    <div class="bubble close"></div>
+    <p class="currentSearch"><a id="sortSearch" href="javascript:void(0);"><span>Buzzワード</span></a></p>
+
+</form>
+        </div>
+        <p class="advanced hide"><a href="http://news.search.yahoo.co.jp/advanced">条件指定</a></p>
+        <ul class="personalInfo">
+    <li class="myPage">
+        <a  href="http://person.news.yahoo.co.jp/u/login/" onmousedown="this.href='http://person.news.yahoo.co.jp/u/login/'"><span class="myThumb">
+    <img width="24" height="24" src="http://i.yimg.jp/images/bloom/v201212/anonymous_24.png">
+</span></a><!--
+        --><a  href="http://person.news.yahoo.co.jp/u/login/" onmousedown="this.href='http://person.news.yahoo.co.jp/u/login/'"><span class="myName">ユーザーページ</span></a><!--
+        -->
+    </li>
+    <li class="purchase"><a  href="http://headlines.yahoo.co.jp/purchase/" onmousedown="this.href='http://headlines.yahoo.co.jp/purchase/'">購入済み</a></li>
+    <li class="setting"><a  href="http://person.news.yahoo.co.jp/settings/profile/" onmousedown="this.href='http://person.news.yahoo.co.jp/settings/profile/'" class="last">設定</a></li>
+</ul>
+    </div>
+    <div class="gnNews" id="globalNav">
+            <ul id="gnPri">
+        <li id="gnPriTop" ><a  href="http://news.yahoo.co.jp/" onmousedown="this.href='http://news.yahoo.co.jp/'">トップ</a></li><li id="gnPriNew" ><a  href="http://news.yahoo.co.jp/flash" onmousedown="this.href='http://news.yahoo.co.jp/flash'">速報</a></li><li id="gnPriPhoto" ><a  href="http://headlines.yahoo.co.jp/hl?ty=p" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?ty=p'">写真</a></li><li id="gnPriVideo" ><a  href="http://headlines.yahoo.co.jp/videonews/" onmousedown="this.href='http://headlines.yahoo.co.jp/videonews/'">映像</a></li><li id="gnPriZasshi" ><a  href="http://zasshi.news.yahoo.co.jp/" onmousedown="this.href='http://zasshi.news.yahoo.co.jp/'">雑誌</a></li><li id="gnPriBylines" ><a  href="http://bylines.news.yahoo.co.jp/" onmousedown="this.href='http://bylines.news.yahoo.co.jp/'">個人</a></li><li id="gnPriBuzz" class="current"><a  href="http://buzz.news.yahoo.co.jp/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/'">Buzz</a></li><li id="gnPriResearch" ><a  href="http://polls.dailynews.yahoo.co.jp/" onmousedown="this.href='http://polls.dailynews.yahoo.co.jp/'">意識調査</a></li><li id="gnPriRanking" ><a  href="http://headlines.yahoo.co.jp/accr" onmousedown="this.href='http://headlines.yahoo.co.jp/accr'">ランキング</a></li><li id="gnPriFeed" ><a  href="http://feed.news.yahoo.co.jp/" onmousedown="this.href='http://feed.news.yahoo.co.jp/'">ニュースフィード</a></li>
+    </ul>
+        <div class="gnSecWrap">
+    <ul class="cgnSec">
+        <li class="current"><a href="http://buzz.news.yahoo.co.jp/">Buzzトップ</a></li><li ><a href="http://buzz.news.yahoo.co.jp/search/">関心を探す</a></li>
+    </ul>
+</div>
+    </div>
+</div>
+                <div id="rics-content">
+                    <noscript>
+    <div class="alertBox">
+        <div class="alert">
+            <p>現在<em>JavaScriptが無効</em>になっています。Yahoo!ニュースのすべての機能を利用するためには、JavaScriptの設定を有効にしてください。<br />JavaScriptの設定を変更する方法は<a href="http://www.yahoo-help.jp/app/answers/detail/p/533/a_id/43867">こちら</a>。</p>
+        </div>
+    </div>
+</noscript>
+                    
+                    <div id="rics-content-wrapper">
+                        <div id="rics-main">
+                            <div id="rics-main-inner">
+                                <div id="timeline">
+<ul id="dates" class="clock">
+<li><a href="#" class="date" page="0" settime="20140522"><time datetime="2014-05-22">5/22<span>22</span></time></a></li>
+<li><a href="#" class="date" page="1" settime="20140523"><time datetime="2014-05-23">5/23<span>23</span></time></a></li>
+<li><a href="#" class="date" page="2" settime="20140524"><time datetime="2014-05-24">5/24<span>24</span></time></a></li>
+<li><a href="#" class="date" page="3" settime="20140525"><time datetime="2014-05-25">5/25<span>25</span></time></a></li>
+<li><a href="#" class="date" page="4" settime="20140526"><time datetime="2014-05-26">5/26<span>26</span></time></a></li>
+<li><a href="#" class="date" page="5" settime="20140527"><time datetime="2014-05-27">5/27<span>27</span></time></a></li>
+<li><a href="#" class="date" page="6" settime="20140528"><time datetime="2014-05-28">5/28<span>28</span></time></a></li>
+<li><a href="#" class="time" page="7" settime="2014052900"><time class="t00" datetime="2014-05-29T00:00:00+09:00">0:00</time></a></li>
+<li><a href="#" class="time" page="8" settime="2014052901"><time class="t01" datetime="2014-05-29T01:00:00+09:00">1:00</time></a></li>
+<li><a href="#" class="time" page="9" settime="2014052902"><time class="t02" datetime="2014-05-29T02:00:00+09:00">2:00</time></a></li>
+<li><a href="#" class="time" page="10" settime="2014052903"><time class="t03" datetime="2014-05-29T03:00:00+09:00">3:00</time></a></li>
+<li><a href="#" class="time" page="11" settime="2014052904"><time class="t04" datetime="2014-05-29T04:00:00+09:00">4:00</time></a></li>
+<li><a href="#" class="time" page="12" settime="2014052905"><time class="t05" datetime="2014-05-29T05:00:00+09:00">5:00</time></a></li>
+<li><a href="#" class="time" page="13" settime="2014052906"><time class="t06" datetime="2014-05-29T06:00:00+09:00">6:00</time></a></li>
+<li><a href="#" class="time" page="14" settime="2014052907"><time class="t07" datetime="2014-05-29T07:00:00+09:00">7:00</time></a></li>
+<li><a href="#" class="time" page="15" settime="2014052908"><time class="t08" datetime="2014-05-29T08:00:00+09:00">8:00</time></a></li>
+<li><a href="#" class="time" page="16" settime="2014052909"><time class="t09" datetime="2014-05-29T09:00:00+09:00">9:00</time></a></li>
+<li><a href="#" class="time" page="17" settime="2014052910"><time class="t10" datetime="2014-05-29T10:00:00+09:00">10:00</time></a></li>
+</ul>
+</div>
+<section id="buzzTopics" class="cmnbox">
+<header id="buzzNav">
+<nav>
+<a href="#" class="prev enabled_p"><span class="prev">前へ</span></a>
+<p class="ttl"><span class="yjxDate">5月29日</span><span class="yjxWeek small">（木）</span><em class="yjxTime">10時</em>のBuzzニュース</p>
+<a href="#" class="next disabled_n"><span class="next">次へ</span></a>
+</nav>
+</header>
+<div class="buzzMain bd">
+<ul class="list rics-column-wrapper rics-column-3n first current" page="17">
+<!----><li class="imgBox popularity">
+<dl><dt class="">25<span>buzz</span></dt><dd><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E5%A2%97%E7%A8%8E/0fcd3bccb119bd8b7367/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E5%A2%97%E7%A8%8E/0fcd3bccb119bd8b7367/'">増税</a></dd></dl>
+<div class="pWrap">
+<h1 class="ttl"><a  href="http://buzz.news.yahoo.co.jp/article/0045fb27abfd385f900500edac927a8c8cefb866/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/0045fb27abfd385f900500edac927a8c8cefb866/'">“負の連鎖”悩むガソリンスタンド　１６５円突破…コスト増と客離れ懸念  (1/3ページ) - SankeiBiz（サンケイ...</a></h1>
+<div class="smry"><p>ガソリン価格の上昇が続いている。４月の消費税増税分に加え、ウクライナ情勢の緊迫化などのため原油価格が高値で推移し、卸価格の上昇分を店頭価格に転嫁する動きが進んだ…</p></div>
+<p class="source">SankeiBiz（サンケイビズ）</p></div>
+</li><!--
+--><!----><li class="imgBox rics-column">
+<dl><dt class="">57<span>buzz</span></dt><dd><a  href="http://buzz.news.yahoo.co.jp/buzzword/Skype/0a00b774e8ee6f873597/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/Skype/0a00b774e8ee6f873597/'">Skype</a></dd></dl>
+<h1 class="ttl"><a  href="http://buzz.news.yahoo.co.jp/article/8c60442cd98d5662889c01d1603a4c21b4e2175d/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/8c60442cd98d5662889c01d1603a4c21b4e2175d/'">Skype、他国の人とリアルタイムで会話できる音声翻訳機能を追加へ : ギズモード・ジャパン</a></h1>
+<p class="thumb"><a  href="http://buzz.news.yahoo.co.jp/article/8c60442cd98d5662889c01d1603a4c21b4e2175d/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/8c60442cd98d5662889c01d1603a4c21b4e2175d/'"><img title="Skype、他国の人とリアルタイムで会話できる音声翻訳機能を追加へ : ギズモード・ジャパン" src="http://iwiz-spider.c.yimg.jp/im_siggtLOSEGTez01X6JhWFZ2KBQ---x178-y178-bd1-bdx178-bdy178-bdcefefef-prib/p/spider/ic0cBwlxwzCBz8cimQJwu8MiboBg3R1hW_VLV5AS1wclmt_VFZoSCXvzkAvIAFBbFQihOcgseGpp"></a></p>
+<p class="source">www.gizmodo.jp</p></li><!--
+--><!----><li class="imgBox rics-column">
+<dl><dt class="">51<span>buzz</span></dt><dd><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD/007c341ed731341e2337/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD/007c341ed731341e2337/'">中華人民共和国</a></dd></dl>
+<h1 class="ttl"><a  href="http://buzz.news.yahoo.co.jp/article/45d49747d559e64423e09040b1473a404c4f8616/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/45d49747d559e64423e09040b1473a404c4f8616/'">中国船が「宝石サンゴ」密漁…沖縄・宮古島沖 （読売新聞） - Yahoo!ニュース</a></h1>
+<div class="smry"><p>Yahoo!ニュース（読売新聞） - 　水産庁は２７日、沖縄県・宮古島沖の排他的経済水域（ＥＥＺ）で、サンゴを密漁して</p></div>
+<p class="source">headlines.yahoo.co.jp</p></li><!--
+--><!----><li class="imgBox rics-column">
+<dl><dt class="mp_o">116<span>buzz</span></dt><dd><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E8%90%BD%E6%9B%B8%E3%81%8D/02af006213c48c479522/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E8%90%BD%E6%9B%B8%E3%81%8D/02af006213c48c479522/'">落書き</a></dd></dl>
+<h1 class="ttl"><a  href="http://buzz.news.yahoo.co.jp/article/6d85b57919cb6da6d42e0402d4cbdbf68dc4d0cf/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/6d85b57919cb6da6d42e0402d4cbdbf68dc4d0cf/'">「犬畜生」…靖国神社にハングルで「中傷」落書き　警視庁に被害相談 - MSN産経ニュース</a></h1>
+<p class="thumb"><a  href="http://buzz.news.yahoo.co.jp/article/6d85b57919cb6da6d42e0402d4cbdbf68dc4d0cf/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/6d85b57919cb6da6d42e0402d4cbdbf68dc4d0cf/'"><img title="「犬畜生」…靖国神社にハングルで「中傷」落書き　警視庁に被害相談 - MSN産経ニュース" src="http://iwiz-spider.c.yimg.jp/im_siggElO6xG_GpIV.iKq6FTBvIw---x178-y178-bd1-bdx178-bdy178-bdcefefef-prib/p/spider/_9psgvRxwzB2gJiUU0sjDOcyDEalBz19soaOkfqF3r_BHz8y.uj4SDFu_zvFMBUPYWDPZrf0rgi9D4dOU4ONKZRWRD9Wvf5A2w--"></a></p>
+<p class="source">MSN産経ニュース</p></li><!--
+--><!----><li class="imgBox rics-column">
+<dl><dt class="">13<span>buzz</span></dt><dd><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E6%97%A5%E6%9C%AC%E4%BB%A3%E8%A1%A8/019bc8f80fa0603d9401/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E6%97%A5%E6%9C%AC%E4%BB%A3%E8%A1%A8/019bc8f80fa0603d9401/'">サッカー日本代表</a></dd></dl>
+<h1 class="ttl"><a  href="http://buzz.news.yahoo.co.jp/article/f495b31afc4476f176cf468272b5d23fa95df82a/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/f495b31afc4476f176cf468272b5d23fa95df82a/'">【動画あり】英国メディアが選ぶ「歴代サッカー日本代表レジェンド選手」トップ10 | ロケットニュース24</a></h1>
+<p class="thumb"><a  href="http://buzz.news.yahoo.co.jp/article/f495b31afc4476f176cf468272b5d23fa95df82a/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/f495b31afc4476f176cf468272b5d23fa95df82a/'"><img title="【動画あり】英国メディアが選ぶ「歴代サッカー日本代表レジェンド選手」トップ10 | ロケットニュース24" src="http://iwiz-spider.c.yimg.jp/im_siggzN3jSZT9qY8OuDwRQuu0EQ---x178-y178-bd1-bdx178-bdy178-bdcefefef-prib/p/spider/BMYfPm1xwzCRTUpV.UzHtXT9gXIVPlup0UE1snVuKrTy2_BBTjR3lnFGjB0tfqmxDdm7M4RIh4ZyvK0_vWDvFliw4A--"></a></p>
+<p class="source">ロケットニュース24</p></li><!--
+--><!----><li class="imgBox rics-column">
+<dl><dt class="">6<span>buzz</span></dt><dd><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E8%B3%87%E7%94%9F%E5%A0%82/0636c553911e78941755/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E8%B3%87%E7%94%9F%E5%A0%82/0636c553911e78941755/'">資生堂</a></dd></dl>
+<h1 class="ttl"><a  href="http://buzz.news.yahoo.co.jp/article/eee841d151e7d6c2d8bea8e434c59f249d8a08e3/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/eee841d151e7d6c2d8bea8e434c59f249d8a08e3/'">資生堂、新商品４割増やす　国内シェア奪回急ぐ　　：日本経済新聞</a></h1>
+<p class="thumb"><a  href="http://buzz.news.yahoo.co.jp/article/eee841d151e7d6c2d8bea8e434c59f249d8a08e3/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/eee841d151e7d6c2d8bea8e434c59f249d8a08e3/'"><img title="資生堂、新商品４割増やす　国内シェア奪回急ぐ　　：日本経済新聞" src="http://iwiz-spider.c.yimg.jp/im_siggdfnaYsz6TZI.z7E2YYfOvA---x178-y178-bd1-bdx178-bdy178-bdcefefef-prib/p/spider/GL.dIilxwzBly4w0EgN3N7pCtvhUPJR6kGSVrrnt2LJNPULucPjvwtNEVgpcj7TPob5601uTOU2qc5NsSvjf1R_SoYZBweBzfaXFLcvDZuqVdYCVj6OuC_m0kv9kh1EBAL.fzuK1i6HOZzmY6XSEhyNGhn2k4VGTOXqXmCUzLr6YQL2bakqzdZbw5j0vEvc-"></a></p>
+<p class="source">www.nikkei.com</p></li><!--
+--><!----><li class="imgBox rics-column">
+<dl><dt class="">13<span>buzz</span></dt><dd><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E6%97%A5%E6%9C%AC%E4%BB%A3%E8%A1%A8/019bc8f80fa0603d9401/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E6%97%A5%E6%9C%AC%E4%BB%A3%E8%A1%A8/019bc8f80fa0603d9401/'">サッカー日本代表</a></dd></dl>
+<h1 class="ttl"><a  href="http://buzz.news.yahoo.co.jp/article/f5f5a0efe747cf29e0b912a0de969cf7ad99418d/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/f5f5a0efe747cf29e0b912a0de969cf7ad99418d/'">松木氏　Ｗ杯日本代表の成績を予想！「ベスト８までいくと思う」 ― スポニチ Sponichi Annex サッカー</a></h1>
+<div class="smry"><p>松木氏　Ｗ杯日本代表の成績を予想！「ベスト８までいくと思う」/</p></div>
+<p class="source">www.sponichi.co.jp</p></li><!--
+--></ul>
+</div>
+<footer id="buzzNavf">
+<nav>
+<a href="#" class="prev enabled_p"><span class="prev">前へ</span></a>
+<p class="ttl"><span class="yjxDate">5月29日</span><span class="yjxWeek small">（木）</span><em class="yjxTime">10時</em>のBuzzニュース</p>
+<a href="#" class="next disabled_n"><span class="next">次へ</span></a>
+</nav>
+</footer>
+</section>
+<section id="imgTopics" class="cmnbox">
+<header id="imgNav">
+<h1>話題の画像</h1>
+<nav id="topHdNav">
+<a href="javascript:void(0);" class="prev disabled_p"><span class="prev">前へ</span></a><a href="javascript:void(0);" class="next enabled_n"><span class="next">次へ</span></a>
+</nav>
+</header>
+<div class="buzzMain bd rics-column-wrapper rics-column-3n">
+<ul class="list first current" page="1">
+<!----><li class="imgBox rics-column">
+<p class="thumb"><a  href="http://buzz.news.yahoo.co.jp/article/0edaea01a91bb940838570872322f3cbf5fb2d29/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/0edaea01a91bb940838570872322f3cbf5fb2d29/'"><img src="http://iwiz-spider.c.yimg.jp/im_sigge6OMvtiHw5mzvSao_Zk30Q---x178-y178-bd1-bdx178-bdy178-bdcefefef-prib/p/spider/_5ssgBdxwzC_tWybdtsx6NKB4LB_yrRiFMXtClxAb_xu4ltLYGI-" title="サンスポだけあったよ( &acute;艸｀)写真なし^_^;ちっちゃいw |かののん (*˘︶˘*).｡.:*♡の投稿画像"></a></p>
+<dl><dt class="yjxPoint mp_o"><div class="yjxNum">281</div><span>buzz</span></dt><dd class="title"><a  href="http://buzz.news.yahoo.co.jp/article/0edaea01a91bb940838570872322f3cbf5fb2d29/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/0edaea01a91bb940838570872322f3cbf5fb2d29/'">サンスポだけあったよ( &amp;acute;艸｀)写真...</a></dd></dl>
+</li><!--
+--><!----><li class="imgBox rics-column">
+<p class="thumb"><a  href="http://buzz.news.yahoo.co.jp/article/0896a0dad501867cc073b62e58b95ace6aa51170/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/0896a0dad501867cc073b62e58b95ace6aa51170/'"><img src="http://iwiz-spider.c.yimg.jp/im_siggG4RtjoU.9QdPOGqZuMfRCA---x178-y178-bd1-bdx178-bdy178-bdcefefef-prib/p/spider/MWaBZwtxwzCKBonFvC6vUCZ0bLBfTMXwO4TxjR6ELXMUjFM_saI-" title="ファンキー加藤の投稿画像"></a></p>
+<dl><dt class="yjxPoint mp_o"><div class="yjxNum">220</div><span>buzz</span></dt><dd class="title"><a  href="http://buzz.news.yahoo.co.jp/article/0896a0dad501867cc073b62e58b95ace6aa51170/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/0896a0dad501867cc073b62e58b95ace6aa51170/'">ファンキー加藤の投稿画像</a></dd></dl>
+</li><!--
+--><!----><li class="imgBox rics-column">
+<p class="thumb"><a  href="http://buzz.news.yahoo.co.jp/article/9a6fbae147ed1867571d2ad7ec42ea939aa2d7e1/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/9a6fbae147ed1867571d2ad7ec42ea939aa2d7e1/'"><img src="http://iwiz-spider.c.yimg.jp/im_sigg7iYCY0LBsFWFy_4vEnjbpw---x178-y178-bd1-bdx178-bdy178-bdcefefef-prib/p/spider/clPvrLBxwzCus1IrSa_zzYs0fenmuSzYzBOCL_DPuLaYCzqFgDM-" title="utapri_officialの投稿画像"></a></p>
+<dl><dt class="yjxPoint mp_o"><div class="yjxNum">279</div><span>buzz</span></dt><dd class="title"><a  href="http://buzz.news.yahoo.co.jp/article/9a6fbae147ed1867571d2ad7ec42ea939aa2d7e1/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/9a6fbae147ed1867571d2ad7ec42ea939aa2d7e1/'">utapri_officialの投稿画像</a></dd></dl>
+</li><!--
+--></ul>
+<ul class="list next" page="2">
+<!----><li class="imgBox rics-column">
+<p class="thumb"><a  href="http://buzz.news.yahoo.co.jp/article/acccc322606c39864dd1906ccfb70f19c8bb2fbc/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/acccc322606c39864dd1906ccfb70f19c8bb2fbc/'"><img src="http://iwiz-spider.c.yimg.jp/im_sigg98jG7pe3IrP7eNfq7aABug---x178-y178-bd1-bdx178-bdy178-bdcefefef-prib/p/spider/JwfN5eBxwzByEHKTb3lQG.H2QTNNyD0ZO3SVgJiREgxN7Q65o0o-" title="ラブライブ！公式の投稿画像"></a></p>
+<dl><dt class="yjxPoint mp_o"><div class="yjxNum">217</div><span>buzz</span></dt><dd class="title"><a  href="http://buzz.news.yahoo.co.jp/article/acccc322606c39864dd1906ccfb70f19c8bb2fbc/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/acccc322606c39864dd1906ccfb70f19c8bb2fbc/'">ラブライブ！公式の投稿画像</a></dd></dl>
+</li><!--
+--><!----><li class="imgBox rics-column">
+<p class="thumb"><a  href="http://buzz.news.yahoo.co.jp/article/046ea7b070d7b165c5f5442b8eebf00302787f32/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/046ea7b070d7b165c5f5442b8eebf00302787f32/'"><img src="http://iwiz-spider.c.yimg.jp/im_siggY_vLMoGdjzHQyetbQh1hwg---x178-y178-bd1-bdx178-bdy178-bdcefefef-prib/p/spider/UCrWmRFxwzAeDxqxU144ktNTG.4n3pHjN26r._zkqZG6K0ijRkE-" title="浅沼晋太郎【bpm】の投稿画像"></a></p>
+<dl><dt class="yjxPoint "><div class="yjxNum">88</div><span>buzz</span></dt><dd class="title"><a  href="http://buzz.news.yahoo.co.jp/article/046ea7b070d7b165c5f5442b8eebf00302787f32/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/046ea7b070d7b165c5f5442b8eebf00302787f32/'">浅沼晋太郎【bpm】の投稿画像</a></dd></dl>
+</li><!--
+--><!----><li class="imgBox rics-column">
+<p class="thumb"><a  href="http://buzz.news.yahoo.co.jp/article/528ef371070d10d3bc41b6376059d1a4a388166e/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/528ef371070d10d3bc41b6376059d1a4a388166e/'"><img src="http://iwiz-spider.c.yimg.jp/im_siggJqB3PsXTYEk0cPPNBHVrPQ---x178-y178-bd1-bdx178-bdy178-bdcefefef-prib/p/spider/n0XX.qtxwzCfoiugKw5mmXIxInhjU.XT8T_lGuGVU3tlg4tSNG0-" title="ςиμςεの投稿画像"></a></p>
+<dl><dt class="yjxPoint mp_o"><div class="yjxNum">213</div><span>buzz</span></dt><dd class="title"><a  href="http://buzz.news.yahoo.co.jp/article/528ef371070d10d3bc41b6376059d1a4a388166e/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/article/528ef371070d10d3bc41b6376059d1a4a388166e/'">ςиμςεの投稿画像</a></dd></dl>
+</li><!--
+--></ul>
+</div>
+</section>
+<script type="text/javascript" language="javascript"> 
+<!--
+yads_ad_ds = '50382_14526'; 
+//-->
+</script> 
+<script type="text/javascript" language="javascript" src="http://yads.c.yimg.jp/js/yads.js"></script>
+                            </div>
+                        </div>
+                        <div id="rics-sub">
+                            <div id="LREC">
+    <p style="text-align:center;font-size:84%;">PR</p>
+    <!-- SpaceID=0 robot -->
+
+</div><section class="cmnbox about">
+    <header class="hd">
+        <h3><a href="http://www.yahoo-help.jp/app/answers/detail/a_id/60137">Buzzに掲載されている記事について</a></h3>
+    </header>
+</section><section class="subBox">
+    <p><a  href="http://feed.news.yahoo.co.jp/promo/" onmousedown="this.href='http://feed.news.yahoo.co.jp/promo/'"><img src="http://i.yimg.jp/images/bloom/v201212/banner/banner_buzz_300_130.png" width="300" height="130" alt="Buzzの使い方はこちら"></a></p>
+</section><![if gt IE 7 ]>
+<section id="shareBox" class="cmnbox">
+    <header class="hd">
+        <h3>Buzzトップをシェア</h3>
+    </header>
+    <ol class="bd infolist">
+        <li class="rics-column">
+            <div class="rics-column-wrapper">
+                <ul class="shareBox">
+                    <li class="fbSet"></li>
+                    <li class="twSet"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://buzz.news.yahoo.co.jp/" data-text="Yahoo!ニュース Buzz" data-hashtags="YJnewsBuzz" data-lang="ja">ツイート</a></li>
+                </ul>
+            </div>
+        </li>
+   </ol>
+</section>
+<![endif]><section id="recommendedTopics" class="cmnbox">
+<header class="hd">
+<h1>掲載中の記事が受け取れるBuzzワード</h1>
+</header>
+<div class="bd">
+<ul class="list type48 first current" page="17">
+<li>
+<h1><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E5%A2%97%E7%A8%8E/0fcd3bccb119bd8b7367/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E5%A2%97%E7%A8%8E/0fcd3bccb119bd8b7367/'" class="name yjxName">増税</a></h1>
+<div class="smry">
+<a  href="http://buzz.news.yahoo.co.jp/buzzword/%E5%A2%97%E7%A8%8E/0fcd3bccb119bd8b7367/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E5%A2%97%E7%A8%8E/0fcd3bccb119bd8b7367/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_sigg6wumsfn9z9.GsjJTexwP3Q---x48-y48/spider/topics/0fcd3bccb119bd8b7367.png" title="増税"></a>
+                <div class="follow yjxFollow" data-followee-id="0fcd3bccb119bd8b7367" data-destination-type="spider_topic" data-ult-sid="2080245046" data-ult-sec="toptpc" data-ult-pos="1"></div></div>
+</li>
+<li>
+<h1><a  href="http://buzz.news.yahoo.co.jp/buzzword/Skype/0a00b774e8ee6f873597/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/Skype/0a00b774e8ee6f873597/'" class="name yjxName">Skype</a></h1>
+<div class="smry">
+<a  href="http://buzz.news.yahoo.co.jp/buzzword/Skype/0a00b774e8ee6f873597/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/Skype/0a00b774e8ee6f873597/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggn4IEF4_h80IKEq9Ux0m_lA---x48-y48/spider/topics/0a00b774e8ee6f873597.png" title="Skype"></a>
+                <div class="follow yjxFollow" data-followee-id="0a00b774e8ee6f873597" data-destination-type="spider_topic" data-ult-sid="2080245046" data-ult-sec="toptpc" data-ult-pos="2"></div></div>
+</li>
+<li>
+<h1><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD/007c341ed731341e2337/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD/007c341ed731341e2337/'" class="name yjxName">中華人民共和国</a></h1>
+<div class="smry">
+<a  href="http://buzz.news.yahoo.co.jp/buzzword/%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD/007c341ed731341e2337/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD/007c341ed731341e2337/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggejUqa5ceKNUwCSbnHKC7KQ---x48-y48/spider/topics/007c341ed731341e2337.png" title="中華人民共和国"></a>
+                <div class="follow yjxFollow" data-followee-id="007c341ed731341e2337" data-destination-type="spider_topic" data-ult-sid="2080245046" data-ult-sec="toptpc" data-ult-pos="3"></div></div>
+</li>
+<li>
+<h1><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E8%90%BD%E6%9B%B8%E3%81%8D/02af006213c48c479522/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E8%90%BD%E6%9B%B8%E3%81%8D/02af006213c48c479522/'" class="name yjxName">落書き</a></h1>
+<div class="smry">
+<a  href="http://buzz.news.yahoo.co.jp/buzzword/%E8%90%BD%E6%9B%B8%E3%81%8D/02af006213c48c479522/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E8%90%BD%E6%9B%B8%E3%81%8D/02af006213c48c479522/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggA4tKPI_Y2etCyW82IDQbuw---x48-y48/spider/topics/02af006213c48c479522.png" title="落書き"></a>
+                <div class="follow yjxFollow" data-followee-id="02af006213c48c479522" data-destination-type="spider_topic" data-ult-sid="2080245046" data-ult-sec="toptpc" data-ult-pos="4"></div></div>
+</li>
+<li>
+<h1><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E6%97%A5%E6%9C%AC%E4%BB%A3%E8%A1%A8/019bc8f80fa0603d9401/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E6%97%A5%E6%9C%AC%E4%BB%A3%E8%A1%A8/019bc8f80fa0603d9401/'" class="name yjxName">サッカー日本代表</a></h1>
+<div class="smry">
+<a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E6%97%A5%E6%9C%AC%E4%BB%A3%E8%A1%A8/019bc8f80fa0603d9401/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E6%97%A5%E6%9C%AC%E4%BB%A3%E8%A1%A8/019bc8f80fa0603d9401/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggOS89a8lUhUINvaA3QeUTWA---x48-y48/spider/topics/019bc8f80fa0603d9401.png" title="サッカー日本代表"></a>
+                <div class="follow yjxFollow" data-followee-id="019bc8f80fa0603d9401" data-destination-type="spider_topic" data-ult-sid="2080245046" data-ult-sec="toptpc" data-ult-pos="5"></div></div>
+</li>
+<li>
+<h1><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E8%B3%87%E7%94%9F%E5%A0%82/0636c553911e78941755/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E8%B3%87%E7%94%9F%E5%A0%82/0636c553911e78941755/'" class="name yjxName">資生堂</a></h1>
+<div class="smry">
+<a  href="http://buzz.news.yahoo.co.jp/buzzword/%E8%B3%87%E7%94%9F%E5%A0%82/0636c553911e78941755/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E8%B3%87%E7%94%9F%E5%A0%82/0636c553911e78941755/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggGrGdY.86338bHHnBeWxiQQ---x48-y48/spider/topics/0636c553911e78941755.jpg" title="資生堂"></a>
+                <div class="follow yjxFollow" data-followee-id="0636c553911e78941755" data-destination-type="spider_topic" data-ult-sid="2080245046" data-ult-sec="toptpc" data-ult-pos="6"></div></div>
+</li>
+</ul>
+</div>
+</section>
+<section id="socialBuzz" class="cmnbox">
+<div class="bd">
+<ul class="list type48 first current">
+<li>
+    <h1><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E4%BB%8A%E3%81%AEBuzz%EF%BC%88%E8%A8%98%E4%BA%8B%EF%BC%89/01fc9c285f5be9084834/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E4%BB%8A%E3%81%AEBuzz%EF%BC%88%E8%A8%98%E4%BA%8B%EF%BC%89/01fc9c285f5be9084834/'" class="name yjxName">今のBuzz（記事）</a></h1>
+    <div class="smry">
+        <a  href="http://buzz.news.yahoo.co.jp/buzzword/%E4%BB%8A%E3%81%AEBuzz%EF%BC%88%E8%A8%98%E4%BA%8B%EF%BC%89/01fc9c285f5be9084834/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E4%BB%8A%E3%81%AEBuzz%EF%BC%88%E8%A8%98%E4%BA%8B%EF%BC%89/01fc9c285f5be9084834/'" class="thumb yjxThumb"><img width="48" height="48" src="http://blmt.c.yimg.jp/im_siggHX2YLEFcmt8lBV_fANEkIQ---x48-y48/spider/topics/01fc9c285f5be9084834.png" title="今のBuzz（記事）"></a>
+                        <div class="follow yjxFollow" data-followee-id="01fc9c285f5be9084834" data-destination-type="spider_topic" data-ult-sid="2080245046" data-ult-sec="sobuz" data-ult-pos="1"></div>
+    </div>
+</li><li>
+    <h1><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E4%BB%8A%E3%81%AEBuzz%EF%BC%88%E7%94%BB%E5%83%8F%EF%BC%89/0726446b7f5025667985/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E4%BB%8A%E3%81%AEBuzz%EF%BC%88%E7%94%BB%E5%83%8F%EF%BC%89/0726446b7f5025667985/'" class="name yjxName">今のBuzz（画像）</a></h1>
+    <div class="smry">
+        <a  href="http://buzz.news.yahoo.co.jp/buzzword/%E4%BB%8A%E3%81%AEBuzz%EF%BC%88%E7%94%BB%E5%83%8F%EF%BC%89/0726446b7f5025667985/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E4%BB%8A%E3%81%AEBuzz%EF%BC%88%E7%94%BB%E5%83%8F%EF%BC%89/0726446b7f5025667985/'" class="thumb yjxThumb"><img width="48" height="48" src="http://blmt.c.yimg.jp/im_siggf84r1D3x6X0qWw.zr9IQJg---x48-y48/spider/topics/0726446b7f5025667985.png" title="今のBuzz（画像）"></a>
+                        <div class="follow yjxFollow" data-followee-id="0726446b7f5025667985" data-destination-type="spider_topic" data-ult-sid="2080245046" data-ult-sec="sobuz" data-ult-pos="2"></div>
+    </div>
+</li><li class="explain"><p>すべてのBuzzワードから、話題になったものを厳選してお届けします。今、何が話題になっているのかを知りたい方におすすめです。</p></li>
+</ul>
+</div>
+</section>
+<div class="subBox">
+<script type="text/javascript" language="javascript"> 
+<!--
+yads_ad_ds = '77623_15367';
+//-->
+</script> 
+<script type="text/javascript" language="javascript" src="http://yads.c.yimg.jp/js/yads.js"></script>
+</div>
+                        </div>
+                        <div id="contents-footer"><div id="mfNavWrap">
+    <div class="mfNavSubWrap">
+        <ul id="mfSnsColumn">
+            <li><a href="http://rdsig.yahoo.co.jp/media/news/app/promo/pc_buzz/bigfooter/RV=1/RU=aHR0cDovL3Byb21vLm5ld3MueWFob28uY28uanAvYXBwL3lqbmV3cy8-">
+    <div class="iconAPP"><span>アプリ</span></div>
+    <p><em>アプリ</em><span>データ先読みで、電車でもサクサク</span></p>
+</a></li><li><a href="https://www.facebook.com/yjnews">
+    <div class="iconFB"><span>Facebookページ</span></div>
+    <p><em>Facebookページ</em><span>編集部による厳選記事を毎日配信</span></p>
+</a></li><li><a href="https://twitter.com/YahooNewsTopics">
+    <div class="iconTW"><span>Twitter</span></div>
+    <p><em>Twitter</em><span>リアルタイムでニュースを配信中</span></p>
+</a></li><li><a href="http://headlines.yahoo.co.jp/rss/list">
+    <div class="iconRSS"><span>RSS</span></div>
+    <p><em>RSS</em><span>購読したいニュースをお好みで</span></p>
+</a></li>
+        </ul>
+    </div>
+    <div class="mfNavList">
+        <ul>
+            <li ><a href="http://news.yahoo.co.jp/">トップ</a></li><li ><a href="http://news.yahoo.co.jp/flash">速報</a></li><li ><a href="http://headlines.yahoo.co.jp/hl?ty=p">写真</a></li><li ><a href="http://headlines.yahoo.co.jp/videonews/">映像</a></li><li ><a href="http://zasshi.news.yahoo.co.jp/">雑誌</a></li><li ><a href="http://bylines.news.yahoo.co.jp/">個人</a></li><li ><a href="http://buzz.news.yahoo.co.jp/">Buzz</a></li><li ><a href="http://polls.dailynews.yahoo.co.jp/">意識調査</a></li><li class="mfNavListLast"><a href="http://headlines.yahoo.co.jp/accr">ランキング</a></li>
+        </ul>
+    </div>
+    <div class="mfSubNavList">
+        <div class="mfSubNavListL">
+            <dl>
+                <dt>ニュースカテゴリ：</dt>
+                <dd><a href="http://headlines.yahoo.co.jp/hl?c=dom">国内</a></dd><dd><a href="http://headlines.yahoo.co.jp/hl?c=c_int">国際</a></dd><dd><a href="http://headlines.yahoo.co.jp/hl?c=bus">経済</a></dd><dd><a href="http://headlines.yahoo.co.jp/hl?c=c_ent">エンタメ</a></dd><dd><a href="http://headlines.yahoo.co.jp/hl?c=c_spo">スポーツ</a></dd><dd><a href="http://headlines.yahoo.co.jp/hl?c=c_sci">IT・科学</a></dd><dd><a href="http://headlines.yahoo.co.jp/hl?c=c_life">ライフ</a></dd><dd><a href="http://headlines.yahoo.co.jp/hl?c=loc">地域</a></dd>
+            </dl>
+        </div>
+        <div class="mfSubNavListR">
+            <dl>
+                <dt>その他：</dt>
+                <dd><a href="http://headlines.yahoo.co.jp/docs/copyright.html">ニュース提供社</a></dd><dd><a href="http://gsearch.news.yahoo.co.jp/gs?ty=g">新聞記事横断検索</a></dd>
+            </dl>
+        </div>
+    </div>
+</div></div>
+                    </div>
+                </div>
+                <footer id="footer">
+  <!-- SpaceID=0 robot -->
+
+  <div class="yjChviewWrap">
+    
+  </div>
+  <address>
+    <a href="http://docs.yahoo.co.jp/docs/info/terms/chapter1.html#cf2nd">プライバシーポリシー</a> - 
+    <a href="http://docs.yahoo.co.jp/docs/info/terms/">利用規約</a> - 
+    <a href="http://www.yahoo-help.jp/app/answers/detail/a_id/60137">免責事項</a> - 
+    <a href="https://www.yahoo-help.jp/app/ask/p/2428/form/yadv-info">ご意見・ご要望</a> - 
+    <a href="http://www.yahoo-help.jp/app/home/p/575/">ヘルプ・お問い合わせ</a>
+    <br>Copyright (C) 2014 Yahoo Japan Corporation. All Rights Reserved.
+  </address>
+</footer>
+            </div>
+            <![if !IE 6 ]>
+<aside class="pageTop"><a href="javascript:void(0);" id="pageTopBtn">ページトップへ</a></aside>
+<![endif]>
+        </div>
+    <iframe id="accountlink-link-simple-link-proxy" width="1px" height="1px" style="display:none"></iframe>
+<span id="credInitFlag" init_flag="false"></span>
+    </body>
+    <script type="text/javascript">
+<!--
+(function () {
+    $(document).ready(function(){
+
+        YAHOO.JP.Spider.globalNav.init({
+            'deviceType'   : 'pc' ,
+            'defaultTxt'   : 'キーワードを入力' 
+        });
+
+    });
+}());
+//-->
+<!--
+(function () {
+    $(document).ready(function(){
+
+        YAHOO.JP.Spider.SettingCrumb.init({
+            'ncrumb' : '-100' ,
+            'crumb'  : '' 
+        });
+
+    });
+}());
+//-->
+<!--
+$(function(){
+
+    $(document).ready(function(){
+        YAHOO.JP.Spider.FollowBtn.init({
+            'btnClass' : 'yjxFollow',
+            'url'      : 'http://f.news.yahoo.co.jp/follow/'
+        });
+
+        setTimeout(function(){
+            $().timelinr({
+                autoPlayDirection: 'forward',
+                startAt: 18
+            });
+        },100);
+
+        YAHOO.JP.Spider.BuzzTopList.init({
+            'id'        : 'buzzTopics',
+            'subId'     : 'recommendedTopics',
+            'ApiUrl'    : '/Markup/BuzzNewsTopics/',
+            'sid'       : '2080245046',
+            'sec'       : {'top':'top_bhl', 'btm':'btm_bhl', 'tl':'tl'},
+            'slk'       : {'prev':'prev', 'next':'next', 'time':'time'}
+        });
+
+    });
+});
+//--><!--
+$(function(){
+
+    $(document).ready(function(){
+
+        YAHOO.JP.Spider.AjaxList.init({
+            'id'        : 'imgTopics',
+            'ApiUrl'    : '/Markup/BuzzImageTopics/',
+            'ItemType'  : 'Images',
+            'ItemNum'   : 3,
+            'thumbsize' : 178,
+            'flickable' : false,
+            'sid'       : 2080245046,
+            'sec'       : 'toppic',
+            'slk'       : {'prev':'prev', 'next':'next'}
+        });
+
+    });
+});
+//--><!--
+(function() {YjdCookie={set:function(a,b){var x=new XMLHttpRequest();x.open("GET",a,0);x.send();document.location.href=b;}};}());
+//--><!--
+$(function(){
+    $(document).ready(function(){
+        YAHOO.JP.Spider.PageTopButton.init({
+            'id' : 'pageTopBtn'
+        });
+    });
+});
+//-->
+
+</script>
+</html><!-- topic02.spider.kks.yahoo.co.jp uncompressed/chunked Thu May 29 12:00:27 JST 2014 -->

@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="ja">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="ja">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="ja">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="ja">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+
+		<title>アプリ開発者必見！Tinder風UIがUXを高める4つの行動心理学的理由 | グロースハックジャパン | growth hack japan</title>
+		
+	<link rel="pingback" href="http://growthhackjapan.com/xmlrpc.php" />
+
+		<!--[if lt IE 9]>
+	<script src="http://growthhackjapan.com/wp-content/themes/Nexus_ghj/js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+	<script src="http://growthhackjapan.com/js/sns.js" type="text/javascript"></script>
+	<script src="http://growthhackjapan.com/js/jquery.social-shares.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<link rel="alternate" type="application/rss+xml" title="growth hack japan &raquo; フィード" href="http://growthhackjapan.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="growth hack japan &raquo; コメントフィード" href="http://growthhackjapan.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="growth hack japan &raquo; アプリ開発者必見！Tinder風UIがUXを高める4つの行動心理学的理由 のコメントのフィード" href="http://growthhackjapan.com/2014-05-28-4-psychological-reasons-why-tinder-style-ui-improves-ux/feed/" />
+<meta content="Nexus v.1.3" name="generator"/><link rel='stylesheet' id='jquery.fancybox-css'  href='http://growthhackjapan.com/wp-content/plugins/fancy-box/jquery.fancybox.css?ver=1.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wordpress-popular-posts-css'  href='http://growthhackjapan.com/wp-content/plugins/wordpress-popular-posts/style/wpp.css?ver=2.3.7' type='text/css' media='all' />
+<link rel='stylesheet' id='tm_clicktotweet-css'  href='http://growthhackjapan.com/wp-content/plugins/click-to-tweet-by-todaymade/assets/css/styles.css?ver=3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://growthhackjapan.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=3.5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='nexus-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,800italic,400,300,700,800|Raleway:400,200,100,500,700,800,900&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='nexus-style-css'  href='http://growthhackjapan.com/wp-content/themes/Nexus_ghj/style.css?ver=3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='et-shortcodes-css-css'  href='http://growthhackjapan.com/wp-content/themes/Nexus_ghj/epanel/shortcodes/css/shortcodes.css?ver=3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='et-shortcodes-responsive-css-css'  href='http://growthhackjapan.com/wp-content/themes/Nexus_ghj/epanel/shortcodes/css/shortcodes_responsive.css?ver=3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='http://growthhackjapan.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='http://growthhackjapan.com/wp-content/themes/Nexus_ghj/epanel/page_templates/js/fancybox/jquery.fancybox-1.3.4.css?ver=1.3.4' type='text/css' media='screen' />
+<link rel='stylesheet' id='et_page_templates-css'  href='http://growthhackjapan.com/wp-content/themes/Nexus_ghj/epanel/page_templates/page_templates.css?ver=1.8' type='text/css' media='screen' />
+<script type='text/javascript' src='http://growthhackjapan.com/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://growthhackjapan.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://growthhackjapan.com/wp-content/plugins/fancy-box/jquery.fancybox.js?ver=1.2.6'></script>
+<script type='text/javascript' src='http://growthhackjapan.com/wp-content/plugins/fancy-box/jquery.easing.js?ver=1.3'></script>
+<script type='text/javascript' src='http://growthhackjapan.com/wp-content/plugins/throws-spam-away/js/tsa_params.js?ver=2.6.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://growthhackjapan.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://growthhackjapan.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.6" />
+<link rel='canonical' href='http://growthhackjapan.com/2014-05-28-4-psychological-reasons-why-tinder-style-ui-improves-ux/' />
+<link rel='shortlink' href='http://growthhackjapan.com/?p=3357' />
+<script type="text/javascript">
+	jQuery(document).ready(function($){
+		var select = $('a[href$=".bmp"],a[href$=".gif"],a[href$=".jpg"],a[href$=".jpeg"],a[href$=".png"],a[href$=".BMP"],a[href$=".GIF"],a[href$=".JPG"],a[href$=".JPEG"],a[href$=".PNG"]');
+		select.attr('rel', 'fancybox');
+		select.fancybox();
+	});
+</script>
+<link rel='stylesheet' id='numbermyposts-css'  href='http://growthhackjapan.com/wp-content/plugins/number-my-post-pages-plugin/numbermypostpages.css?ver=3.6' type='text/css' media='all' />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />	<style>
+		a { color: #4bb6f5; }
+
+		body { color: #333333; }
+
+		#top-menu li.current-menu-item > a, #top-menu > li > a:hover, .meta-info, .et-description .post-meta span, .categories-tabs:after, .home-tab-active, .home-tab-active:before, a.read-more, .comment-reply-link, h1.post-heading, .form-submit input, .home-tab-active:before, .et-recent-videos-wrap li:before, .nav li ul, .et_mobile_menu, #top-menu > .sfHover > a { background-color: #013453; }
+
+		.featured-comments span, #author-info strong, #footer-bottom .current-menu-item a, .featured-comments span { color: #013453; }
+		.entry-content blockquote, .widget li:before, .footer-widget li:before, .et-popular-mobile-arrow-next { border-left-color: #013453; }
+
+		.et-popular-mobile-arrow-previous { border-right-color: #013453; }
+
+		#top-menu > li > a { color: #333333; }
+
+		#top-menu > li.current-menu-item > a, #top-menu li li a, .et_mobile_menu li a { color: #ffffff; }
+
+		</style>
+<style>.post-thumbnail { background-image: url(http://growthhackjapan.com/wp-content/uploads/2014/05/Screen-Shot-2014-05-27-at-8.20.40.png); }</style><link rel="shortcut icon" href="http://growthhackjapan.com/wp-content/uploads/2013/12/faviconb1.png" /><meta property="og:title" content="アプリ開発者必見！Tinder風UIがUXを高める4つの行動心理学的理由" />
+<meta property="og:image" content="http://growthhackjapan.com/wp-content/uploads/2014/05/Screen-Shot-2014-05-27-at-8.20.40.png" />
+
+<meta property="og:description" content="斬新なUIで出会い系アプリに革命をもたらしたTinder。本記事ではその答えをTinder風UIによって向上するUXに導き出し、「Tinder風UIがUXを高める4つの理由」として紹介致します。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://growthhackjapan.com/2014-05-28-4-psychological-reasons-why-tinder-style-ui-improves-ux/" />
+
+<script language="JavaScript">
+$(document).ready( function () {
+    $("a[href^='http']:not([href*='" + location.hostname + "'])").attr('target', '_blank');
+})
+</script>
+
+<script type="text/javascript">
+jQuery(function()
+{jQuery("a").click(function(e)
+  {var ahref = jQuery(this).attr('href');      
+   if (ahref.indexOf("サイトのURL") != -1 || ahref.indexOf("http") == -1 )
+    {ga('send', 'event', 'linkclick', 'click', ahref);}      
+     else {ga('send', 'event', 'outlinkclick', 'click', ahref);}})
+     });
+     </script>
+<link rel="author" href="https://plus.google.com/104553469043484767665/" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45064715-1', 'growthhackjapan.com');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+  ga('set', 'contentGroup1', 'single'); 
+</script>
+</head>
+<body class="single single-post postid-3357 single-format-standard unknown et_includes_sidebar">
+
+	<header id="main-header">
+		<div class="container">
+			<div id="top-info" class="clearfix">
+				<a href="/">
+					<img src="http://growthhackjapan.com/wp-content/themes/Nexus_ghj/ghj_img/title.jpg" alt="growth hack japan" id="logo" />
+				</a>
+			</div>
+			<div id="top-menu3"><form role="search" method="get" id="searchform" class="searchform" action="http://growthhackjapan.com/">
+				<div>
+					<input type="text" value="" name="s" id="s searchbar">
+					<input type="submit" id="searchsubmit">
+				</div>
+			</form>
+</div><!--top_menu3-->
+
+			<div id="top-navigation" class="clearfix">
+				<nav>
+					<div id="top-menu">
+					<a href="/sem/">SEM</a><a href="/sns/">SNS</a><a href="/mobile/">Mobile</a><a href="/apps/">Apps</a><a href="/more/">More</a>
+					<div class="sns_btn1"><a href="https://twitter.com/GrowthHackJPN" target="_blank">グロースハック ツイッター</a></div><!--sns_btn1-->
+					<div class="sns_btn2"><a href="https://www.facebook.com/growthhackjpn?fref=ts" target="_blank">グロースハック フェイスブック</a></div><!--sns_btn2-->
+					
+					<div class="sns_btn3"><a href="javascript:(function(){window.open('https://plusone.google.com/_/+1/confirm?hl=ja&url=[/]'+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title),'_blank');})();">
+グロースハック グーグル+</a></div><!--sns_btn3-->
+
+					<div class="sns_btn4"><a href="/feed/" target="_blank">RSS</a></div><!--sns_btn4-->
+					<form role="search" method="get" id="searchform" class="searchform" action="http://growthhackjapan.com/">
+					<div>
+					<input type="text" value="" name="s" id="s searchbar">
+					<input type="submit" id="searchsubmit">
+					</div>
+			</form>
+					</div><!--top-menu-->
+				</nav>
+			</div> <!-- #top-navigation -->
+			
+		</div> <!-- .container -->
+
+	</header> <!-- #main-header -->
+	<div class="header_mar"></div>
+	<div class="post-thumbnail">
+		<div class="container">
+		<p class="post-meta meta_single"><span>05/28/2014</span></p>
+		<span class="single_cate"><ul class="post-categories">
+	<li><a href="http://growthhackjapan.com/apps/" title="Apps の投稿をすべて表示" rel="category tag">Apps</a></li>
+	<li><a href="http://growthhackjapan.com/mobile/" title="Mobile の投稿をすべて表示" rel="category tag">Mobile</a></li>
+	<li><a href="http://growthhackjapan.com/feature/" title="注目記事 の投稿をすべて表示" rel="category tag">注目記事</a></li></ul></span>
+			<h1 class="post-heading">アプリ開発者必見！Tinder風UIがUXを高める4つの行動心理学的理由</h1>
+		</div> <!-- .container -->
+	</div> <!-- .post-thumbnail -->
+
+
+<div class="bread_out">
+<div id="breadcrumbs">
+					<a href="http://growthhackjapan.com" class="breadcrumbs_home">Home</a> <span class="raquo">&raquo;</span>
+
+								<a href="http://growthhackjapan.com/apps/">Apps</a> <span class="raquo">&raquo;</span> アプリ開発者必見！Tinder風UIがUXを高める4つの行動心理学的理由					</div> <!-- #breadcrumbs --></div>
+<div class="page-wrap container">
+	<div id="main-content">
+		<div class="main-content-wrap clearfix">
+			<div id="content" class="clearfix">
+				
+
+				<div id="left-area2">
+
+									
+					<article class="entry-content clearfix">
+																						<div class="single_img"><img width="797" height="562" src="http://growthhackjapan.com/wp-content/uploads/2014/05/Screen-Shot-2014-05-27-at-8.20.40.png" class="attachment-post-thumbnail wp-post-image" alt="Screen Shot 2014-05-27 at 8.20.40" /></div><!--single_img-->
+																	
+
+
+<div class="social4i" style="height:69px;float: left;margin-left:12px;">
+<div class="social4in" style="height:69px;float: left;">
+
+<div class="socialicons" style="float:left;margin-right: 4px;">
+<a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-title="" data-hatena-bookmark-layout="vertical-balloon" title=""><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="" width="20" height="20" style="border: none;" /></a>
+</div>
+
+<div class="socialicons s4twitter" style="float:left;margin-right: 4px;"><a href="https://twitter.com/share" data-url="http://growthhackjapan.com/2014-05-28-4-psychological-reasons-why-tinder-style-ui-improves-ux/" data-counturl="http://growthhackjapan.com/2014-05-28-4-psychological-reasons-why-tinder-style-ui-improves-ux/"  class="twitter-share-button" data-count="vertical" data-via=""></a></div>
+</div>
+
+<div class="socialicons" style="float:left;margin-right: 4px;">
+<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fgrowthhackjapan.com%2F2014-05-28-4-psychological-reasons-why-tinder-style-ui-improves-ux%2F&amp;width=30px&amp;layout=box_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:72px; height:65px;" allowTransparency="true"></iframe>
+</div>
+<div class="socialicons" style="float:left;margin-right: 4px;">
+<a data-pocket-label="pocket" data-pocket-count="vertical" class="pocket-btn" data-lang="en"></a>
+<script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+</div>
+
+</div>
+<div class="et-kijis_sns2">
+
+
+
+</div><!--et-kijis_sns-->
+
+
+
+
+
+<!-- <br clear="all" /> -->
+<br clear="all" />
+<br clear="all" />
+<br clear="all" />
+<div align="center">
+<a href="https://creativesurvey.com/basic-introduction?utm_source=ghj&utm_medium=banner&utm_content=1&utm_campaign=ghj_ver1" onclick="ga('send', 'event', 'ad-02', 'single_pc_top_002a_01', 'http://growthhackjapan.com/2014-05-28-4-psychological-reasons-why-tinder-style-ui-improves-ux/');"><img src="http://growthhackjapan.com/img/banner/002a/002a_01.gif" /></a>
+
+</div>
+				
+
+
+
+					<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="color: #ff6600;">【本記事とセットで読みたい「<a href="http://growthhackjapan.com/2014-05-29-10-tinder-styles-apps" target="_blank">UXを高めるTinder風UIで今後が期待される「非」出会い系アプリ10選</a>」を公開しました!】</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>edited by Ryutaro Mori</p>
+<p>&nbsp;</p>
+<p><a href="https://twitter.com/GrowthHackJPN" target="_blank">Follow us on Twitter</a></p>
+<p>&nbsp;</p>
+<p><a href="https://www.facebook.com/growthhackjpn" target="_blank">Follow us on Facebook</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Tinder</span></p>
+<p>&nbsp;</p>
+<p>出会い系アプリに革命をもたらしたと言っても過言ではない超人気アプリです。</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Tinderの魅力は何と言ってもそのUI。</span></p>
+<p>&nbsp;</p>
+<p>次々に現れる異性の写真をスワイプしながらハートかバツ印で判定していくシンプルなUIは、今までプロフィール＋顔写真の組み合わせが主流だった出会い系サービス内における異性の判定基準を顔写真(＋位置情報)のみに限定し、「余計な情報」を省くことで出会い系に新感覚のカジュアルさをもたらしました。</p>
+<p>&nbsp;</p>
+<p><a href="http://growthhackjapan.com/wp-content/uploads/2014/05/Screen-Shot-2014-05-27-at-5.57.39.png"><img class="aligncenter size-medium wp-image-3361" alt="Screen Shot 2014-05-27 at 5.57.39" src="http://growthhackjapan.com/wp-content/uploads/2014/05/Screen-Shot-2014-05-27-at-5.57.39-166x300.png" width="166" height="300" /></a></p>
+<p>(Tinderの基本画像の下にはハートとバツ印が設置してあります。)</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a href="http://growthhackjapan.com/wp-content/uploads/2014/05/Screen-Shot-2014-05-27-at-5.50.12.png"><img class="aligncenter size-medium wp-image-3358" alt="Screen Shot 2014-05-27 at 5.50.12" src="http://growthhackjapan.com/wp-content/uploads/2014/05/Screen-Shot-2014-05-27-at-5.50.12-176x300.png" width="176" height="300" /></a></p>
+<p>&nbsp;</p>
+<p>(相手に好意があるときは、ハートに向けてスワイプします。次の写真が出てきても、同様の作業を繰り返します。)</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a href="http://growthhackjapan.com/wp-content/uploads/2014/05/Screen-Shot-2014-05-27-at-5.48.35.png"><img class="aligncenter size-medium wp-image-3359" alt="Screen Shot 2014-05-27 at 5.48.35" src="http://growthhackjapan.com/wp-content/uploads/2014/05/Screen-Shot-2014-05-27-at-5.48.35-177x300.png" width="177" height="300" /></a></p>
+<p>&nbsp;</p>
+<p>(そうでもない時は、バツ印に向かってスワイプします。)</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">そして今、TInderを真似したUIは出会い系アプリ以外にも広がりを見せています。</span></p>
+<p>&nbsp;</p>
+<p>なぜ今これほどまでにTInder風UIが注目を集めるのか。</p>
+<p>&nbsp;</p>
+<p>本記事ではその答えをTinder風UIによって向上するUXに導き出し、「Tinder風UIがUXを高める4つの理由」として紹介致します。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="color: #ff6600;">【本記事とセットで読みたい「<span style="color: #00ccff;"><a href="http://growthhackjapan.com/2014-05-29-10-tinder-styles-apps" target="_blank"><span style="color: #00ccff;">UXを高めるTinder風UIで今後が期待される「非」出会い系アプリ10選</span></a></span>」を公開しました!】</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>認知的負荷最小化</h3>
+<p>&nbsp;</p>
+<p><a href="http://growthhackjapan.com/wp-content/uploads/2014/05/PSM_V46_D167_Outer_surface_of_the_human_brain.jpg"><img class="aligncenter size-medium wp-image-3366" alt="PSM_V46_D167_Outer_surface_of_the_human_brain" src="http://growthhackjapan.com/wp-content/uploads/2014/05/PSM_V46_D167_Outer_surface_of_the_human_brain-300x252.jpg" width="300" height="252" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>グロースハックジャパンでも「<a href="http://growthhackjapan.com/2014-03-14-5-tips-for-minimizing-cognitive-load/" target="_blank">もう一つのグロースハック条件「認知的負荷最小化」5つのポイント</a>」としてお伝えしたこのコンセプト。</p>
+<p>&nbsp;</p>
+<p>詳細は是非記事をご覧頂ければと思いますが、要するに、「<span style="font-weight: bold;">目的達成までに辿る脳内ステップの数を最小化し、使いやすいアプリを作るためには、UIをシンプルにするだけでは足りないよ</span>」というお話です。</p>
+<p>&nbsp;</p>
+<p>Tinderに話を戻すと、今までの出会い系サービスは、「この人に興味があることを伝えよう」という目的を達成するまでに、①検索、②検索結果に表示されるプロフィールの1部を閲覧、③プロフィール詳細を閲覧、④興味があることを伝えるなどといったステップを踏んできました。</p>
+<p>&nbsp;</p>
+<p>これら実際のステップに加えて、脳内では「どこのボタンを押せば次のステップに進めるのか」、「間違って変なボタンを押して変な操作を行ってしまわないか」などといったより細かなステップが存在し、(特に新規)ユーザーに認知的負荷を与えてきたのです。</p>
+<p>&nbsp;</p>
+<p>その点Tinderは、①シンプルなUIはもちろん、②ナチュラルなウォークスルーや③統一性のあるUI、そして④「カジュアルな出会い」という届けたい体験に基づいたUI設計により、脳内ステップを最小化することに成功しています(詳しくは認知的負荷最小化の記事を参考)</p>
+<p>&nbsp;</p>
+<p>特に、<span style="font-weight: bold;">1画面で人間が許容出来る情報量を理解し、1画面あたり1つの情報(1人の顔写真)のみを表示したことが、認知的負荷の最小化に貢献した最たる所以</span>でしょう。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>「即断」の効能</h3>
+<p>&nbsp;</p>
+<p><a href="http://growthhackjapan.com/wp-content/uploads/2014/05/Quick_Magazine.png"><img class="aligncenter size-medium wp-image-3367" alt="Quick_(Magazine)" src="http://growthhackjapan.com/wp-content/uploads/2014/05/Quick_Magazine-285x300.png" width="285" height="300" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>「<span style="font-weight: bold;">熟考するより即断した方が正しい決断を下せる</span>」</p>
+<p>&nbsp;</p>
+<p>そんなリサーチ結果が 社会学や心理学を題材として扱うMalcolm Gladwell氏の著書「Blink」で明らかになっています。</p>
+<p>&nbsp;</p>
+<p>Gladwell氏によると、<span style="font-weight: bold;">私たち人間が「自覚している認知」とは、私たちが毎日の生活で体験する物や人に対する認知のほんの一角に過ぎず、その他の認知は全て「無意識に起こる認知」である</span>と言います。</p>
+<p>&nbsp;</p>
+<p>更に、<span style="font-weight: bold;">私たちが熟考する際に頼りにするのはこのほんの一角に過ぎない「自覚している認知」であるため、大量に存在する「無意識に起こる認知」を基に下す即断のほうが正確性が高くなる</span>傾向にあるというのです。</p>
+<p>&nbsp;</p>
+<p><span style="color: #ff6600;">*とにかく簡潔に要点をお伝えすることに専念しています。即断の危険性に関してもGladwell氏は言及しています。</span></p>
+<p>&nbsp;</p>
+<p>話をTinderに戻しますと、Tinder及びTinder風のUIを用いたアプリは、ユーザーに熟考ではなく即断を求めます。</p>
+<p>&nbsp;</p>
+<p>もしGladwell氏の主張が正しいのであれば、<span style="font-weight: bold;">ユーザーは異性のプロフィールをじっくり読んでコンタクトを取るよりもより良い決断を下せることになり、Tinderの最終目的である「出会い」もより良い体験になる可能性を秘めている</span>のです。</p>
+<p>&nbsp;</p>
+<p>もちろんTinder風UIが持つ即断の効能は、出会い以外にも様々なサービスに活用出来ること間違いないでしょう。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>親指だけで操作が可能</h3>
+<p>&nbsp;</p>
+<p><a href="http://growthhackjapan.com/wp-content/uploads/2014/05/Facebook-logo-thumbs-up.png"><img class="aligncenter size-medium wp-image-3368" alt="Facebook-logo-thumbs-up" src="http://growthhackjapan.com/wp-content/uploads/2014/05/Facebook-logo-thumbs-up-300x249.png" width="300" height="249" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>時代はモバイルです。</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">何度も言いますが、時代はモバイルです。</span></p>
+<p>&nbsp;</p>
+<p>「そんなことグロースハックジャパンを読まなくても分かるよ」なんて意見はごもっともですが、実際の問題として、両手を使わないと満足に使えないUIがあまりに多いのが実情ではないでしょうか。</p>
+<p>&nbsp;</p>
+<p>今一度ユーザーの利用シーンを想像してみましょう。</p>
+<p>&nbsp;</p>
+<p>満員電車の中、バッグを抱えて買い物中、肩肘つきながらテレビ鑑賞中などなど。片手しか使えない状況が数多く存在しています。</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">どこに行ってもスマホと一緒のモバイル時代において、Tinderのように親指1つで操作出来るUIは必須条件になっている</span>のです。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="color: #ff6600;">【本記事とセットで読みたい「<a href="http://growthhackjapan.com/2014-05-29-10-tinder-styles-apps" target="_blank">UXを高めるTinder風UIで今後が期待される「非」出会い系アプリ10選</a>」を公開しました!】</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>ゲーミフィケーション</h3>
+<p>&nbsp;</p>
+<p><a href="http://growthhackjapan.com/wp-content/uploads/2014/05/controller.jpg"><img class="aligncenter size-medium wp-image-3337" alt="SONY DSC" src="http://growthhackjapan.com/wp-content/uploads/2014/05/controller-300x234.jpg" width="300" height="234" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Tinderのユーザーレビューを見てみると、「Tinderは出会い系じゃなく、ゲームとして使っている」といった声が</span>多く見受けられます。</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">「スワイプを繰り返し、意中の人を見つけ出す」という作業は従来の出会い系アプリには無い新たなゲーム感覚をもたらし、結果としてバズルゲームなどにも見られる中毒症状を生み出す結果に至っている</span>のです。</p>
+<p>&nbsp;</p>
+<p>実際に、Tinderの共同創始者であるJustin Mateen氏は、昨年行われたインタビューにおいて、ユーザーの60％が毎日アプリを利用し、その多くが1日あたり5~6回アプリを開いているとも語っています。</p>
+<p>&nbsp;</p>
+<p>もちろん性欲という最強の欲望あっての上記の数字であることに間違いはありませんが、それでもゲーミフィケーションによるアクティブ率の向上は無視出来ない要素と言えるでしょう。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>最後に</h3>
+<p>&nbsp;</p>
+<p>本記事を通じてお伝えしたTinder風UIの魅力ですが、他の分野における応用性に関してはまだまだ未知数であるのも事実です。</p>
+<p>&nbsp;</p>
+<p>それでも各業界が続々とTinder風UIを導入している背景には本記事で紹介した心理学的理由が存在し、今後も多くのアプリでTinder風UIを目撃する機会が増えるのではと筆者は予測しています。</p>
+<p>&nbsp;</p>
+<p>【参考:<a href="https://medium.com/design-ui-and-shenanigans/1a4d5703b4b" target="_blank">Small Data: Why Tinder-like apps are the way of the future</a>】</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="color: #ff6600;">【本記事とセットで読みたい「<a href="http://growthhackjapan.com/2014-05-29-10-tinder-styles-apps" target="_blank">UXを高めるTinder風UIで今後が期待される「非」出会い系アプリ10選</a>」を公開しました!】</span></p>
+<p>&nbsp;</p>
+<p><a href="https://twitter.com/GrowthHackJPN" target="_blank">Follow us on Twitter</a></p>
+<p>&nbsp;</p>
+<p><a href="https://www.facebook.com/growthhackjpn" target="_blank">Follow us on Facebook</a></p>
+<p>&nbsp;</p>
+<br clear="all" />
+<a class="facebook-iine" href="http://www.facebook.com/sharer.php?u=http://growthhackjapan.com/2014-05-28-4-psychological-reasons-why-tinder-style-ui-improves-ux/&amp;t=アプリ開発者必見！Tinder風UIがUXを高める4つの行動心理学的理由"
+onClick="window.open(encodeURI(decodeURI(this.href)),
+      'sharewindow',
+      'width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!'
+      ); return false;">
+Facebookでシェア
+</a>
+<a class="twitter-tweet" href="http://twitter.com/intent/tweet?text=【アプリ開発者必見！Tinder風UIがUXを高める4つの行動心理学的理由 | http://growthhackjapan.com/2014-05-28-4-psychological-reasons-why-tinder-style-ui-improves-ux/】"
+      onClick="window.open(encodeURI(decodeURI(this.href)),
+      'tweetwindow',
+      'width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!'
+      ); return false;">
+    twitterでシェア
+</a>
+<br clear="all" />
+<br />
+<!-- <br clear="all" /> -->
+<div align="center">
+<a href="http://ac.ebis.ne.jp/tr_set.php?argument=2uzLfYxA&ai=tad53734031d641f" onclick="ga('send', 'event', 'ad-01', 'single_pc_bottom_001a_03', 'http://growthhackjapan.com/2014-05-28-4-psychological-reasons-why-tinder-style-ui-improves-ux/');"><img src="http://growthhackjapan.com/img/banner/001a/001a_03.gif" /></a>
+</div>
+
+<div id="padSection">
+
+	<h4>Author Profile</h4>
+	<div class="avatar">
+		<img src="/images/mori-pic120.jpg" width="82" height="82">
+	</div>
+		<dl class="profileTxtSet">
+			<dt><span class="authorName">growthhackjapan</span></dt>
+			<dd>Ryutaro Mori<br />
+				<iframe src="//www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fryutaro.mori.52%3Ffref%3Dts&amp;width&amp;height=80&amp;colorscheme=light&amp;layout=button&amp;show_faces=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;margin-bottom:-60px;" allowTransparency="true"></iframe>
+			</dd>
+		</dl>
+		<div style="clear:both;">&nbsp;</div>
+		<p>UCLA（カリフォルニア大学ロサンゼルス校）を2013年に卒業。 <br />
+			平均年齢23歳のメンバーが集う株式会社VapesによるITブログメディア growth hack japanを監修。
+			ディレクションやコンサルティング業務の傍ら、ウェブサービスの拡散に貢献する術を日夜研究・実践中。
+		</p>
+
+		<div style="clear:both;">&nbsp;</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	<h4>Company Profile</h4>
+	<div class="avatar2">
+		<a href="https://www.facebook.com/vapes.inc" onclick="ga('send', 'event', 'vapes', 'fb', 'http://growthhackjapan.com/2014-05-28-4-psychological-reasons-why-tinder-style-ui-improves-ux/');"><img src="/images/Vapes-Logo-forSend.png" width="90"></a>
+	</div>
+		<dl class="profileTxtSet">
+			<dt><span class="authorName">株式会社Vapes</span></dt>
+			<dd>
+				<iframe src="//www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fvapes.inc&amp;width&amp;height=35&amp;colorscheme=light&amp;layout=button&amp;show_faces=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;margin-top:7px;" allowTransparency="true"></iframe>
+			</dd>
+		</dl>
+		<div style="clear:both;">&nbsp;</div>
+		<div style="clear:both;">&nbsp;</div>
+		<p>
+		検索エンジン周りのグロースハックをサポートする<a href="http://vapes.jp/" target="_blank" onclick="ga('send', 'event', 'vapes', 'top', 'http://growthhackjapan.com/2014-05-28-4-psychological-reasons-why-tinder-style-ui-improves-ux/');">株式会社Vapes</a>が運営しています。
+		</p>
+<a href="http://vapes.jp/contact.php" onclick="ga('send', 'event', 'vapes', 'contact', 'http://growthhackjapan.com/2014-05-28-4-psychological-reasons-why-tinder-style-ui-improves-ux/');" />お問い合せはこちら</a><br clear="all" />
+		<div style="clear:both;">&nbsp;</div>
+
+
+
+</div>
+
+<div class="et-kijis_sns4">
+
+
+<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+<span class="social_count">
+</span>
+
+
+<br clear="all" />
+
+</div><!--et-kijis_sns-->
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- relatedpost_2 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-4517675141894790"
+     data-ad-slot="4256035062"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-4517675141894790"
+     data-ad-slot="4256035062"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
+					</article> <!-- .entry -->
+
+				
+
+
+					
+					<div id="et-box-author">
+						<div id="et-bio-author">
+							<div class="author-avatar">
+								<img alt='' src='http://1.gravatar.com/avatar/de2346bc21d6d363f6fca968c0e0df54?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' />							</div> <!-- end #author-avatar -->
+
+							<p id="author-info">
+								<strong>Author:</strong> growthhackjapan							</p> <!-- end #author-info -->
+
+							<p>Ryutaro Mori
+UCLA（カリフォルニア大学ロサンゼルス校）を2013年に卒業。 
+現在は平均年齢23歳のWEBマーケティング・コンサルティングエージェントVapesによる
+ITニュースメディア growth hack japanを監修。 
+ディレクションやコンサルティング業務の傍ら、
+ウェブサービスの拡散に貢献する術を日夜研究・実践中。</p>
+						</div>
+
+						<div id="et-post-share" class="clearfix">
+							<span>Share This Post On</span>
+							<ul id="et-share-icons">
+							<li class="google-share"><a href="https://plus.google.com/share?url=http://growthhackjapan.com/2014-05-28-4-psychological-reasons-why-tinder-style-ui-improves-ux/" target="_blank" class="et-share-button et-share-google">Google</a></li><li class="facebook-share"><a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=http://growthhackjapan.com/2014-05-28-4-psychological-reasons-why-tinder-style-ui-improves-ux/&amp;p[images][0]=http://growthhackjapan.com/wp-content/uploads/2014/05/Screen-Shot-2014-05-27-at-8.20.40-150x150.png&amp;p[title]=アプリ開発者必見！Tinder風UIがUXを高める4つの行動心理学的理由" target="_blank" class="et-share-button et-share-facebook">Facebook</a></li><li class="twitter-share"><a href="https://twitter.com/intent/tweet?url=http://growthhackjapan.com/2014-05-28-4-psychological-reasons-why-tinder-style-ui-improves-ux/&amp;text=アプリ開発者必見！Tinder風UIがUXを高める4つの行動心理学的理由" target="_blank" class="et-share-button et-share-twitter">Twitter</a></li>							</ul>
+						</div>
+					</div>
+
+				
+													
+				</div> 	<!-- end #left-area -->
+
+
+				<div class="single_side">
+				<a href="http://vapes.jp/" ><img src="/images/vapes_bn.jpg" width="363px" style="margin-top:10px;" /></a>
+				<img src="http://growthhackjapan.com/wp-content/themes/Nexus_ghj/ghj_img/pop_h2.png" class="mb8">
+				
+	<div id="sidebar">
+		<!-- Wordpress Popular Posts Plugin v2.3.7 [W] [all] [views] [custom] -->
+<div id="wpp-2" class="widget popular-posts">
+<div class="et-kijis_out_side clearfix">
+<div class="et-featured-post et-featured-posts2 et-kijis mb20">
+<a href="http://growthhackjapan.com/2014-03-20-cloak-helps-you-keep-away-from-friends-you-dont-want-to-encounter/" title="匿名アプリを凌駕するエゲつないアンチソーシャルアプリ「Cloak」がアメリカで話題" target="_self"><img src="http://growthhackjapan.com/wp-content/uploads/2014/03/incog-363x263.png" alt="" border="0" width="363" height="263" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a>
+<div class="meta-info">
+<div class="meta-date"><span class="month">3月</span>20</div>
+<span class="featured-comments"><span>0</span></span>
+</div>
+<div class="post-description">
+<h2><a href="http://growthhackjapan.com/2014-03-20-cloak-helps-you-keep-away-from-friends-you-dont-want-to-encounter/" title="匿名アプリを凌駕するエゲつないアンチソーシャルアプリ「Cloak」がアメリカで話題">匿名アプリを凌駕するエゲつないアンチソーシャルアプ…</a></h2>
+<p class="post-meta">03/20/2014</p>
+</div>
+<div class="post-excerpt">
+<div class="excerpt-wrap">
+<a href="http://growthhackjapan.com/2014-03-20-cloak-helps-you-keep-away-from-friends-you-dont-want-to-encounter/" title="匿名アプリを凌駕するエゲつないアンチソーシャルアプリ「Cloak」がアメリカで話題">匿名アプリを凌駕するエゲつないアンチソーシャルアプ…</a>
+<p><a href="http://growthhackjapan.com/2014-03-20-cloak-helps-you-keep-away-from-friends-you-dont-want-to-encounter/">&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+最新記事『...</a></p>
+<span class="top_cate"><ul class="post-categories"><li><a href="http://growthhackjapan.com/apps/">Apps</a></li></ul></span>
+</div>
+</div>
+</div>
+<div class="et-featured-post et-featured-posts2 et-kijis mb20">
+<a href="http://growthhackjapan.com/2014-03-04-10-beautiful-landing-page-templates-for-smartphone-apps/" title="「売れる」アプリに欠かせない超カッコいいLPテンプレ 10選" target="_self"><img src="http://growthhackjapan.com/wp-content/uploads/2014/03/temptop-363x263.png" alt="" border="0" width="363" height="263" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a>
+<div class="meta-info">
+<div class="meta-date"><span class="month">3月</span>04</div>
+<span class="featured-comments"><span>6</span></span>
+</div>
+<div class="post-description">
+<h2><a href="http://growthhackjapan.com/2014-03-04-10-beautiful-landing-page-templates-for-smartphone-apps/" title="「売れる」アプリに欠かせない超カッコいいLPテンプレ 10選">「売れる」アプリに欠かせない超カッコいいLPテンプ…</a></h2>
+<p class="post-meta">03/04/2014</p>
+</div>
+<div class="post-excerpt">
+<div class="excerpt-wrap">
+<a href="http://growthhackjapan.com/2014-03-04-10-beautiful-landing-page-templates-for-smartphone-apps/" title="「売れる」アプリに欠かせない超カッコいいLPテンプレ 10選">「売れる」アプリに欠かせない超カッコいいLPテンプ…</a>
+<p><a href="http://growthhackjapan.com/2014-03-04-10-beautiful-landing-page-templates-for-smartphone-apps/">&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+ユーザー獲...</a></p>
+<span class="top_cate"><ul class="post-categories"><li><a href="http://growthhackjapan.com/apps/">Apps</a></li></ul></span>
+</div>
+</div>
+</div>
+<div class="et-featured-post et-featured-posts2 et-kijis mb20">
+<a href="http://growthhackjapan.com/2014-04-30-google-reveals-25-rules-for-smartphone-website-optimization/" title="Googleが明かすスマホサイト最適化25の最新ルール" target="_self"><img src="http://growthhackjapan.com/wp-content/uploads/2014/04/Screen-Shot-2014-04-30-at-1.57.27-363x263.png" alt="" border="0" width="363" height="263" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a>
+<div class="meta-info">
+<div class="meta-date"><span class="month">4月</span>30</div>
+<span class="featured-comments"><span>0</span></span>
+</div>
+<div class="post-description">
+<h2><a href="http://growthhackjapan.com/2014-04-30-google-reveals-25-rules-for-smartphone-website-optimization/" title="Googleが明かすスマホサイト最適化25の最新ルール">Googleが明かすスマホサイト最適化25の最新ル…</a></h2>
+<p class="post-meta">04/30/2014</p>
+</div>
+<div class="post-excerpt">
+<div class="excerpt-wrap">
+<a href="http://growthhackjapan.com/2014-04-30-google-reveals-25-rules-for-smartphone-website-optimization/" title="Googleが明かすスマホサイト最適化25の最新ルール">Googleが明かすスマホサイト最適化25の最新ル…</a>
+<p><a href="http://growthhackjapan.com/2014-04-30-google-reveals-25-rules-for-smartphone-website-optimization/">&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+Ryuta...</a></p>
+<span class="top_cate"><ul class="post-categories"><li><a href="http://growthhackjapan.com/feature/">注目記事</a></li></ul></span>
+</div>
+</div>
+</div>
+<div class="et-featured-post et-featured-posts2 et-kijis mb20">
+<a href="http://growthhackjapan.com/2014-03-23-facebook-hack-released-to-the-public/" title="フェイスブックが独自のプログラミング言語「Hack」をオープンソース化" target="_self"><img src="http://growthhackjapan.com/wp-content/uploads/2014/03/Screen-Shot-2014-03-23-at-12.25.06-363x263.png" alt="" border="0" width="363" height="263" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a>
+<div class="meta-info">
+<div class="meta-date"><span class="month">3月</span>23</div>
+<span class="featured-comments"><span>0</span></span>
+</div>
+<div class="post-description">
+<h2><a href="http://growthhackjapan.com/2014-03-23-facebook-hack-released-to-the-public/" title="フェイスブックが独自のプログラミング言語「Hack」をオープンソース化">フェイスブックが独自のプログラミング言語「Hack…</a></h2>
+<p class="post-meta">03/23/2014</p>
+</div>
+<div class="post-excerpt">
+<div class="excerpt-wrap">
+<a href="http://growthhackjapan.com/2014-03-23-facebook-hack-released-to-the-public/" title="フェイスブックが独自のプログラミング言語「Hack」をオープンソース化">フェイスブックが独自のプログラミング言語「Hack…</a>
+<p><a href="http://growthhackjapan.com/2014-03-23-facebook-hack-released-to-the-public/">&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+Edited by Ryuta...</a></p>
+<span class="top_cate"><ul class="post-categories"><li><a href="http://growthhackjapan.com/more/">More</a></li></ul></span>
+</div>
+</div>
+</div>
+<div class="et-featured-post et-featured-posts2 et-kijis mb20">
+<a href="http://growthhackjapan.com/2014-04-09-5-best-free-ish-apps-for-prototyping/" title="開発前に欠かせない超ハイレベルな無料プロトタイプ制作アプリ5選" target="_self"><img src="http://growthhackjapan.com/wp-content/uploads/2014/04/Screen-Shot-2014-04-08-at-17.51.43-363x263.png" alt="" border="0" width="363" height="263" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a>
+<div class="meta-info">
+<div class="meta-date"><span class="month">4月</span>09</div>
+<span class="featured-comments"><span>0</span></span>
+</div>
+<div class="post-description">
+<h2><a href="http://growthhackjapan.com/2014-04-09-5-best-free-ish-apps-for-prototyping/" title="開発前に欠かせない超ハイレベルな無料プロトタイプ制作アプリ5選">開発前に欠かせない超ハイレベルな無料プロトタイプ制…</a></h2>
+<p class="post-meta">04/09/2014</p>
+</div>
+<div class="post-excerpt">
+<div class="excerpt-wrap">
+<a href="http://growthhackjapan.com/2014-04-09-5-best-free-ish-apps-for-prototyping/" title="開発前に欠かせない超ハイレベルな無料プロトタイプ制作アプリ5選">開発前に欠かせない超ハイレベルな無料プロトタイプ制…</a>
+<p><a href="http://growthhackjapan.com/2014-04-09-5-best-free-ish-apps-for-prototyping/">&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+edite...</a></p>
+<span class="top_cate"><ul class="post-categories"><li><a href="http://growthhackjapan.com/apps/">Apps</a></li></ul></span>
+</div>
+</div>
+</div>
+<div class="et-featured-post et-featured-posts2 et-kijis mb20">
+<a href="http://growthhackjapan.com/2014-02-20-young-users-prefer-anonymity-to-real-identity/" title="若年ユーザーを狙うなら絶対無視できないシリコンバレーの最新トレンド" target="_self"><img src="http://growthhackjapan.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-19-at-21.41.17-363x263.png" alt="" border="0" width="363" height="263" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a>
+<div class="meta-info">
+<div class="meta-date"><span class="month">2月</span>20</div>
+<span class="featured-comments"><span>1</span></span>
+</div>
+<div class="post-description">
+<h2><a href="http://growthhackjapan.com/2014-02-20-young-users-prefer-anonymity-to-real-identity/" title="若年ユーザーを狙うなら絶対無視できないシリコンバレーの最新トレンド">若年ユーザーを狙うなら絶対無視できないシリコンバレ…</a></h2>
+<p class="post-meta">02/20/2014</p>
+</div>
+<div class="post-excerpt">
+<div class="excerpt-wrap">
+<a href="http://growthhackjapan.com/2014-02-20-young-users-prefer-anonymity-to-real-identity/" title="若年ユーザーを狙うなら絶対無視できないシリコンバレーの最新トレンド">若年ユーザーを狙うなら絶対無視できないシリコンバレ…</a>
+<p><a href="http://growthhackjapan.com/2014-02-20-young-users-prefer-anonymity-to-real-identity/">&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+今、アメリカでは10代のフェイ...</a></p>
+<span class="top_cate"><ul class="post-categories"><li><a href="http://growthhackjapan.com/apps/">Apps</a></li></ul></span>
+</div>
+</div>
+</div>
+</div>
+</div> <!-- end .widget -->
+<!-- End Wordpress Popular Posts Plugin v2.3.7 -->
+
+	</div> <!-- end #sidebar -->
+
+
+
+
+				</div><!--single_side-->
+				<div class="single_side">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- side_top -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px;margin-top:15px;"
+     data-ad-client="ca-pub-4517675141894790"
+     data-ad-slot="2589549462"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br clear="all" />
+
+
+
+				</div><!--single_side-->
+				
+				
+				
+			</div> <!-- #content -->
+
+			
+		</div> <!-- .main-content-wrap -->
+
+			</div> <!-- #main-content -->
+
+			
+		
+	</div> <!-- .page-wrap -->
+	
+	
+<div class="footer_sns">
+	<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fgrowthhackjpn%3Ffref%3Dts&amp;width=655&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=true&amp;appId=239920992744124" scrolling="no" frameborder="0" style="border-bottom:1px solid #4c6ea2; overflow:hidden; width:655px; height:250px; background:#fff; margin-right:20px;" allowTransparency="true"></iframe>
+	
+<a class="twitter-timeline" href="https://twitter.com/GrowthHackJPN" data-widget-id="404090381819604992">@GrowthHackJPN からのツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+
+
+	<div id="footer-info" class="container">
+		<div id="footer_in" class="clearfix">
+			<div id="footer_in_in1">
+				<a href="/"><img src="http://growthhackjapan.com/wp-content/themes/Nexus_ghj/ghj_img/footer_title.jpg" class="footer_logo"></a>
+			</div><!--footer_in_in1-->
+			<div id="footer_in_in2">
+				<h2>Latest on Growth Hack Japan</h2>
+				<div class="in2_in">
+
+  
+  <p><a title="UXを高めるTinder風UIで今後が期待される「非」出会い系アプリ10選" href="http://growthhackjapan.com/2014-05-29-10-tinder-styles-apps/">UXを高めるTinder風UIで今後が期待さ･･･</a></p>
+  
+  <p><a title="アプリ開発者必見！Tinder風UIがUXを高める4つの行動心理学的理由" href="http://growthhackjapan.com/2014-05-28-4-psychological-reasons-why-tinder-style-ui-improves-ux/">アプリ開発者必見！Tinder風UIがUXを･･･</a></p>
+  
+  <p><a title="Pinterestのグロースを支える4つの分析テクニック" href="http://growthhackjapan.com/2014-05-27-4-analysis-techniques-utilized-by-pinterest/">Pinterestのグロースを支える4つの分･･･</a></p>
+  
+  <p><a title="4種類の起業家タイプとそれぞれの弱点及び成功への鍵" href="http://growthhackjapan.com/2014-05-26-4-types-of-entrepreneurs/">4種類の起業家タイプとそれぞれの弱点及び成功･･･</a></p>
+  
+  <p><a title="NYTの社外秘レポートが明かすネットメディアの生死を左右する6つの課題" href="http://growthhackjapan.com/2014-05-23-6-obstacles-posed-to-online-news-media/">NYTの社外秘レポートが明かすネットメディア･･･</a></p>
+
+				</div><!--in2_in-->
+			</div><!--footer_in_in2-->
+			<div id="footer_in_in3">
+				<h2>Ryutaro Mori</h2>
+				<div class="in3_in">
+					<img src="/images/mori-pic120.jpg" alt="Ryutaro Mori" />
+					<p>UCLA（カリフォルニア大学ロサンゼルス校）を2013年に卒業。 現在は平均年齢23歳の検索エンジン周りのグロースハックをサポートするVapesによるITニュースメディア growth hack japanを監修。 ディレクションやコンサルティング業務の傍ら、ウェブサービスの拡散に貢献する術を日夜研究・実践中。</p>
+				<iframe src="//www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fryutaro.mori.52%3Ffref%3Dts&amp;width&amp;height=80&amp;colorscheme=light&amp;layout=button&amp;show_faces=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
+				</div><!--in3_in-->
+			</div><!--footer_in_in3-->
+		</div><!--footer_in-->
+	</div>
+	<div id="footer-info2" class="container">
+		<div id="footer_in2" class="clearfix">
+		<div id="footer_in2_r"><span><a href="http://vapes.jp/">Vapesについて</a></span> <span><a href="http://vapes.jp/contact.php">仕事のご依頼</a></span></div><!--footer_in2_r-->
+		<div id="footer_in2_l"><span>© 2014 Vapes.inc.</span></div><!--footer_in2_l-->
+		
+		</div><!--footer_in-->
+	</div>
+
+	<script type='text/javascript' src='http://growthhackjapan.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.45.0-2013.10.17'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/growthhackjapan.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"\u9001\u4fe1\u4e2d ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://growthhackjapan.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=3.5.4'></script>
+<script type='text/javascript' src='http://growthhackjapan.com/wp-content/themes/Nexus_ghj/js/superfish.js?ver=1.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_custom = {"mobile_nav_text":"Navigation Menu","ajaxurl":"http:\/\/growthhackjapan.com\/wp-admin\/admin-ajax.php","et_hb_nonce":"d73c696bb4"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://growthhackjapan.com/wp-content/themes/Nexus_ghj/js/custom.js?ver=1.0'></script>
+<script type='text/javascript' src='http://growthhackjapan.com/wp-content/themes/Nexus_ghj/epanel/page_templates/js/fancybox/jquery.easing-1.3.pack.js?ver=1.3.4'></script>
+<script type='text/javascript' src='http://growthhackjapan.com/wp-content/themes/Nexus_ghj/epanel/page_templates/js/fancybox/jquery.fancybox-1.3.4.pack.js?ver=1.3.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_ptemplates_strings = {"captcha":"Captcha","fill":"Fill","field":"field","invalid":"Invalid email"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://growthhackjapan.com/wp-content/themes/Nexus_ghj/epanel/page_templates/js/et-ptemplates-frontend.js?ver=1.1'></script>
+
+</body>
+</html>

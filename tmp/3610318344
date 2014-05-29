@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+
+    <title>ユーザーテスト導入を周囲に説得したい人必見！組織としてのUXリサーチとは？「IT’S OUR RESEARCH」 | coromos</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o?o:n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({D5DuLP:[function(t,n){function e(t,n){var e=r[t];return e?e.apply(this,n):(o[t]||(o[t]=[]),void o[t].push(n))}var r={},o={};n.exports=e,e.queues=o,e.handlers=r},{}],handle:[function(t,n){n.exports=t("D5DuLP")},{}],G9z0Bl:[function(t,n){function e(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&p&&p.body){l.proto="https"===f.split(":")[0]||t.sslForHttp?"https://":"http://",i("mark",["onload",a()]);var n=p.createElement("script");n.src=l.proto+t.agent,p.body.appendChild(n)}}function r(){"complete"===p.readyState&&o()}function o(){i("mark",["domContent",a()])}function a(){return(new Date).getTime()}var i=t("handle"),u=window,p=u.document,s="addEventListener",c="attachEvent",f=(""+location).split("?")[0],l=n.exports={offset:a(),origin:f,features:[]};p[s]?(p[s]("DOMContentLoaded",o,!1),u[s]("load",e,!1)):(p[c]("onreadystatechange",r),u[c]("onload",e)),i("mark",["firstbyte",a()])},{handle:"D5DuLP"}],loader:[function(t,n){n.exports=t("G9z0Bl")},{}]},{},["G9z0Bl"]);</script>
+    <link rel="alternate" type="application/rss+xml" title="coromos RSS Feed" href="http://www.coromos.com/feed/" />
+
+    <link href="http://www.coromos.com/wp-content/themes/coromos/reset.css" rel="stylesheet" type="text/css" />
+  <link href="http://www.coromos.com/wp-content/themes/coromos/style.css" rel="stylesheet" type="text/css" />
+  <link href="http://www.coromos.com/wp-content/themes/coromos/fonts.css" rel="stylesheet" type="text/css" />
+  <link href="http://www.coromos.com/wp-content/themes/coromos/shortcode.css" rel="stylesheet" type="text/css" />
+  <link href="http://www.coromos.com/wp-content/themes/coromos/js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+
+  <link type="text/css" id="style-responsive" rel="stylesheet" media="screen" href="http://www.coromos.com/wp-content/themes/coromos/css/responsive/desktop.css" />
+  <LINK rel="shortcut icon" HREF="http://www.coromos.com/wp-content/themes/coromos/favicon.ico">
+
+  <script type="text/javascript">
+  var timestamp = Math.round(new Date().getTime() / 1000);
+  var iPhoneVertical = Array(null,320,"http://www.coromos.com/wp-content/themes/coromos/css/responsive/phoneverticald41d.css?"+timestamp);
+  var iPhoneHorizontal = Array(321,767,"http://www.coromos.com/wp-content/themes/coromos/css/responsive/phonehorizontald41d.css?"+timestamp);
+  var iPad = Array(768,1000,"http://www.coromos.com/wp-content/themes/coromos/css/responsive/ipadd41d.css?"+timestamp);
+  var dekstop = Array(1001,null,"http://www.coromos.com/wp-content/themes/coromos/css/responsive/desktopd41d.css?"+timestamp);
+</script>
+ 
+    <!-- BEGIN: WP Social Bookmarking Light -->
+<script type="text/javascript" src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+<style type="text/css">
+.wp_social_bookmarking_light{
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.wp_social_bookmarking_light div{
+    float: left !important;
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 5px 0px 0 !important;
+    height: 23px !important;
+    text-indent: 0 !important;
+}
+.wp_social_bookmarking_light img{
+    border: 0 !important;
+    padding: 0;
+    margin: 0;
+    vertical-align: top !important;
+}
+.wp_social_bookmarking_light_clear{
+    clear: both !important;
+}
+.wsbl_twitter{
+ width: 75px;
+}</style>
+<!-- END: WP Social Bookmarking Light -->
+<link rel="alternate" type="application/rss+xml" title="coromos &raquo; ユーザーテスト導入を周囲に説得したい人必見！組織としてのUXリサーチとは？「IT’S OUR RESEARCH」 のコメントのフィード" href="http://www.coromos.com/other/its-our-research/feed/" />
+<link rel='stylesheet' id='images-responsive-thumbnail-slider-style-css'  href='http://www.coromos.com/wp-content/plugins/wp-responsive-thumbnail-slider/css/images-responsive-thumbnail-slider-style.css?ver=3.8.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.coromos.com/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://www.coromos.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://www.coromos.com/wp-content/themes/coromos/js/responsive.js?ver=3.8.1'></script>
+<script type='text/javascript' src='http://www.coromos.com/wp-content/themes/coromos/js/scripts.js?ver=3.8.1'></script>
+<script type='text/javascript' src='http://www.coromos.com/wp-content/themes/coromos/js/jquery.bxslider/jquery.bxslider.min.js?ver=3.8.1'></script>
+<script type='text/javascript' src='http://www.coromos.com/wp-content/themes/coromos/js/jquery.bxslider/jquery.bxslider.add.js?ver=3.8.1'></script>
+<script type='text/javascript' src='http://www.coromos.com/wp-content/themes/coromos/js/coromos.js?ver=3.8.1'></script>
+<script type='text/javascript' src='http://www.coromos.com/wp-content/themes/coromos/js/loading.js?ver=3.8.1'></script>
+<script type='text/javascript' src='http://www.coromos.com/wp-content/plugins/wp-responsive-thumbnail-slider/js/images-responsive-thumbnail-slider-jc.js?ver=3.8.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.coromos.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.coromos.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.8.1" />
+<link rel='shortlink' href='http://www.coromos.com/?p=3585' />
+
+<!-- All in One SEO Pack 2.1.3 by Michael Torbert of Semper Fi Web Design[187,283] -->
+<meta name="keywords" content="おすすめ,ユーザーテスト" />
+
+<link rel="canonical" href="http://www.coromos.com/other/its-our-research/" />
+<!-- /all in one seo pack -->
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style>
+
+
+<!--▼googleanalytics-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35023659-6', 'coromos.com');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+/**
+* Google アナリティクスでアウトバウンド リンクのクリックをトラッキングする関数。
+* この関数では有効な URL 文字列を引数として受け取り、その URL 文字列を
+* イベントのラベルとして使用する。
+*/
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+     function () {
+     document.location = url;
+     }
+   });
+}
+</script>
+<!--▼googleanalytics終わり-->
+
+
+
+</head>
+
+<!-- BEGIN body -->
+<body>
+<a href="#top" class="back-to-top"><span class="icon-text">&#59231;</span>↑トップへ</a>
+			<!-- BEGIN .header -->
+			<div class="header">
+				<!-- BEGIN .wrapper -->
+				<div class="logo-space">
+					<div class="wrapper">
+						<a href="http://www.coromos.com" class="logo"><img src="http://www.coromos.com/wp-content/themes/coromos/images/logo.png" width="330" alt="coromos innobeta" /></a>
+					</div>
+				</div>
+				<div class="main-navigation">
+					<div class="wrapper">
+					<ul class="navi">
+						<li class="current-menu-item"><a href="http://www.coromos.com">ホーム</a></li>
+						<li><a href="/category/ux_design/">UXデザイン</a></li>
+						<li><a href="/category/ui_design/">UIデザイン</a></li>
+						<li><a href="/category/user_test">ユーザーテスト</a></li>
+						<li><a href="/category/programing">プログラミング</a></li>	
+						<li><a href="/category/other">その他/番外編</a></li>
+					</ul>
+					</div>
+				<!-- END .wrapper -->
+				</div>
+			<!-- END .header -->
+			</div>
+
+<!-- BEGIN .content -->
+<div class="content">
+				
+<!-- BEGIN .wrapper -->
+	<div class="wrapper">					
+		<div class="content-holder">
+						<div id="content" role="main" class="main-content left">
+	    		<div class="plain-text">
+					<div class="featured-article-title">
+												<!--						<div class="title_thumbnail" >
+													</div>
+-->
+                	    <h2>ユーザーテスト導入を周囲に説得したい人必見！組織としてのUXリサーチとは？「IT’S OUR RESEARCH」</h2>
+							<div class="article-icons">
+          			 	    									<a href="http://coromos.com?author=1"><span class="icon-text">&#128100;</span>innobeta</a>
+        			            			                                       				 <a href="http://www.coromos.com/category/other/" class="font-color-5"><span class="icon-text">&#59160;</span>その他/番外編</a>
+                    			<span><span class="icon-text">&#128340;</span>2014-5-27 19:50</span>
+								<div class="readtime"> [読了時間：3分]
+ 							</div>
+						</div>
+                    </div>    
+					<div class="single_content"><p>
+<div class='wp_social_bookmarking_light'><div class="wsbl_facebook_like"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.coromos.com%2Fother%2Fits-our-research%2F&amp;send=false&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;colorscheme=light&amp;locale=en_US&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe></div><div class="wsbl_twitter"><iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fwww.coromos.com%2Fother%2Fits-our-research%2F&amp;text=%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%83%86%E3%82%B9%E3%83%88%E5%B0%8E%E5%85%A5%E3%82%92%E5%91%A8%E5%9B%B2%E3%81%AB%E8%AA%AC%E5%BE%97%E3%81%97%E3%81%9F%E3%81%84%E4%BA%BA%E5%BF%85%E8%A6%8B%EF%BC%81%E7%B5%84%E7%B9%94%E3%81%A8%E3%81%97%E3%81%A6%E3%81%AEUX%E3%83%AA%E3%82%B5%E3%83%BC%E3%83%81%E3%81%A8%E3%81%AF%EF%BC%9F%E3%80%8CIT%E2%80%99S%20OUR%20RESEARCH%E3%80%8D&amp;lang=en&amp;count=horizontal" style="width:130px; height:20px;"></iframe></div><div class="wsbl_hatena_button"><a href="http://b.hatena.ne.jp/entry/http://www.coromos.com/other/its-our-research/" class="hatena-bookmark-button" data-hatena-bookmark-title="ユーザーテスト導入を周囲に説得したい人必見！組織としてのUXリサーチとは？「IT’S OUR RESEARCH」" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"> <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button_wo_al.js" charset="utf-8" async="async"></script></div></div><br class='wp_social_bookmarking_light_clear' /><a href="https://s3-ap-northeast-1.amazonaws.com/coromos-uploads/wp-content/uploads/2014/05/itsourresearch.jpg"><img class="alignnone size-full wp-image-3665" alt="it'sourresearch" src="https://s3-ap-northeast-1.amazonaws.com/coromos-uploads/wp-content/uploads/2014/05/itsourresearch.jpg" width="486" height="600" /></a><br />
+<br />
+<span style="line-height: 1.5em;">みなさんこんにちは。</span><br />
+<br />
+みなさんがユーザーテストを導入するときに上司を説得するのに苦労したり、UXリサーチをしっかりやったつもりが顧客の製品に反映されなかったなんていう経験はありませんか？<br />
+<br />
+そんな悩みのきっと助けになる本を今回は紹介したいと思います！<br />
+<h2>「It&#8217;s our research」</h2>
+その名も私たちのリサーチ「IT’S OUR RESEARCH」<br />
+<br />
+この本はグーグルのUXリサーチャーであるTomer Sharon氏によって書かれたUXリサーチとそれを取り巻くステークフォルダーとの関係をケーススタディによって事例から学ぶことができる洋書です。<br />
+<br />
+サブタイトルは「Getting Stakeholder Buy-in for User Experience Research Projects」で、訳せば「ステークフォルダーとのUXリサーチプロジェクトについての同意を得るには」となり、いかにUXリサーチにおいてステークフォルダーとの共通理解が必要であるかということが書かれている本です。<br />
+<br />
+ここでいうステークフォルダーとは自分をユーザビリティ専門家と置いた場合、顧客はもちろんのこと、上司やデザイナー、エンジニア、マーケティング部門の人などの組織内での人間関係も含まれています。<br />
+<a href="https://s3-ap-northeast-1.amazonaws.com/coromos-uploads/wp-content/uploads/2014/05/stakeholders650.jpg"><img class="alignnone size-full wp-image-3666" alt="stakeholders650" src="https://s3-ap-northeast-1.amazonaws.com/coromos-uploads/wp-content/uploads/2014/05/stakeholders650.jpg" width="650" height="432" /></a>本の内容としてはステークフォルダーの異なる役割についてやUXリサーチを計画する上で必要なこと、リサーチ結果の意思伝達の方法など、どうやったら自分の周りのステークフォルダーたちの同意を得てUXリサーチを行うのかということが書いてあります。<br />
+<br />
+ケーススタディ中心でリアリティのある内容ですし、リサーチ結果の伝え方などは具体的なテクニックも載っていたりします。また本にQRコードがありそこから実際のインタビューの動画を見に行けるなどのうれしい工夫がなされています。<br />
+<h2></h2>
+洋書ということで少しハードルが高く感じるかもしれません。しかし、UXリサーチをステークフォルダーとの関係という目線からいかに良いUXリサーチを行うのかという本はなかなかありません。一読する価値はあると思います。<br />
+<br />
+特に冒頭で述べたようなお悩みをお持ちのみなさまには、問題解決のヒントになること間違いないと思います。<br />
+<br />
+この機会にぜひ読んでいただいて、より良いUXリサーチを行っていきましょう！<div class='wp_social_bookmarking_light'><div class="wsbl_facebook_like"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.coromos.com%2Fother%2Fits-our-research%2F&amp;send=false&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;colorscheme=light&amp;locale=en_US&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe></div><div class="wsbl_twitter"><iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fwww.coromos.com%2Fother%2Fits-our-research%2F&amp;text=%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%83%86%E3%82%B9%E3%83%88%E5%B0%8E%E5%85%A5%E3%82%92%E5%91%A8%E5%9B%B2%E3%81%AB%E8%AA%AC%E5%BE%97%E3%81%97%E3%81%9F%E3%81%84%E4%BA%BA%E5%BF%85%E8%A6%8B%EF%BC%81%E7%B5%84%E7%B9%94%E3%81%A8%E3%81%97%E3%81%A6%E3%81%AEUX%E3%83%AA%E3%82%B5%E3%83%BC%E3%83%81%E3%81%A8%E3%81%AF%EF%BC%9F%E3%80%8CIT%E2%80%99S%20OUR%20RESEARCH%E3%80%8D&amp;lang=en&amp;count=horizontal" style="width:130px; height:20px;"></iframe></div><div class="wsbl_hatena_button"><a href="http://b.hatena.ne.jp/entry/http://www.coromos.com/other/its-our-research/" class="hatena-bookmark-button" data-hatena-bookmark-title="ユーザーテスト導入を周囲に説得したい人必見！組織としてのUXリサーチとは？「IT’S OUR RESEARCH」" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"> <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button_wo_al.js" charset="utf-8" async="async"></script></div></div><br class='wp_social_bookmarking_light_clear' /></p>
+</div>
+				</div>
+     										<h2 class="main-title">著者について</h2>
+							<div class="plain-text">
+								<span class="image-border about-author-image"><img alt='innobeta' src='http://www.coromos.com/wp-content/uploads/2014/04/innobeta_avatar_1396527623-100x100.jpg' class='avatar avatar-100 photo' height='100' width='100' /></span>
+								<div class="about-author-content">
+								
+									<div class="social-icons right">
+								<!--	<a href="#" class="icon-text">&#62215;</a>	-->
+										<a href="https://twitter.com/InnoBeta" class="icon-text">&#62218;</a>
+										<a href="https://www.facebook.com/InnoBeta" class="icon-text">&#62221;</a>
+								<!--	<a href="#" class="icon-text">&#62224;</a>
+										<a href="#" class="icon-text">&#62227;</a>
+										<a href="#" class="icon-text">&#62233;</a>
+										<a href="#" class="icon-text">&#62266;</a>  -->
+									</div>
+									
+									<h2>innobeta</h2>
+									<p>イノベータの企業理念
+今後テクノロジーの発展により、全てのモノはコモデティ化していきます。つまり、モノの価値は『機能』から『体験』へとシフトしています。
+InnoBetaはこの『体験』を可視化し、全てのプロダクトの価値を最大化します。</p>
+									<div>
+										<a href="http://coromos.com/?author=1" class="text-button"><span class="icon-text">&#9871;</span>他の記事を見る</a>
+										<a href="http://coromos.com/" class="text-button"><span class="icon-text">&#127758;</span>ホームページ</a>
+										<a href="mailto:info@innobeta.com" class="text-button"><span class="icon-text">&#9993;</span>メールを送る</a>
+									</div>
+								</div>
+								<div class="clear-float"></div>
+							</div>			</div> 
+			            
+<div class="sidebar-content right">
+    <div class="panel">
+  <!-- Wordpress Popular Posts Plugin v2.3.7 [W] [monthly] [avg] [custom] -->
+<div>
+<h2>人気の記事</h2><div>
+<div class="sidebar-gallery">
+<div class="image-border image-hover popular_post"><span class="image-overlay"><a href="http://www.coromos.com/programing/non_programmer_4weeks/" title="ブラインドタッチができなかったプログラマーが、4週間で学んだことをまとめてみました。" target="_self"><img src="https://s3-ap-northeast-1.amazonaws.com/coromos-uploads/wp-content/uploads/2014/05/non_catcheye_confused-80x80.jpg" alt="" border="0" width="80" height="80" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a></span>
+</div>
+<div class="gallery-content">
+<h3><a href="http://www.coromos.com/programing/non_programmer_4weeks/" title="ブラインドタッチができなかったプログラマーが、4週間で学んだことをまとめてみました。">ブラインドタッチができなかったプログラマーが、&#8230;</a></h3>
+</div>
+</div>
+<div class="sidebar-br-line"></div>
+
+<div class="sidebar-gallery">
+<div class="image-border image-hover popular_post"><span class="image-overlay"><a href="http://www.coromos.com/user_test/usability-recognition-development/" title="「ユーザビリティ＝使いやすさ」は甘すぎる認識！！直面する問題！！" target="_self"><img src="https://s3-ap-northeast-1.amazonaws.com/coromos-uploads/wp-content/uploads/2014/05/eyecatch.acachan-80x80.jpg" alt="" border="0" width="80" height="80" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a></span>
+</div>
+<div class="gallery-content">
+<h3><a href="http://www.coromos.com/user_test/usability-recognition-development/" title="「ユーザビリティ＝使いやすさ」は甘すぎる認識！！直面する問題！！">「ユーザビリティ＝使いやすさ」は甘すぎる認識！&#8230;</a></h3>
+</div>
+</div>
+<div class="sidebar-br-line"></div>
+
+<div class="sidebar-gallery">
+<div class="image-border image-hover popular_post"><span class="image-overlay"><a href="http://www.coromos.com/ui_design/non-standard-navigation/" title="デザイナー必見！ナビゲーションがユニークなサイト15選" target="_self"><img src="https://s3-ap-northeast-1.amazonaws.com/coromos-uploads/wp-content/uploads/2014/04/1.-Vespillo-80x80.jpg" alt="" border="0" width="80" height="80" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a></span>
+</div>
+<div class="gallery-content">
+<h3><a href="http://www.coromos.com/ui_design/non-standard-navigation/" title="デザイナー必見！ナビゲーションがユニークなサイト15選">デザイナー必見！ナビゲーションがユニークなサイ&#8230;</a></h3>
+</div>
+</div>
+<div class="sidebar-br-line"></div>
+
+<div class="sidebar-gallery">
+<div class="image-border image-hover popular_post"><span class="image-overlay"><a href="http://www.coromos.com/ui_design/20-best-teaser-site/" title="アプリ制作者必見！！ためになるティザーサイト20選" target="_self"><img src="https://s3-ap-northeast-1.amazonaws.com/coromos-uploads/wp-content/uploads/2014/04/1-mobile-apps-landing-pages-80x80.jpg" alt="" border="0" width="80" height="80" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a></span>
+</div>
+<div class="gallery-content">
+<h3><a href="http://www.coromos.com/ui_design/20-best-teaser-site/" title="アプリ制作者必見！！ためになるティザーサイト20選">アプリ制作者必見！！ためになるティザーサイト2&#8230;</a></h3>
+</div>
+</div>
+<div class="sidebar-br-line"></div>
+
+<div class="sidebar-gallery">
+<div class="image-border image-hover popular_post"><span class="image-overlay"><a href="http://www.coromos.com/other/httpwww-coromos-comothergrowth-hack-case-summary/" title="グロースハッカー必見！あのスタートアップのグロースハック事例10選！" target="_self"><img src="https://s3-ap-northeast-1.amazonaws.com/coromos-uploads/wp-content/uploads/2014/04/eyecatch_temp5-80x80.jpg" alt="" border="0" width="80" height="80" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a></span>
+</div>
+<div class="gallery-content">
+<h3><a href="http://www.coromos.com/other/httpwww-coromos-comothergrowth-hack-case-summary/" title="グロースハッカー必見！あのスタートアップのグロースハック事例10選！">グロースハッカー必見！あのスタートアップのグロ&#8230;</a></h3>
+</div>
+</div>
+<div class="sidebar-br-line"></div>
+
+<div class="sidebar-gallery">
+<div class="image-border image-hover popular_post"><span class="image-overlay"><a href="http://www.coromos.com/ui_design/modern-design-35/" title="想像力をかきたてる！斬新で洗練されたデザイン32選" target="_self"><img src="https://s3-ap-northeast-1.amazonaws.com/coromos-uploads/wp-content/uploads/2014/05/eyecatch_temp6-80x80.jpg" alt="" border="0" width="80" height="80" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a></span>
+</div>
+<div class="gallery-content">
+<h3><a href="http://www.coromos.com/ui_design/modern-design-35/" title="想像力をかきたてる！斬新で洗練されたデザイン32選">想像力をかきたてる！斬新で洗練されたデザイン3&#8230;</a></h3>
+</div>
+</div>
+<div class="sidebar-br-line"></div>
+
+<div class="sidebar-gallery">
+<div class="image-border image-hover popular_post"><span class="image-overlay"><a href="http://www.coromos.com/ux_design/10-front-end-frameworks/" title="「デザイナー」の仕事が変わるかもしれない フロントエンドフレームワーク 10選" target="_self"><img src="https://s3-ap-northeast-1.amazonaws.com/coromos-uploads/wp-content/uploads/2014/04/28eyecatch-80x80.jpg" alt="" border="0" width="80" height="80" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a></span>
+</div>
+<div class="gallery-content">
+<h3><a href="http://www.coromos.com/ux_design/10-front-end-frameworks/" title="「デザイナー」の仕事が変わるかもしれない フロントエンドフレームワーク 10選">「デザイナー」の仕事が変わるかもしれない フロ&#8230;</a></h3>
+</div>
+</div>
+<div class="sidebar-br-line"></div>
+
+</div>
+</div>
+<!-- End Wordpress Popular Posts Plugin v2.3.7 -->
+	
+  </div>
+    	     
+<div class="panel">
+	<div>
+		<h2>最新の記事</h2>
+		<div>
+        	        			
+			<div class="sidebar-gallery">
+				<div class="image-border image-hover newpost"><span class="image-overlay"><a href="http://www.coromos.com/other/its-our-research/" title="ユーザーテスト導入を周囲に説得したい人必見！組織としてのUXリサーチとは？「IT’S OUR RESEARCH」" target="_self"><img width="312" height="172" src="https://s3-ap-northeast-1.amazonaws.com/coromos-uploads/wp-content/uploads/2014/05/megaphone_eye.jpg" class="attachment-post-thumbnail wp-post-image" alt="megaphone_eye" /></a></span>
+				</div>
+				<div class="gallery-content">
+					<h3><a href="http://www.coromos.com/other/its-our-research/" title="ユーザーテスト導入を周囲に説得したい人必見！組織としてのUXリサーチとは？「IT’S OUR RESEARCH」">
+														ユーザーテスト導入を周囲に説得したい人必見！組...</a>
+					</h3>
+				</div>
+			</div>
+			
+			
+    									<div class="sidebar-br-line"></div>	
+					
+					        			
+			<div class="sidebar-gallery">
+				<div class="image-border image-hover newpost"><span class="image-overlay"><a href="http://www.coromos.com/user_test/the-reason-we-need-usertests/" title="なぜユーザーテストは必要か" target="_self"><img width="312" height="172" src="https://s3-ap-northeast-1.amazonaws.com/coromos-uploads/wp-content/uploads/2014/05/zazen_think.jpg" class="attachment-post-thumbnail wp-post-image" alt="zazen_think" /></a></span>
+				</div>
+				<div class="gallery-content">
+					<h3><a href="http://www.coromos.com/user_test/the-reason-we-need-usertests/" title="なぜユーザーテストは必要か">
+														なぜユーザーテストは必要か</a>
+					</h3>
+				</div>
+			</div>
+			
+			
+    									<div class="sidebar-br-line"></div>	
+					
+					        			
+			<div class="sidebar-gallery">
+				<div class="image-border image-hover newpost"><span class="image-overlay"><a href="http://www.coromos.com/other/self-test-serialization-4/" title="【連載第4号】　UTMEを試しに使ってみた！" target="_self"><img width="312" height="172" src="https://s3-ap-northeast-1.amazonaws.com/coromos-uploads/wp-content/uploads/2014/05/utme.jpg" class="attachment-post-thumbnail wp-post-image" alt="utme" /></a></span>
+				</div>
+				<div class="gallery-content">
+					<h3><a href="http://www.coromos.com/other/self-test-serialization-4/" title="【連載第4号】　UTMEを試しに使ってみた！">
+														【連載第4号】　UTMEを試しに使ってみた！</a>
+					</h3>
+				</div>
+			</div>
+			
+			
+    				
+					 
+		</div>
+	</div>
+</div>
+
+  					<div class="panel">
+						<div>
+                            							
+	                            <h2>人気のタグ</h2>
+	                            <div class="tagcloud">
+	                            											 <a href="/?tag=%e3%83%a6%e3%83%bc%e3%82%b6%e3%83%bc%e3%83%86%e3%82%b9%e3%83%88">
+										 			ユーザーテスト													(43)</a> 							
+																				 <a href="/?tag=ui">
+										 			UI													(15)</a> 							
+																				 <a href="/?tag=%e3%81%be%e3%81%a8%e3%82%81">
+										 			まとめ													(14)</a> 							
+																				 <a href="/?tag=ux%e3%83%87%e3%82%b6%e3%82%a4%e3%83%b3">
+										 			UXデザイン													(10)</a> 							
+																				 <a href="/?tag=%e3%83%a6%e3%83%bc%e3%82%b6%e3%83%93%e3%83%aa%e3%83%86%e3%82%a3">
+										 			ユーザビリティ													(10)</a> 							
+																				 <a href="/?tag=design">
+										 			デザイン													(8)</a> 							
+																				 <a href="/?tag=%e3%82%a4%e3%83%b3%e3%82%bf%e3%83%93%e3%83%a5%e3%83%bc">
+										 			インタビュー													(5)</a> 							
+																				 <a href="/?tag=ui%e3%83%87%e3%82%b6%e3%82%a4%e3%83%b3">
+										 			UIデザイン													(4)</a> 							
+																				 <a href="/?tag=%e4%bd%bf%e3%81%a3%e3%81%a6%e3%81%bf%e3%81%9f">
+										 			使ってみた													(4)</a> 							
+																				 <a href="/?tag=web%e3%83%87%e3%82%b6%e3%82%a4%e3%83%b3">
+										 			Webデザイン													(4)</a> 							
+																				 <a href="/?tag=ec">
+										 			EC													(3)</a> 							
+																				 <a href="/?tag=ux">
+										 			UX													(2)</a> 							
+																				 <a href="/?tag=lp">
+										 			LP													(2)</a> 							
+																				 <a href="/?tag=ucd">
+										 			UCD													(2)</a> 							
+																				 <a href="/?tag=%e3%83%ad%e3%82%b0%e3%82%a4%e3%83%b3">
+										 			ログイン													(2)</a> 							
+																				 <a href="/?tag=%e3%82%b0%e3%83%ad%e3%83%bc%e3%82%b9%e3%83%8f%e3%83%83%e3%82%af">
+										 			グロースハック													(2)</a> 							
+																				 <a href="/?tag=%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b9%e3%82%bf%e3%83%bc%e3%83%88%e3%82%a2%e3%83%83%e3%83%97">
+										 			リーンスタートアップ													(2)</a> 							
+																				 <a href="/?tag=%e3%82%bf%e3%82%b9%e3%82%af%e8%a8%ad%e8%a8%88">
+										 			タスク設計													(1)</a> 							
+																				 <a href="/?tag=%e3%82%a6%e3%82%a7%e3%82%a2%e3%83%a9%e3%83%96%e3%83%ab">
+										 			ウェアラブル													(1)</a> 							
+																				 <a href="/?tag=%e3%83%af%e3%83%bc%e3%82%af%e3%82%b7%e3%83%a7%e3%83%83%e3%83%97">
+										 			ワークショップ													(1)</a> 							
+																				 <a href="/?tag=ab%e3%83%86%e3%82%b9%e3%83%88">
+										 			A/Bテスト													(1)</a> 							
+																				 <a href="/?tag=%e3%82%b2%e3%83%bc%e3%83%a0">
+										 			ゲーム													(1)</a> 							
+																				 <a href="/?tag=%e3%83%8a%e3%83%93%e3%82%b2%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3">
+										 			ナビゲーション													(1)</a> 							
+																				 <a href="/?tag=mac">
+										 			mac													(1)</a> 							
+																				 <a href="/?tag=%e3%83%95%e3%83%ac%e3%83%bc%e3%83%a0%e3%83%af%e3%83%bc%e3%82%af">
+										 			フレームワーク													(1)</a> 							
+																				 <a href="/?tag=apple">
+										 			Apple													(1)</a> 							
+																				 <a href="/?tag=%e3%83%ac%e3%82%b9%e3%83%9d%e3%83%b3%e3%82%b7%e3%83%96">
+										 			レスポンシブ													(1)</a> 							
+																				 <a href="/?tag=wwdc">
+										 			WWDC													(1)</a> 							
+																				 <a href="/?tag=%e3%82%b0%e3%83%ad%e3%83%bc%e3%82%b9">
+										 			グロース													(1)</a> 							
+																				 <a href="/?tag=%e3%83%8f%e3%83%83%e3%82%af">
+										 			ハック													(1)</a> 							
+																				 <a href="/?tag=chrome">
+										 			chrome													(1)</a> 							
+																				 <a href="/?tag=%e3%83%87%e3%83%99%e3%83%ad%e3%83%83%e3%83%91%e3%83%bc%e3%83%84%e3%83%bc%e3%83%ab">
+										 			デベロッパーツール													(1)</a> 							
+																				 <a href="/?tag=%e4%bd%99%e7%99%bd">
+										 			余白													(1)</a> 							
+																				 <a href="/?tag=%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0">
+										 			プログラミング													(1)</a> 							
+																				 <a href="/?tag=rspec">
+										 			rspec													(1)</a> 							
+																				 <a href="/?tag=tdd">
+										 			TDD													(1)</a> 							
+																				 <a href="/?tag=rails">
+										 			rails													(1)</a> 							
+																				 <a href="/?tag=%e3%83%ad%e3%82%b4">
+										 			ロゴ													(1)</a> 							
+																				 <a href="/?tag=%e3%83%91%e3%83%a9%e3%83%a9%e3%83%83%e3%82%af%e3%82%b9%e3%83%87%e3%82%b6%e3%82%a4%e3%83%b3">
+										 			パララックスデザイン													(1)</a> 							
+																				 <a href="/?tag=%e3%83%92%e3%83%bc%e3%83%88%e3%83%9e%e3%83%83%e3%83%97">
+										 			ヒートマップ													(1)</a> 							
+																				 <a href="/?tag=%e5%88%86%e6%9e%90">
+										 			分析													(1)</a> 							
+																				 <a href="/?tag=%e3%83%9c%e3%82%bf%e3%83%b3">
+										 			ボタン													(1)</a> 							
+																				 <a href="/?tag=start-up">
+										 			start up													(1)</a> 							
+																				 <a href="/?tag=%e3%81%8a%e3%81%99%e3%81%99%e3%82%81">
+										 			おすすめ													(1)</a> 							
+										    	                        </div>                            
+                        </div>
+                    </div>
+
+
+<!--orderby=count 投稿数によるソート
+order=DESC 降順（多い→少ない）
+show_count=1 投稿数を表示する
+title_li= （空欄、箇条書きの外にタイトルを表示しない）
+number=50 表示するカテゴリ（投稿タグ）数
+taxonomy=post_tag 返す分類名、ここでは投稿タグを指定-->    							<div class="panel">
+									<div>
+										<div class="banner300x250">
+											<a href="http://uiscope.com/" target="_blank" onclick="trackOutboundLink('http://uiscope.com'); return false;"><img src="http://www.coromos.com/wp-content/themes/coromos/images/banner/coromos_banner1.jpg" alt="uiscope_banner" title="uiscope_banner" /></a>
+										</div>
+									</div>
+								</div>	</div>
+</div>			
+<!-- END .wrapper -->
+</div>
+
+
+
+				<div class="recommend">
+                    <div class="wrapper">
+                    	<h2 class="main-title">あわせて読みたい</h2>
+                        <div class="tripple-articles">
+							                		        	<div>                        
+    									<h2><a href="http://www.coromos.com/user_test/the-reason-we-need-usertests/" rel="bookmark" title="なぜユーザーテストは必要か">なぜユーザーテストは必要か</a></h2>
+                                        <a href="http://www.coromos.com/user_test/the-reason-we-need-usertests/" class="image-border image-hover"><span class="image-overlay"><span class="icon-text">&#128269;</span>記事を読む</span><img width="312" height="172" src="https://s3-ap-northeast-1.amazonaws.com/coromos-uploads/wp-content/uploads/2014/05/zazen_think.jpg" class="attachment-recommend-thumb wp-post-image" alt="zazen_think" />											</a>
+                                    </div>
+									                		        	<div>                        
+    									<h2><a href="http://www.coromos.com/other/self-test-serialization-4/" rel="bookmark" title="【連載第4号】　UTMEを試しに使ってみた！">【連載第4号】　UTMEを試しに使ってみた！</a></h2>
+                                        <a href="http://www.coromos.com/other/self-test-serialization-4/" class="image-border image-hover"><span class="image-overlay"><span class="icon-text">&#128269;</span>記事を読む</span><img width="312" height="172" src="https://s3-ap-northeast-1.amazonaws.com/coromos-uploads/wp-content/uploads/2014/05/utme.jpg" class="attachment-recommend-thumb wp-post-image" alt="utme" />											</a>
+                                    </div>
+									                		        	<div>                        
+    									<h2><a href="http://www.coromos.com/other/lean-start-up-3-cycle/" rel="bookmark" title="新規サービス担当者必読！開発スピード・精度を上げる！たった３つのプロセス">新規サービス担当者必読！開発スピード・精度を上げる！たった３つのプロセス</a></h2>
+                                        <a href="http://www.coromos.com/other/lean-start-up-3-cycle/" class="image-border image-hover"><span class="image-overlay"><span class="icon-text">&#128269;</span>記事を読む</span><img width="312" height="172" src="https://s3-ap-northeast-1.amazonaws.com/coromos-uploads/wp-content/uploads/2014/05/startup-eye.jpg" class="attachment-recommend-thumb wp-post-image" alt="startup-eye" />											</a>
+                                    </div>
+																                        </div>
+					</div>
+				</div><!-- END .content -->
+</div>
+
+<div class="footer">
+				
+				<!-- BEGIN .wrapper -->
+				<div class="wrapper">
+					
+					<div class="top-section">
+						<a href="http://www.coromos.com" class="logo"><img src="http://www.coromos.com/wp-content/themes/coromos/images/logo2.png" width="330" alt="coromos_logo" title="coromos_logo" /></a>
+						<!--<a href="index.html" class="logo">
+							<img src="http://www.coromos.com/wp-content/themes/coromos/images/logo-footer.png" alt="" title="" />
+						</a>-->
+						
+						<div class="social-icons">
+							<a href="https://twitter.com/InnoBeta" target="_blank" class="icon-text">&#62218;</a>
+							<a href="https://www.facebook.com/InnoBeta" target="_blank" class="icon-text">&#62221;</a>
+						</div>
+						
+						<div class="clear-float"></div>
+					</div>
+					
+					<div class="menu-section">
+						<ul>
+							<li><a href="http://www.coromos.com">ホーム</a></li>
+							<li><a href="/category/ux_design/">UXデザイン</a></li>
+							<li><a href="/category/ui_design/">UIデザイン</a></li>
+							<li><a href="/category/user_test/">ユーザーテスト</a></li>
+					  	<li><a href="/category/programing/">プログラミング</a></li>
+							<li><a href="/category/other/">その他/番外編</a></li>
+            </ul>
+					</div>
+					
+					<div class="middle-section">
+						<div class="foot-middle-left">
+							<h2>coromos（ころもす）について</h2>
+							<p>coromos（ころもす）とは、UI/UXにおけるノウハウや最新のトレンドなど、デザインに関する様々な情報を発信するメディアです。
+デザインとは、コンテンツ（中身）を活かす衣だという意味で、このメディアを「coromos(ころもす)」と名づけました。</p>
+						</div>
+						
+						<div class="foot-middle-center">
+							<h2>運営会社</h2>
+                            <p>株式会社InnoBeta</p>
+<p><a href="http://uiscope.com" target="_blank">UIscope</a>という高品質なスマホユーザーテストが早く・安く・簡単に行えるサービスを運営しています。</p>
+						</div>
+						
+						<div class="foot-middle-right">
+							<h2>お問い合わせ</h2>
+							<p>お問い合わせは<a href="http://inno-beta.com/contact" target="_blank">コチラ</a>。</p>
+							<ul>
+								<li><a href="https://www.facebook.com/pages/coromos/220767178119938" target="_blank">Facebookページ</a></li>
+								<li><a href="mailto:info@inno-beta.com?subject=coromosについての問い合わせ。" target="_blank">info@inno-beta.com</a></li>
+							</ul>
+						</div>
+						
+						<div class="clear-float"></div>
+					</div>
+                    
+		<div class="bottom-section">Copyright 2014 <a href="http://www.coromos.com">coromos</a> . All Rights Reserved.</div>
+	</div><!-- container -->
+</div>
+<!-- BEGIN: WP Social Bookmarking Light -->
+<!-- END: WP Social Bookmarking Light -->
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-2.newrelic.com","licenseKey":"a0da76b9dc","applicationID":"3443628","transactionName":"YQYAZhEEXEdRUUJYXFhMI1EXDF1aH0FfX1RaBg==","queueTime":0,"applicationTime":985,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"jserror.newrelic.com","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script></body>
+</html>

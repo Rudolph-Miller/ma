@@ -1,0 +1,751 @@
+<!DOCTYPE html> 
+<!--[if lt IE 7 ]><html class="no-js ie ie6" lang="ja"> <![endif]-->
+<!--[if IE 7 ]><html class="no-js ie ie7" lang="ja"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="ja"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="ja"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
+
+<title>  【インタビュー】「1秒で完了する決済を実現」コイニー代表 佐俣奈緒子氏（前編） | Shopping Tribe</title>
+
+<link rel="stylesheet" href="http://shopping-tribe.com/wp-content/themes/newsroom14/style.css">
+<link rel="pingback" href="http://shopping-tribe.com/xmlrpc.php">
+
+<script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
+
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Monda:700' rel='stylesheet' type='text/css'>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://shopping-tribe.com/wp-content/themes/newsroom14/js/ie/selectivizr.js"></script>
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="Shopping Tribe &raquo; フィード" href="http://shopping-tribe.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Shopping Tribe &raquo; コメントフィード" href="http://shopping-tribe.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Shopping Tribe &raquo; 【インタビュー】「1秒で完了する決済を実現」コイニー代表 佐俣奈緒子氏（前編） のコメントのフィード" href="http://shopping-tribe.com/interview/7054/feed/" />
+<link rel='stylesheet' id='cudazi-scroll-to-top-style-css'  href='http://shopping-tribe.com/wp-content/plugins/cudazi-scroll-to-top/css/widget.css?ver=3.9.1'  media='all' />
+<link rel='stylesheet' id='wordpress-popular-posts-css'  href='http://shopping-tribe.com/wp-content/plugins/wordpress-popular-posts/style/wpp.css?ver=2.3.7'  media='all' />
+<link rel='stylesheet' id='ts_fab_css-css'  href='http://shopping-tribe.com/wp-content/plugins/fancier-author-box/css/ts-fab.css?ver=1.0'  media='all' />
+<link rel='stylesheet' id='style-responsive-css'  href='http://shopping-tribe.com/wp-content/themes/newsroom14/style-responsive.css?ver=1.0'  media='all' />
+<link rel='stylesheet' id='slb_core-css'  href='http://shopping-tribe.com/wp-content/plugins/simple-lightbox/client/css/app.css?ver=2.3.1'  media='all' />
+<link rel='stylesheet' id='video-js-css'  href='http://shopping-tribe.com/wp-content/plugins/video-embed-thumbnail-generator/video-js/video-js.css?ver=4.5.1'  media='all' />
+<link rel='stylesheet' id='video-js-kg-skin-css'  href='http://shopping-tribe.com/wp-content/plugins/video-embed-thumbnail-generator/video-js/kg-video-js-skin.css?ver=4.301'  media='all' />
+<link rel='stylesheet' id='kgvid_video_styles-css'  href='http://shopping-tribe.com/wp-content/plugins/video-embed-thumbnail-generator/css/kgvid_styles.css?ver=4.301'  media='all' />
+<script type='text/javascript' src='http://shopping-tribe.com/wp-includes/js/jquery/jquery.js?ver=1.11.0'></script>
+<script type='text/javascript' src='http://shopping-tribe.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://shopping-tribe.com/wp-content/plugins/cudazi-scroll-to-top/js/widget.js?ver=3.9.1'></script>
+<script type='text/javascript' src='http://shopping-tribe.com/wp-content/plugins/fancier-author-box/js/ts-fab.js?ver=1.0'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://shopping-tribe.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://shopping-tribe.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='「楽天カフェ」が渋谷にオープン ー 楽天市場で人気のスイーツなどを提供' href='http://shopping-tribe.com/news/7472/' />
+<link rel='next' title='WebPay、決済手数料2.69%の新プランを発表 ー 業界最安水準に' href='http://shopping-tribe.com/news/7501/' />
+<link rel='canonical' href='http://shopping-tribe.com/interview/7054/' />
+<link rel='shortlink' href='http://shopping-tribe.com/?p=7054' />
+
+<!-- BEGIN: Open Graph Protocol Tools: http://opengraphprotocol.org/ for more info -->
+<meta property="fb:admins" content="100000585060130" />
+<meta property="fb:app_id" content="717935874902936" />
+<meta property="og:image" content="http://shopping-tribe.com/wp-content/uploads/2014/05/coiney-1.jpg" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:site_name" content="Shopping Tribe" />
+<meta property="og:title" content="【インタビュー】「1秒で完了する決済を実現」コイニー代表 佐俣奈緒子氏（前編）" />
+<meta property="og:type" content="blog" />
+<meta property="og:url" content="http://shopping-tribe.com/interview/7054/" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@s_tribePR" />
+<!-- End: Open Graph Protocol Tools-->
+<link rel="apple-touch-icon" href="//shopping-tribe.com/wp-content/uploads/2013/11/shoptribe_18.png" />
+<link rel="shortcut icon" href="http://shopping-tribe.com/wp-content/uploads/2013/11/favicon.ico">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45954029-1', 'shopping-tribe.com');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<meta name="robots" content="noodp,noydir">
+<!-- Wordpress Popular Posts v2.3.7 -->
+<script type="text/javascript">
+    /* <![CDATA[ */
+	jQuery.post('http://shopping-tribe.com/wp-admin/admin-ajax.php', {action: 'wpp_update', token: 'd041416361', id: 7054}, function(data){/*alert(data);*/});
+    /* ]]> */
+</script>
+<!-- End Wordpress Popular Posts v2.3.7 -->
+            <!-- BEGIN: WP Social Bookmarking Light -->
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>   
+<style type="text/css">
+.wp_social_bookmarking_light{
+    border: 0 !important;
+    padding: 10px 0 20px 0 !important;
+    margin: 0 !important;
+}
+.wp_social_bookmarking_light div{
+    float: left !important;
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 5px 0px 0 !important;
+    min-height: 30px !important;
+    line-height: 18px !important;
+    text-indent: 0 !important;
+}
+.wp_social_bookmarking_light img{
+    border: 0 !important;
+    padding: 0;
+    margin: 0;
+    vertical-align: top !important;
+}
+.wp_social_bookmarking_light_clear{
+    clear: both !important;
+}
+#fb-root{
+    display: none;
+}
+.wsbl_twitter{
+    width: 110px;
+}
+.wsbl_facebook_like iframe{
+    max-width: none !important;
+}</style>
+<!-- END: WP Social Bookmarking Light -->
+<script type="text/javascript">document.createElement('video');document.createElement('audio');</script>
+
+
+
+</head>
+
+<body class="single single-post postid-7054 single-format-standard mobile-sidebar-disable">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=717935874902936";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="header-social"><a href="http://b.hatena.ne.jp/entry/http://shopping-tribe.com/interview/7054/" class="hatena-bookmark-button" data-hatena-bookmark-title="【インタビュー】「1秒で完了する決済を実現」コイニー代表 佐俣奈緒子氏（前編）" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script> <a href="https://twitter.com/share" class="twitter-share-button" data-via="s_tribePR" data-lang="ja">ツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+
+
+<div id="wrap">
+
+	<header id="header">
+		<div class="container">
+						
+						
+			<div id="header-inner" class="fix">
+		
+				<div class="pad fix">
+					<p id="logo"><a href="http://shopping-tribe.com/" rel="home"><img src="http://shopping-tribe.com/wp-content/uploads/2013/11/shoptribe_logo1.png" alt="Shopping Tribe"></a></p>
+																<div id="header-search" class="fix"><form method="get" id="searchform" action="http://shopping-tribe.com/">
+	<div>
+		<input type="text" id="s" name="s" onblur="if(this.value=='')this.value='Enter your search...';" onfocus="if(this.value=='Enter your search...')this.value='';" value="Enter your search..." />
+	</div>
+</form></div>
+													
+						<ul id="header-social"><li><a href="https://twitter.com/s_tribePR" target="_blank"><span class="icon"><img src="http://shopping-tribe.com/wp-content/themes/newsroom14/air/modules/social/icons/default/twitter_16.png" alt="Twitter" /></span><span class="icon-title"><i class="icon-pike"></i>Twitter</span></a></li><li><a href="https://www.facebook.com/shoppingtribe" target="_blank"><span class="icon"><img src="http://shopping-tribe.com/wp-content/themes/newsroom14/air/modules/social/icons/default/facebook_16.png" alt="Facebook" /></span><span class="icon-title"><i class="icon-pike"></i>Facebook</span></a></li><li><a href="http://shopping-tribe.com/feed/" target="_blank"><span class="icon"><img src="http://shopping-tribe.com/wp-content/themes/newsroom14/air/modules/social/icons/default/rss_16.png" alt="rss" /></span><span class="icon-title"><i class="icon-pike"></i>rss</span></a></li></ul>									</div>
+				<div class="clear"></div>
+			</div>
+			<nav id="header-nav" class="fix"><ul id="nav" class="fix"><li id="menu-item-24" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24"><a href="http://shopping-tribe.com/category/news/">NEWS</a></li>
+<li id="menu-item-362" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-362"><a href="http://shopping-tribe.com/category/tips/">TIPS</a></li>
+<li id="menu-item-428" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-428"><a href="http://shopping-tribe.com/category/matome/">MATOME</a></li>
+<li id="menu-item-1539" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1539"><a href="http://shopping-tribe.com/category/column/">COLUMN</a></li>
+<li id="menu-item-606" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-606"><a href="http://shopping-tribe.com/category/design/">DESIGN</a></li>
+<li id="menu-item-1070" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1070"><a href="http://shopping-tribe.com/category/report/">REPORT</a></li>
+<li id="menu-item-277" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-277"><a href="http://shopping-tribe.com/category/data/">DATA</a></li>
+<li id="menu-item-93" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-93"><a href="http://shopping-tribe.com/category/world-watch/">WORLD WATCH</a></li>
+<li id="menu-item-5119" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-5119"><a href="http://shopping-tribe.com/category/interview/">INTERVIEW</a></li>
+<li id="menu-item-740" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-740"><a href="http://shopping-tribe.com/category/star/">STAR</a></li>
+</ul></nav>	
+			
+			<div id="header-line"></div>
+			<nav id="subheader-nav" class="fix"><ul id="nav-sub" class="fix"><li id="menu-item-201" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-201"><a href="http://shopping-tribe.com/">トップ</a></li>
+<li id="menu-item-359" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-359"><a href="http://shopping-tribe.com/information/291/">ご挨拶</a></li>
+<li id="menu-item-95" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95"><a href="http://shopping-tribe.com/aboutus/">運営会社</a></li>
+</ul></nav>		</div>
+	</header><!--/header-->
+	
+<div id="page">
+	<div class="container">
+		<div id="page-inner">
+			
+
+<ul id="Socialbar" style="width: 90px; margin-left: -140px; display: block; position: fixed; top: 50px;padding:10px;border:1px solid #ccc;text-align:center;z-index:9999;background-color:#fff;">
+<li><a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="s_tribePR">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
+<li><div class="fb-like" data-href="http://shopping-tribe.com/interview/7054/" data-layout="box_count" data-action="like" data-show-faces="false" data-share="false"></div></li>
+<li><a href="http://b.hatena.ne.jp/entry/http://shopping-tribe.com/interview/7054/" class="hatena-bookmark-button" data-hatena-bookmark-title="【インタビュー】「1秒で完了する決済を実現」コイニー代表 佐俣奈緒子氏（前編）" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="【インタビュー】「1秒で完了する決済を実現」コイニー代表 佐俣奈緒子氏（前編）"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="【インタビュー】「1秒で完了する決済を実現」コイニー代表 佐俣奈緒子氏（前編）" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+</li>
+<li><div class="g-plusone" data-size="tall"></div></li>
+<li><a data-pocket-label="pocket" data-pocket-count="vertical" class="pocket-btn" data-lang="en"></a>
+<script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script></li>
+</ul>
+
+						
+							<header class="content">
+	<div class="pad fix">
+				
+					<p class="entry-category"><a href="http://shopping-tribe.com/category/interview/" title="INTERVIEW の投稿をすべて表示" rel="category tag">INTERVIEW</a></p>
+				
+		<div class="clear"></div>
+		<h1 class="entry-title">【インタビュー】「1秒で完了する決済を実現」コイニー代表 佐俣奈緒子氏（前編）</h1>
+		<ul class="entry-meta fix">
+							<li class="entry-author">by <a href="http://shopping-tribe.com/author/iizuka/" title="イイヅカ アキラ による投稿" rel="author">イイヅカ アキラ</a></li>
+						
+							<li class="entry-date">
+					2014年5月28日									</li>
+					</ul>
+	</div><!--/pad-->
+</header>						
+			<div class="main fix sidebar-right">
+
+				<div class="content-part">
+					<article id="entry-7054" class="post-7054 post type-post status-publish format-standard has-post-thumbnail hentry category-interview tag-coiney tag-193 entry fix">	
+												
+						<div class="pad fix">	
+						
+							<div class="text">
+								<div class='wp_social_bookmarking_light'><div class="wsbl_twitter"><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="  class="lazy lazy-hidden" data-lazy-type="iframe" data-lazy-src="PGlmcmFtZSBhbGxvd3RyYW5zcGFyZW5jeT0idHJ1ZSIgZnJhbWVib3JkZXI9IjAiIHNjcm9sbGluZz0ibm8iIHNyYz0iLy9wbGF0Zm9ybS50d2l0dGVyLmNvbS93aWRnZXRzL3R3ZWV0X2J1dHRvbi5odG1sP3VybD1odHRwJTNBJTJGJTJGc2hvcHBpbmctdHJpYmUuY29tJTJGaW50ZXJ2aWV3JTJGNzA1NCUyRiZhbXA7dGV4dD0lRTMlODAlOTAlRTMlODIlQTQlRTMlODMlQjMlRTMlODIlQkYlRTMlODMlOTMlRTMlODMlQTUlRTMlODMlQkMlRTMlODAlOTElRTMlODAlOEMxJUU3JUE3JTkyJUUzJTgxJUE3JUU1JUFFJThDJUU0JUJBJTg2JUUzJTgxJTk5JUUzJTgyJThCJUU2JUIxJUJBJUU2JUI4JTg4JUUzJTgyJTkyJUU1JUFFJTlGJUU3JThGJUJFJUUzJTgwJThEJUUzJTgyJUIzJUUzJTgyJUE0JUUzJTgzJThCJUUzJTgzJUJDJUU0JUJCJUEzJUU4JUExJUE4JTIwJUU0JUJEJTkwJUU0JUJGJUEzJUU1JUE1JTg4JUU3JUI3JTkyJUU1JUFEJTkwJUU2JUIwJThGJUVGJUJDJTg4JUU1JTg5JThEJUU3JUI3JUE4JUVGJUJDJTg5JmFtcDt2aWE9c190cmliZVBSJmFtcDtsYW5nPWphJmFtcDtjb3VudD1ob3Jpem9udGFsIiBzdHlsZT0id2lkdGg6MTMwcHg7IGhlaWdodDoyMHB4OyI+" alt=""><noscript><iframe allowtransparency="true" frameborder="0" scrolling="no" src="//platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fshopping-tribe.com%2Finterview%2F7054%2F&amp;text=%E3%80%90%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%93%E3%83%A5%E3%83%BC%E3%80%91%E3%80%8C1%E7%A7%92%E3%81%A7%E5%AE%8C%E4%BA%86%E3%81%99%E3%82%8B%E6%B1%BA%E6%B8%88%E3%82%92%E5%AE%9F%E7%8F%BE%E3%80%8D%E3%82%B3%E3%82%A4%E3%83%8B%E3%83%BC%E4%BB%A3%E8%A1%A8%20%E4%BD%90%E4%BF%A3%E5%A5%88%E7%B7%92%E5%AD%90%E6%B0%8F%EF%BC%88%E5%89%8D%E7%B7%A8%EF%BC%89&amp;via=s_tribePR&amp;lang=ja&amp;count=horizontal" style="width:130px; height:20px;"></noscript></iframe></div><div class="wsbl_facebook_like"><div id="fb-root"></div><fb:like href="http://shopping-tribe.com/interview/7054/" layout="button_count" action="like" width="100" share="false" show_faces="false" ></fb:like></div><div class="wsbl_hatena_button"><a href="http://b.hatena.ne.jp/entry/http://shopping-tribe.com/interview/7054/" class="hatena-bookmark-button" data-hatena-bookmark-title="【インタビュー】「1秒で完了する決済を実現」コイニー代表 佐俣奈緒子氏（前編）" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"> <img class="lazy lazy-hidden" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /><noscript><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></noscript></a><script type="text/javascript" src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async="async"></script></div><div class="wsbl_google_plus_one"><g:plusone size="medium" annotation="bubble" href="http://shopping-tribe.com/interview/7054/" ></g:plusone></div><div class="wsbl_pocket"><a href="https://getpocket.com/save" class="pocket-btn" data-lang="en" data-save-url="http://shopping-tribe.com/interview/7054/" data-pocket-count="horizontal" data-pocket-align="left" >Pocket</a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script></div><div class="wsbl_evernote"><a href="#" onclick="Evernote.doClip({ title:'【インタビュー】「1秒で完了する決済を実現」コイニー代表 佐俣奈緒子氏（前編）', url:'http://shopping-tribe.com/interview/7054/' });return false;"><img class="lazy lazy-hidden" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://static.evernote.com/article-clipper-jp.png" /><noscript><img src="http://static.evernote.com/article-clipper-jp.png" /></noscript></a></div><div class="wsbl_line"><a href='http://line.naver.jp/R/msg/text/?【インタビュー】「1秒で完了する決済を実現」コイニー代表 佐俣奈緒子氏（前編）%0D%0Ahttp://shopping-tribe.com/interview/7054/' title='LINEで送る' rel=nofollow class='wp_social_bookmarking_light_a' target=_blank><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src='http://shopping-tribe.com/wp-content/plugins/wp-social-bookmarking-light/images/line88x20.png' alt='LINEで送る' title='LINEで送る' width='88' height='20' class='lazy lazy-hidden wp_social_bookmarking_light_img' /><noscript><img src='http://shopping-tribe.com/wp-content/plugins/wp-social-bookmarking-light/images/line88x20.png' alt='LINEで送る' title='LINEで送る' width='88' height='20' class='wp_social_bookmarking_light_img' /></noscript></a></div></div><br class='wp_social_bookmarking_light_clear' /><p>
+2013年はスマートフォンやタブレットを決済端末として利用可能にする「スマートフォン決済」と呼ばれるサービスが次々と登場しました。<br />
+<br />
+「Square」や「PayPal」など、海外発のサービスが多い中、日本のベンチャー企業である「コイニー」が2013年4月10日にスマートフォン決済のサービスを開始しています。<br />
+<br />
+今回は、2014年4月10日にサービス開始から1周年を迎え、新オフィスで2年目をスタートさせたコイニー株式会社 代表取締役社長の佐俣奈緒子氏にスマートフォン決済や「<a href="http://coiney.com/" target="_blank">Coiney（コイニー）</a>」の現状について伺いました。<br />
+インタビューの模様を前編・中編・後編の3回に渡ってお届けします。<br />
+<br />
+<img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://shopping-tribe.com/wp-content/uploads/2014/05/coiney-1.jpg" alt="coiney-1" width="600" height="420" class="lazy lazy-hidden aligncenter size-full wp-image-7535" /><noscript><img src="http://shopping-tribe.com/wp-content/uploads/2014/05/coiney-1.jpg" alt="coiney-1" width="600" height="420" class="aligncenter size-full wp-image-7535" /></noscript>
+<br />
+<h4>―― Coineyのサービスについて改めて教えてください。</h4>
+<strong>佐俣：</strong>スマートフォン決済とかスマホ決済と言われているサービスで、タブレットやスマートフォンのイヤホンジャックに「Coineyリーダー」を刺して決済端末にするもので、iOSとAndroidに対応しています。<br />
+お店が利用するサービスで、これを使ってクレジットカード決済を行うことができます。<br />
+<br />
+<img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://shopping-tribe.com/wp-content/uploads/2014/03/coiney-480x336.jpg" alt="coiney" width="480" height="336" class="lazy lazy-hidden aligncenter size-medium wp-image-3879" /><noscript><img src="http://shopping-tribe.com/wp-content/uploads/2014/03/coiney-480x336.jpg" alt="coiney" width="480" height="336" class="aligncenter size-medium wp-image-3879" /></noscript>
+<br />
+従来クレジットカードは、レジの隣にある機械で読んだり、レジに一体型になっているもので読んでいましたが、これがスマートデバイスに置き換わるというものです。<br />
+これまでは端末が高価で、審査が通らない、審査までの時間が長い、手数料が高いなどのいろいろな問題がありましたが、まずは申し込んだらすぐに使えるサービスにするべく取り組み、<strong class="hl">最短2営業日で使えるようにしました</strong>。<br />
+<br />
+いままでは、会社の設立年月日の期間や業種、規模などで審査がかけられて、手数料も「あなたの場合は何％ですよ」というような形で決まっていて、ブラックボックスだったんですね。例えば、一般消費者がローンを借りるときに基準がわからないのと一緒で。<br />
+<br />
+Coineyは、<strong class="hl">手数料を3.24％の一律で提供</strong>させて頂いているので、非常にクリアで、導入頂くときに検討がしやすいと思います。<br />
+入金のサイクルに関しても、これまで「末で締めて翌末で払います」とか、「15日で締めて末で払います」ということが多かったと思うのですが、Coineyでは、<strong class="hl">5日ごとに月6回締めて払う</strong>ようにしているので、キャッシュフローという意味でもだいぶ改善がされてきているところがあります。<br />
+中小企業の方々にとって簡単にご利用頂けるような決済のソリューションとしてサービスを提供させて頂いています。<br />
+<br />
+<br />
+<h4>―― 5日ごとに締めるのはかなり頻繁なイメージがありますが、手数料はかかるのでしょうか。</h4>
+<strong>佐俣：</strong>お店の方に「引き出し」の依頼を我々の方にかけて頂くと、<strong class="hl">翌営業日に着金</strong>する形になっていますが、<strong class="hl">1回の引き出しが10万円以上の場合は無料、10万円未満の場合には1回あたり200円</strong>を頂いています。<br />
+<br />
+<br />
+<h3>3週間かかっていた審査を2営業日に短縮</h3>
+<h4>―― 審査をどのようにして早めることができたのでしょうか。</h4>
+<strong>佐俣：</strong>審査を早めるにあたって、我々の後ろにはカード会社であるクレディセゾンさんがいて、ある意味一緒に協業しながらサービスを提供しています。<br />
+<br />
+通常の審査は、これまで決められたフローがあって、それを部署で持ちまわって審査していました。「この部分は大丈夫か」、OKだったら「次の部分は大丈夫か」という、部署で持ちまわっていた部分など、専門チームを置いて、とにかくオペレーションを見直した結果、<strong class="hl">3週間と言われていた部分を最短2営業日で返せるようになりました</strong>。審査の内容を変えたというよりは、オペレーションを見直したところが大きいです。<br />
+<br />
+<img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://shopping-tribe.com/wp-content/uploads/2014/05/coiney2-480x319.jpg" alt="coiney2" width="480" height="319" class="lazy lazy-hidden aligncenter size-medium wp-image-7063" /><noscript><img src="http://shopping-tribe.com/wp-content/uploads/2014/05/coiney2-480x319.jpg" alt="coiney2" width="480" height="319" class="aligncenter size-medium wp-image-7063" /></noscript>
+<br />
+実際に日々お使い頂く上で、お使い頂く内容によって、モニタリングもしています。<br />
+例えば、過去2ヶ月の決済額よりも、いきなり売上が上がることがあります。<br />
+これはいろんな要因があって、例えば当日催事をやっていてお客さんいっぱい来たとか、12月に多かったのが忘年会で団体客が入ったとか、そういったことがあるので、そういう異常値を社内ですべて感知していて、決済の中では途上与信っていうんですけど、お使いいただく中で要所要所で審査を別でかけていく、リアルタイムでモニタリングをすることによって、より精度を高く、安心してお使いいただけるようにしています。<br />
+<br />
+<br />
+<h4>―― Coineyでの与信はどのように行われているのでしょうか？</h4>
+<strong>佐俣：</strong>2つあって、まずお店に対する与信の審査は最初にやります。お店の営業実態があるのか、代表者が過去に何か問題を起こしてないかなど、個人の与信も含めて審査はしています。<br />
+<br />
+お使いいただくクレジットカードの与信は1回、1回取っています。インターネットを通してカード会社さんには必ずカードの信頼性の確認をしています。タクシーでクレジットカードを使うと時間がかかる場合がありますが、カード会社との通信をずっと繰り返されて待つんですが、<strong class="hl">我々の場合は数秒で決済ができる</strong>ので、お客様をお待たせすることなく、非常にスピーディーに決済を完了します。<br />
+<br />
+―― 実際にどの程度のスピードで決済が完了できるのかを見せて頂きました。カードの読み込みから、決済完了までを撮影したものです。私の感覚でいえば、相当早いと感じました。<br />
+<br />
+<img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="  class="lazy lazy-hidden" data-lazy-type="iframe" data-lazy-src="PGlmcmFtZSB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgc3JjPSIvL3d3dy55b3V0dWJlLmNvbS9lbWJlZC9wSUpiNW1pZjAxMD9yZWw9MCIgZnJhbWVib3JkZXI9IjAiIGFsbG93ZnVsbHNjcmVlbj4=" alt=""><noscript><iframe width="600" height="338" src="//www.youtube.com/embed/pIJb5mif010?rel=0" frameborder="0" allowfullscreen></noscript></iframe><br />
+<br />
+<br />
+<br />
+<h3>数秒での決済を実現。サインレスを実現しているのではCoineyだけ</h3>
+<br />
+<h4>―― スピードはSuicaを使うぐらいの感じですね。</h4>
+<strong>佐俣：</strong>だいたい、<strong class="hl">サインレスの場合は1、2秒</strong>ですね。<br />
+<strong class="hl">1万円以下の決済に関してはサインレスを設定できる</strong>ので、サインをお客様から頂くことなく決済できます。<br />
+サインが必要な場合に関しては、慣れないうちはどうしてもお店からお客様に「こうやって書きますよ」とか、「安全ですよ」ってことを、説明しなければいけないので、少し時間がかかる場合がありますね。<br />
+<br />
+少額決済に関しては、スピーディーに行いたいお店に対してサインレスを提供しています。イベントとかで、お客様が並ぶ場合とか、カフェなどで数百円単位だから、そこまでオペレーションに負荷をかけたくないといった場合に好まれて使われてます。<br />
+<strong class="hl">スマホ決済でサインレスを提供しているのはCoineyだけ</strong>なんです。<br />
+<br />
+<br />
+<h4>―― タクシーに是非導入して欲しいですね。下手するとクレジットカード決済用の端末を出すだけでも時間かかりますよね。（笑）</h4>
+<strong>佐俣：</strong>タクシーによく乗るので、遅いなーと思いながら、サインする伝票を出てくるのを待っていますね。（笑）<br />
+スピードっていう意味では、日本は特に通信が整ってきているので、首都圏中心で考えると、だいぶ早いスピードで提供できるんじゃないかと思います。<br />
+<br />
+<img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://shopping-tribe.com/wp-content/uploads/2014/05/coiney3-480x319.jpg" alt="coiney3" width="480" height="319" class="lazy lazy-hidden aligncenter size-medium wp-image-7084" /><noscript><img src="http://shopping-tribe.com/wp-content/uploads/2014/05/coiney3-480x319.jpg" alt="coiney3" width="480" height="319" class="aligncenter size-medium wp-image-7084" /></noscript>
+<br />
+<h4>―― なぜこの速さは実現できたのでしょうか。</h4>
+<strong>佐俣：</strong>何が違うかというと、よくある決済端末は決済用に通信領域を結構絞っているので、それで遅くなっているケースがあります。<br />
+それこそ、タクシーに関してはよくあるケースで使っている場合があると思いますが、通信網を抑えているので非常に遅いんですね。<br />
+<br />
+ただ、クレジットカード決済時のパケットは少ないので、その分安い通信量でできます。我々の場合は、既存の4Gでやっているので、いわゆる通常のインターネットと同じなので、早いっていう差があります。<br />
+<br />
+<strong class="hl">遅いのは通信だけの問題で、カード会社の承認が遅いとか、そういうことではないんです</strong>。<br />
+<br />
+<br />
+<h4>―― 通信スピードの問題が大きかったんですね。</h4>
+<strong>佐俣：</strong>あれは結構ストレスフルというか、待っている時間が長いんですよね。なので、そこはもっと改善の余地があるんじゃないかと思っています。<br />
+<br />
+<br />
+<h4>―― 日本はアメリカと比べるとクレジットカードを使う文化がなくて、少額決済の場合などは使うのが申し訳ないのではないかと思ってしまうのですが、そこはかなり改善されるということですね。</h4>
+<strong>佐俣：</strong>改善されてくると思います。端末がスマートフォンとかタブレットに置き変わってくると、いまぐらいの回線スピードで使えるようになるので、かつサインレスになると、それこそSuicaを使うとか、キャッシュで払うのと同じぐらいになります。<br />
+<br />
+キャッシュもお釣りがあると意外と時間が掛かるんですけど、タクシーでも気軽に運転手さんがクレジットカード決済ができる状態になるので、払う方も手間取らずに払えるようになると思います。<br />
+<br />
+社内で使っている回線も一般家庭で使っているものと同じですし、都内はだいたい4Gがつながるようになっているので、これぐらいのスピード感で使えたらと思ってます。仮に3Gだとしても、それほどまでには速さの違いは感じないですね。<br />
+<br />
+<br />
+<h4>―― 従来のクレジットカード決済で必要な据置型の決済端末の値段はどれぐらいなんでしょうか。</h4>
+<strong>佐俣：</strong>据置型の決済端末の値段は、カード会社さんが安くしたり、無料にするケースもありますが、平均すると10万円ぐらいと言われています。<br />
+ただ、最近は電子マネーカードやIC型のカードを読めるようになっていて、すごく高機能化が進んでいるので、そうするとさらに高くなる傾向にあります。<br />
+でも、実際カードを読むところでいくと、我々がこういうものをいま無料でお出ししているものと、いわゆる既存の決済端末は対して機能が変わらないので、そこはこれまで、中小の方にとってはすごく負担が大きかったものだと思います。<br />
+<br />
+<br />
+―― 実際に、個人商店の方と話した際にも、電子マネーやIC型のカードが使えた方がよいのはわかっているものの、投資した費用を回収できるのかどうかがわからないため、なかなか踏ん切りがつかないといった悩みを持っていたそうです。<br />
+その点Coineyの場合は、手元にあるスマホかタブレット端末で導入できるので、導入ハードルの低さが際立っています。<br />
+<br />
+<br />
+<h3>サインのデジタル化で店舗の負担も軽減</h3>
+<br />
+<h4>―― こんなに早く決済できるのであれば、利用者としても是非広まって欲しいですね。</h4>
+<strong>佐俣：</strong>カードを使える場所って、<strong class="hl">日本だとまだまだ限られているので広めたい</strong>っていうのと、クレジットカード決済を既に導入している場所に関しても、スピード感だとか、実際に利用するお店側の管理の手間を軽減するっていう点で、使って頂きたいですね。<br />
+<br />
+いまってサインを紙に書くじゃないですか。あの紙ってお店側が保管をして、クレジットカード会社にあれを送らないといけないんですよね。保管コストが意外とあって、なくしたら問題になりますし。<br />
+<br />
+でも、<strong class="hl">Coineyの場合はサインがデータになっている</strong>ので、全く事業者さん側が関与することなく、<strong class="hl">我々が保管し、カード会社さんに渡している</strong>ので、保管コストだったり、それを郵送するオペレーションの手間も全くないので、とにかくどんどんお客様に対応して売上を上げて頂ければ、あとは自動化します。というやり方なので、既存の紙で書くってところから、だいぶコストが減ってくるんじゃないかと思っています。<br />
+<br />
+<img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://shopping-tribe.com/wp-content/uploads/2014/05/coiney4-480x256.jpg" alt="coiney4" width="480" height="256" class="lazy lazy-hidden aligncenter size-medium wp-image-7093" /><noscript><img src="http://shopping-tribe.com/wp-content/uploads/2014/05/coiney4-480x256.jpg" alt="coiney4" width="480" height="256" class="aligncenter size-medium wp-image-7093" /></noscript>
+<br />
+見えにくいところなんですけど、最近大手さんがサイン専用のタブレット端末を導入しているんですが、たぶんあれはその後の管理の手間を削減するためだと思うんですよね。それを全部データ化することで、リアルタイムに送っています。<br />
+タブレットとかスマートフォンでは最初から画面があるので、そこに書けば良いというのが、まだまだ我々自身もお伝えしきれてない事業者さん側のメリットとなります。<br />
+<br />
+<br />
+<h4>―― サインの信頼性が問題になることはあるんでしょうか。</h4>
+<strong>佐俣：</strong>結論からいくと、問題ないです。<br />
+日本って特にクレジットカードの事故が少ない国で、サインが問題になることはほとんどないんです。<br />
+ただ、やっぱりレギュレーションの中で、本人が使ったという証拠としてサインは取っておく必要があって、サインしたデータは7年間保管してくださいっていうルールがあるので、我々もきちんと保管していますし、何か事故があったときに、この日のこのお店でこの時間にあった取引はこのサインですというのはいつでも出せるようにしています。<br />
+<br />
+<br />
+<h3>編集後記</h3>
+実はスマートフォン決済を実際に利用するのを見たのは初めてだったんですが、決済を完了するまでの速さに一番驚きました。導入の手軽さや、ポータブル性に注目が集まる事は多いですが、決済までのスピードが早いという面は、クレジットカード決済がさらに使われるようになっていくためには重要な要素のように思います。サインレスを提供しているのがCoineyだけというのもポイントになりますね。<br />
+是非、このスピード感を体感してみてください。<br />
+<br />
+次回は中編「決済のルールを変えるのがスマートフォン決済の本質」を近日公開します。Coineyの現状などをお聞きしました。<br />
+<hr /><br />
+<strong>Coiney（コイニー）</strong><br />
+<a href="http://coiney.com/" target="_blank">http://coiney.com/</a></p>
+<div id="ts-fab-below" class="ts-fab-wrapper"><span class="screen-reader-text">The following two tabs change content below.</span><ul class="ts-fab-list"><li class="ts-fab-bio-link"><a href="#ts-fab-bio-below">この記事を書いた人</a></li><li class="ts-fab-latest-posts-link"><a href="#ts-fab-latest-posts-below">最新の記事</a></li></ul><div class="ts-fab-tabs">
+	<div class="ts-fab-tab" id="ts-fab-bio-below">
+		<div class="ts-fab-avatar"><img alt='イイヅカ アキラ' src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src='http://shopping-tribe.com/wp-content/uploads/2014/05/イイヅカ-アキラ_avatar_1399648442-80x80.jpeg' class='lazy lazy-hidden avatar avatar-80 photo' height='80' width='80' /><noscript><img alt='イイヅカ アキラ' src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src='http://shopping-tribe.com/wp-content/uploads/2014/05/イイヅカ-アキラ_avatar_1399648442-80x80.jpeg' class='lazy lazy-hidden avatar avatar-80 photo' height='80' width='80' /><noscript><img alt='イイヅカ アキラ' src='http://shopping-tribe.com/wp-content/uploads/2014/05/イイヅカ-アキラ_avatar_1399648442-80x80.jpeg' class='avatar avatar-80 photo' height='80' width='80' /></noscript></noscript><div class="ts-fab-social-links"><a href="http://twitter.com/aixca" title="Twitter" rel="nofollow"><img class="lazy lazy-hidden" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://shopping-tribe.com/wp-content/plugins/fancier-author-box/images/twitter.png" width="24" height="24" alt="Twitter のプロフィール" /><noscript><img class="lazy lazy-hidden" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://shopping-tribe.com/wp-content/plugins/fancier-author-box/images/twitter.png" width="24" height="24" alt="Twitter のプロフィール" /><noscript><img src="http://shopping-tribe.com/wp-content/plugins/fancier-author-box/images/twitter.png" width="24" height="24" alt="Twitter のプロフィール" /></noscript></noscript></a></div>
+		</div>
+		
+		<div class="ts-fab-text">
+			<div class="ts-fab-header"><h4>イイヅカ アキラ</h4></div><!-- /.ts-fab-header -->
+			<div class="ts-fab-content">Shopping Tribe編集長。Web制作会社にデザイナー、ディレクターとして従事後、フリーに。現在はメディア運営を中心に活動中。</div>
+		</div>
+	</div>
+	<div class="ts-fab-tab" id="ts-fab-latest-posts-below">
+		<div class="ts-fab-avatar"><img alt='イイヅカ アキラ' src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src='http://shopping-tribe.com/wp-content/uploads/2014/05/イイヅカ-アキラ_avatar_1399648442-80x80.jpeg' class='lazy lazy-hidden avatar avatar-80 photo' height='80' width='80' /><noscript><img alt='イイヅカ アキラ' src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src='http://shopping-tribe.com/wp-content/uploads/2014/05/イイヅカ-アキラ_avatar_1399648442-80x80.jpeg' class='lazy lazy-hidden avatar avatar-80 photo' height='80' width='80' /><noscript><img alt='イイヅカ アキラ' src='http://shopping-tribe.com/wp-content/uploads/2014/05/イイヅカ-アキラ_avatar_1399648442-80x80.jpeg' class='avatar avatar-80 photo' height='80' width='80' /></noscript></noscript><div class="ts-fab-social-links"><a href="http://twitter.com/aixca" title="Twitter" rel="nofollow"><img class="lazy lazy-hidden" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://shopping-tribe.com/wp-content/plugins/fancier-author-box/images/twitter.png" width="24" height="24" alt="Twitter のプロフィール" /><noscript><img class="lazy lazy-hidden" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://shopping-tribe.com/wp-content/plugins/fancier-author-box/images/twitter.png" width="24" height="24" alt="Twitter のプロフィール" /><noscript><img src="http://shopping-tribe.com/wp-content/plugins/fancier-author-box/images/twitter.png" width="24" height="24" alt="Twitter のプロフィール" /></noscript></noscript></a></div>
+		</div>
+		<div class="ts-fab-text">
+			<div class="ts-fab-header">
+				<h4>最新記事 by イイヅカ アキラ <span class="latest-see-all">(<a href="http://shopping-tribe.com/author/iizuka/" rel="nofollow">全て見る</a>)</span></h4>
+			</div>
+			<ul class="ts-fab-latest">
+				<li>
+					<a href="http://shopping-tribe.com/news/7552/">NATURAL BEAUTY BASICの公式オンラインストアがオープン ー 店頭在庫の確認や店舗受取が可能</a><span> - 2014年5月29日</span> 
+				</li>
+				<li>
+					<a href="http://shopping-tribe.com/news/7501/">WebPay、決済手数料2.69%の新プランを発表 ー 業界最安水準に</a><span> - 2014年5月28日</span> 
+				</li>
+				<li>
+					<a href="http://shopping-tribe.com/interview/7054/">【インタビュー】「1秒で完了する決済を実現」コイニー代表 佐俣奈緒子氏（前編）</a><span> - 2014年5月28日</span> 
+				</li>
+		</ul></div>
+	</div>
+		</div>
+	</div>																<div class="clear"></div>
+							</div>
+
+															<p class="entry-tags"><span>Tags:</span> <a href="http://shopping-tribe.com/tag/coiney/" rel="tag">Coiney</a><a href="http://shopping-tribe.com/tag/%e3%82%b9%e3%83%9e%e3%83%9b%e6%b1%ba%e6%b8%88/" rel="tag">スマホ決済</a></p>							
+							
+<div style="margin:50px 0 0 0">
+<ul class="entry-related fix">
+	<h4 class="miniheading pad">
+		<span>関連記事</span>
+	</h4>
+
+		<li class="related">
+		<article class="post-5987 post type-post status-publish format-standard has-post-thumbnail hentry category-news category-payment tag-gmo tag-gmo-pallet tag-193">
+			<a href="http://shopping-tribe.com/news/5987/">
+								<span class="entry-thumbnail">
+											<img width="150" height="100" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://shopping-tribe.com/wp-content/uploads/2014/04/gmopallet-150x100.jpg" class="lazy lazy-hidden attachment-size-thumbnail wp-post-image" alt="gmopallet" /><noscript><img width="150" height="100" src="http://shopping-tribe.com/wp-content/uploads/2014/04/gmopallet-150x100.jpg" class="attachment-size-thumbnail wp-post-image" alt="gmopallet" /></noscript>										<i class="glass"></i>
+				</span>
+				
+				<span class="rel-entry-title">スマホで完結する決済サービス「GMO Pallet」がサービス開始 ー まずは渋谷で</span>
+
+									<span class="rel-entry-date">4月 23, 2014</span>
+							</a>
+		</article>
+	</li>
+		<li class="related">
+		<article class="post-3870 post type-post status-publish format-standard has-post-thumbnail hentry category-news category-payment tag-coiney tag-ntt">
+			<a href="http://shopping-tribe.com/news/3870/">
+								<span class="entry-thumbnail">
+											<img width="150" height="100" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://shopping-tribe.com/wp-content/uploads/2014/03/coiney-150x100.jpg" class="lazy lazy-hidden attachment-size-thumbnail wp-post-image" alt="coiney" /><noscript><img width="150" height="100" src="http://shopping-tribe.com/wp-content/uploads/2014/03/coiney-150x100.jpg" class="attachment-size-thumbnail wp-post-image" alt="coiney" /></noscript>										<i class="glass"></i>
+				</span>
+				
+				<span class="rel-entry-title">Coiney、NTT東日本が提供する「ラクレジ」の決済機能に採用</span>
+
+									<span class="rel-entry-date">3月 5, 2014</span>
+							</a>
+		</article>
+	</li>
+		<li class="related">
+		<article class="post-6768 post type-post status-publish format-standard has-post-thumbnail hentry category-world-watch tag-square tag-193">
+			<a href="http://shopping-tribe.com/world-watch/6768/">
+								<span class="entry-thumbnail">
+											<img width="150" height="100" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://shopping-tribe.com/wp-content/uploads/2014/05/squareorder1-150x100.jpg" class="lazy lazy-hidden attachment-size-thumbnail wp-post-image" alt="squareorder1" /><noscript><img width="150" height="100" src="http://shopping-tribe.com/wp-content/uploads/2014/05/squareorder1-150x100.jpg" class="attachment-size-thumbnail wp-post-image" alt="squareorder1" /></noscript>										<i class="glass"></i>
+				</span>
+				
+				<span class="rel-entry-title">米Square、テイクアウトをアプリで事前に注文して決済する「Square Order」を提供開始</span>
+
+									<span class="rel-entry-date">5月 14, 2014</span>
+							</a>
+		</article>
+	</li>
+		<li class="related">
+		<article class="post-6967 post type-post status-publish format-standard has-post-thumbnail hentry category-news category-payment tag-193 tag-232">
+			<a href="http://shopping-tribe.com/news/6967/">
+								<span class="entry-thumbnail">
+											<img width="150" height="100" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://shopping-tribe.com/wp-content/uploads/2014/05/tabelogpay-150x100.jpg" class="lazy lazy-hidden attachment-size-thumbnail wp-post-image" alt="tabelogpay" /><noscript><img width="150" height="100" src="http://shopping-tribe.com/wp-content/uploads/2014/05/tabelogpay-150x100.jpg" class="attachment-size-thumbnail wp-post-image" alt="tabelogpay" /></noscript>										<i class="glass"></i>
+				</span>
+				
+				<span class="rel-entry-title">カカクコム、手数料が格安なスマホ決済「食べログPay」を提供開始 ー 決済手数料は3.0%</span>
+
+									<span class="rel-entry-date">5月 16, 2014</span>
+							</a>
+		</article>
+	</li>
+	
+</ul><!--/entry-related-->
+
+</div>
+
+<div style="margin:0 0 10px 0">RSS購読</div><div style="margin:0 0 10px 0">
+<a href="http://shopping-tribe.com/feed/" target="_blank"><img src="http://shopping-tribe.com/wp-content/uploads/2013/11/rss.png"></a><a href="http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fshopping-tribe.com%2Ffeed%2F" target="_blank"><img src="http://shopping-tribe.com/wp-content/uploads/2013/11/feedly.png"></a>
+</div>
+
+<div style="padding:50px 0;">
+<div style="float:left">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Article-Bottom 300x250 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-8112422726152000"
+     data-ad-slot="5041536578"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div style="float:right">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Article-Bottom 300x250 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-8112422726152000"
+     data-ad-slot="5041536578"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div style="clear:both;"></div>
+</div>
+							<div class="fb-comments" data-href="http://shopping-tribe.com/interview/7054/" data-numposts="5" data-colorscheme="light" data-width="620px"></div>
+
+<div class="fb-like-box" data-href="http://www.facebook.com/shoppingtribe" data-width="620" data-height="325" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="true"></div>
+						</div><!--/entry content-->
+					</article>
+
+										<ul class="entry-browse fix">
+						<li class="previous"><a href="http://shopping-tribe.com/news/7472/" rel="prev"><strong>Previous story</strong> <span>「楽天カフェ」が渋谷にオープン ー 楽天市場で人気のスイーツなどを提供</span></a></li>
+						<li class="next"><a href="http://shopping-tribe.com/news/7501/" rel="next"><strong>Next story</strong> <span>WebPay、決済手数料2.69%の新プランを発表 ー 業界最安水準に</span></a></li>
+					</ul>
+					
+				</div><!--/content-part-->
+				
+				<div class="sidebar">	
+					
+					
+<ul>
+	<li id="text-6" class="widget widget_text">			<div class="textwidget"><div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- SideBar-UP300x250 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-8112422726152000"
+     data-ad-slot="7268476176"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div></div>
+		</li><li id="text-4" class="widget widget_text"><h3 class="widget-title fix"><span>注目の特集</span></h3>			<div class="textwidget"><a href="http://shopping-tribe.com/column/2031/"><img src="http://shopping-tribe.com/wp-content/uploads/2014/02/ec-tenbo.png"></a></div>
+		</li><li id="text-7" class="widget widget_text"><h3 class="widget-title fix"><span>注目のインタビュー</span></h3>			<div class="textwidget"><a href="http://shopping-tribe.com/interview/7054/"><img src="http://shopping-tribe.com/wp-content/uploads/2014/05/coiney-interview300.jpg" width="300px"></a></div>
+		</li><!-- Wordpress Popular Posts Plugin v2.3.7 [W] [all] [views] [custom] -->
+<li id="wpp-5" class="widget popular-posts">
+<h3 class="widget-title fix"><span>人気記事</span></h3>                <script type="text/javascript">
+                    /* <![CDATA[ */
+                    jQuery(document).ready(function(){
+                        jQuery.get('http://shopping-tribe.com/wp-admin/admin-ajax.php', {action: 'wpp_ajax_get_popular', id: '5'}, function(data){
+							jQuery('#wpp-5').append(data);
+						});
+                    });
+                    /* ]]> */
+                </script>
+                </li>
+<!-- End Wordpress Popular Posts Plugin v2.3.7 -->
+		<li id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title fix"><span>最近の投稿</span></h3>		<ul>
+					<li>
+				<a href="http://shopping-tribe.com/news/7552/">NATURAL BEAUTY BASICの公式オンラインストアがオープン ー 店頭在庫の確認や店舗受取が可能</a>
+						</li>
+					<li>
+				<a href="http://shopping-tribe.com/news/7501/">WebPay、決済手数料2.69%の新プランを発表 ー 業界最安水準に</a>
+						</li>
+					<li>
+				<a href="http://shopping-tribe.com/interview/7054/">【インタビュー】「1秒で完了する決済を実現」コイニー代表 佐俣奈緒子氏（前編）</a>
+						</li>
+					<li>
+				<a href="http://shopping-tribe.com/news/7472/">「楽天カフェ」が渋谷にオープン ー 楽天市場で人気のスイーツなどを提供</a>
+						</li>
+					<li>
+				<a href="http://shopping-tribe.com/data/7453/">結婚指輪もスマホで売れる時代に？ ー 専門サイトの5割がスマホからのアクセスで2割弱が購入</a>
+						</li>
+				</ul>
+		</li><li id="archives-2" class="widget widget_archive"><h3 class="widget-title fix"><span>アーカイブ</span></h3>		<ul>
+	<li><a href='http://shopping-tribe.com/date/2014/05/'>2014年5月</a></li>
+	<li><a href='http://shopping-tribe.com/date/2014/04/'>2014年4月</a></li>
+	<li><a href='http://shopping-tribe.com/date/2014/03/'>2014年3月</a></li>
+	<li><a href='http://shopping-tribe.com/date/2014/02/'>2014年2月</a></li>
+	<li><a href='http://shopping-tribe.com/date/2014/01/'>2014年1月</a></li>
+	<li><a href='http://shopping-tribe.com/date/2013/12/'>2013年12月</a></li>
+	<li><a href='http://shopping-tribe.com/date/2013/11/'>2013年11月</a></li>
+	<li><a href='http://shopping-tribe.com/date/2013/10/'>2013年10月</a></li>
+		</ul>
+</li><li id="categories-2" class="widget widget_categories"><h3 class="widget-title fix"><span>カテゴリー</span></h3>		<ul>
+	<li class="cat-item cat-item-2"><a href="http://shopping-tribe.com/category/column/" title="COLUMN に含まれる投稿をすべて表示">COLUMN</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://shopping-tribe.com/category/data/" title="DATA に含まれる投稿をすべて表示">DATA</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://shopping-tribe.com/category/design/" title="DESIGN に含まれる投稿をすべて表示">DESIGN</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="http://shopping-tribe.com/category/information/" title="INFO に含まれる投稿をすべて表示">INFO</a>
+</li>
+	<li class="cat-item cat-item-155"><a href="http://shopping-tribe.com/category/interview/" title="INTERVIEW に含まれる投稿をすべて表示">INTERVIEW</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://shopping-tribe.com/category/matome/" title="MATOME に含まれる投稿をすべて表示">MATOME</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://shopping-tribe.com/category/news/" title="NEWS に含まれる投稿をすべて表示">NEWS</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="http://shopping-tribe.com/category/report/" title="REPORT に含まれる投稿をすべて表示">REPORT</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="http://shopping-tribe.com/category/star/" title="STAR に含まれる投稿をすべて表示">STAR</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://shopping-tribe.com/category/tips/" title="TIPS に含まれる投稿をすべて表示">TIPS</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="http://shopping-tribe.com/category/world-watch/" title="WORLD WATCH に含まれる投稿をすべて表示">WORLD WATCH</a>
+</li>
+	<li class="cat-item cat-item-242"><a href="http://shopping-tribe.com/category/news/auction/" title="オークション に含まれる投稿をすべて表示">オークション</a>
+</li>
+	<li class="cat-item cat-item-236"><a href="http://shopping-tribe.com/category/news/frima/" title="フリマアプリ に含まれる投稿をすべて表示">フリマアプリ</a>
+</li>
+	<li class="cat-item cat-item-135"><a href="http://shopping-tribe.com/category/world-watch/china/" title="中国 に含まれる投稿をすべて表示">中国</a>
+</li>
+	<li class="cat-item cat-item-243"><a href="http://shopping-tribe.com/category/news/payment/" title="決済 に含まれる投稿をすべて表示">決済</a>
+</li>
+	<li class="cat-item cat-item-62"><a href="http://shopping-tribe.com/category/news/%e7%89%a9%e6%b5%81/" title="物流 に含まれる投稿をすべて表示">物流</a>
+</li>
+		</ul>
+</li><li id="text-2" class="widget widget_text">			<div class="textwidget"><div class="fb-like-box" data-href="http://www.facebook.com/shoppingtribe" data-width="300" data-height="300" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="true"></div>
+<br clear="all"></div>
+		</li><li id="text-3" class="widget widget_text"><h3 class="widget-title fix"><span>フォローして最新情報をチェック</span></h3>			<div class="textwidget"><div style="margin:30px 0 10px 0">
+<a href="https://twitter.com/s_tribePR" target="_blank"><img src="http://shopping-tribe.com/wp-content/uploads/2013/11/twitter.png"></a>
+</div><div style="margin:0 0 10px 0">
+<a href="https://www.facebook.com/shoppingtribe" target="_blank"><img src="http://shopping-tribe.com/wp-content/uploads/2013/11/facebook.png"></a>
+</div><div style="margin:0 0 10px 0"><a href="https://google.com/+ShoppingtribePR" target="_blank"><img src="http://shopping-tribe.com/wp-content/uploads/2014/02/google.png"></a></div><div style="margin:0 0 10px 0">
+<a href="http://shopping-tribe.com/feed/" target="_blank"><img src="http://shopping-tribe.com/wp-content/uploads/2013/11/rss.png"></a>
+</div><div style="margin:0 0 10px 0">
+<a href="http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fshopping-tribe.com%2Ffeed%2F" target="_blank"><img src="http://shopping-tribe.com/wp-content/uploads/2013/11/feedly.png"></a>
+</div></div>
+		</li><li id="popularitypostswidget-2" class="widget popularitypostswidget"><h3 class="widget-title fix"><span>最近の人気記事</span></h3><ul></ul></li></ul>				</div><!--/sidebar-->
+				
+			</div><!--/main-->
+			
+		</div><!--/page-inner-->
+	</div><!--/container-->
+</div><!--/page-->
+
+		
+	<div id="breadcrumb">
+		<div class="container">
+			<div id="breadcrumb-inner" class="fix">
+				<div class="pad fix">
+					<ul id="breadcrumbs" class="fix"><li class="first"><a class="home" href="http://shopping-tribe.com">Home</a></li><li><a href="http://shopping-tribe.com/category/interview/">INTERVIEW</a></li><li><span><i>【インタビュー】「1秒で完了する決済を実現」コイニー代表 佐俣奈緒子氏（前編）</i></span></li></ul>				</div>
+			</div>
+		</div>
+	</div><!--/breacrumb-->
+		
+	
+		<div id="subfooter">
+		<div class="container">
+			<div id="subfooter-inner" class="fix">
+				<div class="pad fix">
+					<div class="grid one-third">
+						<ul><li id="categories-3" class="widget widget_categories"><h3 class="widget-title fix"><span>カテゴリ</span></h3>		<ul>
+	<li class="cat-item cat-item-2"><a href="http://shopping-tribe.com/category/column/" title="COLUMN に含まれる投稿をすべて表示">COLUMN</a> (14)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://shopping-tribe.com/category/data/" title="DATA に含まれる投稿をすべて表示">DATA</a> (10)
+</li>
+	<li class="cat-item cat-item-4"><a href="http://shopping-tribe.com/category/design/" title="DESIGN に含まれる投稿をすべて表示">DESIGN</a> (2)
+</li>
+	<li class="cat-item cat-item-22"><a href="http://shopping-tribe.com/category/information/" title="INFO に含まれる投稿をすべて表示">INFO</a> (1)
+</li>
+	<li class="cat-item cat-item-155"><a href="http://shopping-tribe.com/category/interview/" title="INTERVIEW に含まれる投稿をすべて表示">INTERVIEW</a> (2)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://shopping-tribe.com/category/matome/" title="MATOME に含まれる投稿をすべて表示">MATOME</a> (15)
+</li>
+	<li class="cat-item cat-item-6"><a href="http://shopping-tribe.com/category/news/" title="NEWS に含まれる投稿をすべて表示">NEWS</a> (224)
+</li>
+	<li class="cat-item cat-item-8"><a href="http://shopping-tribe.com/category/report/" title="REPORT に含まれる投稿をすべて表示">REPORT</a> (5)
+</li>
+	<li class="cat-item cat-item-27"><a href="http://shopping-tribe.com/category/star/" title="STAR に含まれる投稿をすべて表示">STAR</a> (1)
+</li>
+	<li class="cat-item cat-item-9"><a href="http://shopping-tribe.com/category/tips/" title="TIPS に含まれる投稿をすべて表示">TIPS</a> (2)
+</li>
+	<li class="cat-item cat-item-10"><a href="http://shopping-tribe.com/category/world-watch/" title="WORLD WATCH に含まれる投稿をすべて表示">WORLD WATCH</a> (15)
+</li>
+	<li class="cat-item cat-item-242"><a href="http://shopping-tribe.com/category/news/auction/" title="オークション に含まれる投稿をすべて表示">オークション</a> (5)
+</li>
+	<li class="cat-item cat-item-236"><a href="http://shopping-tribe.com/category/news/frima/" title="フリマアプリ に含まれる投稿をすべて表示">フリマアプリ</a> (7)
+</li>
+	<li class="cat-item cat-item-135"><a href="http://shopping-tribe.com/category/world-watch/china/" title="中国 に含まれる投稿をすべて表示">中国</a> (3)
+</li>
+	<li class="cat-item cat-item-243"><a href="http://shopping-tribe.com/category/news/payment/" title="決済 に含まれる投稿をすべて表示">決済</a> (25)
+</li>
+	<li class="cat-item cat-item-62"><a href="http://shopping-tribe.com/category/news/%e7%89%a9%e6%b5%81/" title="物流 に含まれる投稿をすべて表示">物流</a> (5)
+</li>
+		</ul>
+</li></ul>
+					</div>
+					<div class="grid one-third">
+						<ul><li id="archives-3" class="widget widget_archive"><h3 class="widget-title fix"><span>アーカイブ</span></h3>		<ul>
+	<li><a href='http://shopping-tribe.com/date/2014/05/'>2014年5月</a>&nbsp;(45)</li>
+	<li><a href='http://shopping-tribe.com/date/2014/04/'>2014年4月</a>&nbsp;(60)</li>
+	<li><a href='http://shopping-tribe.com/date/2014/03/'>2014年3月</a>&nbsp;(61)</li>
+	<li><a href='http://shopping-tribe.com/date/2014/02/'>2014年2月</a>&nbsp;(34)</li>
+	<li><a href='http://shopping-tribe.com/date/2014/01/'>2014年1月</a>&nbsp;(34)</li>
+	<li><a href='http://shopping-tribe.com/date/2013/12/'>2013年12月</a>&nbsp;(33)</li>
+	<li><a href='http://shopping-tribe.com/date/2013/11/'>2013年11月</a>&nbsp;(19)</li>
+	<li><a href='http://shopping-tribe.com/date/2013/10/'>2013年10月</a>&nbsp;(1)</li>
+		</ul>
+</li></ul>
+					</div>
+					<div class="grid one-third last">
+						<ul><li id="views-3" class="widget widget_views"><h3 class="widget-title fix"><span>人気の記事</span></h3><ul>
+<li><a href="http://shopping-tribe.com/matome/360/"  title="使ったほうが絶対お得！いま話題のフリマアプリ10選（調査データ付）" style="background: url(http://shopping-tribe.com/wp-content/themes/newsroom14/img/widgets/paper.png) no-repeat 4px 4px;padding-left: 20px;display: inline-block;padding: 8px 0;background: url(http://shopping-tribe.com/wp-content/themes/newsroom14/img/hr.png) repeat-x bottom;">使ったほうが絶対お得！いま話題のフリマアプリ10選（調査データ付）</a></li><li><a href="http://shopping-tribe.com/news/7012/"  title="ユニクロ、オリジナルTシャツを作成できる「UTme!」を公開 ー スマホで作成して1990円で注文" style="background: url(http://shopping-tribe.com/wp-content/themes/newsroom14/img/widgets/paper.png) no-repeat 4px 4px;padding-left: 20px;display: inline-block;padding: 8px 0;background: url(http://shopping-tribe.com/wp-content/themes/newsroom14/img/hr.png) repeat-x bottom;">ユニクロ、オリジナルTシャツを作成できる「UTme!」を公開 ー スマホで作成して1990円で注文</a></li><li><a href="http://shopping-tribe.com/report/958/"  title="【体験レポ】フリマアプリ「メルカリ」で買い物してみた" style="background: url(http://shopping-tribe.com/wp-content/themes/newsroom14/img/widgets/paper.png) no-repeat 4px 4px;padding-left: 20px;display: inline-block;padding: 8px 0;background: url(http://shopping-tribe.com/wp-content/themes/newsroom14/img/hr.png) repeat-x bottom;">【体験レポ】フリマアプリ「メルカリ」で買い物してみた</a></li><li><a href="http://shopping-tribe.com/design/464/"  title="ついつい買いたくなる！おしゃれなECサイト60選【保存版】" style="background: url(http://shopping-tribe.com/wp-content/themes/newsroom14/img/widgets/paper.png) no-repeat 4px 4px;padding-left: 20px;display: inline-block;padding: 8px 0;background: url(http://shopping-tribe.com/wp-content/themes/newsroom14/img/hr.png) repeat-x bottom;">ついつい買いたくなる！おしゃれなECサイト60選【保存版】</a></li><li><a href="http://shopping-tribe.com/news/5880/"  title="くら寿司、来店予約を全店に導入 ー 行列店を待たずに利用" style="background: url(http://shopping-tribe.com/wp-content/themes/newsroom14/img/widgets/paper.png) no-repeat 4px 4px;padding-left: 20px;display: inline-block;padding: 8px 0;background: url(http://shopping-tribe.com/wp-content/themes/newsroom14/img/hr.png) repeat-x bottom;">くら寿司、来店予約を全店に導入 ー 行列店を待たずに利用</a></li><li><a href="http://shopping-tribe.com/report/7262/"  title="【体験レポ】UTme!でオリジナルTシャツを注文したら2日で届いた" style="background: url(http://shopping-tribe.com/wp-content/themes/newsroom14/img/widgets/paper.png) no-repeat 4px 4px;padding-left: 20px;display: inline-block;padding: 8px 0;background: url(http://shopping-tribe.com/wp-content/themes/newsroom14/img/hr.png) repeat-x bottom;">【体験レポ】UTme!でオリジナルTシャツを注文したら2日で届いた</a></li><li><a href="http://shopping-tribe.com/column/4698/"  title="ネット通販、消費税８％はいつから？" style="background: url(http://shopping-tribe.com/wp-content/themes/newsroom14/img/widgets/paper.png) no-repeat 4px 4px;padding-left: 20px;display: inline-block;padding: 8px 0;background: url(http://shopping-tribe.com/wp-content/themes/newsroom14/img/hr.png) repeat-x bottom;">ネット通販、消費税８％はいつから？</a></li><li><a href="http://shopping-tribe.com/tips/37/"  title="知っておきたい！Yahoo!ショッピングの出店は本当に無料？実際にかかる費用をチェック！" style="background: url(http://shopping-tribe.com/wp-content/themes/newsroom14/img/widgets/paper.png) no-repeat 4px 4px;padding-left: 20px;display: inline-block;padding: 8px 0;background: url(http://shopping-tribe.com/wp-content/themes/newsroom14/img/hr.png) repeat-x bottom;">知っておきたい！Yahoo!ショッピングの出店は本当に無料？実際にかかる費用をチェック！</a></li><li><a href="http://shopping-tribe.com/news/7472/"  title="「楽天カフェ」が渋谷にオープン ー 楽天市場で人気のスイーツなどを提供" style="background: url(http://shopping-tribe.com/wp-content/themes/newsroom14/img/widgets/paper.png) no-repeat 4px 4px;padding-left: 20px;display: inline-block;padding: 8px 0;background: url(http://shopping-tribe.com/wp-content/themes/newsroom14/img/hr.png) repeat-x bottom;">「楽天カフェ」が渋谷にオープン ー 楽天市場で人気のスイーツなどを提供</a></li><li><a href="http://shopping-tribe.com/matome/3523/"  title="【フォロワー20万人超】話題のサービス「WEAR」を盛り上げる人気ユーザーまとめ" style="background: url(http://shopping-tribe.com/wp-content/themes/newsroom14/img/widgets/paper.png) no-repeat 4px 4px;padding-left: 20px;display: inline-block;padding: 8px 0;background: url(http://shopping-tribe.com/wp-content/themes/newsroom14/img/hr.png) repeat-x bottom;">【フォロワー20万人超】話題のサービス「WEAR」を盛り上げる人気ユーザーまとめ</a></li></ul>
+</li></ul>
+					</div>
+				</div>
+			</div><!--/subfooter-inner-->
+		</div>
+	</div><!--/subfooter-->
+		
+	
+	<div class="clear"></div>
+	<footer id="footer">
+		<div class="container">
+			<div id="footer-inner" class="fix">
+				
+								
+				<div id="footer-bottom">
+					<div class="pad fix">
+						<div class="grid">
+														
+							<ul id="footer-social"><li><a href="https://twitter.com/s_tribePR" target="_blank"><span class="icon"><img src="http://shopping-tribe.com/wp-content/themes/newsroom14/air/modules/social/icons/default/twitter_16.png" alt="Twitter" /></span><span class="icon-title"><i class="icon-pike"></i>Twitter</span></a></li><li><a href="https://www.facebook.com/shoppingtribe" target="_blank"><span class="icon"><img src="http://shopping-tribe.com/wp-content/themes/newsroom14/air/modules/social/icons/default/facebook_16.png" alt="Facebook" /></span><span class="icon-title"><i class="icon-pike"></i>Facebook</span></a></li><li><a href="http://shopping-tribe.com/feed/" target="_blank"><span class="icon"><img src="http://shopping-tribe.com/wp-content/themes/newsroom14/air/modules/social/icons/default/rss_16.png" alt="rss" /></span><span class="icon-title"><i class="icon-pike"></i>rss</span></a></li></ul>						</div>
+						<div class="grid">
+							<p id="copy">© Shopping Tribe.</p>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<a id="to-top" href="#"><i class="icon-top"></i></a>
+				</div>
+			</div><!--/footer-inner-->
+		</div>
+	</footer><!--/footer-->
+
+</div><!--/wrap-->
+		<a id="scroll-to-top" href="#" title="Scroll to Top">Top</a>
+		<!-- BEGIN: WP Social Bookmarking Light -->
+<script type="text/javascript" src="http://static.evernote.com/noteit.js"></script>
+<script type="text/javascript">
+  window.___gcfg = {lang: 'ja'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<!-- END: WP Social Bookmarking Light -->
+<script type='text/javascript'>
+/* <![CDATA[ */
+var viewsCacheL10n = {"admin_ajax_url":"http:\/\/shopping-tribe.com\/wp-admin\/admin-ajax.php","post_id":"7054"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://shopping-tribe.com/wp-content/plugins/wp-postviews/postviews-cache.js?ver=1.67'></script>
+<script type='text/javascript' src='http://shopping-tribe.com/wp-includes/js/comment-reply.min.js?ver=3.9.1'></script>
+<script type='text/javascript' src='http://shopping-tribe.com/wp-content/themes/newsroom14/js/jquery.jplayer.min.js?ver=2.1.0'></script>
+<script type='text/javascript' src='http://shopping-tribe.com/wp-content/themes/newsroom14/js/jquery.flexslider.min.js?ver=2.1'></script>
+<script type='text/javascript' src='http://shopping-tribe.com/wp-content/themes/newsroom14/js/jquery.fancybox.pack.js?ver=2.0.6'></script>
+<script type='text/javascript' src='http://shopping-tribe.com/wp-content/themes/newsroom14/js/jquery.fancybox-media.js?ver=1.0.3'></script>
+<script type='text/javascript' src='http://shopping-tribe.com/wp-content/themes/newsroom14/js/jquery.mousewheel-3.0.6.pack.js?ver=3.0.6'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var objectL10n = {"navigate":"Navigate to..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://shopping-tribe.com/wp-content/themes/newsroom14/js/jquery.theme.js?ver=1.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var BJLL = {"threshold":"400"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://shopping-tribe.com/wp-content/plugins/bj-lazy-load/js/combined.min.js?ver=0.7.1'></script>
+<script type="text/javascript" id="slb_context">/* <![CDATA[ */if ( !!window.jQuery ) {(function($){$(document).ready(function(){if ( !!window.SLB ) { {$.extend(SLB, {"context":["public","user_guest"]});} }})})(jQuery);}/* ]]> */</script>
+<!--[if lt IE 9]><script src="http://shopping-tribe.com/wp-content/themes/newsroom14/js/ie/respond.min.js"></script> <![endif]-->
+
+<!-- Google ＋ -->
+<script type="text/javascript">
+  window.___gcfg = {lang: 'ja'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+</body>
+</html>

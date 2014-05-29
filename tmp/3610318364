@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html id="ie8" lang="ja" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="ja" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<!--<![endif]--><head>
+<meta charset="UTF-8" />
+<title>資料を何度も作り直させるのは三流以下の仕事 | サイボウズ式</title>
+<meta name="description" content="今回のブロガーズ・コラムは、仕事の依頼について。なぜ上司と部下の間でアウトプットにズレが生じるのか。成果につながる仕事の依頼の仕方を考えます。" />
+<meta property="og:title" content="資料を何度も作り直させるのは三流以下の仕事" />
+<meta property="og:url" content="http://cybozushiki.cybozu.co.jp/?p=15802" />
+<meta property="og:image" content="http://cybozushiki.cybozu.co.jp/wp-content/uploads/2014/05/20140523_farsan-1-300x200.jpg" />
+<meta property="og:description" content="今回のブロガーズ・コラムは、仕事の依頼について。なぜ上司と部下の間でアウトプットにズレが生じるのか。成果につながる仕事の依頼の仕方を考えます。" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="サイボウズ式" />
+<meta property="fb:admins" content="843283757" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+<link rel="apple-touch-icon" href="http://cybozushiki.cybozu.co.jp/wp-content/themes/scblog/images/ico_smp.png" />
+<link rel="icon" type="image/png" href="http://cybozushiki.cybozu.co.jp/wp-content/themes/scblog/images/favicon.gif" />
+<link rel="alternate" type="application/rss+xml" href="http://cybozushiki.cybozu.co.jp/?feed=rss2" />
+<link rel="stylesheet" type="text/css" media="all" href="http://cybozushiki.cybozu.co.jp/wp-content/themes/scblog/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="http://cybozushiki.cybozu.co.jp/wp-content/themes/scblog/post.css" />
+<link rel="pingback" href="http://cybozushiki.cybozu.co.jp/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://cybozushiki.cybozu.co.jp/wp-content/themes/scblog/js/html5.js" type="text/javascript"></script>
+<script src="http://cybozushiki.cybozu.co.jp/wp-content/themes/scblog/js/css3-mediaqueries.js" type="text/javascript"></script>
+<![endif]-->
+<link rel='stylesheet' id='jquery.fancybox-css'  href='http://cybozushiki.cybozu.co.jp/wp-content/plugins/fancy-box/jquery.fancybox.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://cybozushiki.cybozu.co.jp/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='http://cybozushiki.cybozu.co.jp/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='http://cybozushiki.cybozu.co.jp/wp-content/themes/scblog/js/common.js'></script>
+<script type='text/javascript' src='http://cybozushiki.cybozu.co.jp/wp-content/themes/scblog/js/scrollTop.js'></script>
+<script type='text/javascript' src='http://cybozushiki.cybozu.co.jp/wp-content/plugins/fancy-box/jquery.fancybox.js'></script>
+<script type='text/javascript' src='http://cybozushiki.cybozu.co.jp/wp-content/plugins/fancy-box/jquery.easing.js'></script>
+<link rel='prev' title='対面コミュニケーションは重要か？──ランサーズとサイボウズに敏腕プロデューサーが切り込んだ（２）' href='http://cybozushiki.cybozu.co.jp/?p=16030' />
+<link rel='next' title='【6/13開催】マネジメント視点で、PTAをけっこうラクにたのしくする！ーサイボウズ式勉強会' href='http://cybozushiki.cybozu.co.jp/?p=16124' />
+<link rel='canonical' href='http://cybozushiki.cybozu.co.jp/?p=15802' />
+<link rel='shortlink' href='http://cybozushiki.cybozu.co.jp/?p=15802' />
+<script type="text/javascript">
+  jQuery(document).ready(function($){
+    var select = $('a[href$=".bmp"],a[href$=".gif"],a[href$=".jpg"],a[href$=".jpeg"],a[href$=".png"],a[href$=".BMP"],a[href$=".GIF"],a[href$=".JPG"],a[href$=".JPEG"],a[href$=".PNG"]');
+    select.attr('rel', 'fancybox');
+    select.fancybox();
+  });
+</script>
+<link rel="alternate" media="handheld" type="text/html" href="http://cybozushiki.cybozu.co.jp/?p=15802" />
+</head>
+<body class="single single-post postid-15802 single-format-standard singular two-column left-sidebar">
+<header id="branding" class="clearfix" role="banner">
+<div id="hPrimary">
+<hgroup>
+<a href="http://cybozushiki.cybozu.co.jp/" title="サイボウズ式" rel="home">
+<h1 id="site-title">サイボウズ式</h1>
+</a>
+<h2 id="site-description">「新しい価値を生み出すチーム」のための、コラボレーションとITの情報サイト</h2>
+</hgroup>
+</div><!-- #hPrimary -->
+<div id="hSecondary">
+	<form method="get" id="searchform" action="http://cybozushiki.cybozu.co.jp/">
+		<label for="s" class="assistive-text">検索</label>
+		<input type="text" class="field" name="s" id="s" placeholder="検索" />
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="検索" />
+	</form>
+<ul class="socialLink">
+<li><a class="icoFb" href="https://www.facebook.com/cybozu" target="_blank">Facebook</a></li>
+<li><a class="icoTw" href="https://twitter.com/#!/cybozu" target="_blank">Twitter</a></li>
+<li><a class="icoRss" href="http://cybozushiki.cybozu.co.jp/?feed=rss2" target="_blank">RSS</a></li>
+</ul>
+<!-- /#hSecondary --></div>           
+</header><!-- #branding -->   
+<div id="page" class="hfeed">
+<div id="main"><div id="primary">
+<div id="content" role="main">
+<article id="post-15802" class="post-15802 post type-post status-publish format-standard has-post-thumbnail hentry category-bloggers-column">
+<header class="entry-header">
+<time class="entry-date" datetime="2014-05-26T18:00:04+00:00" pubdate>2014年5月26日</time>    
+<h1 class="entry-title">資料を何度も作り直させるのは三流以下の仕事</h1>		
+<ul class="socialBtn">
+<li class="scBtnFb"><div class="fb-like" data-href="http://cybozushiki.cybozu.co.jp/?p=15802" data-send="false" data-layout="button_count" data-show-faces="false" data-font="arial"></div>
+</li>
+<li class="scBtnTw"><a href="http://twitter.com/share" class="twitter-share-button" data-lang="ja" data-width="110">ツイート</a></li>
+<li class="scBtnGl"><div class="g-plusone" data-size="medium" data-href="http://cybozushiki.cybozu.co.jp/?p=15802"></div>
+<script type="text/javascript">
+  window.___gcfg = {lang: 'ja'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+</li>
+<li class="scBtnPkt"><a data-pocket-label="pocket" data-pocket-count="horizontal" data-save-url="http://cybozushiki.cybozu.co.jp/?p=15802" class="pocket-btn" data-lang="en"></a>
+<script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script></li>
+<li class="scBtnHtn"><a href="http://b.hatena.ne.jp/entry/http://cybozushiki.cybozu.co.jp/?p=15802" class="hatena-bookmark-button" data-hatena-bookmark-title="資料を何度も作り直させるのは三流以下の仕事" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>        
+</ul>        
+<div class="entry-meta clearfix">
+            
+<p class="by-author-img"><img alt='ファーレンハイト' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2014/04/b0e7341552d489077d766d7af578e58d-40x40.jpg' class='avatar avatar-40 photo' height='40' width='40' /></p>  
+            
+<div class="entry-metaList">
+<p class="by-author"><span class="author vcard"><a class="url fn n" href="http://cybozushiki.cybozu.co.jp/?author=41" title="ファーレンハイト の投稿をすべて表示" rel="author">ファーレンハイト</a></span></p>
+<p class="cat-links">
+                
+<span class="entry-utility-prep entry-utility-prep-cat-links">カテゴリー:</span> <a href="http://cybozushiki.cybozu.co.jp/?cat=36" title="ブロガーズ・コラム の投稿をすべて表示" rel="category">ブロガーズ・コラム</a></p>
+<!-- /entry-metaList --></div>
+<!-- /entry-meta --></div>        
+</header><!-- .entry-header -->
+<div class="entry-content">
+<div class="lead">
+<b>【サイボウズ式編集部より】</b></br>この「<a href="http://cybozushiki.cybozu.co.jp/?cat=36" target="_blank">ブロガーズ・コラム</a>」は、著名ブロガーをサイボウズ外部から招いて、チームワークに関するコラムを執筆いただいています。今回は「<a href="http://fahrenheitize.hateblo.jp/" target="_blank">My Favorite, Addict and Rhetoric Lovers Only</a>」のファーレンハイトさんが考える「成果につながる仕事の依頼の仕方」についてです。</br></br>
+</div>
+
+<p>チームで仕事をする際に避けられないのは「仕事の依頼」です。</p>
+
+<p>自分が仕事の依頼をすることもあれば、誰かから仕事を依頼されることもあるでしょう。チームワークが難しいひとつの理由に、優秀なプレイヤーは、優秀なワン・オブ・チームメイトでは必ずしもないという点が挙げられるでしょう。それが顕著に出る一例になります。</p>
+
+<p>同時にこれは、組織における「教育」という側面に密接に関わっています。日本企業の多くは小さいタスクを新人や後輩に任せることで、成長を促しながら実業務の負荷分散を行っていくという役割分担をしていることが非常に多いからです。</p>
+
+<p>今日はこの点を絡めながら話を進めてみようと思います。</p>
+
+<p>さて、俺が会社員として「仕事を依頼」される経験のなかで、ムカついてきたのは＜要件を明確に共有してくれない＞ことです。</p>
+
+<h2 class="ttl01"><span>何を作ってほしいのか分からない三流以下の上司がいる</span></h2>
+
+<p>たとえば「資料を作っておいて」という依頼があるとします。ダメダメな上司は誰に対して使う資料なのか、どの資料のどこの部分に使うのか、どのようなイメージなのかを共有しません。何が発生するか？</p>
+
+<p>自分なりに要点を抑え、気を利かせ、シコシコ作った資料を持っていった後に、</p>
+
+<p><b>「あー、違うんだよなぁ。こんな感じが欲しかったんだよ。作りなおしてもらえる？」</b></p>
+
+<p>なんてことを平気で言います。こちらに要求する粒度や表現について、事前情報が与えられていないにも関わらず、それを求めていたわけですよ。俺はエスパーじゃねーんだよ！</p>
+
+<p>アジェンダの前提が変われば、丁寧に作った資料もすべて作り直しになってしまいます。</p>
+
+<p>同時に、彼らはそこで発生する手戻りのコストを依頼した相手に負わせ、そこに対する反省がありません。他のタスクが出来たであろうリソースの機会損失を考えると、明らかなチームとしての工数のロスです。マネージメント力の無能さを露呈させてるわけ。</p>
+
+<p>なんなら、<b>こちらのセンスがない</b>かのような言い分をする奴までいます。参考資料があるなら先に教えてくださいよ…。あんたの色とかフォントの好みなんか知らないですよ…。本当にムカつきますよね、あれ。</p>
+
+<img src="http://cybozushiki.cybozu.co.jp/wp-content/uploads/2014/05/20140523_farsan-1.jpg" alt="ブロガーズ・コラム「仕事の成果を出すために」" width="687" height="460" class="aligncenter size-full wp-image-16128" />
+
+<p>こういった人たちに足りないのは<b>＜明確な要件をお互いに握る＞ことに手間暇をかける姿勢</b>です。</p>
+
+<p>自分の頭の中のイメージをさらっと伝えて、それが相手に十分に伝わると思っていると言い換えてもいいかもしれません。スマホの同期のように脳内シンクロが出来てると思っているわけです。</p>
+
+<p>さて、「明確な要件」というのは先に挙げた資料でいえば、＜どのようなアウトプットの形に落とし込まれるか＞になります。</p>
+
+<p>具体的にはその資料がなぜ必要なのか？（背景）誰に対して見せる資料なのか？（目的）何を説明しようとしている資料なのか？（内容）どのように表現してほしいのか？（アウトプットのフレームワーク）を明確にするということです。</p>
+
+<p>どれかに対する<b>認識の共有が欠如した時点で、「ズレ」は発生します。</b></p>
+
+
+<h2 class="ttl01"><span>「ズレ」は後工程になるほど修正に時間がかかる！</span></h2>
+
+<p><b>他人に対して仕事を依頼するときには「ズレ」をいかに事前に潰しておくか？ というのが重要な視点になります</b>。それにもかかわらず、依頼する方も依頼された方も、着手する前にそのズレを潰しにかかるコストを支払おうとしない傾向があります。</p>
+
+<p>自分から見たときに「依頼主」を選ぶことは出来ないので、せめて依頼主に対して執拗に確認していく手間を惜しんではいけません。ウザがられようとひるんではいけません。それがスムーズに仕事を終わらせる生命線と言えるからです。逆に、自分が依頼する際にはくどいくらいにその点を共有するのがちょうど良いです。それほどまでに「パッと依頼して、自分が欲しいものがサクッと上がってくる」ことは少ないのです。</p>
+
+<p><b>「ズレ」は後工程になればなるほど、修正に必要な時間が莫大に増えていく傾向がある</b>からです。俺はこれを分度器のイメージで捉えています。同じ30°のズレでも、始点（着手）から離れる（時間の経過）ほどに距離（ズレの大きさ）は拡大していくのです。60°のズレであればもっとそれが大きくなります。だからこそ着手の際にズレを潰す必要があるのです。</p>
+
+<p>この事実に対して認識が甘い人が「仕事を依頼するのが下手な人」の正体です。もっと言えば「他人と仕事するのが下手な人」の特徴なのです。俺らは彼らに振り回されないために、他人を振り回さないために、要件を共有する精度を上げる必要があるのです。</p>
+
+<h2 class="ttl01"><span>新人くん・後輩ちゃんたちと接するときの「ズレ」の視点</span></h2>
+
+<p>さて、とは言いつつも一定の条件下では執拗に要件を確認する必要はなくなってきます。例えば、ずっと一緒に仕事をしていれば上司がどんな成果物を欲しがるのかを理解してきます。また、会社において求められる成果物がどのようなものかを経験で把握してきます。</p>
+
+<p>これは、経験により漏れている要件を自分で補完して成果物を作成することが出来るようになってくるためです。「サクッと」作ることが出来るようになってくることが多くなってくるのです。</p>
+
+<p>ただし、例外があります。それが新人や後輩の存在です。</p>
+
+<p>丁寧に説明したつもりでも欲しかったイメージやクオリティの成果物が上がってこない。そのわりには時間がかかる。本音を言えば「なんでこんなことが出来ないんだ？」と思うこともあるかもしれません。</p>
+
+<p>そんなときには今回の「ズレ」の視点を援用してみてください。
+
+<p>自分が要求した成果物と彼（女）がイメージしている成果物にズレがないか？ それを補完するために必要な知識と経験に関して、自分と彼（女）の習熟度にレベル差はないか？ 単純にプレゼンテーションソフトや表計算ソフトのスキルにギャップはないか？</p>
+
+<p>このズレを意識しないで彼（女）たちに要求することは、苦痛を与えているだけに過ぎないです。それを乗り越えられた人のみが優秀な人材というのはあまりにもマッチョイズムすぎると思うのです。</p>
+
+<p>補完する知識と共有が自分ほどのレベルに達成していないのであれば、そのズレを潰すためにもっと細やかに情報提供してあげれば良いでしょう。ソフトを使うスキルが低いのであれば、徐々に覚えていってくれるまで目をつぶる必要が出てくるでしょう。時間が許すのであれば教えてあげても良いでしょう。</p>
+
+<p>純然なアウトプットを見ることは大事ですが、彼（女）らに関しては、<b>改善してほしいポイントをこちらが指摘してあげる必要・責任がこちらにあるのです</b>。進捗報告を彼らにしてもらうのは進捗度の達成度を確認するためだけではありません。成果物が迷走し始めたときになるべく早い段階で矯正するためなのです。何が進捗を遅らせている要因なのかを把握するための材料なのです。</p>
+
+<p>新人や後輩に接するときにはこの視点を絶対に忘れてはいけないと思うのです。自分を育ててくれた先輩がやってくれたことをそのまんま真似ているだけなんですけどね。</p>
+
+<p>俺が他人と関わる際に大事にしている視点に「差分」があります。それはポジティブな意味でもネガティブな意味でもあります。良い方向に転がりそうな差分はそのまま拡大してもらう。自分に出来ないことをやってくれるその人の魅力。悪い方向に転がりそうな差分は極力潰していく。ディスコミュニケーションやスキル不足などです。</p>
+
+<p><b>チームワークとは「違い」とどのように向き合うか、という姿勢そのもの</b>だと俺は考えています。</p>
+
+<div class="lead"><p><b>ファーレンハイトさんより</b></br>
+普段はブログ「<a href="http://fahrenheitize.hateblo.jp/" target="_blank">My Favorite, Addict and Rhetoric Lovers Only</a>」、Web媒体「AM [アム] 」で恋愛・人間関係について書いています。サイボウズ式の<a href="http://cybozushiki.cybozu.co.jp/?cat=36" target="_blank">ブロガーズ・コラム</a>では、仕事・チームワークにおける他人との関係性について何らかの価値を提供できたらと思っています。</p></div>
+
+<div class="linkBox">
+<a href="http://cybozushiki.cybozu.co.jp/?p=15800">
+<p class="pic"><img src="http://cybozushiki.cybozu.co.jp/wp-content/uploads/2014/04/02_fahrenheit-60px.jpg" alt="ファーレンハイトさん" width="60" height="60" class="aligncenter size-full wp-image-15447" /></p>
+<div class="desc">[ブロガーズ・コラム] 横暴なリーダーは5つの習慣で愛される</div>
+</a>
+</div>
+<div class="linkBox">
+<a href="http://cybozushiki.cybozu.co.jp/?p=15512">
+<p class="pic"><img src="http://cybozushiki.cybozu.co.jp/wp-content/uploads/2014/04/02_fahrenheit-60px.jpg" alt="ファーレンハイトさん" width="60" height="60" class="alignnone size-full wp-image-15447" /></p>
+<div class="desc">[ブロガーズ・コラム] 横暴なリーダーは会社にとって貴重な存在である</div>
+</a>
+</div>
+
+<p>イラスト：<a href="http://ecoeco.me/" target="_blank">マツナガエイコ</a></p>  
+<ul class="socialBtn">
+<li><div class="fb-like" data-href="http://cybozushiki.cybozu.co.jp/?p=15802" data-send="false" data-layout="button_count" data-width="130" data-show-faces="false" data-font="arial"></div>
+</li>
+<li><a href="http://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>        
+</li>
+<li><a href="http://b.hatena.ne.jp/entry/http://cybozushiki.cybozu.co.jp/?p=15802" class="hatena-bookmark-button" data-hatena-bookmark-title="資料を何度も作り直させるのは三流以下の仕事" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>        
+</ul>	    	
+    
+</div><!-- .entry-content -->
+
+<footer id="entry-comment">		
+		        
+<h2>Comment</h2>
+<div id="fb-root"></div>
+<div class="fb-comments" data-href="http://cybozushiki.cybozu.co.jp/?p=15802" data-num-posts="5" data-width="420" mobile="false"></div>
+<script type="text/javascript">
+;(function( doc, script ) {
+    var js;
+    var fjs = doc.getElementsByTagName( script )[0];
+    var add = function( url, id, o ) {
+        if ( doc.getElementById( id ) ) { return; }
+        js = doc.createElement( script );
+        js.src = url; js.async = true; js.id = id;
+        fjs.parentNode.insertBefore( js, fjs );
+        if ( window.ActiveXObject && o != null ) {
+            js.onreadystatechange = function() {
+                if ( js.readyState == 'complete' ) o();
+                if ( js.readyState == 'loaded' ) o();
+            };
+        } else {
+            js.onload = o;
+        }
+    };
+    // Facebook
+    add( '//connect.facebook.net/ja_JP/all.js#xfbml=1', 'facebook-jssdk');
+    // Twitter
+    add( '//platform.twitter.com/widgets.js', 'twitter-wjs' );
+    // はてな
+    add( 'http://b.st-hatena.com/js/bookmark_button.js', 'hatena-js' );
+}( document, 'script' ));
+</script>
+<script>
+	jQuery(window).on('resize', function(){
+		resizeFacebookComments();
+	});
+	jQuery(window).on('load', function(){
+		setTimeout(function(){
+			resizeFacebookComments();
+		},2000);
+	});
+	
+	function resizeFacebookComments(){
+	  	var src  = jQuery('.fb-comments iframe').attr('src');
+		src = src.split('width=');
+		var width = jQuery('#entry-comment').width();
+	  	jQuery('.fb-comments iframe').attr('src', src[0] + 'width=' + width);
+	}
+</script>
+</footer><!-- .entry-meta -->
+</article><!-- #post-15802 -->
+ 
+</div><!-- #content -->
+</div><!-- #primary -->
+<div id="secondary" class="widget-area" role="complementary">
+      				            
+<aside id="text-3" class="widget widget_text">			<div class="textwidget"><ul id="rotationBan">
+<li><a href="https://live.cybozu.co.jp/" target="_blank"><img src="/wp-content/uploads/2013/03/ban_01.jpg" width="197" height="88" alt="無料コラボレーションツール サイボウズLive"></a></li>
+<li><a href="https://www.cybozu.com/jp/" target="_blank"><img src="/wp-content/uploads/2013/03/ban_02.jpg" width="197" height="88" alt="サイボウズのクラウド cybozu.com"></a></li>
+</ul>
+</div>
+		</aside><aside id="nav_menu-3" class="widget widget_nav_menu"><h3 class="widget-title">Category</h3><div class="menu-menutop-container"><ul id="menu-menutop" class="menu"><li id="menu-item-866" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-866"><a href="http://cybozushiki.cybozu.co.jp/?cat=8">あのチームのコラボ術</a></li>
+<li id="menu-item-3093" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3093"><a href="http://cybozushiki.cybozu.co.jp/?cat=20">マンガから学ぶチームワーク</a></li>
+<li id="menu-item-8767" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8767"><a href="http://cybozushiki.cybozu.co.jp/?cat=22">ワークスタイル</a></li>
+<li id="menu-item-3095" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3095"><a href="http://cybozushiki.cybozu.co.jp/?cat=18">対談</a></li>
+<li id="menu-item-11409" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11409"><a href="http://cybozushiki.cybozu.co.jp/?cat=27">チームめし！</a></li>
+<li id="menu-item-9895" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9895"><a href="http://cybozushiki.cybozu.co.jp/?cat=24">tech</a></li>
+<li id="menu-item-5" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5"><a href="http://cybozushiki.cybozu.co.jp/?cat=4">サイボウズ</a></li>
+<li id="menu-item-15508" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-15508"><a href="http://cybozushiki.cybozu.co.jp/?cat=36">ブロガーズ・コラム</a></li>
+<li id="menu-item-14390" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14390"><a href="http://cybozushiki.cybozu.co.jp/?cat=31">ビジネス偉人伝</a></li>
+<li id="menu-item-8768" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8768"><a href="http://cybozushiki.cybozu.co.jp/?cat=23">ベストチームメソッド</a></li>
+<li id="menu-item-3967" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3967"><a href="http://cybozushiki.cybozu.co.jp/?cat=12">コラボツールを考える</a></li>
+<li id="menu-item-3094" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3094"><a href="http://cybozushiki.cybozu.co.jp/?cat=11">タテとヨコの組織論</a></li>
+<li id="menu-item-1826" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1826"><a href="http://cybozushiki.cybozu.co.jp/?cat=17">ニュースクリッピング</a></li>
+</ul></div></aside><aside id="archives-3" class="widget widget_archive"><h3 class="widget-title">アーカイブ</h3>		<ul>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201405'>2014年5月&nbsp;(10)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201404'>2014年4月&nbsp;(14)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201403'>2014年3月&nbsp;(10)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201402'>2014年2月&nbsp;(8)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201401'>2014年1月&nbsp;(6)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201312'>2013年12月&nbsp;(27)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201311'>2013年11月&nbsp;(11)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201310'>2013年10月&nbsp;(9)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201309'>2013年9月&nbsp;(11)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201308'>2013年8月&nbsp;(11)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201307'>2013年7月&nbsp;(11)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201306'>2013年6月&nbsp;(4)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201305'>2013年5月&nbsp;(8)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201304'>2013年4月&nbsp;(5)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201303'>2013年3月&nbsp;(3)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201302'>2013年2月&nbsp;(2)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201301'>2013年1月&nbsp;(4)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201212'>2012年12月&nbsp;(4)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201211'>2012年11月&nbsp;(14)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201210'>2012年10月&nbsp;(8)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201209'>2012年9月&nbsp;(9)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201208'>2012年8月&nbsp;(9)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201207'>2012年7月&nbsp;(1)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201206'>2012年6月&nbsp;(1)</a></li>
+	<li><a href='http://cybozushiki.cybozu.co.jp/?m=201205'>2012年5月&nbsp;(6)</a></li>
+		</ul>
+</aside>	
+<aside class="widget widget_authors">
+<h3 class="widget-title">Member</h3> 			
+<ul> 
+<li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=2"><p class="by-author-img"><img alt='大槻 幸夫' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2013/03/f0fb0fb25004393c2ba1c6f75c7e4943-40x40.jpg' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>大槻 幸夫</span><br />「サイボウズ式」の編集長をしています。
+サイボウズ株式会社
+ソーシャルコミュ…</p></a></li><li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=4"><p class="by-author-img"><img alt='あーみん' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2013/03/f9fba5e51029eab89cb873804c1c9482-40x40.jpg' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>あーみん</span><br />サイボウズ式 一般編集部員。</p></a></li><li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=5"><p class="by-author-img"><img alt='藤村 能光' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2013/03/327fb33b71934876c2decc4d03c14a99-40x40.png' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>藤村 能光</span><br />「サイボウズ式」の副編集長です。「あなたが強くなれば、それだけチームも強くなる」…</p></a></li><li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=6"><p class="by-author-img"><img alt='野本 纏花' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2013/03/fa3b92fc838331ed9d23a8957924e254-40x40.jpg' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>野本 纏花</span><br />フリーライター。
+
+IT系企業のマーケティング担当を経て2010年8月からM…</p></a></li><li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=7"><p class="by-author-img"><img alt='遠竹 智寿子' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2013/03/0e82c32639e455761e53d7a9348fbee3-40x40.jpg' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>遠竹 智寿子</span><br />外資系IT企業のマーケティング、広報の経験を経て、フリーに。主にライティングやリ…</p></a></li><li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=8"><p class="by-author-img"><img alt='noriyuki oka' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2013/03/noriyuki-oka_avatar-40x40.jpg' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>noriyuki oka</span><br />PRプランナー・ライター。
+PRエージェンシー勤務を経て、2011年より企業広…</p></a></li><li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=9"><p class="by-author-img"><img alt='asami mukuta' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2013/03/asami-mukuta_avatar-40x40.jpg' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>asami mukuta</span><br />サイボウズ式編集員。チームコラボ術、マンガ記事、対談（一部）、チームめし！を中心…</p></a></li><li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=11"><p class="by-author-img"><img alt='大川 将司' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2013/11/bfc9e8b33f6bb2344393fa27081d873c-40x40.jpg' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>大川 将司</span><br />「サイボウズ式」の編集員をしています。</p></a></li><li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=12"><p class="by-author-img"><img alt='柴田 克己' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2013/03/e7b1bbf27ded4c91f8c8fad7980ed552-40x40.gif' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>柴田 克己</span><br />フリーランスのIT系編集者・ライター。エンタープライズIT、インターネット、PC…</p></a></li><li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=13"><p class="by-author-img"><img alt='katsumi okazaki' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2013/03/katsumi-okazaki_avatar-40x40.jpg' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>katsumi okazaki</span><br />企画、編集、ライティングなどをフリーランスの立場で請け負う。通信業界向け専門誌、…</p></a></li><li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=14"><p class="by-author-img"><img alt='山川 譲' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2013/03/5fefab12cc8ea5c81f4b19f3fb6d70e4-40x40.jpg' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>山川 譲</span><br />法人向けITの媒体記者、モノ雑誌の編集者を経て、現在はフリーの編集およびライター…</p></a></li><li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=15"><p class="by-author-img"><img alt='渡辺 清美' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2013/07/895f5820d844bf1ceca06726a3c099cd-40x40.jpg' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>渡辺 清美</span><br />サイボウズ式編集部員
+PR会社勤務を経てサイボウズには2001年に入社。広告宣…</p></a></li><li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=23"><p class="by-author-img"><img alt='荒濱　 一' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2013/04/hajime-arahama_avatar-40x40.jpg' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>荒濱　 一</span><br />ライター、コピーライター。株式会社しくみ代表取締役。高校教諭、タイ・インドでの広…</p></a></li><li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=24"><p class="by-author-img"><img alt='公文紫都' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2013/05/kumon-shidu_avatar-40x40.jpg' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>公文紫都</span><br />プロフェッショナルライター
+
+新聞記者、ITベンチャー勤務を経て、2012年…</p></a></li><li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=26"><p class="by-author-img"><img alt='風穴 江' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2013/07/ko-kazaana_avatar_1372726490-40x40.jpg' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>風穴 江</span><br />「tech＠サイボウズ式」の編集者。「editor's note」はtumblr…</p></a></li><li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=36"><p class="by-author-img"><img alt='中野敦史' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2013/10/ecf2afd1c0a615c37467ee6d71ac2ab8-40x40.jpg' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>中野敦史</span><br />子どものための情報ブログ「子ナビ」の運営者。「子どもともっと一緒にいたくなる！」…</p></a></li><li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=37"><p class="by-author-img"><img alt='三橋 ゆか里' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2013/11/314db468fa355e98189be34e1d9452a7-40x40.jpg' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>三橋 ゆか里</span><br />Eコマースやユーザビリティのコンサルティング会社などを経て、独立。「Markez…</p></a></li><li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=39"><p class="by-author-img"><img alt='北村聡一' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2014/04/04bb2ca613bc53d3028247f1d2534a10-40x40.jpg' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>北村聡一</span><br />複数の分野にまたがる問題解決を得意とするコンサルタント（kroon, inc. …</p></a></li><li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=40"><p class="by-author-img"><img alt='日野瑛太郎' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2014/04/3b62593b2ab74b640717fa239c395c0e-40x40.jpg' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>日野瑛太郎</span><br />ブロガー、ソフトウェアエンジニア。経営者と従業員の両方を経験したことで日本の労働…</p></a></li><li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=41"><p class="by-author-img"><img alt='ファーレンハイト' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2014/04/b0e7341552d489077d766d7af578e58d-40x40.jpg' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>ファーレンハイト</span><br />ブロガー、週末コラムニスト。2012年4月、ブログ「My Favorite, A…</p></a></li><li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=42"><p class="by-author-img"><img alt='はせおやさい' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2014/04/f26f9a638f12c22c22eb783c842893c9-40x40.jpg' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>はせおやさい</span><br />会社員兼ブロガー。はてな（id:hase0831）を中心に活動。仕事はWeb業界…</p></a></li><li><a class="clearfix" href="http://cybozushiki.cybozu.co.jp/?author=46"><p class="by-author-img"><img alt='國貞文隆' src='http://cybozushiki.cybozu.co.jp/wp-content/uploads/2014/05/5cf3ef221d8861117dce6764bbb335f4-40x40.jpg' class='avatar avatar-40 photo' height='40' width='40' /></p><p class="authors-meta"><span>國貞文隆</span><br />1971年生まれ。ジャーナリスト。
+東洋経済新報社での記者、雑誌「GQ JAP…</p></a></li></ul>            
+</aside> 
+
+<div class="widget widget_fb">
+<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fcybozu&amp;width=403&amp;colorscheme=light&amp;show_faces=true&amp;border_color=%23CCCCCC&amp;stream=false&amp;header=true&amp;height=343&amp;font=arial" scrolling="no" frameborder="0" style=" background:#fff;overflow:hidden; width:100%; height:343px;" allowTransparency="true"></iframe>
+<!-- /widgetFb --></div>
+
+<div class="widget widget_tw">
+<a class="twitter-timeline" href="https://twitter.com/search?q=%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E5%BC%8F" width="200" height="410" data-widget-id="329856058665336833">サイボウズ式の声</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!-- /widgetTw --></div>           
+      
+</div><!-- #secondary .widget-area -->
+</div><!-- #main -->
+</div><!-- #page -->
+<footer id="colophon" role="contentinfo">
+
+<p id="pageToTop"><a href="#page">このページの先頭へ</a></p>
+<div class="colophonInr">
+<ul class="asideLink">
+<li><a href="https://www.cybozu.com/" target="_blank"><span class="icoImg"><img src="http://cybozushiki.cybozu.co.jp/wp-content/themes/scblog/images/ico_com.png" width="21" height="21" alt="" /></span><span class="ico-ext">サイボウズ製品を手軽に使えるコラボレーションクラウド<br />「cybozu.com」<img src="http://cybozushiki.cybozu.co.jp/wp-content/themes/scblog/images/ico_ext.png" width="8" height="8" alt="" /></span></a></li>
+<li><a href="https://live.cybozu.co.jp/" target="_blank"><span class="icoImg"><img src="http://cybozushiki.cybozu.co.jp/wp-content/themes/scblog/images/ico_live.png" width="21" height="21" alt="" /></span><span>クラウド型無料コラボレーションツール<br />「サイボウズLive」<img src="http://cybozushiki.cybozu.co.jp/wp-content/themes/scblog/images/ico_ext.png" width="8" height="8" alt="" /></span></a></li>
+<li><a href="http://team-work.jp/" target="_blank"><span class="icoImg"><img src="http://cybozushiki.cybozu.co.jp/wp-content/themes/scblog/images/ico_team.png" width="21" height="21" alt="" /></span><span>その年に最もチームワークを発揮し、顕著な実績を残したチームを表彰するアワード<br />「ベストチーム・オブ・ザ・イヤー」<img src="http://cybozushiki.cybozu.co.jp/wp-content/themes/scblog/images/ico_ext.png" width="8" height="8" alt="" /></span></a></li>
+</ul>
+<!-- /.colophonInr --></div>            
+<div class="copy">
+<p>記載された商品名、各製品名は各社の登録商品または商標です。Copyright(c) Cybozu,Inc.</p>
+<!-- /copy --></div>
+</footer><!-- #colophon -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31671069-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- User Insight PCDF Code Start : cybozu.co.jp --> 
+<script type="text/javascript"> 
+<!-- 
+var uilid  = ''; 
+var uigr_1   = ''; var uigr_2 = ''; var uigr_3 = ''; var uigr_4 = ''; var uigr_5 = ''; 
+var uigr_6   = ''; var uigr_7 = ''; var uigr_8 = ''; var uigr_9 = ''; var uigr_10 = ''; 
+
+// DO NOT ALTER BELOW THIS LINE 
+// WITHOUT F.P.C. 
+
+var uiinit   = uiinit || Math.floor(Math.random() * 9000000) + 1000000; 
+var uihost   = uihost || (("https:" == document.location.protocol) ? "https://bs." : "http://b13.")+"nakanohito.jp/b1/"; 
+document.write("<img id='id_shellfish' style='position: absolute' src='"+uihost+"?uisv=13&id=31597&mode=default&h=c554&rand="+uiinit+"&url="+encodeURIComponent(parent.document.URL)+"&ref="+encodeURIComponent(parent.document.referrer)+"&uigr_1="+encodeURIComponent(uigr_1)+"&uigr_2="+encodeURIComponent(uigr_2)+"&uigr_3="+encodeURIComponent(uigr_3)+"&uigr_4="+encodeURIComponent(uigr_4)+"&uigr_5="+encodeURIComponent(uigr_5)+"&uigr_6="+encodeURIComponent(uigr_6)+"&uigr_7="+encodeURIComponent(uigr_7)+"&uigr_8="+encodeURIComponent(uigr_8)+"&uigr_9="+encodeURIComponent(uigr_9)+"&uigr_10="+encodeURIComponent(uigr_10)+"&lv="+uilid+"&sb="+encodeURIComponent(document.title)+"&guid=ON&eflg=1' border='0' width='1' height='1' alt='' />"); 
+if (typeof document.documentElement.style.maxHeight != "undefined") { 
+document.write('<span  style="position: absolute" id="id_bivalves"></span>'); document.write(decodeURI("%3Cscr"+"ipt src='"+uihost+"bivalves.js' charset='utf-8' type='text/javascript'%3E%3C/script%3E")); var uiLimit = 3000, uiInterval = 50, uiTime = 0; var uiLoadedId = setInterval(function(){ if ((typeof(Vesicomyid) != "undefined") && (typeof(Vesicomyid.Bivalves) != "undefined") && (typeof(Vesicomyid.Bivalves.Loaded) == "function") ) { clearInterval(uiLoadedId); try { var lb = new Vesicomyid.Bivalves(31597, uiinit); lb.host = uihost; lb.uisv = 13; lb.init(); } catch (err) { } } else if ((uiTime += uiInterval) > uiLimit) { clearInterval(uiLoadedId); } }, uiInterval); 
+} 
+
+//--> 
+</script>
+<!-- User Insight PCDF Code End : cybozu.co.jp --> 
+</body>
+</html>

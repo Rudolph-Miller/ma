@@ -1,0 +1,783 @@
+ <!DOCTYPE html>
+<html
+  lang="ja"
+  data-avail-langs="ja en"
+
+  data-page="entry"
+  data-admin-domain="http://blog.hatena.ne.jp"
+  data-static-domain="http://hatenablog.com"
+  data-blog="8arrow.hatenablog.com"
+  data-blogs-uri-base="http://blog.8arrow.org"
+  data-globalheader-color="b"
+  data-globalheader-type="pc"
+  data-author="nitro_idiot"
+  data-version="cb3376f552692eef52655312928aaadd"
+  data-blog-comments-top-is-new=""
+  data-device="pc"
+
+  
+
+  data-brand="hatenablog"
+
+
+  data-has-touch-view="1"
+  
+
+  itemscope
+   itemtype="http://schema.org/Article"
+
+  >
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    
+    
+    
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=7; IE=9; IE=10; IE=11" />
+    <title>Common LispでWebAppの開発に必要なN個のこと - 八発白中</title>
+
+    
+
+    
+      <link rel="canonical" href="http://blog.8arrow.org/entry/2013/09/10/110632"/>
+    
+
+    <meta itemprop="name" content="Common LispでWebAppの開発に必要なN個のこと - 八発白中"/>
+    
+      <meta itemprop="image" content="http://hatenablog.com/images/theme/og-image-1500.gif"/>
+    
+
+    <meta property="og:title" content="Common LispでWebAppの開発に必要なN個のこと - 八発白中"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://blog.8arrow.org/entry/2013/09/10/110632"/>
+    
+      <meta property="og:image" content="http://hatenablog.com/images/theme/og-image-1500.gif"/>
+    
+      <meta property="og:description" content="PerlでWebAppの開発に必要なN個のこと - Islands in the byte streamのCommon Lisp版です。あるプログラミング言語で実際にWebAppを開発できるようになるまで、何が必要だろうか。言語仕様の習得は終えているとしよう。おそらく、最低限以下のような知識が必要だと思われる。とりあえずCommon Lispについて知っていることを書いた。←ここまで引用Perl版と異なるのは、これは昔よく使われていたけど今は使うべきじゃないみたいなのも書きました。 パッケージマネージャ Quicklispを使います。Common Lispで開発しようと思ったら処理系の次にこれ…" />
+    <meta property="og:site_name" content="http://blog.8arrow.org/"/>
+      <meta property="article:published_time" content="1378778792" />
+    <meta name="twitter:card" content="summary" />      <meta name="twitter:app:name:iphone" content="はてなブログアプリ" />
+      <meta name="twitter:app:id:iphone" content="583299321" />
+      <meta name="twitter:app:url:iphone" content="hatenablog:///open?uri=http%3A%2F%2Fblog.8arrow.org%2Fentry%2F2013%2F09%2F10%2F110632" />      <meta name="twitter:site" content="@nitro_idiot" />
+      <meta name="description" content="PerlでWebAppの開発に必要なN個のこと - Islands in the byte streamのCommon Lisp版です。あるプログラミング言語で実際にWebAppを開発できるようになるまで、何が必要だろうか。言語仕様の習得は終えているとしよう。おそらく、最低限以下のような知識が必要だと思われる。とりあえ…">
+    
+<script type="text/javascript">
+// <!--
+
+if (~navigator.userAgent.indexOf('Mac OS X')) {
+  document.write('<style type="text/css">html, body { font-family: \x27Helvetica\x27, \x27Arial\x27, \x27ヒラギノ角ゴ Pro W3\x27, \x27Hiragino Kaku Gothic Pro\x27, sans-serif; } </style>');
+} else {
+  document.write('<style type="text/css">html, body { font-family: \x27Helvetica\x27, \x27Arial\x27, \x27メイリオ\x27, \x27Meiryo\x27, \x27MS PGothic\x27, sans-serif; } </style>');
+}
+
+// -->
+</script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if IE]>
+<script type="text/javascript" src="/js/vendor/excanvas/excanvas.js"></script>
+<![endif]-->
+
+
+    <link rel="shortcut icon" href="http://hatenablog.com/images/favicon.ico">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://blog.8arrow.org/feed"/>
+    <link rel="alternate" type="application/rss+xml" title="RSS2.0" href="http://blog.8arrow.org/rss"/>
+    <link rel="author" href="http://www.hatena.ne.jp/nitro_idiot/">
+
+      <link rel="stylesheet" type="text/css" href="http://hatenablog.com/.shared.css:cb3376f552692eef52655312928aaadd:/css/theme/base.css,/css/prettify.css,/css/globalheader.css?version=cb3376f552692eef52655312928aaadd"/>
+      <link rel="stylesheet" type="text/css" href="http://hatenablog.com/-/blog_style/11696248318755958219/2975e7304776ac8a3369afb4a91fb32250c7e04b"/>    <script>    </script>
+
+    
+    <style>
+      div#google_afc_user,
+      div#google_afc_user_container,
+      div.google_afc_image,
+      div.google_afc_blocklink {
+          display: block !important;
+      }
+    </style>
+
+    
+  </head>
+
+  <body class="page-entry     ">
+    <!-- Google Universal Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-29716941-6', 'auto', {'name': 'HatenaBlogTracker'});
+  ga('HatenaBlogTracker.require', 'displayfeatures');
+  ga('HatenaBlogTracker.send', 'pageview');
+
+</script>
+<!-- End Google Universal Analytics -->
+
+    
+    <div id="header-container">
+     <div id="sp-suggest" style="display: none;"><a id="sp-suggest-link" href="#">スマートフォン用の表示で見る</a></div>
+    </div>
+
+    <div class="select_star_button_container" style="display: none;">
+      <img src="http://hatenablog.com/images/theme/hatena-star-quote-box.png?version=cb3376f552692eef52655312928aaadd" title="引用スターをつける" class="select_star_button" />
+      <img src="http://hatenablog.com/images/theme/hatena-star-quote-star.png?version=cb3376f552692eef52655312928aaadd" title="引用スターをつける" class="select_star_button select_star_star">
+    </div>
+
+    <div class="message-box" id="select-star-message-box" style="display: none;">
+      スターをつけました
+    </div>
+
+    <div id="globalheader-container" >
+  <iframe id="globalheader" height="37" frameborder="0" allowTransparency="true"></iframe>
+</div>
+
+
+    <div id="container">
+      <div id="container-inner">
+        <header id="blog-title" data-brand="hatenablog">
+  <div id="blog-title-inner" >
+    <h1 id="title"><a href="http://blog.8arrow.org/">八発白中</a></h1>
+    
+      <h2 id="blog-description">はてなブログに引越しました。</h2>
+    
+  </div>
+</header>
+
+        
+        
+
+
+
+
+<div id="content" class="hfeed"
+  
+  >
+  <div id="content-inner">
+    <div id="wrapper">
+      <div id="main">
+        <div id="main-inner">
+          
+            
+            <!-- google_ad_section_start -->
+            <!-- rakuten_ad_target_begin -->
+            
+              
+                <article class="entry hentry js-entry-article date-first autopagerize_page_element chars-3200 words-100 mode-hatena entry-odd" id="entry-11696248318757616246" data-keyword-campaign="" data-uuid="11696248318757616246">
+  <div class="entry-inner">
+    <header class="entry-header">
+      <div class="date first">
+        <a href="http://blog.8arrow.org/entries/2013/09/10" rel="nofollow">
+          <time pubdate datetime="2013-09-10T02:06:32Z" title="2013-09-10T02:06:32Z">
+            <span class="date-year">2013</span><span class="hyphen">-</span><span class="date-month">09</span><span class="hyphen">-</span><span class="date-day">10</span>
+          </time>
+        </a>
+      </div>
+      <h1 class="entry-title">
+        <a href="http://blog.8arrow.org/entry/2013/09/10/110632" class="entry-title-link bookmark">Common LispでWebAppの開発に必要なN個のこと</a>
+      </h1>
+      
+      <div class="categories no-categories">
+        
+      </div>
+      
+    </header>
+    <div class="entry-content">
+
+      
+        <p><a href="http://d.hatena.ne.jp/gfx/20130909/1378741015">Perl&#x3067;WebApp&#x306E;&#x958B;&#x767A;&#x306B;&#x5FC5;&#x8981;&#x306A;N&#x500B;&#x306E;&#x3053;&#x3068; - Islands in the byte stream</a>の<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>版です。</p><p>ある<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%B8%C0%B8%EC">プログラミング言語</a>で実際にWebAppを開発できるようになるまで、何が必要だろうか。言語仕様の習得は終えているとしよう。おそらく、最低限以下のような知識が必要だと思われる。とりあえず<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>について知っていることを書いた。←ここまで引用</p><p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Perl">Perl</a>版と異なるのは、これは昔よく使われていたけど今は使うべきじゃないみたいなのも書きました。</p>
+
+<div class="section">
+    <h4>パッケージマネージャ</h4>
+    <p>Quicklispを使います。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>で開発しようと思ったら処理系の次にこれが必要です<a href="#f1" name="fn1" title="その次はSLIME??">*1</a>。ここ数年の<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>の環境変化はQuicklispに依るところがとても大きいです。</p>
+
+<ul>
+<li><a href="http://www.quicklisp.org/beta/">http://www.quicklisp.org/beta/</a></li>
+</ul><p>ライブラリごとにバージョンの管理をする機能は今のところ無いけれど、以下の記事でShellyを使ってQuicklisp自身をプロジェクトごとに分離することはできました。</p>
+
+<ul>
+<li><a href="http://blog.8arrow.org/entry/2013/08/26/130240">&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3054;&#x3068;&#x306B;&#x4F7F;&#x3046;Quicklisp&#x3092;&#x5206;&#x96E2;&#x3059;&#x308B; - &#x516B;&#x767A;&#x767D;&#x4E2D;</a></li>
+</ul>
+</div>
+<div class="section">
+    <h4><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A5%D7%A5%EA%A5%B1%A1%BC%A5%B7%A5%E7%A5%F3%A5%B5%A1%BC%A5%D0">アプリケーションサーバ</a></h4>
+    <p>WebサーバへのインターフェイスとしてClackが使えます。今サポートしているバックエンドはHunchentoot、Apache2、<a class="keyword" href="http://d.hatena.ne.jp/keyword/FastCGI">FastCGI</a>の3つです。</p>
+
+<ul>
+<li><a href="http://clacklisp.org">http://clacklisp.org</a></li>
+</ul><p>Clackを使うメリットは、アプリケーションを変更することなく環境によってWebサーバを使い分けることができるということです。開発時はセットアップの楽なHunchentootを使っておいて、本番ではnginxをフロントに置いて<a class="keyword" href="http://d.hatena.ne.jp/keyword/FastCGI">FastCGI</a>で運用するのが最もパフォーマンスが良いです。</p><p>他には、Hunchentootを生で使う派も存在します。teepeedee2という最速を謳うWebサーバもありますが、使ったことがないのでわからないです<a href="#f2" name="fn2" title="個人的な不安点はストリーミング配信などはできなさそうだし、並列アクセス捌けるのかなーとか">*2</a>。開発も止まっているみたいだし使わなくてもよさそうです。Hunchentootをさらにダイエットさせたtootというサーバもありますが、リリース当初使ったときにあまり品質が良くなかったのでそれから使っていません。今はどうか知らないです。</p>
+
+<ul>
+<li><a href="http://weitz.de/hunchentoot/">http://weitz.de/hunchentoot/</a></li>
+<li><a href="http://cliki.net/teepeedee2">http://cliki.net/teepeedee2</a></li>
+<li><a href="https://github.com/gigamonkey/toot">https://github.com/gigamonkey/toot</a></li>
+</ul><p>最近Wookieという非同期型のWebサーバが出てきました。cl-asyncの作者が作っていて、個人的には注目しています。9月10日現在はQuicklisp申請中。</p>
+
+<ul>
+<li><a href="https://github.com/orthecreedence/wookie">https://github.com/orthecreedence/wookie</a></li>
+</ul>
+</div>
+<div class="section">
+    <h4>データベース</h4>
+    <p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>ではCL-<a class="keyword" href="http://d.hatena.ne.jp/keyword/DBI">DBI</a>というライブラリが<a class="keyword" href="http://d.hatena.ne.jp/keyword/RDBMS">RDBMS</a>へのインターフェイスです。実態はcl-<a class="keyword" href="http://d.hatena.ne.jp/keyword/mysql">mysql</a>とcl-<a class="keyword" href="http://d.hatena.ne.jp/keyword/postgresql">postgresql</a>と<a class="keyword" href="http://d.hatena.ne.jp/keyword/sqlite">sqlite</a>を同じインターフェイスで使えるようにするというライブラリです。</p>
+
+<ul>
+<li><a href="http://8arrow.org/cl-dbi/">http://8arrow.org/cl-dbi/</a></li>
+</ul><p>CL-<a class="keyword" href="http://d.hatena.ne.jp/keyword/DBI">DBI</a>のラッパーや<a class="keyword" href="http://d.hatena.ne.jp/keyword/SQL">SQL</a>の生成ライブラリは存在しないので、自分で<a class="keyword" href="http://d.hatena.ne.jp/keyword/SQL">SQL</a>を書く必要があります <a href="#f3" name="fn3" title="Postmodern付属のs-sqlというライブラリがSQLを生成する機能があるが、PostgreSQLのみサポートしているので完全ではなさそう">*3</a>。</p><p>その他、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>ではObjectStoreが好まれるのかライブラリが多いです。CLSQL、Elephant、Rucksack、AllegroCache (商用)など。AllegroCacheは使ったことがないのでわからないけど、個人的にはその他3つはあまりおすすめしません。品質が悪い。</p>
+
+</div>
+<div class="section">
+    <h4>ビューの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%EC%A5%F3%A5%C0%A5%EA%A5%F3%A5%B0">レンダリング</a></h4>
+    <p>テンプレートエンジンは2種類あって、HTMLをベースに拡張言語で書くものか、S式からHTMLを生成するものがあります。</p><p>HTMLをベースにするものはCL-EMBとcl-closure-templateが良さそう。どちらも一長一短があります。</p>
+
+<ul>
+<li><a href="http://common-lisp.net/project/cl-emb/">http://common-lisp.net/project/cl-emb/</a></li>
+<li><a href="http://qiita.com/nitro_idiot/items/76477e06fb03cde57392">common-lisp - HTML&#x5185;&#x306B;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x57CB;&#x3081;&#x8FBC;&#x3081;&#x308B;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x30A8;&#x30F3;&#x30B8;&#x30F3;&#x300C;CL-EMB&#x300D; - Qiita [&#x30AD;&#x30FC;&#x30BF;]</a></li>
+<li><a href="https://code.google.com/p/cl-closure-template/">https://code.google.com/p/cl-closure-template/</a></li>
+<li><a href="http://qiita.com/nitro_idiot/items/620d997e3f6cb3461f39">common-lisp - Closure Template&#x3092;Common Lisp&#x3067;&#x5229;&#x7528;&#x3067;&#x304D;&#x308B;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x300C;CL-Closure-Template&#x300D; - Qiita [&#x30AD;&#x30FC;&#x30BF;]</a></li>
+</ul><p>S式から生成するものは、CL-WHOが良く使われています。もっとわかりやすいインターフェイスを目指してCL-Markupというものもあります。</p>
+
+<ul>
+<li><a href="http://weitz.de/cl-who/">http://weitz.de/cl-who/</a></li>
+<li><a href="https://github.com/arielnetworks/cl-markup">https://github.com/arielnetworks/cl-markup</a></li>
+</ul>
+</div>
+<div class="section">
+    <h4>HTTPクライアント</h4>
+    <p>Drakmaくらいかな。<a class="keyword" href="http://d.hatena.ne.jp/keyword/HTTPS">HTTPS</a>が必要無いならtrivial-httpというライブラリも使えます。</p>
+
+<ul>
+<li><a href="http://weitz.de/drakma/">http://weitz.de/drakma/</a></li>
+<li><a href="http://common-lisp.net/project/trivial-http/">http://common-lisp.net/project/trivial-http/</a></li>
+</ul>
+</div>
+<div class="section">
+    <h4>テスト<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%EC%A1%BC%A5%E0%A5%EF%A1%BC%A5%AF">フレームワーク</a></h4>
+    <p>大量にあって、どれが代表的だとは言いづらい状況。</p>
+
+<ul>
+<li><a href="http://www.cliki.net/test%20framework">CLiki&#x4E0A;&#x306E;&#x30C6;&#x30B9;&#x30C8;&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;&#x4E00;&#x89A7;</a></li>
+</ul><p>観測範囲ではFiveAMが一番人気があり、その後継を謳うEosも使われるようになってきているようです。</p>
+
+<ul>
+<li><a href="http://www.cliki.net/Eos">http://www.cliki.net/Eos</a></li>
+</ul><p>僕はTAP (Test Anything Protocol) で出力してほしいので、CL-TEST-MOREを使っています。今調べたらtestbildというのもTAPで出力してくれるそう。</p>
+
+<ul>
+<li><a href="http://8arrow.org/cl-test-more/">http://8arrow.org/cl-test-more/</a></li>
+<li><a href="http://www.cliki.net/testbild">http://www.cliki.net/testbild</a></li>
+</ul>
+</div>
+<div class="section">
+    <h4>Webアプリケーション<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%EC%A1%BC%A5%E0%A5%EF%A1%BC%A5%AF">フレームワーク</a></h4>
+    <p>どうしても流行り廃りがあるWebアプリケーション<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%EC%A1%BC%A5%E0%A5%EF%A1%BC%A5%AF">フレームワーク</a>ですが、最近の人気度で言えばCavemanとRESTAS、ningleとかでしょうか。Clackを直接使う人もいるようです。RESTASの作者がロシア人なので、ロシア近辺や欧州ではRESTASは知名度があるようです。</p>
+
+<ul>
+<li><a href="http://8arrow.org/caveman/">http://8arrow.org/caveman/</a></li>
+<li><a href="http://restas.lisper.ru/en/">http://restas.lisper.ru/en/</a></li>
+<li><a href="http://8arrow.org/ningle/">http://8arrow.org/ningle/</a></li>
+</ul><p>古くからあるものだと、Weblocksというものもあります。これは継続ベースの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%EC%A1%BC%A5%E0%A5%EF%A1%BC%A5%AF">フレームワーク</a>で、今紹介した中で最も重い<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%EC%A1%BC%A5%E0%A5%EF%A1%BC%A5%AF">フレームワーク</a>。一度開発が止まっていたけど、メンテナが入れ替わって今はメンテナンスされているようです。</p>
+
+<ul>
+<li><a href="http://weblocks-framework.info/">http://weblocks-framework.info/</a></li>
+</ul>
+</div><div class="footnote">
+<p class="footnote"><a href="#fn1" name="f1" class="footnote-number">*1</a><span class="footnote-delimiter">:</span><span class="footnote-text">その次はSLIME??</span></p>
+<p class="footnote"><a href="#fn2" name="f2" class="footnote-number">*2</a><span class="footnote-delimiter">:</span><span class="footnote-text">個人的な不安点はストリーミング配信などはできなさそうだし、並列アクセス捌けるのかなーとか</span></p>
+<p class="footnote"><a href="#fn3" name="f3" class="footnote-number">*3</a><span class="footnote-delimiter">:</span><span class="footnote-text">Postmodern付属のs-<a class="keyword" href="http://d.hatena.ne.jp/keyword/sql">sql</a>というライブラリが<a class="keyword" href="http://d.hatena.ne.jp/keyword/SQL">SQL</a>を生成する機能があるが、<a class="keyword" href="http://d.hatena.ne.jp/keyword/PostgreSQL">PostgreSQL</a>のみサポートしているので完全ではなさそう</span></p>
+</div>
+      
+    </div>
+    <footer class="entry-footer">
+      <p class="entry-footer-section">
+        <span class="author vcard"><span class="fn" data-load-nickname="1" data-user-name="nitro_idiot">nitro_idiot</span></span>
+        <span class="entry-footer-time"><a href="http://blog.8arrow.org/entry/2013/09/10/110632"><time data-relative datetime="2013-09-10T02:06:32Z" title="2013-09-10T02:06:32Z" pubdate class="updated">2013-09-10 11:06</time></a></span>
+      </p>
+      <div class="hatena-star-container">
+      </div>
+      
+
+      <div class="customized-footer">
+        <div class="social-buttons">
+  
+  
+    <a href="http://b.hatena.ne.jp/entry/http://blog.8arrow.org/entry/2013/09/10/110632" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="この記事をはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="この記事をはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+  
+  
+    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fblog.8arrow.org%2Fentry%2F2013%2F09%2F10%2F110632&amp;layout=button_count&amp;show_faces=false&amp;width=130&amp;action=like&amp;height=21" class="facebook-like-button" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:21px;" allowTransparency="true"></iframe>
+  
+  
+    <iframe allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fblog.8arrow.org%2Fentry%2F2013%2F09%2F10%2F110632&text=Common%20Lisp%E3%81%A7WebApp%E3%81%AE%E9%96%8B%E7%99%BA%E3%81%AB%E5%BF%85%E8%A6%81%E3%81%AAN%E5%80%8B%E3%81%AE%E3%81%93%E3%81%A8%20-%20%E5%85%AB%E7%99%BA%E7%99%BD%E4%B8%AD&lang=ja" class="twitter-share-button" style="width:130px; height:20px;"></iframe>
+  
+  
+    <div class="g-plusone" data-size="medium" data-href="http://blog.8arrow.org/entry/2013/09/10/110632"></div>
+  
+  
+  
+  
+</div>
+
+
+          
+
+          
+
+          
+            <div class="entry-footer-html">    <!-- X:S ZenBackWidget --><script type="text/javascript">document.write(unescape("%3Cscript")+" src='http://widget.zenback.jp/?base_uri=http%3A//blog.8arrow.org&nsid=116589683810521419%3A%3A116589712801563571&rand="+Math.ceil((new Date()*1)*Math.random())+"' type='text/javascript'"+unescape("%3E%3C/script%3E"));</script><!-- X:E ZenBackWidget --></div>
+          
+        
+      </div>
+
+      <div class="comment-box">
+        
+        <ul class="comment">
+          
+        </ul>
+        
+          <a class="leave-comment-title">コメントを書く</a>
+        
+      </div>
+    </footer>
+  </div>
+</article>
+
+                
+
+                
+                  
+                  
+                  <div class="permalink pager">
+                    
+                      
+                      <span class="pager-prev">
+                        <a href="http://blog.8arrow.org/entry/2013/10/22/135427" rel="prev">
+                          <span class="pager-arrow">« </span>
+                          SQLを生成するCommon Lispライブラリ「SxQ…
+                        </a>
+                      </span>
+                    
+                    
+                      
+                      <span class="pager-next">
+                        <a href="http://blog.8arrow.org/entry/2013/08/26/130240" rel="next">
+                          プロジェクトごとに使うQuicklispを分離す…
+                          <span class="pager-arrow"> »</span>
+                        </a>
+                      </span>
+                    
+                  </div>
+                
+
+              
+            
+            <!-- rakuten_ad_target_end -->
+            <!-- google_ad_section_end -->
+
+            
+          
+        </div>
+      </div>
+
+      
+      <aside id="box1">
+        <div id="box1-inner">
+        </div>
+      </aside>
+
+    </div><!-- #wrapper -->
+
+    <aside id="box2">
+  <div id="box2-inner">
+    
+      
+
+<div class="hatena-module hatena-module-profile">
+  <div class="hatena-module-title">
+    About Me
+  </div>
+  <div class="hatena-module-body">
+    
+    <a href="http://blog.8arrow.org/about">
+      <img src="http://cdn1.www.st-hatena.com/users/ni/nitro_idiot/profile.gif"
+      alt="id:nitro_idiot" class="profile-icon" />
+    </a>
+    
+
+    
+    <span class="id">
+      <a href="http://blog.8arrow.org/about"><span data-load-nickname="1" data-user-name="nitro_idiot">id:nitro_idiot</span></a>
+      
+  
+    
+      
+      <a href="http://blog.hatena.ne.jp/guide/pro" title="はてなブログPro"><i class="icon-pro" /></i></a>
+    
+  
+
+
+    </span>
+    
+
+    
+
+    
+    <div class="hatena-follow-button-box btn-subscribe">
+      <a href="#" class="hatena-follow-button">
+        <span class="subscribing">
+          <span class="foreground">購読中です</span>
+          <span class="background">読者をやめる</span>
+        </span>
+        <span class="unsubscribing">
+          <span class="foreground">読者になる</span>
+          <span class="background">読者になる</span>
+        </span>
+      </a>
+      <div class="subscription-count-box">
+        <span class="subscription-balloon">
+        </span>
+        <span class="subscription-count">
+        </span>
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-html">
+  
+  <div class="hatena-module-body">
+    <style type="text/css">
+.my-service-icons {
+  padding-left: 0;
+  text-align: center;
+}
+.my-service-icons li {
+  display: inline-block;
+  margin: 0 8px;
+}
+</style>
+<ul class="my-service-icons" >
+  <li>
+    <a href="https://github.com/fukamachi" target="_blank"><img src="http://8arrow.org/images/github-icon.png" alt="GitHub" title="GitHub" width="40px" height="40px" /></a>
+  </li>
+  <li>
+    <a href="http://nitro-idiot.hatenablog.com/" target="_blank"><img src="http://8arrow.org/images/hatenablog-icon.png" alt="Diary" title="Diary" width="40px" height="40px" /></a>
+  </li>
+  <li>
+    <a href="https://twitter.com/nitro_idiot" target="_blank"><img src="http://8arrow.org/images/twitter-icon.png" alt="Twitter" title="Twitter" width= "49px" height="40px" /></a>
+  </li>
+</ul>
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-html">
+  
+    <div class="hatena-module-title">Website</div>
+  
+  <div class="hatena-module-body">
+    <a href="http://8arrow.org/" target="_blank"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/n/nitro_idiot/20140116/20140116163928.png" alt="My Portfolio" /></a>
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-recent-entries ">
+  <div class="hatena-module-title">
+    <a href="http://blog.8arrow.org/archive">
+      Recent Entries
+    </a>
+  </div>
+  <div class="hatena-module-body">
+    <ul class="recent-entries hatena-urllist ">
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/04/16/233941" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">軽量なCommon LispのDBライブラリ「datafly」を作りました        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/03/02/172920" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">株式会社はてなを退職しました        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/02/04/041417" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">誰向けかわからないCommon Lispでの関数型プログラミング入門とその未来        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/01/24/075236" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">Lisp Meet Up #13 に参加しました        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/01/22/184258" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">新しいCommon Lisp方言「CL21」を作ったので意見を募集します        </a>
+        
+
+              </div>
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-archive">
+  <div class="hatena-module-title">
+    <a href="http://blog.8arrow.org/archive">Archive</a>
+  </div>
+  <div class="hatena-module-body">
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-search-box">
+  <div class="hatena-module-title">
+    Search
+  </div>
+  <div class="hatena-module-body">
+    <form class="search-form" role="search" action="http://blog.8arrow.org/search" method="get">
+      <input type="text" name="q" class="search-module-input" value="" placeholder="ブログ内検索" required>
+      <input type="submit" value="検索" class="search-module-button" />
+    </form>
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-circles">
+  <div class="hatena-module-title">
+    Groups
+  </div>
+  <div class="hatena-module-body">
+    <ul class="circle-list">
+      
+        <li title="Lisp" data-circle-id="12921228815713769536" data-circle-mtime="1393426757">
+  <a href="http://hatenablog.com/g/12921228815713769536"><img class="circle-image" src="http://cdn.image.st-hatena.com/image/square/66f5d18c388e0cb1d804be358c6cfb48df174304/height=96;version=1;width=96/http%3A%2F%2Fcdn.mogile.archive.st-hatena.com%2Fv1%2Fimage%2Fnitro_idiot%2F297785937330261174.png" alt="Lisp" title="Lisp"></a></li>
+      
+    </ul>
+  </div>
+</div>
+
+    
+    
+  </div>
+</aside>
+
+  </div>
+</div>
+
+
+
+
+
+
+        
+      </div>
+    </div>
+
+    
+      <footer id="footer" data-brand="hatenablog">
+  <div id="footer-inner">
+    <address>
+      
+      <a href="http://blog.8arrow.org/about"><img src="http://cdn1.www.st-hatena.com/users/ni/nitro_idiot/profile.gif" width="16" height="16" alt=""/>
+        <span data-load-nickname="1" data-user-name="nitro_idiot">nitro_idiot</span>
+      </a>
+    </address>
+    <p class="services"><a href="http://hatenablog.com/">Hatena Blog</a> / <a href="http://d.hatena.ne.jp/">Hatena::Diary</a></p>
+  </div>
+</footer>
+
+    
+
+    
+
+    
+      <script src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
+    
+
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+  {"parsetags": "explicit"}
+</script>
+<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+
+
+<script type="text/javascript" src="http://hatenablog.com/js?version=cb3376f552692eef52655312928aaadd"></script>
+
+<script type="text/javascript" src="http://hatenablog.com/js/texts-ja.js?version=cb3376f552692eef52655312928aaadd"></script>
+
+
+  <script type="text/javascript">Hatena.Diary.loadGlobalHeader()</script>
+
+
+
+
+
+    
+       <script id="google-analytics-script" type="text/javascript">
+var _gaq = _gaq || [];
+
+(function($){
+
+  // 現在のドメイン
+  
+    
+    
+      
+      var current_domain = "blog.8arrow.org".split(":")[0];
+    
+  
+
+  
+
+  
+
+   
+   _gaq.push(['all._setAccount', 'UA-7855606-1']);
+   _gaq.push(['all._setDomainName', current_domain]);
+   _gaq.push(['all._setSampleRate', '10']);
+   _gaq.push(['all._trackPageview']);
+
+  
+    _gaq.push(['a._setAccount', 'UA-29716941-5']);
+    _gaq.push(['a._setDomainName', current_domain]);
+    _gaq.push(['a._setCustomVar', 1, 'PageId', document.documentElement.getAttribute('data-page'), 3 /* page-level */]);
+      var keywordCampaigns = [];
+      $('.js-entry-article').each(function (index, element) {
+        var keywords = $(element).data('keywordCampaign').split(' ');
+        keywords = _.filter(keywords, function (keyword) { return keyword.length > 0 });
+        keywordCampaigns = keywordCampaigns.concat(keywords);
+      });
+      if (keywordCampaigns.length > 0) {
+        _gaq.push(['a._setCustomVar', 3, 'KeywordCampaign', keywordCampaigns[0], 3 /* page-level */]);
+      }
+      _gaq.push(['a._trackPageview']);
+  
+    _gaq.push(['b._setAccount', 'UA-29716941-2']);
+    _gaq.push(['b._setDomainName', current_domain]);
+    _gaq.push(['b._setCustomVar', 1, 'PageId', document.documentElement.getAttribute('data-page'), 3 /* page-level */]);
+      var keywordCampaigns = [];
+      $('.js-entry-article').each(function (index, element) {
+        var keywords = $(element).data('keywordCampaign').split(' ');
+        keywords = _.filter(keywords, function (keyword) { return keyword.length > 0 });
+        keywordCampaigns = keywordCampaigns.concat(keywords);
+      });
+      if (keywordCampaigns.length > 0) {
+        _gaq.push(['b._setCustomVar', 3, 'KeywordCampaign', keywordCampaigns[0], 3 /* page-level */]);
+      }
+      _gaq.push(['b._trackPageview']);
+  
+
+  $(function () {
+      $(document).delegate('[data-track-event="click"]', 'click', function () {
+          
+          _gaq.push([ 'a._trackEvent', 'Blogs', 'Click', this.getAttribute('data-track-key') ]);
+          
+          _gaq.push([ 'b._trackEvent', 'Blogs', 'Click', this.getAttribute('data-track-key') ]);
+          
+      });
+  });
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  var available_domains = ["blog.hatena.ne.jp"];
+  
+    available_domains.push("hatenablog.com".split(":")[0]);
+  
+    available_domains.push("hatenablog.jp".split(":")[0]);
+  
+    available_domains.push("hateblo.jp".split(":")[0]);
+  
+    available_domains.push("hatenadiary.com".split(":")[0]);
+  
+    available_domains.push("hatenadiary.jp".split(":")[0]);
+  
+  $('a').on('click', function() {
+    // 同じドメインならスキップ
+    if ( !this.hostname || this.hostname.indexOf(current_domain) != -1 ) return;
+
+    var cross_domain = false;
+    for (var i = 0, len = available_domains.length; i < len; i++) {
+      if (this.hostname.indexOf(available_domains[i]) != -1) cross_domain = true;
+    }
+    if ( cross_domain ) {
+      
+      _gaq.push(['a._link', this.href]);
+      
+      _gaq.push(['b._link', this.href]);
+      
+    }
+  });
+
+})(jQuery);
+</script>
+
+       
+  <script id="hatena-counter-script" type="text/javascript"><!--
+      hatena_counter_name = "nitro_idiot";
+      hatena_counter_id = "104";
+      hatena_counter_ref = document.referrer+"";
+      hatena_counter_screen = screen.width + "x" + screen.height+","+screen.colorDepth;
+  //--></script>
+  <script type="text/javascript" src="http://counter.hatena.ne.jp/js/counter.js"></script>
+  <noscript><img src="http://counter.hatena.ne.jp/nitro_idiot/104" border="0" alt="counter"></noscript>
+
+
+    
+
+  </body>
+</html>
+

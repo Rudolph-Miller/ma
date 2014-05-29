@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="ja" xml:lang="ja">
+<head>
+
+<title>Common Lisp と 日本語 と 文字コード</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2009-07-13 22:12:16 JST"/>
+<meta name="author" content="Masayuki Onjo"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style><link rel="stylesheet" type="text/css" href="/files/style.css" />
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div class="title"><h1 class="title">LISPUSER</h1><span class="title">Common Lisp と 日本語 と 文字コード</span><span class="subtitle">Lisp isn't a language, it's a building material.</span></div><div class="document">
+<p><a href="../index">(Top Page)</a> <a href="../memo">(Lisp Memo)</a> 
+</p>
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">Common Lisp と日本語 </a>
+<ul>
+<li><a href="#sec-1.1">概要 </a></li>
+<li><a href="#sec-1.2">文字 </a></li>
+<li><a href="#sec-1.3">文字列 </a></li>
+<li><a href="#sec-1.4">EXTERNAL-FORMAT </a>
+<ul>
+<li><a href="#sec-1.4.1">AllegroCL </a></li>
+<li><a href="#sec-1.4.2">LispWorks </a></li>
+<li><a href="#sec-1.4.3">CLISP </a></li>
+<li><a href="#sec-1.4.4">SBCL </a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-2">ライブラリ </a>
+<ul>
+<li><a href="#sec-2.1">GUESS &ndash; 文字エンコーディング判定処理 </a>
+<ul>
+<li><a href="#sec-2.1.1">ダウンロード </a></li>
+<li><a href="#sec-2.1.2">応用例 </a></li>
+</ul>
+</li>
+<li><a href="#sec-2.2">NKF32.DLL CFFI Binding &ndash; 文字コード判定と変換 </a></li>
+<li><a href="#sec-2.3">JP &ndash; 日本語エンコーディング周りの基本機能ラッパー </a>
+<ul>
+<li><a href="#sec-2.3.1">問題点 </a></li>
+<li><a href="#sec-2.3.2">API </a></li>
+<li><a href="#sec-2.3.3">ダウンロード </a></li>
+</ul>
+</li>
+<li><a href="#sec-2.4">MECAB CFFI Binding &ndash; 日本語形態素解析ライブラリ </a>
+<ul>
+<li><a href="#sec-2.4.1">API </a></li>
+<li><a href="#sec-2.4.2">ダウンロード </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1">Common Lisp と日本語 </h2>
+<div class="outline-text-2" id="text-1">
+
+
+
+</div>
+
+<div id="outline-container-1.1" class="outline-3">
+<h3 id="sec-1.1">概要 </h3>
+<div class="outline-text-3" id="text-1.1">
+
+
+<p>
+Common Lisp における文字列は「Character」の列だ。C 言語などでは、文字列は実際にはバイト列と等価なので、
+この辺は考え方を換える必要がある。もちろん、内部的には何かのエンコーディングによるバイト列を保持
+しているわかけだが、I/O や、バイト列との変換には external-format を指定して内部エンコーディングから
+目的のエンコーディングへと変換する必要がある。
+</p>
+<pre class="example">
+文字列 (Character の列) &lt;---- external-format ----&gt; バイト列 (unsigned-byte の列)
+</pre>
+
+
+<p>
+この external-format は、バイト列への変換以外にも文字列のやりとりなど I/O ストリームでも使用する。
+サポートされている external-format の種類や、その API については、処理系毎に異なるので各処理系のマニュアルを参照すること。
+</p>
+<pre class="example">
+[AllegroCL]
+バイト列 =&gt; 文字列: ext:octets-to-string
+文字列 =&gt; バイト列: ext:string-to-octets
+
+[LispWorks]
+バイト列 =&gt; 文字列: ext:decode-external-string
+文字列 =&gt; バイト列: ext:encode-lisp-string
+
+[CLISP]
+バイト列 =&gt; 文字列: ext:convert-string-from-bytes
+文字列 =&gt; バイト列: ext:convert-string-to-bytes
+
+[SBCL]
+バイト列 =&gt; 文字列: sb-ext:octets-to-string
+文字列 =&gt; バイト列: sb-ext:string-to-octets
+</pre>
+
+
+<p>
+しかし、日本語を扱う上では文字列とバイト列の変換 API だけでは不十分な場合がある。
+バイト列が手元にあったとして、これも文字列に変換したいケースを考えよう。
+あなたの悩みはこうだ。「はて、このバイト列が文字列なのはわかっているが…エンコーディングは何だったっけ？」
+</p>
+<p>
+文字列と external-format の例を示しつつ、バイト列のエンコーディングを推測する処理を作ってみる。
+</p>
+
+</div>
+
+</div>
+
+<div id="outline-container-1.2" class="outline-3">
+<h3 id="sec-1.2">文字 </h3>
+<div class="outline-text-3" id="text-1.2">
+
+
+<p>
+処理系で必ずサポートされている standard-char 型の文字が <a href="http://www.lispworks.com/documentation/HyperSpec/Body/02_ac.htm">http://www.lispworks.com/documentation/HyperSpec/Body/02<sub>ac</sub>.htm</a>
+で参照できる。アルファベット、記号、改行とスペースからなる Lisp の最低限の文字だ。実際の処理系ではこれよりも沢山の文字が
+利用可能となっており、日本語等は standard-char を拡張した base-char という型に分類される。 <sup><a class="footref" name="fnr.1" href="#fn.1">1</a></sup>
+</p>
+<pre class="example">
+base-char 型 = standard-char + 拡張文字
+character 型 = base-char + extended-char = (standard-char + 拡張文字) + extended-char
+</pre>
+
+
+<p>
+次に例を示そう。AllegroCL では #\あ という日本語文字は CLHS より standard-char ではないが、base-char であるため、
+base-char の拡張文字としてあつかわれている事がわかる
+</p>
+<pre class="example">
+CL-USER&gt; (typep #\a 'standard-char)
+T
+CL-USER&gt; (typep #\a 'base-char)
+T
+CL-USER&gt; (typep #\a 'extended-char)
+NIL
+CL-USER&gt; (typep #\a 'character)
+T
+CL-USER&gt; (typep #\あ 'standard-char)
+NIL
+CL-USER&gt; (typep #\あ 'base-char)
+T
+CL-USER&gt; (typep #\あ 'extended-char)
+NIL
+CL-USER&gt; (typep #\あ 'character)
+T
+</pre>
+
+
+<p>
+しかし、SBCL では以下のようになる。
+</p>
+<pre class="example">
+CL-USER&gt; (typep #\あ 'standard-char)
+NIL
+CL-USER&gt; (typep #\あ 'base-char)
+NIL
+CL-USER&gt; (typep #\あ 'extended-char)
+T
+CL-USER&gt; 
+</pre>
+
+
+<p>
+SBCL では日本語は extended-char 型となっていることがわかる。したがって、日本語をポータブルに扱うには character 型を利用するのがよい。
+</p>
+<p>
+文字はあくまで文字型であり、C 言語のような数値ではない。文字は文字としか比較はできず、加算や減算など数値として扱う事はできない。
+文字とバイトを変換するには char-code, code-char 関数を使う。char-code は文字を引数に取り、処理系の内部エンコーディングでのその文字の
+値を返す。code-char は数字を引数にとり、内部エンコーディングでそのコードに対応する文字を返す。 <sup><a class="footref" name="fnr.2" href="#fn.2">2</a></sup>
+</p>
+<pre class="example">
+CL-USER&gt; (char-code #\a)
+97
+CL-USER&gt; (code-char 97)
+#\a
+CL-USER&gt; (char-code #\b)
+98
+CL-USER&gt; (code-char 98)
+#\b
+CL-USER&gt; (char-code #\あ)
+12354
+CL-USER&gt; (code-char 12354)
+#\あ
+</pre>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1.3" class="outline-3">
+<h3 id="sec-1.3">文字列 </h3>
+<div class="outline-text-3" id="text-1.3">
+
+
+<p>
+文字列は、文字の配列である。したがって配列操作 (aref, subseq, fill &hellip;) などは全て文字列に対しても使用できる。
+文字列の型には string, base-string, simple-string, simple-base-string という種類があるが、実用上は string さえ知っていれば問題ない。
+日本語の使用を考えると base-string を意図して使うケースはあまりないからだ。
+</p>
+<p>
+base-string とは ANSI Common Lisp では「(vector base-char) と等価な型」
+であり、かつ「standard-char を保持できるもっとも効率的な文字列」となっている。
+文字の例もあるように、base-char の範囲に日本語が収まっているとは限らないため
+日本語の利用を考えると string 型一択ということになる。
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1.4" class="outline-3">
+<h3 id="sec-1.4">EXTERNAL-FORMAT </h3>
+<div class="outline-text-3" id="text-1.4">
+
+
+<p>
+文字列とバイト列の変換に使用する。EXTERNAL-FORMAT の詳細は implementation-depend であると規定されているため、
+各実装毎に異なる。with-open-file やソケット回りの関数など :external-format 引数を取る関数はあまり悩む事はないだろうが、
+処理系毎に異なる文字列 &lt;&ndash;&gt; バイト列の変換について説明しよう。
+</p>
+
+</div>
+
+<div id="outline-container-1.4.1" class="outline-4">
+<h4 id="sec-1.4.1">AllegroCL </h4>
+<div class="outline-text-4" id="text-1.4.1">
+
+
+<p>
+Unicode ベースの他言語サポートを備える。対応している external-format は :utf-8, :euc-jp, :shiftjis, :jis (iso-2022-jp)。
+</p>
+<pre class="example">
+CL-USER&gt; (excl:string-to-octets "日本語" :external-format :shiftjis :null-terminate nil)
+#(147 250 150 123 140 234)
+CL-USER&gt; (excl:octets-to-string #(147 250 150 123 140 234) :external-format :shiftjis)
+"日本語"
+</pre>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1.4.2" class="outline-4">
+<h4 id="sec-1.4.2">LispWorks </h4>
+<div class="outline-text-4" id="text-1.4.2">
+
+
+<p>
+Unicode ベースの他言語サポートを備える。対応している external-format は :utf-8, :euc-jp, :shiftjis, :jis (iso-2022-jp)。
+</p>
+<pre class="example">
+CL-USER&gt; (external-format:encode-lisp-string "日本語" :shiftjis)
+#(147 250 150 123 140 234)
+CL-USER&gt; (external-format:decode-external-string #(147 250 150 123 140 234) :shiftjis)
+"日本語"
+</pre>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1.4.3" class="outline-4">
+<h4 id="sec-1.4.3">CLISP </h4>
+<div class="outline-text-4" id="text-1.4.3">
+
+
+<p>
+Unicode ベースの他言語サポートを備える。対応している external-format は charset:utf-8, charset:euc-jp, charset:shiftjis, charset:iso-2022-jp。変換ルーチンは GNU libiconv もしくは glibc 内の iconv を利用している。
+</p>
+<pre class="example">
+CL-USER&gt; (ext:convert-string-to-bytes "日本語" charset:sjis)
+#(147 250 150 123 140 234)
+CL-USER&gt; (ext:convert-bytes-to-string #(147 250 150 123 140 234) charset:sjis)
+"日本語"
+</pre>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1.4.4" class="outline-4">
+<h4 id="sec-1.4.4">SBCL </h4>
+<div class="outline-text-4" id="text-1.4.4">
+
+
+<p>
+Unicode ベースの他言語サポートを備える。対応している external-format は :utf-8, :euc-jp, :shiftjis。
+いわゆる jis コード (iso-2022-jp) が未サポートだが、エスケープシーケンスを解釈して 8bit 目をたてていくと
+半角カナ以外は euc-jp に変換できるので、手動で変換して凌いでいる人が多い（と思われる）。
+</p>
+<pre class="example">
+CL-USER&gt; (sb-ext:string-to-octets "日本語" :external-format :sjis :null-terminate nil)
+#(147 250 150 123 140 234)
+CL-USER&gt; (sb-ext:octets-to-string #(147 250 150 123 140 234) :external-format :sjis)
+"日本語"
+</pre>
+
+
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2">ライブラリ </h2>
+<div class="outline-text-2" id="text-2">
+
+
+
+</div>
+
+<div id="outline-container-2.1" class="outline-3">
+<h3 id="sec-2.1">GUESS &ndash; 文字エンコーディング判定処理 </h3>
+<div class="outline-text-3" id="text-2.1">
+
+
+<p>
+external-format の使い方がわかったところで、実用的には文字コードの判定処理が必要になる場合が多い。
+external-format を知っただけでは、with-open-file の external-format に何を指定すればいいのか迷ってしまう。
+</p>
+<p>
+で、いろいろ蘊蓄を語ろうと思ったのだが、ふと Gauche の文字コード判定処理を CL に移植して比較したところ
+性能、精度とも私の手作りのものより断然よかったのでこっちを採用。
+</p>
+<p>
+Gauche のソースの ext/charconv/guess.scm, ext/charconv/guess.c, ext/charconv/guess<sub>tab</sub>.c が日本語エンコーディング判定処理だ。
+guess.scm で状態表 guess<sub>tab</sub>.c を出力し、 C コンパイラで guess.c guess<sub>tab</sub>.c をコンパイルしてモジュールとしている。
+今回は性能よりも手軽さを重視して Common Lisp のみでベクタの文字コードを判定するように移植した。
+</p>
+<pre class="example">
+#define DFA_INIT(st, ar) \
+    { st, ar, 0, 1.0 }
+
+#define DFA_NEXT(dfa, ch)                               \
+    do {                                                \
+        int arc__;                                      \
+        if (dfa.state &gt;= 0) {                           \
+            arc__ = dfa.states[dfa.state][ch];          \
+            if (arc__ &lt; 0) {                            \
+                dfa.state = -1;                         \
+            } else {                                    \
+                dfa.state = dfa.arcs[arc__].next;       \
+                dfa.score *= dfa.arcs[arc__].score;     \
+            }                                           \
+        }                                               \
+    } while (0)
+
+#define DFA_ALIVE(dfa)  (dfa.state &gt;= 0)
+
+/* include DFA table generated by guess.scm */
+#include "guess_tab.c"
+
+static const char *guess_jp(const char *buf, int buflen, void *data)
+{
+    int i;
+    guess_dfa eucj = DFA_INIT(guess_eucj_st, guess_eucj_ar);
+    guess_dfa sjis = DFA_INIT(guess_sjis_st, guess_sjis_ar);
+    guess_dfa utf8 = DFA_INIT(guess_utf8_st, guess_utf8_ar);
+    guess_dfa *top = NULL;
+
+    for (i=0; i&lt;buflen; i++) {
+        int c = (unsigned char)buf[i];
+
+        /* special treatment of jis escape sequence */
+        if (c == 0x1b) {
+            if (i &lt; buflen-1) {
+                c = (unsigned char)buf[++i];
+                if (c == '$' || c == '(') return "ISO-2022-JP";
+            }
+        }
+        
+        if (DFA_ALIVE(eucj)) {
+            if (!DFA_ALIVE(sjis) &amp;&amp; !DFA_ALIVE(utf8)) return "EUC-JP";
+            DFA_NEXT(eucj, c);
+        }
+        if (DFA_ALIVE(sjis)) {
+            if (!DFA_ALIVE(eucj) &amp;&amp; !DFA_ALIVE(utf8)) return "Shift_JIS";
+            DFA_NEXT(sjis, c);
+        }
+        if (DFA_ALIVE(utf8)) {
+            if (!DFA_ALIVE(sjis) &amp;&amp; !DFA_ALIVE(eucj)) return "UTF-8";
+            DFA_NEXT(utf8, c);
+        }
+
+        if (!DFA_ALIVE(eucj) &amp;&amp; !DFA_ALIVE(sjis) &amp;&amp; !DFA_ALIVE(utf8)) {
+            /* we ran out the possibilities */
+            return NULL;
+        }
+    }
+
+    /* Now, we have ambigous code.  Pick the highest score.  If more than
+       one candidate tie, pick the default encoding. */
+    if (DFA_ALIVE(eucj)) top = &amp;eucj;
+    if (DFA_ALIVE(utf8)) {
+        if (top) {
+#if defined GAUCHE_CHAR_ENCODING_UTF_8
+            if (top-&gt;score &lt;= utf8.score)  top = &amp;utf8;
+#else
+            if (top-&gt;score &lt;  utf8.score) top = &amp;utf8;
+#endif
+        } else {
+            top = &amp;utf8;
+        }
+    }
+    if (DFA_ALIVE(sjis)) {
+        if (top) {
+#if defined GAUCHE_CHAR_ENCODING_SJIS
+            if (top-&gt;score &lt;= sjis.score)  top = &amp;sjis;
+#else
+            if (top-&gt;score &lt;  sjis.score) top = &amp;sjis;
+#endif
+        } else {
+            top = &amp;sjis;
+        }
+    }
+
+    if (top == &amp;eucj) return "EUC-JP";
+    if (top == &amp;utf8) return "UTF-8";
+    if (top == &amp;sjis) return "Shift_JIS";
+    return NULL;
+}
+</pre>
+
+
+<p>
+この状態計算処理を、Common Lisp に移植する。コンパイラのインライン化サポートが十分なら
+flet のみでもいけそうだが、CLISP 等インライン化しないコンパイラの存在も判明しているため
+macrolet でマクロを多用して気休め的最適化。
+</p>
+<pre class="example">
+(defun guess-jp (buffer &amp;aux (len (length buffer)))
+  (declare (optimize (speed 3) (space 0) (safety 0) (debug 0)))
+  (macrolet ((dfa-init (dfa-st dfa-ar)
+               `(vector ,dfa-st ,dfa-ar 0 1.0d0))
+             (score (dfa)  `(svref ,dfa 3))
+             (state (dfa)  `(svref ,dfa 2))
+             (arcs (dfa)   `(svref ,dfa 1))
+             (states (dfa) `(svref ,dfa 0))
+             (dfa-alive (dfa) `(&gt;= (the fixnum (state ,dfa)) (the fixnum 0)))
+             (dfa-next (dfa ch)
+               `(when (dfa-alive ,dfa)
+                  (when (&gt;= (the fixnum (state ,dfa)) (the fixnum 0))
+                    (let ((temp (svref
+                                 (svref (states ,dfa) (state ,dfa))
+                                 ,ch)))
+                      (if (&lt; (the fixnum temp) (the fixnum  0))
+                          (setf (state ,dfa) -1)
+                          (setf (state ,dfa) (the fixnum (car (svref (arcs ,dfa) temp)))
+                                (score ,dfa) (* (the double-float (score ,dfa))
+                                                (the double-float (cdr (svref (arcs ,dfa) temp))))))))))
+             ;; utility
+             (process-dfa (dfa ch value &amp;rest others)
+               `(when (dfa-alive ,dfa)
+                  (when (and ,@(mapcar (lambda (dfa) `(not (dfa-alive ,dfa))) others))
+                    (return-from guess-body ,value))
+                  (dfa-next ,dfa ,ch))))
+    (block guess-body
+       (let* ((eucj (dfa-init +eucj-st+ +eucj-ar+))
+              (sjis (dfa-init +sjis-st+ +sjis-ar+))
+              (utf8 (dfa-init +utf8-st+ +utf8-ar+))
+              (top  nil))
+         (declare (dynamic-extent eucj sjis utf8 top))
+         (loop for c of-type fixnum across buffer
+               for i of-type fixnum from 0 do
+              (when (and (= (the fixnum c) (the fixnum #x1b)) (&lt; i len))
+                 (let ((c (aref buffer (the fixnum (1+ i)))))
+                   (when (or (= (the fixnum c) (the fixnum #x24))  ; $
+                             (= (the fixnum c) (the fixnum #x28))) ; (
+                     (return-from guess-body :iso-2022-jp))))
+               (process-dfa eucj c :euc-jp    sjis utf8)
+               (process-dfa sjis c :shiftjis  eucj utf8)
+               (process-dfa utf8 c :utf-8     sjis eucj)
+               (when (and (not (dfa-alive eucj)) (not (dfa-alive sjis)) (not (dfa-alive utf8)))
+                 (return nil)))
+         ;; pick highest score
+         (when (dfa-alive eucj)
+           (setf top eucj))
+         (when (dfa-alive utf8)
+           (if top
+               (when (&lt;= (the double-float (score top)) (the double-float (score utf8)))
+                 (setf top utf8))
+               (setf top utf8)))
+         (when (dfa-alive sjis)
+           (if top
+               (when (&lt; (the double-float (score top)) (the double-float (score sjis)))
+                 (setf top sjis))
+               (setf top sjis)))
+         (cond ((eq top eucj) :euc-jp)
+               ((eq top utf8) :utf-8)
+               ((eq top sjis) :shiftjis)
+               (t             nil))))))
+</pre>
+
+
+<p>
+あとはテーブル計算等も Scheme から Common Lisp に移植してできあがり。
+</p>
+<pre class="example">
+(defun test ()
+  (dolist (str '("こんにちは" "地球" "今日はいい天気" "this is a pen."))
+    (dolist (ef #+allegro   '(:euc-jp :shiftjis :utf-8 :jis)
+                #+lispworks '(:euc-jp :shift-jis :utf-8 :jis)
+                #+clisp     '(charset:euc-jp charset:shift-jis charset:utf-8 charset:iso-2022-jp)
+                #+sbcl      '(:euc-jp :sjis :utf-8))
+      (let ((vec #+allegro   (excl:string-to-octets str :external-format ef :null-terminate nil)
+                 #+lispworks (external-format:encode-lisp-string str ef)
+                 #+clisp     (ext:convert-string-to-bytes str ef)
+                 #+sbcl      (sb-ext:string-to-octets str :external-format ef)))
+        (format t "~A =&gt; ~A (~A) =&gt; ~A~%" str vec ef (guess-jp vec))))))
+</pre>
+
+
+<pre class="example">
+[Allegro CL]
+
+こんにちは =&gt; #(164 179 164 243 164 203 164 193 164 207) (EUC-JP) =&gt; EUC-JP
+こんにちは =&gt; #(130 177 130 241 130 201 130 191 130 205) (SHIFTJIS) =&gt; SHIFTJIS
+こんにちは =&gt; #(227 129 147 227 130 147 227 129 171 227 129 161 227 129 175) (UTF-8) =&gt; UTF-8
+こんにちは =&gt; #(27 36 66 36 51 36 115 36 75 36 65 36 79 27 40 66) (JIS) =&gt; JIS
+地球 =&gt; #(195 207 181 229) (EUC-JP) =&gt; EUC-JP
+地球 =&gt; #(146 110 139 133) (SHIFTJIS) =&gt; SHIFTJIS
+地球 =&gt; #(229 156 176 231 144 131) (UTF-8) =&gt; UTF-8
+地球 =&gt; #(27 36 66 67 79 53 101 27 40 66) (JIS) =&gt; JIS
+今日はいい天気 =&gt; #(186 163 198 252 164 207 164 164 164 164 197 183 181 164) (EUC-JP) =&gt; EUC-JP
+今日はいい天気 =&gt; #(141 161 147 250 130 205 130 162 130 162 147 86 139 67) (SHIFTJIS) =&gt; SHIFTJIS
+今日はいい天気 =&gt; #(228 187 138 230 151 165 227 129 175 227 129 132 227 129 132 229 164 169 230 176 151) (UTF-8) =&gt; UTF-8
+今日はいい天気 =&gt; #(27 36 66 58 35 70 124 36 79 36 36 36 36 69 55 53 36 27 40 66) (JIS) =&gt; JIS
+this is a pen. =&gt; #(116 104 105 115 32 105 115 32 97 32 112 101 110 46) (EUC-JP) =&gt; EUC-JP
+this is a pen. =&gt; #(116 104 105 115 32 105 115 32 97 32 112 101 110 46) (SHIFTJIS) =&gt; EUC-JP
+this is a pen. =&gt; #(116 104 105 115 32 105 115 32 97 32 112 101 110 46) (UTF-8) =&gt; EUC-JP
+this is a pen. =&gt; #(116 104 105 115 32 105 115 32 97 32 112 101 110 46) (JIS) =&gt; EUC-JP
+
+[LispWorks]
+
+こんにちは =&gt; #(164 179 164 243 164 203 164 193 164 207) (EUC-JP) =&gt; EUC-JP
+こんにちは =&gt; #(130 177 130 241 130 201 130 191 130 205) (SHIFT-JIS) =&gt; SHIFTJIS
+こんにちは =&gt; #(227 129 147 227 130 147 227 129 171 227 129 161 227 129 175) (UTF-8) =&gt; UTF-8
+こんにちは =&gt; #(27 36 66 36 51 36 115 36 75 36 65 36 79 27 40 74) (JIS) =&gt; JIS
+地球 =&gt; #(195 207 181 229) (EUC-JP) =&gt; EUC-JP
+地球 =&gt; #(146 110 139 133) (SHIFT-JIS) =&gt; SHIFTJIS
+地球 =&gt; #(229 156 176 231 144 131) (UTF-8) =&gt; UTF-8
+地球 =&gt; #(27 36 66 67 79 53 101 27 40 74) (JIS) =&gt; JIS
+今日はいい天気 =&gt; #(186 163 198 252 164 207 164 164 164 164 197 183 181 164) (EUC-JP) =&gt; EUC-JP
+今日はいい天気 =&gt; #(141 161 147 250 130 205 130 162 130 162 147 86 139 67) (SHIFT-JIS) =&gt; SHIFTJIS
+今日はいい天気 =&gt; #(228 187 138 230 151 165 227 129 175 227 129 132 227 129 132 229 164 169 230 176 151) (UTF-8) =&gt; UTF-8
+今日はいい天気 =&gt; #(27 36 66 58 35 70 124 36 79 36 36 36 36 69 55 53 36 27 40 74) (JIS) =&gt; JIS
+this is a pen. =&gt; #(116 104 105 115 32 105 115 32 97 32 112 101 110 46) (EUC-JP) =&gt; EUC-JP
+this is a pen. =&gt; #(116 104 105 115 32 105 115 32 97 32 112 101 110 46) (SHIFT-JIS) =&gt; EUC-JP
+this is a pen. =&gt; #(116 104 105 115 32 105 115 32 97 32 112 101 110 46) (UTF-8) =&gt; EUC-JP
+this is a pen. =&gt; #(116 104 105 115 32 105 115 32 97 32 112 101 110 46) (JIS) =&gt; EUC-JP
+
+[GNU CLISP]
+
+こんにちは =&gt; #(164 179 164 243 164 203 164 193 164 207) (EUC-JP) =&gt; EUC-JP
+こんにちは =&gt; #(130 177 130 241 130 201 130 191 130 205) (SHIFT-JIS) =&gt; SHIFTJIS
+こんにちは =&gt; #(227 129 147 227 130 147 227 129 171 227 129 161 227 129 175) (UTF-8) =&gt; UTF-8
+こんにちは =&gt; #(27 36 66 36 51 36 115 36 75 36 65 36 79 27 40 66) (ISO-2022-JP) =&gt; ISO-2022-JP
+地球 =&gt; #(195 207 181 229) (EUC-JP) =&gt; EUC-JP
+地球 =&gt; #(146 110 139 133) (SHIFT-JIS) =&gt; SHIFTJIS
+地球 =&gt; #(229 156 176 231 144 131) (UTF-8) =&gt; UTF-8
+地球 =&gt; #(27 36 66 67 79 53 101 27 40 66) (ISO-2022-JP) =&gt; ISO-2022-JP
+今日はいい天気 =&gt; #(186 163 198 252 164 207 164 164 164 164 197 183 181 164) (EUC-JP) =&gt; EUC-JP
+今日はいい天気 =&gt; #(141 161 147 250 130 205 130 162 130 162 147 86 139 67) (SHIFT-JIS) =&gt; SHIFTJIS
+今日はいい天気 =&gt; #(228 187 138 230 151 165 227 129 175 227 129 132 227 129 132 229 164 169 230 176 151) (UTF-8) =&gt; UTF-8
+今日はいい天気 =&gt; #(27 36 66 58 35 70 124 36 79 36 36 36 36 69 55 53 36 27 40 66) (ISO-2022-JP) =&gt; ISO-2022-JP
+this is a pen. =&gt; #(116 104 105 115 32 105 115 32 97 32 112 101 110 46) (EUC-JP) =&gt; EUC-JP
+this is a pen. =&gt; #(116 104 105 115 32 105 115 32 97 32 112 101 110 46) (SHIFT-JIS) =&gt; EUC-JP
+this is a pen. =&gt; #(116 104 105 115 32 105 115 32 97 32 112 101 110 46) (UTF-8) =&gt; EUC-JP
+this is a pen. =&gt; #(116 104 105 115 32 105 115 32 97 32 112 101 110 46) (ISO-2022-JP) =&gt; EUC-JP
+
+[SBCL]
+
+こんにちは =&gt; #(164 179 164 243 164 203 164 193 164 207) (EUC-JP) =&gt; EUC-JP
+こんにちは =&gt; #(130 177 130 241 130 201 130 191 130 205) (SJIS) =&gt; SJIS
+こんにちは =&gt; #(227 129 147 227 130 147 227 129 171 227 129 161 227 129 175) (UTF-8) =&gt; UTF-8
+地球 =&gt; #(195 207 181 229) (EUC-JP) =&gt; EUC-JP
+地球 =&gt; #(146 110 139 133) (SJIS) =&gt; SJIS
+地球 =&gt; #(229 156 176 231 144 131) (UTF-8) =&gt; UTF-8
+今日はいい天気 =&gt; #(186 163 198 252 164 207 164 164 164 164 197 183 181 164) (EUC-JP) =&gt; EUC-JP
+今日はいい天気 =&gt; #(141 161 147 250 130 205 130 162 130 162 147 86 139 67) (SJIS) =&gt; SJIS
+今日はいい天気 =&gt; #(228 187 138 230 151 165 227 129 175 227 129 132 227 129 132 229 164 169 230 176 151) (UTF-8) =&gt; UTF-8
+this is a pen. =&gt; #(116 104 105 115 32 105 115 32 97 32 112 101 110 46) (EUC-JP) =&gt; EUC-JP
+this is a pen. =&gt; #(116 104 105 115 32 105 115 32 97 32 112 101 110 46) (SJIS) =&gt; EUC-JP
+this is a pen. =&gt; #(116 104 105 115 32 105 115 32 97 32 112 101 110 46) (UTF-8) =&gt; EUC-JP
+</pre>
+
+
+
+</div>
+
+<div id="outline-container-2.1.1" class="outline-4">
+<h4 id="sec-2.1.1">ダウンロード </h4>
+<div class="outline-text-4" id="text-2.1.1">
+
+
+<p>
+<a href="http://lispuser.net/files/guess.tar.gz">http://lispuser.net/files/guess.tar.gz</a>
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2.1.2" class="outline-4">
+<h4 id="sec-2.1.2">応用例 </h4>
+<div class="outline-text-4" id="text-2.1.2">
+
+
+<p>
+文字エンコーディングを自動判定できると何がうれしいか？
+まず、ファイルのエンコーディングを自動判定して開くという用途も考えられるだろう。
+今の手元の実装だと :external-format に :guess が指定されたら自動で判定して開くというのを使っているが、
+インターフェースはもう少し考えたほうがいいかもしれない。
+</p>
+<pre class="example">
+CL-USER&gt; (guess:with-open-file (s :direction :input :external-format :guess)
+           ....
+</pre>
+
+
+<p>
+ファイルのエンコーデイング判定は、次のように一部分をバッファに読み込んで判定すると良いだろう。
+ファイルのパス情報から判定を切り替えるのも良いかもしれないし、フック可能にしておくという手も考えられる。
+</p>
+<pre class="example">
+(defun guess-file-encoding (path &amp;aux (buffer (make-array 8192 :initial-element 0)))
+   (declare (dynamic-extent buffer))
+   (with-open-file (s path :direction :input :element-type '(unsigned-byte 8))
+     (read-sequence buffer s :partial-fill t)
+     (ces-guess-from-vector buffer :JP)))
+</pre>
+
+
+
+<p>
+また、HTTP クライアントと組み合わせて使う場合にはとりあえずバイナリで取得してエンコーディングを判定して文字列にすることができる。
+</p>
+<pre class="example">
+CL-USER&gt; (net.aserve.client:do-http-request "http://lispuser.net/index.html" :format :binary)
+#(60 63 120 109 108 32 118 101 114 115 105 111 110 61 34 49 46 48 34 32
+  101 110 99 111 100 105 110 103 61 34 117 116 102 45 56 34 32 63 62 10
+  ...
+  51 32 36 10 60 47 100 105 118 62 10 60 47 98 111 100 121 62 10 60 47
+  104 116 109 108 62 10)
+200
+((:ACCEPT-RANGES . "bytes") (:CONNECTION . "close")
+ (:CONTENT-LENGTH . "6918")
+ (:CONTENT-TYPE . "text/html; charset=UTF-8")
+ (:DATE . "Wed, 08 Aug 2007 14:15:42 GMT")
+ (:ETAG . "\"24f8a1-1b06-46b89854\"")
+ (:LAST-MODIFIED . "Tue, 07 Aug 2007 16:05:40 GMT")
+ (:SERVER . "Apache"))
+#&lt;URI http://lispuser.net/index.html&gt;
+CL-USER&gt; (guess:ces-guess-from-vector * :JP)
+:UTF-8
+CL-USER&gt; (excl:octets-to-string ** :external-format *)
+"&lt;?xml version=\"1.0\" encoding=\"utf-8\" ?&gt;
+&lt;!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"&gt;
+&lt;html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"&gt;
+&lt;head&gt;
+&lt;meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /&gt;
+&lt;meta name=\"generator\" content=\"Docutils 0.3.9: http://docutils.sourceforge.net/\" /&gt;
+&lt;title&gt;LispUser.net&lt;/title&gt;
+&lt;link rel=\"stylesheet\" href=\"files/lispuser.css\" type=\"text/css\" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=\"document\" id=\"lispuser-net\"&gt;
+&lt;h1 class=\"title\"&gt;LispUser.net&lt;/h1&gt;
+&lt;div class=\"section\" id=\"welcome-to-lispuser-net\"&gt;
+&lt;h1&gt;&lt;a name=\"welcome-to-lispuser-net\"&gt;Welcome to LispUser.net&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;日本語による Lisp サイトが少ない事を嘆く Lisp ファンによる Lisp のため
+のサイト．このサイト自体は emacs + docutils でできてまして，たまに
+Python や Perl ネタもまざる予定ですが Lisp の情報サイトを目指しています．&lt;/p&gt;
+&lt;/div&gt;
+...
+&lt;p&gt;御感想，御意見，Lisp 話，Lisp 関連サイトの紹介などは &lt;img alt=\"mailaddress\" src=\"files/mail.gif\" /&gt; までメールしてください．&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=\"footer\"&gt;
+$Last Update: 2007/08/11 10:15:35 $
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"
+5140
+6918
+CL-USER&gt; 
+</pre>
+
+
+<p>
+日本語周りの使用頻度の高い処理や構文、各処理系毎の違いなどを吸収してパッケージにまとめると便利かもしれない。
+スクリプト言語とまではいかなくても C で書くよりは楽になるだろう。たぶん。 <sup><a class="footref" name="fnr.3" href="#fn.3">3</a></sup>
+</p>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2.2" class="outline-3">
+<h3 id="sec-2.2">NKF32.DLL CFFI Binding &ndash; 文字コード判定と変換 </h3>
+<div class="outline-text-3" id="text-2.2">
+
+
+<p>
+<a href="../memo/lisp/2007-08-08-23-53">libcharguess エンコーディングの書き方ネタ</a> のついでに NKF32.DLL の CFFI バインディングを書いてみた。
+</p>
+<pre class="example">
+(nkf:convert "-j" (excl:string-to-octets "日本語" :external-format :euc-jp))
+=&gt; iso-2022-jp でエンコードされた配列が返る
+(nkf:convert "-s" (excl:string-to-octets "日本語" :external-format :euc-jp))
+=&gt; Shift_JIS でエンコードされた配列が返る
+(nkf:convert "-w8" (excl:string-to-octets "日本語" :external-format :euc-jp))
+=&gt; UTF-8 でエンコードされた配列が返る
+</pre>
+
+
+<p>
+とやると、
+</p>
+<pre class="example">
+;;;
+;;; NFK32.DLL binding for CFFI  by Masayuki Onjo &lt;onjo@lispuser.net&gt;
+;;;
+
+(defpackage :nkf (:use :cl :cffi) (:export :version :convert :guess))
+(in-package :nkf)
+
+;;; Define Library
+
+(define-foreign-library libnkf
+  (:unix "nkf.so")
+  (:windows "nkf32.dll"))
+
+(use-foreign-library libnkf)
+
+;;; C Functions
+
+;; BOOL WINAPI GetNkfVersionSafe(LPTSTR verStr,DWORD nBufferLength /*in TCHARs*/,LPDWORD lpTCHARsReturned /*in TCHARs*/);
+;; int CALLBACK CLASS_DECLSPEC SetNkfOption(LPCSTR optStr);
+;;  BOOL WINAPI CLASS_DECLSPEC NkfConvertSafe(LPSTR outStr,DWORD nOutBufferLength /*in Bytes*/,LPDWORD lpBytesReturned /*in Bytes*/, LPCSTR inStr,DWORD nInBufferLength /*in Bytes*/);
+;; BOOL WINAPI CLASS_DECLSPEC GetNkfGuessA(LPWSTR outStr,DWORD nBufferLength /*in TCHARs*/,LPDWORD lpTCHARsReturned /*in TCHARs*/);
+
+(defcfun ("GetNkfVersionSafeA" %get-nkf-version-safe) :int
+  (verStr :string)
+  (nBufferLength :int)
+  (lpTCHARsReturned :pointer))
+
+(defcfun ("SetNkfOption" %set-nfk-option) :int
+  (optStr :string))
+
+(defcfun ("NkfConvertSafe" %nkf-convert-safe) :int
+  (outStr :string)
+  (nBufferLength :long)
+  (lpBytesReturned (:pointer :long))
+  (inStr :string)
+  (nInBufferLength :long))
+
+(defcfun ("GetNkfGuessA" %get-nkf-guess) :int
+  (outStr :string)
+  (nBufferLength :int)
+  (lpTCHARsReturned :pointer))
+
+;;; Lisp level API
+
+(defun version ()
+  "バージョン情報の取得"
+  (with-foreign-objects ((verStr :uchar 256)
+                        (nBufferLength :long)
+                        (lpTCHARsReturned :long))
+    (%get-nkf-version-safe verStr nBufferLength lpTCHARsReturned)
+    (foreign-string-to-lisp verStr (mem-ref lpTCHARsReturned :long))))
+
+(defun convert (option string &amp;optional (size (* 2 (length string))) &amp;aux (len (length string)))
+  "NKF のオプションに沿って文字列エンコーディングを変換"
+  (with-foreign-string (inStr string)
+    (with-foreign-objects ((outStr :uchar size)
+                           (lpBytesReturned :long))
+      (when option
+        (%set-nfk-option option))
+      (%nkf-convert-safe outStr size lpBytesReturned inStr len)
+      (let ((new-size (mem-ref lpBytesReturned :long)))
+        (if (&gt; new-size size)
+            ;; 出力バッファ長不足のためリトライ
+            (convert option string new-size) 
+            ;; バッファ長に収まったのでベクタに戻す
+            (let ((vec (make-array (1- new-size) :element-type '(unsigned-byte 8) :initial-element 0)))
+              (loop for i from 0 below (1- new-size)
+                    do (setf (aref vec i) (mem-ref outStr :uchar i))
+                    finally (return vec))))))))
+
+(defun guess (string)
+  "エンコーディングを推定"
+  (with-foreign-objects ((outStr :uchar 256)
+                        (nBufferLength :long)
+                        (lpTCHARsReturned :long))
+    (convert "-g" string)
+    (%get-nkf-guess outStr nBufferLength lpTCHARsReturned)
+    (foreign-string-to-lisp outStr (mem-ref lpTCHARsReturned :long))))
+</pre>
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2.3" class="outline-3">
+<h3 id="sec-2.3">JP &ndash; 日本語エンコーディング周りの基本機能ラッパー </h3>
+<div class="outline-text-3" id="text-2.3">
+
+
+<p>
+処理系毎に external-format 関連の処理が異なるのを吸収するラッパーライブラリ。
+SBCL は現在 (1.0.8) JIS エンコーディングに対応していないので、iconv のバインディングを使ってごまかす。
+サポートする処理系はとりあえず AllegroCL, LispWorks, SBCL, CLISP のつもり。
+</p>
+
+</div>
+
+<div id="outline-container-2.3.1" class="outline-4">
+<h4 id="sec-2.3.1">問題点 </h4>
+<div class="outline-text-4" id="text-2.3.1">
+
+
+<ol>
+<li>
+パッケージ名
+</li>
+<li>
+iconv 必要か？ SBCL で jis を使うときにのみ使っているが…
+
+</li>
+</ol>
+</div>
+
+</div>
+
+<div id="outline-container-2.3.2" class="outline-4">
+<h4 id="sec-2.3.2">API </h4>
+<div class="outline-text-4" id="text-2.3.2">
+
+
+<pre class="example">
+1. (jp:encode string external-format) =&gt; vector
+   文字列を指定されたエンコーディングの (unsigned-byte 8) ベクタへ変換します。
+
+2. (jp:decode vector external-format) =&gt; string
+   (unsigned-byte 8) ベクタから文字列への変換を行います。
+</pre>
+
+
+<pre class="example">
+   (decode vector :guess) とすると、エンコーディングを推測し、その結果を使って変換します。
+
+3. (jp:guess vector) =&gt; external-format
+   ベクタの文字コードを推定し、external-format を返す。
+</pre>
+
+
+<p>
+サンプル
+~~~~~~~~~
+</p>
+<pre class="example">
+CL-USER&gt; (drakma:http-request "http://lispuser.net/" :force-binary t)
+#(60 63 120 109 108 32 118 101 114 115 105 111 110 61 34 49 46 48 34 32 101 110
+ 99 111 100 105 110 103 61 34 117 116 102 45 56 34 32 63 62 10 60 33 68 79 67
+ 84 89 80 69 32 104 116 109 108 32 80 85 66 76 73 67 32 34 45 47 47 87 51 67
+[...]
+ 111 111 116 101 114 34 62 10 36 76 97 115 116 32 85 112 100 97 116 101 58 32
+ 50 48 48 54 47 49 50 47 51 49 32 50 48 58 48 49 58 49 51 32 36 10 60 47 100
+ 105 118 62 10 60 47 98 111 100 121 62 10 60 47 104 116 109 108 62 10)
+ 200
+((:DATE . "Fri, 10 Aug 2007 16:54:04 GMT") (:SERVER . "Apache")
+(:LAST-MODIFIED . "Tue, 07 Aug 2007 16:05:40 GMT")
+(:ETAG . "\"24f8a1-1b06-46b89854\"") (:ACCEPT-RANGES . "bytes")
+(:CONTENT-LENGTH . "6918") (:CONNECTION . "close")
+(:CONTENT-TYPE . "text/html; charset=UTF-8"))
+#&lt;URI http://lispuser.net&gt;
+#&lt;FLEXI-STREAMS::FLEXI-LATIN-1-IO-STREAM #x22C06406&gt;
+T
+"OK"
+CL-USER&gt; (jp:decode * :guess)
+"&lt;?xml version=\"1.0\" encoding=\"utf-8\" ?&gt;
+&lt;!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"&gt;
+&lt;html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"&gt;
+&lt;head&gt;
+&lt;meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /&gt;
+&lt;meta name=\"generator\" content=\"Docutils 0.3.9: http://docutils.sourceforge.net/\" /&gt;
+&lt;title&gt;LispUser.net&lt;/title&gt;
+&lt;link rel=\"stylesheet\" href=\"files/lispuser.css\" type=\"text/css\" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=\"document\" id=\"lispuser-net\"&gt;
+&lt;h1 class=\"title\"&gt;LispUser.net&lt;/h1&gt;
+&lt;div class=\"section\" id=\"welcome-to-lispuser-net\"&gt;
+&lt;h1&gt;&lt;a name=\"welcome-to-lispuser-net\"&gt;Welcome to LispUser.net&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;日本語による Lisp サイトが少ない事を嘆く Lisp ファンによる Lisp のため
+のサイト．このサイト自体は emacs + docutils でできてまして，たまに
+Python や Perl ネタもまざる予定ですが Lisp の情報サイトを目指しています．&lt;/p&gt;
+&lt;/div&gt;
+[...]
+/ol&gt;
+&lt;p&gt;御感想，御意見，Lisp 話，Lisp 関連サイトの紹介などは &lt;img alt=\"mailaddress\" src=\"files/mail.gif\" /&gt; までメールしてください．&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=\"footer\"&gt;
+$Last Update: 2006/12/31 20:01:13 $
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"
+CL-USER&gt; 
+</pre>
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2.3.3" class="outline-4">
+<h4 id="sec-2.3.3">ダウンロード </h4>
+<div class="outline-text-4" id="text-2.3.3">
+
+
+<p>
+<a href="http://lispuser.net/files/jp.tar.gz">http://lispuser.net/files/jp.tar.gz</a>
+</p>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2.4" class="outline-3">
+<h3 id="sec-2.4">MECAB CFFI Binding &ndash; 日本語形態素解析ライブラリ </h3>
+<div class="outline-text-3" id="text-2.4">
+
+
+<p>
+JP ライブラリのテストも兼ねて形態素解析ライブラリの定番 MeCab の CFFI バインディング。
+</p>
+
+</div>
+
+<div id="outline-container-2.4.1" class="outline-4">
+<h4 id="sec-2.4.1">API </h4>
+<div class="outline-text-4" id="text-2.4.1">
+
+
+<p>
+sparse-tostr string : 文字列を形態素解析します
+</p>
+<pre class="example">
+CL-USER&gt; (mecab:sparse-tostr "めかぶは日本語文字列を形態素解析するためのライブラリです。")
+</pre>
+
+<p>(("め" :PROP ("名詞" "一般" "*" "*" "*" "*" "め" "メ" "メ"))
+</p><pre class="example">
+("かぶ" :PROP ("動詞" "自立" "*" "*" "五段・ラ行" "体言接続特殊２" "かぶる" "カブ" "カブ"))
+("は" :PROP ("助詞" "係助詞" "*" "*" "*" "*" "は" "ハ" "ワ"))
+("日本語" :PROP ("名詞" "一般" "*" "*" "*" "*" "日本語" "ニホンゴ" "ニホンゴ"))
+("文字" :PROP ("名詞" "一般" "*" "*" "*" "*" "文字" "モジ" "モジ"))
+("列" :PROP ("名詞" "一般" "*" "*" "*" "*" "列" "レツ" "レツ"))
+("を" :PROP ("助詞" "格助詞" "一般" "*" "*" "*" "を" "ヲ" "ヲ"))
+("形態素" :PROP ("名詞" "一般" "*" "*" "*" "*" "形態素" "ケイタイソ" "ケイタイソ"))
+("解析" :PROP ("名詞" "サ変接続" "*" "*" "*" "*" "解析" "カイセキ" "カイセキ"))
+("する" :PROP ("動詞" "自立" "*" "*" "サ変・スル" "基本形" "する" "スル" "スル"))
+("ため" :PROP ("名詞" "非自立" "副詞可能" "*" "*" "*" "ため" "タメ" "タメ"))
+("の" :PROP ("助詞" "連体化" "*" "*" "*" "*" "の" "ノ" "ノ"))
+("ライブラリ" :PROP ("名詞" "一般" "*" "*" "*" "*" "ライブラリ" "ライブラリ" "ライブラリ"))
+("です" :PROP ("助動詞" "*" "*" "*" "特殊・デス" "基本形" "です" "デス" "デス"))
+("。" :PROP ("記号" "句点" "*" "*" "*" "*" "。" "。" "。")))
+</pre>
+
+
+
+<p>
+wakati string : 文字列をわかち書きした結果を文字列のリストで返します。
+</p>
+<pre class="example">
+CL-USER&gt; (mecab:wakati "めかぶは日本語文字列を形態素解析するためのライブラリです。")
+("め" "かぶ" "は" "日本語" "文字" "列" "を" "形態素" "解析" "する" "ため" "の" "ライブラリ" "です" "。")
+</pre>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2.4.2" class="outline-4">
+<h4 id="sec-2.4.2">ダウンロード </h4>
+<div class="outline-text-4" id="text-2.4.2">
+
+
+<p>
+<a href="http://lispuser.net/files/mecab.tar.gz">http://lispuser.net/files/mecab.tar.gz</a>
+</p>
+<p>
+$Last Update: 2007/08/12 1:15:35 $
+</p>
+<pre class="example">
+日本語をサポートしているなら、この値は 65536 以上である場合が多いからだ。
+   
+      CL-USER&gt; char-code-limit
+      65536
+</pre>
+
+
+<pre class="example">
+現在のほとんどの実装では英数字に関しては ASCII 互換を期待してもよいだろう。マルチバイト文字に関しては処理系の内部エンコーディングに
+依存するため一般的な事はいえない。
+</pre>
+
+
+
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+<p class="footnote"><sup><a class="footnum" name="fn.1" href="#fnr.1">1</a></sup> 使っている処理系が日本語をサポートしているかどうかの目安としては、code-char-limit 変数の値を見るという方法がある。
+</p>
+<p class="footnote"><sup><a class="footnum" name="fn.2" href="#fnr.2">2</a></sup> char-code, code-char は ASCII 範囲は ASCII コード互換である事が多い。規格では ASCII 互換である事を要求はしていないが、
+</p>
+<p class="footnote"><sup><a class="footnum" name="fn.3" href="#fnr.3">3</a></sup> たとえば JP パッケージとして、jp:string-to-octets,  jp:octets-to-string, jp:guess-encoding, jp:with-open-file を用意するとか？
+</p>
+</div>
+</div>
+</div><div class="footer"><p>Powered by Emacs + OrgMode</p></div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." :
+"http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-5686992-1");
+pageTracker._trackPageview();
+</script>
+</div>
+</body>
+</html>

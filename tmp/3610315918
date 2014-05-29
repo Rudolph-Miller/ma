@@ -1,0 +1,2985 @@
+<!DOCTYPE html>
+<html class='v2' dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/>
+<meta content='width=1100' name='viewport'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<script type="text/javascript">(function() { var b=window,f="chrome",g="jstiming",k="tick";(function(){function d(a){this.t={};this.tick=function(a,d,c){var e=void 0!=c?c:(new Date).getTime();this.t[a]=[e,d];if(void 0==c)try{b.console.timeStamp("CSI/"+a)}catch(h){}};this[k]("start",null,a)}var a;b.performance&&(a=b.performance.timing);var n=a?new d(a.responseStart):new d;b.jstiming={Timer:d,load:n};if(a){var c=a.navigationStart,h=a.responseStart;0<c&&h>=c&&(b[g].srt=h-c)}if(a){var e=b[g].load;0<c&&h>=c&&(e[k]("_wtsrt",void 0,c),e[k]("wtsrt_","_wtsrt",h),e[k]("tbsd_","wtsrt_"))}try{a=null,
+b[f]&&b[f].csi&&(a=Math.floor(b[f].csi().pageT),e&&0<c&&(e[k]("_tbnd",void 0,b[f].csi().startE),e[k]("tbnd_","_tbnd",c))),null==a&&b.gtbExternal&&(a=b.gtbExternal.pageT()),null==a&&b.external&&(a=b.external.pageT,e&&0<c&&(e[k]("_tbnd",void 0,b.external.startE),e[k]("tbnd_","_tbnd",c))),a&&(b[g].pt=a)}catch(p){}})();b.tickAboveFold=function(d){var a=0;if(d.offsetParent){do a+=d.offsetTop;while(d=d.offsetParent)}d=a;750>=d&&b[g].load[k]("aft")};var l=!1;function m(){l||(l=!0,b[g].load[k]("firstScrollTime"))}b.addEventListener?b.addEventListener("scroll",m,!1):b.attachEvent("onscroll",m);
+ })();</script>
+<meta content='blogger' name='generator'/>
+<link href='http://modern-cl.blogspot.jp/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://modern-cl.blogspot.com/' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Modern Common Lisp - Atom" href="http://modern-cl.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Modern Common Lisp - RSS" href="http://modern-cl.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Modern Common Lisp - Atom" href="http://www.blogger.com/feeds/5582672144555408512/posts/default" />
+<link rel="openid.server" href="http://www.blogger.com/openid-server.g" />
+<link rel="openid.delegate" href="http://modern-cl.blogspot.com/" />
+<!--[if IE]><script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/2240003346-ieretrofit.js"></script>
+<![endif]-->
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>Modern Common Lisp</title>
+<!-- PrettyPrint -->
+<link href='http://e-arrows.sakura.ne.jp/syntax/prettify.css' rel='stylesheet' type='text/css'/>
+<script src='http://e-arrows.sakura.ne.jp/syntax/prettify.js' type='text/javascript'></script>
+<script src='http://e-arrows.sakura.ne.jp/syntax/lang-lisp.js' type='text/javascript'></script>
+<script type='text/javascript'>
+  //<![CDATA[
+  window.onload = prettyPrint;
+  //]]>
+</script>
+<!-- Blogger Archive Calendar -->
+<script type='text/javascript'>
+//<![CDATA[
+
+var bcLoadingImage = "http://phydeauxredux.googlepages.com/loading-trans.gif";
+var bcLoadingMessage = " Loading....";
+var bcArchiveNavText = "View Archive";
+var bcArchiveNavPrev = '&#9668;';
+var bcArchiveNavNext = '&#9658;';
+var headDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var headInitial = ["Su","Mo","Tu","We","Th","Fr","Sa"];
+
+// Nothing to configure past this point ----------------------------------
+var timeOffset;
+var bcBlogID;
+var calMonth;
+var calDay = 1;
+var calYear;
+var startIndex;
+var callmth;
+var bcNav = new Array ();
+var bcList = new Array ();
+
+//Initialize Fill Array
+var fill = ["","31","28","31","30","31","30","31","31","30","31","30","31"];
+function openStatus(){
+   document.getElementById('calLoadingStatus').style.display = 'block';
+   document.getElementById('calendarDisplay').innerHTML = '';
+  }
+function closeStatus(){
+   document.getElementById('calLoadingStatus').style.display = 'none';
+  }
+function bcLoadStatus(){
+   cls = document.getElementById('calLoadingStatus');
+   img = document.createElement('img');
+   img.src = bcLoadingImage;
+   img.style.verticalAlign = 'middle';
+   cls.appendChild(img);
+   txt = document.createTextNode(bcLoadingMessage);
+   cls.appendChild(txt);
+  }
+function callArchive(mth,yr,nav){
+// Check for Leap Years
+  if (((yr % 4 == 0) && (yr % 100 != 0)) || (yr % 400 == 0)) {
+      fill[2] = '29';
+   }
+  else {
+      fill[2] = '28';
+   }
+   calMonth = mth;
+   calYear = yr;
+   if(mth.charAt(0) == 0){
+      calMonth = mth.substring(1);
+      }
+   callmth = mth;
+   bcNavAll = document.getElementById('bcFootAll');
+   bcNavPrev = document.getElementById('bcFootPrev');
+   bcNavNext = document.getElementById('bcFootNext');
+   bcSelect = document.getElementById('bcSelection');
+   a = document.createElement('a');
+   at = document.createTextNode(bcArchiveNavText);
+   a.href = bcNav[nav];
+   a.appendChild(at);
+   bcNavAll.innerHTML = '';
+   bcNavAll.appendChild(a);
+   bcNavPrev.innerHTML = '';
+   bcNavNext.innerHTML = '';
+   if(nav <  bcNav.length -1){
+      a = document.createElement('a');
+      a.innerHTML = bcArchiveNavPrev;
+      bcp = parseInt(nav,10) + 1;
+      a.href = bcNav[bcp];
+      a.title = 'Previous Archive';
+      prevSplit = bcList[bcp].split(',');
+      a.onclick = function(){bcSelect.options[bcp].selected = true;openStatus();callArchive(prevSplit[0],prevSplit[1],prevSplit[2]);return false;};
+      bcNavPrev.appendChild(a);
+      }
+   if(nav > 0){
+      a = document.createElement('a');
+      a.innerHTML = bcArchiveNavNext;
+      bcn = parseInt(nav,10) - 1;
+      a.href = bcNav[bcn];
+      a.title = 'Next Archive';
+      nextSplit = bcList[bcn].split(',');
+      a.onclick = function(){bcSelect.options[bcn].selected = true;openStatus();callArchive(nextSplit[0],nextSplit[1],nextSplit[2]);return false;};
+      bcNavNext.appendChild(a);
+     }
+   script = document.createElement('script');
+   script.src = 'http://www.blogger.com/feeds/'+bcBlogId+'/posts/summary?published-max='+calYear+'-'+callmth+'-'+fill[calMonth]+'T23%3A59%3A59'+timeOffset+'&published-min='+calYear+'-'+callmth+'-01T00%3A00%3A00'+timeOffset+'&max-results=100&orderby=published&alt=json-in-script&callback=cReadArchive';
+   document.getElementsByTagName('head')[0].appendChild(script);
+}
+
+function cReadArchive(root){
+// Check for Leap Years
+  if (((calYear % 4 == 0) && (calYear % 100 != 0)) || (calYear % 400 == 0)) {
+      fill[2] = '29';
+   }
+  else {
+      fill[2] = '28';
+   }
+    closeStatus();
+    document.getElementById('lastRow').style.display = 'none';
+    calDis = document.getElementById('calendarDisplay');
+    var feed = root.feed;
+    var total = feed.openSearch$totalResults.$t;
+    var entries = feed.entry || [];
+    var fillDate = new Array();
+    var fillTitles = new Array();
+    fillTitles.length = 32;
+    var ul = document.createElement('ul');
+    ul.id = 'calendarUl';
+    for (var i = 0; i < feed.entry.length; ++i) {
+      var entry = feed.entry[i];
+      for (var j = 0; j < entry.link.length; ++j) {
+       if (entry.link[j].rel == "alternate") {
+       var link = entry.link[j].href;
+       }
+      }
+      var title = entry.title.$t;
+      var author = entry.author[0].name.$t;
+      var date = entry.published.$t;
+      var summary = entry.summary.$t;
+      isPublished = date.split('T')[0].split('-')[2];
+      if(isPublished.charAt(0) == '0'){
+         isPublished = isPublished.substring(1);
+         }
+      fillDate.push(isPublished);
+      if (fillTitles[isPublished]){
+          fillTitles[isPublished] = fillTitles[isPublished] + ' | ' + title;
+          }
+      else {
+          fillTitles[isPublished] = title;
+          }
+      li = document.createElement('li');
+      li.style.listType = 'none';
+      li.innerHTML = '<a href="'+link+'">'+title+'</a>';
+      ul.appendChild(li);
+
+      }
+   calDis.appendChild(ul);
+   var val1 = parseInt(calDay, 10)
+   var valxx = parseInt(calMonth, 10);
+   var val2 = valxx - 1;
+   var val3 = parseInt(calYear, 10);
+   var firstCalDay = new Date(val3,val2,1);
+   var val0 = firstCalDay.getDay();
+   startIndex = val0 + 1;
+  var dayCount = 1;
+  for (x =1; x < 38; x++){
+      var cell = document.getElementById('cell'+x);
+      if( x < startIndex){
+          cell.innerHTML = ' ';
+          cell.className = 'firstCell';
+         }
+      if( x >= startIndex){
+          cell.innerHTML = dayCount;
+          cell.className = 'filledCell';
+          for(p = 0; p < fillDate.length; p++){
+              if(dayCount == fillDate[p]){
+                  if(fillDate[p].length == 1){
+                     fillURL = '0'+fillDate[p];
+                     }
+                  else {
+                     fillURL = fillDate[p];
+                     }
+                  cell.className = 'highlightCell';
+                  cell.innerHTML = '<a href="/search?updated-max='+calYear+'-'+callmth+'-'+fillURL+'T23%3A59%3A59'+timeOffset+'&updated-min='+calYear+'-'+callmth+'-'+fillURL+'T00%3A00%3A00'+timeOffset+'" title="'+fillTitles[fillDate[p]].replace(/"/g,'\'')+'">'+dayCount+'</a>';
+                 }
+              }
+          if( dayCount > fill[valxx]){
+             cell.innerHTML = ' ';
+             cell.className = 'emptyCell';  
+             }
+          dayCount++;  
+         }
+      }
+    visTotal = parseInt(startIndex) + parseInt(fill[valxx]) -1;
+    if(visTotal >35){
+        document.getElementById('lastRow').style.display = '';
+       }
+  }
+
+function initCal(){
+   document.getElementById('blogger_calendar').style.display = 'block';
+   var bcInit = document.getElementById('bloggerCalendarList').getElementsByTagName('a');
+   var bcCount = document.getElementById('bloggerCalendarList').getElementsByTagName('li');
+   document.getElementById('bloggerCalendarList').style.display = 'none';
+   calHead = document.getElementById('bcHead');
+   tr = document.createElement('tr');
+   for(t = 0; t < 7; t++){
+       th = document.createElement('th');
+       th.abbr = headDays[t];
+       scope = 'col';
+       th.title = headDays[t];
+       th.innerHTML = headInitial[t];
+       tr.appendChild(th);
+      }
+   calHead.appendChild(tr);
+  for (x = 0; x <bcInit.length;x++){
+     var stripYear= bcInit[x].href.split('_')[0].split('/')[3];
+     var stripMonth = bcInit[x].href.split('_')[1];
+     bcList.push(stripMonth + ','+ stripYear + ',' + x);
+     bcNav.push(bcInit[x].href);
+     }
+  var sel = document.createElement('select');
+  sel.id = 'bcSelection';
+  sel.onchange = function(){var cSend = this.options[this.selectedIndex].value.split(',');openStatus();callArchive(cSend[0],cSend[1],cSend[2]);};
+  q = 0;
+  for (r = 0; r <bcList.length; r++){
+       var selText = bcInit[r].innerHTML;
+       var selCount = bcCount[r].innerHTML.split('> (')[1];
+       var selValue = bcList[r];
+       sel.options[q] = new Option(selText + ' ('+selCount,selValue);
+       q++
+       }                    
+   document.getElementById('bcaption').appendChild(sel);
+   var m = bcList[0].split(',')[0];
+   var y = bcList[0].split(',')[1];
+   callArchive(m,y,'0');
+ }
+
+function timezoneSet(root){
+   var feed = root.feed;
+   var updated = feed.updated.$t;
+   var id = feed.id.$t;
+   bcBlogId = id.split('blog-')[1];
+   upLength = updated.length;
+   if(updated.charAt(upLength-1) == "Z"){timeOffset = "+00:00";}
+   else {timeOffset = updated.substring(upLength-6,upLength);}
+   timeOffset = encodeURIComponent(timeOffset);
+}
+
+//]]>
+</script>
+<script src='/feeds/posts/summary?max-results=0&alt=json-in-script&callback=timezoneSet'></script>
+<!-- End Blogger Archive Calendar -->
+<script type="text/javascript">
+if (navigator.userAgent.indexOf('MSIE 6') == -1) {
+  WebFontConfig = {
+    google: { families: [ 'Molengo' ],
+    api: '//themes.googleusercontent.com/fonts/css?kit=Gw4SvReGr3T7mvOiFQ43wg'
+    },
+    loading: function() {
+      if (window.jstiming) window.jstiming.load.tick('webfontLoading');
+    },
+    active: function() {
+      if (window.jstiming) window.jstiming.load.tick('webfontActive');
+    }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = '//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+} else {
+  document.documentElement.className = 'wf-inactive';
+}
+</script>
+<style type="text/css">
+.wf-inactive .header h1, .wf-molengo-n4-loading .header h1, .wf-molengo-n4-inactive .header h1 {
+  font-family: sans-serif;
+}
+</style>
+<link type='text/css' rel='stylesheet' href='https://www.blogger.com/static/v1/widgets/1535467126-widget_css_2_bundle.css' />
+<link type='text/css' rel='stylesheet' href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=5582672144555408512&zx=766ed398-252a-4e8a-b23b-9157e84e531d' />
+<style id='page-skin-1' type='text/css'><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Awesome Inc.
+Designer: Tina Chen
+URL:      tinachen.org
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="keycolor" description="Main Color" type="color" default="#ffffff"/>
+<Group description="Page" selector="body">
+<Variable name="body.font" description="Font" type="font"
+default="normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="body.background.color" description="Background Color" type="color" default="#000000"/>
+<Variable name="body.text.color" description="Text Color" type="color" default="#ffffff"/>
+</Group>
+<Group description="Links" selector=".main-inner">
+<Variable name="link.color" description="Link Color" type="color" default="#888888"/>
+<Variable name="link.visited.color" description="Visited Color" type="color" default="#444444"/>
+<Variable name="link.hover.color" description="Hover Color" type="color" default="#cccccc"/>
+</Group>
+<Group description="Blog Title" selector=".header h1">
+<Variable name="header.font" description="Title Font" type="font"
+default="normal bold 40px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="header.text.color" description="Title Color" type="color" default="#333333" />
+<Variable name="header.background.color" description="Header Background" type="color" default="transparent" />
+</Group>
+<Group description="Blog Description" selector=".header .description">
+<Variable name="description.font" description="Font" type="font"
+default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="description.text.color" description="Text Color" type="color"
+default="#333333" />
+</Group>
+<Group description="Tabs Text" selector=".tabs-inner .widget li a">
+<Variable name="tabs.font" description="Font" type="font"
+default="normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="tabs.text.color" description="Text Color" type="color" default="#333333"/>
+<Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="#333333"/>
+</Group>
+<Group description="Tabs Background" selector=".tabs-outer .PageList">
+<Variable name="tabs.background.color" description="Background Color" type="color" default="#141414"/>
+<Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="#444444"/>
+<Variable name="tabs.border.color" description="Border Color" type="color" default="#aab122"/>
+</Group>
+<Group description="Date Header" selector=".main-inner .widget h2.date-header, .main-inner .widget h2.date-header span">
+<Variable name="date.font" description="Font" type="font"
+default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="date.text.color" description="Text Color" type="color" default="#666666"/>
+<Variable name="date.border.color" description="Border Color" type="color" default="#aab122"/>
+</Group>
+<Group description="Post Title" selector="h3.post-title, h4, h3.post-title a">
+<Variable name="post.title.font" description="Font" type="font"
+default="normal bold 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="post.title.text.color" description="Text Color" type="color" default="#333333"/>
+</Group>
+<Group description="Post Background" selector=".post">
+<Variable name="post.background.color" description="Background Color" type="color" default="#fefdfa" />
+<Variable name="post.border.color" description="Border Color" type="color" default="#aab122" />
+<Variable name="post.border.bevel.color" description="Bevel Color" type="color" default="#aab122"/>
+</Group>
+<Group description="Gadget Title" selector="h2">
+<Variable name="widget.title.font" description="Font" type="font"
+default="normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="widget.title.text.color" description="Text Color" type="color" default="#333333"/>
+</Group>
+<Group description="Gadget Text" selector=".sidebar .widget">
+<Variable name="widget.font" description="Font" type="font"
+default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="widget.text.color" description="Text Color" type="color" default="#333333"/>
+<Variable name="widget.alternate.text.color" description="Alternate Color" type="color" default="#666666"/>
+</Group>
+<Group description="Gadget Links" selector=".sidebar .widget">
+<Variable name="widget.link.color" description="Link Color" type="color" default="#d52932"/>
+<Variable name="widget.link.visited.color" description="Visited Color" type="color" default="#7d171d"/>
+<Variable name="widget.link.hover.color" description="Hover Color" type="color" default="#d52932"/>
+</Group>
+<Group description="Gadget Background" selector=".sidebar .widget">
+<Variable name="widget.background.color" description="Background Color" type="color" default="#141414"/>
+<Variable name="widget.border.color" description="Border Color" type="color" default="#222222"/>
+<Variable name="widget.border.bevel.color" description="Bevel Color" type="color" default="#000000"/>
+</Group>
+<Group description="Sidebar Background" selector=".column-left-inner .column-right-inner">
+<Variable name="widget.outer.background.color" description="Background Color" type="color" default="transparent" />
+</Group>
+<Group description="Images" selector=".main-inner">
+<Variable name="image.background.color" description="Background Color" type="color" default="transparent"/>
+<Variable name="image.border.color" description="Border Color" type="color" default="transparent"/>
+</Group>
+<Group description="Feed" selector=".blog-feeds">
+<Variable name="feed.text.color" description="Text Color" type="color" default="#333333"/>
+</Group>
+<Group description="Feed Links" selector=".blog-feeds">
+<Variable name="feed.link.color" description="Link Color" type="color" default="#d52932"/>
+<Variable name="feed.link.visited.color" description="Visited Color" type="color" default="#7d171d"/>
+<Variable name="feed.link.hover.color" description="Hover Color" type="color" default="#d52932"/>
+</Group>
+<Group description="Pager" selector=".blog-pager">
+<Variable name="pager.background.color" description="Background Color" type="color" default="#fefdfa" />
+</Group>
+<Group description="Footer" selector=".footer-outer">
+<Variable name="footer.background.color" description="Background Color" type="color" default="#fefdfa" />
+<Variable name="footer.text.color" description="Text Color" type="color" default="#333333" />
+</Group>
+<Variable name="title.shadow.spread" description="Title Shadow" type="length" default="-1px"/>
+<Variable name="body.background" description="Body Background" type="background"
+color="#fcfbf5"
+default="$(color) none repeat scroll top left"/>
+<Variable name="body.background.gradient.cap" description="Body Gradient Cap" type="url"
+default="none"/>
+<Variable name="body.background.size" description="Body Background Size" type="string" default="auto"/>
+<Variable name="tabs.background.gradient" description="Tabs Background Gradient" type="url"
+default="none"/>
+<Variable name="header.background.gradient" description="Header Background Gradient" type="url" default="none" />
+<Variable name="header.padding.top" description="Header Top Padding" type="length" default="22px" />
+<Variable name="header.margin.top" description="Header Top Margin" type="length" default="0" />
+<Variable name="header.margin.bottom" description="Header Bottom Margin" type="length" default="0" />
+<Variable name="widget.padding.top" description="Widget Padding Top" type="length" default="8px" />
+<Variable name="widget.padding.side" description="Widget Padding Side" type="length" default="15px" />
+<Variable name="widget.outer.margin.top" description="Widget Top Margin" type="length" default="0" />
+<Variable name="widget.outer.background.gradient" description="Gradient" type="url" default="none" />
+<Variable name="widget.border.radius" description="Gadget Border Radius" type="length" default="0" />
+<Variable name="outer.shadow.spread" description="Outer Shadow Size" type="length" default="0" />
+<Variable name="date.header.border.radius.top" description="Date Header Border Radius Top" type="length" default="0" />
+<Variable name="date.header.position" description="Date Header Position" type="length" default="15px" />
+<Variable name="date.space" description="Date Space" type="length" default="30px" />
+<Variable name="date.position" description="Date Float" type="string" default="static" />
+<Variable name="date.padding.bottom" description="Date Padding Bottom" type="length" default="0" />
+<Variable name="date.border.size" description="Date Border Size" type="length" default="0" />
+<Variable name="date.background" description="Date Background" type="background" color="transparent"
+default="$(color) none no-repeat scroll top left" />
+<Variable name="date.first.border.radius.top" description="Date First top radius" type="length" default="5px" />
+<Variable name="date.last.space.bottom" description="Date Last Space Bottom" type="length"
+default="20px" />
+<Variable name="date.last.border.radius.bottom" description="Date Last bottom radius" type="length" default="5px" />
+<Variable name="post.first.padding.top" description="First Post Padding Top" type="length" default="0" />
+<Variable name="image.shadow.spread" description="Image Shadow Size" type="length" default="0"/>
+<Variable name="image.border.radius" description="Image Border Radius" type="length" default="0"/>
+<Variable name="separator.outdent" description="Separator Outdent" type="length" default="15px" />
+<Variable name="title.separator.border.size" description="Widget Title Border Size" type="length" default="1px" />
+<Variable name="list.separator.border.size" description="List Separator Border Size" type="length" default="1px" />
+<Variable name="shadow.spread" description="Shadow Size" type="length" default="0"/>
+<Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left"/>
+<Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right"/>
+<Variable name="date.side" description="Side where date header is placed" type="string" default="right"/>
+<Variable name="pager.border.radius.top" description="Pager Border Top Radius" type="length" default="5px" />
+<Variable name="pager.space.top" description="Pager Top Space" type="length" default="1em" />
+<Variable name="footer.background.gradient" description="Background Gradient" type="url" default="none" />
+<Variable name="mobile.background.size" description="Mobile Background Size" type="string"
+default="auto"/>
+<Variable name="mobile.background.overlay" description="Mobile Background Overlay" type="string"
+default="transparent none repeat scroll top left"/>
+<Variable name="mobile.button.color" description="Mobile Button Color" type="color" default="#ffffff" />
+*/
+/* Content
+----------------------------------------------- */
+body {
+font: normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #333333;
+background: #fcfbf5 none repeat scroll top left;
+}
+html body .content-outer {
+min-width: 0;
+max-width: 100%;
+width: 100%;
+}
+a:link {
+text-decoration: none;
+color: #d52932;
+}
+a:visited {
+text-decoration: none;
+color: #7d171d;
+}
+a:hover {
+text-decoration: underline;
+color: #d52932;
+}
+.body-fauxcolumn-outer .cap-top {
+position: absolute;
+z-index: 1;
+height: 276px;
+width: 100%;
+background: transparent none repeat-x scroll top left;
+_background-image: none;
+}
+/* Columns
+----------------------------------------------- */
+.content-inner {
+padding: 0;
+}
+.header-inner .section {
+margin: 0 16px;
+}
+.tabs-inner .section {
+margin: 0 16px;
+}
+.main-inner {
+padding-top: 30px;
+}
+.main-inner .column-center-inner,
+.main-inner .column-left-inner,
+.main-inner .column-right-inner {
+padding: 0 5px;
+}
+*+html body .main-inner .column-center-inner {
+margin-top: -30px;
+}
+#layout .main-inner .column-center-inner {
+margin-top: 0;
+}
+/* Header
+----------------------------------------------- */
+.header-outer {
+margin: 0 0 0 0;
+background: #333333 none repeat scroll 0 0;
+}
+.Header h1 {
+font: normal normal 24px Molengo;
+color: #fcfbf5;
+text-shadow: 0 0 -1px #000000;
+}
+.Header h1 a {
+color: #fcfbf5;
+}
+.Header .description {
+font: normal normal 20px Georgia, Utopia, 'Palatino Linotype', Palatino, serif;
+color: #908d6a;
+}
+.header-inner .Header .titlewrapper,
+.header-inner .Header .descriptionwrapper {
+padding-left: 0;
+padding-right: 0;
+margin-bottom: 0;
+}
+.header-inner .Header .titlewrapper {
+padding-top: 22px;
+}
+/* Tabs
+----------------------------------------------- */
+.tabs-outer {
+overflow: hidden;
+position: relative;
+background: #b3ca88 url(http://www.blogblog.com/1kt/awesomeinc/tabs_gradient_light.png) repeat scroll 0 0;
+}
+#layout .tabs-outer {
+overflow: visible;
+}
+.tabs-cap-top, .tabs-cap-bottom {
+position: absolute;
+width: 100%;
+border-top: 1px solid #908c6a;
+}
+.tabs-cap-bottom {
+bottom: 0;
+}
+.tabs-inner .widget li a {
+display: inline-block;
+margin: 0;
+padding: .6em 1.5em;
+font: normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #333333;
+border-top: 1px solid #908c6a;
+border-bottom: 1px solid #908c6a;
+border-left: 1px solid #908c6a;
+height: 16px;
+line-height: 16px;
+}
+.tabs-inner .widget li:last-child a {
+border-right: 1px solid #908c6a;
+}
+.tabs-inner .widget li.selected a, .tabs-inner .widget li a:hover {
+background: #63704b url(http://www.blogblog.com/1kt/awesomeinc/tabs_gradient_light.png) repeat-x scroll 0 -100px;
+color: #ffffff;
+}
+/* Headings
+----------------------------------------------- */
+h2 {
+font: normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #333333;
+}
+/* Widgets
+----------------------------------------------- */
+.main-inner .section {
+margin: 0 27px;
+padding: 0;
+}
+.main-inner .column-left-outer,
+.main-inner .column-right-outer {
+margin-top: 0;
+}
+#layout .main-inner .column-left-outer,
+#layout .main-inner .column-right-outer {
+margin-top: 0;
+}
+.main-inner .column-left-inner,
+.main-inner .column-right-inner {
+background: transparent none repeat 0 0;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .2);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .2);
+-goog-ms-box-shadow: 0 0 0 rgba(0, 0, 0, .2);
+box-shadow: 0 0 0 rgba(0, 0, 0, .2);
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-goog-ms-border-radius: 5px;
+border-radius: 5px;
+}
+#layout .main-inner .column-left-inner,
+#layout .main-inner .column-right-inner {
+margin-top: 0;
+}
+.sidebar .widget {
+font: normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #333333;
+}
+.sidebar .widget a:link {
+color: #d52932;
+}
+.sidebar .widget a:visited {
+color: #7d171d;
+}
+.sidebar .widget a:hover {
+color: #d52932;
+}
+.sidebar .widget h2 {
+text-shadow: 0 0 -1px #000000;
+}
+.main-inner .widget {
+background-color: #fefdfa;
+border: 1px solid #aab122;
+padding: 0 15px 15px;
+margin: 20px -16px;
+-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-goog-ms-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-goog-ms-border-radius: 5px;
+border-radius: 5px;
+}
+.main-inner .widget h2 {
+margin: 0 -0;
+padding: .6em 0 .5em;
+border-bottom: 1px solid transparent;
+}
+.footer-inner .widget h2 {
+padding: 0 0 .4em;
+border-bottom: 1px solid transparent;
+}
+.main-inner .widget h2 + div, .footer-inner .widget h2 + div {
+border-top: 1px solid #aab122;
+padding-top: 8px;
+}
+.main-inner .widget .widget-content {
+margin: 0 -0;
+padding: 7px 0 0;
+}
+.main-inner .widget ul, .main-inner .widget #ArchiveList ul.flat {
+margin: -8px -15px 0;
+padding: 0;
+list-style: none;
+}
+.main-inner .widget #ArchiveList {
+margin: -8px 0 0;
+}
+.main-inner .widget ul li, .main-inner .widget #ArchiveList ul.flat li {
+padding: .5em 15px;
+text-indent: 0;
+color: #666666;
+border-top: 0 solid #aab122;
+border-bottom: 1px solid transparent;
+}
+.main-inner .widget #ArchiveList ul li {
+padding-top: .25em;
+padding-bottom: .25em;
+}
+.main-inner .widget ul li:first-child, .main-inner .widget #ArchiveList ul.flat li:first-child {
+border-top: none;
+}
+.main-inner .widget ul li:last-child, .main-inner .widget #ArchiveList ul.flat li:last-child {
+border-bottom: none;
+}
+.post-body {
+position: relative;
+}
+.main-inner .widget .post-body ul {
+padding: 0 2.5em;
+margin: .5em 0;
+list-style: disc;
+}
+.main-inner .widget .post-body ul li {
+padding: 0.25em 0;
+margin-bottom: .25em;
+color: #333333;
+border: none;
+}
+.footer-inner .widget ul {
+padding: 0;
+list-style: none;
+}
+.widget .zippy {
+color: #666666;
+}
+/* Posts
+----------------------------------------------- */
+body .main-inner .Blog {
+padding: 0;
+margin-bottom: 1em;
+background-color: transparent;
+border: none;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+-goog-ms-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.main-inner .section:last-child .Blog:last-child {
+padding: 0;
+margin-bottom: 1em;
+}
+.main-inner .widget h2.date-header {
+margin: 0 -15px 1px;
+padding: 0 0 0 0;
+font: normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #908c6a;
+background: transparent none no-repeat scroll top left;
+border-top: 0 solid #aab122;
+border-bottom: 1px solid transparent;
+-moz-border-radius-topleft: 0;
+-moz-border-radius-topright: 0;
+-webkit-border-top-left-radius: 0;
+-webkit-border-top-right-radius: 0;
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+position: static;
+bottom: 100%;
+right: 15px;
+text-shadow: 0 0 -1px #000000;
+}
+.main-inner .widget h2.date-header span {
+font: normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+display: block;
+padding: .5em 15px;
+border-left: 0 solid #aab122;
+border-right: 0 solid #aab122;
+}
+.date-outer {
+position: relative;
+margin: 30px 0 20px;
+padding: 0 15px;
+background-color: #fefdfa;
+border: 1px solid #aab122;
+-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-goog-ms-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-goog-ms-border-radius: 5px;
+border-radius: 5px;
+}
+.date-outer:first-child {
+margin-top: 0;
+}
+.date-outer:last-child {
+margin-bottom: 20px;
+-moz-border-radius-bottomleft: 5px;
+-moz-border-radius-bottomright: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-webkit-border-bottom-right-radius: 5px;
+-goog-ms-border-bottom-left-radius: 5px;
+-goog-ms-border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+.date-posts {
+margin: 0 -0;
+padding: 0 0;
+clear: both;
+}
+.post-outer, .inline-ad {
+border-top: 1px solid #aab122;
+margin: 0 -0;
+padding: 15px 0;
+}
+.post-outer {
+padding-bottom: 10px;
+}
+.post-outer:first-child {
+padding-top: 0;
+border-top: none;
+}
+.post-outer:last-child, .inline-ad:last-child {
+border-bottom: none;
+}
+.post-body {
+position: relative;
+}
+.post-body img {
+padding: 8px;
+background: #ffffff;
+border: 1px solid #cccccc;
+-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+}
+h3.post-title, h4 {
+font: normal normal 22px Georgia, Utopia, 'Palatino Linotype', Palatino, serif;
+color: #d52932;
+}
+h3.post-title a {
+font: normal normal 22px Georgia, Utopia, 'Palatino Linotype', Palatino, serif;
+color: #d52932;
+}
+h3.post-title a:hover {
+color: #d52932;
+text-decoration: underline;
+}
+.post-header {
+margin: 0 0 1em;
+}
+.post-body {
+line-height: 1.4;
+}
+.post-outer h2 {
+color: #333333;
+}
+.post-footer {
+margin: 1.5em 0 0;
+}
+#blog-pager {
+padding: 15px;
+font-size: 120%;
+background-color: #fefdfa;
+border: 1px solid #aab122;
+-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-goog-ms-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-goog-ms-border-radius: 5px;
+border-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-goog-ms-border-top-left-radius: 5px;
+-goog-ms-border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius-topright: 5px;
+margin-top: 1em;
+}
+.blog-feeds, .post-feeds {
+margin: 1em 0;
+text-align: center;
+color: #333333;
+}
+.blog-feeds a, .post-feeds a {
+color: #d52932;
+}
+.blog-feeds a:visited, .post-feeds a:visited {
+color: #7d171d;
+}
+.blog-feeds a:hover, .post-feeds a:hover {
+color: #d52932;
+}
+.post-outer .comments {
+margin-top: 2em;
+}
+/* Comments
+----------------------------------------------- */
+.comments .comments-content .icon.blog-author {
+background-repeat: no-repeat;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+}
+.comments .comments-content .loadmore a {
+border-top: 1px solid #908c6a;
+border-bottom: 1px solid #908c6a;
+}
+.comments .continue {
+border-top: 2px solid #908c6a;
+}
+/* Footer
+----------------------------------------------- */
+.footer-outer {
+margin: -20px 0 -1px;
+padding: 20px 0 0;
+color: #333333;
+overflow: hidden;
+}
+.footer-fauxborder-left {
+border-top: 1px solid #aab122;
+background: #fefdfa none repeat scroll 0 0;
+-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-goog-ms-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+margin: 0 -20px;
+}
+/* Mobile
+----------------------------------------------- */
+body.mobile {
+background-size: auto;
+}
+.mobile .body-fauxcolumn-outer {
+background: transparent none repeat scroll top left;
+}
+*+html body.mobile .main-inner .column-center-inner {
+margin-top: 0;
+}
+.mobile .main-inner .widget {
+padding: 0 0 15px;
+}
+.mobile .main-inner .widget h2 + div,
+.mobile .footer-inner .widget h2 + div {
+border-top: none;
+padding-top: 0;
+}
+.mobile .footer-inner .widget h2 {
+padding: 0.5em 0;
+border-bottom: none;
+}
+.mobile .main-inner .widget .widget-content {
+margin: 0;
+padding: 7px 0 0;
+}
+.mobile .main-inner .widget ul,
+.mobile .main-inner .widget #ArchiveList ul.flat {
+margin: 0 -15px 0;
+}
+.mobile .main-inner .widget h2.date-header {
+right: 0;
+}
+.mobile .date-header span {
+padding: 0.4em 0;
+}
+.mobile .date-outer:first-child {
+margin-bottom: 0;
+border: 1px solid #aab122;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-goog-ms-border-top-left-radius: 5px;
+-goog-ms-border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+.mobile .date-outer {
+border-color: #aab122;
+border-width: 0 1px 1px;
+}
+.mobile .date-outer:last-child {
+margin-bottom: 0;
+}
+.mobile .main-inner {
+padding: 0;
+}
+.mobile .header-inner .section {
+margin: 0;
+}
+.mobile .post-outer, .mobile .inline-ad {
+padding: 5px 0;
+}
+.mobile .tabs-inner .section {
+margin: 0 10px;
+}
+.mobile .main-inner .widget h2 {
+margin: 0;
+padding: 0;
+}
+.mobile .main-inner .widget h2.date-header span {
+padding: 0;
+}
+.mobile .main-inner .widget .widget-content {
+margin: 0;
+padding: 7px 0 0;
+}
+.mobile #blog-pager {
+border: 1px solid transparent;
+background: #fefdfa none repeat scroll 0 0;
+}
+.mobile .main-inner .column-left-inner,
+.mobile .main-inner .column-right-inner {
+background: transparent none repeat 0 0;
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+-goog-ms-box-shadow: none;
+box-shadow: none;
+}
+.mobile .date-posts {
+margin: 0;
+padding: 0;
+}
+.mobile .footer-fauxborder-left {
+margin: 0;
+border-top: inherit;
+}
+.mobile .main-inner .section:last-child .Blog:last-child {
+margin-bottom: 0;
+}
+.mobile-index-contents {
+color: #333333;
+}
+.mobile .mobile-link-button {
+background: #d52932 url(http://www.blogblog.com/1kt/awesomeinc/tabs_gradient_light.png) repeat scroll 0 0;
+}
+.mobile-link-button a:link, .mobile-link-button a:visited {
+color: #ffffff;
+}
+.mobile .tabs-inner .PageList .widget-content {
+background: transparent;
+border-top: 1px solid;
+border-color: #908c6a;
+color: #333333;
+}
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+border-left: 1px solid #908c6a;
+}
+body { font-size: 10px; }
+.post-body { font-size: 12px; }
+h4 { font-size: 14px; }
+pre, pre.prettyprint {
+padding: 15px;
+border: none !important;
+border-bottom: 1px solid #ccc !important;
+border-right: 1px solid #ccc !important;
+background-color: #eee;
+white-space: pre-wrap;
+}
+#bcalendar {
+width: 100%;
+text-align: center;
+margin-top: 10px;
+}
+#bcalendar tr {
+background-color: #fcfbf5;
+}
+#bcalendar tr a {
+color: #fff;
+background-color: #becaa9;
+display: block;
+font-weight: bold;
+}
+#calendarDisplay,
+#bcalendar caption select {
+border: 1px #eee solid;
+width: 100%;
+font-size: 10px;
+}
+--></style>
+<style id='template-skin-1' type='text/css'><!--
+body {
+min-width: 860px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 860px;
+max-width: 860px;
+_width: 860px;
+}
+.main-inner .columns {
+padding-left: 0px;
+padding-right: 260px;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 0px;
+right: 260px;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("0px") -
+parseInt("260px") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 0px;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 260px;
+}
+.main-inner .column-left-outer {
+width: 0px;
+right: 100%;
+margin-left: -0px;
+}
+.main-inner .column-right-outer {
+width: 260px;
+margin-right: -260px;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 800px;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+--></style>
+<script type="text/javascript">var a="indexOf",b="&m=1",e="(^|&)m=",f="?",g="?m=1";function h(){var c=window.location.href,d=c.split(f);switch(d.length){case 1:return c+g;case 2:return 0<=d[1].search(e)?null:c+b;default:return null}}var k=navigator.userAgent;if(-1!=k[a]("Mobile")&&-1!=k[a]("WebKit")&&-1==k[a]("iPad")||-1!=k[a]("Opera Mini")||-1!=k[a]("IEMobile")){var l=h();l&&window.location.replace(l)};
+</script><script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body class='loading variant-renewable'>
+<div class='navbar section' id='navbar'><div class='widget Navbar' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"></div>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">
+        gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+          if (gapi.iframes && gapi.iframes.getContext) {
+            gapi.iframes.getContext().openChild({
+                url: 'https://www.blogger.com/navbar.g?targetBlogID\0755582672144555408512\46blogName\75Modern+Common+Lisp\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75LIGHT\46layoutType\75LAYOUTS\46searchRoot\75http://modern-cl.blogspot.com/search\46blogLocale\75ja\46v\0752\46homepageUrl\75http://modern-cl.blogspot.com/\46vt\0752835576850794157405',
+                where: document.getElementById("navbar-iframe-container"),
+                id: "navbar-iframe"
+            });
+          }
+        });
+      </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<div class='body-fauxcolumns'>
+<div class='fauxcolumn-outer body-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content'>
+<div class='content-fauxcolumns'>
+<div class='fauxcolumn-outer content-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content-outer'>
+<div class='content-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left content-fauxborder-left'>
+<div class='fauxborder-right content-fauxborder-right'></div>
+<div class='content-inner'>
+<header>
+<div class='header-outer'>
+<div class='header-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left header-fauxborder-left'>
+<div class='fauxborder-right header-fauxborder-right'></div>
+<div class='region-inner header-inner'>
+<div class='header section' id='header'><div class='widget Header' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title'>
+Modern Common Lisp
+</h1>
+</div>
+<div class='descriptionwrapper'>
+<p class='description'><span>Introduction of Modern Common Lisp.</span></p>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class='header-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</header>
+<div class='tabs-outer'>
+<div class='tabs-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left tabs-fauxborder-left'>
+<div class='fauxborder-right tabs-fauxborder-right'></div>
+<div class='region-inner tabs-inner'>
+<div class='tabs section' id='crosscol'></div>
+<div class='tabs section' id='crosscol-overflow'></div>
+</div>
+</div>
+<div class='tabs-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='main-outer'>
+<div class='main-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left main-fauxborder-left'>
+<div class='fauxborder-right main-fauxborder-right'></div>
+<div class='region-inner main-inner'>
+<div class='columns fauxcolumns'>
+<div class='fauxcolumn-outer fauxcolumn-center-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-left-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-right-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<!-- corrects IE6 width calculation -->
+<div class='columns-inner'>
+<div class='column-center-outer'>
+<div class='column-center-inner'>
+<div class='main section' id='main'><div class='widget Blog' id='Blog1'>
+<div class='blog-posts hfeed'>
+<!-- google_ad_section_start(name=default) -->
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>7/19/2011</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry'>
+<a name='1576993284207101684'></a>
+<h3 class='post-title entry-title'>
+<a href='http://modern-cl.blogspot.jp/2011/07/6-common-lisp.html'>第6回 Common Lispライブラリを書く</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content'>
+<p>&#12288;僕のブログで&#12300;Modern Common Lispはターゲットをどこに置いているのか&#12301;という質問をいただきました&#12290;最初は環境構築から始まっており&#12289;初心者向けに見えますが&#12289;次はHello, Worldもせずにライブラリの解説をしています&#12290;</p>
+
+<p>&#12288;Modern Common Lispのターゲットは&#12289;<strong>これからのCommon Lisp</strong>を学びたい人です&#12290;当初はこの連載を読めばCommon Lispについてのすべてを学べるAll-In-One形式にしようと考えていたのですが&#12289;それでは時間がかかりすぎてしまうため&#12289;いくつかの過程を省いて進めます&#12290;たとえば&#12289;Lispでは必要なリスト処理などはここでは解説しません&#12290;理由は&#12289;それを学ぶための書籍が既に多く存在するからです&#12290;Common Lispの基本文法はそれらの書籍を参照してください&#12290;この連載は&#12289;Common Lispの入門書と並行&#12289;または読了後に読むことをおすすめします&#12290;</p>
+
+<p>&#12288;さて&#12289;前回の僕の記事では主要なライブラリとその使い方について紹介しました&#12290;今回は自分のCommon Lispのライブラリを書く手順についてです&#12290;</p>
+
+<h2>Sleep Sortのライブラリをつくろう</h2>
+
+<p>&#12288;1ヶ月以上前のことになりますが&#12289;Sleep Sortというソートアルゴリズムが話題になりました&#12290;</p>
+
+<ul>
+<li><a href="http://e-arrows.sakura.ne.jp/2011/05/sleep-sort-in-common-lisp.html">4chan発のソートアルゴリズム"Sleep sort"をCommon Lispで - 八発白中</a></li>
+</ul>
+
+<p>&#12288;実装が簡単なので&#12289;例として今回はこのライブラリを作りたいと思います&#12290;</p>
+
+<h2>CL-Projectでスケルトン生成</h2>
+
+<p>&#12288;まずはライブラリの雛形を作ります&#12290;雛形の生成には<a href="https://github.com/fukamachi/cl-project">CL-Project</a>というライブラリを使います&#12290;まずはQuicklispでインストールしましょう&#12290;</p>
+
+<pre class="prettyprint lang-lisp">
+(ql:quickload :cl-project)
+</pre>
+
+<p>&#12288;雛形を作るには関数<code>make-project</code>を使います&#12290;あらかじめ依存することが分かっているライブラリはこのタイミングで指定しておきましょう&#12290;今回はcl-annot(後述)と&#12289;スレッドを使いそうなのでbordeaux-threadsの2つを指定しています&#12290;</p>
+
+<pre class="prettyprint lang-lisp">
+(cl-project:make-project #p"lib/sleepsort/"
+  :author "Eitarow Fukamachi"
+  :email "e.arrows@gmail.com"
+  :license "LLGPL"
+  :depends-on '(:bordeaux-threads cl-annot))
+;-> writing /Users/fukamachi/Programs/lib/sleepsort/.gitignore
+    writing /Users/fukamachi/Programs/lib/sleepsort/README.markdown
+    writing /Users/fukamachi/Programs/lib/sleepsort/sleepsort-test.asd
+    writing /Users/fukamachi/Programs/lib/sleepsort/sleepsort.asd
+    writing /Users/fukamachi/Programs/lib/sleepsort/src/sleepsort.lisp
+    writing /Users/fukamachi/Programs/lib/sleepsort/t/sleepsort.lisp
+;=> #P"/Users/fukamachi/Programs/lib/sleepsort/sleepsort.asd"
+</pre>
+
+<p>&#12288;これで#p"lib/sleepsort/"にスケルトンができました&#12290;空のプロジェクトはそのままの状態でも<code>ql:quickload</code>することができます&#12290;</p>
+
+<pre class="prettyprint lang-lisp">
+(ql:quickload :sleepsort)
+;-> To load "sleepsort":
+      Load 1 ASDF system:
+        sleepsort
+    ; Loading "sleepsort"
+    [package sleepsort]
+;=> (:SLEEPSORT)
+</pre>
+
+<p><span style="color: red;">&#8251;注)</span> もし#p"lib/sleepsort/"にパスが通っていない場合&#12289;REPLを再起動するとロードできなくなります&#12290;ローカルのプロジェクトをQuicklispでロードできるようにするには<a href="http://modern-cl.blogspot.com/2011/03/quicklisp.html">第2回 Quicklispによるライブラリ環境</a>を参照してください&#12290;</p>
+
+<h2>雛形の構成</h2>
+
+<p>&#12288;CL-Projectが生成する雛形は以下のような最小構成です&#12290;</p>
+
+<ul>
+<li><code>README.markdown</code>: README&#12290;</li>
+<li><code>sleepsort.asd</code>: ライブラリ(system)の定義ファイル&#12290;</li>
+<li><code>sleepsort-test.asd</code>: ライブラリのテスト用の定義ファイル&#12290;</li>
+<li><code>src/</code>
+<ul>
+<li><code>sleepsort.lisp</code>: メインのソースファイル&#12290;</li>
+</ul></li>
+<li><code>t/</code>
+<ul>
+<li><code>sleepsort.lisp</code>: メインのテストファイル&#12290;</li>
+</ul></li>
+</ul>
+
+<p>&#12288;ディレクトリトップには<code>.asd</code>ファイルが2つあります&#12290;これは他の言語で言うところのMakefileです&#12290;ASDFによるライブラリの定義ファイルです&#12290;Quicklispはこのファイルから必要なファイルを判断してライブラリをロードしています&#12290;</p>
+
+<p>&#12288;<code>src</code>ディレクトリは主なソースコードを置く場所です&#12290;この中には最初1つのファイルが置かれていますが&#12289;他にファイルを分けたいと思ったときにはこのディレクトリにファイルをどんどん追加していきます&#12290;</p>
+
+<p>&#12288;<code>t</code>ディレクトリは自動テストを置く場所です&#12290;</p>
+
+<h2>関数を実装</h2>
+
+<p>&#12288;では&#12289;肝心の関数の定義をします&#12290;<code>src/sleepsort.lisp</code>を開いてください&#12290;以下のようになっているはずです&#12290;</p>
+
+<pre class="prettyprint lang-lisp">
+#|
+  This file is a part of sleepsort project.
+  Copyright (c) 2011 Eitarow Fukamachi (e.arrows@gmail.com)
+|#
+
+(in-package :cl-user)
+(defpackage sleepsort
+  (:use :cl))
+(in-package :sleepsort)
+
+;; blah blah blah.
+</pre>
+
+<p>&#12288;これに<code>sleepsort</code>という関数を追加します&#12290;</p>
+
+<pre class="prettyprint lang-lisp">
+#|
+  This file is a part of sleepsort project.
+  Copyright (c) 2011 Eitarow Fukamachi (e.arrows@gmail.com)
+|#
+
+(in-package :cl-user)
+(defpackage sleepsort
+  (:use :cl)
+  (:import-from :bordeaux-threads
+                :make-thread
+                :join-thread))
+(in-package :sleepsort)
+
+(cl-annot:enable-annot-syntax)
+
+@export
+(defun sleepsort (&rest args)
+  "A function to do 'sleep sort' arguments."
+  (let* (result
+         (threads (mapcar (lambda (arg)
+                            (bordeaux-threads:make-thread
+                             (lambda ()
+                               (sleep arg)
+                               (push arg result))))
+                          args)))
+
+    (dolist (thread threads)
+      (bordeaux-threads:join-thread thread))
+
+    (nreverse result)))
+</pre>
+
+<p>&#12288;<code>@export</code>アノテーションを有効にするために<a href="https://github.com/arielnetworks/cl-annot">cl-annot</a>を使っています&#12290;このアノテーションを使うと&#12289;指定した関数がパッケージ外でも参照できるようになります&#12290;</p>
+
+<p>&#12288;cl-annotの詳しい解説は&#12289;作者の松山が今後紹介記事を書いてくれる予定です&#12290;</p>
+
+<h2>テストを書く</h2>
+
+<p>&#12288;モダンなライブラリに自動テストは欠かせません&#12290;雛形にはテスト用のファイルも含まれています&#12290;<code>t/sleepsort.lisp</code>を開いてください&#12290;</p>
+
+<pre class="prettyprint lang-lisp">
+#|
+  This file is a part of sleepsort project.
+  Copyright (c) 2011 Eitarow Fukamachi (e.arrows@gmail.com)
+|#
+
+(in-package :cl-user)
+(defpackage sleepsort-test
+  (:use :cl
+        :sleepsort
+        :cl-test-more))
+(in-package :sleepsort-test)
+
+(plan nil)
+
+;; blah blah blah.
+
+(finalize)
+</pre>
+
+<p>&#12288;この"blah blah blah."の部分を消して&#12289;以下のように置き換えてみます&#12290;</p>
+
+<pre class="prettyprint lang-lisp">
+(diag "Testing 'sleepsort'. Wait some seconds...")
+(is (sleepsort 5 3 6 3 6 3 1 4 7) '(1 3 3 3 4 5 6 6 7))
+</pre>
+
+<p>&#12288;テストを走らせるには(test-system :sleepsort)を実行します&#12290;</p>
+
+<pre class="prettyprint lang-lisp">
+(test-system :sleepsort)
+To load "sleepsort-test":
+  Load 1 ASDF system:
+    sleepsort-test
+; Loading "sleepsort-test"
+[package sleepsort-test]
+# Testing 'sleepsort'. Wait some seconds...
+ok 1
+
+(:SLEEPSORT-TEST)
+</pre>
+
+<p>&#12288;Sleep Sortの実行は&#12289;その性質上時間がかかります&#12290;7秒ほど待ったあと&#12289;"ok"と表示されればテスト成功です&#12290;</p>
+
+<p>&#12288;詳しいCL-TEST-MOREの説明は<a href="https://github.com/fukamachi/cl-test-more">https://github.com/fukamachi/cl-test-more</a>を参照してください&#12290;</p>
+
+<h2>Quicklispに登録する</h2>
+
+<p>&#12288;せっかく作った有用なライブラリはQuicklispに登録すべきです&#12290;現在Quicklispへの登録は承認制になっており&#12289;月に一度の更新時に取り込まれます&#12290;日にちは固定ではないですが&#12289;だいたい毎月20日前後に更新されます&#12290;</p>
+
+<p>&#12288;登録の申請はGitHub Issuesで行います&#12290;</p>
+
+<ul>
+<li><a href="https://github.com/quicklisp/quicklisp-projects/issues">Issues - quicklisp/quicklisp-projects - GitHub</a></li>
+</ul>
+
+<p>&#12288;右上の&#12300;New Issue&#12301;をクリックし&#12289;ライブラリ名とリポジトリのURLを書いて登録してください&#12290;</p>
+
+<h2>おわりに</h2>
+
+<p>&#12288;さて&#12289;今回は自分のライブラリを作って公開するまでを紹介しました&#12290;公開するためでなくても&#12289;何かアプリケーションを作るときはasdファイルを書いてモジュール単位で管理するため&#12289;Common Lispでまとまったプログラムを書くときには必要な手順でしょう&#12290;</p>
+
+<p>&#12288;次回の僕の回ではCL-TEST-MOREでの自動テストについてより詳しく解説します&#12290;</p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'><span class='post-author vcard'>
+投稿者
+<span class='fn'>深町英太郎</span>
+</span>
+<span class='post-timestamp'>
+時刻:
+<a class='timestamp-link' href='http://modern-cl.blogspot.jp/2011/07/6-common-lisp.html' rel='bookmark' title='permanent link'><abbr class='published' title='2011-07-19T18:21:00+09:00'>18:21</abbr></a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='http://modern-cl.blogspot.jp/2011/07/6-common-lisp.html#comment-form' onclick=''>0
+コメント</a>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-971882720'>
+<a href='http://www.blogger.com/post-edit.g?blogID=5582672144555408512&postID=1576993284207101684&from=pencil' title='投稿を編集'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons'>
+<a class='goog-inline-block share-button sb-email' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=1576993284207101684&target=email' target='_blank' title='メールで送信'><span class='share-button-link-text'>メールで送信</span></a><a class='goog-inline-block share-button sb-blog' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=1576993284207101684&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=1576993284207101684&target=twitter' target='_blank' title='Twitter で共有する'><span class='share-button-link-text'>Twitter で共有する</span></a><a class='goog-inline-block share-button sb-facebook' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=1576993284207101684&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Facebook で共有する'><span class='share-button-link-text'>Facebook で共有する</span></a><a class='goog-inline-block share-button sb-pinterest' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=1576993284207101684&target=pinterest' target='_blank' title='Pinterest に共有'><span class='share-button-link-text'>Pinterest に共有</span></a><div class='goog-inline-block dummy-container'><g:plusone source='blogger:blog:plusone' href='http://modern-cl.blogspot.com/2011/07/6-common-lisp.html' size='medium' width='300' annotation='inline'/></div>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'><span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'><span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+            </div></div>
+          
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>7/10/2011</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry'>
+<a name='8470741933523706183'></a>
+<h3 class='post-title entry-title'>
+<a href='http://modern-cl.blogspot.jp/2011/07/5-slime.html'>第5回 SLIMEの使い方 開発サイクルについて</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content'>
+<p>前々回の&#12300;<a href="http://modern-cl.blogspot.com/2011/04/3-slime.html">基礎編</a>&#12301;
+ではSLIMEのインストール方法とその基本的な使い方について説明しましたが&#12289;
+具体的にどのように開発したら良いか分からないと思います&#12290;今回はその補足
+としてSLIMEにおける開発サイクルについて説明します&#12290;</p>
+
+<h2>SLIMEにおける開発サイクル</h2>
+
+<p>SLIMEにおける開発サイクルは基本的には次のようになります&#12290;</p>
+
+<ol>
+<li><code>M-x slime</code>でSLIMEを起動</li>
+<li>lispファイルを編集</li>
+<li>REPLバッファで動作確認</li>
+<li>2に戻る</li>
+</ol>
+
+<p>一般的な開発サイクルには&#12300;コンパイル&#12301;とか&#12300;アプリケーションの再起動&#12301;
+というタスクがありますが&#12289;SLIMEの開発サイクルにはそれがありません&#12290;その
+代わりSLIMEには&#12289;アプリケーションへの変更を即座に反映させる仕組みがあり
+ます&#12290;これにより&#12289;待ち時間を極力短縮して&#12289;またエディタとターミナルを行
+き来することなく&#12289;効率的に&#65288;また気持ち良く&#65289;開発することが可能になりま
+す&#12290;この&#12289;いわゆるインクリメンタルなアプリケーションの構築は&#12289;SLIMEを使
+う最大の利点と言っても過言ではありません&#12290;</p>
+
+<p>もっとも&#12289;(2)の&#12300;lispファイルを編集&#12301;するための十分な知識を持っていなけ
+れば&#12289;その利点もあまり感じられないでしょう&#12290;本連載でもこの点を重点的に
+解説していく予定です&#12290;本エントリの後半もその解説になります&#12290;</p>
+
+<p>Webアプリケーションなどを開発する際は&#12289;(3)は&#12300;ブラウザで動作確認&#12301;にな
+ります&#12290;もちろんユーティリティ関数のテストやモデルデータの確認をREPLで
+行うこともあります&#12290;要は使い分けです&#12290;</p>
+
+<p>ところで&#12289;アプリケーションをインクリメンタルに構築していくという性質上&#12289;
+何かの拍子に変数の値がおかしくなったり&#12289;謎のエラー&#65288;というわけではない
+ですが&#12289;原因を考えるのが本質的でないエラー&#65289;が発生したりします&#12290;そうい
+う時は&#12289;<code>M-x slime-restart-inferior-lisp</code>として開発サイクルを一度リセッ
+トします&#12290;この操作は重要なので是非覚えてください&#12290;</p>
+
+<h2>バッファでの操作</h2>
+
+<p>ここでの操作は上記した開発サイクルの(2)に該当します&#12290;SLIMEで一番重要な
+操作ですので&#12289;是非習得してください&#12290;</p>
+
+<h3><code>C-c C-c</code> (<code>slime-compile-defun</code>)</h3>
+
+<p>このコマンドは現在ポイントしているトップレベル関数&#65288;実は関数以外でも有
+効&#65289;をコンパイルするコマンドです&#12290;コンパイルというと少しヘビーなイメー
+ジを持ちますが&#12289;ここでは関数を定義するぐらいのイメージで問題ありません&#12290;
+実際に例を示します&#12290;まず適当な<code>lisp</code>ファイルに次のコードを書いてくださ
+い&#12290;</p>
+
+<pre class="prettyprint lang-lisp"><code>(defun fact (n)
+  (if (&lt;= n 1)
+      0
+      (* n (fact (1- n)))))
+</code></pre>
+
+<p>次にこのフォームをポイントして<code>C-c C-c</code>します&#12290;コンパイルが成功したとい
+うメッセージがミニバッファに表示されるはずです&#12290;これで<code>fact</code>関数が定義
+され利用できるようになりました&#12290;</p>
+
+<p><code>C-c C-z</code>あるいは<code>M-x slime-repl</code>としてREPLバッファを表示し&#12289;次のコード
+を実行してみましょう&#12290;</p>
+
+<pre class="prettyprint lang-lisp"><code>CL-USER&gt; (fact 10)
+0
+</code></pre>
+
+<p>結果が0になっていて&#12289;どうも<code>fact</code>関数にバグがあるようです&#12290;実は<code>n</code>が1以
+下のときに<code>1</code>ではなく<code>0</code>を返してしまっていさう&#12290;そこで再びlispファイル
+を開いて次のように修正してください&#12290;</p>
+
+<pre class="prettyprint lang-lisp"><code>(defun fact (n)
+  (if (&lt;= n 1)
+      1
+      (* n (fact (1- n)))))
+</code></pre>
+
+<p>そして&#12289;先と同じように<code>C-c C-c</code>します&#12290;関数が定義できたら<code>C-c C-z</code>ある
+いは<code>M-x slime-repl</code>でREPLバッファを表示し&#12289;先と同じコードを実行してみ
+ましょう&#12290;</p>
+
+<pre class="prettyprint lang-lisp"><code>CL-USER&gt; (fact 10)
+3628800
+</code></pre>
+
+<p>正しい結果が返ってきていますね&#12290;この例でも分かるように&#12289;バッファでの操
+作で一番重要なコマンドは<code>C-c C-c</code>です&#12290;関数定義&#65288;もっと言えばトップレベ
+ルフォーム&#65289;を編集した際は&#12289;<code>C-c C-c</code>する癖を付けるのが良いでしょう&#12290;</p>
+
+<p>また&#12289;<code>C-c C-c</code>することで&#12289;コンパイラがおかしなコードを拒否したり警告し
+てくれます&#12290;これはバグの早期発見に有効です&#12290;試しに次のようなコードを書
+いて<code>C-c C-c</code>してみてください&#12290;</p>
+
+<pre class="prettyprint lang-lisp"><code>(defun f (n)
+  (let ((m (* n 2)))
+    (1+ n)))
+</code></pre>
+
+<p>すると<code>let</code>部分に下線が引かれると思います&#12290;この下線は警告を表わしており&#12289;
+<code>C-x \``あるいは</code>M-x next-error`で警告の内容を詳細表示できます&#12290;</p>
+
+<pre><code>cd /home/tomo/tmp/
+1 compiler notes:
+
+/home/tomo/tmp/a.lisp:2:3:
+  style-warning: Unused lexical variable M
+</code></pre>
+
+<p>このように<code>m</code>という変数が未使用であるのが分かりますね&#12290;</p>
+
+<p>余力がある方は&#12289;明らかにエラーとなるコードを書いてみて&#12289;<code>C-c C-c</code>してみ
+ることをおすすめします&#12290;</p>
+
+<h3><code>C-c C-k</code> (<code>slime-compile-and-load-file</code>)</h3>
+
+<p><code>C-c C-c</code>ほどではありませんが&#12289;それでも頻繁に使うのが<code>C-c C-k</code>です&#12290;こ
+のコマンドはファイル全体をコンパイルしてロードします&#12290;&#12300;コンパイル&#12301;と
+か&#12300;ロード&#12301;はCommon Lispの用語ですが&#12289;ここではあまり気にせず&#12289;ファイル
+を先頭から読み直すコマンド&#12289;ぐらいのイメージで捉えてください&#12290;</p>
+
+<p><code>C-c C-k</code>は基本的には&#12289;まだロードされていないファイルをロードするときに
+使います&#12290;このとき&#12289;<code>C-c C-c</code>同様&#12289;コンパイルできないコードはエラーや警
+告として視覚的に表示され&#12289;<code>C-x \``あるいは</code>M-x next-error`で順番に確認
+することができます&#12290;</p>
+
+<p>また<code>C-c C-k</code>は&#12289;<code>C-c C-c</code>し忘れていないことを確定するのにも便利です&#12290;
+その他にも対応していない括弧などを検出するのにも使えます&#12290;</p>
+
+<p>一般的に&#12289;何かおかしくなったら<code>C-c C-k</code>してみる&#12289;それでも駄目なら上記し
+た<code>M-x slime-restart-inferior-lisp</code>する&#12289;という運用になります&#12290;</p>
+
+<h3><code>C-c C-z</code> (<code>slime-repl</code>)</h3>
+
+<p>すでに登場しましたが&#12289;このコマンドはREPLバッファを表示します&#12290;REPLバッ
+ファは頻繁に使うことになるので&#12289;是非覚えてください&#12290;</p>
+
+<h3><code>M-.</code> (<code>slime-edit-definition</code>)</h3>
+
+<p>このコマンドは現在ポイントしているシンボルの定義を探すコマンドです&#12290;コー
+ディング時はもちろんのことながら&#12289;コードリーディング時やデバッグ時にも
+非常に有用です&#12290;次に説明する<code>M-,</code>と対で覚えてください&#12290;</p>
+
+<h3><code>M-,</code> (<code>slime-pop-find-definition-stack</code>)</h3>
+
+<p>このコマンドは<code>M-.</code>を実行したときの場所に戻るコマンドです&#12290;<code>M-.</code>で定義
+を確認した後に&#12289;<code>M-,</code>で元の場所に戻るというのが一般的な使い方です&#12290;</p>
+
+<h2>REPLでの操作</h2>
+
+<p>&#12300;バッファでの操作&#12301;で説明した操作はREPLでも有効ですが&#12289;いくつか追加機
+能が用意されているので&#12289;それを紹介します&#12290;</p>
+
+<h3><code>M-p</code>, <code>M-n</code></h3>
+
+<p><code>M-p</code>, <code>M-n</code>はそれぞれ前の履歴&#12289;次の履歴を補完します&#12290;最低限これだけは
+記憶してください&#12290;同じ式を何度も入力するのはよしましょう&#12290;</p>
+
+<h3><code>M-r</code></h3>
+
+<p>このコマンドは正規表現で履歴を検索して補完します&#12290;目的の履歴が最初に補
+完されない場合は&#12289;<code>M-p</code>, <code>M-n</code>で順番に探します&#12290;インクリメンタルな検索
+が出来れば便利ですが&#12289;現状ではそのような機能はないようです&#12290;誰か
+anythingで実装してくれないかな&#12290;</p>
+
+<h3>特殊な変数</h3>
+
+<p>REPL&#65288;Top Level Loop&#65289;では<code>*</code>, <code>**</code>, <code>***</code>という特殊な変数が利用できま
+す&#12290;<code>*</code>には前回評価した式の結果が入り&#12289;<code>**</code>には前々回&#12289;<code>***</code>には前々々
+回に評価した式の結果が入ります&#12290;評価結果を再利用するときに便利です&#12290;簡
+単な例を示しておきます&#12290;</p>
+
+<pre class="prettyprint lang-lisp"><code>CL-USER&gt; (+ 1 2)
+3
+CL-USER&gt; (* * *)
+9
+CL-USER&gt; (- * **)
+6
+</code></pre>
+
+<p>二番目の式の最初の<code>*</code>は変数参照じゃなくて関数適用です&#12290;誤解しないように&#12290;
+よく分からない人はCommon Lispの入門ページなどで勉強してください&#12290;</p>
+
+<h2>まとめ</h2>
+
+<p>とりあえず今回はここまでです&#12290;次回以降は実際に何か作りながら&#12289;より実践的な
+内容について解説したいと思います&#12290;</p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'><span class='post-author vcard'>
+投稿者
+<span class='fn'>m2ym</span>
+</span>
+<span class='post-timestamp'>
+時刻:
+<a class='timestamp-link' href='http://modern-cl.blogspot.jp/2011/07/5-slime.html' rel='bookmark' title='permanent link'><abbr class='published' title='2011-07-10T01:27:00+09:00'>1:27</abbr></a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='http://modern-cl.blogspot.jp/2011/07/5-slime.html#comment-form' onclick=''>3
+コメント</a>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1157878254'>
+<a href='http://www.blogger.com/post-edit.g?blogID=5582672144555408512&postID=8470741933523706183&from=pencil' title='投稿を編集'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons'>
+<a class='goog-inline-block share-button sb-email' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=8470741933523706183&target=email' target='_blank' title='メールで送信'><span class='share-button-link-text'>メールで送信</span></a><a class='goog-inline-block share-button sb-blog' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=8470741933523706183&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=8470741933523706183&target=twitter' target='_blank' title='Twitter で共有する'><span class='share-button-link-text'>Twitter で共有する</span></a><a class='goog-inline-block share-button sb-facebook' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=8470741933523706183&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Facebook で共有する'><span class='share-button-link-text'>Facebook で共有する</span></a><a class='goog-inline-block share-button sb-pinterest' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=8470741933523706183&target=pinterest' target='_blank' title='Pinterest に共有'><span class='share-button-link-text'>Pinterest に共有</span></a><div class='goog-inline-block dummy-container'><g:plusone source='blogger:blog:plusone' href='http://modern-cl.blogspot.com/2011/07/5-slime.html' size='medium' width='300' annotation='inline'/></div>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'><span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'><span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+            </div></div>
+          
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>4/23/2011</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry'>
+<a name='4306541851512768510'></a>
+<h3 class='post-title entry-title'>
+<a href='http://modern-cl.blogspot.jp/2011/04/4-common-lisp.html'>第4回 Common Lispライブラリガイド</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content'>
+<p>&#12288;さて&#12289;Modern Common Lispはこれで4回目です&#12290;環境構築も完成に近づき&#12289;Common Lispでプログラムを始められる状態になりつつあります&#12290;ブログの主題も環境構築から実践へと移ります&#12290;</p>
+
+<p>&#12288;今回はCommon Lispでプログラムを書く際によく必要になるであろうライブラリの紹介です&#12290;Common LispはSchemeと比べると仕様の大きな言語には違いありませんが&#12289;最近普及しているPythonなどに比べると標準ライブラリも小さいです&#12290;そのため&#12289;適切なライブラリを適切に使用するという能力は&#12289;他の言語以上にCommon Lispで必要になるでしょう&#12290;</p>
+
+<p>&#12288;ここで紹介するライブラリはすべてQuicklispに入っているのですぐ利用できます&#12290;まだインストールしていない人は以下のエントリを参考にインストールしてください&#12290;</p>
+
+<ul>
+<li><a href="http://modern-cl.blogspot.com/2011/03/quicklisp.html">Modern Common Lisp: 第2回 Quicklispによるライブラリ環境</a></li>
+</ul>
+
+<h2>正規表現を使う - CL-PPCRE</h2>
+
+<p>&#12288;Common LispにはPerlのように標準で正規表現が付属するわけではありませんが&#12289;Perl5互換の正規表現ライブラリ&#12300;CL-PPCRE&#12301;があります&#12290;</p>
+
+<ul>
+<li><a href="http://weitz.de/cl-ppcre/">http://weitz.de/cl-ppcre/</a></li>
+</ul>
+
+<p>&#12288;Let Over Lambdaでべた褒めされているのが印象的でした&#12290;ガリガリにチューニングされていてPerlの正規表現エンジン(つまりCで書かれた正規表現エンジン)よりも高速らしいです&#12290;</p>
+
+<p>&#12288;以下はUserAgentを元にマッチングするサンプルコードです&#12290;</p>
+
+<pre class="prettyprint lang-lisp">
+(defvar user-agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_6) AppleWebKit/534.28 (KHTML, like Gecko) Chrome/12.0.728.0 Safari/534.28")
+</pre>
+
+<p>&#12288;Common LispでUserAgentによるアクセス判定をしてみます&#12290;</p>
+
+<pre class="prettyprint lang-lisp">
+(import '(ppcre:scan ppcre:scan-to-strings ppcre:regex-replace-all ppcre:split))
+
+;; 通常のマッチング
+;; Macからのアクセスか判定
+(scan "\\(Macintosh;" user-agent)
+;=> 12
+;   23
+;   #()
+;   #()
+
+;; マッチした部分を取り出したい
+;; クライアントのMacのバージョンを知りたい
+(scan-to-strings "Mac OS X ([^\\)]+)" user-agent)
+;=> "Mac OS X 10_6_6"
+;   #("10_6_6")
+
+;; 文字列置換
+;; Chromeの部分をMSIEに変える
+(regex-replace-all "Chrome" user-agent "MSIE")
+;=> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_6) AppleWebKit/534.28 (KHTML, like Gecko) MSIE/12.0.728.0 Safari/534.28"
+;   T
+
+;; 文字列分割
+;; クエリを分解
+(split "&" "name=Eitarow%20Fukamachi&age=23")
+;=> ("name=Eitarow%20Fukamachi" "age=23")
+</pre>
+
+<p>&#12288;Let Over Lambdaではリードマクロを使って関数適用のように正規表現を扱う方法が紹介されています&#12290;より簡単な表記をしたい人には参考になるでしょう&#12290;</p>
+
+<h2>日付を処理したい - LOCAL-TIME</h2>
+
+<p>&#12288;日付操作はお遊びプログラムなどで出てくる定番の一つです&#12290;年末になるとよくカウントダウンとかして&#12289;新年まであと何秒とかやりますね&#12290;Common Lispで日付を扱うには&#12300;LOCAL-TIME&#12301;を使います&#12290;</p>
+
+<ul>
+<li><a href="http://common-lisp.net/project/local-time/manual.html">http://common-lisp.net/project/local-time/manual.html</a></li>
+</ul>
+
+<p>&#12288;簡単なサンプル&#12290;</p>
+
+<pre class="prettyprint lang-lisp">
+(import '(local-time:now local-time:parse-timestring))
+
+;; 現在時刻 (返り値はTIMESTAMPオブジェクト)
+(now)
+;=> @2011-04-11T18:57:23.493142+09:00
+
+;; 文字列からのparse
+(parse-timestring "2015-02-18")
+;=> @2015-02-18T09:00:00.000000+09:00
+</pre>
+
+<p>&#12288;ちなみに2015/02/18は僕が生まれて10000日目らしいです(<a href="http://hp.vector.co.jp/authors/VA014370/jscript/datecalc/dcalc.htm">日齢計算</a>より)&#12290;実際に試してみます&#12290;</p>
+
+<pre class="prettyprint lang-lisp">
+(import '(local-time:timestamp-difference local-time:parse-timestring))
+
+(/ (local-time:timestamp-difference
+    (local-time:parse-timestring "2015-02-18")
+    (local-time:parse-timestring "1987-10-03"))
+   (* 24 60 60))
+;=> 10000
+</pre>
+
+<p>&#12288;逆に自分の生誕10000日目を知るには以下の関数に自分の誕生日を渡せばよいです&#12290;</p>
+
+<pre class="prettyprint lang-lisp">
+(import '(local-time:timestamp+ local-time:parse-timestring))
+
+(defun your-10000th-day (daystring)
+  (timestamp+
+    (local-time:parse-timestring daystring)
+    864000000
+    :sec))
+</pre>
+
+<h2>シェルコマンドを実行したい - trivial-shell</h2>
+
+<p>&#12288;Lispコードからシェルコマンドを実行するには&#12300;trivial-shell&#12301;が使えます&#12290;</p>
+
+<ul>
+<li><a href="http://common-lisp.net/project/trivial-shell/">http://common-lisp.net/project/trivial-shell/</a></li>
+</ul>
+
+<pre class="prettyprint lang-lisp">
+;; シェルコマンドを実行
+(trivial-shell:shell-command "ls ~/Programs/lib/clack/")
+;=> (#P"/Users/fukamachi/Programs/lib/clack/.git/"
+;    #P"/Users/fukamachi/Programs/lib/clack/.gitignore"
+;    #P"/Users/fukamachi/Programs/lib/clack/README.markdown"
+;    #P"/Users/fukamachi/Programs/lib/clack/clack-test.asd"
+;    #P"/Users/fukamachi/Programs/lib/clack/clack.asd"
+;    #P"/Users/fukamachi/Programs/lib/clack/src/"
+;    #P"/Users/fukamachi/Programs/lib/clack/t/"
+;    #P"/Users/fukamachi/Programs/lib/clack/tmp/")
+
+;; シェルをZshに変更 (デフォルトは "/bin/sh")
+(setf trivial-shell:*bourne-compatible-shell* "/bin/zsh")
+;=> "/bin/zsh"
+
+;; 環境変数の値を取得
+(trivial-shell:get-env-var "PATH")
+;=> "/usr/bin:/bin:/usr/sbin:/sbin"
+</pre>
+
+<h2>ファイル操作をしたい - CL-FAD</h2>
+
+<p>&#12288;日常の簡単なスクリプトなどを書くとき&#12289;Lispからファイルシステムにアクセスすることもあるでしょう&#12290;&#12300;CL-FAD&#12301;を使えばOSに依存しない可搬なプログラムが書けます&#12290;</p>
+
+<ul>
+<li><a href="http://weitz.de/cl-fad/">http://weitz.de/cl-fad/</a></li>
+</ul>
+
+<pre class="prettyprint lang-lisp">
+(import '(cl-fad:list-directory cl-fad:walk-directory cl-fad:delete-directory-and-files))
+
+;; ディレクトリのファイル一覧
+(list-directory #p"~/Programs/lib/clack/")
+;=> (#P"/Users/fukamachi/Programs/lib/clack/.git/"
+;    #P"/Users/fukamachi/Programs/lib/clack/.gitignore"
+;    #P"/Users/fukamachi/Programs/lib/clack/README.markdown"
+;    #P"/Users/fukamachi/Programs/lib/clack/clack-test.asd"
+;    #P"/Users/fukamachi/Programs/lib/clack/clack.asd"
+;    #P"/Users/fukamachi/Programs/lib/clack/src/"
+;    #P"/Users/fukamachi/Programs/lib/clack/t/"
+;    #P"/Users/fukamachi/Programs/lib/clack/tmp/")
+
+;; ホームディレクトリ以下のMP3ファイルを再帰的に検索
+(walk-directory
+  #p"~/"
+  (lambda (file)
+    (when (string-equal (pathname-type file) "mp3")
+      (fresh-line)
+      (princ file))))
+;-> /Users/fukamachi/nagaku.mp3
+;   /Users/fukamachi/narunode.mp3
+;   /Users/fukamachi/shoryaku/shimasu.mp3
+;   ...
+</pre>
+
+<h2>HTTPリクエストを投げたい - Drakma</h2>
+
+<p>&#12288;LispでHTTPリクエストを投げるには&#12300;Drakma&#12301;を使います&#12290;</p>
+
+<ul>
+<li><a href="http://weitz.de/drakma/">http://weitz.de/drakma/</a></li>
+</ul>
+
+<p>&#12288;<code>http-request</code>にURLを与えるとコンテンツ&#12289;HTTPステータスコード&#12289;HTTPヘッダなどが多値で返ってきます&#12290;以下はGoogle翻訳のAPIを叩いてみたサンプルです&#12290;</p>
+
+<pre class="prettyprint lang-lisp">
+(import '(drakma:http-request))
+
+(multiple-value-bind (body status header)
+    (drakma:http-request "http://ajax.googleapis.com/ajax/services/language/translate?v=1.0&langpair=en%7Cja&q=Hello%2C%20World")
+  (format t "~&Status: ~A~%Body: ~A~%Header: ~A~%"
+          status body header))
+;-> Status: 200
+;   Body: {"responseData": {"translatedText":"こんにちは&#12289;世界"}, "responseDetails": null, "responseStatus": 200}
+;   Header: ((CACHE-CONTROL . no-cache, no-store, max-age=0, must-revalidate) (PRAGMA . no-cache) (EXPIRES . Fri, 01 Jan 1990 00:00:00 GMT) (DATE . Thu, 07 Apr 2011 12:10:42 GMT) (CONTENT-TYPE . text/javascript; charset=utf-8) (X-BACKEND-CONTENT-LENGTH . 80) (X-EMBEDDED-STATUS . 200) (X-CONTENT-TYPE-OPTIONS . nosniff) (X-FRAME-OPTIONS . SAMEORIGIN) (X-XSS-PROTECTION . 1; mode=block) (SERVER . GSE) (CONNECTION . close))
+;=> NIL
+</pre>
+
+<p>&#12288;<code>body</code>がJSONで返ってきているので&#12289;これをパースすれば英語を翻訳した結果だけを受け取れそうです&#12290;パースはCL-JSONを使うのが丁寧でしょうが&#12289;今回はそこまでする必要も感じないのでCL-PPCREで翻訳部分だけ抜き取ります&#12290;</p>
+
+<pre class="prettyprint lang-lisp">
+(ppcre:scan-to-strings
+ "(?<=translatedText\":\")[^\"]*"
+ (nth-value 0
+  (drakma:http-request "http://ajax.googleapis.com/ajax/services/language/translate?v=1.0&langpair=en%7Cja&q=Hello%2C%20World")))
+;=> "こんにちは&#12289;世界"
+</pre>
+
+<p>&#12288;余裕がある人はGoogle翻訳する関数を書いてみるといいかもしれません&#12290;</p>
+
+<h2>単体テスト - CL-TEST-MORE</h2>
+
+<p>&#12288;自動化されたテストがないプロダクトはレガシーだと言われるようになったのはどうも最近のように思われますが&#12289;Lispは意外にも自動テストに関して熱心な傾向があります&#12290;</p>
+
+<p>&#12288;単体テストフレームワークもいくつか選択肢があります&#12290;ここでは&#12300;CL-TEST-MORE&#12301;というPerlのTest::Moreというモジュールに影響されたライブラリを紹介します&#12290;</p>
+
+<ul>
+<li><a href="https://github.com/fukamachi/cl-test-more">https://github.com/fukamachi/cl-test-more</a></li>
+</ul>
+
+<p>&#12288;関数などはほぼTest::Moreと同じです&#12290;</p>
+
+<pre class="prettyprint lang-lisp">
+(import '(cl-test-more:is cl-test-more:plan cl-test-more:deftest cl-test-more:run-test-all))
+
+(plan 9)
+
+;; check if first argument is true
+(ok (eq got expected) "Description")
+
+;; check if "got" equals "expected"
+(is got expected "Description")
+(isnt got expected "Description")
+;; with :test function
+(is got expected "Description" :test #'string=)
+
+;; rather than print *standard-output* "# This is just a comment\n"
+(diag "This is just a comment")
+
+;; macro expansion
+(is-expand (got macro) (expected :like "this") "Description")
+
+;; output
+(is-print (write-line "aiueo") "aiueo\n" "Description")
+
+;; functions always pass or fail
+(pass "Description")
+(fail "Description")
+
+(finalize)
+</pre>
+
+<p>&#12288;出力結果はみんな大好きTAP(Test Anything Protocol)です&#12290;</p>
+
+<h2>ユーティリティ集 - Alexandria</h2>
+
+<p>&#12288;最後に&#12289;Common Lispのユーティリティ集についてです&#12290;</p>
+
+<p>&#12288;もし&#12300;Haskellの&#9675;&#9675;はCLにはないのか&#8230;&#12301;とか&#12300;こんな関数が標準的にあったらいいのになぁ&#12301;と思ったら&#12289;自分で実装する前に&#12300;Alexandria&#12301;を探すといいです&#12290;AlexandriaはCLの標準ユーティリティ集的存在を目指したものです&#12290;</p>
+
+<ul>
+<li><a href="http://common-lisp.net/project/alexandria/">http://common-lisp.net/project/alexandria/</a></li>
+</ul>
+
+<p>&#12288;欲しいコマンドは<code>apropos</code>で探します(それかac-slime)&#12290;</p>
+
+<pre class="prettyprint lang-lisp">
+(apropos "plist" :alexandria)
+;->  ALEXANDRIA.0.DEV:ALIST-PLIST, Def: FUNCTION
+;    ALEXANDRIA.0.DEV:DELETE-FROM-PLIST, Def: FUNCTION
+;    ALEXANDRIA.0.DEV:DELETE-FROM-PLISTF, Def: MACRO FUNCTION
+;    ALEXANDRIA.0.DEV:DOPLIST, Def: MACRO FUNCTION
+;    ALEXANDRIA.0.DEV:HASH-TABLE-PLIST, Def: FUNCTION
+;   ALEXANDRIA.0.DEV::MALFORMED-PLIST, Def: FUNCTION
+;                     MAPLIST, Def: FUNCTION
+;   ALEXANDRIA.0.DEV::PLIST
+;    ALEXANDRIA.0.DEV:PLIST-ALIST, Def: FUNCTION
+;    ALEXANDRIA.0.DEV:PLIST-HASH-TABLE, Def: FUNCTION
+;    ALEXANDRIA.0.DEV:REMOVE-FROM-PLIST, Def: FUNCTION
+;    ALEXANDRIA.0.DEV:REMOVE-FROM-PLISTF, Def: MACRO FUNCTION
+;                     SYMBOL-PLIST, Def: FUNCTION
+;=> nil
+</pre>
+
+<p>&#12288;僕はplistが好きなのでplist系の関数群や&#12289;with-gensymsなどの汎用的なマクロをよく使っています&#12290;</p>
+
+<h2>まとめ</h2>
+
+<p>&#12288;この他にも&#12289;こういったことがしたければこのライブラリだろう&#12289;というものはいくつもあります&#12290;面倒なので紹介はしませんが以下に名前だけ載せておきます&#12290;</p>
+
+<ul>
+<li>Webサーバ - <a href="http://clacklisp.org/">Clack</a></li>
+<li>データベース操作 - <a href="http://clsql.b9.com/manual/">CLSQL</a>, <a href="http://common-lisp.net/project/elephant/">Elephant</a>, <a href="http://common-lisp.net/project/rucksack/">Rucksack</a></li>
+<li>テンプレートエンジン - <a href="https://github.com/arielnetworks/cl-markup">CL-Markup</a>, <a href="http://common-lisp.net/project/cl-emb/">CL-EMB</a></li>
+<li>文字エンコード - <a href="http://common-lisp.net/project/babel/">Babel</a></li>
+<li>暗号化ライブラリ - <a href="http://method-combination.net/lisp/ironclad/">Ironclad</a></li>
+</ul>
+
+<p>&#12288;また余談ですが&#12289;Quicklispのダウンロード数ランキングも公開されています&#12290;何かの参考になるかもしれません&#12290;</p>
+
+<ul>
+<li><a href="http://blog.quicklisp.org/2011/02/project-download-stats.html">Quicklisp news: Project download stats</a></li>
+</ul>
+
+<p>&#12288;さて&#12289;今回はCommon Lispライブラリを紹介しました&#12290;ライブラリの使用に関しては(Quicklispがあれば)特別困ることもないと思います&#12290;</p>
+
+<p>&#12288;この連載は松山さんと交互に書いているため&#12289;今後話題が交互することになるでしょう&#12290;次の僕の回ではモダンなCommon Lispライブラリの作り方について説明します&#12290;</p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'><span class='post-author vcard'>
+投稿者
+<span class='fn'>深町英太郎</span>
+</span>
+<span class='post-timestamp'>
+時刻:
+<a class='timestamp-link' href='http://modern-cl.blogspot.jp/2011/04/4-common-lisp.html' rel='bookmark' title='permanent link'><abbr class='published' title='2011-04-23T15:04:00+09:00'>15:04</abbr></a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='http://modern-cl.blogspot.jp/2011/04/4-common-lisp.html#comment-form' onclick=''>0
+コメント</a>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-971882720'>
+<a href='http://www.blogger.com/post-edit.g?blogID=5582672144555408512&postID=4306541851512768510&from=pencil' title='投稿を編集'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons'>
+<a class='goog-inline-block share-button sb-email' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=4306541851512768510&target=email' target='_blank' title='メールで送信'><span class='share-button-link-text'>メールで送信</span></a><a class='goog-inline-block share-button sb-blog' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=4306541851512768510&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=4306541851512768510&target=twitter' target='_blank' title='Twitter で共有する'><span class='share-button-link-text'>Twitter で共有する</span></a><a class='goog-inline-block share-button sb-facebook' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=4306541851512768510&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Facebook で共有する'><span class='share-button-link-text'>Facebook で共有する</span></a><a class='goog-inline-block share-button sb-pinterest' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=4306541851512768510&target=pinterest' target='_blank' title='Pinterest に共有'><span class='share-button-link-text'>Pinterest に共有</span></a><div class='goog-inline-block dummy-container'><g:plusone source='blogger:blog:plusone' href='http://modern-cl.blogspot.com/2011/04/4-common-lisp.html' size='medium' width='300' annotation='inline'/></div>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'><span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'><span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+            </div></div>
+          
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>4/07/2011</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry'>
+<a name='4703286553860270144'></a>
+<h3 class='post-title entry-title'>
+<a href='http://modern-cl.blogspot.jp/2011/04/3-slime.html'>第3回 SLIMEの使い方 基礎編</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content'>
+前回はQuicklispによるライブラリ管理について説明しました&#12290;今回はSLIMEの 基本的な使い方について説明します&#12290;<br />
+<h2>
+SLIMEとは</h2>
+SLIMEは(Common) Lispのための統合開発環境(IDE)です&#12290;他のIDEとは異なり&#12289; 対話的にプログラムを構築できるのが特徴です&#12290;一度ハマれば他の開発環境は 使えなくなるでしょう&#12290;詳しい情報は次のURLを参照してください&#12290;<br />
+<a href="http://common-lisp.net/project/slime/">http://common-lisp.net/project/slime/</a><br />
+<h2>
+インストールと設定</h2>
+<h3>
+SLIME</h3>
+SLIMEのCVSスナップショット&#65288;本家推奨&#65289;をインストールします&#12290;OSは GNU/LinuxやMac OS XなどのUNIX系OSを想定しています&#12290;<br />
+<pre><code>$ wget http://common-lisp.net/project/slime/snapshots/slime-current.tgz
+$ tar xvzf slime-current.tgz
+$ mv slime-* ~/.emacs.d/slime
+</code></pre>
+展開したディレクトリは<code>slime-2011-04-07</code>のような名前になりますが&#12289;ここ では<code>slime</code>という名前で<code>~/.emacs.d/</code>直下に移動します&#12290;<br />
+次にEmacsの設定を行います&#12290;次のコードを<code>~/.emacs</code>に書いてください&#12290;<br />
+<pre class="prettyprint lang-lisp"><code>;; Clozure CLをデフォルトのCommon Lisp処理系に設定
+(setq inferior-lisp-program "ccl")
+;; ~/.emacs.d/slimeをload-pathに追加
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/slime"))
+;; SLIMEのロード
+(require 'slime)
+(slime-setup '(slime-repl slime-fancy slime-banner slime-indentation))
+</code></pre>
+これで基本的な設定は完了です&#12290;<br />
+<strong><em>2011/7/10追記</em></strong><br />
+若干設定項目が足りなかったので補足します&#12290;<br />
+<pre><code>;; SLIMEからの入力をUTF-8に設定
+(setq slime-net-coding-system 'utf-8-unix)
+</code></pre>
+<strong><em>2013/09/20追記</em></strong><br />
+<code>slime-indentation</code>を追加しました&#12290;これで後述のcl-indent-patchesの設定は不要です&#12290;<br />
+<h3>
+popwin.el</h3>
+使い始めれば気付くと思いますが&#12289;SLIMEは事あるごとにEmacsのウィンドウを 分割したり&#12289;他のウィンドウのバッファを切り替えたりします&#12290;これではせっ かくの優れた開発環境も台無しです&#12290;そこで&#12289;拙作のpopwin.elをインストール することをお勧めします&#12290;popwin.elはウィンドウの分割等を極力抑制し&#12289;プロ グラマが快適に作業することを助けてくれる優れものです&#12290;<br />
+インストール方法や使い方は次のURLを参照してください&#12290;<br />
+<a href="http://d.hatena.ne.jp/m2ym/20110120/1295524932">http://d.hatena.ne.jp/m2ym/20110120/1295524932</a><br />
+インストールが完了したら次のコードを<code>~/.emacs</code>に書いてください&#12290;<br />
+<pre class="prettyprint lang-lisp"><code>;; Apropos
+(push '("*slime-apropos*") popwin:special-display-config)
+;; Macroexpand
+(push '("*slime-macroexpansion*") popwin:special-display-config)
+;; Help
+(push '("*slime-description*") popwin:special-display-config)
+;; Compilation
+(push '("*slime-compilation*" :noselect t) popwin:special-display-config)
+;; Cross-reference
+(push '("*slime-xref*") popwin:special-display-config)
+;; Debugger
+(push '(sldb-mode :stick t) popwin:special-display-config)
+;; REPL
+(push '(slime-repl-mode) popwin:special-display-config)
+;; Connections
+(push '(slime-connection-list-mode) popwin:special-display-config)
+</code></pre>
+<h3>
+ac-slime</h3>
+ac-slimeはauto-complete.elのSLIME拡張です&#12290;SLIME(SWANKサーバー)の情報を 利用するため&#12289;非常に高精度のコード補完が行えます&#12290;<br />
+ac-slimeは次のURLから入手できます&#12290;<br />
+<a href="https://github.com/purcell/ac-slime">https://github.com/purcell/ac-slime</a><br />
+なおauto-complete.elをあらかじめインストールしておく必要があります&#12290;イ ンストールしていない方は次のURLを参照してください&#12290;<br />
+<a href="http://cx4a.org/software/auto-complete/index.ja.html">http://cx4a.org/software/auto-complete/index.ja.html</a><br />
+ac-slimeをインストールするには&#12289;先のURLからac-slime.elをダウンロードし&#12289; load-pathの通ったディレクトリにコピーします&#12290;install-elispや auto-installがある場合は次のコードを評価することでインストールできます&#12290;<br />
+<pre class="prettyprint lang-lisp"><code>;; install-elisp
+(install-elisp "https://github.com/purcell/ac-slime/raw/master/ac-slime.el")
+;; auto-install
+(auto-install-from-url "https://github.com/purcell/ac-slime/raw/master/ac-slime.el")
+</code></pre>
+最後に<code>~/.emacs</code>に次のコードを書いてインストール完了です&#12290;<br />
+<pre class="prettyprint lang-lisp"><code>(require 'ac-slime)
+(add-hook 'slime-mode-hook 'set-up-slime-ac)
+(add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
+</code></pre>
+これで.lispファイルやREPLでauto-complete.elを使った自動コード補完が行え るようになりました&#12290;<br />
+<img alt="" src="http://cx4a.org/pub/ac-slime.png" /><br />
+<h3>
+cl-indent-patches.el</h3>
+<strong><em>&#8595;SLIMEに取り込まれたため&#12289;このcl-indent-patches.elの導入は不要です&#12290;(2013/09/20)</em></strong><br />
+<div style="color: grey;">
+<strong><em>この節は2011/7/10に追記しました</em></strong><br />
+Emacs標準のインデント機能には若干問題があります&#12290;特に<code>loop</code>マクロのイン デントが変です&#12290;例えば次のようなインデントになってしまいます&#12290;<br />
+<pre><code>(loop for x in lst
+      if (oddp x)
+      collect x)
+</code></pre>
+本来は次のようにインデントされるべきです&#12290;<br />
+<pre><code>(loop for x in lst
+      if (oddp x)
+        collect x)
+</code></pre>
+このあたりに気をきかせてくれるのがcl-indent-patches.elです&#12290;次のURLから 入手できます&#12290;<br />
+<a href="http://boinkor.net/lisp/cl-indent-patches.el">http://boinkor.net/lisp/cl-indent-patches.el</a><br />
+このファイルを<code>load-path</code>の通ったディレクトリに配置してください&#12290;後は <code>.emacs</code>に次のような設定を書けばOKです&#12290;<br />
+<pre><code>(when (require 'cl-indent-patches nil t)
+  ;; emacs-lispのインデントと混同しないように
+  (setq lisp-indent-function
+        (lambda (&amp;rest args)
+          (apply (if (memq major-mode '(emacs-lisp-mode lisp-interaction-mode))
+                     'lisp-indent-function
+                     'common-lisp-indent-function)
+                 args))))
+</code></pre>
+</div>
+<h2>
+SLIMEの使い方</h2>
+<h3>
+SLIMEの起動</h3>
+インストールと設定が完了したら<code>M-x slime</code>とやってみましょう&#12290;次のような 表示の<code>*slime-repl ccl*</code>というREPLバッファが表示されれば成功です&#12290;<br />
+<pre><code>CL-USER&gt; 
+</code></pre>
+SLIMEを使って開発するに際して&#12289;まずやることはこの<code>M-x slime</code>です&#12290;これ を行わなければ&#12289;後で説明するエディタコマンドやインデント&#12289;コード補完&#12289; その他諸々が全く機能しません&#12290;まず<code>M-x slime</code>&#12289;これだけ覚えておいてくだ さい&#12290;<br />
+なお表示されたREPLバッファはちょっとした確認などを行ったりする場合を除 いて基本的には使用しません&#12290;<br />
+<h3>
+SLIMEの操作</h3>
+SLIMEを起動して次にすることはlispファイルを開くことです&#12290;試しに <code>foo.lisp</code>などの適当なファイルを開いてください&#12290;<br />
+lispファイルのメジャーモードは<code>lisp-mode</code>です&#12290;このモードには様々なキー が割り当てられていますが&#12289;今回はその中でも覚えておくべきキーバインドを 紹介します&#12290;<br />
+<h4>
+<code>C-c C-c</code></h4>
+<code>C-c C-c</code>は現在ポイントしているトップレベルフォームをコンパイルします&#12290; 例えば次のような関数を編集しているとします&#12290;<br />
+<pre class="prettyprint lang-lisp"><code>(defun f (a)
+  "Hello, World")
+</code></pre>
+ここで<code>C-c C-c</code>すると関数<code>f</code>がコンパイルされます&#12290;実際にやってみれば分 かると思いますが&#12289;上の関数をコンパイルすると&#12289;SLIMEは変数<code>a</code>が未使用で あると警告してくれます&#12290;もし警告があればそれを修正して<code>C-c C-c</code>&#12289;という のが基本的な開発サイクルになります&#12290;<br />
+<h4>
+<code>C-c C-k</code></h4>
+<code>C-c C-k</code>は現在のファイルをコンパイルしてロードします&#12290;トップレベルフォー ムを一つずつ<code>C-c C-c</code>するのが面倒なときに重宝します&#12290;また&#12289;<code>C-c C-c</code>同 様&#12289;ソースコードに問題があれば警告してくれるので&#12289;ファイルの最終的な確 認にも利用できます&#12290;<br />
+<h4>
+<code>C-c C-z</code></h4>
+<code>C-c C-z</code>は現在接続しているサーバーのREPLバッファを表示してくれます&#12290;何 か確認したいときや&#12289;前回紹介したQuicklispでライブラリをロードしたいとき に<code>C-c C-z</code>します&#12290;例えばCL-TEST-MOREというライブラリをロードし忘れてい たとしたら&#12289;<code>C-c C-z</code>でREPLバッファを表示して&#12289;次のように入力します&#12290;<br />
+<pre class="prettyprint lang-lisp"><code>CL-USER&gt; (ql:quickload :cl-test-more)
+</code></pre>
+REPLは使いこなせば非常に強力なので是非活用してください&#12290;<br />
+<h3>
+困った時</h3>
+より本格的な開発サイクルは次回で説明しますが&#12289;SLIMEにおけるEmacsの <code>C-g</code>的な存在として<code>M-x slime-restart-inferior-lisp</code>を紹介しておきます&#12290;<br />
+これは現在接続しているサーバーを再起動してクリーンな状態に戻すコマンド です&#12290;SLIMEで開発していると&#12289;変にシンボルがインターンされたり&#12289;おかしな 値の変数ができたりします&#12290;また&#12289;正しく動作しているとしても&#12289;実は古い変 数などが残っていて偶然動作しているだけだったりもします&#12290;そういった状態 をリセットするのに<code>M-x slime-restart-inferior-lisp</code>は非常に便利です&#12290;是 非覚えておいてください&#12290;<br />
+<h2>
+まとめ</h2>
+今回は&#12300;SLIMEの使い方 基礎編&#12301;ということで&#12289;SLIMEのインストールと設定&#12289; および非常に基本的な使い方を紹介しました&#12290;実際のところ&#12289;今回の内容だけ でSLIMEで開発を行うにはかなり情報が不足しています&#12290;Common Lisperなら気 付いていると思いますが&#12289;パッケージの扱いなど&#12289;様々な重要な点を端折って います&#12290;次回以降&#12289;より実際的なSLIMEの使い方を紹介していきたいと思います&#12290;
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'><span class='post-author vcard'>
+投稿者
+<span class='fn'>m2ym</span>
+</span>
+<span class='post-timestamp'>
+時刻:
+<a class='timestamp-link' href='http://modern-cl.blogspot.jp/2011/04/3-slime.html' rel='bookmark' title='permanent link'><abbr class='published' title='2011-04-07T21:41:00+09:00'>21:41</abbr></a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='http://modern-cl.blogspot.jp/2011/04/3-slime.html#comment-form' onclick=''>0
+コメント</a>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1157878254'>
+<a href='http://www.blogger.com/post-edit.g?blogID=5582672144555408512&postID=4703286553860270144&from=pencil' title='投稿を編集'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons'>
+<a class='goog-inline-block share-button sb-email' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=4703286553860270144&target=email' target='_blank' title='メールで送信'><span class='share-button-link-text'>メールで送信</span></a><a class='goog-inline-block share-button sb-blog' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=4703286553860270144&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=4703286553860270144&target=twitter' target='_blank' title='Twitter で共有する'><span class='share-button-link-text'>Twitter で共有する</span></a><a class='goog-inline-block share-button sb-facebook' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=4703286553860270144&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Facebook で共有する'><span class='share-button-link-text'>Facebook で共有する</span></a><a class='goog-inline-block share-button sb-pinterest' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=4703286553860270144&target=pinterest' target='_blank' title='Pinterest に共有'><span class='share-button-link-text'>Pinterest に共有</span></a><div class='goog-inline-block dummy-container'><g:plusone source='blogger:blog:plusone' href='http://modern-cl.blogspot.com/2011/04/3-slime.html' size='medium' width='300' annotation='inline'/></div>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'><span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'><span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+            </div></div>
+          
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>3/09/2011</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry'>
+<a name='4111082131600802561'></a>
+<h3 class='post-title entry-title'>
+<a href='http://modern-cl.blogspot.jp/2011/03/quicklisp.html'>第2回 Quicklispによるライブラリ環境</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content'>
+<p>
+&#12288;Common Lispのライブラリを利用するのに&#12289;以前は<a href="http://www.cliki.net/ASDF-Install">ASDF-Install</a>を使っていました&#12290;しかし&#12289;ASDF-Installは外部のシェルコマンドに依存するためWindowsでの利用が面倒だったり&#12289;接続先のサーバが落ちていてダウンロードできなかったり&#12289;ダウンロードできたとしてもビルドできないといったことが多くありました&#12290;</p>
+
+<p>
+&#12288;これを解決するためにZach Beaneが開発したのが<a href="http://www.quicklisp.org/">Quicklisp</a>です&#12290;現在BETA公開中で&#12289;いくつか制限事項はありますが&#12289;誰でも利用できるようになっています&#12290;</p>
+
+<h2>
+Quicklisp BETA</h2>
+
+<h3>
+セットアップ</h3>
+
+<p>
+&#12288;まずはQuicklisp自身をインストールします&#12290;以下のリンクからQuicklispをダウンロードしてください&#12290;</p>
+
+<ul>
+<li><strong><a href="http://beta.quicklisp.org/quicklisp.lisp">Quicklispをダウンロードする</a></strong></li>
+</ul>
+
+<p>
+&#12288;あなたのLisp処理系 (きっとSBCL以外でしょうね) を起動し&#12289;以下のコードを実行してください&#12290;</p>
+
+<pre class="prettyprint lang-lisp">(load "quicklisp.lisp")
+(quicklisp-quickstart:install :path ".quicklisp/")
+(ql:add-to-init-file)
+</pre>
+
+<p>
+&#8251;注) もしプロキシを通す必要があれば<code>:proxy</code>キーワードにURLを文字列で渡してください&#12290;例: (quicklisp-quickstart:install :path ".quicklisp/" :proxy "http://192.168.xx.xx:8080")</p>
+
+<p>
+&#12288;これでセットアップは完了です&#12290;<code>~/quicklisp</code>というディレクトリができていることを確認してください&#12290;</p>
+
+<p>
+&#12288;もしインストール後にQuicklispのディレクトリを変更したい場合には&#12289;<code>~/quicklisp</code>ディレクトリを移動したあと&#12289;処理系のinitファイル (Clozure CLならば<code>~/.ccl-init.lisp</code>)の一部を修正します&#12290;</p>
+
+<pre class="prettyprint lang-lisp">;;; The following lines added by ql:add-to-init-file:
+#-quicklisp
+(let ((quicklisp-init (merge-pathnames "<b>.quicklisp</b>/setup.lisp"
+                                       (user-homedir-pathname))))
+  (when (probe-file quicklisp-init)
+    (load quicklisp-init)))
+</pre>
+
+<h3>
+ライブラリのインストール&#12539;ロード</h3>
+
+<p>
+&#12288;Quicklispでライブラリのインストールをするには<code>ql:quickload</code>を使います&#12290;このコマンドは試験に出るのでよく覚えておいてください&#12290;</p>
+
+<pre class="prettyprint lang-lisp">(ql:quickload :cl-ppcre)
+</pre>
+
+<p>
+&#12288;指定したライブラリがまだインストールされていなければ&#12289;サーバからダウンロードしてインストールします&#12290;ASDF-INSTALLと違って依存パッケージも同時にインストールしてくれるので非常に助かります&#12290;</p>
+
+<h3>
+ライブラリを探す</h3>
+
+<p>
+&#12288;Quicklispに登録されているライブラリを探すには<code>ql:system-apropos</code>を使います&#12290;</p>
+
+<pre class="prettyprint lang-lisp">(ql:system-apropos "web")
+;-&gt; #&lt;system cl-webdav / cl-webdav-0.2.0 / quicklisp 2011-02-19&gt;
+;   #&lt;system hh-web-tags / hh-web-tags-20110219-hg / quicklisp 2011-02-19&gt;
+;   #&lt;system hh-web-tags-tests / hh-web-tags-20110219-hg / quicklisp 2011-02-19&gt;
+;   #&lt;system symbolicweb / symbolicweb-20101207-git / quicklisp 2011-02-19&gt;
+;   #&lt;system symbolicweb-examples / symbolicweb-20101207-git / quicklisp 2011-02-19&gt;
+;   #&lt;system symbolicweb-jquery / symbolicweb-20101207-git / quicklisp 2011-02-19&gt;
+;   #&lt;system webactions / portableaserve-20101006-cvs / quicklisp 2011-02-19&gt;
+;   #&lt;system weblocks / weblocks-20110219-hg / quicklisp 2011-02-19&gt;
+;   #&lt;system weblocks-demo / weblocks-20110219-hg / quicklisp 2011-02-19&gt;
+;   #&lt;system weblocks-demo-popover / weblocks-20110219-hg / quicklisp 2011-02-19&gt;
+;   #&lt;system weblocks-elephant / weblocks-20110219-hg / quicklisp 2011-02-19&gt;
+;   #&lt;system weblocks-elephant-demo / weblocks-20110219-hg / quicklisp 2011-02-19&gt;
+;   #&lt;system weblocks-memory / weblocks-20110219-hg / quicklisp 2011-02-19&gt;
+;   #&lt;system weblocks-postmodern / weblocks-20110219-hg / quicklisp 2011-02-19&gt;
+;   #&lt;system weblocks-prevalence / weblocks-20110219-hg / quicklisp 2011-02-19&gt;
+;   #&lt;system weblocks-s11 / weblocks-20110219-hg / quicklisp 2011-02-19&gt;
+;   #&lt;system weblocks-scripts / weblocks-20110219-hg / quicklisp 2011-02-19&gt;
+;   #&lt;system weblocks-store-test / weblocks-20110219-hg / quicklisp 2011-02-19&gt;
+;   #&lt;system weblocks-yarek / weblocks-20110219-hg / quicklisp 2011-02-19&gt;
+;   #&lt;system weblocks-yui / weblocks-20110219-hg / quicklisp 2011-02-19&gt;
+;=&gt; nil
+</pre>
+
+<h3>
+リポジトリをアップデートする</h3>
+
+<p>
+&#12288;Quicklispのリポジトリは毎月1回更新されます&#12290;ライブラリが更新されたり&#12289;追加されたり削除されたり&#12290;最新のライブラリにアップデートするには以下のコマンドを実行します&#12290;</p>
+
+<pre class="prettyprint lang-lisp">(ql:update-all-dists)
+</pre>
+
+<h2>
+ASDF2 - 登録されていないライブラリを使う</h2>
+
+<p>
+&#12288;Quicklispには既に多くのライブラリが登録されているとはいえ&#12289;まだ登録されていないライブラリもあります&#12290;また&#12289;自分が作ったライブラリやアプリケーションのロードには使うことができません&#12290;</p>
+
+<p>
+&#12288;そこで&#12289;&#12300;ASDF2&#12301;を使ってローカルの指定のライブラリをロードできるようにします&#12290;ASDF2は多くの処理系で標準バンドルされているはずなので特にセットアップの必要はありません&#12290;</p>
+
+<p>
+&#12288;まずはライブラリを置くディレクトリを作ります&#12290;ここでは<code>~/.lisp/systems</code>にライブラリを置くものとします&#12290;</p>
+
+<pre><code>$ mkdir ~/.lisp/systems
+</code></pre>
+
+<p>
+&#12288;そして<code>~/.config/common-lisp/source-registry.conf.d/01-add-local-lisp.conf</code>に上のディレクトリパスを指定します&#12290;</p>
+
+<pre class="prettyprint lang-lisp">;; ~/.config/common-lisp/source-registry.conf.d/01-add-local-lisp.conf
+(:tree (:home ".lisp/systems"))
+</pre>
+
+<p>
+&#12288;これで準備完了です&#12290;ASDF2は<code>~/.lisp/systems</code>の中を再帰的に見て&#12289;その中のライブラリをロードできるようになりました</p>
+
+<h3>
+ライブラリのインストールと利用</h3>
+
+<p>
+&#12288;たとえば<a href="http://clacklisp.org/">Clack</a>を使うには<code>~/.lisp/systems</code>にソースをcloneします&#12290;</p>
+
+<p><span style="color: red;">&#8251;追記(2011/04/11)</span>: 現在ではClackはQuicklispに取り込まれているため&#12289;インストールするためにこの処理は必要なくなっています&#12290;</p>
+
+<pre><code>$ cd ~/.lisp/systems
+$ git clone git://github.com/fukamachi/clack
+$ git clone git://github.com/arielnetworks/cl-annot
+</code></pre>
+
+<p>
+&#12288;Lisp処理系を立ち上げ&#12289;<code>ql:quickload</code>してください&#12290;</p>
+
+<pre class="prettyprint lang-lisp">(ql:quickload :clack)
+</pre>
+
+<p>
+&#12288;これでClackが使えるはずです&#12290;以下のコードを実行して&#12289;<a href="http://localhost:5000/">http://localhost:5000/</a>にアクセスしてみてください&#12290;<strong>"Hello, Clack!"</strong>と表示されるはずです&#12290;</p>
+
+<pre class="prettyprint lang-lisp">(clack:clackup
+  #'(lambda (req)
+      (declare (ignore req))
+      '(200 nil ("Hello, Clack!"))))
+</pre>
+
+<p>
+&#12288;使えなかった場合は<a href="http://twitter.com/#!/nitro_idiot">@nitro_idiot</a>に報告してくださいね&#12290;</p>
+
+<h2>
+まとめ</h2>
+
+<p>
+&#12288;今回はQuicklispとASDF2によるライブラリの導入について解説しました&#12290;PerlやRubyに比べるとそれほど良い環境とは言えませんが&#12289;以前と比べてLispのライブラリ環境も悪くなくなってきています&#12290;これから数もどんどん増えていくことでしょう&#12290;</p>
+
+<p>
+&#12288;次回は<a href="http://twitter.com/#!/m2ym">松山さん</a>がEmacsとSLIMEの環境設定について書いてくれるはずです&#12290;</p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'><span class='post-author vcard'>
+投稿者
+<span class='fn'>深町英太郎</span>
+</span>
+<span class='post-timestamp'>
+時刻:
+<a class='timestamp-link' href='http://modern-cl.blogspot.jp/2011/03/quicklisp.html' rel='bookmark' title='permanent link'><abbr class='published' title='2011-03-09T19:07:00+09:00'>19:07</abbr></a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='http://modern-cl.blogspot.jp/2011/03/quicklisp.html#comment-form' onclick=''>0
+コメント</a>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-971882720'>
+<a href='http://www.blogger.com/post-edit.g?blogID=5582672144555408512&postID=4111082131600802561&from=pencil' title='投稿を編集'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons'>
+<a class='goog-inline-block share-button sb-email' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=4111082131600802561&target=email' target='_blank' title='メールで送信'><span class='share-button-link-text'>メールで送信</span></a><a class='goog-inline-block share-button sb-blog' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=4111082131600802561&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=4111082131600802561&target=twitter' target='_blank' title='Twitter で共有する'><span class='share-button-link-text'>Twitter で共有する</span></a><a class='goog-inline-block share-button sb-facebook' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=4111082131600802561&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Facebook で共有する'><span class='share-button-link-text'>Facebook で共有する</span></a><a class='goog-inline-block share-button sb-pinterest' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=4111082131600802561&target=pinterest' target='_blank' title='Pinterest に共有'><span class='share-button-link-text'>Pinterest に共有</span></a><div class='goog-inline-block dummy-container'><g:plusone source='blogger:blog:plusone' href='http://modern-cl.blogspot.com/2011/03/quicklisp.html' size='medium' width='300' annotation='inline'/></div>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'><span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'><span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+            </div></div>
+          
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>3/07/2011</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry'>
+<a name='8934488238673258470'></a>
+<h3 class='post-title entry-title'>
+<a href='http://modern-cl.blogspot.jp/2011/03/common-lisp1-common-lisp-common.html'>第1回 Common Lisp処理系のインストール</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content'>
+<p>同僚の<a href="http://twitter.com/#!/nitro_idiot">深町さん</a>と&#12300;モダンCommon Lisp&#12301;シリーズを初めることになりました&#12290;今回はCommon Lisp処理系のインストール方法について解説します&#12290;</p>
+<h2>どの処理系を使うか</h2>
+<p>Common Lispには処理系が多数存在するため&#12289;プログラミングを初める前に&#12289;まずどの処理系を使うか決めなくてはなりません&#12290;商用なら<a href="http://www.franz.com/products/allegrocl/">Allegro CL</a>でほぼ一択のようですが&#12289;お金がかかりますし&#12289;プロプライエタリソフトウェアですから&#12289;今回は候補から除外します&#12290;</p>
+<p>無料で手に入る&#65288;フリーな&#65289;処理系としては<a href="http://www.sbcl.org/">SBCL</a>が有名です&#12290;多くのライブラリでサポートされている処理系であり&#12289;コンパイラの品質が高い&#65288;速いコードが生成される&#65289;という強みを持っていますが&#12289;スレッドサポートがかなり怪しいらしく&#65288;未確認&#65289;&#12289;またコンパイルに非常に時間がかかるという問題を持っています&#65288;開発のテンポに影響&#65289;&#12290;</p>
+<p>SBCL以外には&#12289;例えば<a href="http://www.gnu.org/software/clisp/">CLISP</a>などがありますが&#12289;今回は深町さんに教えてもらった<a href="http://www.clozure.com/clozurecl.html">Clozure CL</a>をおすすめしようと思います&#12290;</p>
+<p>Clozure CLは&#12289;SBCLほどではないにしろ&#12289;多くライブラリでサポートされている処理系であり&#12289;また元々のサポートの対象であったDarwin系のOS以外にも&#12289;GNU/LinuxやFreeBSD&#12289;Solaris&#12289;Windowsに対応しています&#12290;深町さんはMac OS X 10.6で&#12289;僕はUbuntu 10.10でClozure CLを使っていますが&#12289;今までで致命的な問題になったことはないです&#12290;また&#12289;SBCLに比べて非常にコンパイルが速いのも重要な利点です&#12290;ただ&#12289;生成されるコードの品質はそれほど良くないので&#12289;開発時はClozure CL&#12289;運用時はSBCL&#12289;という使い分けが良いと思います&#12290;</p>
+
+<h2>Clozure CLをインストールする</h2>
+
+<p><span style="color: red;">&#8251;追記1</span>: Clozure CLに加えて今後の連載で紹介するEmacs&#12289;SLIME&#12289;Quicklispもすべて含めた<a href="http://common-lisp.net/project/lispbox/">Lispbox</a>というプロダクトもあります&#12290;</p>
+<p><span style="color: red;">&#8251;追記2</span>: Macを使っていて&#12289;Homebrewを導入している人は<code>brew install clozure-cl</code>で最新のClozure CLをインストールできます&#12290;</p>
+
+<p>現在での最新安定板はv1.7です&#12290;一応&#12289;次のURLから最新版を確認してください&#12290;</p>
+<p><a href="http://trac.clozure.com/ccl">http://trac.clozure.com/ccl</a></p>
+<p>ここではGNU/Linux x86_64にClozure CL v1.7をインストールする手順を説明します&#12290;Mac OS Xでもほぼ同じ手順でインストールできると思います&#12290;</p>
+<p>まず<code>~/opt</code>にリリースをダウンロードします&#12290;</p>
+<pre><code>$ mkdir -p ~/opt
+$ cd ~/opt
+$ # Mac OS Xならdarwinx86
+$ # Linuxならlinuxx86
+$ # 詳しくは上記URLを参照
+$ svn co http://svn.clozure.com/publicsvn/openmcl/release/1.7/linuxx86/ccl
+</code></pre>
+<p><code>ccl</code>ディレクトリが作られ&#12289;その中に32bit用と64bit用の実行可能ファイルが置かれます&#12290;なぜSubversionなのかというツッコミはやめましょう&#12290;</p>
+<p>実行スクリプトはscriptsディレクトリの中にccl (64bit用はccl64) という名前で入っています&#12290;実行する際は<code>CCL_DEFAULT_DIRECTORY</code>に&#12289;checkoutした<code>ccl</code>ディレクトリのパスを設定してください&#12290;</p>
+<p>このスクリプトを<code>PATH</code>環境変数の通ったディレクトリに<code>ccl</code>という名前で保存します&#12290;ここでは<code>~/bin</code>に置きます&#12290;</p>
+<pre><code>$ cp scripts/ccl ~/bin/ccl
+$ chmod +x ~/bin/ccl
+</code></pre>
+<p>最後にターミナルで<code>ccl</code>を起動して&#12289;正しく動作すればOKです&#12290;</p>
+<pre><code>$ ccl<br />Welcome to Clozure Common Lisp Version 1.7-r14925M  (LinuxX8632)!
+? 
+</code></pre>
+<p>次回はQuicklispのインストール方法について解説します&#12290;</p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'><span class='post-author vcard'>
+投稿者
+<span class='fn'>m2ym</span>
+</span>
+<span class='post-timestamp'>
+時刻:
+<a class='timestamp-link' href='http://modern-cl.blogspot.jp/2011/03/common-lisp1-common-lisp-common.html' rel='bookmark' title='permanent link'><abbr class='published' title='2011-03-07T18:46:00+09:00'>18:46</abbr></a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='http://modern-cl.blogspot.jp/2011/03/common-lisp1-common-lisp-common.html#comment-form' onclick=''>0
+コメント</a>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1157878254'>
+<a href='http://www.blogger.com/post-edit.g?blogID=5582672144555408512&postID=8934488238673258470&from=pencil' title='投稿を編集'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons'>
+<a class='goog-inline-block share-button sb-email' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=8934488238673258470&target=email' target='_blank' title='メールで送信'><span class='share-button-link-text'>メールで送信</span></a><a class='goog-inline-block share-button sb-blog' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=8934488238673258470&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=8934488238673258470&target=twitter' target='_blank' title='Twitter で共有する'><span class='share-button-link-text'>Twitter で共有する</span></a><a class='goog-inline-block share-button sb-facebook' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=8934488238673258470&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Facebook で共有する'><span class='share-button-link-text'>Facebook で共有する</span></a><a class='goog-inline-block share-button sb-pinterest' href='http://www.blogger.com/share-post.g?blogID=5582672144555408512&postID=8934488238673258470&target=pinterest' target='_blank' title='Pinterest に共有'><span class='share-button-link-text'>Pinterest に共有</span></a><div class='goog-inline-block dummy-container'><g:plusone source='blogger:blog:plusone' href='http://modern-cl.blogspot.com/2011/03/common-lisp1-common-lisp-common.html' size='medium' width='300' annotation='inline'/></div>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'><span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'><span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+        </div></div>
+      
+<!-- google_ad_section_end -->
+</div>
+<div class='blog-pager' id='blog-pager'>
+<a class='home-link' href='http://modern-cl.blogspot.jp/'>ホーム</a>
+</div>
+<div class='clear'></div>
+<div class='blog-feeds'>
+<div class='feed-links'>
+登録:
+<a class='feed-link' href='http://modern-cl.blogspot.com/feeds/posts/default' target='_blank' type='application/atom+xml'>投稿 (Atom)</a>
+</div>
+</div>
+<script type="text/javascript">window.___gcfg = {'lang': 'ja'};</script>
+</div></div>
+</div>
+</div>
+<div class='column-left-outer'>
+<div class='column-left-inner'>
+<aside>
+</aside>
+</div>
+</div>
+<div class='column-right-outer'>
+<div class='column-right-inner'>
+<aside>
+<div class='sidebar section' id='sidebar-right-1'><div class='widget BlogArchive' id='BlogArchive1'>
+<h2>Blog Archive</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<div id='bloggerCalendarList'>
+<ul>
+<li class='archivedate'>
+<a href='http://modern-cl.blogspot.jp/2011_07_01_archive.html'>7月</a> (2)
+      </li>
+<li class='archivedate'>
+<a href='http://modern-cl.blogspot.jp/2011_04_01_archive.html'>4月</a> (2)
+      </li>
+<li class='archivedate'>
+<a href='http://modern-cl.blogspot.jp/2011_03_01_archive.html'>3月</a> (2)
+      </li>
+</ul>
+</div>
+<div id='blogger_calendar' style='display:none'>
+<table id='bcalendar'><caption id='bcaption'>
+</caption>
+<thead id='bcHead'></thead>
+<tbody><tr><td id='cell1'>
+</td><td id='cell2'>
+</td><td id='cell3'>
+</td><td id='cell4'>
+</td><td id='cell5'>
+</td><td id='cell6'>
+</td><td id='cell7'>
+</td></tr>
+<tr><td id='cell8'>
+</td><td id='cell9'>
+</td><td id='cell10'>
+</td><td id='cell11'>
+</td><td id='cell12'>
+</td><td id='cell13'>
+</td><td id='cell14'>
+</td></tr>
+<tr><td id='cell15'>
+</td><td id='cell16'>
+</td><td id='cell17'>
+</td><td id='cell18'>
+</td><td id='cell19'>
+</td><td id='cell20'>
+</td><td id='cell21'>
+</td></tr>
+<tr><td id='cell22'>
+</td><td id='cell23'>
+</td><td id='cell24'>
+</td><td id='cell25'>
+</td><td id='cell26'>
+</td><td id='cell27'>
+</td><td id='cell28'>
+</td></tr>
+<tr><td id='cell29'>
+</td><td id='cell30'>
+</td><td id='cell31'>
+</td><td id='cell32'>
+</td><td id='cell33'>
+</td><td id='cell34'>
+</td><td id='cell35'>
+</td></tr>
+<tr id='lastRow'><td id='cell36'>
+</td><td id='cell37'>
+</td></tr>
+</tbody>
+</table>
+<table id='bcNavigation'><tr>
+<td id='bcFootPrev'></td>
+<td id='bcFootAll'></td>
+<td id='bcFootNext'></td>
+</tr></table>
+<div id='calLoadingStatus' style='display:none; text-align:center;'>
+<script type='text/javascript'>bcLoadStatus();</script>
+</div>
+<div id='calendarDisplay'></div>
+</div>
+<script type='text/javascript'> initCal();</script>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=5582672144555408512&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='編集'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' id='HTML1'>
+<h2 class='title'>Author</h2>
+<div class='widget-content'>
+<a href="https://twitter.com/nitro_idiot">
+<img src="http://labs.ariel-networks.com/img/fukamachi.png" width="85px" height="85px" alt="深町英太郎" style="float: left; border: none; padding: 5px;" />
+</a>
+<a href="https://twitter.com/m2ym">
+<img src="http://labs.ariel-networks.com/img/matsuyama.jpg" width="85px" height="85px" alt="松山朋洋" style="float: left; border: none; padding: 5px;" />
+</a>
+<br />
+<div style="font-size: 10px; font-family: 'optima', 'nu sans', Baskerville, 'times new roman', 'arial', sans-serif; text-align: center; clear: both;">
+Produced by <a href="http://labs.ariel-networks.com/"><img src="http://labs.ariel-networks.com/img/logo-100x30.png" alt="Produced by Ariel Labs" style="margin-bottom: -4px; border:none;" /></a>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=5582672144555408512&widgetType=HTML&widgetId=HTML1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target='configHTML1' title='編集'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget Followers' id='Followers1'>
+<h2 class='title'>Reader</h2>
+<div class='widget-content'>
+<div id='Followers1-wrapper'>
+<div style='margin-right:2px;'>
+<script type="text/javascript">
+        if (!window.google || !google.friendconnect) {
+          document.write('<script type="text/javascript"' +
+              'src="//www.google.com/friendconnect/script/friendconnect.js">' +
+              '</scr' + 'ipt>');
+        }
+      </script>
+<script type="text/javascript">
+      if (!window.registeredBloggerCallbacks) {
+        window.registeredBloggerCallbacks = true;
+
+        
+
+        
+        gadgets.rpc.register('requestReload', function() {
+          document.location.reload();
+        });
+
+        
+        gadgets.rpc.register('requestSignOut', function(siteId) {
+          
+          google.friendconnect.container.openSocialSiteId = siteId;
+          google.friendconnect.requestSignOut();
+        });
+      }
+    </script>
+<script type="text/javascript">
+    
+    function registerGetBlogUrls() {
+      gadgets.rpc.register('getBlogUrls', function() {
+        var holder = {};
+        
+          
+          
+          
+            holder.postFeed = "http://www.blogger.com/feeds/5582672144555408512/posts/default";
+          
+          
+          
+            holder.commentFeed = "http://www.blogger.com/feeds/5582672144555408512/comments/default";
+          
+          holder.currentBlogUrl = "http://modern-cl.blogspot.com/";
+          holder.currentBlogId = "5582672144555408512";
+        
+        return holder;
+      });
+    }
+  </script>
+<script type="text/javascript">
+  if (!window.registeredCommonBloggerCallbacks) {
+    window.registeredCommonBloggerCallbacks = true;
+
+    gadgets.rpc.register('resize_iframe', function(height) {
+      var el = document.getElementById(this['f']);
+      if (el) {
+        el.style.height = height + 'px';
+      }
+    });
+
+    
+    gadgets.rpc.register('set_pref', function() {});
+
+    registerGetBlogUrls();
+  }
+  </script>
+<div id="div-1s90w0mqf700m" style="width: 100%; "></div>
+<script type="text/javascript">
+    var skin = {};
+    skin['FACE_SIZE'] = '32';
+    skin['HEIGHT'] = "260";
+    skin['TITLE'] = "Reader";
+    skin['BORDER_COLOR'] = "transparent";
+    skin['ENDCAP_BG_COLOR'] = "transparent";
+    skin['ENDCAP_TEXT_COLOR'] = "#333333";
+    skin['ENDCAP_LINK_COLOR'] = "#d52932";
+    skin['ALTERNATE_BG_COLOR'] = "transparent";
+    
+    skin['CONTENT_BG_COLOR'] = "transparent";
+    skin['CONTENT_LINK_COLOR'] = "#d52932";
+    skin['CONTENT_TEXT_COLOR'] = "#333333";
+    skin['CONTENT_SECONDARY_LINK_COLOR'] = "#d52932";
+    skin['CONTENT_SECONDARY_TEXT_COLOR'] = "#666666";
+    skin['CONTENT_HEADLINE_COLOR'] = "#000000";
+    skin['FONT_FACE'] = "normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif";
+    google.friendconnect.container.setParentUrl("/");
+    google.friendconnect.container["renderMembersGadget"](
+    {id: "div-1s90w0mqf700m",
+     height: 260,
+     
+     
+     
+     site: "14371761064109142015",
+     
+     locale: 'ja' },
+     skin);
+  </script>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=5582672144555408512&widgetType=Followers&widgetId=Followers1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("Followers1"));' target='configFollowers1' title='編集'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div></div>
+</aside>
+</div>
+</div>
+</div>
+<div style='clear: both'></div>
+<!-- columns -->
+</div>
+<!-- main -->
+</div>
+</div>
+<div class='main-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<footer>
+<div class='footer-outer'>
+<div class='footer-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left footer-fauxborder-left'>
+<div class='fauxborder-right footer-fauxborder-right'></div>
+<div class='region-inner footer-inner'>
+<div class='foot section' id='footer-1'></div>
+<table border='0' cellpadding='0' cellspacing='0' class='section-columns columns-2'>
+<tbody>
+<tr>
+<td class='first columns-cell'>
+<div class='foot section' id='footer-2-1'></div>
+</td>
+<td class='columns-cell'>
+<div class='foot section' id='footer-2-2'></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- outside of the include in order to lock Attribution widget -->
+<div class='foot section' id='footer-3'><div class='widget Attribution' id='Attribution1'>
+<div class='widget-content' style='text-align: center;'>
+Awesome Inc. テンプレート. Powered by <a href='http://www.blogger.com' target='_blank'>Blogger</a>.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=5582672144555408512&widgetType=Attribution&widgetId=Attribution1&action=editWidget&sectionId=footer-3' onclick='return _WidgetManager._PopupConfig(document.getElementById("Attribution1"));' target='configAttribution1' title='編集'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</div>
+</div>
+<div class='footer-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</footer>
+<!-- content -->
+</div>
+</div>
+<div class='content-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<script type='text/javascript'>
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace('loading', '');
+      }, 10);
+  </script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/1557544647-widgets.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type='text/javascript'>
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV2";window['blogger_blog_id'] = '5582672144555408512';BLOG_attachCsiOnload(''); }_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d5582672144555408512','//modern-cl.blogspot.jp/','5582672144555408512');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '5582672144555408512', 'bloggerUrl': 'http://www.blogger.com', 'title': 'Modern Common Lisp', 'pageType': 'index', 'url': 'http://modern-cl.blogspot.jp/', 'canonicalUrl': 'http://modern-cl.blogspot.com/', 'canonicalHomepageUrl': 'http://modern-cl.blogspot.com/', 'homepageUrl': 'http://modern-cl.blogspot.jp/', 'blogspotFaviconUrl': 'http://modern-cl.blogspot.jp/favicon.ico', 'enabledCommentProfileImages': true, 'adultContent': false, 'disableAdSenseWidget': false, 'analyticsAccountNumber': '', 'searchLabel': '', 'searchQuery': '', 'pageName': '', 'pageTitle': 'Modern Common Lisp', 'encoding': 'UTF-8', 'locale': 'ja', 'localeUnderscoreDelimited': 'ja', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Modern Common Lisp - Atom\42 href\75\42http://modern-cl.blogspot.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Modern Common Lisp - RSS\42 href\75\42http://modern-cl.blogspot.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Modern Common Lisp - Atom\42 href\75\42http://www.blogger.com/feeds/5582672144555408512/posts/default\42 /\76\n', 'meTag': '', 'openIdOpTag': '\74link rel\75\42openid.server\42 href\75\42http://www.blogger.com/openid-server.g\42 /\76\n\74link rel\75\42openid.delegate\42 href\75\42http://modern-cl.blogspot.com/\42 /\76\n', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var b\75window,f\75\42chrome\42,g\75\42jstiming\42,k\75\42tick\42;(function(){function d(a){this.t\75{};this.tick\75function(a,d,c){var e\75void 0!\75c?c:(new Date).getTime();this.t[a]\75[e,d];if(void 0\75\75c)try{b.console.timeStamp(\42CSI/\42+a)}catch(h){}};this[k](\42start\42,null,a)}var a;b.performance\46\46(a\75b.performance.timing);var n\75a?new d(a.responseStart):new d;b.jstiming\75{Timer:d,load:n};if(a){var c\75a.navigationStart,h\75a.responseStart;0\74c\46\46h\76\75c\46\46(b[g].srt\75h-c)}if(a){var e\75b[g].load;0\74c\46\46h\76\75c\46\46(e[k](\42_wtsrt\42,void 0,c),e[k](\42wtsrt_\42,\42_wtsrt\42,h),e[k](\42tbsd_\42,\42wtsrt_\42))}try{a\75null,\nb[f]\46\46b[f].csi\46\46(a\75Math.floor(b[f].csi().pageT),e\46\0460\74c\46\46(e[k](\42_tbnd\42,void 0,b[f].csi().startE),e[k](\42tbnd_\42,\42_tbnd\42,c))),null\75\75a\46\46b.gtbExternal\46\46(a\75b.gtbExternal.pageT()),null\75\75a\46\46b.external\46\46(a\75b.external.pageT,e\46\0460\74c\46\46(e[k](\42_tbnd\42,void 0,b.external.startE),e[k](\42tbnd_\42,\42_tbnd\42,c))),a\46\46(b[g].pt\75a)}catch(p){}})();b.tickAboveFold\75function(d){var a\0750;if(d.offsetParent){do a+\75d.offsetTop;while(d\75d.offsetParent)}d\75a;750\76\75d\46\46b[g].load[k](\42aft\42)};var l\75!1;function m(){l||(l\75!0,b[g].load[k](\42firstScrollTime\42))}b.addEventListener?b.addEventListener(\42scroll\42,m,!1):b.attachEvent(\42onscroll\42,m);\n })();\74/script\076', 'mobileHeadScript': '', 'ieCssRetrofitLinks': '\74!--[if IE]\76\74script type\75\42text/javascript\42 src\75\42https://www.blogger.com/static/v1/jsbin/2240003346-ieretrofit.js\42\76\74/script\76\n\74![endif]--\076', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/76f25a6f2e06af76', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'sf': 'n'}}, {'name': 'skin', 'data': {'vars': {'date_border_size': '0', 'description_font': 'normal normal 20px Georgia, Utopia, \47Palatino Linotype\47, Palatino, serif', 'body_background_gradient_cap': 'none', 'tabs_selected_background_color': '#63704b', 'footer_background_gradient': 'none', 'date_background': 'transparent none no-repeat scroll top left', 'widget_border_radius': '5px', 'post_title_text_color': '#d52932', 'widget_font': 'normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'widget_link_hover_color': '#d52932', 'link_visited_color': '#7d171d', 'mobile_background_size': 'auto', 'date_space': '30px', 'post_title_font': 'normal normal 22px Georgia, Utopia, \47Palatino Linotype\47, Palatino, serif', 'tabs_text_color': '#333333', 'title_separator_border_size': '1px', 'header_background_gradient': 'none', 'widget_outer_background_gradient': 'none', 'widget_link_color': '#d52932', 'mobile_button_color': '#ffffff', 'widget_title_font': 'normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'widget_outer_background_color': 'transparent', 'date_last_border_radius_bottom': '5px', 'widget_outer_margin_top': '0', 'shadow_spread': '20px', 'title_shadow_spread': '-1px', 'outer_shadow_spread': '0', 'keycolor': '#b3ca88', 'image_shadow_spread': '20px', 'image_background_color': '#ffffff', 'header_font': 'normal normal 24px Molengo', 'header_background_color': '#333333', 'date_header_border_radius_top': '0', 'widget_border_bevel_color': 'transparent', 'tabs_border_color': '#908c6a', 'widget_background_color': '#fefdfa', 'date_position': 'static', 'post_first_padding_top': '0', 'tabs_background_gradient': 'url(http://www.blogblog.com/1kt/awesomeinc/tabs_gradient_light.png)', 'mobile_background_overlay': 'transparent none repeat scroll top left', 'date_border_color': '#aab122', 'tabs_background_color': '#b3ca88', 'widget_link_visited_color': '#7d171d', 'feed_text_color': '#333333', 'header_margin_top': '0', 'link_hover_color': '#d52932', 'date_last_space_bottom': '20px', 'header_margin_bottom': '0', 'date_padding_bottom': '0', 'list_separator_border_size': '0', 'description_text_color': '#908d6a', 'body_text_color': '#333333', 'header_padding_top': '22px', 'post_border_color': '#aab122', 'footer_text_color': '#333333', 'post_background_color': '#fefdfa', 'pager_space_top': '1em', 'endSide': 'right', 'startSide': 'left', 'body_background_size': 'auto', 'tabs_font': 'normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'body_font': 'normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'date_first_border_radius_top': '5px', 'date_header_position': '15px', 'date_text_color': '#908c6a', 'widget_title_text_color': '#333333', 'image_border_color': '#cccccc', 'separator_outdent': '0', 'widget_text_color': '#333333', 'link_color': '#d52932', 'widget_border_color': '#aab122', 'pager_border_radius_top': '5px', 'feed_link_color': '#d52932', 'header_text_color': '#fcfbf5', 'footer_background_color': '#fefdfa', 'widget_padding_top': '8px', 'feed_link_visited_color': '#7d171d', 'feed_link_hover_color': '#d52932', 'date_font': 'normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'tabs_selected_text_color': '#ffffff', 'date_side': 'right', 'post_border_bevel_color': '#aab122', 'widget_padding_side': '15px', 'body_background_color': '#fcfbf5', 'image_border_radius': '5px', 'pager_background_color': '#fefdfa', 'widget_alternate_text_color': '#666666'}, 'override': 'body { font-size: 10px; }\n.post-body { font-size: 12px; }\nh4 { font-size: 14px; }\npre, pre.prettyprint {\n  padding: 15px;\n  border: none !important;\n  border-bottom: 1px solid #ccc !important;\n  border-right: 1px solid #ccc !important;\n  background-color: #eee;\n  white-space: pre-wrap;\n}\n\n#bcalendar {\n  width: 100%;\n  text-align: center;\n  margin-top: 10px;\n}\n\n#bcalendar tr {\n  background-color: #fcfbf5;\n}\n#bcalendar tr a {\n  color: #fff;\n  background-color: #becaa9;\n  display: block;\n  font-weight: bold;\n}\n#calendarDisplay,\n#bcalendar caption select {\n  border: 1px #eee solid; \n  width: 100%;\n  font-size: 10px;\n}'}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\75classic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\75flipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\75magazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\75mosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\75sidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\75snapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\75timeslide'}}}]);
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar-right-1', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar-right-1', null, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_FollowersView', new _WidgetInfo('Followers1', 'sidebar-right-1', null, document.getElementById('Followers1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer-3', null, document.getElementById('Attribution1'), {'attribution': 'Awesome Inc. テンプレート. Powered by \74a href\75\47http://www.blogger.com\47 target\75\47_blank\47\76Blogger\74/a\76.'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', null, document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/1630596162-lbx__ja.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/3904812905-lightbox_bundle.css'}, 'displayModeFull'));
+</script>
+</body>
+</html>

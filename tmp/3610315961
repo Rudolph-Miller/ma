@@ -1,0 +1,32 @@
+<html LANG="ja"><head><meta HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-2022-jp"><style TYPE="text/css"><!--A { text-decoration: none; } A:link { color: navy; } A:visited { color: navy; } A:hover { color: red; } body {line-height: 140%;}--></style><title>WHY Common Lisp?</title></head><body ONLOAD=""><table BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH="100%"><tr><td><div ALIGN="right"><a HREF="http://www.msi.co.jp/index.html"><img SRC="/solutions/knowledge/image/msilogo.gif" WIDTH=163 HEIGHT=17 BORDER=0 ALT="数理システム"></a></div></td></tr></table><hr COLOR="navy" WIDTH="100%" SIZE="3"><br><div STYLE="border-top: 8px solid #e3eeff; border-bottom: 8px solid #e3eeff; background-color: #e3eeff;"><h1 ALIGN="center"><font COLOR="#000077">◆◆◆ WHY Common Lisp? ◆◆◆</font></h1></div><br><font SIZE="-1"><b>(2004年6月10日に開催した<a HREF="http://jp.franz.com/base/seminar-2004-06-10.html"> Lisp セミナー </a>の発表内容から)</b></font><hr><br>このセミナを通じて一番良く受ける質問の1つは、<br><blockquote><b>「どうして Common Lisp で書くのか?」</b></blockquote>
+先日、面接をした学生さんにも聞かれました。<br>
+わたしは、
+Common Lisp を選ぶ理由は<a HREF="http://www.franz.com/support/documentation/8.0/ansicl/ansicl.htm"><b> ANSI Standard </b></a>につきる、と思っています。<br>
+10年〜20年使われ続ける program は必ず標準化された言語で書くべきです。<br><br>どうしてか?<br><br>
+一番の理由は standard によって保守要員の確保が約束される、という点です。<br>
+“Common Lisp を知らない人”には仕様書を読んでもらえば良いわけで、
+本屋に平積みされているような雑誌を毎月買ってくる必要はないです。
+standard がある限り「知らないから書けません、保守できません」は
+理由になりません。<br>
+もう1つの理由は standard によって競争が可能になる。
+複数の vender が同じ仕様の下に複数の implementation を市場に出す
+ことで競争の原理が働く。
+それぞれの vender が性能や価格、拡張機能、ユーザサポートなど、
+それぞれが得意とするサービスで市場に参入することが可能。
+ユーザには選択肢が広がる。<br><br>
+ちなみに Common Lisp には 9 つ以上の implementation があります。<br><br>
+逆に、
+implementation が言語の semantics を決めるような言語 (perl, ruby, python, etc) 
+は、まじめな開発には使うべきではない。
+近頃 open source というのが流行ですが、
+本当に open であるべきなのは source ではなくて 仕様 である。<br>
+こう考えてくると使ってよい programming 言語というのは、かなり限られます。<br><br>
+ANSI, ISO あるいは JIS で現実的な仕様の決まっている programming 言語と
+いうものはそう多くなく、わたしに思いつくものは COBOL, FORTRAN, ADA,
+PL/1, C/C++, Common Lisp くらいしかありません。どれも一応 PC も含めた複数の 
+platform で動いていますが、この中で例えば web server を現実的なコスト
+で書けるものは何か、と尋ねたら C/C++ か Common Lisp に落着く。<br><br>
+したがって、
+どの programming 言語を使いますか?という問いは、<blockquote><b>
+gc のない C/C++ と、それを持つ Common Lisp の、どちらを使いますか?</b></blockquote>
+という問いと同値です。<br><br><font SIZE="-1"><b>KURODA Hisao</b> (2004-06-10)</font><br><br><font SIZE="-1"><b>関連記事: <a HREF="/solutions/knowledge/lisp-world/articles/why-AllegroCL">「なぜ Allegro CL なのか?」</a></b></font><br><hr><br><center><a HREF="/solutions/knowledge/lisp-world/"><b>[ Allegro CL Family 情報 ページへ ]</b></a></center><br><hr><br><table WIDTH="100%"><tr><td ALIGN="center" COLSPAN=10 NOWRAP="nowrap"><font SIZE="-1"><a HREF="http://www.msi.co.jp/index.html" TITLE="（株）数理システム　トップページ">MSI Top</a> | <a HREF="http://www.msi.co.jp/solutions/index.html" TITLE="ソリューション">Solutions</a> | <a HREF="http://www.msi.co.jp/msi/packages.html" TITLE="パッケージ製品">Packages</a> | <a HREF="http://www.msi.co.jp/msi/services.html" TITLE="業務紹介">Products & Service</a> | <a HREF="http://www.msi.co.jp/msi/index.html" TITLE="会社案内">About MSI</a> | <a HREF="http://www.msi.co.jp/employment/index.html" TITLE="採用案内">Recruit</a> | <a HREF="http://www.msi.co.jp/site.html" TITLE="サイトマップ">Site Map</a></font></td></tr><tr><td COLSPAN=10 BGCOLOR="#e6e6e6"><div STYLE="text-align: center;"><font SIZE="1">Copyright &copy; 2003-2013 MATHEMATICAL SYSTEMS Inc.</font></div></td></tr></table></body></html>

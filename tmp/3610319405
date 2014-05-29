@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Pluralism
+Description: A two-column, fixed-width template fit for 1024x768 screen resolutions.
+Version    : 1.0
+Released   : 20071218
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>ClipMenu: A clipboard manager for Mac OS X - ClipMenu.com</title>
+    <!--<meta name="keywords" content="" />-->
+    <!--<meta name="description" content="" />-->
+    <link href="/static/css/style.css?20090615" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
+    
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load('jquery', '1.3');
+    </script>
+    <script type="text/javascript" src="/static/js/application.js"></script>
+    <link href="/static/css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript" src="/static/js/jquery.lightbox-0.5.min.js"></script>
+    
+    <script type="text/javascript">
+      window.google_analytics_uacct = "UA-104117-3";
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="wrapper2">
+        <div id="header">
+          <div id="logo">
+            <h1><a href="/">ClipMenu</a></h1>
+          </div>
+
+          <div id="language">
+            
+            <form action="/i18n/setlang/" method="post">
+              <input type="hidden" name="language" value="en"/>
+              <input type="hidden" name="next" value="/en/"/>
+              <input id="lang_en" type = "image"
+              src="/static/images/flag/en.png" alt="English"/>
+            </form> 
+            
+            <form action="/i18n/setlang/" method="post">
+              <input type="hidden" name="language" value="ja"/>
+              <input type="hidden" name="next" value="/ja/"/>
+              <input id="lang_ja" type = "image"
+              src="/static/images/flag/ja.png" alt="Japanese"/>
+            </form> 
+            
+          </div>
+
+          
+          <div id="menu">
+            <ul>
+              <li><a href="/ja/features/">Features</a></li>
+              <li><a href="/ja/screenshots/">Screenshots</a></li>
+              <li><a href="/ja/versionhistory/">Version History</a></li>
+              <!--<li><a href="#" class="under-construction">Tips</a></li>-->
+              <li><a href="/ja/help/">Help</a></li>
+            </ul>
+          </div>
+          
+        </div>
+        <!-- end #header -->
+
+        <div id="page">
+          <div class="clear"></div>
+
+          <div id="top-ad" class="center">
+            
+            <script type="text/javascript"><!--
+              google_ad_client = "pub-9827496444724879";
+              /* ClipMenu, 728x90 */
+              google_ad_slot = "4255152978";
+              google_ad_width = 728;
+              google_ad_height = 90;
+              //-->
+            </script>
+            <script type="text/javascript"
+              src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+            </script>
+            
+          </div>
+
+          <div id="content">
+            <!--<div id="devider"></div>-->
+            
+
+<div class="post">
+    <h2 class="title">クリップボード履歴や、定型文を管理</h2>
+    <div class="entry">
+        <p><img src="/static/images/screenshot/home/screenshot-ja.jpg" alt="ClipMenu screenshot" /></p>
+
+<h3>クリップボード履歴</h3>
+
+<p>ClipMenuは、プレーンテキストから画像まで、8種類のクリップボード形式を履歴として記録可能な、クリップボード・ユーティリティ。</p>
+
+<p>記録したクリップボード履歴は、ショートカットキーひとつで、マウスポインタの側にメニューとしてポップアップ表示。メニューからペーストしたい項目を選べば、記録しておいた内容を簡単にペーストできます。</p>
+
+<h3>スニペット</h3>
+
+<p>メールアドレスや顔文字などの定型文を、スニペットとして登録しておけば、いつでもショートカットキーひとつで呼び出せます。</p>
+
+    </div>
+</div>
+
+
+          </div>
+          <!-- end #content -->
+
+          <div id="sidebar">
+            <ul>
+              
+              <li>
+              <h3>Download</h3>
+              <div class="box">
+                <p><a href="https://dl.dropbox.com/u/1140644/clipmenu/ClipMenu_0.4.3.dmg"><img class="left" src="/static/images/icon/icon_seed.png" width="50" height="46" alt="Download" />ClipMenu_0.4.3.dmg</a> (1.08MB)</p>
+                
+                <p><a href="https://www.sugarsync.com/pf/D608933_9_6471372643">別サイトからダウンロード</a></p>
+                <p>ClipMenuは<strong>フリーウェア</strong>です。無料でご利用いただけます。</p>
+                <p><a href="/ja/dev/" title="開発途上版">開発途上版</a>はこちら。</p>
+                
+              </div>
+              </li>
+
+              <li>
+              <h3>System Requirements</h3>
+              <div class="box">
+                
+                <p><strong>Mac OS X 10.5</strong> (Leopard) 以降。</p>
+                <p><strong>Mac OS X 10.6</strong> (Snow Leopard)以降では、<strong>64ビット</strong>モードに対応。</p>
+                <p>ClipMenuは<strong>Universal binary</strong>です。Intel / PowerPC Macの、どちらでも動作します。</p>
+                
+                <div class="center"><a href="http://sparkle.andymatuschak.org/" title="Sparkle: a free software update framework for the Mac"><img src="/static/images/icon/updates_by_sparkle.png" width="120" height="42" alt="Updates by Sparkle" /></a></div>
+              </div>
+              </li>
+
+              
+
+              <li>
+              <h3>Twitter Updates</h3>
+              <div class="box">
+                <div id="twitter_div">
+                  <ul id="twitter_update_list"></ul>
+                  <a href="http://twitter.com/clipmenu" id="twitter-link" style="display:block;text-align:right;">follow me on Twitter</a>
+                </div>
+                <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+                <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/clipmenu.json?callback=twitterCallback2&amp;count=3"></script>
+              </div>
+              </li>
+
+              <li>
+              <h3>Visitors</h3>
+              <div class="box center">
+                <a href="http://flagcounter.com/more/9yz"><img src="http://flagcounter.com/count/9yz/bg=FFFFFF/txt=000000/border=CCCCCC/columns=2/maxflags=10/viewers=3/labels=0/" alt="free counters" border="0"></a>
+              </div>
+              </li>
+
+              
+            </ul>
+          </div>
+          <!-- end #sidebar -->
+
+          <div class="clear"></div>
+
+          
+          <div id="widebar">
+            <div id="colA">
+              <h3>Contributors</h3>
+              
+              <p>ClipMenuの開発を助けて頂いた皆さんに感謝します。<br />
+              <a href="/ja/credits/" title="謝辞">謝辞&hellip;</a></p>
+              
+            </div>
+
+            <div id="colB">
+                <h3>Testimonials</h3>
+                <p>&quot;Excellent. This is the best clipboard history tool I've seen so far.&quot;<br />
+                (mfichtner - iusethis comment)</p>
+                <p><a href="/ja/testimonials/">Read more&hellip;</a></p>
+            </div>
+
+            <div id="colC">
+                <h3>Screenshots</h3>
+                <ul class="thumbnails">
+                    <li><a href="/static/images/screenshot/en/statusitem.jpg" class="lightbox"><img src="/static/images/screenshot/en/statusitem_s.jpg" alt="Status Item" width="75" height="75" /></a></li>
+                    <li><a href="/static/images/screenshot/en/menu.jpg" class="lightbox"><img src="/static/images/screenshot/en/menu_s.jpg" alt="ClipMenu" width="75" height="75" /></a></li>
+                    <li><a href="/static/images/screenshot/en/snippetmenu.jpg" class="lightbox"><img src="/static/images/screenshot/en/snippetmenu_s.jpg" alt="Snippet menu" width="75" height="75" /></a></li>
+                    <li><a href="/static/images/screenshot/en/pref-general.jpg" class="lightbox"><img src="/static/images/screenshot/en/pref-general_s.jpg" alt="Preferences" width="75" height="75" /></a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+          </div>
+          
+          <!-- end #widebar -->
+        </div>
+        <!-- end #page -->
+      </div>
+      <!-- end #wrapper2 -->
+      <div id="footer">
+        <div id="footer-wrapper">
+        <p>Content available in <a href="/en/">English</a> and <a href="/ja/">Japanese</a>.</p>
+
+        <p>(c) 2008-2009 <a href="http://www.naotaka.com/" title="naotaka.com">Naotaka Morimoto</a>. ClipMenu icon design by <a href="http://www.max.hi-ho.ne.jp/painter/" title="K2DesignWorks">K2DesignWorks</a>.<br />HTML design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a> + <a href="http://www.freecsstemplates.org/">Free CSS Templates</a></p>
+
+        <div id="powered">
+          <a href="http://www.djangoproject.com/"><img src="http://media.djangoproject.com/img/badges/djangomade124x25_grey.gif" alt="Made with Django" title="Made with Django" /></a>
+          <a href="http://appengine.google.com/"><img src="http://code.google.com/appengine/images/appengine-silver-120x30.gif" alt="Powered by Google App Engine" title="Powered by Google App Engine" /></a>
+        </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- end #wrapper -->
+
+    
+    <!-- Google Analytics Start -->
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-104117-3");
+        pageTracker._trackPageview();
+      } catch(err) {}</script>
+    <!-- Google Analytics End -->
+    
+  </body>
+</html>
+

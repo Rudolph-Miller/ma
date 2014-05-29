@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="ja">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="ja">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="ja">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="ja">
+<!--<![endif]-->
+<head>
+<!-- Basic Page Needs
+  ================================================== -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ホットキーでクリップボード履歴や定型文を呼び出す無料アプリ「ClipMenu」の使い方。[Mac] | MacWin Ver.1.0</title>
+  
+
+    <!-- Embed Google Web Fonts Via API -->
+    <script type="text/javascript">
+          WebFontConfig = {
+            google: { families: [ 
+                    "Bitter",
+                    "Bitter",                   
+                    "Droid Sans",                   
+                    "Droid Sans", 
+                    "PT Sans Narrow"] }
+          };
+          (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+          })();
+    </script>
+
+<link href="http://macwin.org/wordpress/wp-content/themes/extranews/style.css?ver=1.4.3" rel="stylesheet" type="text/css" media="all" />
+<!--Site Layout -->
+<link rel="alternate" type="application/rss+xml" title="MacWin Ver.1.0 &raquo; フィード" href="http://macwin.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="MacWin Ver.1.0 &raquo; コメントフィード" href="http://macwin.org/comments/feed/" />
+<!--[if IE 7]>
+<link rel='stylesheet' id='ie7-css'  href='http://macwin.org/wordpress/wp-content/themes/extranews/css/ie7.css?ver=ie7' type='text/css' media='all' />
+<![endif]-->
+<!--[if IE 8]>
+<link rel='stylesheet' id='ie8-css'  href='http://macwin.org/wordpress/wp-content/themes/extranews/css/ie8.css?ver=ie8' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='tablepress-default-css'  href='http://macwin.org/wordpress/wp-content/tablepress-combined.min.css?ver=138' type='text/css' media='all' />
+<link rel='stylesheet' id='options-css'  href='http://macwin.org/wordpress/wp-content/themes/extranews/css/custom.css?ver=3.8.3' type='text/css' media='all' />
+<!--[if !IE]><!-->
+<link rel='stylesheet' id='tablepress-responsive-css'  href='http://macwin.org/wordpress/wp-content/plugins/tablepress-responsive-tables/tablepress-responsive.min.css?ver=1.1' type='text/css' media='all' />
+<!--<![endif]-->
+<script type='text/javascript' src='http://macwin.org/wordpress/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://macwin.org/wordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://macwin.org/wordpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://macwin.org/wordpress/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Macから出るすべての音にイコライザをかけることができる「Boom」の使い方。音量ブースト機能も。[Mac]' href='http://macwin.org/mac/boom/' />
+<link rel='next' title='iTunesのアートワークを自動取得する「Lightway」の使い方。[Windows]' href='http://macwin.org/windows/itunes%e3%81%ae%e3%82%a2%e3%83%bc%e3%83%88%e3%83%af%e3%83%bc%e3%82%af%e3%82%92%e8%87%aa%e5%8b%95%e5%8f%96%e5%be%97%e3%81%99%e3%82%8b%e3%80%8clightway%e3%80%8d%e3%81%ae%e4%bd%bf%e3%81%84%e6%96%b9/' />
+<meta name="generator" content="WordPress 3.8.3" />
+<link rel='shortlink' href='http://macwin.org/?p=432' />
+
+<!-- All in One SEO Pack 2.0.4 by Michael Torbert of Semper Fi Web Design[413,487] -->
+<link rel="canonical" href="http://macwin.org/mac/clipmenu/" />
+<!-- /all in one seo pack -->
+
+
+<!-- Mobile Specific Metas
+  ================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+</head>
+<body class="single single-post postid-432 single-format-standard unknown">
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<noscript>
+  <div class="alert">
+    <p>Please enable javascript to view this site.</p>
+  </div>
+</noscript>
+
+<!-- Preload Images 
+	================================================== -->
+<div id="preloaded-images"> 
+  <!-- Icons -->
+  <img src="http://macwin.org/wordpress/wp-content/themes/extranews/images/icons/social/e_light.png" width="1" height="1" alt="Image" />
+  <img src="http://macwin.org/wordpress/wp-content/themes/extranews/images/icons/social/fb_light.png" width="1" height="1" alt="Image" />
+  <img src="http://macwin.org/wordpress/wp-content/themes/extranews/images/icons/social/g_light.png" width="1" height="1" alt="Image" />
+  <img src="http://macwin.org/wordpress/wp-content/themes/extranews/images/icons/social/p_light.png" width="1" height="1" alt="Image" />
+  <img src="http://macwin.org/wordpress/wp-content/themes/extranews/images/icons/social/tw_light.png" width="1" height="1" alt="Image" />
+  <!-- Slider Elements -->
+  <img src="http://macwin.org/wordpress/wp-content/themes/extranews/images/linebg-fade.png" width="1" height="1" alt="Image" />
+  <img src="http://macwin.org/wordpress/wp-content/themes/extranews/images/75black.png" width="1" height="1" alt="Image" />
+  <!--Loading Images -->
+  <img src="http://macwin.org/wordpress/wp-content/themes/extranews/images/loading.gif" width="1" height="1" alt="Image" />
+  <img src="http://macwin.org/wordpress/wp-content/themes/extranews/images/small-loading.gif" width="1" height="1" alt="Image" />
+  <!-- Arrows -->
+  <img src="http://macwin.org/wordpress/wp-content/themes/extranews/images/stars-over.png" width="1" height="1" alt="Image" />
+</div>
+
+<!-- Top Bar
+	================================================== -->
+       <div class="topbar">
+      <div class="container clearfix">
+        <p class="alignleft">MacWin Ver.1.0 | May 29, 2014</p> 
+          <div class="alignright">        
+            
+                        <ul id="menu-top" class="sf-menu"><li id="menu-item-65" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65"><a href="http://macwin.org/sitemap/">サイトマップ</a></li>
+<li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66"><a href="http://macwin.org/%e5%85%8d%e8%b2%ac%e4%ba%8b%e9%a0%85/">免責事項</a></li>
+</ul>            
+            <div id="top"></div>
+
+            <div class="mobilenavcontainer"> 
+                            <a id="jump_top" href="#mobilenav_top" class="scroll">Select a Page:</a><div class="clear"></div>
+              <div class="mobilenavigation">
+                                      <ul id="mobilenav_top"><li id="back_top"><a href="#top" class="menutop">Hide Navigation</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65"><a href="http://macwin.org/sitemap/">サイトマップ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66"><a href="http://macwin.org/%e5%85%8d%e8%b2%ac%e4%ba%8b%e9%a0%85/">免責事項</a></li>
+</ul>                              </div> 
+              <div class="clear"></div>
+            </div> 
+			<div class="clear"></div>
+          </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+
+<!-- Site Container
+  ================================================== -->
+<div class="sitecontainer container">
+<div class="container clearfix navcontainer">
+    <div class="logo">
+        <h1> <a href="http://macwin.org">
+                        <img src="http://macwin.org/wordpress/wp-content/uploads/2013/10/logo.png" alt="MacWin Ver.1.0" />
+                        </a> 
+        </h1>
+    </div>
+    <div class="mobileclear"></div>
+    <div class="headerwidget">
+        <div class="logowidget">
+          <div id="ag_480ad_widget-2" class="widget ag_480ad_widget">        
+        		
+		<div class="ads480">
+
+				<a href="http://macwin.org/mac/2013-freeapp50/" target="_blank"><img src="http://macwin.org/wordpress/wp-content/uploads/2013/06/banner01_468x60.jpg" width="480" height="80" alt="" /></a>
+			<div class="clear"></div>		
+		</div>
+
+</div><div class="clear"></div>        </div>
+    </div>
+    <div class="clear"></div>
+    	<div class="nav"><div class="clear"></div>
+        <!--Start Navigation-->
+                          <ul id="menu-main-menu" class="sf-menu"><li id="menu-item-435" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-435"><a href="http://macwin.org/">Home</a></li>
+<li id="menu-item-27" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-27"><a href="http://macwin.org/category/mac/">Mac</a></li>
+<li id="menu-item-28" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28"><a href="http://macwin.org/category/windows/">Windows</a></li>
+<li id="menu-item-26" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26"><a href="http://macwin.org/category/ios/">iOS</a></li>
+<li id="menu-item-23" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23"><a href="http://macwin.org/category/android/">Android</a></li>
+<li id="menu-item-25" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-25"><a href="http://macwin.org/category/gadget/">Gadget</a></li>
+<li id="menu-item-575" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-575"><a href="http://macwin.org/category/dqmsl/">DQMSL</a></li>
+<li id="menu-item-29" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29"><a href="http://macwin.org/category/%e3%83%91%e3%82%ba%e3%83%89%e3%83%a9/">パズドラ</a></li>
+<li id="menu-item-24" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24"><a href="http://macwin.org/category/etc/">etc</a></li>
+</ul>                        <div class="search"><div class="clear"></div><!--Searchbox-->
+<form method="get" id="searchbox" action="http://macwin.org/">
+    <fieldset>
+        <input type="text" name="s" id="s" value="To search type and hit enter..." onfocus="if(this.value=='To search type and hit enter...')this.value='';" onblur="if(this.value=='')this.value='To search type and hit enter...';"/>
+    </fieldset>
+</form>
+<!--Searchbox--></div>
+             <div class="clear"></div>
+         </div>
+
+       <div class="mobilenavcontainer"> 
+               <a id="jump" href="#mobilenav" class="scroll">Select a Page:</a>
+       <div class="clear"></div>
+        <div class="mobilenavigation">
+                        <ul id="mobilenav"><li id="back"><a href="#top" class="menutop">Hide Navigation</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-435"><a href="http://macwin.org/">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-27"><a href="http://macwin.org/category/mac/">Mac</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28"><a href="http://macwin.org/category/windows/">Windows</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26"><a href="http://macwin.org/category/ios/">iOS</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23"><a href="http://macwin.org/category/android/">Android</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-25"><a href="http://macwin.org/category/gadget/">Gadget</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-575"><a href="http://macwin.org/category/dqmsl/">DQMSL</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29"><a href="http://macwin.org/category/%e3%83%91%e3%82%ba%e3%83%89%e3%83%a9/">パズドラ</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24"><a href="http://macwin.org/category/etc/">etc</a></li>
+</ul>                    </div> 
+
+        <div class="clear"></div>
+      </div>
+
+        <!--End Navigation-->
+    <div class="clear"></div>
+</div>
+<div class="top"> <a href="#">Scroll to top</a>
+    <div class="clear"></div>
+    <div class="scroll">
+        <p>
+            Top        </p>
+    </div>
+</div>
+<!-- Start Mainbody
+  ================================================== -->
+<div class="mainbody ">
+
+
+
+
+<!-- Page Content
+  ================================================== -->
+
+<div class="container clearfix">
+  <div class="blogpost maincontent"><div class="clear"></div> <!-- for stupid ie7 -->
+    
+
+
+<div class="breadcrumbs">
+	</div>
+
+
+
+
+      <!-- Post Image, Video, Content
+        ================================================== -->        
+
+        <div  class="post-432 post type-post status-publish format-standard hentry category-mac" id="432">
+        <!-- Page Title, Category, Post Information
+          ================================================== -->
+
+
+         
+        <div class="clear"></div>
+
+        <h1 class="blogtitle entry-title" itemprop="itemReviewed" itemscope itemtype="http://schema.org/Thing">
+          <span itemprop="name"> 
+            ホットキーでクリップボード履歴や定型文を呼び出す無料アプリ「ClipMenu」の使い方。[Mac]          </span>
+        </h1>
+        <div class="clear"></div>
+
+        
+        
+                  
+          <div class="featuredimage">     
+              <div class="slider-wrapper theme-default">
+                <div  >
+    
+                <img src="http://macwin.org/wordpress/wp-content/uploads/2013/10/eye_010832.jpg" alt="ホットキーでクリップボード履歴や定型文を呼び出す無料アプリ「ClipMenu」の使い方。[Mac]" title="" class="scale-with-grid" data-thumb="http://macwin.org/wordpress/wp-content/uploads/2013/10/eye_010832.jpg"/>                                  </div>
+              </div>
+		  </div>
+                              
+      <div class="blogcontent"> 
+
+        <div class="leftblogcontent">
+
+
+
+
+
+                    
+          		
+		
+        </div>   
+                            
+         <!-- Content
+           ================================================== -->       
+
+
+       <!-- Tags
+         ================================================== -->                      
+                
+        <div class="clear"></div>
+
+               
+          <p>指定したホットキーからクリップボード履歴や定型文などのリストを呼び出すことができる「<a onclick="javascript:pageTracker._trackPageview('/outgoing/www.clipmenu.com/ja/');" onclick="javascript:pageTracker._trackPageview('/outgoing/www.clipmenu.com/ja/');"   href="http://www.clipmenu.com/ja/" target="_blank">ClipMenu</a>（無料）」の使い方の紹介です。</p>
+<div class="master_post_advert" style="margin:10px 0px;">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4025267094809790";
+/* MacWinSmart_kiji2 */
+google_ad_slot = "2941980003";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<p><span id="more-432"></span></p>
+<h4 id="subtitle">8種類のクリップボード形式を記憶できます。</h4>
+<p>ClipMenuを立ち上げている状態でテキストや画像をコピーすると、ClipMenuに内容が記憶されます。対応フォーマットは以下の8種類。</p>
+<div id="kakomi">
+・プレーンテキスト<br />
+・Rich Text Format (RTF)<br />
+・Rich Text Format Directory (RTFD)<br />
+・PDF<br />
+・ファイル名<br />
+・URL<br />
+・TIFF画像<br />
+・PICT画像</div>
+<h4 id="subtitle">クリップボードヒストリーをホットキーで呼び出し。</h4>
+<p>ClipMenuに記憶された内容はホットキーで呼び出すことができます。メニューバーのClipMenuアイコンから「環境設定&#8230;」を選択し、ショートカット項目から設定します。</p>
+<p><a href="http://macwin.org/mac/clipmenu/attachment/clipmenu_01/" rel="attachment wp-att-1646"><img src="http://macwin.org/wordpress/wp-content/uploads/2013/01/ClipMenu_01.jpg" alt="" title="ClipMenu_01" width="460" height="206" class="alignnone size-full wp-image-1646" /></a></p>
+<p>デフォルトでは「shift + command + V」が割り当てられていますが、アプリケーションによっては競合するのでファンクションキーなどに変更した方がいいかもしれません。</p>
+<p>メールで文章入力中などに指定したホットキーを押すとクリップボード履歴のリストが出現し、項目を選ぶことでテキストや画像をペーストできます。</p>
+<p><a href="http://macwin.org/mac/clipmenu/attachment/clipmenu_02/" rel="attachment wp-att-1648"><img src="http://macwin.org/wordpress/wp-content/uploads/2013/01/ClipMenu_02-600x561.jpg" alt="" title="ClipMenu_02" width="600" height="561" class="alignnone size-large wp-image-1648" /></a></p>
+<p>ちなみにメニューバーアイコンからもクリップボードヒストリーを参照できます。</p>
+<h4 id="subtitle">何度も使いたいワードや定型文もホットキーで呼び出せます。</h4>
+<p>自分でカスタマイズした文章もホットキーで呼び出せます。ホットキーは上と同じく「環境設定&#8230;」のショートカット項目から設定します。</p>
+<p><a href="http://macwin.org/mac/clipmenu/attachment/clipmenu_03/" rel="attachment wp-att-1651"><img src="http://macwin.org/wordpress/wp-content/uploads/2013/01/ClipMenu_03.jpg" alt="" title="ClipMenu_03" width="460" height="206" class="alignnone size-full wp-image-1651" /></a></p>
+<p>メールアドレスや定型文などを登録しておくと便利です。設定は環境設定のスニペット項目から行います。フォルダを作成して、ドキュメントを作成して定型文を入力するだけです。</p>
+<p><a href="http://macwin.org/mac/clipmenu/attachment/clipmenu_04/" rel="attachment wp-att-1650"><img src="http://macwin.org/wordpress/wp-content/uploads/2013/01/ClipMenu_04-600x515.jpg" alt="" title="ClipMenu_04" width="600" height="515" class="alignnone size-large wp-image-1650" /></a></p>
+<h4 id="subtitle">クリップボードやスニペットを呼び出す際のアクションを指定する。</h4>
+<p>クリップボード履歴やスニペットを呼び出す時に、control（デフォルト）を押して項目を選択するとアクションリストが現れます。このアクションリストからは「リッチテキストをプレーンテキストとしてペーストする」「HTMLタグを除去してペースト」「ひらがなをカタカナにしてペースト」など、様々なアクションを指定できます。</p>
+<p><a href="http://macwin.org/mac/clipmenu/attachment/clipmenu_05/" rel="attachment wp-att-1653"><img src="http://macwin.org/wordpress/wp-content/uploads/2013/01/ClipMenu_05.jpg" alt="" title="ClipMenu_05" width="359" height="241" class="alignnone size-full wp-image-1653" /></a></p>
+<p>アクションを呼び出すキーを変更したり、アクション項目を増やすには「環境設定&#8230;」のアクション項目から指定します。</p>
+<p><a href="http://macwin.org/mac/clipmenu/attachment/clipmenu_06/" rel="attachment wp-att-1655"><img src="http://macwin.org/wordpress/wp-content/uploads/2013/01/ClipMenu_06-579x600.jpg" alt="" title="ClipMenu_06" width="579" height="600" class="alignnone size-large wp-image-1655" /></a></p>
+<h4 id="subtitle">ダウンロードはこちらから。</h4>
+<p>【ダウンロード先】<a onclick="javascript:pageTracker._trackPageview('/outgoing/www.clipmenu.com/ja/');" onclick="javascript:pageTracker._trackPageview('/outgoing/www.clipmenu.com/ja/');"   href="http://www.clipmenu.com/ja/" title="ClipMenu: Mac OS X 用クリップボード管理ソフト - ClipMenu.com" target="_blank">ClipMenu: Mac OS X 用クリップボード管理ソフト &#8211; ClipMenu.com</a></p>
+<div class="clear"></div>
+ <div class="clear"></div> 
+
+
+
+
+
+
+
+
+
+<div class="ninja_onebutton">
+<script type="text/javascript">
+//<![CDATA[
+(function(d){
+if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_62ef5d3c4bed2097f6a07294e4754a91)=='undefined'){
+    document.write("<sc"+"ript type='text\/javascript' src='http:\/\/omt.shinobi.jp\/b\/62ef5d3c4bed2097f6a07294e4754a91'><\/sc"+"ript>");
+}else{
+    window.NINJA_CO_JP_ONETAG_BUTTON_62ef5d3c4bed2097f6a07294e4754a91.ONETAGButton_Load();}
+})(document);
+//]]>
+</script><span class="ninja_onebutton_hidden" style="display:none;">http://macwin.org/mac/clipmenu/</span><span style="display:none;" class="ninja_onebutton_hidden">ホットキーでクリップボード履歴や定型文を呼び出す無料アプリ「ClipMenu」の使い方。[Mac]</span>
+</div>
+
+
+
+<p>※記事の内容に誤植がありましたら、twitter（<a href="https://twitter.com/MacWinVer07" target="_blank">@MacWinVer07</a>）や<a href="https://www.facebook.com/pages/MacWinBlog/199747640155957" target="_blank">Facebook</a>にコメントをお願いします。</p>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Macwin記事内 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-4025267094809790"
+     data-ad-slot="6792495601"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+<br />
+<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="clear"></div>
+
+
+
+
+
+
+                      
+
+
+
+
+
+          
+
+
+                    
+
+      </div> <!-- End Post Div -->
+  </div>
+
+
+          <!-- Share Links
+          ================================================== -->
+          
+          <div class="post_neighbors_container_wrapper"><div class="post_neighbors_container"><a href="http://macwin.org/mac/boom/" class="neighbors_link previous_post"><h5>Previous Story</h5><h3>Macから出るすべての音にイコライザをかけることができる「Boom」の使い方。音量ブースト機能も。[Mac]</h3></a><a href="http://macwin.org/windows/itunes%e3%81%ae%e3%82%a2%e3%83%bc%e3%83%88%e3%83%af%e3%83%bc%e3%82%af%e3%82%92%e8%87%aa%e5%8b%95%e5%8f%96%e5%be%97%e3%81%99%e3%82%8b%e3%80%8clightway%e3%80%8d%e3%81%ae%e4%bd%bf%e3%81%84%e6%96%b9/" class="neighbors_link next_post"><h5>Next Story</h5><h3>iTunesのアートワークを自動取得する「Lightway」の使い方。[Windows]</h3></a><div class="clear"></div></div></div>    <!-- You can start editing here. -->
+    
+    </div>
+
+
+
+    <div class="sidebar">
+        <div id="text-3" class="widget widget_text"><h4 class="widget-title">スポンサードリンク</h4>			<div class="textwidget"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-4025267094809790";
+/* MacWin10_side */
+google_ad_slot = "5989754404";
+google_ad_width = 250;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+		</div><div class="clear"></div><div id="ag_social_widget-3" class="widget ag_social_widget">        
+        
+ <h3 class="widget-title">ブログ購読はこちらから</h3>		
+<div class="socialwrap">	
+
+<a href="http://facebook.com/199747640155957" class="fb"></a>
+
+<a href="http://twitter.com/MacWinVer07" class="tw"></a>
+
+<a href="http://feeds.feedburner.com/" class="rss"></a>
+
+
+</div><div class="clear"></div>
+
+<script type="text/javascript">
+    jQuery(document).ready(function($){
+		        $('.fb').koottam({
+            'id'            : '199747640155957',
+            'method'        : 'api',
+            'count_style'   : 'static',
+            'theme'         : 'facebook-blue',
+            'icon_url'      : 'http://macwin.org/wordpress/wp-content/themes/extranews/images/icons/social/fb_light.png',
+			'service'		: 'facebook',
+			'nameology'		: 'Fans'
+        });
+				 $('.tw').koottam({
+            'id'            : 'MacWinVer07',
+            'method'        : 'custom',
+            'count_style'   : 'static',
+            'theme'         : 'twitter-blue',
+            'icon_url'      : 'http://macwin.org/wordpress/wp-content/themes/extranews/images/icons/social/twitter.png',
+			'service'		: 'twitter',
+			'nameology'		: 'Followers',
+			'count'			: 190        });
+				$('.rss').koottam({
+			'id'			: '936',
+			'method'		: 'custom',
+			'count_style'	: 'static',
+			'theme'         : 'rss-orange',
+			'icon_url'      : 'http://macwin.org/wordpress/wp-content/themes/extranews/images/icons/social/rss.png',
+			'size'          : 'default',
+			'service'       : 'RSS',
+			'count'         : 936,
+			'nameology'		: 'Subscribers'
+		});
+		    });
+</script>
+
+</div><div class="clear"></div><div id="text-9" class="widget widget_text"><h4 class="widget-title">YouTube</h4>			<div class="textwidget"><script src="https://apis.google.com/js/platform.js"></script>
+
+<div class="g-ytsubscribe" data-channelid="UCZIDMiXbYrV6qG2bqynv_Rw" data-layout="full" data-count="undefined"></div></div>
+		</div><div class="clear"></div><div id="text-5" class="widget widget_text"><h4 class="widget-title">おすすめ記事</h4>			<div class="textwidget"><div class="ads125">
+
+<ul>
+<li><a href="http://macwin.org/ios/magicianwiz-reset/"><img src="http://macwin.org/wordpress/wp-content/uploads/2013/06/125_banner_wiz.png" width="125" height="125" alt="" /></a></li>
+
+<li><a href="http://usupro.blog41.fc2.com/blog-entry-449.html"><img src="http://macwin.org/wordpress/wp-content/uploads/2013/05/125_banner02.png" width="125" height="125" alt="" /></a></li>
+
+<li><a href="http://macwin.org/パズドラ/究極進化/"><img src="http://macwin.org/wordpress/wp-content/uploads/2013/05/125_banner01.png" width="125" height="125" alt="" /></a>
+</li>
+
+<li><a href="http://macwin.org/パズドラ/ゴッドフェス365回/"><img src="http://macwin.org/wordpress/wp-content/uploads/2013/05/125_banner03.png" width="125" height="125" alt="" /></a></li>
+</ul>
+
+<div class="clear"></div>
+</div></div>
+		</div><div class="clear"></div><div id="ag_tab_widget-3" class="widget ag_tab_widget">
+ <h3 class="widget-title">人気記事</h3>
+		
+<div class="tabswrap">
+
+<ul class="tabs twocol">
+	<li><a class="active" href="#tab1">Popular</a></li>
+	<li><a href="#tab2">Recent</a></li>
+	</ul>	
+<div class="clear"></div>
+
+<ul class="tabs-content">
+
+	<!-- First Tab 
+	================================================-->
+	<li id="tab1" class="active">
+	
+		
+	<div class="tabpost">
+        <div class="featuredimagewidget thumbnailarea">
+                            <a class="thumblink" href="http://macwin.org/%e3%83%91%e3%82%ba%e3%83%89%e3%83%a9/%e3%83%aa%e3%82%bb%e3%83%9e%e3%83%a9%e3%81%8a%e3%81%99%e3%81%99%e3%82%81%e3%83%a2%e3%83%b3%e3%82%b9%e3%82%bf%e3%83%bc/">
+                    <img src="http://macwin.org/wordpress/wp-content/uploads/2013/10/eye_01086-50x50.jpg" class="attachment-tinyfeatured wp-post-image" alt="eye_0108" />                </a>
+                    </div>
+
+		<p><strong><a href="http://macwin.org/%e3%83%91%e3%82%ba%e3%83%89%e3%83%a9/%e3%83%aa%e3%82%bb%e3%83%9e%e3%83%a9%e3%81%8a%e3%81%99%e3%81%99%e3%82%81%e3%83%a2%e3%83%b3%e3%82%b9%e3%82%bf%e3%83%bc/">【パズドラ】リセマラおすすめモンスターBEST 15。狙いはもちろん神モンスター。【2013/4/17改訂】</a></strong></p>
+		<p class="views"><span>555783</span> Views</p>
+		<div class="clear"></div>
+	</div>
+
+	
+	<div class="tabpost">
+        <div class="featuredimagewidget thumbnailarea">
+                            <a class="thumblink" href="http://macwin.org/%e3%83%91%e3%82%ba%e3%83%89%e3%83%a9/%e3%82%b4%e3%83%83%e3%83%89%e3%83%95%e3%82%a7%e3%82%b9365%e5%9b%9e/">
+                    <img src="http://macwin.org/wordpress/wp-content/uploads/2013/10/eye_01085-50x50.jpg" class="attachment-tinyfeatured wp-post-image" alt="eye_0108" />                </a>
+                    </div>
+
+		<p><strong><a href="http://macwin.org/%e3%83%91%e3%82%ba%e3%83%89%e3%83%a9/%e3%82%b4%e3%83%83%e3%83%89%e3%83%95%e3%82%a7%e3%82%b9365%e5%9b%9e/">【パズドラ】ゴッドフェス超絶3倍でレアガチャを約11万円「365回」回した結果、集まったモンスターと確率！【最新版】</a></strong></p>
+		<p class="views"><span>429109</span> Views</p>
+		<div class="clear"></div>
+	</div>
+
+	
+	<div class="tabpost">
+        <div class="featuredimagewidget thumbnailarea">
+                            <a class="thumblink" href="http://macwin.org/ios/magicianwiz-reset/">
+                    <img src="http://macwin.org/wordpress/wp-content/uploads/2013/10/eye_0108-50x50.jpg" class="attachment-tinyfeatured wp-post-image" alt="eye_0108" />                </a>
+                    </div>
+
+		<p><strong><a href="http://macwin.org/ios/magicianwiz-reset/">今から始める魔法使いと黒猫のウィズ。リセマラおすすめカードBEST10。アドバンストユーザー登録をしてS、Aレアカードを保存しよう！</a></strong></p>
+		<p class="views"><span>360901</span> Views</p>
+		<div class="clear"></div>
+	</div>
+
+	
+	<div class="tabpost">
+        <div class="featuredimagewidget thumbnailarea">
+                            <a class="thumblink" href="http://macwin.org/%e3%83%91%e3%82%ba%e3%83%89%e3%83%a9/%e3%83%97%e3%83%a9%e3%82%b9%e5%8d%b5/">
+                    <img src="http://macwin.org/wordpress/wp-content/uploads/2013/10/eye_0026-50x50.jpg" class="attachment-tinyfeatured wp-post-image" alt="eye_0026" />                </a>
+                    </div>
+
+		<p><strong><a href="http://macwin.org/%e3%83%91%e3%82%ba%e3%83%89%e3%83%a9/%e3%83%97%e3%83%a9%e3%82%b9%e5%8d%b5/">【パズドラ】＋（プラス）卵集めにおすすめなダンジョンやイベントまとめ。各ドロップ確率の目安など。</a></strong></p>
+		<p class="views"><span>297152</span> Views</p>
+		<div class="clear"></div>
+	</div>
+
+	
+	<div class="tabpost">
+        <div class="featuredimagewidget thumbnailarea">
+                            <a class="thumblink" href="http://macwin.org/%e3%83%91%e3%82%ba%e3%83%89%e3%83%a9/%e3%83%98%e3%83%a9%e9%99%8d%e8%87%a8%e3%83%8e%e3%83%bc%e3%82%b3%e3%83%b3/">
+                    <img src="http://macwin.org/wordpress/wp-content/uploads/2013/10/eye_01087-50x50.jpg" class="attachment-tinyfeatured wp-post-image" alt="eye_0108" />                </a>
+                    </div>
+
+		<p><strong><a href="http://macwin.org/%e3%83%91%e3%82%ba%e3%83%89%e3%83%a9/%e3%83%98%e3%83%a9%e9%99%8d%e8%87%a8%e3%83%8e%e3%83%bc%e3%82%b3%e3%83%b3/">【パズドラ】無課金でヘラ降臨！をゾンビパーティでノーコンクリア。</a></strong></p>
+		<p class="views"><span>211155</span> Views</p>
+		<div class="clear"></div>
+	</div>
+
+	
+	<div class="tabpost">
+        <div class="featuredimagewidget thumbnailarea">
+                            <a class="thumblink" href="http://macwin.org/%e3%83%91%e3%82%ba%e3%83%89%e3%83%a9/%e5%8f%8b%e6%83%85%e3%83%9d%e3%82%a4%e3%83%b3%e3%83%88/">
+                    <img src="http://macwin.org/wordpress/wp-content/uploads/2013/10/eye_0038-50x50.jpg" class="attachment-tinyfeatured wp-post-image" alt="eye_0038" />                </a>
+                    </div>
+
+		<p><strong><a href="http://macwin.org/%e3%83%91%e3%82%ba%e3%83%89%e3%83%a9/%e5%8f%8b%e6%83%85%e3%83%9d%e3%82%a4%e3%83%b3%e3%83%88/">【パズドラ】友情ポイントを貯めるコツ、出現モンスター、友情ガチャを回すタイミングなどまとめ。</a></strong></p>
+		<p class="views"><span>160528</span> Views</p>
+		<div class="clear"></div>
+	</div>
+
+	
+	<div class="tabpost">
+        <div class="featuredimagewidget thumbnailarea">
+                            <a class="thumblink" href="http://macwin.org/%e3%83%91%e3%82%ba%e3%83%89%e3%83%a9/%e5%a5%b3%e7%a5%9e%e9%99%8d%e8%87%a8/">
+                    <img src="http://macwin.org/wordpress/wp-content/uploads/2013/10/eye_0002-50x50.jpg" class="attachment-tinyfeatured wp-post-image" alt="eye_0002" />                </a>
+                    </div>
+
+		<p><strong><a href="http://macwin.org/%e3%83%91%e3%82%ba%e3%83%89%e3%83%a9/%e5%a5%b3%e7%a5%9e%e9%99%8d%e8%87%a8/">【パズドラ】女神降臨！ノーコンクリアおすすめパーティ！</a></strong></p>
+		<p class="views"><span>140445</span> Views</p>
+		<div class="clear"></div>
+	</div>
+
+	
+	<div class="tabpost">
+        <div class="featuredimagewidget thumbnailarea">
+                            <a class="thumblink" href="http://macwin.org/%e3%83%91%e3%82%ba%e3%83%89%e3%83%a9/%e3%82%b5%e3%82%bf%e3%83%b3%e9%99%8d%e8%87%a8/">
+                    <img src="http://macwin.org/wordpress/wp-content/uploads/2013/10/eye_0018-50x50.jpg" class="attachment-tinyfeatured wp-post-image" alt="eye_0018" />                </a>
+                    </div>
+
+		<p><strong><a href="http://macwin.org/%e3%83%91%e3%82%ba%e3%83%89%e3%83%a9/%e3%82%b5%e3%82%bf%e3%83%b3%e9%99%8d%e8%87%a8/">【パズドラ】「サタン降臨！」ノーコンクリア！五右衛門対策されてる？→いえ、フェンサーやジーニャで回避可能。</a></strong></p>
+		<p class="views"><span>115367</span> Views</p>
+		<div class="clear"></div>
+	</div>
+
+	
+	<div class="tabpost">
+        <div class="featuredimagewidget thumbnailarea">
+                            <a class="thumblink" href="http://macwin.org/%e3%83%91%e3%82%ba%e3%83%89%e3%83%a9/%e3%83%98%e3%83%a9%e3%82%a4%e3%83%bc%e3%82%b9%e9%99%8d%e8%87%a8/">
+                    <img src="http://macwin.org/wordpress/wp-content/uploads/2013/10/eye_0042-50x50.jpg" class="attachment-tinyfeatured wp-post-image" alt="eye_0042" />                </a>
+                    </div>
+
+		<p><strong><a href="http://macwin.org/%e3%83%91%e3%82%ba%e3%83%89%e3%83%a9/%e3%83%98%e3%83%a9%e3%82%a4%e3%83%bc%e3%82%b9%e9%99%8d%e8%87%a8/">【パズドラ】ヘラ・イース降臨！超地獄級ノーコン攻略パーティ。おすすめはゼウスと石川五右衛門パーティ。</a></strong></p>
+		<p class="views"><span>104613</span> Views</p>
+		<div class="clear"></div>
+	</div>
+
+	
+	<div class="tabpost">
+        <div class="featuredimagewidget thumbnailarea">
+                            <a class="thumblink" href="http://macwin.org/mac/2013-freeapp50/">
+                    <img src="http://macwin.org/wordpress/wp-content/uploads/2013/10/eye_free_app11-50x50.jpg" class="attachment-tinyfeatured wp-post-image" alt="eye_free_app1" />                </a>
+                    </div>
+
+		<p><strong><a href="http://macwin.org/mac/2013-freeapp50/">おすすめのMac無料アプリ、50個集めてみました。初心者から上級者までおすすめです。【2013.5.28】</a></strong></p>
+		<p class="views"><span>87399</span> Views</p>
+		<div class="clear"></div>
+	</div>
+
+	
+	</li>
+
+	<!-- Second Tab 
+	================================================-->
+	<li id="tab2">
+
+	
+	<div class="tabpost">
+		
+        <div class="featuredimagewidget thumbnailarea">
+                            <a class="thumblink" href="http://macwin.org/dqmsl/500%e4%b8%87dl%e5%9c%b0%e5%9b%b3%e3%81%b5%e3%81%8f%e3%81%b3%e3%81%8d/">
+                    <img src="http://macwin.org/wordpress/wp-content/uploads/2014/05/IMG_3355-50x50.jpg" class="attachment-tinyfeatured wp-post-image" alt="IMG_3355" />                </a>
+                    </div>
+
+		<p><strong><a href="http://macwin.org/dqmsl/500%e4%b8%87dl%e5%9c%b0%e5%9b%b3%e3%81%b5%e3%81%8f%e3%81%b3%e3%81%8d/">【DQMSL】ふくびき100連！ランクS出現率2倍の500万DLキャンペーン「地図ふくびきスーパー」を引いてみた。</a></strong></p>
+		<p class="views">2014/05/16</p>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="tabpost">
+		
+        <div class="featuredimagewidget thumbnailarea">
+                            <a class="thumblink" href="http://macwin.org/dqmsl/%e7%a9%b6%e6%a5%b5%e8%bb%a2%e7%94%9f%e3%81%b8%e3%81%ae%e9%81%93/">
+                    <img src="http://macwin.org/wordpress/wp-content/uploads/2014/05/IMG_3440-50x50.jpg" class="attachment-tinyfeatured wp-post-image" alt="IMG_3440" />                </a>
+                    </div>
+
+		<p><strong><a href="http://macwin.org/dqmsl/%e7%a9%b6%e6%a5%b5%e8%bb%a2%e7%94%9f%e3%81%b8%e3%81%ae%e9%81%93/">【DQMSL】究極転生への道ノーコンクリア。ザオリク付き超マスターエッグが獲得できるミッション「仲間を一度も倒されずにクリア」に挑戦してみた。</a></strong></p>
+		<p class="views">2014/05/05</p>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="tabpost">
+		
+        <div class="featuredimagewidget thumbnailarea">
+                            <a class="thumblink" href="http://macwin.org/dqmsl/%e3%83%89%e3%83%a9%e3%82%b4%e3%83%b3%e3%82%be%e3%83%b3%e3%83%93%e3%81%b5%e3%81%8f%e3%81%b3%e3%81%8d/">
+                    <img src="http://macwin.org/wordpress/wp-content/uploads/2014/05/IMG_3355-50x50.jpg" class="attachment-tinyfeatured wp-post-image" alt="IMG_3355" />                </a>
+                    </div>
+
+		<p><strong><a href="http://macwin.org/dqmsl/%e3%83%89%e3%83%a9%e3%82%b4%e3%83%b3%e3%82%be%e3%83%b3%e3%83%93%e3%81%b5%e3%81%8f%e3%81%b3%e3%81%8d/">【DQMSL】ドラゴンゾンビ、デスピサロ、りゅうおう狙いでふくびきを引いてみた結果。</a></strong></p>
+		<p class="views">2014/05/01</p>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="tabpost">
+		
+        <div class="featuredimagewidget thumbnailarea">
+                            <a class="thumblink" href="http://macwin.org/dqmsl/%e3%83%97%e3%83%ac%e3%83%9f%e3%82%a2%e3%83%a0%e3%82%b9%e3%83%a9%e3%82%a4%e3%83%a0/">
+                    <img src="http://macwin.org/wordpress/wp-content/uploads/2014/04/IMG_3103-50x50.jpg" class="attachment-tinyfeatured wp-post-image" alt="IMG_3103" />                </a>
+                    </div>
+
+		<p><strong><a href="http://macwin.org/dqmsl/%e3%83%97%e3%83%ac%e3%83%9f%e3%82%a2%e3%83%a0%e3%82%b9%e3%83%a9%e3%82%a4%e3%83%a0/">【DQMSL】図鑑No.25「プレミアムスライム」☆無し〜☆4最大ステータス。とくぎ・耐性・転生情報など。</a></strong></p>
+		<p class="views">2014/04/24</p>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="tabpost">
+		
+        <div class="featuredimagewidget thumbnailarea">
+                            <a class="thumblink" href="http://macwin.org/dqmsl/%e3%82%b9%e3%83%a9%e3%82%a4%e3%83%a0%e3%82%bf%e3%83%af%e3%83%bc/">
+                    <img src="http://macwin.org/wordpress/wp-content/uploads/2014/04/IMG_3102-50x50.jpg" class="attachment-tinyfeatured wp-post-image" alt="IMG_3102" />                </a>
+                    </div>
+
+		<p><strong><a href="http://macwin.org/dqmsl/%e3%82%b9%e3%83%a9%e3%82%a4%e3%83%a0%e3%82%bf%e3%83%af%e3%83%bc/">【DQMSL】図鑑No.24「スライムタワー」☆無し〜☆4までの最大ステータス。とくぎ・耐性・転生情報など。</a></strong></p>
+		<p class="views">2014/04/24</p>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="tabpost">
+		
+        <div class="featuredimagewidget thumbnailarea">
+                            <a class="thumblink" href="http://macwin.org/dqmsl/%e3%83%aa%e3%83%9c%e3%83%b3%e3%83%9b%e3%82%a4%e3%83%9f%e3%83%b3/">
+                    <img src="http://macwin.org/wordpress/wp-content/uploads/2014/04/IMG_3101-50x50.jpg" class="attachment-tinyfeatured wp-post-image" alt="IMG_3101" />                </a>
+                    </div>
+
+		<p><strong><a href="http://macwin.org/dqmsl/%e3%83%aa%e3%83%9c%e3%83%b3%e3%83%9b%e3%82%a4%e3%83%9f%e3%83%b3/">【DQMSL】図鑑No.23「リボンホイミン」☆無し〜☆4最大ステータス。とくぎ・耐性・転生情報など。</a></strong></p>
+		<p class="views">2014/04/24</p>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="tabpost">
+		
+        <div class="featuredimagewidget thumbnailarea">
+                            <a class="thumblink" href="http://macwin.org/dqmsl/%e3%83%9e%e3%82%b7%e3%83%a5%e3%83%9e%e3%83%ad%e3%82%b9%e3%83%a9%e3%82%a4%e3%83%a0/">
+                    <img src="http://macwin.org/wordpress/wp-content/uploads/2014/04/IMG_3100-50x50.jpg" class="attachment-tinyfeatured wp-post-image" alt="IMG_3100" />                </a>
+                    </div>
+
+		<p><strong><a href="http://macwin.org/dqmsl/%e3%83%9e%e3%82%b7%e3%83%a5%e3%83%9e%e3%83%ad%e3%82%b9%e3%83%a9%e3%82%a4%e3%83%a0/">【DQMSL】図鑑No.22「マシュマロスライム」☆無し〜☆4最大ステータス。とくぎ・耐性・転生情報など。</a></strong></p>
+		<p class="views">2014/04/24</p>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="tabpost">
+		
+        <div class="featuredimagewidget thumbnailarea">
+                            <a class="thumblink" href="http://macwin.org/dqmsl/%e3%83%90%e3%83%96%e3%83%ab%e3%82%ad%e3%83%b3%e3%82%b0/">
+                    <img src="http://macwin.org/wordpress/wp-content/uploads/2014/04/011-50x50.jpg" class="attachment-tinyfeatured wp-post-image" alt="01" />                </a>
+                    </div>
+
+		<p><strong><a href="http://macwin.org/dqmsl/%e3%83%90%e3%83%96%e3%83%ab%e3%82%ad%e3%83%b3%e3%82%b0/">【DQMSL】図鑑No.21「バブルキング」☆無し〜☆4最大ステータス。とくぎ・耐性・転生情報など。</a></strong></p>
+		<p class="views">2014/04/24</p>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="tabpost">
+		
+        <div class="featuredimagewidget thumbnailarea">
+                            <a class="thumblink" href="http://macwin.org/dqmsl/%e3%83%81%e3%83%a7%e3%82%b3%e3%82%b9%e3%83%a9%e3%82%a4%e3%83%a0/">
+                    <img src="http://macwin.org/wordpress/wp-content/uploads/2014/04/IMG_3099-50x50.jpg" class="attachment-tinyfeatured wp-post-image" alt="IMG_3099" />                </a>
+                    </div>
+
+		<p><strong><a href="http://macwin.org/dqmsl/%e3%83%81%e3%83%a7%e3%82%b3%e3%82%b9%e3%83%a9%e3%82%a4%e3%83%a0/">【DQMSL】図鑑No.20「チョコスライム」☆無し〜☆4最大ステータス。とくぎ・耐性・転生情報など。</a></strong></p>
+		<p class="views">2014/04/24</p>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="tabpost">
+		
+        <div class="featuredimagewidget thumbnailarea">
+                            <a class="thumblink" href="http://macwin.org/dqmsl/%e3%83%9e%e3%83%aa%e3%83%b3%e3%82%b9%e3%83%a9%e3%82%a4%e3%83%a0/">
+                    <img src="http://macwin.org/wordpress/wp-content/uploads/2014/04/IMG_3098-50x50.jpg" class="attachment-tinyfeatured wp-post-image" alt="IMG_3098" />                </a>
+                    </div>
+
+		<p><strong><a href="http://macwin.org/dqmsl/%e3%83%9e%e3%83%aa%e3%83%b3%e3%82%b9%e3%83%a9%e3%82%a4%e3%83%a0/">【DQMSL】図鑑No.19「マリンスライム」☆無し〜☆4最大ステータス。とくぎ・耐性・転生情報など。</a></strong></p>
+		<p class="views">2014/04/24</p>
+		<div class="clear"></div>
+	</div>
+		
+	</li>
+
+	</ul>
+	<div class="clear"></div>
+</div>
+
+
+</div><div class="clear"></div><div id="text-7" class="widget widget_text"><h4 class="widget-title">楽天市場</h4>			<div class="textwidget"><!-- Rakuten Widget FROM HERE --><script type="text/javascript">rakuten_design="slide";rakuten_affiliateId="0938d12b.b460108d.0939c074.b6922b6c";rakuten_items="ctsmatch";rakuten_genreId=0;rakuten_size="250x250";rakuten_target="_blank";rakuten_theme="gray";rakuten_border="off";rakuten_auto_mode="off";rakuten_genre_title="off";rakuten_recommend="on";</script><script type="text/javascript" src="http://xml.affiliate.rakuten.co.jp/widget/js/rakuten_widget.js"></script><!-- Rakuten Widget TO HERE --></div>
+		</div><div class="clear"></div>    </div>
+    <div class="clear"></div>
+</div>
+<!-- Begin Footer -->
+</div>
+</div>
+<!-- Close Mainbody and Sitecontainer and start footer
+  ================================================== -->
+<div class="clear"></div>
+<div id="footer">
+    <div class="container clearfix">
+        <div class="footerwidgetwrap">
+            <div class="footerwidget"><div id="categories-2" class="widget widget_categories"><h3 class="widget-title">カテゴリー</h3>		<ul>
+	<li class="cat-item cat-item-6"><a href="http://macwin.org/category/android/" title="Android に含まれる投稿をすべて表示">Android</a> (1)
+</li>
+	<li class="cat-item cat-item-17"><a href="http://macwin.org/category/dqmsl/" title="DQMSL に含まれる投稿をすべて表示">DQMSL</a> (62)
+</li>
+	<li class="cat-item cat-item-9"><a href="http://macwin.org/category/etc/" title="etc に含まれる投稿をすべて表示">etc</a> (5)
+</li>
+	<li class="cat-item cat-item-7"><a href="http://macwin.org/category/gadget/" title="Gadget に含まれる投稿をすべて表示">Gadget</a> (6)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://macwin.org/category/ios/" title="iOS に含まれる投稿をすべて表示">iOS</a> (21)
+</li>
+	<li class="cat-item cat-item-4"><a href="http://macwin.org/category/mac/" title="Mac に含まれる投稿をすべて表示">Mac</a> (34)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://macwin.org/category/windows/" title="Windows に含まれる投稿をすべて表示">Windows</a> (1)
+</li>
+	<li class="cat-item cat-item-8"><a href="http://macwin.org/category/%e3%83%91%e3%82%ba%e3%83%89%e3%83%a9/" title="パズドラ に含まれる投稿をすべて表示">パズドラ</a> (68)
+</li>
+		</ul>
+</div><div class="clear"></div></div>
+            <div class="footerwidget"><div id="tag_cloud-2" class="widget widget_tag_cloud"><h3 class="widget-title">タグ</h3><div class="tagcloud"><a href='http://macwin.org/tag/dqmsl/' class='tag-link-17' title='62件のトピック' style='font-size: 22pt;'>DQMSL</a>
+<a href='http://macwin.org/tag/%e3%81%84%e3%81%aa%e3%81%9a%e3%81%be%e6%96%ac%e3%82%8a/' class='tag-link-74' title='2件のトピック' style='font-size: 11.44pt;'>いなずま斬り</a>
+<a href='http://macwin.org/tag/%e3%81%af%e3%81%92%e3%81%97%e3%81%84%e3%81%8a%e3%81%9f%e3%81%91%e3%81%b3/' class='tag-link-24' title='1件のトピック' style='font-size: 10pt;'>はげしいおたけび</a>
+<a href='http://macwin.org/tag/%e3%81%af%e3%81%92%e3%81%97%e3%81%84%e7%82%8e/' class='tag-link-70' title='2件のトピック' style='font-size: 11.44pt;'>はげしい炎</a>
+<a href='http://macwin.org/tag/%e3%81%be%e3%81%bb%e3%81%86%e3%81%ae%e5%9c%b0%e5%9b%b3/' class='tag-link-31' title='2件のトピック' style='font-size: 11.44pt;'>まほうの地図</a>
+<a href='http://macwin.org/tag/%e3%81%bf%e3%81%aa%e3%81%94%e3%82%8d%e3%81%97/' class='tag-link-38' title='2件のトピック' style='font-size: 11.44pt;'>みなごろし</a>
+<a href='http://macwin.org/tag/%e3%82%a2%e3%83%89%e3%83%90%e3%83%b3%e3%82%b9%e3%83%88%e3%83%a6%e3%83%bc%e3%82%b6%e3%83%bc%e7%99%bb%e9%8c%b2/' class='tag-link-14' title='1件のトピック' style='font-size: 10pt;'>アドバンストユーザー登録</a>
+<a href='http://macwin.org/tag/%e3%82%b6%e3%82%aa%e3%83%a9%e3%83%ab/' class='tag-link-37' title='2件のトピック' style='font-size: 11.44pt;'>ザオラル</a>
+<a href='http://macwin.org/tag/%e3%82%b9%e3%82%af%e3%83%ab%e3%83%88/' class='tag-link-91' title='2件のトピック' style='font-size: 11.44pt;'>スクルト</a>
+<a href='http://macwin.org/tag/%e3%82%b9%e3%83%a9%e3%82%a4%e3%83%a0/' class='tag-link-27' title='1件のトピック' style='font-size: 10pt;'>スライム</a>
+<a href='http://macwin.org/tag/%e3%82%b9%e3%83%a9%e3%82%a4%e3%83%a0%e7%b3%bb/' class='tag-link-26' title='24件のトピック' style='font-size: 18.8pt;'>スライム系</a>
+<a href='http://macwin.org/tag/%e3%82%be%e3%83%b3%e3%83%93%e7%b3%bb/' class='tag-link-73' title='5件のトピック' style='font-size: 13.84pt;'>ゾンビ系</a>
+<a href='http://macwin.org/tag/%e3%83%89%e3%83%a9%e3%82%b4%e3%83%b3%e3%82%af%e3%82%a8%e3%82%b9%e3%83%88%e3%83%a2%e3%83%b3%e3%82%b9%e3%82%bf%e3%83%bc%e3%82%ba%e3%82%b9%e3%83%bc%e3%83%91%e3%83%bc%e3%83%a9%e3%82%a4%e3%83%88/' class='tag-link-18' title='62件のトピック' style='font-size: 22pt;'>ドラゴンクエストモンスターズスーパーライト</a>
+<a href='http://macwin.org/tag/%e3%83%89%e3%83%a9%e3%82%b4%e3%83%b3%e7%b3%bb/' class='tag-link-69' title='2件のトピック' style='font-size: 11.44pt;'>ドラゴン系</a>
+<a href='http://macwin.org/tag/%e3%83%89%e3%83%ab%e3%82%af%e3%83%9e/' class='tag-link-36' title='3件のトピック' style='font-size: 12.4pt;'>ドルクマ</a>
+<a href='http://macwin.org/tag/%e3%83%90%e3%82%a4%e3%82%ad%e3%83%ab%e3%83%88/' class='tag-link-76' title='2件のトピック' style='font-size: 11.44pt;'>バイキルト</a>
+<a href='http://macwin.org/tag/%e3%83%92%e3%83%a3%e3%83%89/' class='tag-link-110' title='2件のトピック' style='font-size: 11.44pt;'>ヒャド</a>
+<a href='http://macwin.org/tag/%e3%83%94%e3%82%aa%e3%83%aa%e3%83%a0/' class='tag-link-64' title='2件のトピック' style='font-size: 11.44pt;'>ピオリム</a>
+<a href='http://macwin.org/tag/%e3%83%99%e3%82%ae%e3%83%a9%e3%83%9e/' class='tag-link-67' title='3件のトピック' style='font-size: 12.4pt;'>ベギラマ</a>
+<a href='http://macwin.org/tag/%e3%83%99%e3%83%9b%e3%82%a4%e3%83%9f/' class='tag-link-40' title='5件のトピック' style='font-size: 13.84pt;'>ベホイミ</a>
+<a href='http://macwin.org/tag/%e3%83%99%e3%83%9b%e3%83%9e%e3%83%a9%e3%83%bc/' class='tag-link-62' title='3件のトピック' style='font-size: 12.4pt;'>ベホマラー</a>
+<a href='http://macwin.org/tag/%e3%83%9b%e3%82%a4%e3%83%9f/' class='tag-link-58' title='5件のトピック' style='font-size: 13.84pt;'>ホイミ</a>
+<a href='http://macwin.org/tag/%e3%83%a1%e3%83%80%e3%83%91%e3%83%8b%e3%83%80%e3%83%b3%e3%82%b9/' class='tag-link-23' title='1件のトピック' style='font-size: 10pt;'>メダパニダンス</a>
+<a href='http://macwin.org/tag/%e3%83%a1%e3%83%a9/' class='tag-link-53' title='3件のトピック' style='font-size: 12.4pt;'>メラ</a>
+<a href='http://macwin.org/tag/%e3%83%a2%e3%83%b3%e3%82%b9%e3%82%bf%e3%83%bc/' class='tag-link-19' title='7件のトピック' style='font-size: 14.8pt;'>モンスター</a>
+<a href='http://macwin.org/tag/%e3%83%a2%e3%83%b3%e3%82%b9%e3%82%bf%e3%83%bc%e5%9b%b3%e9%91%91/' class='tag-link-20' title='42件のトピック' style='font-size: 20.64pt;'>モンスター図鑑</a>
+<a href='http://macwin.org/tag/%e3%83%a2%e3%83%b3%e3%82%b9%e3%82%bf%e3%83%bc%e7%89%a7%e5%a0%b4/' class='tag-link-30' title='1件のトピック' style='font-size: 10pt;'>モンスター牧場</a>
+<a href='http://macwin.org/tag/%e3%83%a9%e3%82%a4%e3%83%87%e3%82%a4%e3%83%b3/' class='tag-link-35' title='2件のトピック' style='font-size: 11.44pt;'>ライデイン</a>
+<a href='http://macwin.org/tag/%e3%83%a9%e3%83%aa%e3%83%9b%e3%83%bc/' class='tag-link-111' title='2件のトピック' style='font-size: 11.44pt;'>ラリホー</a>
+<a href='http://macwin.org/tag/%e3%83%a9%e3%83%b3%e3%82%ad%e3%83%b3%e3%82%b0/' class='tag-link-16' title='8件のトピック' style='font-size: 15.2pt;'>ランキング</a>
+<a href='http://macwin.org/tag/%e3%83%aa%e3%82%bb%e3%83%9e%e3%83%a9/' class='tag-link-12' title='1件のトピック' style='font-size: 10pt;'>リセマラ</a>
+<a href='http://macwin.org/tag/%e3%83%ab%e3%82%ab%e3%83%8a%e3%83%b3/' class='tag-link-93' title='2件のトピック' style='font-size: 11.44pt;'>ルカナン</a>
+<a href='http://macwin.org/tag/%e4%b8%87%e8%83%bd%e3%82%bf%e3%82%a4%e3%83%97/' class='tag-link-60' title='6件のトピック' style='font-size: 14.4pt;'>万能タイプ</a>
+<a href='http://macwin.org/tag/%e5%9b%9e%e5%be%a9%e3%82%bf%e3%82%a4%e3%83%97/' class='tag-link-57' title='7件のトピック' style='font-size: 14.8pt;'>回復タイプ</a>
+<a href='http://macwin.org/tag/%e6%8b%9b%e5%be%85%e3%82%b3%e3%83%bc%e3%83%89/' class='tag-link-15' title='1件のトピック' style='font-size: 10pt;'>招待コード</a>
+<a href='http://macwin.org/tag/%e6%94%bb%e6%92%83%e3%82%bf%e3%82%a4%e3%83%97/' class='tag-link-25' title='10件のトピック' style='font-size: 15.92pt;'>攻撃タイプ</a>
+<a href='http://macwin.org/tag/%e7%89%a9%e8%b3%aa%e7%b3%bb/' class='tag-link-83' title='2件のトピック' style='font-size: 11.44pt;'>物質系</a>
+<a href='http://macwin.org/tag/%e7%89%b9%e6%ae%8a%e3%82%bf%e3%82%a4%e3%83%97/' class='tag-link-33' title='4件のトピック' style='font-size: 13.2pt;'>特殊タイプ</a>
+<a href='http://macwin.org/tag/%e8%a3%9c%e5%8a%a9%e3%82%bf%e3%82%a4%e3%83%97/' class='tag-link-21' title='5件のトピック' style='font-size: 13.84pt;'>補助タイプ</a>
+<a href='http://macwin.org/tag/%e8%bb%a2%e7%94%9f%e7%b3%bb/' class='tag-link-34' title='2件のトピック' style='font-size: 11.44pt;'>転生系</a>
+<a href='http://macwin.org/tag/%e9%98%b2%e5%be%a1%e3%82%bf%e3%82%a4%e3%83%97/' class='tag-link-50' title='6件のトピック' style='font-size: 14.4pt;'>防御タイプ</a>
+<a href='http://macwin.org/tag/%e9%ad%94%e6%b3%95%e3%82%bf%e3%82%a4%e3%83%97/' class='tag-link-51' title='4件のトピック' style='font-size: 13.2pt;'>魔法タイプ</a>
+<a href='http://macwin.org/tag/%e9%ad%94%e6%b3%95%e4%bd%bf%e3%81%84%e3%81%a8%e9%bb%92%e7%8c%ab%e3%81%ae%e3%82%a6%e3%82%a3%e3%82%ba/' class='tag-link-13' title='1件のトピック' style='font-size: 10pt;'>魔法使いと黒猫のウィズ</a>
+<a href='http://macwin.org/tag/%e9%ad%94%e7%8d%a3%e7%b3%bb/' class='tag-link-22' title='4件のトピック' style='font-size: 13.2pt;'>魔獣系</a>
+<a href='http://macwin.org/tag/%ef%bc%9f%ef%bc%9f%ef%bc%9f%e7%b3%bb/' class='tag-link-61' title='2件のトピック' style='font-size: 11.44pt;'>？？？系</a></div>
+</div><div class="clear"></div></div>
+            <div class="footerwidget"><div id="linkcat-2" class="widget widget_links"><h3 class="widget-title">ブログロール</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://dqmsl-aaa.blog.jp">DQMSL攻略ブログ by MacWin</a></li>
+<li><a href="http://usupro.blog41.fc2.com">MacWin ver.0.7</a></li>
+<li><a href="http://pdmacwin.blog.fc2.com">MacWin Ver.iOS</a></li>
+<li><a href="http://webruary.net">webruary</a></li>
+<li><a href="http://magicianwiz.com">魔法使いと黒猫のウィズ攻略ブログ「ウィズ！」</a></li>
+
+	</ul>
+</div><div class="clear"></div>
+<div id="archives-2" class="widget widget_archive"><h3 class="widget-title">アーカイブ</h3>		<ul>
+			<li><a href='http://macwin.org/2014/05/'>2014年5月</a>&nbsp;(3)</li>
+	<li><a href='http://macwin.org/2014/04/'>2014年4月</a>&nbsp;(43)</li>
+	<li><a href='http://macwin.org/2014/03/'>2014年3月</a>&nbsp;(15)</li>
+	<li><a href='http://macwin.org/2014/02/'>2014年2月</a>&nbsp;(1)</li>
+	<li><a href='http://macwin.org/2013/10/'>2013年10月</a>&nbsp;(135)</li>
+	<li><a href='http://macwin.org/2013/09/'>2013年9月</a>&nbsp;(1)</li>
+		</ul>
+</div><div class="clear"></div></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<!-- Theme Hook -->
+
+<!-- tracker added by Ultimate Google Analytics plugin v1.6.0: http://www.oratransplant.nl/uga -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6054972-14");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<script type='text/javascript' src='http://macwin.org/wordpress/wp-content/themes/extranews/js/custom.js?ver=1.3.5'></script>
+<!-- Close Site Container
+  ================================================== -->
+</body>
+</html>

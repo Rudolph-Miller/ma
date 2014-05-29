@@ -1,0 +1,702 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:mixi="http://mixi-platform.com/ns#"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=euc-jp">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<title>農林畜産 - Yahoo!ニュース</title>
+<meta name="keywords" content="農林畜産,トピック,ニュース">
+<meta name="description" content="農林畜産のニュース">
+
+
+<!-- Open Graph Protocol -->
+<meta property="og:title" content="キウイの木枯らす病気 急拡大 - Y!ニュース トピックス" />
+<meta name="mixi-check-robots" CONTENT="nodescription, noimage, ignoreimage">
+<meta property="og:description" content="キウイの木を枯らす「キウイフルーツかいよう病」が今月に入り急拡大し、国が支援へ。授粉で感染か。" />
+<meta property="og:image" content="http://i.yimg.jp/images/topics/module/topics_Facebook_200x200.png" />
+<meta property="og:url" content="http://dailynews.yahoo.co.jp/fc/economy/agriculture/?id=6118104" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:type" content="article" />
+<meta property="fb:app_id" content="276725822409153" />
+<meta property="og:site_name" content="Yahoo!ニュース" />
+<!-- /Open Graph Protocol -->
+
+<!-- Twitter App Card -->
+<meta name="twitter:card" content="app">
+<meta name="twitter:description" content="大事なニュースを深く広く速く。24時間365日、編集部が重要なニュースをお届けします。">
+<meta name="twitter:app:id:iphone" content="407906756">
+<meta name="twitter:app:id:ipad" content="407906756">
+<meta name="twitter:app:id:googleplay" content=" jp.co.yahoo.android.topics">
+<!-- /Twitter App Card -->
+
+<base href="http://dailynews.yahoo.co.jp/fc/">
+<link href="http://i.yimg.jp/images/topics/css/topics_v2.css?date=20140522" rel="stylesheet" type="text/css" media="screen, print">
+<link rel="canonical" href="http://dailynews.yahoo.co.jp/fc/economy/agriculture/" />
+<!-- SpaceID=0 robot -->
+
+<link rel="apple-touch-icon" href="http://i.yimg.jp/images/ipn/wcb/news129.png">
+
+
+
+<!-- Device Category Module -->
+<script type="text/javascript">
+(function(){YjdCookie={set:function(a,b){var x=new XMLHttpRequest();x.open("GET",a,0);x.send();document.location.href=b;}};})();
+</script>
+<!-- /Device Category Module -->
+
+<!--  FB Flg -->
+<script type="text/javascript">
+    var autoPostFlg = '0';
+    var topicsUrl = 'http://dailynews.yahoo.co.jp/fc/economy/agriculture/?id=6118104';
+    var spid = '590579403';
+</script>
+<!-- /FB Flg -->
+
+
+</head>
+<body>
+
+<div id="wrapper">
+
+
+<div id="header" class="clr">
+<!---======= header =======--->
+
+<!-- MASTHEAD -->
+<!-- SpaceID=0 robot -->
+
+<!--- /MASTHEAD --->
+
+<div id="emg">
+<!--- AD EMG --->
+<!-- SpaceID=0 robot -->
+
+<!-- SpaceID=0 robot -->
+
+<!-- SpaceID=0 robot -->
+
+<!--- /AD EMG --->
+</div>
+
+<div id="YPApushdown"></div>
+
+<div id="contentsHeader"> 
+    <!--ニュース検索-->
+    <div class="search clr">
+        <form action="http://news.search.yahoo.co.jp/search" method="get">
+        <div class="searchWrapper">
+            <div class="inputWrapper">
+                <input id="searchText" type="text" name="p">
+                <span class="inputInnr">
+                    <input type="hidden" value="euc-jp" name="ei">
+                    <input type="hidden" value="news_sw" name="fr">
+                </span>
+            </div>
+            <span id="searchButton"><input type="submit" value="検索"></span>
+
+            <div class="currentSearch">ニュース</div>
+            <div class="searchSelect">
+                <div class="bubble"></div>
+                <ul>
+                    <li id="SearchNews"><span class="cur">ニュース</span></li>
+                    <li id="SearchTopics"><span>トピックス</span></li>
+                    <li id="SearchBuzzword"><span>Buzzワード</span></li>
+                    <li id="SearchGSR"><span>全国紙パック</span></li>
+                    <li id="SearchSurvey"><span>意識調査</span></li>
+                </ul>
+            </div>
+        </div>
+        </form>
+        <p class="advanced"><a href="http://news.search.yahoo.co.jp/advanced">条件指定</a></p>
+       
+        <ul class="personalInfo clr">
+            <li class="myPage"><a href="http://person.news.yahoo.co.jp/u/login" class="myThumb" onmousedown="this.href='http://person.news.yahoo.co.jp/u/login'"><img src="http://i.yimg.jp/images/bloom/v201212/anonymous_24.png" width="24" height="24" alt=""></a><a href="http://person.news.yahoo.co.jp/u/login" class="myName" onmousedown="this.href='http://person.news.yahoo.co.jp/u/login'">ユーザーページ</a></li>
+            <li class="purchase"><a href="http://headlines.yahoo.co.jp/purchase/" onmousedown="this.href='http://headlines.yahoo.co.jp/purchase/'">購入済み</a></li>
+            <li class="setting"><a href="http://person.news.yahoo.co.jp/settings/profile/" onmousedown="this.href='http://person.news.yahoo.co.jp/settings/profile/'">設定</a></li>
+        </ul>
+    </div><!-- /.headerSearch --> 
+
+    <!--グローバルナビ -->
+    <div id="globalNav" class="globalNav">
+        <ul id="gnPri" class="mainnav clr">
+            <li id="gnPriTop"><a href="http://news.yahoo.co.jp/" onmousedown="this.href='http://news.yahoo.co.jp/'">トップ</a></li>
+            <li id="gnPriFlash"><a href="http://headlines.yahoo.co.jp/hl?c=flash" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=flash'">速報</a></li>
+            <li id="gnPriPhoto"><a href="http://headlines.yahoo.co.jp/hl?ty=p" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?ty=p'">写真</a></li>
+            <li id="gnPriVideo"><a href="http://headlines.yahoo.co.jp/videonews/" onmousedown="this.href='http://headlines.yahoo.co.jp/videonews/'">映像</a></li>
+            <li id="gnPriZasshi"><a href="http://zasshi.news.yahoo.co.jp/" onmousedown="this.href='http://zasshi.news.yahoo.co.jp/'">雑誌</a></li>
+            <li id="gnPriBylines"><a href="http://bylines.news.yahoo.co.jp/" onmousedown="this.href='http://bylines.news.yahoo.co.jp/'">個人</a></li>
+            <li id="gnPriBuzz"><a href="http://buzz.news.yahoo.co.jp/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/'">Buzz</a></li>
+            <li id="gnPriResearch"><a href="http://polls.dailynews.yahoo.co.jp/" onmousedown="this.href='http://polls.dailynews.yahoo.co.jp/'">意識調査</a></li>
+            <li id="gnPriRanking"><a href="http://headlines.yahoo.co.jp/accr" onmousedown="this.href='http://headlines.yahoo.co.jp/accr'">ランキング</a></li>
+            <li id="gnPriFeed" class="newsFeed"><a href="http://feed.news.yahoo.co.jp/" onmousedown="this.href='http://feed.news.yahoo.co.jp/'">ニュースフィード</a></li>
+        </ul>
+        <ul id="gnSec" class="subnav clearFix">
+            <li id="gnSecDom"><a href="http://headlines.yahoo.co.jp/hl?c=dom" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=dom'">国内</a></li>
+            <li id="gnSecInt"><a href="http://headlines.yahoo.co.jp/hl?c=c_int" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=c_int'">国際</a></li>
+            <li id="gnSecBus"><a class="cur" href="http://headlines.yahoo.co.jp/hl?c=bus" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=bus'">経済</a></li>
+            <li id="gnSecEnt"><a href="http://headlines.yahoo.co.jp/hl?c=c_ent" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=c_ent'">エンタメ</a></li>
+            <li id="gnSecSpo"><a href="http://headlines.yahoo.co.jp/hl?c=c_spo" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=c_spo'">スポーツ</a></li>
+            <li id="gnSecSci"><a href="http://headlines.yahoo.co.jp/hl?c=c_sci" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=c_sci'">IT・科学</a></li>
+            <li id="gnSecLife"><a href="http://headlines.yahoo.co.jp/hl?c=c_life" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=c_life'">ライフ</a></li>
+            <li id="gnSecLoc"><a href="http://headlines.yahoo.co.jp/hl?c=loc" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=loc'">地域</a></li>
+            <li id="gnSecList" class="archives"><a href="http://news.yahoo.co.jp/list/" onmousedown="this.href='http://news.yahoo.co.jp/list/'">アーカイブ</a></li>
+        </ul>
+    </div>
+    <!--/グローバルナビ-->
+</div><!-- /#contentsHeader --> 
+<!--/================================ GLOBAL NAVIGATION ====================================-->
+
+<!---======= /header =======--->
+</div>
+
+<div class="adCT">[PR]
+<!--■■■■■■■■■■■■■CT■■■■■■■■■■■■■■■■-->
+<!-- SpaceID=0 robot -->
+
+<!--■■■■■■■■■■■■■/CT■■■■■■■■■■■■■■■■-->
+</div>
+
+<!---AD SCT--->
+<!-- SpaceID=0 robot -->
+
+<!---/AD SCT--->
+
+
+<noscript>
+    <p class="alertBg yjSt">
+    現在<strong>JavaScriptが無効</strong>になっています。<br>
+    Yahoo!ニュースのすべての機能を利用するためには、<strong>JavaScriptの設定を有効</strong>にしてください。<br>
+    JavaScriptの設定を変更する方法は<a href="http://help.yahoo.co.jp/help/jp/common/sys/sys-07.html">こちら</a>。
+    </p>
+</noscript>
+
+
+
+<hr class="separator">
+
+<div id="content">
+<div id="main">
+<div id="mainMargin">
+
+<!-- 誤報モジュール -->
+<!-- /誤報モジュール -->
+
+
+
+<div class="hdH1a clr">
+<h1 class="topicsName yjM">農林畜産</h1>
+<p class="yjS shortLinkMod">
+
+
+</p>
+
+</div>
+
+
+<div id="detailHeadline">
+<!-- linkLine -->
+<div class="linkLine clr">
+<!-- socialShareModule --><ul class="socialButtonTop clr">
+    <li><a href="https://twitter.com/share" class="twitter-share-button" data-text="キウイの木枯らす病気 急拡大 - Y!ニュース" data-url="http://dailynews.yahoo.co.jp/fc/economy/agriculture/?id=6118104" data-count="horizontal" data-lang="ja" data-related="YahooTopicsEdit,YJNewsResearch"></a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </li>
+    
+</ul> 
+<ul class="snsLink"> 
+<li><div id="share_button1" name="share_button"></div></li> 
+</ul> 
+<!-- /socialShareModule --> 
+<!-- otherService  -->
+<ul class="otherService clr">
+    
+    
+</ul> 
+<!-- /otherService  -->
+</div>
+<!-- /linkLine -->
+
+<!--挿入画像-->
+<table class="detailHeadlineImage" width="200" summary="ヘッドライン画像">
+    <tbody>    
+        <tr><td class="image"><a href="http://headlines.yahoo.co.jp/hl?a=20140528-00000033-mai-soci.view-000" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140528-00000033-mai-soci.view-000'"><img src="http://lpt.c.yimg.jp/im_siggMyLxz_nVs7M3OiOkqYgeNA---x200-y88-q90/amd/20140528-00000033-mai-000-view.jpg"  alt="Photo" onContextMenu="javascript:return false;"></a></td></tr>
+        <tr><td class="caption">キウイフルーツかいよう病で斑点が見られるキウイの葉＝愛媛県提供(毎日新聞)</td></tr>
+    </tbody>
+</table>
+<!--/挿入画像-->
+
+<h3><a href="http://headlines.yahoo.co.jp/hl?a=20140528-00000033-mai-soci" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140528-00000033-mai-soci'">＜キウイ＞木枯らす「かいよう病」が急拡大　産地・愛媛など</a></h3>
+<!--HBODY-->　キウイの木を枯らす「キウイフルーツかいよう病」が、今月に入り急拡大している。全国一の産地である愛媛県のほか、岡山、福岡、佐賀の各県でも相次いで確認された。病原菌の感染が原因だが、感染ルートは特定できておらず、更なる被害拡大の恐れがある。愛媛県だけで被害額は４０００万円以上になる見通し。国は植え替え経費などの支援に乗り出す方針で、２９日には各都道府県の担当者を集めて緊急の対策会議を開く。<!--SOURCE-->(毎日新聞)<!--/SOURCE--><br><a href="http://headlines.yahoo.co.jp/hl?a=20140528-00000033-mai-soci" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140528-00000033-mai-soci'" class="readAll">[記事全文]</a><!--/HBODY--><br><br>
+<!--SUBTITLE--><em>◆国が支援へ</em><!--/SUBTITLE--><br>
+<!--LINK-->・ <a href="http://headlines.yahoo.co.jp/hl?a=20140526-00000039-san-l38" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140526-00000039-san-l38'">キウイ病「全力で対応」　横山農水政務官が西条の農園視察　愛媛</a> - <!--QUOTE--><!--/QUOTE--><!--SOURCE-->産経新聞(5月26日)<!--/SOURCE--><br><!--/LINK-->
+<!--LINK-->・ <a href="http://headlines.yahoo.co.jp/hl?a=20140522-09233201-ehime-l38" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140522-09233201-ehime-l38'">キウイかいよう病被害農家支援へ　農相方針</a> - <!--QUOTE-->必要な費用は本年度予算に盛り込まれている果樹・茶支援関連対策費69億円の一部を充てる。<!--/QUOTE--><!--SOURCE-->愛媛新聞ONLINE(5月22日)<!--/SOURCE--><br><!--/LINK-->
+<!--LINK-->・ <a href="http://headlines.yahoo.co.jp/hl?a=20140517-09226401-ehime-l38" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140517-09226401-ehime-l38'">キウイかいよう病の防除新技術を公募　農水省</a> - <!--QUOTE--><!--/QUOTE--><!--SOURCE-->愛媛新聞ONLINE(5月17日)<!--/SOURCE--><br><!--/LINK-->
+<br>
+<!--SUBTITLE--><em>◆授粉で感染か</em><!--/SUBTITLE--><br>
+<!--LINK-->・ <a href="http://headlines.yahoo.co.jp/hl?a=20140526-09239101-ehime-l38" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140526-09239101-ehime-l38'">授粉で感染、有力か　拡大防止へ全花粉調査</a> - <!--QUOTE-->関係者によると現時点で「花粉が有力」との見方が浮上している。<!--/QUOTE--><!--SOURCE-->愛媛新聞ONLINE(5月26日)<!--/SOURCE--><br><!--/LINK-->
+<br>
+<!--SUBTITLE--><em>◆被害拡大を防ぐため伐採</em><!--/SUBTITLE--><br>
+<!--LINK-->・ <a href="http://headlines.yahoo.co.jp/hl?a=20140510-00010004-agrinews-ind" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140510-00010004-agrinews-ind'">病原性強いキウイかいよう病　伐採で封じ込めへ　愛媛県</a> - <!--QUOTE-->病気のまん延防止を最優先した措置だが、樹体伐採に踏み切った判断は果樹農家にとって打撃が大きく、営農の継続に向けて十分な支援が求められる。<!--/QUOTE--><!--SOURCE-->日本農業新聞(5月10日)<!--/SOURCE--><br><!--/LINK-->
+<!--LINK-->・ <a href="http://headlines.yahoo.co.jp/hl?a=20140508-09213101-ehime-l38" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140508-09213101-ehime-l38'">「迷惑かけては」　かいよう病でキウイ伐採の農家</a> - <!--QUOTE--><!--/QUOTE--><!--SOURCE-->愛媛新聞ONLINE(5月8日)<!--/SOURCE--><br><!--/LINK-->
+<br>
+<!--SUBTITLE--><em>◆「キウイフルーツかいよう病」について</em><!--/SUBTITLE--><br>
+<!--LINK-->・ <a href="http://brd.dailynews.yahoo.co.jp/media/news/topics/busy/title/RV=1/RE=1401416647/RH=YnJkLmRhaWx5bmV3cy55YWhvby5jby5qcA--/RB=/RU=aHR0cDovL3d3dy5jaXR5LnNhaWpvLmVoaW1lLmpwL2tob21lL25vZ3lvc3Vpc2FuL29zaGlyYXNlL2tpdWlrYWl5b3UuaHRtbA--/RS=^ADAIJlqDrZbjX6pX2K1_jnWegoeMZA-" onmousedown="this.href='http://brd.dailynews.yahoo.co.jp/media/news/topics/busy/title/RV=1/RE=1401416647/RH=YnJkLmRhaWx5bmV3cy55YWhvby5jby5qcA--/RB=/RU=aHR0cDovL3d3dy5jaXR5LnNhaWpvLmVoaW1lLmpwL2tob21lL25vZ3lvc3Vpc2FuL29zaGlyYXNlL2tpdWlrYWl5b3UuaHRtbA--/RS=^ADAIJlqDrZbjX6pX2K1_jnWegoeMZA-'">キウイフルーツかいよう病の発生について</a> - <!--QUOTE-->果実には発症しないので、食べても人体への影響はありません。<!--/QUOTE--><!--SOURCE-->愛媛県西条市<!--/SOURCE--><br><!--/LINK-->
+
+<!--LINK-->・ <a href="http://brd.dailynews.yahoo.co.jp/media/news/topics/busy/title/RV=1/RE=1401416647/RH=YnJkLmRhaWx5bmV3cy55YWhvby5jby5qcA--/RB=/RU=aHR0cDovL3d3dy5tYWZmLmdvLmpwL2ovc3lvdWFuL3N5b2t1Ym8vZ2FpY3l1L3NpcnlvdTIvcGRmL3BzYV90b2hhLnBkZg--/RS=^ADAbjPyTlDmwrJP7neFCw3HEs.nN4g-" onmousedown="this.href='http://brd.dailynews.yahoo.co.jp/media/news/topics/busy/title/RV=1/RE=1401416647/RH=YnJkLmRhaWx5bmV3cy55YWhvby5jby5qcA--/RB=/RU=aHR0cDovL3d3dy5tYWZmLmdvLmpwL2ovc3lvdWFuL3N5b2t1Ym8vZ2FpY3l1L3NpcnlvdTIvcGRmL3BzYV90b2hhLnBkZg--/RS=^ADAbjPyTlDmwrJP7neFCw3HEs.nN4g-'">キウイフルーツかいよう病とは（PDFファイル）</a> - <!--QUOTE--><!--/QUOTE--><!--SOURCE-->農林水産省<!--/SOURCE--><br><!--/LINK-->
+
+
+
+
+<!-- ヘッドライン -->
+
+<!-- ACCKEY_PREVIEW_DELIMITER -->
+
+<div id="detailBacknumber" class="forIm pb5 mlr5">
+<div class="hdH3"><h3>関連トピックス</h3></div>
+<p>
+<a href="http://news.yahoo.co.jp/pickup/6117987" onmousedown="this.href='http://news.yahoo.co.jp/pickup/6117987'">北海道 生乳減産に危機感</a>(27日) / 
+
+<a href="http://news.yahoo.co.jp/pickup/6117775" onmousedown="this.href='http://news.yahoo.co.jp/pickup/6117775'">豚肉値上がり 伝染病が影響</a>(25日) ...
+
+</p>
+</div><!--/detailBacknumber-->
+</div><!--/detailHeadline-->
+
+
+
+
+
+<div style="margin:-2px 5px 10px;">
+<!--■■■■■■■■■■IM■■■■■■■■■■-->
+<script type="text/javascript" language="JavaScript">
+<!--
+yads_ad_ds = '96399_15364';
+//-->
+</script>
+<script type="text/javascript" language="javascript" src="http://yads.yahoo.co.jp/js/yads.js"></script>
+<!--■■■■■■■■■■IM■■■■■■■■■■-->
+</div><!-- /line for IM -->
+
+
+
+<div id="detailNews">
+	<div class="hdH2"><h2><a href="http://dailynews.yahoo.co.jp/fc/economy/agriculture/news_list/?pn=1" onmousedown="this.href='http://dailynews.yahoo.co.jp/fc/economy/agriculture/news_list/?pn=1'">ニュース</a></h2></div>
+<ul class="yjMS newsLink">
+<li><a href="http://zasshi.news.yahoo.co.jp/article?a=20140529-00012542-president-bus_all" onmousedown="this.href='http://zasshi.news.yahoo.co.jp/article?a=20140529-00012542-president-bus_all'">香港、台湾で大人気！ ニッポンの農産物の底力【3】プロスコーポレーション＋ヤマト運輸＋全日空（プレジデント）</a><img src="http://i.yimg.jp/images/icon/photo.gif" width="15" height="15" alt="写真ニュース"><span class="date">29日 - 11時15分</span></li>
+
+<li><a href="http://headlines.yahoo.co.jp/hl?a=20140529-00000024-mai-bus_all" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140529-00000024-mai-bus_all'">＜ＴＰＰ＞日本抜き交渉妥結呼びかけ　米の農業５団体（毎日新聞）</a><span class="date">29日 - 10時35分</span></li>
+
+<li><a href="http://newsbiz.yahoo.co.jp/detail?a=20140529-00000024-jijnb_st-nb" onmousedown="this.href='http://newsbiz.yahoo.co.jp/detail?a=20140529-00000024-jijnb_st-nb'">TPP、日本抜きで妥結を＝市場開放不十分なら―米農畜産5団体（時事通信）</a><span class="date">29日 - 9時6分</span></li>
+
+<li><a href="http://newsbiz.yahoo.co.jp/detail?a=20140529-00000020-biz_reut-nb" onmousedown="this.href='http://newsbiz.yahoo.co.jp/detail?a=20140529-00000020-biz_reut-nb'">日米協議決裂すればＴＰＰから日本除外を＝米農業団体（ロイター）</a><span class="date">29日 - 8時55分</span></li>
+
+<li><a href="http://newsbiz.yahoo.co.jp/detail?a=20140528-00000012-biz_fsi-nb" onmousedown="this.href='http://newsbiz.yahoo.co.jp/detail?a=20140528-00000012-biz_fsi-nb'">ファミマ・Ａコープ、一体型出店　ＪＡ全農と業務提携（SankeiBiz）</a><span class="date">29日 - 8時15分</span></li>
+
+<li><a href="http://newsbiz.yahoo.co.jp/detail?a=20140528-00000002-biz_fsi-nb" onmousedown="this.href='http://newsbiz.yahoo.co.jp/detail?a=20140528-00000002-biz_fsi-nb'">ＴＰＰ　関税下げ幅、着地点探る米　対日協議　依然強い産業界の圧力（SankeiBiz）</a><span class="date">29日 - 8時15分</span></li>
+
+<li><a href="http://newsbiz.yahoo.co.jp/detail?a=20140529-00000015-jijnb_st-nb" onmousedown="this.href='http://newsbiz.yahoo.co.jp/detail?a=20140529-00000015-jijnb_st-nb'">きょう（29日）の発表行事予定☆1（時事通信）</a><span class="date">29日 - 7時2分</span></li>
+
+<li><a href="http://newsbiz.yahoo.co.jp/detail?a=20140528-00000510-biz_san-nb" onmousedown="this.href='http://newsbiz.yahoo.co.jp/detail?a=20140528-00000510-biz_san-nb'">ファミリーマート、ＪＡ全農と提携、Ａコープとの一体店舗を展開（SankeiBiz）</a><span class="date">28日 - 16時37分</span></li>
+
+<li><a href="http://newsbiz.yahoo.co.jp/detail?a=20140528-00012540-president-nb" onmousedown="this.href='http://newsbiz.yahoo.co.jp/detail?a=20140528-00012540-president-nb'">香港、台湾で大人気！ ニッポンの農産物の底力【2】オイシックス＋契約農家（プレジデント）</a><span class="date">28日 - 14時15分</span></li>
+
+<li><a href="http://headlines.yahoo.co.jp/hl?a=20140528-00010003-agrinews-bus_all" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140528-00010003-agrinews-bus_all'">“大学発”加工食品　機能性生かす　新たな収入源に期待　青森県立保健大（日本農業新聞）</a><img src="http://i.yimg.jp/images/icon/photo.gif" width="15" height="15" alt="写真ニュース"><span class="date">28日 - 12時19分</span></li>
+
+</ul>
+<!-- detailNews/BuzzModule -->
+</div>
+<!--/detailNews-->
+
+
+
+
+
+<div id="adSqb">
+<!--■■■■■■■■■■■■■SQB■■■■■■■■■■■■■■■■-->
+<!-- SpaceID=0 robot -->
+
+<!--■■■■■■■■■■■■■/SQB■■■■■■■■■■■■■■■■-->
+</div>
+
+<!--■■■■■■■■■■■■■UIEB■■■■■■■■■■■■■■■■--> 
+<!-- SpaceID=0 robot -->
+ 
+<!--■■■■■■■■■■■■■/UIEB■■■■■■■■■■■■■■■■--> 
+
+</div><!--/mainMargin-->
+</div>
+<!--================== /main ==================-->
+<hr class="separator">
+
+
+<div id="sub">
+
+<!--■■■■■■■LREC■■■■■■■■■-->
+<!-- SpaceID=0 robot -->
+
+<!--■■■■■■■/LREC■■■■■■■■■-->
+
+<div class="subRanking">
+    <div class="hd">
+        <h3 class="ttl">経済アクセスランキング</h3>
+    </div>
+
+    <ol class="bd">
+        <li class="clr">
+            <a href="http://headlines.yahoo.co.jp/hl?a=20140524-00000579-san-bus_all" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140524-00000579-san-bus_all'">
+                <span class="rankNum">1</span>
+                <span class="cap clr">
+                    <span class="ttl">バイト大量離脱で崖っぷちのすき家、いつまで続く「パワーアップ改装中」</span>
+                    <span class="source">産経新聞</span>
+                    <span class="date">5月26日(月)10時0分</span>
+                </span>
+            </a>
+        </li><li class="clr">
+            <a href="http://headlines.yahoo.co.jp/hl?a=20140528-00000062-rps-ind" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140528-00000062-rps-ind'">
+                <span class="rankNum">2</span>
+                <span class="cap clr">
+                    <span class="ttl">日産 パルサー 新型、2015年に高性能グレード追加…1.6ターボは190ps</span>
+                    <span class="source">レスポンス</span>
+                    <span class="date">5月28日(水)17時15分</span>
+                </span>
+            </a>
+        </li><li class="clr">
+            <a href="http://headlines.yahoo.co.jp/hl?a=20140528-00000031-scn-bus_all" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140528-00000031-scn-bus_all'">
+                <span class="rankNum">3</span>
+                <span class="cap clr">
+                    <span class="ttl">「日本車は鋼板が薄く安全性に劣る」の風評に・・・自動車メディア「まったく劣っていない！」＝中国メディア</span>
+                    <span class="source">サーチナ</span>
+                    <span class="date">5月28日(水)6時31分</span>
+                </span>
+            </a>
+        </li><li class="clr">
+            <a href="http://headlines.yahoo.co.jp/hl?a=20140529-00000502-fsi-bus_all" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140529-00000502-fsi-bus_all'">
+                <span class="rankNum">4</span>
+                <span class="cap clr">
+                    <span class="ttl">“負の連鎖”悩むガソリンスタンド　１６５円突破…コスト増と客離れ懸念</span>
+                    <span class="source">SankeiBiz</span>
+                    <span class="date">5月29日(木)7時10分</span>
+                </span>
+            </a>
+        </li><li class="clr">
+            <a href="http://headlines.yahoo.co.jp/hl?a=20140529-00000005-jij-bus_all" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140529-00000005-jij-bus_all'">
+                <span class="rankNum">5</span>
+                <span class="cap clr">
+                    <span class="ttl">希望退職に1151人応募＝東電、合理化徹底</span>
+                    <span class="source">時事通信</span>
+                    <span class="date">5月29日(木)3時0分</span>
+                </span>
+            </a>
+        </li>
+    </ol><!-- /.rankingContents -->
+    <p class="ft"><a href="http://headlines.yahoo.co.jp/accr?ty=t&c=bus" onmousedown="this.href='http://headlines.yahoo.co.jp/accr?ty=t&c=bus'">もっと見る</a></p>
+</div><!-- /.ranking -->
+
+<!-- 最新の主なトピックス -->
+<div class="topicsListMod mdSubLined">
+<div class="hdH2"><h2>最新の主なトピックス</h2></div>
+<ul>
+<li><a href="http://dailynews.yahoo.co.jp/fc/domestic/explosion/" onmousedown="this.href='http://dailynews.yahoo.co.jp/fc/domestic/explosion/'">姫路沖でタンカーが爆発炎上</a><img src="http://i.yimg.jp/images/icon/photo.gif" alt="[photo]" border="0"><img src="http://i.yimg.jp/images/new2.gif" alt="[new]" border="0"></li>
+
+<li><a href="http://dailynews.yahoo.co.jp/fc/domestic/ianfu/" onmousedown="this.href='http://dailynews.yahoo.co.jp/fc/domestic/ianfu/'">河野談話検証 来月に国会報告</a><img src="http://i.yimg.jp/images/icon/photo.gif" alt="[photo]" border="0"><img src="http://i.yimg.jp/images/new2.gif" alt="[new]" border="0"></li>
+
+<li><a href="http://dailynews.yahoo.co.jp/fc/economy/employment/" onmousedown="this.href='http://dailynews.yahoo.co.jp/fc/economy/employment/'">残業代ゼロ制度 議論が本格化</a><img src="http://i.yimg.jp/images/icon/photo.gif" alt="[photo]" border="0"></li>
+
+<li><a href="http://dailynews.yahoo.co.jp/fc/domestic/abandoning/" onmousedown="this.href='http://dailynews.yahoo.co.jp/fc/domestic/abandoning/'">准看護師遺棄 女在留資格なし</a><img src="http://i.yimg.jp/images/icon/photo.gif" alt="[photo]" border="0"><img src="http://i.yimg.jp/images/new2.gif" alt="[new]" border="0"></li>
+
+<li><a href="http://dailynews.yahoo.co.jp/fc/economy/gasoline/" onmousedown="this.href='http://dailynews.yahoo.co.jp/fc/economy/gasoline/'">負の連鎖 ガソリン165円突破</a></li>
+
+<li><a href="http://dailynews.yahoo.co.jp/fc/sports/keisuke_honda/" onmousedown="this.href='http://dailynews.yahoo.co.jp/fc/sports/keisuke_honda/'">インザーギ氏なら本田主力外?</a><img src="http://i.yimg.jp/images/icon/photo.gif" alt="[photo]" border="0"><img src="http://i.yimg.jp/images/new2.gif" alt="[new]" border="0"></li>
+
+<li><a href="http://dailynews.yahoo.co.jp/fc/sports/tanaka_masahiro/" onmousedown="this.href='http://dailynews.yahoo.co.jp/fc/sports/tanaka_masahiro/'">マー君、リーグ防御率トップ</a><img src="http://i.yimg.jp/images/icon/photo.gif" alt="[photo]" border="0"></li>
+
+<li><a href="http://dailynews.yahoo.co.jp/fc/entertainment/romance/" onmousedown="this.href='http://dailynews.yahoo.co.jp/fc/entertainment/romance/'">吉高由里子 RAD野田と復縁?</a></li>
+
+</ul>
+<div class="ft clr"><p class="viewAll yjS"><a href="http://news.yahoo.co.jp/list/" onmousedown="this.href='http://news.yahoo.co.jp/list/'">もっと見る</a></p></div>
+</div>
+<!-- /最新の主なトピックス -->
+
+<!-- Information_waku -->
+<!-- Info -->
+
+<!-- /Info -->
+<!-- /Information_waku -->
+
+<div class="space10">
+    <a href="http://brazil2014.yahoo.co.jp/" onmousedown="this.href='http://rdsig.yahoo.co.jp/news/detail/pc/RV=1/RU=aHR0cDovL2JyYXppbDIwMTQueWFob28uY28uanAv'"><img src="http://i.yimg.jp/images/sports/worldcup/brazil/common/banner/bn_300_90.png" width="300" alt="ブラジルワールドカップ特集"></a>
+</div>
+
+<!--■■■■■■■SQM■■■■■■■■■-->
+<!-- SpaceID=0 robot -->
+	 
+<!--■■■■■■■SQM■■■■■■■■■-->
+
+<div id="adImgIM1" class="adImgIM">
+    <script type="text/javascript" language="JavaScript">
+        <!--
+        yads_ad_ds = '70858_14201';
+        
+        //-->
+    </script>
+    <script type="text/javascript" language="JavaScript" src="http://yads.yahoo.co.jp/js/yads.js"></script>
+</div>
+
+<!-- researchMod -->
+<div class="researchMod mdSubLined">
+    <div class="hdH2" id="researchMod"><h2>Yahoo!ニュース 意識調査</h2></div>
+    <div class="researchVote">
+        <h3><a href="http://polls.dailynews.yahoo.co.jp/other/11567/vote" onmousedown="this.href='http://polls.dailynews.yahoo.co.jp/other/11567/vote'">知らずにハラール肉を食べることに抵抗感じる？</a></h3>
+        <p class="detail">英国のレストランが、ハラールと呼ばれるイスラム教の流儀で処理した肉を客に知らせず提供し、<a href="http://bylines.news.yahoo.co.jp/bradymikako/20140523-00035595/" onmousedown="this.href='http://bylines.news.yahoo.co.jp/bradymikako/20140523-00035595/'" target="new">物議を醸しています</a>。あなたは、それとは知らずにハラール肉を食べることに抵抗を感じますか？</p>
+        
+        
+
+        <form action="http://polls.dailynews.yahoo.co.jp/other/11567/result" method="post" name="voteForm" class="voteForm">
+            <ul>
+                <li class="option">
+                    <input id="answer01" type="radio" name="answer" value="1" class="voteRadio"/>
+                    <label for="answer01"><span>抵抗を感じる</span></label>
+                </li><li class="option">
+                    <input id="answer02" type="radio" name="answer" value="2" class="voteRadio"/>
+                    <label for="answer02"><span>抵抗を感じない</span></label>
+                </li>
+            </ul>
+            <input type="hidden" name=".crumb" value="dD1KQXFoVEImc2s9cUpLZHJWeF81TlMweGJPRVlKendHUjEuZ1lJLQ==">
+            <input type="hidden" name="mod" value="topicsRightMod">
+        <button type="submit" class="btnResearch btnAccept" name="voteButton" onmousedown="this.href='http://polls.dailynews.yahoo.co.jp/other/11567/result'"><em>投票する</em></button>
+        </form>
+
+        <p class="justResult"><a href="http://polls.dailynews.yahoo.co.jp/other/11567/result" onmousedown="this.href='http://polls.dailynews.yahoo.co.jp/other/11567/result'">投票せずに結果を見る</a></p>
+
+    </div><!-- /researchVote -->
+    <p class="moreRead"><a href="http://polls.dailynews.yahoo.co.jp" onmousedown="this.href='http://polls.dailynews.yahoo.co.jp'">意識調査トップへ</a></p>
+</div>
+<!-- /researchMod -->
+
+<div class="newsBizMod">
+<div class="mainHead">
+<h2 class="yjMS">読者が注目のビジネスコラム</h2>
+</div>
+<ul class="imgList yjMS">
+<li class="clr">
+<a class="image" href="http://rdsig.yahoo.co.jp/media/newsbiz/topics/economy/detail/RV=1/RU=aHR0cDovL25ld3NiaXoueWFob28uY28uanAvZGV0YWlsP2E9MjAxNDA1MjgtMDAwMzg2NjQtdG95by1uYg--"><img src="http://amd.c.yimg.jp/im_siggtUXm.1lsnVjcQXG_oWP_hA---n1-x60-y60/amd/20140528-00038664-toyo-000-8-view.jpg"></a>
+<a href="http://rdsig.yahoo.co.jp/media/newsbiz/topics/economy/detail/RV=1/RU=aHR0cDovL25ld3NiaXoueWFob28uY28uanAvZGV0YWlsP2E9MjAxNDA1MjgtMDAwMzg2NjQtdG95by1uYg--">スタバ震撼？　「コーヒー界のアップル」日本へ</a><span class="date">-&nbsp;東洋経済オンライン</span>
+</li>
+<li class="clr">
+<a class="image" href="http://rdsig.yahoo.co.jp/media/newsbiz/topics/economy/detail/RV=1/RU=aHR0cDovL25ld3NiaXoueWFob28uY28uanAvZGV0YWlsP2E9MjAxNDA1MjgtMDAwMTAwMDEtYml6X2RpbWUtbmI-"><img src="http://amd.c.yimg.jp/im_siggkIfh0za82od4O0Wd7nNA2A---n1-x60-y60/amd/20140528-00010001-biz_dime-000-1-view.jpg"></a>
+<a href="http://rdsig.yahoo.co.jp/media/newsbiz/topics/economy/detail/RV=1/RU=aHR0cDovL25ld3NiaXoueWFob28uY28uanAvZGV0YWlsP2E9MjAxNDA1MjgtMDAwMTAwMDEtYml6X2RpbWUtbmI-">即日かつ従来の治療費の半分以下で白いかぶせ物の治療を実現する歯科材料</a><span class="date">-&nbsp;＠ＤＩＭＥ</span>
+</li>
+<li class="clr">
+<a class="image" href="http://rdsig.yahoo.co.jp/media/newsbiz/topics/economy/detail/RV=1/RU=aHR0cDovL25ld3NiaXoueWFob28uY28uanAvZGV0YWlsP2E9MjAxNDA1MjgtMDAwMTAwMDAtYml6X3dpcmVkLW5i"><img src="http://amd.c.yimg.jp/im_siggGVjqw0p5vxCgq1.wnmjcGw---n1-x60-y60/amd/20140528-00010000-biz_wired-000-1-view.jpg"></a>
+<a href="http://rdsig.yahoo.co.jp/media/newsbiz/topics/economy/detail/RV=1/RU=aHR0cDovL25ld3NiaXoueWFob28uY28uanAvZGV0YWlsP2E9MjAxNDA1MjgtMDAwMTAwMDAtYml6X3dpcmVkLW5i">ペルーの広告看板、水と空気を浄化する</a><span class="date">-&nbsp;WIRED.jp</span>
+</li>
+</ul>
+<div class="ft clr">
+<p class="viewAll"><a href="http://rdsig.yahoo.co.jp/media/newsbiz/topics/economy/detail/RV=1/RU=aHR0cDovL25ld3NiaXoueWFob28uY28uanA-">ニュースBUSINESSトップ</a></p>
+</div>
+</div>
+
+
+
+<div class="space10">
+    <a href="http://app-adforce.jp/ad/p/r?_site=8717&_article=52405&_link=1702861&_image=1702862">
+        <img width="300" height="90" alt="アプリ" src="http://i.yimg.jp/images/jpnews/cre/promo/tablet_app/images/bnr/300_90.png">
+    </a>
+</div> 
+
+
+<!--- ■■■タイアップ枠■■■ --->
+<!-- SpaceID=0 robot -->
+<!-- SpaceID=0 robot -->
+
+<!--- /■■■タイアップ枠■■■ --->
+
+<!-- AD RP -->
+<!-- SpaceID=0 robot -->
+
+<!-- /AD RP -->
+
+<div id="adRm">
+<!--■■■■■■■RM■■■■■■■■■-->
+<!-- SpaceID=0 robot -->
+
+<!--■■■■■■■/RM■■■■■■■■■-->
+</div>
+
+
+
+<script type="text/javascript"> 
+<!--
+var niceTime = (function() {
+    var ints = {
+        秒: 1,
+        分: 60,
+        時間: 3600,
+        日: 86400,
+        週間: 604800,
+        月: 2592000,
+        年: 31536000
+    };
+
+        return function(time) {
+
+        time = +new Date(time);
+
+        var gap = ((+new Date()) - time) / 1000,
+            amount, measure;
+
+        for (var i in ints) {
+            if (gap > ints[i]) { measure = i; }
+        }
+
+        amount = gap / ints[measure];
+        amount = gap > ints.day ? (Math.round(amount * 100) / 100) : Math.round(amount);
+        amount += ' ' + measure + (amount > 1 ? '' : '') + '前';
+
+        return amount;
+    };
+ 
+})();
+
+// -->
+</script>
+
+
+<!--================== /sub ==================-->
+</div>
+
+
+<!--================== /content ==================-->
+</div>
+
+
+<hr class="separator">
+
+<div style="margin-bottom:10px; overflow:hidden; clear:both;">
+<!-- AD ULT -->
+<!-- SpaceID=0 robot -->
+
+<!-- /AD ULT -->
+</div>
+
+<!-- big footer -->
+<div id="contentsFooter">
+    <div class="cfNavColumn clr">
+        <ul>
+            <li><a href="http://promo.news.yahoo.co.jp/app/yjnews/" onmousedown="this.href='http://promo.news.yahoo.co.jp/app/yjnews/'">
+                <div class="icon iconAPP"><span>アプリ</span></div>
+                <p><em>アプリ</em><span>データ先読みで、電車でもサクサク</span></p>
+            </a></li>
+            <li><a href="https://www.facebook.com/yjnews" onmousedown="this.href='https://www.facebook.com/yjnews'">
+                <div class="icon iconFB"><span>Facebookページ</span></div>
+                <p><em>Facebookページ</em><span>編集部による厳選記事を毎日配信</span></p>
+            </a></li>
+            <li><a href="https://twitter.com/YahooNewsTopics" onmousedown="this.href='https://twitter.com/YahooNewsTopics'">
+                <div class="icon iconTW"><span>Twitter</span></div>
+                <p><em>Twitter</em><span>リアルタイムでニュースを配信</span></p>
+            </a></li>
+            <li><a href="http://headlines.yahoo.co.jp/rss/list" onmousedown="this.href='http://headlines.yahoo.co.jp/rss/list'">
+                <div class="icon iconRSS"><span>RSS</span></div>
+                <p><em>RSS</em><span>購読したいニュースをお好みで</span></p>
+            </a></li>
+        </ul>
+    </div><!-- /.cfNavColumn -->
+    <div class="cfNavList">
+        <ul>
+            <li><a href="http://news.yahoo.co.jp/" onmousedown="this.href='http://news.yahoo.co.jp/'">トップ</a></li><!--
+         --><li><a href="http://headlines.yahoo.co.jp/hl?c=flash" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=flash'">速報</a></li><!--
+         --><li><a href="http://headlines.yahoo.co.jp/hl?ty=p" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?ty=p'">写真</a></li><!--
+         --><li><a href="http://headlines.yahoo.co.jp/videonews/" onmousedown="this.href='http://headlines.yahoo.co.jp/videonews/'">映像</a></li><!--
+         --><li><a href="http://zasshi.news.yahoo.co.jp/" onmousedown="this.href='http://zasshi.news.yahoo.co.jp/'">雑誌</a></li><!--
+         --><li><a href="http://bylines.news.yahoo.co.jp/" onmousedown="this.href='http://bylines.news.yahoo.co.jp/'">個人</a></li><!--
+         --><li><a href="http://buzz.news.yahoo.co.jp/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/'">Buzz</a></li><!--
+         --><li><a href="http://polls.dailynews.yahoo.co.jp/" onmousedown="this.href='http://polls.dailynews.yahoo.co.jp/'">意識調査</a></li><!--
+         --><li class="last"><a href="http://headlines.yahoo.co.jp/accr" onmousedown="this.href='http://headlines.yahoo.co.jp/accr'">ランキング</a></li>
+        </ul>
+    </div><!-- /.cfNavList -->
+    <div class="cfSubNavList">
+        <dl class="subNavL">
+            <dt>ニュースカテゴリ：</dt><!--
+         --><dd><a href="http://headlines.yahoo.co.jp/hl?c=dom" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=dom'">国内</a></dd><!--
+         --><dd><a href="http://headlines.yahoo.co.jp/hl?c=c_int" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=c_int'">国際</a></dd><!--
+         --><dd><a href="http://headlines.yahoo.co.jp/hl?c=bus" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=bus'">経済</a></dd><!--
+         --><dd><a href="http://headlines.yahoo.co.jp/hl?c=c_ent" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=c_ent'">エンタメ</a></dd><!--
+         --><dd><a href="http://headlines.yahoo.co.jp/hl?c=c_spo" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=c_spo'">スポーツ</a></dd><!--
+         --><dd><a href="http://headlines.yahoo.co.jp/hl?c=c_sci" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=c_sci'">IT・科学</a></dd><!--
+         --><dd><a href="http://headlines.yahoo.co.jp/hl?c=c_life" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=c_life'">ライフ</a></dd><!--
+         --><dd><a href="http://headlines.yahoo.co.jp/hl?c=loc" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=loc'">地域</a></dd>
+        </dl>
+        <dl class="subNavR">
+            <dt>その他：</dt><!--
+         --><dd><a href="http://headlines.yahoo.co.jp/docs/copyright.html" onmousedown="this.href='http://headlines.yahoo.co.jp/docs/copyright.html'">ニュース提供社</a></dd><!--
+         --><dd><a href="http://gsearch.news.yahoo.co.jp/gs?ty=g" onmousedown="this.href='http://gsearch.news.yahoo.co.jp/gs?ty=g'">新聞記事横断検索</a></dd>
+        </dl>
+    </div><!-- /.cfSubNavList -->
+</div><!--/#contentsFooter-->
+
+<div id="adS">
+<!-- AD S -->
+<!-- SpaceID=0 robot -->
+
+<!-- /AD S -->
+</div>
+
+
+<div id="footer" class="clr">
+
+<!-- IPHONE_CHVIEW_MODULE -->
+
+<p>
+
+<a href="http://docs.yahoo.co.jp/docs/info/terms/chapter1.html#cf2nd">プライバシーポリシー</a> - <a href="http://docs.yahoo.co.jp/docs/info/terms/">利用規約</a> - <a href="http://ms.yahoo.co.jp/bin/yadv-info/feedback/">ご意見・ご要望</a> - <a href="http://help.yahoo.co.jp/help/jp/news/">ヘルプ・お問い合わせ</a>
+</p>
+<!--================== footer ==================-->
+
+<address>Copyright (C) 2014 Yahoo Japan Corporation. All Rights Reserved.</address>
+<!--================== /footer ==================-->
+</div>
+
+<!-- GOSHINTAKU -->
+
+<script type="text/javascript" src="http://i.yimg.jp/images/commerce/js/libs/jquery/core/1.7.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="http://i.yimg.jp/i/topics/js/pc/globalnavi.js?date=20140522"></script>
+
+
+</div><!--/wrapper-->
+
+
+
+<!--■■■■■■■■■■IM■■■■■■■■■■-->
+<!--■■■■■■■■■■IM■■■■■■■■■■-->
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    function iniForm (formName) {       
+        $.each($(formName), function () {
+            var elm = $(this);
+            elm.find('input:radio').css({'left' : '-999em'});
+            elm.find('.option').addClass('unselected')
+            elm.find('.btnResearch').prop('disabled', true).addClass('disabled');
+            elm.find('.option').click(function() {
+                elm.find('.option').removeClass('selected').addClass('unselected');
+                $(this).removeClass('unselected').addClass('selected');
+            });
+            elm.find('input:radio[name="answer"]').bind('change', function() {
+                if(elm.find('input:radio[name="answer"]:checked').length > 0) {     
+                   elm.find('.btnResearch').prop('disabled', false).removeClass('disabled');
+                }
+            });
+        });
+    }  
+    iniForm(".voteForm");
+});
+</script>
+
+
+</body>
+</html><!-- web176.topics.tnz.yahoo.co.jp uncompressed/chunked Thu May 29 11:48:41 JST 2014 -->

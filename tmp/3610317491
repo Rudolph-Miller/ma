@@ -1,0 +1,502 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+
+<!---->
+<link href="http://meishihacks.com/wp-content/themes/meishi/style.css" rel="stylesheet" type="text/css" media="all">
+<script src="http://meishihacks.com/wp-content/themes/meishi/js/jquery.js"></script>
+<script src="http://meishihacks.com/wp-content/themes/meishi/js/thickbox.js"></script>
+<script src="http://meishihacks.com/wp-content/themes/meishi/js/yuga.js"></script>
+<!--[if lt IE 9]>
+<script src="http://meishihacks.com/wp-content/themes/meishi/dist/html5shiv.js"></script>
+<![endif]-->
+<!--テスト-->
+<!-- Update your html tag to include the itemscope and itemtype attributes -->
+<html itemscope itemtype="http://schema.org/Article">
+
+<!-- Add the following three tags inside head -->
+<meta itemprop="name" content="データ化精度は99.98％以上！「ULURU」（うるる）の名刺データ化サービス">
+<meta itemprop="description" content="はじめに名刺情報をデータ化して営業活動に役立てたいけれど、データ化する時間がないし、アウトソーシングしようかなと考えていらっしゃる方も多いのではないでしょうか。最近では多くの企業が低価格のデータ化サービスを提供していますが、せっかくアウ ...">
+<meta itemprop="image" content="http://meishihacks.com/wp-content/uploads/2014/05/llllllllllllllllllllllllllllllllllllllllllllllllllllllll.jpg">
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.2.8.5 - http://yoast.com/wordpress/seo/ -->
+<title>データ化精度は99.98％以上！「ULURU」（うるる）の名刺データ化サービス - 名刺管理アプリ・ソフト選びで働き方を変える！</title>
+<meta name="description" content="データ化精度は99.98％以上！「ULURU」（うるる）の名刺データ化サービス &raquo; 名刺管理アプリ・ソフト選びで働き方を変える！"/>
+<meta name="keywords" content="データ化精度は99.98％以上！「ULURU」（うるる）の名刺データ化サービス"/>
+<link rel="canonical" href="http://meishihacks.com/data/%e3%83%87%e3%83%bc%e3%82%bf%e5%8c%96%e7%b2%be%e5%ba%a6%e3%81%af99-98%ef%bc%85%e4%bb%a5%e4%b8%8a%ef%bc%81%e3%80%8culuru%e3%80%8d%ef%bc%88%e3%81%86%e3%82%8b%e3%82%8b%ef%bc%89%e3%81%ae%e5%90%8d%e5%88%ba/" />
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel='stylesheet' id='cptr-css-css'  href='http://meishihacks.com/wp-content/plugins/custom-post-types-relationships-cptr/cptr.css?ver=2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='tweetable-frontend-css'  href='http://meishihacks.com/wp-content/plugins/tweetable/main_css.css?ver=3.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://meishihacks.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=3.3.3' type='text/css' media='all' />
+<link rel='stylesheet' id='fb-css'  href='http://meishihacks.com/wp-content/plugins/facebook/style/style.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='http://meishihacks.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<script type='text/javascript' src='http://meishihacks.com/wp-includes/js/jquery/jquery.js?ver=1.7.2'></script>
+<script type='text/javascript' src='http://meishihacks.com/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.2'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://meishihacks.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://meishihacks.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='http://meishihacks.com/?p=7781' />
+<meta property="http://ogp.me/ns#locale" content="ja_jp" />
+<meta property="http://ogp.me/ns#site_name" content="名刺管理アプリ・ソフト選びで働き方を変える！" />
+<meta property="http://ogp.me/ns#type" content="article" />
+<meta property="http://ogp.me/ns#url" content="http://meishihacks.com/data/%e3%83%87%e3%83%bc%e3%82%bf%e5%8c%96%e7%b2%be%e5%ba%a6%e3%81%af99-98%ef%bc%85%e4%bb%a5%e4%b8%8a%ef%bc%81%e3%80%8culuru%e3%80%8d%ef%bc%88%e3%81%86%e3%82%8b%e3%82%8b%ef%bc%89%e3%81%ae%e5%90%8d%e5%88%ba/" />
+<meta property="http://ogp.me/ns#title" content="データ化精度は99.98％以上！「ULURU」（うるる）の名刺データ化サービス - 名刺管理アプリ・ソフト選びで働き方を変える！" />
+<meta property="http://ogp.me/ns#description" content="データ化精度は99.98％以上！「ULURU」（うるる）の名刺データ化サービス - 名刺管理アプリ・ソフト選びで働き方を変える！" />
+<meta property="http://ogp.me/ns/article#published_time" content="2014-05-26T16:42:22+00:00" />
+<meta property="http://ogp.me/ns/article#modified_time" content="2014-05-26T16:42:22+00:00" />
+<meta property="http://ogp.me/ns/article#author" content="http://meishihacks.com/author/okada/" />
+<meta property="http://ogp.me/ns/article#section" content="名刺をデータ化" />
+<meta property="http://ogp.me/ns#image" content="http://meishihacks.com/wp-content/uploads/2014/05/llllllllllllllllllllllllllllllllllllllllllllllllllllllll.jpg" />
+<meta property="http://ogp.me/ns#image:width" content="369" />
+<meta property="http://ogp.me/ns#image:height" content="92" />
+<meta property="http://ogp.me/ns/fb#app_id" content="332183110208342" />
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<script type="text/javascript">window.fbAsyncInit=function(){FB.init({"appId":"332183110208342","channelUrl":"http:\/\/meishihacks.com\/?fb-channel-file=1","status":true,"cookie":true,"xfbml":true,"oauth":true});}</script><!-- Google Analytics Tracking by Google Analyticator 6.2: http://ronaldheft.com/code/analyticator/ -->
+<script type="text/javascript">
+	var analyticsFileTypes = [''];
+	var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-34140397-1']);
+	_gaq.push(['_trackPageview']);
+	_gaq.push(['_trackPageLoadTime']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+<meta content="Sansan, Inc." name="author" />
+<meta content="Sansan, Inc." name="copyright" />
+</head>
+
+<body id="top" class="single single-post postid-7781 single-format-standard">
+
+
+<!-- この render 呼び出しを適切な位置に挿入してください -->
+<script type="text/javascript">
+  window.___gcfg = {lang: 'ja'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+
+<header id="header">
+
+        <h2>展示会などで大量に貯まった名刺をデータ化する業者やシステムをご紹介します。名刺をデータ化して快適に働きたい方は参考にしてみてください。</h2>
+    
+    <div class="wrap">
+
+        <div class="site_id"><a href="/"><img src="http://meishihacks.com/wp-content/themes/meishi/images/header_siteid.png" alt="名刺管理Hacks : 名刺管理から働き方を変え、収益を最大化する" width="300" height="66"></a></div>
+        <div id="searchbox">
+        <script>
+          (function() {
+            var cx = '001689056052127075104:yl5uoyhdyou';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:searchbox-only></gcse:searchbox-only>
+
+        </div>
+        <div id="header_banner">
+            <a href="https://www.linkknowledge.net/form/appreview/?waad=tNaGbkuZ"><img src="http://meishihacks.com/wp-content/themes/meishi/images/banner_meishi_compare_rect_s.gif" alt="名刺管理ソフト比較ダウンロード" /></a>
+        </div>
+        <div id="snsbox">
+            <ul><!--
+             --><li><a href="http://meishihacks.com/feed/"><img src="http://meishihacks.com/wp-content/themes/meishi/images/btn_rss.png" width="26" height="25" alt="RSSフィードを購読する" class="up"></a></li><!--
+             --><li><a href="https://twitter.com/Meishi_Hacks"><img src="http://meishihacks.com/wp-content/themes/meishi/images/btn_twitter.png" width="26" height="25" alt="Twitter" class="up"></a></li><!--
+             --><li><a href="https://www.facebook.com/pages/%E5%90%8D%E5%88%BA%E7%AE%A1%E7%90%86Hacks/350306348378570"><img src="http://meishihacks.com/wp-content/themes/meishi/images/btn_facebook.png" width="26" height="25" alt="Facebook"></a></li><!--
+             --><li><a href="https://plus.google.com/u/0/108634936655947175644/posts"><img src="http://meishihacks.com/wp-content/themes/meishi/images/btn_google.png" width="26" height="25" alt="Google+"></a></li><!--
+         --></ul>
+        </div>
+    </div>
+</header>
+<nav id="gnav">
+	<ul class="allbtn">
+    	<li><a href="/soft/"><strong><img src="http://meishihacks.com/wp-content/themes/meishi/images/nav_cate01.png" width="202" height="60" alt="名刺管理ソフトを探す"></strong></a></li><!--
+     --><li><a href="/app/"><strong><img src="http://meishihacks.com/wp-content/themes/meishi/images/nav_cate02.png" width="198" height="60" alt="名刺管理アプリを探す"></strong></a></li><!--
+     --><li><a href="/technique/"><strong><img src="http://meishihacks.com/wp-content/themes/meishi/images/nav_cate03.png" width="204" height="60" alt="名刺整理術"></strong></a></li><!--
+     --><li><a href="/working/"><strong><img src="http://meishihacks.com/wp-content/themes/meishi/images/nav_cate04.png" width="198" height="60" alt="名刺管理で働き方を革新する"></strong></a></li><!--
+     --><li><a href="/data/"><strong><img src="http://meishihacks.com/wp-content/themes/meishi/images/nav_cate05.png" width="204" height="60" alt="名刺をデータ化"></strong></a></li>
+    </ul>
+</nav>
+<div id="container">
+
+<div class="bread"><a href="http://meishihacks.com" >名刺管理Hacksトップ
+</a> &gt;
+	<a href="http://meishihacks.com/data/" title="名刺をデータ化 の投稿をすべて表示">名刺をデータ化</a> &gt; 	データ化精度は99.98％以上！「ULURU」（うるる）の名刺データ化サービス</div>
+   <div id="content">
+		<article>
+
+
+			<div class="boxSNS">
+
+				<div class="listSNS twt-btn"><a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-lang="ja">ツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+				<div class="listSNS hatena-btn">
+ <a href="http://b.hatena.ne.jp/entry/http://meishihacks.com/data/%e3%83%87%e3%83%bc%e3%82%bf%e5%8c%96%e7%b2%be%e5%ba%a6%e3%81%af99-98%ef%bc%85%e4%bb%a5%e4%b8%8a%ef%bc%81%e3%80%8culuru%e3%80%8d%ef%bc%88%e3%81%86%e3%82%8b%e3%82%8b%ef%bc%89%e3%81%ae%e5%90%8d%e5%88%ba/" class="hatena-bookmark-button" data-hatena-bookmark-title="データ化精度は99.98％以上！「ULURU」（うるる）の名刺データ化サービス" data-hatena-bookmark-layout="vertical-balloon" title="このエントリーをはてなブックマークに追加"> <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+				</div>
+				 <div class="listSNS fb-like" data-send="false" data-layout="box_count" data-show-faces="false" data-href="http://meishihacks.com/data/%e3%83%87%e3%83%bc%e3%82%bf%e5%8c%96%e7%b2%be%e5%ba%a6%e3%81%af99-98%ef%bc%85%e4%bb%a5%e4%b8%8a%ef%bc%81%e3%80%8culuru%e3%80%8d%ef%bc%88%e3%81%86%e3%82%8b%e3%82%8b%ef%bc%89%e3%81%ae%e5%90%8d%e5%88%ba/"></div>
+ <div class="g-plusone" data-size="tall" data-href="http://meishihacks.com/data/%e3%83%87%e3%83%bc%e3%82%bf%e5%8c%96%e7%b2%be%e5%ba%a6%e3%81%af99-98%ef%bc%85%e4%bb%a5%e4%b8%8a%ef%bc%81%e3%80%8culuru%e3%80%8d%ef%bc%88%e3%81%86%e3%82%8b%e3%82%8b%ef%bc%89%e3%81%ae%e5%90%8d%e5%88%ba/"></div>
+			</div>
+
+
+
+
+						<h1>データ化精度は99.98％以上！「ULURU」（うるる）の名刺データ化サービス</h1>
+			<!--<p class="date">2014.05.26</p>-->
+
+			<p class="category"><a href="http://meishihacks.com/data/" title="名刺をデータ化 の投稿をすべて表示" rel="category tag">名刺をデータ化</a></p>
+
+<div class="leadText"></div>
+
+
+<div class="LKbannerTOP">
+	<p><a href="http://www.linkknowledge.net/lk/meishi_m.html?waad=rMjqb0HY" rel="nofollow" target="_blank"><img src="http://meishihacks.com/wp-content/uploads/2013/09/banner_w705h100_03.jpg" alt="" title="名称未設定 1" width="705"height="100" class="aligncenter size-full wp-image-2817" /></a></p>
+	</div>
+
+<div class="AppreviewTop">
+	<p><a href="https://www.linkknowledge.net/form/dl_mhacks/?waad=MloDmJwP" rel="nofollow"><img src="http://meishihacks.com/wp-content/themes/meishi/images/banner_meishi_excel_dl_rect_l.png" alt="エクセルで名刺をデータ管理" title="エクセルで名刺をデータ管理" width="705"height="100" class="aligncenter size-full wp-image-2817" /></a>	</p>
+</div>
+
+			<div class="txt">
+				<h2>はじめに</h2>
+<p>名刺情報をデータ化して営業活動に役立てたいけれど、データ化する時間がないし、アウトソーシングしようかなと考えていらっしゃる方も多いのではないでしょうか。最近では多くの企業が低価格のデータ化サービスを提供していますが、せっかくアウトソースしても、クオリティが悪いのでは意味がありません。今回は、精度99.98％を誇るデータ代行サービス事業者「ULURU」（うるる）の名刺データ化サービスをご紹介しましょう。</p>
+<p>&nbsp;</p>
+<h3>入力プロフェッショナルによるデータ化作業</h3>
+<p>ULURUでは1000人以上の作業者によってデータ化が行われますが、同社でデータ化作業を行うためには、まず業務開始までには一定期間の研修を受ける必要があります。そして、その後データ化作業に必要な知識と正確性に関するトライアル試験に合格した人だけが業務を行えるという仕組みを取り入れ、作業者のクオリティを保っています。</p>
+<p>&nbsp;</p>
+<h3>徹底されたチェックシステム</h3>
+<p><a href="http://meishihacks.com/wp-content/uploads/2014/05/kakaka.jpg"><img class="alignnone size-full wp-image-7782" title="kakaka" src="http://meishihacks.com/wp-content/uploads/2014/05/kakaka.jpg" alt="" width="259" height="552" /></a></p>
+<p>実際の入力作業は、まず2つのグループによって同じ名刺情報の手入力によるデータ化を平行して行います。そして、互いのグループが入力したデータを検査員がクロスチェックすることによって、最終のデータを作成するという流れになります。その後も、半角で入力されているかなどのロジックチェックや目視でのチェックが行われます。そして最後にベテラン検査員によるチェックで納品という形をとっています。これらの複数回の厳しいチェックを通過させることにより、入力精度99.98％以上を保つことができています。</p>
+<p>&nbsp;</p>
+<h3>選べる入力センター</h3>
+<p><a href="http://meishihacks.com/wp-content/uploads/2014/05/kekekek.jpg"><img class="alignnone size-full wp-image-7783" title="kekekek" src="http://meishihacks.com/wp-content/uploads/2014/05/kekekek.jpg" alt="" width="259" height="338" /></a></p>
+<p>&nbsp;</p>
+<p>ULURUでは、国内、国外、SOHO在宅ワーカーといったカテゴリでの入力センターを設定しています。そしてそれぞれの拠点での特徴、価格から、発注者側がどこの作業者にお願いしたいかを選ぶことができます。例えば、国内入力センターでは、人件費の安い地域で作業コストを抑えたサービス、国外の場合は中国での入力センター、そしてSOHO在宅ワーカーでは、ULURUの審査を通過した登録在宅ワーカーとそれぞれ、特徴が異なっています。日本人にお願いしたいな、安ければ海外でもいい、など発注者側のニーズに合わせて選択することができます。</p>
+<p>&nbsp;</p>
+<h3>在宅ワーカーとのマッチングサイト「シュフティ」</h3>
+<p>またULURUでは、別事業として在宅ワーカーとのマッチングサイト「シュフティ」を運営しています。データ化作業を、ULURUの管理体制の元で行われる入力センターではなくとももっと価格を抑えて、柔軟にお願いしたいという場合に、サイトに登録した在宅ワーカーに直接依頼することができます。登録は無料なので希望の価格や納期で作業を行ってくれる在宅ワーカーを見つけることもできるかもしれません。</p>
+<p>&nbsp;</p>
+<h3>安全性、信頼性を保つ取組み</h3>
+<p>名刺情報という個人情報を扱うため、ULURUではプライバシーマークの認定、ISO認証を得ています。また、サービスレベルの保証や、作業の性格で円滑な進行を目的としてサービス仕様書が提供されます。データを納品する際にも、電子ファイルにパスワード設定を義務付け、またセキュアなオンラインストレージが利用されます。さらに、プロセスごとのチェックシートでの管理、納品時の2名以上でのチェック体制など、ヒューマンエラーを防ぐための対策を徹底しています。</p>
+<p>&nbsp;</p>
+<h2>おわりに</h2>
+<p>いかがでしょうか。ULURUのデータ入力代行サービスは、作業精度99.98％以上を誇るように、複数名での複数回にわたるチェック体制を徹底しています。また同社では、入力サービスの他、DM発送や情報収集についてもサービスを行っているため、名刺のデータ化だけでなくさらなる営業支援をお願いすることもできます。精度の高い名刺データ化積極的な営業展開に活用されてみてはいかがでしょうか。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+			</div>
+					   <p class="back_link"><a href="#top">トップに戻る</a><p>
+
+			<!--social_box start-->
+			<ul class="social_box_foot clearfix">
+				<li><a href="http://twitter.com/share" class="twitter-share-button" data-url="" data-text="" data-count="vertical" data-lang="ja">ツイート</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
+
+				<li><div class="listSNS hatena-btn">
+ <a href="http://b.hatena.ne.jp/entry/http://meishihacks.com/data/%e3%83%87%e3%83%bc%e3%82%bf%e5%8c%96%e7%b2%be%e5%ba%a6%e3%81%af99-98%ef%bc%85%e4%bb%a5%e4%b8%8a%ef%bc%81%e3%80%8culuru%e3%80%8d%ef%bc%88%e3%81%86%e3%82%8b%e3%82%8b%ef%bc%89%e3%81%ae%e5%90%8d%e5%88%ba/" class="hatena-bookmark-button" data-hatena-bookmark-title="データ化精度は99.98％以上！「ULURU」（うるる）の名刺データ化サービス" data-hatena-bookmark-layout="vertical-balloon" title="このエントリーをはてなブックマークに追加"> <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+				</div></li>
+				<li><div class="fb-like" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false"　data-href="http://meishihacks.com/data/%e3%83%87%e3%83%bc%e3%82%bf%e5%8c%96%e7%b2%be%e5%ba%a6%e3%81%af99-98%ef%bc%85%e4%bb%a5%e4%b8%8a%ef%bc%81%e3%80%8culuru%e3%80%8d%ef%bc%88%e3%81%86%e3%82%8b%e3%82%8b%ef%bc%89%e3%81%ae%e5%90%8d%e5%88%ba/"></div>
+				</li>
+				<li><div class="g-plusone" data-size="tall"　data-href="http://meishihacks.com/data/%e3%83%87%e3%83%bc%e3%82%bf%e5%8c%96%e7%b2%be%e5%ba%a6%e3%81%af99-98%ef%bc%85%e4%bb%a5%e4%b8%8a%ef%bc%81%e3%80%8culuru%e3%80%8d%ef%bc%88%e3%81%86%e3%82%8b%e3%82%8b%ef%bc%89%e3%81%ae%e5%90%8d%e5%88%ba/"></div>
+				</li>
+			</ul>
+			<!--social_box end-->
+
+
+
+
+
+		</article>
+
+	<div class="LKbanner">
+		<div class="fb-like-box" data-href="https://www.facebook.com/meishihacks" data-width="725" data-show-faces="true" data-stream="false" data-header="true"></div>
+	</div>
+
+	<div class="LKbanner">
+	<p><a href="http://www.linkknowledge.net/lk/meishi_m.html?waad=9MovbzFJ" rel="nofollow" target="_blank"><img src="http://meishihacks.com/wp-content/uploads/2013/09/banner_w725h200_03.jpg" alt="" title="名称未設定 1" width="725"height="200" class="aligncenter size-full wp-image-2817" /></a></p>
+	</div>
+
+
+<div class="AppreviewBottom">
+	<p><a href="https://www.linkknowledge.net/form/dl_mhacks/?waad=gwB0L6rO" rel="nofollow"><img src="http://meishihacks.com/wp-content/themes/meishi/images/banner_meishi_excel_dl_rect_l.png" alt="エクセルで名刺をデータ管理" title="エクセルで名刺をデータ管理" width="705"height="100" class="aligncenter size-full wp-image-2817" /></a>	</p>
+</div>
+
+
+
+		<aside id="relation">
+			<h3><img src="http://meishihacks.com/wp-content/themes/meishi/images/entry_ttl_relation.png" width="67" height="17" alt="関連記事"></h3>
+								</aside>
+	</div>
+	    <div id="sidebar">
+    	<ul id="sidebanner">
+        	<li><a href="https://www.linkknowledge.net/form/app_reminder/?waad=XRn8WcpQ" target="_blank"><img src="http://meishihacks.com/wp-content/uploads/2014/04/banner_app_reserve.jpg"  alt="ここだけの話：アプリ予約"  /></a></li>
+        <!-- sidebanner --></ul>
+
+        <div id="sideEntry">
+        <h2 id="ranking">人気の記事</h2>
+                <ul>
+            <div class="postviews_posts">
+<div class="ranking_badge">
+<img src="http://meishihacks.com/wp-content/themes/meishi/images/ranking1.png">
+</div>
+<div class="ranking_image">
+<a href="http://meishihacks.com/soft/cards/" title="シンプルに名刺を管理できるフリーソフト「Cards!」">
+<img width="128" height="96" src="http://meishihacks.com/wp-content/uploads/2013/01/20130621-1050331.jpg" class="attachment-thumbnail wp-post-image" alt="20130621-105033" title="20130621-105033" 0="" />
+</div>
+<div class="postviews_posts_title"> シンプルに名刺を管理できるフリーソフト「Cards!」
+</div>
+</a>
+</div>
+<div style="clear: both"></div><div class="postviews_posts">
+<div class="ranking_badge">
+<img src="http://meishihacks.com/wp-content/themes/meishi/images/ranking2.png">
+</div>
+<div class="ranking_image">
+<a href="http://meishihacks.com/app/%e3%80%90%e5%be%85%e6%9c%9b%e3%81%ae%e7%84%a1%e6%96%99%e3%82%a2%e3%83%97%e3%83%aa%e3%80%91%e5%90%8d%e5%88%ba%e7%ae%a1%e7%90%86%e3%81%ae%e3%83%91%e3%82%a4%e3%82%aa%e3%83%8b%e3%82%a2%e3%80%8csansan/" title="【待望の無料アプリ】名刺管理のパイオニア「Sansan」">
+<img width="128" height="81" src="http://meishihacks.com/wp-content/uploads/2014/05/skitch1.png" class="attachment-thumbnail wp-post-image" alt="skitch" title="skitch" 0="" />
+</div>
+<div class="postviews_posts_title"> 【待望の無料アプリ】名刺管理のパイオニア「Sansan」
+</div>
+</a>
+</div>
+<div style="clear: both"></div><div class="postviews_posts">
+<div class="ranking_badge">
+<img src="http://meishihacks.com/wp-content/themes/meishi/images/ranking3.png">
+</div>
+<div class="ranking_image">
+<a href="http://meishihacks.com/app/evernote/" title="スマホとEvernoteだけで名刺管理は出来るか検証">
+<img width="128" height="85" src="http://meishihacks.com/wp-content/uploads/2012/08/meishihacks_evernote_s.jpg" class="attachment-thumbnail wp-post-image" alt="Evernoteで名刺管理" title="Evernoteで名刺管理" 0="" />
+</div>
+<div class="postviews_posts_title"> スマホとEvernoteだけで名刺管理は出来るか検証
+</div>
+</a>
+</div>
+<div style="clear: both"></div><div class="postviews_posts">
+<div class="ranking_badge">
+<img src="http://meishihacks.com/wp-content/themes/meishi/images/ranking4.png">
+</div>
+<div class="ranking_image">
+<a href="http://meishihacks.com/technique/scanner/" title="【複合機からiPad専用まで】名刺管理が上手くいくスキャナ8選">
+<img width="128" height="96" src="http://meishihacks.com/wp-content/uploads/2012/10/eightscan_2698.jpg" class="attachment-thumbnail wp-post-image" alt="eightscan_2698" title="eightscan_2698" 0="" />
+</div>
+<div class="postviews_posts_title"> 【複合機からiPad専用まで】名刺管理が上手くいくスキャナ8選
+</div>
+</a>
+</div>
+<div style="clear: both"></div><div class="postviews_posts">
+<div class="ranking_badge">
+<img src="http://meishihacks.com/wp-content/themes/meishi/images/ranking5.png">
+</div>
+<div class="ranking_image">
+<a href="http://meishihacks.com/technique/excel/" title="エクセルでの名刺管理Tips">
+<img width="95" height="96" src="http://meishihacks.com/wp-content/uploads/2013/09/excell.jpg" class="attachment-thumbnail wp-post-image" alt="excell" title="excell" 0="" />
+</div>
+<div class="postviews_posts_title"> エクセルでの名刺管理Tips
+</div>
+</a>
+</div>
+<div style="clear: both"></div>        </ul>
+                </div>
+
+                <div id="sidecategoreis">
+            <h2>カテゴリー紹介</h2>
+            <ul>
+                            	<li class="cat-item cat-item-1"><a href="http://meishihacks.com/soft/" title="名刺管理ソフトの比較・ランキングをご紹介しております。人気がありおすすめの名刺管理ソフトを探すのにお役立てください。名刺管理Hacksは名刺管理アプリやソフトの評判・レビュー記事から比較・ランキングまでご紹介しております。">名刺管理ソフトの比較・ランキング</a>
+<ul class='children'>
+	<li class="cat-item cat-item-62"><a href="http://meishihacks.com/soft/installsoftware/" title="PCにインストールする名刺管理ソフトのレビュー記事を集めました。おすすめソフトを見つけたり、人気ソフトの評判を探すのにピッタリ！名刺管理Hacksでは、他にも様々なカテゴリーから名刺管理ソフトを探す事ができます。">PCにインストールする名刺管理ソフトの比較・ランキング</a>
+</li>
+	<li class="cat-item cat-item-63"><a href="http://meishihacks.com/soft/cloudsoftware/" title="クラウド型の名刺管理ソフトのレビュー記事を集めました。おすすめソフトを見つけたり、人気ソフトの評判を探すのにピッタリ！名刺管理Hacksでは、他にも様々なカテゴリーから名刺管理ソフトを探す事ができます。">クラウド　名刺管理の比較・ランキング</a>
+</li>
+	<li class="cat-item cat-item-67"><a href="http://meishihacks.com/soft/free-soft/" title="無料の名刺管理ソフト,フリーソフトのレビュー記事を集めました。おすすめのソフトを見つけらり、人気ソフトの評判を探すのにピッタリ！名刺管理Hacksでは様々なカテゴリーから名刺管理ソフトを探す事ができます。">名刺管理ソフト　無料,フリーソフト</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://meishihacks.com/app/" title="名刺管理アプリの比較・ランキングをご紹介しております。人気がありおすすめの名刺管理アプリを探すのにお役立てください。名刺管理Hacksは名刺管理アプリやソフトの評判・レビュー記事から比較・ランキングまでご紹介しております。">名刺管理アプリの比較・ランキング</a>
+<ul class='children'>
+	<li class="cat-item cat-item-49"><a href="http://meishihacks.com/app/iphone/" title="iPhone(アイフォン)向け名刺管理アプリのレビュー記事を集めました。おすすめアプリを見つけたり、人気アプリの評判を探すのにピッタリ！名刺管理Hacksでは、他にも様々なカテゴリーから名刺管理アプリを探す事ができます。">iPhone(アイフォン)　名刺管理アプリの比較・ランキング</a>
+</li>
+	<li class="cat-item cat-item-50"><a href="http://meishihacks.com/app/android/" title="Android(アンドロイド)向け名刺管理アプリのレビュー記事を集めました。おすすめアプリを見つけたり、人気アプリの評判を探すのにピッタリ！名刺管理Hacksでは、他にも様々なカテゴリーから名刺管理アプリを探す事ができます。">Android(アンドロイド)　名刺管理アプリの比較・ランキング</a>
+</li>
+	<li class="cat-item cat-item-64"><a href="http://meishihacks.com/app/free/" title="無料の名刺管理アプリのレビュー記事を集めました。おすすめアプリを見つけたり、人気アプリの評判を探すのにピッタリ！名刺管理Hacksでは、他にも様々なカテゴリーから名刺管理アプリを探す事ができます。">無料　名刺管理アプリの比較・ランキング</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://meishihacks.com/technique/" title="効率的な名刺の整理・管理方法をご紹介しております。名刺管理Hacksは他にも名刺管理アプリやソフトの評判・レビュー記事から比較・ランキングまでご紹介しております。">名刺の整理術・管理方法</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://meishihacks.com/working/" title="iPad,iPhoneといったタブレットPCやクラウドサービスの登場によって、ビジネスシーンに大きな変化が起きています。業務の効率化、コミュニケーションの変化など、新し働き方をご紹介します。">名刺管理で働き方を革新する</a>
+<ul class='children'>
+	<li class="cat-item cat-item-69"><a href="http://meishihacks.com/working/income/" title="名刺管理で収益を最大化させる に含まれる投稿をすべて表示">名刺管理で収益を最大化させる</a>
+</li>
+	<li class="cat-item cat-item-70"><a href="http://meishihacks.com/working/workstyle_shift/" title="名刺管理でワークスタイル・シフト に含まれる投稿をすべて表示">名刺管理でワークスタイル・シフト</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-6 current-cat"><a href="http://meishihacks.com/data/" title="名刺を利用して営業力を強化したり、業務を効率化するノウハウや考え方をご紹介します。BtoBマーケティング・法人営業など、営業プロセスで名刺交換が発生する際、名刺管理ソフトで成果を上げる方法をご紹介します。">名刺をデータ化</a>
+</li>
+                        </ul>
+        <!-- /sidecategoreis --></div>
+        
+        <div id="sideEntry">
+        	<h2><img src="http://meishihacks.com/wp-content/themes/meishi/images/side_new.png" width="237" height="10" alt="NewEntries"></h2>
+        	<ul>
+            	           		                <li><a href="http://meishihacks.com/data/%e5%80%8b%e4%ba%ba%e6%83%85%e5%a0%b1%e3%81%ae%e3%82%a8%e3%82%ad%e3%82%b9%e3%83%91%e3%83%bc%e3%83%88%e9%9b%86%e5%9b%a3-%e3%83%97%e3%83%ad%e3%82%bb%e3%82%b9%e3%83%bb%e3%83%9e%e3%83%8d%e3%82%b8%e3%83%a1/">個人情報のエキスパート集団 プロセス・マネジメントの名刺入力サービス</a></li>
+				                <li><a href="http://meishihacks.com/data/%e3%83%87%e3%83%bc%e3%82%bf%e5%8c%96%e7%b2%be%e5%ba%a6%e3%81%af99-98%ef%bc%85%e4%bb%a5%e4%b8%8a%ef%bc%81%e3%80%8culuru%e3%80%8d%ef%bc%88%e3%81%86%e3%82%8b%e3%82%8b%ef%bc%89%e3%81%ae%e5%90%8d%e5%88%ba/">データ化精度は99.98％以上！「ULURU」（うるる）の名刺データ化サービス</a></li>
+				                <li><a href="http://meishihacks.com/soft/%e5%a4%9a%e8%a8%80%e8%aa%9e%e5%af%be%e5%bf%9c%e5%b0%82%e7%94%a8%e3%82%b9%e3%82%ad%e3%83%a3%e3%83%8a%e3%83%bc%e3%81%a7%e3%82%af%e3%83%a9%e3%82%a6%e3%83%89%e5%90%8d%e5%88%ba%e7%ae%a1%e7%90%86%e3%80%8c/">多言語対応専用スキャナーでクラウド名刺管理「名刺Cube」</a></li>
+				                <li><a href="http://meishihacks.com/working/%e6%b5%b7%e5%a4%96%e3%81%ae%e5%90%8d%e5%88%ba%e4%ba%8b%e6%83%85%ef%bc%9a%e7%b1%b3%e5%9b%bd%e3%81%ae%e5%90%8d%e5%88%ba%ef%bc%88business-card%ef%bc%89%e3%83%88%e3%83%ac%e3%83%b3%e3%83%89/">海外の名刺事情：米国の名刺（Business Card）トレンド</a></li>
+				                <li><a href="http://meishihacks.com/data/%e5%90%8d%e5%88%ba%e3%83%87%e3%82%b8%e3%82%bf%e3%83%ab%e5%8c%96%e3%81%ae%e3%82%af%e3%83%a9%e3%82%a6%e3%83%89%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9%e3%80%8cregoengine%ef%bc%88%e3%83%ac%e3%82%b4%e3%82%a8/">名刺デジタル化のクラウドサービス「RegoEngine（レゴエンジン）」</a></li>
+				                            </ul>
+        <!-- //sideEntry --></div>
+
+        <div id="sideEntry">
+           <div class="fb-like-box" data-href="https://www.facebook.com/meishihacks" data-width="240" data-show-faces="true" data-stream="false" data-header="true"></div>
+        </div>
+
+   <!-- //sidebar --></div><!-- //container --></div>
+
+<footer id="footer">
+	<div class="wrap">
+        <div id="footernav">
+            <nav>
+                <p style="font-size:14px; line-height:1.3em; margin-bottom:5px;"><a href="/soft/"><strong>名刺管理ソフトの比較・ランキング</strong></a></p>
+                <ul>
+                	<li class="cat-item cat-item-62"><strong><a href="http://meishihacks.com/soft/installsoftware/" title="PCにインストールする名刺管理ソフトのレビュー記事を集めました。おすすめソフトを見つけたり、人気ソフトの評判を探すのにピッタリ！名刺管理Hacksでは、他にも様々なカテゴリーから名刺管理ソフトを探す事ができます。">PCにインストールする名刺管理ソフトの比較・ランキング</a></strong>
+</li>
+	<li class="cat-item cat-item-63"><strong><a href="http://meishihacks.com/soft/cloudsoftware/" title="クラウド型の名刺管理ソフトのレビュー記事を集めました。おすすめソフトを見つけたり、人気ソフトの評判を探すのにピッタリ！名刺管理Hacksでは、他にも様々なカテゴリーから名刺管理ソフトを探す事ができます。">クラウド　名刺管理の比較・ランキング</a></strong>
+</li>
+	<li class="cat-item cat-item-67"><strong><a href="http://meishihacks.com/soft/free-soft/" title="無料の名刺管理ソフト,フリーソフトのレビュー記事を集めました。おすすめのソフトを見つけらり、人気ソフトの評判を探すのにピッタリ！名刺管理Hacksでは様々なカテゴリーから名刺管理ソフトを探す事ができます。">名刺管理ソフト　無料,フリーソフト</a></strong>
+</li>
+            	</ul>
+            </nav>
+            <nav class="wide">
+                <p style="font-size:14px; line-height:1.3em; margin-bottom:5px;"><a href="/app/"><strong>名刺管理アプリの比較・ランキング</strong></a></p
+                <ul>
+                	<li class="cat-item cat-item-49"><strong><a href="http://meishihacks.com/app/iphone/" title="iPhone(アイフォン)向け名刺管理アプリのレビュー記事を集めました。おすすめアプリを見つけたり、人気アプリの評判を探すのにピッタリ！名刺管理Hacksでは、他にも様々なカテゴリーから名刺管理アプリを探す事ができます。">iPhone(アイフォン)　名刺管理アプリの比較・ランキング</a></strong>
+</li>
+	<li class="cat-item cat-item-50"><strong><a href="http://meishihacks.com/app/android/" title="Android(アンドロイド)向け名刺管理アプリのレビュー記事を集めました。おすすめアプリを見つけたり、人気アプリの評判を探すのにピッタリ！名刺管理Hacksでは、他にも様々なカテゴリーから名刺管理アプリを探す事ができます。">Android(アンドロイド)　名刺管理アプリの比較・ランキング</a></strong>
+</li>
+	<li class="cat-item cat-item-64"><strong><a href="http://meishihacks.com/app/free/" title="無料の名刺管理アプリのレビュー記事を集めました。おすすめアプリを見つけたり、人気アプリの評判を探すのにピッタリ！名刺管理Hacksでは、他にも様々なカテゴリーから名刺管理アプリを探す事ができます。">無料　名刺管理アプリの比較・ランキング</a></strong>
+</li>
+            	</ul>
+            </nav>
+	    <nav class="short">
+                <p style="font-size:14px; line-height:1.3em; margin-bottom:5px;"><a href="/technique/"><strong>名刺整理術</strong></a></p>
+                <ul>
+                <li>カテゴリーなし</li>            	</ul>
+            </nav>
+            <nav>
+                <p style="font-size:14px; line-height:1.3em; margin-bottom:5px;"><a href="/income/"><strong>収益を最大化させる</strong></a></p>
+                <ul>
+                <li>カテゴリーなし</li>            	</ul>
+            </nav>
+            <nav>
+                <p style="font-size:14px; line-height:1.3em; margin-bottom:5px;"><a href="/work/"><strong>働き方を変える</strong></a></p>
+                <ul>
+                	<li class="cat-item cat-item-69"><strong><a href="http://meishihacks.com/working/income/" title="名刺管理で収益を最大化させる に含まれる投稿をすべて表示">名刺管理で収益を最大化させる</a></strong>
+</li>
+	<li class="cat-item cat-item-70"><strong><a href="http://meishihacks.com/working/workstyle_shift/" title="名刺管理でワークスタイル・シフト に含まれる投稿をすべて表示">名刺管理でワークスタイル・シフト</a></strong>
+</li>
+            	</ul>
+            </nav>
+            <p class="copyright"><a href="http://www.sansan.com/privacy/" rel="nofollow" target="_blank"　rel="nofollow">個人情報保護方針</a> </p>
+            <p class="copyright">Copyright © <a href="http://www.sansan.com/" rel="nofollow" target="_blank"　rel="nofollow">Sansan, Inc.</a> </p>
+        <!-- //footernav --></div>
+
+        </div>
+
+</footer>
+<div id="fb-root"></div><script type='text/javascript' src='http://meishihacks.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.25.0-2013.01.18'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/meishihacks.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"\u9001\u4fe1\u4e2d ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://meishihacks.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=3.3.3'></script>
+<script type='text/javascript' src='http://connect.facebook.net/en_US/all.js'></script>
+
+<!-- フリークアウト社　タグ -->
+<script language="javascript">
+    var _fout_userid = 2470;
+    var _fout_jsurl = (("https:" == document.location.protocol) ? "https://" : "http://") + 'js.fout.jp/cnt.js';
+    document.write(unescape("%3Cscript src='" + _fout_jsurl + "' language='javascript' %3E%3C/script%3E"));
+</script>
+<!-- フリーク・アウト社　タグ　END　　-->
+
+<!-- マイクロアド社　タグ -->
+<script type="text/javascript">
+<!--
+var blade_co_account_id='3403';
+var blade_group_id='';
+-->
+</script>
+<script src="http://d-cache.microad.jp/js/bl_track.js">
+</script>
+
+<!-- マイクロアド社　タグ  END-->
+
+<!-- マーケットワン　タグ -->
+<!-- マーケットワン　タグ  END-->
+
+
+<!-- googleremarketing　タグ -->
+
+<!-- Google Code for &#12513;&#12452;&#12531;&#12522;&#12473;&#12488; -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the　setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 946652215;
+var google_conversion_label = "Ke46CImuwQQQt4izwwM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/946652215/?value=0&amp;label=Ke46CImuwQQQt4izwwM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!-- googleremarketing 　タグ END  -->
+
+<!-- Yahoo remarketing タグ  -->
+<script type="text/javascript" language="javascript">
+var yahoo_retargeting_id = 'NT3KOA6H74';
+var yahoo_retargeting_label = '';
+</script>
+<script type="text/javascript" language="javascript" src="//b92.yahoo.co.jp/js/s_retargeting.js"></script>
+<!-- Yahoo remarketing タグ END -->
+
+<!-- WebAntenna -->
+<script type="text/javascript" src="http://tr.webantenna.info/js/webantenna.js"></script>
+<script type="text/javascript">
+if ( typeof( webantenna ) == 'function' ) {
+ _wa.account = 'WAcU8u-1';
+ webantenna();
+}
+</script>
+<noscript>
+<img width="1" height="1" alt="" src="http://tr.webantenna.info/_webantenna.png?ga=WAcU8u-1&amp;jse=0">
+</noscript>
+<!-- end WebAntenna -->
+
+
+
+
+</body>
+</html>

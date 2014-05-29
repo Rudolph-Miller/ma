@@ -1,0 +1,849 @@
+ <!DOCTYPE html>
+<html
+  lang="ja"
+  data-avail-langs="ja en"
+
+  data-page="entry"
+  data-admin-domain="http://blog.hatena.ne.jp"
+  data-static-domain="http://hatenablog.com"
+  data-blog="8arrow.hatenablog.com"
+  data-blogs-uri-base="http://blog.8arrow.org"
+  data-globalheader-color="b"
+  data-globalheader-type="pc"
+  data-author="nitro_idiot"
+  data-version="cb3376f552692eef52655312928aaadd"
+  data-blog-comments-top-is-new=""
+  data-device="pc"
+
+  
+
+  data-brand="hatenablog"
+
+
+  data-has-touch-view="1"
+  
+
+  itemscope
+   itemtype="http://schema.org/Article"
+
+  >
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    
+    
+    
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=7; IE=9; IE=10; IE=11" />
+    <title>あなたがLispを無視することができない理由 - 八発白中</title>
+
+    
+
+    
+      <link rel="canonical" href="http://blog.8arrow.org/entry/2013/12/01/120712"/>
+    
+
+    <meta itemprop="name" content="あなたがLispを無視することができない理由 - 八発白中"/>
+    
+      <meta itemprop="image" content="http://ir-jp.amazon-adsystem.com/e/ir?t=happatsu-22&amp;l=as2&amp;o=9&amp;a=4480021574"/>
+    
+
+    <meta property="og:title" content="あなたがLispを無視することができない理由 - 八発白中"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://blog.8arrow.org/entry/2013/12/01/120712"/>
+    
+      <meta property="og:image" content="http://ir-jp.amazon-adsystem.com/e/ir?t=happatsu-22&amp;l=as2&amp;o=9&amp;a=4480021574"/>
+    
+      <meta property="og:description" content="（この記事はLisp Advent Calendar 1日目のためのエントリです。） 禅が好んで用いる比喩がある。月を指すには指が必要である。だが、その指を月と思う者はわざわいなるかな。 — 鈴木大拙「禅」 これをLispに例えるなら、こう言うことができるかもしれない。 Lispを書くには括弧が必要である。だが、その括弧をLispと思う者はわざわいなるかな。 Lispを普段書いている身としてはLispについて括弧がどう、というのは些細なものに思えるが、Lispを知らない人からすると自然な考えだろう。人間は知らないものを理解しようとするとき、自分が今まで見たもの、知っているものと比較して手がかり…" />
+    <meta property="og:site_name" content="http://blog.8arrow.org/"/>
+      <meta property="article:published_time" content="1385867232" />
+    <meta name="twitter:card" content="summary" />      <meta name="twitter:app:name:iphone" content="はてなブログアプリ" />
+      <meta name="twitter:app:id:iphone" content="583299321" />
+      <meta name="twitter:app:url:iphone" content="hatenablog:///open?uri=http%3A%2F%2Fblog.8arrow.org%2Fentry%2F2013%2F12%2F01%2F120712" />      <meta name="twitter:site" content="@nitro_idiot" />
+      <meta name="description" content="（この記事はLisp Advent Calendar 1日目のためのエントリです。） 禅が好んで用いる比喩がある。月を指すには指が必要である。だが、その指を月と思う者はわざわいなるかな。 — 鈴木大拙「禅」 これをLispに例えるなら、こう言うことができるかもしれない。 Lispを書くには括弧が必要である。だが、その括…">
+    
+<script type="text/javascript">
+// <!--
+
+if (~navigator.userAgent.indexOf('Mac OS X')) {
+  document.write('<style type="text/css">html, body { font-family: \x27Helvetica\x27, \x27Arial\x27, \x27ヒラギノ角ゴ Pro W3\x27, \x27Hiragino Kaku Gothic Pro\x27, sans-serif; } </style>');
+} else {
+  document.write('<style type="text/css">html, body { font-family: \x27Helvetica\x27, \x27Arial\x27, \x27メイリオ\x27, \x27Meiryo\x27, \x27MS PGothic\x27, sans-serif; } </style>');
+}
+
+// -->
+</script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if IE]>
+<script type="text/javascript" src="/js/vendor/excanvas/excanvas.js"></script>
+<![endif]-->
+
+
+    <link rel="shortcut icon" href="http://hatenablog.com/images/favicon.ico">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://blog.8arrow.org/feed"/>
+    <link rel="alternate" type="application/rss+xml" title="RSS2.0" href="http://blog.8arrow.org/rss"/>
+    <link rel="author" href="http://www.hatena.ne.jp/nitro_idiot/">
+
+      <link rel="stylesheet" type="text/css" href="http://hatenablog.com/.shared.css:cb3376f552692eef52655312928aaadd:/css/theme/base.css,/css/prettify.css,/css/globalheader.css?version=cb3376f552692eef52655312928aaadd"/>
+      <link rel="stylesheet" type="text/css" href="http://hatenablog.com/-/blog_style/11696248318755958219/2975e7304776ac8a3369afb4a91fb32250c7e04b"/>    <script>    </script>
+
+    
+    <style>
+      div#google_afc_user,
+      div#google_afc_user_container,
+      div.google_afc_image,
+      div.google_afc_blocklink {
+          display: block !important;
+      }
+    </style>
+
+    
+  </head>
+
+  <body class="page-entry     ">
+    <!-- Google Universal Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-29716941-6', 'auto', {'name': 'HatenaBlogTracker'});
+  ga('HatenaBlogTracker.require', 'displayfeatures');
+  ga('HatenaBlogTracker.send', 'pageview');
+
+</script>
+<!-- End Google Universal Analytics -->
+
+    
+    <div id="header-container">
+     <div id="sp-suggest" style="display: none;"><a id="sp-suggest-link" href="#">スマートフォン用の表示で見る</a></div>
+    </div>
+
+    <div class="select_star_button_container" style="display: none;">
+      <img src="http://hatenablog.com/images/theme/hatena-star-quote-box.png?version=cb3376f552692eef52655312928aaadd" title="引用スターをつける" class="select_star_button" />
+      <img src="http://hatenablog.com/images/theme/hatena-star-quote-star.png?version=cb3376f552692eef52655312928aaadd" title="引用スターをつける" class="select_star_button select_star_star">
+    </div>
+
+    <div class="message-box" id="select-star-message-box" style="display: none;">
+      スターをつけました
+    </div>
+
+    <div id="globalheader-container" >
+  <iframe id="globalheader" height="37" frameborder="0" allowTransparency="true"></iframe>
+</div>
+
+
+    <div id="container">
+      <div id="container-inner">
+        <header id="blog-title" data-brand="hatenablog">
+  <div id="blog-title-inner" >
+    <h1 id="title"><a href="http://blog.8arrow.org/">八発白中</a></h1>
+    
+      <h2 id="blog-description">はてなブログに引越しました。</h2>
+    
+  </div>
+</header>
+
+        
+        
+
+
+
+
+<div id="content" class="hfeed"
+  
+  >
+  <div id="content-inner">
+    <div id="wrapper">
+      <div id="main">
+        <div id="main-inner">
+          
+            
+            <!-- google_ad_section_start -->
+            <!-- rakuten_ad_target_begin -->
+            
+              
+                <article class="entry hentry js-entry-article date-first autopagerize_page_element chars-5600 words-400 mode-markdown entry-odd" id="entry-12921228815713567346" data-keyword-campaign="" data-uuid="12921228815713567346">
+  <div class="entry-inner">
+    <header class="entry-header">
+      <div class="date first">
+        <a href="http://blog.8arrow.org/entries/2013/12/01" rel="nofollow">
+          <time pubdate datetime="2013-12-01T03:07:12Z" title="2013-12-01T03:07:12Z">
+            <span class="date-year">2013</span><span class="hyphen">-</span><span class="date-month">12</span><span class="hyphen">-</span><span class="date-day">01</span>
+          </time>
+        </a>
+      </div>
+      <h1 class="entry-title">
+        <a href="http://blog.8arrow.org/entry/2013/12/01/120712" class="entry-title-link bookmark">あなたがLispを無視することができない理由</a>
+      </h1>
+      
+      <div class="categories no-categories">
+        
+      </div>
+      
+    </header>
+    <div class="entry-content">
+
+      
+        <p>（この記事は<a href="http://qiita.com/advent-calendar/2013/lisp">Lisp Advent Calendar</a> 1日目のためのエントリです。）</p>
+
+<blockquote>
+禅が好んで用いる比喩がある。月を指すには指が必要である。だが、その指を月と思う者はわざわいなるかな。<br/>
+— <a href="http://www.amazon.co.jp/gp/product/4480021574/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4480021574&linkCode=as2&tag=happatsu-22">鈴木大拙「禅」</a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=happatsu-22&l=as2&o=9&a=4480021574" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+</blockquote>
+
+
+<p>これを<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>に例えるなら、こう言うことができるかもしれない。</p>
+
+<blockquote>
+<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>を書くには括弧が必要である。だが、その括弧を<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>と思う者はわざわいなるかな。
+</blockquote>
+
+
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>を普段書いている身としては<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>について括弧がどう、というのは些細なものに思えるが、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>を知らない人からすると自然な考えだろう。人間は知らないものを理解しようとするとき、自分が今まで見たもの、知っているものと比較して手がかりを得ようとする。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>が他のプログラム言語と比較してユニークなものは、やはりその括弧で表現されたS式だ。</p>
+
+<p>しかし、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>が括弧を使った奇妙な構文を用いるのは理由がある。そしてそれが<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>の強力さを生み、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>は今まで生き残ってきた。</p>
+
+<p>ここでその強力さを見せられるといいんだけど、それは他のプログラム言語とはあまりに異なるため学ぶのが難しい。しかし、本質的にはシンプルなことだ。その<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CE%E0%BB%F7%C0%AD">類似性</a>から、しばしばそれは「悟り」と呼ばれている。</p>
+
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>の本質は、そのコード自身を<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>のデータ構造で表すことができることだ。</p>
+
+<p>これは主に、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>プログラムを生成する<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>プログラムを書くようなときに効果を発揮する。そしてそのようなプログラムを<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>では「マクロ」と呼ぶ。</p>
+
+<h2>マクロで何ができるか</h2>
+
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>を学び、マクロが何であり、何ができるかを学んだ人には2通りの反応が見られる。好むか、恐れるか。</p>
+
+<p>マクロをこの上なく好み、これ無しでプログラムを書くなんて不安でしかない、という人々と、逆に強力すぎるから言語機能としてあるべきではないという人々がいる。</p>
+
+<p>これは<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>界でも見解が分かれるところで、特に<a class="keyword" href="http://d.hatena.ne.jp/keyword/Scheme">Scheme</a>の人々は後者の見方をする人も多いようだ。ただ一致しているのは、それが強力であることだ。あまりに強力なため、誰もそれを無視することはできない。</p>
+
+<blockquote>
+<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%B0%A5%E9%A5%DE">プログラマ</a>にとって、なぜマクロはそんなに重要なのか? 単にマクロが提供するシンタックス上の便利さのためではなく、マクロはプログラムを操作するプログラムであり、そのことは常に<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>コミュニティの中心的テーマであり続けているからである。<a class="keyword" href="http://d.hatena.ne.jp/keyword/FORTRAN">FORTRAN</a>が数を、Cが文字とポインタをこき使う言語であるなら、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>は、プログラムをこき使う言語である。そのデータ構造は、プログラムテキストを表現や操作するために有用である。マクロは、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%E1%A5%BF%B8%C0%B8%EC">メタ言語</a>で書かれたプログラムの最も直接の例である。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>はそれ自身の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%E1%A5%BF%B8%C0%B8%EC">メタ言語</a>であるので、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%B8%C0%B8%EC">プログラミング言語</a>全体の力が、プログラムテキストを変形する仕事を行なうために用いられ得る。<br/><br/>
+— Guy Steel Jr. and Richard P. Gabriel 「<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>の進化」
+</blockquote>
+
+
+<p>プログラムを生成するプログラムが必要になるのは、言語自身を拡張したいときだ。</p>
+
+<p>たとえば、<a class="keyword" href="http://d.hatena.ne.jp/keyword/JavaScript">JavaScript</a>に<code>with</code>文というものがある。</p>
+
+<pre class="code lang-javascript" data-lang="javascript" data-unlink><span class="synStatement">with</span> (obj) <span class="synIdentifier">{</span>
+    a = b;
+<span class="synIdentifier">}</span>
+</pre>
+
+
+<p>上のコードは以下のコードのいずれかと等価である。</p>
+
+<pre class="code lang-javascript" data-lang="javascript" data-unlink>a = b;
+a = obj.b;
+obj.a = b;
+obj.a = obj.b;
+</pre>
+
+
+<p>つまり、ブロック内に出てくる変数の名前と同じ名前の<code>obj</code>のフィールドがあるときは<code>obj</code>のフィールドとして扱い、そうでない場合は単なる変数として扱う。</p>
+
+<p><code>with</code>は明らかに<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>の影響を受けたものだが、一般的な<a class="keyword" href="http://d.hatena.ne.jp/keyword/JavaScript">JavaScript</a>コードではあまり使われていないようだ。「<a href="http://www.amazon.co.jp/gp/product/4873113911/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4873113911&linkCode=as2&tag=happatsu-22">JavaScript: The Good Parts</a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=happatsu-22&l=as2&o=9&a=4873113911" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+」ではこの構文を「悪いパーツ」として使うべきではないと言っている。理由はそれが非常に効率が悪く、変数が何を表しているかを曖昧にするからだ。ただ、その理由は思想が悪いというよりも実装が悪いせいだと思う。</p>
+
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>にはそれと似たものとして<code>with-slots</code>がある。オブジェクトのスロット名をそのまま変数 (CLではシンボル) に束縛する構文だ。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span><span class="synStatement">defstruct</span> person
+  name age<span class="synSpecial">)</span>
+
+<span class="synSpecial">(</span><span class="synStatement">defvar</span> me <span class="synSpecial">(</span>make-person <span class="synType">:name</span> <span class="synConstant">&quot;Eitarow Fukamachi&quot;</span> :age <span class="synConstant">26</span><span class="synSpecial">))</span>
+
+<span class="synSpecial">(</span><span class="synStatement">with-slots</span> <span class="synSpecial">(</span>name age<span class="synSpecial">)</span> me
+  <span class="synSpecial">(</span><span class="synStatement">format</span> <span class="synStatement">t</span> <span class="synConstant">&quot;I'm ~A. ~D years old.&quot;</span> name age<span class="synSpecial">))</span>
+<span class="synComment">;-&gt; I'm Eitarow Fukamachi. 26 years old.</span>
+</pre>
+
+
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>では<code>with-slots</code>内で使うオブジェクトのフィールド名を宣言する。宣言したフィールドは有効範囲内でまるで変数のように扱うことができるようになる。</p>
+
+<p>尚この変数はオブジェクトに紐付けられているため、破壊的な変更もすることができる。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span>person-age me<span class="synSpecial">)</span>
+<span class="synComment">;=&gt; 26</span>
+
+<span class="synSpecial">(</span><span class="synStatement">with-slots</span> <span class="synSpecial">(</span>age<span class="synSpecial">)</span> me
+  <span class="synSpecial">(</span><span class="synStatement">incf</span> age<span class="synSpecial">))</span>
+
+<span class="synSpecial">(</span>person-age me<span class="synSpecial">)</span>
+<span class="synComment">;=&gt; 27</span>
+</pre>
+
+
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/JavaScript">JavaScript</a>の<code>with</code>があまり使われない一方、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>で<code>with-slots</code>が使われる理由は、それが効率が良いからだ。<code>with-slots</code>が行う変数とオブジェクトの紐付けはコンパイル時にすべて解決される。<a class="keyword" href="http://d.hatena.ne.jp/keyword/JavaScript">JavaScript</a>の<code>with</code>が効率が悪いのは、実行時にならないと変数がオブジェクトのフィールドなのかただの変数なのか解決できないところにある。</p>
+
+<p><code>with-slots</code>は<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>の言語仕様に含まれるが、もし含まれないとしてもシンボルマクロを使って簡単に実装することができる。一方で<a class="keyword" href="http://d.hatena.ne.jp/keyword/Perl">Perl</a>にこの構文を導入するのは非常に難しいだろう。</p>
+
+<p>たとえば<a class="keyword" href="http://d.hatena.ne.jp/keyword/Perl">Perl</a>風に書くと以下のようになるかもしれない。</p>
+
+<pre class="code lang-perl" data-lang="perl" data-unlink><span class="synStatement">sub </span><span class="synIdentifier">with </span>{
+    <span class="synStatement">my</span> (<span class="synIdentifier">$names</span>, <span class="synIdentifier">$object</span>, <span class="synIdentifier">$block</span>) = <span class="synIdentifier">@_</span>;
+    <span class="synIdentifier">$block</span>-&gt;(<span class="synStatement">map {</span> <span class="synIdentifier">$object-&gt;{$_}</span> <span class="synStatement">}</span> <span class="synIdentifier">@$names</span> );
+}
+
+<span class="synStatement">my</span> <span class="synIdentifier">$person</span> = { <span class="synConstant">name</span> =&gt; <span class="synConstant">&quot;Eitarow Fukamachi&quot;</span>, <span class="synConstant">age</span> =&gt; <span class="synConstant">26</span> };
+
+with([<span class="synConstant">'name'</span>, <span class="synConstant">'age'</span>], <span class="synIdentifier">$person</span>, <span class="synStatement">sub </span>{
+    <span class="synStatement">my</span> (<span class="synIdentifier">$name</span>, <span class="synIdentifier">$age</span>) = <span class="synIdentifier">@_</span>;
+
+    <span class="synStatement">printf</span> <span class="synConstant">&quot;I'm %s. %d years old.&quot;</span>, <span class="synIdentifier">$name</span>, <span class="synIdentifier">$age</span>;
+});
+</pre>
+
+
+<p>ただ、これは破壊的な操作をすることができないという点で<a class="keyword" href="http://d.hatena.ne.jp/keyword/JavaScript">JavaScript</a>の<code>with</code>や<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>の<code>with-slots</code>に劣る。完全な実装をするとしたら、やはり<a class="keyword" href="http://d.hatena.ne.jp/keyword/Perl">Perl</a>の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B9%BD%CA%B8%B2%F2%C0%CF">構文解析</a>が必要だ。</p>
+
+<p>好むにしろ嫌うにしろ、誰も<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>を無視することができない理由はここにある。通常の言語なら<code>with</code>を言語仕様に追加するところを、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>はそれを仕様に追加することなく追加する機能を持つことで回避している。</p>
+
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Perl">Perl</a>にできないが、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Ruby">Ruby</a>にはできる、というようなものは言語レベルでは無い。しかし、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Perl">Perl</a>や<a class="keyword" href="http://d.hatena.ne.jp/keyword/Ruby">Ruby</a>にはできないが、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>にはできるというものはある。マクロだ。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Ruby">Ruby</a>はその構文により柔軟なDSLを作ることができる点でいくつかの問題をわかりづらくしてはいるが、それはプログラムの性能を引き換えにしている。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>ではコンパイル時と実行時の分離が簡単に書き分けられるため、性能面での劣化を心配せずに言語を拡張することができる。</p>
+
+<h2>言語の代替と進化</h2>
+
+<p><code>with-slots</code>は言語を少しだけ<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C1%B0%BF%CA">前進</a>させる一例だったが、<a class="keyword" href="http://d.hatena.ne.jp/keyword/JavaScript">JavaScript</a>にはもう少し大きな視点での言語の進化にも例がある。</p>
+
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/JavaScript">JavaScript</a>がWebアプリケーションで一般的に使われるようになったのも記憶に新しいが、最近では言語としての<a class="keyword" href="http://d.hatena.ne.jp/keyword/JavaScript">JavaScript</a>ではなく、<a class="keyword" href="http://d.hatena.ne.jp/keyword/JavaScript">JavaScript</a>に変換されるような拡張言語が多く出てきて実用化され始めている。</p>
+
+<p>その代表は<a href="http://coffeescript.org">CoffeeScript</a>だ。CoffeeScriptは<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A5%F3%A5%D1%A5%A4%A5%E9">コンパイラ</a>として実装されており、CoffeeScriptプログラムは完全に<a class="keyword" href="http://d.hatena.ne.jp/keyword/JavaScript">JavaScript</a>に変換される。その<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A5%F3%A5%D1%A5%A4%A5%E9">コンパイラ</a>は<a class="keyword" href="http://d.hatena.ne.jp/keyword/JavaScript">JavaScript</a>で実装されている。実行時には変換結果の<a class="keyword" href="http://d.hatena.ne.jp/keyword/JavaScript">JavaScript</a>が使われるため、実行時のオーバーヘッドも無い。</p>
+
+<p>面白いことに、これはまったく<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>のマクロを説明したような文章じゃないか。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>のマクロは<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>に変換される<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A5%F3%A5%D1%A5%A4%A5%E9">コンパイラ</a>と考えることができる。<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A5%F3%A5%D1%A5%A4%A5%E9">コンパイラ</a>は<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>で実装されており、実行時のオーバーヘッドは無い。</p>
+
+<p>ただし、<a class="keyword" href="http://d.hatena.ne.jp/keyword/JavaScript">JavaScript</a>には<a class="keyword" href="http://d.hatena.ne.jp/keyword/JavaScript">JavaScript</a>への<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A5%F3%A5%D1%A5%A4%A5%E9">コンパイラ</a>を書く機能が言語仕様に含まれないため、CoffeeScriptは別のプログラムとして提供されている点は異なる。</p>
+
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A5%F3%A5%D1%A5%A4%A5%E9">コンパイラ</a>を書く機能が言語仕様に含まれるのと含まれないのではどういった違いがあるだろう。言語仕様に含まれないことで蒙るデメリットは何か。</p>
+
+<p>いや、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>のように<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A5%F3%A5%D1%A5%A4%A5%E9">コンパイラ</a>を書く機能が言語に含まれているのはプログラム言語としては特異なのだから、むしろ<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>が持つメリットと言うべきかもしれない。実を言うと<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>は、単なるプログラム言語ではない。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Paul%20Graham">Paul Graham</a>がそれについて言及している。</p>
+
+<blockquote>
+<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>は<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%B8%C0%B8%EC">プログラミング言語</a>として設計されたんじゃなかった。少なくとも我々がこんにち使う<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%B8%C0%B8%EC">プログラミング言語</a>と言う意味では。つまりコンピューターに何をすべきかを指示するもの、という意味ではね。McCarthyはその後確かにそういう意味での<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%B8%C0%B8%EC">プログラミング言語</a>を作ろうとしたけど、こんにちの<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>になったものは彼が理論的な実験としてやったもの、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C1%A5%E5%A1%BC%A5%EA%A5%F3%A5%B0%A5%DE%A5%B7%A5%F3">チューリングマシン</a>のより便利な代替物を定義しようとした試みの結果なんだ。<br/>
+— <a href="http://practical-scheme.net/trans/icad-j.html" target="_blank">Paul Graham「技術野郎の復讐」</a>
+</blockquote>
+
+
+<p>問題はCoffeeScriptをさらに拡張する方法が無いことだ。なぜならCoffeeScriptにマクロが無いから。CoffeeScriptよりももっと上位の言語が欲しくなったとき、CoffeeScriptと同じアプローチ、つまりCoffeScriptにコンパイルするプログラムを書く必要がある。</p>
+
+<p>CoffeeScriptを例に出したが、これは他のどのJS代替言語にも言えることだ。その言語が時代に追いつけず進化が止まったとき、その言語は死ぬしかない。</p>
+
+<h2>生き残る言語</h2>
+
+<p>ある言語でプログラムを書いているとき、その言語がどう生まれてどのように進化し、将来どうなっているかまで想像してプログラムすることは無いかもしれない。しかし、過去を振り返るとそれは誰にとっても無縁ではいられない。</p>
+
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Perl">Perl</a> 4は1991年にリリースされたが、1994年には5.0がリリースされた。言語としての互換性は保ってはあるが推奨される構文は変わり、その後<a class="keyword" href="http://d.hatena.ne.jp/keyword/Perl">Perl</a> 4でプログラムを書く利点はまったくなくなった。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Perl">Perl</a> 4の寿命は3年しかなかったことになる。</p>
+
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Ruby%201.8">Ruby 1.8</a>は2003年にリリースされたが2007年には互換性の無い1.9がリリースされた。そして2013年の今では非推奨になっている。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Ruby%201.8">Ruby 1.8</a>の寿命は長く見たとしても10年だった。</p>
+
+<p>数年後はどうだろう。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Ruby">Ruby</a> 1.9を使っているだろうか。僕は確信が持てない。</p>
+
+<p>これらの原因は、その言語仕様に言語自身が成長する機能が十分についていないからだと僕は思う。そのため機能追加するために仕様が追加されたり、誤った抽象化だったことが判明したときに修正する必要が出てくる。プログラムに仕様変更はよくあることではあるが、プログラム言語がそうころころと仕様を変更していては影響範囲が大きすぎる。</p>
+
+<p>この仮説は<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>方言の一つである<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>の例にも合致する。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>は1984年に第1版の仕様が策定され、6年後の1990年に第2版が出た。ただしこの改訂はCLOS(オブジェクトシステム)や拡張loopマクロなど、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>上で既に実装されていたものを仕様に含めただけだった。それからは20年以上改訂されずに今も使われ続けている<a href="#f1" name="fn1" title="Schemeは言語仕様が定期的に改訂されているが、それはSchemeがCommon Lispとは別の思想により設計されていてまだ未完成だからだ。">*1</a>。</p>
+
+<p>もちろん、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>に足りないものもいくつかある。ライブラリは他の言語よりは少なめだし、コミュニティの活発度も比較するとあまり大きいとは言えない。けれど、言語自身に欠陥があるのに比べればまったく些細な問題だと僕は思う。</p>
+
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>の括弧はその強力さの結果として見えているだけだ。月を見たいときに重要なのは指ではなく、月であるということを忘れないで欲しい。</p>
+
+<p><div class="hatena-asin-detail"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4274067211/happatsu-22/"><img src="http://ecx.images-amazon.com/images/I/51LYivxTpSL._SL160_.jpg" class="hatena-asin-detail-image" alt="実践Common Lisp" title="実践Common Lisp"></a><div class="hatena-asin-detail-info"><p class="hatena-asin-detail-title"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4274067211/happatsu-22/">実践Common Lisp</a></p><ul><li><span class="hatena-asin-detail-label">作者:</span> Peter Seibel,佐野匡俊,水丸淳,園城雅之,金子祐介</li><li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%AA%A1%BC%A5%E0%BC%D2">オーム社</a></li><li><span class="hatena-asin-detail-label">発売日:</span> 2008/07/26</li><li><span class="hatena-asin-detail-label">メディア:</span> 単行本（ソフトカバー）</li><li><span class="hatena-asin-detail-label">購入</span>: 8人 <span class="hatena-asin-detail-label">クリック</span>: 192回</li><li><a href="http://d.hatena.ne.jp/asin/4274067211/happatsu-22" target="_blank">この商品を含むブログ (69件) を見る</a></li></ul></div><div class="hatena-asin-detail-foot"></div></div>
+<div class="hatena-asin-detail"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4873115876/happatsu-22/"><img src="http://ecx.images-amazon.com/images/I/41CAmbpToSL._SL160_.jpg" class="hatena-asin-detail-image" alt="Land of Lisp" title="Land of Lisp"></a><div class="hatena-asin-detail-info"><p class="hatena-asin-detail-title"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4873115876/happatsu-22/">Land of Lisp</a></p><ul><li><span class="hatena-asin-detail-label">作者:</span> M.D. Conrad Barski,<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C0%EE%B9%E7%BB%CB%CF%AF">川合史朗</a></li><li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%AA%A5%E9%A5%A4%A5%EA%A1%BC">オライリー</a>ジャパン</li><li><span class="hatena-asin-detail-label">発売日:</span> 2013/02/23</li><li><span class="hatena-asin-detail-label">メディア:</span> 大型本</li><li><span class="hatena-asin-detail-label">購入</span>: 1人 <span class="hatena-asin-detail-label">クリック</span>: 18回</li><li><a href="http://d.hatena.ne.jp/asin/4873115876/happatsu-22" target="_blank">この商品を含むブログ (19件) を見る</a></li></ul></div><div class="hatena-asin-detail-foot"></div></div></p>
+<div class="footnote">
+<p class="footnote"><a href="#fn1" name="f1" class="footnote-number">*1</a><span class="footnote-delimiter">:</span><span class="footnote-text"><a class="keyword" href="http://d.hatena.ne.jp/keyword/Scheme">Scheme</a>は言語仕様が定期的に改訂されているが、それは<a class="keyword" href="http://d.hatena.ne.jp/keyword/Scheme">Scheme</a>が<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>とは別の思想により設計されていてまだ未完成だからだ。</span></p>
+</div>
+      
+    </div>
+    <footer class="entry-footer">
+      <p class="entry-footer-section">
+        <span class="author vcard"><span class="fn" data-load-nickname="1" data-user-name="nitro_idiot">nitro_idiot</span></span>
+        <span class="entry-footer-time"><a href="http://blog.8arrow.org/entry/2013/12/01/120712"><time data-relative datetime="2013-12-01T03:07:12Z" title="2013-12-01T03:07:12Z" pubdate class="updated">2013-12-01 12:07</time></a></span>
+      </p>
+      <div class="hatena-star-container">
+      </div>
+      
+
+      <div class="customized-footer">
+        <div class="social-buttons">
+  
+  
+    <a href="http://b.hatena.ne.jp/entry/http://blog.8arrow.org/entry/2013/12/01/120712" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="この記事をはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="この記事をはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+  
+  
+    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fblog.8arrow.org%2Fentry%2F2013%2F12%2F01%2F120712&amp;layout=button_count&amp;show_faces=false&amp;width=130&amp;action=like&amp;height=21" class="facebook-like-button" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:21px;" allowTransparency="true"></iframe>
+  
+  
+    <iframe allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fblog.8arrow.org%2Fentry%2F2013%2F12%2F01%2F120712&text=%E3%81%82%E3%81%AA%E3%81%9F%E3%81%8CLisp%E3%82%92%E7%84%A1%E8%A6%96%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E7%90%86%E7%94%B1%20-%20%E5%85%AB%E7%99%BA%E7%99%BD%E4%B8%AD&lang=ja" class="twitter-share-button" style="width:130px; height:20px;"></iframe>
+  
+  
+    <div class="g-plusone" data-size="medium" data-href="http://blog.8arrow.org/entry/2013/12/01/120712"></div>
+  
+  
+  
+  
+</div>
+
+
+          
+
+          
+
+          
+            <div class="entry-footer-html">    <!-- X:S ZenBackWidget --><script type="text/javascript">document.write(unescape("%3Cscript")+" src='http://widget.zenback.jp/?base_uri=http%3A//blog.8arrow.org&nsid=116589683810521419%3A%3A116589712801563571&rand="+Math.ceil((new Date()*1)*Math.random())+"' type='text/javascript'"+unescape("%3E%3C/script%3E"));</script><!-- X:E ZenBackWidget --></div>
+          
+        
+      </div>
+
+      <div class="comment-box">
+        
+        <ul class="comment">
+          
+        </ul>
+        
+          <a class="leave-comment-title">コメントを書く</a>
+        
+      </div>
+    </footer>
+  </div>
+</article>
+
+                
+
+                
+                  
+                  
+                  <div class="permalink pager">
+                    
+                      
+                      <span class="pager-prev">
+                        <a href="http://blog.8arrow.org/entry/2013/12/19/183508" rel="prev">
+                          <span class="pager-arrow">« </span>
+                          Sublime Text 2でCommon Lispを書くための…
+                        </a>
+                      </span>
+                    
+                    
+                      
+                      <span class="pager-next">
+                        <a href="http://blog.8arrow.org/entry/2013/11/06/082247" rel="next">
+                          Common LispのWebフレームワーク「Caveman…
+                          <span class="pager-arrow"> »</span>
+                        </a>
+                      </span>
+                    
+                  </div>
+                
+
+              
+            
+            <!-- rakuten_ad_target_end -->
+            <!-- google_ad_section_end -->
+
+            
+          
+        </div>
+      </div>
+
+      
+      <aside id="box1">
+        <div id="box1-inner">
+        </div>
+      </aside>
+
+    </div><!-- #wrapper -->
+
+    <aside id="box2">
+  <div id="box2-inner">
+    
+      
+
+<div class="hatena-module hatena-module-profile">
+  <div class="hatena-module-title">
+    About Me
+  </div>
+  <div class="hatena-module-body">
+    
+    <a href="http://blog.8arrow.org/about">
+      <img src="http://cdn1.www.st-hatena.com/users/ni/nitro_idiot/profile.gif"
+      alt="id:nitro_idiot" class="profile-icon" />
+    </a>
+    
+
+    
+    <span class="id">
+      <a href="http://blog.8arrow.org/about"><span data-load-nickname="1" data-user-name="nitro_idiot">id:nitro_idiot</span></a>
+      
+  
+    
+      
+      <a href="http://blog.hatena.ne.jp/guide/pro" title="はてなブログPro"><i class="icon-pro" /></i></a>
+    
+  
+
+
+    </span>
+    
+
+    
+
+    
+    <div class="hatena-follow-button-box btn-subscribe">
+      <a href="#" class="hatena-follow-button">
+        <span class="subscribing">
+          <span class="foreground">購読中です</span>
+          <span class="background">読者をやめる</span>
+        </span>
+        <span class="unsubscribing">
+          <span class="foreground">読者になる</span>
+          <span class="background">読者になる</span>
+        </span>
+      </a>
+      <div class="subscription-count-box">
+        <span class="subscription-balloon">
+        </span>
+        <span class="subscription-count">
+        </span>
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-html">
+  
+  <div class="hatena-module-body">
+    <style type="text/css">
+.my-service-icons {
+  padding-left: 0;
+  text-align: center;
+}
+.my-service-icons li {
+  display: inline-block;
+  margin: 0 8px;
+}
+</style>
+<ul class="my-service-icons" >
+  <li>
+    <a href="https://github.com/fukamachi" target="_blank"><img src="http://8arrow.org/images/github-icon.png" alt="GitHub" title="GitHub" width="40px" height="40px" /></a>
+  </li>
+  <li>
+    <a href="http://nitro-idiot.hatenablog.com/" target="_blank"><img src="http://8arrow.org/images/hatenablog-icon.png" alt="Diary" title="Diary" width="40px" height="40px" /></a>
+  </li>
+  <li>
+    <a href="https://twitter.com/nitro_idiot" target="_blank"><img src="http://8arrow.org/images/twitter-icon.png" alt="Twitter" title="Twitter" width= "49px" height="40px" /></a>
+  </li>
+</ul>
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-html">
+  
+    <div class="hatena-module-title">Website</div>
+  
+  <div class="hatena-module-body">
+    <a href="http://8arrow.org/" target="_blank"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/n/nitro_idiot/20140116/20140116163928.png" alt="My Portfolio" /></a>
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-recent-entries ">
+  <div class="hatena-module-title">
+    <a href="http://blog.8arrow.org/archive">
+      Recent Entries
+    </a>
+  </div>
+  <div class="hatena-module-body">
+    <ul class="recent-entries hatena-urllist ">
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/04/16/233941" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">軽量なCommon LispのDBライブラリ「datafly」を作りました        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/03/02/172920" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">株式会社はてなを退職しました        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/02/04/041417" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">誰向けかわからないCommon Lispでの関数型プログラミング入門とその未来        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/01/24/075236" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">Lisp Meet Up #13 に参加しました        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/01/22/184258" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">新しいCommon Lisp方言「CL21」を作ったので意見を募集します        </a>
+        
+
+              </div>
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-archive">
+  <div class="hatena-module-title">
+    <a href="http://blog.8arrow.org/archive">Archive</a>
+  </div>
+  <div class="hatena-module-body">
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-search-box">
+  <div class="hatena-module-title">
+    Search
+  </div>
+  <div class="hatena-module-body">
+    <form class="search-form" role="search" action="http://blog.8arrow.org/search" method="get">
+      <input type="text" name="q" class="search-module-input" value="" placeholder="ブログ内検索" required>
+      <input type="submit" value="検索" class="search-module-button" />
+    </form>
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-circles">
+  <div class="hatena-module-title">
+    Groups
+  </div>
+  <div class="hatena-module-body">
+    <ul class="circle-list">
+      
+        <li title="Lisp" data-circle-id="12921228815713769536" data-circle-mtime="1393426757">
+  <a href="http://hatenablog.com/g/12921228815713769536"><img class="circle-image" src="http://cdn.image.st-hatena.com/image/square/66f5d18c388e0cb1d804be358c6cfb48df174304/height=96;version=1;width=96/http%3A%2F%2Fcdn.mogile.archive.st-hatena.com%2Fv1%2Fimage%2Fnitro_idiot%2F297785937330261174.png" alt="Lisp" title="Lisp"></a></li>
+      
+    </ul>
+  </div>
+</div>
+
+    
+    
+  </div>
+</aside>
+
+  </div>
+</div>
+
+
+
+
+
+
+        
+      </div>
+    </div>
+
+    
+      <footer id="footer" data-brand="hatenablog">
+  <div id="footer-inner">
+    <address>
+      
+      <a href="http://blog.8arrow.org/about"><img src="http://cdn1.www.st-hatena.com/users/ni/nitro_idiot/profile.gif" width="16" height="16" alt=""/>
+        <span data-load-nickname="1" data-user-name="nitro_idiot">nitro_idiot</span>
+      </a>
+    </address>
+    <p class="services"><a href="http://hatenablog.com/">Hatena Blog</a> / <a href="http://d.hatena.ne.jp/">Hatena::Diary</a></p>
+  </div>
+</footer>
+
+    
+
+    
+
+    
+      <script src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
+    
+
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+  {"parsetags": "explicit"}
+</script>
+<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+
+
+<script type="text/javascript" src="http://hatenablog.com/js?version=cb3376f552692eef52655312928aaadd"></script>
+
+<script type="text/javascript" src="http://hatenablog.com/js/texts-ja.js?version=cb3376f552692eef52655312928aaadd"></script>
+
+
+  <script type="text/javascript">Hatena.Diary.loadGlobalHeader()</script>
+
+
+
+
+
+    
+       <script id="google-analytics-script" type="text/javascript">
+var _gaq = _gaq || [];
+
+(function($){
+
+  // 現在のドメイン
+  
+    
+    
+      
+      var current_domain = "blog.8arrow.org".split(":")[0];
+    
+  
+
+  
+
+  
+
+   
+   _gaq.push(['all._setAccount', 'UA-7855606-1']);
+   _gaq.push(['all._setDomainName', current_domain]);
+   _gaq.push(['all._setSampleRate', '10']);
+   _gaq.push(['all._trackPageview']);
+
+  
+    _gaq.push(['a._setAccount', 'UA-29716941-5']);
+    _gaq.push(['a._setDomainName', current_domain]);
+    _gaq.push(['a._setCustomVar', 1, 'PageId', document.documentElement.getAttribute('data-page'), 3 /* page-level */]);
+      var keywordCampaigns = [];
+      $('.js-entry-article').each(function (index, element) {
+        var keywords = $(element).data('keywordCampaign').split(' ');
+        keywords = _.filter(keywords, function (keyword) { return keyword.length > 0 });
+        keywordCampaigns = keywordCampaigns.concat(keywords);
+      });
+      if (keywordCampaigns.length > 0) {
+        _gaq.push(['a._setCustomVar', 3, 'KeywordCampaign', keywordCampaigns[0], 3 /* page-level */]);
+      }
+      _gaq.push(['a._trackPageview']);
+  
+    _gaq.push(['b._setAccount', 'UA-29716941-2']);
+    _gaq.push(['b._setDomainName', current_domain]);
+    _gaq.push(['b._setCustomVar', 1, 'PageId', document.documentElement.getAttribute('data-page'), 3 /* page-level */]);
+      var keywordCampaigns = [];
+      $('.js-entry-article').each(function (index, element) {
+        var keywords = $(element).data('keywordCampaign').split(' ');
+        keywords = _.filter(keywords, function (keyword) { return keyword.length > 0 });
+        keywordCampaigns = keywordCampaigns.concat(keywords);
+      });
+      if (keywordCampaigns.length > 0) {
+        _gaq.push(['b._setCustomVar', 3, 'KeywordCampaign', keywordCampaigns[0], 3 /* page-level */]);
+      }
+      _gaq.push(['b._trackPageview']);
+  
+
+  $(function () {
+      $(document).delegate('[data-track-event="click"]', 'click', function () {
+          
+          _gaq.push([ 'a._trackEvent', 'Blogs', 'Click', this.getAttribute('data-track-key') ]);
+          
+          _gaq.push([ 'b._trackEvent', 'Blogs', 'Click', this.getAttribute('data-track-key') ]);
+          
+      });
+  });
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  var available_domains = ["blog.hatena.ne.jp"];
+  
+    available_domains.push("hatenablog.com".split(":")[0]);
+  
+    available_domains.push("hatenablog.jp".split(":")[0]);
+  
+    available_domains.push("hateblo.jp".split(":")[0]);
+  
+    available_domains.push("hatenadiary.com".split(":")[0]);
+  
+    available_domains.push("hatenadiary.jp".split(":")[0]);
+  
+  $('a').on('click', function() {
+    // 同じドメインならスキップ
+    if ( !this.hostname || this.hostname.indexOf(current_domain) != -1 ) return;
+
+    var cross_domain = false;
+    for (var i = 0, len = available_domains.length; i < len; i++) {
+      if (this.hostname.indexOf(available_domains[i]) != -1) cross_domain = true;
+    }
+    if ( cross_domain ) {
+      
+      _gaq.push(['a._link', this.href]);
+      
+      _gaq.push(['b._link', this.href]);
+      
+    }
+  });
+
+})(jQuery);
+</script>
+
+       
+  <script id="hatena-counter-script" type="text/javascript"><!--
+      hatena_counter_name = "nitro_idiot";
+      hatena_counter_id = "104";
+      hatena_counter_ref = document.referrer+"";
+      hatena_counter_screen = screen.width + "x" + screen.height+","+screen.colorDepth;
+  //--></script>
+  <script type="text/javascript" src="http://counter.hatena.ne.jp/js/counter.js"></script>
+  <noscript><img src="http://counter.hatena.ne.jp/nitro_idiot/104" border="0" alt="counter"></noscript>
+
+
+    
+
+  </body>
+</html>
+

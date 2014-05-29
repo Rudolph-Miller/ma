@@ -1,0 +1,1027 @@
+
+	
+		
+		
+			
+			
+			
+
+	
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html id="/tt/news/1303/27/news06.html" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<script src="/js/spv/movePC2SP.js"></script>
+<title>IFRS適用のロードマップが示される可能性は？　経団連が求める － TechTargetジャパン 経営とIT</title>
+
+<meta name="itmid:series" content="">
+<meta name="build" content="2013年03月27日 20時00分">
+<meta name="keywords" content="経営とIT">
+<meta name="description" content="金融庁の企業会計審議会総会・企画調整部会合同会議が3月26日に開催された。IFRS（国際財務報告基準、国際会計基準）を取り巻く世界情勢の確認に加えて、日本経済団体連合会（経団連）が日本企業の任意適用の状況などを説明した。">
+<meta name="ttid" content="	at-news	kw-business	ao-business	">
+<meta name="article_channel" content="経営とIT">
+<meta name="article_type" content="ニュース">
+<meta name="article_title" content="IFRS適用のロードマップが示される可能性は？　経団連が求める">
+<meta name="article_abstract" content="金融庁の企業会計審議会総会・企画調整部会合同会議が3月26日に開催された。IFRS（国際財務報告基準、国際会計基準）を取り巻く世界情勢の確認に加えて、日本経済団体連合会（経団連）が日本企業の任意適用の状況などを説明した。">
+<meta name="article_writer" content="垣内郁栄，<b>TechTargetジャパン</b>">
+<meta name="article_dispatch" content="">
+
+<meta property="og:title" content="IFRS適用のロードマップが示される可能性は？　経団連が求める">
+<meta property="og:description" content="金融庁の企業会計審議会総会・企画調整部会合同会議が3月26日に開催された。IFRS（国際財務報告基準、国際会計基準）を取り巻く世界情勢の確認に加えて、日本経済団体連合会（経団連）が日本企業の任意適用の状況などを説明した。">
+
+<script src="/tt/js/tt/jquery-1.9.1.min.js"></script>
+<script>jQuery.noConflict();</script>
+
+<script src="/tt/js/tt/socialBtnOldTmp.js"></script>
+<link type="text/css" href="http://techtarget.itmedia.co.jp/tt/css/tt/screen.css" rel="stylesheet" media="all">
+<link type="text/css" href="http://techtarget.itmedia.co.jp/tt/css/tt/articles.css" rel="stylesheet" media="all">
+<link type="text/css" href="http://techtarget.itmedia.co.jp/tt/js/tt/lib/prettify.css" rel="stylesheet" media="all">
+<script src="/tt/js/tt/lib/prettify.js"></script>
+<script src="/tt/js/tt/base.js"></script>
+<script src="/tt/js/tt/ttfix.js"></script>
+<script src="/tt/js/tt/ttChannelData.js"></script>
+<script src="/tt/js/tt/adRequest.js"></script>
+<script src="/tt/js/tt/article.js"></script>
+<script src="/tt/js/tt/wpPartsInclude.js"></script>
+<script src="/tt/js/wp/wp_hottopic_6.js"></script>
+<script src="/tt/js/wp/wp_best10_6.js"></script>
+<script src="/tt/js/tt/template.js"></script>
+</head>
+
+<body>
+
+<div id="COIDP"><div class="COIDP-in">
+<script>adRequest({'position':'COIDP1','path':'root/cds/id/ITmedia/tt'});</script>
+<div class="COIDP-Member">
+<script>adRequest({'position':'COIDP2','path':'root/cds/id/ITmedia/tt'});</script>
+<script>adRequest({'position':'COIDP3','path':'root/cds/id/ITmedia/tt'});</script>
+</div></div></div>
+<script>
+(function(){
+    var coidp = document.getElementById('COIDP');
+    if(coidp.innerHTML.match('st=noad.*pos=')){
+        coidp.style.display = 'none';
+        return false;
+    }
+    return true;
+})();
+</script>
+
+<script src="//fc.itmedia.co.jp/fpcookie?site_id=itm_"></script>
+<style type="text/css"><!--
+#globalNavigation {
+background:#333;
+}
+.gnavOut {
+margin:auto;
+width:990px;
+}
+.gnavBtn {
+float:left;
+margin:0 0 3px 3px;
+padding:7px 9px 5px;
+border-radius:0 0 3px 3px;
+}
+.gnavBtn a {
+color:#AAA;
+font:bold 11px/11px Meiryo, 'メイリオ', ArialMT, Hiragino Kaku Gothic Pro, 'ヒラギノ角ゴ Pro W3', Osaka, Verdana, 'ＭＳ Ｐゴシック';
+text-shadow:0 -1px 0 rgba(0,0,0,0.25);
+}
+.gnavBtn a:link,
+.gnavBtn a:visited {
+color:#AAA;
+}
+.gnavBtn a:hover {
+text-decoration:none;
+color:#EEE;
+}
+.gnavBtn0 {
+background:#E30;
+background:-moz-linear-gradient(#F52, #E30);
+background:-webkit-gradient(linear, left top, left bottom, from(#F52), to(#E30)); 
+box-shadow:0 1px 1px rgba(0,0,0,0.4);
+}
+#pcuser .gnavBtn5,
+#lifestyle .gnavBtn9,
+#mobile .gnavBtn6,
+#dc .gnavBtn8 {
+margin:3px 0 0 3px;
+padding:5px 7px 4px 7px;
+border-radius:2px;
+background:#FFF;
+}
+.gnavBtn0 a {
+color:#FFF;
+}
+#pcuser .gnavBtn5 a,
+#lifestyle .gnavBtn9 a,
+#mobile .gnavBtn6 a,
+#dc .gnavBtn8 a {
+color:#000;
+text-shadow:0 0 0 rgba(255,255,255,0);
+}
+.gnavBtn0:hover {
+background:#F41;
+}
+.colBoxClear {
+clear:both;
+}
+#globalNavigationGroup0 #globalNavigation .gnavOut .gnavIn .gnavBtn0 a {
+background-position:0 0;
+color:#FFF;
+}
+#globalNavigationGroup0 #globalNavigation .gnavOut .gnavIn .gnavBtn3 {
+margin:3px 0 0 3px;
+padding:5px 7px 4px 7px;
+border-radius:2px;
+background:#FFF;
+}
+#globalNavigationGroup0 #globalNavigation .gnavOut .gnavIn .gnavBtn3 a {
+color:#000;
+text-shadow:0 0 0 rgba(255,255,255,0);
+}
+
+#globalNavigationGroup0{
+width:990px;
+margin:auto;
+}
+#masterNavigation{
+background:#333;
+}
+
+
+
+--></style>
+<div id="masterNavigation">
+<div id="globalNavigationGroup0">
+<div id="globalNavigation"><div class="gnavOut"><div class="gnavIn">
+<div class="gnavBtn gnavBtn0"><a href="http://www.itmedia.co.jp/" title="IT総合情報ポータル「ITmedia」">総合トップ</a></div>
+<div class="gnavBtn gnavBtn1"><a href="http://www.itmedia.co.jp/news/" title="ITとビジネスのニュース専門サイト「ITmedia News」">ニュース</a></div>
+<div class="gnavBtn gnavBtn2"><a href="http://www.itmedia.co.jp/enterprise/" title="企業のためのIT情報サイト「ITmedia エンタープライズ」">企業とIT</a></div>
+<div class="gnavBtn gnavBtn4"><a href="http://marketing.itmedia.co.jp/" title="IT×マーケティングの最新動向「ITmedia マーケティング」">Webマーケ</a></div>
+<div class="gnavBtn gnavBtn3"><a href="http://techtarget.itmedia.co.jp/" title="IT製品導入支援サイト「TechTargetジャパン」">システム導入</a></div>
+<div class="gnavBtn gnavBtn6"><a href="http://www.itmedia.co.jp/mobile/" title="携帯、スマートフォンの専門サイト「ITmedia Mobile」">スマホ</a></div>
+<div class="gnavBtn gnavBtn7"><a href="http://ebook.itmedia.co.jp/" title="電子書籍の専門サイト「ITmedia eBook USER」">eBook</a></div>
+<div class="gnavBtn gnavBtn5"><a href="http://www.itmedia.co.jp/pcuser/" title="PCとMacの専門サイト「ITmedia PC USER」">パソコン</a></div>
+<div class="gnavBtn gnavBtn8"><a href="http://camera.itmedia.co.jp/" title="デジカメの専門サイト「ITmedia デジカメプラス」">デジカメ</a></div>
+<div class="gnavBtn gnavBtn9"><a href="http://www.itmedia.co.jp/lifestyle/" title="AV機器の専門サイト「ITmedia LifeStyle」">AV機器</a></div>
+<div class="gnavBtn gnavBtn15"><a href="http://review.itmedia.co.jp/" title="プロによる製品レビューサイト「ITmedia REVIEW」">レビュー</a></div>
+<div class="gnavBtn gnavBtn13"><a href="http://nlab.itmedia.co.jp/" title="ちょっと気になるネットの話題「ねとらぼ」">旬ネタ</a></div>
+<div class="gnavBtn gnavBtn11"><a href="http://www.itmedia.co.jp/live/" title="ニコ生、Ustreamの動画番組表「ライブガイド」">ライブ動画</a></div>
+<div class="gnavBtn gnavBtn12"><a href="http://blogs.itmedia.co.jp/" title="ビジネスブログ・メディア「ITmedia オルタナティブ・ブログ」">ブログ</a></div>
+<div class="gnavBtn gnavBtn14"><a href="http://www.itmedia.co.jp/smartjapan/" title="節電とエネルギーを考える「スマートジャパン」">電力</a></div>
+<div class="colBoxClear"></div>
+</div></div></div>
+</div>
+</div>
+
+<div id="tmplBody">
+<div id="tmplHeader"><div id="tmplHeaderLeft"></div><div id="tmplHeaderRight"></div><div id="tmplHeaderIn">
+<div id="tmplLogo"><a href="http://techtarget.itmedia.co.jp/">TechTargetジャパン</a></div>
+
+	<div id="ITN"><script>adRequest({'position':'ITN','path':'root/ITmedia/tt/business/articles'});</script></div>
+
+</div>
+
+<!-- ITMID CertifyBox -->
+<div id="ITMID_Certify"></div>
+
+</div>
+
+<div id="globalHeaderBottom">
+	
+<div id="localNavigation"><div class="lnavOut"><div class="lnavIn">
+<div id="lnavMain"><div id="lnavMainIn"><div class="lnavBtn lnavBtnFirst"><a href="javascript:void(0);" title="ITインフラ" onClick="designCnt('lnavMain',this.href);">ITインフラ</a></div><div class="lnavBtn"><a href="http://techtarget.itmedia.co.jp/tt/security/" title="セキュリティ" onClick="designCnt('lnavMain',this.href);">セキュリティ</a></div><div class="lnavBtn"><a href="javascript:void(0);" title="業務アプリ" onClick="designCnt('lnavMain',this.href);">業務アプリ</a></div><div class="lnavBtn"><a href="http://techtarget.itmedia.co.jp/tt/develop/" title="システム開発" onClick="designCnt('lnavMain',this.href);">システム開発</a></div><div class="lnavBtn"><a href="javascript:void(0);" title="IT経営" onClick="designCnt('lnavMain',this.href);">IT経営</a></div><div class="lnavBtn"><a href="javascript:void(0);" title="医療・教育" onClick="designCnt('lnavMain',this.href);">医療・教育</a></div><div class="lnavBtn lnavBtnColor1"><a href="http://techtarget.itmedia.co.jp/tt/subtop/features/comparison/" title="製品比較" onClick="designCnt('lnavMain',this.href);">製品比較</a></div><div class="lnavBtn lnavBtnColor1"><a href="http://techtarget.itmedia.co.jp/tt/subtop/features/casestudies/" title="導入事例" onClick="designCnt('lnavMain',this.href);">導入事例</a></div><div class="lnavBtn lnavBtnColor1"><a href="http://wp.techtarget.itmedia.co.jp/" title="ホワイトペーパー" onClick="designCnt('lnavMain',this.href);">ホワイトペーパー</a></div><div class="lnavBtn lnavBtnColor2"><a href="javascript:void(0);" title="会員サービス" onClick="designCnt('lnavMain',this.href);">会員サービス</a></div></div></div>
+<div id="lnavSub"><div id="lnavSubIn"><div class="lnavBtn lnavBtnFirst"><a href="javascript:void(0);" title="Pick up ≫" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> Pick up ≫</a></div><div class="lnavBtn lnavBtnNew"><a href="http://techtarget.itmedia.co.jp/tt/subtop/features/mobile_survey/index.html" title="スマートデバイス活用" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> スマートデバイス活用</a></div><div class="lnavBtn"><a href="http://techtarget.itmedia.co.jp/tt/subtop/features/retail_analytics/index.html" title="流通データ分析" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> 流通データ分析</a></div><div class="lnavBtn"><a href="http://techtarget.itmedia.co.jp/tt/subtop/features/hcm/index.html" title="グローバル人材戦略" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> グローバル人材戦略</a></div><div class="lnavBtn"><a href="http://techtarget.itmedia.co.jp/tt/subtop/features/info_leak_survey/index.html" title="情報漏えい対策" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> 情報漏えい対策</a></div><div class="lnavBtn"><a href="http://techtarget.itmedia.co.jp/tt/cw/" title="Computer Weekly" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> Computer Weekly</a></div><div class="lnavBtn"><a href="http://techtarget.itmedia.co.jp/tt/premiumcontents.html" title="プレミアムPDF" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> プレミアムPDF</a></div></div></div>
+</div></div></div>
+<script type="text/javascript">
+localNavigationPD('lnavMain',{'ITインフラ':{
+	'data':[
+		{'name':'クラウド','url':'http://techtarget.itmedia.co.jp/tt/saas/'},
+		{'name':'仮想化','url':'http://techtarget.itmedia.co.jp/tt/virtualization/'},
+		{'name':'サーバ＆ストレージ','url':'http://techtarget.itmedia.co.jp/tt/datacenter/'},
+		{'name':'スマートモバイル','url':'http://techtarget.itmedia.co.jp/tt/mobile/'},
+		{'name':'ネットワーク','url':'http://techtarget.itmedia.co.jp/tt/network/'},
+		{'name':'システム運用管理','url':'http://techtarget.itmedia.co.jp/tt/operation/'},
+	{}],
+'':''},
+'業務アプリ':{
+	'data':[
+		{'name':'ERP','url':'http://techtarget.itmedia.co.jp/tt/application/'},
+		{'name':'データ分析','url':'http://techtarget.itmedia.co.jp/tt/information/'},
+		{'name':'CRM＆SFA','url':'http://techtarget.itmedia.co.jp/tt/crm/'},
+		{'name':'情報系システム','url':'http://techtarget.itmedia.co.jp/tt/unifiedcom/'},
+	{}],
+'':''},
+'IT経営':{
+	'data':[
+		{'name':'経営とIT','url':'http://techtarget.itmedia.co.jp/tt/business/'},
+		{'name':'中堅・中小企業とIT','url':'http://techtarget.itmedia.co.jp/tt/smb/'},
+	{}],
+'':''},
+'医療・教育':{
+	'data':[
+		{'name':'医療IT','url':'http://techtarget.itmedia.co.jp/tt/healthcare/'},
+		{'name':'教育IT','url':'http://techtarget.itmedia.co.jp/tt/education/'},
+	{}],
+'':''},
+'ホワイトペーパー':{
+	'data':[
+		{'name':'新着ホワイトペーパー','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeIdSelect=&mCateIdSelect=&typeIdSelect=&gCateIdSelect=&cCateIdSelect=&pageNo=1&micrositeId=&mCateId=&typeId=&gCateId=&cCateId=&corpId=&mode=2'},
+		{'name':'クラウド','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=19','data':[
+			{'name':'クラウドコンピューティング','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=19&mCateId=5'},
+			{'name':'アウトソーシング／ASP','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=19&mCateId=45'},
+		{}]},
+		{'name':'仮想化','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=1','data':[
+			{'name':'サーバ仮想化','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=1&mCateId=1'},
+			{'name':'デスクトップ仮想化','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=1&mCateId=2'},
+			{'name':'アプリケーション仮想化','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=1&mCateId=3'},
+			{'name':'仮想環境管理','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=1&mCateId=4'},
+			{'name':'クラウドコンピューティング','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=1&mCateId=5'},
+			{'name':'PC仮想化','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=1&mCateId=124'},
+		{}]},
+		{'name':'サーバ＆ストレージ','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=2','data':[
+			{'name':'PCサーバ','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=2&mCateId=6'},
+			{'name':'UNIXサーバ','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=2&mCateId=7'},
+			{'name':'ディスクストレージ','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=2&mCateId=8'},
+			{'name':'半導体ストレージ','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=2&mCateId=9'},
+			{'name':'SAN','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=2&mCateId=10'},
+			{'name':'NAS','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=2&mCateId=11'},
+			{'name':'光ディスク装置','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=2&mCateId=12'},
+			{'name':'電源／空調／ラック','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=2&mCateId=13'},
+			{'name':'ホスティングサービス','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=2&mCateId=14'},
+			{'name':'データセンター','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=2&mCateId=15'},
+			{'name':'HPC／グリッドコンピューティング','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=2&mCateId=16'},
+		{}]},
+		{'name':'スマートモバイル','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=20','data':[
+			{'name':'クライアント端末管理','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=20&mCateId=54'},
+			{'name':'モバイルデバイス管理','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=20&mCateId=177'},
+			{'name':'モバイルセキュリティ','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=20&mCateId=178'},
+			{'name':'リモートアクセス','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=20&mCateId=179'},
+			{'name':'スマートフォン／タブレット','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=20&mCateId=180'},
+			{'name':'PDA／モバイル端末／携帯電話','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=20&mCateId=58'},
+		{}]},
+		{'name':'ネットワーク','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=15','data':[
+			{'name':'RFID（ICタグ）','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=15&mCateId=33'},
+			{'name':'ネットワーク管理','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=15&mCateId=114'},
+			{'name':'帯域管理','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=15&mCateId=115'},
+			{'name':'ルータ','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=15&mCateId=116'},
+			{'name':'スイッチ','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=15&mCateId=117'},
+			{'name':'帯域制御装置','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=15&mCateId=118'},
+			{'name':'負荷分散装置','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=15&mCateId=119'},
+			{'name':'WAN／Web高速化','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=15&mCateId=120'},
+			{'name':'VPN','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=15&mCateId=121'},
+			{'name':'広域イーサネット','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=15&mCateId=122'},
+			{'name':'無線LAN／WAN','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=15&mCateId=123'},
+		{}]},
+		{'name':'システム運用管理','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=13','data':[
+			{'name':'POS端末','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=3&mCateId=35'},
+			{'name':'アイデンティティー管理','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=3&mCateId=47'},
+			{'name':'ログ管理','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=3&mCateId=49'},
+			{'name':'OS','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=3&mCateId=51'},
+			{'name':'統合運用管理','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=3&mCateId=52'},
+			{'name':'ディレクトリサービス','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=3&mCateId=53'},
+			{'name':'クライアント端末管理','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=3&mCateId=54'},
+			{'name':'デスクトップPC','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=3&mCateId=55'},
+			{'name':'ノートPC','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=3&mCateId=56'},
+			{'name':'シンクライアント','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=3&mCateId=57'},
+			{'name':'PDA／モバイル端末／携帯電話','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=3&mCateId=58'},
+			{'name':'特定用途クライアント','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=3&mCateId=59'},
+			{'name':'バックアップ装置','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=3&mCateId=60'},
+			{'name':'バックアップソフト','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=3&mCateId=61'},
+			{'name':'ディザスタリカバリ','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=3&mCateId=62'},
+			{'name':'IT資産管理','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=3&mCateId=63'},
+			{'name':'パフォーマンス管理','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=3&mCateId=64'},
+		{}]},
+		{'name':'経営とIT','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=6','data':[
+			{'name':'BPM／BAM','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=6&mCateId=41'},
+			{'name':'リスク管理','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=6&mCateId=42'},
+			{'name':'IT経営／IT戦略系ソリューション','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=6&mCateId=43'},
+			{'name':'教育／研修サービス','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=6&mCateId=44'},
+			{'name':'アウトソーシング／ASP','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=6&mCateId=45'},
+		{}]},
+		{'name':'中堅・中小企業とIT','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=5','data':[
+			{'name':'中堅・中小企業とIT','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=5'},
+		{}]},
+		{'name':'セキュリティ','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7','data':[
+			{'name':'認証サーバ','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=46'},
+			{'name':'アクセス管理','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=48'},
+			{'name':'ログ管理','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=49'},
+			{'name':'証跡管理','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=50'},
+			{'name':'ファイアウォール','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=81'},
+			{'name':'UTM','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=82'},
+			{'name':'フィルタリングソフト','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=83'},
+			{'name':'IDS／IPS','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=84'},
+			{'name':'DoS攻撃対策','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=85'},
+			{'name':'脆弱性対策','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=86'},
+			{'name':'データベースセキュリティ','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=87'},
+			{'name':'ワンタイムパスワード','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=88'},
+			{'name':'シングルサインオン','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=89'},
+			{'name':'電子署名／透かし／PKI','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=90'},
+			{'name':'生体認証','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=91'},
+			{'name':'認証デバイス','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=92'},
+			{'name':'検疫ネットワーク','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=93'},
+			{'name':'情報漏えい対策','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=94'},
+			{'name':'暗号化','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=95'},
+			{'name':'物理セキュリティ','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=96'},
+			{'name':'ウイルス／ワーム対策','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=97'},
+			{'name':'スパイウェア対策','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=98'},
+			{'name':'スパム対策','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=99'},
+			{'name':'フィッシング対策','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=7&mCateId=100'},
+		{}]},
+		{'name':'ERP','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=9','data':[
+			{'name':'ERP','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=9&mCateId=26'},
+			{'name':'在庫管理','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=9&mCateId=28'},
+			{'name':'SCM','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=9&mCateId=30'},
+			{'name':'販売管理','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=9&mCateId=32'},
+			{'name':'EDI／流通BMS','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=9&mCateId=34'},
+			{'name':'人事・給与','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=9&mCateId=65'},
+			{'name':'財務・会計','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=9&mCateId=66'},
+		{}]},
+		{'name':'データ分析','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=11','data':[
+			{'name':'BI／OLAP','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=11&mCateId=76'},
+			{'name':'データウェアハウス','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=11&mCateId=77'},
+			{'name':'データマイニング／統計解析','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=11&mCateId=78'},
+			{'name':'Webアクセス解析','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=11&mCateId=80'},
+			{'name':'マーケティング関連ツール','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=11&mCateId=182'},
+		{}]},
+		{'name':'CRM＆SFA','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=10','data':[
+			{'name':'CRM','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=10&mCateId=67'},
+			{'name':'SFA','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=10&mCateId=68'},
+		{}]},
+		{'name':'情報系システム','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=14','data':[
+			{'name':'ユニファイドコミュニケーション','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=14&mCateId=17'},
+			{'name':'VoIPゲートウエイ','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=14&mCateId=18'},
+			{'name':'IP電話／IP-PBX','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=14&mCateId=19'},
+			{'name':'テレビ／ビデオ会議','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=14&mCateId=20'},
+			{'name':'Web会議','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=14&mCateId=21'},
+			{'name':'電子メール','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=14&mCateId=22'},
+			{'name':'インスタントメッセージング','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=14&mCateId=23'},
+			{'name':'EC関連アプリケーション','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=14&mCateId=36'},
+			{'name':'グループウェア','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=14&mCateId=69'},
+			{'name':'ナレッジマネジメント','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=14&mCateId=70'},
+			{'name':'ワークフロー','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=14&mCateId=71'},
+			{'name':'EIP','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=14&mCateId=72'},
+			{'name':'エンタープライズサーチ','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=14&mCateId=73'},
+			{'name':'コンテンツ／ドキュメント管理','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=14&mCateId=74'},
+			{'name':'CMS','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=14&mCateId=75'},
+			{'name':'CTI／ヘルプデスク','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=14&mCateId=79'},
+		{}]},
+		{'name':'システム開発','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=13','data':[
+			{'name':'プロジェクト管理ツール','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=13&mCateId=24'},
+			{'name':'開発支援サービス','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=13&mCateId=25'},
+			{'name':'分析／設計ツール','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=13&mCateId=101'},
+			{'name':'開発ツール','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=13&mCateId=102'},
+			{'name':'テスト／デバッグ／チューニングツール','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=13&mCateId=103'},
+			{'name':'画面設計／帳票設計ツール','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=13&mCateId=104'},
+			{'name':'リッチクライアント','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=13&mCateId=105'},
+			{'name':'アプリケーションサーバ','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=13&mCateId=106'},
+			{'name':'Webサービス／SOA／ESB','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=13&mCateId=107'},
+			{'name':'DBMS','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=13&mCateId=108'},
+			{'name':'ライブラリ／コンポーネント','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=13&mCateId=109'},
+			{'name':'データベースアクセス','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=13&mCateId=110'},
+			{'name':'EAI／ETL','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=13&mCateId=111'},
+		{}]},
+		{'name':'医療IT','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=18','data':[
+			{'name':'電子カルテ','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=18&mCateId=37'},
+			{'name':'レセプトコンピュータ','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=18&mCateId=38'},
+			{'name':'オーダリングシステム','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=18&mCateId=39'},
+			{'name':'医用画像ファイリングシステム','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=18&mCateId=40'},
+		{}]},
+		{'name':'教育IT','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=21','data':[
+			{'name':'校務処理ソフトウェア／サービス','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=21&mCateId=183'},
+			{'name':'ICT学習支援ソフトウェア／サービス','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=21&mCateId=184'},
+			{'name':'学習・教育支援ソフトウェア／サービス','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=21&mCateId=44'},
+			{'name':'授業支援ハードウェア','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=21&mCateId=59'},
+			{'name':'学校インフラ構築支援製品','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=21&mCateId=83'},
+			{'name':'スマートフォン／タブレット','url':'http://wp.techtarget.itmedia.co.jp/category/?micrositeId=21&mCateId=180'},
+		{}]},
+	{}],
+'':''},
+'会員サービス':{
+	'data':[
+		{'name':'初めての方','url':'http://techtarget.itmedia.co.jp/tt/info/about_tt.html'},
+		{'name':'よくあるご質問','url':'http://techtarget.itmedia.co.jp/tt/info/faq.html'},
+		{'name':'会員情報更新','url':'https://id.itmedia.jp/'},
+	{}],
+'':''},
+'':[]});
+localNavigationPD('lnavSub',{'Pick up ≫':{
+	'data':[
+		{'name':'金融セキュリティ','url':'http://techtarget.itmedia.co.jp/tt/subtop/features/financial_security/index.html'},
+		{'name':'ひとり情シス','url':'http://techtarget.itmedia.co.jp/tt/subtop/features/hitori/index.html'},
+		{'name':'仮想化の選定基準','url':'http://techtarget.itmedia.co.jp/tt/subtop/features/virtualization_survey/index.html'},
+	{}],
+'':''},
+'プレミアムPDF':{
+	'data':[
+		{'name':'プレミアムPDF','url':'javascript:void(0);'},
+	{}],
+'':''},
+'':[]});
+</script>
+
+	<script src="/tt/js/tt/parts_premiumContents_nav.js"></script>
+	<ul id="localSociallist">
+		<li class="lsclBtn" id="lsclBtnRss"><a href="http://rss.itmedia.co.jp/rss/1.0/techtarget.xml" target="_blank">RSS</a></li>
+		<li class="lsclBtn" id="lsclBtnFacebook"><a href="http://www.facebook.com/TechTargetJapan" target="_blank">Facebook</a></li>
+		<li class="lsclBtn" id="lsclBtnTwitter"><a href="https://twitter.com/#!/techtarget_itm" target="_blank">Twitter</a></li>
+		<li class="lsclBtn" id="lsclBtnGoogle"><a href="https://plus.google.com/110860545665552912186/posts" title="Google+" target="_blank">Google+</a></li>
+	</ul>
+	<div class="clear h5px"></div>
+	<script>pankuzu(6);</script>
+</div>
+
+<div id="tmplContent"><div id="tmplContentIn">
+<div id="tmplMain">
+<div class="clear h5px"></div>
+<div id="tmplL700">
+	
+		<div id="tmplNews" class="tmplArticle"><div id="tmplNewsIn" class="tmplArticleIn">
+	
+
+<div id="cmsDate"><div class="inner" id="update"><span class="arrow">≫</span> 2013年03月27日 20時00分 UPDATE</div></div>
+
+
+
+<div id="cmsType"><div class="inner">ニュース</div></div>
+
+
+<div id="cmsTitle"><div class="inner"><h1><small>【IFRS】企業会計審議会総会で審議</small><big>IFRS適用のロードマップが示される可能性は？　経団連が求める</big></h1></div></div>
+
+
+<div id="cmsAbstract"><div class="inner"><h2>金融庁の企業会計審議会総会・企画調整部会合同会議が3月26日に開催された。IFRS（国際財務報告基準、国際会計基準）を取り巻く世界情勢の確認に加えて、日本経済団体連合会（経団連）が日本企業の任意適用の状況などを説明した。</h2></div></div>
+
+
+<div id="cmsByline"><div class="inner" id="byline"><b>[</b>垣内郁栄，<b>TechTargetジャパン]</b></div></div>
+
+	
+		<div id="ITT">
+		<script>adRequest({'position':'ITT1','path':'root/ITmedia/tt/business/articles'});</script>
+		<script>adRequest({'position':'ITT2','path':'root/ITmedia/tt/business/articles'});</script>
+		</div>
+	
+<!-- commonSocialBtn --><!-- Facebook JavaScript SDK <Body> のすぐ後に配置 -->
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- Facebook JavaScript SDK <Body> のすぐ後に配置 -->
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/socialbutton.css">
+<script src="/js/socialbutton.js"></script>
+
+
+	<!-- mn|ee|edn|ait|smartjapan|tt -->
+	<!-- UPPER/WHITE/2LINE/HATEBU -->
+	<script>
+	msbBtn({
+	'pos':'top',
+	'tag':'table',
+	'popup_pos':'upper',
+	'base_color':'white',
+	'line':[
+	[
+		{'name':'印刷/PDF','title':'この記事を印刷する','id':'printbutton'},
+		{'name':'ツイート','id':'tweetbutton'},
+		{'name':'Like Button','id':'likebutton'},
+		{'name':'はてなブックマーク','id':'hatenabookmarkC'},
+		{'name':'Google +1 Button','id':'googleplusone'},
+		{'name':'ONETOPI','title':'ONETOPIに投稿する','id':'onetopibutton'},
+		{'name':'Pocket Button','id':'pocketbuttonC'},
+		{'name':'&nbsp;','title':'URLをメールで送信','id':'mail'},
+	{}],
+	[
+		{'name':'類似記事の掲載をメールで通知','id':'alertbutton'},
+		{'name':'連載「％」の新着をメールで通知','id':'alertseries'},
+	{}],
+	[]]
+	});
+	</script>
+
+<!-- /commonSocialBtn -->
+
+<!-- google_ad_section_start(name=s1) -->
+
+<div id="cmsBody"><div class="inner">
+<p>　金融庁の企業会計審議会総会・企画調整部会合同会議が3月26日に開催された。IFRS（国際財務報告基準、国際会計基準）を取り巻く世界情勢の確認に加えて、日本経済団体連合会（経団連）が日本企業の任意適用の状況などを説明した。</p>
+<p>　2012年7月にまとめられたIFRSについての中間的論点整理は、IFRSの任意適用について「現行制度の下で、IFRS適用の実例を積み上げる」ことを提言している（参考記事：<A HREF="http://www.atmarkit.co.jp/news/201207/02/fsa.html">金融庁、IFRS審議のまとめを公表「任意適用の積み上げを」</A>）。企画調整部会臨時委員で、経団連 企業会計委員会企画部会長の谷口進一氏（新日鉄住金 常任顧問）は任意適用企業を増やすためには、「企業の予見可能性を高められるような明確な時間軸（ロードマップ）をそろそろ示すことが重要。方向性が明確でないと企業は最終判断に踏み切れない」と指摘した。</p>
+<p>　これに対して金融庁は「ロードマップを早く示すべきという意見があることは認識しているが、国際情勢が変化していて難しい。まずは2012年の中間的論点整理で検討課題となっていることをやっていきたい」と回答した。</p>
+<h3>IFRS任意適用予定は60社</h3>
+<p>　経団連によるとIFRSを任意適用し、財務諸表を開示している企業は8社。経団連の「IFRS実務対応検討会」への参加企業や、IFRS任意適用が報道などで伝えられている企業を合わせると合計で60社程度がIFRSの任意適用を検討しているとみられる。この60社の株式時価総額は約75兆円で、谷口氏によるとシンガポールの証券取引市場（時価総額65兆円）、ロシアの証券取引市場（同70兆円）を上回るという。谷口氏は日本の証券取引市場の時価総額上位50社のうち、約4割の企業がIFRS任意適用を既に行っている、または検討しているとも述べた。</p>
+<p>　谷口氏はまた、上記のIFRS実務対応検討会での議論からIFRSの任意適用を企業が進めるには、以下の4つの対応が必要と訴えた。</p>
+<ol>
+<li>実務上の対応の明確化</li>
+<li>IASB（国際会計基準審議会）に対する意見発信の継続</li>
+<li>開示の簡素化</li>
+<li>任意適用の要件緩和</li>
+</ol>
+<p>　（1）については既にIFRSを任意適用した企業の中では、日本基準における実務をそのまま適用できるように工夫をしているケースが多いと指摘。IFRS対応で問題になるとされる有形固定資産の減価償却方法や耐用年数についても日本基準と同じ方法で乗り切っている場合があるという。経団連では各社のこのような実務上の対応をデータベース化することを検討している。各社の運用や基準の解釈で対応できないことも考えられ、「日本国内でタイムリーにガイダンスの作成を行うことが必要」と強調した。</p>
+<p>　（2）については開発費の資産計上や、のれんの非償却などIFRSには、「マネジメントとして受け入れがたい基準」があると指摘。その上で「引き続き、IASBに対して改善要求が必要」と谷口氏は述べた。日本の企業会計基準委員会（ASBJ）がメンバーに選ばれた会計基準アドバイザリー・フォーラム（参考記事：今後のIFRS開発に助言、国際的な会計基準フォーラムにASBJが参加）や、東京に設置されたIFRS財団のアジア・オセアニア・オフィス（参考記事：IFRS財団の東京オフィスが開所、日本のIFRS適用への影響は）の活用も検討する。</p>
+<p>　（3）は経団連がIFRSの議論が始まる前から主張してきた内容だ。特に求めているのが金融商品取引法上の単体開示の廃止または簡素化。IFRSを適用するとさらに開示作業が複雑になるとして、経団連はIFRS任意適用企業の有価証券報告書のページ数（連結財務諸表）がIFRS適用後に50％増加したなどの試算を公表した。</p>
+<p>　（4）は、現在4つあるIFRS任意適用要件の緩和を求める。谷口氏は「大企業は現行の要件でも対応可能だが、中小企業や新規上場企業では難しい」などと指摘し、「緩和の余地はないか？」と疑問を投げかけた。</p>
+<h3>国際的に孤立しないように留意</h3>
+<p>　企業会計審議会総会では3月13日に監査部会がとりまとめられた「不正リスク対応基準」が承認された（参考記事：監査法人の引き継ぎをより厳密に、不正リスク対応基準がまとまる）。</p>
+<!--CAP-->
+<div id="col400c"><a name="ik_tt_fsa01.jpg"></a><img src="http://image.itmedia.co.jp/tt/news/1303/27/ik_tt_fsa01.jpg" width="390" height="390" alt="ik_tt_fsa01.jpg">
+<small> 「不正リスク対応基準」の報告を受ける内閣府大臣政務官の島尻安伊子氏（右）と企業会計審議会会長の安藤英義氏</small></div>
+<!--CAPEND-->
+<p>　内閣府大臣政務官の島尻安伊子氏は「今後この基準を踏まえた監査が行われることで、会計不正事案の抑止につながることを期待している」とあいさつした。IFRSについては「さまざまな考え方がある」とした上で、「国際情勢を踏まえて、日本が国際的に孤立しないように留意をしつつ、日本にとって最適な対応を総合的に検討していきたい」と話した。</p>
+</div></div>
+
+<!-- google_ad_section_end(name=s1) -->
+
+
+
+
+<!-- ttwproi111125 -->
+<div id="ttwpro">
+<h4>この記事を読んだ人にお薦めのホワイトペーパー</h4>
+<script charset="utf-8" src="http://connect.newzia.jp/channels/179/script.js"></script>
+<!-- ttwp111125 -->
+<script charset="utf-8" src="http://connect.newzia.jp/channels/180/script.js"></script>
+</div>
+<!-- ttnews111201 -->
+<div id="ttnews">
+<h4>この記事を読んだ人にお薦めの関連記事</h4>
+<script charset="utf-8" src="http://connect.newzia.jp/channels/186/script.js"></script>
+</div>
+
+<div id="ttcatalog"></div>
+<script src="/tt/js/tt/parts_catalog.js"></script>
+
+
+
+<script type="text/javascript">
+snsContents({
+	'likebox':'TechTargetJapan',
+	'activitydomain':'techtarget.itmedia.co.jp',
+	'activityfilter':'tt',
+	'twitterid':'techtarget_itm',
+	'tw_widget_id':'309588631780204544',
+	'width':'646px'
+});
+</script>
+
+
+
+<div class="colBoxClear h15px"></div>
+
+
+<!-- commonSocialBtn -->
+	<!-- mn|ee|edn|ait|smartjapan|tt -->
+	<!-- UPPER/WHITE/2LINE/HATEBU -->
+	<script>
+	msbBtn({
+	'pos':'btm',
+	'tag':'table',
+	'popup_pos':'under',
+	'base_color':'white',
+	'line':[
+	[
+		{'name':'印刷/PDF','title':'この記事を印刷する','id':'printbutton'},
+		{'name':'ツイート','id':'tweetbutton'},
+		{'name':'Like Button','id':'likebutton'},
+		{'name':'はてなブックマーク','id':'hatenabookmarkC'},
+		{'name':'Google +1 Button','id':'googleplusone'},
+		{'name':'ONETOPI','title':'ONETOPIに投稿する','id':'onetopibutton'},
+		{'name':'Pocket Button','id':'pocketbuttonC'},
+		{'name':'&nbsp;','title':'URLをメールで送信','id':'mail'},
+	{}],
+	[
+		{'name':'類似記事の掲載をメールで通知','id':'alertbutton'},
+		{'name':'連載「％」の新着をメールで通知','id':'alertseries'},
+	{}],
+	[]]
+	});
+	</script>
+
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+{lang:'ja',parsetags:'explicit'}
+</script>
+<script type="text/javascript">gapi.plusone.go();</script>
+<!-- /commonSocialBtn -->
+
+
+<div id="cmsTTurlbtn" class="cmsTTbtn"><div class="inner"></div></div>
+<div id="cmsTTpdfbtn" class="cmsTTbtn"><div class="inner"></div></div>
+<div id="cmsTTopfbtn" class="cmsTTbtn"><div class="inner"></div></div>
+<div id="cmsWPurlbtn" class="cmsTTbtn"><div class="inner"></div></div>
+<div id="cmsPrsponsor"><div class="inner"></div></div>
+<div id="cmsPrcredit"><div class="inner"></div></div>
+
+
+<noscript>
+<style type="text/css"><!--
+#CmsMembersControl {
+position:relative;
+z-index:2;
+}
+#CmsMembersControl .CmsMembersControlJsOff {
+position:absolute;
+top:10px;
+left:0;
+text-align:center;
+width:100%;
+background:#FFF;
+}
+#CmsMembersControl .CmsMembersControlJsOffIn {
+color:#C00;
+font-weight:bold;
+border:3px solid #CCC;
+padding:10px;
+}
+#CmsMembersControl .CmsMembersControlImg {
+position:absolute;
+top:20px;
+left:0;
+display:block;
+width:648px;
+margin:0 auto;
+opacity:1.0;
+filter:progid:DXImageTransform.Microsoft.Alpha(Enabled=1,Style=0,Opacity=100);
+z-index:3;
+}
+#CmsMembersControl map {
+z-index:4;
+}
+#CmsMembersControl .CmsMembersControlIn {
+width:100%;
+background:#DDD;
+opacity:0.05;
+filter:progid:DXImageTransform.Microsoft.Alpha(Enabled=1,Style=0,Opacity=5);
+z-index:1;
+}
+--></style>
+<map name="CmsMembersControlMap">
+<area href="https://id.itmedia.jp/login?lc=f8b7291025863577c250b562e8aa0d7a70387bc67029915cd5c2dfda40a9e055" shape="rect" alt="会員登録（無料）" coords="105,165,226,191">
+<area href="https://id.itmedia.jp/login?lc=f8b7291025863577c250b562e8aa0d7a70387bc67029915cd5c2dfda40a9e055" shape="rect" alt="ログイン" coords="421,165,542,191">
+</map> 
+</noscript>
+<script>
+ISLOGINTT({
+	'domTrigger':'CmsMembersControl',
+	'isLoginURL':'http://status.techtarget.itmedia.co.jp/isLoginTT.cgi',
+	'sc':'165940940a02a187e4463ff467090930038c5af8fc26107bf301e714f599a1da',
+	'lc':'582c0168ba17eac49642bc85ae623204069e8d6ea06cf45af11e7de46ea31d18',
+	'heading':'会員登録（無料）が必要です',
+	'description':'続きを読むには、［続きを読む］ボタンを押して<br>会員登録あるいはログインしてください。',
+	'eVer':'16',
+	'eVerStr':'regist_cc_article-mask'
+});
+</script>
+
+	
+		<script src="/tt/js/tt/parts_artbtmbox.js"></script>
+		<script><!--
+		wpPartsInclude({'data':'Hottopic','id':6,'pos':1,'loop':5}); // 新着ホワイトペーパー
+		//--></script>
+		<div class="cbox">
+<!--code start-->
+<!-- 20131112 new zenback -->
+<!-- X:S ZenBackWidget --><div id="zenback-widget-loader"></div><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var r=Math.ceil((new Date()*1)*Math.random());var j=d.createElement("script");j.id=i;j.async=true;j.src="//w.zenback.jp/v1/?base_uri=http%3A//techtarget.itmedia.co.jp/&nsid=97857471443405661%3A%3A97857481375505858&rand="+r;d.body.appendChild(j);}}(document,"zenback-widget-js");</script><!-- X:E ZenBackWidget -->
+<!--code end-->
+</div>
+
+	
+
+
+</div></div>
+</div>
+	<script><!--
+	cqCheck();
+	//--></script>
+
+	<!--ARTICLES-->
+	<div id="tmplR300"><div id="tmplCol2">
+	
+		<div id="localSearchRight" class="localSearch"><div id='cse' style='width: 100%;'>Loading</div>
+<script src='//www.google.com/jsapi' type='text/javascript'></script>
+<script type='text/javascript'>
+google.load('search', '1', {language: 'ja', style: google.loader.themes.V2_DEFAULT});
+google.setOnLoadCallback(function() {
+  var customSearchOptions = {};
+  var orderByOptions = {};
+  orderByOptions['keys'] = [{label: '関連性', key: ''} , {label: '日付', key: 'date'}];
+  customSearchOptions['enableOrderBy'] = true;
+  customSearchOptions['orderByOptions'] = orderByOptions;
+  customSearchOptions['overlayResults'] = true;
+  var customSearchControl =   new google.search.CustomSearchControl('partner-pub-2201843946232317:7547413045', customSearchOptions);
+  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.setAutoComplete(true);
+  customSearchControl.draw('cse', options);
+}, true);
+</script>
+</div>
+		<div class="cbox mediabanner"><a href="http://techtarget.itmedia.co.jp/tt/business/" style=""><span> 経営とIT</span><span style="font-size:12px;">トップへ</span></a></div>
+		<script src="/tt/js/tt/parts_vendorcontents.js"></script><!--ベンダーコンテンツ-->
+		<div id="ITTC"><script>adRequest({'position':'10ITTC','path':'root/ITmedia/tt/business/articles'});</script></div>
+		<div id="ITR"><script>adRequest({'position':'ITR','path':'root/ITmedia/tt/business/articles'});</script></div>
+		<script src="/tt/js/tt/parts_fromtechtarget.js"></script><!--From TechTarget HTMLGEN-->
+		<script src="/tt/js/tt/parts_10min.js"></script><!--feature 10min HTMLGEN-->
+		<script src="/tt/js/tt/parts_articlesrensai.js"></script>
+		<script>
+		articlesRensai(1);
+		articlesRensai();
+		</script>
+        <div id="ITR2"><script>adRequest({'position':'ITR2','path':'root/ITmedia/tt/business/articles'});</script></div>
+        
+<div class="cbox">
+<div class="premiumContents">
+<h2 class="heading1"><span>プレミアムコンテンツ</span></h2>
+<div class="inner">
+<div class="index">
+<p class="description"><strong><a href="http://wp.techtarget.itmedia.co.jp/contents/?cid=14369">Computer Weekly日本語版　5月21日号：クラウド業界に挑戦状を叩き付けたGoogle</a></strong></p>
+<div class="premiumImgBox">
+<a href="http://wp.techtarget.itmedia.co.jp/contents/?cid=14369" class="icon">
+	<span class="premiumDlIcon"><img src="http://image.itmedia.co.jp/tt/files/20140115/14369.gif"><span class="premiumRibbon"></span></span>
+	<span class="premiumDlBtn">ダウンロード</span>
+</a>
+</div>
+<div class="clear h10px"></div>
+</div>
+</div>
+<div class="premiumBtmlink"><a href="http://techtarget.itmedia.co.jp/tt/premiumcontents.html">&raquo; プレミアムコンテンツライブラリへ</a></div>
+</div>
+</div>
+
+        
+<!-- htmlgen -->
+<div class="cbox">
+<div class="themeBannar">
+<h2 class="heading1"><span>注目テーマ</span></h2>
+<div class="inner">
+<div class="index"><a href="http://techtarget.itmedia.co.jp/tt/subtop/features/mobile_survey/index.html" class="icon"><img src="http://image.itmedia.co.jp/tt/images/tt/parts_themeBannar1_1_1398919672.gif"></a></div>
+<div class="index"><a href="http://techtarget.itmedia.co.jp/tt/subtop/features/hcm/index.html" class="icon"><img src="http://image.itmedia.co.jp/tt/images/tt/parts_themeBannar1_1_1397114144.gif"></a></div>
+<div class="index"><a href="http://techtarget.itmedia.co.jp/tt/subtop/features/info_leak_survey/index.html" class="icon"><img src="http://image.itmedia.co.jp/tt/images/tt/parts_themeBannar1_1_1396323962.gif"></a></div>
+<div class="index"><a href="http://techtarget.itmedia.co.jp/tt/subtop/features/retail_analytics/index.html" class="icon"><img src="http://image.itmedia.co.jp/tt/images/tt/parts_themeBannar1_1_1385968511.jpg"></a></div>
+<div class="index"><a href="http://techtarget.itmedia.co.jp/tt/subtop/features/financial_security/index.html" class="icon"><img src="http://image.itmedia.co.jp/tt/images/tt/parts_themeBannar2_1_1385968598.jpg"></a></div>
+</div>
+</div>
+</div>
+<!-- /htmlgen -->
+
+		
+		<script src="/tt/js/tt/parts_ranking_6.js"></script><!--アクセスランキング-->
+		<script><!--
+		wpPartsInclude({'data':'Best10','id':6,'pos':0,'loop':10}); // ホワイトペーパーランキング
+		//--></script>
+		<script src="/tt/js/tt/parts_notmembership.js"></script><!--会員登録がまだの方はこちら HTMLGEN-->
+		<div class="cbox"><div class="noimg2">
+<h2 class="heading1"><span>ITmedia マーケティング新着記事</span></h2>
+<div class="inner mini">
+<!-- CMS index -->
+<div class="index"><a href="http://marketing.itmedia.co.jp/mm/articles/1405/28/news058.html" class="icon"><IMG SRC="http://image.itmedia.co.jp/mm/articles/1405/28/news058.jpg" WIDTH="80" HEIGHT="60" ALT="news058.jpg" ALIGN="LEFT" BORDER="0"></a><p class="description"><strong><a href="http://marketing.itmedia.co.jp/mm/articles/1405/28/news058.html" title="セグメントメッセージでメールマーケティングの効果が上がる">セグメントメッセージでメールマーケティングの効果が上がる</a></strong><br>メールマーケティングの効果を上げる鉄則は何か。それは顧客ごとにセグメント化したメッ...</p><div class="clear h5px"></div></div>
+<div class="index"><a href="http://marketing.itmedia.co.jp/mm/articles/1405/28/news057.html" class="icon"><IMG SRC="http://image.itmedia.co.jp/mm/articles/1405/28/news057.jpg" WIDTH="80" HEIGHT="60" ALT="news057.jpg" ALIGN="LEFT" BORDER="0"></a><p class="description"><strong><a href="http://marketing.itmedia.co.jp/mm/articles/1405/28/news057.html" title="CRM導入で起きやすいミスとその回避法">CRM導入で起きやすいミスとその回避法</a></strong><br>マーケティング強化のためにCRM導入／刷新を行う企業は多いが、せっかくコスト／工数をか...</p><div class="clear h5px"></div></div>
+<div class="index"><a href="http://marketing.itmedia.co.jp/mm/articles/1405/28/news008.html" class="icon"><IMG SRC="http://image.itmedia.co.jp/mm/articles/1405/28/news008.jpg" WIDTH="80" HEIGHT="60" ALT="news008.jpg" ALIGN="LEFT" BORDER="0"></a><p class="description"><strong><a href="http://marketing.itmedia.co.jp/mm/articles/1405/28/news008.html" title="第1回　潜在顧客に会いに行く">第1回　潜在顧客に会いに行く</a></strong><br>あるサービスなり商品に興味を持ちながらもマーケターのアンテナにひっかからない層、い...</p><div class="clear h5px"></div></div>
+<!-- CMS index end -->
+</div>
+</div></div>
+		<!-- include virtual="/tt/include/tt/parts_snsContents.html" -->
+	
+	</div>
+	</div>
+
+
+
+
+</div>
+<div class="clear"></div></div></div>
+<script src="/tt/js/tt/tmpl_navi1.js"></script>
+<div id="tmplFooter">
+<script src="/tt/js/tt/tmpl_footmenu.js"></script>
+<noscript><div id="tmplFootmenu"><div id="tmplFootmenuIn"><div class="menu"><div class="head">データセンター</div><ul class="menu0"><li><a title="仮想化" href="http://techtarget.itmedia.co.jp/tt/virtualization/">仮想化</a></li><li><a title="データセンター" href="http://techtarget.itmedia.co.jp/tt/datacenter/">データセンター</a></li><li class="end"><a title="システム運用管理" href="http://techtarget.itmedia.co.jp/tt/operation/">システム運用管理</a></li></ul></div><div class="menu"><div class="head">IT戦略</div><ul class="menu0"><li><a title="コンプライアンス" href="http://techtarget.itmedia.co.jp/tt/compliance/">コンプライアンス</a></li><li><a title="中堅・中小企業とIT" href="http://techtarget.itmedia.co.jp/tt/smb/">中堅・中小企業とIT</a></li><li class="end"><a title="IT戦略" href="http://techtarget.itmedia.co.jp/tt/business/">IT戦略</a></li></ul></div><div class="menu"><div class="head">セキュリティ</div><ul class="menu0"><li><a title="情報セキュリティ" href="http://techtarget.itmedia.co.jp/tt/security/">情報セキュリティ</a></li><li class="end"><a title="メールセキュリティ" href="http://techtarget.itmedia.co.jp/tt/mailsecurity/">メールセキュリティ</a></li></ul></div><div class="tmplSearch" id="tmplSearch1"><form action="http://techtarget.itmedia.co.jp/tt/search/" id="cse-search-box" name="searchFormBtm"><input type="text" id="tbx1" value="" name="q" maxlength="255" class="txt"><input type="hidden" id="cx1" name="cx" value="000492183644671384608:je41regkdqu" class="hid"><input type="hidden" name="cof" value="FORID:9" class="hid"><input type="hidden" name="ie" value="Shift_JIS" class="hid"><button type="submit" name="sa" value="SEARCH" title="SEARCH" class="btn">SEARCH</button><label for="wp1"><input type="checkbox" onclick="searchCheck1(this);" id="wp1" name="idxname" value="wp" class="hid"> ホワイトペーパー／カタログのみ</label></form></div><div class="clear h10px"></div><div class="menu"><div class="head">アプリケーション</div><ul class="menu0"><li><a title="クラウド＆SaaS" href="http://techtarget.itmedia.co.jp/tt/saas/">クラウド＆SaaS</a></li><li><a title="ERP＆IFRS" href="http://techtarget.itmedia.co.jp/tt/application/">ERP＆IFRS</a></li><li><a title="CRM＆SFA" href="http://techtarget.itmedia.co.jp/tt/crm/">CRM＆SFA</a></li><li class="end"><a title="情報系アプリケーション" href="http://techtarget.itmedia.co.jp/tt/information/">情報系アプリケーション</a></li></ul></div><div class="menu"><div class="head">開発</div><ul class="menu0"><li><a title="プロジェクト管理" href="http://techtarget.itmedia.co.jp/tt/project/">プロジェクト管理</a></li><li class="end"><a title="システム開発" href="http://techtarget.itmedia.co.jp/tt/develop/">システム開発</a></li></ul></div><div class="menu"><div class="head">ネットワーク</div><ul class="menu0"><li><a title="ユニファイドコミュニケーション" href="http://techtarget.itmedia.co.jp/tt/unifiedcom/">ユニファイドコミュニケーション</a></li><li class="end"><a title="ネットワーク" href="http://techtarget.itmedia.co.jp/tt/network/">ネットワーク</a></li></ul></div><div class="menu"><div class="head">インダストリー</div><ul class="menu0"><li><a title="製造IT" href="http://techtarget.itmedia.co.jp/tt/manufacture/">製造IT</a></li><li><a title="流通IT" href="http://techtarget.itmedia.co.jp/tt/retail/">流通IT</a></li><li class="end"><a title="医療IT" href="http://techtarget.itmedia.co.jp/tt/healthcare/">医療IT</a></li></ul></div><div class="menu"><div class="head">TechTargetサービス</div><ul class="menu0"><li><a title="ホワイトペーパー" href="http://wp.techtarget.itmedia.co.jp/">ホワイトペーパー</a></li><li><a title="ホワイトペーパーキーワード" href="http://techtarget.itmedia.co.jp/tt/wpkw/">ホワイトペーパーキーワード</a></li><li><a title="ホワイトペーパー提供企業一覧" href="http://techtarget.itmedia.co.jp/tt/wpcorp.html">ホワイトペーパー提供企業一覧</a></li><li><a title="RSS一覧" href="http://www.itmedia.co.jp/info/rss/techtarget.html">RSS一覧</a></li><li class="end"><a title="プレゼント＆モニター" href="http://techtarget.itmedia.co.jp/tt/news/0809/29/news02.html">プレゼント＆モニター</a></li></ul></div><div class="clear h5px"></div></div></div></noscript>
+
+<div>
+<link href="http://techtarget.itmedia.co.jp/tt/css/tt/gfooter.css" rel="stylesheet" type="text/css" media="all">
+<div class="gfooter techtarget"><div id="globalFooter">
+<div id="globalFooterMediaList"><div id="globalFooterMediaListIn">
+
+<div class="mediaListGroup">
+<div class="mediaList" id="mediaList01">
+<h2>IT総合</h2>
+<ul>
+<li><a href="http://www.itmedia.co.jp/">ITmedia 総合TOP</a></li>
+<li><a href="http://www.itmedia.co.jp/news/">ITmedia ニュース</a></li>
+<li><a href="http://news.itmedia.co.jp/">ITmedia News スマート</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/">ITmedia Keywords</a></li>
+<li><a href="http://1topi.jp/">ONETOPI</a></li>
+<li><a href="http://www.itmedia.co.jp/qa/">質問！ITmedia</a></li>
+<li><a href="http://zenback.itmedia.co.jp/">zenbackキーワーズ</a></li>
+</ul>
+</div><!-- /#mediaList01 -->
+<div class="mediaList" id="mediaList02">
+<h2>デジタル・ガジェット</h2>
+<ul>
+<li><a href="http://www.itmedia.co.jp/mobile/">ITmedia Mobile</a></li>
+<li><a href="http://www.itmedia.co.jp/pcuser/">ITmedia PC USER</a></li>
+<li><a href="http://www.itmedia.co.jp/lifestyle/">ITmedia LifeStyle</a></li>
+<li><a href="http://camera.itmedia.co.jp/">デジカメプラス</a></li>
+<li><a href="http://ebook.itmedia.co.jp/">eBook USER</a></li>
+<li><a href="http://review.itmedia.co.jp/">ITmedia REVIEW</a></li>
+<li><a href="http://shopping.itmedia.co.jp/">ITmedia Shopping</a></li>
+<li><a href="http://store.itmedia.co.jp">ITmedia Store</a></li>
+<li><a href="http://rstore.itmedia.co.jp">ITmedia Store × 楽天市場</a></li>
+<li><a href="http://ystore.itmedia.co.jp">ITmedia Store × Yahoo!ショッピング</a></li>
+</ul>
+</div><!-- /#mediaList02 -->
+<div class="mediaList" id="mediaList03">
+<h2>ビジネス</h2>
+<ul>
+<li><a href="http://bizmakoto.jp/">Business Media 誠</a></li>
+<li><a href="http://bizmakoto.jp/bizid/">誠 Biz.ID</a></li>
+<li><a href="http://bizmakoto.jp/style/">誠 Style</a></li>
+<li><a href="http://blogs.bizmakoto.jp/">誠ブログ</a></li>
+<li><a href="http://mag.executive.itmedia.co.jp/">ITmedia エグゼクティブ</a></li>
+<li><a href="http://www.itmedia.co.jp/pcuser/subtop/pcuserpro/">ITmedia PC USER Pro</a></li>
+</ul>
+</div><!-- /#mediaList03 -->
+<div class="mediaList" id="mediaList04">
+<h2>カルチャー</h2>
+<ul>
+<li><a href="http://nlab.itmedia.co.jp/">ねとらぼ</a></li>
+<li><a href="http://www.itmedia.co.jp/live/">ライブガイド</a></li>
+</ul>
+</div><!-- /#mediaList04 -->
+<div class="mediaList" id="mediaList05">
+<h2>アプリ</h2>
+<ul>
+<li><a href="http://www.itmedia.co.jp/info/itmapp/itmedia_ios.html">ITmedia for iPhone/iPad</a></li>
+<li><a href="http://www.itmedia.co.jp/info/itmapp/itmedia_android.html">ITmedia for Android</a></li>
+<li><a href="http://www.itmedia.co.jp/info/itmapp/onetopi_headline.html">ONETOPI ヘッドライン</a></li>
+<li><a href="http://www.itmedia.co.jp/info/itmapp/onetopi.html">ONETOPI App</a></li>
+<li><a href="http://www.itmedia.co.jp/info/itmapp/liveguide.html">ライブガイド（β）</a></li>
+<li><a href="http://www.itmedia.co.jp/info/itmapp/necolab.html">ねこらぼ</a></li>
+<li><a href="http://www.itmedia.co.jp/info/itmapp/tweetopi.html">ついトピ！</a></li>
+</ul>
+</div><!-- /#mediaList05 -->
+</div><!-- /.mediaListGroup -->
+
+<div class="mediaListGroup">
+<div class="mediaList" id="mediaList06">
+<h2>企業IT</h2>
+<ul>
+<li><a href="http://www.itmedia.co.jp/enterprise/">ITmedia エンタープライズ</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/subtop/dictionary/">情報システム用語事典</a></li>
+<li><a href="http://blogs.itmedia.co.jp/">オルタナティブ・ブログ</a></li>
+<li><a href="http://techtarget.itmedia.co.jp/">TechTargetジャパン</a></li>
+<li><a href="http://wp.techtarget.itmedia.co.jp/">ホワイトペーパー</a></li>
+<li><a href="http://marketing.itmedia.co.jp/">ITmedia マーケティング</a></li>
+<li><a href="http://blog.marketing.itmedia.co.jp/">マーケター通信</a></li>
+<li><a href="http://chosa.itmedia.co.jp/">調査のチカラ</a></li>
+<li><a href="http://techtarget.itmedia.co.jp/tt/cw/">Computer Weekly</a></li>
+</ul>
+</div><!-- /#mediaList06 -->
+<div class="mediaList" id="mediaList07">
+<h2>テクノロジー</h2>
+<ul>
+<li><a href="http://www.atmarkit.co.jp/">＠IT</a></li>
+<li><a href="http://qa.atmarkit.co.jp/">QA＠IT</a></li>
+<li><a href="https://event.atmarkit.co.jp/">イベントカレンダー＋ログ</a></li>
+</ul>
+</div><!-- /#mediaList07 -->
+<div class="mediaList" id="mediaList08">
+<h2>エンジニアリング</h2>
+<ul>
+<li><a href="http://monoist.atmarkit.co.jp/">MONOist</a></li>
+<li><a href="http://eetimes.jp/">EE Times Japan</a></li>
+<li><a href="http://ednjapan.com/">EDN Japan</a></li>
+<li><a href="http://monoist.atmarkit.co.jp/mn/special/mo120701/">モノづくりライブラリ</a></li>
+<li><a href="http://www.itmedia.co.jp/smartjapan/">スマートジャパン</a></li>
+</ul>
+</div><!-- /#mediaList08 -->
+<div class="mediaList" id="mediaList09">
+<h2>キャリア</h2>
+<ul>
+<li><a href="http://www.atmarkit.co.jp/ait/subtop/jibun/">＠IT自分戦略研究所</a></li>
+<li><a href="http://el.jibun.atmarkit.co.jp/">エンジニアライフ</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/subtop/dilbert/">ディルバート</a></li>
+</ul>
+</div><!-- /#mediaList09 -->
+</div><!-- /.mediaListGroup -->
+
+</div></div><!-- /#globalFooterMediaList -->
+
+<div id="globalFooterCorp"><div id="globalFooterCorpIn">
+<p id="globalFooterCorpLogo"><a href="http://corp.itmedia.co.jp/"><img src="http://image.itmedia.co.jp/images0509/logo_itmi2.gif"></a><br>ITmediaはアイティメディア株式会社の登録商標です。</p>
+<p id="globalFooterCorpLink"><a href="http://corp.itmedia.co.jp/">運営会社</a> | <a href="http://corp.itmedia.co.jp/corp/pr/">プレスリリース</a> | <a href="http://corp.itmedia.co.jp/corp/ir/">IR情報</a> | <a href="http://corp.itmedia.co.jp/corp/recruit/">採用情報</a> | <a href="http://blog.corp.itmedia.co.jp/">お知らせブログ</a> | <a href="http://id.itmedia.jp/info/campaign/all_id.html">アイティメディアID</a> | <a href="http://www.itmedia.co.jp/info/rss/">RSS</a> | <a href="http://www.itmedia.co.jp/info/twitter/">Twitter</a> | <a href="http://www.itmedia.co.jp/info/fb/">Facebook</a> | <a href="http://www.itmedia.co.jp/info/mailmag/">メルマガ</a> | <a href="http://www.itmedia.co.jp/info/virtualevent/">バーチャルイベント</a> | <a href="http://www.itmedia.co.jp/info/ebook/">ITmediaのeBook</a></p>
+</div></div><!-- /#globalFooterCorp -->
+
+</div><!-- /#globalFooter -->
+</div>
+</div>
+
+</div>
+</div>
+<script src="/js/itmid/smartPhoneHeadLink.js"></script>
+<div id="BEACON"><!-- sc_start -->
+<!-- SiteCatalyst code version: H.2.
+Copyright 1997-2005 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript" src="/include/sc/s_code.js"></script>
+<script language="JavaScript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+function $() {
+  var elements = new Array();
+  for (var i = 0; i < arguments.length; i++) {
+    var element = arguments[i];
+    if (typeof element == 'string')
+      element = document.getElementById(element);
+    if (arguments.length == 1)
+      return element;
+    elements.push(element);
+  }
+  return elements;
+}
+s.pageName=document.URL.replace( /(\?|#).*$/, '' );
+s.server="www.itmedia.co.jp"
+s.channel="TechTargetジャパン"
+s.pageType=""
+s.hier1="root,itm,tt,business,articles"
+s.hier2="itm,tt,business,articles"
+s.hier3="tt,business,articles"
+s.prop1=document.URL.replace( /(\?|#).*$/, '' );
+s.prop2="root,itm,tt,business,articles"
+if ( $('update') == undefined )
+  s.prop3='';
+else
+  s.prop3=$('update').innerHTML.replace(/\d+分\s更新/,"");
+if ( $('byline') == undefined )
+  s.prop4=''
+else
+  s.prop4=$('byline').innerHTML.replace(/<b>|<\/b>/ig,'').replace(/\[|\]/g,'');
+/* s.prop5 : ad link name reserves */
+s.prop5=""
+s.prop6="tt"
+s.prop7="tt,business"
+s.prop8=document.title
+s.prop9=navigator.userAgent
+s.prop10=document.URL.replace( /(\?|#).*$/, '' );
+/* s.prop13 : document.URL reserves */
+/* E-commerce Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events="event3"
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+s.prop20="TT IT戦略";
+s.eVar30=document.URL.replace( /(\?|#).*$/, '' );
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.2. -->
+
+<!-- sc_end -->
+<!-- ad_start_new -->
+<script language="JavaScript" type="text/javascript">
+   <!--
+   var pid="784200371";
+   var locs="N";
+   var random=new Date();
+   var js_url='http://dlv.itmedia.jp/adsv/v1?posall='+locs+'&id='+pid+'&t=js&rnd='+random.getTime();
+   document.write('<sc'+'ript language="JavaScript" type="text/javascript" src="'+js_url+'">');
+   document.write('</sc'+'ript>');
+   //-->
+</script>
+<noscript>
+ <iframe height=1 width=1 marginwidth=0 marginheight=0 hspace=0
+   vspace=0 frameborder=0 scrolling=no src="http://dlv.itmedia.jp/adsv/v1?posall=N&id=784200371">
+ </iframe>
+</noscript>
+<!-- ad_end_new -->
+<!-- netratings_start -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7389445-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- netratings_end -->
+</div>
+</body>
+</html>
+

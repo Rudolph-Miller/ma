@@ -1,0 +1,1281 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja" id="masterChannel-mobile"><head>
+<meta http-equiv="content-type" content="text/html;charset=shift_jis">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<script>var swspv = '(none)';</script>
+<script src="/js/spv/movePC2SP.js"></script>
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+
+<meta name="itmid:series" content="">
+<meta name="build" content="2014年05月27日 22時39分">
+<meta name="keywords" content="iPhone,写真,iPhone 5,カメラ,バッテリー,iPhoneカメラ,荻窪圭のiPhoneカメラ講座,トップニュース,ソフトバンク 2011,ソフトバンク,au by KDDI,NTTドコモ,iPhone 3G,デジカメ">
+<meta name="description" content="iPhoneカメラでメモを撮るというひと、多いんじゃないかと思います、ただ、大きな地図なんかをキレイに撮るのは難しい。なんでもiPhoneで撮って記録しちゃいたい人にオススメなのが、PFUの「SnapLite」なのである。">
+<meta name="extraid" content="	at-series	kw-docomo	kw-au	kw-sb_2011	kw-softbank	kw-iphone3G	kw-digitalcamera	kw-topnews	">
+<meta name="writer" content="荻窪圭，<b>ITmedia</b>">
+<meta name="dispatch" content="国内">
+<meta name="adpath" content="root/ITmedia/mobile/article">
+<meta name="rcid" content="">
+<meta name="rcid_filename" content="">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="http://www.itmedia.co.jp/mobile/spv/1405/27/news130.html">
+<title> 荻窪圭のiPhoneカメラ講座：第50回　「SnapLite」でiPhoneカメラをスキャナにする - ITmedia Mobile</title>
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@itm_mobile">
+<meta property="og:site_name" content="ITmedia Mobile">
+<meta property="og:url" content="http://www.itmedia.co.jp/mobile/articles/1405/27/news130.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第50回　「SnapLite」でiPhoneカメラをスキャナにする">
+<meta property="og:description" content="iPhoneカメラでメモを撮るというひと、多いんじゃないかと思います、ただ、大きな地図なんかをキレイに撮るのは難しい。なんでもiPhoneで撮って記録しちゃいたい人にオススメなのが、PFUの「SnapLite」なのである。">
+
+	<meta property="og:image" content="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_P5215671.jpg">
+
+
+<script type="text/javascript">
+try{
+	window.external.msSiteModeCreateJumplist('ITmedia');
+	window.external.msSiteModeAddJumpListItem('ライブガイド','http://www.itmedia.co.jp/live/','http://www.itmedia.co.jp/favicon.ico');
+	window.external.msSiteModeAddJumpListItem('Mobile','http://www.itmedia.co.jp/mobile/','http://www.itmedia.co.jp/favicon.ico');
+	window.external.msSiteModeAddJumpListItem('PC USER','http://www.itmedia.co.jp/pcuser/','http://www.itmedia.co.jp/favicon.ico');
+	window.external.msSiteModeAddJumpListItem('プロモバ','http://www.itmedia.co.jp/promobile/','http://www.itmedia.co.jp/favicon.ico');
+	window.external.msSiteModeAddJumpListItem('LifeStyle','http://www.itmedia.co.jp/lifestyle/','http://www.itmedia.co.jp/favicon.ico');
+	window.external.msSiteModeAddJumpListItem('eBook USER','http://ebook.itmedia.co.jp/','http://www.itmedia.co.jp/favicon.ico');
+	window.external.msSiteModeAddJumpListItem('デジカメプラス','http://camera.itmedia.co.jp/','http://www.itmedia.co.jp/favicon.ico');
+	window.external.msSiteModeAddJumpListItem('ガジェット','http://gadget.itmedia.co.jp/','http://www.itmedia.co.jp/favicon.ico');
+	window.external.msSiteModeAddJumpListItem('ねとらぼ','http://nlab.itmedia.co.jp/','http://www.itmedia.co.jp/favicon.ico');
+	window.external.msSiteModeAddJumpListItem('ITmedia','http://www.itmedia.co.jp/','http://www.itmedia.co.jp/favicon.ico');
+}
+catch(ex){
+}
+</script>
+<meta name="application-name" content="ITmedia Mobile">
+<meta name="msapplication-tooltip" content="ITmedia Mobile">
+<meta name="msapplication-starturl" content="http://www.itmedia.co.jp/mobile/">
+<meta name="msapplication-window" content="width=1024;height=768;">
+<meta name="msapplication-task" content="name=Business Media 誠;action-uri=http://bizmakoto.jp/;icon-uri=http://bizmakoto.jp/favicon.ico">
+<meta name="msapplication-task" content="name=誠 Style;action-uri=http://bizmakoto.jp/style/;icon-uri=http://bizmakoto.jp/favicon.ico">
+<meta name="msapplication-task" content="name=誠 Biz.ID;action-uri=http://bizmakoto.jp/bizid/;icon-uri=http://bizmakoto.jp/favicon.ico">
+<link rel="alternate" type="application/rss+xml" title="ITmedia Mobile 最新記事一覧(RSS1.0)" href="http://rss.itmedia.co.jp/rss/1.0/mobile.xml">
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/mobile/base.css" type="text/css" media="all">
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/mobile/ad.css" type="text/css" media="all">
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/mobile/article.css" type="text/css" media="all">
+
+
+<link rel="stylesheet" href="http://www.itmedia.co.jp/js/lib/prettify.css">
+<script src="/js/lib/prettify.js"></script>
+<script src="/js/lib/jquery-1.6.4.min.js"></script>
+<script>jQuery.noConflict();</script>
+<script src="//fc.itmedia.co.jp/fpcookie?site_id=itm_"></script>
+<script src="/js/scAccount.js"></script>
+<script src="/js/adRequest.js"></script>
+<script src="/js/scRequest.js"></script>
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/ad.js"></script>
+<script type="text/javascript" src="/js/article.js"></script>
+<script type="text/javascript" src="/js/mobile/base.js"></script>
+<script type="text/javascript" src="/js/mobile/ad.js"></script>
+<script type="text/javascript" src="/js/mobile/article.js"></script>
+
+</head><body id="masterType-article">
+<script type="text/javascript">
+attachBodyClass();
+function masterChannel(){return 'mobile';}
+function masterType(){return 'article';}
+function prFlag(){return '';}
+function spFlag(){return '';}
+(function(){
+if(getUrl()['domain'].match(/(preview|localhost)/)) document.write('<div id="PATHDEBUG">masterChannel = <strong>' + masterChannel() + '</strong> / masterType = <strong>' + masterType() + '</strong> / smartPhone = <strong>' + spFlag() + '</strong></div>');
+return true;
+})();
+</script>
+<!--ITWS-->
+
+<!--/ITWS-->
+
+<!--ITWL-->
+
+	<script>adRequest({'position':'ITWL'});</script>
+
+<!--/ITWL-->
+
+<!--COIDP-->
+
+	
+		<div id="COIDP"><div class="COIDP-in">
+		<script>adRequest({'position':'COIDP1','path':'root/cds/id/ITmedia/' + masterChannel()});</script>
+		<div class="COIDP-Member">
+		<script>adRequest({'position':'COIDP2','path':'root/cds/id/ITmedia/' + masterChannel()});</script>
+		<script>adRequest({'position':'COIDP3','path':'root/cds/id/ITmedia/' + masterChannel()});</script>
+		</div></div></div>
+		<script>
+		(function(){
+			var coidp = document.getElementById('COIDP');
+			if(coidp.innerHTML.match('st=noad.*pos=')){
+				coidp.style.display = 'none';
+				return false;
+			}
+			return true;
+		})();
+		</script>
+	
+
+<!--/COIDP-->
+
+<div id="masterBody"><div id="masterBodyOut"><div id="masterBodyIn">
+<div id="masterNavigation">
+
+<div id="globalNavigationGroup0">
+<div id="globalNavigation"><div class="gnavOut"><div class="gnavIn">
+<div class="gnavBtn gnavBtn0"><a href="http://www.itmedia.co.jp/" title="IT総合情報ポータル「ITmedia」">総合トップ</a></div>
+<div class="gnavBtn gnavBtn1"><a href="http://www.itmedia.co.jp/news/" title="ITとビジネスのニュース専門サイト「ITmedia News」">ニュース</a></div>
+<div class="gnavBtn gnavBtn2"><a href="http://www.itmedia.co.jp/enterprise/" title="企業のためのIT情報サイト「ITmedia エンタープライズ」">企業とIT</a></div>
+<div class="gnavBtn gnavBtn4"><a href="http://marketing.itmedia.co.jp/" title="IT×マーケティングの最新動向「ITmedia マーケティング」">Webマーケ</a></div>
+<div class="gnavBtn gnavBtn3"><a href="http://techtarget.itmedia.co.jp/" title="IT製品導入支援サイト「TechTargetジャパン」">システム導入</a></div>
+<div class="gnavBtn gnavBtn6"><a href="http://www.itmedia.co.jp/mobile/" title="携帯、スマートフォンの専門サイト「ITmedia Mobile」">スマホ</a></div>
+<div class="gnavBtn gnavBtn7"><a href="http://ebook.itmedia.co.jp/" title="電子書籍の専門サイト「ITmedia eBook USER」">eBook</a></div>
+<div class="gnavBtn gnavBtn5"><a href="http://www.itmedia.co.jp/pcuser/" title="PCとMacの専門サイト「ITmedia PC USER」">パソコン</a></div>
+<div class="gnavBtn gnavBtn8"><a href="http://camera.itmedia.co.jp/" title="デジカメの専門サイト「ITmedia デジカメプラス」">デジカメ</a></div>
+<div class="gnavBtn gnavBtn9"><a href="http://www.itmedia.co.jp/lifestyle/" title="AV機器の専門サイト「ITmedia LifeStyle」">AV機器</a></div>
+<div class="gnavBtn gnavBtn15"><a href="http://review.itmedia.co.jp/" title="プロによる製品レビューサイト「ITmedia REVIEW」">レビュー</a></div>
+<div class="gnavBtn gnavBtn13"><a href="http://nlab.itmedia.co.jp/" title="ちょっと気になるネットの話題「ねとらぼ」">旬ネタ</a></div>
+<div class="gnavBtn gnavBtn11"><a href="http://www.itmedia.co.jp/live/" title="ニコ生、Ustreamの動画番組表「ライブガイド」">ライブ動画</a></div>
+<div class="gnavBtn gnavBtn12"><a href="http://blogs.itmedia.co.jp/" title="ビジネスブログ・メディア「ITmedia オルタナティブ・ブログ」">ブログ</a></div>
+<div class="gnavBtn gnavBtn14"><a href="http://www.itmedia.co.jp/smartjapan/" title="節電とエネルギーを考える「スマートジャパン」">電力</a></div>
+
+</div></div></div>
+</div>
+
+</div>
+
+<div id="masterBodyOuter"><!----><div id="masterBodyInner">
+<div id="masterHeader"> 
+	<div id="globalHeader">
+	<div id="globalHeaderTop">
+	<div id="globalTagline">モバイル機器をスマートに使いこなす</div>
+	<div id="globalLogo">
+	
+	<div><a href="http://www.itmedia.co.jp/mobile/" title="ITmedia Mobile">ITmedia Mobile</a></div>
+	
+	</div>
+	
+<div id="localNavigation"><div class="lnavOut"><div class="lnavIn">
+<div id="lnavMain"><div class="lnavBtn"><a href="http://gadget.itmedia.co.jp/gg/" title="ガジェット" onClick="designCnt('lnavMain',this.href);">ガジェット</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/pcuser/" title="PC USER" onClick="designCnt('lnavMain',this.href);">PC USER</a></div>
+<div class="lnavBtn"><a href="http://ebook.itmedia.co.jp/ebook/" title="eBook" onClick="designCnt('lnavMain',this.href);">eBook</a></div>
+<div class="lnavBtn lnavBtnMain"><a href="http://www.itmedia.co.jp/mobile/" title="Mobile" onClick="designCnt('lnavMain',this.href);">Mobile</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/promobile/" title="プロモバ" onClick="designCnt('lnavMain',this.href);">プロモバ</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/lifestyle/" title="LifeStyle" onClick="designCnt('lnavMain',this.href);">LifeStyle</a></div>
+<div class="lnavBtn"><a href="http://camera.itmedia.co.jp/dc/" title="デジカメ" onClick="designCnt('lnavMain',this.href);">デジカメ</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/pcuser/soho.html" title="SOHO" onClick="designCnt('lnavMain',this.href);">SOHO</a></div>
+<div class="lnavBtn lnavBtnSec"><a href="http://shopping.itmedia.co.jp/" title="価格比較" onClick="designCnt('lnavMain',this.href);">価格比較</a></div>
+</div>
+<div id="lnavSub"><div class="lnavBtn"><a href="http://www.itmedia.co.jp/mobile/subtop/archive/" title="過去記事" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> 過去記事</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/mobile/subtop/rensai/" title="連載" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> 連載</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/mobile/subtop/docomo/" title="ドコモ" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> ドコモ</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/mobile/subtop/au/" title="au" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> au</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/mobile/subtop/softbank/" title="ソフトバンク" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> ソフトバンク</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/mobile/subtop/willcom/" title="ウィルコム" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> ウィルコム</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/mobile/subtop/eaccess/" title="イー・アクセス" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> イー・アクセス</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/mobile/subtop/shinki/" title="UQ／MVNO" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> UQ／MVNO</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/mobile/subtop/features/iphone_3g/" title="iPhone" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> iPhone</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/mobile/subtop/pda/" title="スマホ" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> スマホ</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/mobile/subtop/apptown/" title="App Town" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> App Town</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/mobile/subtop/android/" title="Android" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> Android</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/mobile/subtop/acc/" title="アクセサリ" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> アクセサリ</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/mobile/subtop/features/wearable/" title="ウェアラブル" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> ウェアラブル</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/mobile/subtop/features/debut/" title="スマホ初心者" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> スマホ初心者</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/mobile/subtop/features/sim/index.html" title="SIM" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> SIM</a></div>
+<div class="lnavBtn lnavBtnarrowssp"><a href="http://www.itmedia.co.jp/mobile/special/arrows.html" title="ARROWS" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> ARROWS</a></div>
+<div class="lnavBtn lnavBtnarrowssp"><a href="http://www.itmedia.co.jp/mobile/special/ls130508/aquosphone.html" title="AQUOS" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> AQUOS</a></div>
+<div class="lnavBtn lnavBtnarrowssp"><a href="http://www.itmedia.co.jp/mobile/special/xperia.html" title="Xperia" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> Xperia</a></div>
+</div>
+<div id="lnavSubSub"><div class="lnavBtn"><a href="http://www.itmedia.co.jp/mobile/special/ls130701/navitime.html" title="NAVITIME" onClick="designCnt('lnavSubSub',this.href);"><span class="raquo">&raquo;</span> NAVITIME</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/mobile/special/ls140304/unicase.html" title="UNiCASE" onClick="designCnt('lnavSubSub',this.href);"><span class="raquo">&raquo;</span> UNiCASE</a></div>
+</div>
+</div></div></div>
+<script type="text/javascript">
+</script>
+
+	<div class="colBoxClear h10px"></div>
+	</div>
+	<div class="colBoxClear h15px"></div>
+	<div id="globalHeaderMiddle">
+
+	
+		<div id="ITRN"><script>adRequest({'position':'ITRN'});</script></div>
+	
+
+	</div>
+	<div id="globalHeaderBottom">
+	<div id="localPankuzu">
+	<div class="lpanOut"><div class="lpanIn">
+	
+<a href="http://www.itmedia.co.jp/mobile/">ITmedia Mobile</a> &gt;
+
+<script type="text/javascript">
+var str = document.title.replace(/\<\!\-\-EDIT START\-\-\>/g,'').replace(/\<\!\-\-EDIT END\-\-\>/g,'').replace(' - ITmedia Mobile','');
+str = cutString(str,130);
+document.write(str);
+</script>
+
+	</div></div>
+	</div>
+	</div>
+	</div>
+
+</div>
+<div id="masterContents"><div id="globalContents">
+<div id="masterMain">
+
+	
+			
+				<div id="ITOT">
+				<script>adRequest({'position':'ITOT1'});</script>
+				<script>adRequest({'position':'ITOT2'});</script>
+				</div>
+			
+		<div class="colBoxClear"></div>
+	
+
+
+<div id="tmplNews" class="tmplArticle"><div id="tmplNewsIn" class="tmplArticleIn">
+<!--EDIT START-->
+<!--EDIT END-->
+<div id="cmsType"><div class="inner">連載</div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsDate"><div class="inner"><span class="arrow">&raquo;</span> <span id="update">2014年05月27日 22時39分 UPDATE</span></div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsTitle"><div class="inner"><h1><small>荻窪圭のiPhoneカメラ講座：</small><big>第50回　「SnapLite」でiPhoneカメラをスキャナにする</big></h1></div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsAbstract"><div class="inner"><h2>iPhoneカメラでメモを撮るというひと、多いんじゃないかと思います、ただ、大きな地図なんかをキレイに撮るのは難しい。なんでもiPhoneで撮って記録しちゃいたい人にオススメなのが、PFUの「SnapLite」なのである。</h2></div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsByline"><div class="inner" id="byline"><b>[</b>荻窪圭，<b>ITmedia]</b></div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsBody"><div class="inner">
+<!--EDIT START-->
+<!-- Facebook JavaScript SDK <Body> のすぐ後に配置 -->
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- Facebook JavaScript SDK <Body> のすぐ後に配置 -->
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/socialbutton.css">
+<script src="/js/socialbutton.js"></script>
+
+
+	<!-- pcuser|lifestyle|mobile|dc|promobile -->
+	<!-- UNDER/WHITE/1LINE/MIXI -->
+	<!-- DEFAULT -->
+	<script>
+	msbBtn({
+	'pos':'top',
+	'tag':'table',
+	'popup_pos':'under',
+	'base_color':'white',
+	'line':[
+	[
+		{'name':'印刷/PDF','title':'この記事を印刷する','id':'printbutton'},
+		{'name':'ツイート','id':'tweetbutton'},
+		{'name':'Like Button','id':'likebutton'},
+		{'name':'Mixi チェック','id':'mixicheck'},
+		{'name':'Google +1 Button','id':'googleplusone'},
+		{'name':'ONETOPI','title':'ONETOPIに投稿する','id':'onetopibutton'},
+		{'name':'&nbsp;','title':'URLをメールで送信','id':'mail'},
+		{'name':'通知','id':'itmid','data':[
+			{'name':'類似記事の掲載をメールで通知','id':'alertbutton'},
+			{'name':'連載「％」の新着をメールで通知','id':'alertseries'},
+		{}]},
+	{}],
+	[]]
+	});
+	</script>
+
+
+<!--EDIT END-->
+
+<div id="cmsMark"><!-- null for itmedia-->
+</div>
+
+<p>　まあなんというか、iPhoneのカメラで何でも撮っちゃおう、ちょっとしたメモでも撮影して残しておこう、って話を以前したんだけど（あのときはScanner Proってアプリを使えば斜めから撮った写真でもまっすぐのドキュメントにしてくれるって内容だった：<A href="http://www.itmedia.co.jp/mobile/articles/1404/15/news125.html">荻窪圭のiPhoneカメラ講座　第47回　「Scanner Pro」でiPhoneカメラをメモ代わりに使う</A>）、なんと、そんな何でもかんでもiPhoneで撮って記録しちゃえ的用途の決定版アイテムが出るのである。</p>
+<p>　それがPFUの「SnapLite」<A href="http://www.itmedia.co.jp/mobile/articles/1405/21/news076.html">（PFU、iPhoneを高性能スキャナにするデスクライト「SnapLite」を発表）</A>。発売は2013年5月28日だが、一足先に使うことができたので軽く紹介するのである。</p>
+<!--code start-->
+
+
+
+<style type="text/css"><!--
+#backNumBox {
+text-align:center;
+}
+.backNumBoxRap {
+clear:both;
+margin:0px auto 15px auto;
+padding:0px;
+width:600px;
+text-align:left;
+}
+.backNumBox a:link,
+.backNumBox a:visited {
+text-decoration:none;
+}
+.backNumBox strong {
+display:block;
+padding:3px 4px;
+background:#951;
+font-size:13px;
+font-weight:bold;
+color:#FFF;
+}
+.backNumBox strong a:hover {text-decoration:underline;}
+.backNumBox strong a {color:#FFF;}
+.backNumBoxIn ul {
+margin:0px;
+padding:0px;
+list-style:none;
+}
+.backNumBoxIn ul li {
+margin:0px;
+padding:2px 4px 2px 22px;
+border:1px solid #951;
+border-top:0px solid #951;
+background:url(http://image.itmedia.co.jp/images0509/arr_file.gif) no-repeat 7px 2px #FFF;
+font-size:13px;
+list-style-type:none;
+}
+.backNumBoxIn ul li.current {
+padding:4px 4px 2px 22px;
+background:url(http://image.itmedia.co.jp/images0509/arr_file2.gif) no-repeat 1px 0px #FDB;
+}
+.f-left .backNumBoxRap {float:left;width:240px;margin-right:10px;}
+.f-right .backNumBoxRap {float:right;width:240px;margin-left:10px;}
+.c-blue .backNumBox strong {background:#036;}
+.c-blue .backNumBoxIn ul li {border:1px solid #036;border-top:0px solid #036;}
+.c-blue .backNumBoxIn ul li.current {background:url(http://image.itmedia.co.jp/images0509/arr_file2.gif) no-repeat 1px 0px #DEF;}
+--></style>
+<div id="backNumBox" class="f-center c-brown">
+
+	
+
+<div class="backNumBoxRap"><div class="backNumBox"> 
+<strong><a href="http://www.itmedia.co.jp/keywords/iphonecamera.html">「荻窪圭のiPhoneカメラ講座」バックナンバー</a></strong>
+<div class="backNumBoxIn"><ul> 
+<li class="bn/mobile/articles/1405/27/news130.html"><span><a href="http://www.itmedia.co.jp/mobile/articles/1405/27/news130.html">第50回　「SnapLite」でiPhoneカメラをスキャナにする</a></span></li>
+<li class="bn/mobile/articles/1405/21/news055.html"><span><a href="http://www.itmedia.co.jp/mobile/articles/1405/21/news055.html">第49回　河原でiPhone逆さ撮り</a></span></li>
+<li class="bn/mobile/articles/1404/25/news055.html"><span><a href="http://www.itmedia.co.jp/mobile/articles/1404/25/news055.html">第48回　ほわーんとした写真をお財布に入っているカード1枚でキリっとさせる</a></span></li>
+<li class="bn/mobile/articles/1404/15/news125.html"><span><a href="http://www.itmedia.co.jp/mobile/articles/1404/15/news125.html">第47回　「Scanner Pro」でiPhoneカメラをメモ代わりに使う</a></span></li>
+<li class="bn/mobile/articles/1403/25/news153.html"><span><a href="http://www.itmedia.co.jp/mobile/articles/1403/25/news153.html">第46回　iPhoneで桜の花びらをピシッと撮る方法</a></span></li>
+<li class="bn/mobile/articles/1403/11/news050.html"><span><a href="http://www.itmedia.co.jp/mobile/articles/1403/11/news050.html">第45回　iPhoneだけでここまでできる「写真合成」にチャレンジ</a></span></li>
+<li class="bn/mobile/articles/1402/25/news050.html"><span><a href="http://www.itmedia.co.jp/mobile/articles/1402/25/news050.html">第44回　「KLYP＋」とレンズでiPhoneカメラを大拡張</a></span></li>
+<li class="bn/mobile/articles/1402/10/news113.html"><span><a href="http://www.itmedia.co.jp/mobile/articles/1402/10/news113.html">第43回　iPhoneで街中の雪景色を楽しむためのコツ</a></span></li>
+<li class="bn/mobile/articles/1401/28/news144.html"><span><a href="http://www.itmedia.co.jp/mobile/articles/1401/28/news144.html">第42回　写真編集アプリとしても高機能なカメラアプリ「Camera＋」</a></span></li>
+<li class="bn/mobile/articles/1401/21/news043.html"><span><a href="http://www.itmedia.co.jp/mobile/articles/1401/21/news043.html">第41回　一瞬にして盛り上がった水彩画アプリ「Waterlogue」</a></span></li>
+</ul></div></div></div>
+
+
+</div>
+<script type="text/javascript"><!--
+var thisUri = '/mobile/articles/1405/27/news130.html';
+var backNumList = document.getElementById("backNumBox").getElementsByTagName("li");
+for(i=0;i<backNumList.length;i++){
+	if(backNumList[i].className.match(thisUri)) {backNumList[i].className += ' current';}
+}
+//--></script>
+
+<!--code end-->
+<p>　これは何なのかというと、LEDを使ったデスクライト兼iPhone用コピースタンド。</p>
+<p>　カメラの世界には昔から「コピースタンド」という撮影機材があった。カメラを真下に向けて取りつけ、両脇から明るさが均一になるよう照明を当て、絵画など平面の物体をきれいに撮影するための機材だ。紙1枚ならスキャナで済むが、スキャナにセットできないもろいものや大きなもの、微妙な凹凸があるものなどを撮影するのに今でも使われている。</p>
+<p>　SnapLiteはそういう使い方ができるデスクライトなのだ。</p>
+<!--CAP-->
+<div id="col500"><a name="l_hi_P5215671.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_P5215671.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_P5215671.jpg" width="480" height="480" alt="photo"></a>
+<small>SnapLiteの箱を開けると、中はこんな感じ。シンプルなデザインのデスクライトだ</small></div>
+<!--CAPEND-->
+<p>　見た目はすごくシンプル。　ちょっとしゃれたデザインのLEDデスクライト。普段は机の上においてこうやってデスクライトとして使う。</p>
+<!--CAP-->
+<div id="col500"><a name="l_hi_P5265681.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_P5265681.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_P5265681.jpg" width="480" height="480" alt="photo"></a>
+<small>ぽわっと手元が光っているのが分かるかと思う</small></div>
+<!--CAPEND-->
+<p>　LEDは2つついていて、ひとつは暖色系のオレンジ色のLED。白熱灯っぽい。もうひとつは真っ白な白色LED。</p>
+<!--CAP-->
+<div id="col500"><a name="l_hi_P5265685.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_P5265685.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_P5265685.jpg" width="480" height="320" alt="photo"></a>
+<small>ライト部を下から見ると、2色のLEDがついているのがわかるのだ</small></div>
+<!--CAPEND-->
+<!--CAP-->
+<div id="col500"><a name="l_hi_P5260684.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_P5260684.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_P5260684.jpg" width="480" height="480" alt="photo"></a>
+<small>こちらは色温度が高い方。昼白色くらいの感じ。電源スイッチをタッチすると暖色系ライト→真っ白なライト→電源オフとなる</small></div>
+<!--CAPEND-->
+<p>　で、よく見ると上に何か置けるようになっている。ここにiPhoneを置くのである。</p>
+<p>　まずiPhoneにSnapLiteアプリをダウンロードしておく。で、SnapLiteの近くでこれを立ち上げると、自動的にSnapLiteとBluetoothで通信して両者が無線でつながり、SnapLiteの手元に「リス」のマークが点灯し、こういう画面になるのだ。</p>
+<!--CAP-->
+<div id="col500"><a name="l_hi_P5265687.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_P5265687.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_P5265687.jpg" width="480" height="320" alt="photo"></a>
+<small>アプリを起動するとiPhoneを上におけといわれる</small></div>
+<!--CAPEND-->
+<p>　で、SnapLiteにiPhoneをセットする。というか適当にまんなかに（カメラ部分がはみでるように）置くだけ。ケースをつけてても（ケースの裏側がヘンに凸凹してなければ）問題なし。まあアバウトに置けばOK。アバウトさがSnapLiteの身上だ。</p>
+<!--CAP-->
+<div id="col500"><a name="l_hi_P5265690.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_P5265690.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_P5265690.jpg" width="480" height="480" alt="photo"></a>
+<small>ケース（愛用してるマンフロット社のKLYP+）をつけたまま、iPhoneをのっけみた</small></div>
+<!--CAPEND-->
+<p>　上にのっけると自動的にアプリが撮影モードになり、赤いガイドが照射される。</p>
+<p>　このガイドはほぼA4サイズで「まあこの辺に置いておけばOkですよ」という印。上の写真で分かるように、実際には赤く彩られたマークより広い範囲を撮影してくれるので、ほんとに目安程度に考えればいい。アバウトに使え、が基本。</p>
+<p>　iPhoneを乗っけて赤いガイドが出たら、てきとうに撮りたいものを置く。</p>
+<!--CAP-->
+<div id="col400"><a name="l_hi_P5265693.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_P5265693.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_P5265693.jpg" width="360" height="480" alt="photo"></a>
+<small>手元にあった本を2冊置いてみた。どちらもおすすめです（自分でいうな）</small></div>
+<!--CAPEND-->
+<p>　2冊おいたら赤い枠からはみ出たけど、気にしない。ちなみに撮影の瞬間はこの枠は消えるので、写り込むこともありません。</p>
+<p>　準備ができたら、ライトの根本部分で光ってる「リスさんマーク」を押す。それだけ。iPhoneは触らなくていい。すると、SnapLiteからiPhoneに無線（Bluetooth）で「撮影しろ」って信号が飛ぶのだ。</p>
+<p>　マークを押してから撮影まで少し間がある（標準では0.5秒だがもっと長くもできる）ので、ポンと指で押して手をどけたくらいのタイミングで撮影完了だ。</p>
+<p>　iPhoneをSnapLiteに置いてから撮影まで、iPhone自体に触らなくていいってのが大事な点。椅子に座ったままぜんぶできちゃう。よく見ると斜めから撮ってるから、写るものも斜めになっちゃうんじゃない？ という心配は無用。角度を考慮して自動的に台形補正してくれるのだ。</p>
+<p>　で、結果がこちら。</p>
+<p>　無事、それぞれの表紙を取り込めました。たまには本の宣伝をしても許して下さい、ってことで。自動的に矩形にトリミングしてくれるので、必要なものだけが撮影されるのだ。2つあると認識されたら、このように2つの画像がカメラロールに保存される。</p>
+<!--CAP-->
+<div id="col400"><a name="l_hi_IMG_7422.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_IMG_7422.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_IMG_7422.jpg" width="329" height="480" alt="photo"></a>
+<small>「東京古道散歩」（中経の文庫）</small></div>
+<!--CAPEND-->
+<!--CAP-->
+<div id="col300"><a name="l_hi_IMG_7423.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_IMG_7423.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_IMG_7423.jpg" width="282" height="480" alt="photo"></a>
+<small>「古地図とめぐる東京歴史探訪」（ソフトバンク新書）</small></div>
+<!--CAPEND-->
+<p>　気に入った本をブログにのっけたり共有したいとき、さっと表紙だけをきれいに撮れるのだ、という例。</p>
+<p>　自動的にアプリがトリミングしてくれるけど、それがうまくいかなかったときはどうするか。正直、ときどきハズしてくれます。まあこの辺はアプリがバージョンアップすれば解決する問題なので気にしない。</p>
+<p>　撮影後に「編集」ボタンをタップしてやれば、四隅を指定してトリミングしなおすこともできるのだ。</p>
+<!--CAP-->
+<div id="col300"><a name="l_hi_IMG_7428.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_IMG_7428.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_IMG_7428.jpg" width="270" height="480" alt="photo"></a>
+<small>撮影直後ならトリミングし直しも可能</small></div>
+<!--CAPEND-->
+<p>　でも時にはトリミングしてほしくないこともある。トリミングをオンにすると不定形のものや、巨大なものの一部だけを撮りたいときに困るから。撮影時の設定はあらかじめ決めておける。個人的には、トリミングはオフ・台形補正はオン、タイマーは1秒が好み。</p>
+<!--CAP-->
+<div id="col300"><a name="l_hi_IMG_7430.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_IMG_7430.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_IMG_7430.jpg" width="270" height="480" alt="photo"></a>
+<small>設定画面。自動トリミングをしないときはオフに。台形補正はオンの方がいいけど、少し斜めから撮った立体感を残したいときはオフに。色味補正はお好みで。ガイドセンサーは赤いガイド枠のオンオフ</small></div>
+<!--CAPEND-->
+<p>　例えばこんな風に本を2冊重ねて置いて撮りたいとき。</p>
+<!--CAP-->
+<div id="col300"><a name="l_hi_IMG_7437.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_IMG_7437.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_IMG_7437.jpg" width="270" height="480" alt="photo"></a>
+<small>本を2冊重ねておいてみた</small></div>
+<!--CAPEND-->
+<p>　トリミングオフ・台形補正オン・色味補正オフで撮るとこんな写真が撮れる。</p>
+<!--CAP-->
+<div id="col300"><a name="l_hi_IMG_7439.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_IMG_7439.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_IMG_7439.jpg" width="270" height="480" alt="photo"></a>
+<small>こんな2冊重なった状態で撮ってみた</small></div>
+<!--CAPEND-->
+<p>　ここで共有ボタンを押し、使いたいアプリを探してそこに送ってやる。今回は<A HREF="https://itunes.apple.com/jp/app/snapseed/id439438619?mt=8">Snapseed</A>を使用。</p>
+<!--CAP-->
+<div id="col300"><a name="l_hi_IMG_7440.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_IMG_7440.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_IMG_7440.jpg" width="270" height="480" alt="photo"></a>
+<small>撮った写真をその場で他のアプリに渡せるのだ</small></div>
+<!--CAPEND-->
+<!--CAP-->
+<div id="col300"><a name="l_hi_IMG_7441.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_IMG_7441.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_IMG_7441.jpg" width="270" height="480" alt="photo"></a></div>
+<!--CAPEND-->
+<!--CAP-->
+<div id="col300"><a name="l_hi_IMG_7442.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_IMG_7442.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_IMG_7442.jpg" width="270" height="480" alt="photo"></a>
+<small>Snapseedでトリミングし、枠を付けてみた</small></div>
+<!--CAPEND-->
+<!--CAP-->
+<div id="col500"><a name="l_hi_IMG_7443.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_IMG_7443.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_IMG_7443.jpg" width="480" height="514" alt="photo"></a>
+<small>完成</small></div>
+<!--CAPEND-->
+<p>　博物館や美術館へ行った記念にチケットを撮影しときたいとか、展覧会のチラシをもらったのだけどそういうのって増える一方だからデジタル化して残しておきたいとか、気に入ったお店のカードをもらってきたけどすぐ無くしちゃうからiPhoneに保存しときたいとか、そういうカジュアルなニーズにさくっと応えてくれるのがいいところなのだ。</p>
+<p>　矩形のものってまっすぐ撮るのがものすごく難しい。手で持って撮ると斜めになって遠近が着いちゃったり、部屋の照明がかぶって自分の影が映っちゃったり。でもこれならそういう心配なく、操作も難しくなく、とりあえずさくっと撮って保存しておける。</p>
+<p>　巨大なものの一部を撮る時も便利。</p>
+<p>　例えばいまここに、巨大な「寛永時代の江戸図」（1642年頃）がある。まあ趣味で購入した複製品。高かったあ。江戸幕府成立が1603年だからそれから40年弱。今多くの人が目にする幕末の江戸絵図より200年ほど前のものだ。</p>
+<p>　その一部を撮ってみる。</p>
+<p>　まずは撮りたいところが入るようにセットする。</p>
+<!--CAP-->
+<div id="col500"><a name="l_hi_P5265694.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_P5265694.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_P5265694.jpg" width="480" height="320" alt="photo"></a>
+<small>でかい地図の一部を撮るのだ</small></div>
+<!--CAPEND-->
+<!--CAP-->
+<div id="col300"><a name="l_hi_IMG_7445.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_IMG_7445.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_IMG_7445.jpg" width="270" height="480" alt="photo"></a>
+<small>撮る前はこんな風に見えている</small></div>
+<!--CAPEND-->
+<!--CAP-->
+<div id="col300"><a name="l_hi_IMG_7447.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_IMG_7447.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_IMG_7447.jpg" width="270" height="480" alt="photo"></a>
+<small>撮影した結果。台形補正のおかげでまっすぐになってる</small></div>
+<!--CAPEND-->
+<p>　こういうのをまっすぐに撮るのってめちゃ難しいのだ。SnapLiteさまさまである。</p>
+<p>　これに注釈を入れてみよう。アプリの「編集」から<A HREF="https://itunes.apple.com/jp/app/skitch/id490505997?mt=8">「Skitch」</A>というアプリを呼び出して、ちょっとトリミングし「ここが不忍池だったよ」と注釈をいれる。</p>
+<!--CAP-->
+<div id="col300"><a name="l_hi_IMG_7448.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_IMG_7448.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_IMG_7448.jpg" width="270" height="480" alt="photo"></a>
+<small>Skitchの画面。写真や地図といった画像に簡単に注釈を入れられるアプリ。これは便利</small></div>
+<!--CAPEND-->
+<p>　で、保存したのがこちら。</p>
+<!--CAP-->
+<div id="col500"><a name="l_hi_IMG_7449.jpg"></a><a href="http://image.itmedia.co.jp/l/im/mobile/articles/1405/27/l_hi_IMG_7449.jpg"><img src="http://image.itmedia.co.jp/mobile/articles/1405/27/hi_IMG_7449.jpg" width="434" height="580" alt="photo"></a>
+<small>江戸絵図の一部をiPhoneで撮ってみた。こういう撮影って難しいけど、SnapLiteがあれば均一にきれいに撮れるのだ</small></div>
+<!--CAPEND-->
+<p>　例えばさ、ブログを書くとかプレゼン資料つくるとかFacebookでちょっとうんちくをたれたいとか、そのときちょっと画像を用意したいってことあるじゃない。昔の不忍池は非常に巨大で、その上流（根津の方）は湿地帯だったんだよ、とか。</p>
+<p>　SnapLiteが手元にあればそれが超楽チンにできるという話である。</p>
+<p>　SnapLiteをどう使うのかはもうほんとに人それぞれで、人によって画像として記録しておきたいものって違うから当たり前なのだけど、構造がシンプルなのでどんなニーズでもそれなりに工夫すれば使えるのが偉大なところ。</p>
+<p>　しかも、その辺に置いて手でiPhoneを持って撮るよりずっと楽だし、手ブレしないしキレイに四角く撮れる。</p>
+<p>　もともとiPhoneを適当に置くだけなので、将来iPhone6や7が出ても（よほど珍妙なデザインになったり、巨大になったりしなければ）、たぶんそのまま使える。</p>
+<p>　スキャナと聞くとちょっと敷居が高そうだけど「iPhoneで手近なものを真上から撮りたい人の賢い撮影台」兼デスクライトと思えばとても身近でお気楽でよいのである。</p>
+<div class="endkwd"><div class="box cmsBox cmsBox cmsBoxBlue" id="blue">
+<h3>関連キーワード</h3>
+<h4>◆<A href="http://www.itmedia.co.jp/keywords/iphone.html">iPhone</A> | <A href="http://www.itmedia.co.jp/keywords/photo.html">写真</A> | <A href="http://www.itmedia.co.jp/keywords/iphone5.html">iPhone 5</A> | <A href="http://www.itmedia.co.jp/keywords/camera.html">カメラ</A> | <A href="http://www.itmedia.co.jp/keywords/battery.html">バッテリー</A> | <A href="http://www.itmedia.co.jp/keywords/iphone_camera.html">iPhoneカメラ</A> | <A href="http://www.itmedia.co.jp/keywords/iphonecamera.html">荻窪圭のiPhoneカメラ講座</A></h4>
+<br clear="all"><span></span></div></div>
+<div class="endlink" id="endlinkConnection">
+<h4>関連記事</h4>
+<ul id="art">
+<li class="endlink-art" id="endlink-art1"><a href="http://www.itmedia.co.jp/keywords/iphonecamera.html" onclick="designCnt('lart', s.hier3);">「荻窪圭のiPhoneカメラ講座」バックナンバー</a></li>
+<li class="endlink-art" id="endlink-art2"><a href="http://www.itmedia.co.jp/mobile/articles/1405/21/news055.html" onclick="designCnt('lart', s.hier3);"><img src="http://image.itmedia.co.jp/mobile/articles/1405/21/news055.jpg" width="80" height="60" alt="荻窪圭のiPhoneカメラ講座：第49回　河原でiPhone逆さ撮り" align="left">荻窪圭のiPhoneカメラ講座：第49回　河原でiPhone逆さ撮り</a><br>
+知っている人は知っている、知らない人は知らない（当たり前です）のが、iPhoneカメラは逆さで撮ってもOKということ。迫力のローアングルだってお手の物なのだ。（</li>
+<li class="endlink-art" id="endlink-art3"><a href="http://www.itmedia.co.jp/mobile/articles/1404/25/news055.html" onclick="designCnt('lart', s.hier3);"><img src="http://image.itmedia.co.jp/mobile/articles/1404/25/news055.jpg" width="80" height="60" alt="荻窪圭のiPhoneカメラ講座：第48回　ほわーんとした写真をお財布に入っているカード1枚でキリっとさせる" align="left">荻窪圭のiPhoneカメラ講座：第48回　ほわーんとした写真をお財布に入っているカード1枚でキリっとさせる</a><br>
+外出して天気が良ければiPhoneでばしばし写真を撮りますな。でも、思ったより写真がほわーんとしてる……なんてことも。そんなとき、1枚のカードで写真が見違えるのである。</li>
+<li class="endlink-art" id="endlink-art4"><a href="http://www.itmedia.co.jp/mobile/articles/1404/15/news125.html" onclick="designCnt('lart', s.hier3);"><img src="http://image.itmedia.co.jp/mobile/articles/1404/15/news125.jpg" width="80" height="60" alt="荻窪圭のiPhoneカメラ講座：第47回　「Scanner Pro」でiPhoneカメラをメモ代わりに使う" align="left">荻窪圭のiPhoneカメラ講座：第47回　「Scanner Pro」でiPhoneカメラをメモ代わりに使う</a><br>
+iPhoneのカメラをメモ代わりに使うというひともいるかと思うが、ラフに撮るとちゃんと撮れてなかったりメモとしては使いにくかったりする。そこでiPhoneカメラをスキャナーのようにするアプリを使うのだ。</li>
+<li class="endlink-art" id="endlink-art5"><a href="http://www.itmedia.co.jp/mobile/articles/1403/25/news153.html" onclick="designCnt('lart', s.hier3);"><img src="http://image.itmedia.co.jp/mobile/articles/1403/25/news153.jpg" width="80" height="60" alt="荻窪圭のiPhoneカメラ講座：第46回　iPhoneで桜の花びらをピシッと撮る方法" align="left">荻窪圭のiPhoneカメラ講座：第46回　iPhoneで桜の花びらをピシッと撮る方法</a><br>
+桜の花びらをiPhoneで撮った写真が日本中にあふれかえる時機の到来である。そこで、iPhoneで桜の花びらをピシッと撮る方法をご紹介。あと、iOS7.1で強化されたカメラ機能についても解説するのである。</li>
+<li class="endlink-art" id="endlink-art6"><a href="http://www.itmedia.co.jp/mobile/articles/1403/11/news050.html" onclick="designCnt('lart', s.hier3);"><img src="http://image.itmedia.co.jp/mobile/articles/1403/11/news050.jpg" width="80" height="60" alt="荻窪圭のiPhoneカメラ講座：第45回　iPhoneだけでここまでできる「写真合成」にチャレンジ" align="left">荻窪圭のiPhoneカメラ講座：第45回　iPhoneだけでここまでできる「写真合成」にチャレンジ</a><br>
+iPhoneアプリで写真合成というとフォトコラージュ的なものを作るアプリが多いけれど、本格的な写真合成ができるアプリもある。ちょっと手間になるけれど、楽しいのでぜひ。</li>
+<li class="endlink-art" id="endlink-art7"><a href="http://www.itmedia.co.jp/mobile/articles/1402/25/news050.html" onclick="designCnt('lart', s.hier3);"><img src="http://image.itmedia.co.jp/mobile/articles/1402/25/news050.jpg" width="80" height="60" alt="荻窪圭のiPhoneカメラ講座：第44回　「KLYP＋」とレンズでiPhoneカメラを大拡張" align="left">荻窪圭のiPhoneカメラ講座：第44回　「KLYP＋」とレンズでiPhoneカメラを大拡張</a><br>
+「KLPY＋」は、イタリアのカメラ用品ブランド「マンフロット」が発売したiPhoneカメラ拡張キット兼ケース、みたいな製品。これが合体ロボみたいな過剰感ありまくりで楽しいのだ。</li>
+<li class="endlink-art" id="endlink-art8"><a href="http://www.itmedia.co.jp/mobile/articles/1402/10/news113.html" onclick="designCnt('lart', s.hier3);"><img src="http://image.itmedia.co.jp/mobile/articles/1402/10/news113.jpg" width="80" height="60" alt="荻窪圭のiPhoneカメラ講座：第43回　iPhoneで街中の雪景色を楽しむためのコツ" align="left">荻窪圭のiPhoneカメラ講座：第43回　iPhoneで街中の雪景色を楽しむためのコツ</a><br>
+都内とかあまり雪の降らない地域に住んでいると、大雪は珍しい。珍しいとiPhoneで撮りたくなる。街中の雪景色をより印象深く撮るためのコツをいくつか。</li>
+</ul>
+<h4>関連リンク</h4>
+<ul id="lnk">
+<li class="endlink-lnk" id="endlink-lnk1"><a href="http://www.apple.com/jp/iphone/" onclick="designCnt('llnk', s.hier3);">「iPhone 5」製品情報</a></li>
+<li class="endlink-lnk" id="endlink-lnk2"><a href="http://snaplite.jp/" onclick="designCnt('llnk', s.hier3);">snaplite.jp</a></li>
+<li class="endlink-lnk" id="endlink-lnk3"><a href="http://www.pfu.co.jp/" onclick="designCnt('llnk', s.hier3);">PFU</a></li>
+</ul>
+</div>
+
+<div id="cmsCopyright"><p><span style="font-size:65%;font-family:Arial,Helvetica,sans-serif;line-height:135%;color:#555555;">
+Copyright&copy; 2014 ITmedia, Inc. All Rights Reserved.</span></p>
+</div>
+<!--EDIT START-->
+
+	<!-- pcuser|lifestyle|mobile|dc|promobile|makoto|bizid|style -->
+	<!-- UNDER/WHITE/1LINE/MIXI -->
+	<!-- DEFAULT -->
+	<script>
+	msbBtn({
+	'pos':'btm',
+	'tag':'table',
+	'popup_pos':'under',
+	'base_color':'white',
+	'line':[
+	[
+		{'name':'印刷/PDF','title':'この記事を印刷する','id':'printbutton'},
+		{'name':'ツイート','id':'tweetbutton'},
+		{'name':'Like Button','id':'likebutton'},
+		{'name':'Mixi チェック','id':'mixicheck'},
+		{'name':'Google +1 Button','id':'googleplusone'},
+		{'name':'ONETOPI','title':'ONETOPIに投稿する','id':'onetopibutton'},
+		{'name':'&nbsp;','title':'URLをメールで送信','id':'mail'},
+		{'name':'通知','id':'itmid','data':[
+			{'name':'類似記事の掲載をメールで通知','id':'alertbutton'},
+			{'name':'連載「％」の新着をメールで通知','id':'alertseries'},
+		{}]},
+	{}],
+	[]]
+	});
+	</script>
+
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+{lang:'ja',parsetags:'explicit'}
+</script>
+<script type="text/javascript">gapi.plusone.go();</script>
+
+<script>ranking101();</script>
+<!--EDIT END-->
+
+</div></div> 
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsPrcredit"><div class="inner"></div></div>
+
+<div class="colBoxClear h10px"></div>
+<div id="ITSB" class="colBoxL50">
+<script>adRequest({'position':'ITSB'});</script>
+</div>
+<div class="colBoxR50">
+<script charset="utf-8" src="http://www.itmedia.co.jp/nac/newzia/99/script.js" type="text/javascript"></script>
+</div>
+<div class="colBoxClear"></div>
+
+</div></div>
+
+<div class="colBoxClear h10px"></div>
+<div id="ISALC">
+<script>adRequest({'position':'5ISALC'});</script>
+</div>
+
+
+	<div id="ITADS">
+	<div class="colBoxL50"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2201843946232317";
+/* 03_03_mobile_left */
+google_ad_slot = "6147965846";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+	<div class="colBoxR50"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2201843946232317";
+/* 03_03_mobile_right */
+google_ad_slot = "4671232643";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+	<div class="colBoxClear"></div>
+	</div>
+
+
+<div><div>
+
+</div></div>
+
+<script>endlinkAll();</script>
+
+<!---->
+</div>
+<div id="masterSub">
+	
+		<!--EDIT START-->
+			<div id="globalSearch">
+<style type="text/css">
+.lc form, .articles form, .entries form {padding:0;}
+.articles #txtad {clear:both;}
+#cse-search-box input {width:96px;}
+</style>
+<!-- popIn searchBox Begin -->
+<script src="http://api.popin.cc/searchbox/itmedia_plusd_mobile.js" type="text/javascript" charset="UTF-8"></script>
+<!-- popIn searchBox End -->
+</div>
+
+			<div class="colBoxClear"></div>
+			<div id="ITRR"><script>adRequest({'position':'ITRR'});</script></div>
+			<!-- htmlgen -->
+<!-- /htmlgen -->
+<!--動画枠-->
+			<div id="ISAL"><script>adRequest({'position':'15ISAL'});</script></div>
+			<div id="ITOP"><script>adRequest({'position':'10ITOP'});</script></div>
+			<div class="colBox colBoxRanking">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2>アクセストップ10</h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxSubhead">
+2014年05月29日 更新
+</div>
+<div class="colBoxOlist">
+<ol>
+<li class="rank1">
+<a href="http://www.itmedia.co.jp/mobile/articles/1405/28/news087.html" title="ドコモ、「iPad Air」と「iPad mini Retinaディスプレイモデル」を6月10日に発売" onclick="designCnt('アクセストップ10','rank1');">ドコモ、「iPad Air」と「iPad mini Retinaディスプレイモデル」を6月10日に発売</a><span>（2014年05月28日）</span>
+</li><li class="rank2">
+<a href="http://www.itmedia.co.jp/mobile/articles/1405/28/news029.html" title="スマホ夏モデル丸分かり比較――本体サイズ、ディスプレイ、カメラ編" onclick="designCnt('アクセストップ10','rank2');">スマホ夏モデル丸分かり比較――本体サイズ、ディスプレイ、カメラ編</a><span>（2014年05月28日）</span>
+</li><li class="rank3">
+<a href="http://www.itmedia.co.jp/mobile/articles/1405/26/news094.html" title="通信規制、「7GB」なのはなぜ？" onclick="designCnt('アクセストップ10','rank3');">通信規制、「7GB」なのはなぜ？</a><span>（2014年05月26日）</span>
+</li><li class="rank4">
+<a href="http://www.itmedia.co.jp/mobile/articles/1405/27/news099.html" title="目的別にざっくりチェック――夏モデル、どれを選ぶ？" onclick="designCnt('アクセストップ10','rank4');">目的別にざっくりチェック――夏モデル、どれを選ぶ？</a><span>（2014年05月27日）</span>
+</li><li class="rank5">
+<a href="http://www.itmedia.co.jp/mobile/articles/1405/28/news037.html" title="「LG G3」発表──“レーザーAF”付きでRetinaより高解像度な5.5インチ" onclick="designCnt('アクセストップ10','rank5');">「LG G3」発表──“レーザーAF”付きでRetinaより高解像度な5.5インチ</a><span>（2014年05月28日）</span>
+</li><li class="rank6">
+<a href="http://www.itmedia.co.jp/mobile/articles/1308/05/news018.html" title="第1回 正しく知れば怖くない！　LINEの第一歩は初期設定から" onclick="designCnt('アクセストップ10','rank6');">第1回 正しく知れば怖くない！　LINEの第一歩は初期設定から</a><span>（2013年08月05日）</span>
+</li><li class="rank7">
+<a href="http://www.itmedia.co.jp/mobile/articles/1405/27/news058.html" title="F-06Eの地味ながらも技術的マイルストーンを分解して知る" onclick="designCnt('アクセストップ10','rank7');">F-06Eの地味ながらも技術的マイルストーンを分解して知る</a><span>（2014年05月27日）</span>
+</li><li class="rank8">
+<a href="http://www.itmedia.co.jp/mobile/articles/1405/28/news033.html" title="EDGESTに“IGZO”と“高品位”をプラス――「AQUOS Xx 304SH」が提供する新しい価値" onclick="designCnt('アクセストップ10','rank8');">EDGESTに“IGZO”と“高品位”をプラス――「AQUOS Xx 304SH」が提供する新しい価値</a><span>（2014年05月28日）</span>
+</li><li class="rank9">
+<a href="http://www.itmedia.co.jp/mobile/articles/1405/27/news119.html" title="災害時に公衆無線LANを無料開放　世界初の統一SSID「00000JAPAN」策定" onclick="designCnt('アクセストップ10','rank9');">災害時に公衆無線LANを無料開放　世界初の統一SSID「00000JAPAN」策定</a><span>（2014年05月27日）</span>
+</li><li class="rank10">
+<a href="http://www.itmedia.co.jp/mobile/articles/1405/27/news130.html" title="第50回　「SnapLite」でiPhoneカメラをスキャナにする" onclick="designCnt('アクセストップ10','rank10');">第50回　「SnapLite」でiPhoneカメラをスキャナにする</a><span>（2014年05月27日）</span>
+</li>
+</ol>
+</div>
+<div class="colBoxPageLink"><a title="ランキングトップ30" href="http://www.itmedia.co.jp/ranking/mobile.html">ランキングトップ30</a></div>
+<div class="colBoxClear"></div>
+</div>
+</div>
+</div>
+</div>
+<!--アクセスランキング-->
+			<div id="ITAT"><script>adRequest({'position':'7ITAT'});</script></div>
+			<div id="ITRR2"><script>adRequest({'position':'ITRR2'});</script></div>
+			<div id="ITKT">
+			<script>adRequest({'position':'ITKT1'});</script>
+			<script>adRequest({'position':'ITKT2'});</script>
+			<script>adRequest({'position':'ITKT3'});</script>
+			</div>
+			<script type="text/javascript" src="/js/mobile/parts_press.js" charset="shift_jis"></script><!--アイティメディアIDからのお知らせ-->
+			<div class="colBox TwitterLink">
+<div class="colBoxOuter">
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<a href="http://twitter.com/#!/itm_mobile" target="_blank">Twitterで@itm_mobileをフォローする</a>
+</div>
+</div>
+</div>
+</div>
+<div class="colBox FacebookLink">
+<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FITmediaMobile&amp;width=300&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:258px;" allowTransparency="true"></iframe>
+</div><!--Facebook Twitter-->
+			<script type="text/javascript" src="/css/fl090925.js"></script><!-- CloseUP -->
+			<div class="colBox"><div class="colBoxOuter"><div class="colBoxHead"><h2>過去記事カレンダー</h2></div>
+			<div class="colBox colBoxCalendar">
+<div class="colBoxOuter">
+<div class="colBoxInner">
+<div class="colBoxIndex colBoxCarendar2014 colBoxCount1">
+<div class="colBoxSubhead"><h4>2014年</h4></div>
+<div class="colBoxUlist"><ul>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1405.html">5月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1404.html">4月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1403.html">3月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1402.html">2月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1401.html">1月</a></li>
+
+</ul></div>
+</div><div class="colBoxIndex colBoxCarendar2013 colBoxCount2">
+<div class="colBoxSubhead"><h4>2013年</h4></div>
+<div class="colBoxUlist"><ul>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1312.html">12月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1311.html">11月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1310.html">10月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1309.html">9月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1308.html">8月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1307.html">7月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1306.html">6月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1305.html">5月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1304.html">4月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1303.html">3月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1302.html">2月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1301.html">1月</a></li>
+
+</ul></div>
+</div><div class="colBoxIndex colBoxCarendar2012 colBoxCount3">
+<div class="colBoxSubhead"><h4>2012年</h4></div>
+<div class="colBoxUlist"><ul>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1212.html">12月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1211.html">11月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1210.html">10月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1209.html">9月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1208.html">8月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1207.html">7月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1206.html">6月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1205.html">5月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1204.html">4月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1203.html">3月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1202.html">2月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1201.html">1月</a></li>
+
+</ul></div>
+</div><div class="colBoxIndex colBoxCarendar2011 colBoxCount4">
+<div class="colBoxSubhead"><h4>2011年</h4></div>
+<div class="colBoxUlist"><ul>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1112.html">12月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1111.html">11月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1110.html">10月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1109.html">9月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1108.html">8月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1107.html">7月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1106.html">6月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1105.html">5月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1104.html">4月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1103.html">3月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1102.html">2月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1101.html">1月</a></li>
+
+</ul></div>
+</div><div class="colBoxIndex colBoxCarendar2010 colBoxCount5">
+<div class="colBoxSubhead"><h4>2010年</h4></div>
+<div class="colBoxUlist"><ul>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1012.html">12月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1011.html">11月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1010.html">10月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1009.html">9月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1008.html">8月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1007.html">7月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1006.html">6月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1005.html">5月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1004.html">4月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1003.html">3月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1002.html">2月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/1001.html">1月</a></li>
+
+</ul></div>
+</div><div class="colBoxIndex colBoxCarendar2009 colBoxCount6">
+<div class="colBoxSubhead"><h4>2009年</h4></div>
+<div class="colBoxUlist"><ul>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0912.html">12月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0911.html">11月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0910.html">10月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0909.html">9月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0908.html">8月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0907.html">7月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0906.html">6月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0905.html">5月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0904.html">4月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0903.html">3月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0902.html">2月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0901.html">1月</a></li>
+
+</ul></div>
+</div><div class="colBoxIndex colBoxCarendar2008 colBoxCount7">
+<div class="colBoxSubhead"><h4>2008年</h4></div>
+<div class="colBoxUlist"><ul>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0812.html">12月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0811.html">11月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0810.html">10月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0809.html">9月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0808.html">8月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0807.html">7月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0806.html">6月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0805.html">5月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0804.html">4月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0803.html">3月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0802.html">2月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0801.html">1月</a></li>
+
+</ul></div>
+</div><div class="colBoxIndex colBoxCarendar2007 colBoxCount8">
+<div class="colBoxSubhead"><h4>2007年</h4></div>
+<div class="colBoxUlist"><ul>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0712.html">12月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0711.html">11月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0710.html">10月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0709.html">9月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0708.html">8月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0707.html">7月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0706.html">6月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0705.html">5月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0704.html">4月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0703.html">3月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0702.html">2月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0701.html">1月</a></li>
+
+</ul></div>
+</div><div class="colBoxIndex colBoxCarendar2006 colBoxCount9">
+<div class="colBoxSubhead"><h4>2006年</h4></div>
+<div class="colBoxUlist"><ul>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0612.html">12月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0611.html">11月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0610.html">10月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0609.html">9月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0608.html">8月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0607.html">7月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0606.html">6月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0605.html">5月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0604.html">4月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0603.html">3月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0602.html">2月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0601.html">1月</a></li>
+
+</ul></div>
+</div><div class="colBoxIndex colBoxCarendar2005 colBoxCount10">
+<div class="colBoxSubhead"><h4>2005年</h4></div>
+<div class="colBoxUlist"><ul>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0512.html">12月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0511.html">11月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0510.html">10月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0509.html">9月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0508.html">8月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0507.html">7月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0506.html">6月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0505.html">5月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0504.html">4月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0503.html">3月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0502.html">2月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0501.html">1月</a></li>
+
+</ul></div>
+</div><div class="colBoxIndex colBoxCarendar2004 colBoxCount11">
+<div class="colBoxSubhead"><h4>2004年</h4></div>
+<div class="colBoxUlist"><ul>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0412.html">12月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0411.html">11月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0410.html">10月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0409.html">9月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0408.html">8月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0407.html">7月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0406.html">6月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0405.html">5月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0404.html">4月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0403.html">3月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0402.html">2月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0401.html">1月</a></li>
+
+</ul></div>
+</div><div class="colBoxIndex colBoxCarendar2003 colBoxCount12">
+<div class="colBoxSubhead"><h4>2003年</h4></div>
+<div class="colBoxUlist"><ul>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0312.html">12月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0311.html">11月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0310.html">10月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0309.html">9月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0308.html">8月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0307.html">7月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0306.html">6月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0305.html">5月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0304.html">4月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0303.html">3月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0302.html">2月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0301.html">1月</a></li>
+
+</ul></div>
+</div><div class="colBoxIndex colBoxCarendar2002 colBoxCount13">
+<div class="colBoxSubhead"><h4>2002年</h4></div>
+<div class="colBoxUlist"><ul>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0212.html">12月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0211.html">11月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0210.html">10月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0209.html">9月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0208.html">8月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0207.html">7月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0206.html">6月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0205.html">5月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0204.html">4月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0203.html">3月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0202.html">2月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0201.html">1月</a></li>
+
+</ul></div>
+</div><div class="colBoxIndex colBoxCarendar2001 colBoxCount14">
+<div class="colBoxSubhead"><h4>2001年</h4></div>
+<div class="colBoxUlist"><ul>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0112.html">12月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0111.html">11月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0110.html">10月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0109.html">9月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0108.html">8月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0107.html">7月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0106.html">6月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0105.html">5月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0104.html">4月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0103.html">3月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0102.html">2月</a></li>
+<li><a href="http://www.itmedia.co.jp/mobile/subtop/archive/0101.html">1月</a></li>
+
+</ul></div>
+</div>
+<div class="colBoxClear h10px"></div>
+</div>
+</div>
+</div>
+
+			</div></div>
+			<div class="colBox colBoxFeedback">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2 title="Feed Back">Feed Back</h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxUlist">
+<ul>
+<li><a href="http://www.itmedia.co.jp/info/mail/index.html?article#article" title="ご意見・ご感想">ご意見・ご感想</a></li>
+<li><a href="http://www.itmedia.co.jp/info/mail/index.html#zdrelease" title="リリース送付先">リリース送付先</a></li>
+<li><a href="http://www.itmedia.co.jp/info/mail/#adzdnet" title="広告掲載のお問い合わせ">広告掲載のお問い合わせ</a></li>
+<li><a href="http://bizmakoto.jp/makoto/fl_leadgen.html" title="リード提供サービス">リード提供サービス</a></li>
+<li><a href="http://www.itmedia.co.jp/info/rss/mobile.html" title="RSS一覧">RSS一覧</a></li>
+</ul>
+</div>
+<div class="colBoxClear"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- /htmlgen -->
+<!--FEED BACK-->
+			<div class="colBox colBoxAmazon">
+<div class="colBoxOuter">
+<div class="colBoxHead"><span class="colBoxHeadSubtxt">-PR-</span></div>
+<div class="colBoxInner">
+<iframe src="http://rcm-jp.amazon.co.jp/e/cm?t=itmedia-mobile-22&o=9&p=12&l=st1&mode=books-jp&search=iPhone&fc1=000000&lt1=_blank&lc1=003366&bg1=FFFFFF&f=ifr" marginwidth="0" marginheight="0" width="300" height="250" border="0" frameborder="0" style="border:none;" scrolling="no"></iframe>
+</div>
+</div>
+</div>
+<!--Amazon-->
+
+	
+
+</div>
+<div class="colBoxClear"></div>
+</div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+
+
+<div id="masterFooter">
+	<div id="globalFooter">
+		<div id="globalFooterBottom">
+<div id="globalFooterLink">
+<a href="http://www.itmedia.co.jp/info/sitemap/">サイトマップ</a> | <a href="http://www.itmedia.co.jp/info/rule/">利用規約</a> | <a href="http://corp.itmedia.co.jp/corp/privacy.html">プライバシーポリシー</a> | <a href="http://corp.itmedia.co.jp/corp/ad/">広告案内</a> | <a href="http://www.itmedia.co.jp/info/mail/">お問い合わせ</a>
+</div>
+</div>
+		<div id="globalFooterMediaList">
+			<div id="globalFooterMediaListIn">
+				<div class="mediaListGroup">
+					<div class="mediaList" id="mediaList01">
+						<h2>IT総合</h2>
+						<ul>
+						<li><a href="http://www.itmedia.co.jp/">ITmedia 総合TOP</a></li>
+						<li><a href="http://www.itmedia.co.jp/news/">ITmedia ニュース</a></li>
+						<li><a href="http://news.itmedia.co.jp/">ITmedia News スマート</a></li>
+						<li><a href="http://www.itmedia.co.jp/keywords/">ITmedia Keywords</a></li>
+						<li><a href="http://1topi.jp/">ONETOPI</a></li>
+						<li><a href="http://www.itmedia.co.jp/qa/">質問！ITmedia</a></li>
+						<li><a href="http://zenback.itmedia.co.jp/">zenbackキーワーズ</a></li>
+						</ul>
+					</div><!-- /#mediaList01 -->
+					<div class="mediaList" id="mediaList02">
+						<h2>デジタル・ガジェット</h2>
+						<ul>
+						<li><a href="http://www.itmedia.co.jp/mobile/">ITmedia Mobile</a></li>
+						<li><a href="http://www.itmedia.co.jp/pcuser/">ITmedia PC USER</a></li>
+						<li><a href="http://www.itmedia.co.jp/lifestyle/">ITmedia LifeStyle</a></li>
+						<li><a href="http://camera.itmedia.co.jp/">デジカメプラス</a></li>
+						<li><a href="http://ebook.itmedia.co.jp/">eBook USER</a></li>
+						<li><a href="http://review.itmedia.co.jp/">ITmedia REVIEW</a></li>
+						<li><a href="http://shopping.itmedia.co.jp/">ITmedia Shopping</a></li>
+						<li><a href="http://store.itmedia.co.jp">ITmedia Store</a></li>
+						<li><a href="http://rstore.itmedia.co.jp">ITmedia Store × 楽天市場</a></li>
+						<li><a href="http://ystore.itmedia.co.jp">ITmedia Store × Yahoo!ショッピング</a></li>
+						</ul>
+					</div><!-- /#mediaList02 -->
+					<div class="mediaList" id="mediaList03">
+						<h2>ビジネス</h2>
+						<ul>
+						<li><a href="http://bizmakoto.jp/">Business Media 誠</a></li>
+						<li><a href="http://bizmakoto.jp/bizid/">誠 Biz.ID</a></li>
+						<li><a href="http://bizmakoto.jp/style/">誠 Style</a></li>
+						<li><a href="http://blogs.bizmakoto.jp/">誠ブログ</a></li>
+						<li><a href="http://mag.executive.itmedia.co.jp/">ITmedia エグゼクティブ</a></li>
+						<li><a href="http://www.itmedia.co.jp/pcuser/subtop/pcuserpro/">ITmedia PC USER Pro</a></li>
+						</ul>
+					</div><!-- /#mediaList03 -->
+					<div class="mediaList" id="mediaList04">
+						<h2>カルチャー</h2>
+						<ul>
+						<li><a href="http://nlab.itmedia.co.jp/">ねとらぼ</a></li>
+						<li><a href="http://www.itmedia.co.jp/live/">ライブガイド</a></li>
+						</ul>
+					</div><!-- /#mediaList04 -->
+					<div class="mediaList" id="mediaList05">
+						<h2>アプリ</h2>
+						<ul>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/itmedia_ios.html">ITmedia for iPhone/iPad</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/itmedia_android.html">ITmedia for Android</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/onetopi_headline.html">ONETOPI ヘッドライン</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/onetopi.html">ONETOPI App</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/liveguide.html">ライブガイド（β）</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/necolab.html">ねこらぼ</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/tweetopi.html">ついトピ！</a></li>
+						</ul>
+					</div><!-- /#mediaList05 -->
+				</div><!-- /.mediaListGroup -->
+				<div class="mediaListGroup">
+					<div class="mediaList" id="mediaList06">
+						<h2>企業IT</h2>
+						<ul>
+						<li><a href="http://www.itmedia.co.jp/enterprise/">ITmedia エンタープライズ</a></li>
+						<li><a href="http://www.itmedia.co.jp/enterprise/subtop/dictionary/">情報システム用語事典</a></li>
+						<li><a href="http://blogs.itmedia.co.jp/">オルタナティブ・ブログ</a></li>
+						<li><a href="http://techtarget.itmedia.co.jp/">TechTargetジャパン</a></li>
+						<li><a href="http://wp.techtarget.itmedia.co.jp/">ホワイトペーパー</a></li>
+						<li><a href="http://marketing.itmedia.co.jp/">ITmedia マーケティング</a></li>
+						<li><a href="http://blog.marketing.itmedia.co.jp/">マーケター通信 </a></li>
+						<li><a href="http://chosa.itmedia.co.jp/">調査のチカラ</a></li>
+						<li><a href="http://techtarget.itmedia.co.jp/tt/cw/">Computer Weekly</a></li>
+						</ul>
+					</div><!-- /#mediaList06 -->
+						<div class="mediaList" id="mediaList07">
+							<h2>テクノロジー</h2>
+							<ul>
+							<li><a href="http://www.atmarkit.co.jp/">＠IT</a></li>
+							<li><a href="http://qa.atmarkit.co.jp/">QA＠IT</a></li>
+							<li><a href="https://event.atmarkit.co.jp/">イベントカレンダー＋ログ</a></li>
+							</ul>
+						</div><!-- /#mediaList07 -->
+						<div class="mediaList" id="mediaList08">
+							<h2>エンジニアリング</h2>
+							<ul>
+							<li><a href="http://monoist.atmarkit.co.jp/">MONOist</a></li>
+							<li><a href="http://eetimes.jp/">EE Times Japan</a></li>
+							<li><a href="http://ednjapan.com/">EDN Japan</a></li>
+							<li><a href="http://monoist.atmarkit.co.jp/mn/special/mo120701/">モノづくりライブラリ</a></li>
+							<li><a href="http://www.itmedia.co.jp/smartjapan/">スマートジャパン</a></li>
+							</ul>
+						</div><!-- /#mediaList08 -->
+						<div class="mediaList" id="mediaList09">
+							<h2>キャリア</h2>
+							<ul>
+							<li><a href="http://www.atmarkit.co.jp/ait/subtop/jibun/">＠IT自分戦略研究所</a></li>
+							<li><a href="http://el.jibun.atmarkit.co.jp/">エンジニアライフ</a></li>
+							<li><a href="http://www.itmedia.co.jp/enterprise/subtop/dilbert/">ディルバート</a></li>
+							</ul>
+						</div><!-- /#mediaList09 -->
+				</div><!-- /.mediaListGroup -->
+			</div>
+		</div><!-- /#globalFooterMediaList -->
+		<div id="globalFooterCorp">
+			<div id="globalFooterCorpIn">
+				<p id="globalFooterCorpLogo"><a href="http://corp.itmedia.co.jp/"><img src="http://image.itmedia.co.jp/images/logo/170_itmedia_bgw.gif"></a>ITmediaはアイティメディア株式会社の登録商標です。</p>
+				<p id="globalFooterCorpLink"><a href="http://corp.itmedia.co.jp/">運営会社</a> | <a href="http://corp.itmedia.co.jp/corp/pr/">プレスリリース</a> | <a href="http://corp.itmedia.co.jp/corp/ir/">IR情報</a> | <a href="http://corp.itmedia.co.jp/corp/recruit/">採用情報</a> | <a href="http://blog.corp.itmedia.co.jp/">お知らせブログ</a> | <a href="http://id.itmedia.jp/info/campaign/all_id.html">アイティメディアID</a> | <a href="http://www.itmedia.co.jp/info/rss/">RSS</a> | <a href="http://www.itmedia.co.jp/info/twitter/">Twitter</a> | <a href="http://www.itmedia.co.jp/info/fb/">Facebook</a> | <a href="http://www.itmedia.co.jp/info/mailmag/">メルマガ</a> | <a href="http://www.itmedia.co.jp/info/virtualevent/">バーチャルイベント</a> | <a href="http://www.itmedia.co.jp/info/ebook/">ITmediaのeBook</a></p>
+			</div>
+		</div><!-- /#globalFooterCorp -->
+	</div>
+</div>
+
+
+</div><!--/masterBodyInner-->
+</div><!--/masterBodyOuter-->
+</div><!--/masterBodyIn-->
+</div><!--/masterBodyOut-->
+</div><!--/masterBody-->
+<script src="/js/masterBodyEnd.js"></script><!-- window.onload -->
+<script src="/js/itmid/smartPhoneHeadLink.js"></script><!-- Smart Phone Large Button-->
+<!--BEACON-->
+
+    
+	    <div id="BEACON"><div id="N">
+			<!-- SiteCatalyst code version: H.2.
+Copyright 1997-2005 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript" src="/include/sc/s_code.js"></script>
+<script language="JavaScript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+function $() {
+  var elements = new Array();
+  for (var i = 0; i < arguments.length; i++) {
+    var element = arguments[i];
+    if (typeof element == 'string')
+      element = document.getElementById(element);
+    if (arguments.length == 1)
+      return element;
+    elements.push(element);
+  }
+  return elements;
+}
+s.pageName=document.URL.replace( /(\?|#).*$/, '' );
+s.server="www.itmedia.co.jp"
+s.channel="ITmedia Mobile"
+s.pageType=""
+s.hier1="root,itm,mobile,article"
+s.hier2="itm,mobile,article"
+s.hier3="mobile,article"
+s.prop1=document.URL.replace( /(\?|#).*$/, '' );
+s.prop2="root,itm,mobile,article"
+if ( $('update') == undefined )
+  s.prop3='';
+else
+  s.prop3=$('update').innerHTML.replace(/\d+分\s更新/,"");
+if ( $('byline') == undefined )
+  s.prop4=''
+else
+  s.prop4=$('byline').innerHTML.replace(/<b>|<\/b>/ig,'').replace(/\[|\]/g,'');
+/* s.prop5 : ad link name reserves */
+s.prop5=""
+s.prop6="mobile"
+s.prop7="mobile,article"
+s.prop8=document.title
+s.prop9=navigator.userAgent
+s.prop10=document.URL.replace( /(\?|#).*$/, '' );
+/* s.prop13 : document.URL reserves */
+/* E-commerce Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events="event3"
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+s.prop20="Mobile";
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.2. -->
+
+			<script>adRequest({'position':'N'});</script>
+		</div></div>
+    
+
+
+<script type="text/javascript">
+YBTlogRequest();
+function YBTlogRequest(){
+    var y_u = location.href;
+    var y_th = location.hostname.split(".");
+    var y_tl = location.pathname;
+    var y_th0 = y_th[0];
+    var y_p = '';
+    if (y_th0 === 'www') {
+        if (y_tl === '/'){
+            y_p = 'top';
+        }
+        else {
+            var y_tp = y_tl.split("/");
+            y_p = y_tp[1];
+        }
+    }
+    else {
+        y_p = y_th0;
+    }
+    var y_k = "ext_bt",
+        y_s = "itmedia",
+        y_r = Math.random(),
+        y_eu =  encodeURIComponent(y_u),
+        y_h = (location.protocol == "https:") ? "https:" : "http:",
+        y_b = y_h + "//ybx.yahoo.co.jp/clear.gif?bkey=" + y_k + "&site=" + y_s + "&pagetype=" + y_p + "&url=" + y_eu + "&r=" + y_r,
+        y_i = new Image();
+    y_i.src = y_b;
+    y_i.onload = y_i.onerror = function(){YBTLogVoid();};
+}
+function YBTLogVoid(){return;}
+</script>
+
+<!--/BEACON-->
+
+</body></html>
+

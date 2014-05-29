@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+<meta charset="UTF-8">
+
+<title>４つのフェーズ別、最適なアプリマーケティングとは？ | D2Cスマイル</title>
+
+<meta name="description" content="D2Cがお届けするモバイルマーケティングの総合オピニオンサイト">
+<meta name="keywords" content="モバイル,マーケティング,スマートフォン,プランニング、事例">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<link rel="shortcut icon" href="/favicon.ico">
+
+<meta property="og:title" content="４つのフェーズ別、最適なアプリマーケティングとは？ |  D2Cスマイル"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="http://www.d2c-smile.com/201405282329"/>
+<meta property="og:image" content="http://www.d2c-smile.com/wordpress/wp-content/uploads/2014/05/0528_サムネイル.jpg" />
+<meta property="og:site_name" content="D2Cスマイル"/>
+<meta property="og:description" content="D2Cがお届けするモバイルマーケティングの総合オピニオンサイト" >
+<meta property="fb:admins" content="100006504944587" />
+
+<link rel="stylesheet" href="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/style.css">
+<link rel="stylesheet" href="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/css/style.css">
+<link rel="stylesheet" href="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/css/style-smt.css">
+<link rel="stylesheet" href="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/css/jquery.bxslider.css">
+<link rel="stylesheet" href="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/css/common.css">
+<link rel="stylesheet" href="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/css/post.css">
+<link rel="stylesheet" href="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/css/sns.css">
+
+<script src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/js/jquery.js"></script>
+<script src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/js/jquery.bxslider.js"></script>
+<script src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/js/common.js"></script>
+<script src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/js/scrolltopcontrol.js"></script>
+<!--snsjs-->
+<script type="text/javascript">
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+po.src = 'https://apis.google.com/js/plusone.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<!--/snsjs-->
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script> 
+<![endif]-->
+<script src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/js/ga.js"></script>
+</head>
+<body>
+<!--header-->
+<header>
+	<hgroup>
+		<h1><a href="http://www.d2c-smile.com"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/logo.png" alt="D2Cスマイル"></a></h1>
+	</hgroup>
+	<div id="snsBlock">
+		<div id="smtsearch" class="smt ro"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/btn-search-smt.jpg"></div>
+		<div id="shareTxt" class="pc">
+			<p class="wbf">SHARE</p>
+		</div>
+		<div id="snsPu" class="puBtn"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/btn-snspu.png" class="ro js-sns"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/dm-btn.png" class="dmbtn1"></div>
+		<ul id="headLink" class="pc">
+			<li><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/btn-rss.jpg" class="ro" id="rsspuBtn"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/dm-btn2.png" class="dmbtn2"></li>
+			<li><a href="https://seminar.d2c.co.jp/d2csmile/entry.html" target="_blank"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/btn-mm.jpg" class="ro"></a></li>
+		</ul>
+		<div class="cl"></div>
+	</div>
+	<!--/snsBlock-->
+	<!--form-->
+	<div id="hSearch" class="pc">
+	    <form role="search" method="get" id="searchform" action="http://www.d2c-smile.com/">
+	        <input type="text" value="" name="s" id="s" />
+	        <button type="submit"  id="searchsubmit" value="Search"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/btn-search.jpg" class="ro"></button>
+		</form>
+	</div>
+	<!--/form-->
+	
+	<!--puBlock-->
+	<!--SNSpu-->
+<div id="puBlock" style="top:-9999px">
+	<div id="puTop"></div>
+	<div id="puContents">
+		<div class="block1">
+			<p class="fl">スマイルを共有する</p>
+			<p id="puClose" class="fr"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/pu-close.png"></p>
+			<div class="cl"></div>
+		</div>
+		<dl class="puSns">
+			<dt class="fb">Facebook</dt>
+			<dd class="fb"><iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fsmiled2c&amp;width=280&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:285px; height:258px;" allowTransparency="true"></iframe></dd>
+		</dl>
+		<dl class="puSns">
+			<dt class="tw">Twitter</dt>
+			<dd>
+				<ul class="puSns2">
+					<li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.d2c-smile.com" data-text="D2Cスマイル" data-via="d2csmile" data-lang="ja">ツイート</a></li>
+					<li><a href="https://twitter.com/d2csmile" class="twitter-follow-button" data-show-count="false" data-lang="ja">@d2csmileさんをフォロー</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl class="puSns">
+			<dt class="gp">google+</dt>
+			<dd>
+				<ul class="puSns2">
+					<li class="gpl"><g:plusone size="medium" href="www.d2c-smile.com/"></g:plusone></li>
+					<li style="width:200px"><div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/109198154107000202583" data-rel="publisher"></div></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl class="puSns">
+			<dt class="hb">はてなブックマーク</dt>
+			<dd class="hb"><a href="http://b.hatena.ne.jp/entry/http://www.d2c-smile.com" class="hatena-bookmark-button" data-hatena-bookmark-title="D2Cスマイル | www.d2csmile.com" data-hatena-bookmark-layout="standard-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></dd>
+		</dl>
+	</div>
+	<div id="puBottom"></div>
+</div>
+<!--/SNSpu-->
+<!--SNSpu-->
+<div class="pc">
+	<div id="rssPu" style="display:none">
+		<div id="rssputop"></div>
+		<div id="rsspuContents">
+			<p id="rssClose" class="ro"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/pu-close.png"></p>
+			<p>スマイルの新着情報を<br>RSSフィードで漏れなくチェック！</p>
+			<div class="text"><a href="http://www.d2c-smile.com/?feed=rss2" class="ro" target="_blank">RSSフィードを登録</a></div>
+		</div>
+		<div id="rsspubtm"></div>
+	</div>
+</div>
+<!--/RSSpu-->	<!--/puBlock-->
+	<div class="cl"></div>
+	<div class="tagline">デジタルマーケティングの総合オピニオンサイト</div>
+</header>
+<!--smtSearch-->
+<div id="smtFormWrap" class="smt">
+	<div id="smtArea" style="display:none">
+		<div class="inner">
+			<form role="search" method="get" id="searchform" action="http://www.d2c-smile.com/">
+		        <input type="text" value="" name="s" id="s" />
+		        <button type="submit"  id="searchsubmit" value="Search"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/btn-search.jpg" class="ro"></button>
+			</form>
+			<div id="smtSearchClose"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/btn-close-search-smt.png" class="ro"></div>
+		</div>
+	</div>
+</div>
+<!--/header-->
+<div id="mainWrap">
+<!-- Contents -->              
+   
+         <!--
+		contents
+	-->
+	<div id="postWrap">
+		<article id="postContentsBlock">
+			<div class="ftStamp pc">
+				<a href="http://www.d2c-smile.com" class="home">HOME</a> &gt; ４つのフェーズ別、最適なアプリマーケティングとは？			</div>
+			<div class="posthead pc">
+				<div class="date">2014/05/28</div>
+				<div class="linkBox ro">
+					<div class="auth">砂賀 真琴</div>
+					<div class="authPhoto"><img alt='砂賀真琴' src='http://www.d2c-smile.com/wordpress/wp-content/uploads/2013/09/砂賀真琴_avatar_1378628464-24x24.jpg' class='avatar avatar-24 photo' height='24' width='24' /></div>
+					<a href="http://www.d2c-smile.com/author/makoto-sunaga"></a>
+				</div>
+				<div class="headSns">
+					<!--sns-->
+					<div class="snsCountBlock">
+						<div class="fb" id="socialarea_facebook_2329"><span class="count"></span></div>
+						<div class="tw" id="socialarea_twitter_2329"><span class="count"></span></div>
+						<div class="hb" id="socialarea_hatebu_2329"><span class="count"></span></div>
+						<div class="gp" id="socialarea_gplus_2329"><span class="count"></span></div>
+					</div>
+					<script type="text/javascript">
+						get_social_count_facebook("http://www.d2c-smile.com/201405282329", "socialarea_facebook_2329");
+						get_social_count_twitter("http://www.d2c-smile.com/201405282329", "socialarea_twitter_2329");
+						get_social_count_hatebu("http://www.d2c-smile.com/201405282329", "socialarea_hatebu_2329");
+						get_social_count_gplus("http://www.d2c-smile.com/201405282329", "socialarea_gplus_2329");
+					</script>
+				</div>
+			</div>
+			<div class="tagBlock pc">
+				<div class="tagttl">関連タグ</div>
+				<ul class="tagList">
+					<li class="ro"><a href="http://www.d2c-smile.com/tag/%e3%82%a2%e3%83%97%e3%83%aa" rel="tag">アプリ</a></li> <li class="ro"><a href="http://www.d2c-smile.com/tag/%e3%82%a2%e3%83%97%e3%83%aa%e3%83%97%e3%83%ad%e3%83%a2%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3" rel="tag">アプリプロモーション</a></li> <li class="ro"><a href="http://www.d2c-smile.com/tag/%e3%82%a2%e3%83%97%e3%83%aa%e3%83%9e%e3%83%bc%e3%82%b1%e3%83%86%e3%82%a3%e3%83%b3%e3%82%b0" rel="tag">アプリマーケティング</a></li> <li class="ro"><a href="http://www.d2c-smile.com/tag/game" rel="tag">ゲーム</a>				</ul>
+			</div>
+			<!--postBlock-->
+			<div id="postBlock">
+				<div class="cat"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/flag-app.png"></div>
+				<div class="date2 smt">2014/05/28</div>
+				<h1 class="ttl">４つのフェーズ別、最適なアプリマーケティングとは？</h1>
+				<!--/postContents-->
+				<div id="postContents">
+					<!--
+						入力
+					-->
+					<p>&nbsp;</p>
+<div class="imagebox"><img src="http://www.d2c-smile.com/wordpress/wp-content/uploads/2014/05/0528_サムネイル1.jpg" alt="0528_サムネイル" class="alignnone size-full wp-image-2347" /></div>
+<p>&nbsp;<br />
+&nbsp;</p>
+<p>どうもこんにちは。</p>
+<p>ゲーム事業本部の砂賀です。</p>
+<p>&nbsp;</p>
+<p>最近こんな言葉をよく耳にします。</p>
+<p>&nbsp;</p>
+<p><b>「リワードやＡＤＮＷのＣＰＩが高騰してきて下げられなくなってきた」</b></p>
+<p><b>「広告経由で獲得したユーザーの継続率やROAS</b><b>が悪くなってきた」</b></p>
+<p><b>「その他の有用なプロモーション手段って何をしたら良いか分からない」</b></p>
+<p>&nbsp;</p>
+<p>まぁ、自分自身も同様の課題にぶつかることもありますが、、、、(笑)</p>
+<p>みなさんも一度は考えたことはないでしょうか？</p>
+<p>&nbsp;</p>
+<p>アプリをリリースした直後は、比較的効果の高いプロモーションを実施出来ますが、その後、時間が経つにつれて効果は悪くなってくる傾向にあります。</p>
+<p>&nbsp;</p>
+<p>では、リリースしてからある程度時間が経ったアプリのプロモーション効果を更に高める為にはどうしたらよいのでしょうか？</p>
+<p>&nbsp;</p>
+<p>それは、ズバリ！</p>
+<p><strong>『アプリのライフサイクルに応じて適切なマーケティングを実施すること』</strong></p>
+<p>かと思っています。</p>
+<p>&nbsp;</p>
+<p>上記の点を考慮し、それぞれの時期に合わせた最適なマーケティングを実施していくことで、プロモーション効果を上げられると考えています。<br />
+&nbsp;</p>
+<p>あくまでも参考例ですが、これまでの経験から「導入期、成長期、成熟期、衰退期」の４つのフェーズに分けて１つずつ説明します。<br />
+&nbsp;</p>
+<p>自分のアプリが今どのフェーズなのか、想像しながら見て頂けるとわかりやすいかと思います。<br />
+&nbsp;<br />
+&nbsp;</p>
+<div class="imagebox"><img src="http://www.d2c-smile.com/wordpress/wp-content/uploads/2014/05/0528_001.jpg" alt="0528_001" class="alignnone size-full wp-image-2343" /></div>
+<p>&nbsp;<br />
+&nbsp;</p>
+<p class="wp-caption-dd"><b>①</b><b>導入期</b></p>
+<p>&nbsp;</p>
+<p>アプリをリリースしてから軌道に乗せるまでの準備期間です。</p>
+<p>ターゲットとなるコアユーザーをしっかりと獲得しつつ、ユーザーの反応を見ながらゲームの完成度を急ピッチで上げて行きます。</p>
+<p>&nbsp;</p>
+<p><b>◆集客施策</b></p>
+<p>・量＜質のプロモーションを実施。</p>
+<p>・コアターゲットとなるユーザー獲得の為、事前登録プロモーション、メディアＰＲを実施。</p>
+<p>&nbsp;</p>
+<p><b>◆運用施策</b></p>
+<p>・ステルスリリースを実施し、ユーザーの反応を定量・定性的に分析し、　課題点の抽出と改善を実施する。</p>
+<p>・レビューの★の数によってインストール率に差が生じる為、　不具合やクレームに繋がる問題点を早期に解決し、レビューを安定化させる。<br />
+&nbsp;<br />
+&nbsp;</p>
+<p class="wp-caption-dd"><strong>②成長期</strong></p>
+<p>導入期のチューニングを終え、いよいよ本格的なプロモーションを開始</p>
+<p>短期間でユーザー数を一気に拡大します。</p>
+<p>&nbsp;</p>
+<p><b>◆集客施策                     </b></p>
+<p>・量＞質のプロモーションに変更。</p>
+<p>・ランキング上位狙いでリワード広告を実施し、一気にユーザー獲得を進める。</p>
+<p>・リワード広告と並行してCPC広告を定常的に実施。</p>
+<p>・メディアやIPとタイアップして、コアターゲット層にアプローチ。</p>
+<p>&nbsp;</p>
+<p><b>◆運用施策</b></p>
+<p>・イベントやキャンペーン実施</p>
+<p>・PDCAを繰り返し精度向上させていく。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="wp-caption-dd"><strong>③成熟期</strong></p>
+<p>ここからがマーケティング手法が確立されていないので、悩ましいところですね…。</p>
+<p>&nbsp;</p>
+<p>やみくもにプロモーションを打っても効果が見合わなくなるため、しっかりと、戦略を練る事が重要です。</p>
+<p>&nbsp;</p>
+<p><b>◆集客施策</b></p>
+<p>・量&lt;質重視のプロモーションにシフト。</p>
+<p>⇒CPIの高騰、ROASの鈍化など、効果がどんどんと落ちてくるため、よりROI重視のプロモーション選定が必要です。</p>
+<p>・リワード：初期とは違い、ランキング中位狙いのリワード広告を実施。</p>
+<p>⇒もちろん、上位よりインストール数は落ちますが、ランキングをスクロールしてまで見てくれるユーザーの方は、上位の時と比べて相対的に質が高い傾向にあります。</p>
+<p>・CPC広告：初期のCPI重視からROAS重視の運用を強める。</p>
+<p>⇒キャンペーンやイベントの開始に合わせてプロモーションを実施すると、比較的効果が上がりやすいかと思います。</p>
+<p>・リターゲティング広告：過去にアプリで遊んでくれていた人をターゲットとして広告を配信する。</p>
+<p>⇒運用側の呼び戻し施策と連動させて実施することが望ましいです。</p>
+<p>&nbsp;</p>
+<p><b>■運用施策</b></p>
+<p>・　一定期間以上アクセスのないユーザー限定でキャンペーンを実施するなど、カムバック施策を強化。</p>
+<p>・新機能や新イベントの開発大幅リニューアルなどを仕込み、既存ユーザーさんの　リテンション向上、離脱ユーザーのカムバックを強化。これに合わせて、アイコンやスクリーンショットなども刷新して、「目新しさ」を演出してみると更に効果的。<br />
+・新規ユーザーのフォロー施策：初期から始めているユーザーとの「格差」が大きいと　新規ユーザーの定着の障害になります。早期に一定以上の強さに成長させてあげ、「格差」　を埋めてあげる施策を実施。</p>
+<div></div>
+<p>&nbsp;<br />
+&nbsp;</p>
+<p class="wp-caption-dd"><b>④衰退期</b></p>
+<p>悲しいですが、外部環境やユーザーの嗜好の変化に伴い、いつかはサービスが衰退してくる時期がやってきます。</p>
+<p>&nbsp;</p>
+<p>このフェーズに差し掛かってからは、なるべく、ダウントレンドを抑え、息の長いタイトルに出来るよう戦略を練っていきます。</p>
+<p>&nbsp;</p>
+<p><b>◆集客施策</b></p>
+<p>・投資フェーズは過ぎ、広告のROIはほぼ見合わないことから、</p>
+<p>基本的に有償プロモーションは実施しない。実施する場合はリターゲティング広告程度に限定。</p>
+<p>・自社送客など無償で出来るプロモーション手段を有効活用する。</p>
+<p>&nbsp;</p>
+<p><b>◆運用施策</b></p>
+<p>・基本的には成熟期と同様の施策を実施。</p>
+<p>有償プロモーションを実施しなくなるため、必然的にアクティブユーザーは減少していく。既存ユーザーのリテンションを高める施策の強化が重要になる。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="wp-caption-dd"><strong>まとめ</strong></p>
+<p>&nbsp;</p>
+<p>対象のアプリケーションのライフサイクルの状況に応じて、適切なマーケティング手法は異なってきます。</p>
+<p>&nbsp;</p>
+<p>定量・定性的なデータ・情報からそれを読み解き、しっかりと最適なマーケティングを実施していくと、更に効果を上げられるのでは</p>
+<p>ないかと思います。</p>
+<p>&nbsp;<br />
+&nbsp;</p>
+					<!--
+						//入力
+					-->
+									
+				</div>
+				<!--/postBlock-->
+			<div class="cl"></div>
+			</div>
+			<!--/postBlock-->
+			<div class="tagBlock smt">
+				<div class="tagttl">関連タグ</div>
+				<ul class="tagList">
+					<li class="ro"><a href="http://www.d2c-smile.com/tag/%e3%82%a2%e3%83%97%e3%83%aa" rel="tag">アプリ</a></li> <li class="ro"><a href="http://www.d2c-smile.com/tag/%e3%82%a2%e3%83%97%e3%83%aa%e3%83%97%e3%83%ad%e3%83%a2%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3" rel="tag">アプリプロモーション</a></li> <li class="ro"><a href="http://www.d2c-smile.com/tag/%e3%82%a2%e3%83%97%e3%83%aa%e3%83%9e%e3%83%bc%e3%82%b1%e3%83%86%e3%82%a3%e3%83%b3%e3%82%b0" rel="tag">アプリマーケティング</a></li> <li class="ro"><a href="http://www.d2c-smile.com/tag/game" rel="tag">ゲーム</a>				</ul>
+			</div>
+			
+			<div id="autherBlock">
+				<ul>
+					<li><a href="http://www.d2c-smile.com/author/makoto-sunaga">砂賀真琴のプロフィールを見る</a></li>
+					<li><a href="http://www.d2c-smile.com/author/">ライター一覧へ</a></li>
+				</ul>
+			</div>
+			<div id="ftSnsBlock">
+				<div id="postSns">
+					<ul>
+						<li>
+						<div class="pc"><fb:like href="http://www.d2c-smile.com/201405282329" send="false" layout="box_count" width="450" show_faces="true"></fb:like></div>
+						<div class="smt"><iframe src="//www.facebook.com/plugins/like.php?href=http://www.d2c-smile.com/201405282329&amp;width=120&amp;height=65&amp;colorscheme=light&amp;layout=box_count&amp;action=like&amp;show_faces=false&amp;send=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:71px; height:61px;" allowTransparency="true"></iframe></div>
+						</li>
+						<li class="tw"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.d2c-smile.com/201405282329" data-text="４つのフェーズ別、最適なアプリマーケティングとは？" data-lang="ja" data-count="vertical">ツイート</a></li>
+						<li></li>
+						<li><g:plusone size="Tall" href="http://www.d2c-smile.com/201405282329"></g:plusone></li>
+						<li><a href="http://b.hatena.ne.jp/entry/http://www.d2c-smile.com/201405282329" class="hatena-bookmark-button" data-hatena-bookmark-title="４つのフェーズ別、最適なアプリマーケティングとは？" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+					</ul>
+				</div>
+				<div class="cl"></div>
+				<div id="fbCmnt">
+					<div class="fb-comments" data-href="http://www.d2c-smile.com/201405282329" data-width="650"></div>
+				</div>
+			</div>
+			<div id="postPager">
+				<div class="prev ro linkBox"><a href="http://www.d2c-smile.com/201405262316" rel="prev">前の記事</div></a>							</div>
+		</article>
+		<!--/postContentsBlock-->
+				
+		<div id="authresult"></div>
+		
+		<!--postRelation-->
+		<div id="postRelation">
+			<div class="ttlBlock">
+				<div class="ttl">関連記事<span class="pc"> RELATED ARTICLES</span></div>
+				<div class="ttlBtm"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/bg-sideh1-smt.png"></div>
+			</div>
+			<ul id="relaList">
+								
+								
+				<li>
+					<div class="linkBox">
+						<div class="img">
+						<img width="245" height="163" src="http://www.d2c-smile.com/wordpress/wp-content/uploads/2014/05/top3-245x163.jpg" class="attachment-indexs wp-post-image" alt="top" /></div>
+						<div class="txtBlock">
+							<div class="date">2014/05/19</div>
+							<div class="txt">Wechat(微信)はLINEを超越した進化を遂げている？</div>
+						</div>
+						<div class="cat"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/flag-overseas.png" class="smt"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/flag-overseas-pc.png" class="pc"></div>
+						<a href="http://www.d2c-smile.com/201405192261"></a>
+						<div class="cl"></div>
+					</div>
+				</li>
+								
+				<li>
+					<div class="linkBox">
+						<div class="img">
+						<img width="245" height="163" src="http://www.d2c-smile.com/wordpress/wp-content/uploads/2014/05/top-245x163.png" class="attachment-indexs wp-post-image" alt="top" /></div>
+						<div class="txtBlock">
+							<div class="date">2014/05/15</div>
+							<div class="txt">【アプリ運用】コアファン獲得のための、4つのポイント！＜アンケート結果公開＞</div>
+						</div>
+						<div class="cat"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/flag-app.png" class="smt"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/flag-app-pc.png" class="pc"></div>
+						<a href="http://www.d2c-smile.com/201405152248"></a>
+						<div class="cl"></div>
+					</div>
+				</li>
+								
+				<li>
+					<div class="linkBox">
+						<div class="img">
+						<img width="245" height="163" src="http://www.d2c-smile.com/wordpress/wp-content/uploads/2014/05/iStock_000020431358Small-245x163.jpg" class="attachment-indexs wp-post-image" alt="iStock_000020431358Small" /></div>
+						<div class="txtBlock">
+							<div class="date">2014/05/09</div>
+							<div class="txt">モタモタしてたらチャンスを逃す！“即時性”こそモバイル活用の要。</div>
+						</div>
+						<div class="cat"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/flag-planning.png" class="smt"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/flag-planning-pc.png" class="pc"></div>
+						<a href="http://www.d2c-smile.com/201405092225"></a>
+						<div class="cl"></div>
+					</div>
+				</li>
+																		
+				
+			</ul>
+		</div>
+		<!--/postRelation-->
+		
+		<!--
+			authorRelation
+		-->
+			
+							<div id="postRelation" class="authlist">
+				<div class="ttlBlock">
+					<div class="ttl">このライターが書いた記事</div>
+					<div class="ttlBtm"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/bg-sideh1-smt.png"></div>
+				</div>
+				<ul id="relaList">
+										<li>
+						<div class="linkBox">
+							<div class="img">
+							<img width="245" height="163" src="http://www.d2c-smile.com/wordpress/wp-content/uploads/2014/02/s_thumbnail-245x163.jpg" class="attachment-indexs wp-post-image" alt="s_thumbnail" /></div>
+							<div class="txtBlock">
+								<div class="date">2014/02/10</div>
+								<div class="txt">事前登録ユーザーは本当にアクティブ率が高いの？～プロモーション別アクティブ率比較!!～</div>
+							</div>
+							<div class="cat"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/flag-app.png"></div>
+							<a href="http://www.d2c-smile.com/201402101590"></a>
+							<div class="cl"></div>
+						</div>
+					</li>
+					
+						
+				</ul><!--.loopend-->
+			</div>
+				<!--
+			/authorRelation
+		-->
+
+
+		
+		
+			
+	<script>
+	$(function(){
+		$('.authlist').prependTo("#authresult");
+	});
+	</script>
+</div><!--/postWrap-->
+  
+	<!--side-->
+	<aside>
+	<!--rankBlock-->
+	<article id="rankBlock">
+		<h1>記事ランキング</h1>
+		<div class="smt h1btm"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/bg-sideh1-smt.png" width="100%"></div>
+		<div id="rankchnge">
+			<div id="btnWeek" class="cr">週間</div>
+			<div id="btnMonth">月間</div>
+		</div>
+		<div id="weekRank" class="js-rankList">			
+									<!-- Wordpress Popular Posts Plugin v2.3.7 [SC] [weekly] [views] [custom] -->
+<ul class="wpp-list">
+
+			    <div class='inner'>
+					<dl class='rankBox linkBox'>
+						<dt class='txtC'>スマートフォン広告出稿状況　2014年4月 ～SmartphoneAdsReport（ビデオリサーチインタラクティブ）より～</dt>
+						<dd class='rankthum'><a href="http://www.d2c-smile.com/201405202288" title="スマートフォン広告出稿状況　2014年4月 ～SmartphoneAdsReport（ビデオリサーチインタラクティブ）より～" target="_self"><img src="http://www.d2c-smile.com/wordpress/wp-content/uploads/2014/05/top_05203-245x163.jpg" alt="" border="0" width="245" height="163" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a></dd>
+					</dl>
+				</div>
+
+			    <div class='inner'>
+					<dl class='rankBox linkBox'>
+						<dt class='txtC'>ドコモのiPhoneってどんな人が使ってるの？</dt>
+						<dd class='rankthum'><a href="http://www.d2c-smile.com/201404102114" title="ドコモのiPhoneってどんな人が使ってるの？" target="_self"><img src="http://www.d2c-smile.com/wordpress/wp-content/uploads/2014/04/top_0410-245x163.jpg" alt="" border="0" width="245" height="163" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a></dd>
+					</dl>
+				</div>
+
+			    <div class='inner'>
+					<dl class='rankBox linkBox'>
+						<dt class='txtC'>【アプリ運用】コアファン獲得のための、4つのポイント！＜アンケート結果公開＞</dt>
+						<dd class='rankthum'><a href="http://www.d2c-smile.com/201405152248" title="【アプリ運用】コアファン獲得のための、4つのポイント！＜アンケート結果公開＞" target="_self"><img src="http://www.d2c-smile.com/wordpress/wp-content/uploads/2014/05/top-245x163.png" alt="" border="0" width="245" height="163" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a></dd>
+					</dl>
+				</div>
+
+			    <div class='inner'>
+					<dl class='rankBox linkBox'>
+						<dt class='txtC'>【初心者向け】　アプリマーケ基本の「き」</dt>
+						<dd class='rankthum'><a href="http://www.d2c-smile.com/201405222308" title="【初心者向け】　アプリマーケ基本の「き」" target="_self"><img src="http://www.d2c-smile.com/wordpress/wp-content/uploads/2014/05/0522_top-245x163.jpg" alt="" border="0" width="245" height="163" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a></dd>
+					</dl>
+				</div>
+
+			    <div class='inner'>
+					<dl class='rankBox linkBox'>
+						<dt class='txtC'>ユーザーの検索動向からみる　～いつも忘れがちな父の日は、母の日と比べてどれくらい注目されているの？～</dt>
+						<dd class='rankthum'><a href="http://www.d2c-smile.com/201405132236" title="ユーザーの検索動向からみる　～いつも忘れがちな父の日は、母の日と比べてどれくらい注目されているの？～" target="_self"><img src="http://www.d2c-smile.com/wordpress/wp-content/uploads/2014/05/サムネイル_0513-245x163.jpg" alt="" border="0" width="245" height="163" class="wpp-thumbnail wpp_imgeditor_thumb wpp_featured" /></a></dd>
+					</dl>
+				</div>
+</ul>
+<!-- End Wordpress Popular Posts Plugin v2.3.7 -->
+			<!--
+				/reslult
+			-->
+		</div>
+		<div id="monthRank"  class="js-rankList" style="display:none" >
+									<!-- Wordpress Popular Posts Plugin v2.3.7 [SC] [monthly] [views] [custom] -->
+<ul class="wpp-list">
+
+			    <div class='inner'>
+					<dl class='rankBox linkBox'>
+						<dt class='txtC'>スマートフォン広告出稿状況　2014年4月 ～SmartphoneAdsReport（ビデオリサーチインタラクティブ）より～</dt>
+						<dd class='rankthum'><a href="http://www.d2c-smile.com/201405202288" title="スマートフォン広告出稿状況　2014年4月 ～SmartphoneAdsReport（ビデオリサーチインタラクティブ）より～" target="_self"><img src="http://www.d2c-smile.com/wordpress/wp-content/uploads/2014/05/top_05203-245x163.jpg" alt="" border="0" width="245" height="163" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a></dd>
+					</dl>
+				</div>
+
+			    <div class='inner'>
+					<dl class='rankBox linkBox'>
+						<dt class='txtC'>ドコモのiPhoneってどんな人が使ってるの？</dt>
+						<dd class='rankthum'><a href="http://www.d2c-smile.com/201404102114" title="ドコモのiPhoneってどんな人が使ってるの？" target="_self"><img src="http://www.d2c-smile.com/wordpress/wp-content/uploads/2014/04/top_0410-245x163.jpg" alt="" border="0" width="245" height="163" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a></dd>
+					</dl>
+				</div>
+
+			    <div class='inner'>
+					<dl class='rankBox linkBox'>
+						<dt class='txtC'>【アプリ運用】コアファン獲得のための、4つのポイント！＜アンケート結果公開＞</dt>
+						<dd class='rankthum'><a href="http://www.d2c-smile.com/201405152248" title="【アプリ運用】コアファン獲得のための、4つのポイント！＜アンケート結果公開＞" target="_self"><img src="http://www.d2c-smile.com/wordpress/wp-content/uploads/2014/05/top-245x163.png" alt="" border="0" width="245" height="163" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a></dd>
+					</dl>
+				</div>
+
+			    <div class='inner'>
+					<dl class='rankBox linkBox'>
+						<dt class='txtC'>ユーザーの検索動向からみる　～いつも忘れがちな父の日は、母の日と比べてどれくらい注目されているの？～</dt>
+						<dd class='rankthum'><a href="http://www.d2c-smile.com/201405132236" title="ユーザーの検索動向からみる　～いつも忘れがちな父の日は、母の日と比べてどれくらい注目されているの？～" target="_self"><img src="http://www.d2c-smile.com/wordpress/wp-content/uploads/2014/05/サムネイル_0513-245x163.jpg" alt="" border="0" width="245" height="163" class="wpp-thumbnail wpp_imgeditor_thumb wpp_featured" /></a></dd>
+					</dl>
+				</div>
+
+			    <div class='inner'>
+					<dl class='rankBox linkBox'>
+						<dt class='txtC'>2013年のスマートフォン広告の市場規模は？　～2013年通期（1～12月）～　※D2C独自調査</dt>
+						<dd class='rankthum'><a href="http://www.d2c-smile.com/201402201687" title="2013年のスマートフォン広告の市場規模は？　～2013年通期（1～12月）～　※D2C独自調査" target="_self"><img src="http://www.d2c-smile.com/wordpress/wp-content/uploads/2014/02/20140220-0-245x163.jpg" alt="" border="0" width="245" height="163" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a></dd>
+					</dl>
+				</div>
+</ul>
+<!-- End Wordpress Popular Posts Plugin v2.3.7 -->
+			
+		</div>
+		<div id="rankBottom" class="ro"><a href="http://www.d2c-smile.com/ranking/">もっと見る</a></div>
+	</article>
+	<script>
+	$(function(){
+		for(i=0;i<5;i++){
+			var j=i+1;
+			$('#weekRank .inner:eq('+i+') .rankBox,#monthRank .inner:eq('+i+') .rankBox').append('<dd class="rankIcon wbf rank'+j+'">'+j+'</dd>');	
+		}
+	});
+	</script>
+	<!--rankBlock-->
+	<!--sidebnr-->
+	<div id="sidebnr">
+		<a href="https://seminar.d2c.co.jp/d2csmile/entry.html" target="_blank"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/mm-bnr-pc.jpg" class="pcbnr">
+		<img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/mm-bnr-smt.jpg" class="smtbnr"></a>
+	</div>
+	<!--sidebnr-->
+	<!--catBlock-->
+	<article id="catBlock">
+		<h1>カテゴリから探す</h1>
+		<div class="smt h1btm"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/bg-sideh1-smt.png" width="100%"></div>
+		<div id="catList">
+			<ul>
+				<li class="catBox"><div class="inner"><a href="http://www.d2c-smile.com/ad/">広告</a></div></li>
+				<li class="catBox"><div class="inner"><a href="http://www.d2c-smile.com/planning/">プランニング</a></div></li>
+				<li class="catBox"><div class="inner"><a href="http://www.d2c-smile.com/site/">ウェブサイト</a></div></li>
+				<li class="catBox"><div class="inner"><a href="http://www.d2c-smile.com/app/">アプリ</a></div></li>
+				<li class="catBox"><div class="inner"><a href="http://www.d2c-smile.com/casestudy/">事例</a></div></li>
+				<li class="catBox"><div class="inner"><a href="http://www.d2c-smile.com/research/">調査</a></div></li>
+				<li class="catBox"><div class="inner"><a href="http://www.d2c-smile.com/overseas/">海外レポ</a></div></li>
+				<li class="catBox"><div class="inner"><a href="http://www.d2c-smile.com/interview/">インタビュー</a></div></li>
+				<li class="catBox fix"><div class="inner"><a href="http://www.d2c-smile.com/news/">お知らせ</a></div></li>
+				<li class="catBox fix"><div class="inner"><a href="http://www.d2c-smile.com/report/">イベントレポート</a></div></li>
+			</ul>
+		</div>
+		<div id="catBottom" class="ro"><a href="http://www.d2c-smile.com/author/">ライター一覧へ</a></div>
+	</article>
+	<!--catBlock-->
+	<!--tagCloud-->
+	<div id="tag-cloud">
+	<a href='http://www.d2c-smile.com/tag/sns' class='tag-link-73' title='11件のトピック' style='font-size: 18px ;'>SNS</a>
+<a href='http://www.d2c-smile.com/tag/%e3%82%b9%e3%83%9e%e3%83%bc%e3%83%88%e3%83%95%e3%82%a9%e3%83%b3%e5%ba%83%e5%91%8a' class='tag-link-38' title='14件のトピック' style='font-size: 20px ;'>スマートフォン広告</a>
+<a href='http://www.d2c-smile.com/tag/%e3%83%97%e3%83%ad%e3%83%a2%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3' class='tag-link-48' title='9件のトピック' style='font-size: 16.4px ;'>プロモーション</a>
+<a href='http://www.d2c-smile.com/tag/china' class='tag-link-41' title='8件のトピック' style='font-size: 15.4px ;'>中国</a>
+<a href='http://www.d2c-smile.com/tag/adtech' class='tag-link-50' title='5件のトピック' style='font-size: 12px ;'>ad:tech</a>
+<a href='http://www.d2c-smile.com/tag/technology' class='tag-link-17' title='7件のトピック' style='font-size: 14.4px ;'>テクノロジー</a>
+<a href='http://www.d2c-smile.com/tag/marketing' class='tag-link-31' title='21件のトピック' style='font-size: 23.2px ;'>マーケティング</a>
+<a href='http://www.d2c-smile.com/tag/%e3%82%a2%e3%82%b8%e3%82%a2' class='tag-link-60' title='5件のトピック' style='font-size: 12px ;'>アジア</a>
+<a href='http://www.d2c-smile.com/tag/%e3%82%a2%e3%83%97%e3%83%aa%e3%83%97%e3%83%ad%e3%83%a2%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3' class='tag-link-78' title='14件のトピック' style='font-size: 20px ;'>アプリプロモーション</a>
+<a href='http://www.d2c-smile.com/tag/%e3%82%a2%e3%83%97%e3%83%aa%e5%ba%83%e5%91%8a' class='tag-link-64' title='6件のトピック' style='font-size: 13.4px ;'>アプリ広告</a>
+<a href='http://www.d2c-smile.com/tag/app-store' class='tag-link-62' title='9件のトピック' style='font-size: 16.4px ;'>App Store</a>
+<a href='http://www.d2c-smile.com/tag/ios' class='tag-link-80' title='6件のトピック' style='font-size: 13.4px ;'>iOS</a>
+<a href='http://www.d2c-smile.com/tag/japan' class='tag-link-23' title='10件のトピック' style='font-size: 17.2px ;'>日本</a>
+<a href='http://www.d2c-smile.com/tag/%e3%82%a2%e3%83%97%e3%83%aa%e3%83%9e%e3%83%bc%e3%82%b1%e3%83%86%e3%82%a3%e3%83%b3%e3%82%b0' class='tag-link-81' title='8件のトピック' style='font-size: 15.4px ;'>アプリマーケティング</a>
+<a href='http://www.d2c-smile.com/tag/%e3%82%b9%e3%83%9e%e3%83%bc%e3%83%88%e3%83%95%e3%82%a9%e3%83%b3' class='tag-link-132' title='9件のトピック' style='font-size: 16.4px ;'>スマートフォン</a>
+<a href='http://www.d2c-smile.com/tag/%e3%83%aa%e3%83%af%e3%83%bc%e3%83%89%e5%ba%83%e5%91%8a' class='tag-link-61' title='8件のトピック' style='font-size: 15.4px ;'>リワード広告</a>
+<a href='http://www.d2c-smile.com/tag/o2o' class='tag-link-20' title='6件のトピック' style='font-size: 13.4px ;'>O2O</a>
+<a href='http://www.d2c-smile.com/tag/google-play' class='tag-link-63' title='8件のトピック' style='font-size: 15.4px ;'>Google Play</a>
+<a href='http://www.d2c-smile.com/tag/game' class='tag-link-15' title='12件のトピック' style='font-size: 18.6px ;'>ゲーム</a>
+<a href='http://www.d2c-smile.com/tag/%e3%82%b9%e3%83%9e%e3%83%bc%e3%83%88%e3%83%95%e3%82%a9%e3%83%b3%e3%82%b5%e3%82%a4%e3%83%88' class='tag-link-74' title='6件のトピック' style='font-size: 13.4px ;'>スマートフォンサイト</a>
+<a href='http://www.d2c-smile.com/tag/%e6%a4%9c%e7%b4%a2' class='tag-link-84' title='8件のトピック' style='font-size: 15.4px ;'>検索</a>
+<a href='http://www.d2c-smile.com/tag/%e8%aa%bf%e6%9f%bb' class='tag-link-40' title='10件のトピック' style='font-size: 17.2px ;'>調査</a>
+<a href='http://www.d2c-smile.com/tag/%e5%8b%95%e7%94%bb' class='tag-link-92' title='11件のトピック' style='font-size: 18px ;'>動画</a>
+<a href='http://www.d2c-smile.com/tag/android' class='tag-link-35' title='5件のトピック' style='font-size: 12px ;'>Android</a>
+<a href='http://www.d2c-smile.com/tag/%e4%ba%8b%e4%be%8b' class='tag-link-70' title='18件のトピック' style='font-size: 22px ;'>事例</a>
+<a href='http://www.d2c-smile.com/tag/iphone' class='tag-link-34' title='6件のトピック' style='font-size: 13.4px ;'>iPhone</a>
+<a href='http://www.d2c-smile.com/tag/%e3%82%a2%e3%83%97%e3%83%aa' class='tag-link-33' title='23件のトピック' style='font-size: 24px ;'>アプリ</a>
+<a href='http://www.d2c-smile.com/tag/%e3%83%97%e3%83%a9%e3%83%b3%e3%83%8b%e3%83%b3%e3%82%b0' class='tag-link-28' title='7件のトピック' style='font-size: 14.4px ;'>プランニング</a>
+<a href='http://www.d2c-smile.com/tag/%e3%82%bd%e3%83%bc%e3%82%b7%e3%83%a3%e3%83%ab%e3%82%b2%e3%83%bc%e3%83%a0' class='tag-link-46' title='7件のトピック' style='font-size: 14.4px ;'>ソーシャルゲーム</a>
+<a href='http://www.d2c-smile.com/tag/%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%9a%e3%83%bc%e3%83%b3' class='tag-link-87' title='8件のトピック' style='font-size: 15.4px ;'>キャンペーン</a>	</div>
+	<!--tagCloud-->
+</aside>	<!--/side-->
+	<div class="cl"></div>
+</div><!--/mainWrap-->
+
+<!--footer-->
+<footer>
+	<div class="inner">
+		<nav>
+			<ul>
+				<!--<li class="smt"><div class="ftFix" style="background-image:none"><a href="https://seminar.d2c.co.jp/d2csmile/entry.html" target="_blank"><img src="http://www.d2c-smile.com/wordpress/wp-content/themes/d2c/images/btn-ft-mm.jpg" class="ro"></a></div></li>-->
+				<li><div class="ftFix ro"><a href="http://www.d2c-smile.com/about/">ABOUT</a></div></li>
+				<li><div class="ftFix ro"><a href="https://www.d2c.co.jp/company/inquiry.html?utm_source=d2csmile_page&utm_medium=d2csmile_contact&utm_campaign=d2csmile" target="_blank">CONTACT</a></div></li>
+				<li class="pc ro"><a href="https://seminar.d2c.co.jp/d2csmile/entry.html" target="_blank">メールマガジン登録</a></li>
+			</ul>
+		</nav>
+		<div id="ftSnsBlock" class="pc">
+			<ul>
+				<li><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fsmiled2c&amp;width=120&amp;height=21&amp;colorscheme=light&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;send=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:21px;" allowTransparency="true"></iframe></li>
+				<li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.d2c-smile.com" data-lang="ja">ツイート</a></li>
+				<li class="gpl">
+					<g:plusone size="medium" href="www.d2c-smile.com/"></g:plusone>
+				</li>
+				<li><a href="http://b.hatena.ne.jp/entry/http://www.d2c-smile.com" class="hatena-bookmark-button" data-hatena-bookmark-title="テキスト" data-hatena-bookmark-layout="standard-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="copy" class="wbf">Copyright(C)D2C Inc. All rights reserved.</div>
+</footer>
+<!--/footer-->
+
+</body>
+</html>

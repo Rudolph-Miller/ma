@@ -1,0 +1,19 @@
+
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=iso-2022-jp">
+<TITLE>Franz Inc.: Allegro Common Lisp (Japanese)</TITLE>
+</HEAD>
+<!--
+<FRAMESET COLS="22%,*" BORDER=1 FRAMEBORDER=1 FRAMESPACING=5>
+-->
+<FRAMESET cols="22%,78%">
+<FRAME src="menu/menu_main.html" name="menu_frame">
+<FRAME src="base/aclhome_base.html" name="body_frame">
+<NOFRAMES>
+<BODY>
+<P><A href="menu/menu_main.html">menu/menu_main.html</A></P>
+</BODY>
+</NOFRAMES>
+</FRAMESET>
+</HTML>

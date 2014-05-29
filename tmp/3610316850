@@ -1,0 +1,2894 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" href="http://parts.blog.livedoor.jp/css/template.css?v=20130404" type="text/css" />
+<link rel="stylesheet" href="http://lifehack2ch.livedoor.biz/site.css?_=20140525124101" type="text/css" /><link rel="alternate" type="application/rss+xml" title="RSS" href="http://lifehack2ch.livedoor.biz/index.rdf" />
+<link rel="alternate" type="application/atom+xml" title="Atom" href="http://lifehack2ch.livedoor.biz/atom.xml" /><link rel="openid.server" href="http://auth.livedoor.com/openid/server" /><link rel="openid.delegate" href="http://profile.livedoor.com/sg3lqj86/" /><link rel="next" href="http://lifehack2ch.livedoor.biz/?p=2" />
+
+<meta name="google-site-verification" content="LbsptndGCfRdlVzWqIZ1f6FII4qMfM8x9iquKPBOAFI" />
+<META name="y_key" content="d20b5641614c2fd4">
+<meta name="robots" content="noodp"> 
+<meta name="revisit_after" content="7 days" />
+<meta name="keywords" content="ライフハック,弐式,Lifehack,お役立ち,お得,仕事術,恋愛術,料理レシピ,生活の知恵" />
+<meta name="description" content="生活に役立つライフハック術などを紹介してます" />
+<meta property="og:type" content="blog" />
+<meta property="og:title" content="ライフハックちゃんねる弐式" />
+<meta property="og:description" content="インターネットのいろんな所から生活に役立つライフハック術などを紹介します" />
+<meta property="og:url" content="http://lifehack2ch.livedoor.biz/" />
+<meta property="og:image" content="http://livedoor.blogimg.jp/sg3lqj86/imgs/4/e/4e766dc1.png" />
+<meta property="og:site_name" content="ライフハックちゃんねる弐式" />
+<meta property="og:locale" content="ja_JP" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@lifehack2ch" />
+<link rel="shortcut icon" href="http://lifehack2ch.livedoor.biz/L5.ico" />
+<link rel="alternate" media="handheld" type="application/xhtml+xml" href="http://blog.m.livedoor.jp/sg3lqj86/" />
+
+<title>ライフハックちゃんねる弐式</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript"><!--
+google_ad_client = 'ca-livedoor-blogmedia_js';
+google_ad_channel = 'blog082';
+google_ad_section = 'default';
+// -->
+</script>
+<script type="text/javascript" src="http://lifehack2ch.livedoor.biz/smoothscroll.js"></script>
+<!-- Add Header Tag // -->
+<script>
+(function($){$(document).ready(function(){af();});
+function af(){
+var a,ah,b,bh,c,cb,ch,l,p,t,w,wt,wl,wh,pa,pt,pl,nf,s,r;
+a=$('#gad-fixed');b=$('#right_a');c=$('#content_a');p='static';
+ah=600+30+110;t=a.offset().top;w=$(window);l=b.offset().left;
+s=function(){
+bh=b.height();ch=c.height();cb=c.offset().top+ch;
+wt=w.scrollTop();wl=w.scrollLeft();wh=w.height();
+nf=(wt>t)&&(ch>bh)?true:false;p=!nf?'static':(wt+ah)>cb?'absolute':'fixed';
+if(p==='fixed'){b.css({position:p,top:'',bottom:wh-ah,left:l-wl});}
+else if(p==='absolute'){b.css({position:p,top:cb-bh,bottom:'',left:l});}
+else{b.css({position:p});}
+};
+r=function(){
+b.css({position:'static'});wl=w.scrollLeft();l=b.offset().left;
+if(p==='fixed'){b.css({position:p,left:l-wl});}
+else if(p==='absolute'){b.css({position:p,left:l});}
+};
+w.on('load',s);w.on('scroll',s);w.on('resize',r);}})(jQuery);
+</script>
+<!-- // Add Header Tag -->
+
+</head>
+
+<body><script type="text/javascript"><!--
+var ld_blog_vars = {
+  provider_id : '1',
+  provider_name : 'livedoor',
+  id : '3258269',
+  name : 'sg3lqj86',
+  charset : 'euc-jp',
+  url : 'http://lifehack2ch.livedoor.biz/',
+  title : 'ライフハックちゃんねる弐式',
+  blog_design: {
+      version: 1
+  },
+  blog_category: {
+    id: '243',
+    permalink: 'http://blog.livedoor.com/category/243/',
+    name: 'まとめ(総合) > まとめ',
+    is_adult : 0,
+    is_gambling : 0,
+    hierarchy: [{ id: '431', name: 'まとめ(総合)', permalink: 'http://blog.livedoor.com/category/431/' },{ id: '243', name: 'まとめ', permalink: 'http://blog.livedoor.com/category/243/' }]
+  },
+  current_page : {
+    type : 'index',    page : '1'
+  },
+  articles : [  ]
+};
+//-->
+</script><div id="analyzer_tags" style="display:none">
+<script type="text/javascript" src="http://parts.blog.livedoor.jp/js/c2.js"></script>
+<script type="text/javascript">blog_counter('sg3lqj86', 3258269, 'http://lifehack2ch.livedoor.biz/')</script>
+</div><script type="text/javascript" src="http://parts.blog.livedoor.jp/js/smartphone.js?v=20131007"></script>
+<script type="text/javascript" src="http://lifehack2ch.livedoor.biz/settings/header.js"></script><script type="text/javascript" src="http://lifehack2ch.livedoor.biz/settings/ad.js"></script>
+<script type="text/javascript">
+var palette_src = 'http://parts.blog.livedoor.jp/img/emoji/1/palette.png';
+if (typeof IMAGE_CACHE == 'object' && IMAGE_CACHE['emoji_palette']) IMAGE_CACHE['emoji_palette'].src = palette_src;
+</script>
+<div id="top"></div>
+<div id="container">
+<div id="banner">
+<h1 class="blogtitle">
+<a href="http://lifehack2ch.livedoor.biz/">
+<img src="http://livedoor.blogimg.jp/sg3lqj86/imgs/2/c/2c255745.png" alt="ライフハックちゃんねる弐式インターネットのいろんな所から生活に役立つライフハック術などを紹介します">
+</a>
+</h1><div class="popularArticlesWithImage tag A"
+     id="popularArticlesWithImageTagUnik5b2hCAC9kb7S">
+<ul></ul>
+
+<script type="text/javascript" src="http://parts.blog.livedoor.jp/plugin/popular_articles_with_image_plugin.js?v=20130911"></script>
+<script type="text/html" id="tmpl-popularArticlesWithImageTagUnik5b2hCAC9kb7S">
+<li class="popularArticleWithImage">
+<div>
+<a href="<%= article.url %>" title="<%= article.title %>">
+<div class="image <%= article.image.thumbnail ? '' : 'noimage' %>">
+<% if (article.image.thumbnail) { %>
+<img id="image-popularArticlesWithImageTagUnik5b2hCAC9kb7S-<%= article.id%>"
+     src="<%= article.image.thumbnail %>"
+     alt="" />
+<% } %>
+</div>
+<% if (comment) { %>
+<div class="comment" id="comment-popularArticlesWithImageTagUnik5b2hCAC9kb7S-<%= article.id%>"></div>
+<% } else if (pv) { %>
+<div class="pv"><%= article.count %>PV</div>
+<% } else if (retweet) { %>
+<div class="retweet" id="retweet-popularArticlesWithImageTagUnik5b2hCAC9kb7S-<%= article.id%>"></div>
+<% } %>
+<div class="title" id="title-popularArticlesWithImageTagUnik5b2hCAC9kb7S-<%= article.id%>"><%= article.title %></div>
+</a>
+</div>
+</li>
+</script>
+
+<script type="text/javascript">
+(function(){
+var opts = {
+id:      'popularArticlesWithImageTagUnik5b2hCAC9kb7S',
+asPlugin: false,
+type:    'A',
+offset:  Number('0'),
+count:   Number('4'),
+width:   Number('800') || null,
+comment: false,
+pv: false,
+retweet: true,
+color: {
+ foreground:'#000000',
+ background:'#FFFFFF'
+},
+imageWidth:   Number('150'),
+imageHeight:   Number('100'),
+
+lastProperty: null
+};
+(new LDBlogPopularArticlesWithImagePlugin(opts)).init();
+})();
+</script>
+
+</div>
+
+</div>
+<div style="clear:both;"></div>
+
+<ul id="globalNavi">
+ <li id=navi1><a href="http://lifehack2ch.livedoor.biz/archives/cat_10024016.html">仕事が捗る</a></li>
+ <li><a href="http://lifehack2ch.livedoor.biz/archives/cat_10033315.html">世の中金</a></li> <li><a href="http://lifehack2ch.livedoor.biz/archives/cat_10023885.html">人生が始まる</a></li>
+ <li><a href="http://lifehack2ch.livedoor.biz/archives/cat_10023986.html">ピザデブ必見</a></li>
+ <li><a href="http://lifehack2ch.livedoor.biz/archives/cat_10023964.html">愛が欲しい</a></li>
+ <li><a href="http://lifehack2ch.livedoor.biz/archives/51297155.html">人気だった</a></li>
+ <li><a href="http://matome-blog.jp/-/%E3%83%A9%E3%82%A4%E3%83%95%E3%83%8F%E3%83%83%E3%82%AF%E3%81%A1%E3%82%83%E3%82%93%E3%81%AD%E3%82%8B%E5%BC%90%E5%BC%8F/-/-/-/-/-/1/">全部見たい</a></li>
+<li><a href="http://lifehack2ch.livedoor.biz/archives/50850899.html">アバウト</a></li>
+<li><a href="http://www.formzu.net/fgen.ex?ID=P49286395" target="_blank">ご連絡</a></li>
+</ul>
+
+<div id="blogcontainer">
+<p class="topicPath"><a href="http://lifehack2ch.livedoor.biz/">ライフハックちゃんねる弐式</a></p>
+<div id="headline">
+<!-- Google AdSense -->
+<div class="google-user-ad" style="float:left;margin:0;">
+<script type="text/javascript">ldb_user_ads.display('300x250');</script>
+</div>
+<!-- /Google AdSense -->
+<div style="margin:0 0 5px;font-size: 0.9em;">
+｜<a href="http://labo.tv/2chnews/">2chまとめのまとめ</a>｜
+<a href="http://matome-plus.com/" target="_blank">まとめ＋</a>｜
+<a href="http://owata-net.com/">ｵﾜﾀあんてな</a>｜
+<a href="http://www.antennash.com/">アンテナシェア</a>｜
+<a href="http://www11.plala.or.jp/apathy/">無気力↓</a>｜
+<a href="http://www.ne.jp/asahi/asame/shinbun/">朝目</a>｜<a href="http://girlsreader.com/">GirlsReader</a>｜
+<a href="http://boon.s349.xrea.com/" target="_blank">ﾌﾞｰﾝ</a>｜
+<a href="http://2ch.logpo.jp/">ﾛﾘﾎﾟ</a>｜
+<a href="http://2ch-c.net/">しぃ</a>｜
+<a href="http://www.shobon.jp/">ｼｮﾎﾞﾝ</a>｜
+<a href="http://www.konton.info/">はいよる</a>｜
+</div>
+
+<div id="rss1">
+<script type="text/javascript">
+<!--
+    var blogroll_channel_id = 53395;
+// -->
+</script>
+<script type="text/javascript" charset="utf-8" src="http://blogroll.livedoor.net/js/blogroll.js"></script>
+<link rel="stylesheet" type="text/css" href="http://blogroll.livedoor.net/css/default2.css" />
+</div>
+<div id="rss2">
+<script type="text/javascript">
+<!--
+    var blogroll_channel_id = 53396;
+// -->
+</script>
+<script type="text/javascript" charset="utf-8" src="http://blogroll.livedoor.net/js/blogroll.js"></script>
+<link rel="stylesheet" type="text/css" href="http://blogroll.livedoor.net/css/default2.css" />
+</div>
+</div>
+
+<div id="wrapper_a">
+<div id="content_a"> 
+<div id="blog">
+
+<!-- Google AdSense -->
+<div class="google-user-ad-728">
+<script type="text/javascript">ldb_user_ads.display('728x90');</script>
+</div>
+<!-- /Google AdSense -->
+
+<!-- Loop Start -->
+
+<!-- google_ad_section_start -->
+<div class="autopagerize_page_element">
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51511124',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51511124.html',
+       title : '人が辛い時に「あなたの為だから！」と正義だけを主張する人は怖い。',
+       categories : [ { id:'10024992', name:'コミュニケーション', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10024992.html' }, { id:'10024301', name:'心と身体', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10024301.html' } ],
+       date : '2014-05-29 07:30:46'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51511124.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51511124"
+    dc:title="人が辛い時に「あなたの為だから！」と正義だけを主張する人は怖い。"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51511124.html"
+    dc:subject="コミュニケーション,心と身体"
+    dc:description="138 ：名無しさん＠おーぷん：2014/05/08(木) 14:27:44 ID:ahZ1nZTOF リストラにあった日、誰かに話を聞いてほしくて店をやってる友達のＡ夫婦を訪ねた。閉店後を見計らって行き、Ａ嫁と話そうとした時に友達Ｂ(♀)が彼氏と一緒に現れた。某SNSにリストラの件を書いた事も"
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-29T07:30:46+09:00" />
+</rdf:RDF>
+-->
+<div id="ad_rs" class="ad_rs_b"></div>
+<div class="datetop"></div>
+<div class="fullbody">
+
+<div class="datebody"><h3 class="date">2014年05月29日</h3></div>
+<div class="blogbodytop"></div>
+<div class="blogbody"> 
+<div class="titlebody"><h2 class="title"><a href="http://lifehack2ch.livedoor.biz/archives/51511124.html">人が辛い時に「あなたの為だから！」と正義だけを主張する人は怖い。</a>
+<a href="http://b.hatena.ne.jp/my/add.confirm?url=http://lifehack2ch.livedoor.biz/archives/51511124.html">
+<img src="http://b.hatena.ne.jp/images/append.gif" width="16" height="12" style="border: none;" alt="このエントリーをはてなブックマークに追加する" title="このエントリーをはてなブックマークに追加する" /></a><a href="http://b.hatena.ne.jp/entry/http://lifehack2ch.livedoor.biz/archives/51511124.html">
+<img src="http://b.hatena.ne.jp/entry/image/normal/http://lifehack2ch.livedoor.biz/archives/51511124.html" style="border: none;" alt="このエントリーを含むはてなブックマーク" title="このエントリーを含むはてなブックマーク" /></a>
+</h2>
+</div>
+<div class="posted1">
+
+<span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51511124.html#comments"><span class="commentprc">8</span><span class="commentpr">Comments</span></a></span>｜<a href="http://lifehack2ch.livedoor.biz/archives/cat_10024992.html">コミュニケーション</a>｜<a href="http://lifehack2ch.livedoor.biz/archives/cat_10024301.html">心と身体</a>｜2014年05月29日 07:30</div>
+
+<div class="main"><div  class="p_img">
+<a  href="http://www.amazon.co.jp/exec/obidos/ASIN/4766785738/nishiky24-22/ref=nosim/">
+<img  src="http://livedoor.blogimg.jp/sg3lqj86/imgs/1/4/146da2de.jpg" class="pict" border="0"></a></div><br />
+<div  id="res_138"><span  class="t_name">138 ：<span  style="color: GREEN;">名無しさん＠おーぷん</span>：2014/05/08(木) 14:27:44 <span  style="font-weight: bold; color: RED;">ID:ahZ1nZTOF</span></span> <p  class="r4">リストラにあった日、誰かに話を聞いてほしくて店をやってる友達のＡ夫婦を訪ねた。<br />閉店後を見計らって行き、Ａ嫁と話そうとした時に友達Ｂ(♀)が彼氏と一緒に現れた。<br />某SNSにリストラの件を書いた事もあって「(私)ちゃんSNS見たよー！ひどいよねー！」とＢが言うので「うん。それもあってＡ嫁に愚痴りに来たんだよー。」と言った。<br />その後すぐ居酒屋に場所を移したが、Ｂは自分と彼氏の話と職場のグチ。<br />閉店作業で遅れて来たＡ夫は、冗談のつもりだろうけど、私が何かを言う度に「うるせぇな〜、このクビ〜！」と大声で言う。<br />Ａ嫁はＢを早く帰そうと促してくれたり、Ａ夫を叱ったりしてくれてたのが救いだった。<br />結局、私のリストラ話は全くできず、後でＡ嫁から「話聞いてあげられなくてごめん」とメールが来た。<br /><br />その２日後、Ａ夫の誕生日なので、同じメンツでまた集まる事になった。<br />リストラや２日前の事もあり気が乗らなかったが、前々からの約束だし、と参加。<br />みんなで飲んでると、Ａ嫁が疲れて寝てしまい、その後酔ってるせいかＡ夫とＢが２人で私の仕事や社会人としてよくない所を並べ立て説教(と言っても具体的な内容ではなく、心構えとか性格とか抽象的な話)。<br />もちろん「何だよクビのくせに〜！」のギャグ付。<br />補足しておくと、Ａ夫は肉体系か飲食、Ｂはアパレル販売員しか経験がない。<br />私は事務や営業で、業種や職種が違えば色々違うだろうと、２人の仕事には口を出した事はない。<br />しかも、今回のリストラには私に悪い部分はなく、純粋に業績悪化によるもので、社員２人のうち１人を切らないと追加融資が受けられないというものだった。<br />引き抜きを受けてその会社に転職した事もあり、退職金も破格の金額をもらったし、業務上の落ち度はなかったと聞いている。<br />だから、本当に仕事を失ったショックで、誰かに話を聞いてもらい、あわよくば慰めてもらいたい状態だった。<br />なのに、何でこの人達は私の仕事の内容も理解した事もないのに(話してもＰＣや会社組織なんかの社会の仕組み的な内容になるとわからないみたい)自分達が正しいお前が悪いと私に説教してるんだろう？と悲しい気持ちになり、家に帰ってからリストラのショックと併せて大号泣。<br />Ａ嫁は切りたくないけど、Ａ夫が必ず付いてくるし、他の人間関係的に微妙に会わなくてはいけない機会がある。<br />Ｂは可愛くてチヤホヤされるのに慣れてるのか、悪びれたりする事はなく自分が被害者的な顔をするタイプなので、今回の事を言っても私が悪い方向に持っていかれるだろうと思うと、会いたくなくなった。<br /><br />人が辛い時に「あなたの為だから！」と正義だけを主張する人は怖い。<br />現在進行形で完全に切れてないし、Ａ嫁とは切れたくないのが困りもの。 </p></div><br /><div class="continues"><a href="http://lifehack2ch.livedoor.biz/archives/51511124.html"><img src="http://livedoor.blogimg.jp/sg3lqj86/imgs/7/6/76ba0986.gif" border="0"></a></div><div id="ad2"></div>
+</div>
+
+<!-- Google AdSense -->
+<div class="google-user-ad">
+<script type="text/javascript">ldb_user_ads.display('300x250');</script>
+</div>
+<!-- /Google AdSense -->
+
+<div class="posted"><dl class="article-tags type-internal"><dt>タグ ：</dt><dd><a href="http://lifehack2ch.livedoor.biz/tag/%E5%8F%8B%E4%BA%BA%E9%96%A2%E4%BF%82" title="タグ一覧ページへ" rel="tag">友人関係</a></dd></dl>
+ | 
+<!-- AddClips Code START -->
+<script type="text/javascript">
+<!--
+  AddClipsUrl    = 'http://lifehack2ch.livedoor.biz/archives/51511124.html';
+  AddClipsTitle  = '人が辛い時に「あなたの為だから！」と正義だけを主張する人は怖い。';
+  AddClipsId = '12344997A407A';
+  AddClipsBcolor='#78BE44';
+  AddClipsNcolor='#D1E9C0';
+  AddClipsTcolor='#666666';
+  AddClipsType='3';
+  AddClipsVerticalAlign='top'; 
+  AddClipsDefault='bookmark'; 
+// -->
+</script><script type="text/javascript" src="http://js.addclips.org/v2/addclips.js" charset="utf-8"></script>
+<!-- AddClips Code END -->
+</div>
+
+</div>
+<div class="blogbodybottom"></div>
+
+<!-- 二番目以降のアーティクル -->
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51512691',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51512691.html',
+       title : '【考察】なぜ女性は茶髪に染めたがるのか【疑問】',
+       categories : [ { id:'10034728', name:'男女', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10034728.html' }, { id:'10024191', name:'ファッション', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10024191.html' } ],
+       date : '2014-05-29 00:00:03'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51512691.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51512691"
+    dc:title="【考察】なぜ女性は茶髪に染めたがるのか【疑問】"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51512691.html"
+    dc:subject="男女,ファッション"
+    dc:description="1 ：名無しさん＠おーぷん：2014/05/17(土) 15:53:37 ID:AqbJ0ogqT なんでやと思う？黒髪より老けて見えるし、髪も傷む、金もかかる周りも大抵茶髪やし、個性もあまりでないほんまに疑問！ "
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-29T00:00:03+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51512691"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51512691.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/c/f/cfd14ae3.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月29日 00:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51512691.html">【考察】なぜ女性は茶髪に染めたがるのか【疑問】</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10034728.html">男女</a>｜<a href="http://lifehack2ch.livedoor.biz/archives/cat_10024191.html">ファッション</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51512691.html#comments"><span class="commentprc">104</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+<div class="dateend"></div>
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51513646',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51513646.html',
+       title : '風呂にスマホ持っていって汗だくになる奴ｗｗｗｗｗｗ',
+       categories : [ { id:'10024989', name:'美容・健康', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10024989.html' }, { id:'', name:'', permalink:'' } ],
+       date : '2014-05-28 22:00:52'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51513646.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51513646"
+    dc:title="風呂にスマホ持っていって汗だくになる奴ｗｗｗｗｗｗ"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51513646.html"
+    dc:subject="美容・健康"
+    dc:description="1 ：名無しさん＠おーぷん：2014/05/26(月) 20:17:40 ID:As5wWKet3 何もないと熱くて耐えられないけどジップロックに入れて持ち込めばものすごい汗だくになるまで入れるよね痩せるし飯もうまくなるしいい事づく目ちゃんと空気入らないようにしておけば問題無いし "
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-28T22:00:52+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51513646"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51513646.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/3/6/3646270c.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月28日 22:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51513646.html">風呂にスマホ持っていって汗だくになる奴ｗｗｗｗｗｗ</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10024989.html">美容・健康</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51513646.html#comments"><span class="commentprc">18</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51513814',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51513814.html',
+       title : '働くことを社会に出るって言うけどさ',
+       categories : [ { id:'10030886', name:'就職・転職', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10030886.html' }, { id:'10024302', name:'社会・文化', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10024302.html' } ],
+       date : '2014-05-28 20:00:27'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51513814.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51513814"
+    dc:title="働くことを社会に出るって言うけどさ"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51513814.html"
+    dc:subject="就職・転職,社会・文化"
+    dc:description="1 ：名無しさん＠おーぷん：2014/05/28(水) 03:28:15 ID:S7iPMf8Rv 働くことってその業種の狭い世界に入ることなのにそれを社会なんて広い言葉で表すのっておかしくね？ "
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-28T20:00:27+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51513814"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51513814.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/a/b/ab166fac.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月28日 20:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51513814.html">働くことを社会に出るって言うけどさ</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10030886.html">就職・転職</a>｜<a href="http://lifehack2ch.livedoor.biz/archives/cat_10024302.html">社会・文化</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51513814.html#comments"><span class="commentprc">31</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51513805',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51513805.html',
+       title : 'iPhoneが最高のスマートフォンである理由',
+       categories : [ { id:'10034920', name:'iPhone', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10034920.html' }, { id:'', name:'', permalink:'' } ],
+       date : '2014-05-28 18:00:35'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51513805.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51513805"
+    dc:title="iPhoneが最高のスマートフォンである理由"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51513805.html"
+    dc:subject="iPhone"
+    dc:description="0000：ライフハカー：810/1000/81XX:XX:XX,XX ID:st.ni.co-loverどんなに魅力あるスマートフォンが出てこようとも、結局はiPhoneがはるか上を行くんだ。Appleにならそれができるんだよ。"
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-28T18:00:35+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51513805"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51513805.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/6/3/63973c97.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月28日 18:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51513805.html">iPhoneが最高のスマートフォンである理由</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10034920.html">iPhone</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51513805.html#comments"><span class="commentprc">42</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51513770',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51513770.html',
+       title : 'お前らこの精神診断チェックやってみろｗｗｗｗｗｗｗｗｗ',
+       categories : [ { id:'10024992', name:'コミュニケーション', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10024992.html' }, { id:'10024301', name:'心と身体', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10024301.html' } ],
+       date : '2014-05-28 11:30:44'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51513770.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51513770"
+    dc:title="お前らこの精神診断チェックやってみろｗｗｗｗｗｗｗｗｗ"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51513770.html"
+    dc:subject="コミュニケーション,心と身体"
+    dc:description="0000：ライフハカー：810/1000/81XX:XX:XX,XX ID:st.ni.co-loveratmentalhealth.jphttp://atmentalhealth.jp/syakaifuan/この「社会不安障害&#160;&#160;診断チェック」はここ１週間の自分自身の状態を数値で測定して客観的に無料で社会不安障害の傾向をチェックすることが出"
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-28T11:30:44+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51513770"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51513770.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/c/8/c8d6158f-s.png"/></a></div>
+
+<div class="entrylistbody">
+2014年05月28日 11:30
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51513770.html">お前らこの精神診断チェックやってみろｗｗｗｗｗｗｗｗｗ</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10024992.html">コミュニケーション</a>｜<a href="http://lifehack2ch.livedoor.biz/archives/cat_10024301.html">心と身体</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51513770.html#comments"><span class="commentprc">49</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51513519',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51513519.html',
+       title : '「一人暮らしで節約したければ自炊しろ」←これ嘘',
+       categories : [ { id:'10024991', name:'生活', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10024991.html' }, { id:'10023986', name:'ダイエット・食生活', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10023986.html' } ],
+       date : '2014-05-28 07:30:31'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51513519.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51513519"
+    dc:title="「一人暮らしで節約したければ自炊しろ」←これ嘘"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51513519.html"
+    dc:subject="生活,ダイエット・食生活"
+    dc:description="1 ：以下、名無しにかわりましてVIPがお送りします：2014/01/21(火) 13:37:39.02 ID:yzCOIJvN0 スーパーの弁当の方が安く上がる "
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-28T07:30:31+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51513519"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51513519.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/4/f/4f5fc24e.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月28日 07:30
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51513519.html">「一人暮らしで節約したければ自炊しろ」←これ嘘</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10024991.html">生活</a>｜<a href="http://lifehack2ch.livedoor.biz/archives/cat_10023986.html">ダイエット・食生活</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51513519.html#comments"><span class="commentprc">68</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51513647',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51513647.html',
+       title : 'コミュ障なのに初対面は平気な奴ｗｗｗｗｗｗｗ',
+       categories : [ { id:'10024992', name:'コミュニケーション', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10024992.html' }, { id:'', name:'', permalink:'' } ],
+       date : '2014-05-28 00:00:58'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51513647.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51513647"
+    dc:title="コミュ障なのに初対面は平気な奴ｗｗｗｗｗｗｗ"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51513647.html"
+    dc:subject="コミュニケーション"
+    dc:description="1 ：名無しさん＠おーぷん：2014/05/26(月) 18:59:19 ID:9bWQwnhCf わたしです接客業はできるのに同僚とはあうあうあーレベル "
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-28T00:00:58+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51513647"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51513647.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/7/c/7c9c41c5.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月28日 00:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51513647.html">コミュ障なのに初対面は平気な奴ｗｗｗｗｗｗｗ</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10024992.html">コミュニケーション</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51513647.html#comments"><span class="commentprc">76</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+<div class="dateend"></div>
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51513648',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51513648.html',
+       title : '大学2年だけど今のうちにヤっとくこと教えて',
+       categories : [ { id:'10034921', name:'大学生活', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10034921.html' }, { id:'', name:'', permalink:'' } ],
+       date : '2014-05-27 22:00:22'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51513648.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51513648"
+    dc:title="大学2年だけど今のうちにヤっとくこと教えて"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51513648.html"
+    dc:subject="大学生活"
+    dc:description="1 ：名無しさん＠おーぷん：2014/05/25(日) 22:49:11 ID:Jd5X6Xs4Q もう意味がない毎日すぎて嫌なんだ出来れば勉強以外で "
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-27T22:00:22+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51513648"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51513648.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/b/9/b990928a.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月27日 22:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51513648.html">大学2年だけど今のうちにヤっとくこと教えて</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10034921.html">大学生活</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51513648.html#comments"><span class="commentprc">17</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51513649',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51513649.html',
+       title : 'おまえらが使ってる物でこれだけはおすすめ出来るってもの教えろ下さい',
+       categories : [ { id:'10024991', name:'生活', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10024991.html' }, { id:'10034759', name:'お買い物', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10034759.html' } ],
+       date : '2014-05-27 20:00:38'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51513649.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51513649"
+    dc:title="おまえらが使ってる物でこれだけはおすすめ出来るってもの教えろ下さい"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51513649.html"
+    dc:subject="生活,お買い物"
+    dc:description="4 ：名無しさん＠おーぷん：2014/05/21(水) 13:49:19 ID:8dq3ZtsOX 電気ケトル家でも出張でも大活躍 "
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-27T20:00:38+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51513649"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51513649.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/4/9/49196c6f.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月27日 20:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51513649.html">おまえらが使ってる物でこれだけはおすすめ出来るってもの教えろ下さい</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10024991.html">生活</a>｜<a href="http://lifehack2ch.livedoor.biz/archives/cat_10034759.html">お買い物</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51513649.html#comments"><span class="commentprc">21</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51513625',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51513625.html',
+       title : '女って告白されるのと告白するのとどっちがいいの？　女「ぶっちゃけ愛されるほうが楽」',
+       categories : [ { id:'10023964', name:'恋愛・結婚', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10023964.html' }, { id:'10034728', name:'男女', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10034728.html' } ],
+       date : '2014-05-27 18:00:26'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51513625.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51513625"
+    dc:title="女って告白されるのと告白するのとどっちがいいの？　女「ぶっちゃけ愛されるほうが楽」"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51513625.html"
+    dc:subject="恋愛・結婚,男女"
+    dc:description="0000：ライフハカー：810/1000/81XX:XX:XX,XX ID:st.ni.co-lover女性は愛される方が幸せ？告白するのとされるの、どちらが幸せになれるのでしょうか。働く女性の本音とは"
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-27T18:00:26+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51513625"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51513625.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/3/1/3130d38c.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月27日 18:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51513625.html">女って告白されるのと告白するのとどっちがいいの？　女「ぶっちゃけ愛されるほうが楽」</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10023964.html">恋愛・結婚</a>｜<a href="http://lifehack2ch.livedoor.biz/archives/cat_10034728.html">男女</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51513625.html#comments"><span class="commentprc">28</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51513597',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51513597.html',
+       title : '婚活女子悲報！ 妻を専業主婦にすることは、家を買うよりも大きな出費であることが判明',
+       categories : [ { id:'10033315', name:'お金の話', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10033315.html' }, { id:'10023964', name:'恋愛・結婚', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10023964.html' } ],
+       date : '2014-05-27 12:00:58'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51513597.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51513597"
+    dc:title="婚活女子悲報！ 妻を専業主婦にすることは、家を買うよりも大きな出費であることが判明"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51513597.html"
+    dc:subject="お金の話,恋愛・結婚"
+    dc:description="0000：ライフハカー：810/1000/81XX:XX:XX,XX ID:st.ni.co-lover高学歴女性までもが専業主婦を目指す昨今。しかし男性視点に立ってみると気軽に『専業主婦になってもいいよ』…なんて言えないかもとあるクレカ愛好家の専業主婦とマイホームに関するブログ記事が話題に"
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-27T12:00:58+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51513597"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51513597.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/a/5/a59ac1ea.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月27日 12:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51513597.html">婚活女子悲報！ 妻を専業主婦にすることは、家を買うよりも大きな出費であることが判明</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10033315.html">お金の話</a>｜<a href="http://lifehack2ch.livedoor.biz/archives/cat_10023964.html">恋愛・結婚</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51513597.html#comments"><span class="commentprc">68</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51513594',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51513594.html',
+       title : '助けて！大学生が全然勉強しないの！ 大学生の勉強離れ鮮明 「週６時間以上」３割切る',
+       categories : [ { id:'10034921', name:'大学生活', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10034921.html' }, { id:'10030886', name:'就職・転職', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10030886.html' } ],
+       date : '2014-05-27 11:15:49'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51513594.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51513594"
+    dc:title="助けて！大学生が全然勉強しないの！ 大学生の勉強離れ鮮明 「週６時間以上」３割切る"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51513594.html"
+    dc:subject="大学生活,就職・転職"
+    dc:description="0000：ライフハカー：810/1000/81XX:XX:XX,XX ID:st.ni.co-lover国の研究所が大学生の勉強時間について調べたところ勉強離れが浮き彫りに。インターネッツでは賛否両論の声が。"
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-27T11:15:49+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51513594"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51513594.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/9/4/94f72a3f.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月27日 11:15
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51513594.html">助けて！大学生が全然勉強しないの！ 大学生の勉強離れ鮮明 「週６時間以上」３割切る</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10034921.html">大学生活</a>｜<a href="http://lifehack2ch.livedoor.biz/archives/cat_10030886.html">就職・転職</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51513594.html#comments"><span class="commentprc">58</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51513515',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51513515.html',
+       title : '【ジョブズ歓喜】 日本人にもケース使わない「スマホ裸族」が増加中　擦り傷を楽しむ文化も',
+       categories : [ { id:'10029764', name:'スマートフォン・ガジェット', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10029764.html' }, { id:'10024302', name:'社会・文化', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10024302.html' } ],
+       date : '2014-05-27 07:30:58'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51513515.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51513515"
+    dc:title="【ジョブズ歓喜】 日本人にもケース使わない「スマホ裸族」が増加中　擦り傷を楽しむ文化も"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51513515.html"
+    dc:subject="スマートフォン・ガジェット,社会・文化"
+    dc:description="ケース使わない「スマホ裸族」が増加&#160;&#160;擦り傷を楽しむ文化も - ライブドアニュース&#160;&#160;携帯各キャリアによる夏モデルの発表が一段落し、新製品が出そろった。ネットや雑誌で新しいスマートフォンの画像をみながら、機種変更するならどれにしようかと考えると同時にス"
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-27T07:30:58+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51513515"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51513515.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/c/6/c6b9a22a.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月27日 07:30
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51513515.html">【ジョブズ歓喜】 日本人にもケース使わない「スマホ裸族」が増加中　擦り傷を楽しむ文化も</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10029764.html">スマートフォン・ガジェット</a>｜<a href="http://lifehack2ch.livedoor.biz/archives/cat_10024302.html">社会・文化</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51513515.html#comments"><span class="commentprc">44</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51513522',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51513522.html',
+       title : 'お前らよく美人県ブス県って言うけど',
+       categories : [ { id:'10027617', name:'おもしろ', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10027617.html' }, { id:'10034728', name:'男女', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10034728.html' } ],
+       date : '2014-05-27 00:00:33'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51513522.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51513522"
+    dc:title="お前らよく美人県ブス県って言うけど"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51513522.html"
+    dc:subject="おもしろ,男女"
+    dc:description="1 ：名無しさん＠おーぷん：2014/05/25(日) 08:19:33 ID:tBuHVcsK5 イケメン県不細工県がないのは何で？ "
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-27T00:00:33+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51513522"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51513522.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/f/f/ff18460f.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月27日 00:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51513522.html">お前らよく美人県ブス県って言うけど</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10027617.html">おもしろ</a>｜<a href="http://lifehack2ch.livedoor.biz/archives/cat_10034728.html">男女</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51513522.html#comments"><span class="commentprc">16</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+<div class="dateend"></div>
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51513520',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51513520.html',
+       title : '敷かれたレールに乗ってるだけの人生歩んできてるけど',
+       categories : [ { id:'10023885', name:'人生', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10023885.html' }, { id:'', name:'', permalink:'' } ],
+       date : '2014-05-26 22:00:27'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51513520.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51513520"
+    dc:title="敷かれたレールに乗ってるだけの人生歩んできてるけど"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51513520.html"
+    dc:subject="人生"
+    dc:description="1 ：名無しさん＠おーぷん：2014/05/26(月) 06:21:26 ID:9o1DhFe2z 質問ある？ちなみに公立中学出て自称進学高校出てBラン私大出て一流企業勤務です。 "
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-26T22:00:27+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51513520"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51513520.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/8/f/8fa5c30b.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月26日 22:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51513520.html">敷かれたレールに乗ってるだけの人生歩んできてるけど</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10023885.html">人生</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51513520.html#comments"><span class="commentprc">32</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51513516',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51513516.html',
+       title : 'カラオケで歌いたくなるDBの曲で打線組んだｗｗｗｗｗｗｗ',
+       categories : [ { id:'10023962', name:'音楽・芸術', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10023962.html' }, { id:'', name:'', permalink:'' } ],
+       date : '2014-05-26 20:00:39'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51513516.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51513516"
+    dc:title="カラオケで歌いたくなるDBの曲で打線組んだｗｗｗｗｗｗｗ"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51513516.html"
+    dc:subject="音楽・芸術"
+    dc:description="1 ：名無しさん＠おーぷん：2014/05/25(日) 21:00:48 ID:iIc99lhbn １&#160;&#160;中&#160;&#160;CHA-LA HEAD-CHA-LA２&#160;&#160;二&#160;&#160;Dont't you see！３&#160;&#160;右&#160;&#160;ロマンティックあげるよ４&#160;&#160;投&#160;&#160;DANDAN心魅かれてく５&#160;&#160;三&#160;&#160;Blue Velvet６&#160;&#160;遊&#160;&#160;僕達は天使だった７&#160;&#160;三&#160;&#160;ひと"
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-26T20:00:39+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51513516"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51513516.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/a/7/a79acff4.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月26日 20:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51513516.html">カラオケで歌いたくなるDBの曲で打線組んだｗｗｗｗｗｗｗ</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10023962.html">音楽・芸術</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51513516.html#comments"><span class="commentprc">27</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51513518',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51513518.html',
+       title : 'ノンアルコールビールは不味いという風潮ｗｗｗｗｗｗｗｗｗ',
+       categories : [ { id:'10029740', name:'酒・ドリンク', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10029740.html' }, { id:'', name:'', permalink:'' } ],
+       date : '2014-05-26 18:00:31'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51513518.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51513518"
+    dc:title="ノンアルコールビールは不味いという風潮ｗｗｗｗｗｗｗｗｗ"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51513518.html"
+    dc:subject="酒・ドリンク"
+    dc:description="1 ：風吹けば名無し：2014/02/11(火) 05:07:04.16 ID:jfsDADjx 一理ない、ビールのがくっそまずいわ  純粋に味としてノンアルの方が旨い、しかも飲んでも運転できる    ちな酒は飲める "
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-26T18:00:31+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51513518"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51513518.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/f/d/fdc525f9.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月26日 18:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51513518.html">ノンアルコールビールは不味いという風潮ｗｗｗｗｗｗｗｗｗ</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10029740.html">酒・ドリンク</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51513518.html#comments"><span class="commentprc">30</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51511371',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51511371.html',
+       title : 'スピッツの歌詞意味分からなすぎだろｗｗｗｗｗｗｗ',
+       categories : [ { id:'10023962', name:'音楽・芸術', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10023962.html' }, { id:'', name:'', permalink:'' } ],
+       date : '2014-05-26 12:00:10'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51511371.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51511371"
+    dc:title="スピッツの歌詞意味分からなすぎだろｗｗｗｗｗｗｗ"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51511371.html"
+    dc:subject="音楽・芸術"
+    dc:description="1 ：名無しさん：2014/03/27(木) 08:35:25 ID:Fq98662tY さわって変わって絶えず転がる玉を止めてさわって変わって春が忍び寄ってくる心地&#160;&#160;意味深ワロタwww "
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-26T12:00:10+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51511371"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51511371.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/c/b/cb2b3a14.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月26日 12:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51511371.html">スピッツの歌詞意味分からなすぎだろｗｗｗｗｗｗｗ</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10023962.html">音楽・芸術</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51511371.html#comments"><span class="commentprc">52</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51512579',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51512579.html',
+       title : '【勧告】お前ら…ネット閲覧はやりすぎないほうがいいぞ……',
+       categories : [ { id:'10024417', name:'IT・インターネット', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10024417.html' }, { id:'10024991', name:'生活', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10024991.html' } ],
+       date : '2014-05-26 11:15:53'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51512579.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51512579"
+    dc:title="【勧告】お前ら…ネット閲覧はやりすぎないほうがいいぞ……"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51512579.html"
+    dc:subject="IT・インターネット,生活"
+    dc:description="1 ：名無しさん＠おーぷん：2014/05/14(水) 22:52:18 ID:GykIbhVz7 「本を読むと主人公の追体験ができる」このような言葉を聴いたことがあるだろうか。自分では経験できないが、本を読むことで、あたかも経験したかのように感じられ成長できる…みたいな言葉。ネットには"
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-26T11:15:53+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51512579"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51512579.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/5/9/5981b476.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月26日 11:15
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51512579.html">【勧告】お前ら…ネット閲覧はやりすぎないほうがいいぞ……</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10024417.html">IT・インターネット</a>｜<a href="http://lifehack2ch.livedoor.biz/archives/cat_10024991.html">生活</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51512579.html#comments"><span class="commentprc">45</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51507968',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51507968.html',
+       title : '左利きには天才かキチしかいないという風潮ｗｗｗｗｗｗｗ',
+       categories : [ { id:'10024301', name:'心と身体', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10024301.html' }, { id:'10024336', name:'育児･教育', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10024336.html' } ],
+       date : '2014-05-26 07:30:17'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51507968.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51507968"
+    dc:title="左利きには天才かキチしかいないという風潮ｗｗｗｗｗｗｗ"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51507968.html"
+    dc:subject="心と身体,育児･教育"
+    dc:description="1 ：名無しさん：2014/04/28(月) 19:52:55 ID:qwMXkgX6u 憧れるわ "
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-26T07:30:17+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51507968"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51507968.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/3/4/3417c9e8.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月26日 07:30
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51507968.html">左利きには天才かキチしかいないという風潮ｗｗｗｗｗｗｗ</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10024301.html">心と身体</a>｜<a href="http://lifehack2ch.livedoor.biz/archives/cat_10024336.html">育児･教育</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51507968.html#comments"><span class="commentprc">46</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51512706',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51512706.html',
+       title : '逆に舌が肥えてない方がなんでも美味しく食べられて幸せじゃね？',
+       categories : [ { id:'10023986', name:'ダイエット・食生活', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10023986.html' }, { id:'', name:'', permalink:'' } ],
+       date : '2014-05-26 00:00:37'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51512706.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51512706"
+    dc:title="逆に舌が肥えてない方がなんでも美味しく食べられて幸せじゃね？"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51512706.html"
+    dc:subject="ダイエット・食生活"
+    dc:description="1 ：名無しさん＠おーぷん：2014/05/02(金) 15:40:40 ID:5cpvLVlPr ジャンクも高級料理も化学調味料満載でもなんでもうまいわなお、世間体もあるから普段は違いのわかるような顔をしとくと吉 "
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-26T00:00:37+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51512706"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51512706.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/a/2/a21d6814.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月26日 00:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51512706.html">逆に舌が肥えてない方がなんでも美味しく食べられて幸せじゃね？</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10023986.html">ダイエット・食生活</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51512706.html#comments"><span class="commentprc">56</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+<div class="dateend"></div>
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51512872',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51512872.html',
+       title : '人生とかいう神ゲーｗｗｗｗｗｗｗｗｗｗｗｗ',
+       categories : [ { id:'10023885', name:'人生', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10023885.html' }, { id:'', name:'', permalink:'' } ],
+       date : '2014-05-25 21:00:57'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51512872.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51512872"
+    dc:title="人生とかいう神ゲーｗｗｗｗｗｗｗｗｗｗｗｗ"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51512872.html"
+    dc:subject="人生"
+    dc:description="1 ：名無しさん＠おーぷん：2014/05/19(月) 01:31:56 ID:TVKH8YP5N 最高のグラフィックｗｗｗｗｗｗｗｗｗｗｗ無限のやりこみ要素ｗｗｗｗｗｗｗｗｗｗｗｗｗこの上ないリアリティｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗこんなん絶対おもろいやんけ・・・ "
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-25T21:00:57+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51512872"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51512872.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/8/8/88d9f8cb.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月25日 21:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51512872.html">人生とかいう神ゲーｗｗｗｗｗｗｗｗｗｗｗｗ</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10023885.html">人生</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51512872.html#comments"><span class="commentprc">30</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51513126',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51513126.html',
+       title : '低学歴のやつは、なんでホテルマンならないの？',
+       categories : [ { id:'10030886', name:'就職・転職', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10030886.html' }, { id:'', name:'', permalink:'' } ],
+       date : '2014-05-25 18:00:15'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51513126.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51513126"
+    dc:title="低学歴のやつは、なんでホテルマンならないの？"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51513126.html"
+    dc:subject="就職・転職"
+    dc:description="1 ：名無しさん＠おーぷん：2014/05/11(日) 04:57:41 ID:0t7UriHfW 不思議だわ。なぜ土方を選択するんだ。 "
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-25T18:00:15+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51513126"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51513126.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/0/c/0c6d8742.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月25日 18:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51513126.html">低学歴のやつは、なんでホテルマンならないの？</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10030886.html">就職・転職</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51513126.html#comments"><span class="commentprc">40</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51511125',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51511125.html',
+       title : '「人の顔が覚えられない」← これ実は病気なの知ってた？',
+       categories : [ { id:'10024992', name:'コミュニケーション', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10024992.html' }, { id:'10024991', name:'生活', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10024991.html' } ],
+       date : '2014-05-25 15:00:01'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51511125.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51511125"
+    dc:title="「人の顔が覚えられない」← これ実は病気なの知ってた？"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51511125.html"
+    dc:subject="コミュニケーション,生活"
+    dc:description="103 ：名無しさん＠おーぷん：2014/05/08(木) 23:30:30 ID:??? 自分が相貌失認症と言われるものだった。人の顔が覚えられない。次に違う場所で会ったらまず分からない。特に男の人の顔を覚えられない。イケメンだと尚更覚えられない。どうりで不細工な男の方が好みな訳だ"
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-25T15:00:01+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51511125"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51511125.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/9/3/93c48c95.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月25日 15:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51511125.html">「人の顔が覚えられない」← これ実は病気なの知ってた？</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10024992.html">コミュニケーション</a>｜<a href="http://lifehack2ch.livedoor.biz/archives/cat_10024991.html">生活</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51511125.html#comments"><span class="commentprc">41</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51512982',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51512982.html',
+       title : '結婚という制度は男に得あるの？',
+       categories : [ { id:'10023964', name:'恋愛・結婚', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10023964.html' }, { id:'10023885', name:'人生', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10023885.html' } ],
+       date : '2014-05-25 12:00:41'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51512982.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51512982"
+    dc:title="結婚という制度は男に得あるの？"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51512982.html"
+    dc:subject="恋愛・結婚,人生"
+    dc:description="5 ：以下、名無しにかわりましてVIPがお送りします：2011/09/24(土) 12:27:09.35 ID:eDMqt8JK0 金と時間を毟り取られるだけだからな "
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-25T12:00:41+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51512982"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51512982.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/b/e/be956784.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月25日 12:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51512982.html">結婚という制度は男に得あるの？</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10023964.html">恋愛・結婚</a>｜<a href="http://lifehack2ch.livedoor.biz/archives/cat_10023885.html">人生</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51512982.html#comments"><span class="commentprc">102</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51512277',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51512277.html',
+       title : '30代で短パン履いて奴ｗｗｗｗｗｗｗｗｗｗｗ',
+       categories : [ { id:'10024191', name:'ファッション', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10024191.html' }, { id:'', name:'', permalink:'' } ],
+       date : '2014-05-25 08:00:37'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51512277.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51512277"
+    dc:title="30代で短パン履いて奴ｗｗｗｗｗｗｗｗｗｗｗ"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51512277.html"
+    dc:subject="ファッション"
+    dc:description="1 ：名無しさん＠おーぷん：2014/05/07(水) 14:35:12 ID:84xN9L8vI どう思う？俺なんだけどww "
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-25T08:00:37+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51512277"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51512277.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/5/a/5a3abe52.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月25日 08:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51512277.html">30代で短パン履いて奴ｗｗｗｗｗｗｗｗｗｗｗ</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10024191.html">ファッション</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51512277.html#comments"><span class="commentprc">19</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51513231',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51513231.html',
+       title : 'お前らの知ってるモテそうな心理学教えてくれ！',
+       categories : [ { id:'10024992', name:'コミュニケーション', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10024992.html' }, { id:'10023964', name:'恋愛・結婚', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10023964.html' } ],
+       date : '2014-05-25 00:00:39'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51513231.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51513231"
+    dc:title="お前らの知ってるモテそうな心理学教えてくれ！"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51513231.html"
+    dc:subject="コミュニケーション,恋愛・結婚"
+    dc:description="1 ：名無しさん＠おーぷん：2014/05/23(金) 22:06:03 ID:iHtjbfGHX おねがいします "
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-25T00:00:39+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51513231"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51513231.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/6/4/64a1c936.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月25日 00:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51513231.html">お前らの知ってるモテそうな心理学教えてくれ！</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10024992.html">コミュニケーション</a>｜<a href="http://lifehack2ch.livedoor.biz/archives/cat_10023964.html">恋愛・結婚</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51513231.html#comments"><span class="commentprc">16</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+<div class="dateend"></div>
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51513217',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51513217.html',
+       title : '男だけど寂しがりやでつらい',
+       categories : [ { id:'10023970', name:'癒し・ほのぼの', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10023970.html' }, { id:'10024992', name:'コミュニケーション', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10024992.html' } ],
+       date : '2014-05-24 21:00:14'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51513217.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51513217"
+    dc:title="男だけど寂しがりやでつらい"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51513217.html"
+    dc:subject="癒し・ほのぼの,コミュニケーション"
+    dc:description="1 ：名無しさん＠おーぷん：2014/05/13(火) 04:40:23 ID:F9eL7y3cG 男友達が「んじゃ、そろそろ帰る」とか言うと引き止めてしまうあとはメールこない日はすごくさみしいこういうのって治るの？ "
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-24T21:00:14+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51513217"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51513217.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/e/6/e6dc0e82.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月24日 21:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51513217.html">男だけど寂しがりやでつらい</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10023970.html">癒し・ほのぼの</a>｜<a href="http://lifehack2ch.livedoor.biz/archives/cat_10024992.html">コミュニケーション</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51513217.html#comments"><span class="commentprc">20</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+
+<script type="text/javascript"><!--
+  if (ld_blog_vars) {
+     ld_blog_vars.articles.push({
+       id : '51513215',
+       permalink : 'http://lifehack2ch.livedoor.biz/archives/51513215.html',
+       title : '誰かに甘えたい男って',
+       categories : [ { id:'10023970', name:'癒し・ほのぼの', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10023970.html' }, { id:'10024301', name:'心と身体', permalink:'http://lifehack2ch.livedoor.biz/archives/cat_10024301.html' } ],
+       date : '2014-05-24 18:00:03'
+     });
+  }
+//-->
+</script>
+
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://lifehack2ch.livedoor.biz/archives/51513215.html"
+    trackback:ping="http://trackback.blogsys.jp/livedoor/sg3lqj86/51513215"
+    dc:title="誰かに甘えたい男って"
+    dc:identifier="http://lifehack2ch.livedoor.biz/archives/51513215.html"
+    dc:subject="癒し・ほのぼの,心と身体"
+    dc:description="1 ：名無しさん＠おーぷん：2014/05/23(金) 01:24:56 ID:HpqTXxpx1 います？俺だけじゃないはず... "
+    dc:creator="sg3lqj86"
+    dc:date="2014-05-24T18:00:03+09:00" />
+</rdf:RDF>
+-->
+
+<div class="datetop"></div>
+<div class="fullbody">
+
+<!-- 二番目以降のアーティクル -->
+
+<div class="blogbody2">
+<a name="51513215"></a>
+
+<div class="articleimg"><a href="http://lifehack2ch.livedoor.biz/archives/51513215.html"><img border="0" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/6/8/688ffe52.jpg"/></a></div>
+
+<div class="entrylistbody">
+2014年05月24日 18:00
+<div class="titlebody2">
+<h2 class="title2"><a href="http://lifehack2ch.livedoor.biz/archives/51513215.html">誰かに甘えたい男って</a></h2>
+</div>
+<div class="posted3">
+<a href="http://lifehack2ch.livedoor.biz/archives/cat_10023970.html">癒し・ほのぼの</a>｜<a href="http://lifehack2ch.livedoor.biz/archives/cat_10024301.html">心と身体</a></div>
+<div class="posted4"><span style="background-color:#BFFAE0; padding:2px 2px 0; background-color:#BFFAE0;border-bottom:1px solid #2BC853;margin:0px;"><a href="http://lifehack2ch.livedoor.biz/archives/51513215.html#comments"><span class="commentprc">33</span><span class="commentpr">Comments</span></a></span></div>
+</div></div>
+
+<!-- 二番目以降のアーティクル -->
+</div>
+<div class="dateend"></div>
+</div><div class="autopagerize_insert_before"></div>
+
+<!-- google_ad_section_end -->
+<!-- Loop End -->
+<div class="pager">
+      <div class="pager-inner"><div class="index-navigator-outer nextpage"><ul class="index-navigator"><li class="paging-number"><ol class="paging-number"><li class="current" title="現在の表示ページ"><span>1</span></li><li><a href="http://lifehack2ch.livedoor.biz/?p=2" title="2ページ目へ">2</a></li><li><a href="http://lifehack2ch.livedoor.biz/?p=3" title="3ページ目へ">3</a></li><li><a href="http://lifehack2ch.livedoor.biz/?p=4" title="4ページ目へ">4</a></li><li><a href="http://lifehack2ch.livedoor.biz/?p=5" title="5ページ目へ">5</a></li><li><a href="http://lifehack2ch.livedoor.biz/?p=6" title="6ページ目へ">6</a></li><li><a href="http://lifehack2ch.livedoor.biz/?p=7" title="7ページ目へ">7</a></li><li><a href="http://lifehack2ch.livedoor.biz/?p=8" title="8ページ目へ">8</a>...</li></ol></li><li class="paging-next"><a rel="next" href="http://lifehack2ch.livedoor.biz/?p=2" title="次のページへ">次のページ</a></li><li class="paging-last"><a href="http://lifehack2ch.livedoor.biz/?p=82" title="最後のページへ">&gt;&gt;|</a></li></ul></div></div>
+</div>
+
+</div>
+</div>
+
+<br clear="all">
+</div>
+
+<!-- Plugin B -->
+<div id="right_a"> 
+<div id="righttop"></div>
+<div id="rightbody">
+
+
+
+
+<div class="plugin-memo sidewrapper">
+<div class="sidetitlebody">
+<div class="sidetitle">注目</div>
+</div>
+<div class="sidetop"></div>
+<div class="side">
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00G23EVHC/nishiky24-22/" target="_blank"><img src="http://ecx.images-amazon.com/images/I/41UAVd%2BjDdL._SL300_.jpg" alt="B00G23EVHC" border="0" /></a>
+</div>
+<div class="sidebottom"></div>
+</div><!-- // plugin-memo -->
+
+<div class="plugin-recent_comments sidewrapper" id="recent_comments_235692">
+<div class="sidetitlebody">
+<div class="sidetitle">新着コメント</div>
+</div>
+<div class="sidetop"></div>
+<div class="side" id="recent_comments_235692_list" data-rows="15" data-order="">
+<script type="text/html" id="recent_comments_235692_tmpl">
+  <style>div.recent-comment-oneline div { display: inline-block }</style>
+<% for(var i=0,l=comments.length;i<l;i++) {%><% var n=(order==='ASC')?(l-1-i):i; %>
+<div class="sidebody">
+  <div class="recent-comment">
+    <div class="recent-comment-title"><a href="<%=comments[i].permalink%>#comments"><%==comments[n].title%></a></div>    <div class="recent-comment-body"><%==comments[n].body.replace(/\<br[\s\/]*\>/g,'')%></div>    <div class="recent-comment-author"><%==comments[n].author%></div>  </div>
+</div>
+<% } %>
+</script>
+</div>
+<div class="sidebottom"></div>
+<script type="text/javascript" src="http://parts.blog.livedoor.jp/js/recent_comments.js"></script>
+<script type="text/javascript">
+ var rc = new RecentComments('recent_comments_235692');
+ rc.render();
+</script>
+</div><!-- // plugin-recent_comments -->
+
+<div class="plugin-memo sidewrapper">
+<div class="sidetitlebody">
+<div class="sidetitle">話題</div>
+</div>
+<div class="sidetop"></div>
+<div class="side">
+<a href="http://amazon.jp/o/ASIN/B009JDHPSE/nishiky24-22/ref=nosim/" target="_blank"><img src="http://ecx.images-amazon.com/images/I/41VclyjynBL._SL300_.jpg" border="0"></a><br />
+<a href="http://amazon.jp/o/ASIN/B00DSK5GO4/nishiky24-22/ref=nosim/" target="_blank"><img src="http://ecx.images-amazon.com/images/I/819keOKgubL._SL300_.jpg" border="0"></a><br />
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00H9WIZ4A/nishiky24-22/" target="_blank"><img src="http://ecx.images-amazon.com/images/I/41aDRj%2BGe9L._SL300_.jpg" alt="B00H9WIZ4A" border="0" /></a><br />
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0017J5ADK/nishiky24-22/" target="_blank"><img src="http://ecx.images-amazon.com/images/I/31kofRHVS%2BL._SL300_.jpg" alt="B0017J5ADK" border="0" /></a><br />
+<a href="http://amazon.jp/o/ASIN/B003U37KJS/nishiky24-22/ref=nosim/" target="_blank"><img src="http://ecx.images-amazon.com/images/I/61ZcEaYQRZL._SL300_.jpg" border="0"></a><br />
+<a href="http://amazon.jp/o/ASIN/B00I0SC7D2/nishiky24-22/ref=nosim/" target="_blank"><img src="http://ecx.images-amazon.com/images/I/81AmOPdubxL._SS300_.jpg" border="0"></a><br />
+<a href="http://amazon.jp/o/ASIN/B00H9YBI8I/nishiky24-22/ref=nosim/" target="_blank"><img src="http://ecx.images-amazon.com/images/I/711qAS5QttL._SL300_.jpg" border="0"></a>
+</div>
+<div class="sidebottom"></div>
+</div><!-- // plugin-memo -->
+
+<div class="plugin-search_internal sidewrapper">
+<div class="sidetitlebody">
+<div class="sidetitle">記事検索</div>
+</div>
+<div class="sidetop"></div>
+<div class="side">
+ <form action="http://lifehack2ch.livedoor.biz/search" method="GET" style="padding:0;margin:0px;">
+ <input type="TEXT" name="q" class="sf">
+ <input type="SUBMIT" value="検索" class="sfbtn">
+ </form>
+</div>
+<div class="sidebottom"></div>
+</div><!-- // plugin-search_internal -->
+<div class="plugin-monthly sidewrapper" id="plugin-monthly-235695">
+<div class="sidetitlebody">
+<div class="sidetitle">月別アーカイブ</div>
+</div>
+<div class="sidetop"></div>
+<div class="side">
+
+<div align="center"><form style="margin:0px;padding:0px;">
+<select name="u" onChange="JavaScript:location.href=this.value;return false;">
+
+<option value="" selected>月を選択</option>
+<option value="http://lifehack2ch.livedoor.biz/archives/2014-05.html">2014年05月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2014-04.html">2014年04月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2014-03.html">2014年03月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2014-02.html">2014年02月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2014-01.html">2014年01月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2013-12.html">2013年12月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2013-11.html">2013年11月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2013-10.html">2013年10月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2013-09.html">2013年09月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2013-08.html">2013年08月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2013-07.html">2013年07月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2013-06.html">2013年06月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2013-05.html">2013年05月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2013-04.html">2013年04月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2013-03.html">2013年03月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2013-02.html">2013年02月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2013-01.html">2013年01月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2012-12.html">2012年12月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2012-11.html">2012年11月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2012-10.html">2012年10月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2012-09.html">2012年09月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2012-08.html">2012年08月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2012-07.html">2012年07月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2012-06.html">2012年06月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2012-05.html">2012年05月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2012-04.html">2012年04月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2012-03.html">2012年03月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2012-02.html">2012年02月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2012-01.html">2012年01月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2011-12.html">2011年12月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2011-11.html">2011年11月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2011-10.html">2011年10月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2011-09.html">2011年09月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2011-08.html">2011年08月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2011-07.html">2011年07月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2011-06.html">2011年06月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2011-05.html">2011年05月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2011-04.html">2011年04月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2011-03.html">2011年03月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2011-02.html">2011年02月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2011-01.html">2011年01月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2010-12.html">2010年12月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2010-11.html">2010年11月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2010-10.html">2010年10月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2010-09.html">2010年09月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2010-08.html">2010年08月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2010-07.html">2010年07月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2010-06.html">2010年06月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2010-05.html">2010年05月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2010-04.html">2010年04月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2010-03.html">2010年03月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2010-02.html">2010年02月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2010-01.html">2010年01月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2009-12.html">2009年12月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2009-11.html">2009年11月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2009-10.html">2009年10月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2009-09.html">2009年09月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2009-08.html">2009年08月</option>
+
+<option value="http://lifehack2ch.livedoor.biz/archives/2009-06.html">2009年06月</option>
+</select>
+</form></div>
+
+</div>
+<div class="sidebottom"></div>
+</div><!-- // plugin-monthly -->
+
+<div class="plugin-memo sidewrapper">
+<div class="sidetitlebody">
+<div class="sidetitle">ブログパーツ</div>
+</div>
+<div class="sidetop"></div>
+<div class="side">
+<a href="http://feedmeter.net/detail.php?r=http%3A%2F%2Flifehack2ch.livedoor.biz%2Findex.rdf" target="feedmeter"><img src="http://feedmeter.net/image.php?r=http%3A%2F%2Flifehack2ch.livedoor.biz%2Findex.rdf" border="0" width="60" height="36" alt="フィードメーター - ライフハックちゃんねる弐式" /></a>
+<div style="margin:10px auto;">
+<a href="http://oktwr.blog94.fc2.com/" target="_blank"><img src="http://livedoor.2.blogimg.jp/sg3lqj86/imgs/b/e/beb0bdc0.jpg" border="0"></a>
+</div>
+</div>
+<div class="sidebottom"></div>
+</div><!-- // plugin-memo -->
+
+
+
+
+
+<!-- $PluginList_B$ -->
+<div class="elsebody">
+<!-- google_ad&more -->
+<div class="sidetitlebody" style="margin:0 0 10px;">
+<div class="sidetitle">スポンサードリンク</div>
+</div>
+<div id="gad-fixed">
+<script type="text/javascript">google_ad_type = 'image';ldb_user_ads.display('160x600');</script>
+</div>
+<div style="margin:10px auto;">
+<a href="http://www.amazon.co.jp/?&tag=nishiky24-22&linkCode=wsw&"><img class="pict" hspace="5" alt="remote-buy-jp7" border="0" height="28" width="109" src="http://livedoor.blogimg.jp/sg3lqj86/imgs/5/2/5282db77.gif"></a>
+</div>
+
+
+<ul id="ld-services">
+<li id="blog-powered"><a href="http://blog.livedoor.com/"><img src="http://parts.blog.livedoor.jp/img/usr/cmn/logo_blog_pro.png" width="114" height="24" alt="ライブドアブログ" /></a></li>
+</ul>
+
+<!-- / google_ad&more -->
+</div>
+</div>
+</div>
+<!-- / Plugin B-->
+<br clear="all">
+</div>
+<div id="fixnavi">
+<ul>
+<li><a href="#top"><img src="http://livedoor.blogimg.jp/sg3lqj86/imgs/9/a/9a46b3d2.png"></a></li>
+</ul>
+</div>
+</div><!-- End of blogcontainer-->
+
+
+<div id="footer">
+<div id="footertop">
+<ul id="globalNavi2">
+ <li id=navi12><a href="http://lifehack2ch.livedoor.biz/">ブログトップへ</a></li>
+ <li><a href="#top">ページトップへ</a></li>
+ <li><a href="http://b.hatena.ne.jp/entrylist?sort=count&url=http%3A%2F%2Flifehack2ch.livedoor.biz%2F">人気のある記事</a></li>
+<li><a href="http://lifehack2ch.livedoor.biz/tag/%E4%BA%BA%E9%96%93%E9%96%A2%E4%BF%82">人間関係</a></li>
+ <li><a href="http://20kaido.com/">二十歳街道まっしぐら</a></li>
+ <li><a href="http://やる夫.jp/">やる夫.jp</a></li>
+ <li><a href="http://blog.livedoor.jp/yumemigachi_salon/">ゆめみがちサロン</a></li>
+ <li><a href="http://newsteam.livedoor.biz/">スチーム速報VIP</a></li>
+</ul>
+</div>
+
+<div id="footercontent">
+
+
+
+
+<div class="plugin-categorize sidewrapper" id="plugin-categorize-235691">
+    <div class="sidetitlebody">
+        <div class="sidetitle">カテゴリ別アーカイブ</div>
+    </div>
+    <div class="sidetop"></div>
+    <div class="side">
+
+      
+
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10024016.html">仕事・勉強 (213)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-child"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10034892.html">受験 (9)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10025089.html">書籍・読書 (101)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10023964.html">恋愛・結婚 (291)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10024992.html">コミュニケーション (220)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10023885.html">人生 (238)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10029764.html">スマートフォン・ガジェット (163)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-child"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10034920.html">iPhone (18)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-child"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10034919.html">Android (20)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-child"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10034725.html">タブレットPC (22)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-child"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10034819.html">アプリ (7)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-child"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10035022.html">電子書籍 (1)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-child"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10035057.html">ガラケー (10)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10027386.html">デジモノ (25)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10024989.html">美容・健康 (195)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-child"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10034788.html">運動 (13)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10030886.html">就職・転職 (63)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10023986.html">ダイエット・食生活 (96)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10024991.html">生活 (370)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-child"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10034651.html">自動車 (25)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-child"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10034724.html">学校 (17)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-child"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10034759.html">お買い物 (52)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-child"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10034921.html">大学生活 (20)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10031302.html">お茶・コーヒー (8)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10031565.html">文房具 (19)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10034916.html">病気 (13)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-child"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10034918.html">歯の健康 (3)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10032932.html">整理整頓 (4)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10033315.html">お金の話 (63)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10034301.html">2ちゃんねる以外のまとめ (7)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10026425.html">PCソフト・アプリ (30)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10027003.html">サイトまとめ (15)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10027925.html">部屋・住居 (25)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10029183.html">性的衝動 (2)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10029508.html">英語・海外 (17)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10029581.html">心理 (27)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10029740.html">酒・ドリンク (12)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10024301.html">心と身体 (133)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10024302.html">社会・文化 (72)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-child"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10034796.html">経済 (6)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10024336.html">育児･教育 (32)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10024417.html">IT・インターネット (81)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10024578.html">趣味・興味 (61)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-child"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10034802.html">エンタメ (8)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10024201.html">豆知識 (6)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10024038.html">料理・レシピ (32)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10024993.html">睡眠 (33)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10024156.html">家事 (4)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10023969.html">犬猫・動物 (2)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10023962.html">音楽・芸術 (81)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10024024.html">PCハード (64)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10024077.html">旅行 (12)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10023970.html">癒し・ほのぼの (14)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10027617.html">おもしろ (152)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10024191.html">ファッション (57)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10024155.html">単発レス (48)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10023297.html">ナビ (2)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10026562.html">ニュース (7)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10031039.html">インテリア・家電 (39)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10031042.html">PC Tips (17)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10031040.html">掃除 (15)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10031041.html">ヘッドフォン・オーディオ (31)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10034728.html">男女 (35)</a>
+          
+        </div>
+        
+    
+        
+        
+        <div class="sidebody category-parent"
+             
+          ><a href="http://lifehack2ch.livedoor.biz/archives/cat_10034935.html">学問 (7)</a>
+          
+        </div>
+        
+    
+    
+
+    </div>    
+    <div class="sidebottom"></div>
+</div><!-- // plugin-categorize -->
+
+<div class="plugin-tag_cloud sidewrapper">
+<div class="sidetitlebody">
+<div class="sidetitle">タグリスト</div>
+</div>
+<div class="sidetop"></div>
+<div class="side">
+<ul class="tagcloud">
+  <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/android" title="android タグの一覧へ">android</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/HDD" title="HDD タグの一覧へ">HDD</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/iPhone" title="iPhone タグの一覧へ">iPhone</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E2%80%BB" title="※ タグの一覧へ">※</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%81%82%E3%81%96%E3%83%BC%E3%81%A3%E3%81%99" title="あざーっす タグの一覧へ">あざーっす</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%81%82%E3%82%8B%E3%81%82%E3%82%8B" title="あるある タグの一覧へ">あるある</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%81%8A%E5%BD%B9%E7%AB%8B%E3%81%A1" title="お役立ち タグの一覧へ">お役立ち</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%81%9B%E3%82%84%E3%81%AA" title="せやな タグの一覧へ">せやな</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%81%9B%E3%82%84%E3%82%8D%E3%81%8B" title="せやろか タグの一覧へ">せやろか</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%81%9F%E3%81%84%E3%81%97%E3%81%AB%E3%81%9F%E3%81%84%E3%81%97%E3%81%AB" title="たいしにたいしに タグの一覧へ">たいしにたいしに</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%81%BB%E3%81%92%E3%81%BB%E3%81%92" title="ほげほげ タグの一覧へ">ほげほげ</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%81%BC%E3%81%A3%E3%81%A1" title="ぼっち タグの一覧へ">ぼっち</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%82%84%E3%82%8A%E3%81%9F%E3%81%84" title="やりたい タグの一覧へ">やりたい</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%82%84%E3%82%8B%E6%B0%97" title="やる気 タグの一覧へ">やる気</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%82%A4%E3%82%B1%E3%83%A1%E3%83%B3" title="イケメン タグの一覧へ">イケメン</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%82%AB%E3%83%83%E3%83%97%E3%83%AB" title="カップル タグの一覧へ">カップル</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%82%AB%E3%83%A9%E3%82%AA%E3%82%B1" title="カラオケ タグの一覧へ">カラオケ</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%82%AC%E3%83%A9%E3%82%B1%E3%83%BC" title="ガラケー タグの一覧へ">ガラケー</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%82%B3%E3%82%B9%E3%83%91" title="コスパ タグの一覧へ">コスパ</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3" title="コミュニケーション タグの一覧へ">コミュニケーション</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%AF%E3%82%B9" title="コンプレックス タグの一覧へ">コンプレックス</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%82%B5%E3%83%97%E3%83%AA%E3%83%A1%E3%83%B3%E3%83%88" title="サプリメント タグの一覧へ">サプリメント</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%82%B8%E3%83%A7%E3%82%AE%E3%83%B3%E3%82%B0" title="ジョギング タグの一覧へ">ジョギング</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%82%B9%E3%82%AD%E3%83%B3%E3%82%B1%E3%82%A2" title="スキンケア タグの一覧へ">スキンケア</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%82%BB%E3%83%AD%E3%83%88%E3%83%8B%E3%83%B3" title="セロトニン タグの一覧へ">セロトニン</a></li>
+   <li class="tag-weight-2 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%83%87%E3%83%BC%E3%83%88" title="デート タグの一覧へ">デート</a></li>
+   <li class="tag-weight-2 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%83%8D%E3%82%BF" title="ネタ タグの一覧へ">ネタ</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%83%8D%E3%83%83%E3%83%88%E9%80%9A%E8%B2%A9" title="ネット通販 タグの一覧へ">ネット通販</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%83%8E%E3%83%BC%E3%83%88PC" title="ノートPC タグの一覧へ">ノートPC</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6" title="ブラウザ タグの一覧へ">ブラウザ</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%83%A1%E3%83%BC%E3%83%AB" title="メール タグの一覧へ">メール</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB%E3%83%98%E3%83%AB%E3%82%B9" title="メンタルヘルス タグの一覧へ">メンタルヘルス</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%83%A2%E3%83%81%E3%83%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3" title="モチベーション タグの一覧へ">モチベーション</a></li>
+   <li class="tag-weight-2 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%83%A2%E3%83%86" title="モテ タグの一覧へ">モテ</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E3%83%AA%E3%82%A2%E5%85%85" title="リア充 タグの一覧へ">リア充</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E6%84%9B" title="愛 タグの一覧へ">愛</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E9%81%BA%E4%BC%9D" title="遺伝 タグの一覧へ">遺伝</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E4%B8%80%E4%BA%BA%E6%9A%AE%E3%82%89%E3%81%97" title="一人暮らし タグの一覧へ">一人暮らし</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E5%BC%95%E8%B6%8A%E3%81%97" title="引越し タグの一覧へ">引越し</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E9%A3%B2%E3%81%BF%E4%BC%9A" title="飲み会 タグの一覧へ">飲み会</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E9%81%8B%E5%8B%95" title="運動 タグの一覧へ">運動</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E8%8B%B1%E5%8D%98%E8%AA%9E" title="英単語 タグの一覧へ">英単語</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E4%BC%9A%E7%A4%BE" title="会社 タグの一覧へ">会社</a></li>
+   <li class="tag-weight-2 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E4%BC%9A%E8%A9%B1" title="会話 タグの一覧へ">会話</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E5%BF%AB%E7%9C%A0" title="快眠 タグの一覧へ">快眠</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E6%87%90%E5%8F%A4" title="懐古 タグの一覧へ">懐古</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E5%AD%A6%E6%AD%B4" title="学歴 タグの一覧へ">学歴</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E6%95%99%E8%82%B2" title="教育 タグの一覧へ">教育</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E7%AD%8B%E3%83%88%E3%83%AC" title="筋トレ タグの一覧へ">筋トレ</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E9%87%91" title="金 タグの一覧へ">金</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E8%82%A9%E3%81%93%E3%82%8A" title="肩こり タグの一覧へ">肩こり</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E8%A8%80%E8%91%89" title="言葉 タグの一覧へ">言葉</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E5%8A%B9%E7%8E%87" title="効率 タグの一覧へ">効率</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E5%A5%BD%E3%81%8D%E3%81%AA%E4%BA%BA" title="好きな人 タグの一覧へ">好きな人</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E5%B9%B8%E3%81%9B" title="幸せ タグの一覧へ">幸せ</a></li>
+   <li class="tag-weight-3 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E8%80%83%E3%81%88%E6%96%B9" title="考え方 タグの一覧へ">考え方</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E5%91%8A%E7%99%BD" title="告白 タグの一覧へ">告白</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E6%89%8D%E8%83%BD" title="才能 タグの一覧へ">才能</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E8%B2%A1%E5%B8%83" title="財布 タグの一覧へ">財布</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E4%BB%95%E4%BA%8B" title="仕事 タグの一覧へ">仕事</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E8%B3%87%E6%A0%BC" title="資格 タグの一覧へ">資格</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E8%87%AA%E5%B7%B1%E5%95%93%E7%99%BA" title="自己啓発 タグの一覧へ">自己啓発</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E5%A4%B1%E6%81%8B" title="失恋 タグの一覧へ">失恋</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E8%B6%A3%E5%91%B3" title="趣味 タグの一覧へ">趣味</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E5%B0%B1%E6%B4%BB" title="就活 タグの一覧へ">就活</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E5%87%BA%E4%BC%9A%E3%81%84" title="出会い タグの一覧へ">出会い</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E5%B0%8F%E8%AA%AC" title="小説 タグの一覧へ">小説</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E4%B8%8A%E5%8F%B8" title="上司 タグの一覧へ">上司</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E6%83%85%E5%A0%B1" title="情報 タグの一覧へ">情報</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E8%81%B7%E5%A0%B4" title="職場 タグの一覧へ">職場</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E9%A3%9F" title="食 タグの一覧へ">食</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E8%BA%AB%E9%95%B7" title="身長 タグの一覧へ">身長</a></li>
+   <li class="tag-weight-2 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E4%BA%BA%E9%96%93%E9%96%A2%E4%BF%82" title="人間関係 タグの一覧へ">人間関係</a></li>
+   <li class="tag-weight-2 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E6%80%A7%E6%A0%BC" title="性格 タグの一覧へ">性格</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E7%94%9F%E3%81%8D%E6%96%B9" title="生き方 タグの一覧へ">生き方</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E7%94%9F%E6%B4%BB" title="生活 タグの一覧へ">生活</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E7%AF%80%E7%B4%84" title="節約 タグの一覧へ">節約</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E7%B5%B6%E6%9C%9B" title="絶望 タグの一覧へ">絶望</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E9%80%9F%E8%AA%AD" title="速読 タグの一覧へ">速読</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E4%BD%93%E8%B3%AA" title="体質 タグの一覧へ">体質</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E5%A4%A7%E5%AD%A6%E5%8F%97%E9%A8%93" title="大学受験 タグの一覧へ">大学受験</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E5%A4%A7%E5%AD%A6%E7%94%9F" title="大学生 タグの一覧へ">大学生</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB" title="大学生活 タグの一覧へ">大学生活</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E5%A4%A7%E5%AD%A6%E9%81%B8%E3%81%B3" title="大学選び タグの一覧へ">大学選び</a></li>
+   <li class="tag-weight-4 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E7%94%B7%E5%A5%B3" title="男女 タグの一覧へ">男女</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E8%B2%AF%E9%87%91" title="貯金 タグの一覧へ">貯金</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E8%B3%83%E8%B2%B8" title="賃貸 タグの一覧へ">賃貸</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E5%8A%AA%E5%8A%9B" title="努力 タグの一覧へ">努力</a></li>
+   <li class="tag-weight-2 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E7%89%B9%E5%BE%B4" title="特徴 タグの一覧へ">特徴</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E5%B9%B4%E5%8F%8E" title="年収 タグの一覧へ">年収</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E9%AB%AA%E5%9E%8B" title="髪型 タグの一覧へ">髪型</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E5%BD%BC%E5%A5%B3" title="彼女 タグの一覧へ">彼女</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E4%BB%98%E3%81%8D%E5%90%88%E3%81%84%E6%96%B9" title="付き合い方 タグの一覧へ">付き合い方</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E7%89%A9%E6%AC%B2" title="物欲 タグの一覧へ">物欲</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E9%9D%A2%E6%8E%A5" title="面接 タグの一覧へ">面接</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E5%8F%8B%E4%BA%BA%E9%96%A2%E4%BF%82" title="友人関係 タグの一覧へ">友人関係</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E5%8F%8B%E9%81%94" title="友達 タグの一覧へ">友達</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E5%AE%B9%E5%A7%BF" title="容姿 タグの一覧へ">容姿</a></li>
+   <li class="tag-weight-1 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E6%81%8B%E4%BA%BA" title="恋人 タグの一覧へ">恋人</a></li>
+   <li class="tag-weight-0 tag-lifetime-4"><a href="http://lifehack2ch.livedoor.biz/tag/%E9%AC%B1" title="鬱 タグの一覧へ">鬱</a></li>
+ </ul>
+</div>
+<div class="sidebottom"></div>
+</div><!-- // plugin-tag_cloud -->
+<script type="text/javascript" src="http://rc5.i2i.jp/view/index.php?00411152&js"></script>
+<noscript>パーツを表示するにはJavaScriptを有効にして下さい。i2iアクセスランキング</noscript>
+
+
+
+
+
+<br clear="all">
+<div id="footer4">
+<p>本サービス・または情報を利用する場合、以下の免責事項に同意したとみなします。<br />当サイトに掲載されている情報についての信憑性の判断は、すべてユーザー自身に委ねられます。ご利用は自己責任でお願いします。当サイト及び外部リンク先のサイトを利用したことにより発生した、いかなる損失・損害についても管理人は一切の責任と義務を負いません<br />Designed by livedoorBlog&にしき</p>
+</div>
+</div>
+</div>
+
+<!-- lifeplan -->
+<script type="text/javascript" src="http://lifehack2ch.livedoor.biz/doorplan.js"></script>
+<!-- hatenauser --> 
+<script type="text/javascript" src="http://lifehack2ch.livedoor.biz/hatenauser.js"></script>
+
+<!-- googleanal --> 
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7294058-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<!-- googleanal --> 
+
+
+<!-- Add Body Tag // --><script type="text/javascript">
+(function(){
+  var traq = document.createElement('script'); traq.type = 'text/javascript'; traq.async = true;
+  traq.src = 'http://t.blog.livedoor.jp/u.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(traq, s);
+})();
+</script>
+<noscript>
+<img src="http://t.blog.livedoor.jp/u.gif" alt="traq">
+</noscript>
+<!-- // Add Body Tag -->
+
+</body>
+</html>

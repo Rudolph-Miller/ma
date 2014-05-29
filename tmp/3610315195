@@ -1,0 +1,989 @@
+ <!DOCTYPE html>
+<html
+  lang="ja"
+  data-avail-langs="ja en"
+
+  data-page="entry"
+  data-admin-domain="http://blog.hatena.ne.jp"
+  data-static-domain="http://hatenablog.com"
+  data-blog="8arrow.hatenablog.com"
+  data-blogs-uri-base="http://blog.8arrow.org"
+  data-globalheader-color="b"
+  data-globalheader-type="pc"
+  data-author="nitro_idiot"
+  data-version="cb3376f552692eef52655312928aaadd"
+  data-blog-comments-top-is-new=""
+  data-device="pc"
+
+  
+
+  data-brand="hatenablog"
+
+
+  data-has-touch-view="1"
+  
+
+  itemscope
+   itemtype="http://schema.org/Article"
+
+  >
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    
+    
+    
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=7; IE=9; IE=10; IE=11" />
+    <title>高機能なCommon LispのO/Rマッパー「Integral」を作りました - 八発白中</title>
+
+    
+
+    
+      <link rel="canonical" href="http://blog.8arrow.org/entry/2014/01/19/180013"/>
+    
+
+    <meta itemprop="name" content="高機能なCommon LispのO/Rマッパー「Integral」を作りました - 八発白中"/>
+    
+      <meta itemprop="image" content="http://hatenablog.com/images/theme/og-image-1500.gif"/>
+    
+
+    <meta property="og:title" content="高機能なCommon LispのO/Rマッパー「Integral」を作りました - 八発白中"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://blog.8arrow.org/entry/2014/01/19/180013"/>
+    
+      <meta property="og:image" content="http://hatenablog.com/images/theme/og-image-1500.gif"/>
+    
+      <meta property="og:description" content="「O/Rマッパー」や「ORM」と聞くだけで顔をしかめる人もいらっしゃいます。たぶん過去にひどい目にあったんでしょうね。その大きな理由の一つがパフォーマンスでしょう。 一昨年のYAPC::Asiaに参加したとき、ORMは使うなという話を4回くらい聞いたのが印象的でした。DBのデータはハッシュで返すか、DBIをそのまま使うほうが良いと。弊社でもパフォーマンス上の問題をわかりづらくしてしまうことから、ORMを使用しないプロジェクトがいくつかあります。 まあ、そりゃDBI使うほうが高速に動くとは思います。 しかし、僕が使っているのは実用的な言語であるCommon Lispです。実行効率と抽象化がとても…" />
+    <meta property="og:site_name" content="http://blog.8arrow.org/"/>
+      <meta property="article:published_time" content="1390122013" />
+    <meta name="twitter:card" content="summary" />      <meta name="twitter:app:name:iphone" content="はてなブログアプリ" />
+      <meta name="twitter:app:id:iphone" content="583299321" />
+      <meta name="twitter:app:url:iphone" content="hatenablog:///open?uri=http%3A%2F%2Fblog.8arrow.org%2Fentry%2F2014%2F01%2F19%2F180013" />      <meta name="twitter:site" content="@nitro_idiot" />
+      <meta name="description" content="「O/Rマッパー」や「ORM」と聞くだけで顔をしかめる人もいらっしゃいます。たぶん過去にひどい目にあったんでしょうね。その大きな理由の一つがパフォーマンスでしょう。 一昨年のYAPC::Asiaに参加したとき、ORMは使うなという話を4回くらい聞いたのが印象的でした。DBのデータはハッシュで返すか、DBIをそのまま使う…">
+    
+<script type="text/javascript">
+// <!--
+
+if (~navigator.userAgent.indexOf('Mac OS X')) {
+  document.write('<style type="text/css">html, body { font-family: \x27Helvetica\x27, \x27Arial\x27, \x27ヒラギノ角ゴ Pro W3\x27, \x27Hiragino Kaku Gothic Pro\x27, sans-serif; } </style>');
+} else {
+  document.write('<style type="text/css">html, body { font-family: \x27Helvetica\x27, \x27Arial\x27, \x27メイリオ\x27, \x27Meiryo\x27, \x27MS PGothic\x27, sans-serif; } </style>');
+}
+
+// -->
+</script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if IE]>
+<script type="text/javascript" src="/js/vendor/excanvas/excanvas.js"></script>
+<![endif]-->
+
+
+    <link rel="shortcut icon" href="http://hatenablog.com/images/favicon.ico">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://blog.8arrow.org/feed"/>
+    <link rel="alternate" type="application/rss+xml" title="RSS2.0" href="http://blog.8arrow.org/rss"/>
+    <link rel="author" href="http://www.hatena.ne.jp/nitro_idiot/">
+
+      <link rel="stylesheet" type="text/css" href="http://hatenablog.com/.shared.css:cb3376f552692eef52655312928aaadd:/css/theme/base.css,/css/prettify.css,/css/globalheader.css?version=cb3376f552692eef52655312928aaadd"/>
+      <link rel="stylesheet" type="text/css" href="http://hatenablog.com/-/blog_style/11696248318755958219/2975e7304776ac8a3369afb4a91fb32250c7e04b"/>    <script>    </script>
+
+    
+    <style>
+      div#google_afc_user,
+      div#google_afc_user_container,
+      div.google_afc_image,
+      div.google_afc_blocklink {
+          display: block !important;
+      }
+    </style>
+
+    
+  </head>
+
+  <body class="page-entry     ">
+    <!-- Google Universal Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-29716941-6', 'auto', {'name': 'HatenaBlogTracker'});
+  ga('HatenaBlogTracker.require', 'displayfeatures');
+  ga('HatenaBlogTracker.send', 'pageview');
+
+</script>
+<!-- End Google Universal Analytics -->
+
+    
+    <div id="header-container">
+     <div id="sp-suggest" style="display: none;"><a id="sp-suggest-link" href="#">スマートフォン用の表示で見る</a></div>
+    </div>
+
+    <div class="select_star_button_container" style="display: none;">
+      <img src="http://hatenablog.com/images/theme/hatena-star-quote-box.png?version=cb3376f552692eef52655312928aaadd" title="引用スターをつける" class="select_star_button" />
+      <img src="http://hatenablog.com/images/theme/hatena-star-quote-star.png?version=cb3376f552692eef52655312928aaadd" title="引用スターをつける" class="select_star_button select_star_star">
+    </div>
+
+    <div class="message-box" id="select-star-message-box" style="display: none;">
+      スターをつけました
+    </div>
+
+    <div id="globalheader-container" >
+  <iframe id="globalheader" height="37" frameborder="0" allowTransparency="true"></iframe>
+</div>
+
+
+    <div id="container">
+      <div id="container-inner">
+        <header id="blog-title" data-brand="hatenablog">
+  <div id="blog-title-inner" >
+    <h1 id="title"><a href="http://blog.8arrow.org/">八発白中</a></h1>
+    
+      <h2 id="blog-description">はてなブログに引越しました。</h2>
+    
+  </div>
+</header>
+
+        
+        
+
+
+
+
+<div id="content" class="hfeed"
+  
+  >
+  <div id="content-inner">
+    <div id="wrapper">
+      <div id="main">
+        <div id="main-inner">
+          
+            
+            <!-- google_ad_section_start -->
+            <!-- rakuten_ad_target_begin -->
+            
+              
+                <article class="entry hentry js-entry-article date-first autopagerize_page_element chars-6400 words-600 mode-markdown entry-odd" id="entry-12921228815716798003" data-keyword-campaign="" data-uuid="12921228815716798003">
+  <div class="entry-inner">
+    <header class="entry-header">
+      <div class="date first">
+        <a href="http://blog.8arrow.org/entries/2014/01/19" rel="nofollow">
+          <time pubdate datetime="2014-01-19T09:00:13Z" title="2014-01-19T09:00:13Z">
+            <span class="date-year">2014</span><span class="hyphen">-</span><span class="date-month">01</span><span class="hyphen">-</span><span class="date-day">19</span>
+          </time>
+        </a>
+      </div>
+      <h1 class="entry-title">
+        <a href="http://blog.8arrow.org/entry/2014/01/19/180013" class="entry-title-link bookmark">高機能なCommon LispのO/Rマッパー「Integral」を作りました</a>
+      </h1>
+      
+      <div class="categories no-categories">
+        
+      </div>
+      
+    </header>
+    <div class="entry-content">
+
+      
+        <p>「O/Rマッパー」や「ORM」と聞くだけで顔をしかめる人もいらっしゃいます。たぶん過去にひどい目にあったんでしょうね。その大きな理由の一つがパフォーマンスでしょう。</p>
+
+<p> 一昨年の<a class="keyword" href="http://d.hatena.ne.jp/keyword/YAPC">YAPC</a>::Asiaに参加したとき、ORMは使うなという話を4回くらい聞いたのが印象的でした。DBのデータはハッシュで返すか、<a class="keyword" href="http://d.hatena.ne.jp/keyword/DBI">DBI</a>をそのまま使うほうが良いと。弊社でもパフォーマンス上の問題をわかりづらくしてしまうことから、ORMを使用しないプロジェクトがいくつかあります。</p>
+
+<p>まあ、そりゃ<a class="keyword" href="http://d.hatena.ne.jp/keyword/DBI">DBI</a>使うほうが高速に動くとは思います。</p>
+
+<p>しかし、僕が使っているのは実用的な言語である<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>です。実行効率と抽象化がとても得意な言語です。さらに優れたオブジェクトシステムであるCLOSも仕様に含まれています。</p>
+
+<p>そこで、既存のO/Rマッパーに<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>らしさを加えてみるとどうだろう。</p>
+
+<p>そう思って作ってみたのが、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>用のO/Rマッパー「<strong>Integral</strong>」です。</p>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/30362150" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/fukamachi/lisp-meet-up-presented-by-shibuyalisp-13" title="Integral - New O/R Mapper for Common Lisp" target="_blank">Integral - New O/R Mapper for Common Lisp</a> </strong> from <strong><a href="http://www.slideshare.net/fukamachi" target="_blank">fukamachi</a></strong> </div></p>
+
+<h2>基本的な使い方</h2>
+
+<p>IntegralはCLOSのクラスを<a class="keyword" href="http://d.hatena.ne.jp/keyword/RDBMS">RDBMS</a>のテーブルと見たててオブジェクトを操作します。</p>
+
+<p>たとえば、ユーザを表すクラスとして<code>user</code>クラスがあるとしますね。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span><span class="synStatement">defclass</span> <span class="synStatement">user</span> <span class="synSpecial">()</span>
+  <span class="synSpecial">((</span>name :initarg <span class="synType">:name</span><span class="synSpecial">)))</span>
+</pre>
+
+
+<p>Integralではこれに<code>:metaclass</code>と<code>:col-type</code>をつけます。<code>:col-type</code>にはnameカラムのDBデータ型をシンボルで入れます。ここではとりあえずTEXT型にしておきましょう。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span><span class="synStatement">import</span> <span class="synSpecial">'</span><span class="synIdentifier">integral:&lt;dao-table-class&gt;</span><span class="synSpecial">)</span>
+
+<span class="synSpecial">(</span><span class="synStatement">defclass</span> <span class="synStatement">user</span> <span class="synSpecial">()</span>
+  <span class="synSpecial">((</span>name :col-type text
+         :initarg <span class="synType">:name</span><span class="synSpecial">))</span>
+  <span class="synSpecial">(</span>:metaclass &lt;dao-table-class&gt;<span class="synSpecial">))</span>
+</pre>
+
+
+<p>定義はこれだけ。もちろん普通のクラスとして扱えます。<code>make-instance</code>もできちゃう。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span><span class="synStatement">make-instance</span> <span class="synSpecial">'</span><span class="synIdentifier">user</span><span class="synSpecial">)</span>
+<span class="synComment">;=&gt; #&lt;USER %oid: &lt;unbound&gt;&gt;</span>
+</pre>
+
+
+<p><code>make-instance</code>したオブジェクト一つ一つがレコードを表します。ただし、このままでは記録されません。</p>
+
+<p>保存するためにDBにテーブルを作ります。Integralは<a class="keyword" href="http://d.hatena.ne.jp/keyword/MySQL">MySQL</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/PostgreSQL">PostgreSQL</a>、SQLite3で動きますが、今回は最も簡単なSQLite3を使います。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span><span class="synStatement">import</span> <span class="synSpecial">'(</span>integral:connect-toplevel integral:ensure-table-exists<span class="synSpecial">))</span>
+
+<span class="synSpecial">(</span>connect-toplevel :sqlite3 :database-name #P<span class="synConstant">&quot;/tmp/test.db&quot;</span><span class="synSpecial">)</span>
+<span class="synComment">;-&gt; To load &quot;dbd-sqlite3&quot;:</span>
+<span class="synComment">;     Load 1 ASDF system:</span>
+<span class="synComment">;       dbd-sqlite3</span>
+<span class="synComment">;   ; Loading &quot;dbd-sqlite3&quot;</span>
+<span class="synComment">;</span>
+<span class="synComment">;=&gt; #&lt;DBD.SQLITE3:&lt;DBD-SQLITE3-CONNECTION&gt; #x302002023C6D&gt;</span>
+
+<span class="synSpecial">(</span>ensure-table-exists <span class="synSpecial">'</span><span class="synIdentifier">user</span><span class="synSpecial">)</span>
+<span class="synComment">;-&gt; CREATE TABLE IF NOT EXISTS &quot;user&quot; (&quot;%oid&quot; SERIAL NOT NULL PRIMARY KEY, &quot;name&quot; TEXT);</span>
+<span class="synComment">;=&gt; NIL</span>
+</pre>
+
+
+<p>これで準備完了。DBに記録するには<code>save-dao</code>を呼びます。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span><span class="synStatement">import</span> <span class="synSpecial">'</span><span class="synIdentifier">integral:save-dao</span><span class="synSpecial">)</span>
+
+<span class="synSpecial">(</span><span class="synStatement">let</span> <span class="synSpecial">((</span><span class="synStatement">user</span> <span class="synSpecial">(</span><span class="synStatement">make-instance</span> <span class="synSpecial">'</span><span class="synIdentifier">user</span> <span class="synType">:name</span> <span class="synConstant">&quot;深町英太郎&quot;</span><span class="synSpecial">)))</span>
+  <span class="synSpecial">(</span>save-dao <span class="synStatement">user</span><span class="synSpecial">))</span>
+<span class="synComment">;=&gt; #&lt;USER %oid: 1&gt;</span>
+</pre>
+
+
+<p>ちゃんとINSERTされたか不安なのでSELECTもしてみます。SELECT文は<code>select-dao</code>で行います。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span><span class="synStatement">import</span> <span class="synSpecial">'</span><span class="synIdentifier">integral:select-dao</span><span class="synSpecial">)</span>
+
+<span class="synSpecial">(</span>select-dao <span class="synSpecial">'</span><span class="synIdentifier">user</span><span class="synSpecial">)</span>
+<span class="synComment">;=&gt; (#&lt;USER %oid: 1&gt;)</span>
+
+<span class="synSpecial">(</span><span class="synStatement">describe</span> <span class="synSpecial">(</span><span class="synStatement">car</span> <span class="synStatement">*</span><span class="synSpecial">))</span>
+<span class="synComment">;-&gt; #&lt;USER %oid: 1&gt;</span>
+<span class="synComment">;   Class: #&lt;&lt;DAO-TABLE-CLASS&gt; USER&gt;</span>
+<span class="synComment">;   Wrapper: #&lt;CCL::CLASS-WRAPPER USER #x3020017FAE0D&gt;</span>
+<span class="synComment">;   Instance slots</span>
+<span class="synComment">;   INTEGRAL.TABLE::%OID: 1</span>
+<span class="synComment">;   NAME: &quot;深町英太郎&quot;</span>
+</pre>
+
+
+<p>さっき<code>save-dao</code>した<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%F3%A5%B9%A5%BF%A5%F3%A5%B9">インスタンス</a>が返って来ました。</p>
+
+<p>条件付きでSELECTしたいときはSxQLと同じく<code>where</code>や<code>limit</code>などが使えます。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span><span class="synStatement">import</span> <span class="synSpecial">'(</span>integral:where integral:limit<span class="synSpecial">))</span>
+
+<span class="synSpecial">(</span>select-dao <span class="synSpecial">'</span><span class="synIdentifier">user</span>
+  <span class="synSpecial">(</span>where <span class="synSpecial">(</span>:= name <span class="synConstant">&quot;深町英太郎&quot;</span><span class="synSpecial">))</span>
+  <span class="synSpecial">(</span>limit <span class="synConstant">1</span><span class="synSpecial">))</span>
+<span class="synComment">;=&gt; (#&lt;USER %oid: 1&gt;)</span>
+</pre>
+
+
+<h2>クラス定義の変更をDB<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%AD%A1%BC%A5%DE">スキーマ</a>に適用する (<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%DE%A5%A4%A5%B0%A5%EC%A1%BC%A5%B7%A5%E7%A5%F3">マイグレーション</a>)</h2>
+
+<p>Integralではクラス定義からテーブル定義ができることは紹介しました。ただ、途中でクラス定義を変更したらどうなるでしょうか。</p>
+
+<p>Integralではクラス定義の変更に追随してDB<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%AD%A1%BC%A5%DE">スキーマ</a>を変更する機能があります。「<strong><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%DE%A5%A4%A5%B0%A5%EC%A1%BC%A5%B7%A5%E7%A5%F3">マイグレーション</a></strong>」として広く知られている機能ですね。</p>
+
+<p>たとえばさっきの<code>user</code>クラスに自己紹介(<code>profile</code>)も欲しいな〜、と思ったら、まずはスロットを追加しましょう。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span><span class="synStatement">defclass</span> <span class="synStatement">user</span> <span class="synSpecial">()</span>
+  <span class="synSpecial">((</span>name :col-type text
+         :initarg <span class="synType">:name</span><span class="synSpecial">)</span>
+   <span class="synSpecial">(</span>profile :col-type text
+            :initarg :profile<span class="synSpecial">))</span>
+  <span class="synSpecial">(</span>:metaclass &lt;dao-table-class&gt;<span class="synSpecial">))</span>
+</pre>
+
+
+<p>そして、<code>migrate-table</code>を実行します。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span><span class="synStatement">import</span> <span class="synSpecial">'</span><span class="synIdentifier">integral:migrate-table</span><span class="synSpecial">)</span>
+
+<span class="synSpecial">(</span>migrate-table <span class="synSpecial">'</span><span class="synIdentifier">user</span><span class="synSpecial">)</span>
+<span class="synComment">;-&gt; ALTER TABLE &quot;user&quot; RENAME TO &quot;user8797&quot;;</span>
+<span class="synComment">;   CREATE TABLE &quot;user&quot; (&quot;%oid&quot; SERIAL NOT NULL PRIMARY KEY, &quot;name&quot; TEXT, &quot;profile&quot; TEXT);</span>
+<span class="synComment">;   INSERT INTO &quot;user&quot; (&quot;%oid&quot;, &quot;name&quot;) SELECT &quot;%oid&quot;, &quot;name&quot; FROM &quot;user8797&quot;;</span>
+<span class="synComment">;=&gt; NIL</span>
+</pre>
+
+
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%DE%A5%A4%A5%B0%A5%EC%A1%BC%A5%B7%A5%E7%A5%F3">マイグレーション</a>で実行された<a class="keyword" href="http://d.hatena.ne.jp/keyword/SQL">SQL</a>がログとして出力されて完了しました。</p>
+
+<h2>レコードの更新処理</h2>
+
+<p>上述の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%DE%A5%A4%A5%B0%A5%EC%A1%BC%A5%B7%A5%E7%A5%F3">マイグレーション</a>により、<code>user</code>テーブルに<code>profile</code>も保存できるようになりました。試しに先ほどのユーザにプロフィールを設定してみます。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span><span class="synStatement">import</span> <span class="synSpecial">'</span><span class="synIdentifier">integral:find-dao</span><span class="synSpecial">)</span>
+
+<span class="synSpecial">(</span><span class="synStatement">defvar</span> <span class="synType">*user*</span> <span class="synSpecial">(</span>find-dao <span class="synSpecial">'</span><span class="synIdentifier">user</span> <span class="synConstant">1</span><span class="synSpecial">))</span>
+
+<span class="synComment">;; まだ自己紹介は無い</span>
+<span class="synSpecial">(</span><span class="synStatement">slot-value</span> <span class="synType">*user*</span> <span class="synSpecial">'</span><span class="synIdentifier">profile</span><span class="synSpecial">)</span>
+<span class="synComment">;=&gt; NIL</span>
+
+<span class="synSpecial">(</span><span class="synStatement">setf</span> <span class="synSpecial">(</span><span class="synStatement">slot-value</span> <span class="synType">*user*</span> <span class="synSpecial">'</span><span class="synIdentifier">profile</span><span class="synSpecial">)</span> <span class="synConstant">&quot;Common Lispとビールが好きです。&quot;</span><span class="synSpecial">)</span>
+<span class="synComment">;=&gt; &quot;Common Lispとビールが好きです。&quot;</span>
+</pre>
+
+
+<p>スロットにsetfしただけではDBに残らないので、更新を反映してあげます。反映は、新規追加と同じく<code>save-dao</code>でできます。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span>save-dao <span class="synType">*user*</span><span class="synSpecial">)</span>
+<span class="synComment">;=&gt; NIL</span>
+</pre>
+
+
+<p>これで基本的な使い方は全部です！ 簡単でしょ？</p>
+
+<h2>秘技: オート<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%DE%A5%A4%A5%B0%A5%EC%A1%BC%A5%B7%A5%E7%A5%F3">マイグレーション</a>!!!</h2>
+
+<p>開発時はクラスの再定義をすることが多いですよね。そのたびに<code>migrate-table</code>を実行するのはなかなか面倒……。</p>
+
+<p>そんな人のために、Integralには<strong>オート<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%DE%A5%A4%A5%B0%A5%EC%A1%BC%A5%B7%A5%E7%A5%F3">マイグレーション</a>機能</strong>が実装されています。</p>
+
+<p>使い方は簡単。<code>integral:*auto-migration-mode*</code>を<code>T</code>に設定してあげれば、クラスが再定義されるたびに<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%DE%A5%A4%A5%B0%A5%EC%A1%BC%A5%B7%A5%E7%A5%F3">マイグレーション</a>処理が走ります。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synComment">;; 再定義</span>
+<span class="synSpecial">(</span><span class="synStatement">defclass</span> <span class="synStatement">user</span> <span class="synSpecial">()</span>
+  <span class="synSpecial">((</span>name :col-type text
+         :initarg <span class="synType">:name</span><span class="synSpecial">)</span>
+   <span class="synSpecial">(</span>profile :col-type text
+            :initarg :profile<span class="synSpecial">)</span>
+   <span class="synSpecial">(</span>birthday :col-type date
+             :initarg :birthday<span class="synSpecial">))</span>
+  <span class="synSpecial">(</span>:metaclass &lt;dao-table-class&gt;<span class="synSpecial">))</span>
+<span class="synComment">;-&gt; CREATE TABLE IF NOT EXISTS &quot;user&quot; (&quot;%oid&quot; SERIAL NOT NULL PRIMARY KEY, &quot;name&quot; TEXT, &quot;profile&quot; TEXT, &quot;birthday&quot; DATE);</span>
+<span class="synComment">;   ALTER TABLE &quot;user&quot; RENAME TO &quot;user8800&quot;;</span>
+<span class="synComment">;   CREATE TABLE &quot;user&quot; (&quot;%oid&quot; SERIAL NOT NULL PRIMARY KEY, &quot;name&quot; TEXT, &quot;profile&quot; TEXT, &quot;birthday&quot; DATE);</span>
+<span class="synComment">;   INSERT INTO &quot;user&quot; (&quot;%oid&quot;, &quot;name&quot;, &quot;profile&quot;) SELECT &quot;%oid&quot;, &quot;name&quot;, &quot;profile&quot; FROM &quot;user8800&quot;;</span>
+<span class="synComment">;=&gt; #&lt;&lt;DAO-TABLE-CLASS&gt; USER&gt;</span>
+</pre>
+
+
+<p>この機能は僕のお気に入りです。</p>
+
+<p>※ナチュラルにALTER TABLE文が走ってしまうので、本番環境での使用はお控えください。</p>
+
+<h2>もう一つの方法――DB<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%AD%A1%BC%A5%DE">スキーマ</a>からクラス定義する</h2>
+
+<p>CLOSのクラス定義からCREATE TABLE文を発行して開発を行う例を紹介しました。</p>
+
+<p>けれど、「<strong><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%AD%A1%BC%A5%DE">スキーマ</a>定義は<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>ではなく直接DB側でやりたいなー</strong>」、という方もいらっしゃるでしょう。</p>
+
+<p>Integralではずばりその機能を提供します。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span><span class="synStatement">defclass</span> <span class="synStatement">user</span> <span class="synSpecial">()</span>
+  <span class="synSpecial">()</span>
+  <span class="synSpecial">(</span>:metaclass &lt;dao-table-class&gt;<span class="synSpecial">)</span>
+  <span class="synSpecial">(</span>:generate-slots <span class="synStatement">t</span><span class="synSpecial">))</span>
+</pre>
+
+
+<p>先ほどに比べてスロット定義がなくなり、代わりに<code>:generate-slots t</code>がついています。</p>
+
+<p>あとは普通に使うだけです。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span>find-dao <span class="synSpecial">'</span><span class="synIdentifier">user</span> <span class="synConstant">1</span><span class="synSpecial">)</span>
+<span class="synComment">;=&gt; #&lt;USER %oid: 1&gt;</span>
+</pre>
+
+
+<p><code>:generate-slots</code> を使ったときの副次的な作用として、アクセサが勝手に定義されます。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span>user-name <span class="synSpecial">(</span>find-dao <span class="synSpecial">'</span><span class="synIdentifier">user</span> <span class="synConstant">1</span><span class="synSpecial">))</span>
+<span class="synComment">;=&gt; &quot;深町英太郎&quot;</span>
+
+<span class="synSpecial">(</span>user-profile <span class="synSpecial">(</span>find-dao <span class="synSpecial">'</span><span class="synIdentifier">user</span> <span class="synConstant">1</span><span class="synSpecial">))</span>
+<span class="synComment">;=&gt; &quot;Common Lispとビールが好きです。&quot;</span>
+</pre>
+
+
+<p>ね、簡単でしょ？ まるで<a class="keyword" href="http://d.hatena.ne.jp/keyword/ActiveRecord">ActiveRecord</a>みたい。</p>
+
+<h2>INSERT、UPDATE、DELETE時のフック</h2>
+
+<p><code>save-dao</code>、<code>insert-dao</code>、 <code>update-dao</code>、<code>delete-dao</code> はすべてメソッドになっているので、普通に<code>:before</code>、<code>:after</code>、<code>:around</code>メソッドを定義してやればいくらでもいじれます。CLOS万歳。</p>
+
+<h2>inflate と deflate</h2>
+
+<p>多くの言語のO/Rマッパーと同様、Integralにも「inflate」と「deflate」という機能が提供されています。これらは、DBから<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>に渡ってくるときのデータの変換、逆に<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>のデータからDBへ保存するときのデータの変換を意味しています。</p>
+
+<p>よく使われるのは日付用のカラムの変換ですね。たとえばさっきの<code>user</code>クラスでは<code>birthday</code>には文字列が入っています。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span>user-birthday <span class="synSpecial">(</span>find-dao <span class="synSpecial">'</span><span class="synIdentifier">user</span> <span class="synConstant">1</span><span class="synSpecial">))</span>
+<span class="synComment">;=&gt; &quot;1999-03-10&quot;</span>
+</pre>
+
+
+<p>文字列じゃなくてlocal-timeのオブジェクトとして返って来て欲しい、っていう場合には以下のようにinflateメソッドを定義します。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span>ql:quickload :local-time<span class="synSpecial">)</span>
+<span class="synSpecial">(</span><span class="synStatement">import</span> <span class="synSpecial">'(</span>integral:inflate local-time:parse-timestring<span class="synSpecial">))</span>
+
+<span class="synSpecial">(</span><span class="synStatement">defmethod</span> inflate <span class="synSpecial">((</span>object <span class="synStatement">user</span><span class="synSpecial">)</span> <span class="synSpecial">(</span>slot-name <span class="synSpecial">(</span><span class="synStatement">eql</span> <span class="synSpecial">'</span><span class="synIdentifier">birthday</span><span class="synSpecial">))</span> value<span class="synSpecial">)</span>
+  <span class="synSpecial">(</span><span class="synStatement">and</span> value
+       <span class="synSpecial">(</span>parse-timestring value<span class="synSpecial">)))</span>
+</pre>
+
+
+<p>もう一度ユーザを取ってくると、ちゃんとlocal-timeのオブジェクトになります。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span><span class="synStatement">slot-value</span> <span class="synSpecial">(</span>find-dao <span class="synSpecial">'</span><span class="synIdentifier">user</span> <span class="synConstant">1</span><span class="synSpecial">)</span> <span class="synSpecial">'</span><span class="synIdentifier">birthday</span><span class="synSpecial">)</span>
+<span class="synComment">;=&gt; @1999-03-10T09:00:00.000000+09:00</span>
+</pre>
+
+
+<p>local-timeのオブジェクトをそのままDBに記録することはできないので、逆変換のdeflateも定義しないといけません。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span><span class="synStatement">import</span> <span class="synSpecial">'(</span>integral:deflate local-time:format-timestring<span class="synSpecial">))</span>
+
+<span class="synSpecial">(</span><span class="synStatement">defmethod</span> deflate <span class="synSpecial">((</span>object <span class="synStatement">user</span><span class="synSpecial">)</span> <span class="synSpecial">(</span>slot-name <span class="synSpecial">(</span><span class="synStatement">eql</span> <span class="synSpecial">'</span><span class="synIdentifier">birthday</span><span class="synSpecial">))</span> value<span class="synSpecial">)</span>
+  <span class="synSpecial">(</span><span class="synStatement">and</span> value
+       <span class="synSpecial">(</span>format-timestring <span class="synStatement">nil</span> value<span class="synSpecial">)))</span>
+</pre>
+
+
+<p>これで、DBに記録するときは予め文字列に変換するようになります。</p>
+
+<h2>生の<a class="keyword" href="http://d.hatena.ne.jp/keyword/SQL">SQL</a>が書きたい？</h2>
+
+<p>効率や信条のために「<strong>SxQLじゃなくて文字列で<a class="keyword" href="http://d.hatena.ne.jp/keyword/SQL">SQL</a>を書きたいんだよ</strong>」という方もいらっしゃるでしょう。そんなときは<code>retrieve-by-sql</code>を使います。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span>retrieve-by-sql <span class="synConstant">&quot;SELECT * FROM user&quot;</span><span class="synSpecial">)</span>
+<span class="synComment">;=&gt; ((:|%oid| 1 :|name| &quot;深町英太郎&quot;</span>
+<span class="synComment">;     :|profile| &quot;Common Lispとビールが好きです。&quot; :|birthday| &quot;1999-03-10&quot;)</span>
+<span class="synComment">;    (:|%oid| 2 :|name| &quot;深町英太郎&quot;</span>
+<span class="synComment">;     :|profile| NIL :|birthday| NIL))</span>
+</pre>
+
+
+<p><code>:as &lt;クラス名&gt;</code> をつけると結果がplistではなく、そのクラスの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%F3%A5%B9%A5%BF%A5%F3%A5%B9">インスタンス</a>で返ってきます。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span>retrieve-by-sql <span class="synConstant">&quot;SELECT * FROM user&quot;</span> :as <span class="synSpecial">'</span><span class="synIdentifier">user</span><span class="synSpecial">)</span>
+<span class="synComment">;=&gt; (#&lt;USER %oid: 1&gt; #&lt;USER %oid: 2&gt;)</span>
+</pre>
+
+
+<h2>おわりに</h2>
+
+<p>長くなるのでとりあえず使い方だけ紹介。MOPによる具体的な実装の話は以下のスーパークールなイベントで話す予定ですので興味があって関東圏に在住の方は是非ご参加ください。見るとあと4枠しかないようです。</p>
+
+<blockquote><p><a href="http://atnd.org/events/46746">Lisp Meet Up presented by Shibuya.lisp #13</a><br>
+日時: 1/23(木) 19:30 〜 21:30<br>
+場所: <a class="keyword" href="http://d.hatena.ne.jp/keyword/%BD%C2%C3%AB%A5%DE%A1%BC%A5%AF%A5%B7%A5%C6%A5%A3">渋谷マークシティ</a> ウエスト17階 セミナールーム</p></blockquote>
+
+<p>Integralは<a class="keyword" href="http://d.hatena.ne.jp/keyword/GitHub">GitHub</a>で公開しています。気に入ってくれたらStarしてくれるとうれしいですよ。</p>
+
+<ul>
+<li><a href="https://github.com/fukamachi/integral">Integral by fukamachi | GitHub</a>&nbsp;&nbsp;<iframe class="gh-btn" src="http://ghbtns.com/github-btn.html?user=fukamachi&repo=integral&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="140" height="30" style="position:relative;top:4px"></iframe></li>
+</ul>
+
+
+      
+    </div>
+    <footer class="entry-footer">
+      <p class="entry-footer-section">
+        <span class="author vcard"><span class="fn" data-load-nickname="1" data-user-name="nitro_idiot">nitro_idiot</span></span>
+        <span class="entry-footer-time"><a href="http://blog.8arrow.org/entry/2014/01/19/180013"><time data-relative datetime="2014-01-19T09:00:13Z" title="2014-01-19T09:00:13Z" pubdate class="updated">2014-01-19 18:00</time></a></span>
+      </p>
+      <div class="hatena-star-container">
+      </div>
+      
+
+      <div class="customized-footer">
+        <div class="social-buttons">
+  
+  
+    <a href="http://b.hatena.ne.jp/entry/http://blog.8arrow.org/entry/2014/01/19/180013" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="この記事をはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="この記事をはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+  
+  
+    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fblog.8arrow.org%2Fentry%2F2014%2F01%2F19%2F180013&amp;layout=button_count&amp;show_faces=false&amp;width=130&amp;action=like&amp;height=21" class="facebook-like-button" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:21px;" allowTransparency="true"></iframe>
+  
+  
+    <iframe allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fblog.8arrow.org%2Fentry%2F2014%2F01%2F19%2F180013&text=%E9%AB%98%E6%A9%9F%E8%83%BD%E3%81%AACommon%20Lisp%E3%81%AEO%2FR%E3%83%9E%E3%83%83%E3%83%91%E3%83%BC%E3%80%8CIntegral%E3%80%8D%E3%82%92%E4%BD%9C%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F%20-%20%E5%85%AB%E7%99%BA%E7%99%BD%E4%B8%AD&lang=ja" class="twitter-share-button" style="width:130px; height:20px;"></iframe>
+  
+  
+    <div class="g-plusone" data-size="medium" data-href="http://blog.8arrow.org/entry/2014/01/19/180013"></div>
+  
+  
+  
+  
+</div>
+
+
+          
+
+          
+
+          
+            <div class="entry-footer-html">    <!-- X:S ZenBackWidget --><script type="text/javascript">document.write(unescape("%3Cscript")+" src='http://widget.zenback.jp/?base_uri=http%3A//blog.8arrow.org&nsid=116589683810521419%3A%3A116589712801563571&rand="+Math.ceil((new Date()*1)*Math.random())+"' type='text/javascript'"+unescape("%3E%3C/script%3E"));</script><!-- X:E ZenBackWidget --></div>
+          
+        
+      </div>
+
+      <div class="comment-box">
+        
+        <ul class="comment">
+          
+        </ul>
+        
+          <a class="leave-comment-title">コメントを書く</a>
+        
+      </div>
+    </footer>
+  </div>
+</article>
+
+                
+
+                
+                  
+                  
+                  <div class="permalink pager">
+                    
+                      
+                      <span class="pager-prev">
+                        <a href="http://blog.8arrow.org/entry/2014/01/22/184258" rel="prev">
+                          <span class="pager-arrow">« </span>
+                          新しいCommon Lisp方言「CL21」を作ったの…
+                        </a>
+                      </span>
+                    
+                    
+                      
+                      <span class="pager-next">
+                        <a href="http://blog.8arrow.org/entry/2014/01/04/191742" rel="next">
+                          Common LispのResqueクローン「Lesque」を…
+                          <span class="pager-arrow"> »</span>
+                        </a>
+                      </span>
+                    
+                  </div>
+                
+
+              
+            
+            <!-- rakuten_ad_target_end -->
+            <!-- google_ad_section_end -->
+
+            
+          
+        </div>
+      </div>
+
+      
+      <aside id="box1">
+        <div id="box1-inner">
+        </div>
+      </aside>
+
+    </div><!-- #wrapper -->
+
+    <aside id="box2">
+  <div id="box2-inner">
+    
+      
+
+<div class="hatena-module hatena-module-profile">
+  <div class="hatena-module-title">
+    About Me
+  </div>
+  <div class="hatena-module-body">
+    
+    <a href="http://blog.8arrow.org/about">
+      <img src="http://cdn1.www.st-hatena.com/users/ni/nitro_idiot/profile.gif"
+      alt="id:nitro_idiot" class="profile-icon" />
+    </a>
+    
+
+    
+    <span class="id">
+      <a href="http://blog.8arrow.org/about"><span data-load-nickname="1" data-user-name="nitro_idiot">id:nitro_idiot</span></a>
+      
+  
+    
+      
+      <a href="http://blog.hatena.ne.jp/guide/pro" title="はてなブログPro"><i class="icon-pro" /></i></a>
+    
+  
+
+
+    </span>
+    
+
+    
+
+    
+    <div class="hatena-follow-button-box btn-subscribe">
+      <a href="#" class="hatena-follow-button">
+        <span class="subscribing">
+          <span class="foreground">購読中です</span>
+          <span class="background">読者をやめる</span>
+        </span>
+        <span class="unsubscribing">
+          <span class="foreground">読者になる</span>
+          <span class="background">読者になる</span>
+        </span>
+      </a>
+      <div class="subscription-count-box">
+        <span class="subscription-balloon">
+        </span>
+        <span class="subscription-count">
+        </span>
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-html">
+  
+  <div class="hatena-module-body">
+    <style type="text/css">
+.my-service-icons {
+  padding-left: 0;
+  text-align: center;
+}
+.my-service-icons li {
+  display: inline-block;
+  margin: 0 8px;
+}
+</style>
+<ul class="my-service-icons" >
+  <li>
+    <a href="https://github.com/fukamachi" target="_blank"><img src="http://8arrow.org/images/github-icon.png" alt="GitHub" title="GitHub" width="40px" height="40px" /></a>
+  </li>
+  <li>
+    <a href="http://nitro-idiot.hatenablog.com/" target="_blank"><img src="http://8arrow.org/images/hatenablog-icon.png" alt="Diary" title="Diary" width="40px" height="40px" /></a>
+  </li>
+  <li>
+    <a href="https://twitter.com/nitro_idiot" target="_blank"><img src="http://8arrow.org/images/twitter-icon.png" alt="Twitter" title="Twitter" width= "49px" height="40px" /></a>
+  </li>
+</ul>
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-html">
+  
+    <div class="hatena-module-title">Website</div>
+  
+  <div class="hatena-module-body">
+    <a href="http://8arrow.org/" target="_blank"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/n/nitro_idiot/20140116/20140116163928.png" alt="My Portfolio" /></a>
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-recent-entries ">
+  <div class="hatena-module-title">
+    <a href="http://blog.8arrow.org/archive">
+      Recent Entries
+    </a>
+  </div>
+  <div class="hatena-module-body">
+    <ul class="recent-entries hatena-urllist ">
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/04/16/233941" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">軽量なCommon LispのDBライブラリ「datafly」を作りました        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/03/02/172920" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">株式会社はてなを退職しました        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/02/04/041417" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">誰向けかわからないCommon Lispでの関数型プログラミング入門とその未来        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/01/24/075236" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">Lisp Meet Up #13 に参加しました        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/01/22/184258" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">新しいCommon Lisp方言「CL21」を作ったので意見を募集します        </a>
+        
+
+              </div>
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-archive">
+  <div class="hatena-module-title">
+    <a href="http://blog.8arrow.org/archive">Archive</a>
+  </div>
+  <div class="hatena-module-body">
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-search-box">
+  <div class="hatena-module-title">
+    Search
+  </div>
+  <div class="hatena-module-body">
+    <form class="search-form" role="search" action="http://blog.8arrow.org/search" method="get">
+      <input type="text" name="q" class="search-module-input" value="" placeholder="ブログ内検索" required>
+      <input type="submit" value="検索" class="search-module-button" />
+    </form>
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-circles">
+  <div class="hatena-module-title">
+    Groups
+  </div>
+  <div class="hatena-module-body">
+    <ul class="circle-list">
+      
+        <li title="Lisp" data-circle-id="12921228815713769536" data-circle-mtime="1393426757">
+  <a href="http://hatenablog.com/g/12921228815713769536"><img class="circle-image" src="http://cdn.image.st-hatena.com/image/square/66f5d18c388e0cb1d804be358c6cfb48df174304/height=96;version=1;width=96/http%3A%2F%2Fcdn.mogile.archive.st-hatena.com%2Fv1%2Fimage%2Fnitro_idiot%2F297785937330261174.png" alt="Lisp" title="Lisp"></a></li>
+      
+    </ul>
+  </div>
+</div>
+
+    
+    
+  </div>
+</aside>
+
+  </div>
+</div>
+
+
+
+
+
+
+        
+      </div>
+    </div>
+
+    
+      <footer id="footer" data-brand="hatenablog">
+  <div id="footer-inner">
+    <address>
+      
+      <a href="http://blog.8arrow.org/about"><img src="http://cdn1.www.st-hatena.com/users/ni/nitro_idiot/profile.gif" width="16" height="16" alt=""/>
+        <span data-load-nickname="1" data-user-name="nitro_idiot">nitro_idiot</span>
+      </a>
+    </address>
+    <p class="services"><a href="http://hatenablog.com/">Hatena Blog</a> / <a href="http://d.hatena.ne.jp/">Hatena::Diary</a></p>
+  </div>
+</footer>
+
+    
+
+    
+
+    
+      <script src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
+    
+
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+  {"parsetags": "explicit"}
+</script>
+<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+
+
+<script type="text/javascript" src="http://hatenablog.com/js?version=cb3376f552692eef52655312928aaadd"></script>
+
+<script type="text/javascript" src="http://hatenablog.com/js/texts-ja.js?version=cb3376f552692eef52655312928aaadd"></script>
+
+
+  <script type="text/javascript">Hatena.Diary.loadGlobalHeader()</script>
+
+
+
+
+
+    
+       <script id="google-analytics-script" type="text/javascript">
+var _gaq = _gaq || [];
+
+(function($){
+
+  // 現在のドメイン
+  
+    
+    
+      
+      var current_domain = "blog.8arrow.org".split(":")[0];
+    
+  
+
+  
+
+  
+
+   
+   _gaq.push(['all._setAccount', 'UA-7855606-1']);
+   _gaq.push(['all._setDomainName', current_domain]);
+   _gaq.push(['all._setSampleRate', '10']);
+   _gaq.push(['all._trackPageview']);
+
+  
+    _gaq.push(['a._setAccount', 'UA-29716941-5']);
+    _gaq.push(['a._setDomainName', current_domain]);
+    _gaq.push(['a._setCustomVar', 1, 'PageId', document.documentElement.getAttribute('data-page'), 3 /* page-level */]);
+      var keywordCampaigns = [];
+      $('.js-entry-article').each(function (index, element) {
+        var keywords = $(element).data('keywordCampaign').split(' ');
+        keywords = _.filter(keywords, function (keyword) { return keyword.length > 0 });
+        keywordCampaigns = keywordCampaigns.concat(keywords);
+      });
+      if (keywordCampaigns.length > 0) {
+        _gaq.push(['a._setCustomVar', 3, 'KeywordCampaign', keywordCampaigns[0], 3 /* page-level */]);
+      }
+      _gaq.push(['a._trackPageview']);
+  
+    _gaq.push(['b._setAccount', 'UA-29716941-2']);
+    _gaq.push(['b._setDomainName', current_domain]);
+    _gaq.push(['b._setCustomVar', 1, 'PageId', document.documentElement.getAttribute('data-page'), 3 /* page-level */]);
+      var keywordCampaigns = [];
+      $('.js-entry-article').each(function (index, element) {
+        var keywords = $(element).data('keywordCampaign').split(' ');
+        keywords = _.filter(keywords, function (keyword) { return keyword.length > 0 });
+        keywordCampaigns = keywordCampaigns.concat(keywords);
+      });
+      if (keywordCampaigns.length > 0) {
+        _gaq.push(['b._setCustomVar', 3, 'KeywordCampaign', keywordCampaigns[0], 3 /* page-level */]);
+      }
+      _gaq.push(['b._trackPageview']);
+  
+
+  $(function () {
+      $(document).delegate('[data-track-event="click"]', 'click', function () {
+          
+          _gaq.push([ 'a._trackEvent', 'Blogs', 'Click', this.getAttribute('data-track-key') ]);
+          
+          _gaq.push([ 'b._trackEvent', 'Blogs', 'Click', this.getAttribute('data-track-key') ]);
+          
+      });
+  });
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  var available_domains = ["blog.hatena.ne.jp"];
+  
+    available_domains.push("hatenablog.com".split(":")[0]);
+  
+    available_domains.push("hatenablog.jp".split(":")[0]);
+  
+    available_domains.push("hateblo.jp".split(":")[0]);
+  
+    available_domains.push("hatenadiary.com".split(":")[0]);
+  
+    available_domains.push("hatenadiary.jp".split(":")[0]);
+  
+  $('a').on('click', function() {
+    // 同じドメインならスキップ
+    if ( !this.hostname || this.hostname.indexOf(current_domain) != -1 ) return;
+
+    var cross_domain = false;
+    for (var i = 0, len = available_domains.length; i < len; i++) {
+      if (this.hostname.indexOf(available_domains[i]) != -1) cross_domain = true;
+    }
+    if ( cross_domain ) {
+      
+      _gaq.push(['a._link', this.href]);
+      
+      _gaq.push(['b._link', this.href]);
+      
+    }
+  });
+
+})(jQuery);
+</script>
+
+       
+  <script id="hatena-counter-script" type="text/javascript"><!--
+      hatena_counter_name = "nitro_idiot";
+      hatena_counter_id = "104";
+      hatena_counter_ref = document.referrer+"";
+      hatena_counter_screen = screen.width + "x" + screen.height+","+screen.colorDepth;
+  //--></script>
+  <script type="text/javascript" src="http://counter.hatena.ne.jp/js/counter.js"></script>
+  <noscript><img src="http://counter.hatena.ne.jp/nitro_idiot/104" border="0" alt="counter"></noscript>
+
+
+    
+
+  </body>
+</html>
+

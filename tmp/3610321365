@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+    <head>
+        <meta charset="utf-8">
+        <title>関心を探す(IT・テクノロジー) | Buzz - Yahoo!ニュース</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="description" content="Yahoo!ニュース Buzzコーナーは、世の中で話題になっているニュースをピックアップしてお届けします。興味のあるBuzzワードをフォローして、ニュースフィードで受け取ることもできます。" />
+<meta name="keywords" content="ヤフー,ニュース,フィード,フォロー,Buzz,バズ,IT・テクノロジー" />
+<meta name="format-detection" content="telephone=no" />
+<meta property="fb:app_id" content="276725822409153" />
+
+        <link rel="apple-touch-icon" href="http://i.yimg.jp/images/ipn/wcb/news129.png" />
+
+        <!-- SpaceID=0 robot -->
+
+        <link type="text/css" rel="stylesheet" href="http://i.yimg.jp/images/bloom/v201212/common/css/common_v2_1.css?v=0" media="all" />
+<link type="text/css" rel="stylesheet" href="http://buzz.news.yahoo.co.jp/images/bloom/v201212/common/css/common_responsive.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://i.yimg.jp/images/bloom/v201212/common/css/common_pc_v2.css?v=0" media="all" />
+<link type="text/css" rel="stylesheet" href="http://buzz.news.yahoo.co.jp/images/bloom/v201212/common/css/common_pc_responsive.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://i.yimg.jp/images/bloom/v201212/search/css/search_styles.css?v=0" media="all" />
+<link type="text/css" rel="stylesheet" href="http://buzz.news.yahoo.co.jp/images/bloom/v201212/search/css/search_styles_responsive.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://i.yimg.jp/images/bloom/v201212/search/css/search_pc.css?v=0" media="all" />
+<link type="text/css" rel="stylesheet" href="http://buzz.news.yahoo.co.jp/images/bloom/v201212/search/css/search_pc_responsive.css" media="all" />
+
+        <style type="text/css">
+
+</style>
+        <script type="text/javascript" language="JavaScript" src="http://i.yimg.jp/images/commerce/js/libs/jquery/core/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" language="JavaScript" src="http://i.yimg.jp/images/rapid/1.5.0/ult.js"></script>
+<script type="text/javascript" language="JavaScript" src="http://i.yimg.jp/images/bloom/v201212/common/js/common-1.0.3.min.js"></script>
+<script type="text/javascript" language="JavaScript" src="http://i.yimg.jp/images/bloom/v201212/search/js/search-1.0.0.min.js"></script>
+
+        <!--[if lt IE 9]><script src="http://i.yimg.jp/images/bloom/lib/html5.js"></script><![endif]-->
+        <!--[if lt IE 9]><script src="http://i.yimg.jp/images/bloom/lib/css3-mediaqueries.js"></script><![endif]-->
+        <!--[if gte IE 9]>
+            <style type="text/css">
+                .gradient {filter: none;}
+            </style>
+        <![endif]-->
+    </head>
+    <body id="device_pc">
+        <div id="wrapper">
+            <header id="header">
+    <!-- SpaceID=0 robot -->
+
+    <!-- SpaceID=0 robot -->
+
+<!-- SpaceID=0 robot -->
+
+<!-- SpaceID=0 robot -->
+
+</header>
+            
+            <div id="rics-wrapper">
+                <div id="contents-header">
+    <div class="search">
+        <div class="searchWrapper">
+        <form method="get" action="http://buzz.news.yahoo.co.jp/search/result/">
+
+    <div class="inputWrapper">
+        <input type="text" name="search" class="searchInput" id="searchText" style="color: rgb(153, 153, 153);">
+        <span class="inputInnr"></span>
+    </div>
+    <span id="searchButton"><input type="submit" value="検索" class="searchBtn"></span>
+    <ul class="searchSelect close"><!--
+        --><li id="SearchNews"><a href="javascript:void(0);"><span>ニュース</span></a></li><li id="SearchTopics"><a href="javascript:void(0);"><span>トピックス</span></a></li><li id="SearchBuzzword"><a class="cur" href="javascript:void(0);"><span>Buzzワード</span></a></li><li id="SearchPolls"><a href="javascript:void(0);"><span>意識調査</span></a></li><li id="SearchGSR"><a href="javascript:void(0);"><span>全国紙パック</span></a></li>
+    </ul>
+    <div class="bubble close"></div>
+    <p class="currentSearch"><a id="sortSearch" href="javascript:void(0);"><span>Buzzワード</span></a></p>
+
+</form>
+        </div>
+        <p class="advanced hide"><a href="http://news.search.yahoo.co.jp/advanced">条件指定</a></p>
+        <ul class="personalInfo">
+    <li class="myPage">
+        <a  href="http://person.news.yahoo.co.jp/u/login/" onmousedown="this.href='http://person.news.yahoo.co.jp/u/login/'"><span class="myThumb">
+    <img width="24" height="24" src="http://i.yimg.jp/images/bloom/v201212/anonymous_24.png">
+</span></a><!--
+        --><a  href="http://person.news.yahoo.co.jp/u/login/" onmousedown="this.href='http://person.news.yahoo.co.jp/u/login/'"><span class="myName">ユーザーページ</span></a><!--
+        -->
+    </li>
+    <li class="purchase"><a  href="http://headlines.yahoo.co.jp/purchase/" onmousedown="this.href='http://headlines.yahoo.co.jp/purchase/'">購入済み</a></li>
+    <li class="setting"><a  href="http://person.news.yahoo.co.jp/settings/profile/" onmousedown="this.href='http://person.news.yahoo.co.jp/settings/profile/'" class="last">設定</a></li>
+</ul>
+    </div>
+    <div class="gnNews" id="globalNav">
+            <ul id="gnPri">
+        <li id="gnPriTop" ><a  href="http://news.yahoo.co.jp/" onmousedown="this.href='http://news.yahoo.co.jp/'">トップ</a></li><li id="gnPriNew" ><a  href="http://news.yahoo.co.jp/flash" onmousedown="this.href='http://news.yahoo.co.jp/flash'">速報</a></li><li id="gnPriPhoto" ><a  href="http://headlines.yahoo.co.jp/hl?ty=p" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?ty=p'">写真</a></li><li id="gnPriVideo" ><a  href="http://headlines.yahoo.co.jp/videonews/" onmousedown="this.href='http://headlines.yahoo.co.jp/videonews/'">映像</a></li><li id="gnPriZasshi" ><a  href="http://zasshi.news.yahoo.co.jp/" onmousedown="this.href='http://zasshi.news.yahoo.co.jp/'">雑誌</a></li><li id="gnPriBylines" ><a  href="http://bylines.news.yahoo.co.jp/" onmousedown="this.href='http://bylines.news.yahoo.co.jp/'">個人</a></li><li id="gnPriBuzz" class="current"><a  href="http://buzz.news.yahoo.co.jp/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/'">Buzz</a></li><li id="gnPriResearch" ><a  href="http://polls.dailynews.yahoo.co.jp/" onmousedown="this.href='http://polls.dailynews.yahoo.co.jp/'">意識調査</a></li><li id="gnPriRanking" ><a  href="http://headlines.yahoo.co.jp/accr" onmousedown="this.href='http://headlines.yahoo.co.jp/accr'">ランキング</a></li><li id="gnPriFeed" ><a  href="http://feed.news.yahoo.co.jp/" onmousedown="this.href='http://feed.news.yahoo.co.jp/'">ニュースフィード</a></li>
+    </ul>
+        <div class="gnSecWrap">
+    <ul class="cgnSec">
+        <li ><a href="http://buzz.news.yahoo.co.jp/">Buzzトップ</a></li><li class="current"><a href="http://buzz.news.yahoo.co.jp/search/">関心を探す</a></li>
+    </ul>
+</div>
+    </div>
+</div>
+                <div id="rics-content">
+                    <noscript>
+    <div class="alertBox">
+        <div class="alert">
+            <p>現在<em>JavaScriptが無効</em>になっています。Yahoo!ニュースのすべての機能を利用するためには、JavaScriptの設定を有効にしてください。<br />JavaScriptの設定を変更する方法は<a href="http://www.yahoo-help.jp/app/answers/detail/p/533/a_id/43867">こちら</a>。</p>
+        </div>
+    </div>
+</noscript>
+                    
+                    <div id="rics-content-wrapper">
+                        <div id="rics-main">
+                            
+<nav class="searchNav">
+    <ul>
+        <li class="recommend">
+            <a  href="http://buzz.news.yahoo.co.jp/feature/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/feature/'" class="btnView ">注目<span class="ellipsis">のBuzzワード</span></a>
+        </li><li class="category">
+            <a  href="http://buzz.news.yahoo.co.jp/category/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/category/'" class="btnView current">カテゴリ<span class="ellipsis">一覧</span></a>
+        </li><li class="keyword">
+            <a  href="http://buzz.news.yahoo.co.jp/search/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/search/'" class="btnView "><span class="icon">キーワード<span class="ellipsis">検索</span></span></a>
+        </li>
+    </ul>
+</nav><!-- Buzzワード検索結果 -->
+<!-- .resultWrapper -->
+<section id="resultTopics" class="resultWrapper">
+    <header class="hd">
+<a  href="http://buzz.news.yahoo.co.jp/category/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/category/'" class="backBtn btnView">カテゴリ選択<span class="tail"></span></a><!--
+        --><h1 class="resultTitle">IT・テクノロジー</h1>
+    </header>
+    <ul class="bd list type48 rics-column-3n CategoryTopic">
+<li class="rics-column" >
+    <section class="itemWrapper">
+        <h1 class="name"><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%83%8E%E3%83%9E%E3%83%89%E3%83%AF%E3%83%BC%E3%82%AB%E3%83%BC/071a62f9181ccfe37264/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%83%8E%E3%83%9E%E3%83%89%E3%83%AF%E3%83%BC%E3%82%AB%E3%83%BC/071a62f9181ccfe37264/'" class="yjxName">ノマドワーカー</a></h1>
+        <div class="smry">
+            <a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%83%8E%E3%83%9E%E3%83%89%E3%83%AF%E3%83%BC%E3%82%AB%E3%83%BC/071a62f9181ccfe37264/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%83%8E%E3%83%9E%E3%83%89%E3%83%AF%E3%83%BC%E3%82%AB%E3%83%BC/071a62f9181ccfe37264/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggpF4KYfGAtS2guICN33J2pQ---x48-y48/spider/topics/071a62f9181ccfe37264.png" alt="ノマドワーカー" title="ノマドワーカー"></a>
+                            <div class="follow yjxFollow" data-followee-id="071a62f9181ccfe37264" data-destination-type="spider_topic" data-ult-sid="2080245053" data-ult-sec="004014_l" data-ult-pos="1"></div>
+        </div>
+    </section>
+</li><li class="rics-column" >
+    <section class="itemWrapper">
+        <h1 class="name"><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E6%B5%B7%E8%B3%8A%E7%89%88/0fce28fe06810a0f2851/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E6%B5%B7%E8%B3%8A%E7%89%88/0fce28fe06810a0f2851/'" class="yjxName">海賊版</a></h1>
+        <div class="smry">
+            <a  href="http://buzz.news.yahoo.co.jp/buzzword/%E6%B5%B7%E8%B3%8A%E7%89%88/0fce28fe06810a0f2851/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E6%B5%B7%E8%B3%8A%E7%89%88/0fce28fe06810a0f2851/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_sigg_8hckuDoZhDNhtYORBcRhA---x48-y48/spider/topics/0fce28fe06810a0f2851.png" alt="海賊版" title="海賊版"></a>
+                            <div class="follow yjxFollow" data-followee-id="0fce28fe06810a0f2851" data-destination-type="spider_topic" data-ult-sid="2080245053" data-ult-sec="004014_l" data-ult-pos="2"></div>
+        </div>
+    </section>
+</li><li class="rics-column" >
+    <section class="itemWrapper">
+        <h1 class="name"><a  href="http://buzz.news.yahoo.co.jp/buzzword/Chromecast/0cf2252e92ff7b120315/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/Chromecast/0cf2252e92ff7b120315/'" class="yjxName">Chromecast</a></h1>
+        <div class="smry">
+            <a  href="http://buzz.news.yahoo.co.jp/buzzword/Chromecast/0cf2252e92ff7b120315/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/Chromecast/0cf2252e92ff7b120315/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggGsahRHMX6ggm9496sV9OTw---x48-y48/spider/topics/0cf2252e92ff7b120315.png" alt="Chromecast" title="Chromecast"></a>
+                            <div class="follow yjxFollow" data-followee-id="0cf2252e92ff7b120315" data-destination-type="spider_topic" data-ult-sid="2080245053" data-ult-sec="004014_l" data-ult-pos="3"></div>
+        </div>
+    </section>
+</li><li class="rics-column" >
+    <section class="itemWrapper">
+        <h1 class="name"><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%82%B5%E3%82%A4%E3%83%90%E3%83%BC%E3%83%86%E3%83%AD/00b09595293433635344/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%82%B5%E3%82%A4%E3%83%90%E3%83%BC%E3%83%86%E3%83%AD/00b09595293433635344/'" class="yjxName">サイバーテロ</a></h1>
+        <div class="smry">
+            <a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%82%B5%E3%82%A4%E3%83%90%E3%83%BC%E3%83%86%E3%83%AD/00b09595293433635344/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%82%B5%E3%82%A4%E3%83%90%E3%83%BC%E3%83%86%E3%83%AD/00b09595293433635344/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_sigg_MyB1xeez4X.7sulKYwNIw---x48-y48/spider/topics/00b09595293433635344.png" alt="サイバーテロ" title="サイバーテロ"></a>
+                            <div class="follow yjxFollow" data-followee-id="00b09595293433635344" data-destination-type="spider_topic" data-ult-sid="2080245053" data-ult-sec="004014_l" data-ult-pos="4"></div>
+        </div>
+    </section>
+</li><li class="rics-column" >
+    <section class="itemWrapper">
+        <h1 class="name"><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E9%87%8F%E5%AD%90%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF/03ec9c15768560159136/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E9%87%8F%E5%AD%90%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF/03ec9c15768560159136/'" class="yjxName">量子コンピュータ</a></h1>
+        <div class="smry">
+            <a  href="http://buzz.news.yahoo.co.jp/buzzword/%E9%87%8F%E5%AD%90%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF/03ec9c15768560159136/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E9%87%8F%E5%AD%90%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF/03ec9c15768560159136/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggbzxlz9.Z6GhvN.NEDbeQBA---x48-y48/spider/topics/03ec9c15768560159136.png" alt="量子コンピュータ" title="量子コンピュータ"></a>
+                            <div class="follow yjxFollow" data-followee-id="03ec9c15768560159136" data-destination-type="spider_topic" data-ult-sid="2080245053" data-ult-sec="004014_l" data-ult-pos="5"></div>
+        </div>
+    </section>
+</li><li class="rics-column" >
+    <section class="itemWrapper">
+        <h1 class="name"><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%82%AA%E3%83%BC%E3%83%91%E3%83%BC%E3%83%84/06c2373ff16641086012/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%82%AA%E3%83%BC%E3%83%91%E3%83%BC%E3%83%84/06c2373ff16641086012/'" class="yjxName">オーパーツ</a></h1>
+        <div class="smry">
+            <a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%82%AA%E3%83%BC%E3%83%91%E3%83%BC%E3%83%84/06c2373ff16641086012/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%82%AA%E3%83%BC%E3%83%91%E3%83%BC%E3%83%84/06c2373ff16641086012/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggEwrciPJ5IobaSrLO3_DSlA---x48-y48/spider/topics/06c2373ff16641086012.png" alt="オーパーツ" title="オーパーツ"></a>
+                            <div class="follow yjxFollow" data-followee-id="06c2373ff16641086012" data-destination-type="spider_topic" data-ult-sid="2080245053" data-ult-sec="004014_l" data-ult-pos="6"></div>
+        </div>
+    </section>
+</li><li class="rics-column" >
+    <section class="itemWrapper">
+        <h1 class="name"><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%83%8D%E3%83%83%E3%83%88%E3%83%96%E3%83%83%E3%82%AF/0235ac030863e6870711/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%83%8D%E3%83%83%E3%83%88%E3%83%96%E3%83%83%E3%82%AF/0235ac030863e6870711/'" class="yjxName">ネットブック</a></h1>
+        <div class="smry">
+            <a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%83%8D%E3%83%83%E3%83%88%E3%83%96%E3%83%83%E3%82%AF/0235ac030863e6870711/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%83%8D%E3%83%83%E3%83%88%E3%83%96%E3%83%83%E3%82%AF/0235ac030863e6870711/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggdjQAZfHS9sfhBRiwk_tIGQ---x48-y48/spider/topics/0235ac030863e6870711.png" alt="ネットブック" title="ネットブック"></a>
+                            <div class="follow yjxFollow" data-followee-id="0235ac030863e6870711" data-destination-type="spider_topic" data-ult-sid="2080245053" data-ult-sec="004014_l" data-ult-pos="7"></div>
+        </div>
+    </section>
+</li><li class="rics-column" >
+    <section class="itemWrapper">
+        <h1 class="name"><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%83%9F%E3%83%A9%E3%83%BC%E3%83%AC%E3%82%B9%E4%B8%80%E7%9C%BC%E3%82%AB%E3%83%A1%E3%83%A9/05484e7ea6b77d3b4645/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%83%9F%E3%83%A9%E3%83%BC%E3%83%AC%E3%82%B9%E4%B8%80%E7%9C%BC%E3%82%AB%E3%83%A1%E3%83%A9/05484e7ea6b77d3b4645/'" class="yjxName">ミラーレス一眼カメラ</a></h1>
+        <div class="smry">
+            <a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%83%9F%E3%83%A9%E3%83%BC%E3%83%AC%E3%82%B9%E4%B8%80%E7%9C%BC%E3%82%AB%E3%83%A1%E3%83%A9/05484e7ea6b77d3b4645/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%83%9F%E3%83%A9%E3%83%BC%E3%83%AC%E3%82%B9%E4%B8%80%E7%9C%BC%E3%82%AB%E3%83%A1%E3%83%A9/05484e7ea6b77d3b4645/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggQ.BcP59Pz4uhNl7Jj2pztw---x48-y48/spider/topics/05484e7ea6b77d3b4645.png" alt="ミラーレス一眼カメラ" title="ミラーレス一眼カメラ"></a>
+                            <div class="follow yjxFollow" data-followee-id="05484e7ea6b77d3b4645" data-destination-type="spider_topic" data-ult-sid="2080245053" data-ult-sec="004014_l" data-ult-pos="8"></div>
+        </div>
+    </section>
+</li><li class="rics-column" >
+    <section class="itemWrapper">
+        <h1 class="name"><a  href="http://buzz.news.yahoo.co.jp/buzzword/PC%E9%81%A0%E9%9A%94%E6%93%8D%E4%BD%9C%E4%BA%8B%E4%BB%B6/0547abe5ca6d575d2014/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/PC%E9%81%A0%E9%9A%94%E6%93%8D%E4%BD%9C%E4%BA%8B%E4%BB%B6/0547abe5ca6d575d2014/'" class="yjxName">PC遠隔操作事件</a></h1>
+        <div class="smry">
+            <a  href="http://buzz.news.yahoo.co.jp/buzzword/PC%E9%81%A0%E9%9A%94%E6%93%8D%E4%BD%9C%E4%BA%8B%E4%BB%B6/0547abe5ca6d575d2014/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/PC%E9%81%A0%E9%9A%94%E6%93%8D%E4%BD%9C%E4%BA%8B%E4%BB%B6/0547abe5ca6d575d2014/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggVRsRkGOjRjOYP3Y3fKLSfQ---x48-y48/spider/topics/0547abe5ca6d575d2014.png" alt="PC遠隔操作事件" title="PC遠隔操作事件"></a>
+                            <div class="follow yjxFollow" data-followee-id="0547abe5ca6d575d2014" data-destination-type="spider_topic" data-ult-sid="2080245053" data-ult-sec="004014_l" data-ult-pos="9"></div>
+        </div>
+    </section>
+</li><li class="rics-column" >
+    <section class="itemWrapper">
+        <h1 class="name"><a  href="http://buzz.news.yahoo.co.jp/buzzword/Microsoft+Surface/028ddd6363448f388830/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/Microsoft+Surface/028ddd6363448f388830/'" class="yjxName">Microsoft Surface</a></h1>
+        <div class="smry">
+            <a  href="http://buzz.news.yahoo.co.jp/buzzword/Microsoft+Surface/028ddd6363448f388830/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/Microsoft+Surface/028ddd6363448f388830/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggX4V6OoMLRkGO8m3KxYe5nw---x48-y48/spider/topics/028ddd6363448f388830.png" alt="Microsoft Surface" title="Microsoft Surface"></a>
+                            <div class="follow yjxFollow" data-followee-id="028ddd6363448f388830" data-destination-type="spider_topic" data-ult-sid="2080245053" data-ult-sec="004014_l" data-ult-pos="10"></div>
+        </div>
+    </section>
+</li><li class="rics-column" >
+    <section class="itemWrapper">
+        <h1 class="name"><a  href="http://buzz.news.yahoo.co.jp/buzzword/4K%E8%A7%A3%E5%83%8F%E5%BA%A6/0f12d6f8207ce41f7239/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/4K%E8%A7%A3%E5%83%8F%E5%BA%A6/0f12d6f8207ce41f7239/'" class="yjxName">4K解像度</a></h1>
+        <div class="smry">
+            <a  href="http://buzz.news.yahoo.co.jp/buzzword/4K%E8%A7%A3%E5%83%8F%E5%BA%A6/0f12d6f8207ce41f7239/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/4K%E8%A7%A3%E5%83%8F%E5%BA%A6/0f12d6f8207ce41f7239/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggZ4aBTh3xDqa_IGlXg.uI7w---x48-y48/spider/topics/0f12d6f8207ce41f7239.png" alt="4K解像度" title="4K解像度"></a>
+                            <div class="follow yjxFollow" data-followee-id="0f12d6f8207ce41f7239" data-destination-type="spider_topic" data-ult-sid="2080245053" data-ult-sec="004014_l" data-ult-pos="11"></div>
+        </div>
+    </section>
+</li><li class="rics-column" >
+    <section class="itemWrapper">
+        <h1 class="name"><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%82%B9%E3%83%86%E3%82%A3%E3%83%BC%E3%83%96%E3%83%BB%E3%82%B8%E3%83%A7%E3%83%96%E3%82%BA/0c8cd5a8cb0ad1622267/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%82%B9%E3%83%86%E3%82%A3%E3%83%BC%E3%83%96%E3%83%BB%E3%82%B8%E3%83%A7%E3%83%96%E3%82%BA/0c8cd5a8cb0ad1622267/'" class="yjxName">スティーブ・ジョブズ</a></h1>
+        <div class="smry">
+            <a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%82%B9%E3%83%86%E3%82%A3%E3%83%BC%E3%83%96%E3%83%BB%E3%82%B8%E3%83%A7%E3%83%96%E3%82%BA/0c8cd5a8cb0ad1622267/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%82%B9%E3%83%86%E3%82%A3%E3%83%BC%E3%83%96%E3%83%BB%E3%82%B8%E3%83%A7%E3%83%96%E3%82%BA/0c8cd5a8cb0ad1622267/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggVYuUhwg2FYhnZqbtwlxpzw---x48-y48/spider/topics/0c8cd5a8cb0ad1622267.jpg" alt="スティーブ・ジョブズ" title="スティーブ・ジョブズ"></a>
+                            <div class="follow yjxFollow" data-followee-id="0c8cd5a8cb0ad1622267" data-destination-type="spider_topic" data-ult-sid="2080245053" data-ult-sec="004014_l" data-ult-pos="12"></div>
+        </div>
+    </section>
+</li><li class="rics-column" >
+    <section class="itemWrapper">
+        <h1 class="name"><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E5%B0%8F%E5%87%BA%E8%A3%95%E7%AB%A0/0661095bbe9efb558008/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E5%B0%8F%E5%87%BA%E8%A3%95%E7%AB%A0/0661095bbe9efb558008/'" class="yjxName">小出裕章</a></h1>
+        <div class="smry">
+            <a  href="http://buzz.news.yahoo.co.jp/buzzword/%E5%B0%8F%E5%87%BA%E8%A3%95%E7%AB%A0/0661095bbe9efb558008/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E5%B0%8F%E5%87%BA%E8%A3%95%E7%AB%A0/0661095bbe9efb558008/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggJ5V9SJUCwDT8rSLUxjx99Q---x48-y48/spider/topics/0661095bbe9efb558008.jpg" alt="小出裕章" title="小出裕章"></a>
+                            <div class="follow yjxFollow" data-followee-id="0661095bbe9efb558008" data-destination-type="spider_topic" data-ult-sid="2080245053" data-ult-sec="004014_l" data-ult-pos="13"></div>
+        </div>
+    </section>
+</li><li class="rics-column" >
+    <section class="itemWrapper">
+        <h1 class="name"><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E7%B4%B0%E9%87%8E%E7%A7%80%E9%9B%84/0eb725e229b6ed4e3754/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E7%B4%B0%E9%87%8E%E7%A7%80%E9%9B%84/0eb725e229b6ed4e3754/'" class="yjxName">細野秀雄</a></h1>
+        <div class="smry">
+            <a  href="http://buzz.news.yahoo.co.jp/buzzword/%E7%B4%B0%E9%87%8E%E7%A7%80%E9%9B%84/0eb725e229b6ed4e3754/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E7%B4%B0%E9%87%8E%E7%A7%80%E9%9B%84/0eb725e229b6ed4e3754/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_sigg3gmkKUvtflsYQf0sf3RG5Q---x48-y48/spider/topics/0eb725e229b6ed4e3754.jpg" alt="細野秀雄" title="細野秀雄"></a>
+                            <div class="follow yjxFollow" data-followee-id="0eb725e229b6ed4e3754" data-destination-type="spider_topic" data-ult-sid="2080245053" data-ult-sec="004014_l" data-ult-pos="14"></div>
+        </div>
+    </section>
+</li><li class="rics-column" >
+    <section class="itemWrapper">
+        <h1 class="name"><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%83%86%E3%82%A3%E3%83%A0%E3%83%BB%E3%82%AF%E3%83%83%E3%82%AF/00e40a0dd897e8070535/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%83%86%E3%82%A3%E3%83%A0%E3%83%BB%E3%82%AF%E3%83%83%E3%82%AF/00e40a0dd897e8070535/'" class="yjxName">ティム・クック</a></h1>
+        <div class="smry">
+            <a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%83%86%E3%82%A3%E3%83%A0%E3%83%BB%E3%82%AF%E3%83%83%E3%82%AF/00e40a0dd897e8070535/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%83%86%E3%82%A3%E3%83%A0%E3%83%BB%E3%82%AF%E3%83%83%E3%82%AF/00e40a0dd897e8070535/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggQm4qlHW0Cns8zagLtbBbdQ---x48-y48/spider/topics/00e40a0dd897e8070535.jpg" alt="ティム・クック" title="ティム・クック"></a>
+                            <div class="follow yjxFollow" data-followee-id="00e40a0dd897e8070535" data-destination-type="spider_topic" data-ult-sid="2080245053" data-ult-sec="004014_l" data-ult-pos="15"></div>
+        </div>
+    </section>
+</li><li class="rics-column" >
+    <section class="itemWrapper">
+        <h1 class="name"><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E5%B1%B1%E4%B8%AD%E4%BC%B8%E5%BC%A5/09602a595dd82a3f2385/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E5%B1%B1%E4%B8%AD%E4%BC%B8%E5%BC%A5/09602a595dd82a3f2385/'" class="yjxName">山中伸弥</a></h1>
+        <div class="smry">
+            <a  href="http://buzz.news.yahoo.co.jp/buzzword/%E5%B1%B1%E4%B8%AD%E4%BC%B8%E5%BC%A5/09602a595dd82a3f2385/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E5%B1%B1%E4%B8%AD%E4%BC%B8%E5%BC%A5/09602a595dd82a3f2385/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggWj.wSRgKoKIWaZ7C.g5AMQ---x48-y48/spider/topics/09602a595dd82a3f2385.jpg" alt="山中伸弥" title="山中伸弥"></a>
+                            <div class="follow yjxFollow" data-followee-id="09602a595dd82a3f2385" data-destination-type="spider_topic" data-ult-sid="2080245053" data-ult-sec="004014_l" data-ult-pos="16"></div>
+        </div>
+    </section>
+</li><li class="rics-column" >
+    <section class="itemWrapper">
+        <h1 class="name"><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%83%93%E3%83%AB%E3%83%BB%E3%82%B2%E3%82%A4%E3%83%84/0c29e0a0cdf2e55e2025/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%83%93%E3%83%AB%E3%83%BB%E3%82%B2%E3%82%A4%E3%83%84/0c29e0a0cdf2e55e2025/'" class="yjxName">ビル・ゲイツ</a></h1>
+        <div class="smry">
+            <a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%83%93%E3%83%AB%E3%83%BB%E3%82%B2%E3%82%A4%E3%83%84/0c29e0a0cdf2e55e2025/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%83%93%E3%83%AB%E3%83%BB%E3%82%B2%E3%82%A4%E3%83%84/0c29e0a0cdf2e55e2025/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggU.YU1Yjqn75AZjRYqWZOYA---x48-y48/spider/topics/0c29e0a0cdf2e55e2025.jpg" alt="ビル・ゲイツ" title="ビル・ゲイツ"></a>
+                            <div class="follow yjxFollow" data-followee-id="0c29e0a0cdf2e55e2025" data-destination-type="spider_topic" data-ult-sid="2080245053" data-ult-sec="004014_l" data-ult-pos="17"></div>
+        </div>
+    </section>
+</li><li class="rics-column" >
+    <section class="itemWrapper">
+        <h1 class="name"><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E5%A4%A7%E5%B9%B3%E8%B2%B4%E4%B9%8B/060931ac692dc76b3848/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E5%A4%A7%E5%B9%B3%E8%B2%B4%E4%B9%8B/060931ac692dc76b3848/'" class="yjxName">大平貴之</a></h1>
+        <div class="smry">
+            <a  href="http://buzz.news.yahoo.co.jp/buzzword/%E5%A4%A7%E5%B9%B3%E8%B2%B4%E4%B9%8B/060931ac692dc76b3848/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E5%A4%A7%E5%B9%B3%E8%B2%B4%E4%B9%8B/060931ac692dc76b3848/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggf8N0oSvzYLgCxKLJAoH2xw---x48-y48/spider/topics/060931ac692dc76b3848.jpg" alt="大平貴之" title="大平貴之"></a>
+                            <div class="follow yjxFollow" data-followee-id="060931ac692dc76b3848" data-destination-type="spider_topic" data-ult-sid="2080245053" data-ult-sec="004014_l" data-ult-pos="18"></div>
+        </div>
+    </section>
+</li><li class="rics-column" >
+    <section class="itemWrapper">
+        <h1 class="name"><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E5%AD%AB%E6%AD%A3%E7%BE%A9/017cc1c21ed4969d3585/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E5%AD%AB%E6%AD%A3%E7%BE%A9/017cc1c21ed4969d3585/'" class="yjxName">孫正義</a></h1>
+        <div class="smry">
+            <a  href="http://buzz.news.yahoo.co.jp/buzzword/%E5%AD%AB%E6%AD%A3%E7%BE%A9/017cc1c21ed4969d3585/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E5%AD%AB%E6%AD%A3%E7%BE%A9/017cc1c21ed4969d3585/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_sigg8BR8dXFAkacJ2CKWct_0IQ---x48-y48/spider/topics/017cc1c21ed4969d3585.jpg" alt="孫正義" title="孫正義"></a>
+                            <div class="follow yjxFollow" data-followee-id="017cc1c21ed4969d3585" data-destination-type="spider_topic" data-ult-sid="2080245053" data-ult-sec="004014_l" data-ult-pos="19"></div>
+        </div>
+    </section>
+</li><li class="rics-column" >
+    <section class="itemWrapper">
+        <h1 class="name"><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E9%AB%98%E6%9C%A8%E6%B5%A9%E5%85%89/04c11fd94a49e0da0281/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E9%AB%98%E6%9C%A8%E6%B5%A9%E5%85%89/04c11fd94a49e0da0281/'" class="yjxName">高木浩光</a></h1>
+        <div class="smry">
+            <a  href="http://buzz.news.yahoo.co.jp/buzzword/%E9%AB%98%E6%9C%A8%E6%B5%A9%E5%85%89/04c11fd94a49e0da0281/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E9%AB%98%E6%9C%A8%E6%B5%A9%E5%85%89/04c11fd94a49e0da0281/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggbD1lW5vr6LgqzzV_zSvLFg---x48-y48/spider/topics/04c11fd94a49e0da0281.jpg" alt="高木浩光" title="高木浩光"></a>
+                            <div class="follow yjxFollow" data-followee-id="04c11fd94a49e0da0281" data-destination-type="spider_topic" data-ult-sid="2080245053" data-ult-sec="004014_l" data-ult-pos="20"></div>
+        </div>
+    </section>
+</li><li class="rics-column" >
+    <section class="itemWrapper">
+        <h1 class="name"><a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%82%B8%E3%83%A7%E3%83%8A%E3%82%B5%E3%83%B3%E3%83%BB%E3%82%A2%E3%82%A4%E3%83%96/026c8322d2e523599934/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%82%B8%E3%83%A7%E3%83%8A%E3%82%B5%E3%83%B3%E3%83%BB%E3%82%A2%E3%82%A4%E3%83%96/026c8322d2e523599934/'" class="yjxName">ジョナサン・アイブ</a></h1>
+        <div class="smry">
+            <a  href="http://buzz.news.yahoo.co.jp/buzzword/%E3%82%B8%E3%83%A7%E3%83%8A%E3%82%B5%E3%83%B3%E3%83%BB%E3%82%A2%E3%82%A4%E3%83%96/026c8322d2e523599934/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/buzzword/%E3%82%B8%E3%83%A7%E3%83%8A%E3%82%B5%E3%83%B3%E3%83%BB%E3%82%A2%E3%82%A4%E3%83%96/026c8322d2e523599934/'" class="thumb yjxThumb"><img src="http://blmt.c.yimg.jp/im_siggctKrPAPXC7szzVTQ9n6GJw---x48-y48/spider/topics/026c8322d2e523599934.jpg" alt="ジョナサン・アイブ" title="ジョナサン・アイブ"></a>
+                            <div class="follow yjxFollow" data-followee-id="026c8322d2e523599934" data-destination-type="spider_topic" data-ult-sid="2080245053" data-ult-sec="004014_l" data-ult-pos="21"></div>
+        </div>
+    </section>
+</li>
+    </ul>
+<div class="loadmore yjxLoadMore" id="loadingCategoryTopic">
+        <p class="counter yjxCounter" style="display: none;">残り<span class="yjxRest">494</span>件</p>
+        <p><a href="javascript:void(0);" class="btnView yjxLoadMoreBtn">もっと見る</a></p>
+    </div><!-- /.loadMore -->
+</section>
+<!-- /.resultWrapper -->
+
+                        </div>
+                    </div>
+                </div>
+                <footer id="footer">
+  <!-- SpaceID=0 robot -->
+
+  <div class="yjChviewWrap">
+    
+  </div>
+  <address>
+    <a href="http://docs.yahoo.co.jp/docs/info/terms/chapter1.html#cf2nd">プライバシーポリシー</a> - 
+    <a href="http://docs.yahoo.co.jp/docs/info/terms/">利用規約</a> - 
+    <a href="http://www.yahoo-help.jp/app/answers/detail/a_id/60137">免責事項</a> - 
+    <a href="https://www.yahoo-help.jp/app/ask/p/2428/form/yadv-info">ご意見・ご要望</a> - 
+    <a href="http://www.yahoo-help.jp/app/home/p/575/">ヘルプ・お問い合わせ</a>
+    <br>Copyright (C) 2014 Yahoo Japan Corporation. All Rights Reserved.
+  </address>
+</footer>
+            </div>
+            <![if !IE 6 ]>
+<aside class="pageTop"><a href="javascript:void(0);" id="pageTopBtn">ページトップへ</a></aside>
+<![endif]>
+        </div>
+    <iframe id="accountlink-link-simple-link-proxy" width="1px" height="1px" style="display:none"></iframe>
+<span id="credInitFlag" init_flag="false"></span>
+    </body>
+    <script type="text/javascript">
+<!--
+(function () {
+    $(document).ready(function(){
+
+        YAHOO.JP.Spider.globalNav.init({
+            'deviceType'   : 'pc' ,
+            'defaultTxt'   : 'キーワードを入力' 
+        });
+
+    });
+}());
+//-->
+<!--
+(function () {
+    $(document).ready(function(){
+
+        YAHOO.JP.Spider.SettingCrumb.init({
+            'ncrumb' : '-100' ,
+            'crumb'  : '' 
+        });
+
+    });
+}());
+//-->
+<!--
+$(function(){
+    $(document).ready(function(){
+
+        YAHOO.JP.Spider.FollowBtn.init({
+            'btnClass'  : 'yjxFollow',
+            'url'       : 'http://f.news.yahoo.co.jp/follow/'
+        });
+
+        YAHOO.JP.Spider.LoadMore.init({
+            'loadingId'  : '#loadingCategoryTopic',
+            'appendTo'   : 'ul.CategoryTopic',
+            'bindTo'     : '.yjxLoadMoreBtn',
+            'url'        : '/Markup/CategoryTopic/',
+            'param'      : {'results':'21', 'category_id':'004014'},
+            'pagenation' : 'auto',
+            'sid'        : '2080245053',
+            'sec'        : '004014_l',
+            'slk'        : {'more':'more'}
+        });
+
+    });
+});
+//--><!--
+(function() {YjdCookie={set:function(a,b){var x=new XMLHttpRequest();x.open("GET",a,0);x.send();document.location.href=b;}};}());
+//--><!--
+$(function(){
+    $(document).ready(function(){
+        YAHOO.JP.Spider.PageTopButton.init({
+            'id' : 'pageTopBtn'
+        });
+    });
+});
+//-->
+
+</script>
+</html><!-- topic05.spider.kks.yahoo.co.jp uncompressed/chunked Thu May 29 12:02:45 JST 2014 -->

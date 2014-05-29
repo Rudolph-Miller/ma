@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<title>日本酒造りには欠かせない！酵母の役割とは？ | KURAMAGA（クラマガ）</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" href="/user_data/packages/default/css/import.css" type="text/css" media="all" />
+<link rel="stylesheet" href="http://kurand.jp/blog/wp-content/themes/twentyten/css/font-awesome.css" type="text/css" media="all" />
+<link rel="stylesheet" href="http://kurand.jp/blog/wp-content/themes/twentyten/css/jquery.bxslider.css" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" media="all" href="http://kurand.jp/blog/wp-content/themes/twentyten/style.css" />
+<link rel="shortcut icon" href="http://kurand.jp/user_data/packages/default/img/common/fab.png" />
+<script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="http://kurand.jp/blog/wp-content/themes/twentyten/js/jquery.bxslider.js"></script>
+<link rel="pingback" href="http://kurand.jp/blog/xmlrpc.php" />
+<meta name="description" content="&nbsp; 皆さんは日本酒造りの際にどんな「酵母」が使用されているか気にしたことはありますか？ おそらくよっぽどの日本酒通でなければ使用されている酵母にまで気を払うことはないかと思います。 &nbsp; しかしこの酵母、日本酒造りの中で味" />
+
+<!-- WP SiteManager OGP Tags -->
+<meta property="og:title" content="日本酒造りには欠かせない！酵母の役割とは？" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://kurand.jp/blog/2014/05/20/sake-kobo" />
+<meta property="og:description" content="&nbsp; 皆さんは日本酒造りの際にどんな「酵母」が使用されているか気にしたことはありますか？ おそらくよっぽどの日本酒通でなければ使用されている酵母にまで気を払うことはないかと思います。 &nbsp; しかしこの酵母、日本酒造りの中で味" />
+<meta property="og:site_name" content="KURAMAGA（クラマガ）" />
+<meta property="og:image" content="http://kurand.jp/blog/wp-content/uploads/2014/05/h.png" />
+
+<!-- WP SiteManager Twitter Cards Tags -->
+<meta name="twitter:title" content="日本酒造りには欠かせない！酵母の役割とは？" />
+<meta name="twitter:url" content="http://kurand.jp/blog/2014/05/20/sake-kobo" />
+<meta name="twitter:description" content="&nbsp; 皆さんは日本酒造りの際にどんな「酵母」が使用されているか気にしたことはありますか？ おそらくよっぽどの日本酒通でなければ使用されている酵母にまで気を払うことはないかと思います。 &nbsp; しかしこの酵母、日本酒造りの中で味" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="http://kurand.jp/blog/wp-content/uploads/2014/05/h.png" />
+<link rel="alternate" type="application/rss+xml" title="KURAMAGA（クラマガ） &raquo; フィード" href="http://kurand.jp/blog/feed" />
+<link rel="alternate" type="application/rss+xml" title="KURAMAGA（クラマガ） &raquo; コメントフィード" href="http://kurand.jp/blog/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="KURAMAGA（クラマガ） &raquo; 日本酒造りには欠かせない！酵母の役割とは？ のコメントのフィード" href="http://kurand.jp/blog/2014/05/20/sake-kobo/feed" />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://kurand.jp/blog/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=3.8' type='text/css' media='all' />
+<script type='text/javascript' src='http://kurand.jp/blog/wp-includes/js/jquery/jquery.js?ver=1.11.0'></script>
+<script type='text/javascript' src='http://kurand.jp/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://kurand.jp/blog/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://kurand.jp/blog/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='日本酒好きなら是非知っておきたい！便利で楽しい日本酒アプリまとめ' href='http://kurand.jp/blog/2014/05/15/sake-app' />
+<link rel='next' title='一振りで料理をもっと美味しく！日本酒マル秘テクニックまとめ！' href='http://kurand.jp/blog/2014/05/23/sake-food-technic' />
+<meta name="generator" content="WordPress 3.9.1" />
+<link rel='shortlink' href='http://kurand.jp/blog/?p=3460' />
+
+<!-- All in One SEO Pack 2.1.5 by Michael Torbert of Semper Fi Web Design[152,197] -->
+<meta name="description" content="皆さんは日本酒造りの際にどんな「酵母」が使用されているか気にしたことはありますか？おそらくよっぽどの日本酒通でなければ使用されている酵母にまで気を払うことはないかと思います。" />
+
+<meta name="keywords" content="うつくしま夢酵母,きょうかい酵母,協会10号,協会7号,秋田流・花酵母" />
+
+<link rel="canonical" href="http://kurand.jp/blog/2014/05/20/sake-kobo" />
+<!-- /all in one seo pack -->
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37017393-3', 'kurand.jp');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+  ga('require', 'linker');
+  ga('linker:autoLink', ['ssl01.remise.jp/']);
+
+</script>
+
+</head>
+
+<body class="single single-post postid-3460 single-format-standard custom-background">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=417756061665347";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="wrapper" class="hfeed">
+<script>
+	$(function(){
+		/*
+var nav = $('#access');
+        var offset = nav.offset();
+        $(window).scroll(function () {
+		  if($(window).scrollTop() > offset.top) {
+		    nav.addClass('fixed');
+		    nav.hover(
+			    function () {
+				    nav.css('opacity','1');
+				  },
+				  function () {
+				  　if($(window).scrollTop() > offset.top) {
+				    nav.css('opacity','0.6');
+				    }
+				  }
+		    );
+		    nav.css('opacity','0.6');
+		  } else {
+		    nav.removeClass('fixed').css('opacity','1');
+		  }
+		});
+*/
+		
+		
+		//目次作成用IDの付与
+		$('.midashi_area li a').each(function(i){
+			$(this).attr('href','#midashi' + (i+1));
+		});
+		
+		$('.entry-content h4').not(".mokuji").each(function(i){
+			$(this).attr('id','midashi' + (i+1));
+		});
+		
+
+     //ブログ記事内にバナー    
+      $(".entry-content img:first").after('<div class="bottom_image inblog_image"><a href="http://kurand.jp/?utm_source=kurand&utm_medium=bannar_in&utm_campaign=KURAND" onclick="ga("send", "kurand", "kuramaga", "");"><img src="/images/pc_blogin_bana.png"></a></div>');
+    
+		
+		
+	});
+	
+//facebookのいいね数取得	
+function get_social_count_facebook(url, counterId) {
+    $.ajax({
+        url:'https://graph.facebook.com/',
+        dataType:'jsonp',
+        data:{
+            id:url
+        },
+        success:function(res){
+            $('#' + counterId + ' .count').text( res.shares || 0 );
+        },
+        error:function(){
+            $('#' + counterId + ' .count').text('?');
+        }
+    });
+}
+// Twitterの反応（ツイートやリツイート数）を取得
+function get_social_count_twitter(url, counterId) {
+    $.ajax({
+        url:'http://urls.api.twitter.com/1/urls/count.json',
+        dataType:'jsonp',
+        data:{
+            url:url
+        },
+        success:function(res){
+            $('#' + counterId + ' .count').text( res.count || 0 );
+        },
+        error:function(){
+            $('#' + counterId + ' .count').text('?');
+        }
+    });
+}
+// はてなブックマークでブックマークされている数を取得
+function get_social_count_hatebu(url, counterId) {
+    $.ajax({
+        url:'http://api.b.st-hatena.com/entry.count?callback=?',
+        dataType:'jsonp',
+        data:{
+            url:url
+        },
+        success:function(res){
+            $('#' + counterId + ' .count').text( res || 0 );
+        },
+        error:function(){
+            $('#' + counterId + ' .count').text('?');
+        }
+    });
+}
+
+$(function(){
+	$('.sp_menu').click(function(){
+		$('.menu-header').slideToggle();
+		return false;
+	});
+});
+$(window).resize(function(){
+    var w = $(window).width();
+    if (w >= 960) {
+        $('.menu-header').show();
+    } else{
+	    $('.menu-header').hide();
+    }
+});
+
+//トップへ戻るをスクロール表示
+$(document).ready(function() {
+	var pagetop = $('.pagetop');
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 700) {
+			pagetop.fadeIn();
+		} else {
+			pagetop.fadeOut();
+		}
+	});
+	pagetop.click(function () {
+		$('body, html').animate({ scrollTop: 0 }, 500);
+		return false;
+	});
+});
+//記事内の別サイトリンクにアイコン
+/*
+$(function(){
+	$('.entry-content a[target=_blank]').wrap('<p class="ex_link"></p>').before('<i class="fa fa-external-link"></i>');
+});
+*/
+
+
+//サイドバー固定
+$(window).load(function(){
+            var wi = $(window).width();
+            
+            if (wi > 960) {
+				var target = $('.side_fix');
+				var footer = $('#footer');
+				var targetTop = target.offset().top;
+				var fixHeight = $('.side_fix').outerHeight(true);
+
+				$(window).scroll(function () {
+				var footTop = footer.offset().top;
+					if($(window).scrollTop() > targetTop) {
+						target.addClass('fixed');
+						if( $(window).scrollTop() + fixHeight >  footTop){
+						    var footerBottom = ($(window).scrollTop() + fixHeight)-footTop;
+						    console.log(footerBottom);
+							target.css({top : '-'+footerBottom+'px'});
+						
+						}else{
+							target.css({top : '0px'});
+						}
+					} else {
+						target.removeClass('fixed');
+					}
+				});
+			}
+});
+    
+
+
+//サイドバー固定
+
+
+
+</script>
+<header class="head_area">
+    <div class="logo_area clearfix">
+          <h1 class="site_name"><a href="http://kurand.jp/blog"><img src="/images/maga_logo.png"></a></h1>
+            <dl class="so_ico_area clearfix">
+          <dt>KURAND公式アカウント</dt>
+	      <dd><a href="https://twitter.com/KURAND_INFO" target="_blank"><img src="/images/bl_tw_ico.png"></a></dd>
+	      <dd><a href="https://www.facebook.com/kurand.jp" target="_blank"><img src="/images/bl_fb_ico.png"></a></dd>
+	      <dd><a href="http://kurand.jp/blog/feed" target="_blank"><img src="/images/bl_rs_ico.png"></a></dd>
+      </dl>
+    </div>
+	<nav>
+		    <div id="access" class="mainnav" role="navigation">
+	    <div class="sp_menu" href="#">MENU</div>
+	  				<div class="menu-header clearfix"><ul id="menu-mainnav" class="menu"><li id="menu-item-271" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-271"><a href="http://kurand.jp/blog/">ホーム</a></li>
+<li id="menu-item-266" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-266"><a href="http://kurand.jp/blog/category/column">コラム</a></li>
+<li id="menu-item-269" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-269"><a href="http://kurand.jp/blog/category/event">イベント</a></li>
+<li id="menu-item-267" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-267"><a href="http://kurand.jp/blog/category/kuramoto">蔵元レポート</a></li>
+<li id="menu-item-270" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-270"><a href="http://kurand.jp/blog/category/staff">スタッフブログ</a></li>
+<li id="menu-item-292" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-292"><a href="http://kurand.jp/">SHOP</a></li>
+</ul></div>	</div><!-- #access -->
+		</nav>
+ </header>
+ 	<div id="main" class="clearfix">
+		<div class="blogtopimage blogpostimage">
+		 <a href="http://kurand.jp/user_data/kurand_order.php?utm_source=kuramaga&utm_medium=bannar_top&utm_campaign=KURAND" title="KURAND"><img src="http://kurand.jp/images/KURAND_TOP.png" alt="kurand"></a>
+     </div>
+		
+	
+
+		<div id="container">
+			<div id="content" role="main">
+
+			
+
+				<div id="nav-above" class="navigation">
+					<div class="nav-previous"><a href="http://kurand.jp/blog/2014/05/15/sake-app" rel="prev"><span class="meta-nav">&larr;</span> 日本酒好きなら是非知っておきたい！便利で楽しい日本酒アプリまとめ</a></div>
+					<div class="nav-next"><a href="http://kurand.jp/blog/2014/05/23/sake-food-technic" rel="next">一振りで料理をもっと美味しく！日本酒マル秘テクニックまとめ！ <span class="meta-nav">&rarr;</span></a></div>
+				</div><!-- #nav-above -->
+
+				<div id="post-3460" class="post-3460 post type-post status-publish format-standard has-post-thumbnail hentry category-column tag-73 tag-69 tag-10 tag-7 tag-72 entry_area">
+									    <div class="entry-date">2014年5月20日（火）</div>
+										<h1 class="entry-title">日本酒造りには欠かせない！酵母の役割とは？</h1>
+					<ul class="social_button clearfix">
+			<li><div class="fb-like" data-width="450" data-colorscheme="light" data-layout="box_count" data-action="like" data-show-faces="false" data-send="false"></div></li>
+			<li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://kurand.jp/blog/2014/05/20/sake-kobo" data-text="日本酒造りには欠かせない！酵母の役割とは？" data-lang="ja" data-count="vertical">ツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+			<li><a href="http://b.hatena.ne.jp/entry/http://kurand.jp/blog/2014/05/20/sake-kobo" class="hatena-bookmark-button" data-hatena-bookmark-title="日本酒造りには欠かせない！酵母の役割とは？" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+			</li>
+			<li><!-- Place this tag where you want the +1 button to render. -->
+<div class="g-plusone" data-size="tall"></div>
+
+<!-- Place this tag after the last +1 button tag. -->
+<script type="text/javascript">
+  window.___gcfg = {lang: 'ja'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'http://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script></li>
+			<li><a data-pocket-label="pocket" data-pocket-count="vertical" class="pocket-btn" data-lang="en" data-save-url="http://kurand.jp/blog/2014/05/20/sake-kobo"></a>
+<script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="http://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script></li>
+		</ul>
+					
+					<!--
+					<div class="entry-meta">
+						<span class="meta-prep meta-prep-author">投稿日:</span> <a href="http://kurand.jp/blog/2014/05/20/sake-kobo" title="7:58 PM" rel="bookmark"><span class="entry-date">2014年5月20日</span></a> <span class="meta-sep">作成者:</span> <span class="author vcard"><a class="url fn n" href="http://kurand.jp/blog/author/admin" title="KURAND の投稿をすべて表示">KURAND</a></span>					</div>--><!-- .entry-meta -->
+
+					<div class="entry-content">
+						<p><img src="http://kurand.jp/blog/wp-content/uploads/2014/05/8.png" alt="8" width="700" height="458" class="aligncenter size-full wp-image-3491" /><br />
+&nbsp;<br />
+皆さんは日本酒造りの際にどんな「酵母」が使用されているか気にしたことはありますか？<br />
+おそらくよっぽどの日本酒通でなければ使用されている酵母にまで気を払うことはないかと思います。<span id="more-3460"></span></p>
+<p>&nbsp;<br />
+しかしこの酵母、日本酒造りの中で味わいを決定付ける重要なポイントなのです。今回は酵母とはいったい何なのか？どのような役割を果たしているのかについてご紹介していきましょう。<br />
+&nbsp;<br />
+&nbsp;</p>
+<h4 class="mokuji">目次</h4>
+<ul class="midashi_area">
+<li><a>酵母とは？</a></li>
+<li><a>何故日本酒造りに酵母が重要なのか？</a></li>
+<li><a>日本酒に使われる酵母の例</a></li>
+</ul>
+<p>&nbsp;<br />
+&nbsp;</p>
+<h4>酵母とは？</h4>
+<p>酵母とはいわゆる菌類の一種。特に日本酒造りに用いられるものは「清酒酵母」と呼ばれます。酵母は基本的に食品の発酵に用いられるもので、有機物（食物）に含まれる「糖質」をエサにして、それを「アルコール」と「炭酸ガス」に分解しながら、分裂、成長していきます。<br />
+&nbsp;<br />
+日本酒以外にもパンやチーズ、味噌、醤油などの発酵食品造りには欠かせないものとなっております。<br />
+&nbsp;<br />
+&nbsp;</p>
+<h4>何故日本酒造りに酵母が重要なのか？</h4>
+<p><img src="http://kurand.jp/blog/wp-content/uploads/2014/05/xcvb.png" alt="xcvb" width="683" height="512" class="aligncenter size-full wp-image-3461" /><br />
+基本的に日本酒は米と水を混ぜ合わせた醪を発酵させることによって造られます。その<strong>発酵の役目を担うのが酵母</strong>なのです。酵母の種類によって発酵の仕方も変わってきます。<br />
+&nbsp;<br />
+&nbsp;</p>
+<h5>フルーティーな日本酒の香りは酵母によって生まれる</h5>
+<p><img src="http://kurand.jp/blog/wp-content/uploads/2014/05/PPP_kiraretameron.jpg" alt="PPP_kiraretameron" width="700" height="467" class="aligncenter size-full wp-image-3462" /><br />
+&nbsp;<br />
+吟醸香と呼ばれる日本酒の特有のフルーティーな香り。よく考えてみると米と水からできている日本酒から何故このような香りが発生するのか不思議ですよね。<strong>この香りも酵母の発酵</strong>によって生まれるものなのです。<br />
+&nbsp;<br />
+酵母はブドウ糖からエチルアルコールと炭酸ガスを生成します。これらの中に含まれる「カプロン酸エチル」や「酢酸イソアミル」といった成分がリンゴやメロンの香り成分と同じものなのです。このため、吟醸香はフルーティーな香りと言われるのです。<br />
+&nbsp;<br />
+&nbsp;</p>
+<h4>日本酒に使われる酵母の例</h4>
+<p><img src="http://kurand.jp/blog/wp-content/uploads/2014/05/sakekasu03.png" alt="sakekasu03" width="700" height="469" class="aligncenter size-full wp-image-3464" /><br />
+&nbsp;<br />
+日本酒に使用される酵母はおおまかに分けて日本醸造協会によって頒布される「<strong>きょうかい酵母</strong>」と地方自治体の試験研究機関、すなわち工業技術センターや醸造試験所などで開発された「<strong>地方自治体開発の酵母</strong>」に分けられます。<br />
+&nbsp;<br />
+それぞれどのような酵母があるのか紹介していきます。<br />
+&nbsp;</p>
+<h5>きょうかい酵母</h5>
+<p>きょうかい酵母の代表的なものをご紹介します。<br />
+&nbsp;<br />
+<strong>協会7号</strong><br />
+現在清酒造りにもっとも広く使用されているきょうかい酵母。長野県諏訪の『真澄』の醪から分離し造られたものです。<br />
+&nbsp;<br />
+<strong>協会10号</strong><br />
+香り高い吟醸酒を生み出すのに用いられる酵母。茨城県水戸の『副将軍』醸造元である明利酒類にて分離し造られました。<br />
+&nbsp;</p>
+<h5>地方自治体開発の酵母</h5>
+<p>地方自治体開発の酵母で代表的なものをご紹介します。<br />
+&nbsp;<br />
+<strong>うつくしま夢酵母</strong><br />
+福島県のオリジナル酵母。うつくしまふくしまブランド酒 「夢の米・夢の酒」の企画内でオリジナル酵母として開発されました。フルーティーな吟醸香を醸し出します。<br />
+&nbsp;<br />
+<strong>秋田流・花酵母</strong><br />
+秋田県のオリジナル酵母。協会7号の変異したものと考えられています。大吟醸酒、純米大吟醸酒造りに向いていて、こちらを使用した平成2酒造年度の全国新酒鑑評会では秋田県の金賞受賞数が全国2位となりました。<br />
+&nbsp;<br />
+&nbsp;</p>
+<h4>まとめ</h4>
+<p>以上、日本酒造りには欠かせない酵母の役割についていかがでしたでしょうか。<br />
+実際、酵母による日本酒のアルコール発酵の違いについては非常に複雑で簡単に述べることはできないのですが、どういった酵母が使用されているのか？という視点もまた日本酒選びの1つの基準になるのではないかと思います。<br />
+&nbsp;<br />
+ただ日本酒のラベルに酵母まで記載されていることはまだ少ないので、もし酒蔵の方に合う機会があったらどんな酵母を使っているか聞いてみてもいいかもしれないですね。<br />
+&nbsp;<br />
+&nbsp;<br />
+<a href="http://kurand.jp/">KURANDは日本酒の定期購入サービス</a>です。毎月全国のこだわり蔵元の日本酒を、直前に瓶詰めした新鮮な状態でお届けしてます。さらに日本酒の味わいやこだわりを楽しめるKURANDレターも同封しています。KURANDを通して、美味しい日本酒や蔵元に出会ってみませんか？<br />
+&nbsp;<br />
+<strong>＜KURANDサービスページへ＞</strong><br />
+<a href="http://kurand.jp/user_data/about_kurand.php"><img src="http://kurand.jp/blog/wp-content/uploads/2014/03/KURAND.png" alt="KURAND" width="700" height="192" class="aligncenter size-full wp-image-1982" /></a><br />
+&nbsp;<br />
+&nbsp;</p>
+					
+					</div><!-- .entry-content -->
+																<ul class="social_button clearfix right">
+			<li><div class="fb-like" data-width="450" data-colorscheme="light" data-layout="box_count" data-action="like" data-show-faces="false" data-send="false"></div></li>
+			<li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://kurand.jp/blog/2014/05/20/sake-kobo" data-text="日本酒造りには欠かせない！酵母の役割とは？" data-lang="ja" data-count="vertical">ツイート</a></li>
+			<li><a href="http://b.hatena.ne.jp/entry/http://kurand.jp/blog/2014/05/20/sake-kobo" class="hatena-bookmark-button" data-hatena-bookmark-title="日本酒造りには欠かせない！酵母の役割とは？" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+			</li>
+			<li><!-- Place this tag where you want the +1 button to render. -->
+<div class="g-plusone" data-size="tall"></div></li>
+			<li><a data-pocket-label="pocket" data-pocket-count="vertical" class="pocket-btn" data-lang="en" data-save-url="http://kurand.jp/blog/2014/05/20/sake-kobo"></a></li>
+		</ul>
+					
+					
+					
+					
+
+					<div class="entry_auther">
+                    <h3>About the Author</h3>
+					<div id="author-description clearfix">
+						<div class="author_prof_area clearfix">
+							<div class="thum"><img src="http://kurand.jp/blog/wp-content/uploads/userphoto/1.png" alt="KURAND" width="150" height="150" class="photo" /></div>
+							<div class="auther_detail_area">
+								<h4>KURAND</h4>
+								<div class="author_detail">KURANDの公式情報を随時発信。KURANDにてお届けする蔵元情報からためになる日本酒コラムまで、日本酒が楽しくなる情報が盛りだくさん。</div>
+							</div>	
+						</div>
+					</div>
+                    </div><!-- #author-description	-->
+                    
+                    <div class="foot_bana">
+	                    <a href="/user_data/kurand_order.php"><img src="/images/foot_bana.png"></a>
+                    </div>
+
+<!-- X:S ZenBackWidget --><div id="zenback-widget-loader"></div><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var r=Math.ceil((new Date()*1)*Math.random());var j=d.createElement("script");j.id=i;j.async=true;j.src="//w.zenback.jp/v1/?base_uri=http%3A//kurand.jp/blog/&nsid=111281117654458338%3A%3A118148153227616231&rand="+r;d.body.appendChild(j);}}(document,"zenback-widget-js");</script><!-- X:E ZenBackWidget -->
+
+
+					<!--<div class="entry-utility">
+						カテゴリー: <a href="http://kurand.jp/blog/category/column" title="コラム の投稿をすべて表示" rel="category tag">コラム</a> タグ: <a href="http://kurand.jp/blog/tag/%e3%81%86%e3%81%a4%e3%81%8f%e3%81%97%e3%81%be%e5%a4%a2%e9%85%b5%e6%af%8d" rel="tag">うつくしま夢酵母</a>, <a href="http://kurand.jp/blog/tag/%e3%81%8d%e3%82%87%e3%81%86%e3%81%8b%e3%81%84%e9%85%b5%e6%af%8d" rel="tag">きょうかい酵母</a>, <a href="http://kurand.jp/blog/tag/%e5%8d%94%e4%bc%9a10%e5%8f%b7" rel="tag">協会10号</a>, <a href="http://kurand.jp/blog/tag/%e5%8d%94%e4%bc%9a7%e5%8f%b7" rel="tag">協会7号</a>, <a href="http://kurand.jp/blog/tag/%e7%a7%8b%e7%94%b0%e6%b5%81%e3%83%bb%e8%8a%b1%e9%85%b5%e6%af%8d" rel="tag">秋田流・花酵母</a> <a href="http://kurand.jp/blog/2014/05/20/sake-kobo" title="日本酒造りには欠かせない！酵母の役割とは？ へのパーマリンク" rel="bookmark">パーマリンク</a>											</div>--><!-- .entry-utility -->
+				</div><!-- #post-## -->
+
+				<div id="nav-below" class="navigation">
+					<div class="nav-previous"><a href="http://kurand.jp/blog/2014/05/15/sake-app" rel="prev"><span class="meta-nav">&larr;</span> 日本酒好きなら是非知っておきたい！便利で楽しい日本酒アプリまとめ</a></div>
+					<div class="nav-next"><a href="http://kurand.jp/blog/2014/05/23/sake-food-technic" rel="next">一振りで料理をもっと美味しく！日本酒マル秘テクニックまとめ！ <span class="meta-nav">&rarr;</span></a></div>
+				</div><!-- #nav-below -->
+
+				
+			<div id="comments">
+
+
+
+		
+</div><!-- #comments -->
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+
+		<div id="primary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+
+<li id="search-2" class="widget-container widget_search"><form role="search" method="get" id="searchform" class="searchform" action="http://kurand.jp/blog/">
+				<div>
+					<label class="screen-reader-text" for="s">検索:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="検索" />
+				</div>
+			</form></li><li id="text-3" class="widget-container widget_text">			<div class="textwidget"><div class="sidebana01"><a href="/user_data/kurand_order.php"><img src="/images/kurand_side_bana01.png"></a></div>
+
+<div class="fb-like-box" data-href="https://www.facebook.com/kurand.jp" data-width="231" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+<div class="twitter_wrap">
+<a class="twitter-timeline" href="https://twitter.com/KURAND_INFO" data-widget-id="398332281024036865">@KURAND_INFO からのツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+<div class="sidebana01 side_fix"><a href="/blog/event/arakicho-02"><img src="/images/kuramaga_sidebaner.png"></a>
+</br>
+<a href="/blog/mail_magazine"><img src="/images/mail_bana_side.png" width="229"></a>
+</div>
+</div>
+		</li>			</ul>
+			
+			
+		</div><!-- #primary .widget-area -->
+
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<!--▼FOOTER-->
+<div id="footer_wrap" class="palette">
+    <div id="footer" class="clearfix">
+    <ul class="foot_menu"><h3>カスタマーサポート</h3>
+			    <li><a href="/user_data/faq.php">FAQ</a></li>
+			    <li><a href="/contact/">お問い合わせ</a></li>
+			    <li><a href="/abouts/">会社概要</a></li>
+			    <li><a href="/order/">特定商取引法に基づく表記</a></li>
+			    <li><a href="/guide/privacy.php">プライバシーポリシー</a></li>
+			    <li><a href="/entry/kiyaku.php">利用規約</a></li>
+           </ul>
+           <ul class="foot_menu"><h3>KURANDについて</h3><li><a href="http://kurand.jp/user_data/about_kurand.php">KURANDとは</a></li>
+                <li><a href="http://kurand.jp/products/list.php?category_id=7">蔵元一覧</a></li>
+                <li><a href="http://kurand.jp/user_data/story.php">ストーリー</a></li>
+			    <li><a href="http://kurand.jp/user_data/kurand_order.php">お申し込み</a></li>
+			    <li><a href="http://kurand.jp/user_data/kurand_history.php">過去の蔵元</a></li>
+           </ul>
+           <ul class="foot_menu"><h3>その他</h3>
+			    <li><a href="http://kurand.jp/blog/event">イベント紹介</a></li>
+			    <!-- <li><a href="http://kurand.jp/blog/aboutsake">日本酒コラム</a></li> -->
+			    <!-- <li><a href="http://kurand.jp/blog/">KURANDブログ</a></li> -->
+			    <li><a href="/user_data/invite.php">友達紹介キャンペーン</a></li>
+			    <li><a href="http://kurand.jp/blog">マガジン</a></li>
+		   </ul>
+		   <div class="footright"><ul class="social_ico_list clearfix"><li class="social_ico"><a href="https://www.facebook.com/kurand.jp"><img src="/images/facebook.png"></a></li><li class="social_ico"><a href="https://twitter.com/KURAND_INFO"><img src="/images/twitter.png"></a></li></ul><span class="foot_comp">リカーイノベーション株式会社<br />東京都足立区梅田5-13-13<br />03-6806-3777<br />info@kurand.jp</span><p class="alert_alc">お酒は20歳になってから。<br />未成年の飲酒は法律で禁止されています。</p>
+           </div><div id="copyright">Copyright ©
+            2013-2014
+            KURAND All rights reserved.
+        </div>
+        
+    </div>
+</div>
+	</div><!-- #footer -->
+</div><!-- #wrapper -->
+
+<script type='text/javascript' src='http://kurand.jp/blog/wp-includes/js/comment-reply.min.js?ver=3.9.1'></script>
+<script type='text/javascript' src='http://kurand.jp/blog/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.50.0-2014.02.05'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/kurand.jp\/blog\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"\u9001\u4fe1\u4e2d ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://kurand.jp/blog/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=3.8'></script>
+</body>
+</html>

@@ -1,0 +1,628 @@
+<!-- file: single. -->
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="ja">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="ja">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+<head prefix="fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<meta charset="UTF-8" />
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width" />
+<link rel="shortcut icon" href="http://baseu.jp/wp-content/themes/base/img/favicon.ico">
+<link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+
+<meta name="title" content="オフラインからネットショップに集客する！ネットを活用しない８の集客方法まとめ | BASE U" />
+<meta name="keywords" content="BASE,ＢＡＳＥ,ネットショップ登録,ネットショップ開業,ネットショップ作成,ベイス,サイト構築,ネットショップ立ち上げ,ノウハウ" />
+<meta name="description" content="インターネット上で世界中の人に対して自分の商品を売ることができるネットショップ。
+その名の通りオンライン上にある店舗なので、そこへの集客方法としてはやはりブログ、ソーシャルメディア、メルマガなど同じ…" />
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:url" content="http://baseu.jp/new_customer_acquisition/20140526101630/" />
+<meta property="twitter:title" content="オフラインからネットショップに集客する！ネットを活用しない８の集客方法まとめ | BASE U" />
+<meta property="twitter:site" content="@BASEec" />
+<meta property="twitter:description" content="インターネット上で世界中の人に対して自分の商品を売ることができるネットショップ。
+その名の通りオンライン上にある店舗なので、そこへの集客方法としてはやはりブログ、ソーシャルメディア、メルマガなど同じ…" />
+<meta property="twitter:image" content="http://baseu.jp/wp-content/uploads/medium_5541917673.jpg" />
+<meta property="og:title" content="オフラインからネットショップに集客する！ネットを活用しない８の集客方法まとめ | BASE U" />
+<meta property="og:site_name" content="BASE U｜ネットショップの開設・運営・集客のノウハウを学ぼう" />
+<meta property="og:description" content="インターネット上で世界中の人に対して自分の商品を売ることができるネットショップ。
+その名の通りオンライン上にある店舗なので、そこへの集客方法としてはやはりブログ、ソーシャルメディア、メルマガなど同じ…" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://baseu.jp/new_customer_acquisition/20140526101630/" />
+<meta property="og:image" content="http://baseu.jp/wp-content/uploads/medium_5541917673.jpg" />
+<meta property="fb:app_id" content="1391088537769181" />
+<title>オフラインからネットショップに集客する！ネットを活用しない８の集客方法まとめ | BASE U</title>
+<!-- start:wp_head -->
+<link rel='stylesheet' id='wordpress-popular-posts-css'  href='http://baseu.jp/wp-content/plugins/wordpress-popular-posts/style/wpp.css?ver=2.3.7' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='http://baseu.jp/wp-content/themes/base/style.css?ver=3.9.1' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='http://baseu.jp/wp-content/themes/base/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='wp-pagenavi-css'  href='http://baseu.jp/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='shortlink' href='http://baseu.jp/?p=3558' />
+<!-- end:wp_head -->
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<!--[if lt IE 9]>
+<script src="http://baseu.jp/wp-content/themes/base/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+</head>
+
+<body class="single single-post postid-3558 single-format-standard custom-font-enabled">
+<div id="widthClassDiv" class="sample">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+    <div id="headWrap">
+  		<hgroup  class="centering">
+  			<h1 class="site-title"><a href="http://baseu.jp/" title="BASE U｜ネットショップの開設・運営・集客のノウハウを学ぼう" rel="home"><img src="http://baseu.jp/wp-content/themes/base/img/topLogo.png" title="BASE U｜ネットショップの開設・運営・集客のノウハウを学ぼう" alt="BASE U｜ネットショップの開設・運営・集客のノウハウを学ぼう" /></a></h1>
+  			<h2 class="site-description"><!-- 無料ネットショップのBASEが運営するBASE U。ネットショップ開設・運営・販促のノウハウをご提供するBASE U はネットショップオーナーのための相談窓口です。ネットショップオーナーの疑問に専門家が詳しくご説明します。 -->ネットショップ開設・運営・販促のノウハウをご紹介します<br>BASE U はネットショップオーナーのための相談窓口</h2>
+  		</hgroup>
+
+      <div id="searchform">
+  			<!-- 検索 -->
+  			<form role="search" method="get" action="http://baseu.jp/" >
+          <label class="screen-reader-text" for="s">Search for:</label>
+          <input type="text" value="" name="s" id="s" />
+          <input type="submit" id="searchsubmit" value="検索" />
+        </form>
+      </div><!-- /#searchForm -->
+    </div><!-- /#headWrap -->
+
+    <div id="navBarInner" >
+  		<nav id="site-navigation" class="main-navigation" role="navigation">
+  		  <div id="navBar" class="centeringWrap duration">
+    			<div class="nav-menu"><ul><li ><a href="http://baseu.jp/">ホーム</a></li><li class="page_item page-item-2"><a href="http://baseu.jp/open/">ネットショップの開設</a></li><li class="page_item page-item-315"><a href="http://baseu.jp/about/">BASE Uとは</a></li><li class="page_item page-item-31"><a href="http://baseu.jp/operation/">ネットショップの運営</a></li><li class="page_item page-item-34"><a href="http://baseu.jp/promotion/">販促・集客</a></li></ul></div>
+    			<ul>
+    			  <li><a href="http://baseu.jp/category/story/" >BASE STORY</a></li>
+    			  <li><a href="http://tokyo.baseu.jp/" target="_blank">BASE U 無料セミナー</a></li>
+    			</ul>
+  		  </div><!-- /#navBar -->
+  		</nav><!-- #site-navigation -->
+
+  		<div id="navSwitchInner" >
+    		<a id="navSwitchBtn" class="btn" ><img src="http://baseu.jp/wp-content/themes/base/img/navPulldownBtn.png" alt="pulldownbutton" width="40" height="40" ></a>
+  		</div><!-- /#navSwitchInner -->
+    </div><!-- /#navBarInner -->
+
+		
+	</header><!-- #masthead -->
+
+<div id="main" class="wrapper clearfix" role="main">
+  <div id="breadcrumb" class="clearfix"><ul><li><a href="http://baseu.jp/">HOME</a></li><li><a href="http://baseu.jp/category/new_customer_acquisition/">新規顧客獲得</a></li><li><a href="http://baseu.jp/category/new_customer_acquisition/media/">メディア掲載</a></li><li> オフラインからネットショップに集客する！ネット...</li></div>
+  <div id="singlePageWrap">
+    <div id="singlePage" class="content">
+    	    	  
+              	
+	<article id="post-3558" class="post-3558 post type-post status-publish format-standard has-post-thumbnail hentry category-media category-new_customer_acquisition tag-175 tag-110 tag-67">
+				<header class="entry-header">
+						<h1 class="entry-title">オフラインからネットショップに集客する！ネットを活用しない８の集客方法まとめ</h1>
+			            <div id="socialBtnForSinglePage">
+        <div class="socialBtn">
+          <div class="facebook">
+      			<div class="fb-like" data-href="http://baseu.jp/new_customer_acquisition/20140526101630/" data-send="false" data-layout="button_count" data-width="1000" data-show-faces="false"></div>
+          </div>
+          <div class="twitter">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://baseu.jp/new_customer_acquisition/20140526101630/" data-via="BASEec" data-lang="ja">ツイート</a>
+          </div>
+          <div class="hatena">
+            <a href="http://b.hatena.ne.jp/entry/http://baseu.jp/new_customer_acquisition/20140526101630/" class="hatena-bookmark-button" data-hatena-bookmark-title="オフラインからネットショップに集客する！ネットを活用しない８の集客方法まとめ | BASE U" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+          </div>
+          <div style="width:65px;">
+            <div class="g-plusone" data-size="medium"></div>
+          </div>
+          <div>
+            <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a>
+          </div>
+        </div>
+      </div>      <div id="eyeCatch">
+        <img width="624" height="413" src="http://baseu.jp/wp-content/uploads/medium_5541917673-624x413.jpg" class="attachment-post-thumbnail wp-post-image" alt="whisper" />      </div>
+		</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>
+インターネット上で世界中の人に対して自分の商品を売ることができるネットショップ。<br />
+その名の通りオンライン上にある店舗なので、そこへの集客方法としてはやはりブログ、ソーシャルメディア、メルマガなど同じインターネットの活用を最初に考えてしまうのではないでしょうか。こちらの記事( <a onclick="javascript:pageTracker._trackPageview('/outgoing/baseu.jp/new_customer_acquisition/20131213102641/');"  href="http://baseu.jp/new_customer_acquisition/20131213102641/" title="年末商戦にお客様を呼ぶ！ネットショップへの集客手段総まとめ" target="_blank">年末商戦にお客様を呼ぶ！ネットショップへの集客手段総まとめ</a> )でもオンラインの集客手段を紹介しています。<br />
+<br />
+ネット上の店舗なので最初からネット上にいる人にいる人に対してアプローチをする方が、たしかに効率的でしょう。検索をする人に対してはリスティング広告、SNSを活用する人にはTwitterやFacebookでフォローしてもらうなど、様々な集客方法がありますが果たしてそれらを行うだけで十分な集客、ひいてはネットショップの成功が実現するでしょうか。もちろんそれら集客を專門にしているプロの代理店などが行えば別でしょうが、ネットショップを始めたばかりの方々にとってはオンラインによる集客からだけでは十分な成果を出すことは難しいでしょう。<br />
+<br />
+そこで今回は従来からある、オフラインの集客方法について見ていきたいと思います。ネットに比べると若干古いようにも感じますが、こういった泥臭い活動の先に本当の成功があるとかと思います。<br />
+<br />
+<br />
+<h2>1.友人や知人への告知</h2>
+こちらの記事でも紹介している通り、ネットショップを起ちあげたらまずは友人へ教えてあげましょう。商品以前にあなたのことを信頼している友人が、最初の確度の高い見込み顧客となります。そして、商品がよければ高い確率で商品を購入してくれるでしょう。まずはその友人らに満足してもらい、またその友人の友人にオススメしてもらうのです。今では数百万円稼ぐネットショップも最初は知人たちによる購入からスタートしているものですよ。<br />
+<br />
+<br />
+<br />
+<h2>2.新聞広告</h2>
+紙面上の広告枠、特に地方紙であれば数万円程度で広告を出稿することが可能です。ターゲットとなる顧客が特定の地域にいる場合などは効果的な場合もあるでしょう。<br />
+<br />
+<br />
+<br />
+<h2>3.折込チラシ</h2>
+市町村単位で細かい配布設定ができるのが魅力的な折込チラシ。<a onclick="javascript:pageTracker._trackPageview('/outgoing/raksul.com/');"  href="http://raksul.com/" title="raksul" target="_blank">ラクスル</a>というサービスを使えば印刷から配布までワンストップで実現することができます。しかも2,3万円程度から実施することができます。クーポンコードを配布したり、チラシ限定のショップへ誘導するなりして、配布したチラシからどのくらいの反響があったのか計測することが重要でしょう。<br />
+<br />
+<br />
+<br />
+<h2>4.雑誌広告</h2>
+ご存知の通り、様々な趣味嗜好ごとの銘柄が存在する雑誌。もし雑誌に広告を出稿するなら顧客の属性にあわせて出稿する雑誌を選定することが重要です。ファッション関係のお店ならファッション誌を、インテリアやペットのお店なら住宅関係の雑誌を選んで広告を出すことができます。ターゲット顧客にぴったりハマる雑誌の出版社に問い合わせを行ってみるのはいかがでしょうか？<br />
+<br />
+<br />
+<br />
+<h2>5.テレビ番組</h2>
+テレビで広告を出すのはさすがに大企業でもないと難しいですが、しっかりショップの運営を続けユニークなアイテムを提案していけばテレビでショップが紹介される場合もあります。（BASEの例でいうと、<a onclick="javascript:pageTracker._trackPageview('/outgoing/ossanrental.thebase.in/');"  href="http://ossanrental.thebase.in/" title="ossanrental" target="_blank">おっさんレンタル</a>が取り上げられたりしています。<a onclick="javascript:pageTracker._trackPageview('/outgoing/www.anam-leather.com/');"  href="http://www.anam-leather.com/" title="anam" target="_blank">ANAM</a>というショップも何度かテレビの取材を受けています。）<br />
+<br />
+<br />
+<br />
+<h2>6.ラジオ番組</h2>
+<a onclick="javascript:pageTracker._trackPageview('/outgoing/www.radioad.jp/cat/adcharge');"  href="http://www.radioad.jp/cat/adcharge" title="radioad" target="_blank">こちら</a>に地域別のラジオ広告料金が掲載されていますが、安いところだと10,000円からでも出稿が可能です。制作費としてまた別途費用が必要になってくるかと思いますが、こちらも検討してみるのはいかがでしょうか？ 純粋に広告を出稿するのではなく、ネタや話題を提供するなりすれば、取材に来てくれたりもするのでこの方法でアプローチしてみるのも面白いのではないでしょうか。<br />
+<br />
+<br />
+<br />
+<h2>7.名刺（ショップカード）</h2>
+ショップカードはお持ちですか？ぜひイベントなどで会う方々に自分の紹介と合わせてショップカードを渡すのも効果的でしょう。また可能であればよく行くカフェや雑貨屋などにショップカード（もしくはチラシ）をお願いして置いてもらうのも有効です。ぜひ嫌われない程度に交渉を進めてみましょう。<br />
+<br />
+<br />
+<br />
+<h2>8.イベント</h2>
+つい先日BASEも出展した<a onclick="javascript:pageTracker._trackPageview('/outgoing/baseu.jp/officialshop_operation/20140521110015/');"  href="http://baseu.jp/officialshop_operation/20140521110015/" title="アクセサリーや革雑貨から土偶まで？デザインフェスタVol.39のBASEブースへ出展したショップをご紹介" target="_blank">デザフェス</a>などに代表されるイベントに出展するのも効果的でしょう。また出展するという形式ではなく、自らイベントを開催するという選択肢もあります。（もちろんそれなりの時間とお金がかかりますが..）BASEとして何度もイベントに出展をしておりますが、やはりそこで感じるのは売り上げや効果うんぬんよりも、直接お客様とコミュニケーションをとることで得られるショップの改善点やモチベーションがネットでは得難い収穫だと思います。また顔をあわせての接客になりますので、ショップに対する信頼感を伝えることができるのもいいですよね。<br />
+<br />
+<br />
+以上、いかがでしょうか？オンラインの広告に比べてその成果が見えづらい部分はありますが、これらの方法を上手に活用することでショップへのさらなる集客が期待できるでしょう。スマートにオンライン上から集客しようと意固地になるのではなく、これらのような地味なアクションの先に本当の成功がまっているのではないでしょうか。<br />
+<br />
+やはり上手く行っているショップさんを見ていても積極的にイベントに出展したり、インタビューの募集をすると地方から足を運んでくれたりするなど、オフラインでの活動にも力を入れているなぁと感じるものです。<br />
+<br />
+<br />
+<div id="startBase"><a onclick="javascript:pageTracker._trackPageview('/outgoing/r.ca-mpr.jp/s/1015/?i4a=12');"  href="http://r.ca-mpr.jp/s/1015/?i4a=12" target="_blank" class="btnBase real w80p large">30秒で自分だけのショップを作ってみませんか？</a></div>
+<hr /><br />
+<div id="similarPost">
+<h4>関連記事</h4>
+<ul class="similar-posts">
+<li><a onclick="javascript:pageTracker._trackPageview('/outgoing/baseu.jp/web_ads/20140114095549/');"  href="http://baseu.jp/web_ads/20140114095549/" title="ネットショップの集客を考える上で必要なマーケティング用語まとめ">ネットショップの集客を考える上で必要なマーケティング用語まとめ</a></li>
+<br />
+<li><a onclick="javascript:pageTracker._trackPageview('/outgoing/baseu.jp/new_customer_acquisition/20131213102641/');"  href="http://baseu.jp/new_customer_acquisition/20131213102641/" title="年末商戦にお客様を呼ぶ！ネットショップへの集客手段総まとめ">年末商戦にお客様を呼ぶ！ネットショップへの集客手段総まとめ</a></li>
+<br />
+<li><a onclick="javascript:pageTracker._trackPageview('/outgoing/baseu.jp/web_ads/20130819102715/');"  href="http://baseu.jp/web_ads/20130819102715/" title="最初の集客を！ネットショップ運営者のためのリスティング広告３つの特徴">最初の集客を！ネットショップ運営者のためのリスティング広告３つの特徴</a></li>
+<br />
+<li><a onclick="javascript:pageTracker._trackPageview('/outgoing/baseu.jp/new_customer_acquisition/20130624180039/');"  href="http://baseu.jp/new_customer_acquisition/20130624180039/" title="起ち上げたばかりのFacebookページで最初のファンを集める４つの方法">起ち上げたばかりのFacebookページで最初のファンを集める４つの方法</a></li>
+<br />
+<li><a onclick="javascript:pageTracker._trackPageview('/outgoing/baseu.jp/web_ads/20130731080005/');"  href="http://baseu.jp/web_ads/20130731080005/" title="最大10億人以上の人々へあなたのショップをお知らせできるFacebook広告とは？">最大10億人以上の人々へあなたのショップをお知らせできるFacebook広告とは？</a></li>
+<br />
+</ul>
+</div><!-- Similar Posts took 7.561 ms --></p>
+					</div><!-- .entry-content -->
+		<div style="margin: 20px 0 0;">
+          <div id="socialBtnForSinglePage">
+        <div class="socialBtn">
+          <div class="facebook">
+      			<div class="fb-like" data-href="http://baseu.jp/new_customer_acquisition/20140526101630/" data-send="false" data-layout="button_count" data-width="1000" data-show-faces="false"></div>
+          </div>
+          <div class="twitter">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://baseu.jp/new_customer_acquisition/20140526101630/" data-via="BASEec" data-lang="ja">ツイート</a>
+          </div>
+          <div class="hatena">
+            <a href="http://b.hatena.ne.jp/entry/http://baseu.jp/new_customer_acquisition/20140526101630/" class="hatena-bookmark-button" data-hatena-bookmark-title="オフラインからネットショップに集客する！ネットを活用しない８の集客方法まとめ | BASE U" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+          </div>
+          <div style="width:65px;">
+            <div class="g-plusone" data-size="medium"></div>
+          </div>
+          <div>
+            <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a>
+          </div>
+        </div>
+      </div>		</div>
+
+    <footer id="singleFooter">
+      <!-- コメント -->
+  	  <hr>
+  		<div class="author-description">
+
+
+<!--         <a href="https://thebase.in/?from=baseu" target="_blank"><img src="http://baseu.jp/wp-content/uploads/contributorBanner_kinjo.png" title="BASEに出店する" alt="BASEに出店する"></a> -->
+  		  <h4>ライター紹介</h4>
+  		  <dl>
+  		    <dd class="contributorIcon">
+  		      <img alt='kinjo' src='http://baseu.jp/wp-content/uploads/kinjo_avatar_1370991986-60x60.png' class='avatar avatar-60 photo' height='60' width='60' />  		    </dd>
+  		    <dt>shinichiro kinjo</dt>
+  		    <dd>BASEでマーケティングやビジネス開発を担当している金城です。BASEのショップオーナーのためのコミュニティも運営しておりますのでショップの売上をUPさせたい方は以下のURLからお気軽にご参加ください。</dd>
+  		    <dd class="contributorUrl"><a href="https://www.facebook.com/groups/144452972430007/" target="_blank">https://www.facebook.com/groups/144452972430007/</a></dd>
+  		    <dd class="followBtnForTwitter">
+    		    <a href="https://twitter.com/@illshin" class="twitter-follow-button" data-show-count="false" data-lang="ja">@@illshinさんをフォロー</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  		    </dd>
+  		    <dd class="followBtnForFacebook">
+            <div class="fb-follow" data-href="https://www.facebook.com/shin.kinjo" data-show-faces="false" data-width="450"></div>
+
+  		    </dd>
+            		    <dd>
+            <a href="https://www.facebook.com/groups/144452972430007/" target="_blank"><img src="/wp-content/ps_profile_image/5/kinjo-thumbnail.png" alt=" admin shinichirokinjo" width="530" ></a>
+  		    </dd>
+  		      		  </dl>
+  		</div><!-- .author-description -->
+
+
+  		<!-- BASE出店ボタン -->
+  		<div id="originalBannerStartBase">
+  		  <a href="https://thebase.in/?from=baseu" target="_blank" ><img src="http://baseu.jp/wp-content/themes/base/img/originalBannerStartBase.png" title="startbase" alt="BASE U｜ネットショップの開設・運営・集客のノウハウを学ぼう"></a>
+  		</div>
+  
+      <!-- facebook like box -->
+      <div style="margin:20px 0 20px;">
+        <h2 style="margin:0 0 10px;">Facebookページでも情報配信中！</h2>
+        <p>BASEのFacebookページでは、BASEの情報はもちろん、BASE Uのネットショップを成功へ導く記事のお知らせも随時配信しています。是非「いいね！」をして最新情報をチェックしてください！</p>
+  	    <div class="fb-like-box" data-href="https://www.facebook.com/BASEec" data-width="570" data-show-faces="true" data-stream="false" data-show-border="false" data-header="false"></div>
+      </div>
+  
+      <!-- 購読フォーム -->
+      <div id="mc_embed_signup" style="margin:0 10px;">
+        <form action="http://thebase.us6.list-manage.com/subscribe/post?u=cdd4f97c0752cbcd85fc7294e&amp;id=dd66068cc9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        	<label for="mce-EMAIL">ショップの売上をUPさせる<br>BASE Uの更新情報を受け取る。</label>
+        	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+        	<div class="clear"><input type="submit" value="購読する" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </form>
+      </div><!--End mc_embed_signup-->
+  
+      <!-- コメント欄 -->
+  	  <hr>
+      <div id="fbComment">
+  		  <h4>コメント</h4>
+        <div class="fb-comments" data-href="http://baseu.jp/new_customer_acquisition/20140526101630/" data-width="570" data-num-posts="10"></div>
+      </div>
+    </footer><!-- /#singleFooter -->
+
+			</article><!-- #post -->
+    		    	    </div>
+
+  	
+  <!-- only single page -->
+			<div id="sideColumn" class="widget-area" role="complementary">
+		  <div>
+		    <a href="https://thebase.in/?from=baseu" target="_blank"><img src="http://baseu.jp/wp-content/themes/base/img/sideBanner.png" width="230" height="192"></a>
+		  </div>
+			<aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">カテゴリ一覧</h3>		<ul>
+	<li class="cat-item cat-item-95"><a href="http://baseu.jp/category/story/" title="ショップオーナーさんのインタビュー記事です。">BASE STORY</a> (12)
+</li>
+	<li class="cat-item cat-item-65"><a href="http://baseu.jp/category/web_ads/facebook_ads/" title="Facebook広告 に含まれる投稿をすべて表示">Facebook広告</a> (1)
+</li>
+	<li class="cat-item cat-item-7"><a href="http://baseu.jp/category/web_ads/" title="ネットショップを多くの人に広めるためには「WEB広告」が効果的です。
+WEB広告の種類や、運用方法、活用するポイントなどを紹介しま す。">WEB広告</a> (6)
+</li>
+	<li class="cat-item cat-item-18"><a href="http://baseu.jp/category/site_improvement/analytics/" title="アクセス解析 に含まれる投稿をすべて表示">アクセス解析</a> (2)
+</li>
+	<li class="cat-item cat-item-25"><a href="http://baseu.jp/category/new_customer_acquisition/campain/" title="キャンペーン に含まれる投稿をすべて表示">キャンペーン</a> (6)
+</li>
+	<li class="cat-item cat-item-22"><a href="http://baseu.jp/category/customer_support/complain_handling/" title="クレーム対応 に含まれる投稿をすべて表示">クレーム対応</a> (4)
+</li>
+	<li class="cat-item cat-item-4"><a href="http://baseu.jp/category/site_improvement/" title="ネットショップを運用するにあたってサイトの改善は必要不可欠です。
+ユーザーにとって使いやすく分かりやすいサイトにするために何が必要なのかをご紹介いたします。">サイト改善</a> (12)
+</li>
+	<li class="cat-item cat-item-15"><a href="http://baseu.jp/category/launch_web_shop/site-building/" title="サイト構築 に含まれる投稿をすべて表示">サイト構築</a> (16)
+</li>
+	<li class="cat-item cat-item-2"><a href="http://baseu.jp/category/product_design/" title="ネットショップを開設する前に決めておきたいポイントは「ショップコンセプト」や「商品設計」です。
+どんな人のに買ってもらいたいのか?ショップのコンセプトとは?などネットショップオーナーの疑問にお答えします。">ショップコンセプト・商品設計</a> (16)
+</li>
+	<li class="cat-item cat-item-26"><a href="http://baseu.jp/category/new_customer_acquisition/social_media/" title="ソーシャルメディア に含まれる投稿をすべて表示">ソーシャルメディア</a> (15)
+</li>
+	<li class="cat-item cat-item-10"><a href="http://baseu.jp/category/product_design/target/" title="ターゲット に含まれる投稿をすべて表示">ターゲット</a> (3)
+</li>
+	<li class="cat-item cat-item-11"><a href="http://baseu.jp/category/product_design/design/" title="デザイン に含まれる投稿をすべて表示">デザイン</a> (5)
+</li>
+	<li class="cat-item cat-item-54"><a href="http://baseu.jp/category/officialshop_operation/" title="BASEスタッフが実際に、ネットショップの運営を通して売上UPを実現していく様子をご紹介します。
+皆様と同じ立場に立って、課題や問題の解決や改善などを繰り返していく模様を実況する連載コンテンツ。
+BASEおすすめのショップも毎週ご紹介します。">ネットショップ成功への道</a> (23)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://baseu.jp/category/launch_web_shop/" title="販売する商品について決めたら、ネットショップの立ち上げです。
+ユーザーに訴求するためのサイト構築には、どんな手順があるのかをご紹介します。">ネットショップ立ち上げ</a> (26)
+</li>
+	<li class="cat-item cat-item-12"><a href="http://baseu.jp/category/product_design/naming/" title="ネーミング に含まれる投稿をすべて表示">ネーミング</a> (3)
+</li>
+	<li class="cat-item cat-item-71"><a href="http://baseu.jp/category/new_customer_acquisition/media/" title="メディア掲載 に含まれる投稿をすべて表示">メディア掲載</a> (6)
+</li>
+	<li class="cat-item cat-item-27"><a href="http://baseu.jp/category/get_repeat_customers/newsletter/" title="メールマガジン に含まれる投稿をすべて表示">メールマガジン</a> (4)
+</li>
+	<li class="cat-item cat-item-9"><a href="http://baseu.jp/category/get_repeat_customers/" title="ネットショップで一度購入してくれたユーザーに対してのフォローとは?
+またショップへ訪れて商品を購入してもらえるようなアプローチ方法などをご紹介します。">リピート顧客獲得</a> (5)
+</li>
+	<li class="cat-item cat-item-55"><a href="http://baseu.jp/category/officialshop_operation/shop_recommend/" title="今週のBASEおすすめショップ紹介 に含まれる投稿をすべて表示">今週のBASEおすすめショップ紹介</a> (24)
+</li>
+	<li class="cat-item cat-item-14"><a href="http://baseu.jp/category/product_design/cost/" title="価格 に含まれる投稿をすべて表示">価格</a> (3)
+</li>
+	<li class="cat-item cat-item-16"><a href="http://baseu.jp/category/launch_web_shop/items/" title="商品 に含まれる投稿をすべて表示">商品</a> (5)
+</li>
+	<li class="cat-item cat-item-20"><a href="http://baseu.jp/category/site_improvement/item_check/" title="商品テコ入れ に含まれる投稿をすべて表示">商品テコ入れ</a> (4)
+</li>
+	<li class="cat-item cat-item-19"><a href="http://baseu.jp/category/site_improvement/sales_check/" title="売れ行きチェック に含まれる投稿をすべて表示">売れ行きチェック</a> (2)
+</li>
+	<li class="cat-item cat-item-31"><a href="http://baseu.jp/category/improvement/ad-improvement/" title="広告改善 に含まれる投稿をすべて表示">広告改善</a> (2)
+</li>
+	<li class="cat-item cat-item-28"><a href="http://baseu.jp/category/improvement/" title="ネットショップで一度購入してくれたユーザーに対してのフォローとは?
+またショップへ訪れて商品を購入してもらえるようなアプローチ方法などをご紹介します。">改善</a> (2)
+</li>
+	<li class="cat-item cat-item-8"><a href="http://baseu.jp/category/new_customer_acquisition/" title="ネットショップに新規ユーザーを呼び込むためにはどんな方法があるのでしょうか?
+効果的なキャンペーンの企画、方法などをご紹介します。">新規顧客獲得</a> (26)
+</li>
+	<li class="cat-item cat-item-23"><a href="http://baseu.jp/category/web_ads/advertisement/" title="検索広告 に含まれる投稿をすべて表示">検索広告</a> (5)
+</li>
+	<li class="cat-item cat-item-17"><a href="http://baseu.jp/category/launch_web_shop/payment/" title="決済 に含まれる投稿をすべて表示">決済</a> (4)
+</li>
+	<li class="cat-item cat-item-30"><a href="http://baseu.jp/category/site_improvement/photography/" title="『欲しい！』と思ってもらえる写真とは？
+ネットショップにとって重要な物撮り写真撮影のポイントを専門家が解説します！">物撮り・写真撮影</a> (5)
+</li>
+	<li class="cat-item cat-item-117"><a href="http://baseu.jp/category/site_improvement/%e9%81%8b%e7%94%a8%e5%8a%b9%e7%8e%87%e5%8c%96/" title="運用効率化 に含まれる投稿をすべて表示">運用効率化</a> (2)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://baseu.jp/category/delivery/" title="ネットショップに注文が入ったら、商品を「配送」します。
+商品を受け取ったユーザーに喜んでもらえる配送の工夫もご紹介します。">配送</a> (6)
+</li>
+	<li class="cat-item cat-item-32"><a href="http://baseu.jp/category/delivery/delivery_device/" title="配送の工夫 に含まれる投稿をすべて表示">配送の工夫</a> (6)
+</li>
+	<li class="cat-item cat-item-6"><a href="http://baseu.jp/category/customer_support/" title="ネットショップに訪れたユーザーからの質問などの「顧客対応」で注意することとは?
+質問やクレーム対応のひとつひとつが顧客満足度につながります。">顧客対応</a> (9)
+</li>
+	<li class="cat-item cat-item-21"><a href="http://baseu.jp/category/customer_support/customer_satisfaction/" title="顧客満足度アップ に含まれる投稿をすべて表示">顧客満足度アップ</a> (5)
+</li>
+		</ul>
+</aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">新着記事</h3>		<ul>
+					<li>
+				<a href="http://baseu.jp/site_improvement/20140529101113/">商品選びの参考に！ネットショップで売れているカテゴリトップ10と人気の７つの商材</a>
+						</li>
+					<li>
+				<a href="http://baseu.jp/new_customer_acquisition/20140526101630/">オフラインからネットショップに集客する！ネットを活用しない８の集客方法まとめ</a>
+						</li>
+					<li>
+				<a href="http://baseu.jp/officialshop_operation/20140521110015/">アクセサリーや革雑貨から土偶まで？デザインフェスタVol.39のBASEブースへ出展したショップをご紹介</a>
+						</li>
+					<li>
+				<a href="http://baseu.jp/new_customer_acquisition/20140516094218/">３つの事例から学ぶ！YouTube、Instagram、Pinterestを活用したネットショップの成功事例</a>
+						</li>
+					<li>
+				<a href="http://baseu.jp/product_design/20140514103047/">明日から何を売る？これから日本で流行るかもしれない海外で大ヒット中の７つの商品</a>
+						</li>
+				</ul>
+		</aside><aside id="tag_cloud-2" class="widget widget_tag_cloud"><h3 class="widget-title">タグ</h3><div class="tagcloud"><a href='http://baseu.jp/tag/base/' class='tag-link-38' title='15件のトピック' style='font-size: 18.285714285714pt;'>BASE</a>
+<a href='http://baseu.jp/tag/base-apps/' class='tag-link-64' title='7件のトピック' style='font-size: 14pt;'>BASE Apps</a>
+<a href='http://baseu.jp/tag/facebook/' class='tag-link-35' title='8件のトピック' style='font-size: 14.714285714286pt;'>Facebook</a>
+<a href='http://baseu.jp/tag/facebook%e5%ba%83%e5%91%8a/' class='tag-link-44' title='3件のトピック' style='font-size: 9.7142857142857pt;'>facebook広告</a>
+<a href='http://baseu.jp/tag/google/' class='tag-link-85' title='3件のトピック' style='font-size: 9.7142857142857pt;'>Google</a>
+<a href='http://baseu.jp/tag/instagram/' class='tag-link-128' title='3件のトピック' style='font-size: 9.7142857142857pt;'>instagram</a>
+<a href='http://baseu.jp/tag/iphone%e3%82%a2%e3%83%97%e3%83%aa/' class='tag-link-56' title='4件のトピック' style='font-size: 11.142857142857pt;'>iPhoneアプリ</a>
+<a href='http://baseu.jp/tag/pinterest/' class='tag-link-131' title='2件のトピック' style='font-size: 8pt;'>Pinterest</a>
+<a href='http://baseu.jp/tag/seo/' class='tag-link-84' title='5件のトピック' style='font-size: 12.285714285714pt;'>SEO</a>
+<a href='http://baseu.jp/tag/twitter/' class='tag-link-39' title='7件のトピック' style='font-size: 14pt;'>Twitter</a>
+<a href='http://baseu.jp/tag/%e3%81%8a%e3%81%99%e3%81%99%e3%82%81%e3%82%b7%e3%83%a7%e3%83%83%e3%83%97/' class='tag-link-57' title='27件のトピック' style='font-size: 21.857142857143pt;'>おすすめショップ</a>
+<a href='http://baseu.jp/tag/%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b5%e3%83%aa%e3%83%bc/' class='tag-link-102' title='2件のトピック' style='font-size: 8pt;'>アクセサリー</a>
+<a href='http://baseu.jp/tag/%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e8%a7%a3%e6%9e%90/' class='tag-link-105' title='2件のトピック' style='font-size: 8pt;'>アクセス解析</a>
+<a href='http://baseu.jp/tag/%e3%82%a4%e3%83%b3%e3%82%bf%e3%83%93%e3%83%a5%e3%83%bc/' class='tag-link-96' title='3件のトピック' style='font-size: 9.7142857142857pt;'>インタビュー</a>
+<a href='http://baseu.jp/tag/%e3%82%a8%e3%83%b3%e3%82%b2%e3%83%bc%e3%82%b8%e3%83%a1%e3%83%b3%e3%83%88/' class='tag-link-53' title='10件のトピック' style='font-size: 16pt;'>エンゲージメント</a>
+<a href='http://baseu.jp/tag/%e3%82%ab%e3%83%a1%e3%83%a9/' class='tag-link-41' title='4件のトピック' style='font-size: 11.142857142857pt;'>カメラ</a>
+<a href='http://baseu.jp/tag/%e3%82%ad%e3%83%a3%e3%83%83%e3%83%81%e3%82%b3%e3%83%94%e3%83%bc/' class='tag-link-98' title='4件のトピック' style='font-size: 11.142857142857pt;'>キャッチコピー</a>
+<a href='http://baseu.jp/tag/%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%9a%e3%83%bc%e3%83%b3/' class='tag-link-45' title='4件のトピック' style='font-size: 11.142857142857pt;'>キャンペーン</a>
+<a href='http://baseu.jp/tag/%e3%82%af%e3%83%ac%e3%83%bc%e3%83%a0/' class='tag-link-62' title='3件のトピック' style='font-size: 9.7142857142857pt;'>クレーム</a>
+<a href='http://baseu.jp/tag/%e3%82%b3%e3%83%b3%e3%82%bb%e3%83%97%e3%83%88/' class='tag-link-76' title='10件のトピック' style='font-size: 16pt;'>コンセプト</a>
+<a href='http://baseu.jp/tag/%e3%82%b7%e3%83%a7%e3%83%83%e3%83%97/' class='tag-link-83' title='3件のトピック' style='font-size: 9.7142857142857pt;'>ショップ</a>
+<a href='http://baseu.jp/tag/%e3%82%bd%e3%83%bc%e3%82%b7%e3%83%a3%e3%83%ab%e3%82%b3%e3%83%9e%e3%83%bc%e3%82%b9/' class='tag-link-43' title='2件のトピック' style='font-size: 8pt;'>ソーシャルコマース</a>
+<a href='http://baseu.jp/tag/%e3%83%87%e3%82%b6%e3%82%a4%e3%83%b3/' class='tag-link-101' title='2件のトピック' style='font-size: 8pt;'>デザイン</a>
+<a href='http://baseu.jp/tag/%e3%83%88%e3%83%a9%e3%83%96%e3%83%ab/' class='tag-link-63' title='2件のトピック' style='font-size: 8pt;'>トラブル</a>
+<a href='http://baseu.jp/tag/%e3%83%8d%e3%83%83%e3%83%88%e3%82%b7%e3%83%a7%e3%83%83%e3%83%97/' class='tag-link-59' title='4件のトピック' style='font-size: 11.142857142857pt;'>ネットショップ</a>
+<a href='http://baseu.jp/tag/%e3%83%8d%e3%83%83%e3%83%88%e3%82%b7%e3%83%a7%e3%83%83%e3%83%97%e9%96%8b%e6%a5%ad/' class='tag-link-72' title='6件のトピック' style='font-size: 13.285714285714pt;'>ネットショップ開業</a>
+<a href='http://baseu.jp/tag/%e3%83%8f%e3%83%b3%e3%83%89%e3%83%a1%e3%82%a4%e3%83%89/' class='tag-link-80' title='8件のトピック' style='font-size: 14.714285714286pt;'>ハンドメイド</a>
+<a href='http://baseu.jp/tag/%e3%83%96%e3%83%ad%e3%82%b0/' class='tag-link-99' title='6件のトピック' style='font-size: 13.285714285714pt;'>ブログ</a>
+<a href='http://baseu.jp/tag/%e3%83%9e%e3%83%bc%e3%82%b1%e3%83%86%e3%82%a3%e3%83%b3%e3%82%b0/' class='tag-link-110' title='2件のトピック' style='font-size: 8pt;'>マーケティング</a>
+<a href='http://baseu.jp/tag/%e3%83%a1%e3%83%bc%e3%83%ab/' class='tag-link-50' title='4件のトピック' style='font-size: 11.142857142857pt;'>メール</a>
+<a href='http://baseu.jp/tag/%e3%83%aa%e3%82%b9%e3%83%86%e3%82%a3%e3%83%b3%e3%82%b0%e5%ba%83%e5%91%8a/' class='tag-link-90' title='7件のトピック' style='font-size: 14pt;'>リスティング広告</a>
+<a href='http://baseu.jp/tag/%e3%83%aa%e3%83%94%e3%83%bc%e3%83%88/' class='tag-link-46' title='6件のトピック' style='font-size: 13.285714285714pt;'>リピート</a>
+<a href='http://baseu.jp/tag/%e5%8f%a3%e3%82%b3%e3%83%9f/' class='tag-link-47' title='8件のトピック' style='font-size: 14.714285714286pt;'>口コミ</a>
+<a href='http://baseu.jp/tag/%e5%95%86%e5%93%81/' class='tag-link-78' title='9件のトピック' style='font-size: 15.428571428571pt;'>商品</a>
+<a href='http://baseu.jp/tag/%e5%95%86%e5%93%81%e5%86%99%e7%9c%9f/' class='tag-link-77' title='6件のトピック' style='font-size: 13.285714285714pt;'>商品写真</a>
+<a href='http://baseu.jp/tag/%e5%ba%83%e5%91%8a/' class='tag-link-66' title='2件のトピック' style='font-size: 8pt;'>広告</a>
+<a href='http://baseu.jp/tag/%e6%a2%b1%e5%8c%85/' class='tag-link-51' title='4件のトピック' style='font-size: 11.142857142857pt;'>梱包</a>
+<a href='http://baseu.jp/tag/%e6%a4%9c%e7%b4%a2%e9%80%a3%e5%8b%95%e5%9e%8b%e5%ba%83%e5%91%8a/' class='tag-link-92' title='2件のトピック' style='font-size: 8pt;'>検索連動型広告</a>
+<a href='http://baseu.jp/tag/%e6%b1%ba%e6%b8%88/' class='tag-link-75' title='3件のトピック' style='font-size: 9.7142857142857pt;'>決済</a>
+<a href='http://baseu.jp/tag/%e9%80%81%e6%96%99/' class='tag-link-61' title='2件のトピック' style='font-size: 8pt;'>送料</a>
+<a href='http://baseu.jp/tag/%e9%85%8d%e9%80%81/' class='tag-link-94' title='3件のトピック' style='font-size: 9.7142857142857pt;'>配送</a>
+<a href='http://baseu.jp/tag/delivery_device/' class='tag-link-32' title='3件のトピック' style='font-size: 9.7142857142857pt;'>配送の工夫</a>
+<a href='http://baseu.jp/tag/%e9%9b%86%e5%ae%a2/' class='tag-link-67' title='28件のトピック' style='font-size: 22pt;'>集客</a>
+<a href='http://baseu.jp/tag/%e9%a1%a7%e5%ae%a2%e5%af%be%e5%bf%9c/' class='tag-link-68' title='10件のトピック' style='font-size: 16pt;'>顧客対応</a>
+<a href='http://baseu.jp/tag/%e9%a1%a7%e5%ae%a2%e5%bf%83%e7%90%86/' class='tag-link-113' title='2件のトピック' style='font-size: 8pt;'>顧客心理</a></div>
+</aside><!-- Wordpress Popular Posts Plugin v2.3.7 [W] [daily] [views] [regular] -->
+<aside id="wpp-2" class="widget popular-posts">
+<h3 class="widget-title">人気記事</h3><ul class="wpp-list">
+<li><a href="http://baseu.jp/launch_web_shop/20130920100907/" title="こんな使い方も！？面白いと感じたBASEショップの活用方法を３つご紹介。" class="wpp-post-title" target="_self">こんな使い方も！？面白いと感じたBASEショップの活用方法を３つご紹介。</a> <span class="post-stats"></span></li>
+<li><a href="http://baseu.jp/officialshop_operation/20140521110015/" title="アクセサリーや革雑貨から土偶まで？デザインフェスタVol.39のBASEブースへ出展したショップをご紹介" class="wpp-post-title" target="_self">アクセサリーや革雑貨から土偶まで？デザインフェスタVol.39のBASEブースへ出展したショップをご紹介</a> <span class="post-stats"></span></li>
+<li><a href="http://baseu.jp/new_customer_acquisition/20140526101630/" title="オフラインからネットショップに集客する！ネットを活用しない８の集客方法まとめ" class="wpp-post-title" target="_self">オフラインからネットショップに集客する！ネットを活用しない８の集客方法まとめ</a> <span class="post-stats"></span></li>
+<li><a href="http://baseu.jp/launch_web_shop/20140324095111/" title="アクセサリーや雑貨など、ハンドメイド作品をネットで売るために必要な5つの手順" class="wpp-post-title" target="_self">アクセサリーや雑貨など、ハンドメイド作品をネットで売るために必要な5つの手順</a> <span class="post-stats"></span></li>
+<li><a href="http://baseu.jp/customer_support/20130726080032/" title="未然に防ぐ！ネットショップにありがちな６つのトラブル" class="wpp-post-title" target="_self">未然に防ぐ！ネットショップにありがちな６つのトラブル</a> <span class="post-stats"></span></li>
+<li><a href="http://baseu.jp/product_design/20140514103047/" title="明日から何を売る？これから日本で流行るかもしれない海外で大ヒット中の７つの商品" class="wpp-post-title" target="_self">明日から何を売る？これから日本で流行るかもしれない海外で大ヒット中の７つの商品</a> <span class="post-stats"></span></li>
+<li><a href="http://baseu.jp/new_customer_acquisition/20140331084644/" title="もはや集客手段として無視できない！インスタグラムを使ってショップの売上をあげる３つの方法" class="wpp-post-title" target="_self">もはや集客手段として無視できない！インスタグラムを使ってショップの売上をあげる３つの方法</a> <span class="post-stats"></span></li>
+<li><a href="http://baseu.jp/delivery/20140116100647/" title="商品発送は郵便局、ヤマト、佐川どこにお願いする？人気の宅配業者を徹底比較" class="wpp-post-title" target="_self">商品発送は郵便局、ヤマト、佐川どこにお願いする？人気の宅配業者を徹底比較</a> <span class="post-stats"></span></li>
+<li><a href="http://baseu.jp/product_design/20140430101339/" title="アクセサリー、バッグ、ファッション、家具、革製品などハンドメイドアイテムを扱うBASEの人気ネットショップをご紹介" class="wpp-post-title" target="_self">アクセサリー、バッグ、ファッション、家具、革製品などハンドメイドアイテムを扱うBASEの人気ネットショップをご紹介</a> <span class="post-stats"></span></li>
+<li><a href="http://baseu.jp/officialshop_operation/20140502102443/" title="これからの季節にピッタリ！水筒、カラフルシャツ、トランクなど連休のアウトドアのお供にしたいアイテム5選" class="wpp-post-title" target="_self">これからの季節にピッタリ！水筒、カラフルシャツ、トランクなど連休のアウトドアのお供にしたいアイテム5選</a> <span class="post-stats"></span></li>
+
+</ul>
+</aside>
+<!-- End Wordpress Popular Posts Plugin v2.3.7 -->
+		</div><!-- #secondary -->
+	  </div>
+
+</div><!-- #main -->
+
+	<footer id="colophon" class="centering" role="contentinfo">
+  	<nav class="wrapper">
+    	<div class="box">
+    	 <p>フッターリンク</p>
+      	<ul>
+      	  <li class="current_page_item"><a href="http://baseu.jp/">BASEU｜ネットショップの開設・運営・集客のノウハウを学ぼう</a></li>
+          <li class="page_item page-item-315"><a href="http://baseu.jp/about/">BASE Uとは</a></li>
+          <li class="page_item page-item-2"><a href="http://baseu.jp/open/">ネットショップの開設</a></li>
+          <li class="page_item page-item-31"><a href="http://baseu.jp/operation/">ネットショップの運営</a></li>
+          <li class="page_item page-item-34"><a href="http://baseu.jp/promotion/">販促・集客</a></li>
+                	</ul>
+    	</div>
+    	<div class="box">
+    	 <p>タグクラウド</p>
+    	 <div id="tagCloud">
+      	 <a href='http://baseu.jp/tag/base/' class='tag-link-38' title='15件のトピック' style='font-size: 14.204081632653px;'>BASE</a>
+<a href='http://baseu.jp/tag/base-apps/' class='tag-link-64' title='7件のトピック' style='font-size: 13.285714285714px;'>BASE Apps</a>
+<a href='http://baseu.jp/tag/facebook/' class='tag-link-35' title='8件のトピック' style='font-size: 13.438775510204px;'>Facebook</a>
+<a href='http://baseu.jp/tag/facebook%e5%ba%83%e5%91%8a/' class='tag-link-44' title='3件のトピック' style='font-size: 12.367346938776px;'>facebook広告</a>
+<a href='http://baseu.jp/tag/google/' class='tag-link-85' title='3件のトピック' style='font-size: 12.367346938776px;'>Google</a>
+<a href='http://baseu.jp/tag/instagram/' class='tag-link-128' title='3件のトピック' style='font-size: 12.367346938776px;'>instagram</a>
+<a href='http://baseu.jp/tag/iphone%e3%82%a2%e3%83%97%e3%83%aa/' class='tag-link-56' title='4件のトピック' style='font-size: 12.673469387755px;'>iPhoneアプリ</a>
+<a href='http://baseu.jp/tag/pinterest/' class='tag-link-131' title='2件のトピック' style='font-size: 12px;'>Pinterest</a>
+<a href='http://baseu.jp/tag/seo/' class='tag-link-84' title='5件のトピック' style='font-size: 12.918367346939px;'>SEO</a>
+<a href='http://baseu.jp/tag/twitter/' class='tag-link-39' title='7件のトピック' style='font-size: 13.285714285714px;'>Twitter</a>
+<a href='http://baseu.jp/tag/%e3%81%8a%e3%81%99%e3%81%99%e3%82%81%e3%82%b7%e3%83%a7%e3%83%83%e3%83%97/' class='tag-link-57' title='27件のトピック' style='font-size: 14.969387755102px;'>おすすめショップ</a>
+<a href='http://baseu.jp/tag/%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b5%e3%83%aa%e3%83%bc/' class='tag-link-102' title='2件のトピック' style='font-size: 12px;'>アクセサリー</a>
+<a href='http://baseu.jp/tag/%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e8%a7%a3%e6%9e%90/' class='tag-link-105' title='2件のトピック' style='font-size: 12px;'>アクセス解析</a>
+<a href='http://baseu.jp/tag/%e3%82%a4%e3%83%b3%e3%82%bf%e3%83%93%e3%83%a5%e3%83%bc/' class='tag-link-96' title='3件のトピック' style='font-size: 12.367346938776px;'>インタビュー</a>
+<a href='http://baseu.jp/tag/%e3%82%a8%e3%83%b3%e3%82%b2%e3%83%bc%e3%82%b8%e3%83%a1%e3%83%b3%e3%83%88/' class='tag-link-53' title='10件のトピック' style='font-size: 13.714285714286px;'>エンゲージメント</a>
+<a href='http://baseu.jp/tag/%e3%82%ab%e3%83%a1%e3%83%a9/' class='tag-link-41' title='4件のトピック' style='font-size: 12.673469387755px;'>カメラ</a>
+<a href='http://baseu.jp/tag/%e3%82%ad%e3%83%a3%e3%83%83%e3%83%81%e3%82%b3%e3%83%94%e3%83%bc/' class='tag-link-98' title='4件のトピック' style='font-size: 12.673469387755px;'>キャッチコピー</a>
+<a href='http://baseu.jp/tag/%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%9a%e3%83%bc%e3%83%b3/' class='tag-link-45' title='4件のトピック' style='font-size: 12.673469387755px;'>キャンペーン</a>
+<a href='http://baseu.jp/tag/%e3%82%af%e3%83%ac%e3%83%bc%e3%83%a0/' class='tag-link-62' title='3件のトピック' style='font-size: 12.367346938776px;'>クレーム</a>
+<a href='http://baseu.jp/tag/%e3%82%b3%e3%83%b3%e3%82%bb%e3%83%97%e3%83%88/' class='tag-link-76' title='10件のトピック' style='font-size: 13.714285714286px;'>コンセプト</a>
+<a href='http://baseu.jp/tag/%e3%82%b7%e3%83%a7%e3%83%83%e3%83%97/' class='tag-link-83' title='3件のトピック' style='font-size: 12.367346938776px;'>ショップ</a>
+<a href='http://baseu.jp/tag/%e3%82%bd%e3%83%bc%e3%82%b7%e3%83%a3%e3%83%ab%e3%82%b3%e3%83%9e%e3%83%bc%e3%82%b9/' class='tag-link-43' title='2件のトピック' style='font-size: 12px;'>ソーシャルコマース</a>
+<a href='http://baseu.jp/tag/%e3%83%87%e3%82%b6%e3%82%a4%e3%83%b3/' class='tag-link-101' title='2件のトピック' style='font-size: 12px;'>デザイン</a>
+<a href='http://baseu.jp/tag/%e3%83%88%e3%83%a9%e3%83%96%e3%83%ab/' class='tag-link-63' title='2件のトピック' style='font-size: 12px;'>トラブル</a>
+<a href='http://baseu.jp/tag/%e3%83%8d%e3%83%83%e3%83%88%e3%82%b7%e3%83%a7%e3%83%83%e3%83%97/' class='tag-link-59' title='4件のトピック' style='font-size: 12.673469387755px;'>ネットショップ</a>
+<a href='http://baseu.jp/tag/%e3%83%8d%e3%83%83%e3%83%88%e3%82%b7%e3%83%a7%e3%83%83%e3%83%97%e9%96%8b%e6%a5%ad/' class='tag-link-72' title='6件のトピック' style='font-size: 13.132653061224px;'>ネットショップ開業</a>
+<a href='http://baseu.jp/tag/%e3%83%8f%e3%83%b3%e3%83%89%e3%83%a1%e3%82%a4%e3%83%89/' class='tag-link-80' title='8件のトピック' style='font-size: 13.438775510204px;'>ハンドメイド</a>
+<a href='http://baseu.jp/tag/%e3%83%96%e3%83%ad%e3%82%b0/' class='tag-link-99' title='6件のトピック' style='font-size: 13.132653061224px;'>ブログ</a>
+<a href='http://baseu.jp/tag/%e3%83%9e%e3%83%bc%e3%82%b1%e3%83%86%e3%82%a3%e3%83%b3%e3%82%b0/' class='tag-link-110' title='2件のトピック' style='font-size: 12px;'>マーケティング</a>
+<a href='http://baseu.jp/tag/%e3%83%a1%e3%83%bc%e3%83%ab/' class='tag-link-50' title='4件のトピック' style='font-size: 12.673469387755px;'>メール</a>
+<a href='http://baseu.jp/tag/%e3%83%aa%e3%82%b9%e3%83%86%e3%82%a3%e3%83%b3%e3%82%b0%e5%ba%83%e5%91%8a/' class='tag-link-90' title='7件のトピック' style='font-size: 13.285714285714px;'>リスティング広告</a>
+<a href='http://baseu.jp/tag/%e3%83%aa%e3%83%94%e3%83%bc%e3%83%88/' class='tag-link-46' title='6件のトピック' style='font-size: 13.132653061224px;'>リピート</a>
+<a href='http://baseu.jp/tag/%e5%8f%a3%e3%82%b3%e3%83%9f/' class='tag-link-47' title='8件のトピック' style='font-size: 13.438775510204px;'>口コミ</a>
+<a href='http://baseu.jp/tag/%e5%95%86%e5%93%81/' class='tag-link-78' title='9件のトピック' style='font-size: 13.591836734694px;'>商品</a>
+<a href='http://baseu.jp/tag/%e5%95%86%e5%93%81%e5%86%99%e7%9c%9f/' class='tag-link-77' title='6件のトピック' style='font-size: 13.132653061224px;'>商品写真</a>
+<a href='http://baseu.jp/tag/%e5%ba%83%e5%91%8a/' class='tag-link-66' title='2件のトピック' style='font-size: 12px;'>広告</a>
+<a href='http://baseu.jp/tag/%e6%a2%b1%e5%8c%85/' class='tag-link-51' title='4件のトピック' style='font-size: 12.673469387755px;'>梱包</a>
+<a href='http://baseu.jp/tag/%e6%a4%9c%e7%b4%a2%e9%80%a3%e5%8b%95%e5%9e%8b%e5%ba%83%e5%91%8a/' class='tag-link-92' title='2件のトピック' style='font-size: 12px;'>検索連動型広告</a>
+<a href='http://baseu.jp/tag/%e6%b1%ba%e6%b8%88/' class='tag-link-75' title='3件のトピック' style='font-size: 12.367346938776px;'>決済</a>
+<a href='http://baseu.jp/tag/%e9%80%81%e6%96%99/' class='tag-link-61' title='2件のトピック' style='font-size: 12px;'>送料</a>
+<a href='http://baseu.jp/tag/%e9%85%8d%e9%80%81/' class='tag-link-94' title='3件のトピック' style='font-size: 12.367346938776px;'>配送</a>
+<a href='http://baseu.jp/tag/delivery_device/' class='tag-link-32' title='3件のトピック' style='font-size: 12.367346938776px;'>配送の工夫</a>
+<a href='http://baseu.jp/tag/%e9%9b%86%e5%ae%a2/' class='tag-link-67' title='28件のトピック' style='font-size: 15px;'>集客</a>
+<a href='http://baseu.jp/tag/%e9%a1%a7%e5%ae%a2%e5%af%be%e5%bf%9c/' class='tag-link-68' title='10件のトピック' style='font-size: 13.714285714286px;'>顧客対応</a>
+<a href='http://baseu.jp/tag/%e9%a1%a7%e5%ae%a2%e5%bf%83%e7%90%86/' class='tag-link-113' title='2件のトピック' style='font-size: 12px;'>顧客心理</a>    	 </div>
+    	</div>
+    	<div class="box">
+    	 <p>最新記事</p>
+    	 <ul>
+                		<li><a href="http://baseu.jp/site_improvement/20140529101113/">商品選びの参考に！ネットショップで売れているカテゴリトップ10と人気の７つの商材</a></li>
+                		<li><a href="http://baseu.jp/new_customer_acquisition/20140526101630/">オフラインからネットショップに集客する！ネットを活用しない８の集客方法まとめ</a></li>
+                		<li><a href="http://baseu.jp/officialshop_operation/20140521110015/">アクセサリーや革雑貨から土偶まで？デザインフェスタVol.39のBASEブースへ出展したショップをご紹介</a></li>
+            	 </ul>
+    	</div>
+    	<div class="box">
+      	<p>運営会社</p>
+      	<div id="mi">
+      	  <ul>
+      	    <li><a href="http://binc.jp/" target="_blank">BASE株式会社</A></li>
+      	    <li><a href="https://thebase.in/?from=baseu" target="_blank">BASE</a></li>
+      	    <li><a href="http://tokyo.baseu.jp/" target="_blank">BASE UNIVERSITY TOKYO</li>
+      	    <li><a href="http://s.thebase.in/" target="_blank">BASE STORY</a></li>
+      	  </ul>
+      	</div>
+    	        <div id="socialBtnForTop">
+        <div class="socialBtn">
+          <div class="facebook">
+      			<div class="fb-like" data-href="http://www.facebook.com/BASEec" data-send="false" data-layout="button_count" data-width="200" data-show-faces="false">
+          </div>
+          <div class="twitter">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-text="BASE U｜ネットショップの開設・運営・集客のノウハウを学ぼう" data-url="http://baseu.jp/" data-via="BASEec" data-lang="ja">ツイート</a>
+          </div>
+          <div class="hatena">
+            <a href="http://b.hatena.ne.jp/entry/http://baseu.jp/" class="hatena-bookmark-button" data-hatena-bookmark-title="BASE U" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+          </div>
+        </div>
+      </div>    	</div>
+  	</nav>
+  	<hr>
+  	<div class="box3 wrapper">
+  	  <div class="box">
+  	    <div class="fb-like-box" data-href="https://www.facebook.com/BASEec" data-width="300" data-height="300" data-show-faces="true" data-stream="false" data-show-border="false" data-header="false"></div>
+      </div><!-- /.box -->
+  	  <div class="box">
+<a class="twitter-timeline" href="https://twitter.com/BASEec" data-widget-id="344682337541439489">@BASEec からのツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  	  </div><!-- /.box -->
+  	  <div class="box">
+        <div id="mc_embed_signup">
+          <form action="http://thebase.us6.list-manage.com/subscribe/post?u=cdd4f97c0752cbcd85fc7294e&amp;id=dd66068cc9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          	<label for="mce-EMAIL">ショップの売上をUPさせる<br>BASE Uの更新情報を受け取る。</label>
+          	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+          	<div class="clear"><input type="submit" value="購読する" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </form>
+        </div><!--End mc_embed_signup-->
+  	  </div><!-- /.box -->
+	  </div><!-- /.wrapper -->
+  	<hr>
+  	<div id="copyright" class="wrapper">
+  	  Copyright © 2013 <a href="https://thebase.in/" target="_blank">BASE</a> All Rights Reserved.
+  	</div><!-- /#copyright -->
+
+  	</footer><!-- #colophon -->
+</div><!-- #page -->
+</div><!-- #widthClassDiv -->
+
+<!-- tracker added by Ultimate Google Analytics plugin v1.6.0: http://www.oratransplant.nl/uga -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-23653112-29");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<script type='text/javascript' src='http://baseu.jp/wp-content/themes/base/js/navigation.js?ver=1.0'></script>
+<!-- script -->
+<script src="http://baseu.jp/wp-content/themes/base/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="http://baseu.jp/wp-content/themes/base/js/main.js" type="text/javascript"></script>
+<!-- script social start -->
+<!-- faceook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=350947278320210";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- twitter -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!-- pockect -->
+<script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+<!-- google+ -->
+<!-- 最後の +1 ボタン タグの後に次のタグを貼り付けてください。 -->
+<script type="text/javascript">
+  window.___gcfg = {lang: 'ja'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<!-- freakout -->
+<script type="text/javascript">
+  var _fout_queue = _fout_queue || {}; if (_fout_queue.segment === void 0) _fout_queue.segment = {};
+  if (_fout_queue.segment.queue === void 0) _fout_queue.segment.queue = [];
+
+  _fout_queue.segment.queue.push({
+    'user_id': 5194
+  });
+
+  (function() {
+    var el = document.createElement('script'); el.type = 'text/javascript'; el.async = true;
+    el.src = (('https:' == document.location.protocol) ? 'https://' : 'http://') + 'js.fout.jp/segmentation.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(el, s);
+  })();
+</script>
+<!-- script social end -->
+</body>
+</html>

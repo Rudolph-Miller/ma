@@ -1,0 +1,776 @@
+ <!DOCTYPE html>
+<html
+  lang="ja"
+  data-avail-langs="ja en"
+
+  data-page="entry"
+  data-admin-domain="http://blog.hatena.ne.jp"
+  data-static-domain="http://hatenablog.com"
+  data-blog="8arrow.hatenablog.com"
+  data-blogs-uri-base="http://blog.8arrow.org"
+  data-globalheader-color="b"
+  data-globalheader-type="pc"
+  data-author="nitro_idiot"
+  data-version="cb3376f552692eef52655312928aaadd"
+  data-blog-comments-top-is-new=""
+  data-device="pc"
+
+  
+
+  data-brand="hatenablog"
+
+
+  data-has-touch-view="1"
+  
+
+  itemscope
+   itemtype="http://schema.org/Article"
+
+  >
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    
+    
+    
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=7; IE=9; IE=10; IE=11" />
+    <title>Lisp Meet Up #13 に参加しました - 八発白中</title>
+
+    
+
+    
+      <link rel="canonical" href="http://blog.8arrow.org/entry/2014/01/24/075236"/>
+    
+
+    <meta itemprop="name" content="Lisp Meet Up #13 に参加しました - 八発白中"/>
+    
+      <meta itemprop="image" content="http://hatenablog.com/images/theme/og-image-1500.gif"/>
+    
+
+    <meta property="og:title" content="Lisp Meet Up #13 に参加しました - 八発白中"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://blog.8arrow.org/entry/2014/01/24/075236"/>
+    
+      <meta property="og:image" content="http://hatenablog.com/images/theme/og-image-1500.gif"/>
+    
+      <meta property="og:description" content="1/23の夜開催されたイベント、Lisp Meet Up presented by Shibuya.lisp #13 に参加しました。 Lisp Meet Up presented by Shibuya.lisp #13 毎月やっているLisp Meet Upが1周年を迎えたのはめでたいですね。なわたさんと神田さんは表彰されていいと思う。 参加者 最初に自己紹介タイムがありました。使っているLispはClojureが一番多かったです。Common Lisp回なのにCommon Lisperは一番少なかったんじゃないかな。 Integralの紹介をしました 先日作ったCommon LispのO/…" />
+    <meta property="og:site_name" content="http://blog.8arrow.org/"/>
+      <meta property="article:published_time" content="1390517556" />
+    <meta name="twitter:card" content="summary" />      <meta name="twitter:app:name:iphone" content="はてなブログアプリ" />
+      <meta name="twitter:app:id:iphone" content="583299321" />
+      <meta name="twitter:app:url:iphone" content="hatenablog:///open?uri=http%3A%2F%2Fblog.8arrow.org%2Fentry%2F2014%2F01%2F24%2F075236" />      <meta name="twitter:site" content="@nitro_idiot" />
+      <meta name="description" content="1/23の夜開催されたイベント、Lisp Meet Up presented by Shibuya.lisp #13 に参加しました。 Lisp Meet Up presented by Shibuya.lisp #13 毎月やっているLisp Meet Upが1周年を迎えたのはめでたいですね。なわたさんと神田さんは表…">
+    
+<script type="text/javascript">
+// <!--
+
+if (~navigator.userAgent.indexOf('Mac OS X')) {
+  document.write('<style type="text/css">html, body { font-family: \x27Helvetica\x27, \x27Arial\x27, \x27ヒラギノ角ゴ Pro W3\x27, \x27Hiragino Kaku Gothic Pro\x27, sans-serif; } </style>');
+} else {
+  document.write('<style type="text/css">html, body { font-family: \x27Helvetica\x27, \x27Arial\x27, \x27メイリオ\x27, \x27Meiryo\x27, \x27MS PGothic\x27, sans-serif; } </style>');
+}
+
+// -->
+</script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if IE]>
+<script type="text/javascript" src="/js/vendor/excanvas/excanvas.js"></script>
+<![endif]-->
+
+
+    <link rel="shortcut icon" href="http://hatenablog.com/images/favicon.ico">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://blog.8arrow.org/feed"/>
+    <link rel="alternate" type="application/rss+xml" title="RSS2.0" href="http://blog.8arrow.org/rss"/>
+    <link rel="author" href="http://www.hatena.ne.jp/nitro_idiot/">
+
+      <link rel="stylesheet" type="text/css" href="http://hatenablog.com/.shared.css:cb3376f552692eef52655312928aaadd:/css/theme/base.css,/css/prettify.css,/css/globalheader.css?version=cb3376f552692eef52655312928aaadd"/>
+      <link rel="stylesheet" type="text/css" href="http://hatenablog.com/-/blog_style/11696248318755958219/2975e7304776ac8a3369afb4a91fb32250c7e04b"/>    <script>    </script>
+
+    
+    <style>
+      div#google_afc_user,
+      div#google_afc_user_container,
+      div.google_afc_image,
+      div.google_afc_blocklink {
+          display: block !important;
+      }
+    </style>
+
+    
+  </head>
+
+  <body class="page-entry     ">
+    <!-- Google Universal Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-29716941-6', 'auto', {'name': 'HatenaBlogTracker'});
+  ga('HatenaBlogTracker.require', 'displayfeatures');
+  ga('HatenaBlogTracker.send', 'pageview');
+
+</script>
+<!-- End Google Universal Analytics -->
+
+    
+    <div id="header-container">
+     <div id="sp-suggest" style="display: none;"><a id="sp-suggest-link" href="#">スマートフォン用の表示で見る</a></div>
+    </div>
+
+    <div class="select_star_button_container" style="display: none;">
+      <img src="http://hatenablog.com/images/theme/hatena-star-quote-box.png?version=cb3376f552692eef52655312928aaadd" title="引用スターをつける" class="select_star_button" />
+      <img src="http://hatenablog.com/images/theme/hatena-star-quote-star.png?version=cb3376f552692eef52655312928aaadd" title="引用スターをつける" class="select_star_button select_star_star">
+    </div>
+
+    <div class="message-box" id="select-star-message-box" style="display: none;">
+      スターをつけました
+    </div>
+
+    <div id="globalheader-container" >
+  <iframe id="globalheader" height="37" frameborder="0" allowTransparency="true"></iframe>
+</div>
+
+
+    <div id="container">
+      <div id="container-inner">
+        <header id="blog-title" data-brand="hatenablog">
+  <div id="blog-title-inner" >
+    <h1 id="title"><a href="http://blog.8arrow.org/">八発白中</a></h1>
+    
+      <h2 id="blog-description">はてなブログに引越しました。</h2>
+    
+  </div>
+</header>
+
+        
+        
+
+
+
+
+<div id="content" class="hfeed"
+  
+  >
+  <div id="content-inner">
+    <div id="wrapper">
+      <div id="main">
+        <div id="main-inner">
+          
+            
+            <!-- google_ad_section_start -->
+            <!-- rakuten_ad_target_begin -->
+            
+              
+                <article class="entry hentry js-entry-article date-first autopagerize_page_element chars-3200 words-200 mode-markdown entry-odd" id="entry-12921228815717096975" data-keyword-campaign="" data-uuid="12921228815717096975">
+  <div class="entry-inner">
+    <header class="entry-header">
+      <div class="date first">
+        <a href="http://blog.8arrow.org/entries/2014/01/24" rel="nofollow">
+          <time pubdate datetime="2014-01-23T22:52:36Z" title="2014-01-23T22:52:36Z">
+            <span class="date-year">2014</span><span class="hyphen">-</span><span class="date-month">01</span><span class="hyphen">-</span><span class="date-day">24</span>
+          </time>
+        </a>
+      </div>
+      <h1 class="entry-title">
+        <a href="http://blog.8arrow.org/entry/2014/01/24/075236" class="entry-title-link bookmark">Lisp Meet Up #13 に参加しました</a>
+      </h1>
+      
+      <div class="categories no-categories">
+        
+      </div>
+      
+    </header>
+    <div class="entry-content">
+
+      
+        <p>1/23の夜開催されたイベント、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a> Meet Up presented by <a class="keyword" href="http://d.hatena.ne.jp/keyword/Shibuya.lisp">Shibuya.lisp</a> #13 に参加しました。</p>
+
+<ul>
+<li><a href="http://atnd.org/events/46746">Lisp Meet Up presented by Shibuya.lisp #13</a></li>
+</ul>
+
+
+<p>毎月やっている<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a> Meet Upが1周年を迎えたのはめでたいですね。なわたさんと神田さんは表彰されていいと思う。</p>
+
+<h2>参加者</h2>
+
+<p>最初に自己紹介タイムがありました。使っている<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>は<a class="keyword" href="http://d.hatena.ne.jp/keyword/Clojure">Clojure</a>が一番多かったです。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>回なのにCommon Lisperは一番少なかったんじゃないかな。</p>
+
+<h2>Integralの紹介をしました</h2>
+
+<p><a href="http://blog.8arrow.org/entry/2014/01/19/180013">先日作ったCommon LispのO/RマッパーのIntegral</a> について発表しました。30分くらい話したと思います。</p>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/30362150" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/fukamachi/lisp-meet-up-presented-by-shibuyalisp-13" title="Integral - New O/R Mapper for Common Lisp" target="_blank">Integral - New O/R Mapper for Common Lisp</a> </strong> from <strong><a href="http://www.slideshare.net/fukamachi" target="_blank">fukamachi</a></strong> </div></p>
+
+<p>既存のCLのO/Rマッパー「Postmodern」と比較し、より開発フローを意識していろいろ良い感じにやってくれるんだよ、という話です。</p>
+
+<p>先日のブログエントリでは書かなかった、どのように実装されているか、という話を中心に話をしようと思っていたので、CLOSとMeta Object Protocolの話も多かったです。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Clojure">Clojure</a>使いの多い会でやるべき話ではなかった……。</p>
+
+<p>後で佐野さんに、「『classをmake-instanceする直前にslotを…』みたいにずっと横文字しゃべってた」って茶化されましたが、Common Lisperには評判が良かったので良しとします。</p>
+
+<h2>κeenさんのCIMの発表</h2>
+
+<p>前日にタイトルが明らかになったκeenさんの発表は、「<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a> Implementation Managerを作りました」という、自分の作ったツールの紹介でした。</p>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/30338391" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/blackenedgold/cim-common-lisp-implementation-manager" title="CIM - Common Lisp Implementation Managerを作りました" target="_blank">CIM - Common Lisp Implementation Managerを作りました</a> </strong> from <strong><a href="http://www.slideshare.net/blackenedgold" target="_blank">blackenedgold</a></strong> </div></p>
+
+<p>CIMの読み方は「ちむ」だそうです。かわいいですね。</p>
+
+<p>このツールは簡単に説明すると<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a> for RVMで、CL処理系とそのバージョンを複数インストールして切り替えることができるもの。タイトル聞いたときから、もうこれが僕が欲しかったものだ！って感じです。</p>
+
+<p>ライブラリを作っていると複数の処理系で試すのが結構面倒で、Jenkinsで自動テストを回すにしてもそれぞれの処理系の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A5%DE%A5%F3%A5%C9%A5%E9%A5%A4%A5%F3">コマンドライン</a>引数の差と苦闘しないといけない。<a class="keyword" href="http://d.hatena.ne.jp/keyword/SBCL">SBCL</a>は複数バージョンを同じ環境にインストールするのが面倒で、毎回手動で切り分けをやったりしていました。</p>
+
+<p>この辺りをShellyでいくらか改善しようとしたんだけど、CIMのほうがぴったり需要に合っています。実装もShellyみたいに<a class="keyword" href="http://d.hatena.ne.jp/keyword/Perl">Perl</a>が必要ではなく、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Bourne%20Shell">Bourne Shell</a>で書かれているのも良い。</p>
+
+<p>まだバグも多いようですが、αリリース版を試したい方は以下の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA">リポジトリ</a>のREADMEに使い方が書いてあります。</p>
+
+<ul>
+<li><a href="https://github.com/KeenS/CIM">https://github.com/KeenS/CIM</a></li>
+</ul>
+
+
+<h2><a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>処理系について</h2>
+
+<p>休憩時間、ayato_pさんに「<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>処理系は何がいいですか」と聞かれました。</p>
+
+<p>隣にいた佐野さんは<a class="keyword" href="http://d.hatena.ne.jp/keyword/SBCL">SBCL</a>を使っておけばいいんじゃないか、と言っていましたが、僕はClozure CLを推しました。</p>
+
+<p>「<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>処理系は何がいいか、と聞く人は初心者だから、初心者が困らない処理系をおすすめしなければならない」と思っていて、<a class="keyword" href="http://d.hatena.ne.jp/keyword/SBCL">SBCL</a>はその点ではあまり親切ではありません。エラーメッセージがわかりづらかったり、<a class="keyword" href="http://d.hatena.ne.jp/keyword/ASDF">ASDF</a>でライブラリロードしたときに、Style Warning程度で<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A5%F3%A5%D1%A5%A4%A5%EB">コンパイル</a>エラーになったりする。そのときはデバッガが立ち上がるから良い、というのは<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>を既に書いている人の意見で、他の言語から来た人はデバッガが立ち上がると混乱するし怖いと思います。そういう理由で、聞かれたら大体Clozure CLをおすすめしています。</p>
+
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/SBCL">SBCL</a>は簡単な型チェックをしてくれるし、何より高速なので、慣れてきたら移るか併用するのがいいかなと思います。</p>
+
+<h2><a class="keyword" href="http://d.hatena.ne.jp/keyword/Ruby">Ruby</a>を追いかける</h2>
+
+<p><a href="http://ayato.hateblo.jp/entry/20140124/1390490620">ayato_pさんがブログで書かれています</a>が、今回の発表の2つともに<a class="keyword" href="http://d.hatena.ne.jp/keyword/Ruby">Ruby</a>の話が出てきました。僕のORMの発表では<a class="keyword" href="http://d.hatena.ne.jp/keyword/ActiveRecord">ActiveRecord</a>が、κeenさんの発表ではRVMが比較として出されました。</p>
+
+<p>言語の表現力や実行速度は確実に優っているのに、その人気度は遥かに引き離されているのは、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>を普及したいと思っている人の悩みの種です。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>を始めたいと思った人でも、最近は<a class="keyword" href="http://d.hatena.ne.jp/keyword/Clojure">Clojure</a>に行ってしまう。今回の参加者のCommon Lisperの数を見ても、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>は全く人気のある言語とは言えない。</p>
+
+<p>ここからはMeet Upと関係無いし完全に私見ですが……もうカッコつけてる場合じゃないと思うんですよ。なりふり構わず<a class="keyword" href="http://d.hatena.ne.jp/keyword/Ruby">Ruby</a>や<a class="keyword" href="http://d.hatena.ne.jp/keyword/Clojure">Clojure</a>を追いかけないといけない。</p>
+
+<p>特に<a class="keyword" href="http://d.hatena.ne.jp/keyword/Clojure">Clojure</a>にはヒントがあると考えていて、なぜ<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>ではなく<a class="keyword" href="http://d.hatena.ne.jp/keyword/Clojure">Clojure</a>を始める人が多いのか、採用する企業が日本でも増え始めたのかということを真剣に考えないといけない。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Clojure">Clojure</a>を始める人がなぜ<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>の中でも<a class="keyword" href="http://d.hatena.ne.jp/keyword/Clojure">Clojure</a>を選ぶのか。<a class="keyword" href="http://d.hatena.ne.jp/keyword/JVM">JVM</a>に載ってるからという安心感もあると思いますが、モダンな<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>だから、という理由も多くあると僕は推測しています。</p>
+
+<p>先日<a href="http://blog.8arrow.org/entry/2014/01/22/184258">CL21という方言を紹介しました</a>。</p>
+
+<p>CL21の評価は賛否両論でしたが、普段<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>を書かない人たちには「良い意味で当たり障りのない言語に見える」などそれなりに評判が良かったのは面白い反応でした。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>も見せ方を変えるだけで反応は変わるのだな、と思いました。</p>
+
+<p>一方でCommon Lisper達には「<a class="keyword" href="http://d.hatena.ne.jp/keyword/Ruby">Ruby</a>みたいな遅い言語になっちまうだろーが」とか「自分はこういうレイヤーは必要ないと思う」などボロクソに言われました。</p>
+
+<p>この反応の差に、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>を普及したいと思っている人は向き合っていかないといけないと思います。</p>
+
+<h2>おわりに</h2>
+
+<p>話はイベントに戻る……。</p>
+
+<p>今回は2つとも発表がPracticalだったね、と佐野さんが言っていました。良いことです。この調子でもっと<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>を盛り上げていきたいですね。</p>
+
+<p>こちらのイベントレポートもご覧ください。</p>
+
+<ul>
+<li><a href="http://ayato.hateblo.jp/entry/20140124/1390490620">Lisp Meet Up presented by Shibuya.lisp #13 に参加してきた。 - (define -ayalog '())</a></li>
+<li><a href="http://keens.github.io/blog/2014/01/24/lisp-meet-up-number-13/">Lisp Meet Up #13でLTしてきました - κeenのHappy Hacκing Blog</a></li>
+</ul>
+
+
+      
+    </div>
+    <footer class="entry-footer">
+      <p class="entry-footer-section">
+        <span class="author vcard"><span class="fn" data-load-nickname="1" data-user-name="nitro_idiot">nitro_idiot</span></span>
+        <span class="entry-footer-time"><a href="http://blog.8arrow.org/entry/2014/01/24/075236"><time data-relative datetime="2014-01-23T22:52:36Z" title="2014-01-23T22:52:36Z" pubdate class="updated">2014-01-24 07:52</time></a></span>
+      </p>
+      <div class="hatena-star-container">
+      </div>
+      
+
+      <div class="customized-footer">
+        <div class="social-buttons">
+  
+  
+    <a href="http://b.hatena.ne.jp/entry/http://blog.8arrow.org/entry/2014/01/24/075236" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="この記事をはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="この記事をはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+  
+  
+    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fblog.8arrow.org%2Fentry%2F2014%2F01%2F24%2F075236&amp;layout=button_count&amp;show_faces=false&amp;width=130&amp;action=like&amp;height=21" class="facebook-like-button" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:21px;" allowTransparency="true"></iframe>
+  
+  
+    <iframe allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fblog.8arrow.org%2Fentry%2F2014%2F01%2F24%2F075236&text=Lisp%20Meet%20Up%20%2313%20%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%20-%20%E5%85%AB%E7%99%BA%E7%99%BD%E4%B8%AD&lang=ja" class="twitter-share-button" style="width:130px; height:20px;"></iframe>
+  
+  
+    <div class="g-plusone" data-size="medium" data-href="http://blog.8arrow.org/entry/2014/01/24/075236"></div>
+  
+  
+  
+  
+</div>
+
+
+          
+
+          
+
+          
+            <div class="entry-footer-html">    <!-- X:S ZenBackWidget --><script type="text/javascript">document.write(unescape("%3Cscript")+" src='http://widget.zenback.jp/?base_uri=http%3A//blog.8arrow.org&nsid=116589683810521419%3A%3A116589712801563571&rand="+Math.ceil((new Date()*1)*Math.random())+"' type='text/javascript'"+unescape("%3E%3C/script%3E"));</script><!-- X:E ZenBackWidget --></div>
+          
+        
+      </div>
+
+      <div class="comment-box">
+        
+        <ul class="comment">
+          
+        </ul>
+        
+          <a class="leave-comment-title">コメントを書く</a>
+        
+      </div>
+    </footer>
+  </div>
+</article>
+
+                
+
+                
+                  
+                  
+                  <div class="permalink pager">
+                    
+                      
+                      <span class="pager-prev">
+                        <a href="http://blog.8arrow.org/entry/2014/02/04/041417" rel="prev">
+                          <span class="pager-arrow">« </span>
+                          誰向けかわからないCommon Lispでの関数型…
+                        </a>
+                      </span>
+                    
+                    
+                      
+                      <span class="pager-next">
+                        <a href="http://blog.8arrow.org/entry/2014/01/22/184258" rel="next">
+                          新しいCommon Lisp方言「CL21」を作ったの…
+                          <span class="pager-arrow"> »</span>
+                        </a>
+                      </span>
+                    
+                  </div>
+                
+
+              
+            
+            <!-- rakuten_ad_target_end -->
+            <!-- google_ad_section_end -->
+
+            
+          
+        </div>
+      </div>
+
+      
+      <aside id="box1">
+        <div id="box1-inner">
+        </div>
+      </aside>
+
+    </div><!-- #wrapper -->
+
+    <aside id="box2">
+  <div id="box2-inner">
+    
+      
+
+<div class="hatena-module hatena-module-profile">
+  <div class="hatena-module-title">
+    About Me
+  </div>
+  <div class="hatena-module-body">
+    
+    <a href="http://blog.8arrow.org/about">
+      <img src="http://cdn1.www.st-hatena.com/users/ni/nitro_idiot/profile.gif"
+      alt="id:nitro_idiot" class="profile-icon" />
+    </a>
+    
+
+    
+    <span class="id">
+      <a href="http://blog.8arrow.org/about"><span data-load-nickname="1" data-user-name="nitro_idiot">id:nitro_idiot</span></a>
+      
+  
+    
+      
+      <a href="http://blog.hatena.ne.jp/guide/pro" title="はてなブログPro"><i class="icon-pro" /></i></a>
+    
+  
+
+
+    </span>
+    
+
+    
+
+    
+    <div class="hatena-follow-button-box btn-subscribe">
+      <a href="#" class="hatena-follow-button">
+        <span class="subscribing">
+          <span class="foreground">購読中です</span>
+          <span class="background">読者をやめる</span>
+        </span>
+        <span class="unsubscribing">
+          <span class="foreground">読者になる</span>
+          <span class="background">読者になる</span>
+        </span>
+      </a>
+      <div class="subscription-count-box">
+        <span class="subscription-balloon">
+        </span>
+        <span class="subscription-count">
+        </span>
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-html">
+  
+  <div class="hatena-module-body">
+    <style type="text/css">
+.my-service-icons {
+  padding-left: 0;
+  text-align: center;
+}
+.my-service-icons li {
+  display: inline-block;
+  margin: 0 8px;
+}
+</style>
+<ul class="my-service-icons" >
+  <li>
+    <a href="https://github.com/fukamachi" target="_blank"><img src="http://8arrow.org/images/github-icon.png" alt="GitHub" title="GitHub" width="40px" height="40px" /></a>
+  </li>
+  <li>
+    <a href="http://nitro-idiot.hatenablog.com/" target="_blank"><img src="http://8arrow.org/images/hatenablog-icon.png" alt="Diary" title="Diary" width="40px" height="40px" /></a>
+  </li>
+  <li>
+    <a href="https://twitter.com/nitro_idiot" target="_blank"><img src="http://8arrow.org/images/twitter-icon.png" alt="Twitter" title="Twitter" width= "49px" height="40px" /></a>
+  </li>
+</ul>
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-html">
+  
+    <div class="hatena-module-title">Website</div>
+  
+  <div class="hatena-module-body">
+    <a href="http://8arrow.org/" target="_blank"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/n/nitro_idiot/20140116/20140116163928.png" alt="My Portfolio" /></a>
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-recent-entries ">
+  <div class="hatena-module-title">
+    <a href="http://blog.8arrow.org/archive">
+      Recent Entries
+    </a>
+  </div>
+  <div class="hatena-module-body">
+    <ul class="recent-entries hatena-urllist ">
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/04/16/233941" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">軽量なCommon LispのDBライブラリ「datafly」を作りました        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/03/02/172920" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">株式会社はてなを退職しました        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/02/04/041417" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">誰向けかわからないCommon Lispでの関数型プログラミング入門とその未来        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/01/24/075236" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">Lisp Meet Up #13 に参加しました        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/01/22/184258" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">新しいCommon Lisp方言「CL21」を作ったので意見を募集します        </a>
+        
+
+              </div>
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-archive">
+  <div class="hatena-module-title">
+    <a href="http://blog.8arrow.org/archive">Archive</a>
+  </div>
+  <div class="hatena-module-body">
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-search-box">
+  <div class="hatena-module-title">
+    Search
+  </div>
+  <div class="hatena-module-body">
+    <form class="search-form" role="search" action="http://blog.8arrow.org/search" method="get">
+      <input type="text" name="q" class="search-module-input" value="" placeholder="ブログ内検索" required>
+      <input type="submit" value="検索" class="search-module-button" />
+    </form>
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-circles">
+  <div class="hatena-module-title">
+    Groups
+  </div>
+  <div class="hatena-module-body">
+    <ul class="circle-list">
+      
+        <li title="Lisp" data-circle-id="12921228815713769536" data-circle-mtime="1393426757">
+  <a href="http://hatenablog.com/g/12921228815713769536"><img class="circle-image" src="http://cdn.image.st-hatena.com/image/square/66f5d18c388e0cb1d804be358c6cfb48df174304/height=96;version=1;width=96/http%3A%2F%2Fcdn.mogile.archive.st-hatena.com%2Fv1%2Fimage%2Fnitro_idiot%2F297785937330261174.png" alt="Lisp" title="Lisp"></a></li>
+      
+    </ul>
+  </div>
+</div>
+
+    
+    
+  </div>
+</aside>
+
+  </div>
+</div>
+
+
+
+
+
+
+        
+      </div>
+    </div>
+
+    
+      <footer id="footer" data-brand="hatenablog">
+  <div id="footer-inner">
+    <address>
+      
+      <a href="http://blog.8arrow.org/about"><img src="http://cdn1.www.st-hatena.com/users/ni/nitro_idiot/profile.gif" width="16" height="16" alt=""/>
+        <span data-load-nickname="1" data-user-name="nitro_idiot">nitro_idiot</span>
+      </a>
+    </address>
+    <p class="services"><a href="http://hatenablog.com/">Hatena Blog</a> / <a href="http://d.hatena.ne.jp/">Hatena::Diary</a></p>
+  </div>
+</footer>
+
+    
+
+    
+
+    
+      <script src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
+    
+
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+  {"parsetags": "explicit"}
+</script>
+<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+
+
+<script type="text/javascript" src="http://hatenablog.com/js?version=cb3376f552692eef52655312928aaadd"></script>
+
+<script type="text/javascript" src="http://hatenablog.com/js/texts-ja.js?version=cb3376f552692eef52655312928aaadd"></script>
+
+
+  <script type="text/javascript">Hatena.Diary.loadGlobalHeader()</script>
+
+
+
+
+
+    
+       <script id="google-analytics-script" type="text/javascript">
+var _gaq = _gaq || [];
+
+(function($){
+
+  // 現在のドメイン
+  
+    
+    
+      
+      var current_domain = "blog.8arrow.org".split(":")[0];
+    
+  
+
+  
+
+  
+
+   
+   _gaq.push(['all._setAccount', 'UA-7855606-1']);
+   _gaq.push(['all._setDomainName', current_domain]);
+   _gaq.push(['all._setSampleRate', '10']);
+   _gaq.push(['all._trackPageview']);
+
+  
+    _gaq.push(['a._setAccount', 'UA-29716941-5']);
+    _gaq.push(['a._setDomainName', current_domain]);
+    _gaq.push(['a._setCustomVar', 1, 'PageId', document.documentElement.getAttribute('data-page'), 3 /* page-level */]);
+      var keywordCampaigns = [];
+      $('.js-entry-article').each(function (index, element) {
+        var keywords = $(element).data('keywordCampaign').split(' ');
+        keywords = _.filter(keywords, function (keyword) { return keyword.length > 0 });
+        keywordCampaigns = keywordCampaigns.concat(keywords);
+      });
+      if (keywordCampaigns.length > 0) {
+        _gaq.push(['a._setCustomVar', 3, 'KeywordCampaign', keywordCampaigns[0], 3 /* page-level */]);
+      }
+      _gaq.push(['a._trackPageview']);
+  
+    _gaq.push(['b._setAccount', 'UA-29716941-2']);
+    _gaq.push(['b._setDomainName', current_domain]);
+    _gaq.push(['b._setCustomVar', 1, 'PageId', document.documentElement.getAttribute('data-page'), 3 /* page-level */]);
+      var keywordCampaigns = [];
+      $('.js-entry-article').each(function (index, element) {
+        var keywords = $(element).data('keywordCampaign').split(' ');
+        keywords = _.filter(keywords, function (keyword) { return keyword.length > 0 });
+        keywordCampaigns = keywordCampaigns.concat(keywords);
+      });
+      if (keywordCampaigns.length > 0) {
+        _gaq.push(['b._setCustomVar', 3, 'KeywordCampaign', keywordCampaigns[0], 3 /* page-level */]);
+      }
+      _gaq.push(['b._trackPageview']);
+  
+
+  $(function () {
+      $(document).delegate('[data-track-event="click"]', 'click', function () {
+          
+          _gaq.push([ 'a._trackEvent', 'Blogs', 'Click', this.getAttribute('data-track-key') ]);
+          
+          _gaq.push([ 'b._trackEvent', 'Blogs', 'Click', this.getAttribute('data-track-key') ]);
+          
+      });
+  });
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  var available_domains = ["blog.hatena.ne.jp"];
+  
+    available_domains.push("hatenablog.com".split(":")[0]);
+  
+    available_domains.push("hatenablog.jp".split(":")[0]);
+  
+    available_domains.push("hateblo.jp".split(":")[0]);
+  
+    available_domains.push("hatenadiary.com".split(":")[0]);
+  
+    available_domains.push("hatenadiary.jp".split(":")[0]);
+  
+  $('a').on('click', function() {
+    // 同じドメインならスキップ
+    if ( !this.hostname || this.hostname.indexOf(current_domain) != -1 ) return;
+
+    var cross_domain = false;
+    for (var i = 0, len = available_domains.length; i < len; i++) {
+      if (this.hostname.indexOf(available_domains[i]) != -1) cross_domain = true;
+    }
+    if ( cross_domain ) {
+      
+      _gaq.push(['a._link', this.href]);
+      
+      _gaq.push(['b._link', this.href]);
+      
+    }
+  });
+
+})(jQuery);
+</script>
+
+       
+  <script id="hatena-counter-script" type="text/javascript"><!--
+      hatena_counter_name = "nitro_idiot";
+      hatena_counter_id = "104";
+      hatena_counter_ref = document.referrer+"";
+      hatena_counter_screen = screen.width + "x" + screen.height+","+screen.colorDepth;
+  //--></script>
+  <script type="text/javascript" src="http://counter.hatena.ne.jp/js/counter.js"></script>
+  <noscript><img src="http://counter.hatena.ne.jp/nitro_idiot/104" border="0" alt="counter"></noscript>
+
+
+    
+
+  </body>
+</html>
+

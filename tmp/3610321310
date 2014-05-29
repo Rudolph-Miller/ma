@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+    <head>
+        <meta charset="utf-8">
+        <title>エラー | Yahoo!ニュース</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="format-detection" content="telephone=no" />
+<meta property="fb:app_id" content="276725822409153" />
+
+        <link rel="apple-touch-icon" href="http://i.yimg.jp/images/ipn/wcb/news129.png" />
+
+        <!-- SpaceID=0 robot -->
+
+        <link type="text/css" rel="stylesheet" href="http://i.yimg.jp/images/bloom/v201212/common/css/common_v2_1.css?v=0" media="all" />
+<link type="text/css" rel="stylesheet" href="http://buzz.news.yahoo.co.jp/images/bloom/v201212/common/css/common_responsive.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://i.yimg.jp/images/bloom/v201212/common/css/common_pc_v2.css?v=0" media="all" />
+<link type="text/css" rel="stylesheet" href="http://buzz.news.yahoo.co.jp/images/bloom/v201212/common/css/common_pc_responsive.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://i.yimg.jp/images/bloom/v201212/error/css/error_styles.css?v=0" media="all" />
+<link type="text/css" rel="stylesheet" href="http://buzz.news.yahoo.co.jp/images/bloom/v201212/error/css/error_styles_responsive.css" media="all" />
+
+        <style type="text/css">
+
+</style>
+        <script type="text/javascript" language="JavaScript" src="http://i.yimg.jp/images/commerce/js/libs/jquery/core/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" language="JavaScript" src="http://i.yimg.jp/images/rapid/1.5.0/ult.js"></script>
+<script type="text/javascript" language="JavaScript" src="http://i.yimg.jp/images/bloom/v201212/common/js/common-1.0.3.min.js"></script>
+
+        <!--[if lt IE 9]><script src="http://i.yimg.jp/images/bloom/lib/html5.js"></script><![endif]-->
+        <!--[if lt IE 9]><script src="http://i.yimg.jp/images/bloom/lib/css3-mediaqueries.js"></script><![endif]-->
+        <!--[if gte IE 9]>
+            <style type="text/css">
+                .gradient {filter: none;}
+            </style>
+        <![endif]-->
+    </head>
+    <body id="device_pc">
+        <div id="wrapper">
+            <header id="header">
+    <!-- SpaceID=0 robot -->
+
+    <!-- SpaceID=0 robot -->
+
+<!-- SpaceID=0 robot -->
+
+<!-- SpaceID=0 robot -->
+
+</header>
+            
+            <div id="rics-wrapper">
+                <div id="contents-header">
+    <div class="search">
+        <div class="searchWrapper">
+        <form method="get" action="http://buzz.news.yahoo.co.jp/search/result/">
+
+    <div class="inputWrapper">
+        <input type="text" name="search" class="searchInput" id="searchText" style="color: rgb(153, 153, 153);">
+        <span class="inputInnr"></span>
+    </div>
+    <span id="searchButton"><input type="submit" value="検索" class="searchBtn"></span>
+    <ul class="searchSelect close"><!--
+        --><li id="SearchNews"><a href="javascript:void(0);"><span>ニュース</span></a></li><li id="SearchTopics"><a href="javascript:void(0);"><span>トピックス</span></a></li><li id="SearchBuzzword"><a class="cur" href="javascript:void(0);"><span>Buzzワード</span></a></li><li id="SearchPolls"><a href="javascript:void(0);"><span>意識調査</span></a></li><li id="SearchGSR"><a href="javascript:void(0);"><span>全国紙パック</span></a></li>
+    </ul>
+    <div class="bubble close"></div>
+    <p class="currentSearch"><a id="sortSearch" href="javascript:void(0);"><span>Buzzワード</span></a></p>
+
+</form>
+        </div>
+        <p class="advanced hide"><a href="http://news.search.yahoo.co.jp/advanced">条件指定</a></p>
+        <ul class="personalInfo">
+    <li class="myPage">
+        <a  href="http://person.news.yahoo.co.jp/u/login/" onmousedown="this.href='http://person.news.yahoo.co.jp/u/login/'"><span class="myThumb">
+    <img width="24" height="24" src="http://i.yimg.jp/images/bloom/v201212/anonymous_24.png">
+</span></a><!--
+        --><a  href="http://person.news.yahoo.co.jp/u/login/" onmousedown="this.href='http://person.news.yahoo.co.jp/u/login/'"><span class="myName">ユーザーページ</span></a><!--
+        -->
+    </li>
+    <li class="purchase"><a  href="http://headlines.yahoo.co.jp/purchase/" onmousedown="this.href='http://headlines.yahoo.co.jp/purchase/'">購入済み</a></li>
+    <li class="setting"><a  href="http://person.news.yahoo.co.jp/settings/profile/" onmousedown="this.href='http://person.news.yahoo.co.jp/settings/profile/'" class="last">設定</a></li>
+</ul>
+    </div>
+    <div class="gnNews" id="globalNav">
+            <ul id="gnPri">
+        <li id="gnPriTop" ><a  href="http://news.yahoo.co.jp/" onmousedown="this.href='http://news.yahoo.co.jp/'">トップ</a></li><li id="gnPriNew" ><a  href="http://news.yahoo.co.jp/flash" onmousedown="this.href='http://news.yahoo.co.jp/flash'">速報</a></li><li id="gnPriPhoto" ><a  href="http://headlines.yahoo.co.jp/hl?ty=p" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?ty=p'">写真</a></li><li id="gnPriVideo" ><a  href="http://headlines.yahoo.co.jp/videonews/" onmousedown="this.href='http://headlines.yahoo.co.jp/videonews/'">映像</a></li><li id="gnPriZasshi" ><a  href="http://zasshi.news.yahoo.co.jp/" onmousedown="this.href='http://zasshi.news.yahoo.co.jp/'">雑誌</a></li><li id="gnPriBylines" ><a  href="http://bylines.news.yahoo.co.jp/" onmousedown="this.href='http://bylines.news.yahoo.co.jp/'">個人</a></li><li id="gnPriBuzz" ><a  href="http://buzz.news.yahoo.co.jp/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/'">Buzz</a></li><li id="gnPriResearch" ><a  href="http://polls.dailynews.yahoo.co.jp/" onmousedown="this.href='http://polls.dailynews.yahoo.co.jp/'">意識調査</a></li><li id="gnPriRanking" ><a  href="http://headlines.yahoo.co.jp/accr" onmousedown="this.href='http://headlines.yahoo.co.jp/accr'">ランキング</a></li><li id="gnPriFeed" ><a  href="http://feed.news.yahoo.co.jp/" onmousedown="this.href='http://feed.news.yahoo.co.jp/'">ニュースフィード</a></li>
+    </ul>
+        
+    </div>
+</div>
+                <div id="rics-content">
+                    <noscript>
+    <div class="alertBox">
+        <div class="alert">
+            <p>現在<em>JavaScriptが無効</em>になっています。Yahoo!ニュースのすべての機能を利用するためには、JavaScriptの設定を有効にしてください。<br />JavaScriptの設定を変更する方法は<a href="http://www.yahoo-help.jp/app/answers/detail/p/533/a_id/43867">こちら</a>。</p>
+        </div>
+    </div>
+</noscript>
+                    
+                    <div id="rics-content-wrapper">
+                        <div id="rics-main">
+                                <section class="rics-column-wrapper rics-column-1n errorBox">
+        <header class="hd">
+            <h1>ページが表示できませんでした。</h1>
+        </header>
+        <div class="bd">
+            <p>URLが正しく入力されていることをご確認ください。</p>
+        </div>
+        <footer class="ft">
+            <p><a href="http://buzz.news.yahoo.co.jp/">Buzzトップへ</a> | <a href="http://news.yahoo.co.jp/">Yahoo!ニューストップへ</a></p>
+        </footer>
+    </section>
+                        </div>
+                    </div>
+                </div>
+                <footer id="footer">
+  
+  <div class="yjChviewWrap">
+    
+  </div>
+  <address>
+    <a href="http://docs.yahoo.co.jp/docs/info/terms/chapter1.html#cf2nd">プライバシーポリシー</a> - 
+    <a href="http://docs.yahoo.co.jp/docs/info/terms/">利用規約</a> - 
+    <a href="http://www.yahoo-help.jp/app/answers/detail/a_id/60137">免責事項</a> - 
+    <a href="https://www.yahoo-help.jp/app/ask/p/2428/form/yadv-info">ご意見・ご要望</a> - 
+    <a href="http://www.yahoo-help.jp/app/home/p/575/">ヘルプ・お問い合わせ</a>
+    <br>Copyright (C) 2014 Yahoo Japan Corporation. All Rights Reserved.
+  </address>
+</footer>
+            </div>
+            
+        </div>
+    <iframe id="accountlink-link-simple-link-proxy" width="1px" height="1px" style="display:none"></iframe>
+<span id="credInitFlag" init_flag="false"></span>
+    </body>
+    <script type="text/javascript">
+<!--
+(function () {
+    $(document).ready(function(){
+
+        YAHOO.JP.Spider.globalNav.init({
+            'deviceType'   : 'pc' ,
+            'defaultTxt'   : 'キーワードを入力' 
+        });
+
+    });
+}());
+//-->
+<!--
+(function () {
+    $(document).ready(function(){
+
+        YAHOO.JP.Spider.SettingCrumb.init({
+            'ncrumb' : '-100' ,
+            'crumb'  : '' 
+        });
+
+    });
+}());
+//-->
+<!--
+(function() {YjdCookie={set:function(a,b){var x=new XMLHttpRequest();x.open("GET",a,0);x.send();document.location.href=b;}};}());
+//-->
+</script>
+</html><!-- topic12.spider.kks.yahoo.co.jp uncompressed/chunked Thu May 29 12:01:51 JST 2014 -->

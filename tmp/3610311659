@@ -1,0 +1,702 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja" id="masterChannel-ait"><head>
+<meta http-equiv="content-type" content="text/html;charset=shift_jis">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<script>var swspv = '(none)';</script>
+<script src="/js/spv/movePC2SP.js"></script>
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+
+<meta name="itmid:series" content="">
+<meta name="build" content="2014年03月24日 10時00分">
+<meta name="keywords" content=",PR">
+<meta name="description" content="サーバーを仮想化するだけで、プライベートクラウドといえるのだろうか。望ましいプライベートクラウドのあり方とは、どのようなものだろうか。サーバーとクラウド運用のエキスパートに語ってもらった。">
+<meta name="extraid" content="	at-special	cp-pr	kw-PR	">
+<meta name="writer" content="<b>PR／＠IT</b>">
+<meta name="dispatch" content="国内">
+<meta name="adpath" content="root/ITmedia/ait/article">
+<meta name="rcid" content="at140307_01">
+<meta name="rcid_filename" content="at140307/01.html">
+
+<meta property="og:title" content="サーバーとプライベートクラウド、「自動化」が決め手になる理由">
+<meta property="og:description" content="サーバーを仮想化するだけで、プライベートクラウドといえるのだろうか。望ましいプライベートクラウドのあり方とは、どのようなものだろうか。サーバーとクラウド運用のエキスパートに語ってもらった。">
+<title> 「プライベートクラウド」の理想と現実（3）：サーバーとプライベートクラウド、「自動化」が決め手になる理由 - ＠IT</title>
+
+<meta property="og:site_name" content="＠IT">
+<meta property="og:url" content="http://www.atmarkit.co.jp/ait/articles/1403/17/news012.html">
+<meta property="og:type" content="article">
+<meta property="og:image" content="http://image.itmedia.co.jp/nac/images/logo/200_ait_bgw.gif">
+
+
+<!--EDIT START-->
+<!--EDIT END-->
+
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/ait/base.css" type="text/css" media="all">
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/ait/ad.css" type="text/css" media="all">
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/ait/article.css" type="text/css" media="all">
+
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/ait/articlePR.css" type="text/css" media="all">
+
+
+<link rel="stylesheet" href="http://www.itmedia.co.jp/js/lib/prettify.css">
+<script src="/js/lib/prettify.js"></script>
+<script src="/js/lib/jquery-1.6.4.min.js"></script>
+<script>jQuery.noConflict();</script>
+<script src="//fc.itmedia.co.jp/fpcookie?site_id=itm_"></script>
+<script src="/js/scAccount.js"></script>
+<script src="/js/adRequest.js"></script>
+<script src="/js/scRequest.js"></script>
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/ad.js"></script>
+<script type="text/javascript" src="/js/article.js"></script>
+<script type="text/javascript" src="/js/ait/base.js"></script>
+<script type="text/javascript" src="/js/ait/ad.js"></script>
+<script type="text/javascript" src="/js/ait/article.js"></script>
+
+</head><body id="masterType-articlePR">
+<script type="text/javascript">
+attachBodyClass();
+function masterChannel(){return 'ait';}
+function masterType(){return 'article';}
+function prFlag(){return 'PR';}
+function spFlag(){return '';}
+(function(){
+if(getUrl()['domain'].match(/(preview|localhost)/)) document.write('<div id="PATHDEBUG">masterChannel = <strong>' + masterChannel() + '</strong> / masterType = <strong>' + masterType() + '</strong> / smartPhone = <strong>' + spFlag() + '</strong></div>');
+return true;
+})();
+</script>
+<!--ITWS-->
+
+	
+		<div id="ITWS"><script>adRequest({'position':'ITWS'});</script></div>
+	
+
+<!--/ITWS-->
+
+<!--ITWL-->
+
+	<script>adRequest({'position':'ITWL'});</script>
+
+<!--/ITWL-->
+
+<!--COIDP-->
+
+	
+	
+
+<!--/COIDP-->
+
+<div id="masterBody"><div id="masterBodyOut"><div id="masterBodyIn">
+<div id="masterNavigation">
+
+<div id="globalNavigationGroup4">
+<div id="globalNavigation"><div class="gnavOut"><div class="gnavIn">
+<div class="gnavBtn gnavBtn15"><a href="http://www.atmarkit.co.jp/ait/subtop/jibun/">自分研</a></div>
+<div class="gnavBtn gnavBtn1"><a href="http://www.atmarkit.co.jp/ait/subtop/testtools/">Test</a></div>
+<div class="gnavBtn gnavBtn2"><a href="http://www.atmarkit.co.jp/ait/subtop/systemdesign/">Design</a></div>
+<div class="gnavBtn gnavBtn3"><a href="http://www.atmarkit.co.jp/ait/subtop/security/">Security</a></div>
+<div class="gnavBtn gnavBtn4"><a href="http://www.atmarkit.co.jp/ait/subtop/network/">Network</a></div>
+<div class="gnavBtn gnavBtn5"><a href="http://www.atmarkit.co.jp/ait/subtop/linux/">Linux</a></div>
+<div class="gnavBtn gnavBtn6"><a href="http://www.atmarkit.co.jp/ait/subtop/db/">DB</a></div>
+<div class="gnavBtn gnavBtn7"><a href="http://www.atmarkit.co.jp/ait/subtop/java/">Java</a></div>
+<div class="gnavBtn gnavBtn8"><a href="http://www.atmarkit.co.jp/ait/subtop/coding/">Coding</a></div>
+<div class="gnavBtn gnavBtn9"><a href="http://www.atmarkit.co.jp/ait/subtop/smart/">Smart</a></div>
+<div class="gnavBtn gnavBtn10"><a href="http://www.atmarkit.co.jp/ait/subtop/ux/">HTML5</a></div>
+<div class="gnavBtn gnavBtn11"><a href="http://www.atmarkit.co.jp/ait/subtop/server/">Server＆Storage</a></div>
+<div class="gnavBtn gnavBtn12"><a href="http://www.atmarkit.co.jp/ait/subtop/sys/">System</a></div>
+<div class="gnavBtn gnavBtn13"><a href="http://www.atmarkit.co.jp/ait/subtop/dotnet/">.NET</a></div>
+<div class="gnavBtn gnavBtn14"><a href="http://www.atmarkit.co.jp/ait/subtop/win/">Windows</a></div>
+</div></div></div>
+</div>
+
+</div>
+
+<div id="masterBodyOuter"><!----><div id="masterBodyInner">
+<div id="masterHeader">
+	<div id="globalHeader">
+	<div id="headerBgArea"></div>
+	<div id="globalHeaderTop">
+	<div id="globalHeaderTopInner">
+	
+	<div id="globalLogo">
+	
+	<!--EDIT START--><div><a href="http://www.atmarkit.co.jp/ad/adindex/core/pr_specialarchive.html" title="＠IT - アットマーク・アイティ">＠IT - アットマーク・アイティ</a></div><!--EDIT END-->
+	
+	</div>
+	<div class="colBoxClear"></div>
+	</div>
+
+	<div id="globalHeaderMiddle">
+	<!--EDIT START-->
+	<!--EDIT END-->
+	</div>
+	<div id="globalHeaderBottom">
+		<div id="globalHeaderBottomInner">
+			
+				<div id="localPankuzu">
+				<div class="lpanOut"><div class="lpanIn">
+					
+<a href="http://www.atmarkit.co.jp/">＠IT</a> &gt;
+
+<!--at-special--><a href="http://www.atmarkit.co.jp/ad/adindex/core/pr_specialarchive.html">＠IT Special</a> &gt;
+
+
+<script type="text/javascript">
+var str = document.title.replace(/\<\!\-\-EDIT START\-\-\>/g,'').replace(/\<\!\-\-EDIT END\-\-\>/g,'').replace(' - ＠IT','');
+str = cutString(str,60);
+document.write(str);
+</script>
+
+				</div></div>
+				</div>
+			
+		</div>
+	</div>
+	</div>
+	</div>
+
+</div>
+<div id="masterContents"><div id="globalContents">
+<div id="masterMain">
+<!---->
+
+<div id="tmplNews" class="tmplArticle"><div id="tmplNewsIn" class="tmplArticleIn">
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsType"><div class="inner">Special</div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsDate"><div class="inner" id="update"><span class="arrow">&raquo;</span> 2014年03月24日 10時00分 UPDATE</div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsTitle"><div class="inner"><h1><small>「プライベートクラウド」の理想と現実（3）：</small><big>サーバーとプライベートクラウド、「自動化」が決め手になる理由</big></h1></div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsAbstract"><div class="inner"><h2>サーバーを仮想化するだけで、プライベートクラウドといえるのだろうか。望ましいプライベートクラウドのあり方とは、どのようなものだろうか。サーバーとクラウド運用のエキスパートに語ってもらった。</h2></div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsByline"><div class="inner" id="byline"><b>[PR／＠IT]</b></div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsBody"><div class="inner">
+<!--EDIT START-->
+<!-- Facebook JavaScript SDK <Body> のすぐ後に配置 -->
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- Facebook JavaScript SDK <Body> のすぐ後に配置 -->
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/socialbutton.css">
+<script src="/js/socialbutton.js"></script>
+
+
+	<!-- mn|ee|edn|ait|smartjapan|tt -->
+	<!-- UPPER/WHITE/2LINE/HATEBU -->
+	<script>
+	msbBtn({
+	'pos':'top',
+	'tag':'table',
+	'popup_pos':'upper',
+	'base_color':'white',
+	'line':[
+	[
+		{'name':'印刷/PDF','title':'この記事を印刷する','id':'printbutton'},
+		{'name':'ツイート','id':'tweetbutton'},
+		{'name':'Like Button','id':'likebutton'},
+		{'name':'はてなブックマーク','id':'hatenabookmarkC'},
+		{'name':'Google +1 Button','id':'googleplusone'},
+		{'name':'ONETOPI','title':'ONETOPIに投稿する','id':'onetopibutton'},
+		{'name':'Pocket Button','id':'pocketbuttonC'},
+		{'name':'&nbsp;','title':'URLをメールで送信','id':'mail'},
+	{}],
+	[
+		{'name':'類似記事の掲載をメールで通知','id':'alertbutton'},
+		{'name':'連載「％」の新着をメールで通知','id':'alertseries'},
+	{}],
+	[]]
+	});
+	</script>
+
+
+
+<!--EDIT END-->
+
+<div id="cmsMark"><div class="pr-mark" id="mark">PR</div></div>
+<p>　企業は、どのような社内ITインフラ、あるいは「プライベートクラウド」の構築・運用を目指すべきなのか。新たな発想に基づくサーバー製品や運用自動化ツールを開発・提供し、伊藤忠テクノソリューションズ（CTC）やネットアップとの密接な連携のもとで推進しているシスコシステムズの考えを聞いた。</p>
+<p>　答えてくれたのは田中孝幸氏（ユニファイド・コンピューティング事業 シニアDC/Vセールススペシャリスト）、相川哲也氏（ユニファイド・コンピューティング事業 東日本エリア担当 シニアセールススペシャリスト）、小桧山淳一氏（ユニファイド・コンピューティング事業 インテリジェント・オートメーション・ソリューションズ エバンジェリスト）、大平伸一氏（ソリューションズシステムズエンジニアリング データセンターソリューション シニアコンサルティングシステムズエンジニア）の4名だ。</p>
+<h3>ユーザー企業が目指すべきインフラとは</h3>
+<!--CAP-->
+<div id="col200l"><a name="mhad_kohiyama.jpg"></a><img src="http://image.itmedia.co.jp/ait/articles/1403/17/mhad_kohiyama.jpg" width="190" height="285" alt="mhad_kohiyama.jpg">
+<small><strong>ユニファイド・コンピューティング事業<br>インテリジェント・オートメーション・ソリューションズ<br>エバンジェリスト　小桧山淳一氏</strong></small></div>
+<!--CAPEND-->
+<p>　仮想化技術を使って全社レベルでサーバー統合、ストレージ統合を進め、さらにこの上のITリソースを社内サービスとして提供し、必要な部署が迅速に使えるようにすることが「プライベートクラウド」だとするなら、これはITインフラにかかわるさまざまな無駄を減らし、ITインフラの機動的な活用を可能にするという2つのメリットをもたらす、というのがシスコの考えだ。</p>
+<p>　ITインフラの無駄を最大限に減らすには、仮想化による統合をアプリケーション単位、あるいは部門単位で実施するだけでは不十分であり、全社的な統合を進める必要がある。しかし、全社的な統合を進めることで、事業部門にとっての利便性が低下してはならない。このため、サービスとしての運用が重要になるという。</p>
+<h3>情報システム部門と事業部門のITに関する役割を変える</h3>
+<p>　日本企業では各事業部が個別にIT予算を持っているケースが多く、プライベートクラウドという方向に進みにくいという事情がある。しかし、事業部レベルで個別にITを調達・運用していると、企業全体としての無駄につながってしまう、と相川氏は指摘する。</p>
+<h4>まずは見えないITメンテナンスコストの評価を</h4>
+<!--CAP-->
+<div id="col200l"><a name="mhad_aikawa.jpg"></a><img src="http://image.itmedia.co.jp/ait/articles/1403/17/mhad_aikawa.jpg" width="190" height="285" alt="mhad_aikawa.jpg">
+<small><strong>ユニファイド・コンピューティング事業<br>東日本エリア担当<br>シニアDC/Vセールススペシャリスト<br>相川哲也氏</strong></small></div>
+<!--CAPEND-->
+<p>　これらの無駄の中には、気付きにくいものもある。各事業部で、ITに詳しい人がボランティア的に――ちょっとしたシステムのバックアップを部門の誰かが片手間で実施するような――インフラのメンテナンスをしている場合、可視化されていないながらもコストが発生している。この見えない既存のメンテナンスコストを可視化して評価することが重要である、と小桧山氏は指摘する。その上で、IT部門がインフラの運用を一括して担い、各事業部の担当者には本来の業務に集中してもらうことが、会社としてのメリットになる点を明確に示すことも、また、プライベートクラウドを推し進める際のポイントだ。</p>
+<p>　また、部署ごとの判断でパブリッククラウドを利用しているケースもある。しかし部署ごとに異なるサービスを使っている状態が、セキュリティ上やガバナンス上問題がないとは考えにくい。そして従量課金のパブリッククラウドは、使い方によっては割高になることもある。</p>
+<p>　プライベートクラウドの構築は新しい投資だ。このため投資に見合う効果を明確にしなければならない。現状のIT関連コストを、ボランティアでのサーバー管理といった隠れコストも含めて明らかにし、プライベートクラウド化によるメリットと比較する必要がある。機器削減、運用コスト削減だけでなく、セキュリティや可用性の担保に関わるコストの効率化というメリットをはっきりと認識する必要がある。その上で「プライベートクラウド導入のコストは3年でペイする」といった計算が立てば、取り組むべきだという。</p>
+<h3>ユーザー部門は使いたい時に最小の制約で使えることを求める</h3>
+<p>　では、プライベートクラウドの構築で、どのような点に注意すればいいのか。シスコは2つの点を挙げる。ユーザー部門にとっての利便性が向上するような仕組みをつくること、そしてユーザーが喜ぶようなサービスを提供するため、情報システム部門の担当者の運用負荷を軽減するツールを活用することだ。</p>
+<p>　まず、IT部門が集中管理することにより、ユーザー部門が不利益を被るようでは導入が進まない。ユーザー部門が必要だと思った時に、迅速にITリソースが提供されなければならない。例えばエンジニアが自分の足元に置いていた物理サーバーと同様の自由度とはいわないまでも、それに近い形で使ってもらえることが必要になる。</p>
+<p>　シスコの社内には、無償、有償の2種類のクラウドサービスがあるという。1つは無償のサービスで、各従業員が、仮想マシンを2つまで使えるようになっている。</p>
+<p>まずは、1人当たり2つの無償仮想マシンを供与、「コストがかからないなら使ってみよう」という動機づけを行う。この環境で使ってもらえる状況ができた段階で、次のフェーズとして、部門単位でリソースを供与し、自由に使ってもらう。その代わり、リソースの管理・メンテナンスはIT部門に一括委託してください、というメッセージを出すのだ。この段階で、コスト配賦のある有償「サービス」としての提供に切り替えるのだという。</p>
+<p>　ここで部署に対する課金が発生することになる。どちらもインフラの運用やメンテナンス、バックアップなどは情報システム部門が行い、事業部では本来の仕事だけに注力してもらうことができる。事業部では無償提供の環境に慣れていることから、有償サービス化した場合でも利便性への懸念は払しょくできるという。</p>
+<h3>IT部門はITリソース提供プロセスを自動化すべき</h3>
+<p>　上記のように、社内ユーザーに対する利便性を向上するには、ITリソース（CPU数、メモリサイズ、ストレージ容量）の提供プロセスを自動化すべきだ、とシスコはいう。</p>
+<p>　仮想化環境における仮想マシン払い出しのプロセスは、必ずしも単純ではない。ストレージのLUNやボリュームを新たに作成したり、ネットワークではVLANを新たに設定したりしなければならないこともある。その上でテンプレートをカスタマイズして仮想マシンを作成し、データバックアップを設定して、といった一連の作業を人手でやっていたのでは、サービスを迅速に提供できない。パブリッククラウドと比較した際のプライベートクラウドの積極的なメリットともいえる社内ニーズへのきめ細かな対応を実現するためにも、仮想マシン提供のプロセスはできるかぎり自動化することが望ましい。</p>
+<p>　また、企業によっては、プライベートクラウドの運用を100％情報システム部門にまかせるのではなく、各ユーザー部門がある程度の運用権限を持つことが望ましいこともある。「シスコが提供する運用自動化ツール「Cisco UCS Director」では、ITインフラ全体を管理するスーパー運用管理者の下に、事業部の運用管理者、さらにその下のグループの運用管理者など、階層化して権限を持たせることも可能」（相川氏）だという。例えば事業部全体に150台の仮想マシン作成の権利を与え、配下のグループにそれを配分できるといった自由度を与えることができる。</p>
+<h3>プライベートクラウドに求められるサーバーの要件とは</h3>
+<p>　では、上記のようなプライベートクラウドを実現するために、サーバー機に求められる要件は何か。シスコは以下の2点を挙げる。</p>
+<div class="box cmsBoxNoborder cmsBox">
+<h3>「プライベートクラウドに求められるサーバーの要件」</h3>
+<ul>
+<li><A href="http://www.atmarkit.co.jp/ait/articles/1403/17/news012.html#1">運用負荷を積極的に軽減する機能</A></li>
+<li><A href="http://www.atmarkit.co.jp/ait/articles/1403/17/news012.html#2">クラウド運用自動化ツールの提供</A></li>
+</ul>
+<br clear="all"><span></span></div>
+<p>　以降で、それぞれの要件詳細を見ていこう。</p>
+<a name="1"></a>
+<h4>運用負荷を積極的に軽減する機能</h4>
+<!--CAP-->
+<div id="col200l"><a name="mhad_tanaka.jpg"></a><img src="http://image.itmedia.co.jp/ait/articles/1403/17/mhad_tanaka.jpg" width="190" height="285" alt="mhad_tanaka.jpg">
+<small><strong>ユニファイド・コンピューティング事業<br>シニアDC/Vセールススペシャリスト<br>田中孝幸氏</strong></small></div>
+<!--CAPEND-->
+<p>　サーバー機は、どれも同じになってしまったように見えがちだ。だが、同社のサーバー「Cisco Unified Computing System（以下、Cisco UCS）」は、主に2つの側面で、プライベートクラウドの運用負荷を積極的に軽減できる、と田中氏はいう。</p>
+<p>　1つはハードウェアがシンプルであること。「Cisco UCS Bシリーズ」は、ブレードサーバーだが、各シャーシにイーサネットスイッチやSANスイッチはなく、代わりにFCoE対応の統合I/Oモジュールが搭載されている。また、通常のブレードサーバーでは、各シャーシに管理モジュールがあるが、Cisco UCS Bシリーズにはそれもない。この製品では「ファブリックインターコネクト」という、複数のシャーシを束ねるスイッチ内に、Cisco UCS Managerという統合管理機能が実装されており、ブレードシステム全体の管理ポイントはこの1個所に集約されている。</p>
+<p>　もう1つはハードウェアの抽象化だ。Cisco UCSは、MACアドレス、World Wide Node Nameといったハードウェア固有の識別子やBIOSの設定情報を含め、従来サーバー側で保持している情報をサーバーから分離し、UCS Managerで管理している。さらにLANやSANのネットワーク設定も含めプロファイル化して管理・適用できる。このため、このプロファイルを事前に作成し、内容確認することが可能で、サーバーが納品されれば短時間でサーバー利用を開始できる。さらにネットアップとの提携で提供している統合インフラソリューションの「FlexPod」では、アプリケーションやユーザー数に応じて、きめ細かな検証が行われ、構成ガイドが用意されているため、ユーザー組織における事前検証は不要となり、納期も短縮されている。</p>
+<a name="2"></a>
+<h4>クラウド運用自動化ツールの提供</h4>
+<!--CAP-->
+<div id="col200l"><a name="mhad_ohira.jpg"></a><img src="http://image.itmedia.co.jp/ait/articles/1403/17/mhad_ohira.jpg" width="190" height="285" alt="mhad_ohira.jpg">
+<small><strong>ソリューションズシステムズエンジニアリング<br>データセンターソリューション<br>シニアコンサルティングシステムズエンジニア<br>大平伸一氏</strong></small></div>
+<!--CAPEND-->
+<p>　上記のサーバー設定は、「Cisco UCS Manager」というツールで行うが、シスコは「Cisco UCS Director」というソフトウェアも提供している。これはクラウド運用で日常的に必要となる一連の作業を自動化するツールだ。仮想化ソフトウェアやストレージの管理ツールとも連携し、ユーザーによるリクエストから仮想マシンの提供までを完全に自動化できる。</p>
+<p>　自動化ツールをうたう製品は多数あるが、同製品は「Cisco UCSが備えるサーバー設定の論理化機能と組み合わせることで、納品されたサーバー機の設定およびハイパーバイザの導入を含めた作業を自動化できる。多様なハイパーバイザ、クラウド運用基盤に対応でき、さらに仮想化環境と物理環境の混在をサポートする点も、大きな特色」（大平氏）だという。</p>
+<p>　TechTargetジャパンの調査レポートによると、国内で最も導入されている仮想化環境はVMware ESXiだが、今後導入したいハイパーバイザにHyper-Vを挙げる企業が増えている。世界的には、複数のハイパーバイザを使っているユーザー企業が42％となっている。各ハイパーバイザ、仮想化ソフトウェアにそれぞれ管理ツールは存在するが、UCSではそれらを統合管理することができる。極端な話、WebサーバーはVMware vSphereで、アプリケーションサーバーはHyper-Vで、データベースサーバーは物理サーバーで動かしたいとしても、これに対応できる。</p>
+<p>　ネットワーク製品ベンダーでもあるシスコは、マルチハイパーバイザ環境であっても、これにまたがって仮想ネットワークを構築できる技術を、間もなく提供開始する。「アプリケーションセントリックインフラストラクチャ（ACI）」という取り組みで、仮想ネットワーク構築プロトコルの違いをイーサネットスイッチが吸収し、相互接続を可能にする。</p>
+<p>　こうして、仮想ネットワークの構築を含めて、アプリケーションの配備までを完全自動化しようというのが、シスコの取り組みだ。</p>
+<h3>「IT as a Service」を目指せ</h3>
+<p>　多くの企業で求められているコスト削減を実現するためには、社内でITインフラを運用する場合でも、「サービスとして提供する」という考え方に近づく必要がある。情報システム部門は、セキュリティを保ちながらいかに社内ユーザーにとっての利便性を上げるかという企画に時間を割くべきであり、インフラの構築や準備の作業は、極力自動化すべきだという。</p>
+<div class="box cmsBox cmsBox cmsBoxBlue" id="blue">
+<h3>この記事に関連するホワイトペーパー</h3>
+<!--CAP-->
+<div id="col200l"><a name="120x90_1.jpg"></a><a href="javascript:void(0)" onclick="var s=s_gi('itmediacojpglobal'); s.prop5='at140307_007 http://wp.techtarget.itmedia.co.jp/contents/?cid=13981'; s.tl(true,'e','at140307_007'); s_objectid='at140307_007'; window.open('http://wp.techtarget.itmedia.co.jp/contents/?cid=13981'); return false;" class="imgLink"><img src="http://image.itmedia.co.jp/ait/articles/1403/17/120x90_1.jpg" width="120" height="90" alt="120x90_1.jpg"></a></div>
+<!--CAPEND-->
+<p><a href="javascript:void(0)" onclick="var s=s_gi('itmediacojpglobal'); s.prop5='at140307_007 http://wp.techtarget.itmedia.co.jp/contents/?cid=13981'; s.tl(true,'e','at140307_007'); s_objectid='at140307_007'; window.open('http://wp.techtarget.itmedia.co.jp/contents/?cid=13981'); return false;"><span class="cmsFontsize1"><strong>ファミリーマートの海外店舗インフラ準備を1週間に短縮したクラウドサービス</strong></span></a></p>
+<p>積極的な海外展開を進めるファミリーマートは、基幹システムをクラウド化したことで新地域でのインフラ構築を約1週間で完了。切り替えも準備に1週間、実作業は1日で終了させるなど機敏性を手に入れた。そのスピードを可能にしたクラウドサービスとは？</p>
+<p><span class="cmsFontsize-1">※ダウンロードにはTechTargetジャパンへの会員登録が必要です</span></p>
+<HR>
+<!--CAP-->
+<div id="col200l"><a name="120x90_2.jpg"></a><a href="javascript:void(0)" onclick="var s=s_gi('itmediacojpglobal'); s.prop5='at140307_008 http://wp.techtarget.itmedia.co.jp/contents/?cid=13982'; s.tl(true,'e','at140307_008'); s_objectid='at140307_008'; window.open('http://wp.techtarget.itmedia.co.jp/contents/?cid=13982'); return false;" class="imgLink"><img src="http://image.itmedia.co.jp/ait/articles/1403/17/120x90_2.jpg" width="120" height="90" alt="120x90_2.jpg"></a></div>
+<!--CAPEND-->
+<p><a href="javascript:void(0)" onclick="var s=s_gi('itmediacojpglobal'); s.prop5='at140307_008 http://wp.techtarget.itmedia.co.jp/contents/?cid=13982'; s.tl(true,'e','at140307_008'); s_objectid='at140307_008'; window.open('http://wp.techtarget.itmedia.co.jp/contents/?cid=13982'); return false;"><span class="cmsFontsize1"><strong>乗換案内サービス「駅探」が災害対策のバックアップにクラウドサービス採用を決めた理由とは</strong></span></a></p>
+<p>インターネットの時刻表連動乗換案内サービスを提供している「駅探」は、災害対策への取り組みを強化、遠隔地でのデータバック実施にあたり、運用コストや負担を軽減し、安全なバックアップとしてクラウドサービスを選択した。</p>
+<p><span class="cmsFontsize-1">※ダウンロードにはTechTargetジャパンへの会員登録が必要です</span></p>
+<br clear="all"><span></span></div>
+<div class="endlink" id="endlinkConnection">
+<h4>関連記事</h4>
+<ul id="art">
+<li class="endlink-art" id="endlink-art1"><a href="http://www.atmarkit.co.jp/ait/articles/1401/30/news008.html" onclick="designCnt('lart', s.hier3);">「プライベートクラウド」の理想と現実（1）：<br>現場から見たプライベートクラウドの「理想」、「現実」と「この先」</a></li>
+<li class="endlink-art" id="endlink-art2"><a href="http://www.atmarkit.co.jp/ait/articles/1402/12/news006.html" onclick="designCnt('lart', s.hier3);">「プライベートクラウド」の理想と現実（2）：<br>データ管理から見たプライベートクラウド、ハイパースケールする世界への道程</a></li>
+<li class="endlink-art" id="endlink-art3"><a href="http://www.atmarkit.co.jp/ait/articles/1405/07/news003.html" onclick="designCnt('lart', s.hier3);">「プライベートクラウド」の理想と現実（4）：<br>変わる製品選定のスキーム、情報システム部門の役割</a></li>
+<li class="endlink-art" id="endlink-art4"><a href="javascript:void(0)" onclick="var s=s_gi('itmediacojpglobal'); s.prop5='at140307_003 http://www.atmarkit.co.jp/ait/subtop/features/kwd/practical_privatecloud.html'; s.tl(true,'e','at140307_003'); s_objectid='at140307_003'; window.setTimeout(function(){location.href='http://www.atmarkit.co.jp/ait/subtop/features/kwd/practical_privatecloud.html';}, 500);">＠IT Special 特集：プライベートクラウドをめぐる誤解</a></li>
+</ul>
+<h4>関連リンク</h4>
+<ul id="lnk">
+<li class="endlink-lnk" id="endlink-lnk1"><a href="javascript:void(0)" onclick="var s=s_gi('itmediacojpglobal'); s.prop5='at140307_001 http://www.ctc-g.co.jp/'; s.tl(true,'e','at140307_001'); s_objectid='at140307_001'; window.setTimeout(function(){location.href='http://www.ctc-g.co.jp/';}, 500);">伊藤忠テクノソリューションズ</a></li>
+<li class="endlink-lnk" id="endlink-lnk2"><a href="javascript:void(0)" onclick="var s=s_gi('itmediacojpglobal'); s.prop5='at140307_002 http://www.cisco.com/web/JP/index.html'; s.tl(true,'e','at140307_002'); s_objectid='at140307_002'; window.setTimeout(function(){location.href='http://www.cisco.com/web/JP/index.html';}, 500);">シスコシステムズ</a></li>
+</ul>
+</div>
+
+<div id="cmsCopyright"><p><span style="font-size:65%;font-family:Arial,Helvetica,sans-serif;line-height:135%;color:#555555;">
+Copyright&copy; 2014 ITmedia, Inc. All Rights Reserved.</span></p>
+</div>
+<!--EDIT START-->
+
+
+<script>
+ISLOGIN({
+	'isLoginURL':'http://status.atmarkit.co.jp/isLoginAIT.cgi',
+	'sc':'f00f2e7bca65e9f8409fdb3bcddfa031664224255d7bd2f6b3de8ff11ababe20',
+	'lc':'c0aa4a0be7ba28399b09a68835a21755f442e25f8e0971b1d1ea3a6c749f0385',
+	'bc':2,
+	'heading':'続きを読むには、<strong style="color:#F90;">会員登録（無料）</strong> が必須です',
+	'description':'この記事は、＠ITのメールマガジン「＠IT通信」をお申し込みになると無料で閲覧できます。アイティメディアIDを持っている方は次のページでIDとパスワードを入力してください。登録されていない方は新規登録ボタンをクリックしてください。',
+	'eVer':'26',
+	'eVerStr':'id_ait_article-mask'
+});
+</script>
+<!--EDIT END-->
+
+</div></div> 
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsPrcredit"><div class="inner"><br clear="all">
+<p class="credit"><strong>提供：伊藤忠テクノソリューションズ株式会社</strong><br>
+アイティメディア営業企画／制作：＠IT 編集部／掲載内容有効期限：2014年4月23日</p>
+<!-- SiteCatalyst code version: H.2.
+Copyright 1997-2005 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript" src="/include/sc/s_code.js"></script>
+<script language="JavaScript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+function $() {
+  var elements = new Array();
+  for (var i = 0; i < arguments.length; i++) {
+    var element = arguments[i];
+    if (typeof element == 'string')
+      element = document.getElementById(element);
+    if (arguments.length == 1)
+      return element;
+    elements.push(element);
+  }
+  return elements;
+}
+s.pageName=document.URL.replace( /(\?|#).*$/, '' );
+s.server="www.itmedia.co.jp"
+s.channel="広告企画"
+s.pageType=""
+s.hier1="root,itm,promotion,at140307"
+s.hier2="itm,promotion,at140307"
+s.hier3="promotion,at140307"
+s.prop1=document.URL.replace( /(\?|#).*$/, '' );
+s.prop2="root,itm,promotion,at140307"
+if ( $('update') == undefined )
+  s.prop3='';
+else
+  s.prop3=$('update').innerHTML.replace(/\d+分\s更新/,"");
+if ( $('byline') == undefined )
+  s.prop4=''
+else
+  s.prop4=$('byline').innerHTML.replace(/<b>|<\/b>/ig,'').replace(/\[|\]/g,'');
+/* s.prop5 : ad link name reserves */
+s.prop5=""
+s.prop6="promotion"
+s.prop7="promotion,at140307"
+s.prop8=document.title
+s.prop9=navigator.userAgent
+s.prop10=document.URL.replace( /(\?|#).*$/, '' );
+/* s.prop13 : document.URL reserves */
+/* E-commerce Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events="event3"
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+s.prop20=""
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.2. -->
+<!-- ad_start_new -->
+<script language="JavaScript" type="text/javascript">
+   <!--
+   var ad_mcont_utf8 = "at140307";
+   var cn = "at140307";
+   var pn_es = escape(document.URL.replace( /(\?|#).*$/, '' ));
+   var pid="784200109";
+   var locs="N";
+   var random=new Date();
+
+   var js_url='http://dlv.itmedia.jp/adsv/v1?posall='+locs+'&id='+pid+'&t=js&word='+ad_mcont_utf8+'&rnd='+random.getTime()+'&cn='+cn+'&pn='+pn_es;
+   document.write('<sc'+'ript language="JavaScript" type="text/javascript" src="'+js_url+'">');
+   document.write('</sc'+'ript>');
+   //-->
+</script>
+<noscript>
+ <iframe height=1 width=1 marginwidth=0 marginheight=0 hspace=0
+   vspace=0 frameborder=0 scrolling=no src="http://dlv.itmedia.jp/adsv/v1?posall=N&id=784200109">
+ </iframe>
+</noscript>
+<!-- ad_end_new -->
+
+<!-- netratings -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7389445-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- netratings -->
+</div></div>
+<!--EDIT START-->
+
+<script type="text/javascript"><!--
+(function () {
+	if(!document.getElementById('cmsPrcredit')) return false;
+		var a = document.getElementById('cmsPrcredit');
+		var b = document.getElementById('cmsTitle');
+		if(a.innerHTML.match('提供：日本アイ・ビー・エム株式会社')) {	
+			b.style.backgroundImage = 'url(http://image.itmedia.co.jp/enterprise/special/ibm/sponsor.gif)';
+			b.style.padding = '20px 0 0 0';
+		} else {
+			b.style.backgroundImage = 'url(http://image.itmedia.co.jp/images/cms_pr.gif)';
+		}
+		return true;
+})()
+//--></script>
+
+<!--EDIT END-->
+</div></div>
+
+<script>endlinkAll();</script>
+
+<!---->
+</div>
+<div id="masterSub">
+	
+		<!--
+RC SETTING :
+SCID : at140307
+RCID : at140307_01
+-->
+<div id="colBoxMiddleSwf__"></div>
+<script type="text/javascript">
+BANNER_SWF({'swf':'','gif':'','width':'','height':''});
+</script>
+
+
+<div id="cmsSubPR">
+<div class="colBox">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2>この記事に関連するホワイトペーパー</h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="javascript:void(0)" onclick="var s=s_gi('itmediacojpglobal'); s.prop5='at140307_009 http://wp.techtarget.itmedia.co.jp/contents/?cid=13981'; s.tl(true,'e','at140307_009'); s_objectid='at140307_009'; window.setTimeout(function(){location.href='http://wp.techtarget.itmedia.co.jp/contents/?cid=13981';}, 500);" title="ファミリーマートの海外店舗インフラ準備を1週間に短縮したクラウドサービス"><img src="http://image.itmedia.co.jp/images/rc/at140307/01/ctctt01.jpg"></a></div>
+<div class="colBoxTitle"><h3><a href="javascript:void(0)" onclick="var s=s_gi('itmediacojpglobal'); s.prop5='at140307_009 http://wp.techtarget.itmedia.co.jp/contents/?cid=13981'; s.tl(true,'e','at140307_009'); s_objectid='at140307_009'; window.setTimeout(function(){location.href='http://wp.techtarget.itmedia.co.jp/contents/?cid=13981';}, 500);">ファミリーマートの海外店舗インフラ準備を1週間に短縮したクラウドサービス</a></h3></div>
+<div class="colBoxDescription"><p>積極的な海外展開を進めるファミリーマートは、基幹システムをクラウド化したことで新地域でのインフラ構築を約1週間で完了。切り替えも準備に1週間、実作業は1日で終了させるなど機敏性を手に入れた。そのスピードを可能にしたクラウドサービスとは？</p></div>
+<div class="colBoxClear h10px"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="javascript:void(0)" onclick="var s=s_gi('itmediacojpglobal'); s.prop5='at140307_010 http://wp.techtarget.itmedia.co.jp/contents/?cid=13982'; s.tl(true,'e','at140307_010'); s_objectid='at140307_010'; window.setTimeout(function(){location.href='http://wp.techtarget.itmedia.co.jp/contents/?cid=13982';}, 500);" title="乗換案内サービス「駅探」が災害対策のバックアップにクラウドサービス採用を決めた理由とは"><img src="http://image.itmedia.co.jp/images/rc/at140307/01/ctctt02.jpg"></a></div>
+<div class="colBoxTitle"><h3><a href="javascript:void(0)" onclick="var s=s_gi('itmediacojpglobal'); s.prop5='at140307_010 http://wp.techtarget.itmedia.co.jp/contents/?cid=13982'; s.tl(true,'e','at140307_010'); s_objectid='at140307_010'; window.setTimeout(function(){location.href='http://wp.techtarget.itmedia.co.jp/contents/?cid=13982';}, 500);">乗換案内サービス「駅探」が災害対策のバックアップにクラウドサービス採用を決めた理由とは</a></h3></div>
+<div class="colBoxDescription"><p>インターネットの時刻表連動乗換案内サービスを提供している「駅探」は、災害対策への取り組みを強化、遠隔地でのデータバック実施にあたり、運用コストや負担を軽減し、安全なバックアップとしてクラウドサービスを選択した。</p></div>
+<div class="colBoxClear h10px"></div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="colBox">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2>関連リンク</h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="javascript:void(0)" onclick="var s=s_gi('itmediacojpglobal'); s.prop5='at140307_004 http://www.ctc-g.co.jp/'; s.tl(true,'e','at140307_004'); s_objectid='at140307_004'; window.setTimeout(function(){location.href='http://www.ctc-g.co.jp/';}, 500);" title="伊藤忠テクノソリューションズ"><img src="http://image.itmedia.co.jp/images/rc/at140104/01/ctc01.gif"></a></div>
+<div class="colBoxTitle"><h3><a href="javascript:void(0)" onclick="var s=s_gi('itmediacojpglobal'); s.prop5='at140307_004 http://www.ctc-g.co.jp/'; s.tl(true,'e','at140307_004'); s_objectid='at140307_004'; window.setTimeout(function(){location.href='http://www.ctc-g.co.jp/';}, 500);">伊藤忠テクノソリューションズ</a></h3></div>
+
+<div class="colBoxClear h10px"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="javascript:void(0)" onclick="var s=s_gi('itmediacojpglobal'); s.prop5='at140307_005 http://www.cisco.com/web/JP/index.html'; s.tl(true,'e','at140307_005'); s_objectid='at140307_005'; window.setTimeout(function(){location.href='http://www.cisco.com/web/JP/index.html';}, 500);" title="シスコシステムズ"><img src="http://image.itmedia.co.jp/images/rc/at140307/01/sc.jpg"></a></div>
+<div class="colBoxTitle"><h3><a href="javascript:void(0)" onclick="var s=s_gi('itmediacojpglobal'); s.prop5='at140307_005 http://www.cisco.com/web/JP/index.html'; s.tl(true,'e','at140307_005'); s_objectid='at140307_005'; window.setTimeout(function(){location.href='http://www.cisco.com/web/JP/index.html';}, 500);">シスコシステムズ</a></h3></div>
+
+<div class="colBoxClear h10px"></div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="colBox">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2>関連記事</h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxUlist">
+<ul>
+<li><a href="http://www.atmarkit.co.jp/ait/articles/1401/30/news008.html" title="現場から見たプライベートクラウドの「理想」、「現実」と「この先」">現場から見たプライベートクラウドの「理想」、「現実」と「この先」</a></li>
+<li><a href="http://www.atmarkit.co.jp/ait/articles/1403/17/news012.html" title="サーバーとプライベートクラウド、「自動化」が決め手になる理由">サーバーとプライベートクラウド、「自動化」が決め手になる理由</a></li>
+<li><a href="http://www.atmarkit.co.jp/ait/articles/1405/07/news003.html" title="変わる製品選定のスキーム、情報システム部門の役割">変わる製品選定のスキーム、情報システム部門の役割</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="colBox">
+
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2>関連特集</h2></div>
+<div class="colBoxInner">
+
+<div style="text-align:center;"><a href="javascript:void(0)" onclick="var s=s_gi('itmediacojpglobal'); s.prop5='at140307_006 http://www.atmarkit.co.jp/ait/subtop/features/kwd/practical_privatecloud.html'; s.tl(true,'e','at140307_006'); s_objectid='at140307_006'; window.setTimeout(function(){location.href='http://www.atmarkit.co.jp/ait/subtop/features/kwd/practical_privatecloud.html';}, 500);"><img src="http://image.itmedia.co.jp/images/rc/at140104/01/privatecloud_banner.jpg"></a><div class="colBoxClear h10px"></div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+	
+</div>
+<div class="colBoxClear"></div>
+</div></div>
+<div id="mediaFooter">
+<div id="mediaFooterBgArea"></div>
+<div class="mediaFooterMediaList">
+
+<div class="colBoxIndex colBoxAit">
+<div class="colBoxTitle"><h3>@ITについて</h3></div>
+<div class="colBoxUlist">
+<ul>
+<li><a href="http://www.atmarkit.co.jp/aboutus/contact_us/contact_us.html" title="お問い合わせ">お問い合わせ</a></li>
+<li><a href="http://corp.itmedia.co.jp/corp/privacy.html" title="プライバシーポリシー">プライバシーポリシー</a></li>
+<li><a href="http://www.atmarkit.co.jp/aboutus/termofuse/termofuse.html" title="利用規約">利用規約</a></li>
+<li><a href="http://www.atmarkit.co.jp/aboutus/copyright/copyright.html" title="著作権・リンク・免責事項">著作権・リンク・免責事項</a></li>
+<li><a href="http://www.atmarkit.co.jp/info/sitemap/sitemap.html" title="サイトマップ">サイトマップ</a></li>
+<li><a href="http://corp.itmedia.co.jp/corp/ad/" title="広告案内">広告案内</a></li>
+</ul>
+</div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex colBoxRSS">
+<div class="colBoxTitle"><h3>RSSについて</h3></div>
+<div class="colBoxUlist">
+<ul>
+<li><a href="http://www.itmedia.co.jp/info/rss/atmarkit.html" title="＠ITのRSS一覧">＠ITのRSS一覧</a></li>
+</ul>
+</div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex colBoxID">
+<div class="colBoxTitle"><h3>アイティメディアIDについて</h3></div>
+<div class="colBoxUlist">
+<ul>
+<li><a href="http://id.itmedia.jp/info/campaign/all_id.html" title="アイティメディアIDとは">アイティメディアIDとは</a></li>
+</ul>
+</div>
+<div class="colBoxClear"></div>
+</div>
+<!-- メディアフッター -->
+<div class="colBoxIndex colBoxMailmagazine">
+<div class="colBoxTitle"><h3>メールマガジン登録</h3></div>
+<div class="colBoxDescription"><p>
+＠ITのメールマガジンは、 もちろん、すべて無料です。ぜひメールマガジンをご購読ください。
+</p>
+<div id="registerButton">
+<a href="http://www.atmarkit.co.jp/ait/subtop/info/lp/ait_new.html">申し込みページへ</a>
+</div>
+</div>
+</div>
+<div class="colBoxClear"></div>
+</div>
+</div>
+
+
+
+<div id="masterFooter">
+	<div id="globalFooter">
+		<div id="globalFooterCorp">
+			<div id="globalFooterCorpIn">
+				<p id="globalFooterCorpLogo"><a href="http://corp.itmedia.co.jp/"><img src="http://image.itmedia.co.jp/images/logo/170_itmedia_bgw.gif"></a>ITmediaはアイティメディア株式会社の登録商標です。</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</div><!--/masterBodyInner-->
+</div><!--/masterBodyOuter-->
+</div><!--/masterBodyIn-->
+</div><!--/masterBodyOut-->
+</div><!--/masterBody-->
+<script src="/js/masterBodyEnd.js"></script><!-- window.onload -->
+<script src="/js/itmid/smartPhoneHeadLink.js"></script><!-- Smart Phone Large Button-->
+<!--BEACON-->
+
+    <!--prFlag = PR-->
+    
+
+
+<script type="text/javascript">
+YBTlogRequest();
+function YBTlogRequest(){
+    var y_u = location.href;
+    var y_th = location.hostname.split(".");
+    var y_tl = location.pathname;
+    var y_th0 = y_th[0];
+    var y_p = '';
+    if (y_th0 === 'www') {
+        if (y_tl === '/'){
+            y_p = 'top';
+        }
+        else {
+            var y_tp = y_tl.split("/");
+            y_p = y_tp[1];
+        }
+    }
+    else {
+        y_p = y_th0;
+    }
+    var y_k = "ext_bt",
+        y_s = "itmedia",
+        y_r = Math.random(),
+        y_eu =  encodeURIComponent(y_u),
+        y_h = (location.protocol == "https:") ? "https:" : "http:",
+        y_b = y_h + "//ybx.yahoo.co.jp/clear.gif?bkey=" + y_k + "&site=" + y_s + "&pagetype=" + y_p + "&url=" + y_eu + "&r=" + y_r,
+        y_i = new Image();
+    y_i.src = y_b;
+    y_i.onload = y_i.onerror = function(){YBTLogVoid();};
+}
+function YBTLogVoid(){return;}
+</script>
+
+<!--/BEACON-->
+
+</body></html>
+

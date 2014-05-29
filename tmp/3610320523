@@ -1,0 +1,734 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html lang="ja"
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:mixi="http://mixi-platform.com/ns#"
+    xmlns:fb="http://ogp.me/ns/fb#">
+<head prefix="article: http://ogp.me/ns/article#">
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>＜事故＞姫路沖でタンカー爆発炎上　４人やけど１人不明 （毎日新聞） - Yahoo!ニュース</title>
+<meta name="description" content="Yahoo!ニュース（毎日新聞） - 　２９日午前９時２０分ごろ、兵庫県姫路市の姫路港沖の播磨灘で、聖朋海運所属のタン">
+<meta name="keywords" content="ニュース,国内,社会">
+<meta name="robots" content="noarchive">
+<link href="http://i.yimg.jp/images/news/v1/css/yj2.css?v2" rel="stylesheet" type="text/css" media="screen, print" id="yjFsCss">
+<link rel="stylesheet" href="http://i.yimg.jp/images/news/v1/css/master-news_v2.css?20140515" type="text/css" media="all">
+<link type="text/css" rel="stylesheet" href="http://i.yimg.jp/images/jpnews/cre/common/pc/css/common_pc.css" media="all">
+<script type="text/javascript">
+  var yjaxclookup = function(jo){
+    if(typeof jo[0] != "undefined") {
+      document.getElementById("center1").innerHTML = jo[0];
+    }
+    if(typeof jo[1] != "undefined") {
+      document.getElementById("center2").innerHTML = jo[1];
+    }
+    if(typeof jo[2] != "undefined") {
+      document.getElementById("rightbox1").innerHTML = jo[2];
+    }
+  }
+</script>
+<meta property="og:type" content="article" />
+<meta property="og:title" content="＜事故＞姫路沖でタンカー爆発炎上　４人やけど１人不明（毎日新聞） - Y!ニュース" />
+<meta name="mixi-check-robots" CONTENT="nodescription, noimage, ignoreimage">
+<meta property="og:description" content="Yahoo!ニュース" />
+<meta property="og:image" content="http://i.yimg.jp/images/news/facebook/fbico_ogp_200x200.png" />
+<meta property="og:url" content="http://headlines.yahoo.co.jp/hl?a=20140529-00000028-mai-soci"/>
+<meta property="og:locale" content="ja_JP" />
+<meta property="fb:app_id" content="276725822409153"/>
+
+<!-- SpaceID=0 robot -->
+</head>
+<body class="yj950-2">
+
+<div id="wrapper">
+<div id="header">
+<!-- SpaceID=0 robot -->
+<!-- SpaceID=0 robot -->
+<!-- SpaceID=0 robot -->
+<!-- SpaceID=0 robot -->
+</div>
+
+<hr class="separation">
+
+<!--contents start-->
+<div id="contents">
+<div id="contents-header">
+
+<div id="contentsHeader">
+
+<div id="headerSearch">
+
+<div class="searchWrapper">
+<!-- ニュース -->
+<form action="http://news.search.yahoo.co.jp/search" method="get" id="searchNewsForm" class="current">
+
+<div class="inputWrapper">
+<input class="searchInput" type="text" name="p" placeholder="キーワードを入力">
+<input type="hidden" value="EUC-JP" name="ei">
+<input type="hidden" value="news_sw" name="fr">
+</div><!-- /.inputWrapper -->
+<p class="currentSearch"><a href="#">ニュース</a></p>
+<span class="searchButton"><input type="submit" value="検索"></span>
+
+<!-- 条件指定ボタン -->
+<p class="advanced"><a href="http://news.search.yahoo.co.jp/advanced">条件指定</a></p>
+</form>
+
+<!-- トピ -->
+<form action="http://search.yahoo.co.jp/search" method="get" id="searchTopicsForm">
+
+<div class="inputWrapper">
+<input class="searchInput" type="text" name="p" placeholder="キーワードを入力">
+<input type="hidden" value="EUC-JP" name="ei">
+<input type="hidden" value="news_sw" name="fr">
+<input type="hidden" value="news.yahoo.co.jp/list/" name="vs">
+<input type="hidden" value="1" name="rkf">
+</div><!-- /.inputWrapper -->
+<p class="currentSearch"><a href="#">トピックス</a></p>
+<span class="searchButton"><input type="submit" value="検索"></span>
+
+</form>
+
+<!-- Buzz -->
+<form action="http://buzz.news.yahoo.co.jp/search/result/" method="get" id="searchBuzzwordForm">
+
+<div class="inputWrapper">
+<input class="searchInput" type="text" name="search" placeholder="キーワードを入力">
+</div><!-- /.inputWrapper -->
+
+<p class="currentSearch"><a href="#">Buzzワード</a></p>
+<span class="searchButton"><input type="submit" value="検索"></span>
+</form>
+
+<!-- 意識調査 -->
+<form action="http://polls.dailynews.yahoo.co.jp/list" method="get" id="SearchSurveyForm">
+
+<div class="inputWrapper">
+<input class="searchInput" type="text" name="q" placeholder="キーワードを入力">
+<input type="hidden" value="euc-jp" name="ei">
+</div><!-- /.inputWrapper -->
+
+<p class="currentSearch"><a href="#">意識調査</a></p>
+<span class="searchButton"><input type="submit" value="検索"></span>
+</form>
+
+<!-- GSR -->
+<form action="http://gsearch.news.yahoo.co.jp/gs?" name="s" method="get" id="searchGSRForm">
+
+<div class="inputWrapper">
+<input class="searchInput" type="text" name="key" placeholder="キーワードを入力">
+<input type="hidden" value="l" name="ty">
+<input type="hidden" value="" name="dbty">
+</div><!-- /.inputWrapper -->
+<p class="currentSearch"><a href="#">全国紙パック</a></p>
+<span class="searchButton"><input type="submit" value="検索"></span>
+</form>
+
+<!--検索カテゴリのセレクト -->
+<ul class="searchSelect hide"><!--
+--><li id="searchNews"><a href="#" class="current"><span>ニュース</span></a></li><li id="searchTopics"><a href="#"><span>トピックス</span></a></li><li id="searchBuzzword"><a href="#"><span>Buzzワード</span></a></li><li id="SearchSurvey"><a href="#"><span>意識調査</span></a></li><li id="searchGSR"><a href="#"><span>全国紙パック</span></a></li>
+</ul>
+<div class="bubble hide"></div>
+
+</div><!-- /.searchWrapper -->
+
+<ul class="personalInfo">
+<li class="myPage"><a href="http://person.news.yahoo.co.jp/u/login" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL3BlcnNvbi5uZXdzLnlhaG9vLmNvLmpwL3UvbG9naW4-/RS=^ADA7_Tc8_FaahPS1UNtmdZWs4Xl0NU-'"><span class="myThumb"><img src="http://i.yimg.jp/images/bloom/v201212/anonymous_24.png" width="24" height="24"></span></a><a href="http://person.news.yahoo.co.jp/u/login" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL3BlcnNvbi5uZXdzLnlhaG9vLmNvLmpwL3UvbG9naW4-/RS=^ADA7_Tc8_FaahPS1UNtmdZWs4Xl0NU-'"><span class="myName">ユーザーページ</span></a>
+</li>
+<li class="purchase"><a href="http://headlines.yahoo.co.jp/purchase/" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9wdXJjaGFzZS8-/RS=^ADA1ASCdX7SMdrqInwmMhD9CTQC8Oo-'">購入済み</a></li>
+<li class="setting"><a href="http://person.news.yahoo.co.jp/settings/profile/" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL3BlcnNvbi5uZXdzLnlhaG9vLmNvLmpwL3NldHRpbmdzL3Byb2ZpbGUv/RS=^ADAZDv9viQxFfx9Bw1NBRWMjJnJo2I-'">設定</a></li>
+</ul><!-- /.personalInfo -->
+
+</div><!-- /#search -->
+<!--グローバルナビ-->
+<div id="globalNav">
+<ul id="gnPri"><!-- global nav primary -->
+<li id="gnPriHeadlines" class="current"><a href="http://news.yahoo.co.jp" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL25ld3MueWFob28uY28uanA-/RS=^ADA5qmjrB1tP3Pnd40vItXzm_NldhE-'" >トップ</a></li>
+<li id="gnPriFlash" ><a href="http://news.yahoo.co.jp/flash" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL25ld3MueWFob28uY28uanAvZmxhc2g-/RS=^ADA.u7MwwSaam2OsRdQB_PGTA8A3t4-'" >速報</a></li>
+<li id="gnPriPhoto" ><a href="http://headlines.yahoo.co.jp/hl?ty=p" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9obD90eT1w/RS=^ADAl.HnSYiviKH4bXAvLBFWv2JcMjg-'" >写真</a></li>
+<li id="gnPriVideo" ><a href="http://headlines.yahoo.co.jp/videonews/" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC92aWRlb25ld3Mv/RS=^ADAvFpYOATn6xRxz6lxVL7DmWcN.7g-'" >映像</a></li>
+<li id="gnPriZasshi" ><a href="http://zasshi.news.yahoo.co.jp/" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL3phc3NoaS5uZXdzLnlhaG9vLmNvLmpwLw--/RS=^ADARnzk8GakT6UOeKcs39gxanSFyXQ-'" >雑誌</a></li>
+<li id="gnPriBylines" ><a href="http://bylines.news.yahoo.co.jp/" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2J5bGluZXMubmV3cy55YWhvby5jby5qcC8-/RS=^ADAHurU47nZ8sQWkrKZmBWk_8Wce_I-'" >個人</a></li>
+<li id="gnPriBuzz" ><a href="http://buzz.news.yahoo.co.jp/" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2J1enoubmV3cy55YWhvby5jby5qcC8-/RS=^ADAlPgteCdS1JX_W5w6VrIk.2Of8ZU-'" >Buzz</a></li>
+<li id="gnPriResearch" ><a href="http://polls.dailynews.yahoo.co.jp/" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL3BvbGxzLmRhaWx5bmV3cy55YWhvby5jby5qcC8-/RS=^ADArpldudun6m98TgH0H3fxRmt5H0A-'" >意識調査</a></li>
+<li id="gnPriRanking" ><a href="http://headlines.yahoo.co.jp/accr" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9hY2Ny/RS=^ADAi1DbEoKS6xtroRqjBSuFJxsuKfk-'" >ランキング</a></li>
+<li id="gnPriFeed"><a href="http://feed.news.yahoo.co.jp/" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2ZlZWQubmV3cy55YWhvby5jby5qcC8-/RS=^ADAt6w_nDtVw8jc3vbQxzdC1p5XLDI-'">ニュースフィード</a></li>
+</ul>
+
+<div class="gnSecWrap">
+<ul id="gnSec"><!-- global nav secondaly -->
+<li class="current"><a href="http://headlines.yahoo.co.jp/hl?c=dom">国内</a></li>
+<li ><a href="http://headlines.yahoo.co.jp/hl?c=c_int">国際</a></li>
+<li ><a href="http://headlines.yahoo.co.jp/hl?c=bus">経済</a></li>
+<li ><a href="http://headlines.yahoo.co.jp/hl?c=c_ent">エンタメ</a></li>
+<li ><a href="http://headlines.yahoo.co.jp/hl?c=c_spo">スポーツ</a></li>
+<li ><a href="http://headlines.yahoo.co.jp/hl?c=c_sci">IT・科学</a></li>
+<li ><a href="http://headlines.yahoo.co.jp/hl?c=c_life">ライフ</a></li>
+<li ><a href="http://headlines.yahoo.co.jp/hl?c=loc">地域</a></li>
+</ul>
+<ul id="gnSecSub">
+<li ><a href="http://news.yahoo.co.jp/list">アーカイブ</a></li>
+</ul>
+</div>
+</div><!-- /.globalNav -->
+<!--/グローバルナビ-->
+</div>
+<div id="cat-pass"></div><!--/#cat-pass-->
+</div><!--/#contents-header-->
+
+<div id="contents-body">
+<span class="yj-guid"><a name="contents-start" id="contents-start"></a><img src="http://i.yimg.jp/images/clear.gif" alt="ここから本文です" width="1" height="1"></span>
+
+<!-- SpaceID=0 robot -->
+
+<!--main start-->
+<div id="main-wrapper">
+<div id="main">
+<div id="startunfix"></div>
+<div id = "electricSignboard" class="tmplNews001 clearFix">
+    <div class="wrapper clearFix">
+        <div id="signboardTopics">
+             <div id="topicsTitle1" class="box">
+                <a href="http://dailynews.yahoo.co.jp/fc/domestic/ianfu/?1401321028" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RU=aHR0cDovL2RhaWx5bmV3cy55YWhvby5jby5qcC9mYy9kb21lc3RpYy9pYW5mdS8_MTQwMTMyMTAyOA--'">河野談話検証 来月に国会報告<span class="ymuiPhoto" title="写真">写真</span><span class="ymuiNew" title="NEW">NEW</span></a>
+            </div>
+             <div id="topicsTitle2" class="box" style="top:34px;display:none;">
+                <a href="http://dailynews.yahoo.co.jp/fc/domestic/north_korea_kidnap/?1401319846" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RU=aHR0cDovL2RhaWx5bmV3cy55YWhvby5jby5qcC9mYy9kb21lc3RpYy9ub3J0aF9rb3JlYV9raWRuYXAvPzE0MDEzMTk4NDY-'">拉致被害者家族 正直がっかり<span class="icoVideo" title="動画">動画</span></a>
+            </div>
+             <div id="topicsTitle3" class="box" style="top:34px;display:none;">
+                <a href="http://dailynews.yahoo.co.jp/fc/domestic/collective_self_defense/?1401316768" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RU=aHR0cDovL2RhaWx5bmV3cy55YWhvby5jby5qcC9mYy9kb21lc3RpYy9jb2xsZWN0aXZlX3NlbGZfZGVmZW5zZS8_MTQwMTMxNjc2OA--'">米以外守る 自衛隊中東派遣も<span class="ymuiPhoto" title="写真">写真</span></a>
+            </div>
+             <div id="topicsTitle4" class="box" style="top:34px;display:none;">
+                <a href="http://dailynews.yahoo.co.jp/fc/domestic/food_safety/?1401331067" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RU=aHR0cDovL2RhaWx5bmV3cy55YWhvby5jby5qcC9mYy9kb21lc3RpYy9mb29kX3NhZmV0eS8_MTQwMTMzMTA2Nw--'">「体に効く食品」表示解禁へ<span class="ymuiNew" title="NEW">NEW</span></a>
+            </div>
+             <div id="topicsTitle5" class="box" style="top:34px;display:none;">
+                <a href="http://dailynews.yahoo.co.jp/fc/domestic/gun_control_laws_violated/?1401330978" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RU=aHR0cDovL2RhaWx5bmV3cy55YWhvby5jby5qcC9mYy9kb21lc3RpYy9ndW5fY29udHJvbF9sYXdzX3Zpb2xhdGVkLz8xNDAxMzMwOTc4'">3Dプリンタ銃 製造再現実験へ<span class="ymuiNew" title="NEW">NEW</span></a>
+            </div>
+             <div id="topicsTitle6" class="box" style="top:34px;display:none;">
+                <a href="http://dailynews.yahoo.co.jp/fc/domestic/dementia/?1401317279" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RU=aHR0cDovL2RhaWx5bmV3cy55YWhvby5jby5qcC9mYy9kb21lc3RpYy9kZW1lbnRpYS8_MTQwMTMxNzI3OQ--'">認知症の疑い 3年半探す家族<span class="ymuiPhoto" title="写真">写真</span></a>
+            </div>
+             <div id="topicsTitle7" class="box" style="top:34px;display:none;">
+                <a href="http://dailynews.yahoo.co.jp/fc/local/akb_assault/?1401315689" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RU=aHR0cDovL2RhaWx5bmV3cy55YWhvby5jby5qcC9mYy9sb2NhbC9ha2JfYXNzYXVsdC8_MTQwMTMxNTY4OQ--'">AKB襲撃 のこぎりの背にも刃<span class="ymuiPhoto" title="写真">写真</span></a>
+            </div>
+             <div id="topicsTitle8" class="box" style="top:34px;display:none;">
+                <a href="http://dailynews.yahoo.co.jp/fc/domestic/aska/?1401279629" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RU=aHR0cDovL2RhaWx5bmV3cy55YWhvby5jby5qcC9mYy9kb21lc3RpYy9hc2thLz8xNDAxMjc5NjI5'">ASKA容疑者「何回も使った」</a>
+            </div>
+        </div>
+        <div class="expand area" style="display:block;">
+            <a href="javascript:void(0);">
+                <span id="signboardCategory">国内トピックス</span>
+                <span class="arw">V</span>
+            </a>
+        </div>
+        <div class="close area" style="display:none;">
+            <a href="javascript:void(0);">
+                <span id="signboardCategory">国内トピックス</span>
+                <span class="arw">V</span>
+            </a>
+        </div>
+    </div>
+    <div id="signboardTopicsList" class="clearFix" style="height:0px;overflow:hidden;">
+        <div id ="expandWrapper">
+            <div class="clearFix">
+                <ul>
+                    <li>
+                        <a href="http://dailynews.yahoo.co.jp/fc/domestic/ianfu/?1401321028" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RU=aHR0cDovL2RhaWx5bmV3cy55YWhvby5jby5qcC9mYy9kb21lc3RpYy9pYW5mdS8_MTQwMTMyMTAyOA--'">河野談話検証 来月に国会報告<span class="ymuiPhoto" title="写真">写真</span><span class="ymuiNew" title="NEW">NEW</span></a>
+                    </li>
+                    <li>
+                        <a href="http://dailynews.yahoo.co.jp/fc/domestic/gun_control_laws_violated/?1401330978" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RU=aHR0cDovL2RhaWx5bmV3cy55YWhvby5jby5qcC9mYy9kb21lc3RpYy9ndW5fY29udHJvbF9sYXdzX3Zpb2xhdGVkLz8xNDAxMzMwOTc4'">3Dプリンタ銃 製造再現実験へ<span class="ymuiNew" title="NEW">NEW</span></a>
+                    </li>
+                    <li>
+                        <a href="http://dailynews.yahoo.co.jp/fc/domestic/north_korea_kidnap/?1401319846" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RU=aHR0cDovL2RhaWx5bmV3cy55YWhvby5jby5qcC9mYy9kb21lc3RpYy9ub3J0aF9rb3JlYV9raWRuYXAvPzE0MDEzMTk4NDY-'">拉致被害者家族 正直がっかり<span class="icoVideo" title="動画">動画</span></a>
+                    </li>
+                    <li>
+                        <a href="http://dailynews.yahoo.co.jp/fc/domestic/dementia/?1401317279" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RU=aHR0cDovL2RhaWx5bmV3cy55YWhvby5jby5qcC9mYy9kb21lc3RpYy9kZW1lbnRpYS8_MTQwMTMxNzI3OQ--'">認知症の疑い 3年半探す家族<span class="ymuiPhoto" title="写真">写真</span></a>
+                    </li>
+                    <li>
+                        <a href="http://dailynews.yahoo.co.jp/fc/domestic/collective_self_defense/?1401316768" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RU=aHR0cDovL2RhaWx5bmV3cy55YWhvby5jby5qcC9mYy9kb21lc3RpYy9jb2xsZWN0aXZlX3NlbGZfZGVmZW5zZS8_MTQwMTMxNjc2OA--'">米以外守る 自衛隊中東派遣も<span class="ymuiPhoto" title="写真">写真</span></a>
+                    </li>
+                    <li>
+                        <a href="http://dailynews.yahoo.co.jp/fc/local/akb_assault/?1401315689" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RU=aHR0cDovL2RhaWx5bmV3cy55YWhvby5jby5qcC9mYy9sb2NhbC9ha2JfYXNzYXVsdC8_MTQwMTMxNTY4OQ--'">AKB襲撃 のこぎりの背にも刃<span class="ymuiPhoto" title="写真">写真</span></a>
+                    </li>
+                    <li class="last">
+                        <a href="http://dailynews.yahoo.co.jp/fc/domestic/food_safety/?1401331067" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RU=aHR0cDovL2RhaWx5bmV3cy55YWhvby5jby5qcC9mYy9kb21lc3RpYy9mb29kX3NhZmV0eS8_MTQwMTMzMTA2Nw--'">「体に効く食品」表示解禁へ<span class="ymuiNew" title="NEW">NEW</span></a>
+                    </li>
+                    <li class="last">
+                        <a href="http://dailynews.yahoo.co.jp/fc/domestic/aska/?1401279629" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RU=aHR0cDovL2RhaWx5bmV3cy55YWhvby5jby5qcC9mYy9kb21lc3RpYy9hc2thLz8xNDAxMjc5NjI5'">ASKA容疑者「何回も使った」</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="clearFix"><a href="http://dailynews.yahoo.co.jp/fc/domestic/" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RU=aHR0cDovL2RhaWx5bmV3cy55YWhvby5jby5qcC9mYy9kb21lc3RpYy8-'">もっと見る</a></p>
+        </div>
+    </div>
+</div>
+<noscript>
+<div class="alertBox">
+<div class="alert">
+<i></i><p>現在<em>JavaScriptが無効</em>になっています。Yahoo!ニュースのすべての機能を利用するためには、JavaScriptの設定を有効にしてください。<br>JavaScriptの設定を変更する方法は<a href="http://help.yahoo.co.jp/help/jp/common/sys/sys-07.html">こちら</a>。</p>
+</div>
+</div>
+</noscript>
+
+<div id="subNav">
+	<p class="dom">国内</p>
+<ul><li class="first"><a href="http://headlines.yahoo.co.jp/hl?c=pol&t=l">政治</a></li><li><a href="http://headlines.yahoo.co.jp/hl?c=soci&t=l"><span class="select">社会</span></a></li><li><a href="http://headlines.yahoo.co.jp/hl?c=peo&t=l">人</a></li></ul></div>
+
+<div id="ynDetail" class="ymuiDotLine yjMt">
+<!--- interest_match_relevant_zone_start --->
+	<div class="ymuiContainerNopad">
+	<h1 class="yjXL">＜事故＞姫路沖でタンカー爆発炎上　４人やけど１人不明</h1>
+	<p class="yjSt ymuiDate"><a href="http://headlines.yahoo.co.jp/list/?m=mai" onmousedown="this.href='http://rdsig.yahoo.co.jp/media/news/medianame/articles/RV=1/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9saXN0Lz9tPW1haQ--'">毎日新聞</a>&nbsp;5月29日(木)10時51分配信
+    </p>
+	</div>
+
+	<div class="ymuiContainerNopad">
+		<div class="ynDetailPgraphWrap clearFix">
+			<div class="PhotosContainerL FixedPhotCon">
+                <div class="PhotosContainerMain">
+                    <div class="thumb">
+<a href="http://headlines.yahoo.co.jp/hl?a=20140529-00000028-mai-soci.view-000" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9obD9hPTIwMTQwNTI5LTAwMDAwMDI4LW1haS1zb2NpLnZpZXctMDAw'">
+<div><img src="http://amd.c.yimg.jp/im_sigg8Vbt356Zf0cSt7Ek_ec_qQ---x140-y200-q90/amd/20140529-00000028-mai-000-14-view.jpg" width="140" height="200" alt="＜事故＞姫路沖でタンカー爆発炎上　４人やけど１人不明" onContextMenu="javascript:return false;"></div>
+</a>
+                        <p class="photoOffer">
+<a href="http://headlines.yahoo.co.jp/hl?a=20140529-00000028-mai-soci.view-000" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9obD9hPTIwMTQwNTI5LTAwMDAwMDI4LW1haS1zb2NpLnZpZXctMDAw'">
+船体を傾けて煙を上げる聖幸丸＝兵庫県姫路市沖の播磨灘で２０１４年５月２９日午前１０時４１分、本社ヘリから加古信志撮影
+</a>
+                        </p>
+                    </div>
+                </div>
+			</div>
+<p class="ynDetailText">
+　２９日午前９時２０分ごろ、兵庫県姫路市の姫路港沖の播磨灘で、聖朋海運所属のタンカー「聖幸丸」（９８８トン、８人乗り組み）が爆発した。姫路海上保安部によると、船長が行方不明、４人が全身にやけどを負っている。<br><br><a href="http://rdsig.yahoo.co.jp/media/news/rd_tool/mai/articles/soci/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL21haW5pY2hpLmpwL2dyYXBoLzIwMTQvMDUvMjkvMjAxNDA1MjlrMDAwMGUwNDAyMDkwMDBjLzAwMi5odG1s/RS=^ADAFmRtuWGGmmbcws_QZy09fVQb2kM-">【懸命の消火作業】爆発現場を別カットで見る</a><br><br>　聖朋海運によると、聖幸丸は兵庫県の相生港で積み荷の原油を降ろした後、沖合で待機していた。船員が船体に付着したペンキをはがすためグラインダーを使用中、何かに引火した可能性があるという。<br>
+<br>
+　姫路港管理事務所によると、午前１０時半現在、沖合数キロでタンカーから煙と炎が上がっているのが見えるという。</p>
+		</div>
+
+
+
+
+<div class="ynDetailRelArticle">
+<div class="listTitle">【関連記事】</div>
+<ul>
+<li><a href="http://rdsig.yahoo.co.jp/media/news/rd_tool/mai/articles/soci/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL21haW5pY2hpLmpwL2dyYXBoLzIwMTMvMDIvMjIvMjAxMzAyMjJrMDAwMG0wNDAwODkwMDBjLzAwMS5odG1s/RS=^ADA4DcZ4vGaBXF51Ip_.cCwIHoqoQI-"> ＜千葉県市原市の埠頭＞貨物船から黒煙と炎（２０１３年２月２１日） </a></li>
+<li><a href="http://rdsig.yahoo.co.jp/media/news/rd_tool/mai/articles/soci/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL21haW5pY2hpLmpwL2FyZWEvbmV3cy8yMDE0MDMyN2RkbjA0MTA0MDAxODAwMGMuaHRtbA--/RS=^ADAkFmDzPt_pRprXImDA6y4CIIKLrE-"> ＜３月にも海難事故＞タンカー沈没で２人けが　播磨灘 </a></li>
+<li><a href="http://rdsig.yahoo.co.jp/media/news/rd_tool/mai/articles/soci/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL21haW5pY2hpLmpwL3NoaW1lbi9uZXdzLzIwMTQwNDIxZGRtMDAxMDMwMjE5MDAwYy5odG1s/RS=^ADA5U..3dxPUcHlA4YmddEx0VLqfgk-"> ＜韓国旅客船事故＞やっぱり人災　乗員、ブリッジで動けず </a></li>
+<li><a href="http://rdsig.yahoo.co.jp/media/news/rd_tool/mai/articles/soci/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL21haW5pY2hpLmpwL3NoaW1lbi9uZXdzLzIwMTQwNDI3ZGRtMDQxMDMwMTQ5MDAwYy5odG1s/RS=^ADA1DFp2yhNPRoIpQz1EOrFZFEsOfs-"> ＜韓国旅客船沈没＞海難事故巡り詐欺、偽装 IT先進もモラルは欠落 SNSで拡散摘発の半数は10代 </a></li>
+<li><a href="http://rdsig.yahoo.co.jp/media/news/rd_tool/mai/articles/soci/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL21haW5pY2hpLmpwL3NoaW1lbi9uZXdzLzIwMTQwNTE4ZGRtMDQxMDMwMDY0MDAwYy5odG1s/RS=^ADAQYZfMUWxeS8o0BHesIg4CUFHfp4-"> ＜韓国旅客船沈没＞実質オーナー追及難航　逮捕状請求、教団施設に潜伏 </a></li>
+</ul>
+</div>
+<!--- interest_match_relevant_zone_end --->
+	</div>
+	<p class="ynLastEditDate yjSt">最終更新:5月29日(木)11時43分</p>
+	<p class="ynCobrandBanner"><a href="http://rdsig.yahoo.co.jp/media/news/cobrand/mai/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL21haW5pY2hpLmpwLw--/RS=^ADACCPc.hzT9MtxYR_TjbNZ65xiPXo-"><img src="http://i.yimg.jp/images/news/cobranding/mai.gif" alt="毎日新聞" width="170" height="40"></a></p>
+	<div class="ynClear">&nbsp;</div>
+
+
+<script type="text/javascript">
+//windowPopup
+function popWindow(pUrl) {
+var winName = "socialpost";
+var winOption = "width=632, height=456, location=no, menubar=no, toolbar=no, scrollbars=no, resizable=yes";
+window.open(pUrl, winName, winOption);
+}
+document.write('\
+<div class="socialButton">\
+<ul class="clearFix">\
+<li class="socialBtn_tw"><a href="http://rdsig.yahoo.co.jp/media/news/socialbutton/twitter/pc/detail/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cHM6Ly90d2l0dGVyLmNvbS9zaGFyZQ--/RS=^ADA0vtY.ZeJ7n3cRJ8qxw0fm8AqFi0-" data-text="＜事故＞姫路沖でタンカー爆発炎上　４人やけど１人不明（毎日新聞） - Y!ニュース" data-url="http://headlines.yahoo.co.jp/hl?a=20140529-00000028-mai-soci" data-related="YahooNewsTopics,YahooTopicsEdit" class="twitter-share-button" data-count="horizontal" data-lang="ja">ツイート</a></li>\
+<li class="socialBtn_fb"><div class="fb-like" data-send="false" data-layout="button_count" data-width="130" data-show-faces="false" data-action="recommend"></div></li>\
+</ul>\
+</div>\
+');
+</script>
+
+
+</div>
+<div id="ynRelArticleList" class="tmplNews004 clearFix">
+ 
+    <h3 class="yjS">Yahoo!ニュース関連記事</h3>
+    <ul class="yjMt relLink clearFix">
+            <li class="first">
+<a href="http://headlines.yahoo.co.jp/videonews/jnn?a=20140529-00000035-jnn-soci" onmousedown="this.href='http://rdsig.yahoo.co.jp/media/news/related_article/from_article/RV=1/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC92aWRlb25ld3Mvam5uP2E9MjAxNDA1MjktMDAwMDAwMzUtam5uLXNvY2k-'">兵庫・姫路沖でタンカー爆発、船長不明<span class="icoVideo" title="映像">映像</span><span class="yjS">（TBS系（JNN））</span><span class="ymuiDate yjS">11時45分</span></a></li>
+            <li>
+<a href="http://headlines.yahoo.co.jp/hl?a=20140529-00000000-maiph-soci.view-000" onmousedown="this.href='http://rdsig.yahoo.co.jp/media/news/related_article/from_article/RV=1/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9obD9hPTIwMTQwNTI5LTAwMDAwMDAwLW1haXBoLXNvY2kudmlldy0wMDA-'">＜事故＞姫路沖でタンカー爆発炎上　４人やけど１人不明<span class="ymuiPhoto" title="写真">写真</span><span class="yjS">（毎日新聞）</span><span class="ymuiDate yjS">11時26分</span></a></li>
+            <li>
+<a href="http://headlines.yahoo.co.jp/hl?a=20140529-00000008-kobenext-soci" onmousedown="this.href='http://rdsig.yahoo.co.jp/media/news/related_article/from_article/RV=1/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9obD9hPTIwMTQwNTI5LTAwMDAwMDA4LWtvYmVuZXh0LXNvY2k-'">行方不明は船長　姫路・タンカー爆発<span class="yjS">（神戸新聞NEXT）</span><span class="ymuiDate yjS">11時26分</span></a></li>
+            <li>
+<a href="http://headlines.yahoo.co.jp/hl?a=20140529-00000007-kobenext-soci" onmousedown="this.href='http://rdsig.yahoo.co.jp/media/news/related_article/from_article/RV=1/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9obD9hPTIwMTQwNTI5LTAwMDAwMDA3LWtvYmVuZXh0LXNvY2k-'">１人行方不明　重傷者も　姫路・タンカー爆発<span class="yjS">（神戸新聞NEXT）</span><span class="ymuiDate yjS">11時9分</span></a></li>
+            <li>
+<a href="http://headlines.yahoo.co.jp/hl?a=20140529-00000513-san-soci" onmousedown="this.href='http://rdsig.yahoo.co.jp/media/news/related_article/from_article/RV=1/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9obD9hPTIwMTQwNTI5LTAwMDAwNTEzLXNhbi1zb2Np'">兵庫・播磨灘でタンカーが爆発　乗員１人不明、７人救助<span class="yjS">（産経新聞）</span><span class="ymuiDate yjS">10時42分</span></a></li>
+    </ul>
+ 
+ 
+</div>
+
+<!--- anemos --->
+<div id="center1"></div>
+<!--- /anemos --->
+<br />
+
+
+
+<script type="text/javascript" src="http://i.yimg.jp/lib/news/json/jsr_class_1_1.js"></script>
+<script type="text/javascript" src="http://i.yimg.jp/images/news/lib/jquery/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://i.yimg.jp/images/ds/rapid/1.5.0/ult.inc.js"></script>
+<script type="text/javascript">
+//<!--
+if (typeof YJNEWS == "undefined" || !YJNEWS) {
+    YJNEWS = {}
+}
+if (typeof YJNEWS.FB == "undefined" || !YJNEWS.FB) {
+    YJNEWS.FB = {}
+}
+YJNEWS.FB.spaceId = "2078709490";
+YJNEWS.FB.url = "http://headlines.yahoo.co.jp/hl?a=20140529-00000028-mai-soci";
+YJNEWS.FB.commentLoaded = false;
+YJNEWS.FB.numPosts = '5';
+YJNEWS.FB.initSetting = {
+                            dispArticleNum: 5, 
+                            flag: false, 
+                            deviceFlag: 'pc', 
+                            readModuleFlag: false                        };
+//-->
+</script>
+<script type="text/javascript" src="http://i.yimg.jp/lib/news/socialModule/facebook_1_6-min.js">
+</script>
+<script type="text/javascript">
+if (!(typeof YJNEWS == "undefined" || !YJNEWS) && !(typeof YJNEWS.FB == "undefined" || !YJNEWS.FB)) {
+    // DOMが用意できたら実行
+    $(function() {
+        YJNEWS.Util.jsonp('getSocialModule', function (res) {
+
+            YJNEWS.FB.initSetting.flag = res.facebookRead;
+
+            if (window.FB) {
+                YJNEWS.FB.Obj.APPCntr(YJNEWS.FB.initSetting).init();
+            } else {
+                window.fbAsyncInit = YJNEWS.FB.Obj.APPCntr(YJNEWS.FB.initSetting).init;
+            }
+        });
+    });
+}
+</script>
+
+<div id="ynDetailPageNavigation" class="ymuiContainerNopad">
+<dl class="yjS s150 clearFix"><dt>前の記事：</dt><dd><a href="http://rd.yahoo.co.jp/media/news/previous_next/*http://headlines.yahoo.co.jp/hl?a=20140529-00000029-mai-soci">＜入札妨害容疑＞長野・安曇野市の前会計局検査課長を逮捕</a><span class="ymuiDate">（<a href="http://headlines.yahoo.co.jp/list/?m=mai">毎日新聞</a>） 10時56分</span></dd></dl>
+<dl class="yjS s150 clearFix"><dt>次の記事：</dt><dd><a href="http://rd.yahoo.co.jp/media/news/previous_next/*http://headlines.yahoo.co.jp/hl?a=20140529-00000517-san-soci">
+「国交省事業」の補助金不正受給でコンサル社員ら２人逮捕　全国初</a><span class="ymuiDate">（<a href="http://headlines.yahoo.co.jp/list/?m=san">産経新聞</a>） 10時51分</span></dd></dl>
+</div>
+
+<!-- SpaceID=0 robot -->
+<!--- anemos --->
+<div id="center2"></div>
+<!--- /anemos --->
+
+</div><!--/#main-->
+</div><!--/#main-wrapper-->
+<!--main end-->
+
+<!--sub start-->
+<div id="sub">
+
+<!-- SpaceID=0 robot -->
+
+<div class="marB10"><div class="mdSub"><a href="http://rdsig.yahoo.co.jp/news/detail/pc/RV=1/RU=aHR0cDovL2JyYXppbDIwMTQueWFob28uY28uanAv"><img src="http://i.yimg.jp/images/sports/worldcup/brazil/common/banner/bn_300_90.png" alt="ブラジルワールドカップ特集" width="300" height="90"></a></div>
+</div><div class="tmplNews002-1">
+<div class="marB10">
+<div class="ymuiHeaderBGLB2 ymui3DHeaderLB2"><div><h2 class="ymuiTitle yjS">国内アクセスランキング(記事)</h2></div></div>
+<div class="ymui3DContainerLB2 ymuiBodyBorder"><div>
+<ul class="ymuiList">
+    <li class="ranking"><a href="http://headlines.yahoo.co.jp/hl?a=20140527-00000586-san-soci" onmousedown="this.href='http://rdsig.yahoo.co.jp/media/news/accr/article/headlines/RV=1/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9obD9hPTIwMTQwNTI3LTAwMDAwNTg2LXNhbi1zb2Np'" class="clearFix">
+        <span class="rankingNo">1</span>
+        <img src="http://amd.c.yimg.jp/im_sigg_tFLH4SjdBV6E2DIaD_wpA---x57-y60-q90/amd/20140527-00000586-san-000-4-view.jpg" alt="西成女性遺棄　元同級生が中国で出頭、「怒りで震える」岡田さんに何が…">
+        <div class="cap">
+            <span class="title yjSt">西成女性遺棄　元同級生が中国で出頭、「怒りで震える」岡田さんに何が…</span><span class="cp">産経新聞</span><span class="date">5月27日(火)22時15分</span>
+        </div>
+    </a></li>
+    <li class="ranking"><a href="http://headlines.yahoo.co.jp/hl?a=20140528-00000187-jij-soci" onmousedown="this.href='http://rdsig.yahoo.co.jp/media/news/accr/article/headlines/RV=1/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9obD9hPTIwMTQwNTI4LTAwMDAwMTg3LWppai1zb2Np'" >
+        <span class="rankingNo">2</span>
+        <div class="cap">
+            <span class="title yjSt">誘拐容疑で45歳女逮捕＝娘の友人、身代金要求―兵庫県警</span><span class="cp">時事通信</span><span class="date">5月28日(水)22時40分</span>
+        </div>
+    </a></li>
+    <li class="ranking"><a href="http://headlines.yahoo.co.jp/hl?a=20140526-00000559-san-soci" onmousedown="this.href='http://rdsig.yahoo.co.jp/media/news/accr/article/headlines/RV=1/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9obD9hPTIwMTQwNTI2LTAwMDAwNTU5LXNhbi1zb2Np'" >
+        <span class="rankingNo">3</span>
+        <div class="cap">
+            <span class="title yjSt">出所後すぐ、女児ら９人に性的暴行　１８件の罪に問われた無職男に無期懲役</span><span class="cp">産経新聞</span><span class="date">5月26日(月)20時24分</span>
+        </div>
+    </a></li>
+    <li class="ranking"><a href="http://headlines.yahoo.co.jp/hl?a=20140528-00000173-jij-soci" onmousedown="this.href='http://rdsig.yahoo.co.jp/media/news/accr/article/headlines/RV=1/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9obD9hPTIwMTQwNTI4LTAwMDAwMTczLWppai1zb2Np'" >
+        <span class="rankingNo">4</span>
+        <div class="cap">
+            <span class="title yjSt">「自宅で複数回使用」＝覚せい剤事件でASKA容疑者―医師を参考人聴取・警視庁</span><span class="cp">時事通信</span><span class="date">5月28日(水)21時4分</span>
+        </div>
+    </a></li>
+    <li class="ranking"><a href="http://headlines.yahoo.co.jp/hl?a=20140526-00000009-jct-soci" onmousedown="this.href='http://rdsig.yahoo.co.jp/media/news/accr/article/headlines/RV=1/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9obD9hPTIwMTQwNTI2LTAwMDAwMDA5LWpjdC1zb2Np'" >
+        <span class="rankingNo">5</span>
+        <div class="cap">
+            <span class="title yjSt">女子高生の「天皇陛下写真投稿」で議論　ネット上にアップするのに何か問題あるのか</span><span class="cp">J-CASTニュース</span><span class="date">5月26日(月)19時20分</span>
+        </div>
+    </a></li>
+</ul>
+<ul class="ymuiList ymuiSeeMore yjSt"><li><a href="http://headlines.yahoo.co.jp/accr?ty=t&c=dom" onmousedown="this.href='http://rdsig.yahoo.co.jp/media/news/accr/article/headlines/more/RV=1/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9hY2NyP3R5PXQmYz1kb20-'"><strong>もっと見る</strong></a></li>
+</ul>
+</div></div>
+</div>
+</div>
+<!-- SpaceID=0 robot -->
+<div class="marB10"><div class="mdSub"><a href="http://rd.yahoo.co.jp/media/news/other/pc/rightcolumn/realestate/*http://feature.realestate.yahoo.co.jp/daikibo/main/index.html?lc=03&amp;sc_in=m_P4139_yservice_news"><img src="http://i.yimg.jp/images/realestate/feature/1404daikibo/img/300x90.jpg" alt="Yahoo!不動産" width="300" height="90"></a></div>
+</div> 
+<script type="text/javascript" language="javascript">yjaxc_ad_ds = 'anemos_news01295'; yjaxc_ad_id = '2078709490'; yjaxc_ad_deli = 'j';</script>
+<div class="textCenter marB10">
+<script type="text/javascript" language="javascript" src="http://yjaxc.yahoo.co.jp/js/yjaxc.js"></script>
+</div>
+<div class="tmplNews002-2">
+<div class="marB10">
+<div class="ymuiHeaderBGLB2 ymui3DHeaderLB2"><div><h2 class="ymuiTitle yjS">国内アクセスランキング(雑誌)</h2></div></div>
+<div class="ymui3DContainerLB2 ymuiBodyBorder">
+<ul class="ymuiList">
+    <li class="ranking"><a href="http://zasshi.news.yahoo.co.jp/article?a=20140528-00038684-toyo-soci" onmousedown="this.href='http://rdsig.yahoo.co.jp/media/news/zasshi/news/m/accr/a/RV=1/RU=aHR0cDovL3phc3NoaS5uZXdzLnlhaG9vLmNvLmpwL2FydGljbGU_YT0yMDE0MDUyOC0wMDAzODY4NC10b3lvLXNvY2k-'" >
+        <span class="rankingNo">1</span>
+        <div class="cap">
+            <span class="title yjSt">惜しい！　「半沢直樹」後継番組がズレている</span><span class="cp">東洋経済オンライン</span><span class="date">5月28日(水)8時0分</span>
+        </div>
+    </a></li>
+    <li class="ranking"><a href="http://zasshi.news.yahoo.co.jp/article?a=20140528-00000336-cakes-peo" onmousedown="this.href='http://rdsig.yahoo.co.jp/media/news/zasshi/news/m/accr/a/RV=1/RU=aHR0cDovL3phc3NoaS5uZXdzLnlhaG9vLmNvLmpwL2FydGljbGU_YT0yMDE0MDUyOC0wMDAwMDMzNi1jYWtlcy1wZW8-'" >
+        <span class="rankingNo">2</span>
+        <div class="cap">
+            <span class="title yjSt">ASKA逮捕報道におけるChageの姿から現在のメディアを考える</span><span class="ymuiPhoto" title="写真">写真</span><span class="cp">cakes</span><span class="date">5月28日(水)16時48分</span>
+        </div>
+    </a></li>
+    <li class="ranking"><a href="http://zasshi.news.yahoo.co.jp/article?a=20140521-00645607-sspa-soci" onmousedown="this.href='http://rdsig.yahoo.co.jp/media/news/zasshi/news/m/accr/a/RV=1/RU=aHR0cDovL3phc3NoaS5uZXdzLnlhaG9vLmNvLmpwL2FydGljbGU_YT0yMDE0MDUyMS0wMDY0NTYwNy1zc3BhLXNvY2k-'" >
+        <span class="rankingNo">3</span>
+        <div class="cap">
+            <span class="title yjSt">「ブスなのに、エロくて目が離せない女」の魅力</span><span class="ymuiPhoto" title="写真">写真</span><span class="cp">週刊SPA!</span><span class="date">5月21日(水)9時51分</span>
+        </div>
+    </a></li>
+    <li class="ranking"><a href="http://zasshi.news.yahoo.co.jp/article?a=20140529-00010005-jisin-soci" onmousedown="this.href='http://rdsig.yahoo.co.jp/media/news/zasshi/news/m/accr/a/RV=1/RU=aHR0cDovL3phc3NoaS5uZXdzLnlhaG9vLmNvLmpwL2FydGljbGU_YT0yMDE0MDUyOS0wMDAxMDAwNS1qaXNpbi1zb2Np'" >
+        <span class="rankingNo">4</span>
+        <div class="cap">
+            <span class="title yjSt">心療内科医が警鐘鳴らす「福島で自殺が急増している！」</span><span class="cp">女性自身</span><span class="date">5月29日(木)7時0分</span>
+        </div>
+    </a></li>
+    <li class="ranking"><a href="http://zasshi.news.yahoo.co.jp/article?a=20140520-00643458-sspa-soci" onmousedown="this.href='http://rdsig.yahoo.co.jp/media/news/zasshi/news/m/accr/a/RV=1/RU=aHR0cDovL3phc3NoaS5uZXdzLnlhaG9vLmNvLmpwL2FydGljbGU_YT0yMDE0MDUyMC0wMDY0MzQ1OC1zc3BhLXNvY2k-'" >
+        <span class="rankingNo">5</span>
+        <div class="cap">
+            <span class="title yjSt">低収入者の部屋に共通することベスト5</span><span class="ymuiPhoto" title="写真">写真</span><span class="cp">週刊SPA!</span><span class="date">5月20日(火)9時21分</span>
+        </div>
+    </a></li>
+</ul>
+<ul class="ymuiList ymuiSeeMore yjSt"><li><a href="http://headlines.yahoo.co.jp/accr?ty=z&c=dom" onmousedown="this.href='http://rdsig.yahoo.co.jp/media/news/zasshi/news/m/accr/a/more/RV=1/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9hY2NyP3R5PXomYz1kb20-'"><strong>もっと見る</strong></a></li></ul>
+</div>
+<div class="ymui3DContainerLB2 ymuiBodyBorder"><div>
+<h3 class="yjSt"><strong>他のランキングを見る</strong></h3>
+<ul class="blockFloat3col yjS s150 clearFix">
+<li class="ymuiArrow2"><a href="http://rd.yahoo.co.jp/media/news/m/accr/p/cm/top/*http://headlines.yahoo.co.jp/cm/list">コメント</a></li>
+<li class="ymuiArrow2"><a href="http://rd.yahoo.co.jp/media/news/m/accr/p/fb/top/*http://headlines.yahoo.co.jp/fb/sum?ty=t">Facebook話題</a></li>
+</ul>
+</div></div>
+</div>
+</div>
+<!-- SpaceID=0 robot -->
+<!-- SpaceID=0 robot -->
+
+<!--- anemos --->
+<div id="rightbox1"></div>
+<!--- /anemos --->
+<!-- SpaceID=0 robot -->
+
+</div><!--/#sub-->
+<!--sub end-->
+
+</div><!--/#contents-body-->
+
+<div id="contents-footer">
+<span class="yj-guid"><img src="http://i.yimg.jp/images/clear.gif" width="1" height="1" alt="本文はここまでです"></span>
+<span class="yj-skip">
+<a href="#pagetop"><img src="http://i.yimg.jp/images/clear.gif" alt="このページの先頭へ" width="1" height="1"></a></span>
+
+<!-- SpaceID=0 robot -->
+
+<div id="cfInner">
+<div class="cfNavColumn">
+<ul>
+<li><a href="http://promo.news.yahoo.co.jp/app/yjnews/" onmousedown="this.href='http://rdsig.yahoo.co.jp/media/news/app/promo/pc_news/bigfooter/RV=1/RU=aHR0cDovL3Byb21vLm5ld3MueWFob28uY28uanAvYXBwL3lqbmV3cy8-'" rel="nofollow">
+<div class="iconAPP"><span>アプリ</span></div>
+<p><em>アプリ</em><span>データ先読みで、電車でもサクサク</span></p>
+</a></li>
+<li><a href="http://www.facebook.com/yjnews" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL3d3dy5mYWNlYm9vay5jb20veWpuZXdz/RS=^ADAOlIqMruGx2kS5b.Gx26ExcORnSs-'" rel="nofollow">
+<div class="iconFB"><span>Facebookページ</span></div>
+<p><em>Facebookページ</em><span>編集部による厳選記事を毎日配信</span></p>
+</a></li>
+<li><a href="https://twitter.com/YahooNewsTopics" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cHM6Ly90d2l0dGVyLmNvbS9ZYWhvb05ld3NUb3BpY3M-/RS=^ADAoveUG7_51IWhpkCzwYCeJOA28Dc-'" rel="nofollow">
+<div class="iconTW"><span>Twitter</span></div>
+<p><em>Twitter</em><span>リアルタイムでニュースを配信</span></p>
+</a></li>
+<li><a href="http://headlines.yahoo.co.jp/rss/list" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9yc3MvbGlzdA--/RS=^ADAdu0eNaLjP4Dfar6mGzhNaDSXcKE-'">
+<div class="iconRSS"><span>RSS</span></div>
+<p><em>RSS</em><span>購読したいニュースをお好みで</span></p>
+</a></li>
+</ul>
+</div><!-- /.cfNavColumn -->
+<div class="cfNavList">
+<ul>
+<li><a href="http://news.yahoo.co.jp" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL25ld3MueWFob28uY28uanA-/RS=^ADA5qmjrB1tP3Pnd40vItXzm_NldhE-'">トップ</a></li>
+<li><a href="http://news.yahoo.co.jp/flash" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL25ld3MueWFob28uY28uanAvZmxhc2g-/RS=^ADA.u7MwwSaam2OsRdQB_PGTA8A3t4-'">速報</a></li>
+<li><a href="http://headlines.yahoo.co.jp/hl?ty=p" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9obD90eT1w/RS=^ADAl.HnSYiviKH4bXAvLBFWv2JcMjg-'">写真</a></li>
+<li><a href="http://headlines.yahoo.co.jp/videonews/" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC92aWRlb25ld3Mv/RS=^ADAvFpYOATn6xRxz6lxVL7DmWcN.7g-'">映像</a></li>
+<li><a href="http://zasshi.news.yahoo.co.jp/" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL3phc3NoaS5uZXdzLnlhaG9vLmNvLmpwLw--/RS=^ADARnzk8GakT6UOeKcs39gxanSFyXQ-'">雑誌</a></li>
+<li><a href="http://bylines.news.yahoo.co.jp/" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2J5bGluZXMubmV3cy55YWhvby5jby5qcC8-/RS=^ADAHurU47nZ8sQWkrKZmBWk_8Wce_I-'">個人</a></li>
+<li><a href="http://buzz.news.yahoo.co.jp/" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2J1enoubmV3cy55YWhvby5jby5qcC8-/RS=^ADAlPgteCdS1JX_W5w6VrIk.2Of8ZU-'">Buzz</a></li>
+<li><a href="http://polls.dailynews.yahoo.co.jp/" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL3BvbGxzLmRhaWx5bmV3cy55YWhvby5jby5qcC8-/RS=^ADArpldudun6m98TgH0H3fxRmt5H0A-'">意識調査</a></li>
+<li class="last"><a href="http://headlines.yahoo.co.jp/accr" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9hY2Ny/RS=^ADAi1DbEoKS6xtroRqjBSuFJxsuKfk-'">ランキング</a></li>
+</ul>
+</div><!-- /.cfNavList -->
+<div class="cfSubNavList">
+<dl class="subNavL">
+<dt>ニュースカテゴリ：</dt>
+<dd><a href="http://headlines.yahoo.co.jp/hl?c=dom" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9obD9jPWRvbQ--/RS=^ADA9lyioyQHDSnfhBmy6KLDe5HEjWo-'">国内</a></dd>
+<dd><a href="http://headlines.yahoo.co.jp/hl?c=c_int" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9obD9jPWNfaW50/RS=^ADAxy3HH0if1yHpKE2RjoR9KwJdiEY-'">国際</a></dd>
+<dd><a href="http://headlines.yahoo.co.jp/hl?c=bus" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9obD9jPWJ1cw--/RS=^ADA59FwbPHKs8h0geWGBhlGNOqt7Yw-'">経済</a></dd>
+<dd><a href="http://headlines.yahoo.co.jp/hl?c=c_ent" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9obD9jPWNfZW50/RS=^ADAGtpunRgvbeQZWtzY2dULdixUIsY-'">エンタメ</a></dd>
+<dd><a href="http://headlines.yahoo.co.jp/hl?c=c_spo" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9obD9jPWNfc3Bv/RS=^ADAMignE_G.MmcN_FcYhq69MWpxApw-'">スポーツ</a></dd>
+<dd><a href="http://headlines.yahoo.co.jp/hl?c=c_sci" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9obD9jPWNfc2Np/RS=^ADAIZjtFSiFequAXMcvEYjKcxbiqX0-'">IT・科学</a></dd>
+<dd><a href="http://headlines.yahoo.co.jp/hl?c=c_life" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9obD9jPWNfbGlmZQ--/RS=^ADADkRa.S76XO88pBsu2IBdwG9PQWs-'">ライフ</a></dd>
+<dd><a href="http://headlines.yahoo.co.jp/hl?c=loc" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9obD9jPWxvYw--/RS=^ADAcweVi2QkJ5YI4i7uUI7rSm1yVwI-'">地域</a></dd>
+</dl>
+<dl class="subNavR">
+<dt>その他：</dt>
+<dd><a href="http://headlines.yahoo.co.jp/docs/copyright.html" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2hlYWRsaW5lcy55YWhvby5jby5qcC9kb2NzL2NvcHlyaWdodC5odG1s/RS=^ADATV3jbeMkcmA3ozrA1KWn5n8Y1h4-'">ニュース提供社</a></dd>
+<dd><a href="http://gsearch.news.yahoo.co.jp/gs?ty=g" onmousedown="this.href='http://rdsig.yahoo.co.jp/RV=1/RE=1402541323/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2dzZWFyY2gubmV3cy55YWhvby5jby5qcC9ncz90eT1n/RS=^ADAdoosHajEqBI5RgqIP5UuBs_vS9w-'">新聞記事横断検索</a></dd>
+</dl>
+</div><!-- /.cfSubNavList -->
+</div><!-- /#cfWrap -->
+
+</div><!--/#contents-footer-->
+
+</div><!--/#contents-->
+<!--contents end-->
+
+<!--<hr class="separation">-->
+
+<!--footer start-->
+<div id="footer">
+
+<!-- SpaceID=0 robot -->
+
+<address>
+<a href="http://docs.yahoo.co.jp/docs/info/terms/chapter1.html#cf2nd" rel="nofollow">プライバシーポリシー</a> - <a href="http://docs.yahoo.co.jp/docs/info/terms/" rel="nofollow">利用規約</a> - 
+<a href="http://headlines.yahoo.co.jp/docs/copyright.html" rel="nofollow">著作権</a>  - 
+<a href="http://headlines.yahoo.co.jp/docs/tokuteisho.html" rel="nofollow">特定商取引法の表示</a> - <a href="http://rd.yahoo.co.jp/media/news/footer/feedback/*http://ms.yahoo.co.jp/bin/yadv-info/feedback/" rel="nofollow">ご意見・ご要望</a> - <a href="http://help.yahoo.co.jp/help/jp/news/" rel="nofollow">ヘルプ・お問い合わせ</a><br>
+Copyright (C) 2014 毎日新聞社 無断転載を禁じます。 <br>
+Copyright (C) 2014 Yahoo Japan Corporation. All Rights Reserved.
+</address>
+</div><!--/#footer-->
+<!--footer end-->
+
+</div><!--/#wrapper-->
+<div id="fb-root"></div>
+<script type="text/javascript" src="http://i.yimg.jp/lib/news/common_1_0-min.js"></script>
+
+<script type="text/javascript" language="javascript">
+yjaxc_ad_ds = 'anemos_news00549';
+yjaxc_ad_id = '2078709490';
+yjaxc_ad_deli = 'm';
+</script>
+<script type="text/javascript" language="javascript" src="http://yjaxc.yahoo.co.jp/js/yjaxc.js"></script>
+
+<script type="text/javascript" src="http://i.yimg.jp/lib/news/widgets/widgets_1_2.js" charset="utf-8"></script>
+<script type="text/javascript">
+<!--
+$(function() {
+    var changeThumb = function(arrow, change) {
+        // 押された矢印の横のMM/NNの文字列を取得
+        var current = arrow.siblings(".sendPageNum").children(".molecular");
+        var max = arrow.siblings(".sendPageNum").children(".denominator");
+        var currentNum = parseInt(current.text());
+        var maxNum = parseInt(max.text());
+        var afterNum = currentNum + change;
+
+        // 変更後の値の整合性をチェック
+        if (0 >= afterNum || maxNum < afterNum) {
+            return false;
+        }
+
+        // 画像の切り替え
+        var currentImg = arrow.parent().siblings(".PhotosContainerMain:visible");
+        if (change === 1 && currentImg.next(".PhotosContainerMain").length !== 0) {
+            currentImg.hide();
+            currentImg.next(".PhotosContainerMain").show();
+        } else if (change === -1 && currentImg.prev(".PhotosContainerMain").length !== 0) {
+            currentImg.hide();
+            currentImg.prev(".PhotosContainerMain").show();
+        } else {
+            return false;
+        }
+
+        // カウンターの文字を変更する
+        current.text(afterNum);
+
+        // 矢印の処理
+        var prevArrow = arrow.parent().children("a.prev");
+        var nextArrow = arrow.parent().children("a.next");
+        if (afterNum === 1) {
+            prevArrow.removeClass("validPrev");
+            prevArrow.addClass("disabledPrev");
+        } else {
+            prevArrow.removeClass("disabledPrev");
+            prevArrow.addClass("validPrev");
+        }
+        if (afterNum === maxNum) {
+            nextArrow.removeClass("validNext");
+            nextArrow.addClass("disabledNext");
+        } else {
+            nextArrow.removeClass("disabledNext");
+            nextArrow.addClass("validNext");
+        }
+
+        return true;
+    };
+
+    $(".sendPage > .prev").each(function() {
+        var arrow = $(this).click(function(e){
+            if (changeThumb(arrow, -1) !== true) {
+                return false;
+            }
+            YJNEWS.RD('/media/news/articles/thumb/previous/');
+            return false;
+        });
+    });
+
+    $(".sendPage > .next").each(function() {
+        var arrow = $(this).click(function(e){
+            if (changeThumb(arrow, 1) !== true) {
+                return false;
+            }
+            YJNEWS.RD('/media/news/articles/thumb/next/');
+            return false;
+        });
+    });
+
+    $(".sendPage").each(function() {
+        $(this).toggle();
+    });
+});
+//-->
+</script>
+<script type="text/javascript" language="javascript" src="http://i.yimg.jp/lib/news/topics_1_5-min.js"></script>
+<script type="text/javascript" src="http://i.yimg.jp/l/jquery/jquery-plugin/json/2.0.0/json.min.js"></script>
+<script type="text/javascript" src="http://i.yimg.jp/lib/news/ult_1_1-min.js"></script>
+<script type="text/javascript">
+//<!--
+var ult = JSON.parse('{"link_data":[{"links":[{"params":{"sec":"topib","slk":"open"}},{"params":{"sec":"topib","slk":"close"}}]}],"keys":{"rpdprop":"news"},"spaceid":2078709490,"beacon_server":"ybx.yahoo.co.jp"}');
+YJNEWS.ULT.init(ult);
+//-->
+</script>
+<script type="text/javascript" language="javascript" src="http://i.yimg.jp/lib/news/top/common_pc-1.0.0.min.js"></script>
+<script type="text/javascript" language="javascript">
+<!--
+$(function() {
+    // グロナビ
+    YAHOO.JP.News.globalNav.init();
+});
+//-->
+</script>
+</body>
+</html>

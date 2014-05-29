@@ -1,0 +1,887 @@
+ <!DOCTYPE html>
+<html
+  lang="ja"
+  data-avail-langs="ja en"
+
+  data-page="entry"
+  data-admin-domain="http://blog.hatena.ne.jp"
+  data-static-domain="http://hatenablog.com"
+  data-blog="8arrow.hatenablog.com"
+  data-blogs-uri-base="http://blog.8arrow.org"
+  data-globalheader-color="b"
+  data-globalheader-type="pc"
+  data-author="nitro_idiot"
+  data-version="cb3376f552692eef52655312928aaadd"
+  data-blog-comments-top-is-new=""
+  data-device="pc"
+
+  
+
+  data-brand="hatenablog"
+
+
+  data-has-touch-view="1"
+  
+
+  itemscope
+   itemtype="http://schema.org/Article"
+
+  >
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    
+    
+    
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=7; IE=9; IE=10; IE=11" />
+    <title> Quickdocs.org で学ぶCommon LispのWebアプリ運用ノウハウ - 八発白中</title>
+
+    
+
+    
+      <link rel="canonical" href="http://blog.8arrow.org/entry/20130320/1363787619"/>
+    
+
+    <meta itemprop="name" content=" Quickdocs.org で学ぶCommon LispのWebアプリ運用ノウハウ - 八発白中"/>
+    
+      <meta itemprop="image" content="http://a0.twimg.com/profile_images/2796694955/79f4540aa574c63d7b3200bea7a0b9d2_normal.png"/>
+    
+
+    <meta property="og:title" content=" Quickdocs.org で学ぶCommon LispのWebアプリ運用ノウハウ - 八発白中"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://blog.8arrow.org/entry/20130320/1363787619"/>
+    
+      <meta property="og:image" content="http://a0.twimg.com/profile_images/2796694955/79f4540aa574c63d7b3200bea7a0b9d2_normal.png"/>
+    
+      <meta property="og:description" content="先日、QuickdocsというWebサービスを作りました。 Lispライブラリのドキュメント集約サイト「Quickdocs.org」を作りました - 八発白中 アプリ部分はほとんどCommon Lispで書かれています。今までもいくつかCommon LispでWebアプリを書いたことはありますが、公開されたWebサービスはこれが初めてです。公開当初は半日に1回落ちたり、表示が変になったりしていました。そこで2週間ほどかけて、不具合の原因を突き止めたり、それを修正して堅牢にしたり、レスポンス速度を改善したりしてきました。 Common LispのWebアプリの運用ノウハウが少し溜まってきたから車…" />
+    <meta property="og:site_name" content="http://blog.8arrow.org/"/>
+      <meta property="article:published_time" content="1363787619" />
+    <meta name="twitter:card" content="summary" />      <meta name="twitter:app:name:iphone" content="はてなブログアプリ" />
+      <meta name="twitter:app:id:iphone" content="583299321" />
+      <meta name="twitter:app:url:iphone" content="hatenablog:///open?uri=http%3A%2F%2Fblog.8arrow.org%2Fentry%2F20130320%2F1363787619" />      <meta name="twitter:site" content="@nitro_idiot" />
+      <meta name="description" content="先日、QuickdocsというWebサービスを作りました。 Lispライブラリのドキュメント集約サイト「Quickdocs.org」を作りました - 八発白中 アプリ部分はほとんどCommon Lispで書かれています。今までもいくつかCommon LispでWebアプリを書いたことはありますが、公開されたWebサービ…">
+    
+<script type="text/javascript">
+// <!--
+
+if (~navigator.userAgent.indexOf('Mac OS X')) {
+  document.write('<style type="text/css">html, body { font-family: \x27Helvetica\x27, \x27Arial\x27, \x27ヒラギノ角ゴ Pro W3\x27, \x27Hiragino Kaku Gothic Pro\x27, sans-serif; } </style>');
+} else {
+  document.write('<style type="text/css">html, body { font-family: \x27Helvetica\x27, \x27Arial\x27, \x27メイリオ\x27, \x27Meiryo\x27, \x27MS PGothic\x27, sans-serif; } </style>');
+}
+
+// -->
+</script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if IE]>
+<script type="text/javascript" src="/js/vendor/excanvas/excanvas.js"></script>
+<![endif]-->
+
+
+    <link rel="shortcut icon" href="http://hatenablog.com/images/favicon.ico">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://blog.8arrow.org/feed"/>
+    <link rel="alternate" type="application/rss+xml" title="RSS2.0" href="http://blog.8arrow.org/rss"/>
+    <link rel="author" href="http://www.hatena.ne.jp/nitro_idiot/">
+
+      <link rel="stylesheet" type="text/css" href="http://hatenablog.com/.shared.css:cb3376f552692eef52655312928aaadd:/css/theme/base.css,/css/prettify.css,/css/globalheader.css?version=cb3376f552692eef52655312928aaadd"/>
+      <link rel="stylesheet" type="text/css" href="http://hatenablog.com/-/blog_style/11696248318755958219/2975e7304776ac8a3369afb4a91fb32250c7e04b"/>    <script>    </script>
+
+    
+    <style>
+      div#google_afc_user,
+      div#google_afc_user_container,
+      div.google_afc_image,
+      div.google_afc_blocklink {
+          display: block !important;
+      }
+    </style>
+
+    
+  </head>
+
+  <body class="page-entry     ">
+    <!-- Google Universal Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-29716941-6', 'auto', {'name': 'HatenaBlogTracker'});
+  ga('HatenaBlogTracker.require', 'displayfeatures');
+  ga('HatenaBlogTracker.send', 'pageview');
+
+</script>
+<!-- End Google Universal Analytics -->
+
+    
+    <div id="header-container">
+     <div id="sp-suggest" style="display: none;"><a id="sp-suggest-link" href="#">スマートフォン用の表示で見る</a></div>
+    </div>
+
+    <div class="select_star_button_container" style="display: none;">
+      <img src="http://hatenablog.com/images/theme/hatena-star-quote-box.png?version=cb3376f552692eef52655312928aaadd" title="引用スターをつける" class="select_star_button" />
+      <img src="http://hatenablog.com/images/theme/hatena-star-quote-star.png?version=cb3376f552692eef52655312928aaadd" title="引用スターをつける" class="select_star_button select_star_star">
+    </div>
+
+    <div class="message-box" id="select-star-message-box" style="display: none;">
+      スターをつけました
+    </div>
+
+    <div id="globalheader-container" >
+  <iframe id="globalheader" height="37" frameborder="0" allowTransparency="true"></iframe>
+</div>
+
+
+    <div id="container">
+      <div id="container-inner">
+        <header id="blog-title" data-brand="hatenablog">
+  <div id="blog-title-inner" >
+    <h1 id="title"><a href="http://blog.8arrow.org/">八発白中</a></h1>
+    
+      <h2 id="blog-description">はてなブログに引越しました。</h2>
+    
+  </div>
+</header>
+
+        
+        
+
+
+
+
+<div id="content" class="hfeed"
+  
+  >
+  <div id="content-inner">
+    <div id="wrapper">
+      <div id="main">
+        <div id="main-inner">
+          
+            
+            <!-- google_ad_section_start -->
+            <!-- rakuten_ad_target_begin -->
+            
+              
+                <article class="entry hentry js-entry-article date-first autopagerize_page_element chars-7600 words-400 mode-hatena entry-odd" id="entry-11696248318755961022" data-keyword-campaign="" data-uuid="11696248318755961022">
+  <div class="entry-inner">
+    <header class="entry-header">
+      <div class="date first">
+        <a href="http://blog.8arrow.org/entries/2013/03/20" rel="nofollow">
+          <time pubdate datetime="2013-03-20T13:53:39Z" title="2013-03-20T13:53:39Z">
+            <span class="date-year">2013</span><span class="hyphen">-</span><span class="date-month">03</span><span class="hyphen">-</span><span class="date-day">20</span>
+          </time>
+        </a>
+      </div>
+      <h1 class="entry-title">
+        <a href="http://blog.8arrow.org/entry/20130320/1363787619" class="entry-title-link bookmark"> Quickdocs.org で学ぶCommon LispのWebアプリ運用ノウハウ</a>
+      </h1>
+      
+      <div class="categories no-categories">
+        
+      </div>
+      
+    </header>
+    <div class="entry-content">
+
+      
+        <p>先日、<a href="http://quickdocs.org">Quickdocs</a>というWebサービスを作りました。</p>
+
+<ul>
+<li><a href="http://d.hatena.ne.jp/nitro_idiot/20130223/1361634089">Lisp&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306E;&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;&#x96C6;&#x7D04;&#x30B5;&#x30A4;&#x30C8;&#x300C;Quickdocs.org&#x300D;&#x3092;&#x4F5C;&#x308A;&#x307E;&#x3057;&#x305F; - &#x516B;&#x767A;&#x767D;&#x4E2D;</a></li>
+</ul><p>アプリ部分はほとんど<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>で書かれています。今までもいくつか<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>でWebアプリを書いたことはありますが、公開されたWebサービスはこれが初めてです。</p><p>公開当初は半日に1回落ちたり、表示が変になったりしていました。そこで2週間ほどかけて、不具合の原因を突き止めたり、それを修正して堅牢にしたり、レスポンス速度を改善したりしてきました。<br />
+<div class="twitter-detail twitter-detail-left"><div class="twitter-detail-user"><a class="twitter-user-screen-name" href="http://twitter.com/nitro_idiot"><img src="http://a0.twimg.com/profile_images/2796694955/79f4540aa574c63d7b3200bea7a0b9d2_normal.png" alt="nitro_idiot" height="48" width="48"></a></div><div class="twitter-detail-tweet"><p class="twitter-detail-text">      <a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>のWebアプリの運用ノウハウが少し溜まってきたから車にはねられるなどする前に共有したい</p><p class="twitter-detail-info"><a href="http://twitter.com/nitro_idiot/status/308986849848856576" class="twitter-detail-info-permalink"><span class="twitter-detail-info-date">2013-03-06</span> <span class="twitter-detail-info-time">02:06:20</span></a> <span class="twitter-detail-info-source">via web</span></p></div></div><br />
+試行錯誤を繰り返してきており、伝えたいことも多いです。書いてみるとかなり雑然としてしまったのですべての人向けにおすすめできるものではなくなってしまいましたが、少しでも他に<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>の運用をしている人や後に続く人の助けになれば良いと思います。</p><p>ちなみに以前にも似たような記事を書きました。いくつかやり方が変わっていますが、少しは参考になるかもしれません。</p>
+
+<ul>
+<li><a href="http://d.hatena.ne.jp/nitro_idiot/20120323/1332516342">Common Lisp&#x306E;Web&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x793E;&#x5185;&#x904B;&#x7528;&#x3057;&#x3066;&#x307F;&#x305F; - &#x516B;&#x767A;&#x767D;&#x4E2D;</a></li>
+</ul>
+<div class="section">
+    <h4>Overview</h4>
+    <p>Quickdocsの構成はシンプルです。</p>
+
+<ul>
+<li><a href="http://fukamachi.github.com/ningle">ningle</a> (Webアプリケーション<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%EC%A1%BC%A5%E0%A5%EF%A1%BC%A5%AF">フレームワーク</a>)</li>
+<li><a href="http://nginx.org">Nginx</a> (フロントサーバ)</li>
+<li><a href="http://supervisord.org">Supervisord</a> (死活監視)</li>
+<li>SBCL 1.0.58</li>
+</ul><p>Webフレームワークとして<a href="https://fukamachi.github.com/ningle/">ningle</a>を使い、<a href="http://clacklisp.org">Clack</a>の<a class="keyword" href="http://d.hatena.ne.jp/keyword/FastCGI">FastCGI</a>バックエンドを使っています。フロントサーバには<a href="http://nginx.org">Nginx</a>を置いています。</p><p>レスポンスのキャッシュに<a href="http://www.squid-cache.org/">Squid</a>の導入も考えましたが、Nginx自身にキャッシュの機能がついていたのでそれを使っています。</p><p>Quickdocsの特殊なところではあるのですが、DBはありません。ユーザからの投稿を受け付ける機能がなく、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C8%A5%E9%A5%F3%A5%B6%A5%AF%A5%B7%A5%E7%A5%F3">トランザクション</a>が不要なので、必要なデータはすべてS式でファイルに記録しておいて、サーバ起動時にロードするようにしています。</p><p>サーバはさくらVPSのメモリ1Gを使っています。1台でJenkinsやQuickdocsのステージング環境、バッチ処理なども行なっています。まだリソースには余裕はありますが、1台でなんでもこなすので、お互いの処理が干渉しないように注意する必要があります。この方法は後ほど紹介します。</p><p>以下では主にこの構成を前提に話を書きます。</p>
+
+</div>
+<div class="section">
+    <h4>サーバを起動</h4>
+    <p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>でプロセスを<a class="keyword" href="http://d.hatena.ne.jp/keyword/daemon">daemon</a>化する方法はいくつかありますが、僕は使っていません。単純に<code>--eval</code>をつけて<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%EF%A5%F3%A5%E9%A5%A4%A5%CA%A1%BC">ワンライナー</a>でサーバを立ちあげています。</p><p>毎回起動するのを楽にするために、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Makefile">Makefile</a>を書きました。</p>
+
+<div class="section">
+    <h5><a class="keyword" href="http://d.hatena.ne.jp/keyword/Makefile">Makefile</a></h5>
+    <p>以下はQuickdocsで使っている<a class="keyword" href="http://d.hatena.ne.jp/keyword/Makefile">Makefile</a>の抜粋です。<code>sbcl</code>というマクロを作って、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%EF%A5%F3%A5%E9%A5%A4%A5%CA%A1%BC">ワンライナー</a>を書きやすくしています。</p>
+<pre class="code lang-make" data-lang="make" data-unlink><span class="synIdentifier">SERVER_PORT</span>=8080
+<span class="synIdentifier">SWANK_PORT</span>=4005
+<span class="synIdentifier">PROJECT_ROOT</span>=<span class="synIdentifier">$(</span><span class="synStatement">abspath</span><span class="synIdentifier"> $(</span><span class="synStatement">dir</span><span class="synIdentifier"> $(</span><span class="synStatement">lastword</span><span class="synIdentifier"> $(MAKEFILE_LIST))))</span>
+
+<span class="synPreProc">define sbcl</span>
+<span class="synPreProc">	sbcl --noinform --disable-debugger \</span>
+<span class="synPreProc">		--eval '(pushnew #P&quot;</span><span class="synIdentifier">$(PROJECT_ROOT)</span><span class="synPreProc">/&quot; asdf:*central-registry*)' \</span>
+<span class="synPreProc">		--eval '(progn </span><span class="synIdentifier">$1</span><span class="synPreProc">)' \</span>
+<span class="synPreProc">		--eval '(progn </span><span class="synIdentifier">$2</span><span class="synPreProc">)'</span>
+<span class="synPreProc">endef</span>
+
+<span class="synIdentifier">start:</span>
+<span class="synConstant">	</span><span class="synIdentifier">$(</span><span class="synStatement">call</span><span class="synIdentifier"> sbcl, \</span>
+<span class="synIdentifier">		(ql:quickload :quickdocs)</span><span class="synConstant"> (ql:quickload :swank), </span><span class="synSpecial">\</span>
+<span class="synConstant">		(quickdocs.server:start-server :mode :production :debug nil :server :fcgi :port </span><span class="synIdentifier">$(SERVER_PORT)</span><span class="synConstant">) </span><span class="synSpecial">\</span>
+<span class="synConstant">		(swank:create-server :port </span><span class="synIdentifier">$(SWANK_PORT)</span><span class="synConstant"> :style :spawn :dont-close t))</span>
+</pre><p><code>swank:create-server</code>は必須ではありませんが、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C7%A5%D0%A5%C3%A5%B0">デバッグ</a>や、後述する<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%DB%A5%C3%A5%C8%A5%C7%A5%D7%A5%ED%A5%A4">ホットデプロイ</a>に必要です。</p><p>これで以下のように実行すればサーバが起動できます。</p>
+<pre class="code lang-" data-lang="" data-unlink>make -f /srv/www/quickdocs/Makefile start SERVER_PORT=10080 SWANK_PORT=4025</pre><p>どのディレクトリにいるときでも大丈夫なように、PROJECT_ROOTはカレントディレクトリではなく<a class="keyword" href="http://d.hatena.ne.jp/keyword/Makefile">Makefile</a>があるディレクトリにする必要があります。</p><p>もしHunchentootを使いたいなら、<code>:server</code>の部分を<code>:fcgi</code>ではなく<code>:hunchentoot</code>などにしないといけません。</p>
+
+</div>
+<div class="section">
+    <h5>Nginx</h5>
+    <p>Hunchentootを使って直接リクエストを捌く気なら、SERVER_PORT=80を指定すればNginxなどは必要ありません。別ポートで起動して、リバースプロキシを使ったり、上記のように<a class="keyword" href="http://d.hatena.ne.jp/keyword/FastCGI">FastCGI</a>バックエンドを使うならNginxや<a class="keyword" href="http://d.hatena.ne.jp/keyword/Apache">Apache</a>が必要です。</p><p>以下はNginxの設定の抜粋です。</p>
+<pre class="code lang-" data-lang="" data-unlink>server {
+    listen 80;
+    server_name quickdocs.org;
+    access_log  /var/log/nginx/quickdocs_access.log;
+    error_log   /var/log/nginx/quickdocs_error.log;
+
+    error_page 500 502 503 504 /html/50x.html;
+
+    location = /html/50x.html {
+        root /srv/www/quickdocs/static/;
+    }
+    location ~* ^/(css|images|js)/(.+)$ {
+        root /srv/www/quickdocs/static/;
+        access_log off;
+        expires max;
+        break;
+    }
+    location ~* ^/(favicon.ico|robots.txt|apple-touch-icon) {
+        log_not_found off;
+        access_log off;
+        root /srv/www/quickdocs_stage/static;
+    }
+
+    location / {
+        fastcgi_pass 127.0.0.1:10080;
+        fastcgi_connect_timeout 300;
+        include fastcgi_params;
+    }
+}</pre><p>ここでは以下のことを行なっています。</p>
+
+<ul>
+<li>50x系エラーが出たときに静的なエラーページを表示</li>
+<li>静的ファイルは直接配信</li>
+<li>それ以外は<a class="keyword" href="http://d.hatena.ne.jp/keyword/FastCGI">FastCGI</a>サーバに投げる</li>
+</ul><p>server_nameには自分が持っているドメインを指定し、<a class="keyword" href="http://d.hatena.ne.jp/keyword/DNS">DNS</a>レコードを適切に設定しておきます。</p><p>上記のファイルを/etc/nginx/sites-available/quickdocsに置いてsites-enabledに<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B7%A5%F3%A5%DC%A5%EA%A5%C3%A5%AF%A5%EA%A5%F3%A5%AF">シンボリックリンク</a>を貼り、Nginxを再起動します。</p><p>これでサーバの80番ポートにアクセスしてサイトが表示されれば成功です。</p>
+
+</div>
+</div>
+<div class="section">
+    <h4>死活監視</h4>
+    <p>そのまま起動しておくと、いくらエラーハンドリングをしていても、メモリ不足などの致命的なエラーが出ればサービスが落ちてしまいます。そのための死活監視です。</p><p>僕は <a href="http://supervisord.org">Supervisord</a> を使いましたが、<a class="keyword" href="http://d.hatena.ne.jp/keyword/daemontools">daemontools</a>など自分が慣れたものを使えばいいと思います。</p><p>Supervisorでは以下のようにcommandのところでmake startするようにすれば良いです。</p>
+<pre class="code lang-" data-lang="" data-unlink>[program:quickdocs]
+command=make -f /srv/www/quickdocs/Makefile start SERVER_PORT=10080 SWANK_PORT=4025
+numprocs=1
+autostart=true
+autorestart=true
+user=quickdocs
+redirect_stderr=true
+stdout_logfile=/var/log/supervisor/quickdocs.log</pre><p>良いことなのかどうかわかりませんが、僕はSupervisorでサーバの再起動も行なっています。</p>
+<pre class="code lang-" data-lang="" data-unlink>sudo supervisorctl restart quickdocs</pre><p>起動時にプロセスIDとか記録しておいてkillするの面倒ですからね。</p>
+
+</div>
+<div class="section">
+    <h4>デプロイ</h4>
+    <p>デプロイするのに毎回サーバに<a class="keyword" href="http://d.hatena.ne.jp/keyword/SSH">SSH</a>するのは面倒なので、途中からデプロイツールを導入しました。</p>
+
+<div class="section">
+    <h5>Fabric</h5>
+    <p>僕は<a href="http://fabfile.org">Fabric</a>を使いましたが、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Ruby">Ruby</a>が好きな人は<a href="http://capistranorb.com/">Capistrano</a>が良いかもしれません。</p><p>以下はfabfile.pyの抜粋です。</p>
+<pre class="code lang-python" data-lang="python" data-unlink><span class="synPreProc">from</span> fabric.api <span class="synPreProc">import</span> sudo, run, env, cd
+env.hosts = [<span class="synConstant">'yourquickdocs.org'</span>]
+env.user = <span class="synConstant">'quickdocs'</span>
+env.directory = <span class="synConstant">'/srv/www/quickdocs'</span>
+env.project_name = <span class="synConstant">'quickdocs'</span>
+
+<span class="synStatement">def</span> <span class="synIdentifier">update</span>():
+    <span class="synStatement">with</span> cd(env.directory):
+        run(<span class="synConstant">'git pull'</span>)
+
+<span class="synStatement">def</span> <span class="synIdentifier">restart</span>():
+    sudo(<span class="synConstant">'supervisorctl restart %s'</span> % env.project_name, shell=<span class="synIdentifier">False</span>)
+
+<span class="synStatement">def</span> <span class="synIdentifier">deploy</span>():
+    update()
+    restart()
+
+<span class="synStatement">def</span> <span class="synIdentifier">tail_access</span>():
+    run(<span class="synConstant">'tail -f /var/log/nginx/%s_access.log'</span> % env.project_name)
+
+<span class="synStatement">def</span> <span class="synIdentifier">tail_error</span>():
+    run(<span class="synConstant">'tail -n 100 -f /var/log/apps/%s_error.log'</span> % env.project_name)
+</pre><p>これで <code>fab deploy</code> などとすればデプロイできます。</p>
+
+</div>
+<div class="section">
+    <h5><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%DB%A5%C3%A5%C8%A5%C7%A5%D7%A5%ED%A5%A4">ホットデプロイ</a></h5>
+    <p>始めの頃はデプロイするとき、素直にプロセスを再度立ちあげていたため、デプロイするたびに5秒くらいダウンタイムがありました。</p><p>けれど、せっかくの<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>なのでサーバを無停止でデプロイしたいです。</p><p>サーバ起動時にswankサーバを立ち上げるようにしていれば、<a href="http://quickdocs.org/swank-client/">swank-client</a>というライブラリを使ってサーバに繋いで任意のコードを実行させられます。これを利用して以下のように<a class="keyword" href="http://d.hatena.ne.jp/keyword/Makefile">Makefile</a>とfabfile.pyに追記します。</p>
+<pre class="code lang-make" data-lang="make" data-unlink><span class="synIdentifier">hot_deploy:</span>
+<span class="synConstant">	</span><span class="synIdentifier">$(</span><span class="synStatement">call</span><span class="synIdentifier"> $(LISP), \</span>
+<span class="synIdentifier">		(ql:quickload :swank-client)</span><span class="synConstant">, </span><span class="synSpecial">\</span>
+<span class="synConstant">		(swank-client:with-slime-connection (conn &quot;localhost&quot; </span><span class="synIdentifier">$(SWANK_PORT)</span><span class="synConstant">) </span><span class="synSpecial">\</span>
+<span class="synConstant">			(swank-client:slime-eval (quote (handler-bind ((error (function continue))) (ql:quickload :quickdocs))) conn)) </span><span class="synSpecial">\</span>
+<span class="synConstant">		(sb-ext:quit))</span>
+</pre><pre class="code lang-python" data-lang="python" data-unlink><span class="synStatement">def</span> <span class="synIdentifier">hot_deploy</span>():
+    <span class="synStatement">with</span> cd(env.directory):
+        run(<span class="synConstant">'make hot_deploy SWANK_PORT=%s'</span> % env.swank_port)
+</pre><p><code>fab update hot_deploy</code> などとすれば<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%DB%A5%C3%A5%C8%A5%C7%A5%D7%A5%ED%A5%A4">ホットデプロイ</a>できます。</p>
+
+</div>
+</div>
+<div class="section">
+    <h4>サーバにテスト環境を立てる</h4>
+    <p>ローカルでは動いたのにデプロイすると動かないみたいなことがあります。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>処理系の違いだったり、OSの違いだったり、依存パッケージが足りなかったり。そこで同じサーバか似たサーバにテスト環境を置いて一通りテストします。</p><p>このとき、テスト環境用に新しくユーザを作る (たとえばquickdocs_dev) か、Quicklispのdistを分けるほうが賢明です。これはテスト環境だけQuicklispの新しいバージョンを試してちゃんと動くかをチェックしたりするのに使います。</p><p>同じユーザでQuicklispのディレクトリだけを分けたいというときは、.sbclrcを複数用意して、<code>--userinit</code>の指定を変更すれば実現できます。</p><p>試してはいませんが、quicklispのディレクトリ自身を<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA">リポジトリ</a>に含めれば<a class="keyword" href="http://d.hatena.ne.jp/keyword/Ruby">Ruby</a>の<a href="http://gembundler.com">Bundler</a>や<a class="keyword" href="http://d.hatena.ne.jp/keyword/Perl">Perl</a>の<a href="http://search.cpan.org/~miyagawa/carton-v0.9.10/docs/carton.pod">Carton</a>のような使い方ができるかもしれません。</p>
+
+</div>
+<div class="section">
+    <h4>パフォーマンス改善</h4>
+    <p>Nginxで<a class="keyword" href="http://d.hatena.ne.jp/keyword/FastCGI">FastCGI</a>キャッシュを使えばアプリ側にビューキャッシュの機構を作ったり<a class="keyword" href="http://d.hatena.ne.jp/keyword/Squid">Squid</a>などキャッシュサーバを導入せずに済みます。</p><p>ただ、ページ単位でのキャッシュの削除機能がデフォルトでついていないため、<a href="https://github.com/FRiCKLE/ngx_cache_purge">ngx_cache_purge</a>というプラグインを含めてNginxをビルドすると扱いやすくなります。</p><p>以下はキャッシュを利用するときのNginxの設定の抜粋です。</p>
+<pre class="code lang-" data-lang="" data-unlink>    # HEADアクセスはキャッシュを使わない
+    if ($request_method = &#34;HEAD&#34;) {
+        set $do_not_cache 1;
+    }
+
+    location / {
+        fastcgi_pass 127.0.0.1:9080;
+        fastcgi_connect_timeout 30;
+        fastcgi_cache qd_cache;
+        fastcgi_no_cache $do_not_cache;
+        fastcgi_cache_bypass $do_not_cache;
+        fastcgi_cache_key $scheme://$host$request_uri;
+        fastcgi_cache_valid  200 1d;
+        fastcgi_cache_valid  301 1d;
+        fastcgi_cache_valid  any 15m;
+        include fastcgi_params;
+    }</pre><p>Quickdocsの場合は内容が変更されることが基本的にないので、キャッシュの期間を長めにしています。アプリによって3hなどに変更すると良いと思います。</p>
+
+</div>
+<div class="section">
+    <h4><a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>とShell</h4>
+    
+<div class="section">
+    <h5>シェルコマンドを使う</h5>
+    <p>Common Lisperなら堂々とすべてのコードを<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>で完結すべきだ、という意見もあると思いますが、実際にアプリケーションを書いていると、やはり理想論だと感じます。</p><p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>のライブラリは有名な<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%AF%A5%EA%A5%D7%A5%C8%B8%C0%B8%EC">スクリプト言語</a>と比べればずっと少ないですし、無いものを自前で一から作ってそれなりのクオリティで保守し続けられるほど<a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>コミュニティは成熟していません。必要な部分はうまく他の言語の力を借りたほうが現状ではうまくいきます。</p><p>具体例をあげます。たとえば、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>で<a href="http://www.imagemagick.org/script/index.php">ImageMagick</a>を使いたい、と思ったときに<a href="http://quickdocs.org/lisp-magick/">lisp-magick</a>という<a class="keyword" href="http://d.hatena.ne.jp/keyword/ImageMagick">ImageMagick</a>のCL<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D0%A5%A4%A5%F3%A5%C7%A5%A3%A5%F3%A5%B0">バインディング</a>を使おうとしたことがあります。</p><p>けれど、Quicklispでインストールして試してみるも、素直に動かず、調べてみると長くメンテナンスもされていないようなので使うのを諦めました。そんな怪しいライブラリを使うよりは、標準でついてる<code>convert</code>コマンドを<code>asdf:run-shell-command</code>で叩くほうがずっと良いです。</p><p>Quickdocsでは他にMarkdownからHTMLへの変換に<a class="keyword" href="http://d.hatena.ne.jp/keyword/Haskell">Haskell</a>の<a href="http://johnmacfarlane.net/pandoc/">Pandoc</a>を使っています。<a href="http://quickdocs.org/cl-markdown">CL-Markdown</a>はよく出来たライブラリですが、GitHub Flavored Markdownに対応していなかったので使うのをやめました。</p>
+
+</div>
+<div class="section">
+    <h5><a class="keyword" href="http://d.hatena.ne.jp/keyword/Lisp">Lisp</a>内でシェルを叩くときの注意</h5>
+    <p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>でシェルコマンドを実行するときに注意すべき点ももちろんあります。もしそのシェルコマンドの実行にかなり時間がかかるケースがある場合は、適切にタイムアウト処理をしなければいけません。</p><p><a href="http://quickdocs.org/trivial-timeout/">trivial-timeout</a>というライブラリがありますが、使い物になりません。タイムアウトはしますが、例外を投げるだけでシェルプロセスがそのままゾンビ化してしまうからです。</p><p>これは普通に<code>timeout</code>コマンドを使えば良いです。</p>
+<pre class="code lang-lisp" data-lang="lisp" data-unlink>timeout <span class="synConstant">5</span> pandoc /path/to/README.markdown
+</pre><p>また、別プロセスで実行されたシェルコマンドがリソースを食いつぶしてしまって、Webサーバのレスポンスに影響が出ることがあります。これを防ぐために<code>ulimit</code>や<a href="http://cpulimit.sourceforge.net/">cpulimit</a>を適切に使うと良いです。</p><p>まあ、毎回実行する必要もないものはキャッシュしておいたり、あらかじめバッチ処理で生成しておくほうが確実とは思います。</p>
+
+</div>
+</div>
+<div class="section">
+    <h4>おわりに</h4>
+    <p>いくつか抜粋して紹介しましたが、Quickdocsの全<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%BD%A1%BC%A5%B9%A5%B3%A1%BC%A5%C9">ソースコード</a>はGitHubに上がっています。</p>
+
+<ul>
+<li><a href="https://github.com/fukamachi/quickdocs">fukamachi/quickdocs &middot; GitHub</a></li>
+</ul><p><a href="http://clacklisp.org">Clack</a>を使っていて実際に公開され動いているWebアプリケーションとしては初めてかもしれません。参考にしていただければと思います。</p><p>長々と書きましたが、僕は<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>でのWebアプリの運用に長けているわけではありませんし、もちろん運用を長く経験された方からみると拙い解決方法が多いと思います。</p><p>とはいえ、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>のような小さい言語コミュニティでは、開発も運用もとりあえずやってみて、まず道を作っていくことが重要だと思いました。</p><p>何かわからないことがあれば遠慮なく<a href="https://twitter.com/nitro_idiot">Twitter</a>やE-mail (e&#46;arrows&#64;<a class="keyword" href="http://d.hatena.ne.jp/keyword/gmail">gmail</a>&#46;com) などで聞いてください。</p><p>逆に、他にも<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>のアプリケーションの運用をしている方はぜひノウハウを教えてください！</p>
+
+</div>
+      
+    </div>
+    <footer class="entry-footer">
+      <p class="entry-footer-section">
+        <span class="author vcard"><span class="fn" data-load-nickname="1" data-user-name="nitro_idiot">nitro_idiot</span></span>
+        <span class="entry-footer-time"><a href="http://blog.8arrow.org/entry/20130320/1363787619"><time data-relative datetime="2013-03-20T13:53:39Z" title="2013-03-20T13:53:39Z" pubdate class="updated">2013-03-20 22:53</time></a></span>
+      </p>
+      <div class="hatena-star-container">
+      </div>
+      
+
+      <div class="customized-footer">
+        <div class="social-buttons">
+  
+  
+    <a href="http://b.hatena.ne.jp/entry/http://blog.8arrow.org/entry/20130320/1363787619" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="この記事をはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="この記事をはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+  
+  
+    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fblog.8arrow.org%2Fentry%2F20130320%2F1363787619&amp;layout=button_count&amp;show_faces=false&amp;width=130&amp;action=like&amp;height=21" class="facebook-like-button" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:21px;" allowTransparency="true"></iframe>
+  
+  
+    <iframe allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fblog.8arrow.org%2Fentry%2F20130320%2F1363787619&text=%20Quickdocs.org%20%E3%81%A7%E5%AD%A6%E3%81%B6Common%20Lisp%E3%81%AEWeb%E3%82%A2%E3%83%97%E3%83%AA%E9%81%8B%E7%94%A8%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6%20-%20%E5%85%AB%E7%99%BA%E7%99%BD%E4%B8%AD&lang=ja" class="twitter-share-button" style="width:130px; height:20px;"></iframe>
+  
+  
+    <div class="g-plusone" data-size="medium" data-href="http://blog.8arrow.org/entry/20130320/1363787619"></div>
+  
+  
+  
+  
+</div>
+
+
+          
+
+          
+
+          
+            <div class="entry-footer-html">    <!-- X:S ZenBackWidget --><script type="text/javascript">document.write(unescape("%3Cscript")+" src='http://widget.zenback.jp/?base_uri=http%3A//blog.8arrow.org&nsid=116589683810521419%3A%3A116589712801563571&rand="+Math.ceil((new Date()*1)*Math.random())+"' type='text/javascript'"+unescape("%3E%3C/script%3E"));</script><!-- X:E ZenBackWidget --></div>
+          
+        
+      </div>
+
+      <div class="comment-box">
+        
+        <ul class="comment">
+          
+        </ul>
+        
+          <a class="leave-comment-title">コメントを書く</a>
+        
+      </div>
+    </footer>
+  </div>
+</article>
+
+                
+
+                
+                  
+                  
+                  <div class="permalink pager">
+                    
+                      
+                      <span class="pager-prev">
+                        <a href="http://blog.8arrow.org/entry/20130617/1371458729" rel="prev">
+                          <span class="pager-arrow">« </span>
+                           Lispユーティリティの新しい解決案「Quic…
+                        </a>
+                      </span>
+                    
+                    
+                      
+                      <span class="pager-next">
+                        <a href="http://blog.8arrow.org/entry/20130223/1361634089" rel="next">
+                           Lispライブラリのドキュメント集約サイト…
+                          <span class="pager-arrow"> »</span>
+                        </a>
+                      </span>
+                    
+                  </div>
+                
+
+              
+            
+            <!-- rakuten_ad_target_end -->
+            <!-- google_ad_section_end -->
+
+            
+          
+        </div>
+      </div>
+
+      
+      <aside id="box1">
+        <div id="box1-inner">
+        </div>
+      </aside>
+
+    </div><!-- #wrapper -->
+
+    <aside id="box2">
+  <div id="box2-inner">
+    
+      
+
+<div class="hatena-module hatena-module-profile">
+  <div class="hatena-module-title">
+    About Me
+  </div>
+  <div class="hatena-module-body">
+    
+    <a href="http://blog.8arrow.org/about">
+      <img src="http://cdn1.www.st-hatena.com/users/ni/nitro_idiot/profile.gif"
+      alt="id:nitro_idiot" class="profile-icon" />
+    </a>
+    
+
+    
+    <span class="id">
+      <a href="http://blog.8arrow.org/about"><span data-load-nickname="1" data-user-name="nitro_idiot">id:nitro_idiot</span></a>
+      
+  
+    
+      
+      <a href="http://blog.hatena.ne.jp/guide/pro" title="はてなブログPro"><i class="icon-pro" /></i></a>
+    
+  
+
+
+    </span>
+    
+
+    
+
+    
+    <div class="hatena-follow-button-box btn-subscribe">
+      <a href="#" class="hatena-follow-button">
+        <span class="subscribing">
+          <span class="foreground">購読中です</span>
+          <span class="background">読者をやめる</span>
+        </span>
+        <span class="unsubscribing">
+          <span class="foreground">読者になる</span>
+          <span class="background">読者になる</span>
+        </span>
+      </a>
+      <div class="subscription-count-box">
+        <span class="subscription-balloon">
+        </span>
+        <span class="subscription-count">
+        </span>
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-html">
+  
+  <div class="hatena-module-body">
+    <style type="text/css">
+.my-service-icons {
+  padding-left: 0;
+  text-align: center;
+}
+.my-service-icons li {
+  display: inline-block;
+  margin: 0 8px;
+}
+</style>
+<ul class="my-service-icons" >
+  <li>
+    <a href="https://github.com/fukamachi" target="_blank"><img src="http://8arrow.org/images/github-icon.png" alt="GitHub" title="GitHub" width="40px" height="40px" /></a>
+  </li>
+  <li>
+    <a href="http://nitro-idiot.hatenablog.com/" target="_blank"><img src="http://8arrow.org/images/hatenablog-icon.png" alt="Diary" title="Diary" width="40px" height="40px" /></a>
+  </li>
+  <li>
+    <a href="https://twitter.com/nitro_idiot" target="_blank"><img src="http://8arrow.org/images/twitter-icon.png" alt="Twitter" title="Twitter" width= "49px" height="40px" /></a>
+  </li>
+</ul>
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-html">
+  
+    <div class="hatena-module-title">Website</div>
+  
+  <div class="hatena-module-body">
+    <a href="http://8arrow.org/" target="_blank"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/n/nitro_idiot/20140116/20140116163928.png" alt="My Portfolio" /></a>
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-recent-entries ">
+  <div class="hatena-module-title">
+    <a href="http://blog.8arrow.org/archive">
+      Recent Entries
+    </a>
+  </div>
+  <div class="hatena-module-body">
+    <ul class="recent-entries hatena-urllist ">
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/04/16/233941" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">軽量なCommon LispのDBライブラリ「datafly」を作りました        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/03/02/172920" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">株式会社はてなを退職しました        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/02/04/041417" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">誰向けかわからないCommon Lispでの関数型プログラミング入門とその未来        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/01/24/075236" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">Lisp Meet Up #13 に参加しました        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/01/22/184258" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">新しいCommon Lisp方言「CL21」を作ったので意見を募集します        </a>
+        
+
+              </div>
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-archive">
+  <div class="hatena-module-title">
+    <a href="http://blog.8arrow.org/archive">Archive</a>
+  </div>
+  <div class="hatena-module-body">
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-search-box">
+  <div class="hatena-module-title">
+    Search
+  </div>
+  <div class="hatena-module-body">
+    <form class="search-form" role="search" action="http://blog.8arrow.org/search" method="get">
+      <input type="text" name="q" class="search-module-input" value="" placeholder="ブログ内検索" required>
+      <input type="submit" value="検索" class="search-module-button" />
+    </form>
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-circles">
+  <div class="hatena-module-title">
+    Groups
+  </div>
+  <div class="hatena-module-body">
+    <ul class="circle-list">
+      
+        <li title="Lisp" data-circle-id="12921228815713769536" data-circle-mtime="1393426757">
+  <a href="http://hatenablog.com/g/12921228815713769536"><img class="circle-image" src="http://cdn.image.st-hatena.com/image/square/66f5d18c388e0cb1d804be358c6cfb48df174304/height=96;version=1;width=96/http%3A%2F%2Fcdn.mogile.archive.st-hatena.com%2Fv1%2Fimage%2Fnitro_idiot%2F297785937330261174.png" alt="Lisp" title="Lisp"></a></li>
+      
+    </ul>
+  </div>
+</div>
+
+    
+    
+  </div>
+</aside>
+
+  </div>
+</div>
+
+
+
+
+
+
+        
+      </div>
+    </div>
+
+    
+      <footer id="footer" data-brand="hatenablog">
+  <div id="footer-inner">
+    <address>
+      
+      <a href="http://blog.8arrow.org/about"><img src="http://cdn1.www.st-hatena.com/users/ni/nitro_idiot/profile.gif" width="16" height="16" alt=""/>
+        <span data-load-nickname="1" data-user-name="nitro_idiot">nitro_idiot</span>
+      </a>
+    </address>
+    <p class="services"><a href="http://hatenablog.com/">Hatena Blog</a> / <a href="http://d.hatena.ne.jp/">Hatena::Diary</a></p>
+  </div>
+</footer>
+
+    
+
+    
+
+    
+      <script src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
+    
+
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+  {"parsetags": "explicit"}
+</script>
+<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+
+
+<script type="text/javascript" src="http://hatenablog.com/js?version=cb3376f552692eef52655312928aaadd"></script>
+
+<script type="text/javascript" src="http://hatenablog.com/js/texts-ja.js?version=cb3376f552692eef52655312928aaadd"></script>
+
+
+  <script type="text/javascript">Hatena.Diary.loadGlobalHeader()</script>
+
+
+
+
+
+    
+       <script id="google-analytics-script" type="text/javascript">
+var _gaq = _gaq || [];
+
+(function($){
+
+  // 現在のドメイン
+  
+    
+    
+      
+      var current_domain = "blog.8arrow.org".split(":")[0];
+    
+  
+
+  
+
+  
+
+   
+   _gaq.push(['all._setAccount', 'UA-7855606-1']);
+   _gaq.push(['all._setDomainName', current_domain]);
+   _gaq.push(['all._setSampleRate', '10']);
+   _gaq.push(['all._trackPageview']);
+
+  
+    _gaq.push(['a._setAccount', 'UA-29716941-5']);
+    _gaq.push(['a._setDomainName', current_domain]);
+    _gaq.push(['a._setCustomVar', 1, 'PageId', document.documentElement.getAttribute('data-page'), 3 /* page-level */]);
+      var keywordCampaigns = [];
+      $('.js-entry-article').each(function (index, element) {
+        var keywords = $(element).data('keywordCampaign').split(' ');
+        keywords = _.filter(keywords, function (keyword) { return keyword.length > 0 });
+        keywordCampaigns = keywordCampaigns.concat(keywords);
+      });
+      if (keywordCampaigns.length > 0) {
+        _gaq.push(['a._setCustomVar', 3, 'KeywordCampaign', keywordCampaigns[0], 3 /* page-level */]);
+      }
+      _gaq.push(['a._trackPageview']);
+  
+    _gaq.push(['b._setAccount', 'UA-29716941-2']);
+    _gaq.push(['b._setDomainName', current_domain]);
+    _gaq.push(['b._setCustomVar', 1, 'PageId', document.documentElement.getAttribute('data-page'), 3 /* page-level */]);
+      var keywordCampaigns = [];
+      $('.js-entry-article').each(function (index, element) {
+        var keywords = $(element).data('keywordCampaign').split(' ');
+        keywords = _.filter(keywords, function (keyword) { return keyword.length > 0 });
+        keywordCampaigns = keywordCampaigns.concat(keywords);
+      });
+      if (keywordCampaigns.length > 0) {
+        _gaq.push(['b._setCustomVar', 3, 'KeywordCampaign', keywordCampaigns[0], 3 /* page-level */]);
+      }
+      _gaq.push(['b._trackPageview']);
+  
+
+  $(function () {
+      $(document).delegate('[data-track-event="click"]', 'click', function () {
+          
+          _gaq.push([ 'a._trackEvent', 'Blogs', 'Click', this.getAttribute('data-track-key') ]);
+          
+          _gaq.push([ 'b._trackEvent', 'Blogs', 'Click', this.getAttribute('data-track-key') ]);
+          
+      });
+  });
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  var available_domains = ["blog.hatena.ne.jp"];
+  
+    available_domains.push("hatenablog.com".split(":")[0]);
+  
+    available_domains.push("hatenablog.jp".split(":")[0]);
+  
+    available_domains.push("hateblo.jp".split(":")[0]);
+  
+    available_domains.push("hatenadiary.com".split(":")[0]);
+  
+    available_domains.push("hatenadiary.jp".split(":")[0]);
+  
+  $('a').on('click', function() {
+    // 同じドメインならスキップ
+    if ( !this.hostname || this.hostname.indexOf(current_domain) != -1 ) return;
+
+    var cross_domain = false;
+    for (var i = 0, len = available_domains.length; i < len; i++) {
+      if (this.hostname.indexOf(available_domains[i]) != -1) cross_domain = true;
+    }
+    if ( cross_domain ) {
+      
+      _gaq.push(['a._link', this.href]);
+      
+      _gaq.push(['b._link', this.href]);
+      
+    }
+  });
+
+})(jQuery);
+</script>
+
+       
+  <script id="hatena-counter-script" type="text/javascript"><!--
+      hatena_counter_name = "nitro_idiot";
+      hatena_counter_id = "104";
+      hatena_counter_ref = document.referrer+"";
+      hatena_counter_screen = screen.width + "x" + screen.height+","+screen.colorDepth;
+  //--></script>
+  <script type="text/javascript" src="http://counter.hatena.ne.jp/js/counter.js"></script>
+  <noscript><img src="http://counter.hatena.ne.jp/nitro_idiot/104" border="0" alt="counter"></noscript>
+
+
+    
+
+  </body>
+</html>
+

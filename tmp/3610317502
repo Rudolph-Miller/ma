@@ -1,0 +1,501 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+
+<link rel="shortcut icon" href="http://sfahacks.com/wp-content/themes/sfa/images/favicon.ico">
+<link href="http://sfahacks.com/wp-content/themes/sfa/style.css" rel="stylesheet" type="text/css" media="all">
+<script src="http://sfahacks.com/wp-content/themes/sfa/js/jquery.js"></script>
+<script src="http://sfahacks.com/wp-content/themes/sfa/js/thickbox.js"></script>
+<script src="http://sfahacks.com/wp-content/themes/sfa/js/yuga.js"></script>
+<!--[if lt IE 9]>
+<script src="http://sfahacks.com/wp-content/themes/sfa/dist/html5shiv.js"></script>
+<![endif]-->
+<!--テスト-->
+<!-- Update your html tag to include the itemscope and itemtype attributes -->
+<html itemscope itemtype="http://schema.org/Article">
+
+<!-- Add the following three tags inside head -->
+<meta itemprop="name" content="ビッグデータ時代の顧客の見える化を実現するCRM「Customer Rings (カスタマーリングス)」">
+<meta itemprop="description" content="はじめに近年のトレンドとして、インターネットの普及とIT技術の進化により、大量で、多様な、そして変化する頻度の多いデータである、「ビッグデータ」を活用し、マーケティング活動に活用していくことが企業の課題となっています。ビッグデータと言わ ...">
+<meta itemprop="image" content="http://sfahacks.com/wp-content/uploads/2014/05/Rings1.png">
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.4.11 - http://yoast.com/wordpress/seo/ -->
+<title>ビッグデータ時代の顧客の見える化を実現するCRM「Customer Rings (カスタマーリングス)」 - SFA Hacks - SFA徹底攻略！SFAの今を伝える</title>
+<meta name="description" content="ビッグデータ時代の顧客の見える化を実現するCRM「Customer Rings (カスタマーリングス)」 SFA Hacks - SFA徹底攻略！SFAの今を伝える"/>
+<meta name="keywords" content="ビッグデータ時代の顧客の見える化を実現するCRM「Customer Rings (カスタマーリングス)」"/>
+<link rel="canonical" href="http://sfahacks.com/soft/%e3%83%93%e3%83%83%e3%82%b0%e3%83%87%e3%83%bc%e3%82%bf%e6%99%82%e4%bb%a3%e3%81%ae%e9%a1%a7%e5%ae%a2%e3%81%ae%e8%a6%8b%e3%81%88%e3%82%8b%e5%8c%96%e3%82%92%e5%ae%9f%e7%8f%be%e3%81%99%e3%82%8bcrm/" />
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="dns-prefetch" href="//connect.facebook.net" />
+<link rel='stylesheet' id='cptr-css-css'  href='http://sfahacks.com/wp-content/plugins/custom-post-types-relationships-cptr/cptr.css?ver=2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='tweetable-frontend-css'  href='http://sfahacks.com/wp-content/plugins/tweetable/main_css.css?ver=3.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://sfahacks.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='http://sfahacks.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<script type='text/javascript' src='http://sfahacks.com/wp-includes/js/jquery/jquery.js?ver=1.8.3'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://sfahacks.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://sfahacks.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='http://sfahacks.com/?p=6971' />
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<meta property="og:site_name" content="SFA Hacks - SFA徹底攻略！SFAの今を伝える" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="fb:app_id" content="332183110208342" />
+<meta property="og:url" content="http://sfahacks.com/soft/%e3%83%93%e3%83%83%e3%82%b0%e3%83%87%e3%83%bc%e3%82%bf%e6%99%82%e4%bb%a3%e3%81%ae%e9%a1%a7%e5%ae%a2%e3%81%ae%e8%a6%8b%e3%81%88%e3%82%8b%e5%8c%96%e3%82%92%e5%ae%9f%e7%8f%be%e3%81%99%e3%82%8bcrm/" />
+<meta property="og:title" content="ビッグデータ時代の顧客の見える化を実現するCRM「Customer Rings (カスタマーリングス)」 - SFA Hacks - SFA徹底攻略！SFAの今を伝える" />
+<meta property="og:description" content="はじめに 近年のトレンドとして、インターネットの普及とIT技術の進化により、大量で、多様な、そして変化する頻度の多いデータである、「ビッグデータ」を活用し、マーケティング活動に活用していくことが企業の課題となっています。ビッグデータと言われても、よくわからない、何から始めればよいかわからないという企業も多い中で、自社で蓄積されたデータを活用して自社のサービスの改善に活用しはじめている企業も登場して [...]" />
+<meta property="article:published_time" content="2014-05-26T07:09:56+00:00" />
+<meta property="article:modified_time" content="2014-05-26T07:10:25+00:00" />
+<meta property="article:author" content="http://sfahacks.com/author/sales/" />
+<meta property="article:section" content="営業支援システムを探す・比較する" />
+<meta property="article:tag" content="CRMとは" />
+<meta property="og:image" content="http://sfahacks.com/wp-content/uploads/2014/05/Rings1.png" />
+<meta property="og:image:width" content="500" />
+<meta property="og:image:height" content="276" />
+<meta content="Sansan, Inc." name="author">
+<meta content="Sansan, Inc." name="copyright">
+
+<!-- google analytics-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41839104-1', 'sfahacks.com');
+  ga('send', 'pageview');
+
+</script>
+<!-- google analytics-->
+
+<!-- Facebook remarketing Start -->
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '530682813719383']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" border="0" alt="" style="display:none" src="https://www.facebook.com/tr?id=530682813719383&amp;ev=NoScript" /></noscript>
+<!-- Facebook remarketing End -->
+
+</head>
+
+<body id="top">
+<!-- この render 呼び出しを適切な位置に挿入してください -->
+<script type="text/javascript">
+  window.___gcfg = {lang: 'ja'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+
+<header id="header">
+
+        <h2>営業支援システムを探す際に参考にできる情報をピックアップしています。目的や使用方法別に比較時に参考にしてみてください。</h2>
+    
+    <div class="wrap">
+              <div class="site_id"><a href="http://sfahacks.com"><img src="http://sfahacks.com/wp-content/themes/sfa/images/header_siteid.png" alt="営業支援システムを独自の視点でまとめた情報サイトです。SFAの比較検討をしている方、営業の効率化を考えている方、SFAを知らない方、新しい活用方法をお探しの方に情報を発信していきます。" width="277" height="70"></a></div>
+        <div id="searchbox">
+        <script>
+          (function() {
+            var cx = '001689056052127075104:rw_s_ncfu6i';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:searchbox-only></gcse:searchbox-only>
+        </div>
+        <div  id="header_banner">
+            <a href="https://www.linkknowledge.net/form/dl_free_sfa/?waad=T1kGUTMf"><img src="http://sfahacks.com/wp-content/themes/sfa/images/banner_sfa_compare_rect.png" /></a>
+        </div>
+        <div id="snsbox">
+            <ul><!--
+             --><li><a href="http://sfahacks.com/feed/"><img src="http://sfahacks.com/wp-content/themes/sfa/images/btn_rss.png" width="26" height="25" alt="RSSフィードを購読する" class="up"></a></li><!--
+             --><li><a href="https://twitter.com/SFAhacks"><img src="http://sfahacks.com/wp-content/themes/sfa/images/btn_twitter.png" width="26" height="25" alt="Twitter" class="up"></a></li><!--
+             --><li><a href="https://www.facebook.com/sfahacks"><img src="http://sfahacks.com/wp-content/themes/sfa/images/btn_facebook.png" width="26" height="25" alt="Facebook"></a></li><!--
+             --><li><a href="https://plus.google.com/u/0/103853627122625088309/posts"><img src="http://sfahacks.com/wp-content/themes/sfa/images/btn_google.png" width="26" height="25" alt="Google+"></a></li><!--
+         --></ul>
+        </div>
+    </div>
+</header>
+<nav id="gnav">
+	<ul class="allbtn">
+    	<li><a href="http://sfahacks.com/soft/"><strong><img src="http://sfahacks.com/wp-content/themes/sfa/images/nav_cate01.png" width="200" height="70" alt="営業支援システムを探す・比較する"></strong></a></li><!--
+     --><li><a href="http://sfahacks.com/management/"><strong><img src="http://sfahacks.com/wp-content/themes/sfa/images/nav_cate02.png" width="200" height="70" alt="営業効率化ノウハウを探す"></strong></a></li><!--
+     --><li><a href="http://sfahacks.com/salesforce/"><strong><img src="http://sfahacks.com/wp-content/themes/sfa/images/nav_cate03.png" width="200" height="70" alt="セールスフォース・オートメーションとは"></strong></a></li><!--
+     --><li><a href="http://sfahacks.com/salespower/"><strong><img src="http://sfahacks.com/wp-content/themes/sfa/images/nav_cate04.png" width="200" height="70" alt="営業改革で営業力を強化する"></strong></a></li><!--
+     --><li><a href="http://sfahacks.com/crm/"><strong><img src="http://sfahacks.com/wp-content/themes/sfa/images/nav_cate05.png" width="200" height="70" alt="CRMとは"></strong></a></li>
+    </ul>
+</nav>
+<div id="container">
+
+<div class="bread"><a href="http://sfahacks.com" >SFA Hacksトップ
+</a> &gt;
+    <a href="http://sfahacks.com/soft/" title="営業支援システムを探す・比較する の投稿をすべて表示">営業支援システムを探す・比較する</a> &gt;     ビッグデータ時代の顧客の見える化を実現するCRM「Customer Rings (カスタマーリングス)」</div>
+   <div id="content">
+        <article>
+
+
+            <div class="boxSNS">
+
+                <div class="listSNS twt-btn"><a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-lang="ja">ツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+                <div class="listSNS hatena-btn">
+ <a href="http://b.hatena.ne.jp/entry/http://sfahacks.com/soft/%e3%83%93%e3%83%83%e3%82%b0%e3%83%87%e3%83%bc%e3%82%bf%e6%99%82%e4%bb%a3%e3%81%ae%e9%a1%a7%e5%ae%a2%e3%81%ae%e8%a6%8b%e3%81%88%e3%82%8b%e5%8c%96%e3%82%92%e5%ae%9f%e7%8f%be%e3%81%99%e3%82%8bcrm/" class="hatena-bookmark-button" data-hatena-bookmark-title="ビッグデータ時代の顧客の見える化を実現するCRM「Customer Rings (カスタマーリングス)」" data-hatena-bookmark-layout="vertical-balloon" title="このエントリーをはてなブックマークに追加"> <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+                </div>
+                 <div class="listSNS fb-like" data-send="false" data-layout="box_count" data-show-faces="false" data-href="http://sfahacks.com/soft/%e3%83%93%e3%83%83%e3%82%b0%e3%83%87%e3%83%bc%e3%82%bf%e6%99%82%e4%bb%a3%e3%81%ae%e9%a1%a7%e5%ae%a2%e3%81%ae%e8%a6%8b%e3%81%88%e3%82%8b%e5%8c%96%e3%82%92%e5%ae%9f%e7%8f%be%e3%81%99%e3%82%8bcrm/"></div>
+ <div class="g-plusone" data-size="tall" data-href="http://sfahacks.com/soft/%e3%83%93%e3%83%83%e3%82%b0%e3%83%87%e3%83%bc%e3%82%bf%e6%99%82%e4%bb%a3%e3%81%ae%e9%a1%a7%e5%ae%a2%e3%81%ae%e8%a6%8b%e3%81%88%e3%82%8b%e5%8c%96%e3%82%92%e5%ae%9f%e7%8f%be%e3%81%99%e3%82%8bcrm/"></div>
+            </div>
+
+
+
+
+            <p class="category"><a href="http://sfahacks.com/soft/" title="営業支援システムを探す・比較する の投稿をすべて表示" rel="category tag">営業支援システムを探す・比較する</a> <a href="http://sfahacks.com/crm/" title="CRMとは の投稿をすべて表示" rel="category tag">CRMとは</a></p>
+			            <h1>ビッグデータ時代の顧客の見える化を実現するCRM「Customer Rings (カスタマーリングス)」</h1>
+            <!--<p class="date">2014.05.26</p>-->
+<div class="LKbannerTOP">
+
+
+<div class="LKbannerTOP">
+    <p>
+        <a href="https://www.linkknowledge.net/form/dl_free_sfa/?waad=T1kGUTMf" rel="nofollow"><img src="http://sfahacks.com/wp-content/themes/sfa/images/ban_free_sfa.png" alt="無料営業支援システム比較" title="無料営業支援システム比較" width="705" height="100" class="aligncenter size-full wp-image-2817" /></a><br />
+    
+    <a href="http://www.linkknowledge.net/lk/sfa_m.html?waad=CKC0x2tn" rel="nofollow"><img src="http://sfahacks.com/wp-content/uploads/2013/11/banner_w705h100_soft.jpg" alt="" title="名称未設定 1" width="705" height="100" class="aligncenter size-full wp-image-2817" /></a></p>
+</div>
+
+
+	</div>
+
+
+
+
+
+            <div class="txt">
+                <h2>はじめに</h2>
+<p><span style="color: #000000;">近年のトレンドとして、インターネットの普及とIT技術の進化により、大量で、多様な、そして変化する頻度の多いデータである、「ビッグデータ」を活用し、マーケティング活動に活用していくことが企業の課題となっています。ビッグデータと言われても、よくわからない、何から始めればよいかわからないという企業も多い中で、自社で蓄積されたデータを活用して自社のサービスの改善に活用しはじめている企業も登場しています。今回は、ビッグデータ時代のCRMツールのひとつ「Customer Rings（カスタマーリングス）」についてご紹介しましょう。</span></p>
+<h2><span style="color: #000000;">Customer　Ringsとは </span></h2>
+<p><img class="aligncenter size-full wp-image-6973" alt="ビッグデータ時代の顧客の見える化を実現するCRM「Customer Rings (カスタマーリングス)" src="http://sfahacks.com/wp-content/uploads/2014/05/Rings1.png" width="500" height="276" /><br />
+<span style="color: #000000;">（株）プラスアルファ・コンサルティングの提供する「Customer Rings」（<a href="http://www.pa-consul.co.jp/service/rings_web/">http://www.pa-consul.co.jp/service/rings_web/</a>）は、(1)バラバラに存在する顧客情報や購買情報の統合管理、(2)ターゲットメール配信やアンケートメール作成機能をもつメールマーケティング機能、(3)顧客・商品分析、効果測定機能、(4)分析結果をリアルタイムに表示するダッシュボード機能をベースとしたクラウド型CRMツールです。</span></p>
+<h2><span style="color: #000000;"> </span><span style="color: #000000;">テキストマイニングを核とするソリューション</span></h2>
+<p><span style="color: #000000;">同社はテキストマイニングを核としたソリューション事業を展開しており、Customer　Ringsにおいても顧客データや購買履歴データなどのマーケティングデータを活用したデータマイニング機能が非常に充実しています。また、マーケターが必ずしも特別な統計知識をもっていなくても、システム側で大量のデータから必要なデータの抽出・分析を行ってくれるため大変便利です。さらに、購買履歴データをはじめとした様々なマーケティングデータはダッシュボード機能で全社に共有されるため、現場の担当者はマーケティング部門に都度データの抽出をお願いしなくても、自分で必要なデータを適宜抽出することができるため、よりスピーディーな業務対応が行えます。</span></p>
+<h2><span style="color: #000000;">ソーシャルメディアへの対応が充実</span></h2>
+<p><img class="aligncenter size-full wp-image-6974" alt="ビッグデータ時代の顧客の見える化を実現するCRM「Customer Rings (カスタマーリングス)" src="http://sfahacks.com/wp-content/uploads/2014/05/Rings2.jpg" width="500" height="333" /><br />
+<span style="color: #000000;">近年のソーシャルメディアの普及から、ソーシャルメディア上での消費者のリアルな声の収集や分析へのニーズが高まっていますが、同社の提供する「Customer Ringsソーシャル」を利用すれば、例えば予め設定しておいたキーワードに対して、Twitter、Facebookをはじめブログや口コミサイトなどに書き込まれるとリアルタイムで自動収集し、蓄積されます。また、それらの話題はクレーム、質問、接客、商品などに分類され、担当者に振り分けられます。そしてその後の対応履歴なども確認できるため、顧客の声に迅速に対応することができます。また、ソーシャルメディア上での効果測定や、競合他社のFacebookとの相対評価など分析機能も充実しているため、継続的なソーシャルメディアの対策を立てやすくなります。</span></p>
+<h2><span style="color: #000000;">おわりに</span></h2>
+<p><img class="aligncenter size-full wp-image-6975" alt="ビッグデータ時代の顧客の見える化を実現するCRM「Customer Rings (カスタマーリングス)" src="http://sfahacks.com/wp-content/uploads/2014/05/Rings3.jpg" width="500" height="750" /><br />
+<span style="color: #000000;">いかがでしょうか。様々なソーシャルメディアが登場する中で、増え続ける顧客の声への対応に悩まされるマーケッターや現場担当者は多いのではないでしょうか。同社はテキストマイニングのプロとして、テキスト間を結びつける多くの大手企業に分析ツールを導入しています。Customer Ringsもまた大量のデータのテキストから企業に必要な情報を抽出、分類、分析して見える化して、継続的な顧客関係構築に活かすためのノウハウが期待できるCRMツールです。データの分析や、その効果が測定できるCustomer　Ringsを活用して、効率的に顧客分析、対応を行われてみてはいかがでしょうか。</span></p>
+            </div>
+                       <p class="back_link"><a href="#top">トップに戻る</a><p>
+
+
+            <!--social_box start-->
+            <ul class="social_box_foot clearfix">
+                <li><a href="http://twitter.com/share" class="twitter-share-button" data-url="" data-text="" data-count="vertical" data-lang="ja">ツイート</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
+
+                <li><div class="listSNS hatena-btn">
+ <a href="http://b.hatena.ne.jp/entry/http://sfahacks.com/soft/%e3%83%93%e3%83%83%e3%82%b0%e3%83%87%e3%83%bc%e3%82%bf%e6%99%82%e4%bb%a3%e3%81%ae%e9%a1%a7%e5%ae%a2%e3%81%ae%e8%a6%8b%e3%81%88%e3%82%8b%e5%8c%96%e3%82%92%e5%ae%9f%e7%8f%be%e3%81%99%e3%82%8bcrm/" class="hatena-bookmark-button" data-hatena-bookmark-title="ビッグデータ時代の顧客の見える化を実現するCRM「Customer Rings (カスタマーリングス)」" data-hatena-bookmark-layout="vertical-balloon" title="このエントリーをはてなブックマークに追加"> <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+                </div></li>
+                <li><div class="fb-like" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false"　data-href="http://sfahacks.com/soft/%e3%83%93%e3%83%83%e3%82%b0%e3%83%87%e3%83%bc%e3%82%bf%e6%99%82%e4%bb%a3%e3%81%ae%e9%a1%a7%e5%ae%a2%e3%81%ae%e8%a6%8b%e3%81%88%e3%82%8b%e5%8c%96%e3%82%92%e5%ae%9f%e7%8f%be%e3%81%99%e3%82%8bcrm/"></div>
+                </li>
+                <li><div class="g-plusone" data-size="tall"　data-href="http://sfahacks.com/soft/%e3%83%93%e3%83%83%e3%82%b0%e3%83%87%e3%83%bc%e3%82%bf%e6%99%82%e4%bb%a3%e3%81%ae%e9%a1%a7%e5%ae%a2%e3%81%ae%e8%a6%8b%e3%81%88%e3%82%8b%e5%8c%96%e3%82%92%e5%ae%9f%e7%8f%be%e3%81%99%e3%82%8bcrm/"></div>
+                </li>
+            </ul>
+            <!--social_box end-->
+
+
+
+        </article>
+
+<div class="LKbanner">
+    <div class="fb-like-box" data-href="https://www.facebook.com/sfahacks" data-width="725" data-show-faces="true" data-stream="false" data-header="true"></div>
+</div>
+
+<div class="LKbanner">
+	<p><a href="http://www.linkknowledge.net/lk/sfa_m.html?waad=jodjvZCu
+" rel="nofollow"><img src="http://sfahacks.com/wp-content/uploads/2013/11/banner_w725h200_soft.jpg
+" alt="" title="名称未設定 1" width="725"height="200" class="aligncenter size-full wp-image-2817" /></a></p>
+	</div>
+
+
+
+
+        <aside id="relation">
+            <h3>関連記事</h3>
+                                </aside>
+    </div>
+        <div id="sidebar">
+        <ul id="sidebanner">
+            <li><a href="https://www.linkknowledge.net/form/app_reminder/?waad=xpLPeVIX" target="_blank"><img src="http://sfahacks.com/wp-content/themes/sfa/images/banner_app_reserve.jpg"  alt="アプリ予約"  /></a></li>
+        <!-- sidebanner --></ul>
+
+        <div id="sideEntry">
+        <h2 id="ranking">人気の記事</h2>
+                <ul>
+            <div class="postviews_posts">
+<div class="ranking_badge">
+<img src="http://sfahacks.com/wp-content/themes/telephone/images/ranking1.png">
+</div>
+<div class="ranking_image">
+<a href="http://sfahacks.com/salespower/telappoint/" title="トークの力を磨いて、アポイントを取る！成功するテレアポの3つの技術">
+<img width="128" height="85" src="http://sfahacks.com/wp-content/uploads/2013/09/Fotolia_20054381_S.jpg" class="attachment-thumbnail wp-post-image" alt="Microphone" 0="" />
+</div>
+<div class="postviews_posts_title"> トークの力を磨いて、アポイントを取る！成功するテレアポの3つの技術
+</div>
+</a>
+</div>
+<div style="clear: both"></div><div class="postviews_posts">
+<div class="ranking_badge">
+<img src="http://sfahacks.com/wp-content/themes/telephone/images/ranking2.png">
+</div>
+<div class="ranking_image">
+<a href="http://sfahacks.com/soft/freetool/" title="無料で活用できる営業管理ツール5選">
+<img width="128" height="85" src="http://sfahacks.com/wp-content/uploads/2013/08/Fotolia_40637230_S.jpg" class="attachment-thumbnail wp-post-image" alt="タブレットＰＣ," 0="" />
+</div>
+<div class="postviews_posts_title"> 無料で活用できる営業管理ツール5選
+</div>
+</a>
+</div>
+<div style="clear: both"></div><div class="postviews_posts">
+<div class="ranking_badge">
+<img src="http://sfahacks.com/wp-content/themes/telephone/images/ranking3.png">
+</div>
+<div class="ranking_image">
+<a href="http://sfahacks.com/management/6898/" title="人気テンプレートランキング">
+<img width="117" height="96" src="http://sfahacks.com/wp-content/uploads/2014/03/gold.png" class="attachment-thumbnail wp-post-image" alt="SFAランキング" 0="" />
+</div>
+<div class="postviews_posts_title"> 人気テンプレートランキング
+</div>
+</a>
+</div>
+<div style="clear: both"></div><div class="postviews_posts">
+<div class="ranking_badge">
+<img src="http://sfahacks.com/wp-content/themes/telephone/images/ranking4.png">
+</div>
+<div class="ranking_image">
+<a href="http://sfahacks.com/salespower/%e3%81%a7%e3%81%8d%e3%82%8b%e5%96%b6%e6%a5%ad%e3%83%9e%e3%83%b3%e3%81%b8%ef%bc%81%e5%96%b6%e6%a5%ad%e3%81%8c%e3%81%a8%e3%82%8b%e3%81%b9%e3%81%8d%e8%b3%87%e6%a0%bc/" title="できる営業マンへ！営業がとるべき資格">
+<img width="96" height="96" src="http://sfahacks.com/wp-content/uploads/2014/02/eigyo3.jpg" class="attachment-thumbnail wp-post-image" alt="eigyo3" 0="" />
+</div>
+<div class="postviews_posts_title"> できる営業マンへ！営業がとるべき資格
+</div>
+</a>
+</div>
+<div style="clear: both"></div><div class="postviews_posts">
+<div class="ranking_badge">
+<img src="http://sfahacks.com/wp-content/themes/telephone/images/ranking5.png">
+</div>
+<div class="ranking_image">
+<a href="http://sfahacks.com/salesforce/6865/" title="セールスフォース・オートメーション　おすすめランキング　2014年5月13日現在">
+<img width="117" height="96" src="http://sfahacks.com/wp-content/uploads/2014/03/gold.png" class="attachment-thumbnail wp-post-image" alt="SFAランキング" 0="" />
+</div>
+<div class="postviews_posts_title"> セールスフォース・オートメーション　おすすめランキング　2014年5月13日現在
+</div>
+</a>
+</div>
+<div style="clear: both"></div>        </ul>
+                </div>
+
+                <div id="sidecategoreis">
+            <h2>カテゴリー紹介</h2>
+            <ul>
+                            	<li class="cat-item cat-item-1 current-cat"><a href="http://sfahacks.com/soft/" title="「営業力を上げたい」と、SFAの導入を検討している方はいませんか？
+営業支援ソフトの比較をして導入の検討に役立つポイントをこちらでご紹介しています。
+営業支援ソフトは沢山あるため、調べるだけでもかなりの労力がかかることでしょう。最新のSFAから定番のSFAまでを比較し商品の特徴を様々な観点でピックアップ。こちらで目的にあったSFA選びをお助けしてまいります。
+現在、インバウンドマーケティングが法人営業において主流になってきましたが、その際にもSFAは役立ちます。企業にとって管理するべき顧客データは増え、ITの力なくして成立はしづらいほどになっていることでしょう。そこで役立つのもやはりSFAです。営業を強くするＳＦＡをぜひともこちらで比較、検討してみてください。">営業支援システムを探す・比較する</a>
+<ul class='children'>
+	<li class="cat-item cat-item-48"><a href="http://sfahacks.com/soft/salesforce-soft/" title="クラウドサービスを利用する営業支援ソフトをご紹介します。今までは自分のコンピュータにインストールして利用していたソフトウェアやアプリケーションを、インターネットなどのネットワークを通じて必要に応じてSFAニーズの利用者に提供するサービスをご紹介します。最近では多くのクラウド 営業支援システムが存在します。">クラウド 営業支援ソフトの人気・比較</a>
+</li>
+	<li class="cat-item cat-item-49"><a href="http://sfahacks.com/soft/free-soft/" title="見込み客を効率的にサポートして顧客へと転換し、売上アップに繋げ、更にクロスセルやアップセルまで成果が出せるSFA（セールスフォース・オートメーション）が注目されています。特に中小企業では営業を強化することが急務であるが、すぐに営業マンを採用することが難しく、現在在籍するスタッフで営業を強化するためSFA（セールスフォース・オートメーション）サービスを導入する企業が増えています。
+しかし、SFA（セールスフォース・オートメーション）導入には安くない料金がかかるため、厳選して選ぶことが重要になっています。慎重になっている検討者のためにSFA（セールスフォース・オートメーション）ツールを提供する各企業では、無料の営業支援システムツールの提供や無料デモトライアルを用意して自社サービスを実際に触って体験してもらうスタンスを取っています。">営業支援ソフト　無料,フリー</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://sfahacks.com/management/" title="営業効率をあげることは企業にとっても重要な事です。企業の利益を大きくするためには、売上を伸ばすという方法以外にも、コストを削減するという方法もあります。「あなたの会社は無駄な経費を払ってませんか？」実際に人間がアナログにする業務も重要ではありますが、機械でデジタルに効率化を図ることもコスト削減や質の面では非常に重要な点です。このような営業効率を向上させていくお話しをこちらの章でしていきます。大きな導入やIT化のご紹介だけではなく、ちょっとした小さな心がけから営業の効率化を果たした方法まで、広範囲でご紹介をします。">営業効率化ノウハウを探す</a>
+<ul class='children'>
+	<li class="cat-item cat-item-50"><a href="http://sfahacks.com/management/knowledge/" title="営業効率化を目指し、組織改革を目指す会社はここ数年で増加しています。商品やサービス自体に大きな差別化が難しくなる一方、生き抜くためには継続的に収益を上げつつも、大きな変化を求められます。競争優位を作る営業マネージメントに関する情報を紹介します。">営業管理　組織改革</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="http://sfahacks.com/management/free-excel/" title="営業日報をWord,Excelや紙といったツールを利用して実施している企業も、まだまだあるでしょう。メールを利用して営業日報を報告する企業も少なくないようです。
+営業日報に対してコストをかける必要がない企業は当然多くある一方で、複数の営業マンがいれば日々どんな営業活動をしているのか管理する必要があります。そこで、Web上で手に入る無料の営業日報テンプレート・フォーマットをご紹介します。
+そのままテンプレートを活用することはもちろん、自社のフォーマットを見直すのにもお役立て下さい。">営業効率化　営業日報、テンプレート</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://sfahacks.com/salesforce/" title="Salesforce Automation（セールスフォース・オートメーション）は、営業支援ツールとしてすごいスピードで進化している機能です。この市場で圧倒的なシェアを獲得しているのが、世界NO.1の営業支援アプリケーション株式会社セールスフォース・ドットコムです。
+SFA導入で売上が上がった、SFA運用で失敗した、または最新の情報などをお届けします。
+また、こちらでは人気のセールスフォース・オートメーションのランキングも頻繁にご紹介します。ランキング形式なため、こちらを検討の情報としていくのも良いことでしょう。また、ランキングインしているSFAはこちらのサイトでもご紹介しますので、こちらもチェックしてみてください。">セールスフォース・オートメーションとは</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://sfahacks.com/salespower/" title="営業を強化するための方法は何も人材を育てるのみではありません。組織の仕組みや営業代行、SFAなどを導入することもその一歩であるのです。営業改革によって改革された事例や普段の営業のコツをご紹介します。
+ビジネスの世界では常に新しいものが生まれていっています。最近では、スマートフォンが誕生しました。少し前にはウォークマンが誕生しました。そして少しだけ未来には3Dテレビが誕生しそうです。営業の方法も同じです。今までしていた営業方法は衰退し、未来には今までと全く違うアプローチの仕方が生まれているかもしれません。こちらではそんな新しい働き方や営業改革によって組織を変えた例をご紹介していきます。">営業改革で営業力を強化する</a>
+</li>
+	<li class="cat-item cat-item-7 current-cat"><a href="http://sfahacks.com/crm/" title="ＳＦＡ（顧客管理システム）とＣＲＭは一見、似たような性質を持っているため、同じだと考えている方が多いことでしょう。こちらではＳＦＡとＣＲＭのちょっとした違いやニュースについてご紹介をします。
+営業の効率化をするためのシステムがＳＦＡとされています。一方でＣＲＭは顧客管理システムという名がついています。その名の通り、顧客のデータベースを管理する機能がついています。現在では見込み客を獲得していかにして顧客に成長させるかというリードナーチャリングという手法も生まれてきていたりします。">CRMとは</a>
+</li>
+                        </ul>
+        <!-- /sidecategoreis --></div>
+        
+                <div id="sideEntry">
+            <h2><img src="http://sfahacks.com/wp-content/themes/sfa/images/side_new.png" width="237" height="10" alt="NewEntries"></h2>
+            <ul>
+                                                <li><a href="http://sfahacks.com/salespower/%e3%81%93%e3%82%8c%e3%81%be%e3%81%a7%e3%81%ae%e8%a9%b1%e3%81%97%e6%96%b9%e3%81%ab%e3%81%95%e3%82%88%e3%81%86%e3%81%aa%e3%82%89%ef%bc%81%e5%96%b6%e6%a5%ad%e5%8a%9b%e3%82%92%e5%bc%b7%e5%8c%96%e3%81%99/">これまでの話し方にさようなら！営業力を強化するための話し方のコツとは？</a></li>
+                                <li><a href="http://sfahacks.com/salesforce/%e3%82%bb%e3%83%bc%e3%83%ab%e3%82%b9%e3%83%95%e3%82%a9%e3%83%bc%e3%82%b9%e3%83%bb%e3%82%aa%e3%83%bc%e3%83%88%e3%83%a1%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e3%80%80%e3%81%8a%e3%81%99%e3%81%99%e3%82%81-2/">セールスフォース・オートメーション　おすすめランキング　2014年5月28日現在</a></li>
+                                <li><a href="http://sfahacks.com/soft/%e3%83%93%e3%83%83%e3%82%b0%e3%83%87%e3%83%bc%e3%82%bf%e6%99%82%e4%bb%a3%e3%81%ae%e9%a1%a7%e5%ae%a2%e3%81%ae%e8%a6%8b%e3%81%88%e3%82%8b%e5%8c%96%e3%82%92%e5%ae%9f%e7%8f%be%e3%81%99%e3%82%8bcrm/">ビッグデータ時代の顧客の見える化を実現するCRM「Customer Rings (カスタマーリングス)」</a></li>
+                                <li><a href="http://sfahacks.com/crm/%e3%83%8d%e3%83%83%e3%83%88%e3%81%a8%e5%ba%97%e8%88%97%e3%82%92%e3%81%a4%e3%81%aa%e3%81%92%e3%82%8bo2o-crm%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%80%8cvisionary%e3%80%8d/">ネットと店舗をつなげるO2O強化 CRMシステム「Visionary」</a></li>
+                                <li><a href="http://sfahacks.com/soft/crm%e3%81%ae%e3%83%88%e3%83%ac%e3%83%b3%e3%83%89%e3%80%81%e3%82%bd%e3%83%bc%e3%82%b7%e3%83%a3%e3%83%abcrm%e3%81%a8%e3%81%af%ef%bc%9f/">CRMのトレンド、ソーシャルCRMとは？</a></li>
+                                            </ul>
+        <!-- //sideEntry --></div>
+        
+        <div id="sideEntry">
+           <div class="fb-like-box" data-href="https://www.facebook.com/sfahacks" data-width="240" data-show-faces="true" data-stream="false" data-header="true"></div>
+        <!-- //sideEntry --></div>
+
+   <!-- //sidebar --></div><!-- //container --></div>
+
+<footer id="footer">
+<div class="wrap">
+        <div id="footernav">
+            <nav>
+                <h2><a href="/soft/"><strong>営業支援システムを探す・比較する</strong></a></h2>
+                <ul>
+                	<li class="cat-item cat-item-48"><strong><a href="http://sfahacks.com/soft/salesforce-soft/" title="クラウドサービスを利用する営業支援ソフトをご紹介します。今までは自分のコンピュータにインストールして利用していたソフトウェアやアプリケーションを、インターネットなどのネットワークを通じて必要に応じてSFAニーズの利用者に提供するサービスをご紹介します。最近では多くのクラウド 営業支援システムが存在します。">クラウド 営業支援ソフトの人気・比較</a></strong>
+</li>
+	<li class="cat-item cat-item-49"><strong><a href="http://sfahacks.com/soft/free-soft/" title="見込み客を効率的にサポートして顧客へと転換し、売上アップに繋げ、更にクロスセルやアップセルまで成果が出せるSFA（セールスフォース・オートメーション）が注目されています。特に中小企業では営業を強化することが急務であるが、すぐに営業マンを採用することが難しく、現在在籍するスタッフで営業を強化するためSFA（セールスフォース・オートメーション）サービスを導入する企業が増えています。
+しかし、SFA（セールスフォース・オートメーション）導入には安くない料金がかかるため、厳選して選ぶことが重要になっています。慎重になっている検討者のためにSFA（セールスフォース・オートメーション）ツールを提供する各企業では、無料の営業支援システムツールの提供や無料デモトライアルを用意して自社サービスを実際に触って体験してもらうスタンスを取っています。">営業支援ソフト　無料,フリー</a></strong>
+</li>
+                </ul>
+            </nav>
+            <nav>
+                <h2><a href="/management/"><strong>営業効率化ノウハウを探す</strong></a></h2>
+                <ul>
+                	<li class="cat-item cat-item-50"><strong><a href="http://sfahacks.com/management/knowledge/" title="営業効率化を目指し、組織改革を目指す会社はここ数年で増加しています。商品やサービス自体に大きな差別化が難しくなる一方、生き抜くためには継続的に収益を上げつつも、大きな変化を求められます。競争優位を作る営業マネージメントに関する情報を紹介します。">営業管理　組織改革</a></strong>
+</li>
+	<li class="cat-item cat-item-51"><strong><a href="http://sfahacks.com/management/free-excel/" title="営業日報をWord,Excelや紙といったツールを利用して実施している企業も、まだまだあるでしょう。メールを利用して営業日報を報告する企業も少なくないようです。
+営業日報に対してコストをかける必要がない企業は当然多くある一方で、複数の営業マンがいれば日々どんな営業活動をしているのか管理する必要があります。そこで、Web上で手に入る無料の営業日報テンプレート・フォーマットをご紹介します。
+そのままテンプレートを活用することはもちろん、自社のフォーマットを見直すのにもお役立て下さい。">営業効率化　営業日報、テンプレート</a></strong>
+</li>
+                </ul>
+            </nav>
+            <nav>
+                <h2><a href="/salesforce/"><strong>セールスフォースオートメーションとは</strong></a></h2>
+                <ul>
+                <li>カテゴリーなし</li>                </ul>
+            </nav>
+            <nav>
+                <h2><a href="/salespower/"><strong>営業改革で営業力を強化する</strong></a></h2>
+                <ul>
+                <li>カテゴリーなし</li>                </ul>
+            </nav>
+            <nav>
+                <h2><a href="/crm/"><strong>CRMとは</strong></a></h2>
+                <ul>
+                <li>カテゴリーなし</li>                </ul>
+            </nav>
+            <p class="copyright"><a href="http://www.sansan.com/privacy/" rel="nofollow" target="_blank"　rel="nofollow">個人情報保護方針</a> </p>
+            <p class="copyright">Copyright © <a href="http://www.sansan.com/" rel="nofollow" target="_blank"　rel="nofollow">Sansan, Inc.</a> </p>
+        <!--  footernav END --></div>
+
+        </div>
+
+</footer>
+<script type='text/javascript' src='http://sfahacks.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.36.0-2013.06.16'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/sfahacks.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"\u9001\u4fe1\u4e2d ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://sfahacks.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=3.4.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var FB_WP=FB_WP||{};FB_WP.queue={_methods:[],flushed:false,add:function(fn){FB_WP.queue.flushed?fn():FB_WP.queue._methods.push(fn)},flush:function(){for(var fn;fn=FB_WP.queue._methods.shift();){fn()}FB_WP.queue.flushed=true}};window.fbAsyncInit=function(){FB.init({"channelUrl":"http:\/\/sfahacks.com\/wp-content\/plugins\/facebook\/channel.php","xfbml":true,"appId":"332183110208342"});if(FB_WP && FB_WP.queue && FB_WP.queue.flush){FB_WP.queue.flush()}}
+/* ]]> */
+</script>
+<div id="fb-root"></div><script type="text/javascript">(function(d){var id="facebook-jssdk";if(!d.getElementById(id)){var js=d.createElement("script"),ref=d.getElementsByTagName("script")[0];js.id=id,js.async=true,js.src="http:\/\/connect.facebook.net\/ja_JP\/all.js",ref.parentNode.insertBefore(js,ref)}})(document)</script>
+<script type='text/javascript' src=''></script>
+
+<!-- フリークアウト社　タグ -->
+<script language="javascript">
+    var _fout_userid = 2470;
+    var _fout_jsurl = (("https:" == document.location.protocol) ? "https://" : "http://") + 'js.fout.jp/cnt.js';
+    document.write(unescape("%3Cscript src='" + _fout_jsurl + "' language='javascript' %3E%3C/script%3E"));
+</script>
+<!-- フリーク・アウト社　タグ　END　　-->
+
+<!-- マイクロアド社　タグ -->
+<script type="text/javascript">
+<!--
+var blade_co_account_id='3403';
+var blade_group_id='';
+-->
+</script>
+<script src="http://d-cache.microad.jp/js/bl_track.js">
+</script>
+
+<!-- マイクロアド社　タグ  END-->
+
+<!-- マーケットワン　タグ -->
+<!-- マーケットワン　タグ  END-->
+
+
+<!-- googleremarketing　タグ -->
+
+<!-- Google Code for &#12513;&#12452;&#12531;&#12522;&#12473;&#12488; -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the　setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 946652215;
+var google_conversion_label = "Ke46CImuwQQQt4izwwM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/946652215/?value=0&amp;label=Ke46CImuwQQQt4izwwM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!-- googleremarketing 　タグ END  -->
+
+<!-- Yahoo remarketing タグ  -->
+<script type="text/javascript" language="javascript">
+var yahoo_retargeting_id = 'NT3KOA6H74';
+var yahoo_retargeting_label = '';
+</script>
+<script type="text/javascript" language="javascript" src="//b92.yahoo.co.jp/js/s_retargeting.js"></script>
+<!-- Yahoo remarketing タグ END -->
+
+<!-- WebAntenna -->
+<script type="text/javascript" src="http://tr.webantenna.info/js/webantenna.js"></script>
+<script type="text/javascript">
+if ( typeof( webantenna ) == 'function' ) {
+ _wa.account = 'WAcU8u-1';
+ webantenna();
+}
+</script>
+<noscript>
+<img width="1" height="1" alt="" src="http://tr.webantenna.info/_webantenna.png?ga=WAcU8u-1&amp;jse=0">
+</noscript>
+<!-- end WebAntenna -->
+
+
+</body>
+</html>

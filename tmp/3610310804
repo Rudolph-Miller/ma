@@ -1,0 +1,1097 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+<!---->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="http://junnama.alfasado.net/online/styles.css" type="text/css" />
+<link rel="start" href="http://junnama.alfasado.net/online/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://junnama.alfasado.net/online/atom.xml" />
+<script type="text/javascript" src="http://junnama.alfasado.net/online/mt.js"></script>
+
+
+    
+    <link rel="prev bookmark" href="http://junnama.alfasado.net/online/2014/05/basic_movable_type.html" title="Basic認証設定を管理画面から行える Movable Type プラグインを作った。" />
+    <link rel="next bookmark" href="http://junnama.alfasado.net/online/2014/05/javascriptwebace.html" title="JavaScript製のWebベースエディタ「Ace」が良さげ。" />
+    <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://junnama.alfasado.net/online/2014/05/phpermovable_type15.html"
+    trackback:ping="http://junnama.alfasado.net/cgi/mt/mt-tb.cgi/838"
+    dc:title="PHPerのためのMovable Type講座(その15)"
+    dc:identifier="http://junnama.alfasado.net/online/2014/05/phpermovable_type15.html"
+    dc:subject="Movable Type"
+    dc:description="PHPでログイン状態のチェックを行う 昨日、ログインの実装についてのコードを紹介..."
+    dc:creator="Junnama Noda"
+    dc:date="2014-05-23T13:08:33+09:00" />
+</rdf:RDF>
+-->
+
+    
+
+
+
+
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:title" content="PHPerのためのMovable Type講座(その15)">
+    <meta property="og:url" content="http://junnama.alfasado.net/online/2014/05/phpermovable_type15.html">
+    <meta property="og:description" content="PHPでログイン状態のチェックを行う 昨日、ログインの実装についてのコードを紹介...">
+    <meta property="og:site_name" content="Junnama Online">
+    <meta property="og:image" content="http://junnama.alfasado.net/online/images/879507f84f6625c83fc78edc796ed80eb542e829.png">
+    <!-- Metadata -->
+
+    <title>PHPerのためのMovable Type講座(その15) - Junnama Online</title>
+</head>
+<body id="mt-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://junnama.alfasado.net/online/" accesskey="1">Junnama Online</a></div>
+            <div id="header-description"><a href="http://alfasado.net/">アルファサード株式会社</a> 代表 野田純生 のプライベートなBlog。<br /><br />
+<strong>〜Webは常に過渡期である〜</strong></div>
+
+<div style="text-align:right">
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'ja',
+    includedLanguages: 'en,zh-CN',
+    gaTrack: true,
+    gaId: 'UA-9780479-2'
+  }, 'google_translate_element');
+}
+</script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+        </div>
+    </div>
+</div>
+
+            <div id="content">
+                <div id="content-inner">
+                    <div id="alpha">
+                        <div id="alpha-inner">
+                            <div id="entry-853" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">PHPerのためのMovable Type講座(その15)</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            <span class="vcard author">Junnama Noda</span> (<abbr class="published" title="2014-05-23T13:08:33+09:00">2014年5月23日 13:08</abbr>)
+
+                                        </span>
+
+                                        <span class="separator">|</span> <a href="http://junnama.alfasado.net/online/2014/05/phpermovable_type15.html#comments">コメント(0)</a>
+
+
+                                        <span class="separator">|</span> <a href="http://junnama.alfasado.net/online/2014/05/phpermovable_type15.html#trackbacks">トラックバック(0)</a>
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <h3>PHPでログイン状態のチェックを行う</h3>
+
+<p>昨日、ログインの実装についてのコードを紹介しました。最後に宿題? 出しましたけど...</p>
+
+<blockquote>
+  <h3>せっかくなのでたまには課題</h3>
+  
+  <p>では、これでログイン処理ができたとして、以降のリクエストのログインチェック、ユーザー情報の取得とコンテクストへのセットはどのようにすればよいでしょうか?</p>
+</blockquote>
+
+<p>と、いうことで回答編(と、おまけ付き)。</p>
+
+<p><img alt="PHPerのためのMovable Type講座" src="http://junnama.alfasado.net/online/images/879507f84f6625c83fc78edc796ed80eb542e829.png" width= "300" height=300" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></p>
+
+<ul>
+<li><a href="http://junnama.alfasado.net/online/2014/04/phper_movable_type_1.html">PHPerのための Movable Type 講座(その1)</a></li>
+<li><a href="http://junnama.alfasado.net/online/2014/04/phper_movable_type_2.html">PHPerのための Movable Type 講座(その2)</a></li>
+<li><a href="http://junnama.alfasado.net/online/2014/04/phper_movable_type_3.html">PHPerのための Movable Type 講座(その3)</a></li>
+<li><a href="http://junnama.alfasado.net/online/2014/04/phper_movable_type_4.html">PHPerのための Movable Type 講座(その4)</a></li>
+<li><a href="http://junnama.alfasado.net/online/2014/04/phper_movable_type_5.html">PHPerのための Movable Type 講座(その5)</a></li>
+<li><a href="http://junnama.alfasado.net/online/2014/04/phper_movable_type_6.html">PHPerのための Movable Type 講座(その6)</a></li>
+<li><a href="http://junnama.alfasado.net/online/2014/04/phper_movable_type_7.html">PHPerのための Movable Type 講座(その7)</a></li>
+<li><a href="http://junnama.alfasado.net/online/2014/04/phper_movable_type_8.html">PHPerのための Movable Type 講座(その8)</a></li>
+<li><a href="http://junnama.alfasado.net/online/2014/04/phper_movable_type_9.html">PHPerのための Movable Type 講座(その9)</a></li>
+<li><a href="http://junnama.alfasado.net/online/2014/04/phper_movable_type_10.html">PHPerのための Movable Type 講座(その10)</a></li>
+<li><a href="http://junnama.alfasado.net/online/2014/04/phper_movable_type_11.html">PHPerのための Movable Type 講座(その11)</a></li>
+<li><a href="http://junnama.alfasado.net/online/2014/04/phper_movable_type_12.html">PHPerのための Movable Type 講座(その12)</a></li>
+<li><a href="http://junnama.alfasado.net/online/2014/05/phper_movable_type_13.html">PHPerのための Movable Type 講座(その13)</a></li>
+<li><a href="http://junnama.alfasado.net/online/2014/05/phpermovable_type14.html">PHPerのためのMovable Type講座(その14)</a></li>
+</ul>
+
+<h3>クッキーからのログイン状態のチェックについて</h3>
+
+<ul>
+<li>クッキーからセッションをチェック</li>
+<li>セッションの有効期限チェック</li>
+<li>セッションからユーザーを割り出し、存在するか、もしくは有効なユーザーかチェック</li>
+<li>必要に応じて権限のチェック</li>
+</ul>
+
+<p>というような流れになります。</p>
+
+<pre><code>&lt;?php
+include('/path/to/mt/php/mt.php');
+$mt = MT::get_instance(1, '/path/to/mt/mt-config.cgi');
+if ( $session_id = $_COOKIE[ 'mt_commenter' ] ) {
+    // セッションをチェック
+    require_once( 'class.mt_session.php' );
+    $session = new Session;
+    $session-&gt;Load( "session_id='${session_id}'&amp;session_kind='SI'" );
+    if ( isset( $session ) ) {
+        $ttl = $mt-&gt;config( 'UserSessionCookieTimeout' );
+        if ( ( $session-&gt;session_start + $ttl ) &lt; time() ) {
+            // 有効期限切れ
+            $session-&gt;Delete();
+            echo 'Your session has expired. Please sign in again to comment.';
+            return;
+        } else {
+            $author = $mt-&gt;db()-&gt;fetch_author_by_name( $session-&gt;session_name );
+            // ユーザーチェック
+            if ( isset( $author ) ) {
+                if ( $author-&gt;author_status != 1 ) {
+                    unset( $author );
+                }
+            }
+        }
+    }
+}
+if (! isset( $author ) ) {
+    echo 'Permission denied.';
+    return;
+}
+// 必要に応じて権限(mt_permissionやmt_association)のチェック
+</code></pre>
+
+<h3>コンテキストにユーザーをセットする</h3>
+
+<p>こうすることで、MTAuthorFoo タグ、ユーザーカスタムフィールドの値が取得できるようになります。</p>
+
+<pre><code>// $ctx = $mt-&gt;context();
+// $ctx-&gt;stash( 'author', $author );
+</code></pre>
+
+                                    </div>
+
+
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-1511440356861540";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+google_ad_channel = "";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "6F3C1B";
+google_color_text = "333333";
+google_color_url = "6F3C1B";
+google_ui_features = "rc:6";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+                                    <div id="more" class="asset-more" style="margin-top:1.2em">
+                                        <h3>おまけ - パスワードのポリシーチェックの実装</h3>
+
+<p>昨日、ユーザーのパスワードの生成方法についてご紹介しました。</p>
+
+<blockquote>
+  <p>コードのコメントにも書いていますが、MTのパスワードは、sha512で暗号化されており、「$6$暗号化文字列$暗号化されたパスワード」という形式になっています。
+  ということで、ユーザーのパスワードを生成するロジックは以下。</p>
+</blockquote>
+
+<p>ただ、実際にプログラムで一括でユーザー登録なんかを行ったりサインアップ画面を用意した時にこのコードではパスワードのポリシーチェックが入りません。</p>
+
+<p>MTのパスワードポリシーでは、以下の指定ができます。</p>
+
+<ul>
+<li><a href="http://www.movabletype.jp/documentation/appendices/config-directives/userpasswordvalidation.html" target="_blank">UserPasswordValidation | 環境変数リファレンス</a></li>
+</ul>
+
+<blockquote>
+  <p>パスワードの検証条件を、以下の三つの値で指定します。組み合わせて指定する場合は、複数回、指定してください。</p>
+  
+  <ul>
+  <li>letternumber 文字と数字の両方を含める。</li>
+  <li>upperlower 大文字と小文字の両方を含める。</li>
+  <li>symbol 記号を含める。</li>
+  </ul>
+</blockquote>
+
+<p>※管理画面からも設定できるのですが、実はこいつはダイナミックパブリッシングからはうまく取得できないようです(FogBugzに投げ済み)。</p>
+
+<p>また、文字数については以下の環境変数または管理画面から設定できます。デフォルトでは8文字以上。</p>
+
+<ul>
+<li><a href="http://www.movabletype.jp/documentation/appendices/config-directives/userpasswordminlength.html" target="_blank">UserPasswordMinLength | 環境変数リファレンス</a></li>
+</ul>
+
+<p>なので、そのルーチンも書いてみました。</p>
+
+<pre><code>function verify_password_strength ( $mt, $username, $pass ) {
+    $constrains = $mt-&gt;config( 'UserPasswordValidation' );
+    $min_length = $mt-&gt;config( 'UserPasswordMinLength' );
+    if ( strpos( strtolower( $pass ), strtolower( $username ) ) !== FALSE ) {
+        return 'Password should not include your Username';
+    }
+    require_once( 'MTUtil.php' );
+    if ( length_text( $pass ) &lt; $min_length ) {
+        return "Password should be longer than ${min_length} characters";
+    }
+    if ( is_array( $constrains ) ) {
+        if ( in_array( 'letternumber', $constrains ) ) {
+            if ( ( preg_match( "/[a-zA-Z]/", $pass ) ) &amp;&amp;
+                ( preg_match( "/\d/", $pass ) ) ) {
+            } else {
+                return 'Password should include letters and numbers';
+            }
+        }
+        if ( in_array( 'upperlower', $constrains ) ) {
+            if ( ( preg_match( "/[a-z]/", $pass ) ) &amp;&amp;
+                ( preg_match( "/[A-Z]/", $pass ) ) ) {
+            } else {
+                return 'Password should include lowercase and uppercase letters';
+            }
+        }
+        if ( in_array( 'symbol', $constrains ) ) {
+            if (! preg_match( "/[!\"#$%&amp;\'\(\|\)\*\+,-\.\/\\:;&lt;=&gt;\?@\[\]^_`{}~]/", $pass ) ) {
+                return 'Password should contain symbols such as #!$%';
+            }
+        }
+    }
+    return '';
+}
+</code></pre>
+
+                                    </div>
+
+
+                                </div>
+<script type="text/javascript"><!--
+google_ad_client = "pub-1511440356861540";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+google_ad_channel = "";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "6F3C1B";
+google_color_text = "333333";
+google_color_url = "6F3C1B";
+google_ui_features = "rc:6";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>カテゴリ<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li><a href="http://junnama.alfasado.net/online/movabletype/" rel="tag">Movable Type</a><span class="delimiter">,</span></li> <li class="entry-category"><a href="http://junnama.alfasado.net/online/cat4/" rel="tag">プログラミング</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+<!-- X:S ZenBackWidget --><div id="zenback-widget-loader"></div><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var r=Math.ceil((new Date()*1)*Math.random());var j=d.createElement("script");j.id=i;j.async=true;j.src="//w.zenback.jp/v1/?base_uri=http%3A//junnama.alfasado.net/online/&nsid=100434067958314143%3A%3A100434123792885683&rand="+r;d.body.appendChild(j);}}(document,"zenback-widget-js");</script><!-- X:E ZenBackWidget -->
+
+
+                                </div>
+                            </div>
+                    <div id="trackbacks" class="trackbacks">
+    <h2 class="trackbacks-header">トラックバック(0)</h2>
+
+    
+    
+    <div class="trackbacks-info">
+        <p>トラックバックURL: http://junnama.alfasado.net/cgi/mt/mt-tb.cgi/838</p>
+    </div>
+    
+
+
+    
+    
+</div>
+
+
+                    <div id="comments" class="comments">
+
+
+    
+    
+    
+
+    
+    
+    <div class="comments-open" id="comments-open">
+        <h2 class="comments-open-header">コメントする</h2>
+        <div class="comments-open-content">
+
+        
+            <div id="comment-greeting"></div>
+
+            <form method="post" action="http://junnama.alfasado.net/cgi/mt/mt-comments.cgi" name="comments_form" id="comments-form" onsubmit="return mtCommentOnSubmit(this)">
+                <input type="hidden" name="static" value="1" />
+                <input type="hidden" name="entry_id" value="853" />
+                <input type="hidden" name="__lang" value="ja" />
+                <input type="hidden" name="parent_id" value="" id="comment-parent-id" />
+                <input type="hidden" name="armor" value="1" />
+                <input type="hidden" name="preview" value="" />
+                <input type="hidden" name="sid" value="" />
+                <div id="comments-open-data">
+                    <div id="comment-form-name">
+                        <label for="comment-author">名前</label>
+                        <input id="comment-author" name="author" size="30" value="" onfocus="mtCommentFormOnFocus()" />
+                    </div>
+                    <div id="comment-form-email">
+                        <label for="comment-email">電子メール</label>
+                        <input id="comment-email" name="email" size="30" value="" onfocus="mtCommentFormOnFocus()" />
+                    </div>
+                    <div id="comment-form-url">
+                        <label for="comment-url">URL</label>
+                        <input id="comment-url" name="url" size="30" value="" onfocus="mtCommentFormOnFocus()" />
+                    </div>
+                    <div id="comment-form-remember-me">
+                        <input type="checkbox" id="comment-bake-cookie" name="bakecookie" onclick="mtRememberMeOnClick(this)" value="1" accesskey="r" />
+                        <label for="comment-bake-cookie">ログイン情報を記憶</label>
+                    </div>
+                </div>
+                <div id="comment-form-reply" style="display:none">
+                    <input type="checkbox" id="comment-reply" name="comment_reply" value="" onclick="mtSetCommentParentID()" />
+                    <label for="comment-reply" id="comment-reply-label"></label>
+                </div>
+                <div id="comments-open-text">
+                    <label for="comment-text">コメント
+                    (スタイル用のHTMLタグを使えます)</label>
+                    <textarea id="comment-text" name="text" rows="15" cols="50" onfocus="mtCommentFormOnFocus()"></textarea>
+                </div>
+                <div id="comments-open-captcha"></div>
+                <div id="comments-open-footer">
+                    <input type="submit" accesskey="v" name="preview_button" id="comment-preview" value="プレビュー" onclick="this.form.preview.value='1';" />
+                    <input type="submit" accesskey="s" name="post" id="comment-submit" value="投稿" />
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+    <script type="text/javascript">
+    <!--
+    mtAttachEvent("load", mtEntryOnLoad);
+    mtAttachEvent("unload", mtEntryOnUnload);
+    //-->
+    </script>
+    
+
+
+</div>
+
+
+                        </div>
+                    </div>
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    
+
+
+
+
+
+
+
+
+        
+
+
+<div class="widget-search widget">
+    <h3 class="widget-header">検索</h3>
+    <div class="widget-content">
+        <form method="get" action="http://junnama.alfasado.net/cgi/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="1" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="検索" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-facebook widget">
+<h3 class="widget-header">Facebook</h3>
+    <div class="widget-content" style="padding:0px">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-like-box" data-href="http://www.facebook.com/junnama.online" data-width="350" data-height="" data-show-faces="true" data-stream="true" data-header="false" data-border-color="white"></div>
+
+
+    </div>
+</div>
+
+<div class="widget-twitter widget">
+<h3 class="widget-header">Twitter</h3>
+    <div class="widget-content" style="padding:0px">
+<a class="twitter-timeline" href="https://twitter.com/junnama" data-widget-id="345000901993451520">@junnama からのツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+</div>
+
+
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        このブログ記事について
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">このページは、Junnama Nodaが2014年5月23日 13:08に書いたブログ記事です。</p>
+    
+        <p>ひとつ前のブログ記事は「<a href="http://junnama.alfasado.net/online/2014/05/basic_movable_type.html">Basic認証設定を管理画面から行える Movable Type プラグインを作った。</a>」です。</p>
+    
+    
+        <p>次のブログ記事は「<a href="http://junnama.alfasado.net/online/2014/05/javascriptwebace.html">JavaScript製のWebベースエディタ「Ace」が良さげ。</a>」です。</p>
+    
+
+
+
+
+
+        <p>最近のコンテンツは<a href="http://junnama.alfasado.net/online/">インデックスページ</a>で見られます。過去に書かれたものは<a href="http://junnama.alfasado.net/online/archives.html">アーカイブのページ</a>で見られます。</p>
+
+    </div>
+</div>
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">カテゴリ</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://junnama.alfasado.net/online/cat-12/">ソーシャルメディア (19)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://junnama.alfasado.net/online/movabletype/">Movable Type (299)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://junnama.alfasado.net/online/movabletype-plugins/">Movable Typeプラグイン (113)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://junnama.alfasado.net/online/web/">Web制作・ビジネス (143)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://junnama.alfasado.net/online/cat9/">ごあいさつ (26)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://junnama.alfasado.net/online/cat3/">アクセシビリティ (57)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://junnama.alfasado.net/online/cat4/">プログラミング (103)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://junnama.alfasado.net/online/08/">モブログ (27)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://junnama.alfasado.net/online/cat6/">書評など (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://junnama.alfasado.net/online/cat2/">駄文・雑文 (263)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://junnama.alfasado.net/online/xojo/">Xojo (14)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">月別 <a href="http://junnama.alfasado.net/online/archives.html">アーカイブ</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://junnama.alfasado.net/online/2014/05/">2014年5月 (14)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2014/04/">2014年4月 (30)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2014/03/">2014年3月 (17)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2014/01/">2014年1月 (8)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2013/12/">2013年12月 (9)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2013/09/">2013年9月 (1)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2013/08/">2013年8月 (3)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2013/07/">2013年7月 (1)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2013/06/">2013年6月 (1)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2013/05/">2013年5月 (1)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2013/04/">2013年4月 (2)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2013/03/">2013年3月 (3)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2013/02/">2013年2月 (1)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2013/01/">2013年1月 (1)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2012/12/">2012年12月 (2)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2012/11/">2012年11月 (1)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2012/10/">2012年10月 (1)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2012/09/">2012年9月 (1)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2012/08/">2012年8月 (1)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2012/07/">2012年7月 (1)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2012/06/">2012年6月 (3)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2012/05/">2012年5月 (2)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2012/04/">2012年4月 (3)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2012/03/">2012年3月 (5)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2012/02/">2012年2月 (3)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2012/01/">2012年1月 (2)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2011/12/">2011年12月 (8)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2011/11/">2011年11月 (8)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2011/10/">2011年10月 (3)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2011/07/">2011年7月 (3)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2011/06/">2011年6月 (3)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2011/03/">2011年3月 (1)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2011/02/">2011年2月 (2)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2011/01/">2011年1月 (2)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2010/12/">2010年12月 (2)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2010/11/">2010年11月 (3)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2010/10/">2010年10月 (1)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2010/09/">2010年9月 (2)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2010/08/">2010年8月 (2)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2010/07/">2010年7月 (1)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2010/06/">2010年6月 (7)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2010/05/">2010年5月 (3)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2010/04/">2010年4月 (2)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2010/03/">2010年3月 (2)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2010/02/">2010年2月 (9)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2010/01/">2010年1月 (5)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2009/11/">2009年11月 (7)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2009/10/">2009年10月 (4)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2009/09/">2009年9月 (5)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2009/08/">2009年8月 (4)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2009/07/">2009年7月 (3)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2009/06/">2009年6月 (11)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2009/05/">2009年5月 (25)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2009/04/">2009年4月 (2)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2009/03/">2009年3月 (2)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2009/02/">2009年2月 (3)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2009/01/">2009年1月 (4)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2008/12/">2008年12月 (2)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2008/11/">2008年11月 (6)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2008/10/">2008年10月 (5)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2008/09/">2008年9月 (2)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2008/08/">2008年8月 (6)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2008/07/">2008年7月 (3)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2008/06/">2008年6月 (6)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2008/05/">2008年5月 (9)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2008/04/">2008年4月 (14)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2008/03/">2008年3月 (9)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2008/02/">2008年2月 (7)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2008/01/">2008年1月 (16)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2007/12/">2007年12月 (10)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2007/11/">2007年11月 (6)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2007/10/">2007年10月 (20)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2007/09/">2007年9月 (22)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2007/08/">2007年8月 (40)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2007/07/">2007年7月 (63)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2007/06/">2007年6月 (42)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2007/05/">2007年5月 (27)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2007/04/">2007年4月 (35)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2007/03/">2007年3月 (16)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2007/02/">2007年2月 (8)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2007/01/">2007年1月 (9)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2006/12/">2006年12月 (2)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2006/11/">2006年11月 (4)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2006/10/">2006年10月 (1)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2006/07/">2006年7月 (4)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2006/06/">2006年6月 (9)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2006/05/">2006年5月 (9)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2006/04/">2006年4月 (12)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2006/03/">2006年3月 (11)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2006/02/">2006年2月 (13)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2005/12/">2005年12月 (4)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2005/11/">2005年11月 (1)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2005/09/">2005年9月 (1)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2005/07/">2005年7月 (1)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2005/06/">2005年6月 (1)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2005/05/">2005年5月 (7)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2005/04/">2005年4月 (2)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2005/02/">2005年2月 (1)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2005/01/">2005年1月 (1)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2004/12/">2004年12月 (9)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2004/11/">2004年11月 (4)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2004/10/">2004年10月 (2)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2004/09/">2004年9月 (7)</a></li>
+        
+    
+        
+            <li><a href="http://junnama.alfasado.net/online/2004/08/">2004年8月 (1)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">ウェブページ</h3>
+    <div class="widget-content">
+        <ul>
+    
+            <li class="page page-629"><a href="http://junnama.alfasado.net/online/japanese-emoticon.html">Japanese Emoticon</a></li>
+    
+    
+            <li class="folder folder-11"><strong>webpage</strong>
+        
+            
+                <ul>
+            
+                    <li class="page page-591"><a href="http://junnama.alfasado.net/online/webpage/markup-validation-bookmarklet.html">Markup Validation Bookmarklet</a></li>
+            
+                </ul>
+            
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://junnama.alfasado.net/cgi/mt/mt-static/images/status_icons/feed.gif" alt="購読する" width="9" height="9" /> <a href="http://junnama.alfasado.net/online/atom.xml">このブログを購読</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.sixapart.jp/movabletype/"><img src="http://junnama.alfasado.net/cgi/mt/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.0.3" width="81" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+                </div>
+            </div>
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9780479-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+        </div>
+    </div>
+</body>
+</html>
+

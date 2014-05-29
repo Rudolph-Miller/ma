@@ -1,0 +1,1370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja"
+      xmlns:fb="http://www.facebook.com/2008/fbml"
+      xmlns:og="http://opengraphprotocol.org/schema/">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>もはや使わない理由は存在しない。楽天でんわと名刺管理アプリ「Eight」の最強コンビ : ライフハッカー［日本版］</title>
+<meta name="keywords" content="APPLE, MICROSOFT, WEBツール, お役立ちアイテム, フリーソフト, ブラウザ, 仕事術, 恋愛術, 豆知識 などなど" />
+<meta name="description" content="ビジネスパーソンにとっての悩みといえば名刺管理。毎回名刺ホルダーに収めるのも面倒ですし、メールなり電話なりをするのにわざわざPCやスマホに手入力しなければなりません。名刺ホルダーから相手の連絡先を探すのも煩雑です。そこでおすすめしたいのが「Eight」という名刺管理アプリ。名刺を写真で撮影するだけでクラウド上に名刺データを記録できます。" />
+<link rel="canonical" href="http://www.lifehacker.jp/2014/05/140523rakuten_eight.html"/>
+
+
+
+
+
+
+<link rel="mixi-check-image" type="image/jpeg" href="http://www.lifehacker.jp/images/2014/05/140523rakutendenwa1.jpg" />
+<link rel="prev" href="http://www.lifehacker.jp/2014/05/140523shortcut.html" title="ファイルをドラッグ＆ドロップする際に役立つショートカット" />
+<link rel="next" href="http://www.lifehacker.jp/2014/05/140523tabroid_wickr.html" title="お漏らしNGならコレ！安全性最強のメッセンジャーアプリ『Wickr』" />
+<script type="text/javascript" src="/common/js/lhcommons.js?201405012129"></script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+var analytics;
+function gaAction(){
+	analytics = new Analytics('UA-4938808-1','lifehacker.jp');
+	analytics.linkEnhancedGA();
+	analytics.sendGAPV();
+	analytics.loadCX('9222321377607160892');
+	analytics.sendCXPV();
+}
+var pcview = false;
+if(document.cookie){
+	var cookies = document.cookie.split(";");
+	for(var n in cookies){
+		if(cookies[n].indexOf("pcview=")>=0){
+			pcview=cookies[n].split("=")[1]=="true";
+		}
+	}
+}
+var ua = navigator.userAgent;
+var ref = ((document.referrer.replace("http://","")).replace("https://",""));
+ref = ref.slice(0, ref.indexOf("/"));
+if(pcview==false && location.pathname.indexOf("/upload_files/") != 0){
+	if (ua.indexOf('iPhone') > 0 && ua.indexOf("FBID/tablet") == -1 || ua.indexOf('iPod') > 0 && ua.indexOf("FBID/tablet") == -1 || (ua.indexOf('Tablet') == -1 && ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) || ua.indexOf('blackberry') > 0 || ua.indexOf('IEMobile') > 0) {
+		if(ref!=""){
+			location.replace(location.protocol + "//" + location.hostname + "/sp" + location.pathname + "?r=" + ref);
+		}else{
+			location.replace(location.protocol + "//" + location.hostname + "/sp" + location.pathname);
+		}
+	}else if(ua.indexOf('iPad') > 0 || ua.indexOf('FBID/tablet') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('mobile') == -1){
+		if(ref!=""){
+			location.replace(location.protocol + "//" + location.hostname + "/a" + location.pathname + "?r=" + ref);}else{
+			location.replace(location.protocol + "//" + location.hostname + "/a" + location.pathname);
+		}
+	}else{
+		gaAction();
+	}
+}else{
+	gaAction();
+}
+var spView = new Object();
+spView.goToSPSite = function(){}
+spView.checkUA = function(){
+	if(ua.indexOf('iPhone') > 0 && ua.indexOf("FBID/tablet") == -1 || ua.indexOf('iPod') > 0 && ua.indexOf("FBID/tablet") == -1 || (ua.indexOf('Tablet') == -1 && ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) || ua.indexOf('blackberry') > 0 || ua.indexOf('IEMobile') > 0){
+		spView.goToSPSite = function(){
+			document.cookie = "pcview=false; path=/;";
+			location.href = location.protocol + "//" + location.hostname + "/sp" + location.pathname;
+		}
+		var button = document.createElement("div");
+		button.innerHTML = '<a href="javascript:spView.goToSPSite();">スマートフォン版へ</a>';
+		button.setAttribute("class", "spViewButton");
+		document.getElementsByTagName("body")[0].appendChild(button);
+		var overrideCSS = document.createElement('style');
+		overrideCSS.type = "text/css";
+		overrideCSS.innerText = ".spViewButton{width: 100%;min-width:1150px;margin-top: 41px;text-align: center;padding: 30px 0; font-size: 60px;background-color: #3697b3;}.spViewButton a {color: #fff;}";
+		document.getElementsByTagName('head')[0].appendChild(overrideCSS);
+	}
+}
+if(document.addEventListener && location.pathname.indexOf("/upload_files/") != 0){
+	document.addEventListener("DOMContentLoaded", spView.checkUA, false);
+}
+</script>
+<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.lifehacker.jp/index.xml" />
+<link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.lifehacker.jp/atom.xml" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.lifehacker.jp/rsd.xml" />
+<link rel="stylesheet" href="/common/css/style.css?201404212228" type="text/css" media="screen" />
+<script type="text/javascript" src="http://www.lifehacker.jp/mt-script.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/common/js/jquery.bxSlider.min.js"></script>
+<script type="text/javascript" src="http://cdn.topsy.com/topsy.js?init=topsyWidgetCreator"></script>
+<meta property="fb:admins" content="100000670865507" />
+<meta name="pocket-site-verification" content="5c3bd93e23d5507df108d75c45dfc9" />
+<script type="text/javascript" src="http://apis.google.com/js/plusone.js">{lang: 'ja'}</script>
+<script type="text/javascript" src="/common/js/social.js?201210221435"></script>
+<script src="/common/js/jquery.lazyload.min.js"></script>
+<script type="text/javascript">$(function() {$("img.lazy").lazyload({effect: 'fadeIn' });});</script>
+
+<!-- Twitter Cards -->
+<meta name="twitter:site" content="@lifehackerjapan" />
+<meta name="twitter:creator" content="@lifehackerjapan" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="http://www.lifehacker.jp/images/2014/05/140523rakutendenwa1.jpg" />
+<!-- /Twitter Cards -->
+<!-- Open Graph -->
+<meta property="og:title" content="もはや使わない理由は存在しない。楽天でんわと名刺管理アプリ「Eight」の最強コンビ" /> 
+<meta property="og:type" content="article" /> 
+<meta property="og:url" content="http://www.lifehacker.jp/2014/05/140523rakuten_eight.html" />
+<meta property="og:image" content="http://www.lifehacker.jp/images/2014/05/140523rakutendenwa1.jpg" />
+<meta property="og:description" content="ビジネスパーソンにとっての悩みといえば名刺管理。毎回名刺ホルダーに収めるのも面倒ですし、メールなり電話なりをするのにわざわざPCやスマホに手入力しなければなりません。名刺ホルダーから相手の連絡先を探すのも煩雑です。そこでおすすめしたいのが「Eight」という名刺管理アプリ。名刺を写真で撮影するだけでクラウド上に名刺データを記録できます。" />
+<!-- /Open Graph -->
+<!-- cXense -->
+<meta name="cXenseParse:recs:publishtime" content="2014-05-23T11:00:00.000Z"/>
+<meta name="cXenseParse:mdg-marker-category" content="Android"/>
+<meta name="cXenseParse:mdg-marker-category" content="Androidアプリ"/>
+<meta name="cXenseParse:mdg-marker-category" content="PR"/>
+<meta name="cXenseParse:mdg-marker-category" content="iPhone"/>
+<meta name="cXenseParse:mdg-marker-category" content="iPhoneアプリ"/>
+<meta name="cXenseParse:mdg-marker-category" content="お金"/>
+<meta name="cXenseParse:mdg-marker-category" content="スマートフォン"/>
+<meta name="cXenseParse:mdg-marker-category" content="仕事術"/>
+<meta name="cXenseParse:mdg-marker-category" content="時間管理"/>
+<meta name="cXenseParse:mdg-marker-category" content="節約術"/>
+<meta name="cXenseParse:recs:custom0" content="Android"/>
+<meta name="cXenseParse:recs:custom0" content="Androidアプリ"/>
+<meta name="cXenseParse:recs:custom0" content="PR"/>
+<meta name="cXenseParse:recs:custom0" content="iPhone"/>
+<meta name="cXenseParse:recs:custom0" content="iPhoneアプリ"/>
+<meta name="cXenseParse:recs:custom0" content="お金"/>
+<meta name="cXenseParse:recs:custom0" content="スマートフォン"/>
+<meta name="cXenseParse:recs:custom0" content="仕事術"/>
+<meta name="cXenseParse:recs:custom0" content="時間管理"/>
+<meta name="cXenseParse:recs:custom0" content="節約術"/>
+
+<!-- /cXense -->
+
+<script type="text/javascript">var ggShareImage = 'http://www.lifehacker.jp/images/2014/05/140523rakutendenwa1.jpg'</script>
+</head>
+<body>
+<div id="fb-root" class=" fb_reset"></div>
+<script>(function(d, s, id) {
+ var js, fjs = d.getElementsByTagName(s)[0];
+ if (d.getElementById(id)) return;
+ js = d.createElement(s); js.id = id;
+ js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=296335197107028";
+ fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="container">
+<div id="wrap">
+
+<!-- Cxense script begin -->
+<div id="cX-root" style="display:none"></div>
+<script type="text/javascript">
+var cX = cX || {}; cX.callQueue = cX.callQueue || [];
+var matches = location.href.match(/[?&]utm_medium=([^&#]+)/);
+if (matches && matches.length > 1) {
+    var value = decodeURIComponent(matches[1]);
+    console.log(value);
+    //cX.callQueue.push(['setCustomParameters', { smartnews: value } ]);
+}
+cX.callQueue.push(['setSiteId', '9222321377607160892']);
+cX.callQueue.push(['sendPageViewEvent']);
+</script>
+<script type="text/javascript">
+(function() { try { var scriptEl = document.createElement('script'); scriptEl.type = 'text/javascript'; scriptEl.async = 'async';
+scriptEl.src = ('https:' == document.location.protocol) ? 'https://scdn.cxense.com/cx.js' : 'http://cdn.cxense.com/cx.js';
+var targetEl = document.getElementsByTagName('script')[0]; targetEl.parentNode.insertBefore(scriptEl, targetEl); } catch (e) {};} ());
+</script>
+<!-- Cxense script end -->
+
+<div id="head">
+	<div id="headmain">
+		<h1 class="logo"><a href="/" class="spr">ライフハッカー［日本版］></a></h1>
+		<ul id="media-lang">
+        	<li><a href="http://www.gizmodo.jp/" target="_blank" class="spr gizmodo">gizmodo</a></li>
+            <li><a href="http://www.kotaku.jp/" target="_blank" class="spr kotaku">kotaku</a></li>
+            <li><a href="http://www.cafeglobe.com/" target="_blank" class="spr cafeglobe">カフェグローブ</a></li>
+            <li><a href="http://www.mylohas.net/" target="_blank" class="spr mylohas">mylohas</a></li>
+            <li><a href="http://www.glitty.jp/" target="_blank" class="spr myspi">恋愛スタイリングメディア[グリッティ]</a></li>
+            <li><a href="http://www.tabroid.jp/" target="_blank" class="spr tabroid">TABROID</a></li>
+            <li><a href="http://www.roomie.jp/" target="_blank" class="spr roomie">roomie</a></li>
+        	<li class="ad"><a href="http://www.lifehacker.jp/2008/07/lifehacker_jp.html#adinfo">広告について</a></li>
+			<li class="flag"><a href="http://us.lifehacker.com/" target="_blank" id="us" class="spr">US</a></li>
+			<li class="flag"><a href="http://www.lifehacker.com.au/" target="_blank" id="au" class="spr">AU</a></li>
+		</ul>
+        <ul id="social-icon">
+            <li class="twitter"><span><a href="https://twitter.com/lifehackerjapan" target="_blank">twitter</a></span></li>
+            <li class="gplus"><span><a href="https://plus.google.com/101174423538272596260/posts" target="_blank">googleplus</a></span></li>
+            <li class="facebook"><span><a href="http://www.facebook.com/lifehackerjapan" target="_blank">facebook</a></span></li>
+            <li class="tumblr"><span><a href="http://lifehackerjapan.tumblr.com/" target="_blank">tumblr</a></span></li>
+            <li class="rss"><span><a href="http://feeds.lifehacker.jp/rss/lifehacker/index.xml" target="_blank">RSSfeed</a></span></li>
+        </ul>            
+		<div class="search">
+			<form action="/search.html" id="cse-search-box">
+			  <div>
+				<input type="hidden" name="cx" value="010745442900013777306:kovjnkdqenw" />
+				<input type="hidden" name="cof" value="FORID:11" />
+				<input type="hidden" name="ie" value="UTF-8" />
+				<input type="text" name="q" class="search_box middle" value="" />
+				<span class="ic_search spr"></span>
+			  </div>
+			</form>
+			<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&lang=en"></script>
+		</div>
+        <!-- include -->
+        <div class="category_topics">
+        	<span class="tit">Hot Topics</span>
+            <span><a href="/cat3/">仕事術</a></span> . 
+            <span><a href="/iphone/">iPhone</a></span> . 
+            <span><a href="/android/">Android</a></span> . 
+            <span><a href="/mac/">MacOS</a></span> . 
+            <span><a href="/google/">Google</a></span> . 
+            <span><a href="/diy/">DIY</a></span> . 
+            <span><a href="/microsoft_office/">Microsoft Office</a></span> . 
+            <span><a href="/cat6/">生活術</a></span> . 
+            <span><a href="/cat292/">キミハツ</a></span>
+        </div>
+        <div class="pickup">
+        	<ul id="sliderbanner">
+            
+			
+            
+            
+            
+            
+            
+            
+            
+                            
+			
+			<li><a href="http://www.lifehacker.jp/2014/05/140526_kinza.html"><img src="http://www.lifehacker.jp/images/2014/05/140521kinza.jpg" width="222" /><span>日本橋生まれの『Kinza』はユーザーと一緒につくり上げる「エターナ...</span><span class="rtnum spr n38662"><script>$.getJSON("http://urls.api.twitter.com/1/urls/count.json?url=http://www.lifehacker.jp/2014/05/140526_kinza.html&callback=?", function(json){$(".pickup .n38662").html("<b>"+json.count+"</b><br />RT");});</script></span></a></li>
+            <li><a href="http://www.lifehacker.jp/2014/05/140527_arrows_nx_f-05f.html"><img src="http://www.lifehacker.jp/images/2014/05/140520_ARROWS_NX_TOP_shigoto.jpg" width="222" /><span>ARROWS NX F-05Fは「スマホ史上最高ATOK」搭載。文字...</span><span class="rtnum spr n38725"><script>$.getJSON("http://urls.api.twitter.com/1/urls/count.json?url=http://www.lifehacker.jp/2014/05/140527_arrows_nx_f-05f.html&callback=?", function(json){$(".pickup .n38725").html("<b>"+json.count+"</b><br />RT");});</script></span></a></li>
+            <li><a href="http://www.lifehacker.jp/2014/05/140522pretabi.html"><img src="http://www.lifehacker.jp/images/2014/05/140521toco1.jpg" width="222" /><span>夏休みの海外旅行は「プレ旅」で、不安要素をゼロにする</span><span class="rtnum spr n38525"><script>$.getJSON("http://urls.api.twitter.com/1/urls/count.json?url=http://www.lifehacker.jp/2014/05/140522pretabi.html&callback=?", function(json){$(".pickup .n38525").html("<b>"+json.count+"</b><br />RT");});</script></span></a></li>
+            <li><a href="http://www.lifehacker.jp/2014/05/140526becky_stern.html"><img src="http://www.lifehacker.jp/images/2014/05/140526becky01.jpg" width="222" /><span>ユニークなウェアラブルガジェットを次々に生み出すベッキー・スターンの...</span><span class="rtnum spr n38822"><script>$.getJSON("http://urls.api.twitter.com/1/urls/count.json?url=http://www.lifehacker.jp/2014/05/140526becky_stern.html&callback=?", function(json){$(".pickup .n38822").html("<b>"+json.count+"</b><br />RT");});</script></span></a></li>
+            <li><a href="http://www.lifehacker.jp/2014/05/140525_self_disciplined.html"><img src="http://www.lifehacker.jp/images/2014/05/140525self_disciplined.jpg" width="222" /><span>驚くほど意志の強い人がやっている5つの習慣</span><span class="rtnum spr n38779"><script>$.getJSON("http://urls.api.twitter.com/1/urls/count.json?url=http://www.lifehacker.jp/2014/05/140525_self_disciplined.html&callback=?", function(json){$(".pickup .n38779").html("<b>"+json.count+"</b><br />RT");});</script></span></a></li>
+            <li><a href="http://www.lifehacker.jp/2014/05/140525uzubek.html"><img src="http://www.lifehacker.jp/images/2014/05/1405uzubek1.jpg" width="222" /><span>ウズベキスタンでモデル事務所を立ち上げた男が説く、旅行中にビジネスチ...</span><span class="rtnum spr n38507"><script>$.getJSON("http://urls.api.twitter.com/1/urls/count.json?url=http://www.lifehacker.jp/2014/05/140525uzubek.html&callback=?", function(json){$(".pickup .n38507").html("<b>"+json.count+"</b><br />RT");});</script></span></a></li>
+            <li><a href="http://www.lifehacker.jp/2014/05/140524circa.html"><img src="http://www.lifehacker.jp/images/2014/05/140516BehindTheApp1.jpg" width="222" /><span>行動を伴わないアイデアに意味はない：斬新なニュースアプリ『Circa...</span><span class="rtnum spr n38676"><script>$.getJSON("http://urls.api.twitter.com/1/urls/count.json?url=http://www.lifehacker.jp/2014/05/140524circa.html&callback=?", function(json){$(".pickup .n38676").html("<b>"+json.count+"</b><br />RT");});</script></span></a></li>
+            <li><a href="http://www.lifehacker.jp/2014/05/140524energy_juice.html"><img src="http://www.lifehacker.jp/images/2014/05/140521juice01.jpg" width="222" /><span>つらい朝に自分でつくるエナジードリンク：二日酔い解消ジュース</span><span class="rtnum spr n38773"><script>$.getJSON("http://urls.api.twitter.com/1/urls/count.json?url=http://www.lifehacker.jp/2014/05/140524energy_juice.html&callback=?", function(json){$(".pickup .n38773").html("<b>"+json.count+"</b><br />RT");});</script></span></a></li>
+            <li><a href="http://www.lifehacker.jp/2014/05/140524tolabl.html"><img src="http://www.lifehacker.jp/images/2014/05/140523tolabl1.jpg" width="222" /><span>クリエイターの梁山泊？ 家賃0円で暮らせるシェアハウス登場</span><span class="rtnum spr n38806"><script>$.getJSON("http://urls.api.twitter.com/1/urls/count.json?url=http://www.lifehacker.jp/2014/05/140524tolabl.html&callback=?", function(json){$(".pickup .n38806").html("<b>"+json.count+"</b><br />RT");});</script></span></a></li>
+            </ul>
+        </div>
+        <!-- // include -->
+        <script type="text/javascript" src="/common/js/scripts.js"></script>
+	</div>	
+	<div class="ad_head_rectangle">
+		<!-- lifehacker_プレミアムディスプレイ -->        
+		<script language='javascript' src='http://ds.advg.jp/adpds_deliver/js/pjs.js'></script>
+        <script language='javascript'>adpds_js('http://ds.advg.jp/adpds_deliver', 'adpds_site=lifehacker&adpds_frame=waku_144203');</script>
+        <noscript>
+        <a target='_blank' href='http://ds.advg.jp/adpds_deliver/p/r?adpds_site=lifehacker&adpds_frame=waku_144203'>
+        <img src='http://ds.advg.jp/adpds_deliver/p/img?adpds_site=lifehacker&adpds_frame=waku_144203' border=0></a>
+        </noscript>   
+	</div>
+</div>
+
+
+<div id="body">
+<div id="fb-root" class=" fb_reset"></div>
+<script>(function(d, s, id) {
+ var js, fjs = d.getElementsByTagName(s)[0];
+ if (d.getElementById(id)) return;
+ js = d.createElement(s); js.id = id;
+ js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=296335197107028";
+ fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<div id="main">
+
+		<!-- include -->
+<div class="ad_entrybox_under clr">
+<!-- Lh_トップスーパーバナー -->
+<iframe width='728' height='90' marginwidth='0' marginheight='0' hspace='0' vspace='0' frameborder='0' scrolling='no' bordercolor='#000000' src='http://ds.advg.jp/adpds_deliver/p/iframe?adpds_site=lifehacker&adpds_frame=waku_145519'></iframe>
+</div>
+
+		<ul class="pagenavi">
+			<li class="prv"><a href="http://www.lifehacker.jp/2014/05/140523tabroid_wickr.html"><span>&laquo;</span> 前の記事へ</a></li><li class="top"><a href="http://www.lifehacker.jp/">トップへ</a></li><li class="next"><a href="http://www.lifehacker.jp/2014/05/140523shortcut.html">次の記事へ <span>&raquo;</span></a></li>
+		</ul>
+		
+		<div id="entry_detail">
+			<!-- google_ad_section_start -->
+
+			<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.lifehacker.jp/2014/05/140523rakuten_eight.html"
+    trackback:ping="http://www.lifehacker.jp/mt/mt-tb.cgi/26721"
+    dc:title="もはや使わない理由は存在しない。楽天でんわと名刺管理アプリ「Eight」の最強コンビ"
+    dc:identifier="http://www.lifehacker.jp/2014/05/140523rakuten_eight.html"
+    dc:subject="PR"
+    dc:description="ビジネスパーソンにとっての悩みといえば名刺管理。毎回名刺ホルダーに収めるのも面倒ですし、メールなり電話なりをするのにわざわざPCやスマホに手入力しなければなりません。名刺ホルダーから相手の連絡先を探すのも煩雑です。そこでおすすめしたいのが「Eight」という名刺管理アプリ。名刺を写真で撮影するだけでクラウド上に名刺データを記録できます。"
+    dc:creator="anzai"
+    dc:date="2014-05-23T11:00:00+09:00" />
+</rdf:RDF>
+-->
+
+
+			<div class="cat"><a href="http://www.lifehacker.jp/android/">Android</a> , <a href="http://www.lifehacker.jp/android_1/">Androidアプリ</a> , <a href="http://www.lifehacker.jp/pr/">PR</a> , <a href="http://www.lifehacker.jp/iphone/">iPhone</a> , <a href="http://www.lifehacker.jp/iphone_1/">iPhoneアプリ</a> , <a href="http://www.lifehacker.jp/money/">お金</a> , <a href="http://www.lifehacker.jp/cat258/">スマートフォン</a> , <a href="http://www.lifehacker.jp/cat3/">仕事術</a> , <a href="http://www.lifehacker.jp/cat197/">時間管理</a> , <a href="http://www.lifehacker.jp/cat65/">節約術</a></div>
+			<h2><a href="http://www.lifehacker.jp/2014/05/140523rakuten_eight.html">もはや使わない理由は存在しない。楽天でんわと名刺管理アプリ「Eight」の最強コンビ</a></h2>
+			<div class="entry_data clfx">
+				<div class="data_prof">
+                	
+                        
+                    	                        
+                    
+                	2014.05.23 11:00
+                </div>
+				<ul class="social_bts bts_horizontal">
+<li class="hatebu" id="e38649top"></li>
+<script>$(function(){$.getJSON('http://api.b.st-hatena.com/entry.count?url=http://www.lifehacker.jp/2014/05/140523rakuten_eight.html' + "&callback=?", function(data) {$('<a>',{'href': 'http://b.hatena.ne.jp/entry/http://www.lifehacker.jp/2014/05/140523rakuten_eight.html','title': 'はてブする','target': '_blank','class': 'hatena-bookmark-button spr','data-hatena-bookmark-layout': 'standard-balloon'}).append($('<span>').html(data)).appendTo($('#e38649top'));});});</script>
+<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+<li class="pocket"><a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en" data-save-url="http://www.lifehacker.jp/2014/05/140523rakuten_eight.html"></a>
+<script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+</li>
+</ul>
+
+				<div id="socialBarEntryTop" class="bookmarks"></div>
+				<script type="text/javascript">showShareBar('#socialBarEntryTop');</script>
+                <span class="ic_pr spr"></span>
+
+
+
+
+
+
+
+
+
+
+				<div class="tags"></div>
+			</div>
+			
+              
+			
+
+
+			
+						
+            			
+			<div class="entry_body">
+			
+            <div class="cXenseParse">
+
+            <div class="inner">
+			<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="140523rakutendenwa1.jpg" class="lazy" data-original="http://www.lifehacker.jp/images/2014/05/140523rakutendenwa1.jpg" src="/common/img/lazy.gif" width="640" height="360" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span></p>
+
+<p><br />
+多くのビジネスパーソンにとって大きな悩みといえば「名刺管理」だと思います。もらった名刺を定期的に整理しないと、どんどん溜まってしまっていくのが現実。毎回名刺ホルダーに収めるのも面倒ですし、名刺ホルダーに入れてしまうと、メールなり電話なりをするのにわざわざPCやスマホに手入力しなければなりません。名刺ホルダーから相手の連絡先を探すのも煩雑ですよね。</p>
+
+<p>そこでおすすめしたいのが『<a href="http://wapi.lifehacker.jp/redirect.php?rid=43373" rel="nofollow" target="_blank">Eight</a>』という無料の名刺管理アプリ。名刺を写真で撮影するだけでクラウド上に名刺のデータを記録できます。</p>
+            </div>
+            
+            </div><!-- //cXenseParse -->
+			
+			
+			
+				  
+				                
+                      
+                    
+				
+			</MTElse>
+			
+
+			
+			
+            
+            <div class="cXenseParse">
+            
+            <div class="inner">
+				<p id="more" class="entry-more">
+				<p><br />
+<h3>データ化によって名刺の連絡先を正確に記録できる</h3></p>
+
+<p><br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="140523eight4.jpg" class="lazy" data-original="http://www.lifehacker.jp/images/2014/05/140523eight4.jpg" src="/common/img/lazy.gif" width="640" height="360" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span></p>
+
+<p><br />
+このアプリの最大のポイントは、人力によるデータ化によって、<strong>相手の氏名・住所・電話番号などを正確に記録してくれる点</strong>。しかも「リンク」と呼ばれる名刺交換機能を使えば、相手の名刺情報が変わっても自動でデータを更新してくれます。つまり、<strong>一度Eightに登録さえしてしまえば、あとは相手が異動したり転職したりしても名刺データは常に最新の状態になる</strong>、というわけです。これで、名刺交換をした相手が転職するたびに自分のアドレス帳を書き換える必要がなくなります。</p>
+
+<p>でも、「大量に溜まった名刺を撮影するのは大変すぎる！」という人もいるかもしれません。そんな人には、「<a href="http://wapi.lifehacker.jp/redirect.php?rid=43374" rel="nofollow" target="_blank">どこでもスキャン計画</a>」が便利です。人気のコワーキングスペースへのスキャナ設置や、スキャンのプロがあなたの代わりに名刺のデータ化を行ってくれるサービス、名刺を郵送するとスキャンを代行してくるサービスなど、あらゆる方法で名刺をデータ化する仕組みの提供が始まりました。これで、溜まった名刺を一気にデータ化してくれて大助かりだと思いますよ。名刺をたくさん持っている方におすすめのサービスがそろっています。</p>
+
+<p><br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="140523rakuten5_1.jpg" class="lazy" data-original="http://www.lifehacker.jp/images/2014/05/140523rakuten5_1.jpg" src="/common/img/lazy.gif" width="360" height="452" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span></p>
+
+<p><br />
+<h3>デジタルで登録した情報を「即、使える」ようにするEightの便利な機能</h3></p>
+
+<p><br />
+Eightには「メモ」機能もあります。これも便利な機能の1つ。もらった紙の名刺に、相手と出会った場所や日にち、これまでの経歴などをペンで書き込む人も多いと思います。Eightのメモ欄にこれらの付加情報を記入しておけば、あとで相手のことを思い出す時に役立ちます。名刺交換してすぐに名刺に筆記用具で書き込むことに抵抗を感じる人は、Eightでの情報管理が向いていると言えます。</p>
+
+<p><br />
+デキるビジネスパーソンほど、名刺管理とマメなコミュニケーションに長けています。マメなコミュニケーションを取るには、普段から「名刺に書かれている情報」以外のことにも目を配らせる必要があります。「〇〇さんとはあの会場でお会いしましたよね。その後、お仕事のほうはいかがでしょうか？」とか、「△△さんと会ってから1年ほど経過しましたね。今もお仕事をご一緒できていることを嬉しく思います。」といった一文をメールに記載できるかどうかが、その後のビジネスに少なからず影響を与えることでしょう。</p>
+
+<p>さらに、Eightの便利なところは、名刺情報を登録できるだけでなく、登録された電話番号はタップするだけでそのまま電話ができてしまう点です。これで、いちいち名刺とにらめっこしながら電話をかける手間や間違い電話をかけるリスクもなくなるというわけです。まさに電話ハック、名刺ハックと言えるでしょう。</p>
+
+<p><br />
+<h3>Eightから『楽天でんわ』が起動できる！</h3></p>
+
+<p><br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="140523eight2.jpg" class="lazy" data-original="http://www.lifehacker.jp/images/2014/05/140523eight2.jpg" src="/common/img/lazy.gif" width="360" height="639" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span></p>
+
+<p><br />
+Eightを使えば、先に述べたように自動で名刺データをクラウドにアップし、端末に仕事の連絡先（電話番号やメールアドレスなど）をまとめてデータ化してくれるので楽です。</p>
+
+<p>さらに、基本料無料の通話アプリ『<a href="http://wapi.lifehacker.jp/redirect.php?rid=43375" rel="nofollow" target="_blank">楽天でんわ</a>』をスマートフォンにダウンロードすれば、Eightの電話番号をタップすると、デフォルトの電話アプリの発信のほかに「<strong>楽天でんわで発信</strong>」という選択肢が追加されます。これにより、Eightから電話番号をコピーして、楽天でんわを起動し、番号をペーストして発信という煩わしい作業を行う必要がなく、ワンタッチで楽天でんわから発信ができるようになりました。楽天でんわを仕事で使っている人は、Eightから直接電話するのが良いでしょう。</p>
+
+<p><br />
+<h3>Eightから楽天でんわが使えることのメリット</h3></p>
+
+<p><br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="140523denwa.jpg" class="lazy" data-original="http://www.lifehacker.jp/images/2014/05/140523denwa.jpg" src="/common/img/lazy.gif" width="640" height="360" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span></p>
+
+<p><br />
+さて、ビジネスパーソンの悩みで次に多いのが「スマートフォンの通話料」ではないでしょうか？　会社から支給されているスマホを使っている人もいるとは思いますが、ほとんどの人は私用のスマートフォンをビジネスとプライベートで兼用にしていることと思います。スマホの月々の支払額は一般的に月々1万円近くかかるため、大きな出費となってしまいます。なるべく毎月の出費のうちの「固定費」を減らすためにも、通話料をできるだけ安く抑えたいものです。</p>
+
+<p><br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="140523rakutendenwa3.jpg" class="lazy" data-original="http://www.lifehacker.jp/images/2014/05/140523rakutendenwa3.jpg" src="/common/img/lazy.gif" width="640" height="360" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span></p>
+
+<p><br />
+楽天でんわなら、通話料を安く抑えられます。月額利用料0円、通話料は30秒10円（税別）であり半額（通話料が30秒20円（税別）のプランを携帯電話事業者と契約中の場合。国際通話を除く）で利用できるとあって通話料を削減できます。</p>
+
+<p>1日に何度も電話を掛けるビジネスパーソンの場合は、毎回の通話料が気になるところ。キャリア通話だと1分40円（税別）。相手がなかなか捕まらず、「〇〇はただ今会議中です」と言われてしまっては、通話料がかさんでしまうでしょう。留守電から折り返しの電話をかけることも多いかと思いますが、ちりも積もれば山となる論理で月末の通話料にはね返ってきてしまいます。そういった意味で、通話料が半額になるのは大きなメリットです。</p>
+
+<p>また、楽天でんわはいわゆる「IP電話」ではなく、相手の電話番号の前に「0037-68-」をつけて発信（通常のキャリアと同じ電話回線を使用）するので、相手側に「誰からかかってきたのか」がすぐにわかる仕様になっています。相手側には「0037-68-」は表示されず、利用中のキャリアの電話番号が表示されます。これにより、相手が不審に思って電話に出ない...ということが無くなります。</p>
+
+<p>楽天でんわが通常のキャリアと同じ回線を使うもう1つのメリットは「通話品質」。IP電話アプリを利用した人なら感じたことがあると思いますが、IP電話は時々遅延が発生したり音質が劣化したりします。対して、楽天でんわなら品質に関してストレスを感じずに済みます。なお、スマホに登録しているアドレス帳をそのまま利用でき、自動で「0037-68-」を付けてくれます。</p>
+
+<p>筆者もIP電話アプリを使っているのですが、電波状況によって繋がらないという事態が起きることもしばしば。大事な仕事の電話が聞き取りにくい...という状況は、なんとしても回避したいところです。</p>
+
+<p>また、4月に新しく社会人になった読者も多いと思います。入社から1ヶ月以上が経ち、さっそく現場に出て仕事をしていることでしょう。名刺交換も何度も経験したはずです。<strong>そろそろ名刺が溜まってきた頃だと思いますので、Eightを使って名刺管理をしてみてはいかがでしょうか</strong>？　Eightに名刺を読み取らせたら、ついでに楽天でんわをダウンロードしましょう。新入社員の基本は「ホウ・レン・ソウ」です。仕事で会社の外にいる時は、上司へ電話を1本入れる（もしくはメールを送る）ことを忘れずに。</p>
+
+<p><br />
+<h3>Eightの連絡先は「仕事用」、スマホのアドレス帳は「プライベート」と分けられる</h3></p>
+
+<p><br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="140523rakutenmeishi.jpg" class="lazy" data-original="http://www.lifehacker.jp/images/2014/05/140523rakutenmeishi.jpg" src="/common/img/lazy.gif" width="640" height="360" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span></p>
+
+<p><br />
+スマホに仕事用とプライベート用の連絡先を保存している人も多いと思います。しかし、仕事の相手と友達が混ざった状態で管理するのは大変。連絡先を管理できるアプリ（『Connexions』や『連絡先＋』など）もありますが、わざわざ会社専用のグループを作って仕分けをするという余計な手間が掛かってしまいます。</p>
+
+<p>Eightを「仕事専用のアドレス帳」として決めてしまえば、仕事中はEightだけを起動すればOK。そもそも名刺を写真で撮るだけでデータ化できるので、仕事用の連絡先を入力する手間も発生しません。</p>
+
+<p>オン（仕事）とオフ（プライベート）の切り替えをうまく行うのも、デキるビジネスパーソンです。仕事ではEight、プライベートではスマホのアドレス帳、という風に使い分けるのが効率化への第一歩だと言えます。</p>
+
+<p>さらに、楽天でんわは、「<a href="http://wapi.lifehacker.jp/redirect.php?rid=43376" rel="nofollow" target="_blank">春のかけ放題キャンペーン</a>」を開催。5月25日（日）0時〜23時59分の1日限定で国内通話料金が何回かけても無料。5月16日（日）午前10時〜5月26日（月）9時59分まで、新規利用登録で100円分の無料通話がプレゼントされるということです。まだ楽天でんわを使ったことがない人はこの機会に利用登録をして、楽天でんわを使ってみてください。</p>
+
+<p><br />
+<h3>結論：Eight+楽天でんわは最強のコンビ</h3></p>
+
+<p><br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="140523iphonetop.jpg" class="lazy" data-original="http://www.lifehacker.jp/images/2014/05/140523iphonetop.jpg" src="/common/img/lazy.gif" width="640" height="360" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span></p>
+
+<p><br />
+<strong>Eightと楽天でんわを組み合わせると、煩わしい名刺のデータ化の時間も無くなるばかりか、通話料も安くできるので一石二鳥</strong>。しかも、Eightが「<strong>仕事専用のアドレス帳</strong>」としての役割も果たしてくれるようになります。もはや使わない手はない「<strong>Eight＋楽天でんわ</strong>」という組み合わせ。この最強コンビを利用して「安く」「賢く」名刺管理してみてはいかがでしょうか？</p>
+
+<p><br />
+<a href="http://wapi.lifehacker.jp/redirect.php?rid=43375" rel="nofollow" target="_blank">楽天でんわ</a>｜<a href="http://wapi.lifehacker.jp/redirect.php?rid=43376" rel="nofollow" target="_blank">春のかけ放題キャンペーン</a><br />
+<a href="http://wapi.lifehacker.jp/redirect.php?rid=43373" rel="nofollow" target="_blank">Eight</a></p>
+
+<p><br />
+（安齋慎平）</p>
+
+<p><em><small>Photo by Thinkstock</small></em></p>
+				</p>
+            </div>
+            
+            </div><!-- //cXenseParse -->
+            
+			
+<div class="inner">
+<div class="amazon_area">
+
+</div>
+</div>
+
+<!--[if lte IE 8]>
+    <script type="text/javascript" src="/common/js/jquery.backgroundSize.js"></script>
+    <script>
+    jQuery(document).ready(function() {
+        jQuery('.amazItem').css({backgroundSize: "contain"});
+    });
+    </script>
+<![endif]-->
+
+<div class="entry_data entry_data_bottom clfx">
+    <ul class="social_bts bts_horizontal">
+<li class="hatebu" id="e38649bottom"></li>
+<script>$(function(){$.getJSON('http://api.b.st-hatena.com/entry.count?url=http://www.lifehacker.jp/2014/05/140523rakuten_eight.html' + "&callback=?", function(data) {$('<a>',{'href': 'http://b.hatena.ne.jp/entry/http://www.lifehacker.jp/2014/05/140523rakuten_eight.html','title': 'はてブする','target': '_blank','class': 'hatena-bookmark-button spr','data-hatena-bookmark-layout': 'standard-balloon'}).append($('<span>').html(data)).appendTo($('#e38649bottom'));});});</script>
+<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+<li class="pocket"><a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en" data-save-url="http://www.lifehacker.jp/2014/05/140523rakuten_eight.html"></a>
+<script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+</li>
+</ul>
+
+	<div id="socialBarEntryBottom" class="bookmarks"></div>
+	<script type="text/javascript">showShareBar('#socialBarEntryBottom');</script>
+</div>  
+<ul class="pagenavi pagenavi_foot">
+	<li class="prv"><a href="http://www.lifehacker.jp/2014/05/140523tabroid_wickr.html"><span>&laquo;</span> 前の記事へ</a></li><li class="top"><a href="http://www.lifehacker.jp/">トップへ</a></li><li class="next"><a href="http://www.lifehacker.jp/2014/05/140523shortcut.html">次の記事へ <span>&raquo;</span></a></li>
+</ul>           
+
+
+<!-- 関連するおすすめ記事 -->
+  	
+  
+
+
+<!-- 関連するおすすめ記事 -->
+
+  	
+  
+
+		</div><!--// entry_body-->
+		</div><!--// detail-->
+
+        <!-- 位置切り替え(通常) -->
+		<!-- -->
+<div class="clr"></div>
+<!-- -->
+
+
+
+
+
+	
+
+
+
+
+
+
+		<div class="ad_comment_top">
+		    <script type="text/javascript" src="/common/inc/inc_customads_comment_top.js"></script>
+		</div>
+
+		
+
+
+
+
+<div id="entry_actions">
+<!-- **************************************************************************************************************** -->
+<!-- **************************************************************************************************************** -->
+
+	</div>	
+		
+		<!-- include -->
+<div class="ad_main_end" >
+	<!-- lifehacker_フッター特大バナー -->
+    <script language='javascript' src='http://ds.advg.jp/adpds_deliver/js/pjs.js'></script>
+	<script language='javascript'>adpds_js('http://ds.advg.jp/adpds_deliver', 'adpds_site=lifehacker&adpds_frame=waku_144205');</script>
+    <noscript>
+    <a target='_blank' href='http://ds.advg.jp/adpds_deliver/p/r?adpds_site=lifehacker&adpds_frame=waku_144205'>
+    <img src='http://ds.advg.jp/adpds_deliver/p/img?adpds_site=lifehacker&adpds_frame=waku_144205' border=0></a>
+</noscript>
+</div>		
+	</div><!--// main -->
+
+	<div id="side">
+        
+        <div id="hotkeyword" class="section">
+			<div class="tit_bar">Hot Keyword</div>
+            <span class="update">2014.05.28 update</span>
+            <div class="word">「<a href="http://www.lifehacker.jp/cat196/" onmousedown="analytics.sendGAEvent('Hotkeyword', 'onClickKeyword', 'http://www.lifehacker.jp/cat196/');">はじめよう、園芸</a>」</div>	
+			<ul class="list">             
+                <li><a href="http://www.lifehacker.jp/2014/05/140504verander.html" onmousedown="analytics.sendGAEvent( 'Hotkeyword', 'onClickEntryList', 'http://www.lifehacker.jp/2014/05/140504verander.html');"><span class="entryimage"><img src="http://www.lifehacker.jp/images/2014/04/140504varander1.jpg" height="74" /></span><span class="entrytitle">採れすぎて困る。驚きのコストパフォーマンス。ミョウガのベランダ栽培</span></a></li>
+				<li><a href="http://www.lifehacker.jp/2014/05/140518goya.html" onmousedown="analytics.sendGAEvent( 'Hotkeyword', 'onClickEntryList', 'http://www.lifehacker.jp/2014/05/140518goya.html');"><span class="entryimage"><img src="http://www.lifehacker.jp/images/2014/05/140518goya2_2.JPG" height="74" /></span><span class="entrytitle">ゴーヤーで涼しい「緑のカーテン」を作る5つのコツ</span></a></li>
+                <li><a href="http://www.lifehacker.jp/2014/04/140408verander.html" onmousedown="analytics.sendGAEvent( 'Hotkeyword', 'onClickEntryList', 'http://www.lifehacker.jp/2014/04/140408verander.html');"><span class="entryimage"><img src="http://www.lifehacker.jp/images/2014/04/140408verander01.jpg" height="74" /></span><span class="entrytitle">「ベランダー」推薦！エアプランツで植物のある生活を始めよう</span></a></li>
+            </ul>
+            <p class="others"><a href="http://www.lifehacker.jp/cat196/" onmousedown="analytics.sendGAEvent('Hotkeyword', 'onClickOtherEntries', 'http://www.lifehacker.jp/cat196/');">このキーワードの他の記事を見る</a></p>
+		</div>
+
+        
+
+        <div id="hotentry" class="section">
+			<div class="tit_bar">Hot Entry</div>
+			<ul class="list" id="hotentrylist">             
+<script src="/common/js/jquery-shuffle.js" type="text/javascript"></script>
+<script src="/common/js/hot_entry.js" type="text/javascript"></script>
+            </ul>
+		</div>
+		<!-- include -->
+		<div id="ranking" class="section">
+			<div class="tit_bar">Weekly Ranking</div>			
+			<ul class="list">             
+                <li><a href="http://www.lifehacker.jp/2014/05/140525_self_disciplined.html" onmousedown="analytics.sendGAEvent('weeklyranking', 'onClickWeeklyRanking', '1位');"><span class="rank">1</span><span class="entryimage"><img src="http://www.lifehacker.jp/images/2014/05/140525self_disciplined.jpg" alt="驚くほど意志の強い人がやっている5つの習慣" /></span><span class="entrytitle">驚くほど意志の強い人がやっている5つの習慣</span><span class="pv">148097 PV</span></a></li>
+<li><a href="http://www.lifehacker.jp/2014/05/140522presentation.html" onmousedown="analytics.sendGAEvent('weeklyranking', 'onClickWeeklyRanking', '2位');"><span class="rank">2</span><span class="entryimage"><img src="http://www.lifehacker.jp/images/2014/05/140522presentation.jpg" alt="聞き手を惹きつけるコツは「感情のストーリー」を語ること" /></span><span class="entrytitle">聞き手を惹きつけるコツは「感情のストーリー」を語ること</span><span class="pv">135095 PV</span></a></li>
+<li><a href="http://www.lifehacker.jp/2014/05/140523money.html" onmousedown="analytics.sendGAEvent('weeklyranking', 'onClickWeeklyRanking', '3位');"><span class="rank">3</span><span class="entryimage"><img src="http://www.lifehacker.jp/images/2014/05/140523money.jpg" alt="お金が多ければいいわけじゃない。金銭的な報酬がもたらすマイナスの影響" /></span><span class="entrytitle">お金が多ければいいわけじゃない。金銭的な報酬がもたらすマイナスの影響</span><span class="pv">125766 PV</span></a></li>
+<li><a href="http://www.lifehacker.jp/2014/05/140522camera_strap.html" onmousedown="analytics.sendGAEvent('weeklyranking', 'onClickWeeklyRanking', '4位');"><span class="rank">4</span><span class="entryimage"><img src="http://www.lifehacker.jp/images/2014/05/140522camera_strap.jpg" alt="カメラのネックストラップは本当に必要？長所・短所と代用品を考えた" /></span><span class="entrytitle">カメラのネックストラップは本当に必要？長所・短所と代用品を考えた</span><span class="pv">124010 PV</span></a></li>
+<li><a href="http://www.lifehacker.jp/2014/05/140524energy_juice.html" onmousedown="analytics.sendGAEvent('weeklyranking', 'onClickWeeklyRanking', '5位');"><span class="rank">5</span><span class="entryimage"><img src="http://www.lifehacker.jp/images/2014/05/140521juice01.jpg" alt="つらい朝に自分でつくるエナジードリンク：二日酔い解消ジュース" /></span><span class="entrytitle">つらい朝に自分でつくるエナジードリンク：二日酔い解消ジュース</span><span class="pv">123567 PV</span></a></li>
+<li><a href="http://www.lifehacker.jp/2014/05/140524freephoto.html" onmousedown="analytics.sendGAEvent('weeklyranking', 'onClickWeeklyRanking', '6位');"><span class="rank">6</span><span class="entryimage"><img src="http://www.lifehacker.jp/assets_c/2014/05/20140518-high-quality-photo-thumb-640x424.jpg" alt="無料でハイクオリティな写真を見つられるサイト15選" /></span><span class="entrytitle">無料でハイクオリティな写真を見つられるサイト15選</span><span class="pv">121908 PV</span></a></li>
+
+                <li><a href="http://www.lifehacker.jp/2014/05/140523rakuten_eight.html" onmousedown="analytics.sendGAEvent( 'weeklyranking', 'onClickWeeklyRanking', 'special');"><span class="entryimage"><img src="http://www.lifehacker.jp/images/2014/05/140523rakutendenwa1.jpg" height="74" /></span><span class="entrytitle"><strong>Special</strong><br>もはや使わない理由は存在しない。楽天でんわと名刺管理アプリ「Eight」の最強コンビ</span></a></li>
+                
+            </ul>
+		</div>
+		<div id="info" class="section">
+			<div class="tit_bar">Recommended</div>
+			<ul class="section_cont">
+				<li><a href="http://www.lifehacker.jp/diy/" onmousedown="analytics.sendGAEvent('click', '右カラムおすすめ記事', '1本目');"><img src="http://www.lifehacker.jp/common/inc/images/2014/04/140410DIY.jpg" alt="" /></a></li>
+				<li><a href="http://www.lifehacker.jp/startups_2014/" onmousedown="analytics.sendGAEvent('click', '右カラムおすすめ記事', '2本目');"><img src="http://www.lifehacker.jp/common/inc/upload_files/140113banner_startup.gif" alt="" /></a></li>
+				<li><a href="http://www.lifehacker.jp/how_i_work/" onmousedown="analytics.sendGAEvent('click', '右カラムおすすめ記事', '3本目');"><img src="http://www.lifehacker.jp/common/inc/upload_files/banner13081904how.gif" alt="" /></a></li>
+				<li><a href="https://www.facebook.com/lifehackerjapan" target="_blank" onmousedown="analytics.sendGAEvent('click', '右カラムおすすめ記事', '4本目');"><img src="http://www.lifehacker.jp/common/inc/upload_files/130911facebook_banner.gif" alt="" /></a></li>
+				<li><a href="" onmousedown="analytics.sendGAEvent('click', '右カラムおすすめ記事', '5本目');"></a></li>
+			</ul>
+		</div>
+        <div class="section">
+            <script language='javascript' src='http://ds.advg.jp/adpds_deliver/js/pjs.js'></script>
+            <script language='javascript'>adpds_js('http://ds.advg.jp/adpds_deliver', 'adpds_site=lifehacker&adpds_frame=waku_158842');</script>
+            <noscript>
+            <a target='_blank' href='http://ds.advg.jp/adpds_deliver/p/r?adpds_site=lifehacker&adpds_frame=waku_158842'>
+            <img src='http://ds.advg.jp/adpds_deliver/p/img?adpds_site=lifehacker&adpds_frame=waku_158842' border=0></a>
+            </noscript>
+		</div>   
+        <div id="facebooklikebox" class="section">
+        	<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Flifehackerjapan&amp;width=300&amp;height=280&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;border_color=%23cccccc&amp;header=true&amp;appId=269978213028243" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:280px;" allowTransparency="true"></iframe>
+        </div>        
+        <div class="amazon_ranking section">
+						<div class="tit_bar">Amazon Sales TOP5</div>
+						<ul class="section_cont">
+							<li><span class="rank">1</span>1.<p><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4484142139/lifehacker09-22/ref=nosim/" target="_blank">45歳から5億円を稼ぐ勉強法 </a><br /><span><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4484142139/lifehacker09-22/ref=nosim/" target="_blank"><img src="http://ec2.images-amazon.com/images/I/41dd4bNlDxL._SL500_AA240_.jpg" width="150" alt="4484142139" border="0" /></a></span></p></li>
+							<li><span class="rank">2</span>2.<p><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4905194733/lifehacker09-22/ref=nosim/" target="_blank">十代のきみたちへ: ─ぜひ読んでほしい憲法の本 </a><br /><span><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4905194733/lifehacker09-22/ref=nosim/" target="_blank"><img src="http://ec2.images-amazon.com/images/I/51Ph93arHFL._SL500_AA240_.jpg" width="150" alt="4905194733" border="0" /></a></span></p></li>
+							<li><span class="rank">3</span>3.<p><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4532169259/lifehacker09-22/ref=nosim/" target="_blank">最高の戦略教科書 孫子 </a><br /><span><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4532169259/lifehacker09-22/ref=nosim/" target="_blank"><img src="http://ec2.images-amazon.com/images/I/41tLrJwH5UL._SL500_AA240_.jpg" width="150" alt="4532169259" border="0" /></a></span></p></li>
+							<li><span class="rank">4</span>4.<p><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00IDTILEW/lifehacker09-22/ref=nosim/" target="_blank">Anker 40W 5ポート USB急速充電器 ACアダプタ PowerIQ搭載 iPhone5C/5S/5/4S/4/iPod/iPad/Xperia/GALAXY/ウォークマン等対応</a><br /><span><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00IDTILEW/lifehacker09-22/ref=nosim/" target="_blank"><img src="http://ec2.images-amazon.com/images/I/31-Ar%2Br9FPL._SL500_AA240_.jpg" width="150" alt="B00IDTILEW" border="0" /></a></span></p></li>
+							<li><span class="rank">5</span>5.<p><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4534051735/lifehacker09-22/ref=nosim/" target="_blank">「で、結局何が言いたいの?」と言われない話し方 </a><br /><span><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4534051735/lifehacker09-22/ref=nosim/" target="_blank"><img src="http://ec2.images-amazon.com/images/I/41VcHNQzJML._SL500_AA240_.jpg" width="150" alt="4534051735" border="0" /></a></span></p></li>
+						</ul>
+					</div>
+		<!-- include -->
+<div id="inc_rightcolumn_amazonunder" class="section">
+	<script> 
+	  google_ad_client =  'ca-pub-2605419517314899';
+	  google_ad_channel =  '2675459524';
+	  google_ad_slot =  '5592894660';
+	  google_override_format =  'true';
+	  google_ad_width =  300;
+	  google_ad_height = 300;
+	  google_ad_type =  'text';
+	  google_color_link =  '#8a2be2';
+	  google_color_text =  '#000';
+	  google_color_bg =  '#FFFFFF';
+	  google_color_url =  '#008000';
+	  google_language =  'ja';
+	</script>
+	<script src="https://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+    <!--
+	<script type="text/javascript" src="/common/inc/inc_rightcolumn_amazonunder.js?201210191632"></script>
+    -->
+</div>
+        
+        
+        <script language='javascript' src='http://ds.advg.jp/adpds_deliver/js/pjs.js'></script>
+<script language='javascript'>adpds_js('http://ds.advg.jp/adpds_deliver', 'adpds_site=lifehacker&adpds_frame=waku_165681');</script>
+<noscript>
+<a target='_blank' href='http://ds.advg.jp/adpds_deliver/p/r?adpds_site=lifehacker&adpds_frame=waku_165681'>
+<img src='http://ds.advg.jp/adpds_deliver/p/img?adpds_site=lifehacker&adpds_frame=waku_165681' border=0></a>
+</noscript>
+
+<div class="section" style="padding-top:10px;">
+        	<div class="tit_bar" style="text-align:center; border:0; font-size:13px; font-weight:normal; font-family:Arial, Helvetica, Verdana, 'ヒラギノ角ゴPro W3', 'Hiragino Kaku Gothic Pro', Osaka, 'メイリオ' Meiryo, 'ＭＳ Ｐゴシック', sans-serif;">関連メディア</div>  
+        	<a href="http://www.mugendai-web.jp/?utm_source=lifehacker&utm_medium=banner&utm_campaign=mugendai" target="_blank"><img src="/common/img/mugendai.gif" /></a>
+        </div>
+
+        
+        
+        <script>
+       	//サイド　カテゴリのタブ切り替えの処理
+		$('#side .category .tab li:first').addClass('crnt');
+		$('#side .category .tabcont:first').show();
+		$('#side .category .tab li a').mouseover(function(){
+			$('#side .category .tab li').removeClass('crnt');
+			cnum = $(this).parent().attr('class');
+			$(this).parent().addClass('crnt');
+			$('#side .category .tabcont').hide();
+			$('#side .category ul.'+cnum).fadeIn(300);
+			});		
+        </script>
+	</div>
+	
+	
+</div><!--// body -->
+
+
+<div id="foot">
+<div class="footerbox clfx">
+<div id="about">
+<div>
+    <div class="want_ad">
+        <p>
+        <strong>広告募集！</strong>
+        ライフハッカーは、スポンサー様のおかげで今日も更新できています。<a href="/2008/07/lifehacker_jp.html#adinfo">広告出稿をお考えいただけるようでしたら、こちら</a>をご覧ください。
+        </p>
+        <a href="http://www.mediagene.co.jp/pdf/lifehacker_data.pdf" class="iconlink"><span class="ic_pdf spr"></span>媒体資料をダウンロード</a>
+        <a href="mailto:ad-lifehacker@infobahn.co.jp" class="iconlink"><span class="ic_mail spr"></span>広告に関するお問い合わせ</a>
+        <p>
+        どうぞよろしくお願いします！
+        </p>
+    </div>
+    <div class="aboutsite">
+    	<a href="/2008/07/lifehacker_jp.html"><span class="spr">lifehacker</span>ライフハッカー［日本版］について</a>
+    </div>
+    <div class="delivery">
+    	<p><a href="http://www.lifehacker.jp/2008/07/lifehacker_jp.html#kijihaisin">記事配信中のニュースサイト</a></p>
+    	<ul>
+        	<li><a href="http://news.livedoor.com/category/vender/227/" target="new" id="bn_livedoor" class="spr" />livedoorニュース</a></li>
+            <li><a href="http://www.itmedia.co.jp/bizid/" target="new" id="bn_bizid" class="spr" />IT media 誠biz.ID</a></li>
+            <li><a href="http://topics.jp.msn.com/digital/lifehacker/default.aspx" target="new" id="bn_msn" class="spr" />msnデジタルライフ</a></li>
+            <li><a href="http://www.excite.co.jp/News/source/Lifehacker/" target="new" id="bn_excite" class="spr" />excite</a></li>
+            <li><a href="http://news.goo.ne.jp/publisher/lifehacker/" target="new" id="bn_goo" class="spr" />gooニュース</a></li>
+            <li><a href="http://news.biglobe.ne.jp/provider/lfh/" target="new" id="bn_biglobe" class="spr" />Biglobeニュース</a></li>
+            <li><a href="http://netallica.yahoo.co.jp/search?q=&m=lifehac" target="new" id="bn_netallica" class="spr" />ネタりか</a></li>
+            <li><a href="http://cobs.jp/news/lifehacker/" target="new" id="bn_mynavi" class="spr" />マイナビニュース</a></li>
+            <li><a href="http://antenna.jp/publisher/271" target="_blank" id="bn_antenna" class="spr">antenna</a></li>
+            <li><a href="https://cakes.mu/creators/334" target="_blank" id="bn_cakes" class="spr">cakes</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<div class="foot_archive">
+
+<div class="catlist2 clfx">		
+  
+<div class="archivelist2 clfx">
+		
+		<ul class="category">
+		
+		
+		
+		<li><a href="http://www.lifehacker.jp/trend/" title="">Webサービス</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/sns/" title="">SNS</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/facebook/" title="">Facebook</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/google_1/" title="">Google+</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/instagram/" title="">Instagram</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/line/" title="">LINE</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/twitter/" title="">Twitter</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/tumblr/" title="">tumblr</a></li></ul>
+		
+		</li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/groupware/" title="">グループウェア</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat112/" title="">ストレージ</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/dropbox/" title="">Dropbox</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/evernote/" title="">Evernote</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/google_drive/" title="">Google Drive</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/skydrive_1/" title="">SkyDrive</a></li></ul>
+		
+		</li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat98/" title="">動画</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/youtube/" title="">YouTube</a></li></ul>
+		
+		</li></ul>
+		
+		</li>
+		
+		
+		
+		<li><a href="http://www.lifehacker.jp/cat10/" title="">お知らせ</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/cat126/" title="">まとめ</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat47/" title="">アンケート</a></li></ul>
+		
+		</li>
+		
+		
+		
+		<li><a href="http://www.lifehacker.jp/money/" title="">お金</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/cat230/" title="">マネーハック</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat65/" title="">節約術</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat69/" title="">資産運用</a></li></ul>
+		
+		</li>
+		
+		
+		
+		<li><a href="http://www.lifehacker.jp/cat250/" title="">こころ</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/minimalism/" title="">ミニマリズム</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat199/" title="">メンタル</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat198/" title="">モチベーション</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat7/" title="">恋愛</a></li></ul>
+		
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		<li><a href="http://www.lifehacker.jp/study/" title="">スタディ</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/cat120/" title="">書評</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat137/" title="">語学</a></li></ul>
+		
+		</li>
+		
+		
+		
+		<li><a href="http://www.lifehacker.jp/cat258/" title="">スマートフォン</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/android/" title="">Android</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/android_1/" title="">Androidアプリ</a></li></ul>
+		
+		</li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/iphone/" title="">iPhone</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/iphone_1/" title="">iPhoneアプリ</a></li></ul>
+		
+		</li></ul>
+		
+		</li>
+		
+		
+		
+		<li><a href="http://www.lifehacker.jp/cat217/" title="">タブレット</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/android_3/" title="">Android</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/kindle/" title="">Kindle</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/ipad/" title="">iPad</a></li></ul>
+		
+		</li>
+		
+		
+		
+		</ul><ul class="category"><li><a href="http://www.lifehacker.jp/web/" title="">ツール</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/microsoft_office/" title="">Microsoft Office</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/excel/" title="">Excel</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/power_point/" title="">Power Point</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/word/" title="">Word</a></li></ul>
+		
+		</li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/os/" title="">OS</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/linux/" title="">Linux</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/mac/" title="">MacOS</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/windows/" title="">Windows</a></li></ul>
+		
+		</li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/web_1/" title="">Webアプリ</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat92/" title="">セキュリティ</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat4/" title="">ソフトウェア</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat8/" title="">ブラウザ</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/firefox/" title="">Firefox</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/google_chrome/" title="">Google Chrome</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/internet_explorer/" title="">Internet Explorer</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/safari/" title="">Safari</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat42/" title="">アドオン・拡張機能</a></li></ul>
+		
+		</li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/mail/" title="">メール</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/gmail/" title="">Gmail</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/thunderbird/" title="">Thunderbird</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat48/" title="">フリーメール</a></li></ul>
+		
+		</li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat51/" title="">壁紙</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat195/" title="">無料・シェアウェア</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat97/" title="">画像編集</a></li></ul>
+		
+		</li>
+		
+		
+		
+		<li><a href="http://www.lifehacker.jp/cat263/" title="">ニュース・コラム</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/mugendai/" title="">Mugendai</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat266/" title="">エディターズトピック</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat264/" title="">社会</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat265/" title="">科学</a></li></ul>
+		
+		</li>
+		
+		
+		
+		<li><a href="http://www.lifehacker.jp/pc/" title="">パソコン</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/cat100/" title="">PC周辺機器</a></li></ul>
+		
+		</li>
+		
+		
+		
+		<li><a href="http://www.lifehacker.jp/cat158/" title="">メディアジーンサイト</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/gizmodo/" title="">GIZMODO</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/glitty/" title="">Glitty</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/kotaku/" title="">Kotaku</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/mylohas_1/" title="">MYLOHAS</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/tabroid/" title="">TABROID</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cafeglobe/" title="">cafeglobe</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/roomie/" title="">roomie</a></li></ul>
+		
+		</li>
+		
+		
+		
+		<li><a href="http://www.lifehacker.jp/cat3/" title="">仕事術</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/cat239/" title="">アイデア発想術</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat282/" title="">キーパーソン</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat63/" title="">コミュニケーション</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat277/" title="">プレゼン</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat278/" title="">リーダーシップ</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat113/" title="">就職・転職</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/cat279/" title="">面接術</a></li></ul>
+		
+		</li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat197/" title="">時間管理</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat196/" title="">生産性向上</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/bgm/" title="">作業用BGM</a></li></ul>
+		
+		</li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat281/" title="">起業</a></li></ul>
+		
+		</li>
+		
+		
+		
+		</ul><ul class="category"><li><a href="http://www.lifehacker.jp/offtime/" title="">健康</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/cat117/" title="">スポーツ・運動</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat118/" title="">病気</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat66/" title="">睡眠</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat251/" title="">脳</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat116/" title="">食生活</a></li></ul>
+		
+		</li>
+		
+		
+		
+		<li><a href="http://www.lifehacker.jp/cat261/" title="">家電</a></li>
+		
+		
+		
+		<li><a href="http://www.lifehacker.jp/cat233/" title="">文房具</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/cat33/" title="">モレスキン</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat262/" title="">名刺管理</a></li></ul>
+		
+		</li>
+		
+		
+		
+		<li><a href="http://www.lifehacker.jp/cat6/" title="">生活</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/cat115/" title="">エコロジー</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat253/" title="">ショッピング</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/amazon/" title="">Amazon</a><ul class="category">
+		
+		</ul>
+		
+		</li></ul>
+		
+		</li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat72/" title="">人生</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat121/" title="">住まい</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/kids/" title="">子ども</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat76/" title="">整理整頓</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat200/" title="">料理術</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/cat114/" title="">レシピ</a></li></ul>
+		
+		</li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat1/" title="">豆知識</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat124/" title="">身だしなみ</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat74/" title="">防犯・防災</a></li></ul>
+		
+		</li>
+		
+		
+		
+		<li><a href="http://www.lifehacker.jp/cat119/" title="">趣味</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/diy/" title="">DIY</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/cat192/" title="">究極のデスクトップを求めて</a></li></ul>
+		
+		</li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat50/" title="">ゲーム</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/design/" title="">デザイン</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/toy/" title="">トイ</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat284/" title="">乗り物</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat71/" title="">写真</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/plant/" title="">園芸</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat125/" title="">旅行</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat75/" title="">音楽</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/ipod/" title="">AV機器</a></li></ul>
+		
+		</li></ul>
+		
+		</li>
+		
+		
+		
+		<li><a href="http://www.lifehacker.jp/cat276/" title="">連載</a><ul class="category">
+		
+		<li> / <a href="http://www.lifehacker.jp/how_i_work/" title="">HOW I WORK</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/startups_2014/" title="">Startups 2014</a></li>
+		
+		
+		
+		<li> / <a href="http://www.lifehacker.jp/cat135/" title="">仕事場探訪</a></li></ul>
+		
+		</li></ul>
+		
+				
+		
+</div>   
+
+    <div id="team">
+        <p>ライター・翻訳者、編集スタッフ一覧は<a href="http://www.lifehacker.jp/2008/07/post_1164.html">こちら</a></p>
+        <dl>
+            <dt>編集委員<a href="http://www.lifehacker.jp/2008/07/lifehacker_jp.html#hensyuiin">※</a></dt>
+            <dd><a href="http://musicedutainment.blogspot.jp/" target="new">早川大地</a></dd>
+            <dd><a href="http://uva.jp/dh/mt/" target="new">平田大治</a></dd>
+            <dd>横尾茜</dd>
+            <dd><a href="http://www.ryu2.net/" target="new">小山龍介</a></dd>
+            <dt>デザイナー</dt>
+            <dd>前田龍一</dd>
+            <dt>ディビジョンディレクター</dt>
+            <dd><a href="http://www.rirelog.com/archives/author/koda" target="new">尾田和実</a></dd>
+            <dt>パブリッシャー</dt>
+            <dd><a href="http://www.mediagene.co.jp/category/imada" target="new">今田素子</a></dd>
+            <dt>サーバ管理</dt>
+            <dt><a href="http://heartbeats.jp/" target="_blank" id="bn_heartbeats" class="spr">heartbeats</a></dt>
+        </dl>
+	</div>
+</div>
+<div class="contact">
+    <p><a href="mailto:info_lifehacker@mediagene.co.jp">投稿希望者のお問い合わせ</a></p>　郵送の方は下記宛へ資料等をご郵送ください。<br />
+    〒150-0044 東京都渋谷区円山町23-2　アレトゥーサ渋谷6F 株式会社<a href="http://mediagene.co.jp/">メディアジーン</a> ライフハッカー［日本版］編集部宛<br />
+</div>
+</div>
+
+</div>
+<div class="copyright">
+	<ul class="mediagene_sites">
+		<li><a href="http://www.gizmodo.jp/" target="_blank" class="spr gizmodo">gizmodo</a></li>
+		<li><a href="http://www.kotaku.jp/" target="_blank" class="spr kotaku">kotaku</a></li>
+        <li><a href="http://www.cafeglobe.com/" target="_blank" class="spr cafeglobe">カフェグローブ</a></li>
+		<li><a href="http://www.mylohas.net/" target="_blank" class="spr mylohas">mylohas</a></li>
+		<li><a href="http://www.glitty.jp/" target="_blank" class="spr myspi">恋愛スタイリングメディア[グリッティ]</a></li>
+		<li><a href="http://www.tabroid.jp/" target="_blank" class="spr tabroid">TABROID</a></li>
+   		<li><a href="http://www.roomie.jp/" target="_blank" class="spr roomie">roomie</a></li>	
+		<li><a href="http://mediagene.co.jp/" target="_blank" class="spr mediagene">メディアジーン</a></li>
+		<li><a href="http://www.infobahn.co.jp/" target="_blank" class="spr infobahn">インフォバーン</a></li>
+		<li><a href="http://www.lifehacker.jp/2008/07/lifehacker_jp.html" target="_blank" class="about_ad">広告について</a></li>
+		<li><span class="spr copyrighttext">copyright (C) mediagene, Inc. All Rights Reserved.</span></li>
+	</ul>		
+</div>
+</div>
+<!--  back to top -->
+<script type="text/javascript" src="/common/js/backtotop.js"></script>
+<p id="back-top"><a href="#top"><span></span></a></p>
+
+<!-- swtich view for iPhone -->
+<script type="text/javascript" src="/common/js/iphone_delswitch.js"></script>
+
+<!-- 2012/12/27 add -->
+<script type="text/javascript">
+<!--
+var blade_co_account_id='3887';
+var blade_group_id='';
+-->
+</script>
+<script type="text/javascript">
+<!--
+function blade_tag_generate() {
+var blade_host = (location.protocol == 'https:') ? "https://d-track.send.microad.jp" : 'http://d-cache.microad.jp';
+var blade_path = "/js/bl_track.js";
+
+var s = document.createElement('script');
+document.body.appendChild(s);
+s.type = 'text/javascript';
+s.charset = 'utf-8';
+s.src = blade_host + blade_path;
+}
+blade_tag_generate();
+-->
+</script>
+<!-- //2012/12/27 add -->
+<!--// 2013/01/07 add -->
+<script type="text/javascript" src="//tag.ladmp.com/ot/tags.js?otid=f1950291925a43658361166745ca51e7" charset="UTF-8"></script>
+<noscript>
+<iframe src="//tag.ladmp.com/onetag?otid=f1950291925a43658361166745ca51e7" frameborder="0" height="1" width="1"></iframe>
+</noscript>
+<!--// 2013/01/07 add -->
+<!--// 2013/03/12 add -->
+﻿<SCRIPT LANGUAGE="JavaScript" type="text/javascript">document.write('<SCR' + 'IPT language="JavaScript" type="text/javascript"  src="' +location.protocol+'//a248.e.akamai.net/f/248/45380/10m/dac1.download.akamai.com/45379/rsi/ut/a_27_715.js"></SCR' + 'IPT>');</SCRIPT>
+<!--// 2013/03/12 add -->
+<!-- 2013/09/09 add -->
+<!-- Start of Amazon Publisher Studio Loader -->    <script>  window.amznpubstudioTag = "lifehacker09-22";  </script>    <!-- Do not modify the following code ! -->  <script async="true" type="text/javascript" src="http://ps-jp.amazon-adsystem.com/domains/mediagene-22_4addb6bd-22fa-4f72-8cb8-1720ec310fbd.js" charset="UTF-8"></script>    <!-- End of Amazon Publisher Studio Loader -->  
+<!-- 2013/09/09 add -->
+<!-- 2013/11/11 add -->
+<script type="text/javascript" src="http://s.skimresources.com/js/58690X1381571.skimlinks.js"></script>
+<!-- 2013/11/11 add -->
+<!-- 2014/04/08 add -->
+<script type="text/javascript">
+(function() {
+var pa = document.createElement('script'); pa.type =
+'text/javascript'; pa.charset = "utf-8"; pa.async = true;
+pa.src = window.location.protocol + "//api.popin.cc/searchbox/lifehacker.js";
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(pa, s);
+})();
+</script>
+<!-- 2014/04/08 add -->
+
+
+</div>
+<!--// wrap -->
+</div><!--// container -->
+
+
+</body>
+</html>

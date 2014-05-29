@@ -1,0 +1,725 @@
+
+<!DOCTYPE HTML>
+
+<!--[if lt IE 7 ]><html class="ie6 oldie" dir="ltr" lang="ja"><![endif]-->
+<!--[if IE 7 ]><html class="ie7 oldie dir="ltr"" lang="ja"><![endif]-->
+<!--[if IE 8 ]><html class="ie8 oldie" dir="ltr" lang="ja"><![endif]-->
+<!--[if IE 9 ]><html class="ie9" dir="ltr" lang="ja"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class="" dir="ltr" lang="ja"><!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:url" content="http://www.lancers.jp/magazine/13978" />
+    <title>クラウドソーシングの仕事形式であるプロジェクト形式とは | Lancersマガジン</title>
+    <link rel="icon" type="image/x-icon" href="http://www.lancers.jp/magazine/favicon.ico">
+<link rel="alternate" type="application/rss+xml" title="フリーランス総合情報ポータル「Lancersマガジン」 &raquo; クラウドソーシングの仕事形式であるプロジェクト形式とは のコメントのフィード" href="http://www.lancers.jp/magazine/13978/feed" />
+<link rel='stylesheet' id='css.magazine.style-css'  href='http://www.lancers.jp/magazine/wp-content/themes/magazine/style.css?ver=3.5' type='text/css' media='all' />
+<link rel='stylesheet' id='css.magazine.base-css'  href='http://www.lancers.jp/magazine/wp-content/themes/magazine/css/common/base.css?ver=3.5' type='text/css' media='all' />
+<link rel='stylesheet' id='css.magazine.single-css'  href='http://www.lancers.jp/magazine/wp-content/themes/magazine/css/single.css?ver=3.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wordpress-popular-posts-css'  href='http://www.lancers.jp/magazine/wp-content/plugins/wordpress-popular-posts/style/wpp.css?ver=3.5' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.lancers.jp/magazine/wp-includes/js/jquery/jquery.js?ver=1.8.3'></script>
+<script type='text/javascript' src='http://www.lancers.jp/magazine/wp-content/themes/magazine/js/jquery.sameHeight-1.1.js?ver=3.5'></script>
+<script type='text/javascript' src='http://www.lancers.jp/magazine/wp-content/themes/magazine/js/trunk8.js?ver=3.5'></script>
+<script type='text/javascript' src='http://www.lancers.jp/magazine/wp-content/themes/magazine/js/jquery.center.js?ver=3.5'></script>
+<script type='text/javascript' src='http://www.lancers.jp/magazine/wp-content/themes/magazine/js/common.js?ver=3.5'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.lancers.jp/magazine/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.lancers.jp/magazine/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='クラウドソーシングの仕事形式であるコンペ形式とは' href='http://www.lancers.jp/magazine/13959' />
+<link rel='shortlink' href='http://www.lancers.jp/magazine/?p=13978' />
+
+<!-- All in One SEO Pack 1.6.15.3 by Michael Torbert of Semper Fi Web Design[567,664] -->
+<link rel="canonical" href="http://www.lancers.jp/magazine/13978" />
+<!-- /all in one seo pack -->
+<link media="screen" type="text/css" href="http://www.lancers.jp/magazine/wp-content/plugins/zk-advanced-feature-post/css/style.css" id="zkafp_css" rel="stylesheet"><!-- BEGIN: WP Social Bookmarking Light -->
+<script type="text/javascript" src="http://connect.facebook.net/ja_JP/all.js#xfbml=1"></script>
+<style type="text/css">
+.wp_social_bookmarking_light{
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.wp_social_bookmarking_light div{
+    float: left !important;
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 5px 0px 0 !important;
+    height: 23px !important;
+    text-indent: 0 !important;
+}
+.wp_social_bookmarking_light img{
+    border: 0 !important;
+    padding: 0;
+    margin: 0;
+    vertical-align: top !important;
+}
+.wp_social_bookmarking_light_clear{
+    clear: both !important;
+}
+.wsbl_twitter{
+    width: 100px;
+}</style>
+<!-- END: WP Social Bookmarking Light -->
+    <!--[if lt IE 9]>
+        <script src="http://www.lancers.jp/magazine/wp-content/themes/magazine/js/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
+        {lang: "ja"}
+    </script>
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-4117196-13']);
+    _gaq.push(['_setDomainName', '.lancers.jp']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+</head>
+
+
+
+
+<body data-twttr-rendered="true" class="single single-post postid-13978 single-format-standard under archive lancer all-post root-category-crowdsourcing parent-category-">
+
+
+<!-- [[[ HEADER-AREA ]]] -->
+<div id="header">
+<header class="clearfix">
+
+    <div class="header-contents clearfix"><!-- header-contents -->
+        <div class="logo">
+            <a href="http://www.lancers.jp/magazine/" title="フリーランス総合情報ポータル「Lancersマガジン」" onfocus="this.blur();">
+                <img src="http://www.lancers.jp/magazine/wp-content/themes/magazine/images/base/a-logo-main.gif" width="287" height="50" alt="フリーランス総合情報ポータル「Lancersマガジン」" title="フリーランス総合情報ポータル「Lancersマガジン」" />
+            </a>
+        </div>
+
+
+        <div class="right clearfix"><!--right-->
+            <div class="subscription clearfix"><!-- 購読ボタン -->
+                <span>購読ボタン</span>
+
+                <ul class="clearfix">
+                    <li>
+                        <a href="https://twitter.com/lancersjp" title="Twitter" onfocus="this.blur();" target="_blank">
+                            <img src="http://www.lancers.jp/magazine/wp-content/themes/magazine/images/base/a-small-icon-tw.png" width="19" height="19" alt="Twitter" title="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/lancers.fan" title="Facebook" onfocus="this.blur();" target="_blank">
+                            <img src="http://www.lancers.jp/magazine/wp-content/themes/magazine/images/base/a-small-icon-fb.png" width="19" height="19" alt="Facebook" title="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.lancers.jp/magazine/feed" title="RSS" onfocus="this.blur();" target="_blank">
+                            <img src="http://www.lancers.jp/magazine/wp-content/themes/magazine/images/base/a-small-icon-rss.png" width="19" height="19" alt="RSS" title="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://b.hatena.ne.jp/entry/http://www.lancers.jp/magazine" title="はてなブックマーク" onfocus="this.blur();" target="_blank">
+                            <img src="http://www.lancers.jp/magazine/wp-content/themes/magazine/images/base/a-small-icon-hatena.png" width="19" height="19" alt="はてな" title="" />
+                        </a>
+                    </li>
+                </ul>
+            </div><!-- /購読ボタン -->
+
+            <p class="btn_use-lancers"><!-- ランサーズを使ってみるボタン -->
+                <a href="http://lancers.jp/" target="_blank">
+                    クラウドソーシング ランサーズを使ってみる
+                </a>&nbsp;>
+            </p><!-- /ランサーズを使ってみるボタン -->
+        </div><!-- /right -->
+    </div><!-- /header-contents -->
+
+
+
+    <div class="global-navi clearfix"><!-- グローバルナビ -->
+
+        <ul class="clearfix"><!-- .global-navi -->
+                                    <li class="gnavi01 ">
+                                        <a href="http://www.lancers.jp/magazine/category/case-lancer" title="" onfocus="this.blur();">
+                                            ランサー事例                                        </a>
+                                    </li>
+                                <li class="gnavi01 ">
+                                        <a href="http://www.lancers.jp/magazine/category/case-client" title="" onfocus="this.blur();">
+                                            クライアント事例                                        </a>
+                                    </li>
+                                <li class="gnavi01 ">
+                                        <a href="http://www.lancers.jp/magazine/category/howto-freelance" title="" onfocus="this.blur();">
+                                            フリーランス How To                                        </a>
+                                    </li>
+                                <li class="gnavi01 ">
+                                        <a href="http://www.lancers.jp/magazine/category/info" title="" onfocus="this.blur();">
+                                            お知らせ                                        </a>
+                                    </li>
+                                <li class="gnavi01 ">
+                                        <a href="http://www.lancers.jp/magazine/category/event-media" title="" onfocus="this.blur();">
+                                            イベント                                        </a>
+                                    </li>
+                                <li class="gnavi01  active">
+                                        <a href="http://www.lancers.jp/magazine/category/crowdsourcing" title="" onfocus="this.blur();">
+                                            クラウドソーシング特集                                        </a>
+                                    </li>
+                    </ul><!-- /#global-navi -->
+
+    </div><!-- /グローバルナビ -->
+
+
+
+    <div class="sub-navi clearfix"><!-- サブナビ -->
+        <ul class="clearfix"><!-- .sub-navi -->
+
+                <li class="snavi01 all ">
+                                        <a href="http://www.lancers.jp/magazine/category/crowdsourcing" title="" onfocus="this.blur();">
+                                            全記事
+                                        </a>
+                                    </li>
+                                    </ul><!-- /.sub-navi -->
+    </div><!-- /サブナビ -->
+
+</header><!-- /#header -->
+</div>
+<!-- /[[[ HEADER-AREA ]]] -->
+
+<!-- [[[ CONTENT-AREA ]]] -->
+<div id="wrapper" class="clearfix"><!-- #wrapper -->
+<!--<div id="content" class="clearfix">--><!-- #content -->
+
+    <!-- [ MAIN-CONTENT-AREA ] -->
+    <div id="main" class=""><!-- #main -->
+                <div class="bread-crumbs" itemscope itemtype="http:/images/data-vocabulary.org/Breadcrumb"><!-- パンくずリスト --><!-- [[[ bread-crumbs ]]] -->
+            <a href="http://www.lancers.jp">クラウドソーシング ランサーズ</a> &gt; <a href="http://www.lancers.jp/magazine/">ランサーズマガジン</a> &gt; <a href="http://www.lancers.jp/magazine/category/crowdsourcing">クラウドソーシング特集</a> &gt; <strong class="current">クラウドソーシングの仕事形式であるプロジェクト形式とは</strong>        </div><!-- /[[[ bread-crumbs ]]] -->
+        
+
+
+            <!-- 個別記事 -->
+        <section class="section corner"><!-- .section -->
+
+            <p class="single-category cliant">
+                <img src="http://www.lancers.jp/magazine/wp-content/themes/magazine/images/single/single_category-crowdsourcing.png" width="317" height="35" alt="クラウドソーシング特集" title="クラウドソーシング特集" />
+            </p>
+
+            <header><!-- 上の部分 -->
+                <h1>クラウドソーシングの仕事形式であるプロジェクト形式とは</h1><!--title-->
+
+                <div class="discription">
+                                        <div id="wp_description"><!--<p class="text">--><!--post-->
+                        クラウドソーシングにて、仕事を依頼する際に用いられている「プロジェクト形式」ですが、クラウドソーシングをあまり使ったことのない人にとってはプロジェクト形式とはどういったものか分かりにくいかと思います。そこで今回はプロジェクト形式の利用方法について詳しくご紹介していきます。                    </div>
+                    
+                    <p class="foot clearfix">
+                                                <span>[
+                        ランサーズ事務局                                                ]</span>
+                    </p>
+                </div>
+            </header><!-- /上の部分 -->
+
+            <div class="sns clearfix"><!-- sns -->
+                                <div class='wp_social_bookmarking_light'><div class="wsbl_hatena_button"><a href="http://b.hatena.ne.jp/entry/http://www.lancers.jp/magazine/13978" class="hatena-bookmark-button" data-hatena-bookmark-title="クラウドソーシングの仕事形式であるプロジェクト形式とは | フリーランス総合情報ポータル「Lancersマガジン」" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"> <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button_wo_al.js" charset="utf-8" async="async"></script></div><div class="wsbl_facebook_like"><fb:like href="http://www.lancers.jp/magazine/13978" send="false" layout="button_count" width="100" show_faces="false" action="like" colorscheme="light" font=""></fb:like></div><div class="wsbl_twitter"><iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fwww.lancers.jp%2Fmagazine%2F13978&amp;text=%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%82%BD%E3%83%BC%E3%82%B7%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B%E5%BD%A2%E5%BC%8F%E3%81%A7%E3%81%82%E3%82%8B%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%BD%A2%E5%BC%8F%E3%81%A8%E3%81%AF%20%7C%20%E3%83%95%E3%83%AA%E3%83%BC%E3%83%A9%E3%83%B3%E3%82%B9%E7%B7%8F%E5%90%88%E6%83%85%E5%A0%B1%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB%E3%80%8CLancers%E3%83%9E%E3%82%AC%E3%82%B8%E3%83%B3%E3%80%8D&amp;via=lancersjp&amp;lang=ja&amp;count=horizontal" style="width:130px; height:20px;"></iframe></div><div class="wsbl_google_plus_one"><g:plusone size="medium" annotation="none" href="http://www.lancers.jp/magazine/13978" ></g:plusone></div></div><br class='wp_social_bookmarking_light_clear' />   <!-- ← URLとタイトルを明示的に渡す -->
+                            </div><!-- /sns -->
+
+            <article><!-- 記事内容 -->
+                                <!--<p>-->
+                <a href="http://www.lancers.jp/magazine/13978">
+                    <img width="499" height="286" src="http://www.lancers.jp/magazine/wp-content/uploads/2014/05/2014y05m28d_133955874.jpg" class="attachment-single_post wp-post-image" alt="2014y05m28d_133955874" />                </a>
+                <!--</p>-->
+                
+                <div class="content">
+                <h3>プロジェクト形式とは</h3>
+<p>プロジェクト形式は、依頼者が自分の依頼したい仕事内容をクラウドソーシングサービスに掲載し、実際に作業を受託するワーカーを募集する仕事方式です。<br />
+受注者はクラウドソーシング上にある多くの依頼の中から、自分の『スキル』と『時間』に合った仕事を探して、依頼に提案することができます。<br />
+一つの依頼に対して複数の提案（見積もり）が集まりますので、受注者は提案者の『提案内容』『金額』『制作期間』と、提案者自体の『実績』『評価』などの情報を比較・検討し、自分の依頼に一番合った方に依頼することが可能です。</p>
+<p>&nbsp;</p>
+<p>プロジェクト形式で良い提案者を選定した後は、実際にやりとりをしながら仕事を進めることになります。仕事を進める際は、クラウドソーシングサービスのプロジェクト管理機能を使って、仕事の進捗確認やメッセージのやりとりから、納品・支払まで。すべてWeb上で管理することができます。</p>
+<p>&nbsp;</p>
+<p>プロジェクト形式は、どのような仕事にも使える仕事方式ですが、なかでも、システム開発やホームページ制作、コンテンツライティングなどの仕事に向いています。</p>
+<h3>固定報酬制</h3>
+<p>プロジェクト形式の支払い方法の一つとして「固定報酬制」というものがあります。<br />
+固定報酬制は、明確に依頼内容の詳細が決まっている依頼などに適しています。一つの仕事の達成までをいくつかの計画ごとに細分化し、個別に報酬を設定することで、一つの計画が達成される度に、設定された報酬額が作業者に支払われる仕組みです。</p>
+<p>&nbsp;</p>
+<p>例えば、固定報酬制を使ってホームページ制作を依頼した場合、「デザイン」と「コーディング」の仕事を分けて報酬を支払うといった使い方があります。</p>
+<h3>時間報酬制</h3>
+<p>プロジェクト形式のもう一つの支払い方法として、「時間報酬制」があります。時間報酬制は、実際に働いた時間に応じて報酬を支払う仕組みとなります。<br />
+時間報酬制は、週単位での管理のため、低リスク・低コストで発注することができます。実際に作業をした時間に対しての報酬を支払いますので、依頼者・受注者の双方にとって安心な報酬制度となっています。</p>
+<p>&nbsp;</p>
+<p>依頼内容や詳細がまだ決まっていない依頼や作業量がわからない依頼、開発案件などの長期間にわたって作業が必要な依頼などに適しています。</p>
+<p>&nbsp;</p>
+<p>このようにプロジェクト形式は、一時的なリソース確保が必要な、様々な仕事に適していますので、固定報酬と時間報酬を使い分けて、上手く活用してみてはいかがでしょうか。</p>
+<br /><br />
+                <p>日本最大級の<a href="http://www.lancers.jp">クラウドソーシング「ランサーズ」</a>はこちら</p>
+                </div>
+            </article><!-- /記事内容 -->
+            
+            <p>
+
+                        <div class="cat_paging clearfix">
+            <dl class="alignleft clearfix"><dt>前の記事</dt><dd><a href="http://www.lancers.jp/magazine/13959"><span class="thumb"><img width="100" height="100" src="http://www.lancers.jp/magazine/wp-content/uploads/2014/05/2cea4c88b6e5854c32ec5588d5ce6ed3-100x100.jpg" class="attachment-100x100 wp-post-image" alt="クラウドソーシングコンペ" /></span><span class="title">クラウドソーシングの仕事形式であるコンペ形式とは</span></a></dd></dl>            </div>
+                        
+            
+            </p>
+                            <p class="btn_archive">
+                    <a href="http://www.lancers.jp/magazine/category/crowdsourcing" title="クラウドソーシング特集記事一覧へ" onfocus="this.blur();">
+                        クラウドソーシング特集記事一覧へ
+                    </a>
+                </p>
+            
+            <div class="sns clearfix"><!-- sns -->
+                                <div class='wp_social_bookmarking_light'><div class="wsbl_hatena_button"><a href="http://b.hatena.ne.jp/entry/http://www.lancers.jp/magazine/13978" class="hatena-bookmark-button" data-hatena-bookmark-title="クラウドソーシングの仕事形式であるプロジェクト形式とは | フリーランス総合情報ポータル「Lancersマガジン」" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"> <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button_wo_al.js" charset="utf-8" async="async"></script></div><div class="wsbl_facebook_like"><fb:like href="http://www.lancers.jp/magazine/13978" send="false" layout="button_count" width="100" show_faces="false" action="like" colorscheme="light" font=""></fb:like></div><div class="wsbl_twitter"><iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fwww.lancers.jp%2Fmagazine%2F13978&amp;text=%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%82%BD%E3%83%BC%E3%82%B7%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B%E5%BD%A2%E5%BC%8F%E3%81%A7%E3%81%82%E3%82%8B%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%BD%A2%E5%BC%8F%E3%81%A8%E3%81%AF%20%7C%20%E3%83%95%E3%83%AA%E3%83%BC%E3%83%A9%E3%83%B3%E3%82%B9%E7%B7%8F%E5%90%88%E6%83%85%E5%A0%B1%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB%E3%80%8CLancers%E3%83%9E%E3%82%AC%E3%82%B8%E3%83%B3%E3%80%8D&amp;via=lancersjp&amp;lang=ja&amp;count=horizontal" style="width:130px; height:20px;"></iframe></div><div class="wsbl_google_plus_one"><g:plusone size="medium" annotation="none" href="http://www.lancers.jp/magazine/13978" ></g:plusone></div></div><br class='wp_social_bookmarking_light_clear' />   <!-- ← URLとタイトルを明示的に渡す -->
+                            </div><!-- /sns -->
+
+
+                        <div style="margin:10px 0 0 0">
+                <div class="fb-like-box" data-href="http://www.facebook.com/lancers.fan" data-width="292" data-show-faces="false" data-stream="false" data-header="true"></div>
+            </div>
+            <div align="center" style="margin:10px 0px 0px 0px">
+                 <div class="fb-comments" data-href="http://www.lancers.jp/magazine/13978" data-width="580" data-num-posts="5"></div>            
+            </div>
+        </section><!-- /.section -->
+        <!-- /個別記事 -->
+    
+    </div><!-- /#main -->
+    <!-- [ MAIN-CONTENT-AREA ] -->
+
+
+
+
+	<!-- [ SIDE-CONTENT-AREA ] -->
+	<div id="side"><!-- #side -->
+        <div class="searchbox clearfix" style="margin-bottom:20px;"><!-- searchbox -->
+            <form role="search" method="get" id="searchform" action="http://www.lancers.jp/magazine/">
+                <input value="キーワード" name="s" id="s" onfocus="if( this.value == 'キーワード' ) { this.value = ''; } " onblur="if( this.value == '' ) { this.value = 'キーワード'; } " type="text" class="textbox" />
+                <input value="search" type="submit" class="search" />
+            </form>
+        </div><!-- /searchbox -->
+
+    <!-- Wordpress Popular Posts Plugin v2.3.2 [W] [daily] [custom] -->
+<section id="wpp-4" class="widget-1 widget-first widget-odd ranking widget section popular-posts">
+<h2 class="widgettitle">アクセスランキング</h2><div class="sidebar-widget corner"><ul>
+<li><a href="http://www.lancers.jp/magazine/13939" class="wpp-thumbnail" title="クラウドソーシングで仕事を受けるために大切な3つのポイント"><img width="40" height="26" src="http://www.lancers.jp/magazine/wp-content/uploads/2014/05/26d9d826f773fc4b753d07debc52091d_s-300x200.jpg" class="wpp-thumbnail wpp_fi wp-post-image" alt="26d9d826f773fc4b753d07debc52091d_s" /></a><a href="http://www.lancers.jp/magazine/13939" title="クラウドソーシングで仕事を受けるために大切な3つのポイント" class="wpp-post-title">クラウドソーシングで仕事を受けるために大切な3つのポイント</a> </li>
+<li><a href="http://www.lancers.jp/magazine/13910" class="wpp-thumbnail" title="新しい外注のカタチ！クラウドソーシングは法人企業にも依頼できる"><img width="40" height="26" src="http://www.lancers.jp/magazine/wp-content/uploads/2014/05/a0008_001880_m-300x199.jpg" class="wpp-thumbnail wpp_fi wp-post-image" alt="a0008_001880_m" /></a><a href="http://www.lancers.jp/magazine/13910" title="新しい外注のカタチ！クラウドソーシングは法人企業にも依頼できる" class="wpp-post-title">新しい外注のカタチ！クラウドソーシングは法人企業にも依頼できる</a> </li>
+<li><a href="http://www.lancers.jp/magazine/13978" class="wpp-thumbnail" title="クラウドソーシングの仕事形式であるプロジェクト形式とは"><img width="40" height="22" src="http://www.lancers.jp/magazine/wp-content/uploads/2014/05/2014y05m28d_133955874-300x171.jpg" class="wpp-thumbnail wpp_fi wp-post-image" alt="2014y05m28d_133955874" /></a><a href="http://www.lancers.jp/magazine/13978" title="クラウドソーシングの仕事形式であるプロジェクト形式とは" class="wpp-post-title">クラウドソーシングの仕事形式であるプロジェクト形式とは</a> </li>
+<li><a href="http://www.lancers.jp/magazine/13959" class="wpp-thumbnail" title="クラウドソーシングの仕事形式であるコンペ形式とは"><img width="40" height="23" src="http://www.lancers.jp/magazine/wp-content/uploads/2014/05/2cea4c88b6e5854c32ec5588d5ce6ed3-300x173.jpg" class="wpp-thumbnail wpp_fi wp-post-image" alt="クラウドソーシングコンペ" /></a><a href="http://www.lancers.jp/magazine/13959" title="クラウドソーシングの仕事形式であるコンペ形式とは" class="wpp-post-title">クラウドソーシングの仕事形式であるコンペ形式とは</a> </li>
+<li><a href="http://www.lancers.jp/magazine/13834" class="wpp-thumbnail" title="あなただけのチームを作ってクラウドソーシングで仕事をする方法"><img width="40" height="26" src="http://www.lancers.jp/magazine/wp-content/uploads/2014/05/30da0ea4118ab617b61da0a7924558be_s-300x198.jpg" class="wpp-thumbnail wpp_fi wp-post-image" alt="30da0ea4118ab617b61da0a7924558be_s" /></a><a href="http://www.lancers.jp/magazine/13834" title="あなただけのチームを作ってクラウドソーシングで仕事をする方法" class="wpp-post-title">あなただけのチームを作ってクラウドソーシングで仕事をする方法</a> </li>
+</ul>
+</div></section>
+<!-- End Wordpress Popular Posts Plugin v2.3.2 -->
+
+
+
+        <section class="corner facebook"><!-- Facebook -->
+            <div class="sidebar-widget">
+                <div class="fb-like-box" data-href="https://www.facebook.com/lancers.fan" data-width="310" data-show-faces="true" data-stream="false" data-header="true"></div>
+            </div>
+        </section><!-- /Facebook -->
+
+
+
+        <section class="corner twitter"><!-- twitter -->
+            <div class="sidebar-widget sidebar-twitter">
+<a class="twitter-timeline"  href="https://twitter.com/lancersjp" data-widget-id="250496014715338753">@lancersjp からのツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+        </section><!-- /twitter -->
+
+
+
+
+        <section class="section staff"><!-- 編集部スタッフ -->
+            <h2>編集部スタッフ</h2>
+            <!--<h2 id="sidebar-header-staff" class="sidebar-header">-->
+
+            <div class="sidebar-widget corner">
+            <!--<div class="sidebar-widget">-->
+                <dl class="clearfix"><!-- スタッフ -->
+                    <dt>
+                        <img alt='' src='http://0.gravatar.com/avatar/62cf89f689e12e3ed9fd37e73f52509a?s=40&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />                    </dt>
+                    <dd><!--<dd class="text">-->
+                        <span>ランサーズ事務局</span>
+                                                <a href="http://twitter.com/lancersjp" target="_blank">@lancersjp</a>
+                                                                                                <p>
+                                                ランサーズの運営事務局                                                </p>
+                    </dd>
+                </dl><!-- /スタッフ -->
+                <dl class="clearfix"><!-- スタッフ -->
+                    <dt>
+                        <img alt='' src='http://0.gravatar.com/avatar/86b3355097be6a662e826e456f19405c?s=40&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />                    </dt>
+                    <dd><!--<dd class="text">-->
+                        <span>秋好陽介</span>
+                                                <a href="http://twitter.com/redhat" target="_blank">@redhat</a>
+                                                                                                <p>
+                                                ランサーズ代表                                                </p>
+                    </dd>
+                </dl><!-- /スタッフ -->
+                <dl class="clearfix"><!-- スタッフ -->
+                    <dt>
+                        <img alt='' src='http://0.gravatar.com/avatar/08288e6ee65aed7274163d2215dd7924?s=40&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />                    </dt>
+                    <dd><!--<dd class="text">-->
+                        <span>木下慶</span>
+                                                <a href="http://twitter.com/kei_kinoshita" target="_blank">@kei_kinoshita</a>
+                                                                                                <p>
+                                                プロデューサー                                                </p>
+                    </dd>
+                </dl><!-- /スタッフ -->
+            </div><!--sidebar-widget-->
+        </section><!-- /編集部スタッフ -->
+	</div><!-- /#side -->
+	<!-- [ SIDE-CONTENT-AREA ] -->
+
+</div><!-- /#wrapper -->
+<!-- /[[[ CONTENT-AREA ]]] -->
+
+
+
+
+
+<!-- [[[ FOOTER-AREA ]]] -->
+<div id="footer">
+<footer class="footer-contents"><!-- #footer -->
+
+
+    <div class="sameheight clearfix"><!-- footer-navi area -->
+
+        <div class="footer-navi"><!-- ランサー事例 -->
+            <h5>
+                                <a href="http://www.lancers.jp/magazine/category/case-lancer">
+                                    ランサー事例                                </a>
+                            </h5>
+                                <ul class="">
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/case-lancer/designer">
+                                            &raquo;デザイナー                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/case-lancer/engineer">
+                                            &raquo;エンジニア                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/case-lancer/web">
+                                            &raquo;Web製作者                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/case-lancer/writer">
+                                            &raquo;ライター                                        </a>
+                                    </li>
+                        </ul>
+                    </div><!-- /footer-navi ランサー事例 -->
+
+
+        <div class="footer-navi"><!-- イベント -->
+            <h5>
+                                <a href="http://www.lancers.jp/magazine/category/event-media">
+                                    イベント                                </a>
+                            </h5>
+                                <ul class="">
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/event-media/%e3%82%af%e3%83%a9%e3%82%a6%e3%83%89%e3%82%bd%e3%83%bc%e3%82%b7%e3%83%b3%e3%82%b0">
+                                            &raquo;クラウドソーシング                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/event-media/freelance-meet-up">
+                                            &raquo;フリーランス交流会                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/event-media/%e4%bc%81%e7%94%bb">
+                                            &raquo;企画                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/event-media/workstyle">
+                                            &raquo;働き方                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/event-media/technology">
+                                            &raquo;技術系                                        </a>
+                                    </li>
+                        </ul>
+                    </div><!-- /footer-navi イベント -->
+    </div><!-- /footer-navi area -->
+
+
+
+    <div class="sameheight clearfix"><!-- footer-navi area -->
+
+        <div class="footer-navi"><!-- クライアント事例 -->
+            <h5>
+                                <a href="http://www.lancers.jp/magazine/category/case-client">
+                                    クライアント事例                                </a>
+                            </h5>
+                                <ul class="">
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/case-client/it_si">
+                                            &raquo;IT/SI                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/case-client/web-service">
+                                            &raquo;Webサービス                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/case-client/marketing">
+                                            &raquo;マーケティング                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/case-client/maker">
+                                            &raquo;メーカー                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/case-client/public">
+                                            &raquo;公的機関                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/case-client/%e5%87%ba%e7%89%88-case-client">
+                                            &raquo;出版                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/case-client/food-business">
+                                            &raquo;食品                                        </a>
+                                    </li>
+                        </ul>
+                    </div><!-- /footer-navi クライアント事例 -->
+
+
+        <div class="footer-navi"><!-- お知らせ -->
+            <h5>
+                                <a href="http://www.lancers.jp/magazine/category/info">
+                                    お知らせ                                </a>
+                            </h5>
+                                <ul class="">
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/info/infomation">
+                                            &raquo;インフォメーション                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/info/function">
+                                            &raquo;機能追加                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/info/media">
+                                            &raquo;メディア掲載                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/info/safety">
+                                            &raquo;安心・安全の取り組み                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/info/problem">
+                                            &raquo;障害・メンテナンス                                        </a>
+                                    </li>
+                        </ul>
+                    </div><!-- /footer-navi お知らせ -->
+    </div><!-- /footer-navi area -->
+
+
+
+    <div class="sameheight clearfix"><!-- footer-navi area -->
+        <div class="footer-navi"><!-- フリーランスHow To -->
+            <h5>
+                                <a href="http://www.lancers.jp/magazine/category/howto-freelance">
+                                    フリーランス How To                                </a>
+                            </h5>
+                                <ul class="">
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/howto-freelance/independence">
+                                            &raquo;独立準備                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/howto-freelance/tax-income">
+                                            &raquo;税金・収入                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/howto-freelance/sales">
+                                            &raquo;営業・開拓                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/howto-freelance/trouble">
+                                            &raquo;トラブル防止                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/howto-freelance/health">
+                                            &raquo;体調管理                                        </a>
+                                    </li>
+                            <li>
+                                        <a href="http://www.lancers.jp/magazine/category/howto-freelance/outsourcing">
+                                            &raquo;業務委託契約                                        </a>
+                                    </li>
+                        </ul>
+                    </div><!-- /footer-navi フリーランスHow To -->
+
+
+        <div class="footer-navi"><!-- ランサーズ -->
+            <h5>
+                <a href="http://www.lancers.jp/" title="" onfocus="this.blur();" target="_blank">
+                    ランサーズ
+                </a>
+            </h5>
+
+            <ul class="">
+                <li>
+                    <a href="http://www.lancers.jp/" title="" onfocus="this.blur();" target="_blank">
+                        &raquo;トップページ
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.lancers.jp/user/login" title="" onfocus="this.blur();" target="_blank">
+                        &raquo;ログイン
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.lancers.jp/user/sign_up" title="" onfocus="this.blur();" target="_blank">
+                        &raquo;ランサーズID登録(無料)
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.lancers.jp/work/create" title="" onfocus="this.blur();" target="_blank">
+                        &raquo;仕事を登録する
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.lancers.jp/work/search" title="" onfocus="this.blur();" target="_blank">
+                        &raquo;仕事をさがす
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.lancers.jp/profile/search" title="" onfocus="this.blur();" target="_blank">
+                        &raquo;人をさがす
+                    </a>
+                </li>
+            </ul>
+        </div><!-- /ランサーズ -->
+    </div>
+
+
+
+
+        <!-- バックナンバー --><!--<div class="sameheight backnumber">
+            <h5>バックナンバー</h5>
+
+            <header class="clearfix">
+                <span class="back">
+                    <a href="#" title="" onfocus="this.blur();">
+                        &laquo;back
+                    </a>
+                </span>
+                <span class="year">
+                        2012年
+                </span>
+                <span class="next">
+                    <a href="#" title="" onfocus="this.blur();">
+                        &raquo;next
+                    </a>
+                </span>
+            </header>
+
+                <ul class="clearfix">
+                    <li>
+                        <a href="#" title="" onfocus="this.blur();">
+                            12月
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" onfocus="this.blur();">
+                            11月
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" onfocus="this.blur();">
+                            10月
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" onfocus="this.blur();">
+                            09月
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" onfocus="this.blur();">
+                            08月
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" onfocus="this.blur();">
+                            07月
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" onfocus="this.blur();">
+                            06月
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" onfocus="this.blur();">
+                            05月
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" onfocus="this.blur();">
+                            04月
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" onfocus="this.blur();">
+                            03月
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" onfocus="this.blur();">
+                            02月
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" onfocus="this.blur();">
+                            01月
+                        </a>
+                    </li>
+                </ul>
+
+        </div>--><!-- /バックナンバー -->
+
+
+
+        <div class="sameheight btn_social"><!-- SNSボタン -->
+            <ul id="nav-footer-global-social">
+                <li>
+                    <a href="http://www.facebook.com/lancers.fan" title="" onfocus="this.blur();" target="_blank">
+                        <img src="http://www.lancers.jp/magazine/wp-content/themes/magazine/images/base/a-small-icon-fb.png" width="19" height="19" alt="facebookページ" title="" />
+                        facebookページ
+                    </a>
+                </li>
+                <li>
+                    <a href="http://twitter.com/lancersjp" title="" onfocus="this.blur();" target="_blank">
+                        <img src="http://www.lancers.jp/magazine/wp-content/themes/magazine/images/base/a-small-icon-tw.png" width="19" height="19" alt="twitter" title="" />
+                        twitter
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.lancers.jp/magazine/feed" title="" onfocus="this.blur();" target="_blank">
+                        <img src="http://www.lancers.jp/magazine/wp-content/themes/magazine/images/base/a-small-icon-rss.png" width="19" height="19" alt="RSS" title="" />
+                        RSS
+                    </a>
+                </li>
+            </ul>
+        </div><!-- /SNSボタン -->
+
+
+
+
+    <div class="copyright-area clearfix"><!-- copyright-area -->
+        <p class="copyright"><!--<strong><small>--><!-- copyright -->
+            <!--Copyright &copy; Lancers All Rights Reserved.-->
+            <img src="http://www.lancers.jp/magazine/wp-content/themes/magazine/images/base/pic-copyright.png" width="242" height="11" alt="Copyright &copy; Lancers All Rights Reserved." title="" />
+        <!--</small></strong>--></p><!-- /copyright -->
+
+        <div class="page-top"><!-- .page-top -->
+            <a href="#header" onfocus="this.blur();">
+                <img src="http://www.lancers.jp/magazine/wp-content/themes/magazine/images/base/a-pagetop.png" width="169" height="15" alt="PageTop" title="" />
+            </a>
+        </div><!-- /.page-top -->
+    </div><!-- /copyright-area -->
+
+</footer><!-- /#footer -->
+</div>
+<!-- /[[[ FOOTER-AREA ]]] -->
+
+</body>
+</html>

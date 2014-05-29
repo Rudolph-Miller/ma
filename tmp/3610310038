@@ -1,0 +1,1126 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja" id="masterChannel-news"><head>
+<meta http-equiv="content-type" content="text/html;charset=shift_jis">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<script>var swspv = '0';</script>
+<script src="/js/spv/movePC2SP.js"></script>
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+
+<meta name="keywords" content="テクノロジー,新開発,新技術,公開,ブレイクスルー,イノベーション">
+<meta name="description" content="IT製品・サービスにまつわる新技術や科学の話題を掲載します。">
+<meta name="adpath" content="root/ITmedia/news/subtop/technology">
+
+<title> 科学・テクノロジー - ITmedia ニュース</title>
+
+
+<link rel="alternate" type="application/rss+xml" title="ITmedia ニュース(RSS1.0)" href="http://rss.itmedia.co.jp/rss/1.0/news_bursts.xml">
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/news/base.css" type="text/css" media="all">
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/news/ad.css" type="text/css" media="all">
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/news/subtop.css" type="text/css" media="all">
+
+
+<link rel="stylesheet" href="http://www.itmedia.co.jp/js/lib/prettify.css">
+<script src="/js/lib/prettify.js"></script>
+<script src="/js/lib/jquery-1.6.4.min.js"></script>
+<script>jQuery.noConflict();</script>
+<script src="//fc.itmedia.co.jp/fpcookie?site_id=itm_"></script>
+<script src="/js/scAccount.js"></script>
+<script src="/js/adRequest.js"></script>
+<script src="/js/scRequest.js"></script>
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/ad.js"></script>
+<script type="text/javascript" src="/js/subtop.js"></script>
+<script type="text/javascript" src="/js/news/base.js"></script>
+<script type="text/javascript" src="/js/news/ad.js"></script>
+<script type="text/javascript" src="/js/news/subtop.js"></script>
+
+
+</head><body id="masterType-subtop">
+<script type="text/javascript">
+attachBodyClass();
+function masterChannel(){return 'news';}
+function masterType(){return 'subtop';}
+function prFlag(){return '';}
+function spFlag(){return '';}
+(function(){
+if(getUrl()['domain'].match(/(preview|localhost)/)) document.write('<div id="PATHDEBUG">masterChannel = <strong>' + masterChannel() + '</strong> / masterType = <strong>' + masterType() + '</strong> / smartPhone = <strong>' + spFlag() + '</strong></div>');
+return true;
+})();
+</script>
+<!--ITWS-->
+
+<!--/ITWS-->
+
+<!--ITWL-->
+
+	<script>adRequest({'position':'ITWL'});</script>
+
+<!--/ITWL-->
+
+<!--COIDP-->
+
+	
+		<div id="COIDP"><div class="COIDP-in">
+		<script>adRequest({'position':'COIDP1','path':'root/cds/id/ITmedia/' + masterChannel()});</script>
+		<div class="COIDP-Member">
+		<script>adRequest({'position':'COIDP2','path':'root/cds/id/ITmedia/' + masterChannel()});</script>
+		<script>adRequest({'position':'COIDP3','path':'root/cds/id/ITmedia/' + masterChannel()});</script>
+		</div></div></div>
+		<script>
+		(function(){
+			var coidp = document.getElementById('COIDP');
+			if(coidp.innerHTML.match('st=noad.*pos=')){
+				coidp.style.display = 'none';
+				return false;
+			}
+			return true;
+		})();
+		</script>
+	
+
+<!--/COIDP-->
+
+<div id="masterBody"><div id="masterBodyOut"><div id="masterBodyIn">
+<div id="masterNavigation">
+
+<div id="globalNavigationGroup0">
+<div id="globalNavigation"><div class="gnavOut"><div class="gnavIn">
+<div class="gnavBtn gnavBtn0"><a href="http://www.itmedia.co.jp/" title="IT総合情報ポータル「ITmedia」">総合トップ</a></div>
+<div class="gnavBtn gnavBtn1"><a href="http://www.itmedia.co.jp/news/" title="ITとビジネスのニュース専門サイト「ITmedia News」">ニュース</a></div>
+<div class="gnavBtn gnavBtn2"><a href="http://www.itmedia.co.jp/enterprise/" title="企業のためのIT情報サイト「ITmedia エンタープライズ」">企業とIT</a></div>
+<div class="gnavBtn gnavBtn4"><a href="http://marketing.itmedia.co.jp/" title="IT×マーケティングの最新動向「ITmedia マーケティング」">Webマーケ</a></div>
+<div class="gnavBtn gnavBtn3"><a href="http://techtarget.itmedia.co.jp/" title="IT製品導入支援サイト「TechTargetジャパン」">システム導入</a></div>
+<div class="gnavBtn gnavBtn6"><a href="http://www.itmedia.co.jp/mobile/" title="携帯、スマートフォンの専門サイト「ITmedia Mobile」">スマホ</a></div>
+<div class="gnavBtn gnavBtn7"><a href="http://ebook.itmedia.co.jp/" title="電子書籍の専門サイト「ITmedia eBook USER」">eBook</a></div>
+<div class="gnavBtn gnavBtn5"><a href="http://www.itmedia.co.jp/pcuser/" title="PCとMacの専門サイト「ITmedia PC USER」">パソコン</a></div>
+<div class="gnavBtn gnavBtn8"><a href="http://camera.itmedia.co.jp/" title="デジカメの専門サイト「ITmedia デジカメプラス」">デジカメ</a></div>
+<div class="gnavBtn gnavBtn9"><a href="http://www.itmedia.co.jp/lifestyle/" title="AV機器の専門サイト「ITmedia LifeStyle」">AV機器</a></div>
+<div class="gnavBtn gnavBtn15"><a href="http://review.itmedia.co.jp/" title="プロによる製品レビューサイト「ITmedia REVIEW」">レビュー</a></div>
+<div class="gnavBtn gnavBtn13"><a href="http://nlab.itmedia.co.jp/" title="ちょっと気になるネットの話題「ねとらぼ」">旬ネタ</a></div>
+<div class="gnavBtn gnavBtn11"><a href="http://www.itmedia.co.jp/live/" title="ニコ生、Ustreamの動画番組表「ライブガイド」">ライブ動画</a></div>
+<div class="gnavBtn gnavBtn12"><a href="http://blogs.itmedia.co.jp/" title="ビジネスブログ・メディア「ITmedia オルタナティブ・ブログ」">ブログ</a></div>
+<div class="gnavBtn gnavBtn14"><a href="http://www.itmedia.co.jp/smartjapan/" title="節電とエネルギーを考える「スマートジャパン」">電力</a></div>
+
+</div></div></div>
+</div>
+
+</div>
+
+<div id="masterBodyOuter"><!----><div id="masterBodyInner">
+<div id="masterHeader">
+	<div id="globalHeader">
+	<div id="globalHeaderTop">
+	<div id="globalTagline"><!--EDIT START-->ITの今が見える、明日が分かる<!--EDIT END--></div>
+	<div id="globalLogo">
+	
+	<!--EDIT START--><div><a href="http://www.itmedia.co.jp/news/" title="ITmedia ニュース／ITの今が見える、明日が分かる">ITmedia ニュース／ITの今が見える、明日が分かる</a></div><!--EDIT END-->
+	
+	</div>
+	</div>
+	<div id="globalHeaderMiddle">
+	<!--EDIT START-->
+    
+	<div id="ITN"><script>adRequest({'position':'ITN'});</script></div>
+	
+	<!--EDIT END-->
+	</div>
+	<div id="globalHeaderBottom">
+	<!--EDIT START-->
+	
+<div id="localNavigation"><div class="lnavOut"><div class="lnavIn">
+<div id="lnavMain"><div class="lnavBtn"><a href="http://www.itmedia.co.jp/news/subtop/bursts/" title="速報" onClick="designCnt('lnavMain',this.href);">速報</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/news/subtop/venture/" title="ベンチャー人" onClick="designCnt('lnavMain',this.href);">ベンチャー人</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/news/subtop/products/" title="製品動向" onClick="designCnt('lnavMain',this.href);">製品動向</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/news/subtop/technology/" title="サイエンス" onClick="designCnt('lnavMain',this.href);">サイエンス</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/news/subtop/nettopics/" title="ネットの話題" onClick="designCnt('lnavMain',this.href);">ネットの話題</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/news/subtop/society/" title="社会とIT" onClick="designCnt('lnavMain',this.href);">社会とIT</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/news/subtop/security/" title="セキュリティ" onClick="designCnt('lnavMain',this.href);">セキュリティ</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/news/subtop/industry/" title="企業・業界動向" onClick="designCnt('lnavMain',this.href);">企業・業界動向</a></div>
+<div class="lnavBtn"><a href="http://blogs.itmedia.co.jp/" title="ブログ" onClick="designCnt('lnavMain',this.href);">ブログ</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/news/subtop/features/smb/" title="中堅・中小" onClick="designCnt('lnavMain',this.href);">中堅・中小</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/news/subtop/archive/" title="過去記事" onClick="designCnt('lnavMain',this.href);">過去記事</a></div>
+<div class="lnavBtn"><a href="http://release.itmedia.co.jp/release/news/" title="ベンチャーニュース" onClick="designCnt('lnavMain',this.href);">ベンチャーニュース</a></div>
+<div class="lnavBtn"><a href="http://kyujin.itmedia.co.jp/" title="転職・求人" onClick="designCnt('lnavMain',this.href);">転職・求人</a></div>
+</div>
+</div></div></div>
+<script type="text/javascript">
+</script>
+
+	<!--EDIT END-->
+	<div id="localPankuzu">
+	<div class="lpanOut"><div class="lpanIn">
+	<!--EDIT START-->
+    
+<a href="http://www.itmedia.co.jp/news/">ITmedia ニュース</a> &gt;
+
+<script type="text/javascript">
+var str = document.title.replace(/\<\!\-\-EDIT START\-\-\>/g,'').replace(/\<\!\-\-EDIT END\-\-\>/g,'').replace('- ITmedia ニュース','');
+str = cutString(str,50);
+document.write(str);
+</script>
+
+	<!--EDIT END-->
+	</div></div>
+	</div>
+	</div>
+	</div>
+</div>
+<div id="masterContents"><div id="globalContents">
+<div id="masterMain">
+<!---->
+
+<style type="text/css"><!--
+
+
+
+--></style>
+<div id="subtopTitleWrap"><div id="subtopTitleWrapInner">
+
+<div id="subtopTitle"><h1>科学・テクノロジー</h1></div>
+
+<div id="subtopDescription"><h2>IT製品・サービスにまつわる新技術や科学の話題を掲載します。</h2></div>
+</div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+ 
+<div id="subtopContents">
+<!--EDIT START-->
+<!--EDIT END-->
+ 
+
+<div id="masterMainLeft">
+<div class="colBox colBoxRanking">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2>人気記事ランキング</h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxOlist">
+<ol>
+<!-- RSS2include -->
+<li class="rank1"><a href="http://www.itmedia.co.jp/news/articles/1306/12/news084.html" title="インデックスに粉飾決算の疑い　監視委が強制調査" onclick="designCnt('アクセスランキング','rank1');">インデックスに粉飾決算の疑い　監視委が強制調査</a></li><li class="rank2"><a href="http://www.itmedia.co.jp/news/articles/1404/10/news138.html" title="ドコモ「カケホーダイ」の狙い──値上げになるケースも？" onclick="designCnt('アクセスランキング','rank2');">ドコモ「カケホーダイ」の狙い──値上げになるケースも？</a></li><li class="rank3"><a href="http://www.itmedia.co.jp/news/articles/1405/28/news102.html" title="Amazon、Hachette差別について説明──「お急ぎの場合は競合他社でどうぞ」" onclick="designCnt('アクセスランキング','rank3');">Amazon、Hachette差別について説明──「お急ぎの場合は競合他社でどうぞ」</a></li><li class="rank4"><a href="http://www.itmedia.co.jp/news/articles/1405/27/news035.html" title="過酷な「ワンオペ」　バイト大量離脱で崖っぷちのすき家　いつまで続く「パワーアップ改装中」" onclick="designCnt('アクセスランキング','rank4');">過酷な「ワンオペ」　バイト大量離脱で崖っぷちのすき家　いつまで続く「パワーアップ改装中」</a></li><li class="rank5"><a href="http://www.itmedia.co.jp/news/articles/1405/28/news046.html" title="AKB入山さんの偽Twitterに芸能マスコミが次々に釣られる" onclick="designCnt('アクセスランキング','rank5');">AKB入山さんの偽Twitterに芸能マスコミが次々に釣られる</a></li><li class="rank6"><a href="http://www.itmedia.co.jp/news/articles/1405/28/news138.html" title="自宅で徹底的に1人になれる室内テント「ぼっちてんと」　デスク周りを丸ごと覆ってネットに没頭" onclick="designCnt('アクセスランキング','rank6');">自宅で徹底的に1人になれる室内テント「ぼっちてんと」　デスク周りを丸ごと覆ってネットに没頭</a></li><li class="rank7"><a href="http://www.itmedia.co.jp/news/articles/1405/28/news094.html" title="ドコモ、iPadに参入　新プラン「パケあえる」対応" onclick="designCnt('アクセスランキング','rank7');">ドコモ、iPadに参入　新プラン「パケあえる」対応</a></li><li class="rank8"><a href="http://www.itmedia.co.jp/news/articles/1405/27/news057.html" title="Google、テレビ用端末「Chromecast」を国内発売　4200円" onclick="designCnt('アクセスランキング','rank8');">Google、テレビ用端末「Chromecast」を国内発売　4200円</a></li><li class="rank9"><a href="http://www.itmedia.co.jp/news/articles/1405/28/news044.html" title="広がるネット「定額見放題」　Hulu好調、NHKは初の黒字へ" onclick="designCnt('アクセスランキング','rank9');">広がるネット「定額見放題」　Hulu好調、NHKは初の黒字へ</a></li><li class="rank10"><a href="http://www.itmedia.co.jp/news/articles/1405/28/news068.html" title="Google、自動運転カーのプロトタイプを披露（動画あり）" onclick="designCnt('アクセスランキング','rank10');">Google、自動運転カーのプロトタイプを披露（動画あり）</a></li>
+<!-- RSS2include -->
+</ol>
+</div>
+<div class="colBoxPageLink"><a href="http://www.itmedia.co.jp/ranking/news.html" title="ランキングトップ30 一覧" onclick="designCnt('アクセスランキングトップ30');">ランキングトップ30 一覧 &raquo;</a></div> 
+<div class="colBoxClear h10px"></div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- htmlgen -->
+<div class="colBox colBoxEbook">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2>電子ブックレット</h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxUlist"><ul>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1202/01/news001.html">最終回！　Weekly Memo（のブックレット）</a><small>（02月01日 12時00分）</small></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1201/30/news001.html">「！」も「？」も永遠に</a><small>（01月30日 12時00分）</small></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1201/23/news001.html">顧客第一の本音</a><small>（01月23日 12時00分）</small></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1201/25/news001.html">大きな声を出そう</a><small>（01月25日 12時00分）</small></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1201/18/news001.html">インドは今、スイートスポットにいる</a><small>（01月18日 12時00分）</small></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1201/16/news001.html">加速化するコラボレーション</a><small>（01月16日 12時00分）</small></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1201/11/news001.html">その書類、無駄ではないか？</a><small>（01月11日 12時00分）</small></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1112/28/news002.html">代替わりしても継続する、それが大切</a><small>（12月28日 12時00分）</small></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1112/26/news004.html">5リットルと3リットルのバケツを使って、水4リットルを測る方法</a><small>（12月26日 12時00分）</small></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1112/21/news003.html">震災から我々が学んだこと</a><small>（12月21日 12時00分）</small></li>
+</ul></div>
+<div class="colBoxPageLink"><a href="http://www.itmedia.co.jp/enterprise/subtop/ebook/index.html" title="『電子ブックレット』一覧">『電子ブックレット』一覧</a>&raquo;</div>
+<div class="colBoxClear h10px"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- /htmlgen -->
+
+<!-- htmlgen -->
+<div class="colBox colBoxTopics">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2>TOPICS</h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a title="「大きなミスを犯してしまった」――楽天koboに何が起きたのか" href="http://www.itmedia.co.jp/news/articles/1207/25/news106.html"><img src="http://image.itmedia.co.jp/news/images/htmlgen/top_left_topics_1_1343627438.gif" height="60" width="80" border="0" align="LEFT" alt="「大きなミスを犯してしまった」――楽天koboに何が起きたのか"></a></div>
+<div class="colBoxTitle"><h3><a title="「大きなミスを犯してしまった」――楽天koboに何が起きたのか" href="http://www.itmedia.co.jp/news/articles/1207/25/news106.html">「大きなミスを犯してしまった」――楽天koboに何が起きたのか</a></h3></div>
+<div class="colBoxDescription"><p>楽天が鳴り物入りで投入した電子書籍サービスに、発売当日から不具合が続出した。</p></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxTitle"><h3><a title="ニュースはTwitterでキャッチ" href="http://twitter.com/ITmedia_news">ニュースはTwitterでキャッチ</a></h3></div>
+<div class="colBoxDescription"><p>ITニュースをめぐるあれやこれやを編集部からお届けします。</p></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxClear h10px"></div>
+</div>
+</div>
+</div>
+<!-- htmlgen -->
+
+<div class="colBox colBoxNewart">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2>新着記事<span class="colBoxHeadSubtxt">from <a href="http://www.itmedia.co.jp/enterprise/">エンタープライズ</a></span></h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<!-- CMS index -->
+<div class="colBoxSubhead"><h4>3月3日</h4></div>
+<div class="colBoxUlist">
+<ul>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1403/03/news113.html">富士通、グループ200社11万人のコミュニケーション基盤統一を完了（16時12分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1403/03/news003.html">ホワイトペーパー：山形放送に聞く「Notesバージョンアップ」の狙いと効果（15時00分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1403/03/news034.html">Weekly Memo：Microsoft幹部が語るWinows Azureの勝算（08時00分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1403/03/news008.html">ホワイトペーパー：別冊Computer Weekly　間違いだらけのベンダー契約を見直せ（08時00分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1403/03/news029.html">Mt.Goxに何が？　ビットコイン攻撃やマルウェア増加に警鐘（07時30分）</a></li>
+
+</ul>
+</div>
+<div class="colBoxSubhead"><h4>2月28日</h4></div>
+<div class="colBoxUlist">
+<ul>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/28/news153.html">mixiに不正ログイン、mixiボイスで身に覚えのない投稿も（20時46分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/28/news150.html">ソフトバンクモバイルのユーザーサイトに不正アクセス、リスト型攻撃の可能性（20時28分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/28/news124.html">企業のIT活用は2極化傾向が浮き彫りに――野村総研調べ（16時17分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/28/news118.html">富士通、垂直統合型DBマシンにニューモデル（15時37分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/28/news001.html">ホワイトペーパー：すぐ分かる「IBM Notes/Domino 9」の機能と効果（15時00分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/28/news089.html">自治体を強みや課題を見える化する富士通のツール、宮城県七ヶ宿町で実証（13時07分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/28/news033.html">萩原栄幸の情報セキュリティ相談室：元銀行員がひも解くフィッシング詐欺の中身と対策（08時00分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/28/news021.html">導入事例：リコーの営業スタイルを変えた“現場流”iPad活用術とは？（08時00分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/28/news007.html">ホワイトペーパー：中堅・中小に適したデスクトップ仮想製品「VDI-in-a-Box」の仕組みと機能（08時00分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/28/news053.html">Windows版Chromeの拡張機能、アプリストアへの登録義務期限を延長へ（07時28分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/28/news052.html">脆弱性がもたらす脅威、大半はMicrosoft以外から（07時24分）</a></li>
+
+</ul>
+</div>
+<div class="colBoxSubhead"><h4>2月27日</h4></div>
+<div class="colBoxUlist">
+<ul>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/27/news130.html">NEC、クラウド型の低価格POSシステムサービス（17時28分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/27/news125.html">クラウドストレージ市場、2017年に423.5億円規模に（17時15分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/27/news122.html">日立とAWSのクラウドが直結――4月から（17時05分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/27/news117.html">リスクを抱えたサーバ内蔵機器を見つけて――IPAが方法指南（16時47分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/27/news101.html">導入事例：ピーチ・ジョンがSurface導入、新業態でお披露目（15時00分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/27/news001.html">ホワイトペーパー：HDDやNASなどのストレージ増設前に注意すべき5つの点とは？（15時00分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/27/news097.html">PFUが5年ぶりのキオスク端末、ビッグデータの入口にも（14時40分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/27/news073.html">トレンドマイクロ、SSLサーバ証明書を本格展開（12時43分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/27/news064.html">芸能プロのアミューズ、仮想化環境にセキュリティ対策導入（12時23分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/27/news012.html">ディルバート（345）：エルボニアに水を届ける斬新なアイデアとは（09時30分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/27/news029.html">ゴミ収集から観光客誘致まで：金沢市がオープンデータで実現したこと（08時30分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/27/news023.html">活用とセキュリティの両立にも配慮：持続型成長経営に向けてビッグデータ活用に挑む小田急（08時00分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/27/news013.html">さよならWindows XP、そしてWindows 8.1へ：持ち歩きPCやタブレットを便利に守る暗号化機能の使い方（08時00分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/27/news007.html">MM総研 執行役員に聞く：企業ユーザーに今必要とされるクラウドサービスとは（08時00分）</a></li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1402/27/news045.html">SafariとQuickTimeの更新版も公開、だがSnow LeopardはXP状態に？（07時16分）</a></li>
+
+</ul>
+</div>
+<!-- CMS index end -->
+<div class="colBoxPageLink"><a href="http://www.itmedia.co.jp/enterprise/subtop/archive/" title="記事一覧">記事一覧</a>&#187;</div>
+<div class="colBoxClear h10px"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="colBox colBoxNewart">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2>新着記事<span class="colBoxHeadSubtxt">from <a href="http://mag.executive.itmedia.co.jp/">エグゼクティブ</a></span></h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<!-- CMS index -->
+<div class="colBoxSubhead"><h4>3月3日</h4></div>
+<div class="colBoxUlist">
+<ul>
+<li><a href="http://mag.executive.itmedia.co.jp/executive/articles/1403/03/news111.html">「モノの貿易総額」米国上回り世界一　中国商務省、談話発表（16時04分）</a></li>
+
+</ul>
+</div>
+<div class="colBoxSubhead"><h4>2月27日</h4></div>
+<div class="colBoxUlist">
+<ul>
+<li><a href="http://mag.executive.itmedia.co.jp/executive/articles/1402/27/news034.html">ビジネス著者が語る、リーダーの仕事術：「それ、根拠あるの?」と聞かれた時の統計分析（08時00分）</a></li>
+
+</ul>
+</div>
+<div class="colBoxSubhead"><h4>2月26日</h4></div>
+<div class="colBoxUlist">
+<ul>
+<li><a href="http://mag.executive.itmedia.co.jp/executive/articles/1402/26/news018.html">NTT DATA Innovation Conference 2014リポート：日本の弱点は変化に対するスピード――先を読む努力がいままで以上に必要になる（08時00分）</a></li>
+
+</ul>
+</div>
+<!-- CMS index end -->
+<div class="colBoxPageLink"><a href="http://mag.executive.itmedia.co.jp/executive/subtop/archive/" title="記事一覧">記事一覧</a>&#187;</div>
+<div class="colBoxClear h10px"></div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div id="masterMainRight">
+<div class="colBox colBoxRssAres">
+<div class="colBoxOuter">
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxUlist"><ul>
+<li><a  href="http://rss.itmedia.co.jp/rss/1.0/news_technology.xml" title="RSS"></a></li>
+</ul></div>
+</div>
+<div class="colBoxClear"></div>
+</div>
+</div>
+</div>
+<div class="colBox colBoxTechnologyNewtopic">
+<div class="colBoxOuter">
+<div class="colBoxInner"><!-- CMS index -->
+<div class="colBoxIndex">
+<div class="colBoxClear h5px"></div>
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/28/news100.html" title="銃を製造しようとしたら3Dプリンタを強制ストップ　DNPが新技術開発"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/28/news100.html" title="銃を製造しようとしたら3Dプリンタを強制ストップ　DNPが新技術開発">銃を製造しようとしたら3Dプリンタを強制ストップ　DNPが新技術開発</a></h3></div>
+<div class="colBoxDescription"><p>DNPは、銃器などの危険物製造やキャラクター製品の模倣など、違法性のある物品製造のために3Dプリンタを操作しようとした場合、プリンタを停止させるプログラムを開発した。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月28日 15時54分）</span></div>
+<div class="colBoxClear h10px"></div>
+</div>
+<!-- CMS index end -->
+</div>
+</div>
+</div>
+<div id="ITT">
+<script>adRequest({'position':'ITT1'});</script>
+<script>adRequest({'position':'ITT2'});</script>
+</div>
+<div class="colBox colBoxTechnologyNewtopic">
+<div class="colBoxOuter">
+<div class="colBoxInner"><!-- CMS index -->
+<div class="colBoxIndex">
+<div class="colBoxClear h5px"></div>
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/27/news121.html" title="9000キロ離れた光時計が625兆分の1の精度で一致　NICTが新手法で確認、「秒」再定義に一歩"><IMG SRC="http://image.itmedia.co.jp/news/articles/1405/27/news121.jpg" WIDTH="80" HEIGHT="60" ALT="news121.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/27/news121.html" title="9000キロ離れた光時計が625兆分の1の精度で一致　NICTが新手法で確認、「秒」再定義に一歩">9000キロ離れた光時計が625兆分の1の精度で一致　NICTが新手法で確認、「秒」再定義に一歩</a></h3></div>
+<div class="colBoxDescription"><p>9000キロ離れた日本とドイツの光時計を通信衛星を介した手法で比較し、625兆分の1の精度で一致していることを確認したとNICTが発表した。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月27日 20時04分）</span></div>
+<div class="colBoxClear h10px"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxClear h5px"></div>
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/27/news036.html" title="超深海の潜航能力と高い居住性　次世代の有人潜水船「しんかい12000」開発本格化、資源探査レースへ"><IMG SRC="http://image.itmedia.co.jp/news/articles/1405/27/news036.gif" WIDTH="80" HEIGHT="60" ALT="news036.gif" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/27/news036.html" title="超深海の潜航能力と高い居住性　次世代の有人潜水船「しんかい12000」開発本格化、資源探査レースへ">超深海の潜航能力と高い居住性　次世代の有人潜水船「しんかい12000」開発本格化、資源探査レースへ</a></h3></div>
+<div class="colBoxDescription"><p>1万2000メートルまで潜航できる「しんかい12000」の開発構想が本格的に動き出す。深海底では近年、各国による資源探査の競争が激化しており、海洋研究開発機構は2023年ごろの運用開始を目指している。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月27日 08時47分）</span></div>
+<div class="colBoxClear h10px"></div>
+</div>
+<!-- CMS index end -->
+</div>
+</div>
+</div>
+<div id="ITFT"><script>adRequest({'position':'ITFT'});</script></div>
+<div id="ISTLC"><script>adRequest({'position':'30ISTLC'});</script></div>
+<div class="colBox colBoxTechnologyNewtopic">
+<div class="colBoxOuter">
+<div class="colBoxInner"><!-- CMS index -->
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/26/news034.html" title="だいち2号　命つなぐ衛星に期待　災害観測、1メートルの物体識別"><IMG SRC="http://image.itmedia.co.jp/news/articles/1405/26/news034.jpg" WIDTH="80" HEIGHT="60" ALT="news034.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/26/news034.html" title="だいち2号　命つなぐ衛星に期待　災害観測、1メートルの物体識別">だいち2号　命つなぐ衛星に期待　災害観測、1メートルの物体識別</a></h3></div>
+<div class="colBoxDescription"><p>24日に打ち上げた陸域観測技術衛星「だいち2号」は、初代の「だいち」と比べて地上の識別能力などが大幅に向上しており、大規模災害時の早期救援につながると期待されている。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月26日 07時00分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/23/news103.html" title="3.2Gピクセル・“自分撮り”でできた地球　NASAが公開"><IMG SRC="http://image.itmedia.co.jp/news/articles/1405/23/news103.jpg" WIDTH="80" HEIGHT="60" ALT="news103.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/23/news103.html" title="3.2Gピクセル・“自分撮り”でできた地球　NASAが公開">3.2Gピクセル・“自分撮り”でできた地球　NASAが公開</a></h3></div>
+<div class="colBoxDescription"><p>世界各地から集まった“自分撮り”のモザイクでできた地球の画像をNASAが公開した。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月23日 15時56分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/23/news078.html" title="物に触れた感覚を再現、硬さも伝えるシステム　NHKと東大が開発"><IMG SRC="http://image.itmedia.co.jp/news/articles/1405/23/news078.gif" WIDTH="80" HEIGHT="60" ALT="news078.gif" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/23/news078.html" title="物に触れた感覚を再現、硬さも伝えるシステム　NHKと東大が開発">物に触れた感覚を再現、硬さも伝えるシステム　NHKと東大が開発</a></h3></div>
+<div class="colBoxDescription"><p>物体の形状と硬さを非接触で測定し、物体を触った感覚を仮想的に再現できるシステムをNHKと東京大学が共同で開発した。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月23日 13時55分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/22/news048.html" title="ゴリラも世代間でIT格差？　子は1日30分タッチパネル　親は触れもせず　京都市動物園"><IMG SRC="http://image.itmedia.co.jp/news/articles/1405/22/news048.jpg" WIDTH="80" HEIGHT="60" ALT="news048.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/22/news048.html" title="ゴリラも世代間でIT格差？　子は1日30分タッチパネル　親は触れもせず　京都市動物園">ゴリラも世代間でIT格差？　子は1日30分タッチパネル　親は触れもせず　京都市動物園</a></h3></div>
+<div class="colBoxDescription"><p>京都市動物園のゴリラ舎で、学習用タッチパネルを使った知性研究の実験が始まり、親子ゴリラ間の関心の“ギャップ”が浮き彫りになっている。「年齢による差が大きいのではないか」との見方も。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月22日 09時00分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/21/news117.html" title="1巻で154Tバイト実現可能な磁気テープ技術、富士フイルムとIBMが開発　量産化も視野"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/21/news117.html" title="1巻で154Tバイト実現可能な磁気テープ技術、富士フイルムとIBMが開発　量産化も視野">1巻で154Tバイト実現可能な磁気テープ技術、富士フイルムとIBMが開発　量産化も視野</a></h3></div>
+<div class="colBoxDescription"><p>1巻あたり154Tバイトと従来の約62倍のデータが記録可能な大容量磁気テープを富士フイルムとIBMが開発した。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月21日 16時57分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/20/news043.html" title="クモの糸で人間がぶら下がれた　「スパイダーマン」の世界が実現　軽くて強い、NASAも注目"><IMG SRC="http://image.itmedia.co.jp/news/articles/1405/20/news043.gif" WIDTH="80" HEIGHT="60" ALT="news043.gif" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/20/news043.html" title="クモの糸で人間がぶら下がれた　「スパイダーマン」の世界が実現　軽くて強い、NASAも注目">クモの糸で人間がぶら下がれた　「スパイダーマン」の世界が実現　軽くて強い、NASAも注目</a></h3></div>
+<div class="colBoxDescription"><p>「軽くて丈夫なクモの糸は“夢の繊維”」――こう話す奈良県立医大の大崎名誉教授は自らクモの糸にぶらさがる実験に成功したクモの糸研究の第一人者だ。果たして人間はスパイダーマンになれるのか？　大崎さんに聞いた。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月20日 09時11分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/19/news044.html" title="初音ミクが添い寝して「恥ずかしいよ……」　筑波大学院生がシステム開発　「Oculus Rift」活用"><IMG SRC="http://image.itmedia.co.jp/news/articles/1405/19/news044.jpg" WIDTH="80" HEIGHT="60" ALT="news044.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/19/news044.html" title="初音ミクが添い寝して「恥ずかしいよ……」　筑波大学院生がシステム開発　「Oculus Rift」活用">初音ミクが添い寝して「恥ずかしいよ……」　筑波大学院生がシステム開発　「Oculus Rift」活用</a></h3></div>
+<div class="colBoxDescription"><p>「初音ミク」が添い寝をしてくれるすごいシステム「Miku Miku SOINE（ミクミク添い寝）」を、筑波大院生が開発した。すでにバージョン3まで完成しており、さらなる進化に意欲をのぞかせる。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月19日 09時05分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/16/news046.html" title="手術も「ナビ」で正確に　「人工関節」置換手術、ナビシステムで「1ミリも誤差なし」"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/16/news046.html" title="手術も「ナビ」で正確に　「人工関節」置換手術、ナビシステムで「1ミリも誤差なし」">手術も「ナビ」で正確に　「人工関節」置換手術、ナビシステムで「1ミリも誤差なし」</a></h3></div>
+<div class="colBoxDescription"><p>関節の痛みを改善するため、患部を人工関節に入れ替える外科手術。その治療技術は進歩し、ナビの支援で正確、安全に手術ができるシステムが普及し始めた。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月16日 09時12分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/16/news045.html" title="展望描けぬ有人宇宙計画　政府、経費節減の一途"><IMG SRC="http://image.itmedia.co.jp/news/articles/1405/16/news045.gif" WIDTH="80" HEIGHT="60" ALT="news045.gif" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/16/news045.html" title="展望描けぬ有人宇宙計画　政府、経費節減の一途">展望描けぬ有人宇宙計画　政府、経費節減の一途</a></h3></div>
+<div class="colBoxDescription"><p>若田光一さんが14日、ISSから帰還した。若田さんの経験をどう生かすかが今後の課題だが、日本は有人宇宙開発の将来展望を描けていない。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月16日 09時11分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/15/news128.html" title="「iWatch」実現へ専門家がAppleに集結　見えてきたその姿"><IMG SRC="http://image.itmedia.co.jp/news/articles/1405/15/news128.jpg" WIDTH="80" HEIGHT="60" ALT="news128.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/15/news128.html" title="「iWatch」実現へ専門家がAppleに集結　見えてきたその姿">「iWatch」実現へ専門家がAppleに集結　見えてきたその姿</a></h3></div>
+<div class="colBoxDescription"><p>Appleが医療技術分野から相次いで専門家を引き抜いている。こうした動きは「iWatch」をはじめ、Appleがどのようなウェアラブル技術を計画しているかを知る手がかりにもなる。（ロイター）</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月15日 16時37分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/13/news134.html" title="片面256Gバイトの次世代光ディスク、パイオニアなど開発　BDドライブで再生可能"><IMG SRC="http://image.itmedia.co.jp/news/articles/1405/13/news134.jpg" WIDTH="80" HEIGHT="60" ALT="news134.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/13/news134.html" title="片面256Gバイトの次世代光ディスク、パイオニアなど開発　BDドライブで再生可能">片面256Gバイトの次世代光ディスク、パイオニアなど開発　BDドライブで再生可能</a></h3></div>
+<div class="colBoxDescription"><p>片面256Gバイトの「データアーカイブ用大容量光ディスク」をパイオニアとメモリーテックが開発。BDドライブで再生でき、両面最大512Gバイトの容量を確保できる。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月13日 17時38分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/13/news036.html" title="ダイオウイカ、リュウグウノツカイ……深海魚が続々水揚げの謎　原因は？"><IMG SRC="http://image.itmedia.co.jp/news/articles/1405/13/news036.jpg" WIDTH="80" HEIGHT="60" ALT="news036.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/13/news036.html" title="ダイオウイカ、リュウグウノツカイ……深海魚が続々水揚げの謎　原因は？">ダイオウイカ、リュウグウノツカイ……深海魚が続々水揚げの謎　原因は？</a></h3></div>
+<div class="colBoxDescription"><p>ダイオウイカ、リュウグウノツカイ――普段見慣れない深海生物が今年に入り、日本海側を中心として次々と水揚げされた。環境の変化が原因か、深海ブームによる注目度アップ、はたまた巨大地震など異変の前触れなのか、さまざまな説が出ている。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月13日 08時30分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/12/news145.html" title="「きずな」で世界最高速・3.2Gbpsの衛星伝送に成功　4K超の映像非圧縮伝送も"><IMG SRC="http://image.itmedia.co.jp/news/articles/1405/12/news145.gif" WIDTH="80" HEIGHT="60" ALT="news145.gif" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/12/news145.html" title="「きずな」で世界最高速・3.2Gbpsの衛星伝送に成功　4K超の映像非圧縮伝送も">「きずな」で世界最高速・3.2Gbpsの衛星伝送に成功　4K超の映像非圧縮伝送も</a></h3></div>
+<div class="colBoxDescription"><p>超高速インターネット衛星「きずな」で、世界最高速3.2Gbpsの衛星伝送と、世界初となる4K超の高精細映像非圧縮伝送に成功した。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月12日 19時08分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/12/news125.html" title="体内リズムを香りで調整　高齢社会をアロマで健康に、近大が商品化"><IMG SRC="http://image.itmedia.co.jp/news/articles/1405/12/news125.jpg" WIDTH="80" HEIGHT="60" ALT="news125.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/12/news125.html" title="体内リズムを香りで調整　高齢社会をアロマで健康に、近大が商品化">体内リズムを香りで調整　高齢社会をアロマで健康に、近大が商品化</a></h3></div>
+<div class="colBoxDescription"><p>高齢者の生活リズムや体内物質を香りで整えるアロマキットを近畿大学が開発・商品化した。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月12日 16時29分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/12/news052.html" title="STAP細胞論文、Nature編集部が“強制撤回”も　「結論近い」"><IMG SRC="http://image.itmedia.co.jp/news/articles/1405/12/news052.jpg" WIDTH="80" HEIGHT="60" ALT="news052.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/12/news052.html" title="STAP細胞論文、Nature編集部が“強制撤回”も　「結論近い」">STAP細胞論文、Nature編集部が“強制撤回”も　「結論近い」</a></h3></div>
+<div class="colBoxDescription"><p>STAP細胞の論文を掲載した英Natureは、理研が不正と確定させた調査結果に関して「独自に評価を進めており、結論に達しつつある。何らかの対応をしたい」と表明した。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月12日 08時59分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/12/news050.html" title="3Dプリンタは諸刃の剣　「産業革命」も多様化する悪用　生みの親「拳銃まで作られるとは……」"><IMG SRC="http://image.itmedia.co.jp/news/articles/1405/12/news050.jpg" WIDTH="80" HEIGHT="60" ALT="news050.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/12/news050.html" title="3Dプリンタは諸刃の剣　「産業革命」も多様化する悪用　生みの親「拳銃まで作られるとは……」">3Dプリンタは諸刃の剣　「産業革命」も多様化する悪用　生みの親「拳銃まで作られるとは……」</a></h3></div>
+<div class="colBoxDescription"><p>拳銃製造に悪用された3Dプリンタだが、産業界では期待される技術だ。期待の反面、犯罪への悪用も懸念されており、法規制の必要性を訴える声も出ている。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月12日 08時55分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/09/news133.html" title="3Dプリンタ銃製造は「社会への告発」　「Liberator」図面公開の米国人が声明"><IMG SRC="http://image.itmedia.co.jp/news/articles/1405/09/news133.gif" WIDTH="80" HEIGHT="60" ALT="news133.gif" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/09/news133.html" title="3Dプリンタ銃製造は「社会への告発」　「Liberator」図面公開の米国人が声明">3Dプリンタ銃製造は「社会への告発」　「Liberator」図面公開の米国人が声明</a></h3></div>
+<div class="colBoxDescription"><p>3Dプリンタ銃を製造・所持していたとして男が逮捕された事件を受け、3Dプリンタ用の銃「Liberator」の設計図を公開した米国人が容疑者を評価する声明を発表した。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月9日 17時36分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/09/news058.html" title="Tシャツ式ウェアラブル「Biometric Smartwear」、今夏発売　200ドルから"><IMG SRC="http://image.itmedia.co.jp/news/articles/1405/09/news058.gif" WIDTH="80" HEIGHT="60" ALT="news058.gif" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/09/news058.html" title="Tシャツ式ウェアラブル「Biometric Smartwear」、今夏発売　200ドルから">Tシャツ式ウェアラブル「Biometric Smartwear」、今夏発売　200ドルから</a></h3></div>
+<div class="colBoxDescription"><p>生地に埋め込まれたセンサーで心拍数や呼吸量を収集し、Bluetooth経由でiOS端末にリアルタイムでデータを送るフィットネス向きのTシャツ式ウェアラブルが今夏発売される。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月9日 10時51分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/09/news050.html" title="小保方氏、「何を言っても通らない」と絶望　海外からオファーも"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/09/news050.html" title="小保方氏、「何を言っても通らない」と絶望　海外からオファーも">小保方氏、「何を言っても通らない」と絶望　海外からオファーも</a></h3></div>
+<div class="colBoxDescription"><p>STAP論文不正で再調査しないとする理研の決定を受け、小保方氏側は激しく反発している。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月9日 08時55分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/08/news166.html" title="小保方氏の実験ノート、8カ月で4ページ　画像切り貼り、「Science」からも指摘　理研「再調査なし」の理由"><IMG SRC="http://image.itmedia.co.jp/news/articles/1405/08/news166.gif" WIDTH="80" HEIGHT="60" ALT="news166.gif" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/08/news166.html" title="小保方氏の実験ノート、8カ月で4ページ　画像切り貼り、「Science」からも指摘　理研「再調査なし」の理由">小保方氏の実験ノート、8カ月で4ページ　画像切り貼り、「Science」からも指摘　理研「再調査なし」の理由</a></h3></div>
+<div class="colBoxDescription"><p>STAP論文不正問題で、理研は「再調査を行わない」と決定。小保方氏の実験ノートが8カ月で4ページしかなかったこと、画像切り貼りは「Science」からも指摘されていたことなどが明らかになった。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月8日 22時39分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/08/news062.html" title="STAP論文不正、理研「再調査しない」と決定　小保方氏に論文取り下げ勧告"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/08/news062.html" title="STAP論文不正、理研「再調査しない」と決定　小保方氏に論文取り下げ勧告">STAP論文不正、理研「再調査しない」と決定　小保方氏に論文取り下げ勧告</a></h3></div>
+<div class="colBoxDescription"><p>「STAP細胞」問題で理研は、再調査しないことを決定し、小保方氏に論文の取り下げを勧告したと発表した。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月8日 11時34分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1405/07/news101.html" title="Google Glassを航空機の整備に活用　JALとNRIが実証実験"><IMG SRC="http://image.itmedia.co.jp/news/articles/1405/07/news101.jpg" WIDTH="80" HEIGHT="60" ALT="news101.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1405/07/news101.html" title="Google Glassを航空機の整備に活用　JALとNRIが実証実験">Google Glassを航空機の整備に活用　JALとNRIが実証実験</a></h3></div>
+<div class="colBoxDescription"><p>JALとNRIが、Google Glassを活用した業務スタイルの実証実験を開始。航空機の整備士などJALの実務スタッフが装着し、現場作業の効率向上や負担軽減を図る。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（5月7日 15時36分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1404/30/news133.html" title="1巻で185Tバイト・従来の74倍　ソニー、次世代大容量磁気テープ開発　"><IMG SRC="http://image.itmedia.co.jp/news/articles/1404/30/news133.jpg" WIDTH="80" HEIGHT="60" ALT="news133.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1404/30/news133.html" title="1巻で185Tバイト・従来の74倍　ソニー、次世代大容量磁気テープ開発　">1巻で185Tバイト・従来の74倍　ソニー、次世代大容量磁気テープ開発　</a></h3></div>
+<div class="colBoxDescription"><p>従来より細かい磁性粒子を生成する新技術により、1巻あたり185Tバイト以上とこれまでの74倍のデータ記録が可能な次世代磁気テープをソニーが開発した。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（4月30日 18時34分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1404/30/news039.html" title="論文検証サイトの功罪　匿名で運用　「破壊的な方向に議論が進む恐れ」"><IMG SRC="http://image.itmedia.co.jp/news/articles/1404/30/news039.jpg" WIDTH="80" HEIGHT="60" ALT="news039.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1404/30/news039.html" title="論文検証サイトの功罪　匿名で運用　「破壊的な方向に議論が進む恐れ」">論文検証サイトの功罪　匿名で運用　「破壊的な方向に議論が進む恐れ」</a></h3></div>
+<div class="colBoxDescription"><p>ネットで科学論文への疑義が指摘されるケースが増えている。不正摘発に貢献してきた一方で、指摘内容の根拠が不十分だったり、匿名での運用に伴う問題点などが指摘されている。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（4月30日 08時59分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1404/28/news021.html" title="「非常にショック」「脇が甘い」　理研調査委員長辞任　「小保方方式」断罪のはずが……"><IMG SRC="http://image.itmedia.co.jp/news/articles/1404/28/news021.jpg" WIDTH="80" HEIGHT="60" ALT="news021.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1404/28/news021.html" title="「非常にショック」「脇が甘い」　理研調査委員長辞任　「小保方方式」断罪のはずが……">「非常にショック」「脇が甘い」　理研調査委員長辞任　「小保方方式」断罪のはずが……</a></h3></div>
+<div class="colBoxDescription"><p>自らの論文に問題が見つかり、理研の石井上席研究員が調査委員長を辞任。トップクラスの研究者が疑義で身を引く前代未聞の事態に衝撃が広がった。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（4月28日 08時55分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1404/25/news053.html" title="STAP問題　理研調査委員長、辞任へ　自身の論文データに疑義"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1404/25/news053.html" title="STAP問題　理研調査委員長、辞任へ　自身の論文データに疑義">STAP問題　理研調査委員長、辞任へ　自身の論文データに疑義</a></h3></div>
+<div class="colBoxDescription"><p>STAP論文不正問題を調査する理研の調査委で、委員長を務める石井氏らが執筆した論文に疑義が指摘されている。石井氏は委員長を辞任する意向だ。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（4月25日 08時52分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1404/24/news140.html" title="「ゴルじぃ」「ミトちゃん」「カクさん」　日本分子生物学会にミクロの世界からキャラが集まる"><IMG SRC="http://image.itmedia.co.jp/news/articles/1404/24/news140.jpg" WIDTH="80" HEIGHT="60" ALT="news140.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1404/24/news140.html" title="「ゴルじぃ」「ミトちゃん」「カクさん」　日本分子生物学会にミクロの世界からキャラが集まる">「ゴルじぃ」「ミトちゃん」「カクさん」　日本分子生物学会にミクロの世界からキャラが集まる</a></h3></div>
+<div class="colBoxDescription"><p>日本分子生物学会のキャラクター募集に「でおきしくん」「ディーナさん」「クロモくん」などが集まった。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（4月24日 17時08分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1404/24/news028.html" title="究極の衣類開発に一役？　電子部品いらずの縫い付け型RFIDタグ"><IMG SRC="http://image.itmedia.co.jp/news/articles/1404/24/news028.jpg" WIDTH="80" HEIGHT="60" ALT="news028.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1404/24/news028.html" title="究極の衣類開発に一役？　電子部品いらずの縫い付け型RFIDタグ">究極の衣類開発に一役？　電子部品いらずの縫い付け型RFIDタグ</a></h3></div>
+<div class="colBoxDescription"><p>電子繊維を使った伸縮性のあるチップレスRFIDタグが実現可能であることが発表された。電子部品を用いないため安価に製造でき、健康管理やスポーツ、偽造防止などの応用が考えられる。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（4月24日 10時00分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1404/23/news041.html" title="“昭和のウルトラマン”人気の凄さ★彡　耳にスイッチ、カラータイマーはセロハンで……企画展に親子で夢中"><IMG SRC="http://image.itmedia.co.jp/news/articles/1404/23/news041.gif" WIDTH="80" HEIGHT="60" ALT="news041.gif" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1404/23/news041.html" title="“昭和のウルトラマン”人気の凄さ★彡　耳にスイッチ、カラータイマーはセロハンで……企画展に親子で夢中">“昭和のウルトラマン”人気の凄さ★彡　耳にスイッチ、カラータイマーはセロハンで……企画展に親子で夢中</a></h3></div>
+<div class="colBoxDescription"><p>「昭和のウルトラシリーズ」に関する“お宝”を一堂に集めた企画展が、滋賀県の美術館で開かれている。「平成ウルトラ」世代の子供たちも、リアルタイムで夢中になっていたお父さん・お母さん世代も熱い視線を注いでいる。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（4月23日 08時37分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1404/22/news093.html" title="Google Glassで現在地のニュース読めるアプリ、日本のベンチャーが開発"><IMG SRC="http://image.itmedia.co.jp/news/articles/1404/22/news093.jpg" WIDTH="80" HEIGHT="60" ALT="news093.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1404/22/news093.html" title="Google Glassで現在地のニュース読めるアプリ、日本のベンチャーが開発">Google Glassで現在地のニュース読めるアプリ、日本のベンチャーが開発</a></h3></div>
+<div class="colBoxDescription"><p>今いる場所に関連するニュースをリアルタイムに読めるGoogle Glassアプリを日本のベンチャーが開発。現在地付近で起きた事件や、電車遅延のニュースなどをチェックできる。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（4月22日 15時04分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1404/21/news125.html" title="発言内容をサーバに残さないチャットサービス、NTTコムが公開　WebRTC活用"><IMG SRC="http://image.itmedia.co.jp/news/articles/1404/21/news125.gif" WIDTH="80" HEIGHT="60" ALT="news125.gif" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1404/21/news125.html" title="発言内容をサーバに残さないチャットサービス、NTTコムが公開　WebRTC活用">発言内容をサーバに残さないチャットサービス、NTTコムが公開　WebRTC活用</a></h3></div>
+<div class="colBoxDescription"><p>NTTコムがWebRTCを使ったチャットサービスを開始。通信を暗号化し、発言内容をサーバに残さない、プライバシー性の高い仕組みだ。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（4月21日 19時43分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1404/21/news103.html" title="KDDI、下り150Mbpsを2万局に拡大へ　「キャリアアグリゲーション」国内初導入"><IMG SRC="http://image.itmedia.co.jp/news/articles/1404/21/news103.gif" WIDTH="80" HEIGHT="60" ALT="news103.gif" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1404/21/news103.html" title="KDDI、下り150Mbpsを2万局に拡大へ　「キャリアアグリゲーション」国内初導入">KDDI、下り150Mbpsを2万局に拡大へ　「キャリアアグリゲーション」国内初導入</a></h3></div>
+<div class="colBoxDescription"><p>KDDIは、「LTE-Advanced」の技術「キャリアアグリゲーション」を、夏をめどに国内で初めて導入する。受信最大150Mbpsエリアを一気に拡大できるという。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（4月21日 17時33分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1404/18/news131.html" title="4メートル超のダイオウイカ、金沢のスーパーで展示される"><IMG SRC="http://image.itmedia.co.jp/news/articles/1404/18/news131.jpg" WIDTH="80" HEIGHT="60" ALT="news131.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1404/18/news131.html" title="4メートル超のダイオウイカ、金沢のスーパーで展示される">4メートル超のダイオウイカ、金沢のスーパーで展示される</a></h3></div>
+<div class="colBoxDescription"><p>全長4メートル超のダイオウイカが水揚げされ、金沢市内のスーパーで展示されている。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（4月18日 19時10分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1404/18/news102.html" title="メスがペニスを持つ昆虫が見つかる　雌雄逆転"><IMG SRC="http://image.itmedia.co.jp/news/articles/1404/18/news102.jpg" WIDTH="80" HEIGHT="60" ALT="news102.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1404/18/news102.html" title="メスがペニスを持つ昆虫が見つかる　雌雄逆転">メスがペニスを持つ昆虫が見つかる　雌雄逆転</a></h3></div>
+<div class="colBoxDescription"><p>メスがペニスのような交尾器を持ち、オスに乗りかかって交尾する昆虫が発見された。オスとメスで交尾に対する積極性が逆転しているという。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（4月18日 15時50分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1404/18/news052.html" title="マウスの脳を完全に透明化、細胞1つ1つのレベルで観察する新技術、理研が開発"><IMG SRC="http://image.itmedia.co.jp/news/articles/1404/18/news052.jpg" WIDTH="80" HEIGHT="60" ALT="news052.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1404/18/news052.html" title="マウスの脳を完全に透明化、細胞1つ1つのレベルで観察する新技術、理研が開発">マウスの脳を完全に透明化、細胞1つ1つのレベルで観察する新技術、理研が開発</a></h3></div>
+<div class="colBoxDescription"><p>マウスの生体の脳を試薬を使ってほぼ完全に透明化し、細胞1つ1つのレベルで観察できる新技術を開発したと理研が発表した。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（4月18日 09時34分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1404/17/news110.html" title="論文画像の不正検出ソフト、東大発ベンチャーが無料公開　「安易な不正防止に」"><IMG SRC="http://image.itmedia.co.jp/news/articles/1404/17/news110.jpg" WIDTH="80" HEIGHT="60" ALT="news110.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1404/17/news110.html" title="論文画像の不正検出ソフト、東大発ベンチャーが無料公開　「安易な不正防止に」">論文画像の不正検出ソフト、東大発ベンチャーが無料公開　「安易な不正防止に」</a></h3></div>
+<div class="colBoxDescription"><p>生命科学論文の使用画像に切り貼りや加工などの不自然な点がないかを検出する「LP-exam」を、東京大学の研究者らが設立したベンチャーLPixelが無料公開した。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（4月17日 15時47分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.itmedia.co.jp/news/articles/1404/17/news044.html" title="“STAP騒動”横目に「京大iPS」着々……パーキンソン病治療で臨床研究へ「一歩一歩」"><IMG SRC="http://image.itmedia.co.jp/news/articles/1404/17/news044.jpg" WIDTH="80" HEIGHT="60" ALT="news044.jpg" ALIGN="LEFT" BORDER="0"></a></div>
+<div class="colBoxSubTitle"><h5></h5></div>
+<div class="colBoxTitle"><h3><a href="http://www.itmedia.co.jp/news/articles/1404/17/news044.html" title="“STAP騒動”横目に「京大iPS」着々……パーキンソン病治療で臨床研究へ「一歩一歩」">“STAP騒動”横目に「京大iPS」着々……パーキンソン病治療で臨床研究へ「一歩一歩」</a></h3></div>
+<div class="colBoxDescription"><p>STAP細胞の論文を巡る問題が泥沼化するなか、iPS細胞の臨床研究が動き出した。iPS細胞を使ったパーキンソン病の治療を目指す研究グループは、安全で効率的な培養技術を確立。臨床研究で用いる手法が、ほぼ固まった。</p></div>
+<div class="colBoxInfo"><span class="colBoxDate">（4月17日 08時47分）</span></div>
+<div class="colBoxClear"></div>
+</div>
+<!-- CMS index end -->
+</div>
+</div>
+</div>
+
+
+</div>
+
+<!--EDIT START-->
+<!--EDIT END-->
+ 
+</div>
+<!--EDIT START-->
+<!--EDIT END-->
+ 
+
+
+<!---->
+</div>
+<div id="masterSub">
+	<!--EDIT START-->
+	<!--サブトップ＆編集特集-->
+	<div id="globalHeaderSearch">
+ <div><script src="http://api.popin.cc/searchbox/itmedia_news.js" type="text/javascript" charset="UTF-8"></script></div>
+</div>
+
+	<div id="ITR"><script>adRequest({'position':'ITR'});</script></div>
+	<div id="ISALR"><script>adRequest({'position':'30ISALR'});</script></div>
+	<!-- htmlgen -->
+<div class="colBox colBoxSeminar">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2>お勧めの主催・協力セミナー</h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxIcon">
+<a href="http://www.atmarkit.co.jp/misc/ct.php?id=FU452801" title="【編集部主催勉強会】<br>製紙大手「王子グループ」のプライベートクラウド構築事例"><img src="http://image.itmedia.co.jp/enterprise/images/40x40_1_1401274374.jpg"></a></div>
+<div class="colBoxTitle"><h3><a href="http://www.atmarkit.co.jp/misc/ct.php?id=FU452801" title="【編集部主催勉強会】<br>製紙大手「王子グループ」のプライベートクラウド構築事例">【編集部主催勉強会】<br>製紙大手「王子グループ」のプライベートクラウド構築事例</a><span class="colBoxNewtxt"></span></h3></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxClear h10px"></div>
+</div>
+</div>
+</div>
+<!-- /htmlgen -->
+
+	<!-- HP 特設枠 -->
+	
+<div class="colBox colBoxHpSpecial"><div class="colBoxOuter"><div class="colBoxHead"><h2>ピックアップコンテンツ</h2><span class="colBoxHeadSubtxt">- PR -</span></div><div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="javascript:void(0)" onclick="var s=s_gi('itmediacojpglobal'); s.prop5='et130702_001 http://www.itmedia.co.jp/enterprise/special/et130702/index.html'; s.tl(true,'e','et130702_001'); s_objectid='et130702_001'; window.setTimeout(function(){location.href='http://www.itmedia.co.jp/enterprise/special/et130702/index.html';}, 500);"><img src="http://image.itmedia.co.jp/enterprise/special/et130702/images/index/130627_icon.jpg"></a></div>
+<div class="colBoxTitle"><h3><a href="javascript:void(0)" onclick="var s=s_gi('itmediacojpglobal'); s.prop5='et130702_001 http://www.itmedia.co.jp/enterprise/special/et130702/index.html'; s.tl(true,'e','et130702_001'); s_objectid='et130702_001'; window.setTimeout(function(){location.href='http://www.itmedia.co.jp/enterprise/special/et130702/index.html';}, 500);" style="font-weight:bold;">IT Strategy</a></h3></div>
+<div class="colBoxAbstract"><small>激変する企業ITシステムに対応するための知見を集約。 ITの新しい潮流に乗り遅れないために。</small></div> <div class="colBoxClear h10px"></div></div>
+</div></div></div>
+
+	<!-- 求人特集 -->
+	<div class="colBox colBoxSubcolFeatures" id="subcolFeatures"></div>
+	<script type="text/javascript" src="/json/kyujin/parts_features.json" charset="Shift_JIS"></script>
+	<div class="colBoxClear h10px"></div>
+	<!-- /求人特集 -->
+	<div class="colBox colBoxRanking">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2>人気記事ランキング</h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxOlist">
+<ol>
+<!-- RSS2include -->
+<li class="rank1"><a href="http://www.itmedia.co.jp/news/articles/1306/12/news084.html" title="インデックスに粉飾決算の疑い　監視委が強制調査" onclick="designCnt('アクセスランキング','rank1');">インデックスに粉飾決算の疑い　監視委が強制調査</a></li><li class="rank2"><a href="http://www.itmedia.co.jp/news/articles/1404/10/news138.html" title="ドコモ「カケホーダイ」の狙い──値上げになるケースも？" onclick="designCnt('アクセスランキング','rank2');">ドコモ「カケホーダイ」の狙い──値上げになるケースも？</a></li><li class="rank3"><a href="http://www.itmedia.co.jp/news/articles/1405/28/news102.html" title="Amazon、Hachette差別について説明──「お急ぎの場合は競合他社でどうぞ」" onclick="designCnt('アクセスランキング','rank3');">Amazon、Hachette差別について説明──「お急ぎの場合は競合他社でどうぞ」</a></li><li class="rank4"><a href="http://www.itmedia.co.jp/news/articles/1405/27/news035.html" title="過酷な「ワンオペ」　バイト大量離脱で崖っぷちのすき家　いつまで続く「パワーアップ改装中」" onclick="designCnt('アクセスランキング','rank4');">過酷な「ワンオペ」　バイト大量離脱で崖っぷちのすき家　いつまで続く「パワーアップ改装中」</a></li><li class="rank5"><a href="http://www.itmedia.co.jp/news/articles/1405/28/news046.html" title="AKB入山さんの偽Twitterに芸能マスコミが次々に釣られる" onclick="designCnt('アクセスランキング','rank5');">AKB入山さんの偽Twitterに芸能マスコミが次々に釣られる</a></li><li class="rank6"><a href="http://www.itmedia.co.jp/news/articles/1405/28/news138.html" title="自宅で徹底的に1人になれる室内テント「ぼっちてんと」　デスク周りを丸ごと覆ってネットに没頭" onclick="designCnt('アクセスランキング','rank6');">自宅で徹底的に1人になれる室内テント「ぼっちてんと」　デスク周りを丸ごと覆ってネットに没頭</a></li><li class="rank7"><a href="http://www.itmedia.co.jp/news/articles/1405/28/news094.html" title="ドコモ、iPadに参入　新プラン「パケあえる」対応" onclick="designCnt('アクセスランキング','rank7');">ドコモ、iPadに参入　新プラン「パケあえる」対応</a></li><li class="rank8"><a href="http://www.itmedia.co.jp/news/articles/1405/27/news057.html" title="Google、テレビ用端末「Chromecast」を国内発売　4200円" onclick="designCnt('アクセスランキング','rank8');">Google、テレビ用端末「Chromecast」を国内発売　4200円</a></li><li class="rank9"><a href="http://www.itmedia.co.jp/news/articles/1405/28/news044.html" title="広がるネット「定額見放題」　Hulu好調、NHKは初の黒字へ" onclick="designCnt('アクセスランキング','rank9');">広がるネット「定額見放題」　Hulu好調、NHKは初の黒字へ</a></li><li class="rank10"><a href="http://www.itmedia.co.jp/news/articles/1405/28/news068.html" title="Google、自動運転カーのプロトタイプを披露（動画あり）" onclick="designCnt('アクセスランキング','rank10');">Google、自動運転カーのプロトタイプを披露（動画あり）</a></li>
+<!-- RSS2include -->
+</ol>
+</div>
+<div class="colBoxPageLink"><a href="http://www.itmedia.co.jp/ranking/news.html" title="ランキングトップ30 一覧" onclick="designCnt('アクセスランキングトップ30');">ランキングトップ30 一覧 &raquo;</a></div> 
+<div class="colBoxClear h10px"></div>
+</div>
+</div>
+</div>
+</div>
+
+	<!-- htmlgen -->
+<div class="colBox colBoxSpecialIndex">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2>いま注目の編集特集</h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxUlist"><ul>
+<li><a href="http://www.itmedia.co.jp/news/subtop/features/omp/newscloud1401.html" title="クラウド時代を生き抜く「ビジネスパーソン進化論」">クラウド時代を生き抜く「ビジネスパーソン進化論」</a></li>
+</ul></div>
+</div>
+<div class="colBoxClear h10px"></div>
+</div>
+</div>
+</div>
+<!-- /htmlgen -->
+
+	<div id="ITR2"><script>adRequest({'position':'ITR2'});</script></div>
+	<div class="colBoxClear h5px"></div>
+	<div id="ITKT">
+	<script>adRequest({'position':'ITKT1'});</script>
+	<script>adRequest({'position':'ITKT2'});</script>
+	<script>adRequest({'position':'ITKT3'});</script>
+	</div>
+	<div class="colBoxClear h10px"></div>
+	<script type="text/javascript">
+snsContents({
+	'likebox':'ITmediaNews',
+	'activitydomain':'www.itmedia.co.jp',
+	'activityfilter':'news',
+	'twitterid':'itm_news',
+	'tw_widget_id':'304498920883621888'
+});
+</script>
+<div class="colBoxClear h15px"></div>
+
+	<script type="text/javascript" src="/json/enterprise/rss_mailmag.json" title="tmpl=A,loop=2"></script>
+	<script type="text/javascript" src="/js/news/parts_press.js" charset="shift_jis"></script>
+	<div class="colBox colBoxfeedback">
+<div class="colBoxOuter">
+<div class="colBoxInner">
+<div class="colBoxClear h10px"></div>
+<div class="colBoxIndex colBoxIndexL60">
+<div class="colBoxUlist">
+<ul>
+<li class="colBoxfeedbackVoice"><a href="http://www.itmedia.co.jp/info/mail/index.html?article#article" title="ご意見・ご感想">ご意見・ご感想</a></li>
+<li class="colBoxfeedbackMail"><a href="http://corp.itmedia.co.jp/corp/helpdesk.html" title="リリース送付先">リリース送付先</a></li>
+<li class="colBoxfeedbackCorp"><a href="http://corp.itmedia.co.jp/corp/ad/inquiry.html" title="広告に関するお問い合わせ">広告に関するお問い合わせ</a></li>
+<li class="colBoxfeedbackMl"><a href="http://www.itmedia.co.jp/enterprise/info/lp/enterprise_mailmag.html" title="メールマガジン">メールマガジン</a></li>
+<li class="colBoxfeedbackSpecial"><a href="http://www.itmedia.co.jp/news/pr_specialarchive.html" title="Specialインデックス">Specialインデックス</a></li>
+<li class="colBoxfeedbackPl"><a href="http://blog.corp.itmedia.co.jp/" title="アイティメディアからのお知らせブログ">アイティメディアからのお知らせブログ</a></li>
+</ul>
+</div>
+<div class="colBoxClear h10px"></div>
+</div>
+<div class="colBoxIndex colBoxIndexR30">
+<div class="colBoxUlist">
+<ul>
+<li class="colBoxfeedbackRss"><a href="http://www.itmedia.co.jp/info/rss/news.html" title="ITmedia ニュースのRSSフィード" target="_blank">RSS</a></li>
+<li class="colBoxfeedbackFb"><a href="http://www.facebook.com/ITmediaNews" title="ITmedia ニュースのfacebookをフォローする" target="_blank">facebook</a></li>
+<li class="colBoxfeedbackTw"><a href="http://twitter.com/#!/itmedia_news" title="ITmedia ニュースのTwitterアカウント「itmedia_news」をフォローする" target="_blank">twitter</a></li>
+</ul>
+</div>
+<div class="colBoxClear h10px"></div>
+</div>
+<div class="colBoxClear h10px"></div>
+</div>
+</div>
+</div>
+<!--EDIT END-->
+
+</div>
+<div class="colBoxClear"></div>
+</div></div>
+<!---->
+
+
+<div id="masterFooter">
+	<div id="globalFooter">
+		<div id="globalFooterLink">
+<a href="http://www.itmedia.co.jp/info/sitemap/">サイトマップ</a> | <a href="http://www.itmedia.co.jp/info/rule/">利用規約</a> | <a href="http://corp.itmedia.co.jp/corp/privacy.html">プライバシーポリシー</a> | <a href="http://corp.itmedia.co.jp/corp/ad/">広告案内</a> | <a href="http://www.itmedia.co.jp/info/mail/">お問い合わせ</a>
+</div>
+
+		<div id="globalFooterMediaList">
+			<div id="globalFooterMediaListIn">
+				<div class="mediaListGroup">
+					<div class="mediaList" id="mediaList01">
+						<h2>IT総合</h2>
+						<ul>
+						<li><a href="http://www.itmedia.co.jp/">ITmedia 総合TOP</a></li>
+						<li><a href="http://www.itmedia.co.jp/news/">ITmedia ニュース</a></li>
+						<li><a href="http://news.itmedia.co.jp/">ITmedia News スマート</a></li>
+						<li><a href="http://www.itmedia.co.jp/keywords/">ITmedia Keywords</a></li>
+						<li><a href="http://1topi.jp/">ONETOPI</a></li>
+						<li><a href="http://www.itmedia.co.jp/qa/">質問！ITmedia</a></li>
+						<li><a href="http://zenback.itmedia.co.jp/">zenbackキーワーズ</a></li>
+						</ul>
+					</div><!-- /#mediaList01 -->
+					<div class="mediaList" id="mediaList02">
+						<h2>デジタル・ガジェット</h2>
+						<ul>
+						<li><a href="http://www.itmedia.co.jp/mobile/">ITmedia Mobile</a></li>
+						<li><a href="http://www.itmedia.co.jp/pcuser/">ITmedia PC USER</a></li>
+						<li><a href="http://www.itmedia.co.jp/lifestyle/">ITmedia LifeStyle</a></li>
+						<li><a href="http://camera.itmedia.co.jp/">デジカメプラス</a></li>
+						<li><a href="http://ebook.itmedia.co.jp/">eBook USER</a></li>
+						<li><a href="http://review.itmedia.co.jp/">ITmedia REVIEW</a></li>
+						<li><a href="http://shopping.itmedia.co.jp/">ITmedia Shopping</a></li>
+						<li><a href="http://store.itmedia.co.jp">ITmedia Store</a></li>
+						<li><a href="http://rstore.itmedia.co.jp">ITmedia Store × 楽天市場</a></li>
+						<li><a href="http://ystore.itmedia.co.jp">ITmedia Store × Yahoo!ショッピング</a></li>
+						</ul>
+					</div><!-- /#mediaList02 -->
+					<div class="mediaList" id="mediaList03">
+						<h2>ビジネス</h2>
+						<ul>
+						<li><a href="http://bizmakoto.jp/">Business Media 誠</a></li>
+						<li><a href="http://bizmakoto.jp/bizid/">誠 Biz.ID</a></li>
+						<li><a href="http://bizmakoto.jp/style/">誠 Style</a></li>
+						<li><a href="http://blogs.bizmakoto.jp/">誠ブログ</a></li>
+						<li><a href="http://mag.executive.itmedia.co.jp/">ITmedia エグゼクティブ</a></li>
+						<li><a href="http://www.itmedia.co.jp/pcuser/subtop/pcuserpro/">ITmedia PC USER Pro</a></li>
+						</ul>
+					</div><!-- /#mediaList03 -->
+					<div class="mediaList" id="mediaList04">
+						<h2>カルチャー</h2>
+						<ul>
+						<li><a href="http://nlab.itmedia.co.jp/">ねとらぼ</a></li>
+						<li><a href="http://www.itmedia.co.jp/live/">ライブガイド</a></li>
+						</ul>
+					</div><!-- /#mediaList04 -->
+					<div class="mediaList" id="mediaList05">
+						<h2>アプリ</h2>
+						<ul>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/itmedia_ios.html">ITmedia for iPhone/iPad</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/itmedia_android.html">ITmedia for Android</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/onetopi_headline.html">ONETOPI ヘッドライン</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/onetopi.html">ONETOPI App</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/liveguide.html">ライブガイド（β）</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/necolab.html">ねこらぼ</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/tweetopi.html">ついトピ！</a></li>
+						</ul>
+					</div><!-- /#mediaList05 -->
+				</div><!-- /.mediaListGroup -->
+				<div class="mediaListGroup">
+					<div class="mediaList" id="mediaList06">
+						<h2>企業IT</h2>
+						<ul>
+						<li><a href="http://www.itmedia.co.jp/enterprise/">ITmedia エンタープライズ</a></li>
+						<li><a href="http://www.itmedia.co.jp/enterprise/subtop/dictionary/">情報システム用語事典</a></li>
+						<li><a href="http://blogs.itmedia.co.jp/">オルタナティブ・ブログ</a></li>
+						<li><a href="http://techtarget.itmedia.co.jp/">TechTargetジャパン</a></li>
+						<li><a href="http://wp.techtarget.itmedia.co.jp/">ホワイトペーパー</a></li>
+						<li><a href="http://marketing.itmedia.co.jp/">ITmedia マーケティング</a></li>
+						<li><a href="http://blog.marketing.itmedia.co.jp/">マーケター通信 </a></li>
+						<li><a href="http://chosa.itmedia.co.jp/">調査のチカラ</a></li>
+						<li><a href="http://techtarget.itmedia.co.jp/tt/cw/">Computer Weekly</a></li>
+						</ul>
+					</div><!-- /#mediaList06 -->
+						<div class="mediaList" id="mediaList07">
+							<h2>テクノロジー</h2>
+							<ul>
+							<li><a href="http://www.atmarkit.co.jp/">＠IT</a></li>
+							<li><a href="http://qa.atmarkit.co.jp/">QA＠IT</a></li>
+							<li><a href="https://event.atmarkit.co.jp/">イベントカレンダー＋ログ</a></li>
+							</ul>
+						</div><!-- /#mediaList07 -->
+						<div class="mediaList" id="mediaList08">
+							<h2>エンジニアリング</h2>
+							<ul>
+							<li><a href="http://monoist.atmarkit.co.jp/">MONOist</a></li>
+							<li><a href="http://eetimes.jp/">EE Times Japan</a></li>
+							<li><a href="http://ednjapan.com/">EDN Japan</a></li>
+							<li><a href="http://monoist.atmarkit.co.jp/mn/special/mo120701/">モノづくりライブラリ</a></li>
+							<li><a href="http://www.itmedia.co.jp/smartjapan/">スマートジャパン</a></li>
+							</ul>
+						</div><!-- /#mediaList08 -->
+						<div class="mediaList" id="mediaList09">
+							<h2>キャリア</h2>
+							<ul>
+							<li><a href="http://www.atmarkit.co.jp/ait/subtop/jibun/">＠IT自分戦略研究所</a></li>
+							<li><a href="http://el.jibun.atmarkit.co.jp/">エンジニアライフ</a></li>
+							<li><a href="http://www.itmedia.co.jp/enterprise/subtop/dilbert/">ディルバート</a></li>
+							</ul>
+						</div><!-- /#mediaList09 -->
+				</div><!-- /.mediaListGroup -->
+			</div>
+		</div><!-- /#globalFooterMediaList -->
+		<div id="globalFooterCorp">
+			<div id="globalFooterCorpIn">
+				<p id="globalFooterCorpLogo"><a href="http://corp.itmedia.co.jp/"><img src="http://image.itmedia.co.jp/images/logo/170_itmedia_bgw.gif"></a>ITmediaはアイティメディア株式会社の登録商標です。</p>
+				<p id="globalFooterCorpLink"><a href="http://corp.itmedia.co.jp/">運営会社</a> | <a href="http://corp.itmedia.co.jp/corp/pr/">プレスリリース</a> | <a href="http://corp.itmedia.co.jp/corp/ir/">IR情報</a> | <a href="http://corp.itmedia.co.jp/corp/recruit/">採用情報</a> | <a href="http://blog.corp.itmedia.co.jp/">お知らせブログ</a> | <a href="http://id.itmedia.jp/info/campaign/all_id.html">アイティメディアID</a> | <a href="http://www.itmedia.co.jp/info/rss/">RSS</a> | <a href="http://www.itmedia.co.jp/info/twitter/">Twitter</a> | <a href="http://www.itmedia.co.jp/info/fb/">Facebook</a> | <a href="http://www.itmedia.co.jp/info/mailmag/">メルマガ</a> | <a href="http://www.itmedia.co.jp/info/virtualevent/">バーチャルイベント</a> | <a href="http://www.itmedia.co.jp/info/ebook/">ITmediaのeBook</a></p>
+			</div>
+		</div><!-- /#globalFooterCorp -->
+	</div>
+</div>
+
+
+</div><!--/masterBodyInner-->
+</div><!--/masterBodyOuter-->
+</div><!--/masterBodyIn-->
+</div><!--/masterBodyOut-->
+</div><!--/masterBody-->
+<script src="/js/masterBodyEnd.js"></script><!-- window.onload -->
+<script src="/js/itmid/smartPhoneHeadLink.js"></script><!-- Smart Phone Large Button-->
+<!--BEACON-->
+
+    
+	    <div id="BEACON"><div id="N">
+			<!-- SiteCatalyst code version: H.2.
+Copyright 1997-2005 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript" src="/include/sc/s_code.js"></script>
+<script language="JavaScript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+function $() {
+  var elements = new Array();
+  for (var i = 0; i < arguments.length; i++) {
+    var element = arguments[i];
+    if (typeof element == 'string')
+      element = document.getElementById(element);
+    if (arguments.length == 1)
+      return element;
+    elements.push(element);
+  }
+  return elements;
+}
+s.pageName=document.URL.replace( /(\?|#).*$/, '' );
+s.server="www.itmedia.co.jp"
+s.channel="ITmedia ニュース"
+s.pageType=""
+s.hier1="root,itm,news,subtop"
+s.hier2="itm,news,subtop"
+s.hier3="news,subtop"
+s.prop1=document.URL.replace( /(\?|#).*$/, '' );
+s.prop2="root,itm,news,subtop"
+if ( $('update') == undefined )
+  s.prop3='';
+else
+  s.prop3=$('update').innerHTML.replace(/\d+分\s更新/,"");
+if ( $('byline') == undefined )
+  s.prop4=''
+else
+  s.prop4=$('byline').innerHTML.replace(/<b>|<\/b>/ig,'').replace(/\[|\]/g,'');
+/* s.prop5 : ad link name reserves */
+s.prop5=""
+s.prop6="news"
+s.prop7="news,subtop"
+s.prop8=document.title
+s.prop9=navigator.userAgent
+s.prop10=document.URL.replace( /(\?|#).*$/, '' );
+/* s.prop13 : document.URL reserves */
+/* E-commerce Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events="event3"
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+s.prop20="News（含AnchorDesk）";
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.2. -->
+
+			<script>adRequest({'position':'N'});</script>
+		</div></div>
+    
+
+
+<script type="text/javascript">
+YBTlogRequest();
+function YBTlogRequest(){
+    var y_u = location.href;
+    var y_th = location.hostname.split(".");
+    var y_tl = location.pathname;
+    var y_th0 = y_th[0];
+    var y_p = '';
+    if (y_th0 === 'www') {
+        if (y_tl === '/'){
+            y_p = 'top';
+        }
+        else {
+            var y_tp = y_tl.split("/");
+            y_p = y_tp[1];
+        }
+    }
+    else {
+        y_p = y_th0;
+    }
+    var y_k = "ext_bt",
+        y_s = "itmedia",
+        y_r = Math.random(),
+        y_eu =  encodeURIComponent(y_u),
+        y_h = (location.protocol == "https:") ? "https:" : "http:",
+        y_b = y_h + "//ybx.yahoo.co.jp/clear.gif?bkey=" + y_k + "&site=" + y_s + "&pagetype=" + y_p + "&url=" + y_eu + "&r=" + y_r,
+        y_i = new Image();
+    y_i.src = y_b;
+    y_i.onload = y_i.onerror = function(){YBTLogVoid();};
+}
+function YBTLogVoid(){return;}
+</script>
+
+<!--/BEACON-->
+
+</body></html>

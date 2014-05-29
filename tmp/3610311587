@@ -1,0 +1,761 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja" id="masterChannel-news"><head>
+<meta http-equiv="content-type" content="text/html;charset=shift_jis">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<script>var swspv = '(none)';</script>
+<script src="/js/spv/movePC2SP.js"></script>
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+
+<meta name="itmid:series" content="">
+<meta name="build" content="2014年05月27日 20時04分">
+<meta name="keywords" content=",速報,トップニュース,科学・テクノロジー">
+<meta name="description" content="9000キロ離れた日本とドイツの光時計を通信衛星を介した手法で比較し、625兆分の1の精度で一致していることを確認したとNICTが発表した。">
+<meta name="extraid" content="	at-news	kw-burst	kw-technology	kw-topnews	">
+<meta name="writer" content="<b>ITmedia</b>">
+<meta name="dispatch" content="国内">
+<meta name="adpath" content="root/ITmedia/news/article">
+<meta name="rcid" content="">
+<meta name="rcid_filename" content="">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="http://www.itmedia.co.jp/news/spv/1405/27/news121.html">
+<title> 9000キロ離れた光時計が625兆分の1の精度で一致　NICTが新手法で確認、「秒」再定義に一歩 - ITmedia ニュース</title>
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@itmedia_news">
+<meta name="twitter:creator" content="@itmedia_news">
+<meta property="og:site_name" content="ITmedia ニュース">
+<meta property="og:url" content="http://www.itmedia.co.jp/news/articles/1405/27/news121.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="9000キロ離れた光時計が625兆分の1の精度で一致　NICTが新手法で確認、「秒」再定義に一歩">
+<meta property="og:description" content="9000キロ離れた日本とドイツの光時計を通信衛星を介した手法で比較し、625兆分の1の精度で一致していることを確認したとNICTが発表した。">
+
+	<meta property="og:image" content="http://image.itmedia.co.jp/news/articles/1405/27/sk_nict.jpg">
+
+
+
+<link rel="alternate" type="application/rss+xml" title="ITmedia ニュース(RSS1.0)" href="http://rss.itmedia.co.jp/rss/1.0/news_bursts.xml">
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/news/base.css" type="text/css" media="all">
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/news/ad.css" type="text/css" media="all">
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/news/article.css" type="text/css" media="all">
+
+
+<link rel="stylesheet" href="http://www.itmedia.co.jp/js/lib/prettify.css">
+<script src="/js/lib/prettify.js"></script>
+<script src="/js/lib/jquery-1.6.4.min.js"></script>
+<script>jQuery.noConflict();</script>
+<script src="//fc.itmedia.co.jp/fpcookie?site_id=itm_"></script>
+<script src="/js/scAccount.js"></script>
+<script src="/js/adRequest.js"></script>
+<script src="/js/scRequest.js"></script>
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/ad.js"></script>
+<script type="text/javascript" src="/js/article.js"></script>
+<script type="text/javascript" src="/js/news/base.js"></script>
+<script type="text/javascript" src="/js/news/ad.js"></script>
+<script type="text/javascript" src="/js/news/article.js"></script>
+
+
+</head><body id="masterType-article">
+<script type="text/javascript">
+attachBodyClass();
+function masterChannel(){return 'news';}
+function masterType(){return 'article';}
+function prFlag(){return '';}
+function spFlag(){return '';}
+(function(){
+if(getUrl()['domain'].match(/(preview|localhost)/)) document.write('<div id="PATHDEBUG">masterChannel = <strong>' + masterChannel() + '</strong> / masterType = <strong>' + masterType() + '</strong> / smartPhone = <strong>' + spFlag() + '</strong></div>');
+return true;
+})();
+</script>
+<!--ITWS-->
+
+<!--/ITWS-->
+
+<!--ITWL-->
+
+	<script>adRequest({'position':'ITWL'});</script>
+
+<!--/ITWL-->
+
+<!--COIDP-->
+
+	
+		<div id="COIDP"><div class="COIDP-in">
+		<script>adRequest({'position':'COIDP1','path':'root/cds/id/ITmedia/' + masterChannel()});</script>
+		<div class="COIDP-Member">
+		<script>adRequest({'position':'COIDP2','path':'root/cds/id/ITmedia/' + masterChannel()});</script>
+		<script>adRequest({'position':'COIDP3','path':'root/cds/id/ITmedia/' + masterChannel()});</script>
+		</div></div></div>
+		<script>
+		(function(){
+			var coidp = document.getElementById('COIDP');
+			if(coidp.innerHTML.match('st=noad.*pos=')){
+				coidp.style.display = 'none';
+				return false;
+			}
+			return true;
+		})();
+		</script>
+	
+
+<!--/COIDP-->
+
+<div id="masterBody"><div id="masterBodyOut"><div id="masterBodyIn">
+<div id="masterNavigation">
+
+<div id="globalNavigationGroup0">
+<div id="globalNavigation"><div class="gnavOut"><div class="gnavIn">
+<div class="gnavBtn gnavBtn0"><a href="http://www.itmedia.co.jp/" title="IT総合情報ポータル「ITmedia」">総合トップ</a></div>
+<div class="gnavBtn gnavBtn1"><a href="http://www.itmedia.co.jp/news/" title="ITとビジネスのニュース専門サイト「ITmedia News」">ニュース</a></div>
+<div class="gnavBtn gnavBtn2"><a href="http://www.itmedia.co.jp/enterprise/" title="企業のためのIT情報サイト「ITmedia エンタープライズ」">企業とIT</a></div>
+<div class="gnavBtn gnavBtn4"><a href="http://marketing.itmedia.co.jp/" title="IT×マーケティングの最新動向「ITmedia マーケティング」">Webマーケ</a></div>
+<div class="gnavBtn gnavBtn3"><a href="http://techtarget.itmedia.co.jp/" title="IT製品導入支援サイト「TechTargetジャパン」">システム導入</a></div>
+<div class="gnavBtn gnavBtn6"><a href="http://www.itmedia.co.jp/mobile/" title="携帯、スマートフォンの専門サイト「ITmedia Mobile」">スマホ</a></div>
+<div class="gnavBtn gnavBtn7"><a href="http://ebook.itmedia.co.jp/" title="電子書籍の専門サイト「ITmedia eBook USER」">eBook</a></div>
+<div class="gnavBtn gnavBtn5"><a href="http://www.itmedia.co.jp/pcuser/" title="PCとMacの専門サイト「ITmedia PC USER」">パソコン</a></div>
+<div class="gnavBtn gnavBtn8"><a href="http://camera.itmedia.co.jp/" title="デジカメの専門サイト「ITmedia デジカメプラス」">デジカメ</a></div>
+<div class="gnavBtn gnavBtn9"><a href="http://www.itmedia.co.jp/lifestyle/" title="AV機器の専門サイト「ITmedia LifeStyle」">AV機器</a></div>
+<div class="gnavBtn gnavBtn15"><a href="http://review.itmedia.co.jp/" title="プロによる製品レビューサイト「ITmedia REVIEW」">レビュー</a></div>
+<div class="gnavBtn gnavBtn13"><a href="http://nlab.itmedia.co.jp/" title="ちょっと気になるネットの話題「ねとらぼ」">旬ネタ</a></div>
+<div class="gnavBtn gnavBtn11"><a href="http://www.itmedia.co.jp/live/" title="ニコ生、Ustreamの動画番組表「ライブガイド」">ライブ動画</a></div>
+<div class="gnavBtn gnavBtn12"><a href="http://blogs.itmedia.co.jp/" title="ビジネスブログ・メディア「ITmedia オルタナティブ・ブログ」">ブログ</a></div>
+<div class="gnavBtn gnavBtn14"><a href="http://www.itmedia.co.jp/smartjapan/" title="節電とエネルギーを考える「スマートジャパン」">電力</a></div>
+
+</div></div></div>
+</div>
+
+</div>
+
+<div id="masterBodyOuter"><!----><div id="masterBodyInner">
+<div id="masterHeader">
+	<div id="globalHeader">
+	<div id="globalHeaderTop">
+	<div id="globalTagline"><!--EDIT START-->ITの今が見える、明日が分かる<!--EDIT END--></div>
+	<div id="globalLogo">
+	
+	<!--EDIT START--><div><a href="http://www.itmedia.co.jp/news/" title="ITmedia ニュース／ITの今が見える、明日が分かる">ITmedia ニュース／ITの今が見える、明日が分かる</a></div><!--EDIT END-->
+	
+	</div>
+	</div>
+	<div id="globalHeaderMiddle">
+	<!--EDIT START-->
+    
+	<div id="ITN"><script>adRequest({'position':'ITRN'});</script></div>
+	
+	<!--EDIT END-->
+	</div>
+	<div id="globalHeaderBottom">
+	<!--EDIT START-->
+	
+<div id="localNavigation"><div class="lnavOut"><div class="lnavIn">
+<div id="lnavMain"><div class="lnavBtn"><a href="http://www.itmedia.co.jp/news/subtop/bursts/" title="速報" onClick="designCnt('lnavMain',this.href);">速報</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/news/subtop/venture/" title="ベンチャー人" onClick="designCnt('lnavMain',this.href);">ベンチャー人</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/news/subtop/products/" title="製品動向" onClick="designCnt('lnavMain',this.href);">製品動向</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/news/subtop/technology/" title="サイエンス" onClick="designCnt('lnavMain',this.href);">サイエンス</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/news/subtop/nettopics/" title="ネットの話題" onClick="designCnt('lnavMain',this.href);">ネットの話題</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/news/subtop/society/" title="社会とIT" onClick="designCnt('lnavMain',this.href);">社会とIT</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/news/subtop/security/" title="セキュリティ" onClick="designCnt('lnavMain',this.href);">セキュリティ</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/news/subtop/industry/" title="企業・業界動向" onClick="designCnt('lnavMain',this.href);">企業・業界動向</a></div>
+<div class="lnavBtn"><a href="http://blogs.itmedia.co.jp/" title="ブログ" onClick="designCnt('lnavMain',this.href);">ブログ</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/news/subtop/features/smb/" title="中堅・中小" onClick="designCnt('lnavMain',this.href);">中堅・中小</a></div>
+<div class="lnavBtn"><a href="http://www.itmedia.co.jp/news/subtop/archive/" title="過去記事" onClick="designCnt('lnavMain',this.href);">過去記事</a></div>
+<div class="lnavBtn"><a href="http://release.itmedia.co.jp/release/news/" title="ベンチャーニュース" onClick="designCnt('lnavMain',this.href);">ベンチャーニュース</a></div>
+<div class="lnavBtn"><a href="http://kyujin.itmedia.co.jp/" title="転職・求人" onClick="designCnt('lnavMain',this.href);">転職・求人</a></div>
+</div>
+</div></div></div>
+<script type="text/javascript">
+</script>
+
+	<!--EDIT END-->
+	<div id="localPankuzu">
+	<div class="lpanOut"><div class="lpanIn">
+	<!--EDIT START-->
+    
+<a href="http://www.itmedia.co.jp/news/">ITmedia ニュース</a> &gt;
+
+<a href="http://www.itmedia.co.jp/news/subtop/technology/">科学・テクノロジー</a> &gt;
+
+<script type="text/javascript">
+var str = document.title.replace(/\<\!\-\-EDIT START\-\-\>/g,'').replace(/\<\!\-\-EDIT END\-\-\>/g,'').replace('- ITmedia ニュース','');
+str = cutString(str,50);
+document.write(str);
+</script>
+
+	<!--EDIT END-->
+	</div></div>
+	</div>
+	</div>
+	</div>
+</div>
+<div id="masterContents"><div id="globalContents">
+<div id="masterMain">
+<!---->
+
+<div id="tmplNews" class="tmplArticle"><div id="tmplNewsIn" class="tmplArticleIn">
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsType"><div class="inner">ニュース</div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsDate"><div class="inner"><span class="arrow">&raquo;</span> <span id="update">2014年05月27日 20時04分 UPDATE</span></div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsTitle"><div class="inner"><h1><small></small><big>9000キロ離れた光時計が625兆分の1の精度で一致　NICTが新手法で確認、「秒」再定義に一歩</big></h1></div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsAbstract"><div class="inner"><h2>9000キロ離れた日本とドイツの光時計を通信衛星を介した手法で比較し、625兆分の1の精度で一致していることを確認したとNICTが発表した。</h2></div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsByline"><div class="inner" id="byline"><b>[ITmedia]</b></div></div>
+<!-- Facebook JavaScript SDK <Body> のすぐ後に配置 -->
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- Facebook JavaScript SDK <Body> のすぐ後に配置 -->
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/socialbutton.css">
+<script src="/js/socialbutton.js"></script>
+
+
+	<!-- news|enterprise -->
+	<!-- UNDER/WHITE/1LINE/MIXI -->
+	<!-- DEFAULT -->
+	<script>
+	msbBtn({
+	'pos':'top',
+	'tag':'table',
+	'popup_pos':'under',
+	'base_color':'white',
+	'line':[
+	[
+		{'name':'印刷/PDF','title':'この記事を印刷する','id':'printbutton'},
+		{'name':'ツイート','id':'tweetbutton'},
+		{'name':'Like Button','id':'likebutton'},
+		{'name':'Mixi チェック','id':'mixicheck'},
+		{'name':'Google +1 Button','id':'googleplusone'},
+		{'name':'ONETOPI','title':'ONETOPIに投稿する','id':'onetopibutton'},
+		{'name':'Pocket Button','id':'pocketbuttonC'},
+		{'name':'通知','id':'itmid','data':[
+			{'name':'類似記事の掲載をメールで通知','id':'alertbutton'},
+			{'name':'連載「％」の新着をメールで通知','id':'alertseries'},
+		{}]},
+	{}],
+	[]]
+	});
+	</script>
+
+
+
+<div id="cmsBody"><div class="inner">
+<!--EDIT START-->
+
+<div class="colBoxClear"></div>
+<div id="ITT">
+<script>adRequest({'position':'ITT1'});</script>
+<script>adRequest({'position':'ITT2'});</script>
+</div>
+<div id="TABLETAD"><script>adRequest({'position':'TABLETAD'});</script></div>
+
+<!--EDIT END-->
+<div id="cmsMark"><!-- null for itmedia-->
+</div>
+
+<!--CAP-->
+<div id="col300r"><a name="sk_nict.jpg"></a><img src="http://image.itmedia.co.jp/news/articles/1405/27/sk_nict.jpg" width="290" height="196" alt="photo">
+<small>通信衛星を介した双方向時刻比較法</small></div>
+<!--CAPEND-->
+<p>　独立行政法人・情報通信研究機構（NICT）は5月27日、通信衛星を活用した新手法により、9000キロ離れた日本とドイツの光時計が625兆分の1の精度で一致していることを確認したと発表した。今後、光時計で「秒」が再定義されれば、光時計による時刻を国際標準として国際間で維持するために有効な手法として期待できるという。</p>
+<p>　現在の1秒は、セシウム原子が共鳴する約9.2GHzのマイクロ波遷移の周波数によって定義されており、NICTが生成する日本標準時もセシウム原子時計を利用している。一方、レーザー光の数100THzという高い振動数により新しい時間の基準を作ることが可能となり、光格子時計などの光時計による秒の再定義が議論されつつあるという。</p>
+<p>　ただ、光時計を国際標準として運用するには、国際的に同じ長さの1秒が生成されていることを高精度で定常的に確認する必要がある。日本発の方式であるストロンチウム光格子時計は日米仏独の4カ国で動作しているが、本当に同じ長さで時を刻んでいるのか確認する手段が必要。これまで大陸間では、現行のセシウム標準を使用していることもあり、精度は300兆分の1程度と、秒の再定義には不十分だったという。</p>
+<p>　新たに開発した方法では、通信衛星を介して相互にタイムスタンプ付き信号を送り合うことで時刻を比較する方法を高精度化。数十回程度の測定を重ね、その平均値を取ると、625兆分の1の精度で一致していることを確認でき、「周波数標準としての普遍性を証明した」という。</p>
+<div class="endlink" id="endlinkConnection">
+<h4>関連リンク</h4>
+<ul id="lnk">
+<li class="endlink-lnk" id="endlink-lnk1"><a href="http://www.nict.go.jp/press/2014/05/27-1.html" onclick="designCnt('llnk', s.hier3);">ニュースリリース</a></li>
+</ul>
+</div>
+
+<div id="cmsCopyright"><p><span style="font-size:65%;font-family:Arial,Helvetica,sans-serif;line-height:135%;color:#555555;">
+Copyright&copy; 2014 ITmedia, Inc. All Rights Reserved.</span></p>
+</div>
+<!--EDIT START-->
+
+<div id="tmplCopyright"></div>
+<script>
+(function(){
+if(!document.getElementById('cmsBody')) return false;
+if(!document.getElementById('cmsCopyright')) return false;
+if(!document.getElementById('tmplCopyright')) return false;
+var a = document.getElementById('cmsCopyright');
+var b = document.getElementById('tmplCopyright');
+b.appendChild(a);
+return true;
+})();
+</script>
+
+
+	<!-- news|enterprise -->
+	<!-- UNDER/WHITE/1LINE/MIXI -->
+	<!-- DEFAULT -->
+	<script>
+	msbBtn({
+	'pos':'btm',
+	'tag':'table',
+	'popup_pos':'under',
+	'base_color':'white',
+	'line':[
+	[
+		{'name':'印刷/PDF','title':'この記事を印刷する','id':'printbutton'},
+		{'name':'ツイート','id':'tweetbutton'},
+		{'name':'Like Button','id':'likebutton'},
+		{'name':'Mixi チェック','id':'mixicheck'},
+		{'name':'Google +1 Button','id':'googleplusone'},
+		{'name':'ONETOPI','title':'ONETOPIに投稿する','id':'onetopibutton'},
+		{'name':'Pocket Button','id':'pocketbuttonC'},
+		{'name':'通知','id':'itmid','data':[
+			{'name':'類似記事の掲載をメールで通知','id':'alertbutton'},
+			{'name':'連載「％」の新着をメールで通知','id':'alertseries'},
+		{}]},
+	{}],
+	[]]
+	});
+	</script>
+
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+{lang:'ja',parsetags:'explicit'}
+</script>
+<script type="text/javascript">gapi.plusone.go();</script>
+
+
+<div id="ISALC"><script>adRequest({'position':'5ISALC'});</script></div>
+<div id="ITSB"><script>adRequest({'position':'ITSB'});</script></div>
+<div class="colBoxClear h10px"></div>
+<script charset="utf-8" src="http://www.itmedia.co.jp/nac/newzia/126/script.js" type="text/javascript"></script>
+<script type="text/javascript" src="/json/kyujin/parts_subcolJobboard.json" charset="Shift_JIS"></script>
+
+<!--EDIT END-->
+
+</div></div> 
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsPrcredit"><div class="inner"></div></div>
+<!--EDIT START-->
+
+<!--EDIT END-->
+</div></div>
+
+<script>endlinkAll();</script>
+
+<!---->
+</div>
+<div id="masterSub">
+	
+	<!--EDIT START-->
+	<!--編集記事-->
+	<div id="globalHeaderSearch">
+ <div><script src="http://api.popin.cc/searchbox/itmedia_news.js" type="text/javascript" charset="UTF-8"></script></div>
+</div>
+
+	<div id="ITR"><script>adRequest({'position':'ITRR'});</script></div>
+	<div id="ISALR"><script>adRequest({'position':'30ISALR'});</script></div>
+	<!-- htmlgen -->
+<div class="colBox colBoxSeminar">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2>お勧めの主催・協力セミナー</h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxIcon">
+<a href="http://www.atmarkit.co.jp/misc/ct.php?id=FU452801" title="【編集部主催勉強会】<br>製紙大手「王子グループ」のプライベートクラウド構築事例"><img src="http://image.itmedia.co.jp/enterprise/images/40x40_1_1401274374.jpg"></a></div>
+<div class="colBoxTitle"><h3><a href="http://www.atmarkit.co.jp/misc/ct.php?id=FU452801" title="【編集部主催勉強会】<br>製紙大手「王子グループ」のプライベートクラウド構築事例">【編集部主催勉強会】<br>製紙大手「王子グループ」のプライベートクラウド構築事例</a><span class="colBoxNewtxt"></span></h3></div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxClear h10px"></div>
+</div>
+</div>
+</div>
+<!-- /htmlgen -->
+
+	<!-- HP 特設枠 -->
+	
+<div class="colBox colBoxHpSpecial"><div class="colBoxOuter"><div class="colBoxHead"><h2>ピックアップコンテンツ</h2><span class="colBoxHeadSubtxt">- PR -</span></div><div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="javascript:void(0)" onclick="var s=s_gi('itmediacojpglobal'); s.prop5='et130702_001 http://www.itmedia.co.jp/enterprise/special/et130702/index.html'; s.tl(true,'e','et130702_001'); s_objectid='et130702_001'; window.setTimeout(function(){location.href='http://www.itmedia.co.jp/enterprise/special/et130702/index.html';}, 500);"><img src="http://image.itmedia.co.jp/enterprise/special/et130702/images/index/130627_icon.jpg"></a></div>
+<div class="colBoxTitle"><h3><a href="javascript:void(0)" onclick="var s=s_gi('itmediacojpglobal'); s.prop5='et130702_001 http://www.itmedia.co.jp/enterprise/special/et130702/index.html'; s.tl(true,'e','et130702_001'); s_objectid='et130702_001'; window.setTimeout(function(){location.href='http://www.itmedia.co.jp/enterprise/special/et130702/index.html';}, 500);" style="font-weight:bold;">IT Strategy</a></h3></div>
+<div class="colBoxAbstract"><small>激変する企業ITシステムに対応するための知見を集約。 ITの新しい潮流に乗り遅れないために。</small></div> <div class="colBoxClear h10px"></div></div>
+</div></div></div>
+
+	
+	<!-- 求人特集 -->
+	<div class="colBox colBoxSubcolFeatures" id="subcolFeatures"></div>
+	<script type="text/javascript" src="/json/kyujin/parts_features.json" charset="Shift_JIS"></script>
+	<div class="colBoxClear h10px"></div>
+	<!-- /求人特集 -->
+	<div class="colBox colBoxRanking">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2>人気記事ランキング</h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxOlist">
+<ol>
+<!-- RSS2include -->
+<li class="rank1"><a href="http://www.itmedia.co.jp/news/articles/1306/12/news084.html" title="インデックスに粉飾決算の疑い　監視委が強制調査" onclick="designCnt('アクセスランキング','rank1');">インデックスに粉飾決算の疑い　監視委が強制調査</a></li><li class="rank2"><a href="http://www.itmedia.co.jp/news/articles/1404/10/news138.html" title="ドコモ「カケホーダイ」の狙い──値上げになるケースも？" onclick="designCnt('アクセスランキング','rank2');">ドコモ「カケホーダイ」の狙い──値上げになるケースも？</a></li><li class="rank3"><a href="http://www.itmedia.co.jp/news/articles/1405/28/news102.html" title="Amazon、Hachette差別について説明──「お急ぎの場合は競合他社でどうぞ」" onclick="designCnt('アクセスランキング','rank3');">Amazon、Hachette差別について説明──「お急ぎの場合は競合他社でどうぞ」</a></li><li class="rank4"><a href="http://www.itmedia.co.jp/news/articles/1405/27/news035.html" title="過酷な「ワンオペ」　バイト大量離脱で崖っぷちのすき家　いつまで続く「パワーアップ改装中」" onclick="designCnt('アクセスランキング','rank4');">過酷な「ワンオペ」　バイト大量離脱で崖っぷちのすき家　いつまで続く「パワーアップ改装中」</a></li><li class="rank5"><a href="http://www.itmedia.co.jp/news/articles/1405/28/news046.html" title="AKB入山さんの偽Twitterに芸能マスコミが次々に釣られる" onclick="designCnt('アクセスランキング','rank5');">AKB入山さんの偽Twitterに芸能マスコミが次々に釣られる</a></li><li class="rank6"><a href="http://www.itmedia.co.jp/news/articles/1405/28/news138.html" title="自宅で徹底的に1人になれる室内テント「ぼっちてんと」　デスク周りを丸ごと覆ってネットに没頭" onclick="designCnt('アクセスランキング','rank6');">自宅で徹底的に1人になれる室内テント「ぼっちてんと」　デスク周りを丸ごと覆ってネットに没頭</a></li><li class="rank7"><a href="http://www.itmedia.co.jp/news/articles/1405/28/news094.html" title="ドコモ、iPadに参入　新プラン「パケあえる」対応" onclick="designCnt('アクセスランキング','rank7');">ドコモ、iPadに参入　新プラン「パケあえる」対応</a></li><li class="rank8"><a href="http://www.itmedia.co.jp/news/articles/1405/27/news057.html" title="Google、テレビ用端末「Chromecast」を国内発売　4200円" onclick="designCnt('アクセスランキング','rank8');">Google、テレビ用端末「Chromecast」を国内発売　4200円</a></li><li class="rank9"><a href="http://www.itmedia.co.jp/news/articles/1405/28/news044.html" title="広がるネット「定額見放題」　Hulu好調、NHKは初の黒字へ" onclick="designCnt('アクセスランキング','rank9');">広がるネット「定額見放題」　Hulu好調、NHKは初の黒字へ</a></li><li class="rank10"><a href="http://www.itmedia.co.jp/news/articles/1405/28/news068.html" title="Google、自動運転カーのプロトタイプを披露（動画あり）" onclick="designCnt('アクセスランキング','rank10');">Google、自動運転カーのプロトタイプを披露（動画あり）</a></li>
+<!-- RSS2include -->
+</ol>
+</div>
+<div class="colBoxPageLink"><a href="http://www.itmedia.co.jp/ranking/news.html" title="ランキングトップ30 一覧" onclick="designCnt('アクセスランキングトップ30');">ランキングトップ30 一覧 &raquo;</a></div> 
+<div class="colBoxClear h10px"></div>
+</div>
+</div>
+</div>
+</div>
+
+	<!-- htmlgen -->
+<div class="colBox colBoxSpecialIndex">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2>いま注目の編集特集</h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxUlist"><ul>
+<li><a href="http://www.itmedia.co.jp/news/subtop/features/omp/newscloud1401.html" title="クラウド時代を生き抜く「ビジネスパーソン進化論」">クラウド時代を生き抜く「ビジネスパーソン進化論」</a></li>
+</ul></div>
+</div>
+<div class="colBoxClear h10px"></div>
+</div>
+</div>
+</div>
+<!-- /htmlgen -->
+
+	<div id="ITR2"><script>adRequest({'position':'ITR2'});</script></div>
+	<div class="colBoxClear h5px"></div>
+	<div id="ITKT">
+	<script>adRequest({'position':'ITKT1'});</script>
+	<script>adRequest({'position':'ITKT2'});</script>
+	<script>adRequest({'position':'ITKT3'});</script>
+	</div>
+	<div class="colBoxClear h10px"></div>
+	<script type="text/javascript">
+snsContents({
+	'likebox':'ITmediaNews',
+	'activitydomain':'www.itmedia.co.jp',
+	'activityfilter':'news',
+	'twitterid':'itm_news',
+	'tw_widget_id':'304498920883621888'
+});
+</script>
+<div class="colBoxClear h15px"></div>
+
+	<script type="text/javascript" src="/json/enterprise/rss_mailmag.json" title="tmpl=A,loop=2"></script>
+	<script type="text/javascript" src="/js/news/parts_press.js" charset="shift_jis"></script>
+	<div class="colBox colBoxfeedback">
+<div class="colBoxOuter">
+<div class="colBoxInner">
+<div class="colBoxClear h10px"></div>
+<div class="colBoxIndex colBoxIndexL60">
+<div class="colBoxUlist">
+<ul>
+<li class="colBoxfeedbackVoice"><a href="http://www.itmedia.co.jp/info/mail/index.html?article#article" title="ご意見・ご感想">ご意見・ご感想</a></li>
+<li class="colBoxfeedbackMail"><a href="http://corp.itmedia.co.jp/corp/helpdesk.html" title="リリース送付先">リリース送付先</a></li>
+<li class="colBoxfeedbackCorp"><a href="http://corp.itmedia.co.jp/corp/ad/inquiry.html" title="広告に関するお問い合わせ">広告に関するお問い合わせ</a></li>
+<li class="colBoxfeedbackMl"><a href="http://www.itmedia.co.jp/enterprise/info/lp/enterprise_mailmag.html" title="メールマガジン">メールマガジン</a></li>
+<li class="colBoxfeedbackSpecial"><a href="http://www.itmedia.co.jp/news/pr_specialarchive.html" title="Specialインデックス">Specialインデックス</a></li>
+<li class="colBoxfeedbackPl"><a href="http://blog.corp.itmedia.co.jp/" title="アイティメディアからのお知らせブログ">アイティメディアからのお知らせブログ</a></li>
+</ul>
+</div>
+<div class="colBoxClear h10px"></div>
+</div>
+<div class="colBoxIndex colBoxIndexR30">
+<div class="colBoxUlist">
+<ul>
+<li class="colBoxfeedbackRss"><a href="http://www.itmedia.co.jp/info/rss/news.html" title="ITmedia ニュースのRSSフィード" target="_blank">RSS</a></li>
+<li class="colBoxfeedbackFb"><a href="http://www.facebook.com/ITmediaNews" title="ITmedia ニュースのfacebookをフォローする" target="_blank">facebook</a></li>
+<li class="colBoxfeedbackTw"><a href="http://twitter.com/#!/itmedia_news" title="ITmedia ニュースのTwitterアカウント「itmedia_news」をフォローする" target="_blank">twitter</a></li>
+</ul>
+</div>
+<div class="colBoxClear h10px"></div>
+</div>
+<div class="colBoxClear h10px"></div>
+</div>
+</div>
+</div>
+	<!--EDIT END-->
+	
+
+</div>
+<div class="colBoxClear"></div>
+</div></div>
+<!---->
+
+
+<div id="masterFooter">
+	<div id="globalFooter">
+		<div id="globalFooterLink">
+<a href="http://www.itmedia.co.jp/info/sitemap/">サイトマップ</a> | <a href="http://www.itmedia.co.jp/info/rule/">利用規約</a> | <a href="http://corp.itmedia.co.jp/corp/privacy.html">プライバシーポリシー</a> | <a href="http://corp.itmedia.co.jp/corp/ad/">広告案内</a> | <a href="http://www.itmedia.co.jp/info/mail/">お問い合わせ</a>
+</div>
+
+		<div id="globalFooterMediaList">
+			<div id="globalFooterMediaListIn">
+				<div class="mediaListGroup">
+					<div class="mediaList" id="mediaList01">
+						<h2>IT総合</h2>
+						<ul>
+						<li><a href="http://www.itmedia.co.jp/">ITmedia 総合TOP</a></li>
+						<li><a href="http://www.itmedia.co.jp/news/">ITmedia ニュース</a></li>
+						<li><a href="http://news.itmedia.co.jp/">ITmedia News スマート</a></li>
+						<li><a href="http://www.itmedia.co.jp/keywords/">ITmedia Keywords</a></li>
+						<li><a href="http://1topi.jp/">ONETOPI</a></li>
+						<li><a href="http://www.itmedia.co.jp/qa/">質問！ITmedia</a></li>
+						<li><a href="http://zenback.itmedia.co.jp/">zenbackキーワーズ</a></li>
+						</ul>
+					</div><!-- /#mediaList01 -->
+					<div class="mediaList" id="mediaList02">
+						<h2>デジタル・ガジェット</h2>
+						<ul>
+						<li><a href="http://www.itmedia.co.jp/mobile/">ITmedia Mobile</a></li>
+						<li><a href="http://www.itmedia.co.jp/pcuser/">ITmedia PC USER</a></li>
+						<li><a href="http://www.itmedia.co.jp/lifestyle/">ITmedia LifeStyle</a></li>
+						<li><a href="http://camera.itmedia.co.jp/">デジカメプラス</a></li>
+						<li><a href="http://ebook.itmedia.co.jp/">eBook USER</a></li>
+						<li><a href="http://review.itmedia.co.jp/">ITmedia REVIEW</a></li>
+						<li><a href="http://shopping.itmedia.co.jp/">ITmedia Shopping</a></li>
+						<li><a href="http://store.itmedia.co.jp">ITmedia Store</a></li>
+						<li><a href="http://rstore.itmedia.co.jp">ITmedia Store × 楽天市場</a></li>
+						<li><a href="http://ystore.itmedia.co.jp">ITmedia Store × Yahoo!ショッピング</a></li>
+						</ul>
+					</div><!-- /#mediaList02 -->
+					<div class="mediaList" id="mediaList03">
+						<h2>ビジネス</h2>
+						<ul>
+						<li><a href="http://bizmakoto.jp/">Business Media 誠</a></li>
+						<li><a href="http://bizmakoto.jp/bizid/">誠 Biz.ID</a></li>
+						<li><a href="http://bizmakoto.jp/style/">誠 Style</a></li>
+						<li><a href="http://blogs.bizmakoto.jp/">誠ブログ</a></li>
+						<li><a href="http://mag.executive.itmedia.co.jp/">ITmedia エグゼクティブ</a></li>
+						<li><a href="http://www.itmedia.co.jp/pcuser/subtop/pcuserpro/">ITmedia PC USER Pro</a></li>
+						</ul>
+					</div><!-- /#mediaList03 -->
+					<div class="mediaList" id="mediaList04">
+						<h2>カルチャー</h2>
+						<ul>
+						<li><a href="http://nlab.itmedia.co.jp/">ねとらぼ</a></li>
+						<li><a href="http://www.itmedia.co.jp/live/">ライブガイド</a></li>
+						</ul>
+					</div><!-- /#mediaList04 -->
+					<div class="mediaList" id="mediaList05">
+						<h2>アプリ</h2>
+						<ul>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/itmedia_ios.html">ITmedia for iPhone/iPad</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/itmedia_android.html">ITmedia for Android</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/onetopi_headline.html">ONETOPI ヘッドライン</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/onetopi.html">ONETOPI App</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/liveguide.html">ライブガイド（β）</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/necolab.html">ねこらぼ</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/tweetopi.html">ついトピ！</a></li>
+						</ul>
+					</div><!-- /#mediaList05 -->
+				</div><!-- /.mediaListGroup -->
+				<div class="mediaListGroup">
+					<div class="mediaList" id="mediaList06">
+						<h2>企業IT</h2>
+						<ul>
+						<li><a href="http://www.itmedia.co.jp/enterprise/">ITmedia エンタープライズ</a></li>
+						<li><a href="http://www.itmedia.co.jp/enterprise/subtop/dictionary/">情報システム用語事典</a></li>
+						<li><a href="http://blogs.itmedia.co.jp/">オルタナティブ・ブログ</a></li>
+						<li><a href="http://techtarget.itmedia.co.jp/">TechTargetジャパン</a></li>
+						<li><a href="http://wp.techtarget.itmedia.co.jp/">ホワイトペーパー</a></li>
+						<li><a href="http://marketing.itmedia.co.jp/">ITmedia マーケティング</a></li>
+						<li><a href="http://blog.marketing.itmedia.co.jp/">マーケター通信 </a></li>
+						<li><a href="http://chosa.itmedia.co.jp/">調査のチカラ</a></li>
+						<li><a href="http://techtarget.itmedia.co.jp/tt/cw/">Computer Weekly</a></li>
+						</ul>
+					</div><!-- /#mediaList06 -->
+						<div class="mediaList" id="mediaList07">
+							<h2>テクノロジー</h2>
+							<ul>
+							<li><a href="http://www.atmarkit.co.jp/">＠IT</a></li>
+							<li><a href="http://qa.atmarkit.co.jp/">QA＠IT</a></li>
+							<li><a href="https://event.atmarkit.co.jp/">イベントカレンダー＋ログ</a></li>
+							</ul>
+						</div><!-- /#mediaList07 -->
+						<div class="mediaList" id="mediaList08">
+							<h2>エンジニアリング</h2>
+							<ul>
+							<li><a href="http://monoist.atmarkit.co.jp/">MONOist</a></li>
+							<li><a href="http://eetimes.jp/">EE Times Japan</a></li>
+							<li><a href="http://ednjapan.com/">EDN Japan</a></li>
+							<li><a href="http://monoist.atmarkit.co.jp/mn/special/mo120701/">モノづくりライブラリ</a></li>
+							<li><a href="http://www.itmedia.co.jp/smartjapan/">スマートジャパン</a></li>
+							</ul>
+						</div><!-- /#mediaList08 -->
+						<div class="mediaList" id="mediaList09">
+							<h2>キャリア</h2>
+							<ul>
+							<li><a href="http://www.atmarkit.co.jp/ait/subtop/jibun/">＠IT自分戦略研究所</a></li>
+							<li><a href="http://el.jibun.atmarkit.co.jp/">エンジニアライフ</a></li>
+							<li><a href="http://www.itmedia.co.jp/enterprise/subtop/dilbert/">ディルバート</a></li>
+							</ul>
+						</div><!-- /#mediaList09 -->
+				</div><!-- /.mediaListGroup -->
+			</div>
+		</div><!-- /#globalFooterMediaList -->
+		<div id="globalFooterCorp">
+			<div id="globalFooterCorpIn">
+				<p id="globalFooterCorpLogo"><a href="http://corp.itmedia.co.jp/"><img src="http://image.itmedia.co.jp/images/logo/170_itmedia_bgw.gif"></a>ITmediaはアイティメディア株式会社の登録商標です。</p>
+				<p id="globalFooterCorpLink"><a href="http://corp.itmedia.co.jp/">運営会社</a> | <a href="http://corp.itmedia.co.jp/corp/pr/">プレスリリース</a> | <a href="http://corp.itmedia.co.jp/corp/ir/">IR情報</a> | <a href="http://corp.itmedia.co.jp/corp/recruit/">採用情報</a> | <a href="http://blog.corp.itmedia.co.jp/">お知らせブログ</a> | <a href="http://id.itmedia.jp/info/campaign/all_id.html">アイティメディアID</a> | <a href="http://www.itmedia.co.jp/info/rss/">RSS</a> | <a href="http://www.itmedia.co.jp/info/twitter/">Twitter</a> | <a href="http://www.itmedia.co.jp/info/fb/">Facebook</a> | <a href="http://www.itmedia.co.jp/info/mailmag/">メルマガ</a> | <a href="http://www.itmedia.co.jp/info/virtualevent/">バーチャルイベント</a> | <a href="http://www.itmedia.co.jp/info/ebook/">ITmediaのeBook</a></p>
+			</div>
+		</div><!-- /#globalFooterCorp -->
+	</div>
+</div>
+
+
+</div><!--/masterBodyInner-->
+</div><!--/masterBodyOuter-->
+</div><!--/masterBodyIn-->
+</div><!--/masterBodyOut-->
+</div><!--/masterBody-->
+<script src="/js/masterBodyEnd.js"></script><!-- window.onload -->
+<script src="/js/itmid/smartPhoneHeadLink.js"></script><!-- Smart Phone Large Button-->
+<!--BEACON-->
+
+    
+	    <div id="BEACON"><div id="N">
+			<!-- SiteCatalyst code version: H.2.
+Copyright 1997-2005 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript" src="/include/sc/s_code.js"></script>
+<script language="JavaScript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+function $() {
+  var elements = new Array();
+  for (var i = 0; i < arguments.length; i++) {
+    var element = arguments[i];
+    if (typeof element == 'string')
+      element = document.getElementById(element);
+    if (arguments.length == 1)
+      return element;
+    elements.push(element);
+  }
+  return elements;
+}
+s.pageName=document.URL.replace( /(\?|#).*$/, '' );
+s.server="www.itmedia.co.jp"
+s.channel="ITmedia ニュース"
+s.pageType=""
+s.hier1="root,itm,news,article"
+s.hier2="itm,news,article"
+s.hier3="news,article"
+s.prop1=document.URL.replace( /(\?|#).*$/, '' );
+s.prop2="root,itm,news,article"
+if ( $('update') == undefined )
+  s.prop3='';
+else
+  s.prop3=$('update').innerHTML.replace(/\d+分\s更新/,"");
+if ( $('byline') == undefined )
+  s.prop4=''
+else
+  s.prop4=$('byline').innerHTML.replace(/<b>|<\/b>/ig,'').replace(/\[|\]/g,'');
+/* s.prop5 : ad link name reserves */
+s.prop5=""
+s.prop6="news"
+s.prop7="news,article"
+s.prop8=document.title
+s.prop9=navigator.userAgent
+s.prop10=document.URL.replace( /(\?|#).*$/, '' );
+/* s.prop13 : document.URL reserves */
+/* E-commerce Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events="event3"
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+s.prop20="News（含AnchorDesk）";
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.2. -->
+
+			<script>adRequest({'position':'N'});</script>
+		</div></div>
+    
+
+
+<script type="text/javascript">
+YBTlogRequest();
+function YBTlogRequest(){
+    var y_u = location.href;
+    var y_th = location.hostname.split(".");
+    var y_tl = location.pathname;
+    var y_th0 = y_th[0];
+    var y_p = '';
+    if (y_th0 === 'www') {
+        if (y_tl === '/'){
+            y_p = 'top';
+        }
+        else {
+            var y_tp = y_tl.split("/");
+            y_p = y_tp[1];
+        }
+    }
+    else {
+        y_p = y_th0;
+    }
+    var y_k = "ext_bt",
+        y_s = "itmedia",
+        y_r = Math.random(),
+        y_eu =  encodeURIComponent(y_u),
+        y_h = (location.protocol == "https:") ? "https:" : "http:",
+        y_b = y_h + "//ybx.yahoo.co.jp/clear.gif?bkey=" + y_k + "&site=" + y_s + "&pagetype=" + y_p + "&url=" + y_eu + "&r=" + y_r,
+        y_i = new Image();
+    y_i.src = y_b;
+    y_i.onload = y_i.onerror = function(){YBTLogVoid();};
+}
+function YBTLogVoid(){return;}
+</script>
+
+<!--/BEACON-->
+
+</body></html>
+

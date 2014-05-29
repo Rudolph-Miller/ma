@@ -1,0 +1,881 @@
+ <!DOCTYPE html>
+<html
+  lang="ja"
+  data-avail-langs="ja en"
+
+  data-page="entry"
+  data-admin-domain="http://blog.hatena.ne.jp"
+  data-static-domain="http://hatenablog.com"
+  data-blog="8arrow.hatenablog.com"
+  data-blogs-uri-base="http://blog.8arrow.org"
+  data-globalheader-color="b"
+  data-globalheader-type="pc"
+  data-author="nitro_idiot"
+  data-version="cb3376f552692eef52655312928aaadd"
+  data-blog-comments-top-is-new=""
+  data-device="pc"
+
+  
+
+  data-brand="hatenablog"
+
+
+  data-has-touch-view="1"
+  
+
+  itemscope
+   itemtype="http://schema.org/Article"
+
+  >
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    
+    
+    
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=7; IE=9; IE=10; IE=11" />
+    <title>Common LispのWebフレームワーク「Caveman2」を作りました - 八発白中</title>
+
+    
+
+    
+      <link rel="canonical" href="http://blog.8arrow.org/entry/2013/11/06/082247"/>
+    
+
+    <meta itemprop="name" content="Common LispのWebフレームワーク「Caveman2」を作りました - 八発白中"/>
+    
+      <meta itemprop="image" content="http://cdn-ak.f.st-hatena.com/images/fotolife/n/nitro_idiot/20131105/20131105215118_original.png"/>
+    
+
+    <meta property="og:title" content="Common LispのWebフレームワーク「Caveman2」を作りました - 八発白中"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://blog.8arrow.org/entry/2013/11/06/082247"/>
+    
+      <meta property="og:image" content="http://cdn-ak.f.st-hatena.com/images/fotolife/n/nitro_idiot/20131105/20131105215118_original.png"/>
+    
+      <meta property="og:description" content=" 僕がClackを作ったのは2年9ヶ月前。Webフレームワークの「Caveman」をリリースしたのはその2ヶ月後だった。 Cavemanを作った頃、僕はアリエルネットワーク株式会社にいた。松山さんと開発していた試作プロダクトのために、並行して開発していたWebフレームワークがそれだった。そのときはCommon LispでのWebアプリケーション構築方法は洗練されておらず、アプリケーションを作りながら、手探りでフレームワークを作っていたことを今でも思い出す。 結局作っていた社内プロダクトは世に出なかったのだけど、それから1年後、会社が変わっても僕はCommon Lispでのプロダクトを作っていた…" />
+    <meta property="og:site_name" content="http://blog.8arrow.org/"/>
+      <meta property="article:published_time" content="1383693767" />
+    <meta name="twitter:card" content="summary" />      <meta name="twitter:app:name:iphone" content="はてなブログアプリ" />
+      <meta name="twitter:app:id:iphone" content="583299321" />
+      <meta name="twitter:app:url:iphone" content="hatenablog:///open?uri=http%3A%2F%2Fblog.8arrow.org%2Fentry%2F2013%2F11%2F06%2F082247" />      <meta name="twitter:site" content="@nitro_idiot" />
+      <meta name="description" content=" 僕がClackを作ったのは2年9ヶ月前。Webフレームワークの「Caveman」をリリースしたのはその2ヶ月後だった。 Cavemanを作った頃、僕はアリエルネットワーク株式会社にいた。松山さんと開発していた試作プロダクトのために、並行して開発していたWebフレームワークがそれだった。そのときはCommon Lisp…">
+    
+<script type="text/javascript">
+// <!--
+
+if (~navigator.userAgent.indexOf('Mac OS X')) {
+  document.write('<style type="text/css">html, body { font-family: \x27Helvetica\x27, \x27Arial\x27, \x27ヒラギノ角ゴ Pro W3\x27, \x27Hiragino Kaku Gothic Pro\x27, sans-serif; } </style>');
+} else {
+  document.write('<style type="text/css">html, body { font-family: \x27Helvetica\x27, \x27Arial\x27, \x27メイリオ\x27, \x27Meiryo\x27, \x27MS PGothic\x27, sans-serif; } </style>');
+}
+
+// -->
+</script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if IE]>
+<script type="text/javascript" src="/js/vendor/excanvas/excanvas.js"></script>
+<![endif]-->
+
+
+    <link rel="shortcut icon" href="http://hatenablog.com/images/favicon.ico">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://blog.8arrow.org/feed"/>
+    <link rel="alternate" type="application/rss+xml" title="RSS2.0" href="http://blog.8arrow.org/rss"/>
+    <link rel="author" href="http://www.hatena.ne.jp/nitro_idiot/">
+
+      <link rel="stylesheet" type="text/css" href="http://hatenablog.com/.shared.css:cb3376f552692eef52655312928aaadd:/css/theme/base.css,/css/prettify.css,/css/globalheader.css?version=cb3376f552692eef52655312928aaadd"/>
+      <link rel="stylesheet" type="text/css" href="http://hatenablog.com/-/blog_style/11696248318755958219/2975e7304776ac8a3369afb4a91fb32250c7e04b"/>    <script>    </script>
+
+    
+    <style>
+      div#google_afc_user,
+      div#google_afc_user_container,
+      div.google_afc_image,
+      div.google_afc_blocklink {
+          display: block !important;
+      }
+    </style>
+
+    
+  </head>
+
+  <body class="page-entry     ">
+    <!-- Google Universal Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-29716941-6', 'auto', {'name': 'HatenaBlogTracker'});
+  ga('HatenaBlogTracker.require', 'displayfeatures');
+  ga('HatenaBlogTracker.send', 'pageview');
+
+</script>
+<!-- End Google Universal Analytics -->
+
+    
+    <div id="header-container">
+     <div id="sp-suggest" style="display: none;"><a id="sp-suggest-link" href="#">スマートフォン用の表示で見る</a></div>
+    </div>
+
+    <div class="select_star_button_container" style="display: none;">
+      <img src="http://hatenablog.com/images/theme/hatena-star-quote-box.png?version=cb3376f552692eef52655312928aaadd" title="引用スターをつける" class="select_star_button" />
+      <img src="http://hatenablog.com/images/theme/hatena-star-quote-star.png?version=cb3376f552692eef52655312928aaadd" title="引用スターをつける" class="select_star_button select_star_star">
+    </div>
+
+    <div class="message-box" id="select-star-message-box" style="display: none;">
+      スターをつけました
+    </div>
+
+    <div id="globalheader-container" >
+  <iframe id="globalheader" height="37" frameborder="0" allowTransparency="true"></iframe>
+</div>
+
+
+    <div id="container">
+      <div id="container-inner">
+        <header id="blog-title" data-brand="hatenablog">
+  <div id="blog-title-inner" >
+    <h1 id="title"><a href="http://blog.8arrow.org/">八発白中</a></h1>
+    
+      <h2 id="blog-description">はてなブログに引越しました。</h2>
+    
+  </div>
+</header>
+
+        
+        
+
+
+
+
+<div id="content" class="hfeed"
+  
+  >
+  <div id="content-inner">
+    <div id="wrapper">
+      <div id="main">
+        <div id="main-inner">
+          
+            
+            <!-- google_ad_section_start -->
+            <!-- rakuten_ad_target_begin -->
+            
+              
+                <article class="entry hentry js-entry-article date-first autopagerize_page_element chars-5200 words-400 mode-markdown entry-odd" id="entry-12921228815712056052" data-keyword-campaign="" data-uuid="12921228815712056052">
+  <div class="entry-inner">
+    <header class="entry-header">
+      <div class="date first">
+        <a href="http://blog.8arrow.org/entries/2013/11/06" rel="nofollow">
+          <time pubdate datetime="2013-11-05T23:22:47Z" title="2013-11-05T23:22:47Z">
+            <span class="date-year">2013</span><span class="hyphen">-</span><span class="date-month">11</span><span class="hyphen">-</span><span class="date-day">06</span>
+          </time>
+        </a>
+      </div>
+      <h1 class="entry-title">
+        <a href="http://blog.8arrow.org/entry/2013/11/06/082247" class="entry-title-link bookmark">Common LispのWebフレームワーク「Caveman2」を作りました</a>
+      </h1>
+      
+      <div class="categories no-categories">
+        
+      </div>
+      
+    </header>
+    <div class="entry-content">
+
+      
+        <p><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/n/nitro_idiot/20131105/20131105215118_original.png" alt="" /></p>
+
+<p>僕が<a href="http://clacklisp.org/">Clack</a>を作ったのは2年9ヶ月前。Webフレームワークの「Caveman」をリリースしたのはその2ヶ月後だった。</p>
+
+<p>Cavemanを作った頃、僕はアリエルネットワーク株式会社にいた。<a href="https://twitter.com/m2ym">松山さん</a>と開発していた試作プロダクトのために、並行して開発していたWebフレームワークがそれだった。そのときは<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>でのWebアプリケーション構築方法は洗練されておらず、アプリケーションを作りながら、手探りで<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%EC%A1%BC%A5%E0%A5%EF%A1%BC%A5%AF">フレームワーク</a>を作っていたことを今でも思い出す。</p>
+
+<p>結局作っていた社内プロダクトは世に出なかったのだけど、それから1年後、会社が変わっても僕は<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>でのプロダクトを作っていた。</p>
+
+<p>ある日Cavemanを使っていたとき、一つのアイデアが浮かんできた。Cavemanは最初にプロジェクトのひな形を作る必要がある。けれど、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Python">Python</a>のFlaskのような<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%EC%A1%BC%A5%E0%A5%EF%A1%BC%A5%AF">フレームワーク</a>ではそれすら必要としない。Cavemanがその簡単さを得るには何が必要か。</p>
+
+<p>その結果生まれたのが「<a href="http://8arrow.org/ningle/">ningle</a>」だった。</p>
+
+<p>Cavemanを&ldquo;micro&rdquo;<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%EC%A1%BC%A5%E0%A5%EF%A1%BC%A5%AF">フレームワーク</a>と呼んでいたので、さらに小さいningleは&ldquo;super micro&rdquo;<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%EC%A1%BC%A5%E0%A5%EF%A1%BC%A5%AF">フレームワーク</a>と呼んでいた。数日程度でCavemanからルーティング部分だけを抜き出しただけのningleは、プロトタイピングにはいいかもしれないけど、本番環境で使うほどのものとは思えず、僕はおもちゃ程度に考えていた。</p>
+
+<p>結局今の会社で作った<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>の社内プロダクトも世に出ることはなく、僕はしばらく<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>を使うのをやめ、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Perl">Perl</a>や<a class="keyword" href="http://d.hatena.ne.jp/keyword/Python">Python</a>や<a class="keyword" href="http://d.hatena.ne.jp/keyword/JavaScript">JavaScript</a>の世界を転々と見て回った。</p>
+
+<h2>&ldquo;micro&rdquo; or &ldquo;super micro&rdquo;</h2>
+
+<p>そんな間でも、僕が作った2つのWebフレームワークはどちらもそれなりに使われているようで、ときどきメールで意見や質問をもらうことがあった。</p>
+
+<p>質問の中でも、一番多かったのが、「Cavemanとningleというのがあるけど、どう違うの？ どっちを使えばいい？」だった。</p>
+
+<p>当時の僕にとってこれは自明だった。ningleはただのおもちゃで、使えるアプリを作るならCavemanじゃなきゃダメですよ。しかし、意外にもそう質問してくる人に限って選ぶのはningleだった。</p>
+
+<p>あまりに意外だったので、その後僕は自分自身でningleを使ってみることに決め、<a href="http://quickdocs.org/">Quickdocs</a>をningleで作った。</p>
+
+<p>使ってみて気づいたのだが、ningleはただ一つのことだけをやることに特化しており、見通しもよくドキュメントもほとんど参照する必要がないほど自明なWebフレームワークだった。</p>
+
+<p>自画自賛のように聞こえるかもしれないが、偶然の結果産まれたプロダクトなので客観的な評価をするなら、非常に良くデザインされたWebフレームワークだった。</p>
+
+<p>そこから改めて見ると、Cavemanは少し野暮ったく、無駄に制約を加えたように見え、それから僕が作るものはningleを使うことにしてきた。</p>
+
+<h2>&ldquo;micro&rdquo; shouldn't be an excuse</h2>
+
+<p>では、Cavemanの役割は終わったのか。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>のWebフレームワークの最善解はningleなのか。</p>
+
+<p>ningleが好まれる一方で、Webフレームワークを求める人が口々にデータベース連携機能を求めるのに気づいていた。</p>
+
+<p>軽量な<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%EC%A1%BC%A5%E0%A5%EF%A1%BC%A5%AF">フレームワーク</a>が欲しいのだけど、RESTASとCavemanどっちがいいだろう。データベースは扱える？ いや、どっちもデータベース連携はサポートしていないよ。</p>
+
+<p>仕事で扱うWebアプリケーションは大小問わずほとんど<a class="keyword" href="http://d.hatena.ne.jp/keyword/DBMS">DBMS</a>への接続を行うのに、&ldquo;micro&rdquo;という名の元に実用的であるべきWebフレームワークがその機能を持たないのは、実装者の怠慢じゃないと言えるだろうか。</p>
+
+<p>それと同時に運用にも問題があった。ningleのアプリケーション、具体的にはQuickdocsの運用で見つけた問題だが、エラーログはどこで設定し、どこにどういう形式で出力するのか。本番でのサーバ起動方法はどうすればいいか。ダウンタイム無しでの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%DB%A5%C3%A5%C8%A5%C7%A5%D7%A5%ED%A5%A4">ホットデプロイ</a>はどうすればいいか。どれも統一された方法は無かった。</p>
+
+<p>もしそれらが全てのningleアプリケーションに必要なら、それを<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%EC%A1%BC%A5%E0%A5%EF%A1%BC%A5%AF">フレームワーク</a>が持たない理由は無い。</p>
+
+<p>そうして僕は、ningleという確かな土台を得て、データベース連携機能を標準で持ち、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>のWebアプリケーションを運用する上でのベストプラクティスを備えたWebフレームワークを作るべきだと悟った。そしてその新しい<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%EC%A1%BC%A5%E0%A5%EF%A1%BC%A5%AF">フレームワーク</a>が、これまでのCavemanの役割を置き換えるのはとても自然な考えだった。</p>
+
+<p>そうして出来たのが「Caveman2」だ。</p>
+
+<ul>
+<li><a href="http://8arrow.org/caveman/">Caveman2 - The real web framework</a></li>
+</ul>
+
+
+<h2>Caveman2</h2>
+
+<p>いくつかCaveman1やningleと異なる点を中心にCaveman2の機能を紹介する。</p>
+
+<h3>Routing</h3>
+
+<p>前述の通り、Caveman2はningleをベースにしているが、ルーティング用の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A5%CE%A5%C6%A1%BC%A5%B7%A5%E7%A5%F3">アノテーション</a>を提供する点が違う。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink>@route <span class="synStatement">GET</span> <span class="synConstant">&quot;/&quot;</span>
+<span class="synSpecial">(</span><span class="synStatement">defun</span> index <span class="synSpecial">()</span>
+  <span class="synConstant">&quot;Hello, World!&quot;</span><span class="synSpecial">)</span>
+</pre>
+
+
+<p>このリーダマクロで実現された<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A5%CE%A5%C6%A1%BC%A5%B7%A5%E7%A5%F3">アノテーション</a>記法を好んでいる人がいる一方で、まるで<a class="keyword" href="http://d.hatena.ne.jp/keyword/Python">Python</a>のようで好かない、という人があまりに多くいることを知っているので、Caveman2では<code>defroute</code>という普通のマクロも提供している。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span>defroute index <span class="synConstant">&quot;/&quot;</span> <span class="synSpecial">()</span>
+  <span class="synConstant">&quot;Hello, World!&quot;</span><span class="synSpecial">)</span>
+</pre>
+
+
+<p>Caveman1 の <code>@url</code>と異なり、引数リストがキーワードによる分配を行うところが違う。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synComment">;; Caveman1での従来の方法</span>
+@url <span class="synStatement">GET</span> <span class="synConstant">&quot;/hello/?:name?&quot;</span>
+<span class="synSpecial">(</span><span class="synStatement">defun</span> say-hello <span class="synSpecial">(</span>params<span class="synSpecial">)</span>
+  <span class="synSpecial">(</span><span class="synStatement">format</span> <span class="synStatement">nil</span> <span class="synConstant">&quot;Hello, ~A&quot;</span>
+          <span class="synSpecial">(</span><span class="synStatement">or</span> <span class="synSpecial">(</span><span class="synStatement">getf</span> params :|name|<span class="synSpecial">)</span>
+              <span class="synConstant">&quot;Guest&quot;</span><span class="synSpecial">)))</span>
+
+<span class="synComment">;; Caveman2での方法</span>
+@route <span class="synStatement">GET</span> <span class="synConstant">&quot;/hello/?:name?&quot;</span>
+<span class="synSpecial">(</span><span class="synStatement">defun</span> say-hello <span class="synSpecial">(</span><span class="synType">&amp;key</span> name<span class="synSpecial">)</span>
+  <span class="synSpecial">(</span><span class="synStatement">format</span> <span class="synStatement">nil</span> <span class="synConstant">&quot;Hello, ~A&quot;</span>
+          <span class="synSpecial">(</span><span class="synStatement">or</span> name <span class="synConstant">&quot;Guest&quot;</span><span class="synSpecial">)))</span>
+</pre>
+
+
+<p>Caveman1やningleを使ったことのある方にはこの煩わしさは分かるだろうが、Caveman2ではコントローラで受け取ったパラメータからいちいち<code>getf</code>や<code>destructuring-bind</code>で値を取り出したり、必要ないときに<code>(declare (ignore params))</code>など書かなくてもよくなっただけでなく、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>でのキーワード引数という至極自然な方法で値を受け取ることができるようになった。もちろんデフォルト値も指定できる。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink>@route <span class="synStatement">GET</span> <span class="synConstant">&quot;/hello/?:name?&quot;</span>
+<span class="synSpecial">(</span><span class="synStatement">defun</span> say-hello <span class="synSpecial">(</span><span class="synType">&amp;key</span> <span class="synSpecial">(</span>name <span class="synConstant">&quot;Guest&quot;</span><span class="synSpecial">))</span>
+  <span class="synSpecial">(</span><span class="synStatement">format</span> <span class="synStatement">nil</span> <span class="synConstant">&quot;Hello, ~A&quot;</span> name<span class="synSpecial">))</span>
+</pre>
+
+
+<h3>Templating</h3>
+
+<p>デフォルトのテンプレートエンジンは変わらず<a href="http://www.common-lisp.net/project/cl-emb/">CL-EMB</a>を採用しているが、少し便利なマクロ<code>with-layout</code>を追加した。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink>@route <span class="synStatement">GET</span> <span class="synConstant">&quot;/&quot;</span>
+<span class="synSpecial">(</span><span class="synStatement">defun</span> index <span class="synSpecial">()</span>
+  <span class="synSpecial">(</span>with-layout <span class="synSpecial">(</span>:title <span class="synConstant">&quot;Welcome to My site&quot;</span><span class="synSpecial">)</span>
+    <span class="synSpecial">(</span>render #P<span class="synConstant">&quot;index.tmpl&quot;</span><span class="synSpecial">)))</span>
+</pre>
+
+
+<p>&ldquo;layout&rdquo;はHTMLのヘッダやフッタなど、各ページで共通の部分を記述したものだ。CL-EMBにはこのような機能が無いため、Caveman2が独自で提供している。</p>
+
+<h3>Configuration</h3>
+
+<p>Caveman1では設定ファイルが分割されており、設定の部分共通化などがしづらく、全体の見通しが利きづらく、設定が煩雑になりがちだった。</p>
+
+<p>Caveman2では設定機能を<a href="https://github.com/fukamachi/envy">Envy</a>という新しいライブラリに分離した。</p>
+
+<p>Envyは<a class="keyword" href="http://d.hatena.ne.jp/keyword/Perl">Perl</a>モジュールの<a href="http://search.cpan.org/~satoh/Config-ENV/lib/Config/ENV.pm">Config::ENV</a>にインスパイアされており、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>のライブラリとしては珍しく<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B4%C4%B6%AD%CA%D1%BF%F4">環境変数</a>に依存する。<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B4%C4%B6%AD%CA%D1%BF%F4">環境変数</a>の値によって設定が切り替わるので、サーバ起動部分が設定の橋渡しをする必要がなくなり、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C1%C2%B7%EB%B9%E7">疎結合</a>化が進んでシンプルになった。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span><span class="synStatement">defpackage</span> :myapp.config
+  <span class="synSpecial">(</span><span class="synType">:use</span> :cl
+        :envy<span class="synSpecial">))</span>
+<span class="synSpecial">(</span><span class="synStatement">in-package</span> :myapp.config<span class="synSpecial">)</span>
+
+<span class="synSpecial">(</span><span class="synStatement">setf</span> <span class="synSpecial">(</span>config-env-var<span class="synSpecial">)</span> <span class="synConstant">&quot;APP_ENV&quot;</span><span class="synSpecial">)</span>
+
+<span class="synSpecial">(</span>defconfig :common
+  <span class="synPreProc">`(</span>:application-root ,<span class="synSpecial">(</span>asdf:component-pathname <span class="synSpecial">(</span>asdf:find-system :myapp<span class="synSpecial">))</span><span class="synPreProc">)</span><span class="synSpecial">)</span>
+
+<span class="synSpecial">(</span>defconfig <span class="synSpecial">|development|</span>
+  <span class="synSpecial">'(</span>:debug <span class="synStatement">T</span>
+    :databases
+    <span class="synSpecial">((</span>:maindb :sqlite3 :database-name ,<span class="synSpecial">(</span><span class="synStatement">merge-pathnames</span> #P<span class="synConstant">&quot;test.db&quot;</span>
+                                                        <span class="synType">*application-root*</span><span class="synSpecial">)))))</span>
+
+<span class="synSpecial">(</span>defconfig <span class="synSpecial">|production|</span>
+  <span class="synSpecial">'(</span>:databases
+    <span class="synSpecial">((</span>:maindb :mysql :database-name <span class="synConstant">&quot;myapp&quot;</span> :username <span class="synConstant">&quot;whoami&quot;</span> :password <span class="synConstant">&quot;1234&quot;</span><span class="synSpecial">)</span>
+     <span class="synSpecial">(</span>:workerdb :mysql :database-name <span class="synConstant">&quot;jobs&quot;</span> :username <span class="synConstant">&quot;whoami&quot;</span> :password <span class="synConstant">&quot;1234&quot;</span><span class="synSpecial">))))</span>
+
+<span class="synSpecial">(</span>defconfig <span class="synSpecial">|staging|</span>
+  <span class="synPreProc">`(</span>:debug <span class="synStatement">T</span>
+    ,@|production|<span class="synPreProc">)</span><span class="synSpecial">)</span>
+</pre>
+
+
+<h3>Database integration</h3>
+
+<p>Caveman1にはない、まったくの新機能としてデータベース連携機能がある。</p>
+
+<pre class="code lang-lisp" data-lang="lisp" data-unlink><span class="synSpecial">(</span><span class="synStatement">use-package</span> :caveman2.db<span class="synSpecial">)</span>
+
+<span class="synSpecial">(</span><span class="synStatement">defun</span> search-adults <span class="synSpecial">()</span>
+  <span class="synSpecial">(</span><span class="synStatement">let</span> <span class="synSpecial">((</span>db <span class="synSpecial">(</span>connect-db :maindb<span class="synSpecial">)))</span>
+    <span class="synSpecial">(</span>select-all db :*
+      <span class="synSpecial">(</span>from :person<span class="synSpecial">)</span>
+      <span class="synSpecial">(</span>where <span class="synSpecial">(</span>:&gt;= :age <span class="synConstant">20</span><span class="synSpecial">)))))</span>
+</pre>
+
+
+<p>これは<a href="http://8arrow.org/cl-dbi/">CL-DBI</a>と<a href="https://github.com/fukamachi/sxql">SxQL</a>を組み合わせたもので、コネクション管理まできっちりやってくれる。データベースが分割されたアプリケーションも考え、設定ファイルに複数のデータベース設定を書いたときに切り替えられるようにしている。</p>
+
+<p>ningleのような確立されたものと違い、SxQLを使ったこの新しい機能はまだ善し悪しの評価がなされていない。今後変動の可能性があるとすればここだろう。</p>
+
+<h3>(Hot) Deployment</h3>
+
+<p>普段はREPLに引きこもっているLisperも、サーバへのデプロイとなるとシェルの力を借りる必要がある。</p>
+
+<p>Caveman2では<a href="https://github.com/fukamachi/shelly">Shelly</a>をサーバ起動
+ツールとして採用している。</p>
+
+<pre class="code lang-" data-lang="" data-unlink>$ APP_ENV=development shly -Lclack clackup app.lisp --server :fcgi --port 8080</pre>
+
+
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%EF%A5%F3%A5%E9%A5%A4%A5%CA%A1%BC">ワンライナー</a>よりも簡単で、引数の受け取りもシェルコマンドの要領でできる。使う処理系を簡単に切り替えられるためデプロイに向いている。</p>
+
+<p><a href="http://supervisord.org">Supervisord</a>のような死活監視ツールを使う場合はこのコマンドを指定すればよい。</p>
+
+<p>また、ダウンタイム無しで<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%DB%A5%C3%A5%C8%A5%C7%A5%D7%A5%ED%A5%A4">ホットデプロイ</a>するには、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Perl">Perl</a>の<a href="http://search.cpan.org/~kazuho/Server-Starter/lib/Server/Starter.pm">Server::Starter</a>がそのまま使える。</p>
+
+<pre class="code lang-" data-lang="" data-unlink>$ APP_ENV=production start_server --port 8080 -- shly start --server :fcgi</pre>
+
+
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Common%20Lisp">Common Lisp</a>だけにとどまらず、さまざまな言語のツールを使う努力は、メインストリームではないコミュニティリソースの限られた言語には重要だと僕は思う。</p>
+
+<h2>Conclusion</h2>
+
+<p>まだQuicklispの反映が無いのでQuicklispから利用することはできないが、今月近いうちにリリースされると思う。その時はどうぞお試しください。</p>
+
+<p>追記(11/12): Quicklispの反映があったため、利用可能になっています。<code>(ql:quickload :caveman2)</code> でお試しください。</p>
+
+<ul>
+<li><a href="http://8arrow.org/caveman/">Caveman2 - The real web framework</a></li>
+</ul>
+
+
+      
+    </div>
+    <footer class="entry-footer">
+      <p class="entry-footer-section">
+        <span class="author vcard"><span class="fn" data-load-nickname="1" data-user-name="nitro_idiot">nitro_idiot</span></span>
+        <span class="entry-footer-time"><a href="http://blog.8arrow.org/entry/2013/11/06/082247"><time data-relative datetime="2013-11-05T23:22:47Z" title="2013-11-05T23:22:47Z" pubdate class="updated">2013-11-06 08:22</time></a></span>
+      </p>
+      <div class="hatena-star-container">
+      </div>
+      
+
+      <div class="customized-footer">
+        <div class="social-buttons">
+  
+  
+    <a href="http://b.hatena.ne.jp/entry/http://blog.8arrow.org/entry/2013/11/06/082247" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="この記事をはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="この記事をはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+  
+  
+    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fblog.8arrow.org%2Fentry%2F2013%2F11%2F06%2F082247&amp;layout=button_count&amp;show_faces=false&amp;width=130&amp;action=like&amp;height=21" class="facebook-like-button" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:21px;" allowTransparency="true"></iframe>
+  
+  
+    <iframe allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fblog.8arrow.org%2Fentry%2F2013%2F11%2F06%2F082247&text=Common%20Lisp%E3%81%AEWeb%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF%E3%80%8CCaveman2%E3%80%8D%E3%82%92%E4%BD%9C%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F%20-%20%E5%85%AB%E7%99%BA%E7%99%BD%E4%B8%AD&lang=ja" class="twitter-share-button" style="width:130px; height:20px;"></iframe>
+  
+  
+    <div class="g-plusone" data-size="medium" data-href="http://blog.8arrow.org/entry/2013/11/06/082247"></div>
+  
+  
+  
+  
+</div>
+
+
+          
+
+          
+
+          
+            <div class="entry-footer-html">    <!-- X:S ZenBackWidget --><script type="text/javascript">document.write(unescape("%3Cscript")+" src='http://widget.zenback.jp/?base_uri=http%3A//blog.8arrow.org&nsid=116589683810521419%3A%3A116589712801563571&rand="+Math.ceil((new Date()*1)*Math.random())+"' type='text/javascript'"+unescape("%3E%3C/script%3E"));</script><!-- X:E ZenBackWidget --></div>
+          
+        
+      </div>
+
+      <div class="comment-box">
+        
+        <ul class="comment">
+          
+        </ul>
+        
+          <a class="leave-comment-title">コメントを書く</a>
+        
+      </div>
+    </footer>
+  </div>
+</article>
+
+                
+
+                
+                  
+                  
+                  <div class="permalink pager">
+                    
+                      
+                      <span class="pager-prev">
+                        <a href="http://blog.8arrow.org/entry/2013/12/01/120712" rel="prev">
+                          <span class="pager-arrow">« </span>
+                          あなたがLispを無視することができない理由
+                        </a>
+                      </span>
+                    
+                    
+                      
+                      <span class="pager-next">
+                        <a href="http://blog.8arrow.org/entry/2013/10/22/135427" rel="next">
+                          SQLを生成するCommon Lispライブラリ「SxQ…
+                          <span class="pager-arrow"> »</span>
+                        </a>
+                      </span>
+                    
+                  </div>
+                
+
+              
+            
+            <!-- rakuten_ad_target_end -->
+            <!-- google_ad_section_end -->
+
+            
+          
+        </div>
+      </div>
+
+      
+      <aside id="box1">
+        <div id="box1-inner">
+        </div>
+      </aside>
+
+    </div><!-- #wrapper -->
+
+    <aside id="box2">
+  <div id="box2-inner">
+    
+      
+
+<div class="hatena-module hatena-module-profile">
+  <div class="hatena-module-title">
+    About Me
+  </div>
+  <div class="hatena-module-body">
+    
+    <a href="http://blog.8arrow.org/about">
+      <img src="http://cdn1.www.st-hatena.com/users/ni/nitro_idiot/profile.gif"
+      alt="id:nitro_idiot" class="profile-icon" />
+    </a>
+    
+
+    
+    <span class="id">
+      <a href="http://blog.8arrow.org/about"><span data-load-nickname="1" data-user-name="nitro_idiot">id:nitro_idiot</span></a>
+      
+  
+    
+      
+      <a href="http://blog.hatena.ne.jp/guide/pro" title="はてなブログPro"><i class="icon-pro" /></i></a>
+    
+  
+
+
+    </span>
+    
+
+    
+
+    
+    <div class="hatena-follow-button-box btn-subscribe">
+      <a href="#" class="hatena-follow-button">
+        <span class="subscribing">
+          <span class="foreground">購読中です</span>
+          <span class="background">読者をやめる</span>
+        </span>
+        <span class="unsubscribing">
+          <span class="foreground">読者になる</span>
+          <span class="background">読者になる</span>
+        </span>
+      </a>
+      <div class="subscription-count-box">
+        <span class="subscription-balloon">
+        </span>
+        <span class="subscription-count">
+        </span>
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-html">
+  
+  <div class="hatena-module-body">
+    <style type="text/css">
+.my-service-icons {
+  padding-left: 0;
+  text-align: center;
+}
+.my-service-icons li {
+  display: inline-block;
+  margin: 0 8px;
+}
+</style>
+<ul class="my-service-icons" >
+  <li>
+    <a href="https://github.com/fukamachi" target="_blank"><img src="http://8arrow.org/images/github-icon.png" alt="GitHub" title="GitHub" width="40px" height="40px" /></a>
+  </li>
+  <li>
+    <a href="http://nitro-idiot.hatenablog.com/" target="_blank"><img src="http://8arrow.org/images/hatenablog-icon.png" alt="Diary" title="Diary" width="40px" height="40px" /></a>
+  </li>
+  <li>
+    <a href="https://twitter.com/nitro_idiot" target="_blank"><img src="http://8arrow.org/images/twitter-icon.png" alt="Twitter" title="Twitter" width= "49px" height="40px" /></a>
+  </li>
+</ul>
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-html">
+  
+    <div class="hatena-module-title">Website</div>
+  
+  <div class="hatena-module-body">
+    <a href="http://8arrow.org/" target="_blank"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/n/nitro_idiot/20140116/20140116163928.png" alt="My Portfolio" /></a>
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-recent-entries ">
+  <div class="hatena-module-title">
+    <a href="http://blog.8arrow.org/archive">
+      Recent Entries
+    </a>
+  </div>
+  <div class="hatena-module-body">
+    <ul class="recent-entries hatena-urllist ">
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/04/16/233941" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">軽量なCommon LispのDBライブラリ「datafly」を作りました        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/03/02/172920" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">株式会社はてなを退職しました        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/02/04/041417" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">誰向けかわからないCommon Lispでの関数型プログラミング入門とその未来        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/01/24/075236" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">Lisp Meet Up #13 に参加しました        </a>
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://blog.8arrow.org/entry/2014/01/22/184258" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">新しいCommon Lisp方言「CL21」を作ったので意見を募集します        </a>
+        
+
+              </div>
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-archive">
+  <div class="hatena-module-title">
+    <a href="http://blog.8arrow.org/archive">Archive</a>
+  </div>
+  <div class="hatena-module-body">
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-search-box">
+  <div class="hatena-module-title">
+    Search
+  </div>
+  <div class="hatena-module-body">
+    <form class="search-form" role="search" action="http://blog.8arrow.org/search" method="get">
+      <input type="text" name="q" class="search-module-input" value="" placeholder="ブログ内検索" required>
+      <input type="submit" value="検索" class="search-module-button" />
+    </form>
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-circles">
+  <div class="hatena-module-title">
+    Groups
+  </div>
+  <div class="hatena-module-body">
+    <ul class="circle-list">
+      
+        <li title="Lisp" data-circle-id="12921228815713769536" data-circle-mtime="1393426757">
+  <a href="http://hatenablog.com/g/12921228815713769536"><img class="circle-image" src="http://cdn.image.st-hatena.com/image/square/66f5d18c388e0cb1d804be358c6cfb48df174304/height=96;version=1;width=96/http%3A%2F%2Fcdn.mogile.archive.st-hatena.com%2Fv1%2Fimage%2Fnitro_idiot%2F297785937330261174.png" alt="Lisp" title="Lisp"></a></li>
+      
+    </ul>
+  </div>
+</div>
+
+    
+    
+  </div>
+</aside>
+
+  </div>
+</div>
+
+
+
+
+
+
+        
+      </div>
+    </div>
+
+    
+      <footer id="footer" data-brand="hatenablog">
+  <div id="footer-inner">
+    <address>
+      
+      <a href="http://blog.8arrow.org/about"><img src="http://cdn1.www.st-hatena.com/users/ni/nitro_idiot/profile.gif" width="16" height="16" alt=""/>
+        <span data-load-nickname="1" data-user-name="nitro_idiot">nitro_idiot</span>
+      </a>
+    </address>
+    <p class="services"><a href="http://hatenablog.com/">Hatena Blog</a> / <a href="http://d.hatena.ne.jp/">Hatena::Diary</a></p>
+  </div>
+</footer>
+
+    
+
+    
+
+    
+      <script src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
+    
+
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+  {"parsetags": "explicit"}
+</script>
+<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+
+
+<script type="text/javascript" src="http://hatenablog.com/js?version=cb3376f552692eef52655312928aaadd"></script>
+
+<script type="text/javascript" src="http://hatenablog.com/js/texts-ja.js?version=cb3376f552692eef52655312928aaadd"></script>
+
+
+  <script type="text/javascript">Hatena.Diary.loadGlobalHeader()</script>
+
+
+
+
+
+    
+       <script id="google-analytics-script" type="text/javascript">
+var _gaq = _gaq || [];
+
+(function($){
+
+  // 現在のドメイン
+  
+    
+    
+      
+      var current_domain = "blog.8arrow.org".split(":")[0];
+    
+  
+
+  
+
+  
+
+   
+   _gaq.push(['all._setAccount', 'UA-7855606-1']);
+   _gaq.push(['all._setDomainName', current_domain]);
+   _gaq.push(['all._setSampleRate', '10']);
+   _gaq.push(['all._trackPageview']);
+
+  
+    _gaq.push(['a._setAccount', 'UA-29716941-5']);
+    _gaq.push(['a._setDomainName', current_domain]);
+    _gaq.push(['a._setCustomVar', 1, 'PageId', document.documentElement.getAttribute('data-page'), 3 /* page-level */]);
+      var keywordCampaigns = [];
+      $('.js-entry-article').each(function (index, element) {
+        var keywords = $(element).data('keywordCampaign').split(' ');
+        keywords = _.filter(keywords, function (keyword) { return keyword.length > 0 });
+        keywordCampaigns = keywordCampaigns.concat(keywords);
+      });
+      if (keywordCampaigns.length > 0) {
+        _gaq.push(['a._setCustomVar', 3, 'KeywordCampaign', keywordCampaigns[0], 3 /* page-level */]);
+      }
+      _gaq.push(['a._trackPageview']);
+  
+    _gaq.push(['b._setAccount', 'UA-29716941-2']);
+    _gaq.push(['b._setDomainName', current_domain]);
+    _gaq.push(['b._setCustomVar', 1, 'PageId', document.documentElement.getAttribute('data-page'), 3 /* page-level */]);
+      var keywordCampaigns = [];
+      $('.js-entry-article').each(function (index, element) {
+        var keywords = $(element).data('keywordCampaign').split(' ');
+        keywords = _.filter(keywords, function (keyword) { return keyword.length > 0 });
+        keywordCampaigns = keywordCampaigns.concat(keywords);
+      });
+      if (keywordCampaigns.length > 0) {
+        _gaq.push(['b._setCustomVar', 3, 'KeywordCampaign', keywordCampaigns[0], 3 /* page-level */]);
+      }
+      _gaq.push(['b._trackPageview']);
+  
+
+  $(function () {
+      $(document).delegate('[data-track-event="click"]', 'click', function () {
+          
+          _gaq.push([ 'a._trackEvent', 'Blogs', 'Click', this.getAttribute('data-track-key') ]);
+          
+          _gaq.push([ 'b._trackEvent', 'Blogs', 'Click', this.getAttribute('data-track-key') ]);
+          
+      });
+  });
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  var available_domains = ["blog.hatena.ne.jp"];
+  
+    available_domains.push("hatenablog.com".split(":")[0]);
+  
+    available_domains.push("hatenablog.jp".split(":")[0]);
+  
+    available_domains.push("hateblo.jp".split(":")[0]);
+  
+    available_domains.push("hatenadiary.com".split(":")[0]);
+  
+    available_domains.push("hatenadiary.jp".split(":")[0]);
+  
+  $('a').on('click', function() {
+    // 同じドメインならスキップ
+    if ( !this.hostname || this.hostname.indexOf(current_domain) != -1 ) return;
+
+    var cross_domain = false;
+    for (var i = 0, len = available_domains.length; i < len; i++) {
+      if (this.hostname.indexOf(available_domains[i]) != -1) cross_domain = true;
+    }
+    if ( cross_domain ) {
+      
+      _gaq.push(['a._link', this.href]);
+      
+      _gaq.push(['b._link', this.href]);
+      
+    }
+  });
+
+})(jQuery);
+</script>
+
+       
+  <script id="hatena-counter-script" type="text/javascript"><!--
+      hatena_counter_name = "nitro_idiot";
+      hatena_counter_id = "104";
+      hatena_counter_ref = document.referrer+"";
+      hatena_counter_screen = screen.width + "x" + screen.height+","+screen.colorDepth;
+  //--></script>
+  <script type="text/javascript" src="http://counter.hatena.ne.jp/js/counter.js"></script>
+  <noscript><img src="http://counter.hatena.ne.jp/nitro_idiot/104" border="0" alt="counter"></noscript>
+
+
+    
+
+  </body>
+</html>
+

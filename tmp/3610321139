@@ -1,0 +1,667 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:mixi="http://mixi-platform.com/ns#"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=euc-jp">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<title>米国家安全保障局の個人情報収集問題 - Yahoo!ニュース</title>
+<meta name="keywords" content="米国家安全保障局の個人情報収集問題,トピック,ニュース">
+<meta name="description" content="米国家安全保障局の個人情報収集問題のニュース">
+
+
+<!-- Open Graph Protocol -->
+<meta property="og:title" content="スノーデン氏 元スパイと告白 - Y!ニュース トピックス" />
+<meta name="mixi-check-robots" CONTENT="nodescription, noimage, ignoreimage">
+<meta property="og:description" content="米ニュース番組で、スノーデン氏がスパイとして秘密任務に従事していたと告白。スノーデン氏の現在は。" />
+<meta property="og:image" content="http://i.yimg.jp/images/topics/module/topics_Facebook_200x200.png" />
+<meta property="og:url" content="http://dailynews.yahoo.co.jp/fc/world/nsa_surveillance/?id=6118106" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:type" content="article" />
+<meta property="fb:app_id" content="276725822409153" />
+<meta property="og:site_name" content="Yahoo!ニュース" />
+<!-- /Open Graph Protocol -->
+
+<!-- Twitter App Card -->
+<meta name="twitter:card" content="app">
+<meta name="twitter:description" content="大事なニュースを深く広く速く。24時間365日、編集部が重要なニュースをお届けします。">
+<meta name="twitter:app:id:iphone" content="407906756">
+<meta name="twitter:app:id:ipad" content="407906756">
+<meta name="twitter:app:id:googleplay" content=" jp.co.yahoo.android.topics">
+<!-- /Twitter App Card -->
+
+<base href="http://dailynews.yahoo.co.jp/fc/">
+<link href="http://i.yimg.jp/images/topics/css/topics_v2.css?date=20140522" rel="stylesheet" type="text/css" media="screen, print">
+<link rel="canonical" href="http://dailynews.yahoo.co.jp/fc/world/nsa_surveillance/" />
+<!-- SpaceID=0 robot -->
+
+<link rel="apple-touch-icon" href="http://i.yimg.jp/images/ipn/wcb/news129.png">
+
+
+
+<!-- Device Category Module -->
+<script type="text/javascript">
+(function(){YjdCookie={set:function(a,b){var x=new XMLHttpRequest();x.open("GET",a,0);x.send();document.location.href=b;}};})();
+</script>
+<!-- /Device Category Module -->
+
+<!--  FB Flg -->
+<script type="text/javascript">
+    var autoPostFlg = '0';
+    var topicsUrl = 'http://dailynews.yahoo.co.jp/fc/world/nsa_surveillance/?id=6118106';
+    var spid = '590601836';
+</script>
+<!-- /FB Flg -->
+
+
+</head>
+<body>
+
+<div id="wrapper">
+
+
+<div id="header" class="clr">
+<!---======= header =======--->
+
+<!-- MASTHEAD -->
+<!-- SpaceID=0 robot -->
+
+<!--- /MASTHEAD --->
+
+<div id="emg">
+<!--- AD EMG --->
+<!-- SpaceID=0 robot -->
+
+<!-- SpaceID=0 robot -->
+
+<!-- SpaceID=0 robot -->
+
+<!--- /AD EMG --->
+</div>
+
+<div id="YPApushdown"></div>
+
+<div id="contentsHeader"> 
+    <!--ニュース検索-->
+    <div class="search clr">
+        <form action="http://news.search.yahoo.co.jp/search" method="get">
+        <div class="searchWrapper">
+            <div class="inputWrapper">
+                <input id="searchText" type="text" name="p">
+                <span class="inputInnr">
+                    <input type="hidden" value="euc-jp" name="ei">
+                    <input type="hidden" value="news_sw" name="fr">
+                </span>
+            </div>
+            <span id="searchButton"><input type="submit" value="検索"></span>
+
+            <div class="currentSearch">ニュース</div>
+            <div class="searchSelect">
+                <div class="bubble"></div>
+                <ul>
+                    <li id="SearchNews"><span class="cur">ニュース</span></li>
+                    <li id="SearchTopics"><span>トピックス</span></li>
+                    <li id="SearchBuzzword"><span>Buzzワード</span></li>
+                    <li id="SearchGSR"><span>全国紙パック</span></li>
+                    <li id="SearchSurvey"><span>意識調査</span></li>
+                </ul>
+            </div>
+        </div>
+        </form>
+        <p class="advanced"><a href="http://news.search.yahoo.co.jp/advanced">条件指定</a></p>
+       
+        <ul class="personalInfo clr">
+            <li class="myPage"><a href="http://person.news.yahoo.co.jp/u/login" class="myThumb" onmousedown="this.href='http://person.news.yahoo.co.jp/u/login'"><img src="http://i.yimg.jp/images/bloom/v201212/anonymous_24.png" width="24" height="24" alt=""></a><a href="http://person.news.yahoo.co.jp/u/login" class="myName" onmousedown="this.href='http://person.news.yahoo.co.jp/u/login'">ユーザーページ</a></li>
+            <li class="purchase"><a href="http://headlines.yahoo.co.jp/purchase/" onmousedown="this.href='http://headlines.yahoo.co.jp/purchase/'">購入済み</a></li>
+            <li class="setting"><a href="http://person.news.yahoo.co.jp/settings/profile/" onmousedown="this.href='http://person.news.yahoo.co.jp/settings/profile/'">設定</a></li>
+        </ul>
+    </div><!-- /.headerSearch --> 
+
+    <!--グローバルナビ -->
+    <div id="globalNav" class="globalNav">
+        <ul id="gnPri" class="mainnav clr">
+            <li id="gnPriTop"><a href="http://news.yahoo.co.jp/" onmousedown="this.href='http://news.yahoo.co.jp/'">トップ</a></li>
+            <li id="gnPriFlash"><a href="http://headlines.yahoo.co.jp/hl?c=flash" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=flash'">速報</a></li>
+            <li id="gnPriPhoto"><a href="http://headlines.yahoo.co.jp/hl?ty=p" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?ty=p'">写真</a></li>
+            <li id="gnPriVideo"><a href="http://headlines.yahoo.co.jp/videonews/" onmousedown="this.href='http://headlines.yahoo.co.jp/videonews/'">映像</a></li>
+            <li id="gnPriZasshi"><a href="http://zasshi.news.yahoo.co.jp/" onmousedown="this.href='http://zasshi.news.yahoo.co.jp/'">雑誌</a></li>
+            <li id="gnPriBylines"><a href="http://bylines.news.yahoo.co.jp/" onmousedown="this.href='http://bylines.news.yahoo.co.jp/'">個人</a></li>
+            <li id="gnPriBuzz"><a href="http://buzz.news.yahoo.co.jp/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/'">Buzz</a></li>
+            <li id="gnPriResearch"><a href="http://polls.dailynews.yahoo.co.jp/" onmousedown="this.href='http://polls.dailynews.yahoo.co.jp/'">意識調査</a></li>
+            <li id="gnPriRanking"><a href="http://headlines.yahoo.co.jp/accr" onmousedown="this.href='http://headlines.yahoo.co.jp/accr'">ランキング</a></li>
+            <li id="gnPriFeed" class="newsFeed"><a href="http://feed.news.yahoo.co.jp/" onmousedown="this.href='http://feed.news.yahoo.co.jp/'">ニュースフィード</a></li>
+        </ul>
+        <ul id="gnSec" class="subnav clearFix">
+            <li id="gnSecDom"><a href="http://headlines.yahoo.co.jp/hl?c=dom" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=dom'">国内</a></li>
+            <li id="gnSecInt"><a class="cur" href="http://headlines.yahoo.co.jp/hl?c=c_int" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=c_int'">国際</a></li>
+            <li id="gnSecBus"><a href="http://headlines.yahoo.co.jp/hl?c=bus" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=bus'">経済</a></li>
+            <li id="gnSecEnt"><a href="http://headlines.yahoo.co.jp/hl?c=c_ent" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=c_ent'">エンタメ</a></li>
+            <li id="gnSecSpo"><a href="http://headlines.yahoo.co.jp/hl?c=c_spo" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=c_spo'">スポーツ</a></li>
+            <li id="gnSecSci"><a href="http://headlines.yahoo.co.jp/hl?c=c_sci" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=c_sci'">IT・科学</a></li>
+            <li id="gnSecLife"><a href="http://headlines.yahoo.co.jp/hl?c=c_life" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=c_life'">ライフ</a></li>
+            <li id="gnSecLoc"><a href="http://headlines.yahoo.co.jp/hl?c=loc" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=loc'">地域</a></li>
+            <li id="gnSecList" class="archives"><a href="http://news.yahoo.co.jp/list/" onmousedown="this.href='http://news.yahoo.co.jp/list/'">アーカイブ</a></li>
+        </ul>
+    </div>
+    <!--/グローバルナビ-->
+</div><!-- /#contentsHeader --> 
+<!--/================================ GLOBAL NAVIGATION ====================================-->
+
+<!---======= /header =======--->
+</div>
+
+<div class="adCT">[PR]
+<!--■■■■■■■■■■■■■CT■■■■■■■■■■■■■■■■-->
+<!-- SpaceID=0 robot -->
+
+<!--■■■■■■■■■■■■■/CT■■■■■■■■■■■■■■■■-->
+</div>
+
+<!---AD SCT--->
+<!-- SpaceID=0 robot -->
+
+<!---/AD SCT--->
+
+
+<noscript>
+    <p class="alertBg yjSt">
+    現在<strong>JavaScriptが無効</strong>になっています。<br>
+    Yahoo!ニュースのすべての機能を利用するためには、<strong>JavaScriptの設定を有効</strong>にしてください。<br>
+    JavaScriptの設定を変更する方法は<a href="http://help.yahoo.co.jp/help/jp/common/sys/sys-07.html">こちら</a>。
+    </p>
+</noscript>
+
+
+
+<hr class="separator">
+
+<div id="content">
+<div id="main">
+<div id="mainMargin">
+
+<!-- 誤報モジュール -->
+<!-- /誤報モジュール -->
+
+
+
+<div class="hdH1a clr">
+<h1 class="topicsName yjM">米国家安全保障局の個人情報収集問題</h1>
+<p class="yjS shortLinkMod">
+
+
+</p>
+
+</div>
+
+
+<div id="detailHeadline">
+<!-- linkLine -->
+<div class="linkLine clr">
+<!-- socialShareModule --><ul class="socialButtonTop clr">
+    <li><a href="https://twitter.com/share" class="twitter-share-button" data-text="スノーデン氏 元スパイと告白 - Y!ニュース" data-url="http://dailynews.yahoo.co.jp/fc/world/nsa_surveillance/?id=6118106" data-count="horizontal" data-lang="ja" data-related="YahooTopicsEdit,YJNewsResearch"></a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </li>
+    
+</ul> 
+<ul class="snsLink"> 
+<li><div id="share_button1" name="share_button"></div></li> 
+</ul> 
+<!-- /socialShareModule --> 
+<!-- otherService  -->
+<ul class="otherService clr">
+    
+    
+</ul> 
+<!-- /otherService  -->
+</div>
+<!-- /linkLine -->
+
+<!--挿入画像-->
+<table class="detailHeadlineImage" width="200" summary="ヘッドライン画像">
+    <tbody>    
+        <tr><td class="image"><a href="http://headlines.yahoo.co.jp/hl?a=20140528-00000030-jij_afp-int.view-000" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140528-00000030-jij_afp-int.view-000'"><img src="http://lpt.c.yimg.jp/im_sigglXeZy6oRWoDCtMYBs55u8g---x200-y150-q90/amd/20140528-00000030-jij_afp-000-view.jpg"  alt="Photo" onContextMenu="javascript:return false;"></a></td></tr>
+        <tr><td class="caption">ドイツ・ベルリン市内の道路に貼られ、部分的に破れた「asylum（亡命）」を意味する単語の一部と共にエドワード・スノーデン容疑者の顔が描かれたビラ（2014年5月26日撮影、資料写真）。(ＡＦＰ＝時事)</td></tr>
+    </tbody>
+</table>
+<!--/挿入画像-->
+
+<h3><a href="http://headlines.yahoo.co.jp/hl?a=20140528-00000030-jij_afp-int" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140528-00000030-jij_afp-int'">スノーデン元職員「私は元スパイ」 米テレビに明かす</a></h3>
+<!--HBODY-->【AFP＝時事】米NBCニュース（NBC News）は27日、米政府の国内外における大規模な情報収集活動を暴露しロシアに亡命した米国家安全保障局（National Security Agency、NSA）の元職員、エドワード・スノーデン（Edward Snowden）容疑者が、自分は米情報機関で「スパイとしての訓練」を受け、「海外での秘密任務」に従事していたと語ったインタビューの抜粋を放送した。<!--SOURCE-->(ＡＦＰ＝時事)<!--/SOURCE--><br><a href="http://headlines.yahoo.co.jp/hl?a=20140528-00000030-jij_afp-int" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140528-00000030-jij_afp-int'" class="readAll">[記事全文]</a><!--/HBODY--><br><br>
+
+<!--SUBTITLE--><em>◆米ニュース番組で明かす</em><!--/SUBTITLE--><br>
+<!--LINK-->・ <a href="http://brd.dailynews.yahoo.co.jp/media/news/topics/busy/title/RV=1/RE=1401417131/RH=YnJkLmRhaWx5bmV3cy55YWhvby5jby5qcA--/RB=/RU=aHR0cDovL3d3dy5uYmNuZXdzLmNvbS9mZWF0dXJlL2Vkd2FyZC1zbm93ZGVuLWludGVydmlldy9leGNsdXNpdmUtZWR3YXJkLXNub3dkZW4tdGVsbHMtYnJpYW4td2lsbGlhbXMtaS13YXMtdHJhaW5lZC1zcHktbjExNTc0Ng--/RS=^ADA3CWFOO.KMsgxV29AFgFXqQn5p5w-" onmousedown="this.href='http://brd.dailynews.yahoo.co.jp/media/news/topics/busy/title/RV=1/RE=1401417131/RH=YnJkLmRhaWx5bmV3cy55YWhvby5jby5qcA--/RB=/RU=aHR0cDovL3d3dy5uYmNuZXdzLmNvbS9mZWF0dXJlL2Vkd2FyZC1zbm93ZGVuLWludGVydmlldy9leGNsdXNpdmUtZWR3YXJkLXNub3dkZW4tdGVsbHMtYnJpYW4td2lsbGlhbXMtaS13YXMtdHJhaW5lZC1zcHktbjExNTc0Ng--/RS=^ADA3CWFOO.KMsgxV29AFgFXqQn5p5w-'">EXCLUSIVE: Edward Snowden Tells Brian Williams: 'I Was Trained as a Spy'(英語)</a> - <!--QUOTE--><!--/QUOTE--><!--SOURCE-->NBC News(5月28日)<!--/SOURCE--><br><!--/LINK-->
+<!--LINK-->・ <a href="http://honyaku.yahoo.co.jp/" onmousedown="this.href='http://honyaku.yahoo.co.jp/'">Yahoo!翻訳</a> - <!--QUOTE--><!--/QUOTE--><!--SOURCE-->Yahoo! JAPAN<!--/SOURCE--><br><!--/LINK-->
+<br>
+<!--SUBTITLE--><em>◆スノーデン氏の現在は</em><!--/SUBTITLE--><br>
+<!--LINK-->・ <a href="http://brd.dailynews.yahoo.co.jp/media/news/topics/busy/title/RV=1/RE=1401417131/RH=YnJkLmRhaWx5bmV3cy55YWhvby5jby5qcA--/RB=/RU=aHR0cDovL3d3dy5jbm4uY28uanAvdGVjaC8zNTA0MzAxMy5odG1s/RS=^ADAA4k.TRwcINZk07k3K2QTS.xk6LA-" onmousedown="this.href='http://brd.dailynews.yahoo.co.jp/media/news/topics/busy/title/RV=1/RE=1401417131/RH=YnJkLmRhaWx5bmV3cy55YWhvby5jby5qcA--/RB=/RU=aHR0cDovL3d3dy5jbm4uY28uanAvdGVjaC8zNTA0MzAxMy5odG1s/RS=^ADAA4k.TRwcINZk07k3K2QTS.xk6LA-'">ロシア、スノーデン元職員の亡命期間を延長へ</a> - <!--QUOTE--><!--/QUOTE--><!--SOURCE-->CNN.co.jp(1月25日)<!--/SOURCE--><br><!--/LINK-->
+<!--LINK-->・ <a href="http://brd.dailynews.yahoo.co.jp/media/news/topics/busy/title/RV=1/RE=1401417131/RH=YnJkLmRhaWx5bmV3cy55YWhvby5jby5qcA--/RB=/RU=aHR0cDovL2phLndpa2lwZWRpYS5vcmcvd2lraS8lRTMlODIlQTglRTMlODMlODklRTMlODMlQUYlRTMlODMlQkMlRTMlODMlODklRTMlODMlQkIlRTMlODIlQjklRTMlODMlOEUlRTMlODMlQkMlRTMlODMlODclRTMlODMlQjM-/RS=^ADAHkug2N6k51UcLiZsDZ2qSErNWPU-" onmousedown="this.href='http://brd.dailynews.yahoo.co.jp/media/news/topics/busy/title/RV=1/RE=1401417131/RH=YnJkLmRhaWx5bmV3cy55YWhvby5jby5qcA--/RB=/RU=aHR0cDovL2phLndpa2lwZWRpYS5vcmcvd2lraS8lRTMlODIlQTglRTMlODMlODklRTMlODMlQUYlRTMlODMlQkMlRTMlODMlODklRTMlODMlQkIlRTMlODIlQjklRTMlODMlOEUlRTMlODMlQkMlRTMlODMlODclRTMlODMlQjM-/RS=^ADAHkug2N6k51UcLiZsDZ2qSErNWPU-'">エドワード・スノーデン</a> - <!--QUOTE--><!--/QUOTE--><!--SOURCE-->ウィキペディア<!--/SOURCE--><br><!--/LINK-->
+
+<br>
+<!--SUBTITLE--><em>◆「スノーデン事件」とは</em><!--/SUBTITLE--><br>
+<!--LINK-->・ <a href="http://brd.dailynews.yahoo.co.jp/media/news/topics/busy/title/RV=1/RE=1401417131/RH=YnJkLmRhaWx5bmV3cy55YWhvby5jby5qcA--/RB=/RU=aHR0cDovL3d3dy5uaWtrZWlicC5jby5qcC9hcnRpY2xlL21hdG9tZS8yMDEzMDYyNS8zNTU3NTUvP3J0PW5vY250/RS=^ADAvYqQEQOyBTivTB7yPTvvqidSMqM-" onmousedown="this.href='http://brd.dailynews.yahoo.co.jp/media/news/topics/busy/title/RV=1/RE=1401417131/RH=YnJkLmRhaWx5bmV3cy55YWhvby5jby5qcA--/RB=/RU=aHR0cDovL3d3dy5uaWtrZWlicC5jby5qcC9hcnRpY2xlL21hdG9tZS8yMDEzMDYyNS8zNTU3NTUvP3J0PW5vY250/RS=^ADAvYqQEQOyBTivTB7yPTvvqidSMqM-'">「スノーデン事件」とは何か!?〜元CIA職員が暴いた米個人情報収集問題の謎！</a> - <!--QUOTE--><!--/QUOTE--><!--SOURCE-->日経BPネット(2013年6月26日)<!--/SOURCE--><br><!--/LINK-->
+<!--LINK-->・ <a href="http://brd.dailynews.yahoo.co.jp/media/news/topics/busy/title/RV=1/RE=1401417131/RH=YnJkLmRhaWx5bmV3cy55YWhvby5jby5qcA--/RB=/RU=aHR0cDovL3d3dy5uZXdzd2Vla2phcGFuLmpwL3JlaXplaS8yMDEzLzA2L3Bvc3QtNTY3LnBocA--/RS=^ADAxs.hwGbLsF4vYR.rFtey9ACpj7U-" onmousedown="this.href='http://brd.dailynews.yahoo.co.jp/media/news/topics/busy/title/RV=1/RE=1401417131/RH=YnJkLmRhaWx5bmV3cy55YWhvby5jby5qcA--/RB=/RU=aHR0cDovL3d3dy5uZXdzd2Vla2phcGFuLmpwL3JlaXplaS8yMDEzLzA2L3Bvc3QtNTY3LnBocA--/RS=^ADAxs.hwGbLsF4vYR.rFtey9ACpj7U-'">エドワード・スノーデンはどうしてＮＳＡを裏切ったのか？</a> - <!--QUOTE--><!--/QUOTE--><!--SOURCE-->ニューズウィーク日本版(6月18日)<!--/SOURCE--><br><!--/LINK-->
+
+
+<!-- ヘッドライン -->
+
+<!-- ACCKEY_PREVIEW_DELIMITER -->
+
+</div><!--/detailHeadline-->
+
+<div style="margin-bottom:10px;border-top:2px solid #eec;"></div> 
+
+
+
+<div style="margin:-2px 5px 10px;">
+<!--■■■■■■■■■■IM■■■■■■■■■■-->
+<script type="text/javascript" language="JavaScript">
+<!--
+yads_ad_ds = '96399_15364';
+//-->
+</script>
+<script type="text/javascript" language="javascript" src="http://yads.yahoo.co.jp/js/yads.js"></script>
+<!--■■■■■■■■■■IM■■■■■■■■■■-->
+</div><!-- /line for IM -->
+
+
+
+<div id="detailNews">
+	<div class="hdH2"><h2><a href="http://dailynews.yahoo.co.jp/fc/world/nsa_surveillance/news_list/?pn=1" onmousedown="this.href='http://dailynews.yahoo.co.jp/fc/world/nsa_surveillance/news_list/?pn=1'">ニュース</a></h2></div>
+<ul class="yjMS newsLink">
+<li><a href="http://headlines.yahoo.co.jp/hl?a=20140529-00000005-zdn_tt-sci" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140529-00000005-zdn_tt-sci'">AndroidのVPNバイパス脆弱性で見直しを迫られるモバイルVPN対策（TechTargetジャパン）</a><span class="date">29日 - 9時12分</span></li>
+
+<li><a href="http://headlines.yahoo.co.jp/hl?a=20140528-35048586-cnn-int" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140528-35048586-cnn-int'">「私の仕事はスパイだった」　スノーデン氏が主張（CNN.co.jp）</a><span class="date">28日 - 18時44分</span></li>
+
+<li><a href="http://headlines.yahoo.co.jp/hl?a=20140528-00000030-jij_afp-int" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140528-00000030-jij_afp-int'">スノーデン元職員「私は元スパイ」 米テレビに明かす（ＡＦＰ＝時事）</a><img src="http://i.yimg.jp/images/icon/photo.gif" width="15" height="15" alt="写真ニュース"><span class="date">28日 - 14時52分</span></li>
+
+<li><a href="http://newsbiz.yahoo.co.jp/detail?a=20140528-00000056-biz_reut-nb" onmousedown="this.href='http://newsbiz.yahoo.co.jp/detail?a=20140528-00000056-biz_reut-nb'">「スパイとして海外で活動」、スノーデン容疑者が米ＴＶで告白（ロイター）</a><span class="date">28日 - 14時0分</span></li>
+
+<li><a href="http://bylines.news.yahoo.co.jp/haradatakeo/20140526-00035666/" onmousedown="this.href='http://bylines.news.yahoo.co.jp/haradatakeo/20140526-00035666/'">なぜ今、ロシアそしてバルト海なのか？　プーチン脅威説を越えて「これから起きる本当のこと」を考える（原田武夫）</a><img src="http://i.yimg.jp/images/icon/photo.gif" width="15" height="15" alt="写真ニュース"><span class="date">26日 - 8時0分</span></li>
+
+<li><a href="http://headlines.yahoo.co.jp/hl?a=20140523-00000000-jij_afp-int" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140523-00000000-jij_afp-int'">米下院が情報活動抑制法案を可決、「抜け穴」を危惧する声も（ＡＦＰ＝時事）</a><img src="http://i.yimg.jp/images/icon/photo.gif" width="15" height="15" alt="写真ニュース"><span class="date">23日 - 7時10分</span></li>
+
+<li><a href="http://newsbiz.yahoo.co.jp/detail?a=20140523-00000003-bloom_st-nb" onmousedown="this.href='http://newsbiz.yahoo.co.jp/detail?a=20140523-00000003-bloom_st-nb'">米下院が情報活動抑制案を可決、ネット起業は不十分と反対（Bloomberg）</a><span class="date">23日 - 2時42分</span></li>
+
+<li><a href="http://zasshi.news.yahoo.co.jp/article?a=20140522-00010000-fsight-int" onmousedown="this.href='http://zasshi.news.yahoo.co.jp/article?a=20140522-00010000-fsight-int'">「対中サイバー戦」に備えた仕込み工作も――底知れぬ「スノーデン漏洩情報」の全貌（フォーサイト）</a><span class="date">22日 - 16時34分</span></li>
+
+<li><a href="http://headlines.yahoo.co.jp/hl?a=20140521-00027769-techcr-sci" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140521-00027769-techcr-sci'">先週のUS注目記事 ― NSAがルーターにバグを注入する写真が流出（TechCrunch Japan）</a><span class="date">21日 - 10時0分</span></li>
+
+<li><a href="http://newsbiz.yahoo.co.jp/detail?a=20140520-00000042-bloom_st-nb" onmousedown="this.href='http://newsbiz.yahoo.co.jp/detail?a=20140520-00000042-bloom_st-nb'">中国：サイバー作業部会の活動中断−米での刑事訴追受け（Bloomberg）</a><span class="date">20日 - 16時18分</span></li>
+
+</ul>
+<!-- detailNews/BuzzModule -->
+</div>
+<!--/detailNews-->
+
+
+
+
+
+<div id="adSqb">
+<!--■■■■■■■■■■■■■SQB■■■■■■■■■■■■■■■■-->
+<!-- SpaceID=0 robot -->
+
+<!--■■■■■■■■■■■■■/SQB■■■■■■■■■■■■■■■■-->
+</div>
+
+<!--■■■■■■■■■■■■■UIEB■■■■■■■■■■■■■■■■--> 
+<!-- SpaceID=0 robot -->
+ 
+<!--■■■■■■■■■■■■■/UIEB■■■■■■■■■■■■■■■■--> 
+
+</div><!--/mainMargin-->
+</div>
+<!--================== /main ==================-->
+<hr class="separator">
+
+
+<div id="sub">
+
+<!--■■■■■■■LREC■■■■■■■■■-->
+<!-- SpaceID=0 robot -->
+
+<!--■■■■■■■/LREC■■■■■■■■■-->
+
+<div class="subRanking">
+    <div class="hd">
+        <h3 class="ttl">国際アクセスランキング</h3>
+    </div>
+
+    <ol class="bd">
+        <li class="clr">
+            <a href="http://headlines.yahoo.co.jp/hl?a=20140529-00000005-rcdc-cn" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140529-00000005-rcdc-cn'">
+                <span class="rankNum">1</span>
+                <span class="cap clr">
+                    <span class="ttl">訪日した中国人女性、「トイレにアレがない！」と大慌て＝「追い込まれた私は仕方なく…」―中国ネット</span>
+                    <span class="source">Record China</span>
+                    <span class="date">5月29日(木)3時50分</span>
+                </span>
+            </a>
+        </li><li class="clr">
+            <a href="http://headlines.yahoo.co.jp/hl?a=20140528-00000050-rcdc-cn" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140528-00000050-rcdc-cn'">
+                <span class="rankNum">2</span>
+                <span class="cap clr">
+                    <span class="ttl">日中戦闘機の異常接近＝中国ネットでは意外な意見多数「日本の恐ろしいところは…」―中国版ツイッター</span>
+                    <span class="source">Record China</span>
+                    <span class="date">5月28日(水)22時46分</span>
+                </span>
+            </a>
+        </li><li class="clr">
+            <a href="http://headlines.yahoo.co.jp/hl?a=20140529-00000010-xinhua-cn" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140529-00000010-xinhua-cn'">
+                <span class="rankNum">3</span>
+                <span class="cap clr">
+                    <span class="ttl">みんな、日本に行ったら何したい？の質問に回答続々、「正直なところ・・」―中国ネット</span>
+                    <span class="source">XINHUA.JP</span>
+                    <span class="date">5月29日(木)7時14分</span>
+                </span>
+            </a>
+        </li><li class="clr">
+            <a href="http://headlines.yahoo.co.jp/hl?a=20140529-00000002-cnippou-kr" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140529-00000002-cnippou-kr'">
+                <span class="rankNum">4</span>
+                <span class="cap clr">
+                    <span class="ttl">候補者辞退で…朴大統領の横の首相席は“空き”のまま</span>
+                    <span class="source">中央日報日本語版</span>
+                    <span class="date">5月29日(木)8時40分</span>
+                </span>
+            </a>
+        </li><li class="clr">
+            <a href="http://headlines.yahoo.co.jp/hl?a=20140528-00000042-rcdc-cn" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?a=20140528-00000042-rcdc-cn'">
+                <span class="rankNum">5</span>
+                <span class="cap clr">
+                    <span class="ttl">日本人ではなく中国人だった！中国人侮辱番組に出演の役者に非難殺到「見つけたらぶちのめしてやる」―中国紙</span>
+                    <span class="source">Record China</span>
+                    <span class="date">5月28日(水)19時48分</span>
+                </span>
+            </a>
+        </li>
+    </ol><!-- /.rankingContents -->
+    <p class="ft"><a href="http://headlines.yahoo.co.jp/accr?ty=t&c=c_int" onmousedown="this.href='http://headlines.yahoo.co.jp/accr?ty=t&c=c_int'">もっと見る</a></p>
+</div><!-- /.ranking -->
+
+<!-- 最新の主なトピックス -->
+<div class="topicsListMod mdSubLined">
+<div class="hdH2"><h2>最新の主なトピックス</h2></div>
+<ul>
+<li><a href="http://dailynews.yahoo.co.jp/fc/domestic/explosion/" onmousedown="this.href='http://dailynews.yahoo.co.jp/fc/domestic/explosion/'">姫路沖でタンカーが爆発炎上</a><img src="http://i.yimg.jp/images/icon/photo.gif" alt="[photo]" border="0"><img src="http://i.yimg.jp/images/new2.gif" alt="[new]" border="0"></li>
+
+<li><a href="http://dailynews.yahoo.co.jp/fc/domestic/ianfu/" onmousedown="this.href='http://dailynews.yahoo.co.jp/fc/domestic/ianfu/'">河野談話検証 来月に国会報告</a><img src="http://i.yimg.jp/images/icon/photo.gif" alt="[photo]" border="0"><img src="http://i.yimg.jp/images/new2.gif" alt="[new]" border="0"></li>
+
+<li><a href="http://dailynews.yahoo.co.jp/fc/economy/employment/" onmousedown="this.href='http://dailynews.yahoo.co.jp/fc/economy/employment/'">残業代ゼロ制度 議論が本格化</a><img src="http://i.yimg.jp/images/icon/photo.gif" alt="[photo]" border="0"></li>
+
+<li><a href="http://dailynews.yahoo.co.jp/fc/domestic/abandoning/" onmousedown="this.href='http://dailynews.yahoo.co.jp/fc/domestic/abandoning/'">准看護師遺棄 女在留資格なし</a><img src="http://i.yimg.jp/images/icon/photo.gif" alt="[photo]" border="0"><img src="http://i.yimg.jp/images/new2.gif" alt="[new]" border="0"></li>
+
+<li><a href="http://dailynews.yahoo.co.jp/fc/economy/gasoline/" onmousedown="this.href='http://dailynews.yahoo.co.jp/fc/economy/gasoline/'">負の連鎖 ガソリン165円突破</a></li>
+
+<li><a href="http://dailynews.yahoo.co.jp/fc/sports/keisuke_honda/" onmousedown="this.href='http://dailynews.yahoo.co.jp/fc/sports/keisuke_honda/'">インザーギ氏なら本田主力外?</a><img src="http://i.yimg.jp/images/icon/photo.gif" alt="[photo]" border="0"><img src="http://i.yimg.jp/images/new2.gif" alt="[new]" border="0"></li>
+
+<li><a href="http://dailynews.yahoo.co.jp/fc/sports/tanaka_masahiro/" onmousedown="this.href='http://dailynews.yahoo.co.jp/fc/sports/tanaka_masahiro/'">マー君、リーグ防御率トップ</a><img src="http://i.yimg.jp/images/icon/photo.gif" alt="[photo]" border="0"></li>
+
+<li><a href="http://dailynews.yahoo.co.jp/fc/entertainment/romance/" onmousedown="this.href='http://dailynews.yahoo.co.jp/fc/entertainment/romance/'">吉高由里子 RAD野田と復縁?</a></li>
+
+</ul>
+<div class="ft clr"><p class="viewAll yjS"><a href="http://news.yahoo.co.jp/list/" onmousedown="this.href='http://news.yahoo.co.jp/list/'">もっと見る</a></p></div>
+</div>
+<!-- /最新の主なトピックス -->
+
+<!-- Information_waku -->
+<!-- Info -->
+
+<!-- /Info -->
+<!-- /Information_waku -->
+
+<div class="space10">
+    <a href="http://brazil2014.yahoo.co.jp/" onmousedown="this.href='http://rdsig.yahoo.co.jp/news/detail/pc/RV=1/RU=aHR0cDovL2JyYXppbDIwMTQueWFob28uY28uanAv'"><img src="http://i.yimg.jp/images/sports/worldcup/brazil/common/banner/bn_300_90.png" width="300" alt="ブラジルワールドカップ特集"></a>
+</div>
+
+<!--■■■■■■■SQM■■■■■■■■■-->
+<!-- SpaceID=0 robot -->
+	 
+<!--■■■■■■■SQM■■■■■■■■■-->
+
+<div id="adImgIM1" class="adImgIM">
+    <script type="text/javascript" language="JavaScript">
+        <!--
+        yads_ad_ds = '70858_14201';
+        
+        //-->
+    </script>
+    <script type="text/javascript" language="JavaScript" src="http://yads.yahoo.co.jp/js/yads.js"></script>
+</div>
+
+<!-- researchMod -->
+<div class="researchMod mdSubLined">
+    <div class="hdH2" id="researchMod"><h2>Yahoo!ニュース 意識調査</h2></div>
+    <div class="researchVote">
+        <h3><a href="http://polls.dailynews.yahoo.co.jp/other/11567/vote" onmousedown="this.href='http://polls.dailynews.yahoo.co.jp/other/11567/vote'">知らずにハラール肉を食べることに抵抗感じる？</a></h3>
+        <p class="detail">英国のレストランが、ハラールと呼ばれるイスラム教の流儀で処理した肉を客に知らせず提供し、<a href="http://bylines.news.yahoo.co.jp/bradymikako/20140523-00035595/" onmousedown="this.href='http://bylines.news.yahoo.co.jp/bradymikako/20140523-00035595/'" target="new">物議を醸しています</a>。あなたは、それとは知らずにハラール肉を食べることに抵抗を感じますか？</p>
+        
+        
+
+        <form action="http://polls.dailynews.yahoo.co.jp/other/11567/result" method="post" name="voteForm" class="voteForm">
+            <ul>
+                <li class="option">
+                    <input id="answer01" type="radio" name="answer" value="1" class="voteRadio"/>
+                    <label for="answer01"><span>抵抗を感じる</span></label>
+                </li><li class="option">
+                    <input id="answer02" type="radio" name="answer" value="2" class="voteRadio"/>
+                    <label for="answer02"><span>抵抗を感じない</span></label>
+                </li>
+            </ul>
+            <input type="hidden" name=".crumb" value="dD16SnFoVEImc2s9akk2WG9mSDZYdWFlVDZZNjZVcFhIYUtOOXdFLQ==">
+            <input type="hidden" name="mod" value="topicsRightMod">
+        <button type="submit" class="btnResearch btnAccept" name="voteButton" onmousedown="this.href='http://polls.dailynews.yahoo.co.jp/other/11567/result'"><em>投票する</em></button>
+        </form>
+
+        <p class="justResult"><a href="http://polls.dailynews.yahoo.co.jp/other/11567/result" onmousedown="this.href='http://polls.dailynews.yahoo.co.jp/other/11567/result'">投票せずに結果を見る</a></p>
+
+    </div><!-- /researchVote -->
+    <p class="moreRead"><a href="http://polls.dailynews.yahoo.co.jp" onmousedown="this.href='http://polls.dailynews.yahoo.co.jp'">意識調査トップへ</a></p>
+</div>
+<!-- /researchMod -->
+
+
+
+
+
+<div class="space10">
+    <a href="http://app-adforce.jp/ad/p/r?_site=8717&_article=52405&_link=1702861&_image=1702862">
+        <img width="300" height="90" alt="アプリ" src="http://i.yimg.jp/images/jpnews/cre/promo/tablet_app/images/bnr/300_90.png">
+    </a>
+</div> 
+
+
+<!--- ■■■タイアップ枠■■■ --->
+<!-- SpaceID=0 robot -->
+<!-- SpaceID=0 robot -->
+
+<!--- /■■■タイアップ枠■■■ --->
+
+<!-- AD RP -->
+<!-- SpaceID=0 robot -->
+
+<!-- /AD RP -->
+
+<div id="adRm">
+<!--■■■■■■■RM■■■■■■■■■-->
+<!-- SpaceID=0 robot -->
+
+<!--■■■■■■■/RM■■■■■■■■■-->
+</div>
+
+
+
+<script type="text/javascript"> 
+<!--
+var niceTime = (function() {
+    var ints = {
+        秒: 1,
+        分: 60,
+        時間: 3600,
+        日: 86400,
+        週間: 604800,
+        月: 2592000,
+        年: 31536000
+    };
+
+        return function(time) {
+
+        time = +new Date(time);
+
+        var gap = ((+new Date()) - time) / 1000,
+            amount, measure;
+
+        for (var i in ints) {
+            if (gap > ints[i]) { measure = i; }
+        }
+
+        amount = gap / ints[measure];
+        amount = gap > ints.day ? (Math.round(amount * 100) / 100) : Math.round(amount);
+        amount += ' ' + measure + (amount > 1 ? '' : '') + '前';
+
+        return amount;
+    };
+ 
+})();
+
+// -->
+</script>
+
+
+<!--================== /sub ==================-->
+</div>
+
+
+<!--================== /content ==================-->
+</div>
+
+
+<hr class="separator">
+
+<div style="margin-bottom:10px; overflow:hidden; clear:both;">
+<!-- AD ULT -->
+<!-- SpaceID=0 robot -->
+
+<!-- /AD ULT -->
+</div>
+
+<!-- big footer -->
+<div id="contentsFooter">
+    <div class="cfNavColumn clr">
+        <ul>
+            <li><a href="http://promo.news.yahoo.co.jp/app/yjnews/" onmousedown="this.href='http://promo.news.yahoo.co.jp/app/yjnews/'">
+                <div class="icon iconAPP"><span>アプリ</span></div>
+                <p><em>アプリ</em><span>データ先読みで、電車でもサクサク</span></p>
+            </a></li>
+            <li><a href="https://www.facebook.com/yjnews" onmousedown="this.href='https://www.facebook.com/yjnews'">
+                <div class="icon iconFB"><span>Facebookページ</span></div>
+                <p><em>Facebookページ</em><span>編集部による厳選記事を毎日配信</span></p>
+            </a></li>
+            <li><a href="https://twitter.com/YahooNewsTopics" onmousedown="this.href='https://twitter.com/YahooNewsTopics'">
+                <div class="icon iconTW"><span>Twitter</span></div>
+                <p><em>Twitter</em><span>リアルタイムでニュースを配信</span></p>
+            </a></li>
+            <li><a href="http://headlines.yahoo.co.jp/rss/list" onmousedown="this.href='http://headlines.yahoo.co.jp/rss/list'">
+                <div class="icon iconRSS"><span>RSS</span></div>
+                <p><em>RSS</em><span>購読したいニュースをお好みで</span></p>
+            </a></li>
+        </ul>
+    </div><!-- /.cfNavColumn -->
+    <div class="cfNavList">
+        <ul>
+            <li><a href="http://news.yahoo.co.jp/" onmousedown="this.href='http://news.yahoo.co.jp/'">トップ</a></li><!--
+         --><li><a href="http://headlines.yahoo.co.jp/hl?c=flash" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=flash'">速報</a></li><!--
+         --><li><a href="http://headlines.yahoo.co.jp/hl?ty=p" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?ty=p'">写真</a></li><!--
+         --><li><a href="http://headlines.yahoo.co.jp/videonews/" onmousedown="this.href='http://headlines.yahoo.co.jp/videonews/'">映像</a></li><!--
+         --><li><a href="http://zasshi.news.yahoo.co.jp/" onmousedown="this.href='http://zasshi.news.yahoo.co.jp/'">雑誌</a></li><!--
+         --><li><a href="http://bylines.news.yahoo.co.jp/" onmousedown="this.href='http://bylines.news.yahoo.co.jp/'">個人</a></li><!--
+         --><li><a href="http://buzz.news.yahoo.co.jp/" onmousedown="this.href='http://buzz.news.yahoo.co.jp/'">Buzz</a></li><!--
+         --><li><a href="http://polls.dailynews.yahoo.co.jp/" onmousedown="this.href='http://polls.dailynews.yahoo.co.jp/'">意識調査</a></li><!--
+         --><li class="last"><a href="http://headlines.yahoo.co.jp/accr" onmousedown="this.href='http://headlines.yahoo.co.jp/accr'">ランキング</a></li>
+        </ul>
+    </div><!-- /.cfNavList -->
+    <div class="cfSubNavList">
+        <dl class="subNavL">
+            <dt>ニュースカテゴリ：</dt><!--
+         --><dd><a href="http://headlines.yahoo.co.jp/hl?c=dom" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=dom'">国内</a></dd><!--
+         --><dd><a href="http://headlines.yahoo.co.jp/hl?c=c_int" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=c_int'">国際</a></dd><!--
+         --><dd><a href="http://headlines.yahoo.co.jp/hl?c=bus" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=bus'">経済</a></dd><!--
+         --><dd><a href="http://headlines.yahoo.co.jp/hl?c=c_ent" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=c_ent'">エンタメ</a></dd><!--
+         --><dd><a href="http://headlines.yahoo.co.jp/hl?c=c_spo" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=c_spo'">スポーツ</a></dd><!--
+         --><dd><a href="http://headlines.yahoo.co.jp/hl?c=c_sci" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=c_sci'">IT・科学</a></dd><!--
+         --><dd><a href="http://headlines.yahoo.co.jp/hl?c=c_life" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=c_life'">ライフ</a></dd><!--
+         --><dd><a href="http://headlines.yahoo.co.jp/hl?c=loc" onmousedown="this.href='http://headlines.yahoo.co.jp/hl?c=loc'">地域</a></dd>
+        </dl>
+        <dl class="subNavR">
+            <dt>その他：</dt><!--
+         --><dd><a href="http://headlines.yahoo.co.jp/docs/copyright.html" onmousedown="this.href='http://headlines.yahoo.co.jp/docs/copyright.html'">ニュース提供社</a></dd><!--
+         --><dd><a href="http://gsearch.news.yahoo.co.jp/gs?ty=g" onmousedown="this.href='http://gsearch.news.yahoo.co.jp/gs?ty=g'">新聞記事横断検索</a></dd>
+        </dl>
+    </div><!-- /.cfSubNavList -->
+</div><!--/#contentsFooter-->
+
+<div id="adS">
+<!-- AD S -->
+<!-- SpaceID=0 robot -->
+
+<!-- /AD S -->
+</div>
+
+
+<div id="footer" class="clr">
+
+<!-- IPHONE_CHVIEW_MODULE -->
+
+<p>
+
+<a href="http://docs.yahoo.co.jp/docs/info/terms/chapter1.html#cf2nd">プライバシーポリシー</a> - <a href="http://docs.yahoo.co.jp/docs/info/terms/">利用規約</a> - <a href="http://ms.yahoo.co.jp/bin/yadv-info/feedback/">ご意見・ご要望</a> - <a href="http://help.yahoo.co.jp/help/jp/news/">ヘルプ・お問い合わせ</a>
+</p>
+<!--================== footer ==================-->
+
+<address>Copyright (C) 2014 Yahoo Japan Corporation. All Rights Reserved.</address>
+<!--================== /footer ==================-->
+</div>
+
+<!-- GOSHINTAKU -->
+
+<script type="text/javascript" src="http://i.yimg.jp/images/commerce/js/libs/jquery/core/1.7.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="http://i.yimg.jp/i/topics/js/pc/globalnavi.js?date=20140522"></script>
+
+
+</div><!--/wrapper-->
+
+
+
+<!--■■■■■■■■■■IM■■■■■■■■■■-->
+<!--■■■■■■■■■■IM■■■■■■■■■■-->
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    function iniForm (formName) {       
+        $.each($(formName), function () {
+            var elm = $(this);
+            elm.find('input:radio').css({'left' : '-999em'});
+            elm.find('.option').addClass('unselected')
+            elm.find('.btnResearch').prop('disabled', true).addClass('disabled');
+            elm.find('.option').click(function() {
+                elm.find('.option').removeClass('selected').addClass('unselected');
+                $(this).removeClass('unselected').addClass('selected');
+            });
+            elm.find('input:radio[name="answer"]').bind('change', function() {
+                if(elm.find('input:radio[name="answer"]:checked').length > 0) {     
+                   elm.find('.btnResearch').prop('disabled', false).removeClass('disabled');
+                }
+            });
+        });
+    }  
+    iniForm(".voteForm");
+});
+</script>
+
+
+</body>
+</html><!-- web202.topics.kks.yahoo.co.jp uncompressed/chunked Thu May 29 11:58:59 JST 2014 -->
