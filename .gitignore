@@ -1,6 +1,7 @@
 *.swp
 *.fas
 *.lib
+*.exe
 
 */tmp
 key-words.csv
