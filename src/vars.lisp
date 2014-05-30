@@ -1,6 +1,5 @@
 (in-package n-gram)
 
-
 (defvar *group-dir* "../group")
 
 ;;;tags list

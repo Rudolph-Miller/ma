@@ -2,23 +2,32 @@
   (:use  :common-lisp)
   (:export main))
 
-(load "util")
 (load "vars")
+(load "util")
 (in-package n-gram)
+
+(declaim (inline get-str-combi)
+		 (inline slice)
+		 (inline scoring-url))
 
 ;;;destructive
 ;;;just count word
 ;; or you can set it just list and use find instead of gethash
 (defun count-word (word hash)
-  (let ((score (gethash word hash)))
+  (declare (string word)
+		   (hash-table hash)
+		   (optimize (speed 3) (safety 0) (debug 0) (space 0)))
 	(if (not (gate word)) ;;restriction of word
+	  (let ((score (gethash word hash)))
+		(declare ((or single-float boolean) score))
 	  (if score 
-		(setf (gethash word hash) (+ 1 score))
-		(setf (gethash word hash) 1)))))
+		(setf (gethash word hash) (the single-float (+ 1.0 score)))
+		(setf (gethash word hash) (the single-float 1.0))))))
 
 
 ;;;restriction of word
 (defun gate (word)
+  (declare (string word))
   (or (find #\、 word) (find #\。 word) ;、。をはじく
 	  (find #\年 word) (find #\月 word)
 	  (find #\日 word)))
@@ -29,6 +38,10 @@
 ;;;main function
 ;;;n-gram serch 
 (defun n-gram (n str hash)
+  (declare (fixnum n)
+		   (string str)
+		   (hash-table hash)
+		   (optimize (speed 3) (safety 0)))
   (loop
 	for word = (n-slice n str)
 	while word
@@ -37,9 +50,10 @@
 
 ;;;do n-gram from n to m
 ;;;returns hash-table
-(defun n-to-m-gram (n m str &optional (hash nil))
-  (if (null hash)
-	(setf hash (make-hash-table :test #'equal)))
+(defun n-to-m-gram (n m str &optional (hash (make-hash-table :test #'equal)))
+  (declare (fixnum n m)
+		   (string str)
+		   (hash-table hash))
   (loop
 	for i from n to m
 	do (n-gram i str hash))
@@ -49,14 +63,19 @@
 ;;;word (let n (length word))->scoring word by 1 to (1- n) gram
 ;;;requires word hash -> score(integer)
 (defun scoring (word hash &key (length nil))
-  (let ((sum 0)
-		(len (or length 1))
+  (declare (string word)
+		   (hash-table hash))
+  (let ((sum 0.0)
+		(len (if length
+			   (/ length 1.0)
+			   1.0))
 		(val (gethash word hash)))
+	(declare (single-float sum len)
+			 (number val))
 	(loop
 	  for item in (the list (get-str-combi word))
 	  for score = (gethash item hash)
-	  do (if score
-		   (setf sum (+ sum score))))
+		   when score do (setf sum (the float (+ sum score))))
 	(/ (* (gethash word hash) sum) (/ length (length word)))))
 
 ;;;scoring hash-table
@@ -66,9 +85,9 @@
 		(hash hash-t))
 	(maphash #'(lambda (key val)
 				 (let ((score (scoring key hash :length length)))
-				   (if (not (eql 0 score))
+				   (if (not (eql 0.0 score))
 					 (setf (gethash key result) score))))
-			 (cut-off 100 (brush-up hash) :items t))
+			 (brush-up hash))
 	result))
 
 ;;;input html -> output scoring hash-table
@@ -80,7 +99,7 @@
 
 (defun scoring-str (str)
   (let ((len (length str)))
-	(scoring-hash (n-to-m-gram 1 12 (remove-not-jp str)) :length len)))
+	(scoring-hash (n-to-m-gram 1 12 str) :length len)))
 
 ;;;brushing up key words
 ;;;remove key which includes 2 types
@@ -88,20 +107,31 @@
 ;;;Hiragana 12353-12447
 ;;;Katakana 12449-12539
 (defun brush-up (hash)
-  (let ((keys nil))
+  (declare (hash-table hash)
+		   (optimize (speed 3)))
+  (let ((keys nil)
+		(cnt 0)
+		(result (make-hash-table :test #'equal)))
+	(declare (list keys)
+			 (fixnum cnt)
+			 (hash-table result))
 	(maphash #'(lambda (key val)
-				 (let ((typ (char-type (char key 0)))
-					   (ct nil))
+				 (if (< cnt 100)
+				 (let ((ct (char-type (char key 0)))
+					   (typ)
+					   (lst (str->char-list key)))
+				   (declare (symbol typ ct)
+							(list lst))
 				 (loop
-				   for i in (str->list key)
-				   do (let ((ct (char-type (char i 0))))
-						(if (or
-							  (and (eql ct 'Hiragana) (not (eql ct typ)))
-							  (and (eql typ 'Hiragana) (not (eql ct typ))))
-						  (remhash key hash))
-						(setf typ ct)))))
-			 hash)
-	hash))
+				   for i in lst
+				   do (setf typ ct)
+				   do (setf ct (char-type i))
+				   when (or (eql ct typ)
+								(not (or (eql ct 'Hiragana) (eql typ 'Hiragana))))
+				   when (eql i (car (last lst))) do (setf (gethash key result) val))
+				 (incf cnt))))
+			 (sorted-hash hash))
+	result))
 
 ;;;save file from url to unique id by wget
 ;;;then load it by txt
@@ -125,9 +155,32 @@
 																	  (sub :euc-jp))))))
 	result))
 
+;;;wget and remove no JP in one function
+(defun wget-and-remove  (url)
+  (let ((file-name (concatenate 'string (namestring (car (directory "../tmp"))) (gen-unique-id)))
+		(result nil))
+	(declare (string file-name)
+			 (list result))
+	(labels ((sub (charset)
+				  (with-open-file (f file-name :direction :input :external-format charset)
+					(loop
+					  for chr = (read-char f nil)
+					  while chr
+					  when (> (char-code chr) 1000) do (push chr result)))))
+	  (sb-ext:run-program "/sw/bin/wget" (list url "-O" file-name) :output nil)
+	  (handler-case
+		(sub :utf-8)
+		(sb-int:stream-decoding-error (c) 
+									  (handler-case
+										(sub :cp932)
+										(sb-int:stream-decoding-error (c)
+																	  (sub :euc-jp))))))
+	(coerce (nreverse result) 'string)))
+
+
 ;;;scoring from url
 (defun scoring-url (url)
-  (scoring-str (wget url)))
+  (scoring-str (wget-and-remove url)))
 
 ;;;save hash -> file
 ;;;format ~key,~val~%
@@ -194,17 +247,18 @@
   (let* ((key-lst (let ((h (load-file file)))
 					(if (not (null h))
 					  h
-					  (make-hash-tabl :test #'equal))));hash
+					  (make-hash-table :test #'equal))));hash
 		 (intersect (half-value (intersection-of-hash hash key-lst)))
 		 ;;intersection-of-hash returns hash table having sum of values
 		 (dif1 (remove-intersection hash key-lst))
 		 (dif2 (remove-intersection key-lst hash))
 		 (merg (merge-hash (merge-hash intersect dif1) dif2)))
+	(declare (hash-table key-lst intersect dif1 dif2 merg))
 	(print-sorted-hash hash)
-	(print intersect)
-	(print dif1)
-	(print dif2)
-	(print merg)
+;	(print intersect)
+;	(print dif1)
+;	(print dif2)
+;	(print merg)
 	(save-file (cut-save-hash merg)
 			   file)))
 
@@ -220,6 +274,8 @@
   (let* ((score (scoring-url url))
 		 (tag-list (get-tags score))
 		 (tag (if (null tag) (car (car tag-list)) tag)))
+	(declare (hash-table score)
+			 (list tag-list))
 	(update-key-list score (load-tag-key-file tag))
 	(let ((result nil))
 	(loop
@@ -228,5 +284,6 @@
 	  do (setf result (cons tag result)))
 	(nreverse result))))
 
-(print (load-tag-hash *tags* *group-dir*))
-;(print (main "http://clacklisp.org/tutorial/ja/04-the-environment.html"))
+(time (main "http://clacklisp.org/tutorial/ja/04-the-environment.html"))
+;(time (remove-not-jp (input "~/lab/test/test1.html")))
+;(time (input-jp "~/lab/test/test1.html"))
