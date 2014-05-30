@@ -1,0 +1,254 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<meta name="Author" content="Takafumi Shido">
+<meta name="keywords" content="LISP macro">
+<meta name="description" content="テンプレートの使い方と展開形の確認">
+<meta http-equiv="CONTENT-SCRIPT-TYPE"  content="text/css;">
+<meta name="robots" content="all">
+<link rel="stylesheet" href="../shido.css" text="text/css">
+<link rel="icon" href="../images/shido.png" type="image/png">
+<title> テンプレートの使い方と展開形の確認 </title>
+</head>
+<body>
+<a name="top"></a>
+<p class="header">
+<table class='guide'><tr>
+  <td><a rel='home' href='/index.php'>
+  <img src='../images/shido_small.png' class='arrow' border=0>HOME</a></td>
+<td><a rel=up href="idx_cl.html"><img src='../images/up_arrow.gif' class='arrow' border=0>Common Lisp</a></td>
+<td><a rel=next href="macro2.html"><img src='../images/right_arrow.gif' class='arrow' border=0>2. 多重評価と変数捕捉</a></td>
+<td><a href='../gb/write_guestbook.php?ref=lisp/macro1.html&t=%A5%C6%A5%F3%A5%D7%A5%EC%A1%BC%A5%C8%A4%CE%BB%C8%A4%A4%CA%FD%A4%C8%C5%B8%B3%AB%B7%C1%A4%CE%B3%CE%C7%A7' target='new'><img src='../images/pencil.gif' class='arrow' border=0>書き込む</a></td>
+</tr></table></p>
+
+<h1>1. テンプレートの使い方と展開形の確認</h1>
+<hr>
+<h2>1.1. はじめに </h2>
+LISP のプログラムは LISP の主要なデータ型であるリストで表現されます。
+すなわち、プログラムとデータの区別がほとんど無い、というのが LISP の特徴の
+1つです。このことから、
+"プログラムを書くプログラム" を書くことが出来ます。この機能をマクロと言います。
+ C などの言語にもマクロはありますが、 LISP のマクロは他の言語のものと比べて
+著しく強力です。<p>
+
+LISP には構文がほとんど無く、一般に "構文" と呼ばれている do, while などは実はマクロです。
+マクロは "構文定義 + α" の働きがあります。<p>
+
+マクロは 2段階にわたって評価されます。最初の段階は、マクロ定義に従ってマクロを展開することです。
+2番目の段階は展開された式を評価し値や副作用を得ることです。
+マクロがトップレベルから呼ばれるとこの2つの操作が続けて行われます。
+一方、ソースコード内に書かれたマクロは、ソースをコンパイルするとき、
+ソースがコンパイラーに渡る前に、マクロの展開形がそのマクロか呼ばれた場所に貼り付けられます。
+これによって、関数では表せない操作や、コンパイル時に処理したい操作をマクロとして定義することにより
+ソースコードをすっきりと書くことが出来ます。
+つまり、<b>マクロは LISP をコンパイル言語として使用するときに威力を発揮します</b>。<p>
+
+マクロは非常に強力で便利な機能ですが、一般の LISP の教科書ではあまり詳しく書かれていません。
+これらの教科書を読んで使えるマクロを書くことは不可能です。使えるマクロを書くためには
+<a href="http://www.paulgraham.com/onlisp.html">On Lisp</a> を読む必要があります。また、
+現在進行中ながら<a href="http://user.ecc.u-tokyo.ac.jp/~g340299/#lisp_onlisp">日本語版</a> もあります。
+両方ともフリーでダウンロードできます。筆者も大変勉強になりました。この文書でも必要に迫られて
+On Lisp から借用したマクロを多数紹介しています。On Lisp から引用したマクロには
+<sup class="redtext">onlisp</sup> をつけて出典を明らかにしています。<p>
+
+ここでは筆者が On Lisp から学んだことをなるべく筆者が書いたマクロを実例にとりながら
+解説していこうと思ってます。この講座の目的は小、中規模の実用的なマクロの書き方を分かりやすく
+解説することです。
+
+<h2>1.2.  簡単なマクロの書き方 </h2>
+ここでは xyzzy を使ってマクロを書き、マクロ展開形を確かめるという前提で
+話を進めます。xyzzy は一応エディタですが、ほぼ、Common Lisp に準拠しているので、
+xyzzy で書いたマクロは少数の例外を除き clisp でも同じ動作をします。
+xyzzy でマクロや関数を試作してチェックするには xyzzy を立ち上げたときにまず現れる 
+*scratch* バッファを使います。*scratch* 上に S 式を書き、S 式の最後の部分にカーソルをあわせて
+Ctrl-j を押すとその S 式の評価
+が行われます。<p>
+<pre class="oset">
+(+ 1 1) <span class="bluetext">[ctrl-j]</span>
+2
+</pre>
+
+マクロは "defmacro" を使って定義します。
+変数を <span class="msf">nil</span> にセットするマクロ
+ <span class="msf">nil!</span><sup class="redtext">onlisp</sup> は以下の様に定義されます。
+<pre class="oset">
+(defmacro nil! (var)
+  (list 'setf var nil))                 <span class="comtcolor">;(1)</span>
+</pre>
+ソースコード上に
+<span class="msf">(nil! a)</span>
+と書いてある部分はコンパイル時に
+<span class="msf">(setf a nil)</span>
+に展開され、コンパイラーにわたります。
+
+<h2>1.2.  テンプレート </h2>
+上の例では簡単なので普通に list を使っても大して複雑ではありませんが、
+少し複雑なマクロを書くときに list を使っていると破綻します。複雑なマクロを
+書くためにテンプレートが用意されています。テンプレートはバッククォート(`)、コンマ(,)、コンマ/アト(,@)
+からなります。バッククォートはクォートと同じように内部の式を評価しない様にします。
+ただし、コンマ(,)、コンマ/アト(,@)のついている式は評価します。テンプレートを使うと
+ <span class="msf">nil!</span> は
+次の様にかけます。
+<pre class="oset">
+(defmacro nil! (var)
+  `(setf ,var nil))                       <span class="comtcolor">;(2)</span>
+</pre>
+バッククォート(`)は括弧が入れ子になっていても全体にわたって作用します。
+テンプレートを使うとソースコードがマクロ展開形にほとんど等しくなるのでソースの
+読み書きがやさしくなります。<p>
+
+コンマ/アト(,@)の働きはコンマ(,)と似ていますが、一番外側の括弧をはずして展開されます。
+コンマ/アト(,@) を使う簡単な例は省略形の定義です。例えば、
+multiple-value-bind の省略形 mvbind<sup class="redtext">onlisp</sup> を定義します。
+<pre class="oset">
+(defmacro mvbind (&rest argvs)
+  `(multiple-value-bind ,@argvs))
+</pre>
+簡単に省略形が定義できました。
+defmacro でも defun と同様に &rest, &body, &optional パラメータが使えます。
+&body は &rest と同じ意味です<sup>注</sup>。<p>
+
+また、コンマ、コンマ/アト
+は、シンボルではなく、S 式に付けることに注意してください。例えば平均値を求める
+マクロ ave<sup class="redtext">onlisp</sup> では
+コンマは (length argvs) についています。これはコンパイル時に (length argvs) を評価してその値を
+使うことを意味しています。つまり、実行時の計算が減り、プログラムが高速に実行できるようになります。
+
+<pre class="oset">
+(defmacro ave (&rest argvs)
+  `(/ (+ ,@argvs) ,(length argvs)))       <span class="comtcolor">;(3)</span>
+</pre>
+
+<span class="comt">
+注： &body には整形表示効果があります。つまり、clisp では pprint によって、自動的に
+改行され、字下げされます。pprint の無い xyzzy では両者はまったく同じです。
+</span>
+
+<h2>1.3. 展開形の確認 </h2>
+マクロが正しく書けているか調べるためにその展開形を確認する必要があります。
+展開形を確認するには macroexpand-1 を使います。clisp では pprint を使うことによって
+展開形は読みやすいように改行され、字下げされますが、xyzzy には残念ながら pprint がありません。
+そこで pprint と似た動作をするマクロ pme (Print Macro Expansion) を作ってみました。
+<a href="add2li.l.txt">ここ</a> にあるソースを siteinit.l に貼り付けてバイトコンパイルして、
+ダンプファイルを再作成してください。siteinit.l についての詳しいことは
+<a href="http://web.sfc.keio.ac.jp/~t01089ti/xyzzy-02.html">xyzzy 日記 (2) 置き場所を決める</a>
+を見てください。<p>
+
+*scratch* 上で ave を定義して、展開形を確認してみましょう。
+まず、(3) のコードを *scratch* にコピーして、最後の閉じ括弧にカーソルをあわせて
+Ctrl-j を押します。すると 'ave' というエコーがあり、マクロ ave が定義されました。
+それでは展開形を確かめて見ましょう。*scratch* に
+<pre class="oset">
+(pme (ave a b c d))
+</pre>
+と書き、Ctrl-j を押すと、
+<pre class="oset">
+(/ (+ a b c d)
+    4)
+</pre>
+と表示されます。(length argvs) が '4' に置き換わったのが分かります。macroexpand-1 をそのまま使うと
+改行と字下げがされないので展開形が長くなるマクロを読むときは不便です。
+<pre class="oset">
+(macroexpand-1 '(ave a b c d)) <span class="bluetext">[ctrl-j]</span>
+(/ (+ a b c d) 4)
+</pre>
+
+<h2>1.4. マップ関数 (mapcar, mapcan, mapc) とテンプレート</h2>
+コンマ(,)、コンマ/アト(,@)はマップ関数と組み合わせると威力を発揮します。
+mapcar は関数とリストを引数にとり、関数によって加工されたリストを返します。
+引数として複数のリストを取ることが出来ます。マクロの作成には主に mapcar を使います。
+mapcan は平坦なリストを返しますが、破壊的な操作ですので使用には注意が必要です
+（ちなみに、xyzzy でも clisp でも引数は破壊されません）。mapc は加工されたリストを返さないので
+（最後の引数をそのまま返す）、リストをマクロ作成にはあまり利用されません。
+<pre class="oset">
+(mapcar #'(lambda (x y) (+ x y)) '(1 2 3 4) '(10 20 30 40)) <span class="bluetext">[ctrl-j]</span>
+(11 22 33 44)
+
+(mapcar #'(lambda (x y) `(,x ,y)) '(foo hoge bar baz) '(red white blue green)) <span class="bluetext">[ctrl-j]</span>
+((foo red) (hoge white) (bar blue) (baz green))
+
+(mapcan  #'(lambda (x y) `(,x ,y)) '(foo hoge bar baz) '(red white blue green)) <span class="bluetext">[ctrl-j]</span>
+(foo red hoge white bar blue baz green)
+</pre>
+それでは、マップ関数を使って <span class="msf">nil!</span> を改良してみましょう。setf は複数の引数が取れるので、
+<span class="msf">nil!</span> も複数の引数が取れるようにしましょう。
+<pre class="oset">
+(defmacro nil! (&rest argvs)
+  `(setf ,@(mapcan #'(lambda (x) (list x nil)) argvs))) <span class="bluetext">[ctrl-j]</span>
+nil!
+
+(pme (nil! a b c)) <span class="bluetext">[ctrl-j]</span>
+(setf a nil b nil c nil)
+
+(nil! a b c) <span class="bluetext">[ctrl-j]</span>
+nil
+a <span class="bluetext">[ctrl-j]</span>
+nil
+b <span class="bluetext">[ctrl-j]</span>
+nil
+c <span class="bluetext">[ctrl-j]</span>
+nil
+</pre>
+最後に、mapcar を使ったマクロ with-gensyms<sup class="redtext">onlisp</sup> と mvset を紹介します。<p>
+
+<a name="with-gensyms">with-gensyms</a> は多量の gensym を作成するのに利用します。次回に述べるように
+変数の捕捉を避けるため、展開形内部に現れる変数は他のシンボルと絶対に衝突しない gensym 
+で生成されたシンボルを使う必要があります。一方、mvset は多値を返す関数の返り値をセットするのに使います。<p>
+
+<pre class="oset">
+<span class="comtcolor">;;; create gensyms</span>
+(defmacro with-gensyms (syms &body body)
+  `(let ,(mapcar #'(lambda (s)
+                     `(,s (gensym)))
+                 syms)
+     ,@body))
+
+<span class="comtcolor">;;; multiple-value set</span>
+(defmacro mvset(parms func)
+  (let ((genparms (mapcar #'(lambda(x) (gensym (symbol-name x))) parms)))
+    `(multiple-value-bind ,genparms ,func
+       (setf ,@(mapcan #'(lambda(x y)  (list x y)) 
+		       parms genparms)))))
+
+<span class="comtcolor">;;; macro expansions</span>
+(pme (with-gensyms (a b c d) `(let ((,a 1) (,b 2) (,c 3) (,d 4)) (+ ,a ,b ,c ,d)))) <span class="bluetext">[ctrl-j]</span>
+(let ((a (gensym))
+      (b (gensym))
+      (c (gensym))
+      (d (gensym)))
+   (list 'let (list (cons a '(1))
+                    (cons b '(2))
+                    (cons c '(3))
+                    (cons d '(4)))
+	  (list '+ a b c d)))
+
+(pme (mvset (a b) (floor 10 3)))<span class="bluetext">[ctrl-j]</span>
+(multiple-value-bind (#:a3 #:b4)
+     (floor 10 3)
+   (setf a #:a3 b #:b4))
+
+</pre>
+
+
+<h2>1.5. 終わりに</h2>
+今回はテンプレートの使い方と展開形の確認について解説しました。
+次回は実用的なマクロで問題になる変数の捕捉と多重評価
+について解説します。<p>
+
+不明な点、不正確な点などがありましたら紫藤まで
+お知らせいただけたら幸いです。(shido_takafumi@ybb.ne.jp)
+<hr>
+<p class="footer">
+<table class='guide'><tr>
+  <td><a rel='home' href='/index.php'>
+  <img src='../images/shido_small.png' class='arrow' border=0>HOME</a></td>
+<td><a rel=up href="idx_cl.html"><img src='../images/up_arrow.gif' class='arrow' border=0>Common Lisp</a></td>
+<td><a rel=next href="macro2.html"><img src='../images/right_arrow.gif' class='arrow' border=0>2. 多重評価と変数捕捉</a></td>
+<td><a href='../gb/write_guestbook.php?ref=lisp/macro1.html&t=%A5%C6%A5%F3%A5%D7%A5%EC%A1%BC%A5%C8%A4%CE%BB%C8%A4%A4%CA%FD%A4%C8%C5%B8%B3%AB%B7%C1%A4%CE%B3%CE%C7%A7' target='new'><img src='../images/pencil.gif' class='arrow' border=0>書き込む</a></td>
+</tr></table></p>
+</body>
+</html>
+
+

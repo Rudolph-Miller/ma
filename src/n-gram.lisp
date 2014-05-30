@@ -1,6 +1,7 @@
 (defpackage n-gram
   (:use  :common-lisp)
-  (:export main))
+  (:export main
+		   learn))
 
 (load "vars")
 (load "util")
@@ -288,11 +289,12 @@
 	(declare (string url)
 			 (hash-table score)
 			 (list tag-list result))
+	(print tag-list)
 	(loop
 	  for n from 1.0 to 3.0
 	  for tag in (mapcar #'car tag-list)
 	  do (update-key-list (divided-hash score n) (load-tag-key-file tag))
-	  do (format t "~a: ~a~%" (round n) tag)
+	  do (format t "~%~a: ~a~%" (round n) tag)
 	  do (setf result (cons tag result)))
 	(the list (nreverse result))))
 
@@ -305,4 +307,3 @@
 			 (list tag-list))
 	(update-key-list score (load-tag-key-file tag))
 	tag-list))
-		 
