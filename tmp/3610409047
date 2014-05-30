@@ -1,0 +1,896 @@
+
+<!DOCTYPE html>
+<html xmlns:og="http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8">
+    <title>CommonLisp - &#39;`&#39;と&#39;,&#39; - Qiita</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1"/>
+    <meta name="description" content="
+        
+        lisp advent calendar
+      四日目の記事らしいです。
+他のカレンダー参加者のレベルが高すぎて困りました。
+以下について、利用の方言はCommon Lispです。
+処理系は多分cltl1以降に準拠なら大丈夫だと思います。
+
+        
+        Common Lispの難読記号
+      普段lispを書いているとlispは使う記号の種類が他の言語よりも少なくルールも少なく、演算子の結合則とか、使..."/>
+    
+
+    <meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@Qiita">
+
+    
+    <meta property="og:title" content="CommonLisp - &#39;`&#39;と&#39;,&#39; - Qiita" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://qiita.com/snmsts@github/items/ef625bd6be7e685843ca" />
+<meta property="og:image" content="https://secure.gravatar.com/avatar/c39d0d41e6aa44e07c448473026f41f6?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" />
+<meta property="og:description" content="#lisp advent calendar
+四日目の記事らしいです。
+他のカレンダー参加者のレベルが高すぎて困りました。
+以下について、利用の方言はCommon Lispです。
+処理系は多分cltl1以降に準拠なら大丈夫だと思います。..." />
+<meta property="og:site_name" content="Qiita" />
+<meta property="fb:admins" content="564524038" />
+
+
+    <link rel="icon" type="image/png" href="/icons/favicons/public/production.png?v=4">
+    <link rel="shortcut icon" type="image/x-icon" href="/icons/favicons/public/production.ico?v=4">
+    <link rel="apple-touch-icon" href="/icons/favicons/public/apple-touch-icon.png">
+
+    <link href="/assets/public-application-df5485504b5193351f135d181fb40378.css" media="all" rel="stylesheet" />
+    <link href="/assets/responsive-layout-5e10643c4d1f682d55a1e9441ec5ec01.css" media="all" rel="stylesheet" />
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="xuRXt5uo0uHMPEvM6zWrmPqEKFiHomAIQhcJjd8w5ho=" name="csrf-token" />
+    
+  </head>
+  <body id="" class="without-js">
+      <!-- Google Tag Manager -->
+      <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-TBQWPN"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      </noscript>
+      <!-- End Google Tag Manager -->
+
+    <script>
+  document.body.className = document.body.className.replace('without-js', '') + ' with-js';
+
+  // Application Namespace
+  var Qiita = {
+    controller_path: 'items',
+    controller: 'items',
+    action: 'show',
+    env: 'production',
+
+    // Fake jQuery
+    // Emulate $.ready(fn) in views before load jQuery.
+    _q: [],
+    // The ready function that collect calls and put it in the queue
+    ready: function (func) {
+      if (typeof func==='function') Qiita._q.push(func);
+      // return jQl in order to support jQuery(document).ready()
+      return Qiita
+    },
+    // Run all queues inline $.ready() calls in the right order and purge the
+    // queue
+    unqueue: function () {
+      for (var i = 0, l = Qiita._q.length; i < l; i++) Qiita._q[i](); 
+      Qiita._q = [];
+    }
+  };
+  var $ = Qiita.ready, jQuery = $;
+</script>
+
+    
+
+        <header class="js-globalNavigation globalNavigation navbar navbar-static-top">
+  <div class="globalNavigation_inner">
+    <div class="container position-relative">
+      <h1 class="globalNavigation_siteid">
+        <a class="globalNavigation_brand" href="/">Qiita - プログラマの技術情報共有サービス</a>
+      </h1>
+      <div class="hidden-phone">
+        <form accept-charset="UTF-8" action="/search" class="js-globalSearchForm globalSearchForm" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+          <input id="sort" name="sort" type="hidden" />
+          <div class="globalSearchForm_queryWrapper">
+            <input class="globalSearchForm_query js-globalSearchForm_query" id="q" name="q" placeholder="投稿/ユーザー検索" type="text" />
+            <div class="js-globalSearchForm_stockedSearch globalSearchForm_stockedSearch">
+              <label class="checkbox">
+                <input class="js-globalSearchForm_stockedSearchOption" id="stocked" name="stocked" type="checkbox" value="1" />
+                <i class="fa fa-stock unstock"></i>
+                ストックした投稿を検索
+              </label>
+            </div>
+          </div>
+          <input class="js-globalSearchForm_submitBtn globalSearchForm_submitBtn" name="commit" type="submit" value="検索" />
+</form>            <div class="visible-desktop">
+              <div class="js-globalHeadlineNews globalHeadlineNews">
+                <span class="globalHeadlineNews_newsContent">
+                  Qiita - プログラマの技術情報共有サービス
+                </span>
+              </div>
+            </div>
+      </div>
+      <ul class="globalNavigationContents">
+          <li class="signup">
+            <a class="btn" data-event_name="Signup Button Click" data-label="SignupButtonAtNavbar" href="/signup?redirect_to=%2Fsnmsts%40github%2Fitems%2Fef625bd6be7e685843ca" track="click">ユーザ登録</a>
+          </li>
+          <li class="hoverable">
+            <a data-label="LoginButtonAtNavbar" href="/login?redirect_to=%2Fsnmsts%40github%2Fitems%2Fef625bd6be7e685843ca" track="click">ログイン</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+  <div id="main">
+
+
+<!-- Breadcrumb for search engines -->
+<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+  <link itemprop="url" href="/tags/commonlisp" />
+  <meta itemprop="title" content="CommonLisp" />
+</span>
+
+<article id="item-page" itemscope itemtype="http://schema.org/Article">
+  <header class="article-header">
+    <div class="container">
+
+      <div class="row">
+        <a alt="snmsts@github" class="span1 hidden-phone" href="/snmsts@github"><img alt="Assets.github.com%2fimages%2fgravatars%2fgravatar user 420" class="author-icon" src="https://secure.gravatar.com/avatar/c39d0d41e6aa44e07c448473026f41f6?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" /></a>
+        <div class="span8">
+          <h1 class="item-title">
+            <span itemprop="name">&#39;`&#39;と&#39;,&#39;</span>
+          </h1>
+          <ul class="tag-list unstyled">
+              <li>
+                <div class="tooltip-container">
+                  <a href="/tags/commonlisp">
+                    <img alt="CommonLisp" src="https://s3-ap-northeast-1.amazonaws.com/qiita-tag-image/4976b20bd891ba719a38b5d2fca75ad641e29e78/large.jpg?1364838934" />
+                    CommonLisp(26)
+</a>                </div>
+              </li>
+          </ul>
+          <ul class="unstyled item-status">
+            <li>
+              <img alt="Assets.github.com%2fimages%2fgravatars%2fgravatar user 420" class="visible-phone author-icon small" src="https://secure.gravatar.com/avatar/c39d0d41e6aa44e07c448473026f41f6?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" />
+              <a href="/snmsts@github">snmsts@github</a>が<time datetime="2013-12-04T09:32:39+09:00" itemprop="datePublished">2013/12/04</time>に投稿
+                (<time datetime="2013-12-04T16:18:25+09:00" itemprop="dateModified">2013/12/04</time>に編集)
+            </li>
+              <li>
+                <a href="/snmsts@github/items/ef625bd6be7e685843ca/revisions">編集履歴(3)</a>
+              </li>
+              <li class="hidden-phone">
+                <a href="/drafts/ef625bd6be7e685843ca/edit">編集リクエストを作成する</a>
+              </li>
+          </ul>
+        </div>
+        <section class="span3">
+          <div>
+            <ul id="item-stats-list" class="unstyled">
+                <li>
+                  <div class="count stock" id="stock-user-count">
+                    <i class="fa fa-stock"></i>6
+                  </div>
+                  <div class="text">ストック</div>
+                </li>
+              <li>
+                <div class="count" itemprop="interactionCount"
+                     content="2 UserComments">
+                  <i class="fa fa-comment-o"></i>2
+                </div>
+                <div class="text">コメント</div>
+              </li>
+            </ul>
+          </div>
+              <a class="btn btn-primary stock-button btn-block js-stock-btn" data-position="top" href="javascript:void(0)" title="Stock">
+                この投稿をストックする
+</a>          <div class="row">
+            <div class="span3">
+              <ul class="unstyled user-icon-list">
+                    <li class="">
+                      <a href="/jjzak" title="jjzak"><img alt="jjzak" src="https://si0.twimg.com/sticky/default_profile_images/default_profile_6_normal.png" /></a>
+                    </li>
+                    <li class="">
+                      <a href="/cubeon@github" title="cubeon@github"><img alt="cubeon@github" src="https://secure.gravatar.com/avatar/6b6ca5bb92fd90f2d80234c4a7357614?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" /></a>
+                    </li>
+                    <li class="">
+                      <a href="/hatsugai" title="hatsugai"><img alt="hatsugai" src="https://pbs.twimg.com/profile_images/378800000329570030/864df391dea094b0d655be707ef8b9eb_normal.png" /></a>
+                    </li>
+                    <li class="">
+                      <a href="/nfunato" title="nfunato"><img alt="nfunato" src="https://si0.twimg.com/profile_images/410276341/nfunato_normal.jpg" /></a>
+                    </li>
+                    <li class="">
+                      <a href="/esehara@github" title="esehara@github"><img alt="esehara@github" src="https://secure.gravatar.com/avatar/693bc79cb6a72163ecdd9012d2631af0?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" /></a>
+                    </li>
+                    <li class="">
+                      <a href="/tanaka51" title="tanaka51"><img alt="tanaka51" src="https://secure.gravatar.com/avatar/7d646b7e8c85385866776829bc37a55d?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" /></a>
+                    </li>
+
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row scroll-chaser-wrapper">
+      <div class="span9">
+        <div class="alert alert-info advent-calendar-annotation">
+  <p class="text-center">
+    この投稿は<a href="/advent-calendar/2013/lisp">Lisp Advent Calendar 2013</a>の4日目の記事です。
+  </p>
+
+  <div class="clearfix">
+      <div class="pull-left">
+          <span class="day"><span class="num">3</span>日目:</span>
+            <a href="/advent-calendar/2013/lisp#day-3">前の記事</a>
+      </div>
+
+      <div class="pull-right">
+          <span class="day"><span class="num">5</span>日目:</span>
+            <a href="/advent-calendar/2013/lisp#day-5">次の記事</a>
+      </div>
+  </div>
+</div>
+
+        <section class="markdown-content heading-anchor bordered js-tocAnchor">
+          <section id="item-ef625bd6be7e685843ca" class="position-relative" itemprop="articleBody">
+            <h1>
+        <span id="1-1" class="fragment"></span>
+        <a href="#1-1"><i class="icon-link"></i></a>lisp advent calendar
+      </h1><p>四日目の記事らしいです。<br>
+他のカレンダー参加者のレベルが高すぎて困りました。<br>
+以下について、利用の方言はCommon Lispです。<br>
+処理系は多分cltl1以降に準拠なら大丈夫だと思います。</p>
+<h1>
+        <span id="1-2" class="fragment"></span>
+        <a href="#1-2"><i class="icon-link"></i></a>Common Lispの難読記号
+      </h1><p>普段lispを書いているとlispは使う記号の種類が他の言語よりも少なくルールも少なく、演算子の結合則とか、使わなければいけない括弧のバリエーションも少なくて、なんてとっつきの良い言語なのだろうかと思っています。<br>
+意味不明な&#39;$&#39;とかどう結合するのか良くわからない&#39;.&#39;とかセパレータとしてはスペースがあれば事足りるはずなのに一々書かなくてはならない&#39;,&#39;とかと縁なくて良かったなーなどと思って日々の生活はしているのですが、マクロを書く時の簡易の為の&#39;`&#39;と&#39;,&#39;が、マクロを書く時に考える事の特殊性とあいまって、他所からみて慣れないと混乱する記号の利用なのかな…と思ったので難読っぽいマクロにを題材に少しだけ。</p>
+<h1>
+        <span id="1-3" class="fragment"></span>
+        <a href="#1-3"><i class="icon-link"></i></a>単純なバッククォートの利用
+      </h1><p>バッククォート(&#39;`&#39;)は式中で評価される場所と評価されない場所を決めるのに使います。評価させる式にはカンマ(&#39;,&#39;)を付け、評価させない式は何もつけません</p>
+<div class="code-frame" data-lang="cl"><div class="highlight"><pre><span class="o">`</span><span class="p">(</span><span class="nb">+</span> <span class="mi">1</span> <span class="mi">2</span> <span class="o">,</span><span class="p">(</span><span class="nb">+</span> <span class="mi">3</span> <span class="mi">4</span><span class="p">))</span>
+<span class="c1">;; -&gt;(+ 1 2 7)</span>
+</pre></div></div><p>カンマのバリエーションに&#39;,@&#39;というものもあります。これは、&#39;,&#39;と動作は似ていますが、&#39;,@&#39;直後のリストを外側のリストの要素として展開する部分が異なります。</p>
+<div class="code-frame" data-lang="cl`"><div class="highlight"><pre>`(+ 1 2 ,(list 3 4))
+;;-&gt;(+ 1 2 (3 4))
+
+`(+ 1 2 ,@(list 3 4))
+;;-&gt; (+ 1 2 3 4)
+</pre></div></div><p>&#39;,&#39;に比べて括弧がひとつ取れます。</p>
+<h2>
+        <span id="2-1" class="fragment"></span>
+        <a href="#2-1"><i class="icon-link"></i></a>バッククォートのネスト
+      </h2><p>バッククォート一つの際はともかくネストしたものは少し複雑です。</p>
+<div class="code-frame" data-lang="cl"><div class="highlight"><pre><span class="c1">;;cltl2 appendix C をつまんだもの。</span>
+<span class="p">(</span><span class="k">let</span> <span class="p">((</span><span class="nv">q</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">r</span> <span class="nv">s</span><span class="p">)))</span>
+  <span class="o">``</span><span class="p">(</span><span class="nv">q</span>
+     <span class="o">,</span><span class="nv">q</span>
+     <span class="o">,,</span><span class="nv">q</span>
+     <span class="o">,@</span><span class="nv">q</span>
+     <span class="o">,,</span><span class="ss">&#39;q</span>
+     <span class="o">,</span><span class="ss">&#39;,q</span>
+     <span class="ss">&#39;,,q</span>
+     <span class="o">,@,</span><span class="nv">q</span>
+     <span class="o">,,@</span><span class="nv">q</span>
+     <span class="o">,@,@</span><span class="nv">q</span><span class="p">))</span>
+<span class="c1">;;-&gt; `(Q ,Q ,(R S) ,@Q ,Q (R S) &#39;,(R S) ,@(R S) ,R ,S ,@R ,@S)</span>
+</pre></div></div><p>私は順に以下のように覚えています。</p>
+
+<ol>
+<li>カンマ無しは展開しない、
+</li><li>カンマ一個は後で展開(展開形の中で展開されるように)する、
+</li><li>カンマ二個は展開して後でも展開する。
+</li><li>後で展開するspliceもする
+</li><li>カンマ二個ただし&#39;qの評価
+</li><li>カンマ二個なので評価する、左の,と&#39;は打ち消しあう
+</li><li>カンマ二個に&#39;がついている。
+</li><li>展開した結果をsplice
+</li><li>展開spliceした結果を展開
+</li><li>展開spliceした結果を展開splice
+</li></ol>
+<h1>
+        <span id="1-4" class="fragment"></span>
+        <a href="#1-4"><i class="icon-link"></i></a>マクロって…
+      </h1><p>バッククォートの利用はマクロに限られているわけではありませんが、<br>
+一番使いでがあるのがマクロの記述の時です。<br>
+Common Lispのマクロは単純に評価されるべき式を返す関数として定義します。<br>
+最も単純な例はifからwhenやunlessを作るものでしょうか</p>
+<div class="code-frame" data-lang="cl"><div class="highlight"><pre><span class="p">(</span><span class="nb">defmacro</span> <span class="nb">when</span> <span class="p">(</span><span class="nv">test</span> <span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+  <span class="o">`</span><span class="p">(</span><span class="k">if</span> <span class="o">,</span><span class="nv">test</span> <span class="p">(</span><span class="k">progn</span> <span class="o">,@</span><span class="nv">body</span><span class="p">)))</span>
+
+<span class="p">(</span><span class="nb">defmacro</span> <span class="nb">unless</span> <span class="p">(</span><span class="nv">test-not</span> <span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+  <span class="o">`</span><span class="p">(</span><span class="k">if</span> <span class="o">,</span><span class="nv">test-not</span> <span class="no">nil</span> <span class="p">(</span><span class="k">progn</span> <span class="o">,@</span><span class="nv">body</span><span class="p">)))</span>
+</pre></div></div><p>こういうマクロを書いていく際に意識しているのは、<br>
+「引数をどこに埋めれば良いんだっけ？」というくらいの事です。</p>
+<h1>
+        <span id="1-5" class="fragment"></span>
+        <a href="#1-5"><i class="icon-link"></i></a>もう一歩先へ
+      </h1><p>ネストしたバッククォートを含む歯応えのあるマクロもみてみましょう。<br>
+Peter Seibel &#39;Praitical Common Lisp&#39;でも出てくる(同種の物はAlexandriaにも収録Quickutilから利用可能)、once-onlyです。</p>
+<div class="code-frame" data-lang="cl"><div class="highlight"><pre><span class="p">(</span><span class="nb">defmacro</span> <span class="nv">once-only</span> <span class="p">(</span><span class="nv">names</span> <span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+  <span class="p">(</span><span class="k">let</span> <span class="p">((</span><span class="nv">gensyms</span> <span class="p">(</span><span class="nb">loop</span> <span class="nv">for</span> <span class="nv">n</span> <span class="nv">in</span> <span class="nv">names</span> <span class="nv">collect</span> <span class="p">(</span><span class="nb">gensym</span><span class="p">))))</span>
+    <span class="c1">;; bind in user-macro</span>
+    <span class="o">`</span><span class="p">(</span><span class="k">let</span> <span class="p">(</span><span class="o">,@</span><span class="p">(</span><span class="nb">loop</span> <span class="nv">for</span> <span class="nv">g</span> <span class="nv">in</span> <span class="nv">gensyms</span> <span class="nv">collect</span> <span class="o">`</span><span class="p">(</span><span class="o">,</span><span class="nv">g</span> <span class="p">(</span><span class="nb">gensym</span><span class="p">))))</span>
+       <span class="c1">;; bind in final expansion</span>
+       <span class="o">`</span><span class="p">(</span><span class="k">let</span> <span class="p">(</span><span class="o">,,@</span><span class="p">(</span><span class="nb">loop</span> <span class="nv">for</span> <span class="nv">g</span> <span class="nv">in</span> <span class="nv">gensyms</span> <span class="nv">for</span> <span class="nv">n</span> <span class="nv">in</span> <span class="nv">names</span> <span class="nv">collect</span> <span class="o">``</span><span class="p">(</span><span class="o">,,</span><span class="nv">g</span> <span class="o">,,</span><span class="nv">n</span><span class="p">)))</span>
+          <span class="c1">;; bind in user-macro</span>
+          <span class="o">,</span><span class="p">(</span><span class="k">let</span> <span class="p">(</span><span class="o">,@</span><span class="p">(</span><span class="nb">loop</span> <span class="nv">for</span> <span class="nv">n</span> <span class="nv">in</span> <span class="nv">names</span> <span class="nv">for</span> <span class="nv">g</span> <span class="nv">in</span> <span class="nv">gensyms</span> <span class="nv">collect</span> <span class="o">`</span><span class="p">(</span><span class="o">,</span><span class="nv">n</span> <span class="o">,</span><span class="nv">g</span><span class="p">)))</span>
+             <span class="o">,@</span><span class="nv">body</span><span class="p">)))))</span>
+</pre></div></div><p>ぱっと見の破壊力は増しました。<br>
+これが簡単にわかる人はここでおしまい。</p>
+<p>割と脅しに使われるこのマクロも別に難しいってほどでも無いはず…<br>
+なので読んで(考えて)みます。</p>
+<h2>
+        <span id="2-2" class="fragment"></span>
+        <a href="#2-2"><i class="icon-link"></i></a>once-onlyのつかいみち
+      </h2><p>望まれない変数補足を避ける際に使用します。</p>
+<div class="code-frame" data-lang="cl"><div class="highlight"><pre><span class="p">(</span><span class="nb">defmacro</span> <span class="nv">2*-once-only</span> <span class="p">(</span><span class="nv">x</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">once-only</span> <span class="p">(</span><span class="nv">x</span><span class="p">)</span>
+    <span class="o">`</span><span class="p">(</span><span class="nb">+</span> <span class="o">,</span><span class="nv">x</span> <span class="o">,</span><span class="nv">x</span><span class="p">)))</span>
+
+<span class="p">(</span><span class="nb">defmacro</span> <span class="nv">2*</span> <span class="p">(</span><span class="nv">x</span><span class="p">)</span>
+  <span class="o">`</span><span class="p">(</span><span class="nb">+</span> <span class="o">,</span><span class="nv">x</span> <span class="o">,</span><span class="nv">x</span><span class="p">))</span>
+
+<span class="p">(</span><span class="nb">list</span> <span class="p">(</span><span class="k">let</span> <span class="p">((</span><span class="nv">i</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="p">(</span><span class="nb">list</span> <span class="p">(</span><span class="nv">2*-once-only</span> <span class="p">(</span><span class="nb">incf</span> <span class="nv">i</span><span class="p">))</span> <span class="nv">i</span><span class="p">))</span>
+      <span class="p">(</span><span class="k">let</span> <span class="p">((</span><span class="nv">i</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="p">(</span><span class="nb">list</span> <span class="p">(</span><span class="nv">2*</span> <span class="p">(</span><span class="nb">incf</span> <span class="nv">i</span><span class="p">))</span> <span class="nv">i</span><span class="p">)))</span>
+<span class="c1">;; =&gt; ((4 2) (5 3))</span>
+</pre></div></div><p>(incf i)を2*-once-onlyは一回2*では二回評価されることで<br>
+マクロの評価結果が変わってしまいます。</p>
+<h2>
+        <span id="2-3" class="fragment"></span>
+        <a href="#2-3"><i class="icon-link"></i></a>once-onlyは何に展開されるのか。
+      </h2><p>once-onlyの目的はマクロに渡されるシンボルの評価を一回だけし、結果の値にgensymされたシンボルを束縛する&#39;式&#39;を生成することです。これが具体的に何なのかは展開形をmacroexpand-1で生成してみれば判ります。</p>
+<div class="code-frame" data-lang="cl"><div class="highlight"><pre><span class="p">(</span><span class="nb">macroexpand-1</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">once-only</span> <span class="p">(</span><span class="nv">x</span><span class="p">)</span> <span class="nv">x</span><span class="p">))</span>
+
+<span class="c1">;;=&gt; (LET ((#:G1201 (GENSYM))) ;;gensymされたsymbol #:g1201をgensymの結果に束縛</span>
+<span class="c1">;;    `(LET ((,#:G1201 ,X)) ;;指定されたxが評価され結果を束縛</span>
+<span class="c1">;;       ,(LET ((X #:G1201)) ;;束縛された結果の値は以下xで参照可能</span>
+<span class="c1">;;          X))) ;;以下body</span>
+
+<span class="c1">;;シンボルが二つの場合の結果もみてみる。</span>
+<span class="p">(</span><span class="nb">macroexpand-1</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">once-only</span> <span class="p">(</span><span class="nv">x</span> <span class="nv">y</span><span class="p">)</span> <span class="nv">x</span><span class="p">))</span>
+
+<span class="c1">;;=&gt;(LET ((#:G1202 (GENSYM)) (#:G1203 (GENSYM)))</span>
+<span class="c1">;;  `(LET ((,#:G1202 ,X) (,#:G1203 ,Y))</span>
+<span class="c1">;;     ,(LET ((X #:G1202) (Y #:G1203))</span>
+<span class="c1">;;        X)))</span>
+</pre></div></div><p>展開形をみると、マクロを普段から書いている人が変数補足を<br>
+避けるためのイディオムが展開されていることがわかります。</p>
+<h1>
+        <span id="1-6" class="fragment"></span>
+        <a href="#1-6"><i class="icon-link"></i></a>複雑…書けるの？
+      </h1><p>lispの式が脳内でevalできて、上記イディオムがちゃんと理解できるなら、<br>
+展開した結果を生成できる式を書くだけです。<br>
+逆に変数補足を防ぐイディオムが何故必要なのか？という人にこのマクロを書けというのは無理な話です。<br>
+ドメインの知識が無いのですから。</p>
+<p>「何故」を理解してさえいれば、ちょっと複雑なバッククォートをなんとかするだけです。<br>
+「マクロを書く」と言う際には常にこの展開した型のゴールを最初に作っておいて、<br>
+(今回は既存のマクロを展開してみただけですが)<br>
+書きかけのマクロを展開して結果が望みどおりになっているかどうかを確認しながら、<br>
+書きたしていく作業になります。これくらいのものになると、一発で書けたりはあまりしないのではないかと思います。</p>
+<p>マクロとバッククォートが複雑な印象になりがちなのは</p>
+
+<ol>
+<li>展開形が脳内で定まっていない
+</li><li>バッククォートについて何が生成されるのか良くわからない
+</li></ol>
+<p>という両方の症状を抱えたまま考えることが原因ではないかと思っています。</p>
+<p>複雑だという意見や批判もありますが、<br>
+replがあるんだからやってみりゃよい、展開形をみてみればそのうちなんとかなるという場合も多いと思います。</p>
+<h1>
+        <span id="1-7" class="fragment"></span>
+        <a href="#1-7"><i class="icon-link"></i></a>おわり
+      </h1><p>想定読者がどの層だったっけか？(once-onlyが読めそで読めない人？)とか色々思う所(ハショリスギタ感)はありますが、<br>
+「マクロ別に難しくないよ!」ということを言おうとして「面倒くさそう」という印象付けに成功したような気がしてなりません。残念。</p>
+
+          </section>
+        </section>
+        <div class="alert alert-info advent-calendar-annotation">
+  <p class="text-center">
+    この投稿は<a href="/advent-calendar/2013/lisp">Lisp Advent Calendar 2013</a>の4日目の記事です。
+  </p>
+
+  <div class="clearfix">
+      <div class="pull-left">
+          <span class="day"><span class="num">3</span>日目:</span>
+            <a href="/advent-calendar/2013/lisp#day-3">前の記事</a>
+      </div>
+
+      <div class="pull-right">
+          <span class="day"><span class="num">5</span>日目:</span>
+            <a href="/advent-calendar/2013/lisp#day-5">次の記事</a>
+      </div>
+  </div>
+</div>
+
+        <section>
+            <div id="item-footer-action-box">
+                <a class="btn btn-primary stock-button js-stock-btn" data-position="bottom" href="javascript:void(0)">この投稿をストックする</a>
+                &nbsp;<a class="hidden-phone" href="/drafts/ef625bd6be7e685843ca/edit">編集リクエストを作成する</a>
+            </div>
+              <div class="text-advertisement">
+      <span class="label label-info">PR</span>
+      <a href="https://career.qiita.com/?utm_content=8&amp;utm_medium=text&amp;utm_source=qiita" id="ad-8" target="_blank">転職先、仕事先を探しているプログラマの方対象 - Qiita:Career</a>
+  </div>
+  <script>
+    $(function() {
+      'use strict';
+      Qiita.analysis.showAdvertisement({ adId: 8 })
+      $('#ad-8').click(function() {
+        Qiita.analysis.clickAdvertisement({
+          type:  'text',
+          place: 'bottom',
+          adId:  8
+        })
+      });
+    });
+  </script>
+
+        </section>
+        <section>
+          <div class="row">
+  <div class="span9">
+    <div class="comments-wrapper" id="comments">
+      <div id="js-comments">
+        <div class="comment" id="comment-baa59223a94da9410aa6" data-uuid="baa59223a94da9410aa6"
+    data-is-editable="false">
+  <div class="js-comment-body"
+      itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+    <div class="header">
+      <div class="creator" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+  <a href="/stibear" itemprop="url" title="stibear"><img alt="stibear" class="user-icon" itemprop="image" src="https://pbs.twimg.com/profile_images/378800000609337658/94da553022e8475e38705142f6ca11fc_normal.png" title="stibear" /></a>
+  <div class="creator-info">
+      <div class="name" itemprop="name">
+        <a href="/stibear">stibear</a>
+      </div>
+      <span class="num">
+        0
+      </span>
+      <span class="unit">Contribution</span>
+  </div>
+</div>
+
+
+      <div class="right-box">
+  <div class="text-right">
+    <a href="/snmsts@github/items/ef625bd6be7e685843ca#comment-baa59223a94da9410aa6"><time datetime="2013-12-04T16:13:51+09:00" itemprop="commentTime">2013/12/04 16:13</time></a>
+  </div>
+    <div class="text-right">
+      <span class="js-thank-btn thankBtn ">
+  <i class="fa fa-smile-o"></i>Thank
+</span>
+
+    </div>
+</div>
+
+    </div>
+    <div class="comment-content markdown-content" itemprop="commentText">
+      <p>whenのbodyはprogn内で展開する必要があるのではないでしょうか？</p>
+
+    </div>
+  </div>
+  <div class="embedded-comment-form js-embedded-comment-form">
+    
+  </div>
+  <script type="application/json" class="js-comment">
+    {&quot;id&quot;:13096,&quot;user_id&quot;:8356,&quot;item_id&quot;:34361,&quot;raw_body&quot;:&quot;whenのbodyはprogn内で展開する必要があるのではないでしょうか？&quot;,&quot;body&quot;:&quot;\u003Cp\u003Ewhenのbodyはprogn内で展開する必要があるのではないでしょうか？\u003C/p\u003E\n&quot;,&quot;created_at&quot;:&quot;2013-12-04T16:13:51.000+09:00&quot;,&quot;updated_at&quot;:&quot;2013-12-04T16:13:51.000+09:00&quot;,&quot;uuid&quot;:&quot;baa59223a94da9410aa6&quot;,&quot;thanks_count&quot;:0}
+  </script>
+</div>
+<div class="comment" id="comment-2fbf454b9f7983942de0" data-uuid="2fbf454b9f7983942de0"
+    data-is-editable="false">
+  <div class="js-comment-body"
+      itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+    <div class="header">
+      <div class="creator" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+  <a href="/snmsts@github" itemprop="url" title="snmsts@github"><img alt="snmsts@github" class="user-icon" itemprop="image" src="https://secure.gravatar.com/avatar/c39d0d41e6aa44e07c448473026f41f6?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" title="snmsts@github" /></a>
+  <div class="creator-info">
+      <div class="name" itemprop="name">
+        <a href="/snmsts@github">snmsts@github</a>
+      </div>
+      <span class="num">
+        14
+      </span>
+      <span class="unit">Contribution</span>
+  </div>
+</div>
+
+
+      <div class="right-box">
+  <div class="text-right">
+    <a href="/snmsts@github/items/ef625bd6be7e685843ca#comment-2fbf454b9f7983942de0"><time datetime="2013-12-04T16:16:40+09:00" itemprop="commentTime">2013/12/04 16:16</time></a>
+  </div>
+    <div class="text-right">
+      <span class="js-thank-btn thankBtn ">
+  <i class="fa fa-smile-o"></i>Thank
+</span>
+
+    </div>
+</div>
+
+    </div>
+    <div class="comment-content markdown-content" itemprop="commentText">
+      <p>あー…</p>
+
+    </div>
+  </div>
+  <div class="embedded-comment-form js-embedded-comment-form">
+    
+  </div>
+  <script type="application/json" class="js-comment">
+    {&quot;id&quot;:13097,&quot;user_id&quot;:11815,&quot;item_id&quot;:34361,&quot;raw_body&quot;:&quot;あー…&quot;,&quot;body&quot;:&quot;\u003Cp\u003Eあー…\u003C/p\u003E\n&quot;,&quot;created_at&quot;:&quot;2013-12-04T16:16:40.000+09:00&quot;,&quot;updated_at&quot;:&quot;2013-12-04T16:16:40.000+09:00&quot;,&quot;uuid&quot;:&quot;2fbf454b9f7983942de0&quot;,&quot;thanks_count&quot;:0}
+  </script>
+</div>
+
+      </div>
+        <div class="login-to-comment">
+  <h5>ユーザ登録(無料)して、会話に参加しましょう。</h5>
+  <a class="btn" data-label="RegisterToComment" href="/signup?redirect_to=%2Fsnmsts%40github%2Fitems%2Fef625bd6be7e685843ca%23comments" track="click">ユーザ登録</a>
+  <p>
+    すでにアカウントを持っている方は<a href="/login?redirect_to=%2Fsnmsts%40github%2Fitems%2Fef625bd6be7e685843ca%23comments">ログイン</a>
+  </p>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<script type="application/json" id="js-mention">
+    [{&quot;id&quot;:11815,&quot;url_name&quot;:&quot;snmsts@github&quot;,&quot;profile_image_url&quot;:&quot;https://secure.gravatar.com/avatar/c39d0d41e6aa44e07c448473026f41f6?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&quot;},{&quot;id&quot;:8356,&quot;url_name&quot;:&quot;stibear&quot;,&quot;profile_image_url&quot;:&quot;https://pbs.twimg.com/profile_images/378800000609337658/94da553022e8475e38705142f6ca11fc_normal.png&quot;}]
+</script>
+
+        </section>
+      </div>
+      <div class="span3">
+        <hr class="visible-phone" />
+          <div class="row">
+            <div class="span3">
+              <div class="social-buttons">
+  <div class="twitter">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://qiita.com/snmsts@github/items/ef625bd6be7e685843ca" data-text="CommonLisp - &#39;`&#39;と&#39;,&#39; on @Qiita">ツイート</a>
+  </div>
+  <div class="hatebu">
+    <a href="http://b.hatena.ne.jp/entry/http://qiita.com/snmsts@github/items/ef625bd6be7e685843ca" class="hatena-bookmark-button" data-hatena-bookmark-title="CommonLisp - &#39;`&#39;と&#39;,&#39; - Qiita" data-hatena-bookmark-layout="standard" title="はてなブックマークに追加する"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="はてなブックマークに追加する" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+  </div>
+  <div class="googleplus">
+    <div class="g-plusone" data-size="medium" data-href="http://qiita.com/snmsts@github/items/ef625bd6be7e685843ca"></div>
+  </div>
+</div>
+<script>
+  $(function() {
+      twttr.ready(function (twttr) {
+          twttr.events.bind('tweet', function(event) {
+              if (event) {
+                  Qiita.Mixpanel.tweetAnItem({ uuid: "ef625bd6be7e685843ca" });
+                  ga('send', 'social', 'twitter', 'tweet', 'http://qiita.com');
+                  $.ajax({
+                      type: 'POST',
+                      url: '/notifications',
+                      data: {
+                          notification: {
+                              verb: 'tweet',
+                              uuid: 'ef625bd6be7e685843ca'
+                          }
+                      }
+                  });
+              }
+          });
+          twttr.events.bind('click', function (e) {
+            if (e) {
+              ga('send', 'social', 'twitter', 'click', 'http://qiita.com');
+            }
+          });
+      });
+  });
+</script>
+
+            </div>
+          </div>
+          <hr />
+        <section class="authorInfo" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a href="/snmsts@github"><img alt="snmsts@github" class="authorInfo_userIcon" itemprop="image" src="https://secure.gravatar.com/avatar/c39d0d41e6aa44e07c448473026f41f6?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" /></a>
+  <div class="authorProfileStats">
+    <strong class="authorProfileStats_userName" itemprop="name">
+      <a href="/snmsts@github" itemprop="url">snmsts@github</a>
+    </strong>
+    <div class="authorProfileStats_contribution">
+      <span class="count">14</span>
+      <span class="unit">Contribution</span>
+    </div>
+      <span class="js-user-follow-btn authorProfileStats_userFollowBtn"
+          data-url_name="snmsts@github"
+          data-position="author-info">
+        フォローする
+      </span>
+  </div>
+      <section class="authorPopularItems">
+      <h6 class="authorPopularItems_secitonTitle">人気の投稿</h6>
+      <ul class="authorPopularItems_posts">
+          <li itemscope itemtype="http://schema.org/Article">
+            <a data-label="AuthorPopularItemsAtSidebar" href="/snmsts@github/items/ef625bd6be7e685843ca" itemprop="url" track="click">&#39;`&#39;と&#39;,&#39;</a>
+          </li>
+          <li itemscope itemtype="http://schema.org/Article">
+            <a data-label="AuthorPopularItemsAtSidebar" href="/snmsts@github/items/fc5f657ac1892e73a896" itemprop="url" track="click">uffiかcffiか</a>
+          </li>
+          <li itemscope itemtype="http://schema.org/Article">
+            <a data-label="AuthorPopularItemsAtSidebar" href="/snmsts@github/items/9102fe3c5d43d2f26501" itemprop="url" track="click">良く使うリーダマクロ</a>
+          </li>
+          <li itemscope itemtype="http://schema.org/Article">
+            <a data-label="AuthorPopularItemsAtSidebar" href="/snmsts@github/items/425fc8a9ca40c03198ac" itemprop="url" track="click">cserial-port</a>
+          </li>
+      </ul>
+    </section>
+
+</section>
+
+            <div class="career-ads-wrapper">
+    <div class="career-ads-container">
+      <div class="container-title">
+        <img alt="Qiita:Career" src="/assets/qiita_career/logo_qiita_career_white-bf538919c07963cebe220deb19780176.png" />
+      </div>
+      <div class="career-ads-inner">
+        <a class="js-ad-content career-ads-content" href="https://career.qiita.com/forkwell?id=216&amp;tag=backbone.js&amp;utm_content=4&amp;utm_medium=partial&amp;utm_source=qiita" target="_blank">
+          <span class="inner-text">
+            <span class="tag">backbone.js</span>
+            <span class="pre">のお仕事を</span>
+            <span class="post">ご紹介、内定までフォローします!</span>
+            <span class="logo forkwell">
+              by
+              <img alt="Logo forkwell jobs" src="/assets/qiita_career/forkwell_ads/logo_forkwell_jobs-0a21944775c71bd914f8c22acfe92885.png" />
+            </span>
+          </span>
+            <span class="job-example">
+              <span class="example-label">backbone.jsの求人例</span>
+              <span class="job-example-inner">
+                <span class="title">
+                  「写真 ✕ IT 技術」で感動をすべての人へ届けるフォトクリエイトのサービスを支える PHP エンジニアを募集！
+                </span>
+                <span class="company">
+                  株式会社フォトクリエイト
+                </span>
+              </span>
+            </span>
+</a>      </div>
+    </div>
+  </div>
+  <script>
+    $(function () {
+      'use strict';
+      Qiita.analysis.showAdvertisement({ adId: 4});
+      $('.js-ad-content').on('click', function () {
+        Qiita.analysis.clickAdvertisement({
+          primaryTag: 'backbone.js',
+          place: 'sidebar',
+          adId: 4
+        });
+      });
+    });
+  </script>
+
+
+        <div class="scroll-chaser">
+          
+            <section class="popularItems">
+    <div class="popularItems_sectionTitle">注目の投稿</div>
+      <article itemscope itemtype="http://schema.org/Article"
+               class="popularItems_article">
+        <h1 itemprop="name" class="popularItems_article_title">
+          <a data-label="PopularItemsAtSidebar" href="/takc923/items/bdce8c1a2126cac52492" itemprop="url" track="click">sedのお勉強</a>
+        </h1>
+      </article>
+      <article itemscope itemtype="http://schema.org/Article"
+               class="popularItems_article">
+        <h1 itemprop="name" class="popularItems_article_title">
+          <a data-label="PopularItemsAtSidebar" href="/donsan_24/items/f2be9b6828b73d3fc49e" itemprop="url" track="click">リストの初期値は&lt;T&gt; List&lt;T&gt; java.util.Arrays.asList(T… a) で設定できる。</a>
+        </h1>
+      </article>
+      <article itemscope itemtype="http://schema.org/Article"
+               class="popularItems_article">
+        <h1 itemprop="name" class="popularItems_article_title">
+          <a data-label="PopularItemsAtSidebar" href="/tatsuoSakurai/items/cd9e22a9dc4e10ea6deb" itemprop="url" track="click">SublimeText2/3 環境設定とか（基本3）</a>
+        </h1>
+      </article>
+      <article itemscope itemtype="http://schema.org/Article"
+               class="popularItems_article">
+        <h1 itemprop="name" class="popularItems_article_title">
+          <a data-label="PopularItemsAtSidebar" href="/icoxfog417/items/3c68e1a4de7121658e29" itemprop="url" track="click">新・三大JavaScriptフレームワークの実践(Backbone.js Knockout.js Angular.js)</a>
+        </h1>
+      </article>
+      <article itemscope itemtype="http://schema.org/Article"
+               class="popularItems_article">
+        <h1 itemprop="name" class="popularItems_article_title">
+          <a data-label="PopularItemsAtSidebar" href="/yimajo/items/7051af0919b5286aecfe" itemprop="url" track="click">iOS7でナビゲーションバーやステータスバーをカスタマイズする</a>
+        </h1>
+      </article>
+  </section>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<script id="js-item" type="application/json">
+  {&quot;id&quot;:34361,&quot;uuid&quot;:&quot;ef625bd6be7e685843ca&quot;,&quot;user&quot;:{&quot;id&quot;:11815,&quot;url_name&quot;:&quot;snmsts@github&quot;,&quot;profile_image_url&quot;:&quot;https://secure.gravatar.com/avatar/c39d0d41e6aa44e07c448473026f41f6?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&quot;},&quot;title&quot;:&quot;\u0026#39;`\u0026#39;と\u0026#39;,\u0026#39;&quot;,&quot;created_at&quot;:&quot;2013-12-04 09:32:39 +0900&quot;,&quot;updated_at&quot;:&quot;2013-12-04 16:18:25 +0900&quot;,&quot;created_at_in_words&quot;:&quot;6ヶ月&quot;,&quot;updated_at_in_words&quot;:&quot;6ヶ月&quot;,&quot;tags&quot;:[{&quot;name&quot;:&quot;CommonLisp&quot;,&quot;url_name&quot;:&quot;commonlisp&quot;,&quot;icon_url&quot;:&quot;https://s3-ap-northeast-1.amazonaws.com/qiita-tag-image/7ec4b6d2f823c969579b87db605ceb000e516b63/medium.jpg?1364838934&quot;}],&quot;stock_count&quot;:6,&quot;comments&quot;:[{&quot;id&quot;:13096,&quot;uuid&quot;:&quot;baa59223a94da9410aa6&quot;,&quot;user&quot;:{&quot;id&quot;:8356,&quot;url_name&quot;:&quot;stibear&quot;,&quot;profile_image_url&quot;:&quot;https://pbs.twimg.com/profile_images/378800000609337658/94da553022e8475e38705142f6ca11fc_normal.png&quot;},&quot;body&quot;:&quot;\u003Cp\u003Ewhenのbodyはprogn内で展開する必要があるのではないでしょうか？\u003C/p\u003E\n&quot;,&quot;url&quot;:&quot;http://qiita.com/snmsts@github/items/ef625bd6be7e685843ca#comment-baa59223a94da9410aa6&quot;},{&quot;id&quot;:13097,&quot;uuid&quot;:&quot;2fbf454b9f7983942de0&quot;,&quot;user&quot;:{&quot;id&quot;:11815,&quot;url_name&quot;:&quot;snmsts@github&quot;,&quot;profile_image_url&quot;:&quot;https://secure.gravatar.com/avatar/c39d0d41e6aa44e07c448473026f41f6?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&quot;},&quot;body&quot;:&quot;\u003Cp\u003Eあー…\u003C/p\u003E\n&quot;,&quot;url&quot;:&quot;http://qiita.com/snmsts@github/items/ef625bd6be7e685843ca#comment-2fbf454b9f7983942de0&quot;}],&quot;comment_count&quot;:2,&quot;url&quot;:&quot;http://qiita.com/snmsts@github/items/ef625bd6be7e685843ca&quot;,&quot;created_at_as_seconds&quot;:1386117159,&quot;tweet&quot;:false,&quot;gist_url&quot;:null,&quot;private&quot;:false}
+</script>
+
+<script class="js-user" type="application/json">
+  {&quot;id&quot;:11815,&quot;url_name&quot;:&quot;snmsts@github&quot;,&quot;profile_image_url&quot;:&quot;https://secure.gravatar.com/avatar/c39d0d41e6aa44e07c448473026f41f6?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&quot;}
+</script>
+
+<script class="js-page-access" type="application/json">
+  {
+    "uuid": "ef625bd6be7e685843ca",
+    "calendarName": "lisp"
+  }
+</script>
+</div>
+  <footer id="footer-content" class="footerContainer">
+  <section class="container">
+    <div class="row">
+      <div class="span8">
+        <section>
+          <ul class="footerContainer_navigation">
+            <li><a href="http://qiita.com/about">Qiitaとは</a></li>
+            <li><a href="http://qiita.com/tags">タグ一覧</a></li>
+            <li><a href="http://qiita.com/advent-calendar">Advent Calendar一覧</a></li>
+            <li><a href="http://qiita.com/organizations">Organization一覧</a></li>
+            <li><a href="http://qiita.com/users">ユーザー一覧</a></li>
+            <li><a href="http://qiita.com/docs">Developer API</a></li>
+            <li><a href="/license.txt" rel="jslicense">JavaScript License</a></li>
+          </ul>
+          <ul class="footerContainer_navigation">
+            <li><a href="http://blog.qiita.com" target="_blank">公式ブログ</a></li>
+            <li><a href="http://qiita.com/terms">利用規約</a></li>
+            <li><a href="http://qiita.com/privacy">プライバシーポリシー</a></li>
+            <li><a href="http://qiita.com/asct">特定商取引法に基づく表記</a></li>
+            <li><a href="http://support.qiita.com" target="_blank">サポート</a></li>
+            <li><a href="https://increments.zendesk.com/anonymous_requests/new" target="_blank">お問い合わせ</a></li>
+            <li><a href="http://increments.co.jp" target="_blank">運営会社</a></li>
+          </ul>
+        </section>
+        <section>
+        <p class="footerContainer_services">Incrementsのサービス</p>
+          <ul class="unstyled">
+            <li>
+              <a href="http://kobito.qiita.com" target="_blank">Kobito - プログラミングのメモやスニペットの記録に最適なMacアプリケーション</a>
+            </li>
+            <li>
+              <a href="http://teams.qiita.com" target="_blank">Qiita:Team - シンプル、スマートかつクローズドな情報共有サービス</a>
+            </li>
+            <li>
+              <a href="https://career.qiita.com" target="_blank">Qiita:Career - プログラマのためのキャリア構築支援サービス</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <p>Copyright ©2014 Increments Inc.</p>
+        </section>
+        <aside class="visible-desktop">
+          <a href="https://mixpanel.com/f/partner" target="_blank">
+            <img src="https://mixpanel.com/site_media/images/partner/badge_light.png"
+                 alt="Real Time Web Analytics" />
+          </a>
+        </aside>
+      </div>
+      <section class="span4 feedbackForm">
+  <form accept-charset="UTF-8" action="/feedbacks" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="xuRXt5uo0uHMPEvM6zWrmPqEKFiHomAIQhcJjd8w5ho=" /></div>
+    <textarea class="input-block-level" id="feedback_message" name="feedback[message]" placeholder="Qiitaについてご意見をお聞かせください" rows="5">
+</textarea>
+    <div style="position:fixed;top:-99999px;opacity:0.0001;">
+      <input type="text" name="feedback[name]"/><!-- Honey Pot -->
+    </div>
+    <input class="btn btn-block" name="commit" type="submit" value="運営者に意見を送る" />
+    <div class="feedbackForm_notice">
+      <p>頂いたご意見への回答は行っておりません。</p>
+      <p><a href="https://increments.zendesk.com/anonymous_requests/new">返信の必要なお問い合わせはこちら</a></p>
+    </div>
+</form></section>
+
+    </div>
+  </section>
+</footer>
+
+
+
+    <!--[if lt IE 9]>
+  <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+
+<script src="/assets/items-17a131c4f2dec88f187e8355435b9b59.js"></script>
+
+
+    <script>
+  (function (I18n) {
+    var match, orig;
+    I18n.defaultLocale = "ja";
+    I18n.fallbacks = true;
+    if (match = location.search.match(/(?:\?|&)locale=([^&]+)/)) {
+      I18n.locale = match[1];
+      orig = $.ajax;
+      $.ajax = function (params) {
+        params.data || (params.data = {});
+        params.data.locale = match[1];
+        return orig.call($, params);
+      };
+    } else {
+      I18n.locale = "ja";
+    }
+  })(I18n);
+</script>
+
+    <script>
+  (function () {
+    var script = document.getElementsByTagName('script')[0];
+    var load = function (src, id) {
+      var el = document.createElement('script');
+      el.async = true;
+      el.src = src;
+      el.id = id;
+      script.parentNode.insertBefore(el, script);
+    };
+
+      // Optimizely
+      load('//cdn.optimizely.com/js/52738645.js', 'optimizely-jssdk');
+
+      // Google Analytics
+      window._gaq = window._gaq || [];
+      var isCareer = location.hostname.split('.')[0] == 'career';
+      if (isCareer) {
+        window._gaq.push(['_setAccount', 'UA-24675221-11']);
+        window._gaq.push(['_setDomainName', 'qiita.com']);
+      } else {
+        window._gaq.push(['_setAccount', 'UA-24675221-1']);
+      }
+      window._gaq.push(['_setCustomVar', 1, 'logged_in', 'false', 2]);
+      window._gaq.push(['_trackPageview']);
+      var src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      load(src, 'google-analytics-jssdk');
+
+    // Google Analytics - Universal Analytics
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-24675221-12', {
+          
+        });
+        ga('set', 'dimension1', 'false');
+        ga('set', 'dimension3', 'false');
+      ga('set', 'forceSSL', true);
+      ga('send', 'pageview');
+
+    // Google Tag Manager
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-TBQWPN');
+
+  })();
+
+  // Mixpanel
+  (function(c,a){window.mixpanel=a;var b,d,h,e;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src=("https:"===c.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.1.min.js';d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d);a._i=[];a.init=function(b,c,f){function d(a,b){var c=b.split(".");2==c.length&&(a=a[c[0]],b=c[1]);a[b]=function(){a.push([b].concat(Array.prototype.slice.call(arguments,0)))}}var g=a;"undefined"!==typeof f?
+  g=a[f]=[]:f="mixpanel";g.people=g.people||[];h="disable track track_pageview track_links track_forms register register_once unregister identify name_tag set_config people.identify people.set people.increment".split(" ");for(e=0;e<h.length;e++)d(g,h[e]);a._i.push([b,c,f])};a.__SV=1.1})(document,window.mixpanel||[]);
+  (function () {
+    var token, config = { upgrade: true, track_pageview: false };
+      token = "be87616606b0e26a87689099aab2c4e5";
+    mixpanel.init(token, config);
+  })();
+</script>
+
+  </body>
+</html>
+

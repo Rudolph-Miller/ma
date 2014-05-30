@@ -160,7 +160,7 @@
 										(sub :cp932)
 										(sb-int:stream-decoding-error (c)
 																	  (sub :euc-jp))))))
-	(the string result)))
+	result))
 
 ;;;wget and remove no JP in one function
 (defun wget-and-remove  (url)
@@ -208,7 +208,7 @@
 		for line = (read-line f nil)
 		while line
 		for lst = (split #\, line)
-		do (setf (gethash (car lst) result) (read-from-string (cadr lst)))))
+		do (setf (gethash (car lst) result) (float (read-from-string (cadr lst))))))
 	(the hash-table result)))
 
 
@@ -272,11 +272,6 @@
 		 (dif2 (remove-intersection key-lst hash))
 		 (merg (merge-hash (merge-hash intersect dif1) dif2)))
 	(declare (hash-table hash key-lst intersect dif1 dif2 merg))
-	(print-sorted-hash hash)
-	(print intersect)
-	(print dif1)
-	(print dif2)
-	(print merg)
 	(save-file (cut-save-hash merg)
 			   file)))
 
@@ -285,23 +280,29 @@
   (declare (hash-table hash))
   (the hash-table (cut-off 1000 hash :items t)))
 
-;;;url -> update key file
-(defun update-from-url (url file)
-  (declare (string url))
-  (update-key-list (the hash-table (scoring-url url)) file))
-
-(defun main (url &key (tag nil))
+;;;url -> learn key-words.csv and format top 3 tags
+(defun main (url)
   (let* ((score (scoring-url url))
 		 (tag-list (get-tags score))
-		 (tag (if (null tag) (car (car tag-list)) tag)))
+		 (result nil))
+	(declare (string url)
+			 (hash-table score)
+			 (list tag-list result))
+	(loop
+	  for n from 1.0 to 3.0
+	  for tag in (mapcar #'car tag-list)
+	  do (update-key-list (divided-hash score n) (load-tag-key-file tag))
+	  do (format t "~a: ~a~%" (round n) tag)
+	  do (setf result (cons tag result)))
+	(the list (nreverse result))))
+
+;;;url tag -> learn tag/key-words.csv
+(defun learn (url tag)
+  (let* ((score (scoring-url url))
+		 (tag-list (get-tags score)))
 	(declare (string url)
 			 (hash-table score)
 			 (list tag-list))
 	(update-key-list score (load-tag-key-file tag))
-	(let ((result nil))
-	(loop
-	  for n from 1 to 3
-	  for tag in tag-list
-	  do (setf result (cons tag result)))
-	(the list (nreverse result)))))
-
+	tag-list))
+		 

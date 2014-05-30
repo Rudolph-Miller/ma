@@ -1,0 +1,495 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<title>LispForum &bull; View topic - How to convert a float to integer?[Solved]</title>
+
+<link rel="alternate" type="application/atom+xml" title="Feed - LispForum" href="http://www.lispforum.com/feed.php" /><link rel="alternate" type="application/atom+xml" title="Feed - Forum - Common Lisp" href="http://www.lispforum.com/feed.php?f=2" />
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=lispforum.com';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="./style.php?id=1&amp;lang=en&amp;sid=9fbe5f756c289835928aa38f428c624f" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<link href="./styles/prosilver/theme/normal.css" rel="stylesheet" type="text/css" title="A" />
+<link href="./styles/prosilver/theme/medium.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="./styles/prosilver/theme/large.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<div id="site-description">
+				<a href="./index.php?sid=9fbe5f756c289835928aa38f428c624f" title="Board index" id="logo"><img src="./styles/prosilver/imageset/lispforum-logo4.png" width="288" height="95" alt="" title="" /></a>
+				<h1>LispForum</h1>
+				<p>Learn and discuss Lisp programming of all dialects</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+		
+			<div id="search-box">
+				<form action="./search.php?sid=9fbe5f756c289835928aa38f428c624f" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php?sid=9fbe5f756c289835928aa38f428c624f" title="View the advanced search options">Advanced search</a> <input type="hidden" name="sid" value="9fbe5f756c289835928aa38f428c624f" />
+
+				</fieldset>
+				</form>
+			</div>
+		
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./index.php?sid=9fbe5f756c289835928aa38f428c624f" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./viewforum.php?f=1&amp;sid=9fbe5f756c289835928aa38f428c624f">The Dialects</a> <strong>&#8249;</strong> <a href="./viewforum.php?f=2&amp;sid=9fbe5f756c289835928aa38f428c624f">Common Lisp</a></li>
+
+				<li class="rightside"><a href="#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="Change font size">Change font size</a></li>
+
+				<li class="rightside"><a href="./viewtopic.php?f=2&amp;t=807&amp;sid=9fbe5f756c289835928aa38f428c624f&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				<li class="icon-faq"><a href="./faq.php?sid=9fbe5f756c289835928aa38f428c624f" title="Frequently Asked Questions">FAQ</a></li>
+				<li class="icon-register"><a href="./ucp.php?mode=register&amp;sid=9fbe5f756c289835928aa38f428c624f">Register</a></li>
+					<li class="icon-logout"><a href="./ucp.php?mode=login&amp;sid=9fbe5f756c289835928aa38f428c624f" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+<h2><a href="./viewtopic.php?f=2&amp;t=807&amp;sid=9fbe5f756c289835928aa38f428c624f">How to convert a float to integer?[Solved]</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Discussion of Common Lisp<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=2&amp;t=807&amp;sid=9fbe5f756c289835928aa38f428c624f" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=9fbe5f756c289835928aa38f428c624f">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="807" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="9fbe5f756c289835928aa38f428c624f" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			5 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p4923" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 class="first"><a href="#p4923">How to convert a float to integer?[Solved]</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=4923&amp;sid=9fbe5f756c289835928aa38f428c624f#p4923"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1736&amp;sid=9fbe5f756c289835928aa38f428c624f">BreakDS</a></strong> &raquo; Sat Aug 21, 2010 7:10 pm </p>
+
+			
+
+			<div class="content">I thought the function 'round' might work, but it fails to do what I want.<br />Neither does 'coerce'. So I'm wondering is there any built-in function that works on this, say convert 2.1 to 2 and 2.9 to 3?<br /><br />Thanks for answering a newbie's question.</div>
+
+			
+				<div class="notice">Last edited by <a href="./memberlist.php?mode=viewprofile&amp;u=1736&amp;sid=9fbe5f756c289835928aa38f428c624f">BreakDS</a> on Mon Aug 23, 2010 6:21 pm, edited 1 time in total.
+					
+				</div>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile4923">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=1736&amp;sid=9fbe5f756c289835928aa38f428c624f">BreakDS</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3</dd><dd><strong>Joined:</strong> Sat Aug 21, 2010 7:02 pm</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p4924" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p4924">Re: How to convert a float to integer?</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=4924&amp;sid=9fbe5f756c289835928aa38f428c624f#p4924"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=122&amp;sid=9fbe5f756c289835928aa38f428c624f" style="color: #00AA00;" class="username-coloured">Ramarren</a></strong> &raquo; Sat Aug 21, 2010 10:37 pm </p>
+
+			
+
+			<div class="content">Common Lisp has a large number of <a href="http://www.lispworks.com/documentation/HyperSpec/Body/f_floorc.htm" class="postlink">rounding functions</a> for many rounding modes. What do you mean ROUND did not work?<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>CL-USER&gt; (round 2.1)<br />2<br />0.099999905<br />CL-USER&gt; (round 2.9)<br />3<br />-0.099999905</code></dd></dl><br /><br />Do note that the second printed number is the secondary return value of the function, the remainder, and it is discarded in standard evaluation context.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile4924">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=122&amp;sid=9fbe5f756c289835928aa38f428c624f" style="color: #00AA00;" class="username-coloured">Ramarren</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 613</dd><dd><strong>Joined:</strong> Sun Jun 29, 2008 4:02 am</dd><dd><strong>Location:</strong> Warsaw, Poland</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://github.com/Ramarren/" title="WWW: http://github.com/Ramarren/"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p4926" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p4926">Re: How to convert a float to integer?</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=4926&amp;sid=9fbe5f756c289835928aa38f428c624f#p4926"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1736&amp;sid=9fbe5f756c289835928aa38f428c624f">BreakDS</a></strong> &raquo; Sun Aug 22, 2010 7:58 pm </p>
+
+			
+
+			<div class="content">Thx. I tried <br />(setf a (round 2.1))<br />and it works.<br />I was just confused by the TWO return value.<br />What should I do, if I want to capture these 2 value in 2 different variable by using &quot;round&quot;?</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile4926">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=1736&amp;sid=9fbe5f756c289835928aa38f428c624f">BreakDS</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3</dd><dd><strong>Joined:</strong> Sat Aug 21, 2010 7:02 pm</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p4928" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p4928">Re: How to convert a float to integer?</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=4928&amp;sid=9fbe5f756c289835928aa38f428c624f#p4928"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=122&amp;sid=9fbe5f756c289835928aa38f428c624f" style="color: #00AA00;" class="username-coloured">Ramarren</a></strong> &raquo; Sun Aug 22, 2010 11:17 pm </p>
+
+			
+
+			<div class="content">There is a chapter on <a href="http://www.gigamonkeys.com/book/the-special-operators.html#multiple-values" class="postlink">multiple value returning functions</a> in <a href="http://www.gigamonkeys.com/book/" class="postlink">Practical Common Lisp</a>.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile4928">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=122&amp;sid=9fbe5f756c289835928aa38f428c624f" style="color: #00AA00;" class="username-coloured">Ramarren</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 613</dd><dd><strong>Joined:</strong> Sun Jun 29, 2008 4:02 am</dd><dd><strong>Location:</strong> Warsaw, Poland</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://github.com/Ramarren/" title="WWW: http://github.com/Ramarren/"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p4929" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p4929">Re: How to convert a float to integer?</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=4929&amp;sid=9fbe5f756c289835928aa38f428c624f#p4929"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1736&amp;sid=9fbe5f756c289835928aa38f428c624f">BreakDS</a></strong> &raquo; Mon Aug 23, 2010 6:21 pm </p>
+
+			
+
+			<div class="content">That's great. Thanks!<br /><blockquote><div><cite>Ramarren wrote:</cite>There is a chapter on <a href="http://www.gigamonkeys.com/book/the-special-operators.html#multiple-values" class="postlink">multiple value returning functions</a> in <a href="http://www.gigamonkeys.com/book/" class="postlink">Practical Common Lisp</a>.</div></blockquote></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile4929">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=1736&amp;sid=9fbe5f756c289835928aa38f428c624f">BreakDS</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3</dd><dd><strong>Joined:</strong> Sat Aug 21, 2010 7:02 pm</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=2&amp;t=807&amp;sid=9fbe5f756c289835928aa38f428c624f">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=2&amp;t=807&amp;sid=9fbe5f756c289835928aa38f428c624f" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			5 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./viewforum.php?f=2&amp;sid=9fbe5f756c289835928aa38f428c624f" class="left-box left" accesskey="r">Return to Common Lisp</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php?sid=9fbe5f756c289835928aa38f428c624f" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="19">Hanging Out</option>
+			
+				<option value="20">&nbsp; &nbsp;The Lounge</option>
+			
+				<option value="21">&nbsp; &nbsp;User Groups and Conferences</option>
+			
+				<option value="32">&nbsp; &nbsp;Lisp Quiz</option>
+			
+				<option value="33">&nbsp; &nbsp;Homework</option>
+			
+				<option value="1">The Dialects</option>
+			
+				<option value="2" selected="selected">&nbsp; &nbsp;Common Lisp</option>
+			
+				<option value="22">&nbsp; &nbsp;Scheme</option>
+			
+				<option value="23">&nbsp; &nbsp;Emacs Lisp</option>
+			
+				<option value="29">&nbsp; &nbsp;Other Dialects</option>
+			
+				<option value="4">The Tools</option>
+			
+				<option value="15">&nbsp; &nbsp;Emacs</option>
+			
+				<option value="17">&nbsp; &nbsp;VI and VIM</option>
+			
+				<option value="18">&nbsp; &nbsp;Books and Resources</option>
+			
+				<option value="31">&nbsp; &nbsp;Other Tools</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+
+	<h3>Who is online</h3>
+	<p>Users browsing this forum: <span style="color: #9E8DA7;" class="username-coloured">Bing [Bot]</span>, <span style="color: #9E8DA7;" class="username-coloured">Yahoo [Bot]</span> and 3 guests</p>
+</div>
+
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+			<li class="icon-home"><a href="./index.php?sid=9fbe5f756c289835928aa38f428c624f" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="./memberlist.php?mode=leaders&amp;sid=9fbe5f756c289835928aa38f428c624f">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies&amp;sid=9fbe5f756c289835928aa38f428c624f">Delete all board cookies</a> &bull; All times are UTC - 8 hours [ <abbr title="Daylight Saving Time">DST</abbr> ]</li>
+		</ul>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<div class="copyright">Powered by <a href="http://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Group
+		
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	<img src="./cron.php?cron_type=tidy_search&amp;sid=9fbe5f756c289835928aa38f428c624f" width="1" height="1" alt="cron" />
+</div>
+
+</body>
+</html>

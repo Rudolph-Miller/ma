@@ -14,9 +14,7 @@
 		   (string str)
 		   (optimize (speed 3) (safety 0) (debug 0) (space 0)))
   (let ((result nil))
-	(declare (list result)
-			 (character key)
-			 (string str))
+	(declare (list result))
 	(loop
 	  for pos = (position key str)
 	  do (setf result (the list (cons (the string (subseq str 0 pos)) result)))
@@ -133,16 +131,9 @@
 ;;;restrict numbers of hash
 ;;;without :items t cut-off hash-table by (> poit value)
 ;;;with :items t cut-off hash-tables by how many items in hash-table (indexed by point)
-<<<<<<< HEAD
-(defun cut-off (point hash-t &key (items nil))
-  (let ((hash hash-t))
-	(declare (hash-table hash)
-			 (boolean items))
-=======
 (defun cut-off (point hash &key (items nil))
   (let ((result (make-hash-table :test #'equal)))
 	(declare (hash-table result))
->>>>>>> Issue/18
 	(if (null items)
 	  (maphash #'(lambda (key val) (if (< point val)
 									 (setf (gethash key result) val)))
@@ -152,14 +143,8 @@
 		  for i from 0 to point
 		  for item = (pop items)
 		  while item
-<<<<<<< HEAD
-		  do (if (< point i)
-			   (remhash (car item) hash)))))
-	(the hash-table hash)))
-=======
 		  do (setf (gethash (car item) result) (cdr item)))))
 	result))
->>>>>>> Issue/18
 
 ;;;take n items from lst
 ;;;required by gen-combi
@@ -296,3 +281,15 @@
 	(mapc #'(lambda (hash) (maphash #'(lambda (key val) (setf (gethash key result) val)) hash))
 		  (list hash1 hash2))
 	(the hash-table result)))
+
+;;;hash n -> (hash-table (key . (/ val n)) ..)
+(defun divided-hash (hash n)
+  (declare (hash-table hash)
+		   (single-float n))
+  (let ((result (make-hash-table :test #'equal)))
+	(declare (hash-table result))
+	(maphash #'(lambda (key val)
+				 (setf (gethash key result) (/ val n)))
+			 hash)
+	result))
+
