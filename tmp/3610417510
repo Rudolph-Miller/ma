@@ -1,0 +1,1954 @@
+<html>
+<head>
+  <TITLE>Revenge of the Nerds</TITLE>
+  <link rel="stylesheet" href="trans.css" type="text/css">
+</HEAD>
+<body>
+
+<h1>技術野郎の復讐---Revenge of the Nerds---<sup><a href="#title" name="title_anchor"><font size="-1">[訳註1]</font></a></sup></h1>
+
+
+Paul Graham, May 2002.<br>
+Copyright 2002 by Paul Graham.<br>
+
+<hr>
+<p class="jnote">
+これは、Paul Graham：<a href="http://www.paulgraham.com/icad.html">Revenge of the Nerds</a> を、原著者の許可を得て翻訳・公開するものです。
+</p>
+<p class="jnote">
+<a href="http://www.genpaku.org/">プロジェクト杉田玄白</a>正式参加テキスト。</p>
+
+<p class="jnote">
+&lt;版権表示&gt;<br>
+本和訳テキストの複製、変更、再配布は、この版権表示を残す限り、自由に行って結構です。<br>
+(「この版権表示」には上の文も含まれます。すなわち、再配布を禁止してはいけません)。<br>
+Copyright 2002 by Paul Graham<br>
+原文: http://www.paulgraham.com/icad.html<br>
+日本語訳：<a href="http://practical-scheme.net/">Shiro Kawai</a> (shiro ＠ acm.org)<br>
+&lt;版権表示終り&gt;
+</p>
+
+<p class="jnote">Paul Graham氏のエッセイをまとめた『ハッカーと画家』の
+邦訳版が出版されました。<br>
+<a href="http://ssl.ohmsha.co.jp/cgi-bin/menu.cgi?ISBN=4-274-06597-9">出版社の案内ページ</a> 
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/4274065979/practicalsche-22">Amazon.co.jp</a> 
+<a href="http://practical-scheme.net/wiliki/wiliki.cgi/Shiro:HackersAndPainters">サポートページ</a>
+</p>
+
+<p class="jnote">
+2002/05/30 翻訳公開<br>
+2002/06/02 <a href="http://www1.neweb.ne.jp/wa/yamdas/">yomoyomo</a>さん、
+馬目さん、およびYuさんより誤記の指摘を頂き、訂正。あと、訳註を追加。<br>
+2002/06/10 プロジェクト杉田玄白正式参加に伴い版権表示を整備<br>
+2002/10/15 Erann Gatの"How I lost my faith"の和訳をリンク<br>
+2003/04/16 "How I lost my faith"の和訳のURL変更に追従<br>
+2004/03/21 Erann Gatの"Lisping at JPL"に関する情報を追加<br>
+</p>
+<!-- mtime=2004/03/21 -->
+<hr>
+
+<!-- 
+<BR><BR><FONT SIZE=2 FACE="arial, helvetica">May 2002
+
+<i>(This is an expanded version of the keynote lecture at the
+International ICAD User's Group conference in May 2002.
+It explains how a language
+developed in 1958 manages to be the most powerful  
+available even today, what power is and when you need it, and
+why pointy-haired bosses (ideally, your
+competitors' pointy-haired bosses) deliberately ignore this issue.)<BR><BR><b>Note:</b> In this talk by "Lisp", I mean the Lisp family of
+languages, including Common Lisp, Scheme, Emacs Lisp, EuLisp,
+Goo, Arc, etc.</i>
+ -->
+<p><i>
+(この記事は2002年5月に国際ICADユーザー会会議で行った基調講演の内容に
+加筆したものである。
+この記事では、1958年に作られた言語がなぜ現在でも最もパワフルなのか、
+そのパワーとは何か、なぜ必要とされるのか、
+そして髪のとんがった上司<sup><a href="#pointy" name="pointy_anchor"><font size="-1">[訳註2]</font></a></sup>が(理想的には、もちろんあなたのライバルの上司だが)
+なぜこの事実を意図的に無視するのかについて説明する。</i>
+</p>
+
+
+<p>
+注記: この講演において、私は "Lisp" という用語を
+Common Lisp、Scheme、Emacs Lisp、EuLisp、Goo、Arc等の
+Lispファミリーの言語の総称として使っている。
+</p>
+
+<hr width="50%">
+
+<!-- 
+Let me start by admitting that I don't know much about ICAD.
+I do know that it's written in Lisp, and in fact includes Lisp,
+in the sense that it lets users create and run Lisp programs.
+ -->
+<p>最初に、ICADについてじつはあまり知らないんだということを断っておこう。
+でもそれがLispで書かれていることは知っているし、それがLispを含んでいる、
+つまりユーザがLispプログラムを書いて走らせることができるってことは知っている。
+</p>
+
+<!-- 
+It's fairly common for programs written in Lisp to include
+Lisp.  Emacs does, and so does Yahoo Store.
+But if you think about it, that's kind of strange.
+How many programs written in C include C, in the sense that   
+the user actually runs the C compiler while he's using the
+application?  I can't think of any, unless you count Unix
+as an application.  We're only a minute into this talk and
+already Lisp is looking kind of unusual.
+ -->
+<p>Lispで書かれたプログラムがLispを「含む」のはよくあることだ。
+Emacsがそうだし、Yahoo Storeもそうだ。
+でもちょっと考えてみると、これはずいぶん奇妙なことだ。
+いったいいくつのCで書かれたプログラムがCを「含んでいる」、
+つまりユーザがそのプログラムを使っている間にCコンパイラを走らせたりしているだろう。
+Unixをアプリケーションの一つとでも考えない限り、私にはちょっと思い付かない。
+まだこの話を初めて1分も経ってないのに、もうLispの変てこりんなところが
+見えて来た。
+</p>
+<!-- 
+Now, it is probably not news to any of you that Lisp is   
+looking unusual.  In fact, that was probably the first thing
+you noticed about it.
+ -->
+<p>いや、もちろんここにいる皆さんはLispが変てこりんだってことは
+先刻承知のことと思う。実際、初めてLispを見た人が真っ先に気づくのがその奇妙さだ。
+</p>
+
+<!-- 
+Believe it or not, there is a reason Lisp code looks
+so strange.  Lisp doesn't look this way because it was designed
+by a bunch of pointy-headed academics.  It <i>was</i>
+designed by pointy-headed academics, but they had hard-headed  
+engineering reasons for making the syntax look so strange.
+ -->
+<p>信じられないかもしれないけど、Lispのコードがそんなに奇妙に見えるのには
+理由があるんだ。何も、頭のとんがった学者達が設計したからこんなふうに
+なっちゃったというわけじゃない。
+いや、Lispは確かに頭のとんがった学者達が設計したんだけど、
+その構文がこんなに変になったのには確固たる工学上の理由があったからなんだ。
+</p>
+
+<!-- 
+<b>Are All Languages Equivalent?</b>
+ -->
+<h2>全ての言語は等しいのか?</h2>
+
+<!-- 
+In the software business there is an ongoing
+struggle between the pointy-headed academics, and another
+equally formidable force, the pointy-haired bosses.  Everyone
+knows who the pointy-haired boss is, right?  I think most
+people in the technology world not only recognize this
+cartoon character, but know the actual person in their company
+that he is modelled upon.
+ -->
+<p>ソフトウェアビジネスでは、頭のとんがった学者達と、
+同じくらい手ごわい勢力である髪のとんがった上司とが絶え間無い抗争を繰り広げている。
+髪のとんがった上司のことはみんな知ってるよね。
+テクノロジー業界にいる人なら大抵はこのマンガのキャラクターだけでなくて、
+そのモデルになりそうな現実の人間を社内に見付けられると思う。
+</p>
+
+<!-- 
+The pointy-haired boss miraculously combines two qualities
+that are common by themselves, but rarely seen together:
+(a) he knows nothing whatsoever about technology, and
+(b) he has very strong opinions about it.
+ -->
+<p>髪のとんがった上司は二つの性質を持っている。
+どちらの性質もごく普通にみられるけど、
+両方とも兼ね備えるとなると奇跡的だ。その性質とは：
+(a) 彼はテクノロジーに関して何も知らない。そして
+(b) 彼はテクノロジーに関して非常に強い意見を持っている。
+</p>
+
+<!-- 
+Suppose, for example, you need to write a piece of software.
+The pointy-haired boss has no idea how this software
+has to work, and can't tell one programming language from
+another, and yet he knows what language you should write it in.
+Right: he thinks you should write it in Java.
+ -->
+<p>例えば、あなたがあるソフトウェアを書かなければならないとする。
+髪のとんがった上司はそのソフトウェアがどう動かなければならないか
+なんて全く理解できないし、あのプログラミング言語とこのプログラミング言語の
+区別もつけられない。でも不思議と、彼はあなたが使わなければならない言語を
+知っているんだ。その通り。Javaを使いなさい、ってこった。
+</p>
+
+<!-- 
+Why does he think this?  Let's
+take a look inside the brain of the pointy-haired boss.  What
+he's thinking is something like this.  Java is a standard.
+I know it must be, because I read about it in the press all the time.
+Since it is a standard, I won't get in trouble for using it.
+And that also means there will always be lots of Java programmers,
+so if the programmers working for me now quit, as programmers
+working for me mysteriously always do, I can easily replace
+them.
+ -->
+<p>何で彼はそう考えるんだろう。この髪のとんがった上司の頭の中を覗いてみよう。
+きっとこんなふうに考えているんだろう。Javaは標準だ。
+そうに違いない。だって新聞や雑誌にいつでも載っているじゃないか。
+それが標準なら、それを使っておけば問題は起こるまい。
+それにいつだってJavaプログラマはたくさんいるだろうから、
+今働いている部下が辞めてしまっても、
+いや、私の部下は不思議とよく辞めるんだが、それでもすぐ代わりが見付けられると
+いうものさ。
+</p>
+
+<!-- 
+Well, this doesn't sound that unreasonable.  But it's all
+based on one unspoken assumption, and that assumption
+turns out to be false.  The pointy-haired boss believes that all
+programming languages are pretty much equivalent.
+If that were true, he would be right on
+target.  If languages are all equivalent, sure, use whatever 
+language everyone else is using.
+ -->
+<p>ふーん。確かにこれはそんなにおかしな考えとも思えない。
+ただこの考えは一つの仮定に基づいていて、実はその仮定は間違いなんだ。
+髪のとんがった上司は全ての言語はだいたい等しいと信じている。
+これが真実なら彼は的を射ている。言語が全て等しいなら、
+他のみんなが使っている言語を使いたまえ。
+</p>
+
+<!-- 
+But all languages are not equivalent, and I think I can prove
+this to you without even getting into the differences between them.
+If you asked the pointy-haired boss in 1992 what language     
+software should be written in, he would have answered with as
+little hesitation as he does today.  Software should be  
+written in C++.  But if languages are all equivalent, why should the
+pointy-haired boss's opinion ever change?  In fact, why should
+the developers of Java have even bothered to create a new
+language?
+ -->
+<p>実際には、言語は等しくないんだ。
+各言語の違いに立ち入らなくたってそれを証明することができる。
+1992年にかの髪のとんがった上司にどの言語でソフトを書くべきか尋ねたら、
+彼はこんにち彼がそうしたのと同じように、ためらいなく答えただろう。
+ソフトウェアはC++で書くべきだ。
+でも全ての言語が等しいなら、なぜ髪のとんがった上司の意見は変わるんだい。
+それよりも、なぜJavaの開発者たちはわざわざ手間をかけて新しい言語を作ったりするんだい。
+</p>
+
+<!-- 
+Presumably, if you create a new language, it's because you think
+it's better in some way than what people already had.  And in fact, Gosling
+makes it clear in the first Java white paper that Java
+was designed to fix some problems with C++.
+So there you have it: languages are not all equivalent.
+If you follow the
+trail through the pointy-haired boss's brain to Java and then
+back through Java's history to its origins, you end up holding
+an idea that contradicts the assumption you started with.
+ -->
+<p>新しい言語を作るってことは、既に他の人がやったやり方よりうまく出来ると
+思うからそうするんだろう。実際、Goslingは最初のJavaのホワイトペーパーで
+JavaはC++にあるいくつかの問題を解決すべく設計されたとはっきりと述べている。
+ほらね。言語は全て等価ではない。髪のとんがった上司の頭からJavaへと、
+そしてJavaの歴史をその起源へと辿ってみれば、最初の仮定と矛盾する考えに
+ぶちあたるというわけさ。
+</p>
+
+<!-- 
+So, who's right?  James Gosling, or the pointy-haired boss?
+Not surprisingly, Gosling is right.  Some languages <i>are</i> better,
+for certain problems, than others.  And you know, that raises some
+interesting questions.  Java was designed to be better, for certain
+problems, than C++.  What problems?  When is Java better and 
+when is C++?  Are there situations where other languages are
+better than either of them?
+ -->
+<p>じゃあどっちが正しいんだろう。James Goslingか、髪のとんがった上司か。
+もちろんGoslingが正しい。いくつかの言語は、特定の問題においては、
+他の言語に優る。Javaは特定の問題においてC++より良くなるべく設計された。
+どんな問題に? どんなときJavaはC++より優れているんだ?
+この2つの言語以外の言語が優れるような状況ってあるだろうか。
+</p>
+
+<!-- 
+Once you start considering this question, you have opened a
+real can of worms.  If the pointy-haired boss had to think
+about the problem in its full complexity, it would make his
+brain explode.  As long as he considers all languages   
+equivalent, all he has to do is choose the one
+that seems to have the most momentum, and since that is more
+a question of fashion than technology, even he
+can probably get the right answer.
+But if languages vary, he suddenly
+has to solve two simultaneous equations, trying to find
+an optimal balance between two things he knows nothing   
+about: the relative suitability of the twenty or so leading
+languages for the problem he needs to solve, and the odds of
+finding programmers, libraries, etc. for each.
+If that's what's on the other side of the door, it
+is no surprise that the pointy-haired boss doesn't want to open it.
+ -->
+<p>ひとたびこの問題を考え出すと虫の一杯詰まった缶を開けることになる。
+髪のとんがった上司がこの問題をまともに考え出したら、彼の頭脳は爆発して
+しまうだろう。全ての言語は等しいと考えておけば、一番勢いのある言語を
+選べばいいだけだ。それは技術よりはむしろ流行の問題なんだから、
+そうやって選んだものが正しいかもしれないじゃないか。
+でも言語が等しくないとすると、彼は二つの連立方程式を解いて
+自分が全く知らない二つのことがらの間の最適なバランスを見つけ出さなくちゃならない。
+20かそこいらある最新の言語の解くべき問題に対する相対的な適合性と、
+各言語に対してライブラリやプログラマを見付けられる確率とだ。
+そんなものがドアの向こうにあるのなら、
+髪のとんがった上司がドアを開けたがらないのも無理はない。
+</p>
+
+<!-- 
+The disadvantage of believing that all programming languages
+are equivalent is that it's not true.  But the advantage is 
+that it makes your life a lot simpler.
+And I think that's the main reason the idea is so widespread.
+It is a <i>comfortable</i> idea.
+ -->
+<p>全ての言語が等価だと信じることのデメリットは、それが真実ではないということだ。
+だがそう信じることには、人生がよっぽど単純になるというメリットがある。
+私が思うに、これこそがこの考えが広まっている主たる原因だ。
+<i>安心できる</i>考えなんだ。
+</p>
+
+<!-- 
+We know that Java must be pretty good, because it is the
+cool, new programming language.  Or is it?  If you look at the world of
+programming languages from a distance, it looks like Java is
+the latest thing.  (From far enough away, all you can see is
+the large, flashing billboard paid for by Sun.)
+But if you look at this world
+up close, you find that there are degrees of coolness.  Within
+the hacker subculture, there is another language called Perl
+that is considered a lot cooler than Java.  Slashdot, for
+example, is generated by Perl.  I don't think you would find
+those guys using Java Server Pages.  But there is another,
+newer language, called Python, whose users tend to look down on Perl,
+and more waiting in the wings.
+ -->
+<p>Javaはとても良い。だってクールで新しい言語だからね。
+ほんとにそうかい? プログラミング言語の世界からちょっと離れて見てみれば、
+確かにJavaが最新のものに見える。 (もっとうーんと離れて見たら、
+Sunが出してるぴかぴかのでっかい看板しか見えないだろうけどね)。
+でもこの世界に近付いてよーく見てみれば、クールさにもいろいろあることが
+見えて来る。ハッカーのサブカルチャーの中では、Perlと呼ばれる言語があって
+Javaよりずっとクールだと考えられている。例えばSlashdotはPerlで生成されている。
+あれをやっている連中がJava Server Pageを使うとは思えない。
+そしてさらにPythonと呼ばれるもっと新しい言語があって、
+そのユーザはPerlを見下しがちだ。さらに多くの言語が舞台袖で出番をうかがっている。
+</p>
+
+<!-- 
+If you look at these languages in order, Java, Perl, Python,
+you notice an interesting pattern.  At least, you notice this
+pattern if you are a Lisp hacker.  Each one is progressively 
+more like Lisp.  Python copies even features
+that many Lisp hackers consider to be mistakes.
+You could translate simple Lisp programs into Python line for line.
+It's 2002, and programming languages have almost caught up 
+with 1958.
+ -->
+<p>Java、Perl、Pythonと順に見て来ると、おもしろいパターンに気づくだろう。
+少なくともあなたがLispハッカーであればきっと気づくはずだ。
+各言語は次第にLispに近付いてきている<sup><a href="#asymptotic" name="asymptotic_anchor"><font size="-1">[訳註3]</font></a></sup>。PythonはLispハッカーの多くが
+間違いだと思っている機能さえコピーしている。簡単なLispプログラムなら、ほぼ
+一行毎にPythonに変換することすら可能だろう。
+2002年の今になって、プログラミング言語はようやく1958年に追い付こうとしている。
+</p>
+
+
+
+<!-- 
+<b>Catching Up with Math</b>
+ -->
+<h2>数学に追い付く</h2>
+
+<!-- 
+What I mean is that
+Lisp was first discovered by John McCarthy in 1958,
+and popular programming languages are only now
+catching up with the ideas he developed then.
+ -->
+<p>Lispは1958年にJohn McCarthyによって最初に発見された。
+そして、人気のあるプログラミング言語は彼が当時発展させたアイディアに
+やっと追い付いてきた。
+</p>
+
+<!-- 
+Now, how could that be true?  Isn't computer technology something
+that changes very rapidly?  I mean, in 1958, computers were
+refrigerator-sized behemoths with the processing power of    
+a wristwatch.  How could any technology that old even be
+relevant, let alone superior to the latest developments?
+ -->
+<p>こんなことってあり得るだろうか。
+コンピューター技術はものすごく速く変化しているんじゃないのか?
+1958年と言えば、コンピューターは冷蔵庫くらいばかでかい化け物で、
+でも腕時計くらいの計算能力しか持っちゃいなかった。
+そんな古い技術が今でも使えるということでさえ驚きなのに、
+最新の開発技術よりも優れているなんてことがあるんだろうか。
+</p>
+
+<!-- 
+I'll tell you how.  It's because Lisp was not really
+designed to be a programming language, at least not in the sense
+we mean today.  What we mean by a programming language is
+something we use to tell a computer what to do.   McCarthy
+did eventually intend to develop a programming language in
+this sense, but the Lisp that we actually ended up with was based
+on something separate that he did as a 
+<a href="rootsoflisp.html">theoretical exercise</a>- an effort
+to define a more convenient alternative to the Turing Machine.
+As McCarthy said later,
+ -->
+<p>あるんだそれが。なぜなら、
+Lispはプログラミング言語として設計されたんじゃなかった。
+少なくとも我々がこんにち使うプログラミング言語と言う意味では。
+つまりコンピューターに何をすべきかを指示するもの、という意味ではね。
+McCarthyはその後確かにそういう意味でのプログラミング言語を作ろうとしたけど、
+こんにちのLispになったものは彼が
+<a href="http://www.paulgraham.com/rootsoflisp.html">理論的な実験</a>としてやったもの、
+チューリングマシンのより便利な代替物を定義しようとした試みの結果なんだ。
+McCarthyは後にこう語っている。
+</p>
+
+<blockquote>
+<!-- 
+Another way to show that Lisp was neater than Turing machines
+was to write a universal Lisp function
+and show that it is briefer and more comprehensible than the
+description of a universal Turing machine.
+This was the Lisp function <a href="http://www.paulgraham.com/lib/jmc.lisp"><i>eval</i></a>..., 
+which computes the value of
+a Lisp expression....
+Writing <i>eval</i> required inventing a notation representing Lisp
+functions as Lisp data, and such a notation
+was devised for the purposes of the paper with no thought that
+it would be used to express Lisp programs in practice.
+ -->
+<p>Lispがチューリングマシンよりも扱いやすいモデルであることを示す
+もう一つの方法は、万能Lisp関数を書いてそれが万能チューリングマシンの
+表記よりも簡潔で分かりやすいことを示すことだった。
+これがLisp関数<a href="http://www.paulgraham.com/lib/jmc.lisp"><i>eval</i></a>だ…、
+それはLisp式の値を計算する。…
+<i>eval</i>を書くために、私はLisp関数をLispのデータとして表す方法を
+考えなければならなかった。その表記はあくまで紙の上で確認するためのもので、
+実際にLispプログラムがそれで書かれるようになるなんて考えもしなかったよ。
+</p>
+</blockquote>
+<!-- 
+What happened next was that, some time in late 1958, Steve Russell,
+one of McCarthy's
+grad students, looked at this definition of <i>eval</i> and realized  
+that if he translated it into machine language, the result
+would be a Lisp interpreter.
+ -->
+<p>次に起こったのはこうだ。1958年後半に、McCarthyの大学院生のひとりであった
+Steve Russellが<i>eval</i>の定義を見ていて、これを機械語に変換すれば
+Lispインタプリタができるじゃないか、と思いついたんだ。
+</p>
+
+<!-- 
+This was a big surprise at the time.
+Here is what McCarthy said about it later in an interview:
+ -->
+<p>これは当時としては画期的なことだった。
+McCarthyは後にインタビューでこのように語っている。
+</p>
+
+<blockquote>
+<!-- 
+Steve Russell said, look, why don't I program this <i>eval</i>..., and
+I said to him, ho, ho, you're confusing theory with practice,
+this <i>eval</i> is intended for reading, not for
+computing. But he went ahead and did it. That is, he compiled the <i>eval</i>
+in my paper into [IBM] 704 machine
+code, fixing bugs, and then advertised this as a Lisp interpreter,
+which it certainly was. So at that point Lisp
+had essentially the form that it has today....
+ -->
+<p>Steve Russelが言った。ほら、<i>eval</i>をプログラムしたらどうだろう…、
+で、私は答えたものさ。はは、君は理論と現実を混同しているよ。
+この<i>eval</i>は人が読むためのもので、計算するためのものじゃない。
+でも彼はそのアイディアを進めて実際にやってしまった。
+つまり、彼は私の論文の<i>eval</i>を[IBM] 704の機械語に直して、
+バグを取り、それをLispインタプリタと称したんだ。
+実際そうだった。それが、Lispが現在の姿を取った瞬間だった。
+</p>
+</blockquote>
+<!-- 
+Suddenly, in a matter of weeks I think, McCarthy found his theoretical
+exercise transformed into an actual programming language- and a
+more powerful one than he had intended.
+ -->
+<p>突如として、おそらく数週間のうちに、
+McCarthyは彼の理論的な実験がプログラミング言語に---それも、
+おそらく彼が意図したのより強力な言語に---変化したのに気づいたのだ。
+</p>
+
+<!-- 
+So the short explanation of why this 1950s language is not
+obsolete is that it was not technology but math, and
+math doesn't get stale.   The right thing to compare Lisp
+to is not 1950s hardware, but, say, the Quicksort
+algorithm, which was discovered in 1960 and is still
+the fastest general-purpose sort.
+ -->
+<p>だから、なぜ1950年代の言語が時代遅れにならないかという簡単な説明は、
+それが技術じゃなくて数学だったということだ。数学は色あせない。
+Lispを比較する対象は1950年代のハードウェアでなく、
+例えばクイックソートのアルゴリズムだ。それは1960年に発見され、
+いまだに汎用ソートアルゴリズムとして最速だ。
+</p>
+
+<!-- 
+There is one other language still
+surviving from the 1950s, Fortran, and it represents the
+opposite approach to language design.  Lisp was a
+piece of theory that unexpectedly got turned into a
+programming language.  Fortran was developed intentionally as
+a programming language, but what we would now consider a
+very low-level one.
+ -->
+<p>1950年代から今まで生き延びている、もうひとつの言語がある。
+Fortranだ。それはLispと正反対の方法で設計されている。
+Lispは理論の一片が意図せずにプログラミング言語になったものだ。
+Fortranはプログラミング言語となるべくして設計されたが、
+現代の我々の基準からすれば非常に低レベルなものだった。
+</p>
+
+<!-- 
+<a href="history.html">Fortran I</a>, the language that was
+developed in 1956, was a very different animal from present-day
+Fortran.   Fortran I was pretty much assembly
+language with math.  In some ways it was less
+powerful than more recent assembly languages; there were no   
+subroutines, for example, only branches.
+Present-day Fortran is now arguably closer to Lisp than to
+Fortran I.
+ -->
+<p>1956年に作られた<a href="http://www.paulgraham.com/history.html">Fortran I</a>は
+現在のFortranとはずいぶん違う生物だった。Fortran Iはアセンブリ言語に
+数学がちょっとくっついたものだった。ある意味、現代のアセンブリ言語よりも
+弱いと言えるかもしれない。例えばサブルーチンは無く分岐だけがあった。
+現代のFortranは、Fortran IよりはかなりLispに近い。
+</p>
+
+<!-- 
+Lisp and Fortran were the trunks of two separate evolutionary trees, 
+one rooted in math and one rooted in machine architecture.
+These two trees have been converging ever since.
+Lisp started out powerful, and over the next twenty years
+got fast.  So-called mainstream languages started out
+fast, and over the next forty years gradually got more powerful,
+until now the most advanced
+of them are fairly close to Lisp.
+Close, but they are still missing a few things....
+ -->
+<p>LispとFortranは二つの独立した進化系統樹の幹にあたる。
+一方は数学に根ざし、もう一方はマシンアーキテクチャに根ざしている。
+これらの二つの樹は発生以来、常に近付いてきた。
+Lispはパワフルな言語として出発し、以降20年の間に速度を獲得した。
+いわゆる主流の言語は高速なものとして出発し、以降40年の間に徐々にパワーを得て来た。
+いまや、最も進んだ言語はLispにかなり近い。
+近い、が、まだいくつか欠けているものがある…
+</p>
+
+<!-- 
+<b>What Made Lisp Different</b>
+ -->
+<h2>Lispのユニークさ</h2>
+
+<!-- 
+When it was first developed, Lisp embodied nine new
+ideas.  Some of these we now take for granted, others are
+only seen in more advanced languages, and two are still
+unique to Lisp.  The nine ideas are, in order of their
+adoption by the mainstream,
+ -->
+<p>最初に開発された時、Lispは9つの新しいアイディアを内包していた。
+そのうちのいくつかは現代では当然のことになっている。
+残りのうちいくつかは進んだ言語に見られ、2つはまだLisp特有だ。
+主流の言語に取り込まれた順にこの9つのアイディアを並べるとこうなる。
+</p>
+
+<ol>
+<li> 
+<!-- 
+Conditionals.  A conditional is an if-then-else
+construct.  We take these for granted now, but Fortran I
+didn't have them. It had only a conditional goto
+closely based on the underlying machine instruction.
+ -->
+条件式。if-then-elseという構造だ。今ではあって当然のものだが、
+Fortran Iには無かった。Fortran Iが持っていたのは機械語の命令を反映した、
+条件付きgotoであった。<br><br>
+
+<li> 
+<!-- 
+A function type. In Lisp, functions are
+a data type just like integers or strings.
+They have a literal representation, can be stored in variables,
+can be passed as arguments, and so on.
+ -->
+関数型。Lispでは関数は整数や文字列と同じようなデータ型のひとつだ。
+リテラル表記を持ち、変数に代入できて、引数として渡せる、というようなことだ。<br><br>
+
+<li> 
+<!-- 
+Recursion.  Lisp was the first programming language to
+support it.
+ -->
+再帰。Lispは再帰をサポートした最初のプログラミング言語だった。<br><br>
+
+<li>
+<!-- 
+Dynamic typing.  In Lisp, all variables
+are effectively pointers. Values are what
+have types, not variables, and assigning or binding
+variables means copying pointers, not what they point to.
+ -->
+動的型付け。Lispでは全ての変数は実質的にポインタだ。
+変数ではなく値の方に型が付いており、
+代入や束縛は実質的にポインタのコピーで行われ、ポインタが指されるものには作用しない。<br><br>
+
+<li>
+<!-- 
+Garbage-collection.
+ -->
+ガベージコレクション。<br><br>
+
+<li> 
+<!-- 
+Programs composed of expressions.  Lisp programs are
+trees of expressions, each of which returns a value.
+This is in contrast to Fortran
+and most succeeding languages, which distinguish between
+expressions and statements.
+ -->
+式でプログラムが構成されること。Lispプログラムは式の木であり、
+それぞれの式が値を返す。これはFortranとそれを引き継ぐ多くの言語とは
+対照的だ。それらの言語は式と文を区別している。<br><br>
+
+<!-- 
+It was natural to have this
+distinction in Fortran I because
+you could not nest statements.  And
+so while you needed expressions for math to work, there was
+no point in making anything else return a value, because
+there could not be anything waiting for it.
+ -->
+Fortran Iにおいて式と文を区別することは自然だった。文はネストできなかったからだ。
+数式が使えるようにするのに式は必要だったが、
+それ以外の処理が値を返す必要も無かった。
+文の戻り値を受けるものなんて無かったからだ。<br><br>
+
+<!-- 
+This limitation
+went away with the arrival of block-structured languages,
+but by then it was too late. The distinction between
+expressions and statements was entrenched.  It spread from
+Fortran into Algol and then to both their descendants.
+ -->
+この制限はブロック構造化言語の到来によって無くなるはずだったが、
+その時には既に手遅れだったのだ。式と文の区別は慣行の中に根を下ろしてしまっていた。
+それはFortranからAlgolに広がり、その子孫の言語へと受け継がれて行った。<br><br>
+
+<li> 
+<!-- 
+A symbol type.  Symbols are effectively pointers to strings
+stored in a hash table.  So
+you can test equality by comparing a pointer,
+instead of comparing each character.
+ -->
+シンボル型。シンボルは実質的にはハッシュテーブルに格納された文字列へのポインタである。
+これによって、文字をひとつひとつ比較しないでもポインタの比較だけで済む。<br><br>
+
+<li> 
+<!-- 
+A notation for code using trees of symbols and constants.
+ -->
+シンボルと定数の木によってコードを表現すること。<br><br>
+
+<li> 
+<!-- 
+The whole language there all the time.  There is
+no real distinction between read-time, compile-time, and runtime.
+You can compile or run code while reading, read or run code
+while compiling, and read or compile code at runtime.
+ -->
+言語の全てが常に在ること。読み込み時、コンパイル時、実行時が
+明確に分離したステップになっていない。読み込み時にコンパイルして
+コードを走らせることもできるし、コンパイル時にコードを読んだり
+走らせたりすることもできるし、実行時にコードを読んだりコンパイルしたり
+することができる。<br><br>
+
+<!-- 
+Running code at read-time lets users reprogram Lisp's syntax;
+running code at compile-time is the basis of macros; compiling
+at runtime is the basis of Lisp's use as an extension
+language in programs like Emacs; and reading at runtime
+enables programs to communicate using s-expressions, an
+idea recently reinvented as XML.
+ -->
+読み込み時にコードを走らせることにより、ユーザがLispの構文を変更することが
+できる。コンパイル時にコードを走らせるというのはマクロの基本だ。
+実行時にコンパイルするというのはLispをEmacsのようなプログラムの拡張言語として
+使うことを容易にする。そして、実行時に読み込みができるというのは、
+プログラム同士がS式を使って通信できるということだ。
+最後のアイディアは最近XMLとして再発明された。<br><br>
+
+</ol>
+<!-- 
+When Lisp first appeared, these ideas were far
+removed from ordinary programming practice, which was
+dictated largely by the hardware available in the late 1950s.
+Over time, the default language, embodied
+in a succession of popular languages, has
+gradually evolved toward Lisp.  Ideas 1-5 are now widespread.
+Number 6 is starting to appear in the mainstream.  
+Python has a form of 7, though there doesn't seem to be    
+any syntax for it.
+ -->
+<p>初めてLispが姿を現したとき、これらのアイディアは
+1950年代後半に使えたハードウェアによって大きく制限されていた
+当時のプログラミング技術からみてあまりにかけ離れていた。
+時が経つにつれ、普通に使われる言語、
+それはその時その時の人気のある言語で置き換わってきたが、
+それはLispへと次第に進化してきた。
+1〜5までのアイディアはいまや広く認知されている。
+6番は主流の言語に現れ始めている。Pythonは7に相当するものを持っているが、
+そのための構文は無いようだ。
+</p>
+
+<!-- 
+As for number 8, this may be the most interesting of the
+lot.  Ideas 8 and 9 only became part of Lisp
+by accident, because Steve Russell implemented
+something McCarthy had never intended to be implemented.
+And yet these ideas turn out to be responsible for
+both Lisp's strange appearance and its most distinctive
+features.  Lisp looks strange not so much because
+it has a strange syntax as because it has no syntax;
+you express programs directly in the parse trees that
+get built behind the scenes when other languages are
+parsed, and these trees are made
+of lists, which are Lisp data structures.
+ -->
+<p>8番はこの中でもっとも面白いものかもしれない。8番と9番のアイディアは、
+McCarthyが実装するなんて考えもしなかったことをSteve Russellがやってのけたために、
+全く意図せずにLispに入ったものだ。
+それが結局、Lispの奇妙な外見と、それを最もユニークたらしめている理由になった。
+Lispが奇妙に見えるのは、奇妙な構文を持っているからというより、
+構文を持っていないからと言ったほうが良いだろう。
+普通の言語なら舞台裏で構文解析して作られるような構文木を、
+Lispプログラマは直接書いてプログラムを表現する。
+その構文木はリストで表現され、それはLispのデータ構造だ。
+</p>
+
+<!-- 
+Expressing the language in its own data structures turns
+out to be a very powerful feature. Ideas 8 and 9
+together mean that you
+can write programs that write programs.  That may sound
+like a bizarre idea, but it's an everyday thing in Lisp. 
+The most common way to do it is with something called a        
+<i>macro.</i>
+ -->
+<p>言語を自分自身のデータ構造で表現するということは、非常に強力な機能となった。
+アイディア8と9を合わせると、プログラムを書くプログラムを書けるということになる。
+これは突飛なアイディアに聞こえるかもしれないが、
+Lispプログラマが日常的に行っていることだ。
+このアイディアは通常、<i>マクロ</i>と呼ばれる方法で実現される。
+</p>
+
+<!-- 
+The term "macro" does not mean in Lisp what it means in other
+languages.
+A Lisp macro can be anything from an abbreviation
+to a compiler for a new language.
+If you want to really understand Lisp,
+or just expand your programming horizons, I would 
+<a href="onlisp.html">learn more</a> about macros.
+ -->
+<p>Lispにおける「マクロ」という用語は他の言語におけるそれとちょっと違う。
+Lispのマクロは、単なる省略形から新しい言語のコンパイラまで何にでも成り得る。
+もしLispを本当に理解したいか、プログラミングの認識の地平線を広げたいなら、
+マクロについて<a href="http://www.paulgraham.com/onlisp.html">学ぶこと</a>をお勧めする。
+</p>
+
+<!-- 
+Macros (in the Lisp sense) are still, as far as
+I know, unique to Lisp.
+This is partly because in order to have macros you
+probably have to make your language look as strange as
+Lisp.  It may also be because if you do add that final
+increment of power, you can no
+longer claim to have invented a new language, but only
+a new dialect of Lisp.
+ -->
+<p>(Lispの意味での)マクロは、私の知る限り依然としてLispに特有のものだ。
+たぶん、マクロを持つためには言語をLispと同じような奇妙な外見にしないと
+駄目だからだろう。それにまた、マクロという最後の力を加えたら、
+それは新しい言語ではなくLispの新しい方言になってしまうからだろう。
+</p>
+
+<!-- 
+I mention this mostly
+as a joke, but it is quite true. If you define
+a language that has car, cdr, cons, quote, cond, atom,
+eq, and
+a notation for functions expressed as lists, then you
+can build all the rest of Lisp out of it.  That is in
+fact the defining quality of Lisp: it was in order to
+make this so that McCarthy gave Lisp the shape it has.
+ -->
+<p>私はよくジョークでそういうことを言うのだが、実際それは真実なんだ。
+car、cdr、cons、quote、cond、atom、eq、そして関数をリストで表現する
+方法を備えた言語があれば、あなたはLispの残り全てをそれで構築することができる。
+これがLispの質を定義しているんだ。McCarthyがLispにこの姿を与えたのは、
+まさにそのためだったからだ。
+</p>
+
+<!-- 
+<b>Where Languages Matter</b>
+ -->
+<h2>言語が問題になるとき</h2>
+
+<!-- 
+So suppose Lisp does represent a kind of limit     
+that mainstream languages are approaching asymptotically- does
+that mean you should actually use it to write software?
+How much do you lose by using a less powerful language?
+Isn't it wiser, sometimes, not to be
+at the very edge of innovation?
+And isn't popularity to some extent
+its own justification?  Isn't the pointy-haired boss right,
+for example, to want to use a language for which he can easily
+hire programmers?
+ -->
+<p>では、Lispが主流の言語が漸近する極限にあると仮定してみよう。
+そうだとしても、その言語を使うべきなのだろうか。
+より力の弱い言語を使ったら、失うものとは何だろうか。
+場合によっては、最先端にいることを避ける方が賢明なこともあるんじゃないか。
+それに、人気があることはそれ自体で正当化されないか。
+例えば髪のとんがった上司がプログラマを簡単に見付けられるような言語を使いたがるのは、
+それはそれで正しいことなんじゃないか。
+</p>
+
+<!-- 
+There are, of course, projects where the choice of programming
+language doesn't matter much.  As a
+rule, the more demanding the application, the more
+leverage you get from using a powerful language.  But
+plenty of projects are not demanding at all.
+Most programming probably consists of writing 
+little glue programs, and for 
+little glue programs you
+can use any language that you're already
+familiar with and that has good libraries for whatever you
+need to do.  If you just need to feed data from one   
+Windows app to another, sure, use Visual Basic.
+ -->
+<p>もちろんプログラミング言語の選択がそんなに問題にならないプロジェクトというのはある。
+基本的に、アプリケーションの要求が高ければ高い程
+力のある言語を使って得られるものは大きくなる。
+だがこの世にある多くのプロジェクトの要求はさして高くない。
+おそらくプログラミングのほとんどは、既存の部品をつなぎ合わせる小さな糊付けプログラムを
+書くようなものだし、それならもう手に馴染んでいて、目的に合わせたライブラリが
+充実している言語を使えばいい。Windowsの一つのアプリケーションから
+別のアプリケーションへデータを流したいだけなら、そりゃあVisual Basicを使えばいいのさ。
+</p>
+
+<!-- 
+You can write little glue programs in Lisp too
+(I use it as a desktop calculator), but the biggest win
+for languages like Lisp is at the other end of
+the spectrum, where you need to write sophisticated
+programs to solve hard problems in the face of fierce competition.
+A good example is the
+<a href="carl.html">airline fare search program</a> that ITA Software licenses to
+Orbitz.  These
+guys entered a market already dominated by two big,
+entrenched competitors, Travelocity and Expedia, and  
+seem to have just humiliated them technologically.
+ -->
+<p>Lispでも小さな糊付けプログラムを書くことはできる
+(私はデスクトップで電卓の代わりに使っている)。
+でもLispみたいな言語が一番威力を発揮するのはプログラミングのスペクトルの逆の端、
+激しい競争に直面しつつ難しい問題を解く洗練されたプログラムを書かなくちゃならない時だ。
+ITA SoftwareがOrbitzにライセンスした
+<a href="http://www.paulgraham.com/carl.html">航空料金検索プログラム</a>が良い例だ。
+彼らは、既に2つの大きな競争相手、TravelocityとExpedia
+がシェアを確立した業界に参入して、技術的に彼らの鼻をあかしたのだ。
+</p>
+
+<!-- 
+The core of ITA's application is a 200,000 line Common Lisp program
+that searches many orders of magnitude more possibilities
+than their competitors, who apparently
+are still using mainframe-era programming techniques.
+(Though ITA is also in a sense
+using a mainframe-era programming language.)
+I have never seen any of ITA's code, but according to
+one of their top hackers they use a lot of macros,
+and I am not surprised to hear it.
+ -->
+<p>ITAのアプリケーションのコアは200,000行のCommon Lispプログラムで、
+おそらくメインフレーム時代のプログラミングテクニックを使っている競争相手の
+何桁も上の組み合せの中から検索を行う 
+(ITAもある意味ではメインフレーム時代のプログラミング言語を使っていると言えるのだが)。
+私はITAのコードを見たことはないが、かの会社のトップハッカーの言によれば、
+彼らはたくさんのマクロを使っているそうだ。そうだろうと思う。
+</p>
+
+<!-- 
+<b>Centripetal Forces</b>
+ -->
+<h2>求心力</h2>
+
+<!-- 
+I'm not saying there is no cost to using uncommon  
+technologies.  The pointy-haired boss is not completely
+mistaken to worry about this.  But because he doesn't understand
+the risks, he tends to magnify them.
+ -->
+<p>広く使われていない技術を使うのにデメリットが無いというつもりはない。
+かの髪のとんがった上司も、その点を心配するのには一理ある。
+ただそのリスクを正しく理解しない限り、彼はリスクを過大評価しがちだ。
+</p>
+
+<!-- 
+I can think of three problems that could arise from using
+less common languages.  Your programs might not work well with
+programs written in other languages.  You might have fewer
+libraries at your disposal.  And you might have trouble
+hiring programmers.
+ -->
+<p>私が思うに、一般的でない言語を使うことから生ずる問題は3つある。
+そのプログラムは別の言語で書かれたプログラムと一緒にはうまく
+動かないかも知れない。すぐ使えるライブラリが少ないかもしれない。
+そして、プログラマを見付けるのが難しいかもしれない。
+</p>
+
+<!-- 
+How much of a problem is each of these?  The importance of
+the first varies depending on whether you have control
+over the whole system.  If you're writing software that has
+to run on a remote user's machine on top of a buggy,
+closed operating system (I mention no names), there may be
+advantages to writing your application in the
+same language as the OS.
+But if you control the whole system and
+have the source code of all the parts, as ITA presumably does, you
+can use whatever languages you want.  If
+any incompatibility arises, you can fix it yourself.
+ -->
+<p>それぞれはどのくらい問題となるだろうか。最初の問題の重要性は、
+あなたが全体のシステムをコントロールできるかどうかによって異なって来る。
+あなたのソフトウェアが、離れたユーザーのマシンで、
+クローズドでバグの多いOS (敢えて名前は挙げないが) の上で走らねばならないのだ
+としたら、OSが書かれているのと同じ言語でアプリケーションを書くことに
+利点はあるだろう。だが全てのシステムがあなたの制御下にあり、
+全ての部分のソースコードを持っているなら(おそらくITAはそうだ)、
+あなたは望みの言語を使うことができる。互換性に問題が生じたら自分で直せるからだ。
+</p>
+
+<!-- 
+In server-based applications you can
+get away with using the most advanced technologies,
+and I think this is the main
+cause of what Jonathan Erickson calls the "<a href=
+"http://www.byte.com/documents/s=1821/byt20011214s0003/">programming language
+renaissance</a>."  This is why we even hear about new
+languages like Perl and Python.  We're not hearing about these
+languages because people are using them to write Windows
+apps, but because people are using them on servers.  And as
+software shifts 
+<a href="road.html">off the desktop</a> and onto servers (a future even
+Microsoft seems resigned to), there will be less
+and less pressure to use middle-of-the-road technologies.
+ -->
+<p>サーバーベースのアプリケーションではあなたは最新の技術を使うことができる。
+これが、Jonathan Ericksonが「<a href=
+"http://www.byte.com/documents/s=1821/byt20011214s0003/">プログラミング言語の
+ルネッサンス</a>」と言った主要な理由だと思う。
+PerlやPythonといった新しい言語がポピュラーになったのもまさにそのためだ。
+これらの言語は、人々がそれでWindowsアプリケーションを書いてるから評判に
+なってるんじゃない。サーバーでそれらが使われているから評判になっているんだ。
+そしてソフトウェアが<a href="http://www.paulgraham.com/road.html">デスクトップから離れて</a>サーバーに
+移行してゆくにしたがって(マイクロソフトでさえその流れに乗ろうとしている)、
+主流の技術を使わねばならないというプレッシャーはどんどん減って行く。
+</p>
+
+<!-- 
+As for libraries, their importance also
+depends on the application.  For less demanding problems,
+the availability of libraries can outweigh the intrinsic power
+of the language.  Where is the breakeven point?  Hard to say
+exactly, but wherever it is, it is short of anything you'd
+be likely to call an application.  If a company considers
+itself to be in the software business, and they're writing
+an application that will be one of their products,
+then it will probably involve several hackers and take at
+least six months to write.  In a project of that
+size, powerful languages probably start to outweigh
+the convenience of pre-existing libraries.
+ -->
+<p>ライブラリに関しても、その重要性は書くアプリケーションに依存する。
+さほど難しくない問題に対しては、ライブラリがあることは言語に備わった
+本質的な力よりも重要なことだろう。どこで両者の重要性が逆転するだろう?
+正確に言うのは難しいが、それがどの点であろうとも、アプリケーションと
+呼べるものに達するちょっと手前であると思う。
+もしある会社がソフトウェアビジネスで生きて行こうと考え、
+その製品としてアプリケーションを書き始めたとしたら、
+少なくとも数人のハッカーで半年かそこいらの期間は必要とするはずだ。
+そのくらいの大きさになれば、既存のライブラリがあることの便利さよりも、
+言語の力の方が重要になってくるだろう。
+</p>
+
+<!-- 
+The third worry of the pointy-haired boss, the difficulty
+of hiring programmers, I think is a red herring.   How many
+hackers do you need to hire, after all?  Surely by now we
+all know that software is best developed by teams of less
+than ten people.   And you shouldn't have trouble hiring
+hackers on that scale for any language anyone has ever heard
+of.  If you can't find ten Lisp hackers, then your company is
+probably based in the wrong city for developing software.
+ -->
+<p>髪のとんがった上司の3番目の懸念、プログラマを見付ける難しさに関しては、
+杞憂だと思う。結局のところ、何人のハッカーが必要なんだい?
+もう今となっては、ソフトウェアは10人以下のチームで書くのが一番だって
+みんな知っているだろう。そしてどんな言語であっても、
+その言語で雇われたプログラマがかつて存在したような言語なら、
+そのくらいの人数のハッカーは集められるはずだ。
+10人のLispハッカーが集められないようなら、
+たぶんあなたの会社はソフトウェアを開発するのに適さない都市にいるんだ。
+</p>
+
+<!-- 
+In fact, choosing a more powerful language probably decreases the
+size of the team you need, because (a) if you use a more powerful
+language you probably won't need as many hackers,
+and (b) hackers who work in more advanced languages are likely
+to be smarter.
+ -->
+<p>実際、より力のある言語を選べば、必要なチームの人数を減らすことができるだろう。
+(a) 言語がパワフルであればそんなに多くのハッカーは必要無いだろうし、
+(b) より進んだ言語を操るハッカーは一般に能力が高いからだ。
+</p>
+
+<!-- 
+I'm not saying that you won't get a lot of pressure to use
+what are perceived as "standard" technologies.  At Viaweb
+(now Yahoo Store),
+we raised some eyebrows among VCs and potential acquirers by
+using Lisp.  But we also raised eyebrows by using
+generic Intel boxes as servers instead of
+"industrial strength" servers like Suns, for using a
+then-obscure open-source Unix variant called FreeBSD instead
+of a real commercial OS like Windows NT, for ignoring
+a supposed e-commerce standard called 
+<a href="http://news.com.com/2100-1017-225723.html">SET</a> that no one now
+even remembers, and so on.
+ -->
+<p>「標準」と見なされている技術を使うべきだ
+というプレッシャーを全く受けないかと言えばそれは嘘になる。
+(現在はYahoo Storeとなった)Viawebでは、
+Lispを使っていることでベンチャーキャピタルや会社を買いに来た人々の目を
+丸くしたものだ。でも、「実務に耐える」Sunのようなサーバーでなく
+普通のIntel boxをサーバーに使っていたことも、
+Windows NTのような本物の商用OSでなく当時はまだあまり知られていなかった
+オープンソースのUnixであるFreeBSDを使っていたことでも、
+またe-commerceの標準になると思われていた
+<a href="http://news.com.com/2100-1017-225723.html">SET</a>
+(誰も覚えちゃいないと思うが)を無視したことでも、
+ベンチャーキャピタルの目を丸くしたのだ。
+</p>
+
+<!-- 
+You can't let the suits make technical decisions for you.
+Did it
+alarm some potential acquirers that we used Lisp?  Some, slightly,
+but if we hadn't used Lisp, we wouldn't have been
+able to write the software that made them want to buy us.
+What seemed like an anomaly to them was in fact
+cause and effect.
+ -->
+<p>スーツを着た連中に技術に関する決断をさせちゃだめだ。
+我々がLispを使っていることで会社の買収候補者は警戒しなかったかって?
+そりゃ多少はね。でももし我々がLispを使わなかったとしたら、
+そもそも彼らが買いたいと思うようなソフトウェアを書くことさえ出来ていなかったんだから。
+彼らが異常だと思うことは、実は単なる原因と結果に過ぎない。
+</p>
+
+<!-- 
+If you start a startup, don't design your product to please
+VCs or potential acquirers.  <i>Design your product to please
+the users.</i>  If you win the users, everything else will
+follow.  And if you don't, no one will care
+how comfortingly orthodox your technology choices were.
+ -->
+<p>ベンチャーを立ち上げるなら、ベンチャーキャピタルや会社の買収候補者を
+喜ばせようと思って製品をデザインしちゃだめだ。
+<i>ユーザーを喜ばせるようにデザインしなきゃ。</i>
+ユーザーを獲得すれば、全ては後からついてくる。
+ユーザーがいなけりゃ、技術の選択がどれだけ主流に忠実かなんて誰も気にしやしないさ。
+</p>
+
+<!-- 
+<b>The Cost of Being Average</b>
+ -->
+<h2>普通であることのコスト</h2>
+
+<!-- 
+How much do you lose by using a less powerful language?  
+There is actually some data out there about that.
+ -->
+<p>じゃあ、力の弱い言語を使うことによってどれだけ損をするんだろう。
+これに関しては多少データがある。
+</p>
+
+<!-- 
+The most convenient measure of power is probably 
+<a href="power.html">code size</a>.
+The point of high-level
+languages is to give you bigger abstractions- bigger bricks,
+as it were, so you don't need as many to build
+a wall of a given size.
+So the more powerful
+the language, the shorter the program (not simply in
+characters, of course, but in distinct elements).
+ -->
+<p>力をはかる一番簡単な方法はたぶん<a href="power-j.html">コードサイズ</a>だろう。
+高レベル言語を使う理由は、より大きな抽象化を可能にしてくれることだ。
+より大きな煉瓦を使えば必要な壁を作るのに少ない煉瓦で済む、というようなものだ。
+だからよりパワフルな言語を使えばプログラムは短くなる
+(もちろん文字数だけでなく、言語の要素に関してもだ)。
+</p>
+
+<!-- 
+How does a more powerful language enable you to write
+shorter programs?  One technique you can use, if the language will
+let you, is something called 
+<a href="progbot.html">bottom-up programming</a>.  Instead of
+simply writing your application in the base language, you
+build on top of the base language a language for writing
+programs like yours, then write your program
+in it. The combined code can be much shorter than if you
+had written your whole program in the base language- indeed,
+this is how most compression algorithms work.
+A bottom-up program should be easier to modify as well,  
+because in many cases the language layer won't have to change
+at all.
+ -->
+<p>よりパワフルな言語を使って、どうやって短いプログラムが書けるんだろう。
+一つのテクニックとして、もし言語がそれを許すなら、
+<a href="http://www.paulgraham.com/progbot.html">ボトムアッププログラミング</a>と呼ばれるものがある。
+アプリケーションをベース言語で書くかわりに、まず自分の書きたいプログラムに
+適合する言語をベース言語で書いて、次にその言語を使ってプログラムを書くんだ。
+両者を合わせたコードサイズは全てをベース言語で書いた場合よりずっと小さくなるはずだ
+---実際、これは圧縮アルゴリズムの動作原理と同じだ。
+ボトムアッププログラムは変更するのも楽だ。
+多くの変更は言語の層に手を加えなくても済ませられる。
+</p>
+
+<!-- 
+Code size is important, because the time it takes
+to write a program depends mostly on its length.
+If your program would be three times as long in another
+language, it will take three times as long to write- and
+you can't get around this by hiring more people, because
+beyond a certain size new hires are actually a net lose.
+Fred Brooks described this phenomenon in his famous
+book <i>The Mythical Man-Month,</i> and everything I've seen
+has tended to confirm what he said.
+ -->
+<p>コードサイズは重要だ。プログラムを書く時間はプログラムの長さに大きく依存する。
+プログラムが別の言語を使ったら3倍のサイズになるんだとしたら、
+それを書くのに3倍の時間が必要になるだろう。そして、
+それはプログラマを増やすことではカバーできない。
+あるサイズを越えたら、新しく人員を投入するのは全体として効率を下げるだけになる。
+Fred Brooksがこの現象を有名な「人月の神話」で述べているが、
+私が見聞きした全てのことは彼の言うことを裏付けている。
+</p>
+
+<!-- 
+So how much shorter are your programs if you write them in
+Lisp?  Most of the numbers I've heard for Lisp
+versus C, for example, have been around 7-10x.
+But a recent article about ITA in 
+<a href="http://www.newarchitectmag.com/documents/s=2286/new1015626014044/"><i>New
+Architect</i></a> magazine said that
+"one line of Lisp can replace 20 lines of C," and since
+this article was full of quotes from ITA's president, I
+assume they got this number from ITA.  If so then
+we can put some faith in it; ITA's software includes a lot
+of C and  C++ as well as Lisp, so they are speaking from
+experience.
+ -->
+<p>じゃあ、Lispで書いたらどのくらいプログラムが短くなるだろう。
+私が聞いたことがあるのはほとんどLispとCの比較だが、例えば、だいたい
+7〜10倍という数字だ。だが、最近の
+<a href="http://www.newarchitectmag.com/documents/s=2286/new1015626014044/"><i>New Architect</i></a>
+誌に掲載されたITAの記事には
+「一行のLispは20行のCコードを置き換えられる」とある。
+この記事はITAの社長の談話を多く載せているから、
+たぶんこの数字もITAから出て来たものだろう。
+だとしたらある程度信用できる。ITAのソフトウェアはLispだけでなく
+CやC++のものも多いから、彼らは経験に基づいて語っているのだ。
+</p>
+
+<!-- 
+My guess is that these multiples aren't even constant.
+I think they increase when
+you face harder problems and also when you have smarter
+programmers.  A really good hacker can squeeze more
+out of better tools.
+ -->
+<p>この倍率は定数ではないかもしれない。難しい問題になればなるほど、
+そしてプログラマが優れていればいるほど、倍率は増加するだろう。
+良いハッカーであればあるほど、良いツールをもっと活用することができる。
+</p>
+
+<!-- 
+As one data point on the curve, at any rate,
+if you were to compete with ITA and
+chose to write your software in C, they would be able to develop
+software twenty times faster than you.
+If you spent a year on a new feature, they'd be able to
+duplicate it in less than three weeks.  Whereas if they spent
+just three months developing something new, it would be
+<i>five years</i> before you had it too.
+ -->
+<p>その曲線の一点として、もしあなたがITAとあるソフトウェアで競争するとして、
+あなたがCを選んだら、彼らはあなたの20倍速くソフトウェアを開発できるということだ。
+新しい機能を入れるのにあなたが1年を費したら、彼らはそれを3週間で追加するだろう。
+彼らが3ヵ月かかって新しいものを開発したとしたら、あなたは<i>5年</i>かけなければ
+それに追い付けない。
+</p>
+
+<!-- 
+And you know what?  That's the best-case scenario.
+When you talk about code-size ratios, you're implicitly assuming
+that you can actually write the program in the weaker language.
+But in fact there are limits on what programmers can do.
+If you're trying to solve a hard problem with a language that's
+too low-level, you reach a point where there is just too 
+much to keep in your head at once.
+ -->
+<p>そしてだよ。それはベストケースの想定だ。
+こうやってコードサイズの比較をしている時は、
+一応弱い言語でもソフトは書き上げられると仮定している。
+でも現実には、プログラマができることには限界があるんだ。
+低レベルすぎる言語で難しい問題を解こうとしたら、
+ある点で頭の中に納めておくには多すぎる問題を抱えることになる。
+</p>
+
+<!-- 
+So when I say it would take ITA's imaginary
+competitor five years to duplicate something ITA could
+write in Lisp in three months, I mean five years
+if nothing goes wrong.  In fact, the way things work in 
+most companies, any
+development project that would take five years is
+likely never to get finished at all.
+ -->
+<p>先程のITAの仮想の競争相手が、ITAがLispで3ヵ月で書いたものを5年かければ
+コピーできると言ったのは、あくまで全てがうまく行った場合の話だ。
+実際には、多くの会社では、5年もかかるようなプロジェクトはまず完成しない。
+</p>
+
+<!-- 
+I admit this is an extreme case.  ITA's hackers seem to
+be unusually smart, and C is a pretty low-level language.
+But in a competitive market, even a differential of two or
+three to one would
+be enough to guarantee that you'd always be behind.
+ -->
+<p>もちろんこれは極端な例だ。ITAのハッカー達はものすごく優秀だし、
+Cはあまりに低レベルな言語だ。だが競争の激しい市場では、2〜3：1という
+差であっても、ライバルにおいて行かれるには十分な数字だ。
+</p>
+
+<!-- 
+<b>A Recipe</b>
+ -->
+<h2>レシピ</h2>
+
+<!-- 
+This is the kind of possibility that the pointy-haired boss
+doesn't even want to think about.  And so most of them don't.
+Because, you know, when it comes down to it, the pointy-haired
+boss doesn't mind if his company gets their ass kicked, so
+long as no one can prove it's his fault.
+The safest plan for him personally
+is to stick close to the center of the herd.
+ -->
+<p>髪のとんがった上司にとって、こんなことは考えたくもないことだろう。
+だから大抵の上司は考えない。結局のところ、彼らは会社が多少どうなろうと
+自分の責任にならなければ良いのだ。彼にとって安全なプランとは、
+なるべく群の中心に近い位置にいることだ。
+</p>
+
+<!-- 
+Within large organizations, the phrase used to
+describe this approach is "industry best practice."
+Its purpose is to shield the pointy-haired
+boss from responsibility: if he chooses
+something that is "industry best practice," and the company
+loses, he can't be blamed.  He didn't choose, the industry did.
+ -->
+<p>大きな組織では、このアプローチは「業界の最良慣行(Industry best practice)」
+という言葉で表される。
+その目的は髪のとんがった上司を責任から護ることだ。
+彼が「業界の最良慣行」である何かを選んでそれで会社が競争に負けたら、
+悪いのは彼じゃない。彼が選んだのではなく、業界が選んだのだから。
+</p>
+
+<!-- 
+I believe this term was originally used to describe
+accounting methods and so on.  What it means, roughly,
+is <i>don't do anything weird.</i>  And in accounting that's
+probably a good idea.  The terms "cutting-edge" and  
+"accounting" do not sound good together.  But when you import
+this criterion into decisions about technology, you start
+to get the wrong answers.
+ -->
+<p>この言葉は、たぶんもともとは会計方法かなんかから出て来たんじゃないかと思う。
+その言葉の意味を乱暴にいえば、「妙なことはするな」ということだ。
+会計の世界ではたぶんそれは良いアイディアだ。
+でも「最先端」と「会計」はあんまり馴染まない。
+だからそんな方法を技術に関する決断に持ち込んだら、
+間違った答えを得るようになる。
+</p>
+
+<!-- 
+Technology often <i>should</i> be
+cutting-edge.  In programming languages, as Erann Gat
+has pointed out, what "industry best practice"  actually
+gets you is not the best, but merely the
+average.  When a decision causes you to develop software at
+a fraction of the rate of more aggressive competitors,  
+"best practice" is a misnomer.
+ -->
+<p>技術はしばしば、最先端でなければならない。
+プログラミング言語では、Erann Gatが示したように、
+「業界の最良慣行」はあなたをトップにするのではなく、単に平均にするだけだ。
+その決断のせいでより進んだ競争相手の数分の一しか開発ができないのなら、
+「最良慣行」は誤った名前だとさえ言える。
+</p>
+
+<!-- 
+So here we have two pieces of information that I think are
+very valuable.  In fact, I know it from my own experience.
+Number 1, languages vary in power.  Number 2, most managers
+deliberately ignore this.  Between them, these two facts
+are literally a recipe for making money.  ITA is an example
+of this recipe in action.
+If you want to win in a software
+business, just take on the hardest problem you can find,
+use the most powerful language you can get, and wait for
+your competitors' pointy-haired bosses to revert to the mean.
+ -->
+<p>ここで、私は2つの情報を述べた。どちらもとても貴重な情報だと思う。
+私はそれを自分の経験から知った。
+第一に、プログラミング言語はその力に差がある。
+第二に、大抵のマネージャーはその事実を無視する。
+実はこの二つは、文字通りお金を儲けるレシピになるんだ。
+ITAは、このレシピがまさに使われている良い例だ。
+ソフトウェアビジネスで勝とうと思ったら、
+見付けられるうちで一番難しい問題に目をつけて、
+手に入る一番パワフルな言語を使い、
+そしてライバル会社の髪のとんがった上司が中庸な技術へと
+戻って行くのを待っていればいいのさ。
+</p>
+
+<hr>
+
+
+<!-- 
+<b>Appendix: Power</b>
+ -->
+<h2>付録：力</h2>
+
+<!-- 
+As an illustration of what I mean about the relative power
+of programming languages, consider the following problem.
+We want to write a function that generates accumulators- a
+function that takes a number n, and
+returns a function that takes another number i and
+returns n incremented by i.
+ -->
+<p>私が言う言語の相対的な力を説明するために、次の問題を考えてみよう。
+アキュムレータを生成する関数、すなわち、数nを取り、
+「数iを取ってnをiだけ増加させ、その増加した値を返す関数」を返すような関数だ。
+</p>
+
+<!-- 
+(That's <i>incremented by</i>, not plus.  An accumulator
+has to accumulate.)
+ -->
+<p>(「増加させる」に注意。ただ足すだけではない。
+アキュムレータ(累積器)だから累積させなければ)。
+</p>
+
+<!-- 
+In Common Lisp this would be
+ -->
+<p>Common Lispではこんなふうになるだろう。
+</p>
+
+<font face=courier><xmp>
+(defun foo (n)
+  #'(lambda (i) (incf n i)))
+</xmp></font>
+<!-- 
+and in Perl 5,
+ -->
+<p>そしてPerl 5ではこうだ</p>
+<font face=courier><xmp>
+sub foo {  
+  my ($n) = @_;
+  sub {$n += shift}
+}
+</xmp></font>
+<!-- 
+which has more elements than the Lisp version because
+you have to extract parameters manually in Perl.
+ -->
+<p>Perl 5の方がLispのより要素数が多いが、これはPerlではパラメータを自分で
+取り出さなければならないからだ。</p>
+
+<!-- 
+In Smalltalk the code is also a bit longer than in Lisp
+ -->
+<p>SmalltalkもLispよりちょっと長くなる</p>
+
+<font face=courier><xmp>
+foo: n                              
+  |s|                      
+  s := n.                          
+  ^[:i| s := s+i. ] 
+</xmp></font>
+<!-- 
+because although in general lexical variables work, you can't
+do an assignment to a parameter, so you have to create a
+new variable s.
+ -->
+<p>レキシカルな変数が使えるが、パラメータには代入できないから、
+新しい変数sを作らなくちゃならない。</p>
+
+<!-- 
+In Javascript the example is also a bit longer, because 
+Javascript retains
+the distinction between statements and
+expressions, so you need explicit <tt>return</tt> statements
+to return values:
+ -->
+<p>Javascriptでもこの例はちょっと長くなるが、
+それは文と式の区別を持っているために、明示的な<tt>return</tt>文を
+使わなければならないからだ。</p>
+<font face=courier><xmp>
+function foo(n) { 
+  return function (i) { 
+           return n += i } }
+</xmp></font>
+<!-- 
+(To be fair, Perl also retains
+this distinction, but deals with it in typical Perl fashion
+by letting you omit <tt>return</tt>s.)
+ -->
+<p>(公正を期するなら、Perlもこの区別を持っているが、
+通常の書き方では<tt>return</tt>を省略できる)</p>
+
+<!-- 
+If you try to translate the Lisp/Perl/Smalltalk/Javascript code into 
+Python you run into some limitations.  Because Python
+doesn't fully support lexical variables,
+you have to create a data structure to hold the value of n.
+And although
+Python does have a function data type, there is no
+literal representation for one (unless the body is
+only a single expression) so you need to create a named
+function to return.  This is what you end up with:
+ -->
+<p>このLisp/Perl/Smalltalk/JavascriptをPythonに移そうとすると
+ちょっとした制限につきあたる。Pythonには完全なレキシカル変数が無いため、
+nの値を保持するデータ構造を作らなければならないからだ。
+また、Pythonは関数データ型を持っているが、
+その関数が単一の式で表されない場合はリテラル表記できない。
+だから名前をつけた関数を作ってそれを返さなければならない。
+こんな感じになるだろう。</p>
+</p>
+<font face=courier><xmp>
+def foo(n):
+  s = [n]
+  def bar(i):
+    s[0] += i
+    return s[0] 
+  return bar
+</xmp></font>
+<!-- 
+Python users might legitimately ask why they can't
+just write
+ -->
+<p>Pythonユーザーはなぜ以下のように書けないか疑問に思って良いと思う。</p>
+<font face=courier><xmp>
+def foo(n):
+  return lambda i: return n += i
+</xmp></font>
+<!-- 
+or even
+ -->
+あるいは、
+<font face=courier><xmp>
+def foo(n):
+  lambda i: n += i
+</xmp></font>
+<!-- 
+and my guess is that they probably will, one day.
+(But if they don't want to wait for Python to evolve the rest
+of the way into Lisp, they could always just...)
+<!- (Oscar Wilde: "I wish I had said that." Whistler: "You will,
+Oscar, you will.")  ->
+ -->
+<p>そして、たぶんいつの日か、そう書けるようになるだろう。
+(ただ、PythonがLispへの最後の道程を進化するのを待てない
+ユーザには、いつでも使える手段がある。それは…)
+</p>
+
+<!-- 
+In OO languages, you can, to a limited extent, simulate
+a closure (a function that refers to variables defined in
+enclosing scopes) by defining a class with one method
+and a field to replace each variable from an enclosing
+scope.  This makes the programmer do the kind of code
+analysis that would be done by the compiler in a language
+with full support for lexical scope, and it won't work
+if more than one function refers to the same variable,
+but it is enough in simple cases like this.
+ -->
+OO言語では、一つだけメソッドを持つクラスを定義して
+メソッドが参照する変数をクラスのフィールドに置き換えれば、
+制限はあるものの、
+クロージャ(定義されたスコープ内の変数を参照できる関数)を模倣することはできる。
+そうすることは、レキシカルスコープを完全にサポートする言語ではコンパイラが
+やってくれるような作業をプログラマが自分でやるようなものだし、
+複数の関数が同一の変数を参照する場合なんかは使えないけれど、
+この例のような簡単な場合は十分だ。</p>
+
+<!-- 
+Python experts seem to agree that this is the
+preferred way to solve the problem in Python, writing
+either
+ -->
+<p>Pythonのエキスパートは、こっちの方法の方がPythonらしいということに
+同意するんじゃないだろうか。たとえばこう書いたり</p>
+
+<font face=courier><xmp>
+def foo(n):
+  class acc:
+    def __init__(self, s):
+        self.s = s
+    def inc(self, i):
+        self.s += i
+        return self.s
+  return acc(n).inc
+</xmp></font>
+<!-- 
+or
+ -->
+<p>あるいはこうだ。</p>
+<font face=courier><xmp>
+class foo:
+  def __init__(self, n):
+      self.n = n
+  def __call__(self, i):
+      self.n += i
+      return self.n
+</xmp></font>
+<!-- 
+I include these because I wouldn't want Python
+advocates to say I was misrepresenting the language,   
+but both seem to me more complex than the first   
+version.  You're doing the same thing, setting up
+a separate place to hold the accumulator; it's just
+a field in an object instead of the head of a list.
+And the use of these special,
+reserved field names, especially <tt>__call__</tt>, seems
+a bit of a hack.
+ -->
+<p>私がこの例を入れたのは、
+Python支持者が、私が言語を間違った方法で紹介しているんだと思わないようにだ。
+だがどちらの方法も、私にとっては最初の例より複雑に見える。
+アキュムレータを保持する場所を作るという同じことをしているだけで、
+それが最初の例ではリストの先頭であり、これらの例ではフィールドになっただけだ。
+それに特殊な予約フィールド名、特に <tt>__call__</tt> 
+はちょっとしたハックのように感じられる。
+</p>
+
+<!-- 
+In the rivalry between Perl and Python, the claim of the
+Python hackers seems to be that
+that Python is a more elegant alternative to Perl, but what
+this case shows is that power is the ultimate elegance:
+the Perl program is simpler (has fewer elements), even if the
+syntax is a bit uglier.
+ -->
+<p>PerlとPythonの比較では、
+Pythonハッカーの方はいつもPythonがPerlよりエレガントに書けると主張しているようだが、
+この例を見る限り、言語の力は究極のエレガンスに通じるようだ。
+Perlの方が、構文はちょっと醜いが、単純だ (より少ない要素で書ける)。
+</p>
+
+<!-- 
+How about other languages? In the other languages
+mentioned in this talk- Fortran, C, C++, Java, and
+Visual Basic- it is not clear whether you can actually
+solve this problem.
+Ken Anderson says that the following code is about as close
+as you can get in Java:
+ -->
+<p>他の言語ではどうだろう。この話で述べた他の言語--Fortran, C, C++,
+Java,そしてVisual Basic--では、この問題が解けるかどうかさえ定かではない。
+Ken Andersonは、次のコードはJavaでやる限り最も近い解だと述べた</p>
+
+<font face=courier><xmp>
+public interface Inttoint {
+  public int call(int i);
+}
+</xmp></font>
+
+<font face=courier><xmp>
+public static Inttoint foo(final int n) {
+  return new Inttoint() {
+    int s = n;
+    public int call(int i) {
+    s = s + i;
+    return s;
+    }};
+}
+</xmp></font>
+<!-- 
+This falls short of the spec because it only works for
+integers.  After many email exchanges with Java hackers,
+I would say that writing a properly polymorphic version
+that behaves like the preceding examples is somewhere
+between damned awkward and impossible.  If anyone wants to
+write one I'd be very curious to see it, but I personally
+have timed out.
+ -->
+<p>これは整数でしか動作しないという点でもとのスペックに届いていない。
+Javaハッカーとずいぶんメイルで討論したが、上の方で示したような例と同様に
+動作する真に多態なコードをJavaで書くのは、ものすごく不自由と不可能との間だ、
+ということのようだ。誰かうまく書けたら是非見せて欲しい。
+私は自分でもいろいろやってみたが時間切れだった。
+</p>
+
+<!-- 
+It's not literally true that you can't solve this
+problem in other languages, of course.  The fact
+that all these languages are Turing-equivalent means
+that, strictly speaking, you can write any program in
+any of them.  So how would you do it?  In the limit case,
+by writing a Lisp
+interpreter in the less powerful language.
+ -->
+<p>もちろん、他の言語でこの問題を解けないと言ってしまうのは正しくはない。
+全ての言語はチューリング等価であるという事実は、厳密に言えば、
+いかなるプログラムもどんな言語を使っても書けるということだ。
+じゃあどうやって? このようなケースでは、
+力の弱い言語でLispインタプリタを書くことで実現できる。
+</p>
+
+<!-- 
+That sounds like a joke, but it happens so often to
+varying degrees in large programming projects that
+there is a name for the phenomenon, Greenspun's Tenth
+Rule:
+ -->
+<p>これはジョークのように思えるかもしれないが、
+そういうことは大きなプログラミングプロジェクトでは程度の差こそあれ非常に頻繁に
+起こっていることだ。だから名前さえついている。「グリーンスパンの第10規則」というものだ。
+</p>
+
+<blockquote>
+<!-- 
+ Any sufficiently
+     complicated C or Fortran program contains an ad hoc
+     informally-specified bug-ridden slow implementation of half of
+     Common Lisp.
+ -->
+全ての十分に複雑なCもしくはFortranプログラムは、
+後付けの、不完全な仕様とバグを持ち、遅い、Common Lispの半分の実装を含んでいる。
+</blockquote>
+<!-- 
+If you try to solve a
+hard problem, the question is not whether you will use
+a powerful enough language, but whether you will (a)
+use a powerful language, (b) write a de facto interpreter
+for one, or (c) yourself become a human compiler for one.
+We see this already
+begining to happen in the Python example, where we are
+in effect simulating the code that a compiler
+would generate to implement a lexical variable.
+ -->
+<p>あなたが難しい問題を解こうとしているなら、
+問われているのはパワフルな言語を使うか使わないか、ではない。
+(a)パワフルな言語を使うか 
+(b)パワフルな言語と等価なインタプリタを書くか
+(c)自らがパワフルな言語の人間コンパイラとなるか、という選択なのだ。
+Pythonの例の中に既にこの選択を見て取ることができる。あの例で我々は、
+コンパイラがレキシカルな変数を扱う際に生成するようなコードをシミュレートしていたのだ。
+</p>
+
+<!-- 
+This practice is not only common, but institutionalized.  For example,
+in the OO world you hear a good deal about 
+"patterns".
+I wonder if these patterns are not sometimes evidence of case (c),
+the human compiler, at work.  When I see patterns in my programs,
+I consider it a sign of trouble.  The shape of a program
+should reflect only the problem it needs to solve.
+Any other regularity in the code is a sign, to me at
+least, that I'm using abstractions that aren't powerful
+enough- often that I'm generating by hand the
+expansions of some macro that I need to write.
+ -->
+<p>コンパイラがやるべきことを人間がシミュレートするという慣行は
+ただ広まっているというだけでなく、思考を型にはめる作用がある。
+例えば、OOの世界では非常に良く「パターン」というのを耳にするだろう。
+この「パターン」は多くの場合、(c)のケース、
+すなわち人間コンパイラが実際に動作している証拠なんじゃないかと私は思う。
+私が自分のプログラムにパターンを見付けたら、それはどこかがおかしいというサインだ。
+プログラムの形は、それが解くべき問題のみを反映すべきだ。
+その他の繰り返しがコード中に現れるということは、少なくとも私にとっては、
+十分な抽象化を行っていないということを意味する。大抵の場合、それは
+マクロを書くべきコードを手で拡張して書いているということになる。
+</p>
+
+<!-- 
+<b>Notes</b>
+ -->
+<h2>原註</h2>
+
+<ul>
+<li>
+<!-- 
+The IBM 704 CPU was about the size of a refrigerator,
+but a lot heavier.  The CPU weighed 3150 pounds,
+and the 4K of RAM was in a separate
+box weighing another 4000 pounds.  The
+Sub-Zero 690, one of the largest household refrigerators,
+weighs 656 pounds.
+ -->
+IBM 704のCPUはだいたい冷蔵庫の大きさだったが、ずっと重かった。
+CPUそれ自体が3150ポンド(約1.4t)の重さだったし、4KのRAMが別の箱に入っていて
+4000ポンドだった。ちなみに家で使われる最大型の冷蔵庫であるSub-Zero 690は
+656ポンドである。
+<li> 
+<!-- 
+Steve Russell also wrote the first (digital) computer
+game, Spacewar, in 1962.
+ -->
+Steve Russellはまた、1962年に最初の(デジタル)コンピューターゲームである
+Spacewarも書いた。
+
+<li> 
+<!-- 
+If you want to trick a pointy-haired boss into letting you
+write software in Lisp, you could try telling him it's XML.
+ -->
+もしあなたが、髪のとんがった上司をうまく説得してLispでソフトウェアを
+書かせてもらおうとするなら、それはXMLだと言ってみるのも手かもしれない。
+
+<li> 
+<!-- 
+Here is the accumulator generator in other Lisp dialects:
+ -->
+これが、他のLisp方言におけるアキュムレータジェネレータのコードだ。
+<font face=courier><xmp>
+Scheme: (define (foo n) 
+          (lambda (i) (set! n (+ n i)) n))
+Goo:    (df foo (n) (op incf n _)))
+Arc:    (def foo (n) [++ n _])
+</xmp></font>
+
+<li> 
+<!-- 
+Erann Gat's sad tale about
+"industry best practice" at JPL inspired me to address
+this generally misapplied phrase.
+ -->
+Erann GatのJPLにおける「業界のベストプラクティス」についての悲しい話<sup><a href="#gat" name="gat_anchor"><font size="-1">[訳註4]</font></a></sup>を聞いて、
+この言葉の間違った適用を正して置かねばと思ったのだ。
+
+
+<li> 
+<!-- 
+Peter Norvig found that
+16 of the 23 patterns in <i>Design Patterns</i> were 
+"<a href="http://www.norvig.com/design-patterns/">invisible
+or simpler</a>" in Lisp.
+ -->
+Peter Norvigは<i>Design Patterns</i>に挙げられた23のパターンのうち
+16はLispでは「<a href="http://www.norvig.com/design-patterns/">
+全く見えないか、あるいはより簡潔である</a>」ことを発見した。
+
+<li> 
+<!-- 
+Thanks to the many people who answered my questions about
+various languages and/or read drafts of this, including
+Ken Anderson, Trevor Blackwell, Erann Gat, Dan Giffin, Sarah Harlin,
+Jeremy Hylton, Robert Morris, Peter Norvig, Guy Steele, and Anton
+van Straaten.
+They bear no blame for any opinions expressed.
+ -->
+<p>様々な言語に関する私の質問に答えてくれ、さらにこの記事の草稿を読んでくれた
+たくさんの人々に感謝します：
+Ken Anderson, Trevor Blackwell, Erann Gat, Dan Giffin, Sarah Harlin,
+Jeremy Hylton, Robert Morris, Peter Norvig, Guy Steele, そして Anton
+van Straaten。
+なお、本記事中に述べられた意見に関してこれらの人々には一切責任はありません。
+</p>
+
+</ul>
+
+<h3>関連情報</h3>
+
+<!-- 
+Many people have responded to this talk, so I have set up an additional
+page to deal with the issues they have raised:
+ -->
+<p>たくさんの人々がこの講演に対して反響をくれた。
+議論に上がったことがらに関して、別にページを設けた：
+<A HREF="icadmore-j.html">「技術野郎の復讐---Revenge of the Nerds---」への反響</A>
+</p>
+
+<!-- 
+It also set off an extensive and often useful discussion on the LL1 mailing list. See particularly the mail by Anton van Straaten on semantic compression.
+ -->
+<p>また、<a href="http://www.ai.mit.edu/~gregs/ll1-discuss-archive-html/threads.html">LL1</a>メイリングリストにおいても
+長大でしばしば有用な議論に火をつけた。
+特に、Anton van Straatenのセマンティックコンプレッションのメイルを参照のこと。
+</p>
+
+<!-- 
+Some of the mail on LL1 led me to try to go deeper into the subject of language power in Succinctness is Power.
+ -->
+<p>LL1でのいくつかのメイルに触発されて、私は言語の力の問題について
+<a href="power-j.html">簡潔さは力なり</a>でより深く考えてみた。
+</p>
+
+<!-- 
+A larger set of canonical implementations of the accumulator generator benchmark are collected together on their own page.
+ -->
+<p>アキュムレータ生成のベンチマークに対する、より多くの正規実装は
+<a href="http://www.paulgraham.com/accgen.html">独自のページ</a>にまとめている。
+</p>
+
+<hr>
+<h3>訳註</h3>
+
+<dl>
+<dt> <a name="title" href="#title_anchor">訳註1</a>：
+<dd>
+<p>本記事のタイトル、「Revenge of the Nerds」は1984年公開の
+<a href="http://us.imdb.com/Title?0088000">米映画</a>のタイトルである。
+大学を舞台に、冴えないコンピュータオタク(死語?)達がその技術力で
+スポーツマンヒーロータイプの連中の鼻を明かす、という話、らしい。
+日本公開時の邦題は「ナーズの復讐」であった。
+が、「ナーズ」と聞いて "nerd" の複数形と理解し、
+かつ英語の "nerd" が内包する意味を想起するのは難しいように思われる。
+(邦題を見たとき、一瞬「ナースの復讐? なんでだ?」と思っちゃったし)。
+</p>
+<p>さらに、この記事においてPaul Graham氏が "nerd" で意味したことは、
+「ナード」という単語の持つ典型的なイメージ (青白くて対人関係が苦手で、
+もっぱらコンピュータを相手にしてて、でも天才的な技術を持ってる)
+よりは広いもののように思える。
+(多分自らが "nerd" に分類されると自負している人はもっと広い意味で
+その単語をとらえているだろうが、外側から見たイメージはこんなものだろう)。</p>
+<p>そこで、Paul Graham氏にこの題名の含むところについて質問してみた。
+氏からのe-mailを公開する了承を得たので、参考のために下に訳出しておく。</p>
+<blockquote>
+<p>"Revenge of the Nerds" は映画です。nerd はアメリカの大学では
+普通はあまりイケてなくて (コンピューターが「クール」になったおかげで
+昔より多少人気は出てきましたが)、だから社会階層の一番下にいます。
+この映画は、大学のnerdのグループが(何だったかは忘れましたが)
+素晴らしい勝利をおさめて、みんなから称賛されるという内容でした。
+</p>
+<p>英語では、"nerd"という言葉は、流行を追ったり人付き合いをうまくこなすよりも
+知的なものごとに興味を惹かれる人を指します。
+nerdはいつも本にかじりついていて、
+社交的な場面ではおどおどしてへまばかりしています。
+ハッカーは大抵nerdです。セールスマンはnerdの対極にあります。
+マネージャーはnerdであることもありますが、普通は違います。
+ビル・ゲイツはnerdです。ディルバートもnerdです。
+アインシュタインもnerdでした。
+</p>
+<p>"Nerd" はもともと、アメリカでは悪い印象がありました。
+しかし今ではそれほどでもありません。多分、新しい技術を発明することで
+大金持ちになれると皆知ったからでしょう。たくさんのハッカーが
+自身をnerdと考えており、そうではないと言われたらむっとするかもしれません。
+nerdでないと言われることは、賢くないということを意味しているからです。
+</p>
+<p>私がこの記事を "Revenge of the Nerds" と呼んだのは、
+良い技術的なアイディアが、悪くても広くマーケティングされているアイディア
+(そして愚かなマネージャに好まれるアイディア) に対してゆっくりと、
+しかし確実に勝利を収めてゆくということを言いたかったからです。
+nerdsの復讐とは、彼らのアイディアが勝つということです。そして
+ITAの場合(およびViawebの場合も)、保守的な競争相手が歯が立たない
+技術を使うことで、彼ら自身も勝利しました。
+</p>
+<p>「オタク」という言葉は、英語ではむしろ "freak" に当たるように
+思えます。コンピュータゲームの熱狂的なファンを "computer game freak"
+と呼んだりします。"nerd" にはそのような意味はありません。
+</p>
+<p>より近い翻訳は、"Revenge of the professors" とか、
+"Revenge of the unworldly intellectuals" になるかもしれません。
+</p>
+</p>
+</blockquote>
+<p>これを踏まえた上で良い訳語を、と思ったのだが、
+訳者の力不足でこれというものに至らなかった。
+良い表現を思い付かれた方は教えて頂けたら幸いである。
+</p>
+<dt> <a name="pointy" href="#pointy_anchor">訳註2</a>：
+<dd>
+<p>
+髪のとんがった上司(pointy-haired boss): 
+<a href="http://www.unitedmedia.com/comics/dilbert/the_characters/index.html">Dilbert</a>に出て来るキャラクタ。
+</p>
+<dt> <a name="asymptotic" href="#asymptotic_anchor">訳註3</a>：
+<dd>
+<p>
+これは実際Lispプログラマの間で良くジョークで言われることだが、
+Pythonユーザからの視点として、Paul Prescod氏が反論
+<a href="IsPythonLisp-j.html">PythonとLispの関係について</a>を書いている。
+よくまとまっているので、特にLispプログラマは是非参照されたい。
+</p>
+<dt> <a name="gat" href="#gat_anchor">訳註4</a>：
+<dd>
+<p>
+Erann Gat's sad tale: 彼のcomp.lang.lispへの投稿<a href="http://groups.google.com/groups?hl=en&selm=gat-1902021257120001%40eglaptop.jpl.nasa.gov&rnum=1">How I lost my faith (long)</a>
+(<a href="http://www.gembook.jp/page.pys?wiki=How+I+lost+my+faith">和訳</a>)のことだろうか?
+プロフェッショナルLispプログラマなら、
+多かれ少なかれ彼と似たような経験はしてるだろうし、
+Remote Agentプロジェクトの査問会の下りは涙なくしては読めまい……。
+</p>
+<p>(2004/3/21) Nao Hirokawaさんより、この「悲しい話」は
+<a href="http://www.flownet.com/gat/jpl-lisp.html">Lisping at JPL</a>
+ではないか、との情報を頂いた。「ベストプラクティス」という言葉も出てくる。
+</p>
+</dl>
+
+<hr>
+
+<a href="../index-j.html">[Practical Scheme]</a>
+
+</BODY></html>

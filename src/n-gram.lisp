@@ -1,12 +1,15 @@
+
 (defpackage n-gram
   (:use  :common-lisp)
   (:export main
 		   learn))
 
+(load "../../html-parser/html.lisp")
 (load "vars")
 (load "util")
 (in-package n-gram)
 
+(use-package :html)
 (declaim (inline get-str-combi)
 		 (inline slice)
 		 (inline scoring-url))
@@ -283,6 +286,7 @@
 
 ;;;url -> learn key-words.csv and format top 3 tags
 (defun main (url)
+  (handler-case 
   (let* ((score (scoring-url url))
 		 (tag-list (get-tags score))
 		 (result nil))
@@ -296,7 +300,8 @@
 	  do (update-key-list (divided-hash score n) (load-tag-key-file tag))
 	  do (format t "~%~a: ~a~%" (round n) tag)
 	  do (setf result (cons tag result)))
-	(the list (nreverse result))))
+	(the list (nreverse result)))
+  (type-error (c) (print "Invalid URL"))))
 
 ;;;url tag -> learn tag/key-words.csv
 (defun learn (url tag)
@@ -307,3 +312,22 @@
 			 (list tag-list))
 	(update-key-list score (load-tag-key-file tag))
 	tag-list))
+
+;;;chroler for learning
+;;;ready file which having name of tag
+;;;and url~%...
+;;;then read-line and save it to tag/key-words
+(defun chroler (file)
+  (let ((tag (intern (string-upcase (car (last (split #\/ file)))) "KEYWORD"))
+		(urls))
+	(declare (list urls))
+	(with-open-file (input file)
+	  (loop 
+		for line = (read-line input nil)
+		while line
+		do (push line urls)))
+	(mapcar #'(lambda (url) (format t "~a:~%~a~%" url (learn url tag)))
+			urls)))
+
+
+
