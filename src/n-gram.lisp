@@ -15,13 +15,8 @@
 ;; or you can set it just list and use find instead of gethash
 (defun count-word (word hash)
   (declare (string word)
-<<<<<<< HEAD
-		   (hash-table hash))
-  (let ((score (gethash word hash)))
-=======
 		   (hash-table hash)
 		   (optimize (speed 3) (safety 0) (debug 0) (space 0)))
->>>>>>> Issue/18
 	(if (not (gate word)) ;;restriction of word
 	  (let ((score (gethash word hash)))
 		(declare ((or single-float boolean) score))
@@ -46,12 +41,8 @@
 (defun n-gram (n str hash)
   (declare (fixnum n)
 		   (string str)
-<<<<<<< HEAD
-		   (hash-table hash))
-=======
 		   (hash-table hash)
 		   (optimize (speed 3) (safety 0)))
->>>>>>> Issue/18
   (loop
 	for word = (n-slice n str)
 	while word
@@ -60,18 +51,10 @@
 
 ;;;do n-gram from n to m
 ;;;returns hash-table
-<<<<<<< HEAD
-(defun n-to-m-gram (n m str &optional (hash nil))
-  (declare (fixnum n m)
-		   (string str))
-  (if (null hash)
-	(setf hash (make-hash-table :test #'equal)))
-=======
 (defun n-to-m-gram (n m str &optional (hash (make-hash-table :test #'equal)))
   (declare (fixnum n m)
 		   (string str)
 		   (hash-table hash))
->>>>>>> Issue/18
   (loop
 	for i from n to m
 	do (n-gram i str hash))
@@ -88,17 +71,6 @@
 			   (/ length 1.0)
 			   1.0))
 		(val (gethash word hash)))
-<<<<<<< HEAD
-	(declare (string word)
-			 (hash-table hash)
-			 (fixnum len length))
-	(loop
-	  for item in (the list (get-str-combi word))
-	  for score = (gethash item hash)
-	  do (if score
-		   (setf sum (+ sum score))))
-	(the number (/ (* (gethash word hash) sum) (/ length (length word))))))
-=======
 	(declare (single-float sum len)
 			 (number val))
 	(loop
@@ -106,7 +78,6 @@
 	  for score = (gethash item hash)
 		   when score do (setf sum (the float (+ sum score))))
 	(/ (* (gethash word hash) sum) (/ length (length word)))))
->>>>>>> Issue/18
 
 ;;;scoring hash-table
 ;;;hash -> hash
@@ -115,19 +86,11 @@
 		(hash hash-t))
 	(declare (hash-table hash-t hash result))
 	(maphash #'(lambda (key val)
-<<<<<<< HEAD
-				 (let ((score (the number (scoring key hash :length length))))
-				   (if (not (eql 0 score))
-					 (setf (gethash key result) score))))
-			 (cut-off 100 (brush-up hash) :items t))
-	(the hash-table result)))
-=======
 				 (let ((score (scoring key hash :length length)))
 				   (if (not (eql 0.0 score))
 					 (setf (gethash key result) score))))
 			 (brush-up hash))
 	result))
->>>>>>> Issue/18
 
 ;;;input html -> output scoring hash-table
 (defun scoring-html (html)
@@ -142,13 +105,8 @@
 ;;;strnigs -> hash-table
 (defun scoring-str (str)
   (let ((len (length str)))
-<<<<<<< HEAD
-	(declare (string str)
-			 (integer len))
-	(the hash-table (scoring-hash (n-to-m-gram 1 12 (remove-not-jp str)) :length len))))
-=======
-	(scoring-hash (n-to-m-gram 1 12 str) :length len)))
->>>>>>> Issue/18
+	(declare (string str))
+	(the hash-table (scoring-hash (n-to-m-gram 1 12 str) :length len))))
 
 ;;;brushing up key words
 ;;;remove key which includes 2 types
@@ -156,9 +114,6 @@
 ;;;Hiragana 12353-12447
 ;;;Katakana 12449-12539
 (defun brush-up (hash)
-<<<<<<< HEAD
-  (declare (hash-table hash))
-=======
   (declare (hash-table hash)
 		   (optimize (speed 3)))
   (let ((keys nil)
@@ -167,7 +122,6 @@
 	(declare (list keys)
 			 (fixnum cnt)
 			 (hash-table result))
->>>>>>> Issue/18
 	(maphash #'(lambda (key val)
 				 (if (< cnt 100)
 				 (let ((ct (char-type (char key 0)))
@@ -176,17 +130,6 @@
 				   (declare (symbol typ ct)
 							(list lst))
 				 (loop
-<<<<<<< HEAD
-				   for i in (str->list key)
-				   do (let ((ct (char-type (char i 0))))
-						(if (or
-							  (and (eql ct 'Hiragana) (not (eql ct typ)))
-							  (and (eql typ 'Hiragana) (not (eql ct typ))))
-						  (remhash key hash))
-						(setf typ ct)))))
-			 hash)
-	(the hash-table hash))
-=======
 				   for i in lst
 				   do (setf typ ct)
 				   do (setf ct (char-type i))
@@ -196,7 +139,6 @@
 				 (incf cnt))))
 			 (sorted-hash hash))
 	result))
->>>>>>> Issue/18
 
 ;;;save file from url to unique id by wget
 ;;;then load it by txt
@@ -245,12 +187,7 @@
 
 ;;;scoring from url
 (defun scoring-url (url)
-<<<<<<< HEAD
-  (declare (string url))
-  (the hash-table (scoring-str (wget url))))
-=======
   (scoring-str (wget-and-remove url)))
->>>>>>> Issue/18
 
 ;;;save hash -> file
 ;;;format ~key,~val~%
@@ -334,16 +271,12 @@
 		 (dif1 (remove-intersection hash key-lst))
 		 (dif2 (remove-intersection key-lst hash))
 		 (merg (merge-hash (merge-hash intersect dif1) dif2)))
-<<<<<<< HEAD
 	(declare (hash-table hash key-lst intersect dif1 dif2 merg))
-=======
-	(declare (hash-table key-lst intersect dif1 dif2 merg))
->>>>>>> Issue/18
 	(print-sorted-hash hash)
-;	(print intersect)
-;	(print dif1)
-;	(print dif2)
-;	(print merg)
+	(print intersect)
+	(print dif1)
+	(print dif2)
+	(print merg)
 	(save-file (cut-save-hash merg)
 			   file)))
 
@@ -361,12 +294,8 @@
   (let* ((score (scoring-url url))
 		 (tag-list (get-tags score))
 		 (tag (if (null tag) (car (car tag-list)) tag)))
-<<<<<<< HEAD
 	(declare (string url)
 			 (hash-table score)
-=======
-	(declare (hash-table score)
->>>>>>> Issue/18
 			 (list tag-list))
 	(update-key-list score (load-tag-key-file tag))
 	(let ((result nil))
@@ -376,10 +305,3 @@
 	  do (setf result (cons tag result)))
 	(the list (nreverse result)))))
 
-<<<<<<< HEAD
-(time (print (main "http://clacklisp.org/tutorial/ja/04-the-environment.html")))
-=======
-(time (main "http://clacklisp.org/tutorial/ja/04-the-environment.html"))
-;(time (remove-not-jp (input "~/lab/test/test1.html")))
-;(time (input-jp "~/lab/test/test1.html"))
->>>>>>> Issue/18
