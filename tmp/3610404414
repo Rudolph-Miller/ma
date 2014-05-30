@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>4. 引数ENVの中身 | Tutorial | Clack - Web application environment for Common Lisp</title>
+    <link href="../../main.css" rel="stylesheet" type="text/css" />
+    <link href="./ja.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+<h1><a href="/">Clack</a></h1>
+<p class="tagline">Revenge of Lisp in Web</p>
+
+<h2>Chapter 4: 引数ENVの中身</h2>
+
+<p class="language">
+  <a href="../04-the-environment.html">English</a> | <strong>日本語</strong>
+</p>
+
+<div id="main">
+
+<p>この章では、アプリケーションの引数<code>env</code>の中身についてもう少し説明します。たとえば、ローカルのサーバの http://localhost:4242/sns/member?id=3 のようなURLにアクセスしたとき、<code>env</code>の中身は以下のようになっています。</p>
+
+<pre>
+(:request-method :GET
+ :script-name ""
+ :path-info "/sns/member"
+ :query-string "id=3"
+ :server-name "localhost"
+ :server-port 4242
+ :request-uri "/sns/member?id=3"
+ :server-protocol :HTTP/1.1
+ :http-user-agent "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_6; en-US) ..."
+ :remote-addr "127.0.0.1"
+ :remote-port 26077
+ :http-referer nil
+ :http-host "localhost:4242"
+ :http-cookies nil)
+</pre>
+
+<br />
+
+<p>そして、以下が各値の説明です。ほとんどの場合これらすべてを暗記する必要はありません (もしClack Handlerを作ろうとしているのでない限りは)。あまり気張らず情報程度に考えてください。</p>
+
+<br />
+
+<dl>
+  <dt><code>:request-method</code>  (必須, キーワード)</dt>
+  <dd>HTTPリクエストメソッドです。<code>:GET</code>、<code>:HEAD</code>、<code>:OPTIONS</code>、<code>:PUT</code>、<code>:POST</code>、<code>:DELETE</code>のいずれか1つが入っています。</dd>
+  <dt><code>:script-name</code>  (必須, 文字列)</dt>
+  <dd>リクエストURLパスの最初の部分です。アプリケーションのサーバルート(/)のときは空文字列が入ります。空でないときは必ずスラッシュ(/)で始まる文字列です。</dd>
+  <dt><code>:path-info</code>  (必須, 文字列)</dt>
+  <dd>リクエストURLパスの残りの部分です。アプリケーションルートのときは空文字列になります。</dd>
+  <dt><code>:query-string</code>  (任意, 文字列)</dt>
+  <dd>リクエストURLの<code>?</code>以下の部分です。このキーは空の可能性もありますが、キー自体は存在する必要があります。</dd>
+  <dt><code>:server-name</code>  (必須, 文字列)</dt>
+  <dd>サーバ名かサーバのIPアドレスが入っています。</dd>
+  <dt><code>:server-port</code>  (必須, 整数)</dt>
+  <dd>サーバのポート番号です。</dd>
+  <dt><code>:server-protocol</code>  (必須, キーワード)</dt>
+  <dd>クライアントがリクエストを投げるのに使ったプロトコルのバージョンです。典型的なものは<code>:HTTP/1.0</code>や<code>:HTTP/1.1</code>です。</dd>
+  <dt><code>:request-uri</code>  (必須, 文字列)</dt>
+  <dd>リクエストURI全体です。&quot;/&quot;から始まります。</dd>
+  <dt><code>:server-protocol</code>  (必須, キーワード)</dt>
+  <dt><code>:raw-body</code>  (任意, ストリーム)</dt>
+  <dt><code>:http-user-agent</code>  (任意, 文字列)</dt>
+  <dt><code>:http-referer</code>  (任意, 文字列)</dt>
+  <dt><code>:remote-addr</code>  (必須, 文字列)</dt>
+  <dt><code>:remote-port</code>  (必須, 整数)</dt>
+  <dt><code>:http-server</code>  (必須, キーワード)</dt>
+  <dd>Clack Handlerの名前です。<code>:hunchentoot</code>や<code>:apache</code>が入ります。</dd>
+</dl>
+
+</div>
+
+<div id="footer">
+  <div class="left"><a href="03-hello-world.html">&lt;&lt;3. Hello, World!</a></div>
+  <div class="center"><a href="./">Tutorial</a></div>
+  <div class="right"><a href="05-component.html">5. コンポーネント &gt;&gt;</a></div>
+</div>
+
+  </body>
+</html>

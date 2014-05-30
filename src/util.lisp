@@ -1,7 +1,18 @@
 (in-package n-gram)
 
+(defmacro profiler (fn-list)
+  (format t "~a is...~%" (car fn-list))
+  `(print ,(disassemble (car fn-list)))
+  `(time 
+	 (loop
+	   for i from 1 to 1000000
+	   do ,fn-list)))
+
 ;;;str-> list
 (defun split (key str)
+  (declare (character key)
+		   (string str)
+		   (optimize (speed 3) (safety 0) (debug 0) (space 0)))
   (let ((result nil))
 	(declare (list result)
 			 (character key)
@@ -73,6 +84,15 @@
   (declare (string str))
   (the string (remove-if #'(lambda (chr) (< (char-code chr) 1000)) str)))
 
+(defun input-jp (input)
+  (let ((result nil))
+	(declare (list result))
+	(with-open-file (input input :direction :input)
+	  (loop 
+		for chr = (read-char input nil)
+		while chr
+		when (> (char-code chr) 1000) do (push chr result)))
+	  (coerce (nreverse result) 'string)))
 ;;;hash->list
 (defun hash->list (hash)
   (let ((lst nil))
@@ -113,22 +133,33 @@
 ;;;restrict numbers of hash
 ;;;without :items t cut-off hash-table by (> poit value)
 ;;;with :items t cut-off hash-tables by how many items in hash-table (indexed by point)
+<<<<<<< HEAD
 (defun cut-off (point hash-t &key (items nil))
   (let ((hash hash-t))
 	(declare (hash-table hash)
 			 (boolean items))
+=======
+(defun cut-off (point hash &key (items nil))
+  (let ((result (make-hash-table :test #'equal)))
+	(declare (hash-table result))
+>>>>>>> Issue/18
 	(if (null items)
-	  (maphash #'(lambda (key val) (if (> point val)
-									 (remhash key hash)))
+	  (maphash #'(lambda (key val) (if (< point val)
+									 (setf (gethash key result) val)))
 			   hash)
 	  (let ((items (sort-hash hash)))
 		(loop
-		  for i from 1
+		  for i from 0 to point
 		  for item = (pop items)
 		  while item
+<<<<<<< HEAD
 		  do (if (< point i)
 			   (remhash (car item) hash)))))
 	(the hash-table hash)))
+=======
+		  do (setf (gethash (car item) result) (cdr item)))))
+	result))
+>>>>>>> Issue/18
 
 ;;;take n items from lst
 ;;;required by gen-combi
@@ -203,6 +234,11 @@
   (if (not (equal str ""))
 	(the list (cons (subseq str 0 1) (str->list (subseq str 1))))
 	nil))
+
+(defun str->char-list (str &optional result)
+  (if (not (zerop (length str)))
+	(str->char-list (subseq str 1) (cons (char str 0) result))
+	(nreverse result)))
 
 ;;;strings -> combination of strings
 (defun get-str-combi (str)
