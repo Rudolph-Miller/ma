@@ -21,7 +21,7 @@
 	  (let ((score (gethash word hash)))
 		(declare ((or single-float boolean) score))
 	  (if score 
-		(setf (gethash word hash) (the single-float (+ 1.0 score)))
+		(incf (gethash word hash) 1.0)
 		(setf (gethash word hash) (the single-float 1.0))))))
 
 
