@@ -139,7 +139,7 @@
 				   do (setf typ ct)
 				   do (setf ct (char-type i))
 				   when (or (eql ct typ)
-								(not (or (eql ct 'Hiragana) (eql typ 'Hiragana))))
+								(not (or (eq ct 'Hiragana) (eq typ 'Hiragana))))
 				   when (eql i (car (last lst))) do (setf (gethash key result) val))
 				 (incf cnt))))
 			 (sorted-hash hash))
