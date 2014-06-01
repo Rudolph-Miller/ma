@@ -40,8 +40,6 @@
 	  ;;not used -> if you want to use it,
 	  ;;you should load unuser.lisp and do set-dict
 
-(set-dict *bladklist-dir* *blacklist*)
-
 ;;;destructive, though wrapping by n-to-m-gram
 ;;;main function
 ;;;n-gram serch 
@@ -242,7 +240,6 @@
 		for lst = (split #\, line)
 		do (setf (gethash (car lst) (the hash-table (get-tag-hash tag tag-list))) (read-from-string (cadr lst))))))
 			tags)
-	(get-blacklist tag-list 5)
 	(the list tag-list)))
 
 ;;;get blacklist from tag-list
@@ -269,6 +266,7 @@
   (let ((tag-hash-list (load-tag-hash tags file)))
 	(declare (hash-table hash)
 			 (list tag-hash-list))
+	(get-blacklist tag-hash-list 5)
 	(the list (mapcar #'(lambda (tag) (cons tag (sum-score (the hash-table (intersection-of-hash (remove-blacklist hash) (get-tag-hash tag tag-hash-list)))))) tags))))
 
 ;;;remove word in *blacklist*
@@ -313,26 +311,28 @@
 
 ;;;url -> learn key-words.csv and format top 3 tags
 (defun main (url)
+  (set-dict *bladklist-dir* *blacklist*)
   (handler-case 
-  (let* ((score (scoring-url url))
-		 (tag-list (get-tags score))
-		 (result nil))
-	(declare (string url)
-			 (hash-table score)
-			 (list tag-list result))
-	(print tag-list)
-	(save-file (cut-save-hash *blacklist*) *bladklist-dir*)
-	(loop
-	  for n from 1.0 to 3.0
-	  for tag in (mapcar #'car tag-list)
-	  do (update-key-list (divided-hash score n) (load-tag-key-file tag))
-	  do (format t "~%~a: ~a~%" (round n) tag)
-	  do (setf result (cons tag result)))
-	(the list (nreverse result)))
-  (type-error (c) (print "Invalid URL"))))
+	(let* ((score (scoring-url url))
+		   (tag-list (get-tags score))
+		   (result nil))
+	  (declare (string url)
+			   (hash-table score)
+			   (list tag-list result))
+	  (print tag-list)
+	  (save-file (cut-save-hash *blacklist*) *bladklist-dir*)
+	  (loop
+		for n from 1.0 to 3.0
+		for tag in (mapcar #'car tag-list)
+		do (update-key-list (divided-hash score n) (load-tag-key-file tag))
+		do (format t "~%~a: ~a~%" (round n) tag)
+		do (setf result (cons tag result)))
+	  (the list (nreverse result)))
+	(type-error (c) (print "Invalid URL"))))
 
 ;;;url tag -> learn tag/key-words.csv
 (defun learn (url tag)
+  (set-dict *bladklist-dir* *blacklist*)
   (let* ((score (scoring-url url))
 		 (tag-list (get-tags score)))
 	(declare (string url)
@@ -356,6 +356,4 @@
 		do (push line urls)))
 	(mapcar #'(lambda (url) (format t "~a:~%~a~%" url (learn url tag)))
 			urls)))
-
-
 
