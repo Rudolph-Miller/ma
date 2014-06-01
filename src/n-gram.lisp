@@ -35,7 +35,7 @@
   (or (find #\、 word) (find #\。 word) ;、。をはじく
 	  (find #\年 word) (find #\月 word)
 	  (find #\日 word)
-	  (gethash word *blacklist*)))
+	  (gethash word *blacklist*))) ;; set-dict *blacklist* is done in main or lern
 	  ;(gethash word *dict*)));*dict*に登録されている単語をはじく
 	  ;;not used -> if you want to use it,
 	  ;;you should load unuser.lisp and do set-dict
