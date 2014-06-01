@@ -1,6 +1,8 @@
 (in-package n-gram)
 
 (defvar *group-dir* "../group")
+(defvar *blacklist* (make-hash-table :test #'equal))
+(defvar *bladklist-dir* (car (directory (concatenate 'string *group-dir* "/.blacklist"))))
 
 ;;;tags list
 (defvar *tags* 

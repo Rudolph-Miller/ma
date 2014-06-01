@@ -34,10 +34,13 @@
   (declare (string word))
   (or (find #\、 word) (find #\。 word) ;、。をはじく
 	  (find #\年 word) (find #\月 word)
-	  (find #\日 word)))
+	  (find #\日 word)
+	  (gethash word *blacklist*)))
 	  ;(gethash word *dict*)));*dict*に登録されている単語をはじく
 	  ;;not used -> if you want to use it,
 	  ;;you should load unuser.lisp and do set-dict
+
+(set-dict *bladklist-dir* *blacklist*)
 
 ;;;destructive, though wrapping by n-to-m-gram
 ;;;main function
@@ -239,7 +242,23 @@
 		for lst = (split #\, line)
 		do (setf (gethash (car lst) (the hash-table (get-tag-hash tag tag-list))) (read-from-string (cadr lst))))))
 			tags)
+	(get-blacklist tag-list 5)
 	(the list tag-list)))
+
+;;;get blacklist from tag-list
+;;;destructive
+(defun get-blacklist (tag-list n)
+  (let ((black-dict (make-hash-table :test #'equal)))
+	(mapc #'(lambda (tag)
+			  (maphash #'(lambda (key val)
+						   (let ((cnt (gethash key black-dict)))
+							 (if cnt
+							   (if (>= cnt (1- n))
+								 (setf (gethash key *blacklist*) 1)
+							   (setf (gethash key black-dict) (1+ cnt)))
+							   (setf (gethash key black-dict) 1))))
+					   (cdr tag)))
+			  tag-list)))
 
 ;;;tag -> tag/key-words.csv
 (defun load-tag-key-file (tag &optional (file *group-dir*))
@@ -250,7 +269,15 @@
   (let ((tag-hash-list (load-tag-hash tags file)))
 	(declare (hash-table hash)
 			 (list tag-hash-list))
-	(the list (mapcar #'(lambda (tag) (cons tag (sum-score (the hash-table (intersection-of-hash hash (get-tag-hash tag tag-hash-list)))))) tags))))
+	(the list (mapcar #'(lambda (tag) (cons tag (sum-score (the hash-table (intersection-of-hash (remove-blacklist hash) (get-tag-hash tag tag-hash-list)))))) tags))))
+
+;;;remove word in *blacklist*
+(defun remove-blacklist (hash)
+  (let ((result (make-hash-table :test #'equal)))
+	(maphash #'(lambda (key val) (if (not (gethash key *blacklist*))
+								   (setf (gethash key result) val)))
+			 hash)
+	result))
 
 ;;;hash -> sorted list
 (defun get-tags (hash &optional (tags *tags*) (file *group-dir*))
@@ -294,6 +321,7 @@
 			 (hash-table score)
 			 (list tag-list result))
 	(print tag-list)
+	(save-file (cut-save-hash *blacklist*) *bladklist-dir*)
 	(loop
 	  for n from 1.0 to 3.0
 	  for tag in (mapcar #'car tag-list)

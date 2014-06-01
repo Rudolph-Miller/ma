@@ -293,3 +293,11 @@
 			 hash)
 	result))
 
+;;;read-line from file-name and set variable
+(defun set-dict (file-name variable)
+  (with-open-file (f file-name :direction :input)
+	(loop
+	  for line = (read-line f nil)
+	  while line
+	  for lst = (split #\, line)
+	  do (setf (gethash (car lst) variable) (cadr lst)))))

@@ -1,0 +1,611 @@
+<HTML>
+<HEAD>
+  <META content="text/html;charset=shift_jis" http-equiv=Content-Type>
+  <META name="keywords" content="Common Lisp,Lisp,CLISP,CLOS,入門">
+  <META name="description" content="Common Lisp入門講座">
+  <META name="Authors" content="Makoto Hiroi">
+  <TITLE>M.Hiroi's Home Page / Common Lisp 入門：番外編</TITLE>
+  <LINK rel=stylesheet
+        type="text/css"
+        href="clisp_styles.css"
+        title="Common Lisp">
+</HEAD>
+<BODY>
+<center><a href="http://chakumero.mobile.yahoo.co.jp/"><img src="http://www.geocities.jp/js_source/filler_nm.gif" border=0></a><br clear=all></center>
+M.Hiroi's Home Page<BR>
+<SMALL>
+http://www.geocities.jp/m_hiroi/
+</SMALL>
+<CENTER>
+<H1>Common Lisp Programming</H1>
+<H2>Common Lisp 入門：番外編</H2>
+<SMALL>
+[ <A href="clispb28.html">PrevPage</A> | <A href="index.html#data_algo">Common Lisp</A> | <A href="clispb30.html">NextPage</A> ]
+</SMALL>
+</CENTER>
+<HR>
+<DIV class="contents">
+<H3>●有限文脈モデル</H3>
+<P> <A href="../xyzzy_lisp.html#abclisp">Common Lisp 入門</A> の番外編です。レンジコーダの続きで、今回は「有限文脈モデル」について説明します。有限文脈モデルは、適応型レンジコーダを用いると簡単に実現することができます。
+<P> なお、このドキュメントは拙作のページ <A href="../light/index.html#python_algo">Algorithms with Python</A> <A href="../light/pyalgo39.html">有限文脈モデル</A> のプログラムを Common Lisp で書き直したものです。内容は重複しますが、あしからずご了承ください。
+
+<H4>●マルコフ情報源モデル</H4>
+<P> <A href="clispb24.html">ハフマン符号 (2)</A> で説明した「無記憶情報源モデル」はもっとも簡単な情報源モデルです。このモデルは、記号を生成するとき以前に生成した記号との間に関係がないため「無記憶」と呼ばれますが、このモデルを一般化して状態（記憶）を持つモデルを考えることができます。<A href="#cite">参考文献 [1]</A> によると、状態（記憶）があるモデルを「有限状態確率モデル」とか「マルコフ情報源モデル」と呼ぶそうです。
+
+<P> 簡単に説明すると、情報源にはいくつかの状態があって、その状態によって記号の生成確率が異なります。そして、ある記号が生成されると別の状態へ移動します。これを「状態遷移」といいます。このようなモデルは状態遷移図で表すことができます。簡単な例を示しましょう。
+
+<PRE class="fig">
+    ┌────┐── b : 0.2 ─→┌────┐
+┌→│ 状態Ａ │                 │ 状態Ｂ │←┐
+│  └────┘←─ a : 0.3 ──└────┘  │
+│         │                       │         │
+└ a : 0.8 ┘                       └ b : 0.7 ┘
+
+
+            図 : 簡単な状態遷移図
+</PRE>
+
+<P> 上図では、記号が a と b の 2 種類で、2 つの状態 A と B があります。A と B では記号の出現確率が異なることに注意してください。そして、A の状態で記号 b が出力されると、状態は B へ移ります。記号 a が出力されても状態は A のままです。逆に、状態 B で記号 a が出力されると、状態は A に移ります。記号 b が出力されても状態は移りません。
+
+<P> このモデルの場合、A と B ともに状態遷移する確率が低いので、aaaaaaabbbbbbb のように同じ記号が連続して出力される確率がとても高くなります。そして、この記号列を無記憶情報源モデルで符号化しても、効率よく圧縮できないことはすぐにわかると思います。
+<P> このような場合、状態によって記号の出現頻度表を切り替えることで、効率よく圧縮することができます。つまり、状態 A の出現頻度表 Table A と状態 B の出現頻度表 Table B を用意し、状態 A では Table A を、状態 B では Table B を使って符号化すればいいわけです。
+
+<H4>●有限文脈モデル</H4>
+<P> このように、モデルが決まっていれば簡単なのですが、一般的なデータで有効なモデルを作成することはとても難しいことです。そこで、次のような単純なモデルを考えます。
+<UL>
+  <LI> 生成される記号の確率は、直前に出現した記号列によって定められる。
+</UL>
+<P> これを「有限文脈モデル」といいます。そして、直前に出現した記号列の長さを「次数 (order) 」といいます。有限文脈モデルは 1 次 (order-1) がいちばん簡単です。直前に出力した記号を覚えておいて、それに従って出現頻度表を切り替えるという単純な方法で実現できます。つまり、各記号ごとに出現頻度表を用意しておいて、直前に出力した記号が a であれば、a の出現頻度表を使って符号化を行うわけです。
+
+<P> したがって、記号が 256 種類あれば、出現頻度表も 256 個必要になります。order-2 であれば、ab や cd のあとに現れる記号の出現頻度表が必要になるので、個数は 256 * 256 = 65536 になります。このように、次数が大きくなるほど必要となるメモリ量が爆発的に増えるので、単純な方法では低次の有限文脈モデルしか実現できないのが欠点です。
+
+<H4>●プログラムの作成</H4>
+<P> order-1 や order-2 の有限文脈モデルは、適応型レンジコーダを使えば簡単にプログラムできます。ここで簡単な例題として order-2 のプログラムを作ってみましょう。次のリストを見てください。
+<PRE class="list">
+リスト : 有限文脈モデル (order-2) の符号化
+
+; order-2 用の配列を初期化
+(defun initialize-bitree-order-2 ()
+  (make-array (list code-size code-size) :initial-element nil))
+
+; order-2 の出現頻度表を取得
+(defun get-bitree (table c0 c1)
+  (let ((bt (aref table c0 c1)))
+    (if bt
+        bt
+      (setf (aref table c0 c1) (initialize-bitree)))))
+
+; order-2 の符号化
+(defun encode-order-2 (rc in size)
+  (let ((table (initialize-bitree-order-2))
+        (c0 0)
+        (c1 0))
+    (dotimes (x size)
+      (let ((c2 (read-byte in)))
+        (encode rc (get-bitree table c0 c1) c2)
+        (setq c0 c1
+              c1 c2)))))
+</PRE>
+<P> order-2 の場合、直前の 2 記号を変数 c0 と c1 に記憶しておいて、c0 と c1 の値によって出現頻度表を選択します。order-1 は直前の記号を変数 c0 に記憶することで実現できます。
+<P> 出現頻度表は 2 次元配列 table に格納します。table は nil で初期化しておきます。引数 c0 と c1 で出現頻度表を取り出し、それが nil であれば initialize-bitree で新しい出現頻度表を生成して table にセットします。あとは今までと同様に適応型レンジコーダで符号化するだけです。そして、c0 と c1 の値を更新して、直前の 2 記号を記憶します。
+<P> このプログラムでは c0 と c1 を 0 に初期化していますが、記号の範囲内であれば何でもかまいません。ただし、復号を行う関数 decode-order-2 と同じ値で初期化するように注意してください。
+
+<P> 復号も簡単です。次のリストを見てください。
+<PRE class="list">
+リスト : 有限文脈モデル (order-2) の復号
+
+(defun decode-order-2 (rc out size)
+  (let ((table (initialize-bitree-order-2))
+        (c0 0)
+        (c1 0))
+    (dotimes (x size)
+      (let ((c2 (decode rc (get-bitree table c0 c1))))
+        (write-byte c2 out)
+        (setq c0 c1
+              c1 c2)))))
+</PRE>
+<P> 符号化と同様に、直前の 2 記号 c0 と c1 の値によって出現頻度表を選択します。変数 c0 と c1 は符号化同じく 0 に初期化します。そして、選択した出現頻度表を使って、記号を適応型レンジコーダで復号します。あとは、c0 と c1 の値を更新するだけです。とても簡単ですね。
+
+<H4>●実行結果</H4>
+<P> それでは、実際に <A href="http://corpus.canterbury.ac.nz/">Canterbury Corpus</A> で配布されているテストデータ <A href="http://corpus.canterbury.ac.nz/descriptions/#cantrbry">The Canterbury Corpus</A> を圧縮してみましょう。結果は次にようになりました。
+<PRE>
+                表 : 有限文脈モデルの結果
+
+  ファイル名      サイズ    order-0   order-1   order-2
+  ------------------------------------------------------
+  alice29.txt    152,089     87,147    71,153    74,150
+  asyoulik.txt   125,179     75,533    59,733    65,493
+  cp.html         24,603     16,299    14,232    15,865
+  fields.c        11,150      7,164     6,570     7,414
+  grammar.lsp      3,721      2,305     2,449     2,769
+  kennedy.xls  1,029,744    460,734   382,459   272,423
+  lcet10.txt     426,754    249,491   195,676   187,560
+  plrabn12.txt   481,861    273,392   211,211   207,535
+  ptt5           513,216     78,090    58,594    68,650
+  sum             38,240     25,638    21,680    25,242
+  xargs.1          4,227      2,743     2,974     3,440
+  ------------------------------------------------------
+  合計         2,810,784  1,278,536 1,026,731   930,541
+</PRE>
+
+<P> order-0 と order-1 を比べると圧縮率は大幅に向上してます。ところが order-2 になると、大きなファイルの圧縮率は向上しますが、小さなファイルは order-1 よりも悪くなっています。前々回説明したように、適応型レンジコーダは出現しない記号が多数あると、圧縮率が少し劣化するという欠点があります。
+
+<P> たとえば、記号が 0 と 1 しかないデータを符号化してみましょう。適応型符号化では記号 0 - 255 の出現頻度を 1 に初期化しています。このため、記号数が少ないうちは記号 2 - 255 の出現頻度の影響が大きくなり、圧縮率はどうしても劣化してしまいます。ようするに、記号をたくさん読み込まないと、その出現頻度表の確率はあてにならないというわけです。
+
+<P> order-1 には出現頻度表が 256 個、order-2 には 65536 個もあります。高次の有限文脈モデルになればなるほど、多数の出現頻度表を使うことになるので、この欠点の影響はとても大きなものになるでしょう。今回の結果はこの欠点があらわれていると思います。
+
+<H4>●適応型レンジコーダの改良</H4>
+<P> そこで、適応型レンジコーダの欠点を改良する簡単な方法を紹介しましょう。一つは出現頻度表の累積度数の上限値を小さな値に設定することです。もう一つは、出現頻度表の更新時で記号数の増分値を +1 より大きくすることです。これは <A href="../gbook11.html">Guest Book No.308</A> で大地さんから教えてもらった方法です。
+<P> 二つの方法を適用すると、出現頻度表の更新が頻繁に行われるようになります。すると、最近出現している記号ほど確率が高くなり、データの局所的な変化に素早く追随することができるようになります。これが圧縮率が良くなる理由だと思われます。
+<P> ただし、この方法を使うと、その出現頻度表が表している値は正確な出現確率ではなくなります。つまり、無記憶情報源モデルで計算したエントロピーとは一致しなくなるのです。したがって、無記憶情報源モデルで求めた圧縮の限界よりも、圧縮率が良くなることもありますし、逆に今までよりも圧縮率が悪くなることもあります。どのようなデータでも圧縮率が向上するわけではありません。ご注意くださいませ。
+
+<P> それでは実際に、桁上がりのあるレンジコーダで試してみましょう。結果は次のようになりました。
+
+<PRE>
+                  表 : 適応型レンジコーダ (order-0) の結果 
+
+                                         増分値 = +1        増分値 = +4
+  ファイル名      サイズ    従来版    0x8000    0x4000    0x8000    0x4000
+  -------------------------------------------------------------------------
+  alice29.txt    152,089    87,147    87,186    87,341    87,010    87,192
+  asyoulik.txt   125,179    75,533    75,592    75,728    75,440    75,592
+  cp.html         24,603    16,299    16,299    16,303    16,190    16,208
+  fields.c        11,150     7,164     7,164     7,164     7,068     7,024
+  grammar.lsp      3,721     2,305     2,305     2,305     2,235     2,235
+  kennedy.xls  1,029,744   460,734   439,904   433,546   427,411   424,000
+  lcet10.txt     426,754   249,491   248,639   248,636   247,543   247,579
+  plrabn12.txt   481,861   273,392   273,736   274,417   273,694   274,534
+  ptt5           513,216    78,090    75,435    74,805    72,664    72,110
+  sum             38,240    25,638    25,595    24,744    23,860    23,077
+  xargs.1          4,227     2,743     2,743     2,743     2,670     2,670
+  -------------------------------------------------------------------------
+  合計         2,810,784 1,278,536 1,254,598 1,247,732 1,235,785 1,232,221
+</PRE>
+
+<P> 記号の増分値は +1 と +4 で、累積度数表の上限値は 0x8000 と 0x4000 で試してみました。テキストファイルの場合、効果はほとんどありませんが、kennedy.xls や ptt5 のようにバイナリファイルでは効果があるようです。
+
+<P> 有限文脈モデルの場合、この改良方法がとても有効なのです。記号の増分値をもっと大きな値に設定すると、圧縮率を大幅に向上させることができます。累積度数表の上限値を 0x4000 に設定して増分値を増やしてみたところ、結果は次のようになりました。
+<PRE>
+          表 : 適応型レンジコーダ (order-1, order-2) の結果 
+
+  order-1         サイズ     +4       +8      +16      +32  
+  -----------------------------------------------------------
+  alice29.txt    152,089   67,760   66,972   66,515   66,331
+  asyoulik.txt   125,179   56,308   55,532   55,136   54,999
+  cp.html         24,603   12,653   12,245   12,026   11,925
+  fields.c        11,150    5,562    5,243    5,022    4,887
+  grammar.lsp      3,721    2,049    1,911    1,819    1,762
+  kennedy.xls  1,029,744  329,672  321,202  317,753  320,022
+  lcet10.txt     426,754  190,106  188,599  187,635  187,205
+  plrabn12.txt   481,861  206,913  206,026  205,733  206,059
+  ptt5           513,216   55,664   54,915   54,518   54,492
+  sum             38,240   19,478   18,815   18,392   18,162
+  xargs.1          4,227    2,526    2,375    2,279    2,230
+  ----------------------------------------------------------
+  合計         2,810,784  948,691  933,835  926,828  928,074
+
+  order-2         サイズ     +4      +16      +32      +64      +96
+  --------------------------------------------------------------------
+  alice29.txt    152,089   62,275   56,256   54,875   54,244   54,148
+  asyoulik.txt   125,179   54,392   48,569   47,202   46,562   46,469
+  cp.html         24,603   12,929   10,988   10,474   10,221   10,181
+  fields.c        11,150    5,892    4,745    4,374    4,134    4,045
+  grammar.lsp      3,721    2,283    1,880    1,739    1,645    1,611
+  kennedy.xls  1,029,744  229,593  213,424  208,605  202,944  199,123
+  lcet10.txt     426,754  164,718  154,165  151,750  150,625  150,575
+  plrabn12.txt   481,861  185,270  176,007  174,338  174,123  174,723
+  ptt5           513,216   62,529   59,410   59,142   59,754   60,553
+  sum             38,240   21,631   18,856   17,980   17,445   17,259
+  xargs.1          4,227    2,930    2,486    2,335    2,241    2,212
+  --------------------------------------------------------------------
+  合計         2,810,784  804,442  746,786  732,814  723,938  720,899
+</PRE>
+<P> order-1, 2 の場合、増分値を増やすと圧縮率が大幅に向上しました。今回のテストでは、order-1 で +16 から +32 ぐらい、order-2 で +32 から +64 ぐらいの値で良い結果が得られるようです。もちろん、増分値の最適値は累積度数表の上限値やデータによって変わると思います。興味のある方は他のデータでも試してみてください。
+<UL>
+  <LI><A href="#list1">プログラムリスト１ (order-2)</A>
+</UL>
+<H4>●バイナリレンジコーダによる実装</H4>
+<P> ところで、有限文脈モデルはバイナリレンジコーダを使って実装することもできます。記号の増分値が +1 で、出現頻度表の上限値が rangecoder::min-range の場合で試してみたところ、order-0, order-1, order-2 の実行結果は次のようになりました。
+<PRE>
+      表 : バイナリレンジコーダ (Binary-Model) の結果
+
+  ファイル名      サイズ   order-0   order-1   order-2
+  ------------------------------------------------------
+  alice29.txt    152,089     86,921    66,427    55,146
+  asyoulik.txt   125,179     75,320    54,945    47,455
+  cp.html         24,603     16,152    11,793    10,332
+  fields.c        11,150      7,043     4,962     4,595
+  grammar.lsp      3,721      2,206     1,771     1,821
+  kennedy.xls  1,029,744    460,167   360,696   237,345
+  lcet10.txt     426,754    249,157   188,640   152,444
+  plrabn12.txt   481,861    273,046   204,266   173,782
+  ptt5           513,216     77,762    55,014    58,384
+  sum             38,240     25,599    18,633    18,492
+  xargs.1          4,227      2,642     2,226     2,385
+  ------------------------------------------------------
+  合計         2,810,784  1,276,015   969,373   762,181
+</PRE>
+<P> 多値レンジコーダよりも圧縮率は高くなりました。バイナリレンジコーダは有限文脈モデルとの相性が良いようです。
+<P> バイナリレンジコーダも適応型符号化なので、記号の増分値を大きな値に、累積度数の上限値を小さな値に設定すると、圧縮率が向上する場合があります。増分値を +4 に設定して累積度数の上限値を変更した場合、order-0 の結果は次のようになりました。
+<PRE>
+        表 : バイナリモデルの結果 (増分値 = +4)
+
+                                 上限値 *max-sum*
+  ファイル名      サイズ    #x800     #x400     #x200  
+  -----------------------------------------------------
+  alice29.txt    152,089    86,690    86,691    86,843
+  asyoulik.txt   125,179    75,182    75,142    75,172
+  cp.html         24,603    16,140    16,142    16,162
+  fields.c        11,150     6,946     6,905     6,866
+  grammar.lsp      3,721     2,194     2,189     2,185
+  kennedy.xls  1,029,744   421,914   412,156   405,029
+  lcet10.txt     426,754   246,306   245,716   245,211
+  plrabn12.txt   481,861   273,316   273,814   274,907
+  ptt5           513,216    68,397    68,115    68,125
+  sum             38,240    22,178    21,643    21,188
+  xargs.1          4,227     2,636     2,630     2,623
+  -----------------------------------------------------
+  合計         2,810,784 1,221,899 1,211,143 1,204,311
+</PRE>
+<P> 圧縮率は多値レンジコーダよりも少しですが高くなっています。今回のテストでは、累積度数の上限値 *max-sum* は #x400 から #x200 くらいで良さそうです。次に、*max-sum* を #x200 に増分値を +4 に設定して、order-1, order-2 を試してみたところ、結果は次のようになりました。
+<PRE>
+  表 : 有限文脈モデルの結果 (*max-sum*=#x200, 増分値=+4)
+
+  ファイル名      サイズ   order-0   order-1   order-2
+  -----------------------------------------------------
+  alice29.txt    152,089    86,843    65,576    52,825
+  asyoulik.txt   125,179    75,172    54,472    45,190
+  cp.html         24,603    16,162    11,618     9,431
+  fields.c        11,150     6,866     4,699     3,885
+  grammar.lsp      3,721     2,185     1,657     1,540
+  kennedy.xls  1,029,744   405,029   293,324   167,047
+  lcet10.txt     426,754   245,211   185,394   147,884
+  plrabn12.txt   481,861   274,907   204,404   171,053
+  ptt5           513,216    68,125    53,383    56,932
+  sum             38,240    21,188    17,635    16,570
+  xargs.1          4,227     2,623     2,131     2,083
+  -----------------------------------------------------
+  合計         2,810,784 1,204,311   894,293   674,440
+</PRE>
+<P> order-1 と order-2 のどちら場合も多値レンジコーダより高い圧縮率になりました。バイナリレンジコーダを使う場合は、有限文脈モデルと組み合わせるとよいのかもしれません。ただし、バイナリレンジコーダは多値レンジコーダよりも時間がかかることに注意してください。
+<P> 今回はここまでです。次回は多値レンジコーダを用いた有限文脈モデルで圧縮率を改善する方法について説明します。
+<UL>
+  <LI><A href="#list2">プログラムリスト２ (order-2)</A>
+</UL>
+
+<H4>●<A name="cite">参考文献</A></H4>
+<UL>
+  <LI>[1] 植松友彦, 『文書データ圧縮アルゴリズム入門』, ＣＱ出版社, 1994
+</UL>
+<HR>
+<H4><A name="list1">●プログラムリスト１</A></H4>
+<PRE class="list">
+;
+; rca2.l : 適応型レンジコーダ (有限文脈モデル : order-2)
+;
+;          Copyright (C) 2010 Makoto Hiroi
+;
+
+(require :rangecoder "rangecoder")
+(use-package :rangecoder)
+(require :bitree "bitree")
+(use-package :bitree)
+
+(defvar *max-sum* #x4000)
+(defvar *inc* 32)
+
+; ファイルサイズの書き込み
+(defun write-file-size (out size)
+  (write-byte (logand (ash size -24) #xff) out)
+  (write-byte (logand (ash size -16) #xff) out)
+  (write-byte (logand (ash size -8) #xff) out)
+  (write-byte (logand size #xff) out))
+
+; ファイルサイズの読み込み
+(defun read-file-size (in)
+  (+ (ash (read-byte in) 24)
+     (ash (read-byte in) 16)
+     (ash (read-byte in) 8)
+     (read-byte in)))
+
+; 更新
+(defun update (bt c inc)
+  (bitree-update bt c inc)
+  (when (&lt;= *max-sum* (bitree-sum bt))
+    (dotimes (x code-size)
+      (let ((n (ash (bitree-frequency bt x) -1)))
+        (when (plusp n)
+          (bitree-update bt x (- n)))))))
+
+; 初期化
+(defun initialize-bitree ()
+  (let ((bt (make-bitree code-size)))
+    (dotimes (x code-size bt)
+      (bitree-update bt x 1))))
+
+;;;;
+
+; 符号化
+(defun encode (rc bt c)
+  (let ((temp (floor (range-coder-range rc)
+                     (bitree-sum bt))))
+    (incf (range-coder-low rc)
+          (* (bitree-cumul bt c) temp))
+    (setf (range-coder-range rc)
+          (* (bitree-frequency bt c) temp))
+    (encode-normalize rc)
+    (update bt c *inc*)))
+
+; 復号
+(defun decode (rc bt)
+  (let ((temp (floor (range-coder-range rc)
+                     (bitree-sum bt))))
+    (multiple-value-bind
+        (c cumul)
+        (bitree-find bt (floor (range-coder-low rc) temp))
+      (decf (range-coder-low rc)
+            (* cumul temp))
+      (setf (range-coder-range rc)
+            (* (bitree-frequency bt c) temp))
+      (decode-normalize rc)
+      (update bt c *inc*)
+      c)))
+
+;;; 有限文脈モデル
+
+; 初期化
+(defun initialize-bitree-order-2 ()
+  (make-array (list code-size code-size) :initial-element nil))
+
+; order-2 の出現頻度表を取得
+(defun get-bitree (table c0 c1)
+  (let ((bt (aref table c0 c1)))
+    (if bt
+        bt
+      (setf (aref table c0 c1) (initialize-bitree)))))
+
+; order-2 の符号化
+(defun encode-order-2 (rc in size)
+  (let ((table (initialize-bitree-order-2))
+        (c0 0)
+        (c1 0))
+    (dotimes (x size)
+      (let ((c2 (read-byte in)))
+        (encode rc (get-bitree table c0 c1) c2)
+        (setq c0 c1
+              c1 c2)))))
+
+; order-2 の復号
+(defun decode-order-2 (rc out size)
+  (let ((table (initialize-bitree-order-2))
+        (c0 0)
+        (c1 0))
+    (dotimes (x size)
+      (let ((c2 (decode rc (get-bitree table c0 c1))))
+        (write-byte c2 out)
+        (setq c0 c1
+              c1 c2)))))
+
+; ファイルの符号化
+(defun encode-file (in-file out-file)
+  (call-with-byte-output-file
+   out-file
+   #'(lambda (out)
+       (call-with-byte-input-file
+        in-file
+        #'(lambda (in)
+            (let ((size (file-length in)))
+              (write-file-size out size)
+              (when (plusp size)
+                (call-with-range-encoder
+                 out
+                 #'(lambda (rc)
+                     (encode-order-2 rc in size))))))))))
+
+; ファイルの復号
+(defun decode-file (in-file out-file)
+  (call-with-byte-input-file
+   in-file
+   #'(lambda (in)
+       (let ((size (read-file-size in)))
+         (call-with-byte-output-file
+          out-file
+          #'(lambda (out)
+              (when (plusp size)
+                (call-with-range-decoder
+                 in
+                 #'(lambda (rc)
+                     (decode-order-2 rc out size))))))))))
+</PRE>
+<HR>
+<H4><A name="list2">●プログラムリスト２</A></H4>
+<PRE class="list">
+;
+; rcb2.l : バイナリレンジコーダ (有限文脈モデル : order-2)
+;
+;          Copyright (C) 2010 Makoto Hiroi
+;
+(require :rangecoder "rangecoder")
+(use-package :rangecoder)
+
+; ファイルサイズの書き込み
+(defun write-file-size (out size)
+  (write-byte (logand (ash size -24) #xff) out)
+  (write-byte (logand (ash size -16) #xff) out)
+  (write-byte (logand (ash size -8) #xff) out)
+  (write-byte (logand size #xff) out))
+
+; ファイルサイズの読み込み
+(defun read-file-size (in)
+  (+ (ash (read-byte in) 24)
+     (ash (read-byte in) 16)
+     (ash (read-byte in) 8)
+     (read-byte in)))
+
+;;; ビットの出現頻度表
+(defstruct bit-context (c0 1) (c1 1))
+
+(defun bit-context-sum (bct)
+  (+ (bit-context-c0 bct) (bit-context-c1 bct)))
+
+; ビットの符号化
+(defun bit-encode (rc bit c0 sum)
+  (let* ((temp (floor (range-coder-range rc) sum))
+         (n (* temp c0)))
+    (cond ((plusp bit)
+           (incf (range-coder-low rc) n)
+           (decf (range-coder-range rc) n))
+          (t
+           (setf (range-coder-range rc) n)))
+    (encode-normalize rc)))
+
+; ビットの復号
+(defun bit-decode (rc c0 sum)
+  (let* ((temp (floor (range-coder-range rc) sum))
+         (n (* temp c0))
+         (bit nil))
+    (cond ((&lt; (floor (range-coder-low rc) temp) c0)
+           (setf bit 0)
+           (setf (range-coder-range rc) n))
+          (t
+           (setf bit 1)
+           (decf (range-coder-low rc) n)
+           (decf (range-coder-range rc) n)))
+    (decode-normalize rc)
+    bit))
+
+; グローバル変数
+(defvar *inc* 4)
+(defvar *max-sum* #x200)
+
+; 出現頻度表の更新
+(defun bit-update (bct bit inc)
+  (if (zerop bit)
+      (incf (bit-context-c0 bct) inc)
+    (incf (bit-context-c1 bct) inc))
+  (when (&lt;= *max-sum* (bit-context-sum bct))
+    (setf (bit-context-c0 bct)
+          (logior (ash (bit-context-c0 bct) -1) 1)
+          (bit-context-c1 bct)
+          (logior (ash (bit-context-c1 bct) -1) 1))))
+
+;;; binary-model
+
+; 初期化
+(defun initialize-bit-context-table (size)
+  (let ((table (make-array (1- size))))
+    (map-into table #'make-bit-context)))
+
+; 構造体の定義
+(defstruct (binary-model
+            (:constructor make-binary-model
+             (size
+              &aux (table (initialize-bit-context-table size)))))
+  size table)
+
+; 符号化
+(defun bm-encode (rc bm c)
+  (labels ((encode-sub (node)
+             (when (plusp node)
+               (let* ((p (ash (1- node) -1))
+                      (bct (aref (binary-model-table bm) p)))
+                 (encode-sub p)
+                 ; 奇数は左の子 (1), 偶数は右の子 (0)
+                 (bit-encode rc
+                             (logand node 1)
+                             (bit-context-c0 bct)
+                             (bit-context-sum bct))
+                 (bit-update bct (logand node 1) *inc*)))))
+    (encode-sub (+ c (binary-model-size bm) -1))))
+
+; 復号
+(defun bm-decode (rc bm)
+  (do ((node 0)
+       (node-size (1- (binary-model-size bm))))
+      ((&lt;= node-size node) (- node node-size))
+    (let* ((bct (aref (binary-model-table bm) node))
+           (bit (bit-decode rc (bit-context-c0 bct) (bit-context-sum bct))))
+      (if (plusp bit)
+          (setf node (+ (* node 2) 1))
+        (setf node (+ (* node 2) 2)))
+      (bit-update bct bit *inc*))))
+
+;;; 有限文脈モデル
+
+; order-2 用テーブルの作成
+(defun make-bm-table ()
+  (make-array (list code-size code-size) :initial-element nil))
+
+; order-2 のバイナリモデルを取得
+(defun get-binary-model (table c0 c1)
+  (let ((bm (aref table c0 c1)))
+    (if bm
+        bm
+      (setf (aref table c0 c1) (make-binary-model code-size)))))
+
+; order-2 の符号化
+(defun encode-order-2 (rc in size)
+  (let ((bm-table (make-bm-table))
+        (c0 0)
+        (c1 0)
+        (c2 0))
+    (dotimes (x size)
+      (setq c2 (read-byte in))
+      (bm-encode rc (get-binary-model bm-table c0 c1) c2)
+      (setq c0 c1
+            c1 c2))))
+
+; order-2 の復号
+(defun decode-order-2 (rc out size)
+  (let ((bm-table (make-bm-table))
+        (c0 0)
+        (c1 0)
+        (c2 0))
+    (dotimes (x size)
+      (setq c2 (bm-decode rc (get-binary-model bm-table c0 c1)))
+      (write-byte c2 out)
+      (setq c0 c1
+            c1 c2))))
+
+; ファイルの符号化
+(defun encode-file (in-file out-file)
+  (call-with-byte-output-file
+   out-file
+   #'(lambda (out)
+       (call-with-byte-input-file
+        in-file
+        #'(lambda (in)
+            (let ((size (file-length in)))
+              (write-file-size out size)
+              (when (plusp size)
+                (call-with-range-encoder
+                 out
+                 #'(lambda (rc)
+                     (encode-order-2 rc in size))))))))))
+
+; ファイルの復号
+(defun decode-file (in-file out-file)
+  (call-with-byte-input-file
+   in-file
+   #'(lambda (in)
+       (let ((size (read-file-size in)))
+         (call-with-byte-output-file
+          out-file
+          #'(lambda (out)
+              (when (plusp size)
+                (call-with-range-decoder
+                 in
+                 #'(lambda (rc)
+                     (decode-order-2 rc out size))))))))))
+</PRE>
+</DIV>
+<HR>
+<CENTER>
+<B>Copyright (C) 2010 Makoto Hiroi<BR>All rights reserved.</B>
+<HR>
+<SMALL>
+[ <A href="clispb28.html">PrevPage</A> | <A href="index.html#data_algo">Common Lisp</A> | <A href="clispb30.html">NextPage</A> ]
+</SMALL>
+</CENTER>
+</BODY>
+</HTML>

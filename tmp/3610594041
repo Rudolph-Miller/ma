@@ -1,0 +1,711 @@
+<HTML>
+<HEAD>
+  <META content="text/html;charset=shift_jis" http-equiv=Content-Type>
+  <META name="keywords" content="Common Lisp,Lisp,CLISP,CLOS,入門">
+  <META name="description" content="Common Lisp入門講座">
+  <META name="Authors" content="Makoto Hiroi">
+  <TITLE>M.Hiroi's Home Page / Common Lisp 入門：番外編</TITLE>
+  <LINK rel=stylesheet
+        type="text/css"
+        href="clisp_styles.css"
+        title="Common Lisp">
+</HEAD>
+<BODY>
+<center><a href="http://chakumero.mobile.yahoo.co.jp/"><img src="http://www.geocities.jp/js_source/filler_nm.gif" border=0></a><br clear=all></center>
+M.Hiroi's Home Page<BR>
+<SMALL>
+http://www.geocities.jp/m_hiroi/
+</SMALL>
+<CENTER>
+<H1>Common Lisp Programming</H1>
+<H2>Common Lisp 入門：番外編</H2>
+<SMALL>
+[ <A href="clispb43.html">PrevPage</A> | <A href="index.html#data_algo">Common Lisp</A> | <A href="clispb45.html">NextPage</A> ]
+</SMALL>
+</CENTER>
+<HR>
+<DIV class="contents">
+<H3>●Algorithm X</H3>
+<P> Algorithm X と Dancing Links は、クヌース先生が考案された Exact Cover Problem という問題を解くためのアルゴリズムとデータ構造です。今回は簡単な「敷き詰め問題」を例題にして Algorithm X について説明します。なお、このドキュメントは拙作のページ <A href="../memo13.html">Memorandum 2013 年 12 月, 2014 年 1 月</A> の敷き詰め問題、Algorithm X、Dancing Links をまとめたものです。内容は重複しますが、あしからずご了承くださいませ。
+
+<H4>●敷き詰め問題</H4>
+<P> パズルの世界では、正方形を 2 個つないでできる図形をドミノ (domino)、3 個つないでできる図形をトロミノ (tromino)、4 個つないでできる図形をテトロミノ (tetromino)、5 個つないできる図形をペントミノ (pentomino) と呼びます。トロミノはトリオミノと呼ばれることもありますが、本稿ではトロミノと書くことにします。
+<P> トロミノには次に示す 2 種類の図形があります。
+<PRE class="fig">
+    ■
+    ■  ■
+    ■  ■■
+
+    Ⅰ   Ｌ
+
+図 : トロミノ
+</PRE>
+<P> ここで、トロミノの L-Block (L トロミノ) を n * n の正方形に敷き詰めることを考えます。n が 3 の倍数の場合、n * n は 3 で割り切れるので、L トロミノで敷き詰めることができそうです。ただし、3 * 3 の場合はできません。n mod 3 が 1 または 2 の場合、n * n は 3 で割ると 1 余る <A href="#note131222">[*1]</A> ので、L トロミノで敷き詰めることはできませんが、n * n の正方形から一片の正方形 (1 * 1) を取り除いた図形には敷き詰めることができるかもしれません。たとえば、4 * 4 - 1 の場合、次のように敷き詰めることができます。
+<PRE class="fig">
+      ■<FONT color="red">■■</FONT>
+    ■■□<FONT color="red">■</FONT>
+    <FONT color="green">■</FONT>□□<FONT color="blue">■</FONT>
+    <FONT color="green">■■</FONT><FONT color="blue">■■</FONT>
+
+図 : トロミノの敷き詰め
+</PRE>
+<P> <A href="#cite">参考 URL 1</A> によると、<CITE>『一般に一辺が 2 ^ n のとき、L-トロミノで敷き詰められる』</CITE> とのことです。この場合、取り除く一片の位置はどこでもかまいません。それ以外の場合、たとえば 5 * 5 - 1 や 7 * 7 - 1 は L トロミノで敷き詰めることができるのでしょうか。プログラムを作って確かめてみましょう。
+
+<DIV class="note">
+-- <A name="note131222">Note</A> --------<BR>
+[*1] m = 1, 2, 3, ... とすると、(3m + 1) * (3m + 1) = 9m^2 + 6m + 1 = 3(3m^2 + 2m) + 1, (3m + 2) * (3m + 2) = 9m^2 + 12m + 4 = 3(3m^2 + 4m + 1) + 1 となり、どちらも 3 で割ると 1 余ることがわかります。
+</DIV>
+<H4>●Exact Cover Problem</H4>
+<P> 盤面が 4 行 4 列の場合、L テトロミノの置き方は下図に示すように 36 通りあります。
+<PRE class="fig">
+┌─┬─┬─┬─┐ (0 1 4)    (0 1 5)    (0 4 5)    (1 4 5)
+│０│１│２│３│ (1 2 5)    (1 2 6)    (1 5 6)    (2 5 6)
+├─┼─┼─┼─┤ (2 3 6)    (2 3 7)    (2 6 7)    (3 6 7)
+│４│５│６│７│ (4 5 8)    (4 5 9)    (4 8 9)    (5 8 9)
+├─┼─┼─┼─┤ (5 6 9)    (5 6 10)   (5 9 10)   (6 9 10)
+│８│９│10│11│ (6 7 10)   (6 7 11)   (6 10 11)  (7 10 11)
+├─┼─┼─┼─┤ (8 9 12)   (8 9 13)   (8 12 13)  (9 12 13)
+│12│13│14│15│ (9 10 13)  (9 10 14)  (9 13 14)  (10 13 14)
+└─┴─┴─┴─┘ (10 11 14) (10 11 15) (10 14 15) (11 14 15)
+
+                図 : L テトロミノの置き方
+</PRE>
+<P> 0 番目の正方形を取り除くとすると、L テトロミノの置き方は 33 通りあります。そこから 5 つの L テトロミノを選び、盤面に配置できるか調べればいいわけです。チェック方法も簡単です。L テトロミノを重なり合うことなく配置するわけですから、5 つのテトロミノの和集合を求めると、1 から 15 までの数字がちょうど一つずつ揃うことになります。一つでも数字が欠けていれば、重なり合っている部分があるわけです。
+<P> <A href="#cite">参考 URL 2</A> によると、このような問題を Exact Cover Problem と呼ぶそうです。ここで Exact Cover Problem について簡単に説明しておきましょう。
+<P> 集合 X とその部分集合からなる集合 S において、集合 S の部分集合 S* を考えます。このとき、S* が X のすべての要素を含んでいて、それが重複することなくちょうど一つずつあることを Exact Cover といいます。
+<P> 簡単な例を示しましょう。次の図を見てください。
+<PRE class="item">
+X = {1, 2, 3, 4, 5}
+S = {A, B, C, D, E, F}
+A = {1, 2}
+B = {2, 3}
+C = {3, 4}
+D = {1, 5}
+E = {5}
+F = {2}
+</PRE>
+<P> S* を {A, C, D} とすると、X の要素をすべて含んでいますが、要素 1 が重複しているので Exact Cover ではありません。S* = {A, C, E} とすると X の要素が重複することなくちょうど一つずつ含まれているので Exact Cover になります。同様に、S* = {C, D, F} も Exact Cover です。
+
+<P> Exact Cover を求める簡単な方法は、S* の組み合わせをすべて試してみることです。というよりも、基本的にはそれしか方法がないのです。S の要素数が n 個ある場合、調べる組み合わせの総数は <SUB>n</SUB>Ｃ<SUB>1</SUB> + <SUB>n</SUB>Ｃ<SUB>2</SUB> + ... + <SUB>n</SUB>Ｃ<SUB>n</SUB> = 2<SUP>n</SUP> - 1 通りにもなります。Exact Cover Problem は <A href="../light/pyalgo62.html">巡回セールスマン問題</A> と同様に n が大きくなると解くのが大変困難になる問題なのです。
+
+<H4>●プログラムの作成 (1)</H4>
+<P> もちろん、問題によっては調べる組み合わせの総数を減らすことができる場合もあります。今回の L テトロミノの敷き詰めの場合、配置する L テトロミノの個数は盤面の大きさで決定することができます。0 番目の正方形を取り除く場合、調べる組み合わせの総数は次のようになります。
+<PRE class="item">
+4 * 4 : <SUB>33</SUB>Ｃ<SUB>5</SUB> = 237336
+5 * 5 : <SUB>141</SUB>Ｃ<SUB>8</SUB> = 3165326793495
+7 * 7 : <SUB>321</SUB>Ｃ<SUB>12</SUB> = 2029286708447775708880
+</PRE>
+<P> どうやら、単純に組み合わせを生成して試してみる方法では解けそうにもありません。そこで、組み合わせを生成するとき、重複する要素をチェックして枝刈りすることにします。Common Lisp でプログラムすると、次のようになります。
+<PRE class="list">
+リスト : L トロミノの敷き詰め
+
+; L-tromino の配置リストを作成する
+(defun make-l-tromino (w h)
+  (let ((buff '()))
+    (dotimes (x (- w 1) buff)
+      (dotimes (y (- h 1))
+        (let ((z (+ (* y w) x)))
+          (push (list z (+ z 1) (+ z w)          ) buff)
+          (push (list z (+ z 1)         (+ z w 1)) buff)
+          (push (list z         (+ z w) (+ z w 1)) buff)
+          (push (list   (+ z 1) (+ z w) (+ z w 1)) buff))))))
+
+; 重複要素があるか
+(defun duplicatep (xs ls)
+  (dolist (x xs)
+    (if (member x ls) (return t))))
+
+; 組み合わせの生成
+(defun combination (f n ls a b)
+  (cond ((zerop n) (funcall f a))
+        ((&lt; (length ls) n) nil)
+        (t
+         (unless (duplicatep (car ls) b)
+           (combination f (- n 1) (cdr ls) (cons (car ls) a) (append (car ls) b)))
+         (combination f n (cdr ls) a b))))
+
+;
+; L-tromino の敷き詰め
+;
+
+; n * n - 1
+(defun solver-l-tromino-1 (f n m)
+  (let ((tbl (make-l-tromino n n)))
+    (combination f
+                 (truncate (* n n) 3)
+                 (remove-if #'(lambda (xs) (member m xs)) tbl)
+                 nil
+                 nil)))
+
+; n * n
+(defun solver-l-tromino (f n)
+  (combination f
+               (/ (* n n) 3)
+               (make-l-tromino n n)
+               nil
+               nil))
+</PRE>
+<P> 組み合わせを生成する関数 combination で、集合 (リスト) を一つ選択するときに今まで選択した集合の要素と同じものがないか関数 duplicatep でチェックします。あとは特に難しいところはないと思います。
+<H4>●実行結果 (1)</H4>
+<P> それでは実行してみましょう。実行環境は Windows 7, Core i7-2670QM 2.20GHz, SBCL 1.0.55 です。
+<PRE>
+* (solver-l-tromino-1 #'print 4 0)
+
+((1 4 5) (8 12 13) (6 9 10) (2 3 7) (11 14 15))
+NIL
+* (solver-l-tromino-1 #'print 4 1)
+
+((0 4 5) (8 12 13) (6 9 10) (2 3 7) (11 14 15))
+NIL
+* (solver-l-tromino-1 #'print 4 4)
+
+((0 1 5) (8 12 13) (6 9 10) (2 3 7) (11 14 15))
+NIL
+* (solver-l-tromino-1 #'print 4 5)
+
+((0 1 4) (8 12 13) (6 9 10) (2 3 7) (11 14 15))
+NIL
+* (let ((c 0)) (solver-l-tromino-1 #'(lambda (x) (if (zerop c) (print x)) (incf c)) 5 0) c)
+
+((5 10 11) (15 16 20) (1 2 6) (17 21 22) (7 8 12) (3 4 9) (13 14 18) (19 23 24))
+
+8
+* (let ((c 0)) (solver-l-tromino-1 #'(lambda (x) (if (zerop c) (print x)) (incf c)) 5 1) c)
+
+0
+* (let ((c 0)) (solver-l-tromino-1 #'(lambda (x) (if (zerop c) (print x)) (incf c)) 5 2) c)
+
+((0 1 5) (6 10 11) (15 16 20) (17 21 22) (7 8 12) (3 4 9) (13 14 18) (19 23 24))
+
+16
+* (let ((c 0)) (solver-l-tromino-1 #'(lambda (x) (if (zerop c) (print x)) (incf c)) 5 6) c)
+
+0
+
+* (let ((c 0)) (solver-l-tromino-1 #'(lambda (x) (if (zerop c) (print x)) (incf c)) 5 7) c)
+
+0
+* (let ((c 0)) (solver-l-tromino-1 #'(lambda (x) (if (zerop c) (print x)) (incf
+c)) 5 12) c)
+
+((0 1 5) (6 10 11) (15 16 20) (17 21 22) (2 3 7) (4 8 9) (13 14 18) (19 23 24))
+
+32
+
+* (let ((c 0)) (solver-l-tromino #'(lambda (x) (if (zerop c) (print x)) (incf c)) 6) c)
+
+((0 1 6) (7 12 13) (18 19 24) (25 30 31) (2 3 8) (9 14 15) (20 21 26)
+ (27 32 33) (4 5 10) (11 16 17) (22 23 28) (29 34 35))
+162
+</PRE>
+<PRE class="fig">
+□■■■  ■□■■  ■■■■  ■■■■  
+■■■■  ■■■■  □■■■  ■□■■  
+■■■■  ■■■■  ■■■■  ■■■■  
+■■■■  ■■■■  ■■■■  ■■■■  
+ 1 通り    1 通り    1 通り    1 通り
+
+□■■■■  ■□■■■  ■■□■■  ■■■■■  ■■■■■  ■■■■■  
+■■■■■  ■■■■■  ■■■■■  ■□■■■  ■■□■■  ■■■■■  
+■■■■■  ■■■■■  ■■■■■  ■■■■■  ■■■■■  ■■□■■  
+■■■■■  ■■■■■  ■■■■■  ■■■■■  ■■■■■  ■■■■■  
+■■■■■  ■■■■■  ■■■■■  ■■■■■  ■■■■■  ■■■■■  
+  8 通り      0 通り      16 通り     0 通り      0 通り      32 通り
+</PRE>
+<P> 4 * 4 盤はどの正方形を取り除いても敷き詰めることができます。5 * 5 盤の場合、取り除く位置によっては敷き詰めることができません。6 * 6 盤は敷き詰めることができて、解の総数は 162 通りとなりました。
+<P> ただし、このプログラムはとても遅いです。4 * 4 盤と 5 * 5 盤は短時間で解けますが、6 * 6 盤になると実行時間は約 67 秒、7 * 7 盤は途中であきらめました。解を高速に求めるには重複した要素をチェックするだけでは不十分で、L トロミノを置くことができない隙間 (大きさ 3 未満の隙間) を作らないように配置する必要があります。
+<P> これは敷き詰め問題だけではなく、Exact Cover Problem でも起こりうる問題です。集合 S から部分集合を選択していくと、S に残っている要素では X の要素をすべてカバーできない状況に陥ることがあります。この場合、解がないのはあきらかですね。ここで枝刈りすることができれば、解を高速に求めることができるはずです。
+
+<P> 実をいうと、このような処理を効率よく行うアルゴリズムとデータ構造が開発されています。それがクヌース先生の "Algorithm X" と "Dancing Links" です。もちろん、敷き詰め問題に対しても Algorithm X は有効です。
+
+<H4>●Algorithm X の基本</H4>
+<P> Algorithm X は Exact Cover Problem を解くためのアルゴリズムです。基本は深さ優先探索ですが、効率よく枝刈りができるように工夫されています。
+<P> 簡単な例を示しましょう。次の図を見てください。
+<PRE class="item">
+X = {1, 2, 3, 4, 5}
+S = {A, B, C, D, E, F}
+A = {1, 2}
+B = {2, 3}
+C = {3, 4}
+D = {1, 5}
+E = {5}
+F = {2}
+</PRE>
+<PRE class="fig">
+  | 1 2 3 4 5
+--+-----------
+A | 1 1 0 0 0
+B | 0 1 1 0 0
+C | 0 0 1 1 0
+D | 1 0 0 0 1
+E | 0 0 0 0 1
+F | 0 1 0 0 0
+
+  図 : 行列
+</PRE>
+<P> 集合 X と集合 S の関係を行列で表します。行が S の要素 (部分集合) で、列が X の要素を表します。たとえば、A は {1, 2} なので、列 1, 2 を 1 にセットし、それ以外の値は 0 となります。列から見ると、その要素を含んでいる部分集合には 1 がセットされ、それ以外の値は 0 となります。
+
+<P> Algorithm X は部分集合を選択するとき、1 の個数が一番少ない列を基準に選びます。上図の場合、4 は C だけしかないので、4 と C を選びます。
+<PRE class="fig">
+  | 1 2 3 4 5
+--+-----------    要素 4 を選択, 部分集合 C を選択
+A | 1 1 0 0 0     要素 3, 4 を削除、3, 4 を含んでいる集合 B, C を削除
+B | 0 1 1 0 0
+C | 0 0 1 1 0
+D | 1 0 0 0 1
+E | 0 0 0 0 1
+F | 0 1 0 0 0
+
+  | 1 2     5
+--+-----------
+A | 1 1     0 
+  |
+  |
+D | 1 0     1
+E | 0 0     1
+F | 0 1     0
+</PRE>
+<P> 部分集合 C は要素 3, 4 を含んでいるので、行列から列 3, 4 を削除します。要素 3, 4 を含んでいる部分集合は、要素が重複するので選択肢から除外することができます。この場合は選択した部分集合 C だけではなく B も行列から削除します。
+
+<P> 行列は空ではないので、同様に部分集合を選択します。この場合、列 1 から部分集合を選びます。A と D があるので、最初は A を選びましょう。
+<PRE class="fig">
+  | 1 2     5
+--+-----------    要素 1 を選択, 部分集合 A を選択
+A | 1 1     0     要素 1, 2 を削除, 1, 2 を含んでいる集合 A, D, F を削除
+  |
+  |
+D | 1 0     1
+E | 0 0     1
+F | 0 1     0
+
+  |         5
+--+-----------
+  |
+  |
+  |
+  |
+E |         1
+  |
+</PRE>
+<P> A の要素は 1, 2 なので、行列から列 1, 2 を削除します。そして、要素 1, 2 を含む部分集合 A, D, F を削除します。
+<P> 行列は空ではないので、同様に部分集合を選択します。
+<PRE class="fig">
+  |         5
+--+-----------    要素 5 を選択, 部分集合 E を選択
+  |               要素 5 を削除, 5 を含んでいる集合 E を削除
+  |
+  |
+  |
+E |         1
+  |
+
+空行列になったので選択した部分集合 {C, A, E} が解となる
+</PRE>
+<P> 部分集合 E を選択すると行列は空になります。今まで選択した部分集合 C, A, E が解となります。
+<P> 次に、別解を探索するためバックトラックします。列 1 を選択したとき、部分集合は A と D の 2 つがありました。今度は D を選択します。
+<PRE class="fig">
+  | 1 2     5
+--+-----------    要素 1 を選択, 部分集合 D を選択
+A | 1 1     0     要素 1, 5 を削除, 1, 5 を含んでいる集合 A, D, E を削除
+  |
+  |
+D | 1 0     1
+E | 0 0     1
+F | 0 1     0
+
+  |   2
+--+-----------
+  |
+  |
+  |
+  |
+  |
+F |   1
+</PRE>
+<P> D の要素は 1, 5 なので、行列から列 1, 5 を削除します。それから、要素 1, 5 を含む部分集合 A, D, E を削除します。
+<PRE class="fig">
+  |   2
+--+-----------    要素 2 を選択, 部分集合 F を選択
+  |               要素 2 を削除, 2 を含んでいる集合 F を削除
+  |
+  |
+  |
+  |
+F |   1
+
+空行列になったので選択した部分集合 {C, D, F} が解となる
+</PRE>
+<P> 同様に部分集合 F を選ぶと行列は空になります。選択した部分集合 {C, D, F} が解となります。
+<P> さらに別解を探すためバックトラックします。要素 4 を選択したとき、選択できる部分集合は C しかありませんでした。他の選択肢がないので、ここで探索を終了します。
+
+<P> Algorithm X のポイントは、選択肢の少ない要素 (列) から選んでいくところです。前回簡単に説明しましたが、集合 S から部分集合を選択していくと、S に残っている要素では X の要素をすべてカバーできない状況に陥ることがあります。この場合、解がないのはあきらかですね。この状態は行列でいうと、ある列の要素がすべて 0 になることに対応します。選択肢の数が最小の列を探す場合、最小値は 0 ですから、選択肢 0 の列が選ばれることになります。つまり、ここで枝刈りすることができるわけです。
+
+<P> もう一つのポイントが行列を表すデータ構造です。要素 (列) から部分集合 (行) を求める処理と、行と列の取り外しと元に戻す処理が高速でなければ、Algorithm X を高速に動作させることはできません。
+
+<P> クヌース先生の Dancing Links は、行列の 1 の要素を縦方向と横方向の双方向リストでつないだデータ構造です。次の図を見てください。
+
+<PRE class="fig">
+        │  │  │  │  │
+  ─Ｈ─１─２─３─４─５─
+        │  │  │  │  │
+      ─Ａ─Ａ───────
+        │  │  │  │  │
+      ───Ｂ─Ｂ─────
+        │  │  │  │  │
+      ─────Ｃ─Ｃ───
+        │  │  │  │  │
+      ─Ｄ───────Ｄ─
+        │  │  │  │  │
+      ─────────Ｅ─
+        │  │  │  │  │
+      ───Ｆ───────
+        │  │  │  │  │
+
+    図 : Dancing Links
+</PRE>
+<P> H は行列全体のヘッダーで、1, 2, 3, 4, 5 が列を表すヘッダーです。列のヘッダーから縦方向のリンクをたどれば、要素を含む部分集合を簡単に求めることができます。また、横方向のリンクをたどれば、その部分集合の要素も簡単に求めることができます。
+<P> 双方向リストの場合、リンクから節 (node) を削除したり、それを元に戻すことは節のデータを書き換えることで簡単にできます。列を取り除く場合、列ヘッダーをつないでいる横方向のリンクから、該当する列のヘッダーを削除すればいいわけです。部分集合を削除する場合は、節の横方向のリンクをたどり、縦方向のリンクから節を削除することで実現できます。
+<P> ただし、これらの処理は破壊的な操作を行うので、関数型言語とはあまり相性がよくありません。Common Lisp は破壊的な操作も簡単に行えますが、Haskell のような純関数型言語で Dancing Links を実装するのはけっこう面倒です。そこで、Dancing Links の前に、immutable なデータ構造で Algorithm X を実装してみましょう。最近のパソコンはハイスペックなので、immutable なデータ構造でも、それなりの速度で動作するかもしれません。
+
+<H4>●連想リストによる Algorithm X の実装</H4>
+<P> 行列を表すデータ構造ですが、列を連想リストで表すと簡単です。次の図を見てください。
+<PRE class="item">
+X = {1, 2, 3, 4, 5}
+S = {A, B, C, D, E, F}
+A = {1, 2}
+B = {2, 3}
+C = {3, 4}
+D = {1, 5}
+E = {5}
+F = {2}
+</PRE>
+<PRE class="fig">
+  | 1 2 3 4 5
+--+-----------
+0 | 1 1 0 0 0
+1 | 0 1 1 0 0
+2 | 0 0 1 1 0
+3 | 1 0 0 0 1
+4 | 0 0 0 0 1
+5 | 0 1 0 0 0
+
+        0     1     2     3     4   5
+     ----------------------------------
+行 : #((1 2) (2 3) (3 4) (1 5) (5) (2))
+
+列 : ((1 0 3) (2 0 1 5) (3 1 2) (4 2) (5 3 4))
+
+        図 : 行列を表すデータ構造
+</PRE>
+<P> 部分集合 S をリスト ((1 2) (2 3) (3 4) (1 5) (5) (2)) で与えることにします。部分集合はリストの添字で区別することにします。列は連想リストで表します。キーが列の番号で、データは要素 (列) を含む部分集合のリストです。
+<P> 行列から列を削除する場合は、連想リストから該当する列を削除するだけです。行を削除する場合は、連想リストのデータ (部分集合のリスト) から該当する部分集合の番号を削除します。たとえば、上図で部分集合 3 を削除する場合、列 1, 5 から部分集合を削除するので、列 1 は (1 0 3) から (1 0) に、列 5 は (5 3 4) から (5 4) になります。なお、行を表すデータは処理速度を少しでも速くするため、リストからベクタに変換することにします。
+<P> 簡単な例を示しましょう。
+<PRE class="fig">
+  | 1 2 3 4 5 : ((1 0 3) (2 0 1 5) (3 1 2) (4 2) (5 3 4))
+--+-----------    
+0 | 1 1 0 0 0   列 (4 2) を選択、部分集合 2 を選択
+1 | 0 1 1 0 0   部分集合 2 の要素 3, 4 を列から削除
+2 | 0 0 1 1 0   =&gt; ((1 0 3) (2 0 1 5) (5 3 4))
+3 | 1 0 0 0 1
+4 | 0 0 0 0 1   要素 3, 4 を含む部分集合 1, 2 を削除
+5 | 0 1 0 0 0   =&gt; ((1 0 3) (2 0 5) (5 3 4))
+
+  | 1 2     5 : ((1 0 3) (2 0 5) (5 3 4))
+--+-----------
+0 | 1 1     0 
+  |
+  |
+3 | 1 0     1
+4 | 0 0     1
+5 | 0 1     0
+</PRE>
+<P> 部分集合 2 は要素 3, 4 を含んでいるので、連想リストから列 3, 4 を削除します。要素 3, 4 を含んでいる部分集合は 1 と 2 です。列 (2 0 1 5) は 1 を含んでいるので、ここから 1 を削除します。
+
+<P> 行列は空ではないので、同様に部分集合を選択します。この場合、列 1 から部分集合を選びます。0 と 3 があるので、最初は 0 を選びましょう。
+<PRE class="fig">
+  | 1 2     5 : ((1 0 3) (2 0 5) (5 3 4))
+--+-----------  
+0 | 1 1     0   列 (1 0 3) を選択, 部分集合 0 を選択
+  |             部分集合 0 の要素 1, 2 を連想リストから削除
+  |             =&gt; ((5 3 4))
+3 | 1 0     1
+4 | 0 0     1   要素 1, 2 を含む部分集合 0, 3. 5 を削除
+5 | 0 1     0   =&gt; ((5 4))
+
+  |         5  : ((5 4))
+--+-----------
+  |
+  |
+  |
+  |
+4 |         1
+  |
+</PRE>
+<P> 部分集合 0 の要素は 1, 2 なので、行列から列 1, 2 を削除します。そして、要素 1, 2 を含む部分集合 0, 3, 5 を削除します。この場合、列 (5 3 4) の 3 を削除して (5 4) になります。
+<P> 行列は空ではないので、同様に部分集合を選択します。
+<PRE class="fig">
+  |         5  : ((5 4))
+--+-----------
+  |               要素 5 を選択, 部分集合 4 を選択
+  |               要素 5 を削除
+  |               =&gt; ()
+  |
+4 |         1
+  |
+
+空行列になったので選択した部分集合 {2, 0, 4} が解となる
+</PRE>
+<P> 部分集合 4 を選択すると行列は空になります。今まで選択した部分集合 {2, 0, 4} が解となります。あとは、この処理を繰り返すだけです。
+
+<H4>●プログラムの作成 (2)</H4>
+<P> それではプログラムを作りましょう。まず最初に、リストから行列 (ベクタと連想リスト) を生成する関数 make-matrix を作ります。
+<PRE class="list">
+リスト : 行列の生成
+
+(defun make-matrix (xs)
+  (let ((ls (make-array (length xs) :initial-contents xs))
+        (cs nil))
+    (dotimes (x (length ls) (list ls cs))
+      (dolist (y (aref ls x))
+        (let ((zs (assoc y cs)))
+          (if zs
+              (rplacd zs (cons x (cdr zs)))
+            (push (list y x) cs)))))))
+</PRE>
+<P> 引数のリスト xs をベクタに変換するのは簡単です。make-array のキーワード引数 :initial-contents に xs を指定するだけです。ベクタは変数 ls に、連想リストは変数 cs にセットします。dotimes の変数 x が部分集合 (行) の番号、dolist の変数 y が部分集合の要素 (列の番号) になります。
+<P> 次に、assoc で連想リストから y を探します。見つけた場合、zs のデータ部分に x を追加します。rplacd で zs の CDR 部を破壊的に修正していることに注意してください。見つからない場合は (list y x) を cs に push で追加します。最後に ls と cs をリストに格納して返します。
+
+<P> 次は選択肢が最小の列を求める関数 search-min-column を作ります。
+<PRE class="list">
+リスト : 選択肢が最小の列を求める
+
+(defun search-min-column (cs)
+  (let ((min-item (car cs))
+        (min-size (length (car cs))))
+    (dolist (item (cdr cs) min-item)
+      (let ((size (length item)))
+        (when (&lt; size min-size)
+          (setq min-item item
+                min-size size))))))
+
+</PRE>
+<P> search-min-column は簡単です。min-item, min-size に連想リストの先頭要素とその長さをセットします。あとは、dolist で残りの要素を取り出して長さを求め、min-size よりも小さい場合は、min-item と min-size の値を書き換えます。最後に min-item を返します。
+<P> 次は列を削除する関数 remove-columns を作ります。
+<PRE class="list">
+リスト : 列の削除
+
+; アクセス関数
+(defun get-num (xs) (car xs))
+(defun get-subsets (xs) (cdr xs))
+
+; 列を削除
+(defun remove-columns (xs cs)
+  (remove-if #'(lambda (ys) (member (get-num ys) xs)) cs))
+</PRE>
+<P> remove-columns の引数 xs は削除する列の番号を格納したリスト、cs は行列を表す連想リストです。remove-if でラムダ式が真を返す要素を cs から削除します。ラムダ式の引数 ys が連想リストの要素です。アクセス関数 get-num で列の番号を取り出し、それが xs に含まれているか member でチェックするだけです。
+
+<P> 次は列の要素 (部分集合) を削除する関数 remove-subsets を作ります。
+<PRE class="list">
+リスト : 部分集合を削除
+
+(defun remove-subsets (xs ys cs)
+  (mapcar #'(lambda (zs)
+              (if (member (get-num zs) xs)
+                  (cons (get-num zs)
+                        (set-difference (get-subsets zs) ys))
+                zs))
+          cs))
+</PRE>
+<P> 引数 xs が要素を削除する列の番号を格納したリスト、ys が削除する部分集合の番号を格納したリスト、cs が行列を表す連想リストです。mapcar で cs の要素を変換します。ラムダ式の引数 zs が連想リストの要素です。zs の番号を get-num で求め、それが xs に含まれているならば、set-difference で (get-subsets zs) と ys の集合の差を求め、それと番号をセルに格納して返します。そうでなければ、zs をそのまま返します。
+
+<P> 次は、複数の要素 (列) から属する部分集合を集める関数 collect-subsets を作ります。この関数は複数の列を削除するとき、削除する部分集合を求めるために使います。
+<PRE class="list">
+リスト : 要素 (列) が属する部分集合を集める
+
+(defun collect-subsets (xs cs)
+  (let ((buff nil))
+    (dolist (x xs buff)
+      (setq buff (union buff (get-subsets (assoc x cs)))))))
+</PRE>
+<P> 引数 xs は要素 (列の番号) を格納したリストで、cs が行列を表す連想リストです。dolist で xs が列の番号を順番に取り出し、assoc で cs からその番号を探索し、その部分集合と buff の和集合を求めて、buff の値を更新します。
+
+<P> 次は複数の部分集合から属する要素 (列) を集める関数 collect-columns を作ります。この関数は列の部分集合を削除するとき、削除する列を求めるために使います。
+
+<PRE class="list">
+リスト : 部分集合の要素 (列) を集める
+
+(defun collect-columns (xs ls)
+  (let ((buff nil))
+    (dolist (x xs buff)
+      (setq buff (union buff (aref ls x))))))
+</PRE>
+<P> 引数 xs は部分集合の番号を格納したリストで、ls は部分集合を格納したベクタです。dolist で xs から部分集合の番号を順番に取り出し、aref で ls からその要素を取り出し、buff と和集合を求めて buff の値を更新します。
+
+<P> 最後に Algorithm X を実行する関数 algo-x を作ります。
+<PRE class="list">
+リスト : Algorithm X
+
+(defun algo-x (f lines columns a)
+  (if (null columns)
+      (funcall f a)
+    (dolist (x (get-subsets (search-min-column columns)))
+      (let* ((cs (aref lines x))
+             (ls (collect-subsets cs columns))
+             (zs (collect-columns ls lines)))
+        (algo-x f
+                lines
+                (remove-subsets zs ls (remove-columns cs columns))
+                (cons cs a))))))
+</PRE>
+<P> 引数 f は解を見つけたときに評価する関数、lines は部分集合を格納したベクタ、columns は行列を表す連想リスト、a は選択した部分集合を格納する累積変数です。columns が空リストの場合、行列は空になったので関数 f に a を渡して実行します。そうでなければ、search-min-column で選択肢が最長の列を探して、その部分集合 x を dolist で取り出します。選択肢が 0 の場合、get-contents は nil を返すので dolist は実行されません。ここで枝刈りされることに注意してください。
+<P> 次に、部分集合 x の要素を lines から取り出して、変数 cs にセットします。これが削除する列になります。collect-subsets で cs に属する部分集合を求めて変数 ls にセットします。これが削除する部分集合になります。部分集合を削除する列は、collect-columns で求めて変数 zs にセットします。最後に、algo-x を再帰呼び出しするとき、remove-columns で columns から列 cs を削除し、remove-subsets で部分集合 ls を削除します。
+
+<H4>●実行結果 (2)</H4>
+<P> それでは実行してみましょう。結果は次のようになりました。
+<PRE>
+    表 : 実行結果
+
+ 盤面 | A  |    総数 | 時間 (秒)
+------+----+---------+-------
+6 * 6 | -- |     162 |  0.04
+------+----+---------+-------
+7 * 7 |  0 |    1440 |  0.13
+      |  1 |     704 |  0.10
+      |  2 |     816 |  0.11
+      |  3 |    1088 |  0.10
+      |  8 |     704 |  0.08
+      |  9 |     288 |  0.06
+      | 10 |     576 |  0.08
+      | 16 |     608 |  0.10
+      | 17 |     416 |  0.07
+      | 24 |     736 |  0.07
+------+----+---------+-------
+8 * 8 |  0 |   30355 |  1.37
+------+----+---------+-------
+9 * 9 | -- | 1193600 | 51.65
+
+ A : 取り除く正方形の位置
+
+実行環境 : Windows 7, Core i7-2670QM 2.20GHz, SBCL 1.0.55
+</PRE>
+<P> 6 * 6 盤の実行時間は 0.04 秒になりました。最初のプログラムの実行時間は約 67 秒だったので、劇的に速くなりました。7 * 7 盤も高速に解くことができ、どの位置の正方形を取り除いても敷き詰めることができます。Algorithm X は敷き詰め問題でも大きな効果を発揮することがわかります。ですが、盤面を大きくすると探索する局面数が爆発的に増えるので、実行時間は急激に遅くなります。
+
+<P> 今回はここまでです。次回は Dancing Links を実装して、どのくらい速くなるか試してみましょう。
+
+<H4><A name="cite">●参考文献, URL</A></H4>
+<OL>
+  <LI><A href="http://www.geocities.co.jp/Berkeley-Labo/6317/index.html">数理パズル入門</A>, <A href="http://www.geocities.co.jp/Berkeley-Labo/6317/domino_09.htm">L-トロミノの敷き詰め</A><BR>
+  <LI><A href="http://en.wikipedia.org/wiki/Exact_cover">Exact cover - Wikipedia (en)</A>
+  <LI>Donald Knuth, <A href="http://arxiv.org/pdf/cs.DS/0011047.pdf">"Dancing Links (PDF)"</A>
+  <LI><A href="http://en.wikipedia.org/wiki/Knuth's_Algorithm_X">Knuth's Algorithm X - Wikipedia (en)</A>
+  <LI><A href="http://en.wikipedia.org/wiki/Dancing_Links">Dancing Links - Wikipedia (en)</A>
+</OL>
+<HR>
+<H4><A name="list1">●プログラムリスト</A></H4>
+<PRE class="list">
+;
+; tromino.l : トロミノの敷き詰め
+;
+;             Copyright (C) 2014 Makoto Hiroi
+;
+
+; L-toromino の配置
+(defun make-l-tromino (w h)
+  (let ((buff '()))
+    (dotimes (x (- w 1) buff)
+      (dotimes (y (- h 1))
+        (let ((z (+ (* y w) x)))
+          (push (list z (+ z 1) (+ z w)          ) buff)
+          (push (list z (+ z 1)         (+ z w 1)) buff)
+          (push (list z         (+ z w) (+ z w 1)) buff)
+          (push (list   (+ z 1) (+ z w) (+ z w 1)) buff))))))
+
+; 行列の生成
+(defun make-matrix (xs)
+  (let ((ls (make-array (length xs) :initial-contents xs))
+        (cs nil))
+    (dotimes (x (length ls) (list ls cs))
+      (dolist (y (aref ls x))
+        (let ((zs (assoc y cs)))
+          (if zs
+              (rplacd zs (cons x (cdr zs)))
+            (push (list y x) cs)))))))
+
+; アクセス関数
+(defun get-num (xs) (car xs))
+(defun get-subsets (xs) (cdr xs))
+
+; 列を削除
+(defun remove-columns (xs cs)
+  (remove-if #'(lambda (ys) (member (get-num ys) xs)) cs))
+
+; 部分集合を削除
+(defun remove-subsets (xs ys cs)
+  (mapcar #'(lambda (zs)
+              (if (member (get-num zs) xs)
+                  (cons (get-num zs)
+                        (set-difference (get-subsets zs) ys))
+                zs))
+          cs))
+
+; 部分集合を集める
+(defun collect-subsets (xs cs)
+  (let ((buff nil))
+    (dolist (x xs buff)
+      (setq buff (union buff (get-subsets (assoc x cs)))))))
+
+; 列を集める
+(defun collect-columns (xs ls)
+  (let ((buff nil))
+    (dolist (x xs buff)
+      (setq buff (union buff (aref ls x))))))
+
+; 最小の列を求める
+(defun search-min-column (cs)
+  (let ((min-item (car cs))
+        (min-size (length (car cs))))
+    (dolist (item (cdr cs) min-item)
+      (let ((size (length item)))
+        (when (&lt; size min-size)
+          (setq min-item item
+                min-size size))))))
+
+;
+; Knuth's Algorithm X
+;
+(defun algo-x (f lines columns a)
+  (if (null columns)
+      (funcall f a)
+    (dolist (x (get-subsets (search-min-column columns)))
+      (let* ((cs (aref lines x))
+             (ls (collect-subsets cs columns))
+             (zs (collect-columns ls lines)))
+        (algo-x f
+                lines
+                (remove-subsets zs ls (remove-columns cs columns))
+                (cons cs a))))))
+
+; L トロミノの敷き詰め
+; n * n - 1
+(defun solver-l-tromino-1-x (f n m)
+  (let ((mat (make-matrix (remove-if #'(lambda (xs) (member m xs))
+                                     (make-l-tromino n n)))))
+    ; (print mat)
+    (algo-x f (car mat) (cadr mat) nil)))
+
+; n * n
+(defun solver-l-tromino-x (f n)
+  (let ((mat (make-matrix (make-l-tromino n n))))
+    (algo-x f (car mat) (cadr mat) nil)))
+</PRE>
+</DIV>
+<HR>
+<CENTER>
+<B>Copyright (C) 2014 Makoto Hiroi<BR>All rights reserved.</B>
+<HR>
+<SMALL>
+[ <A href="clispb43.html">PrevPage</A> | <A href="index.html#data_algo">Common Lisp</A> | <A href="clispb45.html">NextPage</A> ]
+</SMALL>
+</CENTER>
+</BODY>
+</HTML>
