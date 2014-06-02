@@ -82,6 +82,32 @@
   (declare (string str))
   (the string (remove-if #'(lambda (chr) (< (char-code chr) 1000)) str)))
 
+;;;remove comment from html
+(defun remove-comment (html)
+  (let ((input-stream (make-string-input-stream html))
+		(result nil)
+		(chr1) (chr2) (chr3) (chr4) (flag) (change-p))
+	(loop
+	  for chr = (read-char input-stream nil)
+	  while chr
+	  do (setf chr1 chr2 chr2 chr3 chr3 chr4 chr4 chr)
+	  do (multiple-value-bind (f change-p) (comment-p chr1 chr2 chr3 chr4 flag change-p)
+		   (setf flag f)
+		   (if change-p (setf result (remove-3element result)))
+		   (if (not flag) (push chr result))))
+	(concatenate 'string (nreverse result))))
+
+(defun comment-p (chr1 chr2 chr3 chr4 flag change-p)
+  (cond ((and (eql chr1 #\<) (eql chr2 #\!) (eql chr3 #\-) (eql chr4 #\-))
+		 (values t t))
+		((and (eql chr1 #\-) (eql chr2 #\-) (eql chr3 #\>))
+		 (values nil nil))
+		(t
+		  (values flag nil))))
+
+(defun remove-3element (lst)
+  (cdddr lst))
+
 (defun input-jp (input)
   (let ((result nil))
 	(declare (list result))
@@ -91,6 +117,7 @@
 		while chr
 		when (> (char-code chr) 1000) do (push chr result)))
 	  (coerce (nreverse result) 'string)))
+
 ;;;hash->list
 (defun hash->list (hash)
   (let ((lst nil))
@@ -301,3 +328,4 @@
 	  while line
 	  for lst = (split #\, line)
 	  do (setf (gethash (car lst) variable) (cadr lst)))))
+

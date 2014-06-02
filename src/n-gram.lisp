@@ -1,15 +1,12 @@
-
 (defpackage n-gram
   (:use  :common-lisp)
   (:export main
 		   learn))
 
-(load "../../html-parser/html.lisp")
 (load "vars")
 (load "util")
 (in-package n-gram)
 
-(use-package :html)
 (declaim (inline get-str-combi)
 		 (inline slice)
 		 (inline scoring-url))
@@ -192,7 +189,7 @@
 
 ;;;scoring from url
 (defun scoring-url (url)
-  (scoring-str (wget-and-remove url)))
+  (scoring-str (remove-not-jp (remove-comment (wget url)))))
 
 ;;;save hash -> file
 ;;;format ~key,~val~%
@@ -319,6 +316,7 @@
 	  (declare (string url)
 			   (hash-table score)
 			   (list tag-list result))
+	  (print-sorted-hash score)
 	  (print tag-list)
 	  (save-file (cut-save-hash *blacklist*) *bladklist-dir*)
 	  (loop
@@ -356,4 +354,3 @@
 		do (push line urls)))
 	(mapcar #'(lambda (url) (format t "~a:~%~a~%" url (learn url tag)))
 			urls)))
-

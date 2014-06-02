@@ -1,0 +1,1915 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 4.23-ja" />
+<meta name="google-site-verification" content="YoGdgoogWZ2QUpVzZrUJ1tmV5t68gIlUzuHehzG0K3c" />
+<link rel="shortcut icon" href="http://e-arrows.sakura.ne.jp/favicon.ico" />
+    <link rel="stylesheet" href="http://e-arrows.sakura.ne.jp/styles.css" type="text/css" />
+<link rel="start" href="http://e-arrows.sakura.ne.jp/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://e-arrows.sakura.ne.jp/atom.xml" />
+<script type="text/javascript" src="http://e-arrows.sakura.ne.jp/mt.js"></script>
+
+<link href="http://e-arrows.sakura.ne.jp/syntax/prettify.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="http://e-arrows.sakura.ne.jp/syntax/prettify.js"></script>
+<script type="text/javascript" src="http://e-arrows.sakura.ne.jp/syntax/lang-lisp.js"></script>
+<script type="text/javascript">
+  //<![CDATA[
+  window.onload = prettyPrint;
+  //]]>
+</script>
+<!--<script type="text/javascript" src="http://cdn.topsy.com/topsy.js?init=topsyWidgetCreator"></script>-->
+<script type="text/javascript" id="topsy_global_settings">
+  //<![CDATA[
+  var topsy_style = "big";
+  var topsy_nick = "nitro_idiot";
+  //]]>
+</script>
+
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://e-arrows.sakura.ne.jp/rsd.xml" />
+    <title>八発白中</title>
+</head>
+<body id="mt-blog" class="mt-main-index layout-tw">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <h1 id="header-name"><a href="http://e-arrows.sakura.ne.jp/" accesskey="1">八発白中</a></h1>
+            <h2 id="header-description">Lisp! Emacs! Open Source!</h2>
+
+        </div>
+    </div>
+<div class="notice">
+<span class="notice-category">
+お知らせ
+</span>
+<a href="http://d.hatena.ne.jp/nitro_idiot/" target="_blank">はてなダイアリーに移転しました。</a>
+</div>
+</div>
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+                            
+                            <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://e-arrows.sakura.ne.jp/2011/09/i-join-hatena.html"
+    trackback:ping="http://e-arrows.sakura.ne.jp/mt/mt-tb.cgi/195"
+    dc:title="株式会社はてなに入社しました"
+    dc:identifier="http://e-arrows.sakura.ne.jp/2011/09/i-join-hatena.html"
+    dc:subject="お知らせ"
+    dc:description="　本日付けで株式会社はてなの京都本社にWebアプリケーションエンジニアとして入社..."
+    dc:creator="深町英太郎"
+    dc:date="2011-09-01T03:18:38+09:00" />
+</rdf:RDF>
+-->
+
+<div id="entry-204" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <div class="topsy_widget_data">
+<script type="text/javascript" src="http://button.topsy.com/widget/retweet-big?nick=nitro_idiot&url=http://e-arrows.sakura.ne.jp/2011/09/i-join-hatena.html"></script>
+</div>
+        <h2 class="asset-name entry-title"><a href="http://e-arrows.sakura.ne.jp/2011/09/i-join-hatena.html" rel="bookmark">株式会社はてなに入社しました</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                <span class="vcard author">深町英太郎</span> (<abbr class="published" title="2011-09-01T03:18:38+09:00">2011&#24180;9&#26376; 1&#26085; 03:18</abbr>)
+    
+            </span>
+
+            <span class="separator">|</span>
+
+
+【1分で読めるよ！】
+
+
+            <span class="separator">|</span> <a href="http://e-arrows.sakura.ne.jp/2011/09/i-join-hatena.html#comments">コメント(1)</a>
+            <span class="separator">|</span> <a href="http://e-arrows.sakura.ne.jp/2011/09/i-join-hatena.html#trackbacks">トラックバック(0)</a>
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <p>　本日付けで株式会社はてなの京都本社にWebアプリケーションエンジニアとして入社しました。これからはid:nitro_idiotとして活動します。</p>
+
+<p>　京都に引っ越さなければいけなかったため、お世話になった人たちには早めに個別でお話をして回りました。けれど、今月は引越し準備や送別会などが重なり、何人かは会う機会のないまま京都に来てしまいました。ごめんなさい。</p>
+
+<p>　皆に伝えて回ったときに印象的だったのは、人によって「え、はてな&#8230;？」と首をかしげる人から、「いいなー」という人まで幅広くいたことです。後者はさらに「はてないいなー」という人と「京都いいなー」という人に類別されます。共通するのは、皆、はてなの状況となぜはてなを選んだのかを知りたがったことでしょうか。</p>
+
+<blockquote>
+「はてなは良い会社なんですか」<br />
+「それは入ってみないとわかりません」
+</blockquote>
+
+<p>　僕は昔、高校の転入面接のとき「この学校に転入したら何をしたいですか？」と聞かれて、「受かってもないのにその後のことを聞かれても答えようがないです」と答えたことがあります。面接官たちは苦笑いしてそれ以上追求しませんでしたが、その反応からあまり良い答えではなかったと気づきました。筆記試験で自信をなくしていた僕は、「落ちるんじゃないか」という後向きな考えに囚われていたのです。実際は学力は及第点だったのに、面接の悲観的な態度が原因で再評価という皮肉な結果だったのですが。</p>
+
+<p>　そのときから、僕の偏執的な心配性は変わっていないようです。面接のときに「はてなに入ったら何をしたいですか？」と聞かれて答えに迷った挙句、入社した自分の姿を想像できずに「入ってみないとわからない」と正直に答えてしまいました。本当に、受かってよかったです。</p>
+
+<p>　とは言え、楽観的な考えがなければ転職して京都に引っ越すなんていう決断もしていないかもしれません。仕事の面では最近Perlを書いてないけど徐々に慣れていけばいいかーと思っているし、挨拶なしで別れてしまった人たちもきっとまた会うこともあると思います。</p>
+
+<p>　自分がいることで、はてながさらに魅力的な企業になるよう努力します。今後もよろしくお願いします。</p>
+
+        </div>
+
+
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+                            
+                            <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://e-arrows.sakura.ne.jp/2011/08/i-quit-ariel.html"
+    trackback:ping="http://e-arrows.sakura.ne.jp/mt/mt-tb.cgi/194"
+    dc:title="今月でアリエル・ネットワークを退職します"
+    dc:identifier="http://e-arrows.sakura.ne.jp/2011/08/i-quit-ariel.html"
+    dc:subject="雑記"
+    dc:description="　ビールが好きです。でも、家でビールばかり飲んでいると出費がかさみます。考えた末..."
+    dc:creator="深町英太郎"
+    dc:date="2011-08-24T14:33:40+09:00" />
+</rdf:RDF>
+-->
+
+<div id="entry-203" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <div class="topsy_widget_data">
+<script type="text/javascript" src="http://button.topsy.com/widget/retweet-big?nick=nitro_idiot&url=http://e-arrows.sakura.ne.jp/2011/08/i-quit-ariel.html"></script>
+</div>
+        <h2 class="asset-name entry-title"><a href="http://e-arrows.sakura.ne.jp/2011/08/i-quit-ariel.html" rel="bookmark">今月でアリエル・ネットワークを退職します</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                <span class="vcard author">深町英太郎</span> (<abbr class="published" title="2011-08-24T14:33:40+09:00">2011&#24180;8&#26376;24&#26085; 14:33</abbr>)
+    
+            </span>
+
+            <span class="separator">|</span>
+
+
+【2分で読めるよ！】
+
+
+            <span class="separator">|</span> <a href="http://e-arrows.sakura.ne.jp/2011/08/i-quit-ariel.html#comments">コメント(2)</a>
+            <span class="separator">|</span> <a href="http://e-arrows.sakura.ne.jp/2011/08/i-quit-ariel.html#trackbacks">トラックバック(0)</a>
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <p>　ビールが好きです。でも、家でビールばかり飲んでいると出費がかさみます。考えた末、今月から禁ビールを始めました。</p>
+
+<p>　しかし、2週間ほど続いたある日に暑さに負けてビールを飲んでしまいました。半端な決意では何事も続かないものです。</p>
+
+<p>　私事ですが、今月末でアリエル・ネットワークを退職することになりました。今日が最終出社日で、持ちチケットがなくなったので会社でブログを書いているところです。去年の5月に中途入社してから今月を含めて16ヶ月いたことになります。</p>
+
+<ul>
+<li><a href="/2010/04/i-got-a-job-in-ariel.html">5月からアリエルで働くことになりました - 八発白中</a></li>
+</ul>
+
+<p>　学生アルバイトとして働いていた<a href="http://www.tejimaya.com/">手嶋屋</a>も含めると、1年ちょっとで2回会社をやめたことになります。会社を短期間でやめて職を転々としたり、いとも簡単に禁ビールに失敗したりしていると、僕が思う以上に周りの人間に心配されました。特にCTOの井上さんにはちょっとした説得もされました。</p>
+
+<blockquote>
+井「もう1年頑張りませんか」<br />
+僕「いや、これ以上勤めていても何か力になれそうにもないので」<br />
+井「せっかくアリエルに入ったので、何か残して去ってもらいたかったんですが」
+</blockquote>
+
+<p>　アリエルでは割と自由な立ち位置でやらせてもらっていて、この一年は趣味のプログラムを中心にアリエルの名を広く知らしめる活動をしてきました。</p>
+
+<ul>
+<li><a href="/2011/05/what-ive-created-in-ariel.html">僕はアリエルに入って何を生み出したか - 八発白中</a></li>
+</ul>
+
+<p>　ただ、会社に残せたものは何もありません。Javaは結局書けず仕舞いだし、入社時に一番期待されていた「会社の文化を変えること」も成し遂げられていません。</p>
+
+<p>　なので、僕はこの退社を敗北と捉えています。僕が入社してからも会社の居心地は単調に悪くなり、自分の意図しない方向に進むゆっくりとした変化は、気づけば自分の居場所のなさを感じるまでになっていました。退社の意思を固めてからは、自分一人では何も変えられないという無力さをずっと噛み締めています。</p>
+
+<p>　「もうプログラマをやめて、崖の上で子どもをキャッチする仕事をするんだ&#8230;」と冗談めかして言ったりもしました。けれど、プログラム以外何もできない人間です。まだ比較的若いというのもあります。一度仕切りなおして、一人のエンジニアとして静かに人生を生き直すつもりです。勝手ではありますが、そっと見守っておいてください。</p>
+
+<p>　最後に、<a href="http://modern-cl.blogspot.com/">Modern Common Lisp</a>周りに期待されている方々へ。Modern Common Lispはこれまで通り松山さん(<a href="https://twitter.com/m2ym">@m2ym</a>)と2人で更新していきます。新しいライブラリの開発は減るかもしれませんが、<a href="http://clacklisp.org/">Clack</a>、<a href="http://clacklisp.org/caveman/">Caveman</a>などのCLライブラリの開発は続けるつもりです。せめて大好きなCommon Lispの文化だけは変えてみせたいですからね。</p>
+
+<p>　禁ビールはもはやどうでもいいです。</p>
+
+        </div>
+
+
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+                            
+                            <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://e-arrows.sakura.ne.jp/2011/08/sd-modern-common-lisp.html"
+    trackback:ping="http://e-arrows.sakura.ne.jp/mt/mt-tb.cgi/193"
+    dc:title="SoftwareDesign連載寄稿「Modern Common LispとEmacs」"
+    dc:identifier="http://e-arrows.sakura.ne.jp/2011/08/sd-modern-common-lisp.html"
+    dc:subject="Common Lisp"
+    dc:description="Software Design 2011年 09月号 　久しぶりにアリエルで連載..."
+    dc:creator="深町英太郎"
+    dc:date="2011-08-17T15:50:28+09:00" />
+</rdf:RDF>
+-->
+
+<div id="entry-202" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <div class="topsy_widget_data">
+<script type="text/javascript" src="http://button.topsy.com/widget/retweet-big?nick=nitro_idiot&url=http://e-arrows.sakura.ne.jp/2011/08/sd-modern-common-lisp.html"></script>
+</div>
+        <h2 class="asset-name entry-title"><a href="http://e-arrows.sakura.ne.jp/2011/08/sd-modern-common-lisp.html" rel="bookmark">SoftwareDesign連載寄稿「Modern Common LispとEmacs」</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                <span class="vcard author">深町英太郎</span> (<abbr class="published" title="2011-08-17T15:50:28+09:00">2011&#24180;8&#26376;17&#26085; 15:50</abbr>)
+    
+            </span>
+
+            <span class="separator">|</span>
+
+
+【1分で読めるよ！】
+
+
+            <span class="separator">|</span> <a href="http://e-arrows.sakura.ne.jp/2011/08/sd-modern-common-lisp.html#comments">コメント(1)</a>
+            <span class="separator">|</span> <a href="http://e-arrows.sakura.ne.jp/2011/08/sd-modern-common-lisp.html#trackbacks">トラックバック(1)</a>
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <div class="book"><a href="http://www.amazon.co.jp/o/ASIN/B005EGZVVI/happatsu-22/"><img src="http://rcm-images.amazon.com/images/P/B005EGZVVI.09.MZZZZZZZ.jpg" border="0" /><br />Software Design 2011年 09月号</a></div>
+
+<p>　久しぶりにアリエルで連載している、Software Designの「Emacsのトラノマキ」に寄稿しました。</p>
+
+<ul>
+<li><a href="http://gihyo.jp/magazine/SD/archive/2011/201109">Software Design 2011年9月号｜gihyo.jp &#8230; 技術評論社</a></li>
+</ul>
+
+<p>　タイトルは「<strong>Modern Common LispとEmacs</strong>」です。今月から2回に渡って最近のCommon Lisp周りについてまとめています。原稿を読んだ岩永さんに「Emacs関係ねーじゃん!!」って言われたけど気にしません。</p>
+
+<p>　第1回の9月号は、主にEmacsでの環境設定を解説しています。内容の多くは<a href="http://modern-cl.blogspot.com/">Modern Common Lisp</a>からの抜粋なので、ブログの更新を追っている方には必要ないかもしれません。逆にブログを購読していない人や、細切れになったブログ記事を一つの流れのある文章にまとめてあることに意義を感じる人にはいいかもしれないです。</p>
+
+<p>　発売は明日(8月18日)です。Common Lispが雑誌に載ることもそうそうないはずなので興味のある人は立ち読みくらいしてください。</p>
+
+        </div>
+
+
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+                            
+                            <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://e-arrows.sakura.ne.jp/2011/06/connect-to-nodejs-and-chrome-from-emacs.html"
+    trackback:ping="http://e-arrows.sakura.ne.jp/mt/mt-tb.cgi/192"
+    dc:title="Emacsからnode.jsやChromeとSocket通信"
+    dc:identifier="http://e-arrows.sakura.ne.jp/2011/06/connect-to-nodejs-and-chrome-from-emacs.html"
+    dc:subject="JavaScript"
+    dc:description="　JavaScriptを書いています。普段Common Lispしか書いていない..."
+    dc:creator="深町英太郎"
+    dc:date="2011-06-25T00:08:10+09:00" />
+</rdf:RDF>
+-->
+
+<div id="entry-201" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <div class="topsy_widget_data">
+<script type="text/javascript" src="http://button.topsy.com/widget/retweet-big?nick=nitro_idiot&url=http://e-arrows.sakura.ne.jp/2011/06/connect-to-nodejs-and-chrome-from-emacs.html"></script>
+</div>
+        <h2 class="asset-name entry-title"><a href="http://e-arrows.sakura.ne.jp/2011/06/connect-to-nodejs-and-chrome-from-emacs.html" rel="bookmark">Emacsからnode.jsやChromeとSocket通信</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                <span class="vcard author">深町英太郎</span> (<abbr class="published" title="2011-06-25T00:08:10+09:00">2011&#24180;6&#26376;25&#26085; 00:08</abbr>)
+    
+            </span>
+
+            <span class="separator">|</span>
+
+
+【5分で読めるよ！】
+
+
+            
+            <span class="separator">|</span> <a href="http://e-arrows.sakura.ne.jp/2011/06/connect-to-nodejs-and-chrome-from-emacs.html#trackbacks">トラックバック(0)</a>
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <p>　JavaScriptを書いています。普段Common Lispしか書いていないように見せかけていますが、JavaScriptを書いています。生きるためには仕方のないことです。それほど嫌いな言語ではないとは言え、書いているときはやはりCommon Lispが恋しいです。</p>
+
+<p>　Lispは言語としての表現力が強力であることは広く知られている事実ですが、Lispのメリットはそれだけではありません。もう一つのメリットは、走っているプロセスのREPLに直接アクセスして動的に関数定義などを変更できることです。「EmacsでC-c C-c → ブラウザ更新 → EmacsでC-c C-c → ブラウザ更新」の開発効率は、一度慣れると離れがたいですよね。</p>
+
+<p>　今日はJavaScriptを書いていました。いつものようにデプロイする度にChromeのコンソールからちまちま叩いていました。そんなとき、ふとEmacsからアクセスできないものかと検索しました。そして、「swank-js」というものを見つけました。</p>
+
+<h1>swank-js</h1>
+
+<ul>
+<li><a href="https://github.com/fukamachi/swank-js">https://github.com/fukamachi/swank-js</a></li>
+</ul>
+
+<p>　僕のリポジトリだし、まるで我が物かのようにドヤ顔で説明しますが、僕が作ったわけではありません。元は<a href="https://github.com/ivan4th">Ivan Shvedunov</a>さんが作ってたみたいです。更新が止まってて、最新のSocket.ioだと動かなかったのでforkしてパッチを当てて動くようにしました。パッチ当てついでの紹介と思ってください。</p>
+
+<p>　コンセプトとしては<a href="https://github.com/bard/mozrepl/wiki/">MozRepl</a>と同じ。WebSocketによる安定した通信と、クロスブラウザ対応が売りのようです。</p>
+
+<h1>インストール</h1>
+
+<p>　0. あらかじめ適当なディレクトリにクローンしてください。</p>
+
+<pre>
+$ cd ~/Programs/utils/
+$ git clone git://github.com/fukamachi/swank-js
+</pre>
+
+<p>　1. <a href="http://nodejs.org/">node.js</a>、<a href="http://npmjs.org/">npm</a>をインストールします。</p>
+
+<pre>
+$ brew install node
+$ curl http://npmjs.org/install.sh | sh
+</pre>
+
+<p>　2. <a href="http://socket.io/">Socket.io</a>をインストールします。</p>
+
+<pre>
+$ npm install socket.io
+</pre>
+
+<p>　3. <a href="http://common-lisp.net/project/slime/">SLIME</a>をインストールします。ダウンロードしてload-pathの通ったところに置くだけです。</p>
+
+<p>　4. <code>slime-js.el</code>のシンボリックリンクをSLIMEの<code>contrib/</code>に置きます</p>
+
+<pre>
+$ ln -s ~/Programs/utils/swank-js/slime-js.el ~/.emacs.d/elisp/slime/contrib/
+</pre>
+
+<p>　5. <code>.emacs</code>に設定を追記します。</p>
+
+<pre class="prettyprint lang-lisp">
+(require 'slime)
+(slime-setup '(slime-repl slime-fancy slime-banner slime-js))
+
+(global-set-key [f5] 'slime-js-reload)
+(add-hook 'js2-mode-hook
+          (lambda ()
+            (slime-js-minor-mode 1)))
+</pre>
+
+<h1>Emacsでnode.jsを使う</h1>
+
+<p>　1. <code>swank-js</code>のディレクトリに移動し、以下のコマンドを実行します。</p>
+
+<pre>
+$ cd ~/Programs/utils/swank-js/
+$ node swank.js
+</pre>
+
+<p>　2. Emacsで<code>M-x slime-connect</code>、Host: 127.0.0.1、Port: 4005</p>
+
+<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="nodejs.png" src="http://e-arrows.sakura.ne.jp/images/nodejs.png" width="550" height="298" class="mt-image-none" style="" /></span></p>
+
+<p>　見慣れたSLIMEのインターフェースでちゃんと動いてます。</p>
+
+<p>　もちろんjs2-modeで<code>C-c C-c</code>するとコードがREPLに送られて評価されます。</p>
+
+<h1>EmacsからブラウザのREPLにアクセス</h1>
+
+<p>　swank-jsはMozReplのようにブラウザと通信して、Emacsからブラウザコンソールにアクセスできます。ブラウザでアプリケーションを見ながらC-c C-cで動的にJavaScriptを変更することができます。</p>
+
+<p>　ブラウザのREPLにアタッチは以下のページを開くだけで済みます。</p>
+
+<ul>
+<li><a href="http://127.0.0.1:8009/swank-js/test.html">http://127.0.0.1:8009/swank-js/test.html</a></li>
+</ul>
+
+<p>　そして、SLIMEに戻って、<code>,select-remote</code>と入力します。選択可能なプロセス一覧が出るので&#8221;node.js/direct&#8221;以外を選択してください。</p>
+
+<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="http://e-arrows.sakura.ne.jp/assets_c/2011/06/chrome-196.html" onclick="window.open('http://e-arrows.sakura.ne.jp/assets_c/2011/06/chrome-196.html','popup','width=824,height=699,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://e-arrows.sakura.ne.jp/assets_c/2011/06/chrome-thumb-640x542-196.png" width="640" height="542" alt="chrome.png" class="mt-image-none" style="" /></a></span></p>
+
+<p>　ちゃんとDOMにアクセスできました。console.logやalertもちゃんと動きます。</p>
+
+<p>　もちろんFirefoxでも使えます。IEが動くマシンを持ってないのでIEは知らないです。</p>
+
+<p><span class="important">※追記</span>: 以下のブックマークレットを使えば好きなページでattachできます。</p>
+
+<ul>
+<li><a href="javascript:(function(){var%20f=['swank-js/json2.js','socket.io/socket.io.js','swank-js/stacktrace.js','swank-js/swank-js.js'],s;for(var%20i=0;i&lt;4;++i){s=document.createElement('script');s.type='text/javascript';s.src='http://127.0.0.1:8009/'+f[i];document.body.appendChild(s)}setTimeout(function(){SwankJS.setup('http://127.0.0.1:8009/')},300)})()" alt="Attach Swank">Attach Swank</a></li>
+</ul>
+
+<p>　なんか素直にやるとうまくいかなかったのでsetTimeoutとか使ってしまいました。</p>
+
+<p>　READMEには<code>,target-url</code>で指定したサイトにproxy経由でattachできるみたいなことがi書いてあったけど動かなかった。</p>
+
+<h1>まとめ</h1>
+
+<p>　今日はJavaScriptをデバッグしたいがために初めてnode.jsを触ってみました。WebSocketは面白そうだったのでこれから機会を見つけて触ってみようと思います。</p>
+
+<p>　JavaScriptはブラウザ上で動かさないといけないし、必要なライブラリのロードなども気を遣わなければいけませんでしたが、これで少しは気軽にコードを書き始められそうです。</p>
+
+<p>　まあ、</p>
+
+<ul>
+<li>あらかじめプロセスを走らせておかないといけない</li>
+<li>オートコンプリートしたい</li>
+<li>ブレーク貼りたい</li>
+<li>そもそもClosure Compilerでコンパイルしてるとコンソールが使いものにならない</li>
+</ul>
+
+<p>とか不満はまだあります。ブレークは、Emacs LispでCommon Lispのようなデバッガを実装すればいいのかもしれません。パッチは常にお待ちしています :P</p>
+
+<p>　Emacs/JS使いは試してみてください。</p>
+
+        </div>
+
+
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+                            
+                            <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://e-arrows.sakura.ne.jp/2011/06/efficiency-of-love.html"
+    trackback:ping="http://e-arrows.sakura.ne.jp/mt/mt-tb.cgi/191"
+    dc:title="(loop (incf love)) を最適化"
+    dc:identifier="http://e-arrows.sakura.ne.jp/2011/06/efficiency-of-love.html"
+    dc:subject="Common Lisp"
+    dc:description=" &#8220;while(1){LOVE++}&#8221;と書き込まれてる指..."
+    dc:creator="深町英太郎"
+    dc:date="2011-06-16T11:48:28+09:00" />
+</rdf:RDF>
+-->
+
+<div id="entry-200" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <div class="topsy_widget_data">
+<script type="text/javascript" src="http://button.topsy.com/widget/retweet-big?nick=nitro_idiot&url=http://e-arrows.sakura.ne.jp/2011/06/efficiency-of-love.html"></script>
+</div>
+        <h2 class="asset-name entry-title"><a href="http://e-arrows.sakura.ne.jp/2011/06/efficiency-of-love.html" rel="bookmark">(loop (incf love)) を最適化</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                <span class="vcard author">深町英太郎</span> (<abbr class="published" title="2011-06-16T11:48:28+09:00">2011&#24180;6&#26376;16&#26085; 11:48</abbr>)
+    
+            </span>
+
+            <span class="separator">|</span>
+
+
+【3分で読めるよ！】
+
+
+            <span class="separator">|</span> <a href="http://e-arrows.sakura.ne.jp/2011/06/efficiency-of-love.html#comments">コメント(1)</a>
+            <span class="separator">|</span> <a href="http://e-arrows.sakura.ne.jp/2011/06/efficiency-of-love.html#trackbacks">トラックバック(1)</a>
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <blockquote>
+&#8220;while(1){LOVE++}&#8221;と書き込まれてる指輪があって、
+そのソースは最適化でLOVEが消えてただの無限ループになる云々という話があったので検証。
+<div class="from">from <a href="http://d.hatena.ne.jp/MARISHI/20110605/1307288602">while(1){LOVE++;}を最適化 - duost</a></div>
+</blockquote>
+
+<p>　なんと無情なコンパイラ。効率化の果てに愛までも失ってしまうとは。</p>
+
+<p>　試しにCommon Lispでも検証してみました。処理系はSBCL 1.0.29です。</p>
+
+<pre class="prettyprint lang-lisp">
+CL-USER> (defun main ()
+           (loop with love = 0
+                 do (incf love)))
+MAIN
+CL-USER> (disassemble #'main)
+; disassembly for MAIN
+; 12763A36:       31D2             XOR EDX, EDX               ; no-arg-parsing entry point
+;       38: L0:   BF04000000       MOV EDI, 4
+;       3D:       E806C789F1       CALL #x4000148             ; GENERIC-+
+;       42:       7302             JNB L1
+;       44:       8BE3             MOV ESP, EBX
+;       46: L1:   EBF0             JMP L0
+;       48:       0F0B0A           BREAK 10                   ; error trap
+;       4B:       02               BYTE #X02
+;       4C:       18               BYTE #X18                  ; INVALID-ARG-COUNT-ERROR
+;       4D:       4D               BYTE #X4D                  ; ECX
+NIL
+</pre>
+
+<p>　ADDの代わりにGENERIC-+を呼んでいるようです。</p>
+
+<p>　最適化してみます。</p>
+
+<pre class="prettyprint lang-lisp">
+CL-USER> (declaim (optimize (speed 3) (safety 0) (debug 0)))
+; No value
+CL-USER> (defun main ()
+           (loop with love = 0
+                 do (incf love)))
+MAIN
+CL-USER> (disassemble #'main)
+; disassembly for MAIN
+; 127BE64A:       31D2             XOR EDX, EDX               ; no-arg-parsing entry point
+;       4C: L0:   BF04000000       MOV EDI, 4
+;       51:       E8F21A84F1       CALL #x4000148             ; GENERIC-+
+;       56:       7302             JNB L1
+;       58:       8BE3             MOV ESP, EBX
+;       5A: L1:   EBF0             JMP L0
+NIL
+</pre>
+
+<p>　GENERIC-+を呼んでいます。</p>
+
+<p>　さらに型宣言をつけます。loveには限界ができてしまいますがこの際致し方ありません。まあ 536870911 (most-positive-fixnum) もあれば十分でしょう。</p>
+
+<pre class="prettyprint lang-lisp">
+CL-USER> (declaim (optimize (speed 3) (safety 0) (debug 0)))
+; No value
+CL-USER> (defun main ()
+           (let ((love 0))
+             (declare (type fixnum love))
+             (loop (incf love))))
+MAIN
+CL-USER> (disassemble #'main)
+; disassembly for MAIN
+; 1191F63A:       31C0             XOR EAX, EAX               ; no-arg-parsing entry point
+;       3C: L0:   83C004           ADD EAX, 4
+;       3F:       EBFB             JMP L0
+NIL
+</pre>
+
+<p>　ADDに変わりましたがまだ愛は残っています。</p>
+
+<p>　Common Lispは効率化の果てにも愛は失わないようです。素敵ですね。</p>
+
+<h2>参考</h2>
+
+<ul>
+<li><a href="http://blog.practical-scheme.net/shiro/20110609a-efficiency">Island Life - 悪者は効率じゃなくて</a></li>
+</ul>
+
+        </div>
+
+
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+                            
+                            <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://e-arrows.sakura.ne.jp/2011/06/modern-style-for-package-in-common-lisp.html"
+    trackback:ping="http://e-arrows.sakura.ne.jp/mt/mt-tb.cgi/190"
+    dc:title="Common LispのModernなパッケージ論"
+    dc:identifier="http://e-arrows.sakura.ne.jp/2011/06/modern-style-for-package-in-common-lisp.html"
+    dc:subject="Common Lisp"
+    dc:description="　先日のブログで、Clackについて Common Lispの醜い部分がどうすれ..."
+    dc:creator="深町英太郎"
+    dc:date="2011-06-06T12:24:46+09:00" />
+</rdf:RDF>
+-->
+
+<div id="entry-199" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <div class="topsy_widget_data">
+<script type="text/javascript" src="http://button.topsy.com/widget/retweet-big?nick=nitro_idiot&url=http://e-arrows.sakura.ne.jp/2011/06/modern-style-for-package-in-common-lisp.html"></script>
+</div>
+        <h2 class="asset-name entry-title"><a href="http://e-arrows.sakura.ne.jp/2011/06/modern-style-for-package-in-common-lisp.html" rel="bookmark">Common LispのModernなパッケージ論</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                <span class="vcard author">深町英太郎</span> (<abbr class="published" title="2011-06-06T12:24:46+09:00">2011&#24180;6&#26376; 6&#26085; 12:24</abbr>)
+    
+            </span>
+
+            <span class="separator">|</span>
+
+
+【3分で読めるよ！】
+
+
+            
+            <span class="separator">|</span> <a href="http://e-arrows.sakura.ne.jp/2011/06/modern-style-for-package-in-common-lisp.html#trackbacks">トラックバック(0)</a>
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <p>　<a href="/2011/05/what-ive-created-in-ariel.html">先日のブログ</a>で、<a href="http://clacklisp.org/">Clack</a>について</p>
+
+<blockquote>
+Common Lispの醜い部分がどうすれば美しくなるか。どうすればコードがドキュメントになりうるのか。それを考え抜いた末生まれたのがClack。
+</blockquote>
+
+<p>と書きました。それを見てか、Clackの中身に興味を持った人もいるようです。けれども、僕が確認した限りではあまり良い反応はありませんでした。</p>
+
+<p>　残念なのは、お互いの目的が違うための意見のすれ違いが起こったことです。僕は「読みやすさ」を最重要視しているにも関わらず「書きやすさ」の観点からの意見がありました。確かに僕が主張するスタイルは、作者にいくらかの負担を強いるものでしょう。注意を払わなければならないことも増えます。行数もわずかに増えるでしょう。けれど、「読みやすさ」は何よりも勝るはずです。そうでしょう？</p>
+
+<p>　今回は、特に違いの目立つパッケージの使い方についてまとめます。</p>
+
+<h1>One package per one file</h1>
+
+<p>　Common Lispのプログラムにおいて、ファイルというのはあまり重要視されません。すべて読み込んでしまえば、どのファイルに書いてあるかなんてみんな忘れ去られてしまいます。なので、ファイルを分けて書くのは単純にプログラムをいくつかのセグメントに分けて見た目をよくしたいという目的でしかありません。</p>
+
+<p>　奇妙なのが、その区分とは別で、読み込まれたあとにはプログラムは「パッケージ」によって分割されることです。ファイルを分けて書くという目的が、単にファイルをセグメント分けするためのものであるならば、それを実際のパッケージに分割して書かない理由があるでしょうか。僕が主張することは、1つのファイルには必ず1つのパッケージが関連付けられるスタイルです。</p>
+
+<pre class="prettyprint lang-lisp">
+(in-package :cl-user)
+(defpackage :style-guide.core
+  (:use :cl))
+(in-package :style-guide.core)
+
+(cl-annot:enable-annot-syntax)
+
+@export
+(defun export-function ()
+  ;; blah blah blah.
+  )
+
+(defun local-function ()
+  ;; blah blah blah.
+  )
+</pre>
+
+<p>　Clack.Utilにはこれをもう少しすっきり書くマクロがあります。</p>
+
+<pre class="prettyprint lang-lisp">
+(clack.util:namespace :style-guide.core
+  (:use :cl))
+</pre>
+
+<p>　大きなライブラリを書いているときは、いくつかのパッケージに分かれた関数をまとめて一つのインターフェイスとして提供したいこともあります。その場合は、メインのパッケージを、シンボルをまとめる目的で使えばいいです。たとえば<a href="https://github.com/fukamachi/caveman">Caveman</a>ならば、<code>caveman.app</code>と<code>caveman.route</code>から必要なシンボルを<code>import</code>した<code>caveman</code>というパッケージがあります。これにより、ユーザは<code>caveman</code>パッケージだけを意識していればいいというわけです。</p>
+
+<h1>利点</h1>
+
+<p>　このスタイルは単なるアイデアではなく、いくつかの利点をもたらします。一つはプログラム内の各セグメントの依存関係がはっきりすることです。これは特に大きなプログラムでメリットになります。プログラム全体を一つの巨大なパッケージで囲ってしまうと、その一部だけを再利用したいときや、一部だけを取り除きたいときに影響がどの範囲まで及ぶのかわからなくなります。僕の考えでは、多くのCLプログラムが読みづらいのはこれが原因です。</p>
+
+<p>　また、このメリットを最大化するために、<code>defpackage</code>での<code>:use</code>も避けるべきです。Clackでは他のパッケージの関数が必要になれば<code>:import-from</code>を積極的に使っています。コードを読んでいて、大量の<code>:use</code>によって、そのシンボルがどこからやってきたものなのか分からなかったことなんてないでしょうか。僕はそんな経験だらけです。僕は、誰かがClackを読んでいてそんな思いをすることに耐えられなかったのです。</p>
+
+<h1>まとめ</h1>
+
+<p>　このスタイルは実用を無視した空論ではありません。<a href="http://clacklisp.org">Clack</a>はまさにこのスタイルが発生した最初のライブラリですし、その上に組まれたフレームワークの<a href="https://github.com/fukamachi/caveman">Caveman</a>や、Clackの文化を後押しする<a href="https://github.com/arielnetworks/cl-annot">cl-annot</a>も同じスタイルを導入しています。</p>
+
+<blockquote>
+松山「(文章もそうだけど、)プログラムも&#8221;深町さんらしい&#8221;コードっていうのはあるだろうね。昔からのCLerとかが、Clackのコードを読んだら、たぶんビビると思うよ」
+</blockquote>
+
+<p>　読みやすさを検証したいならば、一度<a href="https://github.com/fukamachi/clack">Clackのコード</a>を見てみることをおすすめします。「<strong>コードがドキュメントです</strong>」というのは怠惰なOSSの風潮から生まれた、半ば飽きられたフレーズですが、Clackにおいては正に自信を持ってそう言うことができます。Clackのコードはドキュメントのように読みやすいです。もちろん、<a href="http://clacklisp.org/doc/">HTMLのドキュメント</a>も用意しています。</p>
+
+        </div>
+
+
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+                            
+                            <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://e-arrows.sakura.ne.jp/2011/05/what-ive-created-in-ariel.html"
+    trackback:ping="http://e-arrows.sakura.ne.jp/mt/mt-tb.cgi/189"
+    dc:title="僕はアリエルに入って何を生み出したか"
+    dc:identifier="http://e-arrows.sakura.ne.jp/2011/05/what-ive-created-in-ariel.html"
+    dc:subject="雑記"
+    dc:description="　僕がアリエルに入ってから、今月で一年が経ちました。通常一年の振り返りは大晦日に..."
+    dc:creator="深町英太郎"
+    dc:date="2011-05-31T00:33:54+09:00" />
+</rdf:RDF>
+-->
+
+<div id="entry-198" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <div class="topsy_widget_data">
+<script type="text/javascript" src="http://button.topsy.com/widget/retweet-big?nick=nitro_idiot&url=http://e-arrows.sakura.ne.jp/2011/05/what-ive-created-in-ariel.html"></script>
+</div>
+        <h2 class="asset-name entry-title"><a href="http://e-arrows.sakura.ne.jp/2011/05/what-ive-created-in-ariel.html" rel="bookmark">僕はアリエルに入って何を生み出したか</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                <span class="vcard author">深町英太郎</span> (<abbr class="published" title="2011-05-31T00:33:54+09:00">2011&#24180;5&#26376;31&#26085; 00:33</abbr>)
+    
+            </span>
+
+            <span class="separator">|</span>
+
+
+【5分で読めるよ！】
+
+
+            
+            <span class="separator">|</span> <a href="http://e-arrows.sakura.ne.jp/2011/05/what-ive-created-in-ariel.html#trackbacks">トラックバック(0)</a>
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <p>　僕がアリエルに入ってから、今月で一年が経ちました。通常一年の振り返りは大晦日にすれば十分なものですが、アリエルの年度末ついでに振り返っておきます。</p>
+
+<p>　僕はこの一年間、かつてないほどプログラムを書きました。短期間のうちに次々とプロダクトを生み出したために、不幸にも十分に紹介しきれていないプロダクトもあります。それもいずれ<a href="http://modern-cl.blogspot.com">Modern Common Lisp</a>に書こうと考えていたのですが、見ての通りその筆も遅々としているのでここで紹介しておきます。</p>
+
+<h1>L5 (2010年5月)</h1>
+
+<ul>
+<li><a href="https://github.com/fukamachi/L5">https://github.com/fukamachi/L5</a></li>
+</ul>
+
+<p>　L5はアリエルに入ってすぐに作ったS式で記述するプレゼンツールです。Clojureで書かれています。Web+DB Press Vol.61ではこれに言及した記事を書かせていただきました。</p>
+
+<p>　アリエルに入りたての頃、井上さんに声をかけられて、社内でClojure勉強会をすることになったのが発端です。アリエルの面接を受けたとき、最近はClojureをやっている、という話をしたためでしょうか、アリエルに入ってしばらくは&#8221;Clojureをやる人&#8221;という認識をされていたように思います。</p>
+
+<p>　けれど、そのときまでにClojureで書いたものといえばAppEngine上で動くTwitterボット程度のものです。発表するなら事前に何か作っておきたいなぁと思ったときに考えたのがプレゼンツールでした。社内勉強会をした段階ではようやく見れる程度のものにすぎなかったものをGitHubでL5という名前で公開し、Tokyo.cljでちまちまと作りつづけ、なんとか今の形にまでなったものです。</p>
+
+<p>　作り始めた理由が理由だけに、自分で使うことを開発の主目的でした。この一年、Shibuya.lisp、ありえるえりあ勉強会で発表しましたが、いずれもL5を使って資料を作ってきました。けれども最近になって、使ってくれた人の声もちらほら聞くこともあってうれしい限りです。</p>
+
+<p>　この程度のプロダクトに裏話など不要でしょうが、L5は最初はScarecrowという名前でした。 L5になった理由は言うまでもなくS5由来です。</p>
+
+<h1>CL-TEST-MORE (2010年10月)</h1>
+
+<ul>
+<li><a href="https://github.com/fukamachi/cl-test-more">https://github.com/fukamachi/cl-test-more</a></li>
+</ul>
+
+<p>　再びCommon Lispに戻ってきた理由は今でははっきりしません。推測するに、おそらくJavaが嫌いだったのでしょう。副作用がないというフレコミのClojureも、Javaのライブラリを使いすぎると手続き的です。</p>
+
+<p>　Common Lispに戻ってきて最初に作ったのがCL-TEST-MOREというテストライブラリでした。初めて一人で渡米し、ILC2010 @ Renoから意気揚々と帰国した次の日のこと、Shibuya.lisp Hackason #1でだらだらと作り上げたものです。</p>
+
+<p>　このときの僕のCLのレベルは今思えばひどいもので、コードを見れば思わず苦笑するほどですが、最初に作ったCLライブラリということもあり、僕には愛着のあるものです。Quicklispに登録されたというだけで無邪気に喜んでいたくらいですから。</p>
+
+<p>　もちろん、あとで作った僕のプロダクトはすべてこのCL-TEST-MOREでテストされています。</p>
+
+<h1>cl-markup (2010年12月)</h1>
+
+<ul>
+<li><a href="https://github.com/arielnetworks/cl-markup">https://github.com/arielnetworks/cl-markup</a></li>
+</ul>
+
+<p>　今こうして並べてみると、このプロダクトだけは他から浮いてみえます。理由の一つは、これが僕の必要から生まれなかったからでしょう。</p>
+
+<p>　この時期、アリエルで松山さんがCommon LispでWebサービスを作ることになりました。それに辺り、松山さんはCLにまともなテンプレートエンジンがないことを嘆いていました。最も有名なのはご存知CL-WHOですが、驚くべきことにCL-WHOは埋め込んだ文字を自動でHTMLエスケープしてくれないのです。これはCL-WHOの造りに由来するところであり、マクロ展開時のぎりぎりのチューニングの結果生み出されていた歪みでした。</p>
+
+<p>　cl-markupはそんな松山さんの嘆きに応えるために僕が作ったテンプレートエンジンです。CL-WHOのようにHTMLをS式で記述できる上に、より簡潔で美しいAPIを提供しています。そして、CL-WHOと遜色ないほどのチューニングを施してあります。ほとんどの静的記述はコンパイル時に<code>write-string</code>にまで展開されます。</p>
+
+<p>　その仕組みから、複雑なテンプレートを書くとコンパイルに時間がかかるという欠点があります。この欠点はSBCLで最も顕著になり、僕や松山さんがCCLに移行する発端となりました。</p>
+
+<p>　cl-markupがQuicklispに登録されるまではそれほど時間はありませんでしたが、その後は今に至るまでブログやTwitterなどでまったく触れられることがなかったかわいそうなプロダクトです。理由は、これが完成してすぐ、僕はClackの開発に取りかかったからです。</p>
+
+<h1>Clack (2011年1月)</h1>
+
+<ul>
+<li><a href="http://clacklisp.org/">http://clacklisp.org/</a></li>
+</ul>
+
+<p>　Clackは今見返しても僕が生み出した最大の作品です。言い過ぎではないでしょう、これほど美しいCLプログラムを僕は見たことがありません。そして、この美しいプログラムが存在しなければ、のちに松山さんが作ったcl-annotも生まれ得なかったのではないかと思います。</p>
+
+<p>　実を言うと、僕が最初に作ろうとしていたものはRailsでした。フレームワークの名前もSlinkyという名前でした。リポジトリを遡れば<code>defaction</code>や<code>defview</code>といったありきたりな名前のマクロが作られていた痕跡も見つかります。そんなSlinkyは元旦を越えた頃、野暮なコードの大部分を捨て去り、Clackへと生まれ変わったのです。</p>
+
+<p>　ClackはPerlのPlackを参考に作られました。Plackと自分のコードを見比べて感じたことは、Common Lispのコードが他の言語の進化と調和していないことでした。最近のLLでは当たり前のようにプログラムの各コンポーネントの非依存化が進んでいます。疎結合は密結合より良しとされ、保守性もあがることは常識となっています。もちろんPerlでもそうです。</p>
+
+<p>　しかし、Common Lispプログラムではパッケージをコンポーネントごとに分けるということすらされていません。パッケージが分かれていたとしてもいたずらに<code>use-package</code>する慣習から、そのシンボルがどこで生まれたものなのかも判別することが難しい状態です。</p>
+
+<p>　そういったCommon Lispの醜い部分がどうすれば美しくなるか。どうすればコードがドキュメントになりうるのか。それを考え抜き、作っては大胆に壊すことを惜しげなく繰り替えして、6週間の苦悩の末完成に至ったのです。ドキュメントと自動テストも、あとから追加すればいい、などと妥協しなかったのも自信が持てる点です。</p>
+
+<p>　Clackの偉大な点は、その実用性に止まりません。ClackはCommon Lisp界の新しい道を規程する象徴であり、それを辿る旅がModern Common Lispです。</p>
+
+<h1>Caveman (2011年2月)</h1>
+
+<ul>
+<li><a href="https://github.com/fukamachi/caveman">https://github.com/fukamachi/caveman</a></li>
+</ul>
+
+<p>　世に出たClackには、明らかにそれを使ったフレームワークの存在が不可欠でした。しかし、Clackが僕のブログで十分な反響を得たあと、途端に静かになるのを僕は見逃しませんでした。そのとき僕がしなければならないことは、誰かがClackを利用したフレームワークを作ることを期待する前に自分自身でCommon LispのWebフレームワークを作ることです。</p>
+
+<p>　CavemanはCommon Lisp界のSinatraです。ディスパッチャ部分はFlaskに似ています。もちろんModelやViewに関して何も強制するものはありません。</p>
+
+<h1>まとめ</h1>
+
+<p>　手嶋屋にいる頃から僕は、「そろそろ知識を蓄えてばかりではいけない。何かを生み出さないと」という考えに言いようもない焦りを感じていました。常にそれを念頭に置いていたわけではないにせよ、こうして振り返った限りではそれを実現はできているようにも思えます。</p>
+
+<p>　ただ、作るものに偏りがあるのも確かです。多くのWebサービスを生み出している人々と比べれば、ライブラリをいくつか書いた程度では比較にならないかもしれません。Lispが実用的なものを何一つ生み出していないなどとほざいている人には相手にもされないでしょう。</p>
+
+<p>　そうすると、次の課題は今作った地盤を固めてさらに上を目指すことになるんでしょうか。あんまり地道な道のりは得意ではないけど、Lispでお金が生まれる日まではプログラミングに対する<a href="http://practical-scheme.net/trans/gh-j.html">センス・オブ・ワンダー</a>を忘れないようにしよう。</p>
+
+        </div>
+
+
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+                            
+                            <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://e-arrows.sakura.ne.jp/2011/05/sleep-sort-in-common-lisp.html"
+    trackback:ping="http://e-arrows.sakura.ne.jp/mt/mt-tb.cgi/188"
+    dc:title="4chan発のソートアルゴリズム&quot;Sleep sort&quot;をCommon Lispで"
+    dc:identifier="http://e-arrows.sakura.ne.jp/2011/05/sleep-sort-in-common-lisp.html"
+    dc:subject="Common Lisp"
+    dc:description="　4chanで新しいソートアルゴリズムが発明されたようです。 4chan BBS..."
+    dc:creator="深町英太郎"
+    dc:date="2011-05-20T11:31:27+09:00" />
+</rdf:RDF>
+-->
+
+<div id="entry-197" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <div class="topsy_widget_data">
+<script type="text/javascript" src="http://button.topsy.com/widget/retweet-big?nick=nitro_idiot&url=http://e-arrows.sakura.ne.jp/2011/05/sleep-sort-in-common-lisp.html"></script>
+</div>
+        <h2 class="asset-name entry-title"><a href="http://e-arrows.sakura.ne.jp/2011/05/sleep-sort-in-common-lisp.html" rel="bookmark">4chan発のソートアルゴリズム"Sleep sort"をCommon Lispで</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                <span class="vcard author">深町英太郎</span> (<abbr class="published" title="2011-05-20T11:31:27+09:00">2011&#24180;5&#26376;20&#26085; 11:31</abbr>)
+    
+            </span>
+
+            <span class="separator">|</span>
+
+
+【6分で読めるよ！】
+
+
+            <span class="separator">|</span> <a href="http://e-arrows.sakura.ne.jp/2011/05/sleep-sort-in-common-lisp.html#comments">コメント(3)</a>
+            <span class="separator">|</span> <a href="http://e-arrows.sakura.ne.jp/2011/05/sleep-sort-in-common-lisp.html#trackbacks">トラックバック(1)</a>
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <p>　4chanで新しいソートアルゴリズムが発明されたようです。</p>
+
+<ul>
+<li><a href="http://dis.4chan.org/read/prog/1295544154">4chan BBS - Genius sorting algorithm: Sleep sort</a></li>
+</ul>
+
+<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="Genius sorting algorithm: Sleep sort" src="http://e-arrows.sakura.ne.jp/images/Screen%20shot%202011-05-20%20at%2011.34.11.png" width="508" height="524" class="mt-image-none" style="" /></span></p>
+
+<p>　Bashなのでよくわからないですが、要素全部に対してスレッドを作り、その値分だけsleepするソートアルゴリズムのようです。</p>
+
+<p>　スレッドではさらにC#、Perl、Scheme (Racket)、Cなどの実装が書かれています。</p>
+
+<p>　ようやく退院したことだし、リハビリついでにCommon Lispで書いてみました。</p>
+
+<h1>Sleep sortをCommon Lispで</h1>
+
+<h2>コマンドライン引数をとる</h2>
+
+<p>　一応処理系別で分岐させておく。</p>
+
+<pre class="prettyprint lang-cl">
+(defun args ()
+  #+allegro (cdr (system:command-line-arguments))
+  ; alisp -#! sleepsort.lisp 1 2 2 3
+  #+sbcl (cdr sb-ext:*posix-argv*)
+  ; sbcl --load sleepsort.lisp 1 2 2 3
+  #+clisp ext:*args*
+  ; clisp sleepsort.lisp 1 2 2 3
+  #+ecl (cdr (member "--" (si:command-args)) :test #'string=)
+  ; ecl -load sleepsort.lisp -- 1 2 2 3
+  #+cmu ext:*command-line-application-arguments*
+  ; cmucl -load sleepsort.lisp -- 1 2 2 3
+  #+ccl (cdr (member "--" ccl:*command-line-argument-list* :test #'string=))
+  ; ccl --load sleepsort.lisp -- 1 2 2 3
+  )
+</pre>
+
+<h2>スレッドを作る</h2>
+
+<p>　とりあえずBordeaux Threads (←誰か読み方おしえて)を使っておけば処理系ポータブルになるかなーと思って使ってみる。</p>
+
+<pre class="prettyprint lang-cl">
+(dolist (arg (args))
+  (bordeaux-threads:make-thread
+    (lambda ()
+      (sleep (parse-integer arg))
+      (format #.*standard-output* "~&~A~%" arg))))
+</pre>
+
+<p>　これで引数全部に対してスレッドが走るようになった。値分だけsleepして出力するスレッド。</p>
+
+<h2>スレッドが全部終わったら死にたい</h2>
+
+<p>　ここまでで一応ソートはできるのですが、スレッドが全部走り終わってもREPLが起動したままで死んでくれません。カッコ悪いのでスレッドが全部終わったタイミングで<code>(quit)</code>が走るようにしてみました。</p>
+
+<pre class="prettyprint lang-cl">
+(let ((threads (mapcar (lambda (arg)
+                         (sleep (parse-integer arg))
+                         (format #.*standard-output* "~&~A~%" arg))
+                       (args))))
+  ;; スレッドが全部終わるのを待つ
+  (dolist (thread *threads*)
+    (bordeaux-threads:join-thread thread)))
+
+(quit)
+</pre>
+
+<h2>Oh god, it works.</h2>
+
+<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="Sleep sort実行例" src="http://e-arrows.sakura.ne.jp/images/Screen%20shot%202011-05-20%20at%2011.54.26.png" width="544" height="346" class="mt-image-none" style="" /></span></p>
+
+<h1>コード全部</h1>
+
+<pre class="prettyprint lang-cl">
+(ql:quickload :bordeaux-threads)
+
+(defun args ()
+  #+allegro (cdr (system:command-line-arguments))
+  ; alisp -#! sleepsort.lisp 1 2 2 3
+  #+sbcl (cdr sb-ext:*posix-argv*)
+  ; sbcl --load sleepsort.lisp 1 2 2 3
+  #+clisp ext:*args*
+  ; clisp sleepsort.lisp 1 2 2 3
+  #+ecl (cdr (member "--" (si:command-args)) :test #'string=)
+  ; ecl -load sleepsort.lisp -- 1 2 2 3
+  #+cmu ext:*command-line-application-arguments*
+  ; cmucl -load sleepsort.lisp -- 1 2 2 3
+  #+ccl (cdr (member "--" ccl:*command-line-argument-list* :test #'string=))
+  ; ccl --load sleepsort.lisp -- 1 2 2 3
+  )
+
+(let ((threads (mapcar (lambda (arg)
+                         (sleep (parse-integer arg))
+                         (format #.*standard-output* "~&~A~%" arg))
+                       (args))))
+  (dolist (thread *threads*)
+    (bordeaux-threads:join-thread thread)))
+
+(quit)
+</pre>
+
+<p>　あたかも全部の処理系で動きますみたいなコードですが、CCLでしか確認してません。僕のSBCLはマルチスレッド対応してないんだよね :p</p>
+
+<p>　<span class="important">追記</span>: 他の言語のを見てるとスクリプトじゃなくて関数として書いてる人も多いので関数として実装しなおし。コマンドライン引数から取る必要がなくなったので<code>parse-integer</code>がなくなる。</p>
+
+<pre class="prettyprint lang-cl">
+(defun sleep-sort (&rest args)
+  (let* (result
+         (threads (mapcar (lambda (arg)
+                            (bordeaux-threads:make-thread
+                             (lambda ()
+                               (sleep arg)
+                               (push arg result))))
+                          args)))
+
+    (dolist (thread threads)
+      (bordeaux-threads:join-thread thread))
+
+    (nreverse result)))
+</pre>
+
+<h1>コンパイル時にsleep sort</h1>
+
+<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="http://e-arrows.sakura.ne.jp/images/Screen%20shot%202011-05-20%20at%2017.14.23.png"><img alt="そろそろ誰かC++でコンパイル時sleep sortを書いてるはず。" src="http://e-arrows.sakura.ne.jp/assets_c/2011/05/Screen shot 2011-05-20 at 17.14.23-thumb-640x272-193.png" width="640" height="272" class="mt-image-none" style="" /></a></span></p>
+
+<p>　マクロ書いちゃった＞＜</p>
+
+<pre class="prettyprint lang-cl">
+(defmacro sleep-sort* (&rest args)
+  `(list ,@(apply #'sleep-sort args)))
+</pre>
+
+<h1>参考サイト</h1>
+
+<ul>
+<li><a href="http://d.hatena.ne.jp/gfx/20110519/1305810786">常識を覆すソートアルゴリズム！その名も&#8221;sleep sort&#8221;！ - Islands in the byte stream</a></li>
+<li><a href="http://www.yuyak.com/1339">Sleep sortの各言語での実装まとめ - Yuyak</a></li>
+</ul>
+
+        </div>
+
+
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+                            
+                            <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://e-arrows.sakura.ne.jp/2011/03/modern-common-lisp.html"
+    trackback:ping="http://e-arrows.sakura.ne.jp/mt/mt-tb.cgi/187"
+    dc:title="Modern Common Lispはじめました"
+    dc:identifier="http://e-arrows.sakura.ne.jp/2011/03/modern-common-lisp.html"
+    dc:subject="Common Lisp"
+    dc:description="　Modern Common Lispというブログをはじめました。僕と、アリエル..."
+    dc:creator="深町英太郎"
+    dc:date="2011-03-07T23:43:27+09:00" />
+</rdf:RDF>
+-->
+
+<div id="entry-196" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <div class="topsy_widget_data">
+<script type="text/javascript" src="http://button.topsy.com/widget/retweet-big?nick=nitro_idiot&url=http://e-arrows.sakura.ne.jp/2011/03/modern-common-lisp.html"></script>
+</div>
+        <h2 class="asset-name entry-title"><a href="http://e-arrows.sakura.ne.jp/2011/03/modern-common-lisp.html" rel="bookmark">Modern Common Lispはじめました</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                <span class="vcard author">深町英太郎</span> (<abbr class="published" title="2011-03-07T23:43:27+09:00">2011&#24180;3&#26376; 7&#26085; 23:43</abbr>)
+    
+            </span>
+
+            <span class="separator">|</span>
+
+
+【2分で読めるよ！】
+
+
+            <span class="separator">|</span> <a href="http://e-arrows.sakura.ne.jp/2011/03/modern-common-lisp.html#comments">コメント(2)</a>
+            <span class="separator">|</span> <a href="http://e-arrows.sakura.ne.jp/2011/03/modern-common-lisp.html#trackbacks">トラックバック(1)</a>
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <p>　<a href="http://modern-cl.blogspot.com/">Modern Common Lisp</a>というブログをはじめました。僕と、アリエルの同僚で友人の<a href="http://twitter.com/#!/m2ym">松山さん</a>の2人で交代で更新します。</p>
+
+<p>　第1回は<a href="http://twitter.com/#!/m2ym">松山さん</a>の、CL処理系についての記事です。</p>
+
+<ul>
+<li><a href="http://modern-cl.blogspot.com/2011/03/common-lisp1-common-lisp-common.html">Modern Common Lisp: 第1回 Common Lisp処理系のインストール</a></li>
+</ul>
+
+<p><br /></p>
+
+<p>　公開する前に彼は僕に原稿を見せてくれました。そのときの会話を再現します。</p>
+
+<p>　僕と松山さんは普段だいたい英語で会話するので以下英語のままです。カッコでS式、ではなく日本語訳を書いておきます(<a href="http://dev.ariel-networks.com/wp/archives/310">参考</a>)。</p>
+
+<p>松山「Have you checked the entry? (記事は読んでくれた？)」<br />
+深町「Yeah, I already did. (うん、見たよ)」<br />
+松山「How about it? (どう？)」<br />
+深町「I think, you don&#8217;t have to introduce many implementations. If I write the entry, I would write this. &#8220;Use Clozure CL. Don&#8217;t use SBCL&#8221;. (僕はいろんな処理系を紹介する必要はないと思う。もし僕が書くならこう書くね。「<strong>Clozure CLを使え。SBCLは使うな</strong>」)」<br />
+松山「I don&#8217;t think SBCL is so bad except the speed of compilation. (僕はSBCLはそれほど悪くないと思うよ。コンパイル速度を除けば)」<br />
+深町「It is unstable. (不安定だ)」<br />
+松山「Clozure CL is unstable as well. (それならClozure CLも不安定さ)」<br />
+深町「I heard that CLSQL doesn&#8217;t work well on latest SBCL. (最新のSBCLではCLSQLは動かないそうだしね)」<br />
+松山「Anyway, I wrote &#8220;We suggest using Clozure CL&#8221;. You should be satisfied about it. (まあ「Clozure CLを使うことを勧める」と書いたから、それで満足してくれよ)」<br />
+深町「&#8230;****!!!!」</p>
+
+<p>　まあ別にSBCLを使うなって気持ちが伝わってくれればどちらでもいいです。</p>
+
+<p><br /></p>
+
+<p>　このModern Common Lispでは、松山さんがCLを書き始めて知った最近のCL事情と、僕が<a href="https://github.com/fukamachi/clack">Clack</a>を作る上で得た&#8221;Modern&#8221;な何かについて書いていこうと考えています。</p>
+
+<p>　ここで僕が定義する&#8221;Modern&#8221; Common Lispは、その読みやすさです。<a href="https://github.com/fukamachi/clack">Clack</a>では読みやすいコードとは何かを真剣に考えています。そしてそのために、今までCLライブラリで当たり前に行われてきた慣例をいくつも破っています。書き終えた今、それは正しかったと確信しています。</p>
+
+<p>　なのでもちろん、このModernの定義は一般的に使われているものではありません。あくまで僕がこれから推進していく上でベストプラクティスとして提案するものと考えてもらったほうがいいでしょう。</p>
+
+<p>　更新は最低で週1回のペースを保とうと思います。興味があればぜひ購読してください。</p>
+
+<ul>
+<li><a href="http://modern-cl.blogspot.com/">Modern Common Lisp</a></li>
+</ul>
+
+        </div>
+
+
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+                            
+                            <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://e-arrows.sakura.ne.jp/2011/02/webdb-press-clojure-and-dsl.html"
+    trackback:ping="http://e-arrows.sakura.ne.jp/mt/mt-tb.cgi/186"
+    dc:title="WEB+DB PRESSの特集「Scala &amp; ClojureではじめるJVM言語」に寄稿しました"
+    dc:identifier="http://e-arrows.sakura.ne.jp/2011/02/webdb-press-clojure-and-dsl.html"
+    dc:subject="Clojure"
+    dc:description="WEB+DB PRESS Vol.61 CTO「深町さん、Clojureの記事を..."
+    dc:creator="深町英太郎"
+    dc:date="2011-02-21T12:12:02+09:00" />
+</rdf:RDF>
+-->
+
+<div id="entry-195" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <div class="topsy_widget_data">
+<script type="text/javascript" src="http://button.topsy.com/widget/retweet-big?nick=nitro_idiot&url=http://e-arrows.sakura.ne.jp/2011/02/webdb-press-clojure-and-dsl.html"></script>
+</div>
+        <h2 class="asset-name entry-title"><a href="http://e-arrows.sakura.ne.jp/2011/02/webdb-press-clojure-and-dsl.html" rel="bookmark">WEB+DB PRESSの特集「Scala & ClojureではじめるJVM言語」に寄稿しました</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                <span class="vcard author">深町英太郎</span> (<abbr class="published" title="2011-02-21T12:12:02+09:00">2011&#24180;2&#26376;21&#26085; 12:12</abbr>)
+    
+            </span>
+
+            <span class="separator">|</span>
+
+
+【2分で読めるよ！】
+
+
+            
+            <span class="separator">|</span> <a href="http://e-arrows.sakura.ne.jp/2011/02/webdb-press-clojure-and-dsl.html#trackbacks">トラックバック(0)</a>
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <div class="book"><a href="http://www.amazon.co.jp/o/ASIN/4774145440/happatsu-22/"><img src="http://rcm-images.amazon.com/images/P/4774145440.09.MZZZZZZZ.jpg" border="0" /><br />WEB+DB PRESS Vol.61</a></div>
+
+<p>CTO「深町さん、Clojureの記事を書きませんか」</p>
+
+<p>　と井上さんに言われたのはもう4ヶ月も前のことです。WEB+DB PRESSの特集「Scala &amp; ClojureではじめるJVM言語」をアリエルで書くことになり、僕にそのClojureの章を担当してもらえないかという話でした。</p>
+
+<p>　その頃僕は、SoftwareDesignで二度、Emacsの記事を書いていてとてもうんざりしていました。そして、「もうLispの原稿以外は書かない」と決めた矢先のことです。</p>
+
+<p>　Clojureと言えばLispじゃないですか。それなら書いてもいいかも&#8230;。いや&#8230;。</p>
+
+<p>僕「何を書けばいいんですか？」</p>
+
+<p>　ここは慎重になるべきです。</p>
+
+<p>CTO「まだ詳細は決まっていませんが、DSLかWeb系か」<br /></p>
+
+<p>　<strong>LispでDSLと言えば&#8230;&#8230;マクロ&#8230;&#8230;！！！</strong></p>
+
+<p>僕「最近Clojureで<a href="https://github.com/fukamachi/L5">L5</a>というプレゼンツールを作ったんですが、その話なら」<br />
+CTO「じゃあそれでいいです。」</p>
+
+<p>　なんと雑誌でLispの、しかもマクロの記事が書けるなんて思いもしませんでした。さらに<a href="https://github.com/fukamachi/L5">L5</a>の宣伝ができるなら原稿を書くのも耐えられるというものです。</p>
+
+<p>僕「どういった視点で書けばいいですか？ たとえば、Lispは知っている前提でいいのか、lambdaは知っている前提でいいのか、マクロは知っている前提でいいのか」<br />
+<a href="http://twitter.com/#!/liris">@liris</a>「ハードル高っ」</p>
+
+<p>「<strong>Lispを知らないJavaプログラマ向けでお願いします</strong>」</p>
+
+<p>　もうこれは絶望です。JavaプログラマにLispを一から、しかもたったの8ページで説明するなんて無謀です。無謀過ぎます。</p>
+
+<p>僕「&#8230;&#8230;さすがに無名関数は知ってる前提で構いませんよね？」<br />
+「いや、できれば知らない前提で」</p>
+
+<p><br /></p>
+
+<p>　&#8230;&#8230;。</p>
+
+<p><br /></p>
+
+<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="いちからか？ いちからせつめいしないとだめか？" src="http://e-arrows.sakura.ne.jp/images/695721.jpg" width="239" height="383" class="mt-image-none" style="" /></span></p>
+
+<p><br /></p>
+
+<p>　Javaプログラマとは言えWEB+DB PRESSを購読しているような人たちが無名関数の存在を知らないとか考えづらいのですが、まあそういう要求であれば仕方がありません。そして必死に考えた末、ひとつの結論に行き着きました。</p>
+
+<p>　僕がLispを始めるきっかけとなった「ハッカーと画家」は、Lispの細々とした話は出てきません。<strong>一からLispの文法の説明をしたところでLispの魅力は伝わらない。重要なのは「Lispをやってみたい！」と思わせること。</strong>であればPaulのように、ひたすらLispはすごいんだぜという論調で書こう、と。</p>
+
+<p>　なのでClojureの&#8221;入門記事&#8221;というよりも&#8221;紹介記事&#8221;と言ったほうがいいかもしれません。</p>
+
+<p><br /></p>
+
+<p><a href="http://twitter.com/#!/liris">@liris</a>「深町さん、Java嫌いそうですよね」<br />
+僕「え、でもdisり要素はいれてないはずですが&#8230;」<br />
+<a href="http://twitter.com/#!/liris">@liris</a>「行間に漂ってますよ」</p>
+
+<p><br /></p>
+
+<p>　WEB+DB PRESS Vol.61は2月24日に出ます。行間に漂うLisp最強オーラを感じていただければ幸いです。</p>
+
+<p><br /></p>
+
+<ul>
+<li><a href="http://gihyo.jp/magazine/wdpress/archive/2011/vol61">WEB+DB PRESS Vol.61｜gihyo.jp &#8230; 技術評論社</a></li>
+</ul>
+
+        </div>
+
+
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+
+
+                            <div class="content-nav">
+                                <a href="http://e-arrows.sakura.ne.jp/archives.html">アーカイブ</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+    
+    <div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+
+
+        プロフィール
+
+    </h3>
+    <div class="widget-content">
+
+
+
+
+
+
+        
+        <table id="profile">
+        <tr><td class="pic" colspan=2><img src="/mt/mt-static/support/assets_c/userpics/userpic-1-100x100.png?39" width="85" height="85" alt="" /></td></tr>
+        <tr><td class="tag">Name:</td><td>深町英太郎</td></tr>
+        <tr><td class="tag">Age:</td><td><script type="text/javascript">(function(){var today=new Date();document.write(Math.floor((parseInt(today.getFullYear()*10000+(today.getMonth()+1)*100+today.getDate())-19871003)/10000))})()</script><noscript>?</noscript>歳 (1987〜)</td></tr>
+        <tr><td class="tag">Living:</td><td>京都府</td></tr>
+        <tr><td class="tag">Hatena Id:</td><td><a href="http://www.hatena.ne.jp/nitro_idiot/">id:nitro_idiot</a></td></tr>
+        <tr><td class="tag">Facebook:</td><td><a href="http://www.facebook.com/eitarow.fukamachi">eitarow.fukamachi</a></td></tr>
+        <tr><td class="tag">mixi:</td><td><a href="http://mixi.jp/show_friend.pl?id=6756132">ID:6756132</a></td></tr>
+        <tr><td class="tag">Twitter:</td><td><a href="http://twitter.com/nitro_idiot">nitro_idiot</a></td></tr>
+        <tr><td class="tag">GitHub:</td><td><a href="http://github.com/fukamachi">fukamachi</a></td></tr>
+        <tr><td class="tag">LinkedIn:</td><td><a href="http://www.linkedin.com/in/eitarowfukamachi">eitarowfukamachi</a></td></tr>
+        <tr><td colspan="2"><img src="/images/gmail.png"></td></tr>
+        </table>
+        
+
+    </div>
+</div><div class="widget-recent-entries widget-archives widget">
+    <h3 class="widget-header">最近のブログ記事</h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2011/09/i-join-hatena.html">株式会社はてなに入社しました</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2011/08/i-quit-ariel.html">今月でアリエル・ネットワークを退職します</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2011/08/sd-modern-common-lisp.html">SoftwareDesign連載寄稿「Modern Common LispとEmacs」</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2011/06/connect-to-nodejs-and-chrome-from-emacs.html">Emacsからnode.jsやChromeとSocket通信</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2011/06/efficiency-of-love.html">(loop (incf love)) を最適化</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2011/06/modern-style-for-package-in-common-lisp.html">Common LispのModernなパッケージ論</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2011/05/what-ive-created-in-ariel.html">僕はアリエルに入って何を生み出したか</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2011/05/sleep-sort-in-common-lisp.html">4chan発のソートアルゴリズム"Sleep sort"をCommon Lispで</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2011/03/modern-common-lisp.html">Modern Common Lispはじめました</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2011/02/webdb-press-clojure-and-dsl.html">WEB+DB PRESSの特集「Scala & ClojureではじめるJVM言語」に寄稿しました</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">カテゴリ</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/android/">Android (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/emacs/">Emacs (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/event/">Event (6)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/git/">Git (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/google-app-engine/">Google App Engine (3)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/javascript/">JavaScript (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/l5/">L5 (6)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/linuxunix/">Linux/Unix (8)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/lisp/">Lisp (18)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/lisp/clojure/">Clojure (15)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/lisp/common-lisp/">Common Lisp (25)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/lisp/common-lisp/weblocks/">Weblocks (1)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/lisp/emacs-lisp/">Emacs Lisp (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/lisp/kahua/">Kahua (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/lisp/scheme/">Scheme (6)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/php/">PHP (6)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/php/doctrine-1/">Doctrine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/php/openpne3/">OpenPNE3 (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/php/symfony/">symfony (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/perl/">Perl (9)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/perl/menta/">MENTA (4)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/stress-test/">Stress Test (1)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/stress-test/jmeter/">JMeter (1)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/windows/">Windows (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/cat13/">お知らせ (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/cat16/">ここで問題です (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/cat20/">ブラウザ (4)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/cat20/greasemonkey/">Greasemonkey (1)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/cat12/">プログラム全般 (9)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/cat14/">便利なもの (3)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/cat39/">書評 (6)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/cat39/cat41/">小説 (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li>未分類
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/cat40/">雑記 (23)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+<div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">月別 <a href="http://e-arrows.sakura.ne.jp/archives.html">アーカイブ</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2011/09/">2011&#24180;9&#26376; (1)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2011/08/">2011&#24180;8&#26376; (2)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2011/06/">2011&#24180;6&#26376; (3)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2011/05/">2011&#24180;5&#26376; (2)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2011/03/">2011&#24180;3&#26376; (1)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2011/02/">2011&#24180;2&#26376; (3)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2011/01/">2011&#24180;1&#26376; (2)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2010/12/">2010&#24180;12&#26376; (7)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2010/11/">2010&#24180;11&#26376; (6)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2010/10/">2010&#24180;10&#26376; (3)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2010/09/">2010&#24180;9&#26376; (5)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2010/08/">2010&#24180;8&#26376; (6)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2010/07/">2010&#24180;7&#26376; (5)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2010/06/">2010&#24180;6&#26376; (1)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2010/05/">2010&#24180;5&#26376; (3)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2010/04/">2010&#24180;4&#26376; (3)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2010/03/">2010&#24180;3&#26376; (3)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2010/02/">2010&#24180;2&#26376; (2)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2010/01/">2010&#24180;1&#26376; (8)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2009/12/">2009&#24180;12&#26376; (6)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2009/11/">2009&#24180;11&#26376; (15)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2009/10/">2009&#24180;10&#26376; (1)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2009/09/">2009&#24180;9&#26376; (2)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2009/08/">2009&#24180;8&#26376; (3)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2009/06/">2009&#24180;6&#26376; (6)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2009/05/">2009&#24180;5&#26376; (3)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2009/04/">2009&#24180;4&#26376; (2)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2009/02/">2009&#24180;2&#26376; (3)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2009/01/">2009&#24180;1&#26376; (4)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2008/12/">2008&#24180;12&#26376; (8)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2008/11/">2008&#24180;11&#26376; (2)</a></li>
+        
+    
+        
+            <li><a href="http://e-arrows.sakura.ne.jp/2008/10/">2008&#24180;10&#26376; (7)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+<div class="widget-recent-comments widget">
+    <h3 class="widget-header">最近のコメント</h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><strong>anonymous:</strong>  ; -   ; ; <a href="http://e-arrows.sakura.ne.jp/2011/08/sd-modern-common-lisp.html#comment-539" title="SoftwareDesign連載寄稿「Modern Common LispとEmacs」へのコメント">続きを読む</a></li>
+        
+    
+        
+            <li><strong>anonymous:</strong> Complete s <a href="http://e-arrows.sakura.ne.jp/2011/05/sleep-sort-in-common-lisp.html#comment-519" title="4chan発のソートアルゴリズム"Sleep sort"をCommon Lispでへのコメント">続きを読む</a></li>
+        
+    
+        
+            <li><strong>ktat:</strong> Perlですが、　s <a href="http://e-arrows.sakura.ne.jp/2010/08/is-lisp-really-has-too-many-parenthesis.html#comment-413" title="本当にLispはカッコが多い？へのコメント">続きを読む</a></li>
+        
+    
+        
+            <li><strong>ktat:</strong> Perlですが、　s <a href="http://e-arrows.sakura.ne.jp/2010/08/is-lisp-really-has-too-many-parenthesis.html#comment-412" title="本当にLispはカッコが多い？へのコメント">続きを読む</a></li>
+        
+    
+        
+            <li><strong>足立淳一:</strong> ようこそ京都へ　弊社 <a href="http://e-arrows.sakura.ne.jp/2011/09/i-join-hatena.html#comment-402" title="株式会社はてなに入社しましたへのコメント">続きを読む</a></li>
+        
+    
+        
+            <li><strong>CTO井上:</strong> アリエルの文化を変え <a href="http://e-arrows.sakura.ne.jp/2011/08/i-quit-ariel.html#comment-401" title="今月でアリエル・ネットワークを退職しますへのコメント">続きを読む</a></li>
+        
+    
+        
+            <li><strong>もと、斜め前の一個横だった人:</strong> お疲れさまでした。  <a href="http://e-arrows.sakura.ne.jp/2011/08/i-quit-ariel.html#comment-400" title="今月でアリエル・ネットワークを退職しますへのコメント">続きを読む</a></li>
+        
+    
+        
+            <li><strong>深町英太郎:</strong> 丁寧なご意見ありがと <a href="http://e-arrows.sakura.ne.jp/2011/03/modern-common-lisp.html#comment-399" title="Modern Common Lispはじめましたへのコメント">続きを読む</a></li>
+        
+    
+        
+            <li><strong>ytakenaka:</strong> 新たな企画(以下MC <a href="http://e-arrows.sakura.ne.jp/2011/03/modern-common-lisp.html#comment-398" title="Modern Common Lispはじめましたへのコメント">続きを読む</a></li>
+        
+    
+        
+            <li><strong>shiro:</strong> 元記事のネタは大事な <a href="http://e-arrows.sakura.ne.jp/2011/06/efficiency-of-love.html#comment-397" title="(loop (incf love)) を最適化へのコメント">続きを読む</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+<div class="widget-technorati widget">
+    <h3 class="widget-header">Techonrati</h3>
+    <div class="widget-content">
+        <div id="technorati">
+            <form id="ts_s" method="post" action="http://technorati.com/search.php">
+                <fieldset>
+                    <legend><a href='http://www.technorati.com/'>Technorati</a> search</legend>
+                    <input type="hidden" name="sub" value="searchlet" />
+                    <input type="text" id="ts_search" name="s" size="12" maxlength="255" value="" /><br />
+                    <input type="radio" checked="checked" name="from" id="ts_yb" value="http://e-arrows.sakura.ne.jp/" />
+                    <label for="ts_yb" title="八発白中">このブログ</label>
+                    <input type="radio" name="from" id="ts_www" value="" /> <label for="ts_www">すべてのブログ</label>
+                    <input type="submit" class="btn" value="検索" />
+                </fieldset>
+            </form>
+            <p id="ts_l" class="ts_l"><a href="http://technorati.com/search/http://e-arrows.sakura.ne.jp/" id="ts_lh">&#187; リンクしているブログ</a></p>
+        </div>
+    </div>
+</div>
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://e-arrows.sakura.ne.jp/mt/mt-static/images/status_icons/feed.gif" alt="購読する" width="9" height="9" /> <a href="http://e-arrows.sakura.ne.jp/atom.xml">このブログを購読</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.sixapart.jp/movabletype/"><img src="http://e-arrows.sakura.ne.jp/mt/mt-static/images/mt4-bug-pbmt-white.png" alt="Powered by Movable Type 4.23-ja" width="120" height="75" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.sixapart.jp/movabletype/">Movable Type Pro</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

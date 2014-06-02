@@ -1,0 +1,552 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>スキャナと裁断機をレンタルして自炊した全記録 - 翡翠はコンピュータに卵を生むか</title>
+<link rel="start" href="/masatoi/" title="翡翠はコンピュータに卵を生むか">
+<link rel="help" href="/help" title="ヘルプ">
+<link rel="prev" href="/masatoi/20121103" title="前の日">
+<link rel="next" href="/masatoi/20130419" title="次の日">
+
+<link rel="stylesheet" href="http://d.st-hatena.com/statics/css/base.css?b1200de2cbd65eac7a82e0d02d0b7c4352652dfc" type="text/css" media="all">
+<link rel="stylesheet" href="http://d.st-hatena.com/statics/css/headerstyle_lb.css?d72d086afcc2827a79cb3f8fdb51d59c6f6bb6da" type="text/css" media="all">
+<link rel="stylesheet" href="http://d.st-hatena.com/statics/theme/hatena-white/hatena-white.css?63282f56ee244cb93ca669bae2e1a9f6edbd6014" type="text/css" media="all">
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://d.hatena.ne.jp/masatoi/rss">
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://d.hatena.ne.jp/masatoi/rss2">
+
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://d.hatena.ne.jp/masatoi/foaf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://d.hatena.ne.jp/masatoi/opensearch/diary.xml" title="翡翠はコンピュータに卵を生むか内日記検索" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://d.hatena.ne.jp/masatoi/opensearch/archive.xml" title="翡翠はコンピュータに卵を生むか内一覧検索" />
+
+
+<link rel="shortcut icon" href="http://d.hatena.ne.jp/images/diary/masatoi/favicon.ico">
+
+
+
+<style type="text/css">
+<!-- 
+body{
+ background-color: #fff; /* #cacacc */  
+}
+div.body{
+	font-family: sans-serif;
+        background-color: #fff;
+        border-bottom:1px solid #dCdCdC;
+        border-left:1px solid #dCdCdC;
+        border-right:1px solid #dCdCdC;
+        border-radius: 0px 0px 10px 10px;
+}
+
+span.highlight {
+	color: white;
+	background-color: black;
+}
+img.photo {
+	float: right;
+	margin: 10px;
+	border: 0;
+}
+a:link{
+        color: #0000ff;
+}
+a:visited{
+        color: #770077;
+}
+a.keyword {
+	text-decoration: none;
+	border-bottom: 0px;
+}
+a.keyword:link{
+        color: #005555;
+}
+a.keyword:visited{
+        color: #777777;
+}
+h1 {　/*日記タイトル*/  
+ border-bottom: none;  
+ font-size: 150%;  /*文字サイズを変える*/  
+/* font-family: 'ＭＳ Ｐ明朝',serif; */  
+}
+
+h2 {
+	font-size: 50%;
+	background-color: #fafafa;
+        border-top:1px solid #dCdCdC;
+        border-left:1px solid #dCdCdC;
+        border-right:1px solid #dCdCdC;
+        border-radius: 10px 10px 0px 0px;
+	padding: 3px 0px 2px 10px;
+	margin: 5px 0 0 0;
+	width: auto;
+	_width: 100%;
+}
+div.hatena-body{
+}
+div.section pre{
+ font-size: medium;
+ background-color: #fafafa;
+ border: 1px solid #d0d0d0;
+ border-radius: 10px;
+ font-family: monospace;
+}
+div.section blockquote{
+ background-color: #EFEFEF;
+} 
+div.footnote{
+/*  padding-left: 10%; */  
+}
+div.footnote p{
+  text-indent:0%;
+  background-color: #ECFFF3;
+}
+-->
+</style>
+
+
+<script type="text/javascript">if(/[\x3c\x3e\x22]/.test(location.hash))location.hash=location.hash.replace(/[\x3c\x3e\x22]/g,'');if(/[\x3c\x3e]/.test(document.referrer))location.href=location.href;</script>
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="スキャナと裁断機をレンタルして自炊した全記録">
+<meta property="og:image" content="http://cdn-ak.f.st-hatena.com/images/fotolife/m/masatoi/20130327/20130327102740.jpg">
+<meta property="og:url" content="http://d.hatena.ne.jp/masatoi/20130404">
+<meta property="og:description" content="十年以上買い集めてきたので、流石に本がたまってきたと感じていた今日このごろ。優に100冊くらいはあるだ..">
+<meta property="og:site_name" content="翡翠はコンピュータに卵を生むか">
+
+
+<!--
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<rdf:Description rdf:about="http://d.hatena.ne.jp/masatoi/20130404">
+   <foaf:maker rdf:parseType="Resource">
+     <foaf:holdsAccount>
+       <foaf:OnlineAccount foaf:accountName="masatoi">
+         <foaf:accountServiceHomepage rdf:resource="http://www.hatena.ne.jp/" />
+       </foaf:OnlineAccount>
+     </foaf:holdsAccount>
+   </foaf:maker>
+</rdf:Description>
+</rdf:RDF>
+-->
+
+<link rel="alternate" media="handheld" type="text/html" href="http://d.hatena.ne.jp/masatoi/mobile?date=20130404" />
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+  rdf:about="http://d.hatena.ne.jp/masatoi/20130404"
+  trackback:ping="http://d.hatena.ne.jp/masatoi/20130404"
+  dc:title="スキャナと裁断機をレンタルして自炊した全記録"
+  dc:identifier="http://d.hatena.ne.jp/masatoi/20130404" />
+</rdf:RDF>
+-->
+
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/MochiKit/1125/Base.js?d72d086afcc2827a79cb3f8fdb51d59c6f6bb6da"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/MochiKit/1125/Iter.js?d72d086afcc2827a79cb3f8fdb51d59c6f6bb6da"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/MochiKit/1125/DOM.js?d72d086afcc2827a79cb3f8fdb51d59c6f6bb6da"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/MochiKit/1125/Style.js?d72d086afcc2827a79cb3f8fdb51d59c6f6bb6da"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/MochiKit/1125/Signal.js?d72d086afcc2827a79cb3f8fdb51d59c6f6bb6da"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/MochiKit/1125/Async.js?d72d086afcc2827a79cb3f8fdb51d59c6f6bb6da"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/MochiKit/1125/Logging.js?d72d086afcc2827a79cb3f8fdb51d59c6f6bb6da"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/BookmarkCommentViewer.js?d72d086afcc2827a79cb3f8fdb51d59c6f6bb6da" charset="utf-8"></script>
+
+
+
+
+
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:site" content="@hatenablog">
+
+
+
+<script type="text/javascript" src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
+<script type="text/javascript">
+Hatena.Star.SiteConfig = {
+  entryNodes: {
+    'div.section': {
+      uri: 'h3 a',
+      title: 'h3',
+      container: 'h3'
+    }
+  }
+};
+Hatena.Author  = new Hatena.User('masatoi');
+Hatena.DiaryName  = new Hatena.User('masatoi');
+
+</script>
+
+<script type="text/javascript">
+Hatena.Star.EntryLoader.headerTagAndClassName = ['h2',null];
+</script>
+
+
+
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/twitter_entry_icon.js?624193d7525aa17863f03b145a0662aa8bfba0bb"></script>
+
+
+
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/adcolor.js?d72d086afcc2827a79cb3f8fdb51d59c6f6bb6da"></script>
+
+
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/quick_pager.js?73e8efd3adc8709460b4c8ff9af5a3d4c97eba4e"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/diary_utils.js?d72d086afcc2827a79cb3f8fdb51d59c6f6bb6da"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/max_width_fotolife.js?2d5c0a4915fdb8930122a506dbf154b9db674a3b"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/jquery-1.4.2.min.js?1c983e39f64600478e5a829cf7a7a61f68527715"></script>
+<script type="text/javascript">
+  jQuery.noConflict()(function($){
+    var j$ = jQuery;
+  });
+</script>
+
+
+
+
+</head>
+<body>
+
+  <script>Hatena.Diary.UaTrakingID = 'UA-46127385-7';</script>
+ 
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-58NPH6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-58NPH6');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<div id="simple-header">
+
+  <a href="http://www.hatena.ne.jp/"><img src="/images/hatena-simple_lb.gif" alt="Hatena::" title="Hatena::" id="logo-hatena" width="65" height="17"></a><a href="/"><img src="/images/diary-simple_lb.gif" alt="ブログ(Diary)" title="Diary" id="logo-diary" width="43" height="17"></a>
+  <form method="get" action="/search" class="search-form">
+    <input type="text" class="search-word" name="word" value=""><input name="name" value="masatoi" type="hidden"><input type="submit" name="diary" value="日記" class="search-button"><input type="submit" name="submit" value="検索" class="search-button">
+  </form>
+  <ul class="menu">
+    <li><a href="/masatoi/">ブログトップ</a></li>
+    <li><a href="/masatoi/archive">記事一覧</a></li>
+
+
+
+    <li><a href="https://www.hatena.ne.jp/login?backurl=http%3A%2F%2Fd.hatena.ne.jp%2Fmasatoi%2F20130404&add_timestamp=1">ログイン</a></li>
+    <li><a href="https://www.hatena.ne.jp/register?location=http%3A%2F%2Fd.hatena.ne.jp%3Fvia%3D200186&amp;via=200186">無料ブログ開設</a></li>
+
+  </ul>
+</div>
+
+
+
+<h1><a href="http://d.hatena.ne.jp/masatoi/">翡翠はコンピュータに卵を生むか</a></h1>
+<div class="hatena-body">
+<div class="main">
+
+
+
+
+
+
+
+
+
+<div class="calendar" id="pager-top">
+  <a rel="prev" href="/masatoi/20121103" class="prev">&lt;前の日</a>&nbsp;<span class="delimiter">|</span>&nbsp;<a rel="next" href="/masatoi/20130419" class="next">次の日&gt;</a><span id="edit-in-place-add"></span>
+</div>
+<div id="days">
+
+<div class="day">
+<h2><a href="http://d.hatena.ne.jp/masatoi/20130404"><span class="date">2013-04-04</span></a> <span class="title">スキャナと裁断機をレンタルして自炊した全記録</span> <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/masatoi/20130404" class="bookmark-icon"><img src="http://d.hatena.ne.jp/images/b_entry_lb.gif" border="0" alt="このエントリーを含むブックマーク" title="このエントリーを含むブックマーク" width="16" height="12"></a> <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/masatoi/20130404" class="bookmark-count"><img src="http://b.hatena.ne.jp/entry/image/http://d.hatena.ne.jp/masatoi/20130404" alt=""></a> <img class="hatena-bcomment-view-icon" src="http://r.hatena.ne.jp/images/popup.gif" onclick="javascript:BookmarkCommentViewer.iconImageClickHandler(this, 'http://d.hatena.ne.jp/masatoi/20130404', event);" title="このエントリーのブックマークコメント" alt="このエントリーのブックマークコメント" ></h2>
+
+<div class="body">
+
+<!-- rakuten_ad_target_begin -->
+<!-- google_ad_section_start -->
+
+		<div class="section">
+			<p>十年以上買い集めてきたので、流石に本がたまってきたと感じていた今日このごろ。優に100冊くらいはあるだろうか。</p>
+			<p>しかも大半は技術書なのでかさばる。かさばる本は出し入れや持ち運びが大変なので結局読まなくなる傾向にあった。</p>
+			<p>読む機会を増やすには、手軽に持ち運べる状態にすることが肝要と思い、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%AD%A5%E3%A5%F3">スキャン</a>して<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C5%C5%BB%D2%B2%BD">電子化</a>することにした。</p>
+			<h4> 機材をレンタル</h4>
+			<p>今後新たに買う本は極力<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C5%C5%BB%D2">電子</a>版を買うとして、今ある紙の本をスキャンできればそれでいい。そのため<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%AD%A5%E3%A5%CA">スキャナ</a>や裁断機はレンタルでかまわない。レンタル業者には<a href="http://www.scaren.com/" target="_blank">スキャレン</a>を選んだ。この場合スキャナは<a href="http://scansnap.fujitsu.com/jp/product/s1500/" target="_blank">PFU ScanSnap S1500</a>になる。</p>
+			<p>レンタルの申し込みの際には現住所を<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BE%DA%CC%C0">証明</a>する書類が必要になる。自分の場合はNTTの請求書を<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C7%A5%B8%A5%AB%A5%E1">デジカメ</a>で撮影して申し込みフォームで添付した。</p>
+			<p>料金は送料を含めると一週間レンタルするコースで7000円程度。<a class="keyword" href="http://d.hatena.ne.jp/keyword/PayPal">PayPal</a>からクレジットカードで決済する。</p>
+			<p>申し込んでから一週間ほど経ってからスキャナと裁断機が送られてきた。</p>
+			<p>ダンボールを開封したところ。中にはスキャナと裁断機、スキャナのマニュアルと<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C9%A5%E9%A5%A4%A5%D0">ドライバ</a>の<a class="keyword" href="http://d.hatena.ne.jp/keyword/CD">CD</a>、ケーブルなどが入っている。全部で20kg以上あるので腰を痛めそうになる。</p>
+			<p><a href="http://f.hatena.ne.jp/masatoi/20130327102740" class="hatena-fotolife" target="_blank"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/m/masatoi/20130327/20130327102740.jpg" alt="f:id:masatoi:20130327102740j:image:w360" title="f:id:masatoi:20130327102740j:image:w360" class="hatena-fotolife" width="360"></a></p>
+			<p>裁断機を取り出したところ。でかい。重い。</p>
+			<p><a href="http://f.hatena.ne.jp/masatoi/20130327103109" class="hatena-fotolife" target="_blank"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/m/masatoi/20130327/20130327103109.jpg" alt="f:id:masatoi:20130327103109j:image:w360" title="f:id:masatoi:20130327103109j:image:w360" class="hatena-fotolife" width="360"></a></p>
+			<p>スキャナのセットアップをしたところ。思ったよりコンパクトである。</p>
+			<p><a href="http://f.hatena.ne.jp/masatoi/20130327132912" class="hatena-fotolife" target="_blank"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/m/masatoi/20130327/20130327132912.jpg" alt="f:id:masatoi:20130327132912j:image:w360" title="f:id:masatoi:20130327132912j:image:w360" class="hatena-fotolife" width="360"></a></p>
+			<p>きれいに裁断するためには、事前に100枚ぐらい単位で本を解体する必要がある。カッターで本を二つに分けたところ。</p>
+			<p><a href="http://f.hatena.ne.jp/masatoi/20130329185345" class="hatena-fotolife" target="_blank"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/m/masatoi/20130329/20130329185345.jpg" alt="f:id:masatoi:20130329185345j:image:w360" title="f:id:masatoi:20130329185345j:image:w360" class="hatena-fotolife" width="360"></a></p>
+			<p>背表紙から十分マージンを取っておかないと糊が残ってスキャナが詰まるので後で苦労する羽目になる。</p>
+			<p><a href="http://f.hatena.ne.jp/masatoi/20130329185459" class="hatena-fotolife" target="_blank"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/m/masatoi/20130329/20130329185459.jpg" alt="f:id:masatoi:20130329185459j:image:w360" title="f:id:masatoi:20130329185459j:image:w360" class="hatena-fotolife" width="360"></a></p>
+			<p>スキャナについて。SnacSnap S1500には一度に50枚ぐらいまでしか入らないので、何度も細かく手差しする必要がある。これがかなり面倒臭かった。読み取るスピード自体は速く、分速<a class="keyword" href="http://d.hatena.ne.jp/keyword/20">20</a>枚くらいで読み込む。カラーでは<a class="keyword" href="http://d.hatena.ne.jp/keyword/OCR">OCR</a>が働かないので、カラーの本でも涙を飲んで白黒でスキャンした。白黒であればスーパーファイン画質(600dpi)でも300ページの本で20MBほどですむ。これがカラーだと5〜10倍くらいにはなるから驚きだ。このぐらいの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B5%A5%A4%A5%BA">サイズ</a>であればNexus7でもサクサク見られる。本文内<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B8%A1%BA%F7">検索</a>のためにはスキャン後にOCR処理が必要になる。これは時間がかかるので寝てる間や、スキャナ返却後に後回し。なにしろ一週間しかないのだから。</p>
+			<p>結局、全部の本をスキャンするには丸二日くらいはかかった。ゴールデンウィークなどのまとまった時間がないときつい作業である。手間を考えると、<a href="http://saidanbookmart.com/" target="_blank">裁断ブックマート</a>のように、裁断だけを代行してくれる業者を利用し、スキャナだけをレンタルないし購入するというのがいいかもしれない。<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%E6%A1%BC%A5%B6">ユーザ</a>からしてみれば<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BC%AB%BF%E6">自炊</a>全体を代行してくれる業者が一番ありがたいが、現行法ではスキャン作業は本人がやらないと私的複製にならないという。</p>
+			<p>そしてスキャン後の本の残骸。</p>
+			<p><a href="http://f.hatena.ne.jp/masatoi/20130402043532" class="hatena-fotolife" target="_blank"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/m/masatoi/20130402/20130402043532_120.jpg" alt="f:id:masatoi:20130402043532j:image:medium" title="f:id:masatoi:20130402043532j:image:medium" class="hatena-fotolife"></a></p>
+			<p>十年以上かけて集めてきた本を捨てることに対しては一抹の寂しさもあったが、このまま置いておいても邪魔すぎるので古紙の日に一思いに捨てた。</p>
+			<p>スキャナと裁断機は元のダンボールに収めて、着払いでレンタル業者に送り返す。返送のための送り状も入っているので、それを貼るだけである。ヤマトの<a class="keyword" href="http://d.hatena.ne.jp/keyword/Web%A5%B5%A5%A4%A5%C8">Webサイト</a>から集荷依頼を出して、引き渡して終わり。</p>
+			<h4> その後</h4>
+			<p>PDFはDropboxで管理することにした。Nexus7との同期も簡単。</p>
+			<p><a href="http://f.hatena.ne.jp/masatoi/20130405003110" class="hatena-fotolife" target="_blank"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/m/masatoi/20130405/20130405003110.jpg" alt="f:id:masatoi:20130405003110j:image:w360" title="f:id:masatoi:20130405003110j:image:w360" class="hatena-fotolife" width="360"></a></p>
+			<p>A4の本でも横にすれば普通に読める。</p>
+			<h4> 感想</h4>
+			<p>前述した通り、スキャナに一度に入れられる枚数が少ないので常にスキャナに張り付いていなければならないなど、拘束時間が長い。自分の人件費のことも含めて考えると、自炊代行が認められるならばそれが一番であろうと思う。</p>
+			<p>最近では自炊代行業者に著作権使用料を納めさせることで自炊代行を認めるという動きもある。</p>
+			<p><a href="http://www.itmedia.co.jp/news/articles/1303/26/news104.html" target="_blank">「自炊」代行を認めるルール作りへ、作家など「Myブック変換協議会」設立</a></p>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%BD%A5%CB%A1%BC">ソニー</a>は著作権保護機能に拘ったためiPodに負けたとも言われる。CCCDも結局は売れなかった。どのような形であれ、著作権を守るためにユーザの利便性を犠牲にしてしまっては、そもそもの利益の源泉であるユーザが離れてしまうので本末転倒ではないかと思う。</p>
+			<p class="share-button sectionfooter"><a href="http://twitter.com/share" class="twitter-share-button" data-lang="ja" data-count="none" data-url="http://d.hatena.ne.jp/masatoi/20130404" data-text="スキャナと裁断機をレンタルして自炊した全記録 - 翡翠はコンピュータに卵を生むか (id:masatoi / @masatoi0)">ツイートする</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+		</div>
+
+<!-- google_ad_section_end -->
+<!-- rakuten_ad_target_end -->
+
+
+</div>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+<div class="calendar" id="pager-bottom">
+  <a rel="prev" href="/masatoi/20121103" class="prev">&lt;前の日</a>&nbsp;<span class="delimiter">|</span>&nbsp;<a rel="next" href="/masatoi/20130419" class="next">次の日&gt;</a>
+</div>
+<!-- -->
+</div>
+
+
+<div class="sidebar">
+<div class="hatena-module hatena-module-profile">
+  <div class="hatena-moduletitle">プロフィール</div>
+  <div class="hatena-modulebody">
+    <div class="hatena-profile">
+      <p class="hatena-profile-image"><a href="/masatoi/about"><img src="http://www.st-hatena.com/users/ma/masatoi/profile.gif" alt="masatoi" /></a></p>
+      <p class="hatena-profile-id"><a href="/masatoi/about">masatoi</a> <a href="/masatoi/about"><img src="/images/icon-plus.gif" alt="はてなダイアリープラス利用中" class="icon-plus" /></a></p>
+      <p class="hatena-profile-body">メモやコードなど</p>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<a href="https://twitter.com/masatoi0"><img alt="Twitter @masatoi0" src="http://cdn-ak.f.st-hatena.com/images/fotolife/m/masatoi/20140301/20140301053930.png?1393620014"></a>
+<a href="https://github.com/masatoi"><img alt="Github masatoi" src="http://cdn-ak.f.st-hatena.com/images/fotolife/m/masatoi/20140301/20140301053931.png?1393620012"></a>
+<br>
+
+<script language="javascript" type="text/javascript" src="http://b.hatena.ne.jp/js/widget.js" charset="utf-8"></script>
+<script language="javascript" type="text/javascript">
+Hatena.BookmarkWidget.url   = "http://d.hatena.ne.jp/masatoi/";
+Hatena.BookmarkWidget.title = "人気エントリ";
+Hatena.BookmarkWidget.sort  = "count";
+Hatena.BookmarkWidget.width = 0;
+Hatena.BookmarkWidget.num   = 10;
+Hatena.BookmarkWidget.theme = "hatenadiary";
+Hatena.BookmarkWidget.load();
+</script>
+
+<div class="hatena-module hatena-module-sectioncategory">
+<div class="hatena-moduletitle">Category</div>
+<div class="hatena-modulebody">
+<ul class="hatena-sectioncategory">
+<li><a href="/masatoi/searchdiary?word=%2A%5BLISP%5D">LISP</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5B%BC%F8%B6%C8%5D">授業</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5B%C6%FC%B5%AD%5D">日記</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BCS%5D">CS</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BEmacs%5D">Emacs</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BRoboCup%5D">RoboCup</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5B%BB%A8%B5%AD%5D">雑記</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BScheme%5D">Scheme</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5B%B8%A6%B5%E6%5D">研究</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5B%B6%AF%B2%BD%B3%D8%BD%AC%5D">強化学習</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BX%2Dwindow%5D">X-window</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BAIMA%5D">AIMA</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BSICP%5D">SICP</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BFirefox%5D">Firefox</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BTODO%5D">TODO</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BJava%5D">Java</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BFreeBSD%5D">FreeBSD</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5B%A5%E1%A5%E2%5D">メモ</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5Bfx%5D">fx</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BRuby%5D">Ruby</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BClojure%5D">Clojure</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5Bweblocks%5D">weblocks</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5B%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0Clojure%C2%E8%C6%F3%C8%C7%5D">プログラミングClojure第二版</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BCommon%20Lisp%5D">Common Lisp</a></li>
+</ul>
+</div>
+</div>
+
+</div> 
+<div style="display:none"><script type="text/javascript"><!--
+    hatena_counter_name = "masatoi";
+    hatena_counter_id = "1";
+    hatena_counter_ref = document.referrer+"";
+    hatena_counter_screen = screen.width + "x" + screen.height+","+screen.colorDepth;
+//--></script>
+<script type="text/javascript" src="http://counter.hatena.ne.jp//js/counter.js"></script>
+<noscript><img src="http://counter.hatena.ne.jp/masatoi/1" border="0" alt="counter"></noscript>
+</div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  var days = document.getElementById('days');
+  if (days && days.innerHTML.indexOf("今週のお題") != -1) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'odai', 3]);
+  }
+
+  if (days && /\u4eca\u9031\u306e\u304a\u984c/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'odai', 3]);
+  }
+
+  if (days && /ScanSnap\u7279\u5225\u30e2\u30c7\u30eb\u30fb\u30d6\u30ed\u30b0\u3067\u5ba3\u4f1d\u30b3\u30f3\u30c6\u30b9\u30c8/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'scansnap1401bcn4ssacro', 3]);
+  }
+
+  if (days && /Presso\u4f7f\u3063\u3066\u307f\u305f/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'presso1404', 3]);
+  }
+
+  if (days && /CodeIQ\u306e\u554f\u984c\u30fb\u30d1\u30ba\u30eb\u3092\u8003\u3048\u3088\u3046\uff01/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'codeiq_matsuri2013_2_2', 3]);
+  }
+
+  if (days && /2013\u5e74\u306b\u3084\u308a\u305f\u3044\u3053\u3068/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'newyear2013', 3]);
+  }
+
+  if (days && /2012\u5e74\u30dc\u30c4\u738b\u6c7a\u5b9a\u6226\uff01\u30d5\u30eb\u30bf\u88fd\u83d3\ud7\u306f\u3066\u306a\u30d6\u30ed\u30b0\u304a\u984c\u30ad\u30e3\u30f3\u30da\u30fc\u30f3/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'furuta', 3]);
+  }
+
+  if (days && /\u6d77\u5916\u30c9\u30e9\u30de\u300e\u30e9\u30a4\u30fb\u30c8\u30a5\u30fb\u30df\u30fc \u5618\u306e\u77ac\u9593\u300f\u89b3\u305f\u3044\uff01|\u300e\u30e9\u30a4\u30fb\u30c8\u30a5\u30fb\u30df\u30fc \u5618\u306e\u77ac\u9593\u300f\u7b2c1\u8a71\u306e\u611f\u60f3\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044|\u4eca\u3060\u304b\u3089\u8a00\u3048\u308b\u300c\u5618\u3092\u3064\u3044\u3066\u3057\u307e\u3063\u305f\u30a8\u30d4\u30bd\u30fc\u30c9\u300d\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044|\u3060\u307e\u3055\u308c\u305f\u3051\u3069\u3001\u8a31\u305b\u3066\u3057\u307e\u3063\u305f\u5618\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'lietome', 3]);
+  }
+
+  if (days && /\u30de\u30a4\u30d9\u30b9\u30c8\u30bd\u30f3\u30b02013/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'mybestsong2013', 3]);
+  }
+
+  if (days && /\u7d0d\u6dbc\uff01\u307b\u3093\u3068\u306b\u3042\u3063\u305f\u6016\u3044\u30b3\u30fc\u30c9/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'codeiq_matsuri2013_2_1', 3]);
+  }
+
+  if (days && /\u590f\u306e\u5199\u771f2013/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'photocon2013summer', 3]);
+  }
+
+  if (days && /Windows\/Office\u6b66\u52c7\u4f1d/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'WindowsDevOpen', 3]);
+  }
+
+  if (days && /Visa\u30d7\u30ea\u30da\u30a4\u30c9\u300cV\u30d7\u30ea\u30ab\u300d\u8a66\u3057\u305f\u3044\uff01|Visa\u30d7\u30ea\u30da\u30a4\u30c9\u300cV\u30d7\u30ea\u30ab\u300d\u3001\u81ea\u5206\u306a\u3089\u3053\u3046\u4f7f\u3046\uff01|V\u30d7\u30ea\u30ab\u304c1\u4e07\u5186\u5206\u3042\u3063\u305f\u3089\u3001\u30cd\u30c3\u30c8\u3067\u4f55\u3092\u8cb7\u3044\u307e\u3059\u304b\uff1f/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'vpreca', 3]);
+  }
+
+  if (days && /\u300c\u79c1\u306f\u3007\u3007\u738b\uff01\u300d\u30d0\u30a4\u30af\u738b\ud7\u306f\u3066\u306a\u30d6\u30ed\u30b0\u304a\u984c\u30ad\u30e3\u30f3\u30da\u30fc\u30f3/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'bike-o', 3]);
+  }
+
+  if (days && /\u30a2\u30a4\u30c7\u30e0 \u30a8\u30f3\u30b8\u30cb\u30a2\u30ad\u30e3\u30ea\u30a2Hacks\u5171\u6709\u30d7\u30ed\u30b8\u30a7\u30af\u30c8|\u30a8\u30f3\u30b8\u30cb\u30a2\u3068\u3057\u3066\u306e\u3001\u3068\u3063\u3066\u304a\u304d\u306e\u30ad\u30e3\u30ea\u30a2Hacks\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044|\u3042\u306a\u305f\u304c\u30a8\u30f3\u30b8\u30cb\u30a2\u8ee2\u8077\u30b5\u30a4\u30c8\u3092\u4f5c\u308b\u306a\u3089\u3001\u3069\u3093\u306a\u30b5\u30a4\u30c8\u306b\u3057\u307e\u3059\u304b\uff1f|5\u5e74\u5f8c\u306e\u300c\u30a8\u30f3\u30b8\u30cb\u30a2\u306e\u50cd\u304d\u65b9\u300d\u306f\u3001\u3069\u3046\u5909\u308f\u3063\u3066\u3044\u3066\u307b\u3057\u3044\u3067\u3059\u304b\uff1f/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'aidemcareer', 3]);
+  }
+
+  if (days && /\u306f\u3066\u306a\u30c0\u30a4\u30a2\u30ea\u30fc10\u5468\u5e74\u304a\u3081\u3067\u3068\u3046\uff01/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'hatenadiary10th', 3]);
+  }
+
+  if (days && /\u8aad\u307f\u653e\u984c\u3067\u30b3\u30b9\u30d1\u3088\u3057\uff01\u96fb\u5b50\u66f8\u7c4d\u30a2\u30d7\u30eayomel.jp\u30ad\u30e3\u30f3\u30da\u30fc\u30f3/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'yomel', 3]);
+  }
+
+  if (days && /\u30bb\u30c4\u30e4\u30af\u30a8\u30b9\u30c8/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'setsuyaquest', 3]);
+  }
+
+  if (days && /\u79cb\u306e\u591c\u9577\u306f\u8aad\u66f8\u3068\u30d6\u30ed\u30b0/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'bookreview2013fall', 3]);
+  }
+
+  if (days && /\u7279\u5225\u304a\u984c\u300c\u82b8\u8853\u306e\u79cb\u300d/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'caillebotte', 3]);
+  }
+
+  if (days && /\u30a8\u30a4\u30d7\u30ea\u30eb\u30d5\u30fc\u30eb2014/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'aprilfool2014', 3]);
+  }
+
+  _gaq.push(
+  ['_setAccount', 'UA-441387-31'],
+  ['_setSampleRate', '50'],
+  ['_setCustomVar', 1, 'afc_type', 'none_plus', 3],
+  ['_setCustomVar', 3, 'theme', 'hatena-white', 3],
+  ['_setCustomVar', 4, 'usertype', 'guest', 1],
+  ['_trackPageview'],
+  ['b._setAccount', 'UA-7855606-1'],
+  ['b._setDomainName', '.hatena.ne.jp'],
+  ['b._setSampleRate', '10'],
+  ['b._trackPageview']
+  ,['c._setAccount', 'UA-730096-1'],
+  ['c._trackPageview']
+  );
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- CG:1,CH:1,ICG:13,ICH:4,T: -->
+</body>
+</html>

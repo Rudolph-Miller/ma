@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" dir="ltr" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+  <title>somewrite (サムライト)</title>
+  <meta name="description" content="somewrite (サムライト)は、オウンドメディア・企業ブログのコンテンツポータルサイトです。「プロのノウハウ」や「生活に役立つ情報」を集めました。"  />
+  <meta name="keywords" content="somewrite,サムライト,オウンドメディア,企業ブログ,コンテンツ" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <link rel="shortcut icon" href="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/favicon-c6562911688fc0d71a71e668e726c1db.ico" />
+  <meta property="og:title" content="somewrite (サムライト)"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="somewrite (サムライト)は、オウンドメディア・企業ブログのコンテンツポータルサイトです。「プロのノウハウ」や「生活に役立つ情報」を集めました。"/>
+  <meta property="fb:app_id" content="474295652676674"/>
+  <meta property="og:url" content="http://somewrite.jp/"/>
+  <meta property="og:image" content="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/ogimage-6602350d7e0b8500b7a7e3454190f44e.png"/>
+  <meta property="og:site_name" content="somewrite(サムライト)"/>
+  <link data-turbolinks-track="true" href="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/pc/application-cfe1ace940738ded153c6fcb520de531.css" media="all" rel="stylesheet" />
+  <script data-turbolinks-track="true" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/pc/application-19c3d6da03cbae82781d69213c238ea5.js"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="5G1luoj8JmG3B7RaNxe/62hoqWnZzY+fFax6T2Nmsq4=" name="csrf-token" />
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46791089-1', 'somewrite.jp');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+<body>
+
+<!--固定ヘッダ -->
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;">
+        <div class="" style="display:table-cell;vertical-align: middle; height: 25px; font-size: 1.0em;">
+          <h1 style="color: #FFFFFF;font-size: 1.0em;">オウンドメディアのキュレーションサイト（掲載メディア数：64）</h1>
+        </div>
+      </div>
+        <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;">
+          <div class="pull-right" style="height: 25px;">
+            <a href="/login"><img alt="Btn fblogin" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_fblogin-082f4fa174a2005b0f0e63981f69f850.png" /></a>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ロゴと検索窓 -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6">
+      <div style="display:table-cell;vertical-align: middle; height: 78px; position: relative;">
+        <a href="/" style="font-size:2.5em;"><img alt="Somewrite" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/img_sitelogo-67b1f57cbbfccfcdb2c8576476a6cb04.png" style="width: 320px" /></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- グロナビ -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-3 text-center gnaviBase"><a class="gnavi-ct1" href="/category/business" style="color: #eb6f70; font-weight: bold;">Business</a><span class="gnaviSpan" style="background-color: #eb6f70;"></span></div>
+    <div class="col-xs-3 text-center gnaviBase"><a class="gnavi-ct2" href="/category/life" style="color: #40a880; font-weight: bold;">Life</a><span class="gnaviSpan" style="background-color: #40a880;"></span></div>
+    <div class="col-xs-3 text-center gnaviBase"><a class="gnavi-ct3" href="/category/special" style="color: #e17fd0; font-weight: bold;">特集</a><span class="gnaviSpan" style="background-color: #e17fd0; font-weight: bold;"></span></div>
+    <div class="col-xs-3 text-center gnaviBase"><a class="gnavi-ct0" href="/media" style="color: #31a7db; font-weight: bold;">メディア一覧</a><span class="gnaviSpan" style="background-color: #31a7db;"></span></div>
+  </div>
+</div>
+
+
+
+<!-- ビックバナー -->
+<div class="container" style="padding-top: 10px;">
+  <div id="jsi-complex-slider" class="row">
+    <div class="jsc-cs-horizontal col-xs-8 color-ct3-border" style="width: 592px; height: 368px; overflow: hidden; padding: 0px; position: relative;">
+      <div class="jsc-hs-inner clearfix">
+        <div class="jsc-hs-section" style="width: 588px; height: 368px; float: left; position: relative; background-image: url(http://54.199.156.161/wp-content/uploads/2014/05/GFszOR1o8lkt_n_1401419685_1401419704.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+          <a href="/media/somewrite/4832" style="position: absolute; width: 100%; height: 100%; display: block;">
+          </a>
+          <div style="height: 89px; position: absolute; bottom: 0; left: -2px; right: 0; padding: 5px; background-color: rgba(86, 86, 79, 0.6); color: #ffffff; margin-left: 2px;">
+            <div style="height: 54px;"><a href="/media/somewrite/4832" class="hover-top-text" style="color: #ffffff; font-size: 1.5rem;">目指すはネットショップの「Yelp」。ネットショップの口コミサイト「Shopre」に迫る。</a></div>
+            <div style="height: 25px;" class="text-right color-ct3-baner">特集</div>
+          </div>
+        </div>
+        <div class="jsc-hs-section" style="width: 588px; height: 368px; float: left; position: relative; background-image: url(https://s3-ap-northeast-1.amazonaws.com/static.magazine.ietty.me/wp-content/uploads/2014/05/ietty_top0530.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
+          <a href="/media/ietty/4860" style="position: absolute; width: 100%; height: 100%; display: block;">
+          </a>
+          <div style="height: 89px; position: absolute; bottom: 0; left: -2px; right: 0; padding: 5px; background-color: rgba(86, 86, 79, 0.6); color: #ffffff; margin-left: 2px;">
+            <div style="height: 54px;"><a href="/media/ietty/4860" class="hover-top-text" style="color: #ffffff; font-size: 1.5rem;">賃貸一人暮らし独身男性必見！一人暮らしするときに便利だったもの、マジで要らなかったもの12選</a></div>
+            <div style="height: 25px;" class="text-right color-ct2-baner">Life</div>
+          </div>
+        </div>
+        <div class="jsc-hs-section" style="width: 588px; height: 368px; float: left; position: relative; background-image: url(http://newclassic.jp/wp-content/uploads/2014/05/2005.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+          <a href="/media/newclassic/4880" style="position: absolute; width: 100%; height: 100%; display: block;">
+          </a>
+          <div style="height: 89px; position: absolute; bottom: 0; left: -2px; right: 0; padding: 5px; background-color: rgba(86, 86, 79, 0.6); color: #ffffff; margin-left: 2px;">
+            <div style="height: 54px;"><a href="/media/newclassic/4880" class="hover-top-text" style="color: #ffffff; font-size: 1.5rem;">スティーブ・ジョブズがどれほど世界を変えたかが分かる１枚の画像</a></div>
+            <div style="height: 25px;" class="text-right color-ct2-baner">Life</div>
+          </div>
+        </div>
+        <div class="jsc-hs-section" style="width: 588px; height: 368px; float: left; position: relative; background-image: url(http://muryou-kakeibo.drwallet.jp/wp-content/uploads/2014/05/qbb2-480x460.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+          <a href="/media/setsuyakuzine/4877" style="position: absolute; width: 100%; height: 100%; display: block;">
+          </a>
+          <div style="height: 89px; position: absolute; bottom: 0; left: -2px; right: 0; padding: 5px; background-color: rgba(86, 86, 79, 0.6); color: #ffffff; margin-left: 2px;">
+            <div style="height: 54px;"><a href="/media/setsuyakuzine/4877" class="hover-top-text" style="color: #ffffff; font-size: 1.5rem;">レジャーやデートにオススメ｜【無料】大自然の中で美味しいチーズの試食やフリーライブを楽しもう</a></div>
+            <div style="height: 25px;" class="text-right color-ct2-baner">Life</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="jsc-cs-vertical col-xs-4" style="width:368px; height:368px; padding: 0px;">
+      <!-- <div class="jsc-vs-section" style="width: 364px; height: 89px; margin-left: 4px; padding: 5px; border: 2px solid #54cc7f;"> -->
+      <div class="jsc-vs-section color-ct3-4line current" style="width: 364px; height: 89px; margin-left: 4px; padding: 5px; border-width: 4px;">
+        <div style="height: 50px;">目指すはネットショップの「Yelp」。ネットショップの口コミサイト「Shopre」に迫る。</div>
+        <div style="height: 25px;" class="text-right color-ct3-baner">特集</div>
+      </div>
+      <!-- <div class="jsc-vs-section" style="width: 364px; height: 89px; margin-left: 4px; padding: 5px; border: 2px solid #54cc7f;"> -->
+      <div class="jsc-vs-section color-ct2-4line " style="width: 364px; height: 89px; margin-left: 4px; padding: 5px; margin-top: 4px;">
+        <div style="height: 50px;">賃貸一人暮らし独身男性必見！一人暮らしするときに便利だったもの、マジで要らなかったもの12選</div>
+        <div style="height: 25px;" class="text-right color-ct2-baner">Life</div>
+      </div>
+      <!-- <div class="jsc-vs-section" style="width: 364px; height: 89px; margin-left: 4px; padding: 5px; border: 2px solid #54cc7f;"> -->
+      <div class="jsc-vs-section color-ct2-4line " style="width: 364px; height: 89px; margin-left: 4px; padding: 5px; margin-top: 4px;">
+        <div style="height: 50px;">スティーブ・ジョブズがどれほど世界を変えたかが分かる１枚の画像</div>
+        <div style="height: 25px;" class="text-right color-ct2-baner">Life</div>
+      </div>
+      <!-- <div class="jsc-vs-section" style="width: 364px; height: 89px; margin-left: 4px; padding: 5px; border: 2px solid #54cc7f;"> -->
+      <div class="jsc-vs-section color-ct2-4line " style="width: 364px; height: 89px; margin-left: 4px; padding: 5px; margin-top: 4px;">
+        <div style="height: 50px;">レジャーやデートにオススメ｜【無料】大自然の中で美味しいチーズの試食やフリーライブを楽しもう</div>
+        <div style="height: 25px;" class="text-right color-ct2-baner">Life</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /ビックバナー -->
+
+<!-- 注目メディア -->
+  <div class="notice-media">
+    <h2 class="container">
+      <span class="notice-media-h2-large">注目メディア</span>
+      <span class="notice-media-h2-balloon">気になる企業をフォローして情報収集を効率化しよう!</span>
+    </h2>
+    <div id="jsi-notice-media" class="notice-media-list cf">
+      <div class="jsc-notice-media-slider notice-media-list-slider">
+          <div class="notice-media-item cf">
+            <p class="notice-media-item-image"><img alt="Pixta" height="64px" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/pixta-7e9987f5a33a7b959a150614fd591acc.png" width="64px" /></p>
+            <div class="notice-media-item-right">
+              <p class="notice-media-media"><a href="/media/pixta">ピクスタアンテナ</a></p>
+              <p class="notice-media-company"><a href="/media/pixta">ピクスタ株式会社</a></p>
+              <div class="notice-media-reader jsc-notice-media-reader" style="position: relative;">
+                <!--
+                <a class="notice-media-reader-trigger jsc-reader-trigger" href="javascript: void(0);"><img alt="読者になる" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" /></a>
+                <p class="notice-media-reader-count jsc-reader-count">8</p>
+                -->
+                <form accept-charset="UTF-8" action="/media/subscribe/63" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed63" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left; width: 80px;" type="image" />
+</form>                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 95px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed63">8</span>
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="notice-media-item cf">
+            <p class="notice-media-item-image"><img alt="Questant" height="64px" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/questant-d214429297be901e3da98ea35bad5fda.png" width="64px" /></p>
+            <div class="notice-media-item-right">
+              <p class="notice-media-media"><a href="/media/questant">Questant BLOG</a></p>
+              <p class="notice-media-company"><a href="/media/questant">株式会社マクロミル</a></p>
+              <div class="notice-media-reader jsc-notice-media-reader" style="position: relative;">
+                <!--
+                <a class="notice-media-reader-trigger jsc-reader-trigger" href="javascript: void(0);"><img alt="読者になる" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" /></a>
+                <p class="notice-media-reader-count jsc-reader-count">14</p>
+                -->
+                <form accept-charset="UTF-8" action="/media/subscribe/57" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed57" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left; width: 80px;" type="image" />
+</form>                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 95px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed57">14</span>
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="notice-media-item cf">
+            <p class="notice-media-item-image"><img alt="Coromos" height="64px" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/coromos-d0fbde1465b141b9f40a1f063f1f226b.png" width="64px" /></p>
+            <div class="notice-media-item-right">
+              <p class="notice-media-media"><a href="/media/coromos">coromos</a></p>
+              <p class="notice-media-company"><a href="/media/coromos">株式会社InnoBeta</a></p>
+              <div class="notice-media-reader jsc-notice-media-reader" style="position: relative;">
+                <!--
+                <a class="notice-media-reader-trigger jsc-reader-trigger" href="javascript: void(0);"><img alt="読者になる" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" /></a>
+                <p class="notice-media-reader-count jsc-reader-count">15</p>
+                -->
+                <form accept-charset="UTF-8" action="/media/subscribe/61" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed61" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left; width: 80px;" type="image" />
+</form>                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 95px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed61">15</span>
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="notice-media-item cf">
+            <p class="notice-media-item-image"><img alt="Crevo" height="64px" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/crevo-fcdf956e8e52dfaa45244d053f01d375.png" width="64px" /></p>
+            <div class="notice-media-item-right">
+              <p class="notice-media-media"><a href="/media/crevo">動画マーケティング研究所</a></p>
+              <p class="notice-media-company"><a href="/media/crevo">Purplecow株式会…</a></p>
+              <div class="notice-media-reader jsc-notice-media-reader" style="position: relative;">
+                <!--
+                <a class="notice-media-reader-trigger jsc-reader-trigger" href="javascript: void(0);"><img alt="読者になる" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" /></a>
+                <p class="notice-media-reader-count jsc-reader-count">15</p>
+                -->
+                <form accept-charset="UTF-8" action="/media/subscribe/67" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed67" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left; width: 80px;" type="image" />
+</form>                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 95px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed67">15</span>
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="notice-media-item cf">
+            <p class="notice-media-item-image"><img alt="Growthhackjapan" height="64px" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/growthhackjapan-9da58fa257e13a71ccbe809dcd7a0def.png" width="64px" /></p>
+            <div class="notice-media-item-right">
+              <p class="notice-media-media"><a href="/media/growthhackjapan">growth hack japan</a></p>
+              <p class="notice-media-company"><a href="/media/growthhackjapan">株式会社Vapes</a></p>
+              <div class="notice-media-reader jsc-notice-media-reader" style="position: relative;">
+                <!--
+                <a class="notice-media-reader-trigger jsc-reader-trigger" href="javascript: void(0);"><img alt="読者になる" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" /></a>
+                <p class="notice-media-reader-count jsc-reader-count">34</p>
+                -->
+                <form accept-charset="UTF-8" action="/media/subscribe/55" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed55" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left; width: 80px;" type="image" />
+</form>                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 95px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed55">34</span>
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="notice-media-item cf">
+            <p class="notice-media-item-image"><img alt="Moneyforward" height="64px" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/moneyforward-14b086113d4958354a5389bc3573665a.png" width="64px" /></p>
+            <div class="notice-media-item-right">
+              <p class="notice-media-media"><a href="/media/moneyforward">マネーフォワード For BUSINESS 公式ブログ</a></p>
+              <p class="notice-media-company"><a href="/media/moneyforward">株式会社マネーフォワード</a></p>
+              <div class="notice-media-reader jsc-notice-media-reader" style="position: relative;">
+                <!--
+                <a class="notice-media-reader-trigger jsc-reader-trigger" href="javascript: void(0);"><img alt="読者になる" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" /></a>
+                <p class="notice-media-reader-count jsc-reader-count">9</p>
+                -->
+                <form accept-charset="UTF-8" action="/media/subscribe/65" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed65" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left; width: 80px;" type="image" />
+</form>                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 95px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed65">9</span>
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="notice-media-item cf">
+            <p class="notice-media-item-image"><img alt="Kurand" height="64px" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/kurand-fb085a7be7cf22654f13f1a8319c9e39.png" width="64px" /></p>
+            <div class="notice-media-item-right">
+              <p class="notice-media-media"><a href="/media/kurand">KURAMAGA</a></p>
+              <p class="notice-media-company"><a href="/media/kurand">リカー・イノベーション株…</a></p>
+              <div class="notice-media-reader jsc-notice-media-reader" style="position: relative;">
+                <!--
+                <a class="notice-media-reader-trigger jsc-reader-trigger" href="javascript: void(0);"><img alt="読者になる" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" /></a>
+                <p class="notice-media-reader-count jsc-reader-count">14</p>
+                -->
+                <form accept-charset="UTF-8" action="/media/subscribe/47" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed47" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left; width: 80px;" type="image" />
+</form>                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 95px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed47">14</span>
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="notice-media-item cf">
+            <p class="notice-media-item-image"><img alt="Geekroid" height="64px" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/geekroid-5d8b22f28bd88896265d11f4cd9cb973.png" width="64px" /></p>
+            <div class="notice-media-item-right">
+              <p class="notice-media-media"><a href="/media/geekroid">Geekroid（仮）</a></p>
+              <p class="notice-media-company"><a href="/media/geekroid">株式会社マイナビ</a></p>
+              <div class="notice-media-reader jsc-notice-media-reader" style="position: relative;">
+                <!--
+                <a class="notice-media-reader-trigger jsc-reader-trigger" href="javascript: void(0);"><img alt="読者になる" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" /></a>
+                <p class="notice-media-reader-count jsc-reader-count">9</p>
+                -->
+                <form accept-charset="UTF-8" action="/media/subscribe/59" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed59" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left; width: 80px;" type="image" />
+</form>                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 95px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed59">9</span>
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="notice-media-item cf">
+            <p class="notice-media-item-image"><img alt="Lig" height="64px" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/lig-49a8db5ea1831a53f5a73b48b85707ac.png" width="64px" /></p>
+            <div class="notice-media-item-right">
+              <p class="notice-media-media"><a href="/media/lig">LIGブログ</a></p>
+              <p class="notice-media-company"><a href="/media/lig">株式会社LIG</a></p>
+              <div class="notice-media-reader jsc-notice-media-reader" style="position: relative;">
+                <!--
+                <a class="notice-media-reader-trigger jsc-reader-trigger" href="javascript: void(0);"><img alt="読者になる" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" /></a>
+                <p class="notice-media-reader-count jsc-reader-count">32</p>
+                -->
+                <form accept-charset="UTF-8" action="/media/subscribe/56" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed56" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left; width: 80px;" type="image" />
+</form>                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 95px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed56">32</span>
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="notice-media-item cf">
+            <p class="notice-media-item-image"><img alt="Careerhack" height="64px" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/careerhack-ae7ab7ca57ca382fbaa522918305109f.png" width="64px" /></p>
+            <div class="notice-media-item-right">
+              <p class="notice-media-media"><a href="/media/careerhack">CAREER HACK</a></p>
+              <p class="notice-media-company"><a href="/media/careerhack">エン・ジャパン株式会社</a></p>
+              <div class="notice-media-reader jsc-notice-media-reader" style="position: relative;">
+                <!--
+                <a class="notice-media-reader-trigger jsc-reader-trigger" href="javascript: void(0);"><img alt="読者になる" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" /></a>
+                <p class="notice-media-reader-count jsc-reader-count">38</p>
+                -->
+                <form accept-charset="UTF-8" action="/media/subscribe/43" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed43" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left; width: 80px;" type="image" />
+</form>                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 95px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed43">38</span>
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="notice-media-item cf">
+            <p class="notice-media-item-image"><img alt="Jitensha hoken" height="64px" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/jitensha-hoken-254508b5fc5d583059294e74c62323c9.png" width="64px" /></p>
+            <div class="notice-media-item-right">
+              <p class="notice-media-media"><a href="/media/jitensha-hoken">自転車保険ブログ</a></p>
+              <p class="notice-media-company"><a href="/media/jitensha-hoken">株式会社自転車創業</a></p>
+              <div class="notice-media-reader jsc-notice-media-reader" style="position: relative;">
+                <!--
+                <a class="notice-media-reader-trigger jsc-reader-trigger" href="javascript: void(0);"><img alt="読者になる" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" /></a>
+                <p class="notice-media-reader-count jsc-reader-count">6</p>
+                -->
+                <form accept-charset="UTF-8" action="/media/subscribe/62" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed62" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left; width: 80px;" type="image" />
+</form>                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 95px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed62">6</span>
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="notice-media-item cf">
+            <p class="notice-media-item-image"><img alt="Actzero" height="64px" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/actzero-194069b87af89264c85f4d2ce5b688d8.png" width="64px" /></p>
+            <div class="notice-media-item-right">
+              <p class="notice-media-media"><a href="/media/actzero">ACTZERO</a></p>
+              <p class="notice-media-company"><a href="/media/actzero">株式会社アクトゼロ</a></p>
+              <div class="notice-media-reader jsc-notice-media-reader" style="position: relative;">
+                <!--
+                <a class="notice-media-reader-trigger jsc-reader-trigger" href="javascript: void(0);"><img alt="読者になる" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" /></a>
+                <p class="notice-media-reader-count jsc-reader-count">17</p>
+                -->
+                <form accept-charset="UTF-8" action="/media/subscribe/54" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed54" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left; width: 80px;" type="image" />
+</form>                <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+                <span style="position: absolute; top: 2px; left: 95px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed54">17</span>
+                <div style="clear:both;"></div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <a class="notice-media-prev jsc-notice-media-prev" href="javascript: void(0);">前へ</a>
+      <a class="notice-media-next jsc-notice-media-next" href="javascript: void(0);">次へ</a>
+    </div>
+  </div>
+<!-- /注目メディア -->
+
+
+<!-- 記事一覧 -->
+<div class="container" style="padding-top: 5px;">
+  <h2 style="font-size: 1.4rem; color: #32a7db; font-weight: bold;"><img alt="Icn article list" height="24px" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/icn_article_list-d63acce83c81811d3343ef9b267bfa59.png" width="24px" /> 記事一覧</h2>
+</div>
+<div class="container" style="padding-top: 10px;margin-bottom: 30px;">
+  <div class="row">
+    <div class="col-xs-12 main-area">
+      <div class="row">
+          <!-- 記事カセット -->
+<div id="cassette_clone" class="col-xs-4 main-cassette">
+  <div class="color-ct2-hover-casette">
+    <div class="main-cassette-img"  style="background-image: url(http://newclassic.jp/wp-content/uploads/2014/05/2005.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <a class="hoverWhiteLink main-cassette-link" href="/media/newclassic/4880"> </a>
+    </div>
+    <div class="main-cassette-frame" id="article_line">
+      <div class="main-cassette-top">
+        <a class="hoverTextLink-ct2" href="/media/newclassic/4880"><span class="main-cassette-title" id="article_title">スティーブ・ジョブズがどれほど世界を変えたかが分かる１枚の画像</span></a>
+      </div>
+      <!-- 区切り線 -->
+      <div align="center">
+        <div style="border-bottom: 2px solid #DDDDDD; width: 280px;"></div>
+      </div>
+      <!-- /区切り線 -->
+      <div class="main-cassette-bottom">
+        <div class="row">
+          <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+            <a class="hoverWhiteImageLink" href="/media/newclassic"><img alt="Newclassic" class="main-cassette-logo" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/newclassic-cf4352c2d9d794093446fbcd95dade99.png" /></a>
+          </div>
+          <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;">
+            <div style="height: 32px;">
+              <div id="article_company"><a class="hoverTextLink-ct2" href="/media/newclassic" style="font-weight: bold;">THE NEW CLASSIC</a></div>
+            </div>
+            <div style="height:25px; width: 183px; position:relative;">
+                <form accept-charset="UTF-8" action="/media/subscribe/38" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed38" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>              <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+              <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed38">45</span>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-category-label text-center">
+        <span class="color-ct2" id="article_category">Life</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /記事カセット -->
+
+          <!-- 記事カセット -->
+<div id="cassette_clone" class="col-xs-4 main-cassette">
+  <div class="color-ct2-hover-casette">
+    <div class="main-cassette-img"  style="background-image: url(http://muryou-kakeibo.drwallet.jp/wp-content/uploads/2014/05/qbb2-480x460.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <a class="hoverWhiteLink main-cassette-link" href="/media/setsuyakuzine/4877"> </a>
+    </div>
+    <div class="main-cassette-frame" id="article_line">
+      <div class="main-cassette-top">
+        <a class="hoverTextLink-ct2" href="/media/setsuyakuzine/4877"><span class="main-cassette-title" id="article_title">レジャーやデートにオススメ｜【無料】大自然の中で美味しいチーズの…</span></a>
+      </div>
+      <!-- 区切り線 -->
+      <div align="center">
+        <div style="border-bottom: 2px solid #DDDDDD; width: 280px;"></div>
+      </div>
+      <!-- /区切り線 -->
+      <div class="main-cassette-bottom">
+        <div class="row">
+          <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+            <a class="hoverWhiteImageLink" href="/media/setsuyakuzine"><img alt="Setsuyakuzine" class="main-cassette-logo" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/setsuyakuzine-0e462871dddfa2bd8df9be94e36a2fc1.png" /></a>
+          </div>
+          <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;">
+            <div style="height: 32px;">
+              <div id="article_company"><a class="hoverTextLink-ct2" href="/media/setsuyakuzine" style="font-weight: bold;">節約ZINE</a></div>
+            </div>
+            <div style="height:25px; width: 183px; position:relative;">
+                <form accept-charset="UTF-8" action="/media/subscribe/24" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed24" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>              <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+              <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed24">39</span>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-category-label text-center">
+        <span class="color-ct2" id="article_category">Life</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /記事カセット -->
+
+          <!-- 記事カセット -->
+<div id="cassette_clone" class="col-xs-4 main-cassette">
+  <div class="color-ct2-hover-casette">
+    <div class="main-cassette-img"  style="background-image: url(http://blog.compathy.net/triport/wp-content/uploads/2014/05/10509872493_c19758e8ce_b.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <a class="hoverWhiteLink main-cassette-link" href="/media/triport/4872"> </a>
+    </div>
+    <div class="main-cassette-frame" id="article_line">
+      <div class="main-cassette-top">
+        <a class="hoverTextLink-ct2" href="/media/triport/4872"><span class="main-cassette-title" id="article_title">旅中毒者、続出。行かずにいられないインドの魅力とは – 温和な南…</span></a>
+      </div>
+      <!-- 区切り線 -->
+      <div align="center">
+        <div style="border-bottom: 2px solid #DDDDDD; width: 280px;"></div>
+      </div>
+      <!-- /区切り線 -->
+      <div class="main-cassette-bottom">
+        <div class="row">
+          <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+            <a class="hoverWhiteImageLink" href="/media/triport"><img alt="Triport" class="main-cassette-logo" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/triport-fe0544aacbec6e057290733950d42707.png" /></a>
+          </div>
+          <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;">
+            <div style="height: 32px;">
+              <div id="article_company"><a class="hoverTextLink-ct2" href="/media/triport" style="font-weight: bold;">TRiPORT</a></div>
+            </div>
+            <div style="height:25px; width: 183px; position:relative;">
+                <form accept-charset="UTF-8" action="/media/subscribe/16" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed16" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>              <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+              <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed16">38</span>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-category-label text-center">
+        <span class="color-ct2" id="article_category">Life</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /記事カセット -->
+
+          <!-- 記事カセット -->
+<div id="cassette_clone" class="col-xs-4 main-cassette">
+  <div class="color-ct2-hover-casette">
+    <div class="main-cassette-img"  style="background-image: url(http://www.mwed.jp/d/news/6/170/e7jpsuvvf7j9kalqdmblalqd6j94210.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <a class="hoverWhiteLink main-cassette-link" href="/media/realwedding/4871"> </a>
+    </div>
+    <div class="main-cassette-frame" id="article_line">
+      <div class="main-cassette-top">
+        <a class="hoverTextLink-ct2" href="/media/realwedding/4871"><span class="main-cassette-title" id="article_title">同棲・新婚生活を始めたカップルへ！今日から出来る簡単節約術</span></a>
+      </div>
+      <!-- 区切り線 -->
+      <div align="center">
+        <div style="border-bottom: 2px solid #DDDDDD; width: 280px;"></div>
+      </div>
+      <!-- /区切り線 -->
+      <div class="main-cassette-bottom">
+        <div class="row">
+          <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+            <a class="hoverWhiteImageLink" href="/media/realwedding"><img alt="Realwedding" class="main-cassette-logo" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/realwedding-e10e37707113896707e8ae3697f4e18c.png" /></a>
+          </div>
+          <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;">
+            <div style="height: 32px;">
+              <div id="article_company"><a class="hoverTextLink-ct2" href="/media/realwedding" style="font-weight: bold;">みんなのリアルウェデング</a></div>
+            </div>
+            <div style="height:25px; width: 183px; position:relative;">
+                <form accept-charset="UTF-8" action="/media/subscribe/11" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed11" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>              <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+              <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed11">49</span>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-category-label text-center">
+        <span class="color-ct2" id="article_category">Life</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /記事カセット -->
+
+          <!-- 記事カセット -->
+<div id="cassette_clone" class="col-xs-4 main-cassette">
+  <div class="color-ct2-hover-casette">
+    <div class="main-cassette-img"  style="background-image: url(http://tabroom.jp/contents/wp-content/uploads/2014/05/wanted-lokarl.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <a class="hoverWhiteLink main-cassette-link" href="/media/tabroom/4869"> </a>
+    </div>
+    <div class="main-cassette-frame" id="article_line">
+      <div class="main-cassette-top">
+        <a class="hoverTextLink-ct2" href="/media/tabroom/4869"><span class="main-cassette-title" id="article_title">情報求む！ カンディハウスが幻の椅子「ロカール」を探しています</span></a>
+      </div>
+      <!-- 区切り線 -->
+      <div align="center">
+        <div style="border-bottom: 2px solid #DDDDDD; width: 280px;"></div>
+      </div>
+      <!-- /区切り線 -->
+      <div class="main-cassette-bottom">
+        <div class="row">
+          <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+            <a class="hoverWhiteImageLink" href="/media/tabroom"><img alt="Tabroom" class="main-cassette-logo" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/tabroom-3277620d9e52f5664df94a1984c8fd86.png" /></a>
+          </div>
+          <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;">
+            <div style="height: 32px;">
+              <div id="article_company"><a class="hoverTextLink-ct2" href="/media/tabroom" style="font-weight: bold;">タブルーム</a></div>
+            </div>
+            <div style="height:25px; width: 183px; position:relative;">
+                <form accept-charset="UTF-8" action="/media/subscribe/9" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed9" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>              <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+              <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed9">67</span>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-category-label text-center">
+        <span class="color-ct2" id="article_category">Life</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /記事カセット -->
+
+          <!-- 記事カセット -->
+<div id="cassette_clone" class="col-xs-4 main-cassette">
+  <div class="color-ct2-hover-casette">
+    <div class="main-cassette-img"  style="background-image: url(https://s3-ap-northeast-1.amazonaws.com/static.magazine.ietty.me/wp-content/uploads/2014/05/ietty_top0530.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <a class="hoverWhiteLink main-cassette-link" href="/media/ietty/4860"> </a>
+    </div>
+    <div class="main-cassette-frame" id="article_line">
+      <div class="main-cassette-top">
+        <a class="hoverTextLink-ct2" href="/media/ietty/4860"><span class="main-cassette-title" id="article_title">賃貸一人暮らし独身男性必見！一人暮らしするときに便利だったもの、…</span></a>
+      </div>
+      <!-- 区切り線 -->
+      <div align="center">
+        <div style="border-bottom: 2px solid #DDDDDD; width: 280px;"></div>
+      </div>
+      <!-- /区切り線 -->
+      <div class="main-cassette-bottom">
+        <div class="row">
+          <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+            <a class="hoverWhiteImageLink" href="/media/ietty"><img alt="Ietty" class="main-cassette-logo" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/ietty-c65d008a53adcdfb928a23f236edf9f9.png" /></a>
+          </div>
+          <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;">
+            <div style="height: 32px;">
+              <div id="article_company"><a class="hoverTextLink-ct2" href="/media/ietty" style="font-weight: bold;">イエッティマガジン</a></div>
+            </div>
+            <div style="height:25px; width: 183px; position:relative;">
+                <form accept-charset="UTF-8" action="/media/subscribe/60" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed60" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>              <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+              <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed60">20</span>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-category-label text-center">
+        <span class="color-ct2" id="article_category">Life</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /記事カセット -->
+
+          <!-- 記事カセット -->
+<div id="cassette_clone" class="col-xs-4 main-cassette">
+  <div class="color-ct2-hover-casette">
+    <div class="main-cassette-img"  style="background-image: url(http://tabroom.jp/contents/wp-content/uploads/2014/05/workstead-floor-lamp.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <a class="hoverWhiteLink main-cassette-link" href="/media/tabroom/4868"> </a>
+    </div>
+    <div class="main-cassette-frame" id="article_line">
+      <div class="main-cassette-top">
+        <a class="hoverTextLink-ct2" href="/media/tabroom/4868"><span class="main-cassette-title" id="article_title">極細アームと垂れるワイヤーが美しい「WORKSTEAD 照明シリ…</span></a>
+      </div>
+      <!-- 区切り線 -->
+      <div align="center">
+        <div style="border-bottom: 2px solid #DDDDDD; width: 280px;"></div>
+      </div>
+      <!-- /区切り線 -->
+      <div class="main-cassette-bottom">
+        <div class="row">
+          <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+            <a class="hoverWhiteImageLink" href="/media/tabroom"><img alt="Tabroom" class="main-cassette-logo" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/tabroom-3277620d9e52f5664df94a1984c8fd86.png" /></a>
+          </div>
+          <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;">
+            <div style="height: 32px;">
+              <div id="article_company"><a class="hoverTextLink-ct2" href="/media/tabroom" style="font-weight: bold;">タブルーム</a></div>
+            </div>
+            <div style="height:25px; width: 183px; position:relative;">
+                <form accept-charset="UTF-8" action="/media/subscribe/9" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed9" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>              <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+              <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed9">67</span>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-category-label text-center">
+        <span class="color-ct2" id="article_category">Life</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /記事カセット -->
+
+          <!-- 記事カセット -->
+<div id="cassette_clone" class="col-xs-4 main-cassette">
+  <div class="color-ct1-hover-casette">
+    <div class="main-cassette-img"  style="background-image: url(http://www.movie-times.tv/images/article/2014/02/news_OGP.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <a class="hoverWhiteLink main-cassette-link" href="/media/movietimes/4856"> </a>
+    </div>
+    <div class="main-cassette-frame" id="article_line">
+      <div class="main-cassette-top">
+        <a class="hoverTextLink-ct1" href="/media/movietimes/4856"><span class="main-cassette-title" id="article_title">公開3週間で320万回再生の話題の動画「史上最も価値あるセクシー…</span></a>
+      </div>
+      <!-- 区切り線 -->
+      <div align="center">
+        <div style="border-bottom: 2px solid #DDDDDD; width: 280px;"></div>
+      </div>
+      <!-- /区切り線 -->
+      <div class="main-cassette-bottom">
+        <div class="row">
+          <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+            <a class="hoverWhiteImageLink" href="/media/movietimes"><img alt="Movietimes" class="main-cassette-logo" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/movietimes-c7c95dae9b0f9653c84153f24564f4c4.png" /></a>
+          </div>
+          <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;">
+            <div style="height: 32px;">
+              <div id="article_company"><a class="hoverTextLink-ct1" href="/media/movietimes" style="font-weight: bold;">movie TIMES</a></div>
+            </div>
+            <div style="height:25px; width: 183px; position:relative;">
+                <form accept-charset="UTF-8" action="/media/subscribe/5" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed5" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>              <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+              <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed5">58</span>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-category-label text-center">
+        <span class="color-ct1" id="article_category">Business</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /記事カセット -->
+
+          <!-- 記事カセット -->
+<div id="cassette_clone" class="col-xs-4 main-cassette">
+  <div class="color-ct1-hover-casette">
+    <div class="main-cassette-img"  style="background-image: url(http://www.movie-times.tv/images/article/2014/02/news_OGP1.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <a class="hoverWhiteLink main-cassette-link" href="/media/movietimes/4849"> </a>
+    </div>
+    <div class="main-cassette-frame" id="article_line">
+      <div class="main-cassette-top">
+        <a class="hoverTextLink-ct1" href="/media/movietimes/4849"><span class="main-cassette-title" id="article_title">サイバーエージェント、オンライン動画広告の専門組織「Online…</span></a>
+      </div>
+      <!-- 区切り線 -->
+      <div align="center">
+        <div style="border-bottom: 2px solid #DDDDDD; width: 280px;"></div>
+      </div>
+      <!-- /区切り線 -->
+      <div class="main-cassette-bottom">
+        <div class="row">
+          <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+            <a class="hoverWhiteImageLink" href="/media/movietimes"><img alt="Movietimes" class="main-cassette-logo" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/movietimes-c7c95dae9b0f9653c84153f24564f4c4.png" /></a>
+          </div>
+          <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;">
+            <div style="height: 32px;">
+              <div id="article_company"><a class="hoverTextLink-ct1" href="/media/movietimes" style="font-weight: bold;">movie TIMES</a></div>
+            </div>
+            <div style="height:25px; width: 183px; position:relative;">
+                <form accept-charset="UTF-8" action="/media/subscribe/5" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed5" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>              <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+              <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed5">58</span>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-category-label text-center">
+        <span class="color-ct1" id="article_category">Business</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /記事カセット -->
+
+          <!-- 記事カセット -->
+<div id="cassette_clone" class="col-xs-4 main-cassette">
+  <div class="color-ct2-hover-casette">
+    <div class="main-cassette-img"  style="background-image: url(http://teriyaki.me/wp-content/uploads/2014/04/photo1.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <a class="hoverWhiteLink main-cassette-link" href="/media/teriyakinews/4850"> </a>
+    </div>
+    <div class="main-cassette-frame" id="article_line">
+      <div class="main-cassette-top">
+        <a class="hoverTextLink-ct2" href="/media/teriyakinews/4850"><span class="main-cassette-title" id="article_title">テリヤキアプリのお店を公開 Ｋｏｊｉ☆Ｉｍａｉ 編  夢飯（東京…</span></a>
+      </div>
+      <!-- 区切り線 -->
+      <div align="center">
+        <div style="border-bottom: 2px solid #DDDDDD; width: 280px;"></div>
+      </div>
+      <!-- /区切り線 -->
+      <div class="main-cassette-bottom">
+        <div class="row">
+          <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+            <a class="hoverWhiteImageLink" href="/media/teriyakinews"><img alt="Teriyakinews" class="main-cassette-logo" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/teriyakinews-3fcbec39e708a0a66c5eba1a062a8238.png" /></a>
+          </div>
+          <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;">
+            <div style="height: 32px;">
+              <div id="article_company"><a class="hoverTextLink-ct2" href="/media/teriyakinews" style="font-weight: bold;">TERIYAKInews</a></div>
+            </div>
+            <div style="height:25px; width: 183px; position:relative;">
+                <form accept-charset="UTF-8" action="/media/subscribe/25" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed25" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>              <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+              <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed25">32</span>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-category-label text-center">
+        <span class="color-ct2" id="article_category">Life</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /記事カセット -->
+
+          <!-- 記事カセット -->
+<div id="cassette_clone" class="col-xs-4 main-cassette">
+  <div class="color-ct2-hover-casette">
+    <div class="main-cassette-img"  style="background-image: url(https://minmata.jp/uploads/blog_image/image/959/thumb_160_結婚式子どもメニュー3.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <a class="hoverWhiteLink main-cassette-link" href="/media/minmata/4855"> </a>
+    </div>
+    <div class="main-cassette-frame" id="article_line">
+      <div class="main-cassette-top">
+        <a class="hoverTextLink-ct2" href="/media/minmata/4855"><span class="main-cassette-title" id="article_title">結婚式の子どもゲスト、料理の準備はどうするべき？</span></a>
+      </div>
+      <!-- 区切り線 -->
+      <div align="center">
+        <div style="border-bottom: 2px solid #DDDDDD; width: 280px;"></div>
+      </div>
+      <!-- /区切り線 -->
+      <div class="main-cassette-bottom">
+        <div class="row">
+          <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+            <a class="hoverWhiteImageLink" href="/media/minmata"><img alt="Minmata" class="main-cassette-logo" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/minmata-5245bd2c9320fe7cb7d2a37ad952f97c.png" /></a>
+          </div>
+          <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;">
+            <div style="height: 32px;">
+              <div id="article_company"><a class="hoverTextLink-ct2" href="/media/minmata" style="font-weight: bold;">みんファミプラス</a></div>
+            </div>
+            <div style="height:25px; width: 183px; position:relative;">
+                <form accept-charset="UTF-8" action="/media/subscribe/51" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed51" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>              <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+              <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed51">12</span>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-category-label text-center">
+        <span class="color-ct2" id="article_category">Life</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /記事カセット -->
+
+          <!-- 記事カセット -->
+<div id="cassette_clone" class="col-xs-4 main-cassette">
+  <div class="color-ct2-hover-casette">
+    <div class="main-cassette-img"  style="background-image: url(https://minmata.jp/uploads/blog_image/image/956/thumb_160_アメリカパパ2.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <a class="hoverWhiteLink main-cassette-link" href="/media/minmata/4854"> </a>
+    </div>
+    <div class="main-cassette-frame" id="article_line">
+      <div class="main-cassette-top">
+        <a class="hoverTextLink-ct2" href="/media/minmata/4854"><span class="main-cassette-title" id="article_title">パパはバツ1アメリカ帰り！海外の驚き子育て事情</span></a>
+      </div>
+      <!-- 区切り線 -->
+      <div align="center">
+        <div style="border-bottom: 2px solid #DDDDDD; width: 280px;"></div>
+      </div>
+      <!-- /区切り線 -->
+      <div class="main-cassette-bottom">
+        <div class="row">
+          <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+            <a class="hoverWhiteImageLink" href="/media/minmata"><img alt="Minmata" class="main-cassette-logo" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/minmata-5245bd2c9320fe7cb7d2a37ad952f97c.png" /></a>
+          </div>
+          <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;">
+            <div style="height: 32px;">
+              <div id="article_company"><a class="hoverTextLink-ct2" href="/media/minmata" style="font-weight: bold;">みんファミプラス</a></div>
+            </div>
+            <div style="height:25px; width: 183px; position:relative;">
+                <form accept-charset="UTF-8" action="/media/subscribe/51" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed51" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>              <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+              <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed51">12</span>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-category-label text-center">
+        <span class="color-ct2" id="article_category">Life</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /記事カセット -->
+
+          <!-- 記事カセット -->
+<div id="cassette_clone" class="col-xs-4 main-cassette">
+  <div class="color-ct1-hover-casette">
+    <div class="main-cassette-img"  style="background-image: url(http://blog.codecamp.jp/wp-content/uploads/2014/05/スクリーンショット-2014-05-28-17.40.44.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <a class="hoverWhiteLink main-cassette-link" href="/media/tribe-univ/4853"> </a>
+    </div>
+    <div class="main-cassette-frame" id="article_line">
+      <div class="main-cassette-top">
+        <a class="hoverTextLink-ct1" href="/media/tribe-univ/4853"><span class="main-cassette-title" id="article_title">【盛り上がる子供向けIT教育】プログラミング学習ボードゲーム「C…</span></a>
+      </div>
+      <!-- 区切り線 -->
+      <div align="center">
+        <div style="border-bottom: 2px solid #DDDDDD; width: 280px;"></div>
+      </div>
+      <!-- /区切り線 -->
+      <div class="main-cassette-bottom">
+        <div class="row">
+          <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+            <a class="hoverWhiteImageLink" href="/media/tribe-univ"><img alt="Tribe univ" class="main-cassette-logo" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/tribe-univ-6a5bb5defe6a275a17541094f80ceff5.png" /></a>
+          </div>
+          <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;">
+            <div style="height: 32px;">
+              <div id="article_company"><a class="hoverTextLink-ct1" href="/media/tribe-univ" style="font-weight: bold;">Code部</a></div>
+            </div>
+            <div style="height:25px; width: 183px; position:relative;">
+                <form accept-charset="UTF-8" action="/media/subscribe/34" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed34" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>              <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+              <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed34">29</span>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-category-label text-center">
+        <span class="color-ct1" id="article_category">Business</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /記事カセット -->
+
+          <!-- 記事カセット -->
+<div id="cassette_clone" class="col-xs-4 main-cassette">
+  <div class="color-ct2-hover-casette">
+    <div class="main-cassette-img"  style="background-image: url(http://sportie.com/wp-content/uploads/2014/05/flickr_Tomatorg-Soup_sq.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <a class="hoverWhiteLink main-cassette-link" href="/media/sportie/4852"> </a>
+    </div>
+    <div class="main-cassette-frame" id="article_line">
+      <div class="main-cassette-top">
+        <a class="hoverTextLink-ct2" href="/media/sportie/4852"><span class="main-cassette-title" id="article_title">フットサルアジア選手権での熱戦 日本代表が2大会連続3度目の優勝</span></a>
+      </div>
+      <!-- 区切り線 -->
+      <div align="center">
+        <div style="border-bottom: 2px solid #DDDDDD; width: 280px;"></div>
+      </div>
+      <!-- /区切り線 -->
+      <div class="main-cassette-bottom">
+        <div class="row">
+          <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+            <a class="hoverWhiteImageLink" href="/media/sportie"><img alt="Sportie" class="main-cassette-logo" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/sportie-3f74d834b6578be54f458596ea76244a.png" /></a>
+          </div>
+          <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;">
+            <div style="height: 32px;">
+              <div id="article_company"><a class="hoverTextLink-ct2" href="/media/sportie" style="font-weight: bold;">Sportie</a></div>
+            </div>
+            <div style="height:25px; width: 183px; position:relative;">
+                <form accept-charset="UTF-8" action="/media/subscribe/46" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed46" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>              <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+              <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed46">15</span>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-category-label text-center">
+        <span class="color-ct2" id="article_category">Life</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /記事カセット -->
+
+          <!-- 記事カセット -->
+<div id="cassette_clone" class="col-xs-4 main-cassette">
+  <div class="color-ct2-hover-casette">
+    <div class="main-cassette-img"  style="background-image: url(http://tabroom.jp/contents/wp-content/uploads/2014/05/OZONE-HomeDeco-SALE-20141.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <a class="hoverWhiteLink main-cassette-link" href="/media/tabroom/4843"> </a>
+    </div>
+    <div class="main-cassette-frame" id="article_line">
+      <div class="main-cassette-top">
+        <a class="hoverTextLink-ct2" href="/media/tabroom/4843"><span class="main-cassette-title" id="article_title">最大70％オフ！ リビングデザインセンターOZONEで夏のSAL…</span></a>
+      </div>
+      <!-- 区切り線 -->
+      <div align="center">
+        <div style="border-bottom: 2px solid #DDDDDD; width: 280px;"></div>
+      </div>
+      <!-- /区切り線 -->
+      <div class="main-cassette-bottom">
+        <div class="row">
+          <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;">
+            <a class="hoverWhiteImageLink" href="/media/tabroom"><img alt="Tabroom" class="main-cassette-logo" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/feed-icons/tabroom-3277620d9e52f5664df94a1984c8fd86.png" /></a>
+          </div>
+          <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;">
+            <div style="height: 32px;">
+              <div id="article_company"><a class="hoverTextLink-ct2" href="/media/tabroom" style="font-weight: bold;">タブルーム</a></div>
+            </div>
+            <div style="height:25px; width: 183px; position:relative;">
+                <form accept-charset="UTF-8" action="/media/subscribe/9" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <input alt="Btn reader" class="btnReaderRegist hoverWhiteImage btn_feed9" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader-c6858152dd6a3c2d084c0e2e171cf1cf.png" style="float: left;" type="image" />
+</form>              <img alt="Btn reader cnt" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_reader_cnt-5ed1a7a4438e3a0d47840acdd546ad76.png" />
+              <span style="position: absolute; top: 2px; left: 120px; color: #FFFFFF; width: 40px;" class="text-center cnt_feed9">67</span>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-category-label text-center">
+        <span class="color-ct2" id="article_category">Life</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /記事カセット -->
+
+        <!-- 記事追加 -->
+        <div id="article_add_area"></div>
+        <!-- /記事追加 -->
+
+      </div>
+    </div>
+  </div>
+
+  <!-- もっと見るボタン -->
+    <div class="btn-more-read">
+      <a class="hoverWhiteImage" data-remote="true" href="/top/items?page=2" id="article_add_btn" style="position: relative; height: 50px;"><img alt="Btn more read" id="btn-more-read-img" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/btn_more_read-5a2cb6b634f53b2d5f9225f00086b94d.png" /><img alt="Loader.ajax" id="loading-gif" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/loader.ajax-1a9fb71786d82c2c6bd64406e16bf197.gif" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; display: none; margin: auto;" /></a>
+    </div>
+  <!-- /もっと見るボタン -->
+
+</div>
+<!-- /記事一覧 -->
+
+
+
+<!-- 固定フッダ　-->
+<!--固定フッダ -->
+<footer>
+  <div style="background-color: #efefec;">
+    <div class="container" style="padding-top: 35px;">
+      <div class="row">
+        <div class="col-xs-6">
+          <div style="height:260px; width:420px; display: inline-block;">
+            <!--<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FFacebookDevelopers&amp;width=400&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=675426242478419" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:400px; height:258px;" allowTransparency="true"></iframe>-->
+            <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fsomewrite&amp;width=400&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=196085167253987" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:400px; height:258px;" allowTransparency="true"></iframe>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <span style="font-size: 1.5em; color: #55554f;"><a href="/category">カテゴリ</a></span>
+          <ul style="font-size: 1em; padding-top: 10px;">
+                <li style="padding-bottom: 3px;"><a href="/category/business/optimization" style="color: #0d4e71;">業務効率化</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/business/tech" style="color: #0d4e71;">Tech</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/business/web-marketing" style="color: #0d4e71;">WEBマーケティング</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/business/team" style="color: #0d4e71;">組織・人材</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/business/ec" style="color: #0d4e71;">EC・ネットショップ</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/business/design" style="color: #0d4e71;">デザイン</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/business/econoomy" style="color: #0d4e71;">政治・経済</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/business/freelance" style="color: #0d4e71;">フリーランス・個人事業主</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/life/interior" style="color: #0d4e71;">インテリア</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/life/love" style="color: #0d4e71;">恋愛</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/life/travel" style="color: #0d4e71;">旅行</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/life/accounts" style="color: #0d4e71;">マネー・家計簿</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/life/gourmet" style="color: #0d4e71;">グルメ・飲食</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/life/lesson" style="color: #0d4e71;">レッスン</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/life/reading" style="color: #0d4e71;">読書</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/business/career" style="color: #0d4e71;">キャリア</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/special/special" style="color: #0d4e71;">特集</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/life/sports" style="color: #0d4e71;">スポーツ</a></li>
+                <li style="padding-bottom: 3px;"><a href="/category/life/fudosan" style="color: #0d4e71;">不動産</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-3">
+          <span style="font-size: 1.5em; color: #55554f;">somewrite</span>
+          <ul style="padding-top: 10px;">
+            <li style="padding-bottom: 8px;"><a href="/terms" style="color: #0d4e71;">利用規約</a></li>
+            <li style="padding-bottom: 8px;"><a href="/privacy" style="color: #0d4e71;">プライバシーポリシー</a></li>
+            <!--<li style="padding-bottom: 8px;"><a href="/contact" style="color: #0d4e71;">お問い合わせ</a></li>-->
+            <li style="padding-bottom: 8px;"><a href="/about" style="color: #0d4e71;">会社概要</a></li>
+          </ul>
+        </div>
+        <!-- SNS関連
+        <div class="col-xs-3">
+          <div style="height:240px; padding-top: 10px; display: inline-block;">
+          </div>
+        </div>
+         -->
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color: #efefec;">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-right">
+          <div style="font-size: 0.8em; color: #0d4e71;">Copyright © サムライト株式会社 All Rights Reserved.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="jsi-fb-login" class="facebook-login cf">
+  <div class="facebook-login-inner">
+    <p class="facebook-login-body">
+      Facebookアカウントで登録・ログインをして、気になる企業ブログの読者になろう！<br>
+      <br>
+      読者登録をした企業ブログの新着記事をメールやマイページでお知らせします。<br>
+      登録・利用は無料です。
+    </p>
+      <a class="facebook-login-button" href="/login"><img alt="新規登録・ログイン facebookアカウントで登録無料" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/img_facebook_login-f35489d0902f984ffcb26cf9f734057e.png" /></a>
+  </div>
+    <a class="facebook-login-close jsc-fb-login-close" href="javascript:void(0)"><img alt="閉じる" src="http://s3-ap-northeast-1.amazonaws.com/somewrite-assets-production/assets/icn_close-e5429c8ff8b57387a3dcfabf90da325a.png" /></a>
+</div>
+
+<!-- ログイン時のポップオーバーメニュー -->
+<script type="text/javascript" data-turbolinks-eval=false>
+  var loading = false
+  $(function() {
+  });
+</script>
+</body>
+</html>

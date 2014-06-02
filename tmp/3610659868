@@ -1,0 +1,682 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title> Weblocksの継続ベースの画面遷移 - 翡翠はコンピュータに卵を生むか</title>
+<link rel="start" href="/" title="翡翠はコンピュータに卵を生むか">
+<link rel="help" href="/help" title="ヘルプ">
+<link rel="prev" href="/masatoi/20120914/1347600686" title=" lispbuilder-sdl-ttfで日本語を...">
+<link rel="next" href="/masatoi/20130404" title="スキャナと裁断機をレンタルして...">
+
+<link rel="stylesheet" href="http://d.st-hatena.com/statics/css/base.css?b1200de2cbd65eac7a82e0d02d0b7c4352652dfc" type="text/css" media="all">
+<link rel="stylesheet" href="http://d.st-hatena.com/statics/css/headerstyle_lb.css?649ee3542c7c6bbb389b28486494abb87dfe79fb" type="text/css" media="all">
+<link rel="stylesheet" href="http://d.st-hatena.com/statics/theme/hatena-white/hatena-white.css?63282f56ee244cb93ca669bae2e1a9f6edbd6014" type="text/css" media="all">
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://d.hatena.ne.jp/masatoi/rss">
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://d.hatena.ne.jp/masatoi/rss2">
+
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://d.hatena.ne.jp/masatoi/foaf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://d.hatena.ne.jp/masatoi/opensearch/diary.xml" title="翡翠はコンピュータに卵を生むか内日記検索" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://d.hatena.ne.jp/masatoi/opensearch/archive.xml" title="翡翠はコンピュータに卵を生むか内一覧検索" />
+
+
+<link rel="shortcut icon" href="http://d.hatena.ne.jp/images/diary/masatoi/favicon.ico">
+
+
+
+<style type="text/css">
+<!-- 
+body{
+ background-color: #fff; /* #cacacc */  
+}
+div.body{
+	font-family: sans-serif;
+        background-color: #fff;
+        border-bottom:1px solid #dCdCdC;
+        border-left:1px solid #dCdCdC;
+        border-right:1px solid #dCdCdC;
+        border-radius: 0px 0px 10px 10px;
+}
+
+span.highlight {
+	color: white;
+	background-color: black;
+}
+img.photo {
+	float: right;
+	margin: 10px;
+	border: 0;
+}
+a:link{
+        color: #0000ff;
+}
+a:visited{
+        color: #770077;
+}
+a.keyword {
+	text-decoration: none;
+	border-bottom: 0px;
+}
+a.keyword:link{
+        color: #005555;
+}
+a.keyword:visited{
+        color: #777777;
+}
+h1 {　/*日記タイトル*/  
+ border-bottom: none;  
+ font-size: 150%;  /*文字サイズを変える*/  
+/* font-family: 'ＭＳ Ｐ明朝',serif; */  
+}
+
+h2 {
+	font-size: 50%;
+	background-color: #fafafa;
+        border-top:1px solid #dCdCdC;
+        border-left:1px solid #dCdCdC;
+        border-right:1px solid #dCdCdC;
+        border-radius: 10px 10px 0px 0px;
+	padding: 3px 0px 2px 10px;
+	margin: 5px 0 0 0;
+	width: auto;
+	_width: 100%;
+}
+div.hatena-body{
+}
+div.section pre{
+ font-size: medium;
+ background-color: #fafafa;
+ border: 1px solid #d0d0d0;
+ border-radius: 10px;
+ font-family: monospace;
+}
+div.section blockquote{
+ background-color: #EFEFEF;
+} 
+div.footnote{
+/*  padding-left: 10%; */  
+}
+div.footnote p{
+  text-indent:0%;
+  background-color: #ECFFF3;
+}
+-->
+</style>
+
+
+<script type="text/javascript">if(/[\x3c\x3e\x22]/.test(location.hash))location.hash=location.hash.replace(/[\x3c\x3e\x22]/g,'');if(/[\x3c\x3e]/.test(document.referrer))location.href=location.href;</script>
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content=" Weblocksの継続ベースの画面遷移 - 翡翠はコンピュータに卵を生むか">
+<meta property="og:image" content="http://cdn-ak.f.st-hatena.com/images/fotolife/m/masatoi/20121103/20121103043226.png">
+<meta property="og:url" content="http://d.hatena.ne.jp/masatoi/20121103/1351880967">
+<meta property="og:description" content="WeblocksはCommon Lisp用のWebアプリケーションフレームワーク(WAF)。Common LispのWAFも色々出てきている..">
+<meta property="og:site_name" content="はてなダイアリー">
+
+
+<!--
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<rdf:Description rdf:about="http://d.hatena.ne.jp/masatoi/20121103/1351880967">
+   <foaf:maker rdf:parseType="Resource">
+     <foaf:holdsAccount>
+       <foaf:OnlineAccount foaf:accountName="masatoi">
+         <foaf:accountServiceHomepage rdf:resource="http://www.hatena.ne.jp/" />
+       </foaf:OnlineAccount>
+     </foaf:holdsAccount>
+   </foaf:maker>
+</rdf:Description>
+</rdf:RDF>
+-->
+
+<link rel="alternate" media="handheld" type="text/html" href="http://d.hatena.ne.jp/masatoi/mobile?date=20121103&section=1351880967" />
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+  rdf:about="http://d.hatena.ne.jp/masatoi/20121103/1351880967"
+  trackback:ping="http://d.hatena.ne.jp/masatoi/20121103/1351880967"
+  dc:title="[LISP][Weblocks] Weblocksの継続ベースの画面遷移"
+  dc:identifier="http://d.hatena.ne.jp/masatoi/20121103/1351880967" />
+</rdf:RDF>
+-->
+
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/MochiKit/1125/Base.js?649ee3542c7c6bbb389b28486494abb87dfe79fb"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/MochiKit/1125/Iter.js?649ee3542c7c6bbb389b28486494abb87dfe79fb"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/MochiKit/1125/DOM.js?649ee3542c7c6bbb389b28486494abb87dfe79fb"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/MochiKit/1125/Style.js?649ee3542c7c6bbb389b28486494abb87dfe79fb"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/MochiKit/1125/Signal.js?649ee3542c7c6bbb389b28486494abb87dfe79fb"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/MochiKit/1125/Async.js?649ee3542c7c6bbb389b28486494abb87dfe79fb"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/MochiKit/1125/Logging.js?649ee3542c7c6bbb389b28486494abb87dfe79fb"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/BookmarkCommentViewer.js?649ee3542c7c6bbb389b28486494abb87dfe79fb" charset="utf-8"></script>
+
+
+
+<link rel="canonical" href="http://d.hatena.ne.jp/masatoi/20121103/1351880967">
+
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:site" content="@hatenablog">
+
+
+
+<script type="text/javascript" src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
+<script type="text/javascript">
+Hatena.Star.SiteConfig = {
+  entryNodes: {
+    'div.section': {
+      uri: 'h3 a',
+      title: 'h3',
+      container: 'h3'
+    }
+  }
+};
+Hatena.Author  = new Hatena.User('masatoi');
+Hatena.DiaryName  = new Hatena.User('masatoi');
+
+</script>
+
+
+
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/twitter_entry_icon.js?624193d7525aa17863f03b145a0662aa8bfba0bb"></script>
+
+
+
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/adcolor.js?649ee3542c7c6bbb389b28486494abb87dfe79fb"></script>
+
+
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/quick_pager.js?73e8efd3adc8709460b4c8ff9af5a3d4c97eba4e"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/diary_utils.js?649ee3542c7c6bbb389b28486494abb87dfe79fb"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/max_width_fotolife.js?2d5c0a4915fdb8930122a506dbf154b9db674a3b"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/jquery-1.4.2.min.js?1c983e39f64600478e5a829cf7a7a61f68527715"></script>
+<script type="text/javascript">
+  jQuery.noConflict()(function($){
+    var j$ = jQuery;
+  });
+</script>
+
+
+
+
+</head>
+<body>
+
+  <script>Hatena.Diary.UaTrakingID = 'UA-46127385-7';</script>
+ 
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-58NPH6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-58NPH6');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<div id="simple-header">
+
+  <a href="http://www.hatena.ne.jp/"><img src="/images/hatena-simple_lb.gif" alt="Hatena::" title="Hatena::" id="logo-hatena" width="65" height="17"></a><a href="/"><img src="/images/diary-simple_lb.gif" alt="ブログ(Diary)" title="Diary" id="logo-diary" width="43" height="17"></a>
+  <form method="get" action="/search" class="search-form">
+    <input type="text" class="search-word" name="word" value=""><input name="name" value="masatoi" type="hidden"><input type="submit" name="diary" value="日記" class="search-button"><input type="submit" name="submit" value="検索" class="search-button">
+  </form>
+  <ul class="menu">
+    <li><a href="/masatoi/">ブログトップ</a></li>
+    <li><a href="/masatoi/archive">記事一覧</a></li>
+
+
+
+    <li><a href="https://www.hatena.ne.jp/login?backurl=http%3A%2F%2Fd.hatena.ne.jp%2Fmasatoi%2F20121103%2F1351880967&add_timestamp=1">ログイン</a></li>
+    <li><a href="https://www.hatena.ne.jp/register?location=http%3A%2F%2Fd.hatena.ne.jp%3Fvia%3D200186&amp;via=200186">無料ブログ開設</a></li>
+
+  </ul>
+</div>
+
+
+
+<h1><a href="http://d.hatena.ne.jp/masatoi/">翡翠はコンピュータに卵を生むか</a></h1>
+<div class="hatena-body">
+<div class="main">
+
+
+
+
+
+
+
+
+
+<div class="calendar" id="pager-top">
+  <a rel="prev" href="/masatoi/20120914/1347600686" class="prev">&lt; lispbuilder-sdl-ttfで日本語を...</a>&nbsp;<span class="delimiter">|</span>&nbsp;<a rel="next" href="/masatoi/20130404" class="next">スキャナと裁断機をレンタルして...&gt;</a><span id="edit-in-place-add"></span>
+</div>
+<div id="days">
+
+<div class="day">
+<h2><a href="http://d.hatena.ne.jp/masatoi/20121103" rel="nofollow"><span class="date">2012-11-03</span></a></h2>
+
+<div class="body">
+
+<!-- rakuten_ad_target_begin -->
+<!-- google_ad_section_start -->
+
+		<div class="section">
+			<h3><a href="/masatoi/20121103/1351880967" name="1351880967"><span class="sanchor">■</span></a>[<a href="/masatoi/searchdiary?word=%2A%5BLISP%5D" class="sectioncategory">LISP</a>][<a href="/masatoi/searchdiary?word=%2A%5BWeblocks%5D" class="sectioncategory">Weblocks</a>] Weblocksの継続ベースの画面遷移</h3>
+			<p><a href="http://weblocks.viridian-project.de/" target="_blank">Weblocks</a>はCommon Lisp用のWebアプリケーションフレームワーク(WAF)。Common LispのWAFも色々出てきているみたいだけど、一番リッチに作り込まれているのはこのWeblocksだと思う。なにしろ1行のHTMLもJavascriptも書かずにWebアプリを作ることができるという触れ込みだ。一方でドキュメントが少なくかつ古いので分からないところはソースコードをあたるしかなかったりもする。インストールはquicklisp一発で済むので昔に比べればはるかに簡単になった。</p>
+<pre class="syntax-highlight">
+<span class="synComment">;; インストール</span>
+<span class="synSpecial">(</span>ql:quickload :weblocks<span class="synSpecial">)</span>
+
+<span class="synComment">;; スケルトン生成 (この場合 /home/coffeemug/projects/myapp というディレクトリができる)</span>
+<span class="synSpecial">(</span>wop:make-app <span class="synSpecial">'</span><span class="synIdentifier">myapp</span> <span class="synConstant">&quot;/home/coffeemug/projects/&quot;</span><span class="synSpecial">)</span>
+</pre>
+
+			<p>WeblocksはWebアプリをウィジェットの木として作るという考え方に基づいている。ウィジェットはCLOSオブジェクトで、最終的にHTML+Javascriptに展開されてブラウザに表示される。そのため、ウィジェットをどのように展開するかを記述するrender-widget-bodyというメソッドを持っている。ウィジェットは最初から色々そろっているが、もちろん自分で定義することもできる。</p>
+			<p>Weblocksは継続ベースの画面遷移ができるというところがミソらしい(参考 <a href="http://d.hatena.ne.jp/inuzini-jiro/20110310/1299735824" target="_blank">http://d.hatena.ne.jp/inuzini-jiro/20110310/1299735824</a>)。普通のWAFではサーバサイドでセッションオブジェクトを保存し、ユーザはサーバとのやりとりの度にセッションIDを伝えて現在の状態を引き出さなければならない。一方で継続ベースの場合はセッションごとに継続という「それ以降の計算処理が保存された関数オブジェクト」を持っていて、同じユーザから再びリクエストがあったら前の継続の続きを再生する。プログラマとしてはセッションにまたがる変数をあたかも普通の局所変数のように扱えるので楽になる。Ajaxと継続を組み合わせることで、一部のウィジェットだけを置き換えたりもできる。</p>
+			<p>以下のコードはAjaxでウィジェットの置き換えを行う。</p>
+<pre class="syntax-highlight">
+<span class="synSpecial">(</span><span class="synStatement">defun</span> with-flow-test-page <span class="synSpecial">()</span>
+  <span class="synSpecial">(</span><span class="synStatement">let*</span> <span class="synSpecial">((</span>comp-widget <span class="synSpecial">(</span><span class="synStatement">make-instance</span> <span class="synSpecial">'</span><span class="synIdentifier">composite</span><span class="synSpecial">))</span>
+	 <span class="synSpecial">(</span>meta-comp-widget <span class="synSpecial">(</span><span class="synStatement">make-instance</span> <span class="synSpecial">'</span><span class="synIdentifier">composite</span> :widgets <span class="synSpecial">(</span><span class="synStatement">list</span> comp-widget<span class="synSpecial">)))</span>
+	 <span class="synSpecial">(</span>counter <span class="synConstant">0</span><span class="synSpecial">))</span>
+    <span class="synSpecial">(</span><span class="synStatement">setf</span> <span class="synSpecial">(</span>composite-widgets comp-widget<span class="synSpecial">)</span>
+	  <span class="synSpecial">(</span><span class="synStatement">list</span> <span class="synSpecial">(</span>make-widget <span class="synSpecial">(</span><span class="synStatement">lambda</span> <span class="synSpecial">()</span> <span class="synSpecial">(</span>with-html <span class="synSpecial">(</span>:p <span class="synSpecial">(</span>str <span class="synSpecial">(</span>local-time:format-timestring <span class="synStatement">nil</span> <span class="synSpecial">(</span>local-time:now<span class="synSpecial">))))</span>
+						   <span class="synSpecial">(</span>:p <span class="synConstant">&quot;This is car of comp-widget&quot;</span><span class="synSpecial">))))</span>
+		<span class="synSpecial">(</span>make-widget
+		 <span class="synSpecial">(</span><span class="synStatement">lambda</span> <span class="synSpecial">()</span>
+		   <span class="synSpecial">(</span>render-link
+		    <span class="synSpecial">(</span><span class="synStatement">lambda</span> <span class="synSpecial">(</span>&amp;rest args<span class="synSpecial">)</span>
+		      <span class="synSpecial">(</span><span class="synStatement">declare</span> <span class="synSpecial">(</span><span class="synStatement">ignore</span> args<span class="synSpecial">))</span>
+		      <span class="synComment">;; 第一引数はyieldの引数のウィジェットで置き換えられるウィジェット</span>
+		      <span class="synSpecial">(</span>with-flow comp-widget
+			<span class="synSpecial">(</span><span class="synStatement">loop</span>
+			  <span class="synSpecial">(</span>yield <span class="synSpecial">(</span>make-widget
+				  <span class="synSpecial">(</span><span class="synStatement">lambda</span> <span class="synSpecial">(</span>cont<span class="synSpecial">)</span> <span class="synComment">; contが継続オブジェクト</span>
+				    <span class="synSpecial">(</span>with-html <span class="synSpecial">(</span>:p <span class="synSpecial">(</span>str <span class="synSpecial">(</span>local-time:format-timestring <span class="synStatement">nil</span> <span class="synSpecial">(</span>local-time:now<span class="synSpecial">))))</span>
+					       <span class="synSpecial">(</span>:p <span class="synSpecial">(</span>str <span class="synSpecial">(</span><span class="synStatement">format</span> <span class="synStatement">nil</span> <span class="synConstant">&quot;with-flow loop 1st. counter=~A&quot;</span> counter<span class="synSpecial">)))</span>
+					       <span class="synSpecial">(</span>render-link <span class="synSpecial">(</span><span class="synStatement">lambda</span> <span class="synSpecial">(</span>&amp;rest args<span class="synSpecial">)</span>
+							      <span class="synSpecial">(</span><span class="synStatement">declare</span> <span class="synSpecial">(</span><span class="synStatement">ignore</span> args<span class="synSpecial">))</span>
+							      <span class="synSpecial">(</span><span class="synStatement">incf</span> counter<span class="synSpecial">)</span>
+							      <span class="synSpecial">(</span>answer cont<span class="synSpecial">))</span> <span class="synComment">; with-flowにおける次の処理へ</span>
+							    <span class="synConstant">&quot;Goto 2nd&quot;</span>
+							    :ajaxp <span class="synStatement">t</span><span class="synSpecial">)))))</span>
+			  <span class="synSpecial">(</span>yield <span class="synSpecial">(</span>make-widget
+				  <span class="synSpecial">(</span><span class="synStatement">lambda</span> <span class="synSpecial">(</span>cont<span class="synSpecial">)</span>
+				    <span class="synSpecial">(</span>with-html <span class="synSpecial">(</span>:p <span class="synSpecial">(</span>str <span class="synSpecial">(</span>local-time:format-timestring <span class="synStatement">nil</span> <span class="synSpecial">(</span>local-time:now<span class="synSpecial">))))</span>
+					       <span class="synSpecial">(</span>:p <span class="synSpecial">(</span>str <span class="synSpecial">(</span><span class="synStatement">format</span> <span class="synStatement">nil</span> <span class="synConstant">&quot;with-flow loop 2nd. counter=~A&quot;</span> counter<span class="synSpecial">)))</span>
+					       <span class="synSpecial">(</span>render-link <span class="synSpecial">(</span><span class="synStatement">lambda</span> <span class="synSpecial">(</span>&amp;rest args<span class="synSpecial">)</span>
+							      <span class="synSpecial">(</span><span class="synStatement">declare</span> <span class="synSpecial">(</span><span class="synStatement">ignore</span> args<span class="synSpecial">))</span>
+							      <span class="synSpecial">(</span><span class="synStatement">incf</span> counter<span class="synSpecial">)</span>
+							      <span class="synSpecial">(</span>answer cont<span class="synSpecial">))</span>
+							    <span class="synConstant">&quot;Goto 1st&quot;</span>
+							    :ajaxp <span class="synStatement">t</span><span class="synSpecial">))))))))</span>
+		    <span class="synConstant">&quot;replace comp-widget&quot;</span><span class="synSpecial">)))))</span>
+    <span class="synSpecial">(</span>render-widget meta-comp-widget<span class="synSpecial">)))</span>
+
+<span class="synSpecial">(</span><span class="synStatement">defun</span> init-user-session <span class="synSpecial">(</span>root<span class="synSpecial">)</span>
+  <span class="synSpecial">(</span><span class="synStatement">setf</span> <span class="synSpecial">(</span>widget-children root<span class="synSpecial">)</span>
+	<span class="synSpecial">(</span><span class="synStatement">list</span> <span class="synSpecial">(</span>make-widget
+	       <span class="synSpecial">(</span><span class="synStatement">lambda</span> <span class="synSpecial">()</span>
+		 <span class="synSpecial">(</span>with-html<span class="synSpecial">(</span>:p <span class="synSpecial">(</span>str <span class="synSpecial">(</span>local-time:format-timestring <span class="synStatement">nil</span> <span class="synSpecial">(</span>local-time:now<span class="synSpecial">)))))))</span>
+	      <span class="synType">#'with-flow-test-page</span><span class="synSpecial">)))</span>
+</pre>
+
+			<p>このWebアプリを実行してみるとこのような画面になる。</p>
+			<p><a href="http://f.hatena.ne.jp/masatoi/20121103043226" class="hatena-fotolife" target="_blank"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/m/masatoi/20121103/20121103043226.png" alt="f:id:masatoi:20121103043226p:image" title="f:id:masatoi:20121103043226p:image" class="hatena-fotolife"></a></p>
+			<p>最初ウィジェットの構造はこうなっている。meta-comp-widgetやcomp-widgetはウィジェットを格納するだけのcompositeウィジェット。"replace comp-widget"と表示されているリンクを押すと、with-flowマクロが呼び出されて、with-flowマクロの第一引数であるウィジェット、この場合comp-widgetが置き換えられる。</p>
+			<p><a href="http://f.hatena.ne.jp/masatoi/20121103180840" class="hatena-fotolife" target="_blank"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/m/masatoi/20121103/20121103180840.png" alt="f:id:masatoi:20121103180840p:image" title="f:id:masatoi:20121103180840p:image" class="hatena-fotolife"></a></p>
+			<p>その結果がこの画面。</p>
+			<p><a href="http://f.hatena.ne.jp/masatoi/20121103043227" class="hatena-fotolife" target="_blank"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/m/masatoi/20121103/20121103043227.png" alt="f:id:masatoi:20121103043227p:image" title="f:id:masatoi:20121103043227p:image" class="hatena-fotolife"></a></p>
+			<p>先ほどリンクを押したことでcomp-widgetがwith-flowマクロの中のyield以下のウィジェットに置き換わったのだ。新しいウィジェットにもリンクがあり、これを押すことでwith-flowマクロの中の2番目のyield以下のウィジェットにさらに置き換わる。</p>
+			<p><a href="http://f.hatena.ne.jp/masatoi/20121103180841" class="hatena-fotolife" target="_blank"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/m/masatoi/20121103/20121103180841.png" alt="f:id:masatoi:20121103180841p:image" title="f:id:masatoi:20121103180841p:image" class="hatena-fotolife"></a></p>
+			<p>その時の画面がこれ。</p>
+			<p><a href="http://f.hatena.ne.jp/masatoi/20121103043228" class="hatena-fotolife" target="_blank"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/m/masatoi/20121103/20121103043228.png" alt="f:id:masatoi:20121103043228p:image" title="f:id:masatoi:20121103043228p:image" class="hatena-fotolife"></a></p>
+			<p>二つのタイムスタンプが表示されているが、meta-comp-widgetに入っているタイムスタンプは最初から変わらない。一方、その下の次々に置き換わっていくウィジェットにより表示されるタイムスタンプは置き換えの度に更新されることが分かる。しかも、with-flowの本体部分ではloopを入れているのでリンクを押す度にページの一部分がトグルするようになっている。loopに限らず、任意のLispの制御構造を入れられるので、様々な条件に合わせてウィジェットを表示したりできる。</p>
+			<p>また、counterをページ遷移の度にインクリメントしているが、局所変数のように書いているにも関わらずページをまたいでも状態を保っていて、セッションオブジェクトみたいなものを明示的に用意する必要がない。これが継続ベースのWebアプリのメリットなのかな、と思う。他のWAF使ったことないけど・・・</p>
+			<p class="share-button sectionfooter"><a href="http://twitter.com/share" class="twitter-share-button" data-lang="ja" data-count="none" data-url="http://d.hatena.ne.jp/masatoi/20121103/1351880967" data-text=" Weblocksの継続ベースの画面遷移 - 翡翠はコンピュータに卵を生むか (id:masatoi / @masatoi0)">ツイートする</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+			<p class="sectionfooter"><a href="/masatoi/20121103/1351880967">Permalink</a> | <a href="/masatoi/20121103/1351880967#c">コメント(0)</a> | <a href="/masatoi/20121103/1351880967#tb">トラックバック(1)</a> | 03:29 <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/masatoi/20121103/1351880967" class="bookmark-icon"><img src="http://d.hatena.ne.jp/images/b_entry_lb.gif" border="0" title=" Weblocksの継続ベースの画面遷移を含むブックマーク" alt=" Weblocksの継続ベースの画面遷移を含むブックマーク" width="16" height="12" class="icon"></a> <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/masatoi/20121103/1351880967" class="bookmark-count"><img src="http://b.hatena.ne.jp/entry/image/http://d.hatena.ne.jp/masatoi/20121103/1351880967" title="はてなブックマーク -  Weblocksの継続ベースの画面遷移" alt=""></a> <img class="hatena-bcomment-view-icon" src="http://r.hatena.ne.jp/images/popup.gif" onclick="javascript:BookmarkCommentViewer.iconImageClickHandler(this, 'http://d.hatena.ne.jp/masatoi/20121103/1351880967', event);" title=" Weblocksの継続ベースの画面遷移のブックマークコメント" alt=" Weblocksの継続ベースの画面遷移のブックマークコメント" width="13" height="13"></p>
+
+		</div>
+
+<!-- google_ad_section_end -->
+<!-- rakuten_ad_target_end -->
+
+
+</div>
+
+<form id="comment-form" method="post" action="/masatoi/comment#c" class="comment">
+<input type="hidden" name="mode" value="enter">
+<input type="hidden" name="rkm" value="">
+<input type="hidden" name="date" value="2012-11-03">
+<div class="comment">
+  <div class="caption"><a name="c">コメントを書く</a></div>
+  <div class="commentshort">
+    
+    
+
+    <a name="error-message"></a>
+    <p class="message" style="display:none"></p>
+
+    
+
+    
+            
+    <p class="commentform">
+      <span class="commentator">
+        <span class="usermailconfirm"><input name="usermail" size="1" value=""><input name="userurl" size="1" value="">スパム対策のためのダミーです。もし見えても何も入力しないでください<br></span>
+        <span class="username">
+        <img src="http://www.hatena.ne.jp/images/guest_icon.gif" class="hatena-id-icon" alt="ゲスト" title="ゲスト" height="16" width="16">
+        <input type="hidden" name="section" value="1351880967">
+        
+          <input id="comment-username" name="username" size="15">
+        
+        </span>
+        
+          <span class="usermail"><img src="/images/icon-usermail.gif" style="vertical-align:middle;margin-right:3px;"><input id="comment-usermail" name="useremail" size="15" value=""></span>
+          <span class="userurl"><img src="/images/icon-userurl.gif" style="vertical-align:middle;margin-right:3px;"><input id="comment-userurl" name="useruri" size="15" value=""></span>
+        
+      </span>
+<br>
+      <!-- NOT_VERIFIED_COMMENT_AUTH -->
+      <textarea id="comment-textarea" name="body" value="" cols="60" rows="3"></textarea><br>
+      
+          <div class="captcha">
+            <img src="/masatoi/captcha?1401671069" class="captcha-image">
+            <span class="captcha-message">画像認証</span><br />
+            <input type="text" name="captcha_code" size="10" class="captcha-string" id="comment-captcha">
+          </div>
+      
+      <span class="comment-submit"><input type="submit" id="comment-form-button" value="投稿"></span>
+    </p>
+
+      <script type="text/javascript" src="/js/diary_comment_edit_form.js"></script>
+    
+
+  </div>
+</div>
+
+</form>
+
+
+
+
+
+  
+  <div class="refererlist">
+    <div class="caption">
+      <a name="tb">トラックバック</a> - http://d.hatena.ne.jp/masatoi/20121103/1351880967
+    </div>
+    
+      
+      <ul>
+        
+          <li>
+            <a href="http://d.hatena.ne.jp/masatoi/20130419/1366359718" title=" Weblocksでウィジェットのスロットを変更すると即座に反映される件 以前weblocksのwith-flowマクロを使ってウィジェットを置き換えるという記事を書いたが、別のウィジェットに置き換えるのではなく、同じウィジェットのスロットを変更してそれを反映させたい場合はどうする" rel="nofollow">翡翠はコンピュータに卵を生むか -  Weblocksでウィジェットのスロ...</a></li>
+        
+      </ul>
+    
+  </div>
+  
+    <div class="refererlist">
+      <div class="caption"><a name="idtb">idトラックバック</a></div>
+      
+      <ul>
+        
+            <li><a href="http://twitter.com/masatoi0/status/264600478166446080" title="久しぶりに記事書きました / Weblocksの継続ベースの画面遷移 - 翡翠はコンピュータに卵を生むか (id:masatoi / @masatoi0) http://t.co/lwYhL6yq" rel="nofollow">Twitter / @masatoi0</a></li>
+          
+        </ul>
+      </div>
+    
+  
+
+
+
+
+
+    <div class="refererlist">
+      <div class="caption">リンク元</div>
+      <ul>
+          <li>464 <a href="https://www.google.co.jp/" rel="nofollow">https://www.google.co.jp/</a></li>
+          <li>236 <a href="http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;ved=0CCUQFjAA&amp;url=http%3A%2F%2Fd.hatena.ne.jp%2Fmasatoi%2F20090707%2F1246965336&amp;ei=pZRzUKddxpKJB5LzgZgM&amp;usg=AFQjCNG0lGaUokBefR_-sr_rmjBqGgoNiQ&amp;sig2=H5jkN3HVdsIlAQsBinsM3A" rel="nofollow">http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;ved=0CCUQFjAA&amp;url=http://d.hatena.ne.jp/masatoi/20090707/1246965336&amp;ei=pZRzUKddxpKJB5LzgZgM&amp;usg=AFQjCNG0lGaUokBefR_-sr_rmjBqGgoNiQ&amp;sig2=H5jkN3HVdsIlAQsBinsM3A</a></li>
+          <li>226 <a href="http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%80%80%E4%BC%9A%E7%A4%BE%E3%81%A7%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%93%E3%81%A8&amp;source=web&amp;cd=2&amp;ved=0CCcQFjAB&amp;url=http%3A%2F%2Fd.hatena.ne.jp%2Fmasat" rel="nofollow">http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=プログラミング　会社でできること&amp;source=web&amp;cd=2&amp;ved=0CCcQFjAB&amp;url=http://d.hatena.ne.jp/masat</a></li>
+          <li>177 <a href="http://d.hatena.ne.jp/JavaBlack/20120520/p1" rel="nofollow">http://d.hatena.ne.jp/JavaBlack/20120520/p1</a></li>
+          <li>147 <a href="http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=2&amp;ved=0CDEQFjAB&amp;url=http%3A%2F%2Fd.hatena.ne.jp%2Fmasatoi%2F20090707%2F1246965336&amp;ei=g92UUPqxN-yRiQfkqoCYDw&amp;usg=AFQjCNG0lGaUokBefR_-sr_rmjBqGgoNiQ&amp;cad=rja" rel="nofollow">http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=2&amp;ved=0CDEQFjAB&amp;url=http://d.hatena.ne.jp/masatoi/20090707/1246965336&amp;ei=g92UUPqxN-yRiQfkqoCYDw&amp;usg=AFQjCNG0lGaUokBefR_-sr_rmjBqGgoNiQ&amp;cad=rja</a></li>
+          <li>97 <a href="http://search.yahoo.co.jp/search?p=%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%80%80%E5%87%BA%E6%9D%A5%E3%81%AA%E3%81%84%E4%BA%BA&amp;aq=-1&amp;oq=&amp;ei=UTF-8&amp;fr=top_ga1_sa&amp;x=wrt" rel="nofollow">http://search.yahoo.co.jp/search?p=プログラミング　出来ない人&amp;aq=-1&amp;oq=&amp;ei=UTF-8&amp;fr=top_ga1_sa&amp;x=wrt</a></li>
+          <li>82 <a href="http://slashdot.jp/story/12/09/13/0312235/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E3%81%AE%E5%AD%A6%E4%BD%8D%E3%81%A3%E3%81%A6%E3%80%81%E6%9C%AC%E5%BD%93%E3%81%AB%E5%BF%85%E8%A6%81%EF%BC%9F" rel="nofollow">http://slashdot.jp/story/12/09/13/0312235/コンピュータサイエンスの学位って、本当に必要？</a></li>
+          <li>82 <a href="http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=36&amp;ved=0CFAQFjAFOB4&amp;url=http%3A%2F%2Fd.hatena.ne.jp%2Fmasatoi%2F20100518%2F1274170291&amp;ei=ewmWUKrRHYrPmAXUsIC4CA&amp;usg=AFQjCNF5g6GrzAzI-ZmHkRGd9kuaJXQqag" rel="nofollow">http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=36&amp;ved=0CFAQFjAFOB4&amp;url=http://d.hatena.ne.jp/masatoi/20100518/1274170291&amp;ei=ewmWUKrRHYrPmAXUsIC4CA&amp;usg=AFQjCNF5g6GrzAzI-ZmHkRGd9kuaJXQqag</a></li>
+          <li>69 <a href="http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;frm=1&amp;source=web&amp;cd=1&amp;ved=0CCEQFjAA&amp;url=http%3A%2F%2Fd.hatena.ne.jp%2Fmasatoi%2F20090707%2F1246965336&amp;ei=y7-XUJm-BuSsiAeYmYAI&amp;usg=AFQjCNG0lGaUokBefR_-sr_rmjBqGgoNiQ&amp;sig2=ACKAe04Vhpd4Is4Xc-Sr-A" rel="nofollow">http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;frm=1&amp;source=web&amp;cd=1&amp;ved=0CCEQFjAA&amp;url=http://d.hatena.ne.jp/masatoi/20090707/1246965336&amp;ei=y7-XUJm-BuSsiAeYmYAI&amp;usg=AFQjCNG0lGaUokBefR_-sr_rmjBqGgoNiQ&amp;sig2=ACKAe04Vhpd4Is4Xc-Sr-A</a></li>
+          <li>57 <a href="https://www.google.com/" rel="nofollow">https://www.google.com/</a></li>
+      </ul>
+      
+    </div>
+
+
+
+
+</div>
+
+
+
+</div>
+<div class="calendar" id="pager-bottom">
+  <a rel="prev" href="/masatoi/20120914/1347600686" class="prev">&lt; lispbuilder-sdl-ttfで日本語を...</a>&nbsp;<span class="delimiter">|</span>&nbsp;<a rel="next" href="/masatoi/20130404" class="next">スキャナと裁断機をレンタルして...&gt;</a>
+</div>
+<!-- -->
+</div>
+
+
+<div class="sidebar">
+<div class="hatena-module hatena-module-profile">
+  <div class="hatena-moduletitle">プロフィール</div>
+  <div class="hatena-modulebody">
+    <div class="hatena-profile">
+      <p class="hatena-profile-image"><a href="/masatoi/about"><img src="http://www.st-hatena.com/users/ma/masatoi/profile.gif" alt="masatoi" /></a></p>
+      <p class="hatena-profile-id"><a href="/masatoi/about">masatoi</a> <a href="/masatoi/about"><img src="/images/icon-plus.gif" alt="はてなダイアリープラス利用中" class="icon-plus" /></a></p>
+      <p class="hatena-profile-body">メモやコードなど</p>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<a href="https://twitter.com/masatoi0"><img alt="Twitter @masatoi0" src="http://cdn-ak.f.st-hatena.com/images/fotolife/m/masatoi/20140301/20140301053930.png?1393620014"></a>
+<a href="https://github.com/masatoi"><img alt="Github masatoi" src="http://cdn-ak.f.st-hatena.com/images/fotolife/m/masatoi/20140301/20140301053931.png?1393620012"></a>
+<br>
+
+<script language="javascript" type="text/javascript" src="http://b.hatena.ne.jp/js/widget.js" charset="utf-8"></script>
+<script language="javascript" type="text/javascript">
+Hatena.BookmarkWidget.url   = "http://d.hatena.ne.jp/masatoi/";
+Hatena.BookmarkWidget.title = "人気エントリ";
+Hatena.BookmarkWidget.sort  = "count";
+Hatena.BookmarkWidget.width = 0;
+Hatena.BookmarkWidget.num   = 10;
+Hatena.BookmarkWidget.theme = "hatenadiary";
+Hatena.BookmarkWidget.load();
+</script>
+
+<div class="hatena-module hatena-module-sectioncategory">
+<div class="hatena-moduletitle">Category</div>
+<div class="hatena-modulebody">
+<ul class="hatena-sectioncategory">
+<li><a href="/masatoi/searchdiary?word=%2A%5BLISP%5D">LISP</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5B%BC%F8%B6%C8%5D">授業</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5B%C6%FC%B5%AD%5D">日記</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BCS%5D">CS</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BEmacs%5D">Emacs</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BRoboCup%5D">RoboCup</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5B%BB%A8%B5%AD%5D">雑記</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BScheme%5D">Scheme</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5B%B8%A6%B5%E6%5D">研究</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5B%B6%AF%B2%BD%B3%D8%BD%AC%5D">強化学習</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BX%2Dwindow%5D">X-window</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BAIMA%5D">AIMA</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BSICP%5D">SICP</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BFirefox%5D">Firefox</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BTODO%5D">TODO</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BJava%5D">Java</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BFreeBSD%5D">FreeBSD</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5B%A5%E1%A5%E2%5D">メモ</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5Bfx%5D">fx</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BRuby%5D">Ruby</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BClojure%5D">Clojure</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5Bweblocks%5D">weblocks</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5B%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0Clojure%C2%E8%C6%F3%C8%C7%5D">プログラミングClojure第二版</a></li>
+<li><a href="/masatoi/searchdiary?word=%2A%5BCommon%20Lisp%5D">Common Lisp</a></li>
+</ul>
+</div>
+</div>
+
+</div> 
+<div style="display:none"><script type="text/javascript"><!--
+    hatena_counter_name = "masatoi";
+    hatena_counter_id = "1";
+    hatena_counter_ref = document.referrer+"";
+    hatena_counter_screen = screen.width + "x" + screen.height+","+screen.colorDepth;
+//--></script>
+<script type="text/javascript" src="http://counter.hatena.ne.jp//js/counter.js"></script>
+<noscript><img src="http://counter.hatena.ne.jp/masatoi/1" border="0" alt="counter"></noscript>
+</div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  var days = document.getElementById('days');
+  if (days && days.innerHTML.indexOf("今週のお題") != -1) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'odai', 3]);
+  }
+
+  if (days && /\u4eca\u9031\u306e\u304a\u984c/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'odai', 3]);
+  }
+
+  if (days && /ScanSnap\u7279\u5225\u30e2\u30c7\u30eb\u30fb\u30d6\u30ed\u30b0\u3067\u5ba3\u4f1d\u30b3\u30f3\u30c6\u30b9\u30c8/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'scansnap1401bcn4ssacro', 3]);
+  }
+
+  if (days && /Presso\u4f7f\u3063\u3066\u307f\u305f/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'presso1404', 3]);
+  }
+
+  if (days && /CodeIQ\u306e\u554f\u984c\u30fb\u30d1\u30ba\u30eb\u3092\u8003\u3048\u3088\u3046\uff01/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'codeiq_matsuri2013_2_2', 3]);
+  }
+
+  if (days && /2013\u5e74\u306b\u3084\u308a\u305f\u3044\u3053\u3068/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'newyear2013', 3]);
+  }
+
+  if (days && /2012\u5e74\u30dc\u30c4\u738b\u6c7a\u5b9a\u6226\uff01\u30d5\u30eb\u30bf\u88fd\u83d3\ud7\u306f\u3066\u306a\u30d6\u30ed\u30b0\u304a\u984c\u30ad\u30e3\u30f3\u30da\u30fc\u30f3/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'furuta', 3]);
+  }
+
+  if (days && /\u6d77\u5916\u30c9\u30e9\u30de\u300e\u30e9\u30a4\u30fb\u30c8\u30a5\u30fb\u30df\u30fc \u5618\u306e\u77ac\u9593\u300f\u89b3\u305f\u3044\uff01|\u300e\u30e9\u30a4\u30fb\u30c8\u30a5\u30fb\u30df\u30fc \u5618\u306e\u77ac\u9593\u300f\u7b2c1\u8a71\u306e\u611f\u60f3\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044|\u4eca\u3060\u304b\u3089\u8a00\u3048\u308b\u300c\u5618\u3092\u3064\u3044\u3066\u3057\u307e\u3063\u305f\u30a8\u30d4\u30bd\u30fc\u30c9\u300d\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044|\u3060\u307e\u3055\u308c\u305f\u3051\u3069\u3001\u8a31\u305b\u3066\u3057\u307e\u3063\u305f\u5618\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'lietome', 3]);
+  }
+
+  if (days && /\u30de\u30a4\u30d9\u30b9\u30c8\u30bd\u30f3\u30b02013/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'mybestsong2013', 3]);
+  }
+
+  if (days && /\u7d0d\u6dbc\uff01\u307b\u3093\u3068\u306b\u3042\u3063\u305f\u6016\u3044\u30b3\u30fc\u30c9/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'codeiq_matsuri2013_2_1', 3]);
+  }
+
+  if (days && /\u590f\u306e\u5199\u771f2013/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'photocon2013summer', 3]);
+  }
+
+  if (days && /Windows\/Office\u6b66\u52c7\u4f1d/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'WindowsDevOpen', 3]);
+  }
+
+  if (days && /Visa\u30d7\u30ea\u30da\u30a4\u30c9\u300cV\u30d7\u30ea\u30ab\u300d\u8a66\u3057\u305f\u3044\uff01|Visa\u30d7\u30ea\u30da\u30a4\u30c9\u300cV\u30d7\u30ea\u30ab\u300d\u3001\u81ea\u5206\u306a\u3089\u3053\u3046\u4f7f\u3046\uff01|V\u30d7\u30ea\u30ab\u304c1\u4e07\u5186\u5206\u3042\u3063\u305f\u3089\u3001\u30cd\u30c3\u30c8\u3067\u4f55\u3092\u8cb7\u3044\u307e\u3059\u304b\uff1f/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'vpreca', 3]);
+  }
+
+  if (days && /\u300c\u79c1\u306f\u3007\u3007\u738b\uff01\u300d\u30d0\u30a4\u30af\u738b\ud7\u306f\u3066\u306a\u30d6\u30ed\u30b0\u304a\u984c\u30ad\u30e3\u30f3\u30da\u30fc\u30f3/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'bike-o', 3]);
+  }
+
+  if (days && /\u30a2\u30a4\u30c7\u30e0 \u30a8\u30f3\u30b8\u30cb\u30a2\u30ad\u30e3\u30ea\u30a2Hacks\u5171\u6709\u30d7\u30ed\u30b8\u30a7\u30af\u30c8|\u30a8\u30f3\u30b8\u30cb\u30a2\u3068\u3057\u3066\u306e\u3001\u3068\u3063\u3066\u304a\u304d\u306e\u30ad\u30e3\u30ea\u30a2Hacks\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044|\u3042\u306a\u305f\u304c\u30a8\u30f3\u30b8\u30cb\u30a2\u8ee2\u8077\u30b5\u30a4\u30c8\u3092\u4f5c\u308b\u306a\u3089\u3001\u3069\u3093\u306a\u30b5\u30a4\u30c8\u306b\u3057\u307e\u3059\u304b\uff1f|5\u5e74\u5f8c\u306e\u300c\u30a8\u30f3\u30b8\u30cb\u30a2\u306e\u50cd\u304d\u65b9\u300d\u306f\u3001\u3069\u3046\u5909\u308f\u3063\u3066\u3044\u3066\u307b\u3057\u3044\u3067\u3059\u304b\uff1f/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'aidemcareer', 3]);
+  }
+
+  if (days && /\u306f\u3066\u306a\u30c0\u30a4\u30a2\u30ea\u30fc10\u5468\u5e74\u304a\u3081\u3067\u3068\u3046\uff01/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'hatenadiary10th', 3]);
+  }
+
+  if (days && /\u8aad\u307f\u653e\u984c\u3067\u30b3\u30b9\u30d1\u3088\u3057\uff01\u96fb\u5b50\u66f8\u7c4d\u30a2\u30d7\u30eayomel.jp\u30ad\u30e3\u30f3\u30da\u30fc\u30f3/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'yomel', 3]);
+  }
+
+  if (days && /\u30bb\u30c4\u30e4\u30af\u30a8\u30b9\u30c8/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'setsuyaquest', 3]);
+  }
+
+  if (days && /\u79cb\u306e\u591c\u9577\u306f\u8aad\u66f8\u3068\u30d6\u30ed\u30b0/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'bookreview2013fall', 3]);
+  }
+
+  if (days && /\u7279\u5225\u304a\u984c\u300c\u82b8\u8853\u306e\u79cb\u300d/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'caillebotte', 3]);
+  }
+
+  if (days && /\u30a8\u30a4\u30d7\u30ea\u30eb\u30d5\u30fc\u30eb2014/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'aprilfool2014', 3]);
+  }
+
+  _gaq.push(
+  ['_setAccount', 'UA-441387-31'],
+  ['_setSampleRate', '50'],
+  ['_setCustomVar', 1, 'afc_type', 'none_plus', 3],
+  ['_setCustomVar', 3, 'theme', 'hatena-white', 3],
+  ['_setCustomVar', 4, 'usertype', 'guest', 1],
+  ['_trackPageview'],
+  ['b._setAccount', 'UA-7855606-1'],
+  ['b._setDomainName', '.hatena.ne.jp'],
+  ['b._setSampleRate', '10'],
+  ['b._trackPageview']
+  ,['c._setAccount', 'UA-730096-1'],
+  ['c._trackPageview']
+  );
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- CG:1,CH:1,ICG:2,ICH:2,T: -->
+</body>
+</html>
