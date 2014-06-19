@@ -1,4 +1,4 @@
-(in-package n-gram)
+(in-package :n-gram)
 
 (defvar *group-dir* "../group")
 (defvar *blacklist* (make-hash-table :test #'equal))

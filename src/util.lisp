@@ -1,4 +1,4 @@
-(in-package n-gram)
+(in-package :n-gram)
 
 (defmacro profiler (fn-list)
   (format t "~a is...~%" (car fn-list))
@@ -84,9 +84,13 @@
 
 ;;;remove comment from html
 (defun remove-comment (html)
+  (declare (string html))
   (let ((input-stream (make-string-input-stream html))
 		(result nil)
 		(chr1) (chr2) (chr3) (chr4) (flag) (change-p))
+	(declare (stream input-stream)
+			 (list result)
+			 (boolean flag change-p))
 	(loop
 	  for chr = (read-char input-stream nil)
 	  while chr
@@ -95,9 +99,10 @@
 		   (setf flag f)
 		   (if change-p (setf result (remove-3element result)))
 		   (if (not flag) (push chr result))))
-	(concatenate 'string (nreverse result))))
+	(the string (concatenate 'string (nreverse result)))))
 
 (defun comment-p (chr1 chr2 chr3 chr4 flag change-p)
+  (declare (boolean flag change-p))
   (cond ((and (eql chr1 #\<) (eql chr2 #\!) (eql chr3 #\-) (eql chr4 #\-))
 		 (values t t))
 		((and (eql chr1 #\-) (eql chr2 #\-) (eql chr3 #\>))

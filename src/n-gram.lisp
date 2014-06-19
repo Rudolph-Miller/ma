@@ -1,11 +1,11 @@
-(defpackage n-gram
+(defpackage :n-gram
   (:use  :common-lisp)
   (:export main
 		   learn))
 
 (load "vars")
 (load "util")
-(in-package n-gram)
+(in-package :n-gram)
 
 (declaim (inline get-str-combi)
 		 (inline slice)
@@ -28,7 +28,6 @@
 
 ;;;restriction of word
 (defun gate (word)
-  (declare (string word))
   (or (find #\、 word) (find #\。 word) ;、。をはじく
 	  (find #\年 word) (find #\月 word)
 	  (find #\日 word)
@@ -316,14 +315,14 @@
 	  (declare (string url)
 			   (hash-table score)
 			   (list tag-list result))
-	  (print-sorted-hash score)
-	  (print tag-list)
+	  ;(print-sorted-hash score)
+	  ;(print tag-list)
 	  (save-file (cut-save-hash *blacklist*) *bladklist-dir*)
 	  (loop
-		for n from 1.0 to 3.0
+		for n from 1.0 to 5.0
 		for tag in (mapcar #'car tag-list)
 		do (update-key-list (divided-hash score n) (load-tag-key-file tag))
-		do (format t "~%~a: ~a~%" (round n) tag)
+		;do (format t "~%~a: ~a~%" (round n) tag)
 		do (setf result (cons tag result)))
 	  (the list (nreverse result)))
 	(type-error (c) (print "Invalid URL"))))
@@ -354,3 +353,21 @@
 		do (push line urls)))
 	(mapcar #'(lambda (url) (format t "~a:~%~a~%" url (learn url tag)))
 			urls)))
+
+(defun list->json (lst)
+	(let ((result "{"))
+		(loop
+			for item in lst
+			do (setq result (concatenate 'string result (write-to-string item) ", ")))
+		(concatenate 'string (subseq result 0 (- (length result) 2)) "}")))
+
+
+(defun exe ()
+	(print
+		(list->json
+	(main (cadr sb-ext:*posix-argv*)))))
+
+(sb-ext:save-lisp-and-die "sample.exe"
+													:toplevel #'exe
+													:executable t)
+
